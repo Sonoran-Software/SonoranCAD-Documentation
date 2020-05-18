@@ -10,7 +10,11 @@ description: >-
 All Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
 {% endhint %}
 
-## Installation
+## Installation Video
+
+View our [installation tutorial video](https://youtu.be/EsQWGnyrvm8) for help on installing our framework.
+
+## Installation Guide
 
 ### 1. Download Release
 
