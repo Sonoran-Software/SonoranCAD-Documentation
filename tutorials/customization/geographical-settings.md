@@ -15,7 +15,7 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 The admin customization menu allows you to change your geographical settings.
 
-![Sonoran CAD&apos;s geographical customization](../../.gitbook/assets/geo.PNG)
+![Sonoran CAD&apos;s geographical customization](../../.gitbook/assets/geo.png)
 
 | Location | Changes |
 | :--- | :--- |

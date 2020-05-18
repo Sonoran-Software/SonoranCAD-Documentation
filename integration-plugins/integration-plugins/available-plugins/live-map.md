@@ -81,3 +81,29 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
+## Troubleshooting
+
+You can manually check if your server's Live Map plugin is reachable by doing the following:
+
+In your browser, enter the following:
+
+```text
+serverIP:MapPort/blips.json
+
+Your Server's Public IP : Your Map Port (30121) /blips.json
+
+123.456.789:30121/blips.json
+```
+
+If you've properly port forwarded and have the plugin running, your browser should show a screen similar to the following:
+
+```text
+{}
+```
+
+If you are unable to see the blips.json file, check the following:
+
+1. Make sure you have the plugin running.
+2. Make sure there are no other services running on your map port.
+3. Otherwise, this is most likely a port forwarding issue. If you are unaware of how to port forward, please **contact your hosting provider.**
+

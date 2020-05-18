@@ -13,9 +13,9 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 In the admin customization menu, you can add or remove record flag options:
 
-![Sonoran CAD&apos;s record flag customization](../../.gitbook/assets/flag_custom.PNG)
+![Sonoran CAD&apos;s record flag customization](../../.gitbook/assets/flag_custom.png)
 
 These flag type options will then be displayed at the top of records:
 
-![Configured record flags are displayed at the top of the record editor](../../.gitbook/assets/flags_shown.PNG)
+![Configured record flags are displayed at the top of the record editor](../../.gitbook/assets/flags_shown.png)
 

@@ -26,5 +26,5 @@ Typically, your API ID will be your **Steam Hex** as shown below. This is how ou
   
 However, your community may choose to integrate their own identifier system with custom API integration scripts. If this is the case, you will need to ask an administrator from your community for what to enter.
 
-![Sonoran CAD&apos;s API ID Setting](../../../.gitbook/assets/api_id.PNG)
+![Sonoran CAD&apos;s API ID Setting](../../../.gitbook/assets/api_id.png)
 

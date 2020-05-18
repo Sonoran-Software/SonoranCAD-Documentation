@@ -13,20 +13,20 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain!
 
-![An example of SOSA&apos;s custom login page](../../.gitbook/assets/custom_login_example.PNG)
+![An example of SOSA&apos;s custom login page](../../.gitbook/assets/custom_login_example.png)
 
 #### 1. Download the HTML File
 
 In the Admin Customization menu, expand the "Custom Login Page"  
 Press the "Download" button to download our HTML file.
 
-![The customization panel displays your custom URL](../../.gitbook/assets/domain.PNG)
+![The customization panel displays your custom URL](../../.gitbook/assets/domain.png)
 
 #### 2. Edit the HTML File
 
 Copy, paste, and save the formatted URL from Sonoran CAD into the HTML file.
 
-![](../../.gitbook/assets/url.PNG)
+![](../../.gitbook/assets/url.png)
 
 #### 3. Host the HTML File
 

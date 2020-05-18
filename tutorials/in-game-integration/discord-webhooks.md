@@ -19,7 +19,7 @@ Currently, Discord webhooks can only be created using the Desktop version of Dis
 
 Select the “Edit Channel” button \(gear icon\) for the text channel in your Discord server where you would like to receive a specific WebHook from Sonoran CAD.
 
-![Discord&apos;s &apos;Edit Channel&apos; option](../../.gitbook/assets/discord_settings.PNG)
+![Discord&apos;s &apos;Edit Channel&apos; option](../../.gitbook/assets/discord_settings.png)
 
 In the channel editor, select the “Webhooks” tab and press “Create Webhook.”
 
@@ -27,7 +27,7 @@ In the channel editor, select the “Webhooks” tab and press “Create Webhook
 
 In the “Edit Webhook” modal, name the webhook and copy the webhook URL. Then, press “Save"
 
-![Discord&apos;s webhook editor](../../.gitbook/assets/discord_edit_webhook.PNG)
+![Discord&apos;s webhook editor](../../.gitbook/assets/discord_edit_webhook.png)
 
 ### 2. Configure the Sonoran CAD Webhook
 
@@ -35,7 +35,7 @@ In the Sonoran CAD Admin panel, select “Advanced &gt; Discord Integration”
 Paste your Webhook URL in the desired webhook configuration box.  
 Toggle the desired notification events for the specific webhook. Press the “Save Configuration” button.
 
-![Sonoran CAD&apos;s webhook configuration panel](../../.gitbook/assets/cad_webhooks.PNG)
+![Sonoran CAD&apos;s webhook configuration panel](../../.gitbook/assets/cad_webhooks.png)
 
 {% hint style="info" %}
 _Note:_ Some webhooks allow you to customize the notification settings even further. For example, you can specify to only receive a webhook when a police record is added, edited or removed.

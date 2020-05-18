@@ -35,7 +35,7 @@ In the admin panel, select "Advanced" &gt; "In-Game Integration"
 
 Expand the "Database Merge" section and toggle the Database Merge on.
 
-![Sonoran CAD&apos;s Database Merge toggle](../../../.gitbook/assets/toggle_merge.PNG)
+![Sonoran CAD&apos;s Database Merge toggle](../../../.gitbook/assets/toggle_merge.png)
 
 #### 2. Save the Configuration
 

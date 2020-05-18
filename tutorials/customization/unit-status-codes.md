@@ -13,9 +13,9 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 The admin customization info section allows you to customize your community's unit status codes:
 
-![Customize your unit status codes](../../.gitbook/assets/unit_options.PNG)
+![Customize your unit status codes](../../.gitbook/assets/unit_options.png)
 
 Once saved, your status options will be shown for emergency units:
 
-![Configured unit status options are displayed in the top unit action bar](../../.gitbook/assets/status_shown.PNG)
+![Configured unit status options are displayed in the top unit action bar](../../.gitbook/assets/status_shown.png)
 

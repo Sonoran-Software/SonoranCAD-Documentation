@@ -20,7 +20,7 @@ Expand the "Server Events and Integrated Live Map" section.
 Enter your server's public IP address and your new listener port. By default, this is port `3232`.  
 Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
 
-![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.PNG)
+![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
 
 #### 2. Framework Configuration
 

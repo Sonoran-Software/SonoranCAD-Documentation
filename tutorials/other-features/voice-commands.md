@@ -16,13 +16,13 @@ Voice recognition is provided by Google, and performance may vary based upon pro
 
 When navigating to a page with voice commands enabled, the browser will prompt you for microphone access.
 
-![Enable microphone access](../../.gitbook/assets/voice_allow.PNG)
+![Enable microphone access](../../.gitbook/assets/voice_allow.png)
 
 ### 2. Ensure Your Microphone is being Received
 
 Now that microphone access has been granted, a red circle will appear at the top right of the browser tab.
 
-![A red, blinking light appears in the browser tab](../../.gitbook/assets/voice_red.PNG)
+![A red, blinking light appears in the browser tab](../../.gitbook/assets/voice_red.png)
 
 ### 3. Test out the Voice Commands
 

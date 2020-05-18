@@ -15,13 +15,13 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 In the Admin Customization menu, expand the "Servers" section to add, edit, or remove additional servers in your CAD.
 
-![Additional servers are configured in the customization menu](../../.gitbook/assets/servers.PNG)
+![Additional servers are configured in the customization menu](../../.gitbook/assets/servers.png)
 
 ### Changing Servers in the CAD
 
 In the top right header, a drop-down menu allows users to swap back and forth between servers.
 
-![Users can select their server in the top header](../../.gitbook/assets/switch_server.PNG)
+![Users can select their server in the top header](../../.gitbook/assets/switch_server.png)
 
 
 

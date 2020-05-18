@@ -13,7 +13,7 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 
 The admin customization info section allows you to customize your community's image, name, timezone, and more!
 
-![Sonoran CAD&apos;s community customization menu](../../.gitbook/assets/com_info.PNG)
+![Sonoran CAD&apos;s community customization menu](../../.gitbook/assets/com_info.png)
 
 <table>
   <thead>
