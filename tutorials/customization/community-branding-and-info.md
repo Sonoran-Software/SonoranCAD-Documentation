@@ -65,4 +65,19 @@ The admin customization info section allows you to customize your community's im
         to this timezone. This helps avoid confusion, and improves report consistency.</td>
     </tr>
   </tbody>
-</table>
+</table>### Community ID
+
+Looking to change your community ID?  
+Navigate to Admin &gt; Advanced &gt; Change Community ID
+
+![Sonoran CAD&apos;s Community ID Change](../../.gitbook/assets/change_com_id.png)
+
+Here, you can enter in and request a new community ID.  
+Once submitted, you will be logged out. All active community members will also need to log out and back in to avoid any issues.
+
+{% hint style="danger" %}
+If your community has an active subscription, you MUST update your community ID by pressing "Modify" on the active subscription in the [payment center](../../pricing/faq/accessing-the-payment-center.md).
+
+Otherwise, your community will be automatically downgraded at the end of the subscription term.
+{% endhint %}
+
