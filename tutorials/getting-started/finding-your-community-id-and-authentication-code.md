@@ -8,6 +8,8 @@ description: This guide covers finding your community ID and ownership authentic
 
 Your community ID allows users to [manually join your community](inviting-users-to-your-cad.md).
 
+Looking to [change your community ID](../customization/community-branding-and-info.md)?
+
 #### 1. Your community ID is displayed in the side navigation bar while logged in:
 
 ![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/id_bar.png)
