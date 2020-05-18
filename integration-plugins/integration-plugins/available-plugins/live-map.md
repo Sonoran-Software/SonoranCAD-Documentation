@@ -75,7 +75,7 @@ These ports are accessed by Sonoran CAD to server position data and view the bli
 
 ### **5**. Set Your API ID
 
-Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to have each community member set their account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
 
 ### **6. Enjoy!**
 
