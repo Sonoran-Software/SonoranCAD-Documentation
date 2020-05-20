@@ -76,8 +76,10 @@ Here, you can enter in and request a new community ID.
 Once submitted, you will be logged out. All active community members will also need to log out and back in to avoid any issues.
 
 {% hint style="danger" %}
-If your community has an active subscription, you MUST update your community ID by pressing "Modify" on the active subscription in the [payment center](../../pricing/faq/accessing-the-payment-center.md).
+If your community has an active subscription, you will automatically be downgraded to the free version.
 
-Otherwise, your community will be automatically downgraded at the end of the subscription term.
+To transfer the subscription to the new community ID, update your community ID by pressing "Modify" on the active subscription in the [payment center](../../pricing/faq/accessing-the-payment-center.md).
 {% endhint %}
+
+
 
