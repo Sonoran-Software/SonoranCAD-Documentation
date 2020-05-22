@@ -60,5 +60,5 @@ cadSetUnitStatus(<apiId>, <status>, [player])
 
 ## Command Usage
 
-Script provides a status set command by default. Players will need the `command.setstatus` ACE permission \(or whatever you configure the command to be\).
+Script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) \(or whatever you configure the command to be\).
 

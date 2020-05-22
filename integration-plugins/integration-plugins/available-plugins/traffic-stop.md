@@ -39,7 +39,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 5. Enable User Permissions
 
-The default command ships with ACE permission checks enabled. **You will need to allow `command.ts` for who you want to use this command.**
+The default command ships with [ACE permission checks](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) enabled. **You will need to allow `command.ts` for who you want to use this command.**
 
 ### **6**. Set Your API ID
 
