@@ -6,6 +6,10 @@ description: >-
 
 # Why Choose Sonoran CAD?
 
+![](../.gitbook/assets/sonorancad-logo_full.png)
+
+![Sonoran CAD&apos;s Advanced Window and Tab Layout System](../.gitbook/assets/window_tab.png)
+
 ### Downloadable Apps
 
 In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US), or for [Windows Desktop](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe).  
@@ -28,6 +32,8 @@ Sonoran CAD's integration framework includes over a dozen drag-and-drop plugins 
 * And much more!
 
 In addition to our [plugin system](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
+
+View one of our plugin showcase videos [here](https://www.youtube.com/watch?v=pfE3HdCF20o)!
 
 ### Live Map
 
