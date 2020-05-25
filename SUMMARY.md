@@ -5,7 +5,7 @@
 
 ## Why Choose Sonoran CAD?
 
-* [Why Choose Sonoran CAD?](why-choose-sonoran-cad/why-choose-sonoran-cad.md)
+* [Why Choose Sonoran CAD?](why-choose-sonoran-cad/why.md)
 
 ## Tutorials
 
