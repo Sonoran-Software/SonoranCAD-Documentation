@@ -32,20 +32,12 @@ Extract the plugins to your `sonorancad\plugins` folder.
 
 ### 3. Configure and Enable the Config
 
-1. Open the `CHANGEMEconfig_postals.lua` file \(name depends on the plugin\) and configure as desired. The files are usually commented, and more details are on its [plugin page](available-plugins/postals.md). 
-2. Enable the plugin by uncommenting the last line in the plugin config.
+1. **Open** the `CHANGEMEconfig_postals.lua` file \(name depends on the plugin\) and configure as desired. The files are usually commented, and more details are on its [plugin page](available-plugins/postals.md). 
+2. **Enable** the plugin by changing the `enabled` variable from `false` to `true` in the plugin config.
 
-{% hint style="warning" %}
-**Be sure to un-comment the last line of the config file to enable it!**  
-To un-comment the last line, remove the -- characters.  
-  
-**Change:**  
-`--Config.RegisterPluginConfig(config.pluginName, config)`  
-**To:**  
-`Config.RegisterPluginConfig(config.pluginName, config)`
-{% endhint %}
+![Plugin Configuration Enabled Variable](../../.gitbook/assets/screen-shot-2020-05-25-at-12.51.49-am.png)
 
-2. Rename and remove the `CHANGEME` from the file to`config_postals.lua` \(depending on name of plugin\).
+2. **Rename** and remove the `CHANGEME` from the file to`config_postals.lua` \(depending on name of plugin\).
 
 ![This is how your folder should look now.](../../.gitbook/assets/plugin_3.png)
 
