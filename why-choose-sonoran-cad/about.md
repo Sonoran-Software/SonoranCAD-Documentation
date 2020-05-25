@@ -4,7 +4,7 @@ description: >-
   available to gaming communities. Check out some of our latest features below!
 ---
 
-# Why Choose Sonoran CAD?
+# Why Choose Sonoran CAD
 
 ![](../.gitbook/assets/sonorancad-logo_full.png)
 
