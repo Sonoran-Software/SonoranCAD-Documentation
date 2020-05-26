@@ -14,7 +14,8 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% endhint %}
 
 {% hint style="danger" %}
-The live map will not function with **Zap Hosting** or other hosts that do not allow port forwarding.
+The live map will require you to open two additional ports on your server.  
+**You will need to contact your hosting provider if you are unsure how to do this.**
 {% endhint %}
 
 ## Installation Video
