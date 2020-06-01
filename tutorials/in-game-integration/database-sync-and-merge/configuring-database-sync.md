@@ -93,7 +93,9 @@ This section specifies the SQL connection string information.
       <td style="text-align:left">This is the password for the SQL account.</td>
     </tr>
   </tbody>
-</table>#### 3. Test the Connection
+</table>
+
+#### 3. Test the Connection
 
 Once the required SQL connection fields have been specified, select the “Test Connection” button.  
 This will query your database for the version.  

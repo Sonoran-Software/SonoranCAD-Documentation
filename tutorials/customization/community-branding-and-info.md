@@ -65,7 +65,9 @@ The admin customization info section allows you to customize your community's im
         to this timezone. This helps avoid confusion, and improves report consistency.</td>
     </tr>
   </tbody>
-</table>### Community ID
+</table>
+
+### Community ID
 
 Looking to change your community ID?  
 Navigate to Admin &gt; Advanced &gt; Change Community ID
