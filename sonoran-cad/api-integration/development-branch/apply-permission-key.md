@@ -35,7 +35,7 @@ APPLY\_PERMISSION\_KEY
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
-Array of user account ban objects
+Array of user account permission key objects
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
