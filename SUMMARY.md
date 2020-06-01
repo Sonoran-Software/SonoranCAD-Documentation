@@ -53,6 +53,7 @@
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
+    * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
     * [Live Map](integration-plugins/integration-plugins/available-plugins/live-map.md)
     * [Locations](integration-plugins/integration-plugins/available-plugins/locations.md)
     * [Lookups](integration-plugins/integration-plugins/available-plugins/lookups.md)
