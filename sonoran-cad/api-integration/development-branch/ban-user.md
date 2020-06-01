@@ -1,5 +1,5 @@
 ---
-description: This endpoint allows you to ban or unban a user from your community.
+description: This endpoint allows you to ban a user account in your community.
 ---
 
 # Ban User
@@ -14,7 +14,7 @@ Ban User
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to ban or unban a user from your community.
+This endpoint allows you to ban a user account in your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -29,11 +29,11 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-APPLY\_PERMISSION\_KEY
+BAN\_USER
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
-Array of user account permission key objects
+Array of user account ban objects
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -45,7 +45,7 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-Permission key {{ KEY }} applied!
+User Ban: {{ ACCOUNT UUID }} Status: {{ isBan }}
 ```
 {% endapi-method-response-example %}
 
@@ -79,16 +79,14 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "APPLY_PERMISSION_KEY",
+    "type": "BAN_USER",
     "data": [
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
-            "permissionKey": "Key123" // Name of Permission Key
+            "isBan": true // Ban (true) or un-ban (false)
         },
     ]
 }
 ```
-
-Learn more about [configuring permission keys](../../../tutorials/getting-started/permissions.md).
 
