@@ -8,6 +8,10 @@ description: Implements name and plate lookups via the CAD.
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="info" %}
+This plugin is currently only used as a dependency for other plugins, and does not have any in-game commands for general player usage.
+{% endhint %}
+
 This plugin Implements name and plate lookups via the CAD.
 
 ## Installation
