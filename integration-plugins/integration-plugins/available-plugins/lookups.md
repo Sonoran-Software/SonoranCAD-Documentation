@@ -14,7 +14,13 @@ This plugin is currently only used as a dependency for other plugins, and does n
 
 This plugin Implements name and plate lookups via the CAD.
 
-## Installation
+## Installation Video
+
+Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
+
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+
+## Installation Guide
 
 ### 1. Download and Install the Framework
 

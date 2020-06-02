@@ -10,7 +10,13 @@ This plugin utilizes API endpoints that require the **Plus** version of SonoranC
 
 This plugin is for sending plate reads to other plugins.
 
-## Installation
+## Installation Video
+
+Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
+
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+
+## Installation Guide
 
 ### 1. Download and Install the Framework
 

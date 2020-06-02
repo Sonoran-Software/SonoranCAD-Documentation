@@ -8,7 +8,13 @@ description: Handles sending emergency calls to the CAD.
 This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
-## Installation
+## Installation Video
+
+Click to view our call [commands install video](https://youtu.be/ZeCzvU3ZfD0).
+
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+
+## Installation Guide
 
 ### 1. Download and Install the Framework
 

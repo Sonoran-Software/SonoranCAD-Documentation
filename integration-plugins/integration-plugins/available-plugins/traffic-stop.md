@@ -10,6 +10,12 @@ description: >-
 This plugin utilizes API endpoints that require the **plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+## Installation Video
+
+Click to view our [traffic stop installation guide](https://youtu.be/QmI7Wst2ytY).
+
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+
 ## Installation
 
 ### 1. Download and Install the Framework
