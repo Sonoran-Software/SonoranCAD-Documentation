@@ -30,6 +30,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 | Command | Description |
 | :--- | :--- |
+| Panic | Toggles your unit panic status in the CAD |
 | 911 | Sends specific 911 call to the CAD |
 | 511 | Sends specific 511 call to the CAD \(Civil\) |
 | 311 | Sends non-emergency call to the CAD \(Civil\) |
