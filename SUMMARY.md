@@ -78,7 +78,7 @@
     * [Unit Call Clear](sonoran-cad/api-integration/push-events/unit-call-clear.md)
   * [API Endpoints](sonoran-cad/api-integration/api-endpoints/README.md)
     * [Emergency](sonoran-cad/api-integration/api-endpoints/emergency/README.md)
-      * [Attach Units](sonoran-cad/api-integration/api-endpoints/emergency/attach-units.md)
+      * [Attach Unit](sonoran-cad/api-integration/api-endpoints/emergency/attach-units.md)
       * [Get Calls](sonoran-cad/api-integration/api-endpoints/emergency/get-calls.md)
       * [Get Active Units](sonoran-cad/api-integration/api-endpoints/emergency/get-active-units.md)
       * [Unit Status](sonoran-cad/api-integration/api-endpoints/emergency/unit-status.md)

@@ -2,7 +2,7 @@
 description: This endpoint allows you to attach new units to an existing dispatch call.
 ---
 
-# Attach Units
+# Attach Unit
 
 {% hint style="warning" %}
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
@@ -10,7 +10,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
 {% api-method-summary %}
-Attach Units
+Attach Unit
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -29,7 +29,7 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-ATTACH\_UNITS
+ATTACH\_UNIT
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
@@ -69,7 +69,7 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "ATTACH_UNITS",
+    "type": "ATTACH_UNIT",
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
