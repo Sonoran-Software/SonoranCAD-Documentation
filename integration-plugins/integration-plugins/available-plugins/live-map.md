@@ -90,6 +90,8 @@ In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" bu
 
 ## Troubleshooting
 
+### Check if ports are open/server is reachable
+
 You can manually check if your server's Live Map plugin is reachable by doing the following:
 
 In your browser, enter the following:
