@@ -8,6 +8,65 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 2.1.0 6/12/2020
+
+{% tabs %}
+{% tab title="NEW" %}
+1. Admin - Custom Records
+   * Custom record types can be created and added for emergency services to fill out.
+2. Admin - Custom Incident Reports
+   * Custom incident reports can be generated and linked to other record types.
+3. Fire - Custom Reports, Records, and Lookup
+   * Users on the fire page now have access to custom medical reports, records, and lookups.
+4. Medical - Custom Reports, Records, and Lookup
+   * Users on the EMS page now have access to custom medical reports, records, and lookups.
+5. 911 Calls - Clear All
+   * Dispatchers with the admin permission can now clear all active 911/emergency calls. This is particularly useful for servers with automatic 911 calls via API.
+6. Live Map - External Window
+   * The live map can now be opened into a new external window for better viewing.
+7. Webhooks - Fire and EMS
+   * Fire and EMS record and report actions are now supported in the Discord webhook config panel.
+8. API Endpoint - Apply Permission Key
+   * This endpoint allows you to apply permission keys to a user account in your community.
+9. API Endpoint - Ban User
+   * This endpoint allows you to ban or unban a user in your community.
+10. Dispatch Call - API Metadata
+    * Dispatch call objects now have a hidden metadata dictionary field for API call information.
+11. Disconnect - Status Page Hyperlink
+    * Added a "Server Status" button to the disconnected notification bar.
+12. Map Deploy - Server Name Characters
+    * Added additional checks to the user live map deploy process to check for non alphanumeric characters for the map's subdomain.
+13. Social Media Links
+    * Social media links to our Twitter, Instagram, YouTube, and Discord have been added to the side menu.
+{% endtab %}
+
+{% tab title="Changed" %}
+1. AWS SES
+   * We've migrated all automated email services over to AWS SES to help maintain compliance and efficiency for all user verification emails.
+2. Payment Center - UI
+   * Improved the UI, fixed common issues, modified error messages, and simplified the payment center checkout form.
+3. Discord Webhook Config - UI
+   * Improved the Discord webhook config UI and mobile experience.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. User Ban
+   * Fixed an issue causing Discord webhooks and user ban information to be incorrect.
+2. Development URL Issues
+   * Fixed an issue causing users with a specific username in a validation URL to connect to the wrong backend service.
+3. Unit Logoff Events
+   * Fixed an issue causing unit logoff events to not properly fire and be sent to community listeners.
+4. Join Community Logo
+   * Fixed an issue causing communities with a thin narrow logo from having text cutoff in the join community preview.
+5. Attach Unit\(s\) - API
+   * Fixed an issue with the attach unit\(s\) API call where an SQL connection was not properly opened. Also fixed a small API documentation issue for this particular call.
+6. Unit Status - API Push Event
+   * Fixed an issue with the unit status API call sending community listeners a push event with the changed unit identifier ID integers instead of the proper unit JSON data.
+7. Admin Panel - Loading without Permissions
+   * Fixed an issue causing the admin panel to continually load if the user does not have permissions to view user accounts.
+{% endtab %}
+{% endtabs %}
+
 ### 2.0.0 \(Full Release\) 5/16/2020
 
 {% tabs %}
