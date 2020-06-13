@@ -88,6 +88,8 @@ Don't forget to have each community member set their account [API ID](../../../s
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD.**
+
 ## Troubleshooting
 
 ### Check if ports are open/server is reachable
