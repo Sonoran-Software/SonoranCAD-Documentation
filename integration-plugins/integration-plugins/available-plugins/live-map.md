@@ -24,7 +24,7 @@ Click to view our [live map installation video](https://youtu.be/dhUCfvdLZ_U).
 
 **Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD.**
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
 ## Installation Guide
 
@@ -90,7 +90,7 @@ Don't forget to have each community member set their account [API ID](../../../s
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD.**
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
 ## Troubleshooting
 
