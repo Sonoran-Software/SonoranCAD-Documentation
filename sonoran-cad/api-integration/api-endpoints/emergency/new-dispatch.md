@@ -85,6 +85,9 @@ INVALID API KEY
             "code": "10-39 - Traffic Stop",
             "description": "Traffic Stop - Blue Sedan - XP123BS",
             "notes": "",
+            "metaData": {
+                "someKey": "someValue" // OPTIONAL: metaData for API custom storage
+            },
             "units": ["STEAM:1234"] // Array of API IDs
                                 // Typically, this is their STEAM Hex
         },
