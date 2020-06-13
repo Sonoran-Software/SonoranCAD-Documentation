@@ -4,6 +4,21 @@ description: Learn how to create custom record and report types for your communi
 
 # Creating Custom Record and Report Types
 
+{% hint style="danger" %}
+Custom record and reports are limited based upon your subscription version.  
+  
+All communities may have up to 5 custom records or reports on the free version. This includes enough for the following  
+1. Custom Police Report  
+2. Custom Medical Report  
+3. Custom Medical Record  
+4. Custom Fire Report  
+5. Custom Fire Record
+
+_Police records \(BOLO, arrest, vehicle citation, etc.\) are already included._  
+  
+For more information, please view our [pricing page](../../pricing/faq/).
+{% endhint %}
+
 ## What are custom records and reports?
 
 Sonoran CAD allows your community to create custom records and incident reports for police, fire, and EMS services. This tutorial will cover the basics of creating a new custom report or record and general usage of the system.
