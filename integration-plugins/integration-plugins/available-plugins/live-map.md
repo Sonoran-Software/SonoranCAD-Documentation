@@ -24,6 +24,8 @@ Click to view our [live map installation video](https://youtu.be/dhUCfvdLZ_U).
 
 **Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD.**
+
 ## Installation Guide
 
 ### 1. Download and Install the Framework
