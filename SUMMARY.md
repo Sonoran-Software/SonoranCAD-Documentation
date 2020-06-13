@@ -18,6 +18,7 @@
   * [Finding your Community ID and Authentication Code](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 * [Customization](tutorials/customization/README.md)
   * [Community Branding and Settings](tutorials/customization/community-branding-and-info.md)
+  * [Creating Custom Record and Report Types](tutorials/customization/creating-custom-record-and-report-types.md)
   * [Geographical Settings](tutorials/customization/geographical-settings.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
   * [Custom Login Page](tutorials/customization/custom-login-page.md)
