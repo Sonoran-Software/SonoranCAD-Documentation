@@ -22,13 +22,13 @@ Tired of having to manually register civilians? With Sonoran CAD's [Database Syn
 
 ### In-Game Integration Plugins
 
-Sonoran CAD's integration framework includes over a dozen drag-and-drop plugins for your game server!
+Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugins** for your game server!
 
 * [Automated Plate Reader Lookup \(Results Sent Back to CAD\)](../integration-plugins/integration-plugins/available-plugins/wraithv2.md)
 * [Automated Traffic Stop Dispatching](../integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
 * [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
-* [/911, /511, and /311](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
-* [Custom Live Map](../integration-plugins/integration-plugins/available-plugins/live-map.md)
+* [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
+* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map.md)
 * And much more!
 
 In addition to our [plugin system](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
@@ -41,13 +41,17 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 ![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
 
+### Custom Records and Reports
+
+Create your very own [custom report and record formats](../tutorials/customization/creating-custom-record-and-report-types.md) for your community to use!
+
 ### Custom Branding
 
-Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on your own domain, and more!
+Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
 
 ### Multitasking Window and Tab System
 
-Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more!
+Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
 
 ### Self-Dispatch
 
