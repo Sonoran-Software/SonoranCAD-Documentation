@@ -101,9 +101,9 @@
       * [Get Characters](sonoran-cad/api-integration/api-endpoints/civilian/get-characters.md)
     * [General](sonoran-cad/api-integration/api-endpoints/general/README.md)
       * [Check API ID](sonoran-cad/api-integration/api-endpoints/general/check-api-id.md)
-  * [Development Branch](sonoran-cad/api-integration/development-branch/README.md)
-    * [Ban User](sonoran-cad/api-integration/development-branch/ban-user.md)
-    * [Apply Permission Key](sonoran-cad/api-integration/development-branch/apply-permission-key.md)
+      * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
+      * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
+  * [Development Branch](sonoran-cad/api-integration/development-branch.md)
 
 ## Pricing
 

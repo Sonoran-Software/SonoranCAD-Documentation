@@ -29,6 +29,6 @@ https://cadapi.dev.sonoransoftware.com
 The latest CAD development version can be accessed at the following address:
 
 ```text
-https://cad.dev.sonoransoftware.com/#/
+https://cad.dev.sonoransoftware.com
 ```
 

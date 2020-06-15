@@ -1,20 +1,22 @@
 ---
-description: This endpoint allows you to ban a user account in your community.
+description: >-
+  This endpoint allows you to apply a permission key to a user from your
+  community.
 ---
 
-# Ban User
+# Apply Permission Key
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://cadapi.dev.sonoransoftware.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
-Ban User
+Apply Permission Key
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to ban a user account in your community.
+This endpoint allows you to apply a permission key to a user in your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -29,11 +31,11 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-BAN\_USER
+APPLY\_PERMISSION\_KEY
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
-Array of user account ban objects
+Array of user account permission key objects
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -45,7 +47,7 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-User Ban: {{ ACCOUNT UUID }} Status: {{ isBan }}
+Permission key {{ KEY }} applied!
 ```
 {% endapi-method-response-example %}
 
@@ -79,14 +81,16 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "BAN_USER",
+    "type": "APPLY_PERMISSION_KEY",
     "data": [
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
-            "isBan": true // Ban (true) or un-ban (false)
+            "permissionKey": "Key123" // Name of Permission Key
         },
     ]
 }
 ```
+
+Learn more about [configuring permission keys](../../../../tutorials/getting-started/permissions.md).
 
