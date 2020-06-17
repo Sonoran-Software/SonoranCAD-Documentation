@@ -29,8 +29,18 @@ If you haven't already, be sure to install and configure the [plugin framework](
 In the admin panel, navigate to: Advanced &gt; In-Game Integration  
 Expand the "Server Events and Integrated Live Map" section.
 
-Enter your server's public IP address and your new listener port. By default, this is port `3232`.  
-Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
+Enter your server's public IP address and your new listener port. By default, this is port `3232`.
+
+If you have multiple servers you must have a UNIQUE listener port. Changing the default port can be set via the `set` command in your server config, such as `set SonoranListenPort 30000` if you wanted to change the port to 30000.
+
+#### A. Convars
+
+| Name | Type | Default Value | Description |
+| :--- | :--- | ---: | :--- |
+| SonoranListenPort | int | 3232 | Sets the port the push events listener should listen on |
+
+  
+Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md) in the CAD.
 
 ![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
 
