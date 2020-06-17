@@ -39,8 +39,9 @@ If you have multiple servers you must have a UNIQUE listener port. Changing the 
 | :--- | :--- | ---: | :--- |
 | SonoranListenPort | int | 3232 | Sets the port the push events listener should listen on |
 
-  
-Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md) in the CAD.
+####  B. Admin Panel Configuration
+
+Set your Listener Port in the admin panel of Sonoran CAD to the default port or the port you changed it to. Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
 
 ![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
 
