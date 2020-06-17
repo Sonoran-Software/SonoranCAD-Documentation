@@ -23,7 +23,9 @@ All Sonoran CAD plugins follow a standard installation process. Learn more about
 
 View our vast array of our integration plugins, ready to drag-and-drop!
 
-{% page-ref page="./" %}
+{% page-ref page="available-plugins/" %}
+
+
 
 ### Developer Documentation
 
