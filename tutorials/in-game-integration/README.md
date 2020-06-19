@@ -6,9 +6,11 @@ description: >-
 
 # Integration Features
 
-### In-Game Integration Script
+### In-Game Integration Plugins
 
-Easily install our drag and drop integration scripts for your gamemode. Enable live unit location updates, /panic, /911, /311, and more!
+View and easily install over a dozen drag and drop integration plugins including an integrated live map, automatic traffic stop, live unit locations, plate reader lookup, and more!
+
+{% page-ref page="../../integration-plugins/integration-plugins/available-plugins/" %}
 
 ### Database Sync and Merge
 
