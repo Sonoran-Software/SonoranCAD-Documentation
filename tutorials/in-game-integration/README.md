@@ -8,7 +8,7 @@ description: >-
 
 ### In-Game Integration Plugins
 
-View and easily install over a dozen drag and drop integration plugins including an integrated live map, automatic traffic stop, live unit locations, plate reader lookup, and more!
+View and easily install over a dozen drag-and-drop integration plugins including an integrated live map, automatic traffic stop, live unit locations, plate reader lookup, and more!
 
 {% page-ref page="../../integration-plugins/integration-plugins/available-plugins/" %}
 
