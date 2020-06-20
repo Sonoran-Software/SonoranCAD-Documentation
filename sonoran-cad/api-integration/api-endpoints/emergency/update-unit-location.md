@@ -7,7 +7,7 @@ description: >-
 # Update Unit Location
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+iThis API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}

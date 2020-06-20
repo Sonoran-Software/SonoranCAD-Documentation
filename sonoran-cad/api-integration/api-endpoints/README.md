@@ -11,27 +11,23 @@ API endpoints are not enabled with the free version of Sonoran CAD.
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
-### Available API Endpoints
+## Available API Endpoints
 
-#### Unit Location
+### Emergency Endpoints
 
-Update unit locations in the CAD in real time, all right from in-game.
+View all emergency endpoints including unit actions, emergency calls, dispatching, and more!
 
-{% page-ref page="emergency/update-unit-location.md" %}
+{% page-ref page="emergency/" %}
 
-#### Unit Panic
+### Civilian Endpoints
 
-Quickly toggle a unit's panic status from in-game.
+View all civilian endpoints including creating new characters, modifying licenses, vehicle registrations, and more!
 
-{% page-ref page="emergency/unit-panic.md" %}
+{% page-ref page="civilian/" %}
 
-#### 911 Call
+### General Endpoints
 
-Send a 911 or emergency call from in-game, right to your dispatchers in the CAD.
+View all general endpoints for user account actions, administrative actions, and more!
 
-{% page-ref page="emergency/911-call.md" %}
-
-### Lookup Name or Plate
-
-{% page-ref page="emergency/lookup-name-or-plate.md" %}
+{% page-ref page="general/" %}
 
