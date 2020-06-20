@@ -48,3 +48,5 @@ In order to have locked plate results sent back to your CAD, don't forget to set
 For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.  
 **Results are sent directly to your CAD when a license plate is locked.**
 
+![Wraith ARS 2X Controls](../../../.gitbook/assets/image%20%2826%29.png)
+
