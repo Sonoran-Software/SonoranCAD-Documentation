@@ -45,13 +45,13 @@ If using "custom" for `getPostalMethod`, you must also define in the `getPostalC
 
 ### Using Nearest-Postal
 
-1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the bottom of `cl.lua`:
+1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file.
 
 ```lua
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
-2. After doing so, set the `getPostalMethod` configuration option to `"nearestpostal"`.
+2. After doing so, set the `getPostalMethod` configuration option to `"nearestpostal"` in the plugin config file.
 
 ### Custom Postal Scripts
 
