@@ -39,7 +39,7 @@ If you do not see the brackets, the issue may be caused by one of the following:
 
 1. The live map resource is not running on your server.
 2. The live map port `30121` \(by default\) is used by another service.
-3. Your live map port is now open.
+3. Your live map port is not open.
    * If you are unsure how to open the live map port, you will need to contact your hosting provider. 
 
 ### 2C. Ensure the Listener Port is Open
