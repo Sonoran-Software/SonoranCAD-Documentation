@@ -17,6 +17,7 @@
   * [View Your Limits](tutorials/getting-started/view-your-limits.md)
   * [Finding your Community ID and Authentication Code](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 * [Customization](tutorials/customization/README.md)
+  * [Quick Links](tutorials/customization/quick-links.md)
   * [Community Branding and Settings](tutorials/customization/community-branding-and-info.md)
   * [Creating Custom Record and Report Types](tutorials/customization/creating-custom-record-and-report-types.md)
   * [Geographical Settings](tutorials/customization/geographical-settings.md)

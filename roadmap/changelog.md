@@ -8,10 +8,63 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
-### 2.1.0 6/12/2020
+### 2.2.0 - 6/19/2020
 
 {% tabs %}
-{% tab title="NEW" %}
+{% tab title="New" %}
+1. Quick Links
+   * Communities can now add "quick links" with custom colors, labels, and URLs in all emergency pages.
+2. Custom Records/Reports - PDF
+   * Added the PDF print option to all custom records and reports.
+3. Custom Records - Multiple Civs
+   * Custom records and reports can now have up to three independent and searchable civilian characters.
+4. Custom Records - Multiple Vehicles
+   * Custom records and reports can now have up to three independent and searchable civilian vehicles.
+5. Custom Records - Disable Originals
+   * Communities can now disable the default police records and replace them with their own custom versions.
+6. Custom Records - Name Pre-made Sections
+   * You can now set a custom section header name for all pre-made sections in custom records/reports.
+7. Record Webhooks - All Caps
+   * All wehbook text values are now capitalized by default to reflect the values in the UI.
+8. Lookup - Custom Records Tab
+   * When running a lookup with only custom record results, the lookup preview will automatically select the first record tab category.
+9. Charges - Preview
+   * Charges in custom records and reports are now previewed in the lookup table.
+10. Reset Password - Email Expiration
+    * Reset password emails now properly expire and can be re-sent after 15 minutes.
+11. Transfer CAD - Email Expiration
+    * CAD transfer emails now properly expire and can be re-sent after 15 minutes.
+12. Remove CAD - Email Expiration
+    * Remove CAD emails now properly expire and can be re-sent after 15 minutes.
+{% endtab %}
+
+{% tab title="Changed" %}
+1. 911 Caller - Dispatch Origin - Geographical Settings
+   * Changed the "911 Caller" option to a more generic "Caller" value for communities not in the US.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. Custom Records - Charges
+   * Fixed an issue causing the charges section in custom records to not properly appear.
+2. Custom Record Updated - Agency Info
+   * Fixed an issue causing the agency header to be updated when editing an existing custom record.
+3. Civilian Search - Page Type
+   * Fixed an issue where the civilian page records lookup would cause an unknown type server error.
+4. Community Transfer - Permissions
+   * Fixed an issue where transferring your community to a new account would not ensure the new owner has the new fire and medical permissions.
+5. New Community - Permissions
+   * Fixed an issue where registering a new community would not ensure the new owner has the new fire and medical permissions.
+6. Fire Records - Webhook
+   * Fixed an issue causing new and modified fire records to use the police webhook.
+7. Medical Records - Webhook
+   * Fixed an issue causing new and modified medical records to use the police webhook.
+{% endtab %}
+{% endtabs %}
+
+### 2.1.0 - 6/12/2020
+
+{% tabs %}
+{% tab title="New" %}
 1. Admin - Custom Records
    * Custom record types can be created and added for emergency services to fill out.
 2. Admin - Custom Incident Reports
