@@ -22,7 +22,7 @@ Learn more about [configuring multiple servers](../../../tutorials/customization
 
 ![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
 
-#### 2. Framework Configuration
+#### 2. Framework Configuration and Installation
 
 Ensure you have **port forwarded** your new listener port. By default, this is port `3232`.  
 You will need to download and install the [`pushevents`](../../../integration-plugins/integration-plugins/available-plugins/push-events.md) plugin installed in order to receive the events.

@@ -50,7 +50,7 @@ Navigate to mapIp:listenerPort in your web browser, you should see the following
 
 If the page is not displayed, the issue may be caused by one of the following:
 
-1.  You do not have the live map resource running.
+1.  You do not have the [push events](../push-events.md) plugin running.
 2. The port numbers are not set correctly.
 3. You do not have the ports open.
    * If you are unsure how to open the live map port, you will need to contact your hosting provider.

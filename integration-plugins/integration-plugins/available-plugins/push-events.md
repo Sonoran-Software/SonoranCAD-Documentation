@@ -31,15 +31,20 @@ Expand the "Server Events and Integrated Live Map" section.
 
 Enter your server's public IP address and your new listener port. By default, this is port `3232`.
 
-If you have multiple servers you must have a UNIQUE listener port. Changing the default port can be set via the `set` command in your server config, such as `set SonoranListenPort 30000` if you wanted to change the port to 30000.
+#### 4A Using a Different Port
 
-#### A. Convars
+Changing the default port can be set via the `set` command in your server config \(`server.cfg` file\).
 
-| Name | Type | Default Value | Description |
+Ex: You want to set the server event listener port to 9000:  
+Add `set SonoranListenPort 9000` to your `server.cfg` file.
+
+**Available Convars:**
+
+| Name | Type | Default  | Description |
 | :--- | :--- | ---: | :--- |
 | SonoranListenPort | int | 3232 | Sets the port the push events listener should listen on |
 
-####  B. Admin Panel Configuration
+####  4B. Admin Panel Configuration
 
 Set your Listener Port in the admin panel of Sonoran CAD to the default port or the port you changed it to. Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
 
