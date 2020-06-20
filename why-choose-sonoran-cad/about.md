@@ -28,7 +28,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated Traffic Stop Dispatching](../integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
 * [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
 * [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
-* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map.md)
+* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
 * And much more!
 
 In addition to our [plugin system](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
@@ -37,7 +37,7 @@ View one of our plugin showcase videos [here](https://www.youtube.com/watch?v=pf
 
 ### Live Map
 
-Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) even shows your unit identifier information in real time!
+Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time!
 
 ![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
 
