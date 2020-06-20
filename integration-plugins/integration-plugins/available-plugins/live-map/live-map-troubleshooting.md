@@ -6,14 +6,14 @@ description: This guide covers the basic troubleshooting of the live map plugin.
 
 ## 1. Search the Resource Manifest
 
-Navigate to mapIp:30120/info.json in your web browser:
+Navigate to `mapIp:30120/info.json` in your web browser:
 
 ![View your resource manifest for active plugins](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.22.58-pm.png)
 
 You can search \(control/command + f\) for the keyword "map".
 
 1. Ensure the "sonoran\_livemap" resource listed and running.
-2. Ensure you do **NOT** have "live\_map" listed. This is the default/original live map resource from Havoc and will conflict.
+2. Ensure you do **NOT** have "live\_map" listed. This is the default/original live map resource from Havoc and will cause conflict issues.
 3. If "live\_map" is listed and running, stop it, remove it, and restart the server.
 
 ## 2. Check Ports
@@ -30,8 +30,8 @@ Ensure the IP and ports are listed correctly without spaces, common mistypes, po
 
 ### 2B. Ensure the Map Port is Open
 
-Navigate to mapIp:mapPort/blips.json in a web browser:  
-You should see brackets with our without blip data.
+Navigate to `mapIp:mapPort/blips.json` in a web browser:  
+You should see brackets with out without blip data.
 
 ![View your blips.json file](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.10.28-pm.png)
 
@@ -44,7 +44,7 @@ If you do not see the brackets, the issue may be caused by one of the following:
 
 ### 2C. Ensure the Listener Port is Open
 
-Navigate to mapIp:listenerPort in your web browser, you should see the following page.
+Navigate to `mapIp:listenerPort` in your web browser, you should see the following page.
 
 ![Access your event listener](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.16.12-pm%20%281%29.png)
 
