@@ -45,6 +45,10 @@ Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's 
 
 ![Debug Mode - Unit Location API Call](../../../.gitbook/assets/debug_console.png)
 
+### 2. Check the Community ID and API Key
+
+Your community ID and API key is also listed in the debug API call information. Be sure that the [community ID and API key](../../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) are correct.
+
 ## Live Map and Push Events
 
 For live map and push event troubleshooting, see our dedicated guide here:
