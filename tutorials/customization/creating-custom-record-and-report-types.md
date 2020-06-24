@@ -23,6 +23,10 @@ For more information, please view our [pricing page](../../pricing/faq/).
 
 Sonoran CAD allows your community to create custom records and incident reports for police, fire, and EMS services. This tutorial will cover the basics of creating a new custom report or record and general usage of the system.
 
+## Video Tutorial
+
+View our [video tutorial](https://youtu.be/UclCEnm5FHM) on creating custom reports and records.
+
 ## Creating a new Report or Record:
 
 ### 1. Navigate to the Record Editor
