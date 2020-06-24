@@ -8,6 +8,47 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 2.3.0 - 6/23/2020
+
+{% tabs %}
+{% tab title="New" %}
+1. Custom Records - DMV
+   * Custom DMV records can now be created. This could include things like custom licenses, firearms registrations, etc.
+2. Custom Records - Image
+   * Custom records and reports now have an image type field.
+3. Custom Records - Date
+   * Custom records and reports now have a date type field.
+4. Custom Records - Time
+   * Custom records and reports now have a time type field.
+5. Custom Records - Checkboxes
+   * Custom records and reports now have a checkbox type field.
+6. Custom Records - Mask
+   * Custom record and report fields can now have a "mask" specified to force users to follow a specific alphanumeric format, include symbols, and more.
+7. Unit Status - Accent Color
+   * The red accent color on the top header and side drawer now changes according to the unit status.
+8. Browser Check - Connection
+   * The UI now checks if your browser/device supports local and session storage to prevent people from using incompatible browsers.
+9. Record and Report Dropdown - No Type Check
+   * If there are no available record or report types for the page, the dropdown menu will contain an option explaining where an admin can go to add custom records and reports. This helps prevent confusion and support tickets.
+{% endtab %}
+
+{% tab title="Changed" %}
+1. Disconnect - Toolbar
+   * The disconnection banner now takes place in place of the top toolbar.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. Quick Links - Remove
+   * Fixed an issue where quick links could not be removed from the UI.
+2. Lookup Name - Middle Character
+   * Fixed an issue where lookups with a middle initial would fail due to an SQL query syntax error.
+3. Update Community Data - Websocket Limit
+   * Fixed an issue where updating community data could hit a websocket data transfer limit.
+4. Lookup - Multiple Value Filter
+   * Fixed an issue with SQL syntax not properly filtering record searches with a first and last name.
+{% endtab %}
+{% endtabs %}
+
 ### 2.2.0 - 6/19/2020
 
 {% tabs %}
