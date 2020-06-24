@@ -90,6 +90,18 @@ In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" bu
 
 **The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
+## When are Player Blips Displayed?
+
+Players will only show on the map when the following are TRUE:
+
+1. The player has their [API ID set in the CAD](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+2. The player actively is logged into the police, fire, or EMS page.
+3. The player has the [correct server selected in the CAD](../../../../tutorials/customization/configuring-multiple-servers.md), on the top right of the page.
+4. The player is actively logged into the server.
+5. The player has Steam, Discord, or other identifier type program running:
+   * If the server API IDs are based off of the Steam HEX, **the player must have Steam running**.
+   * If the server API IDs are based off of Discord IDs, **the player must have Discord running**.
+
 ## Using Different Ports
 
 If you are not using the default ports `30121` \(map port\) and `3232` \(listener/push events port\) you will need to change these.
