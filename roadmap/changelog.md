@@ -8,6 +8,16 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+
+
+### 2.3.2 - 6/24/2020
+
+{% tabs %}
+{% tab title="Fixed" %}
+1. Fixed an issue where the civilian section would fail to display on emergency pages.
+{% endtab %}
+{% endtabs %}
+
 ### 2.3.1 - 6/23/2020
 
 {% tabs %}
