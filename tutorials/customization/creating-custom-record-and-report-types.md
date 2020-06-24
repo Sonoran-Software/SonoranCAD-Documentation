@@ -49,11 +49,11 @@ Add your desired custom and premade sections, edit fields, and more!
 
 {% tabs %}
 {% tab title="Field Type" %}
-Fields can be an input, select, or text area.
+Fields can be an text, select, or textarea, date, time, or checkboxes.
 
 1. Input: These fields are generic text-boxes.
 
-#### 1. Input:
+#### 1. Text:
 
 These fields are generic text boxes.
 
@@ -63,7 +63,7 @@ The select field allows you to customize a dropdown box.
 
 ![The &apos;SELECT&apos; field option](../../.gitbook/assets/image%20%2818%29.png)
 
-![A &apos;SELECT&apos; field shown in a record editor](../../.gitbook/assets/image%20%2820%29.png)
+![A &apos;SELECT&apos; field shown in the record editor](../../.gitbook/assets/image%20%2820%29.png)
 
 #### 3. TextArea:
 
@@ -71,7 +71,39 @@ The select field allows you to create a large text area.
 
 ![The &apos;TEXTAREA&apos; field option](../../.gitbook/assets/image%20%2821%29.png)
 
-![A &apos;TEXTAREA&apos; field shown in a record editor](../../.gitbook/assets/image%20%281%29.png)
+![A &apos;TEXTAREA&apos; field shown in the record editor](../../.gitbook/assets/image%20%281%29.png)
+
+#### 4. Checkboxes
+
+The checkboxes type allows you to create multiple checkboxes, similar to the premade flags section.
+
+![The &apos;CHECKBOXES&apos; field option](../../.gitbook/assets/image%20%2829%29.png)
+
+![A &apos;CHECKBOXES&apos; field shown in the record editor.](../../.gitbook/assets/image%20%2834%29.png)
+
+#### 5. Date
+
+The date field allows you to specify a date field. You can also specify the formatting in the mask column.
+
+![The &apos;DATE&apos; field option](../../.gitbook/assets/image%20%2836%29.png)
+
+![The &apos;DATE&apos; field shown in the record editor](../../.gitbook/assets/image%20%2839%29.png)
+
+#### 6. Time
+
+The time field allows you to specify a time field.
+
+![The &apos;TIME&apos; field option](../../.gitbook/assets/image%20%2831%29.png)
+
+![The &apos;TIME&apos; field shown in the record editor](../../.gitbook/assets/image%20%2838%29.png)
+
+#### 7. Image
+
+The image field allows you to specify an image to be displayed.
+
+![The &apos;IMAGE&apos; field option.](../../.gitbook/assets/image%20%2840%29.png)
+
+![The &apos;IMAGE&apos; field shown in the record editor](../../.gitbook/assets/image%20%2832%29.png)
 {% endtab %}
 
 {% tab title="Field Options" %}
@@ -100,6 +132,28 @@ Required fields will require the unit to enter something into the field before t
 ![Input field with REQUIRED toggled](../../.gitbook/assets/image%20%2822%29.png)
 
 ![Required field shown in the record editor](../../.gitbook/assets/image%20%286%29.png)
+{% endtab %}
+
+{% tab title="Field Mask" %}
+The field mask allows you to specify a required format for the field.
+
+| Token | Description |
+| :--- | :--- |
+| \# | Numeric |
+| S | Letter A-Z |
+| X | Alphanumeric |
+
+#### Example: Numbers
+
+Specifying `###` allows the user to only enter 3 numbers in the field.
+
+![](../../.gitbook/assets/image%20%2835%29.png)
+
+#### Example: Phone Number
+
+Specifying `(###) ### - ####` formats the user's input into a phone number.
+
+![](../../.gitbook/assets/image%20%2837%29.png)
 {% endtab %}
 
 {% tab title="Field Size" %}
