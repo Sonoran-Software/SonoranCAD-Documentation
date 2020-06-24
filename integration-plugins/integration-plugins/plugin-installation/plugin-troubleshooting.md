@@ -16,12 +16,16 @@ Each plugin install guide lists the required subscription version at the top.
 
 ### 2. Ensure your plugin is enabled in the configuration file.
 
-Be sure to follow the [framework installation](../framework-installation.md) and [plugin installation](./) guides thoroughly, depending on the plugin you are trying to install.  
+Be sure to follow the [framework installation](../framework-installation.md) and [plugin installation](./) guides thoroughly, depending on the specific plugin you are trying to install.
+
+  
 Make sure you have not forgotten to enable the plugin!
 
 ![The &quot;enabled&quot; field should be set to &quot;true&quot;](../../../.gitbook/assets/enable_config.png)
 
 ### 3. Ensure your plugin is up-to-date and download the latest release.
+
+Plugin updates are released often. Make sure your server is running on the latest release.
 
 ![](../../../.gitbook/assets/plugin_1.png)
 
