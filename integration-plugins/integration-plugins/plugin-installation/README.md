@@ -45,3 +45,11 @@ Extract the plugins to your `sonorancad\plugins` folder.
 
 Restart the `sonorancad` resource by entering `restart sonorancad` in the console and enjoy your new plugin!
 
+## Having Trouble?
+
+If you're having trouble installing a plugin, check out our common troubleshooting guide:
+
+{% page-ref page="plugin-troubleshooting.md" %}
+
+
+
