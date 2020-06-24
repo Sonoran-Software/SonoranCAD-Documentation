@@ -39,7 +39,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../../plugin-installation.md) for the live map and push events listener plugin.
+1. Follow the [standard plugin installation guide](../../plugin-installation/) for the live map and push events listener plugin.
 
 ### 4. Configuration
 

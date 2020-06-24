@@ -17,7 +17,7 @@ All Sonoran CAD plugins require our API framework installation. Installing our f
 
 All Sonoran CAD plugins follow a standard installation process. Learn more about installing plugins for your community below.
 
-{% page-ref page="plugin-installation.md" %}
+{% page-ref page="plugin-installation/" %}
 
 ### Available Plugins
 

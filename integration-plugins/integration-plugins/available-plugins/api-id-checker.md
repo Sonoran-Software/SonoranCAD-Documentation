@@ -22,7 +22,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 3. Install the Plugin
 
-1. Follow the [standard plugin installation guide](../plugin-installation.md) for the API ID plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the API ID plugin.
 
 ## Usage
 

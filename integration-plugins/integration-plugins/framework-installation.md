@@ -83,5 +83,5 @@ If you are **NOT**using **ESX**, modify `fxmanifest.lua` and remove `mysql-async
 
 Check out our [Available Plugins](available-plugins/) to make the integration useful.  
 For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.  
-You can also view our [standard plugin installation guide](plugin-installation.md).
+You can also view our [standard plugin installation guide](plugin-installation/).
 

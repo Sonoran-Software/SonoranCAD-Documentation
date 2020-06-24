@@ -18,11 +18,13 @@ API IDs are set individually per community. Your API IDs on one community will n
 
 #### 2. Paste in your API ID and Press Save
 
-{% hint style="info" %}
+{% hint style="danger" %}
+It is **highly recommended** that you use the API ID plugin to retrieve the correct credentials. Without the correct API ID, many integration features will NOT work.
+
 Sonoran CAD's [API ID plugin](../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) automatically checks in-game if your API ID is properly set, and also event includes a command to get your proper API ID!
 {% endhint %}
 
-Typically, your API ID will be your **Steam Hex** as shown below. This is how our public [plugins ](../../../integration-plugins/integration-plugins/available-plugins/)are currently structured.  
+Typically, your API ID will be your **Steam Hex** as shown below. This is how our public [plugins ](../../../integration-plugins/integration-plugins/available-plugins/)are currently structured. Your API ID may include the `steam:` prefix as well.  
   
 However, your community may choose to integrate their own identifier system with custom API integration scripts. If this is the case, you will need to ask an administrator from your community for what to enter.
 

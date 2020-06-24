@@ -51,7 +51,8 @@
 
 * [Integration Plugins](integration-plugins/integration-plugins/README.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
-  * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation.md)
+  * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
+    * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
     * [Live Map](integration-plugins/integration-plugins/available-plugins/live-map/README.md)
       * [Live Map Troubleshooting](integration-plugins/integration-plugins/available-plugins/live-map/live-map-troubleshooting.md)

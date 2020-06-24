@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation.md) for the call commands plugin, the locations plugin, and the optional postals plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the call commands plugin, the locations plugin, and the optional postals plugin.
 
 ## Usage
 
