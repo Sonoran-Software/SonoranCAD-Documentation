@@ -8,7 +8,34 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 2.3.3 - 6/24/2020
 
+{% tabs %}
+{% tab title="New" %}
+1. Supervisor - DMV
+   * Supervisor fields for custom DMV records are now restricted to users that have the DMV page permission.
+2. Civilian - DMV Records - Vehicle Search
+   * Custom DMV records now allow civilians to search for a registered vehicle to quickly add it to the field.
+3. Custom Records - Checkbox - Required and Supervisor States
+   * The checkboxes field on custom records now has color changes for required and supervisor states.
+4. Custom Records - Image - Required and Supervisor States
+   * The image field on custom records now has color changes for required and supervisor states.
+5. iOS Padding - Header/Footer
+   * Improved header and footer padding for iOS devices with the "notch"
+{% endtab %}
+
+{% tab title="Changed" %}
+1. Custom Records - Checkboxes - Centered
+   * Custom record checkboxes are now centered in the field column.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. Toolbar Overlap - iOS
+   * Fixed an issue where the top toolbar overlapped the pages for some iOS app users.
+2. DMV Records - Civilian
+   * Fixed an issue where civilians could not submit a custom DMV record.
+{% endtab %}
+{% endtabs %}
 
 ### 2.3.2 - 6/24/2020
 
