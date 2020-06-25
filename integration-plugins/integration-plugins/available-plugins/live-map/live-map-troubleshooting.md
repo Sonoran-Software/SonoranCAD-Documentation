@@ -6,15 +6,15 @@ description: This guide covers the basic troubleshooting of the live map plugin.
 
 ## When are Player Blips Displayed?
 
-Players will only show on the map when the following are TRUE:
+Players will only show on the map when **ALL** of the following conditions are met:
 
 1. The player has their [API ID set in the CAD](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 2. The player actively is logged into the police, fire, or EMS page.
 3. The player has the [correct server selected in the CAD](../../../../tutorials/customization/configuring-multiple-servers.md), on the top right of the page.
 4. The player is actively logged into the server.
 5. The player has Steam, Discord, or other identifier type program running:
-   * If the server API IDs are based off of the Steam HEX, **the player must have Steam running**.
-   * If the server API IDs are based off of Discord IDs, **the player must have Discord running**.
+   * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
+   * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
 ## 1. Check your Subscription Version
 

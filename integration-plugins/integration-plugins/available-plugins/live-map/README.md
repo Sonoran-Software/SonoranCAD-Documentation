@@ -14,7 +14,7 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% endhint %}
 
 {% hint style="danger" %}
-The live map will require you to open two additional ports on your server.  
+The live map will require you to open **two additional ports** on your server.  
 **You will need to contact your hosting provider if you are unsure how to do this.**
 {% endhint %}
 
@@ -92,21 +92,21 @@ In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" bu
 
 ## When are Player Blips Displayed?
 
-Players will only show on the map when the following are TRUE:
+Players will only show on the map when **ALL** of the following conditions are met:
 
 1. The player has their [API ID set in the CAD](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 2. The player actively is logged into the police, fire, or EMS page.
 3. The player has the [correct server selected in the CAD](../../../../tutorials/customization/configuring-multiple-servers.md), on the top right of the page.
 4. The player is actively logged into the server.
 5. The player has Steam, Discord, or other identifier type program running:
-   * If the server API IDs are based off of the Steam HEX, **the player must have Steam running**.
-   * If the server API IDs are based off of Discord IDs, **the player must have Discord running**.
+   * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
+   * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
 ## Using Different Ports
 
 If you are not using the default ports `30121` \(map port\) and `3232` \(listener/push events port\) you will need to change these.
 
-Your hosting provider may give you other ports, or you may have services already running on these default ports.
+Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **TWO** open ports not being used by any other service.
 
 1. Navigate to your server's `server.cfg` file.
 2. Add the lines to set the convar values to the ports you are using
@@ -115,6 +115,8 @@ Your hosting provider may give you other ports, or you may have services already
      * `set SonoranListenPort 9000` for the [push events](../../../../sonoran-cad/api-integration/push-events/) port.
 3. Update the ports in the admin panel setting the new map and listener ports.
 4. Save everything, restart your server, and deploy the live map.
+
+**If you are unsure how to open additional ports, you will need to contact your hosting provider.**
 
 ## Troubleshooting
 
