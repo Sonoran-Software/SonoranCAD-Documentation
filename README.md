@@ -12,13 +12,13 @@ description: >-
 
 ### What is Sonoran CAD?
 
-Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities.
+Sonoran CAD is a state of the art, cross-platform, computer-automated dispatching and records management system for gaming communities.
 
-Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
+Sonoran CAD comes complete with real-time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications, and more!
 
 ### Why Choose Sonoran CAD?
 
-Check out our advanced integration features, downloadable apps, in-depth UI, and more!
+Check out our advanced integration features, custom plugin system, downloadable apps, in-depth UI, developer API documentation, and more!
 
 ### How do I access Sonoran CAD?
 

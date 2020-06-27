@@ -45,6 +45,8 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 Create your very own [custom report and record formats](../tutorials/customization/creating-custom-record-and-report-types.md) for your community to use!
 
+Whether it's your own firearms registration system, an in-depth vehicle accident report format, or a custom incident record, Sonoran CAD allows you to customize it all.
+
 ### Custom Branding
 
 Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
