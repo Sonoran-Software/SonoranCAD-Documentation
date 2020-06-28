@@ -111,8 +111,8 @@
 ## Pricing
 
 * [Pricing FAQ](pricing/faq/README.md)
-  * [Request Discord Role](pricing/faq/request-discord-role.md)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
+  * [Request Discord Role](pricing/faq/request-discord-role.md)
 * [View and Compare Plans](https://sonorancad.com/app/#/pricing)
 
 ## Roadmap
