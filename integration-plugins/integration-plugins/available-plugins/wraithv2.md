@@ -25,7 +25,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and Dependencies
 
 1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran_wraithv2/releases)to download the WraithV2 plugin .zip file.
-2. Download the [lookups ](lookups.md)plugin.
+2. Download and install the [lookups ](lookups.md)plugin.
 
 ### 3. Install the Plugin and all Dependencies
 

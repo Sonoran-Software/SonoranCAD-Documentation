@@ -23,8 +23,8 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and all Dependencies
 
 1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_callcommands/releases)to download the call commands plugin .zip file.
-2. Download and install the [locations](https://github.com/Sonoran-Software/sonoran_locations/releases) plugin.
-3. \(Optional\) Download and install the [postal](https://github.com/Sonoran-Software/sonoran_postals/releases) plugin.
+2. Download and install the[ locations ](locations.md)plugin.
+3. \(Optional\) Download and install the[ postal ](postals.md)plugin.
 
 ### 3. Install the Plugin and all Dependencies
 

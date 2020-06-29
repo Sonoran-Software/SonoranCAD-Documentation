@@ -16,8 +16,8 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran_locations/releases)to download the locations plugin .zip file.
-2. Download and install the the [apicheck](https://github.com/Sonoran-Software/sonoran_apicheck/releases) plugin.
+1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran_locations/releases)to download the ForceReg plugin .zip file.
+2. Download and install the the[ apicheck ](api-id-checker.md)plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
