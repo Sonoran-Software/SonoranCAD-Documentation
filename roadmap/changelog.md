@@ -8,6 +8,30 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 2.4.0 - 6/29/2020
+
+{% tabs %}
+{% tab title="New" %}
+1. Image Uploading
+   * Users can now directly upload images to our AWS S3 bucket, as opposed to manually pasting in the image URL.
+2. Payment Center - Modify Card
+   * The payment center now allows you to easily change the billing information on your active subscription.
+3. Lookup Tables - Sort Columns
+   * Allowed all default record type preview columns to be sortable.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. Legacy Custom Records - Mask
+   * Fixed an issue where legacy custom record text and textfield types would not save or display user input due to a missing mask.
+2. Custom Fire Records - Permission
+   * Fixed an issue where submitting new custom fire reports and records incorrectly required the medical record add permission.
+3. DBSync - Connection String Builder
+   * Added a new common connection string builder to prevent issues with user passwords containing SQL escape characters.
+4. Report - Remove - Clientside
+   * Fixed an issue where custom reports would not be automatically removed from the client view's "My Reports" section when deleted.
+{% endtab %}
+{% endtabs %}
+
 ### 2.3.3 - 6/24/2020
 
 {% tabs %}
