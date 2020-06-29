@@ -31,9 +31,17 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
 * And much more!
 
-In addition to our [plugin system](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
+**View one of our plugin showcase videos** [**here**](https://www.youtube.com/watch?v=pfE3HdCF20o)**!**
 
-View one of our plugin showcase videos [here](https://www.youtube.com/watch?v=pfE3HdCF20o)!
+![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
+
+### API Integration
+
+In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
+
+We've complied extensive documentation for over two-dozen API endpoints and server push events!
+
+![Sonoran CAD&apos;s extensive API endpoint documentation!](../.gitbook/assets/image%20%2848%29.png)
 
 ### Live Map
 
@@ -47,9 +55,13 @@ Create your very own [custom report and record formats](../tutorials/customizati
 
 Whether it's your own firearms registration system, an in-depth vehicle accident report format, or a custom incident record, Sonoran CAD allows you to customize it all.
 
+![Create custom record and report formats!](../.gitbook/assets/image%20%2844%29.png)
+
 ### Custom Branding
 
 Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
+
+![Sonoran CAD&apos;s custom email branding!](../.gitbook/assets/image%20%2847%29.png)
 
 ### Multitasking Window and Tab System
 
@@ -64,9 +76,13 @@ Sonoran CAD allows your units to easily [self-dispatch](../tutorials/dispatching
 
 Looking to store official criminal records or prior call logs in a PDF format? Sonoran CAD allows you to easily view and [print records to PDF](../tutorials/records-management/pdf-records.md).
 
+![Sonoran CAD&apos;s print to PDF system!](../.gitbook/assets/image%20%2845%29.png)
+
 ### Global Hotkeys
 
 Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads.md), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
+
+![Sonoran CAD&apos;s global hotkey configuration!](../.gitbook/assets/image%20%2846%29.png)
 
 ### Voice Commands
 
