@@ -8,6 +8,31 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 2.4.1 - 7/11/2020
+
+{% tabs %}
+{% tab title="New" %}
+1. My Account - Side Menu Access
+   * The account editor can now be more easily accessed through the side navigation menu.
+2. Search Vehicle and Civilian - Uppercase
+   * Vehicle and Civilian searches for records now properly capitalize all names and information.
+{% endtab %}
+
+{% tab title="Changed" %}
+1. Account Username - Table Restructure
+   * Community account storage in databases has been more properly structured to pull based on the global account UUID for a more efficient way to update account usernames.
+{% endtab %}
+
+{% tab title="Fixed" %}
+1. Selected Server - Invalid
+   * Fixed an issue where users with non-existent or removed community server IDs selected could not login to an emergency page. They are now forcefully set back to a valid server and redirected to the community menu.
+2. Reports - Minimized
+   * Fixed an issue causing minimized report tabs to not be able to be re-opened.
+3. Transfer and Remove CAD
+   * Fixed an issue where transferring or removing your CAD failed to send an email when the DB timestamp is null.
+{% endtab %}
+{% endtabs %}
+
 ### 2.4.0 - 6/29/2020
 
 {% tabs %}
