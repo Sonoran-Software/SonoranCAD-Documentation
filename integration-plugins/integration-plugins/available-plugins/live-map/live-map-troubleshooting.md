@@ -79,13 +79,15 @@ Ensure that your users have their API ID set in the CAD. This is generally their
 
 ## 5. Enable Debug Mode
 
+### 5A. Toggle Debug Mode ON
+
 The plugin framework includes a powerful debug mode. Enable this by entering `caddebug` into your server console.
 
 Debug mode will print out additional error information and JSON data for all API calls or push events.
 
 **Check for any error messages printed out in the console.**
 
-### 5A. Check for Push Events:
+### 5B. Check for Push Events:
 
 The image below shows a push event being sent from Sonoran CAD to your server. This data is shown in your server console when `caddebug` mode is toggled ON.
 
@@ -93,9 +95,17 @@ Push events are sent to your server when a unit signs into the CAD \(on the poli
 
 You should see push events being received with the types `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, and `EVENT_UNIT_STATUS` when those actions are performed in the CAD.
 
+| Event | Description |
+| :--- | :--- |
+| EVENT\_UNIT\_LOGIN | When you login to the police, fire, or EMS page. |
+| EVENT\_UNIT\_LOGOUT | When you exit the police, fire, or EMS page. |
+| EVENT\_UNIT\_STATUS | When your unit status is updated. |
+
 Ensure the `APIID` listed in the push event data matches the [API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+
+If the `APIID` listed is different, [update your API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to the one displayed in debug mode. **These IDs must match up exactly**.
 
 ![](../../../../.gitbook/assets/image%20%2827%29.png)
 
-
+If you do not see the  `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, or`EVENT_UNIT_STATUS` push events displayed in debug mode when you perform these actions in the CAD, **double check that your push events listener is correctly setup in step 3C**.
 
