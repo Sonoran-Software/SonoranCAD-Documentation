@@ -47,7 +47,7 @@ Ensure the IP and ports are listed correctly without spaces, common mistypes, po
 ### 3B. Ensure the Map Port is Open
 
 Navigate to `mapIp:mapPort/blips.json` in a web browser:  
-You should see brackets with out without blip data.
+You should see brackets with or without blip data.
 
 ![View your blips.json file](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.10.28-pm.png)
 
