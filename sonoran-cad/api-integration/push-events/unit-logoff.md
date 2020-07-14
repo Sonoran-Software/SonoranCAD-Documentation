@@ -4,10 +4,6 @@ description: This push event is sent whenever a unit logs into the CAD.
 
 # Unit Logoff
 
-{% hint style="danger" %}
-This event is currently not implemented in the latest `pushevents` plugin.
-{% endhint %}
-
 ### EVENT\_UNIT\_LOGOUT
 
 ```javascript

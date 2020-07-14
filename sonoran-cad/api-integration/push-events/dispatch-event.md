@@ -6,10 +6,6 @@ description: >-
 
 # Dispatch Event
 
-{% hint style="danger" %}
-This event is currently not implemented in the latest `pushevents` plugin.
-{% endhint %}
-
 ### EVENT\_DISPATCH POST
 
 ```javascript

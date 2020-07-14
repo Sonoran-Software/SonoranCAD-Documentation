@@ -4,10 +4,6 @@ description: This event is sent when a unit is removed from an active dispatch c
 
 # Unit Call Clear
 
-{% hint style="danger" %}
-This event is currently not implemented in the latest `pushevents` plugin.
-{% endhint %}
-
 ### EVENT\_UNIT\_CALL\_CLEAR
 
 ```javascript
