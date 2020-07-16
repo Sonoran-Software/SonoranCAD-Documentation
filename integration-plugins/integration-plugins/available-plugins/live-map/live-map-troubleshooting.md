@@ -16,6 +16,16 @@ Players will only show on the map when **ALL** of the following conditions are m
    * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
    * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
+## ERROR: Couldn't start resource sonoran\_livemap
+
+Linux users have an additional installation step,[ per the installation guide](./).
+
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
+
+{% hint style="danger" %}
+When using **Linux**, you will need to `start webpack` before the livemap in order to build it for the first time. You can stop webpack after it has been built. You will have to do this step whenever the `sonoran_livemap` resource is updated.
+{% endhint %}
+
 ## 1. Check your Subscription Version
 
 Your community's subscription may have expired and failed to renew. Do a quick check on your [community limits](../../../../tutorials/getting-started/view-your-limits.md) to make sure your community version is on the **Plus** version or higher.
