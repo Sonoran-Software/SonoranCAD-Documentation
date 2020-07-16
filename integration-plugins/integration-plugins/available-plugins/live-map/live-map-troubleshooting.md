@@ -18,13 +18,13 @@ Players will only show on the map when **ALL** of the following conditions are m
 
 ## ERROR: Couldn't start resource sonoran\_livemap
 
-Linux users have an additional installation step,[ per the installation guide](./).
-
 ![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
 
-{% hint style="danger" %}
-When using **Linux**, you will need to `start webpack` before the livemap in order to build it for the first time. You can stop webpack after it has been built. You will have to do this step whenever the `sonoran_livemap` resource is updated.
-{% endhint %}
+Particularly with **Linux**, some users have an additional installation step,[ per the installation guide](./).
+
+First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.‌
+
+You will have to do this step whenever the `sonoran_livemap` resource is updated.
 
 ## 1. Check your Subscription Version
 

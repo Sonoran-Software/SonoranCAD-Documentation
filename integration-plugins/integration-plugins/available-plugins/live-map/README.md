@@ -46,9 +46,15 @@ If you haven't already, be sure to install and configure the [plugin framework](
 This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base resource.  
 To do so, enter `start sonoran_livemap` in the console.
 
-{% hint style="danger" %}
-When using **Linux**, you will need to `start webpack` before the livemap in order to build it for the first time. You can stop webpack after it has been built. You will have to do this step whenever the `sonoran_livemap` resource is updated.
-{% endhint %}
+#### ERROR: Couldn't start resource sonoran\_livemap
+
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
+
+Particularly with **Linux**, some users have an additional installation step.
+
+First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.
+
+You will have to do this step whenever the `sonoran_livemap` resource is updated.
 
 #### A. Live Map Configuration
 
