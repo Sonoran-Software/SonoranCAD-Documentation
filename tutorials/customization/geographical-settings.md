@@ -22,4 +22,15 @@ The admin customization menu allows you to change your geographical settings.
 | American | Emergencies are listed as 911 |
 | European | Emergencies are listed as 112 |
 | UK | Emergencies are listed as 999 |
+| Australia | Emergencies are listed as 000 |
+
+### My country does not use penal codes, felony charges, etc.
+
+Sonoran CAD allows you to customize the charge type names, bond type names, and more.
+
+View our guide on penal code customization:
+
+{% page-ref page="penal-code-customization.md" %}
+
+
 

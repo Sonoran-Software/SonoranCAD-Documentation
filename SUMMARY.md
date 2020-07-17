@@ -20,6 +20,7 @@
   * [Community Branding and Settings](tutorials/customization/community-branding-and-info.md)
   * [Creating Custom Record and Report Types](tutorials/customization/creating-custom-record-and-report-types.md)
   * [Geographical Settings](tutorials/customization/geographical-settings.md)
+  * [Penal Code Customization](tutorials/customization/penal-code-customization.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
   * [Custom Login Page](tutorials/customization/custom-login-page.md)
   * [Custom Emails](tutorials/customization/custom-emails.md)
