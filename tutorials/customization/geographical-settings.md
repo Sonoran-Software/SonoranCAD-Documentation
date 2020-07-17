@@ -30,7 +30,7 @@ Sonoran CAD allows you to customize the charge type names, bond type names, and 
 
 View our guide on penal code customization:
 
-{% page-ref page="penal-code-customization.md" %}
+{% page-ref page="penal-codes.md" %}
 
 
 
