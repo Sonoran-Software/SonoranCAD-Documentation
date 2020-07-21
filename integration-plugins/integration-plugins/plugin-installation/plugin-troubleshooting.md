@@ -4,6 +4,52 @@ description: View some basic troubleshooting steps when installing Sonoran CAD p
 
 # Plugin Troubleshooting
 
+## Framework Commands
+
+Sonoran CAD's framework includes powerful built-in commands. **These commands are entered into your server console.**
+
+**Ex:** A [support member](https://support.sonoransoftware.com) may ask you to send detailed logging information to them. They will give you the specific ID number to enter. \(ex: 123\)  
+Entering `sonoran support 123` in your server console will send your plugin configuration directly to our support application.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">sonoran debugmode</td>
+      <td style="text-align:left">Enables detailed debug logging</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">sonoran info</td>
+      <td style="text-align:left">Displays version and config information</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">sonoran support &lt;<em>NUMBER</em>&gt;</td>
+      <td style="text-align:left">
+        <p>Sends important information for <a href="https://support.sonoransoftware.com">customer support</a> purposes.</p>
+        <p>The <em>NUMBER</em> parameter will be provided to you by a support team
+          member.</p>
+        <p></p>
+        <p>Ex: <code>sonoran support 123</code> sends us your plugin information for
+          help.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">sonoran plugin &lt;<em>NAME</em>&gt;</td>
+      <td style="text-align:left">
+        <p>Displays plugin information</p>
+        <p></p>
+        <p>Ex: <code>sonoran plugin callcommands</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Quick Checks
 
 ### 1. Ensure your community is on a paid version.
@@ -14,12 +60,18 @@ Your community's subscription may have expired and failed to renew. Do a quick c
 Each plugin install guide lists the required subscription version at the top.
 {% endhint %}
 
-### 2. Ensure your plugin is enabled in the configuration file.
+### 2. Ensure your plugin is enabled
 
 Be sure to follow the [framework installation](../framework-installation.md) and [plugin installation](./) guides thoroughly, depending on the specific plugin you are trying to install.
 
   
-Make sure you have not forgotten to enable the plugin!
+Make sure you have not forgotten to enable the plugin in the plugin config file!
+
+Enter `sonoran info` into your server console.
+
+![Sonoran Info - Disabled Plugins](../../../.gitbook/assets/image%20%2857%29.png)
+
+If the plugin you are having trouble with is listed as DISABLED, you may have forgotten to enable it in the plugin configuration.
 
 ![The &quot;enabled&quot; field should be set to &quot;true&quot;](../../../.gitbook/assets/enable_config.png)
 
@@ -35,7 +87,7 @@ Ensure you have set your [API ID in the CAD](../../../sonoran-cad/api-integratio
 
 ## Debug Mode
 
-The plugin framework includes a powerful debug mode. Enable this by entering `caddebug` into your server console.
+The plugin framework includes a powerful debug mode. Enable this by entering `sonoran debugmode` into your server console.
 
 Debug mode will print out additional error information and JSON data for all API calls or push events.
 
