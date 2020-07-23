@@ -6,17 +6,15 @@ description: View your CAD in-game with our easy to use tablet resource!
 
 ## Installation
 
-{% hint style="info" %}
-**This plugin is a separate resource** and does NOT reply upon the Sonoran CAD framework. **This plugin is installed in your main addons folder.**
-{% endhint %}
+### 1. Download and Install the Framework
 
-### 1. Download the Included Resource with the Framework
-
-This resource is included with our [plugin framework](../framework-installation.md) download.
+If you haven't already, be sure to install and configure the [plugin framework](../framework-installation.md) first.  
+This resource is included in the base framework.
 
 ### 2. Copy the Resource to your Addons Folder
 
-Copy the `tablet` folder to your main `addons` directory.
+In your `server.cfg` file add the following new line:  
+`ensure tablet`
 
 ### 3. Edit the index.html File
 
