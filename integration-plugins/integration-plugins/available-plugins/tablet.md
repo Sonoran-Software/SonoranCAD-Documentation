@@ -11,7 +11,7 @@ description: View your CAD in-game with our easy to use tablet resource!
 If you haven't already, be sure to install and configure the [plugin framework](../framework-installation.md) first.  
 This resource is included in the base framework.
 
-### 2. Copy the Resource to your Addons Folder
+### 2. Start the Resource
 
 In your `server.cfg` file add the following new line:  
 `ensure tablet`
