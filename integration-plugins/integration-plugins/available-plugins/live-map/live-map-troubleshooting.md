@@ -91,7 +91,7 @@ Ensure that your users have their API ID set in the CAD. This is generally their
 
 ### 5A. Toggle Debug Mode ON
 
-The plugin framework includes a powerful debug mode. Enable this by entering `caddebug` into your server console.
+The plugin framework includes a powerful debug mode. Enable this by entering `sonoran debugmode` into your server console.
 
 Debug mode will print out additional error information and JSON data for all API calls or push events.
 
