@@ -99,7 +99,7 @@ Debug mode will print out additional error information and JSON data for all API
 
 ### 5B. Check for Push Events:
 
-The image below shows a push event being sent from Sonoran CAD to your server. This data is shown in your server console when `caddebug` mode is toggled ON.
+The image below shows a push event being sent from Sonoran CAD to your server. This data is shown in your server console when `sonoran debugmode` mode is toggled ON.
 
 Push events are sent to your server when a unit signs into the CAD \(on the police, fire, or EMS page\), or when your unit status is updated. This data tells the live map to add or remove a unit, and change the blip information.
 

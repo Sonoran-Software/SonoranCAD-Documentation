@@ -61,7 +61,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | serverType | Can be `"standalone"`or `"esx"`, which enables some ESX-specific configuration. |
 | primaryIdentifier | The identifier type your community uses in the CAD to enter their API IDs. Valid values are: `license`, `steam`, or `discord.` |
 | apiSendEnabled | When disabled, the integration will not send any API requests to SonoranCAD. |
-| debugMode | When set to `true`, useful debugging information it outputted to the console. Keep disabled in production due to console spam. This can be toggled by entering `caddebug` in console. |
+| debugMode | When set to `true`, useful debugging information it outputted to the console. Keep disabled in production due to console spam. This can be toggled by entering `sonoran debugmode` in console. |
 | updateBranch | Use this branch when checking for updates. Keep `master` unless you know what you're doing. |
 | statusLabels | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings. |
 
