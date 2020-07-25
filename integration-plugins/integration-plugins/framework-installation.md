@@ -76,7 +76,9 @@ ensure sonorancad
 ```
 
 {% hint style="warning" %}
-If you are **NOT**using **ESX**, modify `fxmanifest.lua` and remove `mysql-async`.
+If you are **NOT** using **ESX**, modify `fxmanifest.lua` and remove the following line from the file...
+
+`dependency 'mysql-async' -- remove if not using ESX`
 {% endhint %}
 
 ### 5. Installing Plugins
