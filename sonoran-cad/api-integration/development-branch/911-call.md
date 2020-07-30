@@ -11,7 +11,7 @@ description: >-
 ```javascript
 {
     "key": "YOUR_API_KEY", // Authenticate legitimate event traffic
-    "type": "EVENT_DISPATCH",
+    "type": "EVENT_911",
     "data": [
         {
             "callId": 1234,
