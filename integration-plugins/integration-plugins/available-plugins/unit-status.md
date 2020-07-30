@@ -32,6 +32,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
+### 5. Setup User Permissions
+
+This script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) \(or whatever you configure the command to be\).
+
 ## Configuration
 
 | Option | Description | Default |
@@ -40,6 +44,28 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 | statusCodes | Array of status codes, configurable to be community-specific | Default SonoranCAD setup |
 
 ## Usage
+
+### Commands
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">setstatus &lt;<em>STATUS&gt;</em>
+      </td>
+      <td style="text-align:left">
+        <p>Update your unit status in the CAD.</p>
+        <p>Ex: <code>setstatus AVAILABLE</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Function
 
@@ -63,8 +89,4 @@ cadSetUnitStatus(<apiId>, <status>, [player])
 ]]
 
 ```
-
-## Command Usage
-
-Script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) \(or whatever you configure the command to be\).
 
