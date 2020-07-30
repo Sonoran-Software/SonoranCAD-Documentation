@@ -6,6 +6,10 @@ description: >-
 
 # Set Penal Codes
 
+{% hint style="warning" %}
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
+
 {% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
 Set Penal Codes
@@ -43,7 +47,7 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-UNITS ATTACHED
+PENAL CODES SET!
 ```
 {% endapi-method-response-example %}
 
