@@ -71,24 +71,24 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "SET_API_ID",
+    "type": "SET_PENAL_CODES",
     "data": [
-      {
-       "code": "(2)06",
-       "type": "Felony",
-       "title": "Armed Robbery",
-       "bondType": "Federal Bail Bond",
-       "jailTime": "5-10 Years",
-       "bondAmount": 20000
-			 },
-			 {
-			  "code": "(2)07",
-    	  "type": "Felony",
-    	  "title": "Murder",
-    	  "bondType": "Federal Bail Bond",
-        "jailTime": "5-50 Years",
-    	  "bondAmount": 100000
-			 }
+        {
+            "code": "(2)06",
+            "type": "Felony",
+            "title": "Armed Robbery",
+            "bondType": "Federal Bail Bond",
+            "jailTime": "5-10 Years",
+            "bondAmount": 20000
+        },
+        {
+            "code": "(2)07",
+            "type": "Felony",
+            "title": "Murder",
+            "bondType": "Federal Bail Bond",
+            "jailTime": "5-50 Years",
+            "bondAmount": 100000
+        }
     ]
 }
 ```
