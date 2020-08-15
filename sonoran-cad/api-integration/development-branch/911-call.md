@@ -14,13 +14,20 @@ description: >-
     "type": "EVENT_911",
     "data": [
         {
-            "callId": 1234,
-            "isEmergency": true, // Emergency or Civil
-            "caller": "John Doe",
-            "location": "1234 E Hawick Ave",
-            "description": "This is a 911 call!"
+            "call": {
+                "callId": 1234,
+                "isEmergency": true, // Emergency or Civil
+                "caller": "John Doe",
+                "location": "1234 E Hawick Ave",
+                "description": "This is a 911 call!"
+            },
+            "apiIds": ["Steam:1234", "11112222"] // User account's API ID
         }
     ]
 }
 ```
+
+#### API IDs
+
+The API ID list will only be returned if the 911 call was placed via the CAD interface and not via an API call.
 
