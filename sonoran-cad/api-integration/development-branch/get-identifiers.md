@@ -96,7 +96,7 @@ INVALID API KEY
     "data": [
         {
             "serverId": 1 // Default 1 - See guide on setting up multiple servers
-            "apiID": "Steam:1234", // Generally the Steam HEX
+            "apiId": "Steam:1234", // Generally the Steam HEX
             "onlyOnline": false, // Only get identifier that this user has online
         },
     ]

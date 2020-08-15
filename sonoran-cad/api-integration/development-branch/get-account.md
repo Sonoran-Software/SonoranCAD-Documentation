@@ -126,7 +126,7 @@ INVALID API KEY
     "type": "GET_ACCOUNT",
     "data": [
         {
-            "apiID": "Steam:1234" // Generally the Steam HEX
+            "apiId": "Steam:1234" // Generally the Steam HEX
         },
     ]
 }
