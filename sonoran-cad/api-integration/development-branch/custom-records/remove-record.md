@@ -16,7 +16,7 @@ Remove Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to remove any record retrieved from a LOOKUP\_NAME or LOOKUP\_PLATE request.
+This endpoint allows you to remove any record in your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}

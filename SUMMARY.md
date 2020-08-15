@@ -108,6 +108,7 @@
       * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
       * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch/README.md)
+    * [Get Account](sonoran-cad/api-integration/development-branch/get-account.md)
     * [Get Account Identifiers](sonoran-cad/api-integration/development-branch/get-identifiers.md)
     * [Lookup Name or Plate](sonoran-cad/api-integration/development-branch/lookup-name-or-plate.md)
     * [Lookup By Integer](sonoran-cad/api-integration/development-branch/lookup-by-integer.md)

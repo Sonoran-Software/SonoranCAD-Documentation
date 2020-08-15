@@ -16,7 +16,7 @@ New Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to add a new custom record to your community.
+This endpoint allows you to retrieve all custom record and report templates in your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}

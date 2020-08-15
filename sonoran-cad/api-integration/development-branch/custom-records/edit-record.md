@@ -16,7 +16,7 @@ Edit Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to add a new custom record to your community.
+This endpoint allows you to modify an existing custom record to your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -20,7 +20,7 @@ Lookup By Int
 {% endapi-method-summary %}
 
 {% api-method-description %}
-The lookup name endpoint allows you to retrieve all records associated with a provided name or license plate.
+The lookup name endpoint allows you to retrieve all records associated with a specific integer value.
 {% endapi-method-description %}
 
 {% api-method-spec %}
