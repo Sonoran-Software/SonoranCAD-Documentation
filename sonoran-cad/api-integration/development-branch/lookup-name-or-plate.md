@@ -12,7 +12,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 API response times may be increased slightly for communities with Database Sync enabled, depending upon the speed, latency and size of your in-game database.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
 Lookup Name or Plate
 {% endapi-method-summary %}
