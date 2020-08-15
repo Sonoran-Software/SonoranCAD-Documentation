@@ -116,7 +116,8 @@
       * [Remove Record](sonoran-cad/api-integration/development-branch/custom-records/remove-record.md)
     * [Set API IDs](sonoran-cad/api-integration/development-branch/set-api-ids.md)
     * [Set Penal Codes](sonoran-cad/api-integration/development-branch/set-penal-codes.md)
-    * [911 Call](sonoran-cad/api-integration/development-branch/911-call.md)
+    * [Remove 911](sonoran-cad/api-integration/development-branch/remove-911.md)
+    * [Event 911](sonoran-cad/api-integration/development-branch/event-911.md)
 
 ## Pricing
 
