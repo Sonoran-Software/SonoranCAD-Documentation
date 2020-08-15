@@ -1,7 +1,7 @@
 ---
 description: >-
   Sonoran CAD has additional record lookup capabilities via integer values for
-  unit identifiers, record statuses, and more!
+  unit identifiers, record or supervisor status, and more!
 ---
 
 # Lookup By Integer
