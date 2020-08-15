@@ -7,7 +7,7 @@ description: >-
 # Lookup By Integer
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}

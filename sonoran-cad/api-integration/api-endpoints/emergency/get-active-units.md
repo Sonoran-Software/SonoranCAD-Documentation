@@ -48,7 +48,7 @@ A successful call will be met with the following response:
 // Array of unit objects
 [
     {
-     "id": -1,
+     "id": -1, // Unique Identifier ID
      "accId": "123-456-7890", // Account UUID
      "status": 0, // See UNIT_STATUS Enum
      "isPanic": false, // PANIC State
