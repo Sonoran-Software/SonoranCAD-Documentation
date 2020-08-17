@@ -8,6 +8,55 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.1.0 - 8/17/2020
+
+{% tabs %}
+{% tab title="New" %}
+Admin - UI  
+- Improved the admin panel UI to be more consistent with the recent theme changes.
+{% endtab %}
+
+{% tab title="Changed" %}
+DB Sync - Mixed Lookup  
+- Improved the DB Sync lookup to more properly mix records for communities that may only have character mapping enabled, but not license or vehicle registration mapping enabled.
+
+DMV Record - Status Labels  
+- Updated the DMV status label options to pending/approved/rejected.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Civilian - DMV Apply  
+- Fixed an issue preventing civilians from being able to apply for other custom DMV record types.
+
+DB Sync - JSON Where Keys  
+- Fixed an issue where DB Sync searches would fail if the user had specific search columns set as a JSON key-value column.
+
+Remove Record - Error  
+- Fixed an issue causing record removal to always result in an error message.
+
+Civilian - Apply for Records  
+- Fixed an issue where civilians applying for a record would not properly set the DMV status as PENDING.
+
+Pending/Supervisor Records  
+- Fixed an issue where pending or supervisor required records would not properly populate in the pending and supervisor panels.
+
+Record Preview - Charges  
+- Fixed an issue causing record charges from not being displayed in the lookup preview.
+
+Webhook - Status Field  
+- Fixed an issue causing the Discord webhooks to display the improper status label for custom status fields.
+
+Record Viewer - Record Number  
+- Fixed an issue causing existing record numbers to display as 'NEW" in the record editor.
+
+PDF - Record Number  
+- Fixed an issue causing the record number to not be displayed in the PDF agency section.
+
+DB Merge - Check Save Record  
+- Fixed an issue where if a community had DB merge enabled but didn't have license or vehicle registration mapping enabled DB merge would still override old records.
+{% endtab %}
+{% endtabs %}
+
 ### 3.0.1 - 8/17/2020
 
 {% tabs %}
