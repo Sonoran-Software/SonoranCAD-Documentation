@@ -8,6 +8,202 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.0.0 - 8/16/2020
+
+{% tabs %}
+{% tab title="New" %}
+UI Theme - Red  
+- Improved the general UI theme for records, lookup windows, reports center, tabs, etc.
+
+Records System - Overhaul  
+- All existing static record types have been migrated to the new custom records system. This allows communities to completely customize all record types as they would like to.
+
+Custom Reports - Legal Type  
+- Communities can now make custom "Legal" type reports. This could be used for criminal prosecution reports, lawyer reports, etc.
+
+Custom Records - Legal Type  
+- Communities can now make custom "Legal" type records. This could be used for criminal prosecution data, lawyer records, etc.
+
+Law Record - Webhook Event  
+- Communities can now configure a webhook event for whenever a law record/report is added, edited, or removed.
+
+Database Sync - Multiple Character Tables  
+- Database sync now allows you to pull character data from multiple tables. Ex: Your character's name and info comes from the "Characters" table but residence/address information comes from a "housing" table.
+
+Database Sync - JSON Fields  
+- Database sync now allows you to easily add JSON columns in your mapping.
+
+Reports Center - Records  
+- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
+
+Reports Center - Records  
+- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
+
+Custom DMV Records - Apply  
+- Custom DMV records with a "STATUS" type field can be applied for by civilians without DMV add permissions.
+
+Reports Center - Filter Types  
+- You can now filter and view record/report types in the report center. This allows you to view your fire and EMS reports in the police page if necessary.
+
+Emergency Call - Push Event  
+- Push events are now sent for new 911/emergency calls in the CAD to your local game server.
+
+Records Lookup - Overhaul  
+- The lookup UI has been updated with filtering types, a new search by identifier, search by ID, reports, and more.
+
+DMV - Overhaul  
+- The DMV page now implements the new lookup and record center windows to easily search for pending records, records requiring supervisors, etc.
+
+Admin - Account Last Login  
+- User account "Last Login" timestamps now show in the admin accounts menu.
+
+Database Sync - Overhaul  
+- The database sync system has been completely rewritten to handle all of the new custom record formats. This creates a more streamlined code base and allows for more advanced features.
+
+Database Merge - Overhaul  
+- The entire database merge functionality has been rewritten to work with new custom records and reports.
+
+Reports Center - Supervisor Completion  
+- Completing all supervisor fields on a record/report in now has local clientside checks to automatically remove the record from your local UI. This removes the need to manually refresh the panel to update pending reports/records.
+
+Custom Records - PDF Section Headers  
+- Custom records now display the custom section name in PDF records.
+
+Custom Fields - Required and Supervisor  
+- If a field is required and supervisor only, the label color displays as orange instead of red to remain visible.
+
+Kick Unit API - Not Found  
+- Added additional handling and 404 response for the KICK\_UNIT API endpoint if the API ID does not exist.
+
+Emergency Code - Australia  
+- Communities can now select "Australia" as their geographical customization setting to change the emergency code to 000.
+
+Custom Record Editor - Section Expansion  
+- Custom sections in the custom record editor can now be expanded or collapsed. This makes organization much cleaner when working with large custom record types.
+
+Admin - Account API IDs  
+- User account API IDs are now displayed in the admin account menu.
+
+Custom Records - Wipe  
+- All custom record and report types can now be wiped in the admin "Advanced" menu.
+
+Admin - Dark Dropdowns  
+- Updated UI dropdown colors for a more consistent dark theme.
+
+API - Set API ID  
+- API IDs can now be set via an API call. This allows for automated API ID configuration via in-game command, or other options.
+
+API - Penal Codes  
+- Penal codes can now be set via an API call.
+
+Record Editor - Action Bar Display  
+- The action bar on the record editor now always displays, but will have the buttons disabled with a tooltip explaining any insufficient permissions.
+
+UI Render Exception Handling  
+- Added a new UI render exception handling system for custom records. This prevents specific corner cases where a malformed custom record will break rendering.
+
+Record Viewer - DB Sync  
+- The record viewer now shows if the record is from "Database Sync" in the top header.
+
+Civilian - Select Server ID  
+- Civilians can now change their current server ID. This allows 911 calls to send to the correct server for communities utilizing multiple servers.
+
+Police Supervisor - Permission  
+- Police record supervisor fields now require the police supervisor account permission to be filled out.
+
+Fire Supervisor - Permission  
+- Fire record supervisor fields now require the fire supervisor account permission to be filled out.
+
+Medical Supervisor - Permission  
+- Medical record supervisor fields now require the medical supervisor account permission to be filled out.
+
+DMV Supervisor - Permission  
+- DMV record supervisor fields now require the DMV supervisor account permission to be filled out.
+
+Law Supervisor - Permission  
+- Law record supervisor fields now require the law supervisor account permission to be filled out.
+
+Law Record - Add Permission  
+- Users with the law record ADD permission can add new law records/reports.
+
+Law Record - Edit Permission  
+- Users with the law record EDIT permission can edit law records/reports.
+
+Law Record - Remove Permission  
+- Users with the law record REMOVE permission can remove law records/reports.
+
+API - Parse Improvements  
+- Added massive efficiency and error information parsing to the API calls. This improves system performance for failed API exceptions, and provides more detailed information to developers.
+
+API - Remove 911 Call  
+- You can now remove existing emergency/911 calls via API.
+
+API - Lookup Record by Int  
+- A new API endpoint has been added to search for records based on integer values representing the record status, supervisor status, associated identifier, or unique record ID.
+
+API - Lookup - Types  
+- API lookups now require a "types" enumerator/integer array to filter specific record types to search.
+
+API - Get Units by ID  
+- You can now search and retrieve unit identifiers via API with the user's API IDs.
+
+API - New Record  
+- You can now add new custom records via API.
+
+API - Edit Record  
+- You can now modify existing custom records via API endpoint.
+
+API - Get Record Templates  
+- You can now get your community's custom record templates via an API endpoint.
+
+API - Get Account  
+- You can now retrieve detailed user account information via API.
+{% endtab %}
+
+{% tab title="Changed" %}
+API ID - Require Community Login  
+- The API ID section in the settings modal requires that the user is actively logged into a community to be set.
+
+API Lookup - Single Method  
+- API record lookups have been consolidated to a single "Lookup" endpoint. There is no longer a separate name and plate search endpoint.
+
+Custom Record Limits - Increase  
+- Custom record limits have been increased to account for all of the new custom record/report types.
+
+API - Remove Record Endpoint Path  
+- The remove record endpoint has been migrated from the "emergency" path to the "general" API endpoint path to be consistent with the new add and edit record endpoints.
+
+API - Lookup Record Endpoint Path  
+- The lookup API endpoint has been migrated to the /general API endpoint path to be consistent with the new record endpoints.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Live Map - Duplicate Server Names  
+- Fixed an issue where deploying your live map with two identical server names would cause an overlap issue with our dynamic reverse proxy and override the first server's proxy address/port.
+
+Custom Records - Type  
+- Fixed an issue where custom records would be classified internally as the incorrect type. UI prevention and better backend detection methods were implemented.
+
+Report Center - Exit Tab  
+- Fixed an issue where the report center window could not be closed from the minimized tab.
+
+Search By Identifier - Online Units  
+- Fixed where unit options in a search by identifier method would only show currently online units.
+
+Version Downgrade - Live Map Disable  
+- Fixed an issue where the live map was not disabled when a community CAD's version was downgraded.
+
+Lawyer - Lookup Permissions  
+- Fixed an issue causing users with the lawyer permission only to be unable to lookup records.
+
+Charges - Manual Entry  
+- Fixed an issue preventing issues from manually entering a charge title on a record that does not exist.
+
+NEW\_DISPATCH - Call ID  
+- Fixed an issue where the NEW\_DISPATCH push event would not contain the new call ID.
+{% endtab %}
+{% endtabs %}
+
 ### 2.4.1 - 7/11/2020
 
 {% tabs %}
