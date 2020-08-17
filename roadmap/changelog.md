@@ -8,6 +8,29 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.0.1 - 8/17/2020
+
+{% tabs %}
+{% tab title="New" %}
+Civilian - Custom DMV Apply  
+- Civilians can now also apply for custom DMV records other than just licenses and vehicle registrations.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Download Button - Typo  
+- Fixed a typo in the side menu "Downloads" button.
+
+Custom Records - Duplicate DMV Type  
+- Fixed an issue where the "DMV Record" type was listed twice in the custom record editor.
+
+Account Registration - Error  
+- Fixed an issue preventing new account registrations from receiving proper account registration links.
+
+Civilian - Record Apply Mobile  
+- Fixed an issue where civilians on mobile devices could not apply for a new record.
+{% endtab %}
+{% endtabs %}
+
 ### 3.0.0 - 8/16/2020
 
 {% tabs %}
