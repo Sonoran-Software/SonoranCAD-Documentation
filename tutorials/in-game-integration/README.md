@@ -16,8 +16,6 @@ View and easily install over a dozen drag-and-drop integration plugins including
 
 Tired of having to manually register civilians? With Sonoran CAD's Database Sync, all of your in-game characters, licenses, and vehicle registrations are automatically in your CAD!
 
-{% page-ref page="database-sync-and-merge/" %}
-
 ### Discord Webhooks
 
 Receive instant notifications in your Discord channel when new records are added, dispatches are modified, admin actions occur, and more!

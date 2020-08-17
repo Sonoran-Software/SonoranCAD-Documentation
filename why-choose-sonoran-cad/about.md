@@ -18,7 +18,7 @@ It has never been more easy to access your community's CAD system, regardless of
 
 ### Database Sync
 
-Tired of having to manually register civilians? With Sonoran CAD's [Database Sync](../tutorials/in-game-integration/database-sync-and-merge/), all of your in-game characters, licenses, and vehicle registrations are automatically in your CAD!
+Tired of having to manually register civilians? With Sonoran CAD's [Database Sync](), all of your in-game characters, licenses, and vehicle registrations are automatically in your CAD!
 
 ### In-Game Integration Plugins
 

@@ -7,7 +7,7 @@ description: >-
 # Get Account Identifiers
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
@@ -107,7 +107,7 @@ INVALID API KEY
 
 ### Enumeration Values
 
-Sonoran CAD uses integer enumeration values for the unit's `status` fields. See the tables below for more information. These represent the default [unit status](../../../tutorials/customization/unit-status-codes.md) options.
+Sonoran CAD uses integer enumeration values for the unit's `status` fields. See the tables below for more information. These represent the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
 
 {% tabs %}
 {% tab title="UNIT\_STATUS" %}

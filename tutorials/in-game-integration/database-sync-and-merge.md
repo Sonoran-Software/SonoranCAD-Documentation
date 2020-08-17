@@ -2,20 +2,20 @@
 description: Let us help you enable and configure database sync for your community.
 ---
 
-# Configuring Database Sync
+# Database Sync and Merge
 
 {% hint style="info" %}
 Database Sync is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../getting-started/view-your-limits.md).
+For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
 Database Sync is a read-only system. All characters, licenses, and vehicle registrations pulled from your database can not be modified in the CAD.  
   
-[Database Merge](enabling-database-merge.md) allows you to save off additional, manually specified data in the CAD.
+Database Merge allows you to save off additional, manually specified data in the CAD.
 
 ## Video Configuration Tutorial
 
-View our [video tutorial](https://youtu.be/PfYfdUHXg_M) on enabling Database Sync.
+View our [video tutorial](https://youtu.be/UfMup7KkpEg) on enabling Database Sync.
 
 ## Written Configuration Guide
 
@@ -47,7 +47,7 @@ This section specifies the SQL connection string information.
 
 #### 2. Enter the required fields below.
 
-![Sonoran CAD&apos;s Database Sync connection configuration](../../../.gitbook/assets/sync_connection.png)
+![Sonoran CAD&apos;s Database Sync connection configuration](../../.gitbook/assets/sync_connection.png)
 
 <table>
   <thead>
@@ -102,7 +102,7 @@ This will query your database for the version.
   
 If you see an alert similar to the following, your connection is successful:
 
-![Database Sync connection credentials successfully entered](../../../.gitbook/assets/db_connected.png)
+![Database Sync connection credentials successfully entered](../../.gitbook/assets/db_connected.png)
 
 #### 4. Save the Configuration
 
@@ -141,7 +141,7 @@ _NOTE:_ Sonoran CAD requires character mapping for characters, licenses and vehi
 
 Below is an example of a mapping from a character table:
 
-![Sonoran CAD character mapping example configuration](../../../.gitbook/assets/mapping_char.png)
+![Sonoran CAD character mapping example configuration](../../.gitbook/assets/mapping_char.png)
 
 {% hint style="info" %}
 Note: As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -154,7 +154,7 @@ This will query your database for one character row with all of the columns you 
   
 If you see an alert similar to the following, your mapping is valid.
 
-![Sonoran CAD character mapping configured successfully](../../../.gitbook/assets/db_test_char.png)
+![Sonoran CAD character mapping configured successfully](../../.gitbook/assets/db_test_char.png)
 
 **4. Save the Configuration**
 
@@ -183,7 +183,7 @@ _NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull
 
 Below is an example of a mapping from a license table:
 
-![Example of a Sonoran CAD license mapping](../../../.gitbook/assets/db_example_lic.png)
+![Example of a Sonoran CAD license mapping](../../.gitbook/assets/db_example_lic.png)
 
 {% hint style="info" %}
 _Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -196,7 +196,7 @@ This will query your database for one license row with all of the columns you ha
   
 If you see an alert similar to the following, your mapping is valid:
 
-![Sonoran CAD license mapping configured successfully](../../../.gitbook/assets/db_lic_succ.png)
+![Sonoran CAD license mapping configured successfully](../../.gitbook/assets/db_lic_succ.png)
 
 #### 4. Save the Configuration
 
@@ -230,7 +230,7 @@ _NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull
 
 Below is an example of a mapping from a vehicle registration table:
 
-![Example of a Sonoran CAD vehicle registration mapping](../../../.gitbook/assets/db_example_veh.png)
+![Example of a Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_example_veh.png)
 
 {% hint style="info" %}
 _Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -243,7 +243,7 @@ This will query your database for one vehicle registration record with all of th
   
 If you see an alert similar to the following, your mapping is valid:
 
-![Successful Sonoran CAD vehicle registration mapping](../../../.gitbook/assets/db_succ_veh.png)
+![Successful Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_succ_veh.png)
 
 #### 4. Save the Configuration
 
@@ -257,7 +257,7 @@ Some communities may store values in a JSON column. The following example shows 
   
 `JSON_UNQUOTE(JSON_EXTRACT(vehicle, '$.plate'))`
 
-![JSON Extract specified in a mapping column](../../../.gitbook/assets/json_cad.png)
+![JSON Extract specified in a mapping column](../../.gitbook/assets/json_cad.png)
 
 This will pull the ‘plate’ value from the JSON string in the ‘vehicle’ column.
 {% endtab %}

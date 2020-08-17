@@ -9,7 +9,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 {% endhint %}
 
 {% hint style="danger" %}
-New characters can NOT be added to communities using [Database Sync](../../../../tutorials/in-game-integration/database-sync-and-merge/), as all characters are pulled from your server's in-game database.
+New characters can NOT be added to communities using [Database Sync](), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/civilian" %}

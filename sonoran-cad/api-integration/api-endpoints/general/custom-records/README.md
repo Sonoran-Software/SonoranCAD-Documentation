@@ -12,7 +12,7 @@ All custom records and reports utilize the same common formatting. You can manag
 
 #### Retrieve Record Templates
 
-Access your existing custom record types built from the CAD's [custom record editor](../../../../tutorials/customization/creating-custom-record-and-report-types.md).
+Access your existing custom record types built from the CAD's [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
 {% page-ref page="get-record-template.md" %}
 
@@ -89,7 +89,7 @@ The "Section" object contains all of the data for a custom record section. These
 
 #### Category
 
-The `category` field contains an enumerator representing the section type. These correspond to the custom or premade category types in the [custom record editor](../../../../tutorials/customization/creating-custom-record-and-report-types.md).
+The `category` field contains an enumerator representing the section type. These correspond to the custom or premade category types in the [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
 | Enum | Description |
 | :--- | :--- |

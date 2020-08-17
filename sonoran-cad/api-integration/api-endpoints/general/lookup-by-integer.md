@@ -7,7 +7,7 @@ description: >-
 # Lookup By Integer
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -98,7 +98,7 @@ INVALID EMPTY SEARCH
 {% tab title="API ID" %}
 ### API ID
 
-Adding the [API ID](../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
+Adding the [API ID](../../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
 {% endtab %}
 
 {% tab title="Search Type" %}
@@ -121,7 +121,7 @@ The `value` integer is the primary search key for the `searchType` specified.
 
 #### Identifier \(searchType 0\)
 
-When specifying an identifier `searchType` the `value` represents the unique identifier ID of a specific unit. You can retrieve this unique identifier ID via the [Get Identifiers endpoint](get-identifiers.md).
+When specifying an identifier `searchType` the `value` represents the unique identifier ID of a specific unit. You can retrieve this unique identifier ID via the [Get Identifiers endpoint](../emergency/get-identifiers.md).
 
 This will return all records associated with the provided unit identifier.
 

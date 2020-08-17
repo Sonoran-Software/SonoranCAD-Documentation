@@ -1,24 +1,22 @@
 ---
 description: >-
-  This endpoint allows you to remove an existing emergency/911 call from the
-  CAD.
+  Sonoran CAD allows you to easily modify an existing custom record in your
+  community via API.
 ---
 
-# Remove 911
+# Edit Record
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-This endpoint allows you to remove an existing emergency/911 call from the CAD.
-
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
-Set API IDs
+Edit Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint allows you to modify an existing custom record to your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,11 +31,11 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-REMOVE\_911
+EDIT\_RECORD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
-Array of request objects
+Array of record objects
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -45,20 +43,20 @@ Array of request objects
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful call will be met with the following response:
+
 {% endapi-method-response-example-description %}
 
 ```
-API ID(s) set!
+{UPDATED RECORD OBJECT}
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-The following 400 errors may be sent in response:
+
 {% endapi-method-response-example-description %}
 
-```http
+```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
@@ -70,19 +68,20 @@ INVALID API KEY
 {% endapi-method %}
 
 ```javascript
-{
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "REMOVE_911",
+    "type": "EDIT_RECORD",
     "data": [
         {
-          "callId": 1 // Call ID
-		    }
+            // Your record data here...
+        },
     ]
 }
 ```
 
-#### Call ID
+#### Record Formatting
 
-The call ID integer value can be retrieved from the [get calls API endpoint](../api-endpoints/emergency/get-calls.md), or returned in the response message when [creating a 911 call via an API call](../api-endpoints/emergency/911-call.md).
+Custom records require a strict format with several dozen different data fields. Due to the complexity, it is highly recommended to create a new custom record template in the CAD UI, and then [retrieve the record template](get-record-template.md) for adding new records.
+
+Or, view a detailed explanation of [custom record formatting](get-record-template.md). 
 

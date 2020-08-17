@@ -1,22 +1,22 @@
 ---
 description: >-
-  This endpoint allows you to remove any record retrieved from a LOOKUP_NAME or
-  LOOKUP_PLATE request.
+  Sonoran CAD allows you to retrieve your custom record and report templates via
+  API.
 ---
 
-# Remove Record
+# Get Record Templates
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
-Remove Record
+New Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to remove any record in your community.
+This endpoint allows you to retrieve all custom record and report templates in your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -31,11 +31,11 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-REMOVE\_RECORD
+GET\_TEMPLATES
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
-Array of unit status objects
+Empty Array
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -43,20 +43,20 @@ Array of unit status objects
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful call will be met with the following response:
+
 {% endapi-method-response-example-description %}
 
 ```
-REMOVED RECORD {ID}
+[{RECORD TEMPLATES}]
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-The following 400 errors may be sent in response:
+
 {% endapi-method-response-example-description %}
 
-```http
+```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
@@ -68,15 +68,16 @@ INVALID API KEY
 {% endapi-method %}
 
 ```javascript
-{
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "REMOVE_RECORD",
+    "type": "GET_TEMPLATES",
     "data": [
-        {
-            "id": 100, // Unique ID - Retrieved from LOOKUP_NAME or LOOKUP_PLATE
-        },
+        // Array left empty to stay consistent with other API call formatting
     ]
 }
 ```
+
+#### Record Formatting
+
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](get-record-template.md). 
 

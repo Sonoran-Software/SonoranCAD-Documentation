@@ -24,7 +24,7 @@ Records are comprised of several sections:
 6. Narrative
 7. Status
 
-Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database](../in-game-integration/database-sync-and-merge/).
+Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database]().
 
 ![Sonoran CAD&apos;s record information search feature](../../.gitbook/assets/screen-shot-2020-04-19-at-2.30.10-am.png)
 

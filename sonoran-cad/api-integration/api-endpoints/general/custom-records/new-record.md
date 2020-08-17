@@ -1,22 +1,22 @@
 ---
 description: >-
-  Sonoran CAD allows you to easily modify an existing custom record in your
+  Sonoran CAD allows you to easily add new custom records and reports to your
   community via API.
 ---
 
-# Edit Record
+# New Record
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
 {% api-method-summary %}
-Edit Record
+New Record
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to modify an existing custom record to your community.
+This endpoint allows you to add a new custom record to your community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -31,7 +31,7 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-EDIT\_RECORD
+NEW\_RECORD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
@@ -47,7 +47,7 @@ Array of record objects
 {% endapi-method-response-example-description %}
 
 ```
-{UPDATED RECORD OBJECT}
+{NEW RECORD OBJECT}
 ```
 {% endapi-method-response-example %}
 
@@ -70,7 +70,7 @@ INVALID API KEY
 ```javascript
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "EDIT_RECORD",
+    "type": "NEW_RECORD",
     "data": [
         {
             // Your record data here...

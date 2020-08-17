@@ -5,7 +5,7 @@ description: Retrieve all records associated with a name or license plate.
 # Lookup Name or Plate
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -104,7 +104,7 @@ To perform a plate based search, simply fill in the `plate` property and leave t
 {% tab title="API ID" %}
 ### API ID
 
-Adding the [API ID](../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
+Adding the [API ID](../../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
 {% endtab %}
 
 {% tab title="Record Types" %}

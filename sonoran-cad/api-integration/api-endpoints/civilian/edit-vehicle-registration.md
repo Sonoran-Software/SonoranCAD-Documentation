@@ -11,7 +11,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 {% endhint %}
 
 {% hint style="danger" %}
-Vehicle registrations can NOT be updated in communities using [Database Sync](../../../../tutorials/in-game-integration/database-sync-and-merge/), as all vehicle registrations are pulled from your server's in-game database.
+Vehicle registrations can NOT be updated in communities using [Database Sync](), as all vehicle registrations are pulled from your server's in-game database.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/civilian" %}

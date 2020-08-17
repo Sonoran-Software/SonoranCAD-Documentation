@@ -7,7 +7,7 @@ description: >-
 # Set Penal Codes
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
@@ -97,5 +97,5 @@ INVALID API KEY
 
 Your penal codes must be sent as a JSON object array in the exact format shown. Depending on how your community's penal codes are structure, you may want to write a script to automate this formatting. Then, send your penal codes via API with something like [Postman](https://www.postman.com/).
 
-![Penal Codes set via API](../../../.gitbook/assets/image%20%2859%29.png)
+![Penal Codes set via API](../../../../.gitbook/assets/image%20%2859%29.png)
 
