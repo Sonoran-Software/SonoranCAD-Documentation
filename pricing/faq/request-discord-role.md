@@ -4,6 +4,8 @@ description: Learn how to request roles in the Sonoran Software Discord server.
 
 # Request Discord Role
 
+See the guides below for claiming a `Customer`, `Instagram`, or `Twitter` role in our Discord.
+
 {% tabs %}
 {% tab title="Customer Role" %}
 #### 1. Retrieve your Subscription ID
