@@ -14,6 +14,10 @@ The `Customer` role grants users access to the \#customer-lobby channel.
 
 The `Instagram` and `Twitter` roles grant access to the \#general-lobby channel.
 
+#### Advertising
+
+Users who Nitro Boost our Discord are granted access to the \#advertise-here channel. Please see the pinned message in that channel for more information.
+
 {% tabs %}
 {% tab title="Customer Role" %}
 #### 1. Retrieve your Subscription ID
