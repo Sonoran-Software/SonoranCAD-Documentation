@@ -6,6 +6,14 @@ description: Learn how to request roles in the Sonoran Software Discord server.
 
 See the guides below for claiming a `Customer`, `Instagram`, or `Twitter` role in our Discord.
 
+#### Customer Lobby
+
+The `Customer` role grants users access to the \#customer-lobby channel.
+
+#### General Lobby
+
+The `Instagram` and `Twitter` roles grant access to the \#general-lobby channel.
+
 {% tabs %}
 {% tab title="Customer Role" %}
 #### 1. Retrieve your Subscription ID
