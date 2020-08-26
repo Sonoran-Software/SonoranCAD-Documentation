@@ -25,7 +25,20 @@ This can be accessed under:
 2. Community Selection Menu &gt; My Account &gt; Subscriptions
 
 {% hint style="info" %}
-The payment center is only available in the web or desktop version of Sonoran CAD, and is NOT accessable in the iOS or Android applications.
+The payment center is only available in the web or desktop version of Sonoran CAD, and is NOT accessible in the iOS or Android applications.
+{% endhint %}
+
+### How do I change what community my subscription is applied to?
+
+At any time with an active subscription \(including cancelled subscriptions that are still active\) you may change what community is benefiting from the subscription.  
+  
+This can be changed by clicking "Modify" under:  
+     Community Selection Menu &gt; My Account &gt; Subscriptions
+
+![Subscription &quot;MODIFY&quot; Button](../../.gitbook/assets/image%20%2863%29.png)
+
+{% hint style="info" %}
+The payment center is only available in the web or desktop version of Sonoran CAD, and is NOT accessible in the iOS or Android applications.
 {% endhint %}
 
 ### What payment methods are accepted?
