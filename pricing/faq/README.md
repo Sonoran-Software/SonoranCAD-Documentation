@@ -10,7 +10,7 @@ description: 'See below for commonly asked questions and answers:'
 
 {% page-ref page="accessing-the-payment-center.md" %}
 
-### Are subscriptions a one time payment, or monthly?
+### Are subscriptions a one-time payment, or monthly?
 
 All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://sonorancad.com/app/#/pricing) to see what works best for your community.  
   
