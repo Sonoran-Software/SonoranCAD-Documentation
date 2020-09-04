@@ -6,7 +6,6 @@ description: Learn how to create custom record and report types for your communi
 
 {% hint style="danger" %}
 Custom record and reports are limited based upon your subscription version.  
-  
 For more information, please view our [pricing page](../../pricing/faq/).
 {% endhint %}
 
