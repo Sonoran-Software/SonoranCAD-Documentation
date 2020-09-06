@@ -77,6 +77,7 @@ INVALID API KEY
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
             "reason": "Automated AFK Timer", // "You have been kicked for {REASON}"
+            "serverId": 1
         },
     ]
 }
