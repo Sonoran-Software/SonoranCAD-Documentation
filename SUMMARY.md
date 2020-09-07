@@ -119,6 +119,7 @@
       * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch/README.md)
     * [Modify Account Permissions](sonoran-cad/api-integration/development-branch/modify-account-permissions.md)
+* [Translation Support](sonoran-cad/translation-support.md)
 
 ## Pricing
 
