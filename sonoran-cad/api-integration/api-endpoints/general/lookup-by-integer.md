@@ -82,12 +82,12 @@ INVALID EMPTY SEARCH
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "LOOKUP",
+    "type": "LOOKUP_INT",
     "data": [
         {
             "apiId": "STEAM:1234", // OPTIONAL FIELD - Will return results to user's CAD
-            "searchType": 0, // 
-            "value": 1, // 
+            "searchType": 0, // See the "Search Type" enum
+            "value": 1, // See the "Value" information
             "types": [2, 3] // Search only for warrant and BOLO records
         }
     ]
