@@ -37,7 +37,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 ### Full Translation Support
 
-Only Sonoran CAD supports full i18n localization. Regardless of your community's native language, Sonoran CAD supports it! Anyone is allowed to 
+Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-support.md). Regardless of your community's native language, Sonoran CAD supports it! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
 
 ### API Integration
 
