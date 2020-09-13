@@ -8,6 +8,64 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.2.0 - 9/12/2020
+
+{% tabs %}
+{% tab title="New" %}
+i18n - Language Support  
+- Sonoran CAD now supports full i18n language support for non-English translations.
+
+Record PDF - Images  
+- Images are now displayed visually in PDF records.
+
+API - Add/Remove Account Permission  
+- User account permissions can now be added or removed via an API endpoint.
+
+UI Theme Improvements  
+- Improved small UI elements and components to stay consistent with the UI theme.
+{% endtab %}
+
+{% tab title="Changed" %}
+Police Lookup - DMV  
+- Added DMV record types to the default filter for police and dispatch lookups.
+
+DB Sync - Max Records  
+- Limited the maximum amount of initial search results for DBSync communities to prevent users from requesting tens of thousands of records at a single time.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Modify Records - Owner  
+- Fixed an issue where updating a record would also update the record owner.
+
+Db Sync - Error on no results  
+- Fixed an issue where DB Sync searches would throw an error if no characters were found under the provided search name.
+
+Voice Commands - Lookup  
+- Fixed an issue causing voice command name and plate lookups to fail.
+
+Db Sync - Lookup Without Specified Column  
+- Fixed an issue where running a lookup via DB sync where a search column \(typically middle name\) was not provided by the configuration, but was requested via user search, would fail.
+
+Civilian Records - Linked to Unit Identifier  
+- Fixed an issue where creating DMV/civilian records would be linked in "My Files" for the user account's currently selected unit identifier.
+
+PDF - Sections  
+- Fixed an issue causing PDF records to not display sections and custom sections other than the civilian and vehicle ones.
+
+DB Sync - Record Overwrite  
+- Fixed an issue causing database sync to overwrite some fields in custom records on lookup.
+
+Lookup - Switch Tabs  
+- Fixed an issue where searching a license plate and then switching back to a name search would still cause a plate search to be ran on the backend.
+
+Charge Count  
+- Fixed an issue where the charge count field in records would always revert back to 1 after being saved.
+
+DB Sync - Reset to Default  
+- Added additional backend checks to ensure database sync field lists can never be empty. An empty JSON array will now automatically be reset to the default structure.
+{% endtab %}
+{% endtabs %}
+
 ### 3.1.0 - 8/17/2020
 
 {% tabs %}
