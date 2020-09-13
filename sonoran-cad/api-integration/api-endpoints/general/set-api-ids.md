@@ -10,7 +10,7 @@ This API endpoint requires the **Standard** version of Sonoran CAD or higher. Fo
 
 This endpoint allows you to manually set a user's [API ID](../../getting-started/setting-your-api-id.md). This endpoint is used in our [tablet](../../../../integration-plugins/integration-plugins/available-plugins/tablet.md) and [API ID plugin ](../../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md)to automatically link your in-game user to the CAD.
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/set\_api\_id" %}
 {% api-method-summary %}
 Set API IDs
 {% endapi-method-summary %}

@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/civilian" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/civilian/get\_characters" %}
 {% api-method-summary %}
 Get Characters
 {% endapi-method-summary %}

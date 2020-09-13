@@ -95,10 +95,6 @@
       * [Unit Panic](sonoran-cad/api-integration/api-endpoints/emergency/unit-panic.md)
       * [Update Unit Location](sonoran-cad/api-integration/api-endpoints/emergency/update-unit-location.md)
     * [Civilian](sonoran-cad/api-integration/api-endpoints/civilian/README.md)
-      * [Edit Vehicle Registration](sonoran-cad/api-integration/api-endpoints/civilian/edit-vehicle-registration.md)
-      * [New Vehicle Registration](sonoran-cad/api-integration/api-endpoints/civilian/new-vehicle-registration.md)
-      * [Edit License](sonoran-cad/api-integration/api-endpoints/civilian/edit-license.md)
-      * [New License](sonoran-cad/api-integration/api-endpoints/civilian/new-license.md)
       * [Remove Character](sonoran-cad/api-integration/api-endpoints/civilian/remove-character.md)
       * [Edit Character](sonoran-cad/api-integration/api-endpoints/civilian/edit-character.md)
       * [New Character](sonoran-cad/api-integration/api-endpoints/civilian/new-character.md)
@@ -116,9 +112,9 @@
       * [Get Account](sonoran-cad/api-integration/api-endpoints/general/get-account.md)
       * [Check API ID](sonoran-cad/api-integration/api-endpoints/general/check-api-id.md)
       * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
+      * [Modify Account Permissions](sonoran-cad/api-integration/api-endpoints/general/modify-account-permissions.md)
       * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
-  * [Development Branch](sonoran-cad/api-integration/development-branch/README.md)
-    * [Modify Account Permissions](sonoran-cad/api-integration/development-branch/modify-account-permissions.md)
+  * [Development Branch](sonoran-cad/api-integration/development-branch.md)
 * [Translation Support](sonoran-cad/translation-support.md)
 
 ## Pricing

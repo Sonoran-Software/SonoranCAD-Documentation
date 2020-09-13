@@ -14,7 +14,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 Characters can NOT be edited in communities using [Database Sync](), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/civilian" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/civilian/edit\_character" %}
 {% api-method-summary %}
 New Character
 {% endapi-method-summary %}

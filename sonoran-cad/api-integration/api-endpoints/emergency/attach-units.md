@@ -8,7 +8,7 @@ description: This endpoint allows you to attach new units to an existing dispatc
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/attach\_unit" %}
 {% api-method-summary %}
 Attach Unit
 {% endapi-method-summary %}

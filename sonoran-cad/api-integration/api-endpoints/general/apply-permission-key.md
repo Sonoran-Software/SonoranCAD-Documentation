@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/apply\_permission\_key" %}
 {% api-method-summary %}
 Apply Permission Key
 {% endapi-method-summary %}

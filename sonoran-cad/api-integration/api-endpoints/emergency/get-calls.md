@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/get\_calls" %}
 {% api-method-summary %}
 Get Calls
 {% endapi-method-summary %}

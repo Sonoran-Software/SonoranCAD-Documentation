@@ -8,7 +8,7 @@ description: Update your unit's current status in the CAD via API.
 This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/unit\_status" %}
 {% api-method-summary %}
 Update Unit Status
 {% endapi-method-summary %}

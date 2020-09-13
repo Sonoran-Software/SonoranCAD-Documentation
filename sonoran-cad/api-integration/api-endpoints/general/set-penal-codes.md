@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/set\_penal\_codes" %}
 {% api-method-summary %}
 Set Penal Codes
 {% endapi-method-summary %}

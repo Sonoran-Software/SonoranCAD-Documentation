@@ -35,6 +35,10 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 ![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
 
+### Full Translation Support
+
+Only Sonoran CAD supports full i18n localization. Regardless of your community's native language, Sonoran CAD supports it! Anyone is allowed to 
+
 ### API Integration
 
 In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).

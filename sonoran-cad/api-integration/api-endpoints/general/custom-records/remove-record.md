@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/remove\_record" %}
 {% api-method-summary %}
 Remove Record
 {% endapi-method-summary %}

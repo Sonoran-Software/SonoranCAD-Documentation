@@ -10,7 +10,7 @@ description: >-
 This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/check\_apiid" %}
 {% api-method-summary %}
 Check API ID
 {% endapi-method-summary %}

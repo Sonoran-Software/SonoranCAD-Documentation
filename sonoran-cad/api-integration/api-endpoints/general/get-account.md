@@ -8,7 +8,7 @@ description: Sonoran CAD allows you to retrieve detailed user account data via A
 This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_account" %}
 {% api-method-summary %}
 Get Account
 {% endapi-method-summary %}

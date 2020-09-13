@@ -7,10 +7,10 @@ description: >-
 # Modify Account Permissions
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/set\_account\_permissions" %}
 {% api-method-summary %}
 Modify Account Permissions
 {% endapi-method-summary %}

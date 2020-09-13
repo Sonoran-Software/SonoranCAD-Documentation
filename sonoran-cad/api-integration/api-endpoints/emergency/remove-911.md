@@ -12,7 +12,7 @@ This API endpoint requires the **Standard** version of Sonoran CAD or higher. Fo
 
 This endpoint allows you to remove an existing emergency/911 call from the CAD.
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/remove\_911" %}
 {% api-method-summary %}
 Set API IDs
 {% endapi-method-summary %}

@@ -8,7 +8,7 @@ description: This endpoint allows you to retrieve all active units in your CAD.
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/get\_active\_units" %}
 {% api-method-summary %}
 Get Active Units
 {% endapi-method-summary %}

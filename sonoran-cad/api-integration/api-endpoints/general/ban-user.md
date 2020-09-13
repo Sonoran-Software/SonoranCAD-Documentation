@@ -8,7 +8,7 @@ description: This endpoint allows you to ban a user account in your community.
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/ban\_user" %}
 {% api-method-summary %}
 Ban User
 {% endapi-method-summary %}
