@@ -253,13 +253,18 @@ If the test was successful, press “Save Vehicle Mapping” and continue.
 {% tab title="Advanced - JSON" %}
 ### Advanced - JSON
 
-Some communities may store values in a JSON column. The following example shows the syntax to pull the ‘plate’ key value from a JSON column.  
-  
-`JSON_UNQUOTE(JSON_EXTRACT(vehicle, '$.plate'))`
+Some communities may store values in a JSON column. The following example pulls the `color` key value from a JSON column named `vehicleinfo`.
 
-![JSON Extract specified in a mapping column](../../.gitbook/assets/json_cad.png)
+```javascript
+// Example of JSON column "vehicleinfo"
+{
+    "color": "Red",
+    "type": "SUV",
+    "somethingElse": "Some Value"
+}
+```
 
-This will pull the ‘plate’ value from the JSON string in the ‘vehicle’ column.
+![JSON Column in Database Sync](../../.gitbook/assets/image%20%2865%29.png)
 {% endtab %}
 {% endtabs %}
 
