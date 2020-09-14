@@ -83,5 +83,5 @@ INVALID API KEY
 
 Custom records require a strict format with several dozen different data fields. Due to the complexity, it is highly recommended to create a new custom record template in the CAD UI, and then [retrieve the record template](get-record-template.md) for adding new records.
 
-Or, view a detailed explanation of [custom record formatting](get-record-template.md). 
+Or, view a detailed explanation of [custom record formatting](./#record-formatting). 
 

@@ -79,5 +79,5 @@ INVALID API KEY
 
 #### Record Formatting
 
-Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](get-record-template.md). 
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](./#record-formatting). 
 
