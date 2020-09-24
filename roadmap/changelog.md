@@ -8,6 +8,49 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.2.1 - 9/23/2020
+
+{% tabs %}
+{% tab title="New" %}
+Polish Translations  
+- Added Polish translations to Sonoran CAD.
+
+Arabic Translations  
+- Added Arabic translations to Sonoran CAD.
+
+Penal Codes - New Charge  
+- If your penal code is not in the current charge list, users can press "ENTER" or "TAB" to add the custom value to the charge field.
+
+PDF - Image Error Handling  
+- Improved image conversion error handling and detection in custom record PDF files.
+{% endtab %}
+
+{% tab title="Changed" %}
+API - Unit Locations  
+- Unit location API now has a more optimized way of sending unit location updates as a single array to the client's frontend. This increases performance with less websocket traffic.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Panic - UI Flash  
+- Fixed an issue where a unit toggling their PANIC state would not flash their local UI screen red.
+
+Create Account - Password Error  
+- Fixed an issue where users signing up for an account and receiving an error for password standards would not display the proper translation file error message.
+
+API IDs - Auto New Unit Identifier  
+- Fixed an issue where a user setting their API ID before every singing into an emergency page for the first time would cause their new, automatically generated identifier to not contain their API ID by default.
+
+API IDs - Manual New Unit Identifier  
+- Fixed an issue where creating a new unit identifier manually would not have your account API IDs added to the unit information by default.
+
+Webhook - BOLO  
+- Fixed an issue causing the BOLO webhook to send to the general police record URL when being updated.
+
+PDF - Image Section Order  
+- Fixed a race condition causing custom record sections with images to be displayed at the bottom of the PDF after being converted to Base64.
+{% endtab %}
+{% endtabs %}
+
 ### 3.2.0 - 9/12/2020
 
 {% tabs %}
