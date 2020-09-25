@@ -31,6 +31,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Follow the [standard plugin installation guide](../plugin-installation/) for the postals and locations plugin.
 
+### 4. Configure Postal Script and Exports
+
+1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/postals#using-nearest-postal) section below.
+2. If you're using a custom postal script, you can learn more about the exports provided in the [usage](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/postals#custom-postal-scripts) section below.
+
 ## Configuration
 
 | Option | Description | Default |
