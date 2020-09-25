@@ -33,8 +33,8 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Configure Postal Script and Exports
 
-1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/postals#using-nearest-postal) section below.
-2. If you're using a custom postal script, you can learn more about the exports provided in the [usage](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/postals#custom-postal-scripts) section below.
+1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](postals.md#using-nearest-postal) section below.
+2. If you're using a custom postal script, you can learn more about the exports provided in the [usage ](postals.md#custom-postal-scripts)section below.
 
 ## Configuration
 
@@ -50,13 +50,13 @@ If using "custom" for `getPostalMethod`, you must also define in the `getPostalC
 
 ### Using Nearest-Postal
 
-1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the plugin\).
+1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin\).
 
 ```lua
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
-2. After doing so, set the `getPostalMethod` configuration option to `"nearestpostal"` in the plugin config file.
+2. After doing so, set the `getPostalMethod` configuration option to `"nearestpostal"` in the Sonoran CAD plugin config file.
 
 ### Custom Postal Scripts
 
