@@ -54,6 +54,7 @@
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
+    * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
     * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
     * [Kick](integration-plugins/integration-plugins/available-plugins/kick.md)
     * [Locations](integration-plugins/integration-plugins/available-plugins/locations.md)
