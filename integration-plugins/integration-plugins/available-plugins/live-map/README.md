@@ -43,8 +43,9 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Configuration
 
-This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base resource.  
-To do so, enter `start sonoran_livemap` in the console.
+This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base resource.
+
+1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
 #### ERROR: Couldn't start resource sonoran\_livemap
 
