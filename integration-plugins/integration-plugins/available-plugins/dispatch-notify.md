@@ -1,7 +1,7 @@
 ---
 description: >-
-  Notify officers of incoming calls, allow them to attach to them, and notify
-  the caller...all in one!
+  Notify officers of incoming calls, allow them to attach to them, notify the
+  caller, and route units via GPS in real-time...all in one!
 ---
 
 # Dispatch Notify
@@ -9,6 +9,8 @@ description: >-
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
+
+This plugin notifies officers of incoming calls and allows them to attach to calls via command. When the officer is attached to the dispatch call their GPS is automatically routed to the postal code. GPS routing is updated whenever the dispatch postal is updated and civilians making the emergency call are also notified when an officer is en-route.
 
 ## Installation
 
@@ -32,6 +34,13 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 ### 5. Configuration
 
 Review the `config_dispatchnotify.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
+
+## Commands
+
+| Command | Description |
+| :--- | :--- |
+| /rcall | Respond/Attach to the new dispatch call |
+| /togglegps | Toggle the GPS auto-lock when dispatch updates the postal code |
 
 ### Troubleshooting
 
