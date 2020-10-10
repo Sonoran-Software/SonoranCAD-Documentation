@@ -21,11 +21,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation.md) for the locations and API check plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the locations and API check plugin.
 
 ### 4. Set Your API ID
 
-Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/api-endpoints/general/set-api-ids.md) to properly link your in-game user to the CAD.
 
 ## Further Configuration
 
