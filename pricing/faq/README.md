@@ -12,7 +12,7 @@ description: 'See below for commonly asked questions and answers:'
 
 ### Are subscriptions a one-time payment, or monthly?
 
-All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://sonorancad.com/app/#/pricing) to see what works best for your community.  
+All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://app.sonorancad.com/#/pricing) to see what works best for your community.  
   
 Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 
