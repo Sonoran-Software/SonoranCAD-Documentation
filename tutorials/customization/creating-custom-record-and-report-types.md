@@ -192,7 +192,7 @@ If the "NEW REPORT" button, or actions on the report viewer are disabled, you ar
 
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
-### 3. Emergency Services Supervisor Panel
+### 3. Supervisor Panel
 
 The supervisor panel shows all reports that have a blank field that requires supervisor permissions.  
 If you do not have the supervisor panel enabled, you will need to have the [supervisor permission granted on your account](../getting-started/permissions.md).
