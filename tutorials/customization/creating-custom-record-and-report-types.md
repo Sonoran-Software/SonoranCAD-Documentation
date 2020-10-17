@@ -195,12 +195,7 @@ If the "NEW REPORT" button, or actions on the report viewer are disabled, you ar
 ### 3. Emergency Services Supervisor Panel
 
 The supervisor panel shows all reports that have a blank field that requires supervisor permissions.  
-If you do not have the supervisor panel enabled, you will need to have the supervisor toggle enabled in your unit identifier.  
+If you do not have the supervisor panel enabled, you will need to have the [supervisor permission granted on your account](../getting-started/permissions.md).
 
-
-![Unit Editor&apos;s Supervisor Field](../../.gitbook/assets/image%20%2810%29.png)
-
-### 4. DMV - Supervisor
-
-For custom DMV records, users with the `DMV` page permission are granted access to supervisor fields.
+### 
 
