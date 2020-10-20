@@ -16,9 +16,13 @@ All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](http
   
 Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 
+### Can I purchase a lifetime subscription?
+
+Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly recurring basis.
+
 ### How do I cancel, upgrade, or downgrade my subscription?
 
-You can cancel, upgrade, or downgrade your subscription at anytime using the payment center.  
+You can cancel, upgrade, or downgrade your subscription at any time using the payment center.  
 This can be accessed under:
 
 1. Admin &gt; Advanced &gt; Limits
@@ -30,7 +34,7 @@ The payment center is only available in the web or desktop version of Sonoran CA
 
 ### How do I change what community my subscription is applied to?
 
-At any time with an active subscription \(including cancelled subscriptions that are still active\) you may change what community is benefiting from the subscription.  
+At any time with an active subscription \(including canceled subscriptions that are still active\) you may change what community is benefiting from the subscription.  
   
 This can be changed by clicking "Modify" under:  
      Community Selection Menu &gt; My Account &gt; Subscriptions
