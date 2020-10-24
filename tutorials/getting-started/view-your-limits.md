@@ -14,5 +14,5 @@ In the admin page, select "Advanced" &gt; "Limits" to view your community limita
 
 ### Interested in a Paid Subscription?
 
-View our [pricing ](https://sonorancad.com/app/#/pricing)page for more information!
+View our [pricing ](https://app.sonorancad.com/#/pricing)page for more information!
 
