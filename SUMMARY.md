@@ -19,6 +19,7 @@
 * [Customization](tutorials/customization/README.md)
   * [Community Branding and Settings](tutorials/customization/community-branding-and-info.md)
   * [Creating Custom Record and Report Types](tutorials/customization/creating-custom-record-and-report-types.md)
+  * [Sharing Custom Records](tutorials/customization/sharing-custom-records.md)
   * [Geographical Settings](tutorials/customization/geographical-settings.md)
   * [Penal Codes](tutorials/customization/penal-codes.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)

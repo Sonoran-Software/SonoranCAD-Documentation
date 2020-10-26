@@ -8,6 +8,44 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.3.0 - 10/25/2020
+
+{% tabs %}
+{% tab title="New" %}
+User Accounts - Purge  
+- Admins can now "purge" inactive users in the admin menu. This will kick all users who have not logged in for the past 30 days.
+
+Signal 100 - Webhook  
+- Webhooks can now be configured for signal 100 notifications.
+
+Custom Records - Import/Export  
+- You can now export and import custom records and share them with other communities.
+
+Query String - Hide Switch Community  
+- Communities hosting a custom login page or using an in-game tablet can specify the "lockCommunity" query string to hide the "switch community" button in the CAD.
+
+i18n Arabic  
+- Arabic translations have been completed and updated.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Account Delete  
+- Fixed an issue causing some account removal requests to have an error occur when sending the confirmation email.
+
+Side Menu - Vertical Scroll  
+- Fixed an issue where screens in horizontal mode \(in-game tablet\) would have side drawer buttons overlap. The side drawer now properly scrolls vertically.
+
+Community ID and Account - PostgreSQL Wildcard  
+- Fixed an issue where PostgreSQL queries for a community ID, email, or username with an underscore in them wouldn't escape the underscore. This caused conflict issues if the wildcard had another match.
+
+Record Order - Non DB Sync  
+- Fixed an issue where records in a lookup were not always retrieved in proper chronological order. This caused issues with the UI preview not always showing the most recent template.
+
+Live Map - Static URL Toggle Label  
+- Fixed an incorrect translation label for the live map static URL toggle label.
+{% endtab %}
+{% endtabs %}
+
 ### 3.2.1 - 9/23/2020
 
 {% tabs %}
