@@ -73,12 +73,21 @@ Add the following to your `server.cfg` \(if you don't want pNotify or wraith, le
 ensure pNotify
 ensure wk_wars2x
 ensure sonorancad
+ensure tablet
+
+# permissions for auto-updater (REQUIRED)
+add_ace resource.sonorancad command.start allow
+add_ace resource.sonorancad command.stop allow
+add_ace resource.sonorancad command.ensure allow
+add_ace resource.sonoran_updatehelper command.stop allow
+add_ace resource.sonoran_updatehelper command.start allow
+add_ace resource.sonoran_updatehelper command.ensure allow
 ```
 
 {% hint style="warning" %}
 If you are **NOT** using **ESX**, modify `fxmanifest.lua` and remove the following line from the file...
 
-`dependency 'mysql-async' -- remove if not using ESX`
+,'@mysql-async/lib/MySQL.lua' -- if not using ESX, you can remove this line
 {% endhint %}
 
 ### 5. Installing Plugins
