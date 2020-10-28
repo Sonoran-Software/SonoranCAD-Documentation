@@ -79,9 +79,11 @@ ensure tablet
 add_ace resource.sonorancad command.start allow
 add_ace resource.sonorancad command.stop allow
 add_ace resource.sonorancad command.ensure allow
+add_ace resource.sonorancad command.restart allow
 add_ace resource.sonoran_updatehelper command.stop allow
 add_ace resource.sonoran_updatehelper command.start allow
 add_ace resource.sonoran_updatehelper command.ensure allow
+add_ace resource.sonoran_updatehelper command.restart allow
 ```
 
 {% hint style="warning" %}
