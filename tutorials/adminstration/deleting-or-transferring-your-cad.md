@@ -14,7 +14,7 @@ Navigate to  Admin &gt; Advanced &gt; Transfer or Delete CAD
 
 ![Advanced Dropdown Menu](../../.gitbook/assets/3.png)
 
-##   2. Transfer or Delete the VAD                   
+##   2. Transfer or Delete the CAD                   
 
 Select **TRANSFER CAD** or **REMOVE CAD**:
 
