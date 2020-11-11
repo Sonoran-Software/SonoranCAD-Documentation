@@ -9,6 +9,8 @@
 
 ## Tutorials
 
+* [Adminstration](tutorials/adminstration/README.md)
+  * [Deleting or Transferring your CAD](tutorials/adminstration/deleting-or-transferring-your-cad.md)
 * [Getting Started](tutorials/getting-started/README.md)
   * [Registering Your Account](tutorials/getting-started/registering-your-account.md)
   * [Registering Your Community](tutorials/getting-started/registering-your-community.md)
