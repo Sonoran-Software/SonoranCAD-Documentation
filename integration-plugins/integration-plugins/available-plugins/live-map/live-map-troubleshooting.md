@@ -38,9 +38,9 @@ Navigate to `mapIp:30120/info.json` in your web browser:
 
 You can search \(control/command + f\) for the keyword "map".
 
-1. Ensure the "sonoran\_livemap" resource listed and running.
-2. Ensure you do **NOT** have "live\_map" listed. This is the default/original live map resource from Havoc and will cause conflict issues.
-3. If "live\_map" is listed and running, stop it, remove it, and restart the server.
+1. Ensure the `sonoran_livemap` resource listed and running. If not, follow the [installation guide](./) and check your server console for errors on startup once `ensure sonoran_livemap` is in your `server.cfg` file.
+2. Ensure you do **NOT** have `live_map` listed. This is the default/original live map resource from Havoc and will cause resource conflicting issues.
+3. If `live_map` is listed and running, stop it, remove it, and restart the server.
 
 ## 3. Check Ports
 
@@ -57,11 +57,11 @@ Ensure the IP and ports are listed correctly without spaces, common mistypes, po
 ### 3B. Ensure the Map Port is Open
 
 Navigate to `mapIp:mapPort/blips.json` in a web browser:  
-You should see brackets with or without blip data.
+You should see brackets **with or without additional blip data**.
 
 ![View your blips.json file](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.10.28-pm.png)
 
-If you do not see the brackets, the issue may be caused by one of the following:
+If you do **not** see the brackets \(with or without additional data\), the issue may be caused by one of the following:
 
 1. The live map resource is not running on your server.
 2. The live map port `30121` \(by default\) is used by another service.
@@ -70,16 +70,16 @@ If you do not see the brackets, the issue may be caused by one of the following:
 
 ### 3C. Ensure the Listener Port is Open
 
-Navigate to `mapIp:listenerPort` in your web browser, you should see the following page.
+Navigate to `mapIp:listenerPort` in your web browser, you should see the following page. This means that you have properly configured your push events listener page:
 
-![Access your event listener](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.16.12-pm%20%281%29.png)
+![Event Listener: Web Browser View](../../../../.gitbook/assets/screen-shot-2020-11-11-at-12.16.32-am.png)
 
 If the page is not displayed, the issue may be caused by one of the following:
 
 1.  You do not have the [push events](../push-events.md) plugin running.
 2. The port numbers are not set correctly.
 3. You do not have the ports open.
-   * If you are unsure how to open the live map port, you will need to contact your hosting provider.
+   * If you are unsure how to open the live map port, you will need to **contact your hosting provider**.
 
 ## 4. Ensure Your API ID is Set
 
@@ -118,4 +118,10 @@ If the `APIID` listed is different, [update your API ID set in your CAD's user a
 ![](../../../../.gitbook/assets/image%20%2827%29.png)
 
 If you do not see the  `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, or`EVENT_UNIT_STATUS` push events displayed in debug mode when you perform these actions in the CAD, **double check that your push events listener is correctly setup in step 3C**.
+
+## 6. Clear Local Browser Cache
+
+When re-deploying the live map with new configurations, your local web browser may be caching an older version of the config.
+
+In Chrome, you can hold `shift` and click `refresh` at the same time on the live map page to clear your browser's cache.
 
