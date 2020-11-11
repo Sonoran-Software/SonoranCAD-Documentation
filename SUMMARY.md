@@ -9,8 +9,6 @@
 
 ## Tutorials
 
-* [Adminstration](tutorials/adminstration/README.md)
-  * [Deleting or Transferring your CAD](tutorials/adminstration/deleting-or-transferring-your-cad.md)
 * [Getting Started](tutorials/getting-started/README.md)
   * [Registering Your Account](tutorials/getting-started/registering-your-account.md)
   * [Registering Your Community](tutorials/getting-started/registering-your-community.md)
@@ -40,6 +38,8 @@
   * [Searching for Records](tutorials/records-management/searching-for-records.md)
   * [Adding a Criminal Record](tutorials/records-management/adding-a-criminal-record.md)
   * [PDF Records](tutorials/records-management/pdf-records.md)
+* [Adminstration](tutorials/adminstration/README.md)
+  * [Deleting or Transferring your CAD](tutorials/adminstration/deleting-or-transferring-your-cad.md)
 * [Other Features](tutorials/other-features/README.md)
   * [Configurable Hotkeys](tutorials/other-features/configurable-hotkeys.md)
   * [Voice Commands](tutorials/other-features/voice-commands.md)
