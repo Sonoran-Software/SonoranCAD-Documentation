@@ -39,12 +39,14 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
     "apiUrl": "https://api.sonorancad.com/",
     "postTime": 5000,
     "serverId": "1",
-    "serverType": "standalone",
     "primaryIdentifier": "steam",
     "apiSendEnabled": true,
     "debugMode": false,
     "updateBranch": "master",
-    "statusLabels": ["UNAVAILABLE", "BUSY", "AVAILABLE", "ENROUTE", "ON_SCENE"]
+    "statusLabels": ["UNAVAILABLE", "BUSY", "AVAILABLE", "ENROUTE", "ON_SCENE"],
+    "allowAutoUpdate": true,
+    "autoUpdateUrl": "https://raw.githubusercontent.com/Sonoran-Software/SonoranCADLuaIntegration/{branch}/sonorancad/version.json",
+    "allowUpdateWithPlayers": false
 }
 ```
 
@@ -58,12 +60,15 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | apiKey | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings. |
 | postTime | Update locations every x ms. Default 5000. It is recommend to not set this lower than 5000 ms due to rate limiting. |
 | serverId | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here. |
-| serverType | Can be `"standalone"`or `"esx"`, which enables some ESX-specific configuration. |
+| serverType | DEPRECATED |
 | primaryIdentifier | The identifier type your community uses in the CAD to enter their API IDs. Valid values are: `license`, `steam`, or `discord.` |
 | apiSendEnabled | When disabled, the integration will not send any API requests to SonoranCAD. |
 | debugMode | When set to `true`, useful debugging information it outputted to the console. Keep disabled in production due to console spam. This can be toggled by entering `sonoran debugmode` in console. |
 | updateBranch | Use this branch when checking for updates. Keep `master` unless you know what you're doing. |
 | statusLabels | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings. |
+| allowAutoUpdate | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours. |
+| autoUpdateUrl | Where to check for updated versions. Don't touch this unless you have a reason. |
+| allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players. |
 
 ### 4. Server Config
 
@@ -76,12 +81,8 @@ ensure sonorancad
 ensure tablet
 
 # permissions for auto-updater (REQUIRED)
-add_ace resource.sonorancad command.start allow
-add_ace resource.sonorancad command.stop allow
-add_ace resource.sonorancad command.ensure allow
-add_ace resource.sonoran_updatehelper command.stop allow
-add_ace resource.sonoran_updatehelper command.start allow
-add_ace resource.sonoran_updatehelper command.ensure allow
+add_ace resource.sonorancad command allow
+add_ace resource.sonoran_updatehelper command allow
 ```
 
 {% hint style="warning" %}
