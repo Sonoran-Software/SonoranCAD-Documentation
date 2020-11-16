@@ -74,6 +74,10 @@ All above convars are set via the `set` command in your server config, such as `
 
 #### B. Admin Panel Configuration
 
+{% hint style="warning" %}
+IMPORTANT: You must use an unused port for both the map and listener ports. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
+{% endhint %}
+
 ![](../../../../.gitbook/assets/livemap_config.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
