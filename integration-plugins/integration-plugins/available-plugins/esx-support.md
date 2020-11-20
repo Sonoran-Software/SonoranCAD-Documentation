@@ -10,6 +10,10 @@ description: Adds support for ESX to other plugins.
 This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](https://github.com/Sonoran-Software/SonoranCAD-Documentation/blob/master/pricing/faq)page. 
 {% endhint %}
 
+{% hint style="info" %}
+ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
+{% endhint %}
+
 ### Installation
 
 #### 1. Download and Install the Framework
