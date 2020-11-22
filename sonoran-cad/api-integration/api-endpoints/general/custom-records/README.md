@@ -146,6 +146,13 @@ Ex: `(###) ### - ####` forces a phone number format.
 | S | Letter A-Z |
 | X | Alphanumeric |
 
+#### UID
+
+The `UID` or "Unique ID" field helps internally map Database Merge fields.  
+In addition, a `UID` field with the value of `"first"` and `"last"` are required for the civilian records. A `UID` field of `"plate"` is required for a vehicle field. This is how the backend process determines searchable license plate and character name values.
+
+When you create a custom record and add in a `civilian` or `vehicle` section, the imported section will keep the same `UID` fields. This is how data is mapped from a character or vehicle search, and placed into a custom record.
+
 #### Data
 
 The data object stores detailed objects for pre-made section types. The data object type \(civilian, vehicle, etc.\) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` \(Custom\) then the section will contain a single field, with the `data` property containing the detailed object.
