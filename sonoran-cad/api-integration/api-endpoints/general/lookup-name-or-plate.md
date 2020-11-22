@@ -51,7 +51,6 @@ _Detailed contents of the record type arrays can be found further below._
 
 ```
 {
-  "characters": [],
   "records": []
 }
 ```
@@ -119,7 +118,8 @@ The `characters` object array will always be included with the search. The `type
 | 2 | Warrant |
 | 3 | BOLO |
 | 4 | License |
-| 5 | Vehicle Registration |
+| 5 | Custom Vehicle Registration |
+| 7 | Custom Character Record |
 | 8 | Custom Police Record |
 | 9 | Custom Police Report |
 | 10 | Custom Medical Record |
@@ -133,40 +133,6 @@ The `characters` object array will always be included with the search. The `type
 
 {% tab title="Response Object Types" %}
 ### Response Object Types
-
-Lookup responses contain an array of `characters` and `records`.
-
-#### Characters Formatting
-
-All character results from the search are returned in the following object array structuring:
-
-```javascript
-"characters": [
-    {
-        "id": 0,
-        "syncId": "",
-        "img": "https://someimagepath.com",
-        "first": "John",
-        "last": "Doe",
-        "mi": "A",
-        "dob": "1900/01/01",
-        "age": "100",
-        "sex": "M",
-        "aka": "Johnny",
-        "residence": "4321 E. Example Ave",
-        "zip": "12345",
-        "occupation": "Software Developer",
-        "height": "5 11",
-        "weight": "175",
-        "skin": "CAUCASIAN",
-        "hair": "BROWN",
-        "eyes": "HAZEL",
-        "emergencyContact": "Sally May",
-        "emergencyContactNumber": "123 456 7890",
-        "emergencyContactRelationship": "Wife"
-    }
-  ]
-```
 
 #### Records Formatting
 

@@ -41,6 +41,12 @@ Add your desired custom and premade sections, edit fields, and more!
 
 ![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/image%20%288%29.png)
 
+If your section is a custom character or vehicle field, you can toggle on the search button:
+
+![Sonoran CAD: Custom Section Search Toggle](../../.gitbook/assets/image%20%2869%29.png)
+
+This allows the section to be filled via search when creating a new one.
+
 {% tabs %}
 {% tab title="Field Type" %}
 Fields can be an text, select, or textarea, date, time, or checkboxes.

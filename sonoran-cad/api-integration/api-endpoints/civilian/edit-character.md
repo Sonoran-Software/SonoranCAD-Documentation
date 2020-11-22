@@ -11,7 +11,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 {% endhint %}
 
 {% hint style="danger" %}
-Characters can NOT be edited in communities using [Database Sync](), as all characters are pulled from your server's in-game database.
+Characters can NOT be edited in communities using [Database Sync](../../../../tutorials/in-game-integration/database-sync-and-merge.md), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/civilian/edit\_character" %}
@@ -89,29 +89,13 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "data": [
         {
             "apiId": "STEAM:1234", // API ID - Typically, this is their Steam Hex
-            "id": -1, // Unique character ID - Use GET_CHARACTERS to retrieve
-            
-            "img": "someimageurlhere.jpg",
-    		    "first": "John",
-    		    "last": "Doe",
-    		    "mi": "A", // Middle initial can only be ONE character
-    		    "dob": "01/01/1900",
-    		    "age": "18",
-    		    "sex": "M",
-    	    	"aka": "Johnny",
-    	    	"residence": "3183 E. Example Ave",
-        		"zip": "39493",
-        		"occupation": "Software Developer",
-        		"height": "5 10",
-        		"weight": "175",
-        		"skin": "Caucasian",
-        		"hair": "Brown",
-        		"eyes": "Hazel",
-        		"emergencyContact": "Sally Quinn",
-        		"emergencyContactNumber": "(123) 456 - 7890",
-        		"emergencyContactRelationship": "Sister"
+            "character": {}, // Custom character record
         },
     ]
 }
 ```
+
+#### Record Formatting
+
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting). 
 

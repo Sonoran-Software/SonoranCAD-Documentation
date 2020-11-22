@@ -87,27 +87,13 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "data": [
         {
             "apiId": "STEAN:1234", // API ID, Typically, this is their STEAM Hex
-            "img": "someimageurlhere.jpg",
-    		    "first": "John",
-    		    "last": "Doe",
-    		    "mi": "A", // Middle initial can only be ONE character
-    		    "dob": "01/01/1900",
-    		    "age": "18",
-    		    "sex": "M",
-    	    	"aka": "Johnny",
-    	    	"residence": "3183 E. Example Ave",
-        		"zip": "39493",
-        		"occupation": "Software Developer",
-        		"height": "5 10",
-        		"weight": "175",
-        		"skin": "Caucasian",
-        		"hair": "Brown",
-        		"eyes": "Hazel",
-        		"emergencyContact": "Sally Quinn",
-        		"emergencyContactNumber": "(123) 456 - 7890",
-        		"emergencyContactRelationship": "Sister"
+            "character": {} // Custom character record
         },
     ]
 }
 ```
+
+#### Record Formatting
+
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting). 
 

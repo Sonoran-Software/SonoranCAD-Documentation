@@ -105,6 +105,7 @@
       * [New Character](sonoran-cad/api-integration/api-endpoints/civilian/new-character.md)
       * [Get Characters](sonoran-cad/api-integration/api-endpoints/civilian/get-characters.md)
     * [General](sonoran-cad/api-integration/api-endpoints/general/README.md)
+      * [Get Version](sonoran-cad/api-integration/api-endpoints/general/get-version.md)
       * [Set Penal Codes](sonoran-cad/api-integration/api-endpoints/general/set-penal-codes.md)
       * [Set API IDs](sonoran-cad/api-integration/api-endpoints/general/set-api-ids.md)
       * [Custom Records](sonoran-cad/api-integration/api-endpoints/general/custom-records/README.md)

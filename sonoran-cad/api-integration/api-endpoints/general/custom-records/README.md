@@ -65,6 +65,7 @@ The record "type" is an enumerator used to distinguish the category of the custo
 | 3 | BOLO |
 | 4 | License |
 | 5 | Vehicle Registration |
+| 7 | Character |
 | 8 | Custom Police Record |
 | 9 | Custom Police Report |
 | 10 | Custom Medical Record |
@@ -96,8 +97,6 @@ The `category` field contains an enumerator representing the section type. These
 | 0 | Custom |
 | 1 | Flags |
 | 2 | Agency |
-| 3 | Civilian |
-| 4 | Vehicle |
 | 5 | Speed |
 | 6 | Charges |
 {% endtab %}
@@ -168,40 +167,6 @@ Ex: `record.sections[index].fields[0].data` object would contain a civilian char
    "location": "1234 E. Test St",
    "zip": "12345",
    "badge": "A10"
-}
-
-// Civilian (Section Category 3)
-{
-   "apiId": "STEAN:1234", // API ID, Typically, this is their STEAM Hex
-   "img": "someimageurlhere.jpg",
-	 "first": "John",
-	 "last": "Doe",
-	 "mi": "A", // Middle initial can only be ONE character
-	 "dob": "01/01/1900",
-	 "age": "18",
-	 "sex": "M",
-   "aka": "Johnny",
-   "residence": "3183 E. Example Ave",
-   "zip": "39493",
-   "occupation": "Software Developer",
-   "height": "5 10",
-   "weight": "175",
-   "skin": "Caucasian",
-   "hair": "Brown",
-   "eyes": "Hazel",
-   "emergencyContact": "Sally Quinn",
-   "emergencyContactNumber": "(123) 456 - 7890",
-   "emergencyContactRelationship": "Sister"
-}
-
-// Vehicle (Section Category 4)
-{
-   "type": "COUPE",
-   "make": "Ford",
-   "model": "Mustang",
-   "color": "Silver",
-   "plate": "1234ABC",
-   "year": "2002"
 }
 
 // Speed (Section Category 5)
