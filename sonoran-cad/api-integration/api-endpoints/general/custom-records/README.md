@@ -156,9 +156,9 @@ When you create a custom record and add in a `civilian` or `vehicle` section, th
 
 #### Data
 
-The data object stores detailed objects for pre-made section types. The data object type \(civilian, vehicle, etc.\) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` \(Custom\) then the section will contain a single field, with the `data` property containing the detailed object.
+The data object stores detailed objects for pre-made section types. The data object type \(charge, agency info, flags, etc.\) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` \(Custom\) then the section will contain a single field, with the `data` property containing the detailed object.
 
-Ex: `record.sections[index].fields[0].data` object would contain a civilian character if the `record.sections[index].category` is `0` \(custom\).
+Ex: `record.sections[index].fields[0].data` object would contain agency information if the `record.sections[index].category` is `2` \(Agency\).
 
 ```javascript
 // Flags (Section Category 1)
