@@ -149,9 +149,10 @@ Ex: `(###) ### - ####` forces a phone number format.
 #### UID
 
 The `UID` or "Unique ID" field helps internally map Database Merge fields.  
-In addition, a `UID` field with the value of `"first"` and `"last"` are required for the civilian records. A `UID` field of `"plate"` is required for a vehicle field. This is how the backend process determines searchable license plate and character name values.
+  
+In addition, a `UID` field with the value of `"first"` and `"last"` are required for the civilian records. A `UID` field of `"plate"` is required for a vehicle registration record. This is how the backend process determines searchable license plate and character name values.
 
-When you create a custom record and add in a `civilian` or `vehicle` section, the imported section will keep the same `UID` fields. This is how data is mapped from a character or vehicle search, and placed into a custom record.
+When you create a custom record and add in a `civilian` or `vehicle` section, the imported section will keep the same `UID` fields. This is how data is mapped from a character or vehicle search and placed into a custom record.
 
 #### Data
 
