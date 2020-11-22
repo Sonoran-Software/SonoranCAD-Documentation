@@ -52,9 +52,7 @@ _Detailed contents of the record type arrays can be found further below._
 {% endapi-method-response-example-description %}
 
 ```
-{
-  "records": []
-}
+[] // Array of records
 ```
 {% endapi-method-response-example %}
 
