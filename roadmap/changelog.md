@@ -8,6 +8,55 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.4.0 - 11/21/2020
+
+{% tabs %}
+{% tab title="New" %}
+DbSync/Records - Custom Character Mapping Fields  
+- Civilian records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
+
+DBSync/Records - Custom Vehicle Mapping Fields  
+- Vehicle registration records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
+
+Login - Multiple Sessions  
+- Users may have multiple valid session tokens based on the IP, time, and session key. This ensures sessions are not invalidated when switching devices, particularly to and from our desktop and mobile apps.
+
+API Endpoint: Version Check  
+- This API endpoint allows you to check the current subscription version of the community.
+
+Re-connection Handling  
+- Improved app re-connection event registration and handling. This greatly improves user experience with connection drop outs, backend service restarts, etc. and fixes common bugs where units may experience with data not updating randomly until the page is refreshed.
+
+Penal Codes - Import/Export  
+- Penal code lists can now be imported and exported from one community to another.
+
+Penal Codes - Manual Sort  
+- Penal codes can now be manually sorted in order using the action buttons in the admin customization menu.
+
+DbSync - Column Space Check  
+- All database sync column and table name values are trimmed to ensure no accidental spaces were entered that could cause an invalid SQL syntax error.
+
+Lookup - Trim trailing spaces  
+- Added additional checks to ensure no beginning or trailing spaces are entered into the search terms.
+{% endtab %}
+
+{% tab title="Changed" %}
+Stay Signed In  
+- The stay signed in option is now enabled by default. All session tokens are now stored in local storage as opposed to session storage.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Discord Webhooks  
+- Fixed an issue where Discord webhook URLs with Discord.com instead of discordapp.com would fail.
+
+Side Menu - Scroll  
+- Fixed an issue where the side menu buttons would be overlapping on smaller screens.
+
+Empty Bolo - No Table  
+- Fixed an issue where the view BOLOs tab wouldn't show anything but the top navbar if there were no BOLOs or warrants active. It now properly shows a "No Records Found" to minimize confusion.
+{% endtab %}
+{% endtabs %}
+
 ### 3.3.0 - 10/25/2020
 
 {% tabs %}
