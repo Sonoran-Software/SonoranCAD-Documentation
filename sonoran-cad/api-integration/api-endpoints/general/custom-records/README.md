@@ -84,7 +84,11 @@ The "Section" object contains all of the data for a custom record section. These
 {
     "category": 0, // Premade or Custom Section Type
     "label": "Some Custom Section", // Name/Header of Section
-    "fields": [] // Array of "FIELD" objects
+    "fields": [], // Array of "FIELD" objects
+    "searchCiv": false, // If this is a civilian character section,
+                        //  display the search button to help search and import character data automatically
+    "searchVeh": false  // If this is a vehicle information section,
+                        //  display the search button to help search and import vehicle data automatically
 }
 ```
 
