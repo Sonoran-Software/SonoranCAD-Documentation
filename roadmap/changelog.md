@@ -8,6 +8,40 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.4.1 - 11/22/2020
+
+{% tabs %}
+{% tab title="New" %}
+Vehicle Registration - UID Status Required  
+- All vehicle registrations now require a field with a UID of "Status". This enables the radar plugin to pull up and find the vehicle registration status.
+{% endtab %}
+
+{% tab title="Changed" %}
+Reconnection and Event Handling  
+- Further improvements have been made to the reconnection and event handling logic to improve the overall user experience.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Law Section - Lookup  
+- Fixed an issue causing the lawyer page lookup section to not work properly.
+
+Event Handling - Page Switch  
+- Fixed an issue where some event handlers would not be properly registered when switching from one page and back to another.
+
+Verify Account  
+- Fixed an issue with the validate page's event handler preventing new users from verifying their email address.
+
+Custom Record - Fail without UID  
+- Additional safety checks have been added to handle any legacy record containing fields without a proper UID property that prevented some users from adding custom records.
+
+Lookup By Int  
+- Fixed an issue causing lookup by integer values \(ID, ident, status\) from not working properly.
+
+DBSync - License and Vehicle  
+- Fixed an issue causing custom vehicle and license records to not be returned by DBSync if the custom civilian sync record contained data that the mapped vehicle or license records do not.
+{% endtab %}
+{% endtabs %}
+
 ### 3.4.0 - 11/21/2020
 
 {% tabs %}
