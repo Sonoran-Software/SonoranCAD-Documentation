@@ -8,6 +8,18 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.4.2 - 11/23/2020
+
+{% tabs %}
+{% tab title="Fixed" %}
+My Records  
+- Fixed an issue causing the "My Records" section in the record center to not show properly.
+
+Civilian: Apply  
+- Fixed an issue where civilians without the "Add" permission for records and could only apply would have the sections all disabled.
+{% endtab %}
+{% endtabs %}
+
 ### 3.4.1 - 11/22/2020
 
 {% tabs %}
