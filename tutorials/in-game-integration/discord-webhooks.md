@@ -50,6 +50,10 @@ Press the "Save Changes" button to save your new webhook in Discord.
 
 ### 6. Configure the Sonoran CAD Webhook
 
+{% hint style="warning" %}
+New webhooks are created as "discord.com" which is currently unsupported. Please change the URLs of the generated webhooks to "discordapp.com" so they will function.
+{% endhint %}
+
 In the Sonoran CAD Admin panel, select “Advanced &gt; Discord Integration”  
 Paste your Webhook URL in the desired webhook configuration box.  
 Toggle the desired notification events for the specific webhook. Press the “Save Configuration” button.
