@@ -91,3 +91,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 }
 ```
 
+#### Record Formatting
+
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting).
+
