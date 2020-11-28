@@ -8,6 +8,29 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.4.4 - 11/28/2020
+
+{% tabs %}
+{% tab title="New" %}
+Promotional Handling  
+- Added new side menu handling for special promotional banners and URL handling.
+{% endtab %}
+
+{% tab title="Fixed" %}
+DMV - Status  
+- Fixed an issue causing the STATUS type field in custom records to not be read properly in the backend. This caused cases where all new records would show up in the PENDING section of the DMV page even if they had been approved.
+
+DMV - Record Center Update  
+- Fixed an issue where lookup preview table results would not update locally after editing or removing a record. Causing the user to have to manually refresh the search query.
+
+DB Merge - Error  
+- Fixed an issue causing DB merge searches to fail if the results only contained records, and no civilians.
+
+Civilian - DBSync Add Character  
+- Fixed an issue where civilians couldn't search to link a new character with DBSync due to a race condition with the event registration.
+{% endtab %}
+{% endtabs %}
+
 ### 3.4.2 - 11/23/2020
 
 {% tabs %}
