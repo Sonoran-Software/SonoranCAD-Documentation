@@ -127,6 +127,7 @@
 
 * [Pricing FAQ](pricing/faq/README.md)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
+  * [Create and Manage a Subscription](pricing/faq/create-and-manage-a-subscription.md)
   * [Request Discord Role](pricing/faq/request-discord-role.md)
 * [View and Compare Plans](https://app.sonorancad.com/#/pricing)
 

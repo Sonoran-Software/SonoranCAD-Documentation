@@ -4,19 +4,20 @@ description: Learn more about accessing Sonoran CAD's payment center.
 
 # Accessing the Payment Center
 
-{% hint style="info" %}
-The payment center is only accessible from the web or desktop version of Sonoran CAD. The payment center will not be visible using our iOS or Android application.
+{% hint style="warning" %}
+The payment center is only accessible from the **web or desktop version of Sonoran CAD**. The payment center **will not be visible using our iOS or Android** application.
 {% endhint %}
 
-### From the Admin Panel
+### Access the Payment Center
 
-In your CAD's admin panel, select Advanced &gt; Limits &gt; Upgrade Your CAD
+1. Sign into [app.sonorancad.com](https://app.sonorancad.com)
+2. In the side navigation menu, select "My Account"
 
-![Sonoran CAD&apos;s Limits Panel](../../.gitbook/assets/purchase_limits.png)
+![Sonoran CAD - Access Account Menu](../../.gitbook/assets/image%20%2874%29.png)
 
-### From the Community Selection Screen
+3. Select "Subscriptions"  
+  - This will open [app.sonorancad.com/\#/billing](https://app.sonorancad.com/#/billing)  
 
-At the community selection screen, select My Account &gt; Subscriptions
 
-![Sonoran CAD&apos;s &quot;My Account&quot; Sectopm](../../.gitbook/assets/purchase_menu.png)
+![](../../.gitbook/assets/image%20%2877%29.png)
 
