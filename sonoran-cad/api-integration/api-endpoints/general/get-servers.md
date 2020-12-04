@@ -1,16 +1,19 @@
 ---
-description: This endpoint allows you to check your Sonoran CAD subscription version.
+description: >-
+  This endpoint allows you to retrieve your community's server configuration.
+  This contains valuable Live Map configuration data and can be used to ensure
+  correct Live Map configs.
 ---
 
-# Get Version
+# Get Servers
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_version" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_servers" %}
 {% api-method-summary %}
-Get Version
+Get Servers
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API endpoint allows communities with a large number of penal codes to set them easily with a single API call.
+This endpoint allows you to retrieve your community's server configuration. This contains valuable Live Map configuration data and can be used to ensure correct Live Map configs.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -25,7 +28,7 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-GET\_VERSION
+GET\_SERVERS
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
@@ -41,11 +44,23 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-0 - FREE
-1 - STARTER
-2 - STANDARD
-3 - PLUS
-4 - PRO
+{
+  "servers": [
+    {
+      "id": 1,
+      "name": "Server 1",
+      "description": "Default server description",
+      "signal": null,
+      "mapUrl": "https://cadapi.dev.sonoransoftware.com/map/community/map_example/index.html",
+      "mapIp": "123.456.78.9",
+      "mapPort": "30121",
+      "listenerPort": "0000",
+      "enableMap": false,
+      "mapType": "POSTAL",
+      "isStatic": false
+    }
+  ]
+}
 ```
 {% endapi-method-response-example %}
 
@@ -69,7 +84,7 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "GET_VERSION",
+    "type": "GET_SERVERS",
     "data": []
 }
 ```
