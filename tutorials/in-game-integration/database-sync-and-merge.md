@@ -266,6 +266,32 @@ Some communities may store values in a JSON column. The following example pulls 
 
 ![JSON Column in Database Sync](../../.gitbook/assets/image%20%2865%29.png)
 {% endtab %}
+
+{% tab title="Friendly Mapping" %}
+### Friendly Mapping
+
+Friendly mapping allows you to convert any raw database value to a more user friendly value.  
+Ex: `drive_license` in your database is converted to `Driver's License`.
+
+#### 1. Open the Friendly Mapping Editor
+
+In the Friendly Mapping column, press the `MODIFY` button.
+
+![Sonoran CAD - Database Sync Friendly Mapping](../../.gitbook/assets/image%20%2879%29.png)
+
+#### 2. Configure the New Friendly Mapping
+
+Enter the new raw database value and the friendly value you would like to convert it to.  
+Ex: A civilian character's `JOB` being changed from the raw DB value of `ambulance` to `EMT`.  
+Ex: A license record's `TYPE` bring changed from the raw DB value of `drive` to `Driver's License`.
+
+![Sonoran CAD - Database Sync Friendly Mapping Editor](../../.gitbook/assets/image%20%2880%29.png)
+
+#### 3. Save the Configuration
+
+Press `SAVE` in the friendly mapping editor.  
+Press `SAVE MAPPING CONFIGURATION` in the DB Sync editor.
+{% endtab %}
 {% endtabs %}
 
 
