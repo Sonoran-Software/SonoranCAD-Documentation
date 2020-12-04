@@ -270,6 +270,11 @@ Some communities may store values in a JSON column. The following example pulls 
 {% tab title="Friendly Mapping" %}
 ### Friendly Mapping
 
+{% hint style="info" %}
+Friendly Mapping requires the **Pro** version of Sonoran CAD.  
+For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+{% endhint %}
+
 Friendly mapping allows you to convert any raw database value to a more user friendly value.  
 Ex: `drive_license` in your database is converted to `Driver's License`.
 
@@ -283,7 +288,7 @@ In the Friendly Mapping column, press the `MODIFY` button.
 
 Enter the new raw database value and the friendly value you would like to convert it to.  
 Ex: A civilian character's `JOB` being changed from the raw DB value of `ambulance` to `EMT`.  
-Ex: A license record's `TYPE` bring changed from the raw DB value of `drive` to `Driver's License`.
+Ex: A license record's `TYPE` bring changed from the raw DB value of `drive_license` to `Driver's License`.
 
 ![Sonoran CAD - Database Sync Friendly Mapping Editor](../../.gitbook/assets/image%20%2880%29.png)
 
