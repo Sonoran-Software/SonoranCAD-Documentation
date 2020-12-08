@@ -8,6 +8,41 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.5.0 - 12/07/2020
+
+{% tabs %}
+{% tab title="New" %}
+Admin - Edit Character  
+- Admins can now search and edit or remove characters for users in addition to getting the character owner's username.
+
+Admin - Edit Records  
+- Admins can now search and edit or remove all records, in addition to searching for the record owner's account username.
+
+DBSync - Friendly Mapping  
+- DBSync now allows you to map specific DB value results like "driver\_license" to a more readable "Driver's License" string format.
+
+Stripe Checkout - External  
+- The payment system has been rewritten to use external Stripe checkout pages for all community subscription management.
+
+API - Get Live Map/Servers Config  
+- The get\_servers API endpoint can now be utilized to retrieve your community's server configuration. This contains valuable information particularly for ensuring your live map ports and IP is correctly configured.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Custom Records - Null UID  
+- Fixed an issue where older custom record formats without a UID would cause the UI to not properly validate and save the record format.
+
+DMV Edit - Supervisor Permission  
+- Fixed an issue allowing civilians to edit supervisor fields on records they have to apply to.
+
+Import Custom Record  
+- Fixed an issue where importing a custom record from another community with the custom recordTypeId field already being set would fail to add it to your community as a new record.
+
+DBSync - Custom Mapping  
+- Fixed an issue causing DBSync to lose references to custom object mappings in rare cases.
+{% endtab %}
+{% endtabs %}
+
 ### 3.4.3 - 11/28/2020
 
 {% tabs %}
