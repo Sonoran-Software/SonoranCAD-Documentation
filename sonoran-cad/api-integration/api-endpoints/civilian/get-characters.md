@@ -91,6 +91,10 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 }
 ```
 
+#### Result Ordering
+
+The current/most recently selected character the user has set in the CAD will always be the first record in the list returned by this endpoint \(index 0\).
+
 #### Record Formatting
 
 Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting).
