@@ -14,7 +14,7 @@ description: >-
 
 In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US), or for [Windows Desktop](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe).  
   
-It has never been more easy to access your community's CAD system, regardless of what platform you're on!
+It's never been more easy to access your community's CAD system, regardless of what platform you're on!
 
 ### Database Sync
 
@@ -29,6 +29,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
 * [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
 * [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
+* [Automated GPS Routing for Dispatch Calls](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
 **View one of our plugin showcase videos** [**here**](https://www.youtube.com/watch?v=pfE3HdCF20o)**!**
