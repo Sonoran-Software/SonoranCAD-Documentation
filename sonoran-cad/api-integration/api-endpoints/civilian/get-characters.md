@@ -85,7 +85,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "GET_CHARACTERS",
     "data": [
         {
-            "apiId": "STEAN:1234" // API ID, Typically, this is their STEAM Hex
+            "apiId": "STEAM:1234" // API ID, Typically, this is their STEAM Hex
         },
     ]
 }
