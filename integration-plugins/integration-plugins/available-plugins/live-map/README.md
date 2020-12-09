@@ -126,6 +126,7 @@ Your hosting provider may give you other ports, or you may have services already
    * Ex: Your hosting provider opens port `8000` and `9000` for you to use.
      * `set socket_port 8000` for the live map port.
      * `set SonoranListenPort 9000` for the [push events](../../../../sonoran-cad/api-integration/push-events/) port.
+       * **Make sure both of these lines are BEFORE/ABOVE your `ensure sonoran_livemap` and `ensure sonorancad` lines in the `server.cfg`.**
 3. Update the ports in the admin panel setting the new map and listener ports.
 4. Save everything, restart your server, and deploy the live map.
 
