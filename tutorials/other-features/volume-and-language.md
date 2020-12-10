@@ -18,5 +18,13 @@ You can easily adjust your volume, and set your text-to-speech voice in the sett
 
 ![Sonoran CAD&apos;s settings modal](../../.gitbook/assets/screen-shot-2020-04-19-at-2.02.29-am.png)
 
+### Translation Support
+
+Sonoran CAD also supports full language translation support for any country or locality. Click below for more information.
+
+{% page-ref page="../../sonoran-cad/translation-support.md" %}
+
+
+
 
 
