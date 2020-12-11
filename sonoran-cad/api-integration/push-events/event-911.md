@@ -21,7 +21,10 @@ description: >-
                 "location": "1234 E Hawick Ave",
                 "description": "This is a 911 call!"
             },
-            "apiIds": ["Steam:1234", "11112222"] // User account's API ID
+            "apiIds": ["Steam:1234", "11112222"], // User account's API ID
+            "metaData": {
+                "someKey": "someValue" // OPTIONAL: metaData for API custom storage
+            },
         }
     ]
 }
