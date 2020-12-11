@@ -78,7 +78,10 @@ INVALID API KEY
             "isEmergency": true, // Displays EMERGENCY or CIVIL type in the CAD
             "caller": "John Doe",
             "location": "1234 E. Test St.",
-            "description": "Help, someone is breaking into my house!"
+            "description": "Help, someone is breaking into my house!",
+            "metaData": {
+                "someKey": "someValue" // OPTIONAL: metaData for API custom storage
+            },
         }
     ]
 }
