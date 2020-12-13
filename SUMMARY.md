@@ -57,6 +57,7 @@
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
+    * [Civilian Integration](integration-plugins/integration-plugins/available-plugins/civilian-integration.md)
     * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
     * [ESX Support](integration-plugins/integration-plugins/available-plugins/esx-support.md)
     * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
