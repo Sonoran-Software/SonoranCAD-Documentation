@@ -10,6 +10,8 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 
 This plugin allows players to fetch their character information from the CAD. Basic functionality is provided with the /showid command, but developers are encouraged to use the export for their own creations.
 
+![Sonoran CAD - Civilian Integration Lookup](../../../.gitbook/assets/screen-shot-2020-12-12-at-10.00.21-pm.png)
+
 ## Installation
 
 ### 1. Download and Install the Framework
@@ -18,7 +20,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran_civintegration/releases/tag/latest) to download the civilianintegration plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_civintegration/releases/tag/latest) to download the `civilianintegration` plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
