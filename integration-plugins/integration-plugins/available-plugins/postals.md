@@ -42,9 +42,6 @@ If you haven't already, be sure to install and configure the [plugin framework](
 | :--- | :--- | :--- |
 | sendTimer | Time between sending postal updates to the server. | 950 ms |
 | shouldSendPostalData | Toggles the plugin on/off | True |
-| getPostalMethod | Use a custom postal function or use the supported nearest-postal plugin \(see below\). | custom |
-
-If using "custom" for `getPostalMethod`, you must also define in the `getPostalCustom()` function how to fetch the current player's postal.
 
 ## Usage
 
@@ -60,5 +57,5 @@ exports('getPostal', function() if nearest ~= nil then return postals[nearest.i]
 
 ### Custom Postal Scripts
 
-If you specify "custom", you must edit the `getPostalCustom` function found in `config_postals.lua` to return a postal code as a string.
+This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to paste the above export into your custom script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
 
