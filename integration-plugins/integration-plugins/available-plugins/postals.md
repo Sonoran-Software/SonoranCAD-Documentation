@@ -53,8 +53,6 @@ If you haven't already, be sure to install and configure the [plugin framework](
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
-2. After doing so, set the `getPostalMethod` configuration option to `"nearestpostal"` in the Sonoran CAD plugin config file.
-
 ### Custom Postal Scripts
 
 This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to paste the above export into your custom script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
