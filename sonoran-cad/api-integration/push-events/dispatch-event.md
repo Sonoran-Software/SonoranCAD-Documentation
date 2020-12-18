@@ -47,7 +47,10 @@ description: >-
                          "group": "CAR 51", // Name of unit group
                      }
                  },
-                ]
+                ],
+                "metaData": {
+                    "origin911": 1 // 911 call ID if created from a 911 call
+                }
             }
         }
     ]

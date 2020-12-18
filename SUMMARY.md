@@ -82,6 +82,7 @@
     * [Integration API ID](sonoran-cad/api-integration/getting-started/setting-your-api-id.md)
   * [Push Events](sonoran-cad/api-integration/push-events/README.md)
     * [Event 911](sonoran-cad/api-integration/push-events/event-911.md)
+    * [Remove 911](sonoran-cad/api-integration/push-events/remove-911.md)
     * [Unit Login](sonoran-cad/api-integration/push-events/unit-login.md)
     * [Unit Logoff](sonoran-cad/api-integration/push-events/unit-logoff.md)
     * [Unit Status Update](sonoran-cad/api-integration/push-events/unit-status-update.md)
