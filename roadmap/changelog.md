@@ -8,6 +8,41 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.5.1 - 12/21/2020
+
+{% tabs %}
+{% tab title="New" %}
+Selected Character  
+- Your currently selected character is saved in the civilian menu and will persist through sessions.
+
+API - Get Characters Ordering  
+- The API get\_characters endpoint ensures that the first character record in the list returned \(index 0\) is always the account's currently selected character.
+
+Push Event - 911 Removed  
+- API push event EVENT\_REMOVE\_911 is now sent when an emergency call is removed.
+
+Dispatch - 911 Origin MetaData  
+- Dispatch metadata contains the origin call ID if sent from a 911 call.
+
+Translation - Italian  
+- Italian language files have been added.
+
+Custom Records - No Name  
+- The custom record editor will now display an error if a custom record is created without a name set.
+
+Custom Records - No Preview Fields  
+- The record template editor will now error if the template has no record fields with the lookup preview enabled. The lookup UI will also now properly inform the user of the issue when searching and still allow them to click and open the bad record.
+{% endtab %}
+
+{% tab title="Fixed" %}
+911 Calls - UI Remove from API  
+- Fixed an issue where 911 calls would not be removed from the local user's UI screen when removed via API, requiring a page refresh.
+
+Lookup - DbSync and Regular Mix  
+- Fixed an issue where a lookup finding a manual character, license, or vehicle registration record while DBSync is enabled would break the search loop and return only partial results.
+{% endtab %}
+{% endtabs %}
+
 ### 3.5.0 - 12/07/2020
 
 {% tabs %}
