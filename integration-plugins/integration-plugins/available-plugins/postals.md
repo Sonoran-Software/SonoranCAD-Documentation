@@ -53,6 +53,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
+The screenshot below shows an example of the export above being pasted as the very last line in the nearest postal's `cl.lua` file.
+
+![Nearest Postal&apos;s cl.lua File Example](../../../.gitbook/assets/image%20%2881%29.png)
+
 ### Custom Postal Scripts
 
 This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to paste the above export into your custom script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
