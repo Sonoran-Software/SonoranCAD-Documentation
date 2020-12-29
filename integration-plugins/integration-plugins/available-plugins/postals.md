@@ -47,13 +47,13 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### Using Nearest-Postal
 
-1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin\). This will be the **very last line** in the nearest postal's `cl.lua` file.
+1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
 
 ```lua
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
-The screenshot below shows an example of the export above being pasted as the very last line in the nearest postal's `cl.lua` file.
+The screenshot below shows an example of the export above being pasted as the **very last line** in the nearest postal's `cl.lua` file \(**not** the Sonoran CAD plugin file\).
 
 ![Nearest Postal&apos;s cl.lua File Example](../../../.gitbook/assets/image%20%2881%29.png)
 
