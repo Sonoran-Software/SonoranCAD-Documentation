@@ -8,6 +8,46 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.6.0 - 12/30/2020
+
+{% tabs %}
+{% tab title="New" %}
+Hotkeys - Lookup  
+- Hotkeys can now be configured to open a new lookup window.
+
+Hotkeys - Record Center  
+- Hotkeys can now be configured to open the records center.
+
+Custom Records - Custom Flags  
+- The flags section for custom records is now customizable for every individual custom record type.
+
+Custom Records - Label  
+- Custom records now have a "label" type available in the record template editor.
+
+PDF Records - Checkbox  
+- If a custom record has a checkbox that does not have a label set, the PDF will show an "X" if it's checked.
+
+Account - Change Email  
+- Users can now update their account's email address in the account settings menu.
+{% endtab %}
+
+{% tab title="Changed" %}
+Reconnection Handling - Components  
+- Improved reconnection handling for components and other sub-modules in the CAD's UI.
+
+Lookup - Cooldown  
+- Decreased the lookup cooldown significantly to allow for faster re-searching.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Reconnection Handling - Logout  
+- Fixed an issue causing some clients to be logged out when connection is lost and re-established.
+
+Custom Record Editor - Width Label  
+- Fixed an issue causing the custom record editor's "Width" section to display with the wrong label.
+{% endtab %}
+{% endtabs %}
+
 ### 3.5.1 - 12/21/2020
 
 {% tabs %}

@@ -16,7 +16,7 @@ A dropdown menu will appear, where users can select the new record type.
 
 Records are comprised of several sections:
 
-1. [Record Flags](../customization/custom-record-flag-types.md)
+1. [Record Flags]()
 2. Agency/Department Information
 3. Civilian Information
 4. Vehicle Information

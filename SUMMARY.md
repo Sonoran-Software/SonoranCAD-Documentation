@@ -29,7 +29,6 @@
   * [Custom Page Colors](tutorials/customization/custom-page-colors.md)
   * [User Account Restrictions](tutorials/customization/user-account-restrictions.md)
   * [Configuring Multiple Servers](tutorials/customization/configuring-multiple-servers.md)
-  * [Custom Record Flag Types](tutorials/customization/custom-record-flag-types.md)
   * [Advanced Query Strings](tutorials/customization/advanced-query-strings.md)
 * [Dispatching](tutorials/dispatching/README.md)
   * [Creating a Call](tutorials/dispatching/creating-a-call.md)
