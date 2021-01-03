@@ -10,6 +10,20 @@ description: 'See below for commonly asked questions and answers:'
 
 {% page-ref page="create-and-manage-a-subscription.md" %}
 
+### How do I change what community my subscription is applied to?
+
+At any time with an active subscription \(including canceled subscriptions that are still active\) you may change what community is benefiting from the subscription.
+
+Simply change the [community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md) on the active subscription to a new one.
+
+{% page-ref page="create-and-manage-a-subscription.md" %}
+
+### How do I cancel, upgrade, or downgrade my subscription?
+
+You can cancel, upgrade, or downgrade your subscription at any time using the payment center.
+
+{% page-ref page="create-and-manage-a-subscription.md" %}
+
 ### Are subscriptions a one-time payment, or monthly?
 
 All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://app.sonorancad.com/#/pricing) to see what works best for your community.  
@@ -19,19 +33,6 @@ Subscriptions are renewed one month after the start date. You will receive an em
 ### Can I purchase a lifetime or yearly subscription?
 
 Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly recurring basis. We do not offer quarterly or yearly subscriptions.
-
-### How do I cancel, upgrade, or downgrade my subscription?
-
-You can cancel, upgrade, or downgrade your subscription at any time using the payment center.  
-
-
-{% page-ref page="create-and-manage-a-subscription.md" %}
-
-### How do I change what community my subscription is applied to?
-
-At any time with an active subscription \(including canceled subscriptions that are still active\) you may change what community is benefiting from the subscription.
-
-{% page-ref page="create-and-manage-a-subscription.md" %}
 
 ### What payment methods are accepted?
 
