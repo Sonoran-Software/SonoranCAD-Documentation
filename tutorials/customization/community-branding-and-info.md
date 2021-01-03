@@ -4,8 +4,8 @@ description: 'Customize your community''s settings, branding, information, and m
 
 # Community Branding and Settings
 
-{% hint style="info" %}
-Community customization is not included with the free version.  
+{% hint style="warning" %}
+Community customization requires the **standard** version of Sonoran CAD or higher.  
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
