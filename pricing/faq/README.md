@@ -16,9 +16,9 @@ All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](http
   
 Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 
-### Can I purchase a lifetime subscription?
+### Can I purchase a lifetime or yearly subscription?
 
-Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly recurring basis.
+Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly recurring basis. We do not offer quarterly or yearly subscriptions.
 
 ### How do I cancel, upgrade, or downgrade my subscription?
 
