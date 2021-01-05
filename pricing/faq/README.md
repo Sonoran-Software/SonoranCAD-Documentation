@@ -4,6 +4,10 @@ description: 'See below for commonly asked questions and answers:'
 
 # Pricing FAQ
 
+![Sonoran Servers &amp; Sonoran CAD - Bundle and Save](../../.gitbook/assets/image%20%2889%29.png)
+
+[Learn more](bundle-discount-sonoran-servers.md) about bundling your CAD subscription with Sonoran Servers.
+
 ### Looking to compare plans?
 
 ### Looking to purchase a plan?
