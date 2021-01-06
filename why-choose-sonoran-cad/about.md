@@ -8,7 +8,7 @@ description: >-
 
 ![](../.gitbook/assets/sonorancad-logo_full.png)
 
-![Sonoran CAD&apos;s Advanced Window and Tab Layout System](../.gitbook/assets/window_tab.png)
+![](../.gitbook/assets/image%20%2893%29.png)
 
 ### Downloadable Apps
 

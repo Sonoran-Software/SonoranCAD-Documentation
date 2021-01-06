@@ -13,7 +13,7 @@ description: >-
 | :--- | :--- | :--- | :--- |
 | [View](https://app.sonorancad.com/) | [Download](https://apps.apple.com/us/app/sonoran-cad/id1496539456) | [Download](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US) | [Download](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) |
 
-![](.gitbook/assets/window_tab%20%281%29.png)
+![Sonoran CAD - CAD/MDT Software](.gitbook/assets/image%20%2893%29.png)
 
 ### Windows Desktop
 

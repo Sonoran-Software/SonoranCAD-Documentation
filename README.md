@@ -8,7 +8,7 @@ description: >-
 
 ![](.gitbook/assets/sonorancad-logo_full.png)
 
-![Sonoran CAD&apos;s advanced dispatching and records management system](.gitbook/assets/window_tab.png)
+![Sonoran CAD&apos;s advanced dispatching and record management system](.gitbook/assets/image%20%2893%29.png)
 
 ### What is Sonoran CAD?
 
