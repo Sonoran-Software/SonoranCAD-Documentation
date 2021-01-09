@@ -8,6 +8,35 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.7.0 - 1/8/2020
+
+{% tabs %}
+{% tab title="New" %}
+Custom Records - Linked Records  
+- Custom record templates can now have a "linked records" section added. You can now click the "copy link" button in any record header and "paste link" in the linked records section. Linked records can be clicked to cross-reference reports, characters, and more.
+
+Sonoran Servers - Bundle and Save  
+- Sonoran Servers customers can now link their VPS plan in the billing center and save 30% every month!
+
+Lookup Results - Quick Search  
+- On a lookup window's returned results, result rows with a name or license plate have a quick search icon to open a new lookup window with that name or plate.
+
+Items Per Page - Save Preferences  
+- The "Items Per Page" for lookup tables, penal code tables, active units, 10-codes, and others will now locally save your selected preference.
+
+Dispatch - Track Primary Unit  
+- The dispatch UI now has a checkbox to track the primary unit. When paired with the dispatch notify plugin, units in-game will be auto routed to the current position of the primary unit. This is useful in a chase, where units can have their GPS routed to the lead unit in real time. NOTE: This additional plugin functionality is still in development.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Electron - Settings Modal  
+- Fixed an issue making it difficult to close the settings modal on the Windows desktop application.
+
+Penal Codes - Manual Sort  
+- Fixed an issue causing penal codes to not properly save their position in the list when manually sorted and saved.
+{% endtab %}
+{% endtabs %}
+
 ### 3.6.0 - 12/30/2020
 
 {% tabs %}
