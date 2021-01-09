@@ -104,6 +104,18 @@ The image field allows you to specify an image to be displayed.
 ![The &apos;IMAGE&apos; field option.](../../.gitbook/assets/image%20%2840%29.png)
 
 ![The &apos;IMAGE&apos; field shown in the record editor](../../.gitbook/assets/image%20%2832%29.png)
+
+#### 8. Linked Records
+
+The linked records field allows you to link and cross-reference other records and reports to this record.
+
+![Sonoran CAD - Linked Records](../../.gitbook/assets/image%20%2894%29.png)
+
+#### 9. Flags
+
+Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
+
+![Sonoran CAD - Custom Flags](../../.gitbook/assets/image%20%2895%29.png)
 {% endtab %}
 
 {% tab title="Field Options" %}
