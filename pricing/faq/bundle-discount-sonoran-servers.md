@@ -41,6 +41,11 @@ If you haven't already, [purchase any VPS plan from Sonoran Servers](https://inf
 
 3. Enter in your Sonoran Servers username, password, and IP address copied from earlier.
 
+{% hint style="warning" %}
+This Email and Password is the one you use to login to https://sonoranservers.com  
+**NOT YOUR VPS PASSWORD**
+{% endhint %}
+
 ![Sonoran CAD - Bundle and Save](../../.gitbook/assets/image%20%2885%29.png)
 
 4. You will see your discount applied in the billing center. You can also select "Modify" and view your plan in the Stripe customer portal.
