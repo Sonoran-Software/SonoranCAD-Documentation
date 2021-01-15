@@ -8,6 +8,35 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.7.1 - 1/15/2020
+
+{% tabs %}
+{% tab title="New" %}
+Payment - Set Community ID  
+- Added checks to ensure a payment can not have it's community ID set if the community ID already has an existing subscription. This prevents someone from downgrading another community ID if they switch their subscription's community ID back and forth.
+
+Payment - No Community ID Set  
+- Added an additional, clickable warning badge in the payment center when a user has a subscription without a community ID set.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Records Center - Pending and Supervisor  
+- Fixed an issue in the records center where completing a supervisor or pending record would not auto-update the supervisor/pending panel to remove it and required a search refresh.
+
+DB Merge - Local Edit  
+- Fixed an issue where saving a record with database merge would add a bugged local duplicate of the edited record instead of updating the existing one on the UI.
+
+DBSync - Primary Key Detection  
+- Fixed issues and improved handling for ensuring database sync tables contain a proper primary key.
+
+DB Merge - Primary Key  
+- Fixed an issue where saving database merge records was not using the new unique primary key system and would show merged/saved values on all license and vehicle registrations owned by that character.
+
+Middle Initial - Check Length  
+- Fixed an issue where submitting custom reports with a middle initial field larger than one letter would fail to save in the database.
+{% endtab %}
+{% endtabs %}
+
 ### 3.7.0 - 1/8/2020
 
 {% tabs %}
