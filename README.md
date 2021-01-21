@@ -6,6 +6,10 @@ description: >-
 
 # Sonoran CAD
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](pricing/vps-hosting.md)!
+{% endhint %}
+
 ![](.gitbook/assets/sonorancad-logo_full.png)
 
 ![Sonoran CAD&apos;s advanced dispatching and record management system](.gitbook/assets/image%20%2893%29.png)
