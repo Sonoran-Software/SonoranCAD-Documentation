@@ -6,6 +6,10 @@ description: >-
 
 # Getting Started
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Gather Your Credentials
 
 All API calls require some basic authentication. Here's how to find your community ID and API key.

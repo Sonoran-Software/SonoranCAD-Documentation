@@ -9,6 +9,10 @@ Database Sync is not enabled with the free version of Sonoran CAD.
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../pricing/vps-hosting.md)!
+{% endhint %}
+
 Database Sync is a read-only system. All characters, licenses, and vehicle registrations pulled from your database can not be modified in the CAD.  
   
 Database Merge allows you to save off additional, manually specified data in the CAD.

@@ -7,6 +7,10 @@ description: >-
 
 # Integration Plugins
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ### Framework Installation Guide
 
 All Sonoran CAD plugins require our API framework installation. Installing our framework is easy! Learn more below.

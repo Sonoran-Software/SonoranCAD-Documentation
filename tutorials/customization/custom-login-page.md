@@ -11,6 +11,10 @@ Custom login pages are not supported with the free version.
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../pricing/vps-hosting.md)!
+{% endhint %}
+
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain!
 
 ![An example of SOSA&apos;s custom login page](../../.gitbook/assets/custom_login_example.png)

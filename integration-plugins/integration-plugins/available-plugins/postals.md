@@ -10,6 +10,10 @@ description: >-
 This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Installation Video
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).

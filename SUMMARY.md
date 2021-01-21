@@ -70,7 +70,6 @@
     * [Tablet](integration-plugins/integration-plugins/available-plugins/tablet.md)
     * [Traffic Stop](integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
-    * [Update Check](integration-plugins/integration-plugins/available-plugins/update-check.md)
     * [WraithV2](integration-plugins/integration-plugins/available-plugins/wraithv2.md)
 
 ## Developer API Documentation <a id="sonoran-cad"></a>
@@ -133,6 +132,7 @@
   * [Create and Manage a Subscription](pricing/faq/create-and-manage-a-subscription.md)
   * [Request Discord Role](pricing/faq/request-discord-role.md)
 * [View and Compare Plans](https://app.sonorancad.com/#/pricing)
+* [VPS Hosting](pricing/vps-hosting.md)
 
 ## Roadmap
 

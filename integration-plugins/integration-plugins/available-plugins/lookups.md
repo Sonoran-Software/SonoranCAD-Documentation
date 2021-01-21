@@ -12,6 +12,10 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 This plugin is currently only used as a dependency for other plugins, and **does not have any in-game commands for general player usage**.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 This plugin Implements name and plate lookups via the CAD.
 
 ## Installation Video

@@ -10,6 +10,10 @@ description: >-
 This plugin utilizes API endpoints that require the **Standard** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Installation
 
 ### 1. Download and Install the Framework

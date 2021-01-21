@@ -8,6 +8,10 @@ description: This guide covers the installation process for a general integratio
 All Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Installation Video
 
 View our [framework installation](https://youtu.be/EsQWGnyrvm8) video also covers the installation of a standard plugin \([Unit Status](../available-plugins/unit-status.md)\).

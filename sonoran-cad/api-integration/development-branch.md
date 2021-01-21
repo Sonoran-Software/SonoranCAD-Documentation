@@ -10,6 +10,10 @@ description: >-
 The development API and CAD branches are entirely separate from the current production version. To be added to the development database, or for more information in working with our development team please [contact us](https://support.sonoransoftware.com).
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ### Rate Limiting
 
 Sonoran CAD's development branch maintains the same rate limiting as production. However, rate limits only result in a one minute block as opposed to an hour.

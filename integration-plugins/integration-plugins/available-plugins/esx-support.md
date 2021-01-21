@@ -14,6 +14,10 @@ This plugin only functions with other plugins that require the **standard** vers
 ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ### Installation
 
 #### 1. Download and Install the Framework

@@ -16,8 +16,10 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% hint style="danger" %}
 The live map will require you to open **two additional ports** on your server.  
 **You will need to contact your hosting provider if you are unsure how to do this.**
+{% endhint %}
 
-If you are looking for a hosting provider, check out [Sonoran Servers](https://sonoranservers.com).
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../pricing/vps-hosting.md)!
 {% endhint %}
 
 ## Installation Video

@@ -11,6 +11,10 @@ API endpoints are not enabled with the free version of Sonoran CAD.
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Available API Endpoints
 
 ### Emergency Endpoints

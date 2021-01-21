@@ -10,6 +10,10 @@ description: >-
 This plugin utilizes API endpoints that require the **plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 ## Installation Video
 
 Click to view our [traffic stop installation guide](https://youtu.be/QmI7Wst2ytY).

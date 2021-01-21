@@ -8,6 +8,10 @@ description: Allows the framework to receive push events from the CAD directly.
 All push events require the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+{% endhint %}
+
 This plugin has no end-user functionality and is simply a dependency for other plugins. All features are listed in its [API Integration documentation](../../../sonoran-cad/api-integration/push-events/).
 
 ## Installation
