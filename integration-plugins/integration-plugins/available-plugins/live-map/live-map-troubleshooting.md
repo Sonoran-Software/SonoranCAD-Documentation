@@ -67,7 +67,7 @@ If you do **not** see the brackets \(with or without additional data\), the issu
 2. The live map port `30121` \(by default\) is used by another service.
 3. Your live map port is not open.
    * If you are unsure how to open the live map port, you will need to **contact your hosting provider**.
-   * You can check that this port is open by going to [https://www.yougetsignal.com/tools/open-ports/](https://www.yougetsignal.com/tools/open-ports/)
+   * You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened this port.
 4. You are using a [different port than the default](./#using-different-ports) and did not configure that in your `server.cfg`. 
 
 ### 3C. Ensure the Listener Port is Open
@@ -82,7 +82,7 @@ If the page is not displayed, the issue may be caused by one of the following:
 2. The port numbers are not set correctly.
 3. You do not have the ports open.
    * If you are unsure how to open the live map port, you will need to **contact your hosting provider**.
-   * You can ensure this port is open by going to [https://www.yougetsignal.com/tools/open-ports/](https://www.yougetsignal.com/tools/open-ports/)
+   * You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened this port.
 4. You are using a [different port than the default](./#using-different-ports) and did not configure that in your `server.cfg`.
 
 ## 4. Ensure Your API ID is Set

@@ -95,6 +95,8 @@ You will need to port forward BOTH of the ports specified in the Map Port and Li
 These ports are accessed by Sonoran CAD to server position data and view the blips.  
 **If you are unsure how to port forward, you will need to contact your hosting provider.**
 
+You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened these ports.
+
 ### **5**. Set Your API ID
 
 Don't forget to have each community member set their account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
@@ -133,6 +135,8 @@ Your hosting provider may give you other ports, or you may have services already
 4. Save everything, restart your server, and deploy the live map.
 
 **If you are unsure how to open additional ports, you will need to contact your hosting provider.**
+
+You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened these ports.
 
 ## Troubleshooting
 
