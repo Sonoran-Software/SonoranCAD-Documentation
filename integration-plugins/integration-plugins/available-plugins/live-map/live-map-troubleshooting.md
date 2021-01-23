@@ -32,7 +32,9 @@ Your community's subscription may have expired and failed to renew. Do a quick c
 
 ## 2. Search the Resource Manifest
 
-Navigate to `mapIp:30120/info.json` in your web browser:
+Navigate to `mapIp:gamePort/info.json` in your web browser:
+
+_Your game port is typically `30120` by default, but could be different for others._
 
 ![View your resource manifest for active plugins](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.22.58-pm.png)
 
