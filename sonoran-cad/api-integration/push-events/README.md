@@ -36,3 +36,7 @@ You will need to properly port forward your listener port.
 If you are unsure how to do this, you will need to **contact your hosting provider**.
 {% endhint %}
 
+### Developer Documentation
+
+Many of our [integration plugins](../../../integration-plugins/integration-plugins/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
+
