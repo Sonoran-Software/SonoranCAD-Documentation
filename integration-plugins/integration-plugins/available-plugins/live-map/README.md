@@ -119,6 +119,37 @@ Players will only show on the map when **ALL** of the following conditions are m
    * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
    * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
+## Using a Custom Map
+
+{% hint style="danger" %}
+This feature requires the **pro** version of SonoranCAD. For more information, view our [pricing ](../../../../pricing/faq/)page.
+{% endhint %}
+
+Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.
+
+### 1. Extract Images
+
+Extract the images from the YTD files with a program like OpenIV.  
+**You will need six files named exactly as follows:**
+
+`minimap_sea_0_0.png  
+minimap_sea_0_1.png  
+minimap_sea_1_0.png  
+minimap_sea_1_1.png  
+minimap_sea_2_0.png  
+minimap_sea_2_1.png`
+
+![OpenIV - Extract Images](../../../../.gitbook/assets/image%20%28100%29.png)
+
+![OpenIV - Save Images](../../../../.gitbook/assets/image%20%28102%29.png)
+
+### 2. Upload Images
+
+Navigate to Admin &gt; Advanced &gt; In-Game Integration &gt; Live Map and Push Events  
+Select "Upload Custom" and upload all six, correctly named files.
+
+![Live Map - Custom Map Uploader](../../../../.gitbook/assets/image%20%28101%29.png)
+
 ## Using Different Ports
 
 If you are not using the default ports `30121` \(map port\) and `3232` \(listener/push events port\) you will need to change these.
