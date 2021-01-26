@@ -8,6 +8,43 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.7.2 - 1/25/2020
+
+{% tabs %}
+{% tab title="New" %}
+Live Map - Custom Map  
+- Communities can now upload custom map image files if they are using a custom live map.
+{% endtab %}
+
+{% tab title="Changed" %}
+Requests - Ensure no Username Spoof  
+- Improved a possible security exploit where a user could spoof their username to confuse community webhook logs, making it more difficult for communities to properly stop misuse.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Custom Records - Lookup Preview Columns  
+- Fixed an issue where custom records with the same name but a different ID would cause a key conflict in the lookup preview.
+
+Live Map - Static URL  
+- Fixed an issue causing the toggle "Static URL" option for the live map to be disabled.
+
+NSIS Installer Update  
+- Updated the Windows Desktop NSIS installer to resolve an issue where users who removed the app without using the uninstaller would have the installer freeze while re-downloading it.
+
+DB Sync - Primary Key Detection  
+- Fixed an issue where database sync could find multiple primary keys in user defined tables if the MySQL database had multiple schemas with the same table name, but different primary keys in each.
+
+Remove Character  
+- Fixed an SQL error causing some users to be unable to remove their characters.
+
+Webhooks - Multiple Embeds  
+- Discord webhooks that failed due to containing more than 25 fields have now been broken down into multiple embeds.
+
+Unit Locations  
+- Fixed an issue where unit locations may not be updated if the last unit object in the API call contained an invalid API ID or had a different server ID selected.
+{% endtab %}
+{% endtabs %}
+
 ### 3.7.1 - 1/15/2020
 
 {% tabs %}

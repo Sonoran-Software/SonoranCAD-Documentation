@@ -122,7 +122,8 @@ Players will only show on the map when **ALL** of the following conditions are m
 ## Using a Custom Map
 
 {% hint style="danger" %}
-This feature requires the **pro** version of SonoranCAD. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This feature requires the **pro** version of SonoranCAD.  
+For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.
@@ -146,7 +147,7 @@ minimap_sea_2_1.png`
 ### 2. Upload Images
 
 Navigate to Admin &gt; Advanced &gt; In-Game Integration &gt; Live Map and Push Events  
-Select "Upload Custom" and upload all six, correctly named files.
+Select "Upload Custom" and upload all six correctly named files.
 
 ![Live Map - Custom Map Uploader](../../../../.gitbook/assets/image%20%28101%29.png)
 
