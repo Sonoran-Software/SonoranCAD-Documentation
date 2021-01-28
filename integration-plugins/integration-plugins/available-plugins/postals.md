@@ -51,6 +51,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### Using Nearest-Postal
 
+{% hint style="info" %}
+**As of Nearest-Postal v1.4.1 you do not need to manually add the export, it is included in the Nearest-Postal release.**
+{% endhint %}
+
 1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
 
 ```lua
