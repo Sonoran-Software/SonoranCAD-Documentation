@@ -105,3 +105,17 @@ You can also view our [standard plugin installation guide](plugin-installation/)
 
 Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!
 
+## Commands
+
+The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update plugins, and more.
+
+| Command | Description |
+| :--- | :--- |
+| `sonoran help` | Display list of commands |
+| `sonoran update` | Run core/framework updater |
+| `sonoran pluginupdate` | Run plugin updater |
+| `sonoran plugin <name>` | Display information about a plugin |
+| `sonoran debugmode` | Toggle debug mode on/off |
+| `sonoran info` | Dump version info and configuration data |
+| `sonoran support` | Dump information for support staff |
+
