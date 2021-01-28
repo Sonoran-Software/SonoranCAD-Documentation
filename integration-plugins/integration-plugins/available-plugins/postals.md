@@ -49,13 +49,23 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ## Usage
 
-### Using Nearest-Postal
+### Using [Nearest-Postal](https://forum.cfx.re/t/release-nearest-postal-script/293511)
+
+If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), some minor configuration is required.
+
+#### 1. Set the Resource Name
+
+In the Sonoran CAD plugin config, change the `nearestPostalsResourceName` to the _**exact**_ name of your nearest postals resource.  
+  
+Ex: `nearest-postals-1.4`
+
+#### 2. Add the Export Code
 
 {% hint style="info" %}
 **As of Nearest-Postal v1.4.1 you do not need to manually add the export, it is included in the Nearest-Postal release.**
 {% endhint %}
 
-1. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
+2. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
 
 ```lua
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
