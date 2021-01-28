@@ -49,6 +49,10 @@ Extract the plugins to your `sonorancad\plugins` folder.
 
 Restart the `sonorancad` resource by entering `restart sonorancad` in the console and enjoy your new plugin!
 
+## Updates
+
+Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!
+
 ## Having Trouble?
 
 If you're having trouble installing a plugin, check out our common troubleshooting guide:
