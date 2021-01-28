@@ -105,6 +105,8 @@ You can also view our [standard plugin installation guide](plugin-installation/)
 
 Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!
 
+Or, run `sonoran update` to instantly check and apply any updates for the framework core.
+
 ## Commands
 
 The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update plugins, and more.

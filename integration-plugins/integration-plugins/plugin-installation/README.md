@@ -53,6 +53,8 @@ Restart the `sonorancad` resource by entering `restart sonorancad` in the consol
 
 Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!
 
+Or, run `sonoran pluginupdate` to instantly check and update all plugins.
+
 ## Having Trouble?
 
 If you're having trouble installing a plugin, check out our common troubleshooting guide:
