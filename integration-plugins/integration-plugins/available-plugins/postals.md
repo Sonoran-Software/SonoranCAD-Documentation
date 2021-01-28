@@ -75,6 +75,10 @@ The screenshot below shows an example of the export above being pasted as the **
 
 ![Nearest Postal&apos;s cl.lua File Example](../../../.gitbook/assets/image%20%2881%29.png)
 
+#### 3. Restart both Resources
+
+Be sure to restart both the Sonoran CAD resource and the nearest-postals script, or restart your server entirely to apply the changes made.
+
 ### Custom Postal Scripts
 
 This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to paste the above export into your custom script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
