@@ -55,14 +55,14 @@ If you're using the publicly available [nearest postals script](https://forum.cf
 
 #### 1. Set the Resource Name
 
-In the Sonoran CAD plugin config, change the `nearestPostalsResourceName` to the _**exact**_ name of your nearest postals resource.  
+In the Sonoran CAD postals plugin config, change the `nearestPostalsResourceName` value to the _**exact**_ name of your nearest postals resource.  
   
 Ex: `nearest-postals-1.4`
 
 #### 2. Add the Export Code
 
 {% hint style="info" %}
-**As of Nearest-Postal v1.4.1 you do not need to manually add the export, it is included in the Nearest-Postal release.**
+**As of Nearest-Postal v1.4.1 you do not need to manually add the export, as it is now already included in the Nearest-Postal script.**
 {% endhint %}
 
 2. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
