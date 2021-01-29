@@ -11,7 +11,7 @@ Community customization is not included with the free version.
 For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
-### What are penal codes?
+## What are penal codes?
 
 Penal codes can easily be referenced and cited in records/reports as charges.
 
@@ -44,4 +44,46 @@ Adding, editing, or removing a penal code is easy. Simply click on the existing 
 ![Sonoran CAD - Penal Code Management](../../.gitbook/assets/image%20%2855%29.png)
 
 ![Sonoran CAD - Penal Code Editor](../../.gitbook/assets/image%20%2851%29.png)
+
+## Import from Spreadsheet
+
+Sonoran CAD allows you to easily import your penal codes from a spreadsheet \(.CSV\) file.
+
+### 1. Copy the Google Sheet
+
+Navigate to our [official penal code Google sheet ](https://docs.google.com/spreadsheets/u/0/d/10TCczXferWWFi8sYtccrqocRZ4WdpKB1s4hwRm2Iy6I/copy)and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.
+
+![Penal Codes - Copy Sheet](../../.gitbook/assets/image%20%28107%29.png)
+
+### 2. Add Your Penal Codes
+
+Now that you have copied this sheet into your Google Drive, you can add new rows and format your penal codes.
+
+{% hint style="warning" %}
+**Do NOT modify the very first row.** These names must remain the same to properly format the penal code structure.
+
+Additionally, the `bondAmount` column must be kept as a number.  
+All other columns must be formatted as text.
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28103%29.png)
+
+### 3. Download the CSV
+
+In Google Sheets, navigate to File &gt; Download &gt; Comma Separated Values \(.csv\) to download the file.
+
+![Google Sheets - Download CSV](../../.gitbook/assets/image%20%28106%29.png)
+
+### 4. Import the CSV File
+
+In Sonoran CAD, navigate to Admin &gt; Customization &gt; Penal Codes
+
+In the penal codes section, select the "Import" button.  
+Then, select "CSV" as the import type and select your downloaded CSV file.
+
+![Sonoran CAD - Import Data](../../.gitbook/assets/image%20%28104%29.png)
+
+![File Selector - Select File](../../.gitbook/assets/image%20%28105%29.png)
+
+After selecting the CSV file, your penal codes will be imported into the CAD and saved automatically.
 
