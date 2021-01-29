@@ -69,6 +69,11 @@ The admin customization info section allows you to customize your community's im
 
 ### Community ID
 
+{% hint style="warning" %}
+Custom community IDs require the **starter** version of Sonoran CAD or higher.  
+For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+{% endhint %}
+
 Looking to change your community ID?  
 Navigate to Admin &gt; Advanced &gt; Change Community ID
 
