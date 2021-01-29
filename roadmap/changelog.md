@@ -8,7 +8,32 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
-### 3.7.2 - 1/25/2020
+### 3.7.3 - 1/29/2021
+
+{% tabs %}
+{% tab title="New" %}
+Penal Codes - CSV Import  
+- Communities can now import all penal codes directly from a CSV spreadsheet file.
+
+Translation - Russian  
+- Added Russian translations.
+{% endtab %}
+
+{% tab title="Changed" %}
+Custom Community ID - Starter  
+- Community IDs are now randomly generated and require the starter plan or higher to customize. This helps ensure less community ID conflicts.
+
+Stripe - Dynamic Tax Rates  
+- Stripe checkout sessions now automatically charge sales tax based on location, rather than requesting the user's ZIP code in the CAD prior.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Discord - Webhook URL  
+- Fixed an issue requiring Discord webhooks to only work with discordapp.com in the URL and not discord.com.
+{% endtab %}
+{% endtabs %}
+
+### 3.7.2 - 1/25/2021
 
 {% tabs %}
 {% tab title="New" %}
@@ -45,7 +70,7 @@ Unit Locations
 {% endtab %}
 {% endtabs %}
 
-### 3.7.1 - 1/15/2020
+### 3.7.1 - 1/15/2021
 
 {% tabs %}
 {% tab title="New" %}
@@ -74,7 +99,7 @@ Middle Initial - Check Length
 {% endtab %}
 {% endtabs %}
 
-### 3.7.0 - 1/8/2020
+### 3.7.0 - 1/8/2021
 
 {% tabs %}
 {% tab title="New" %}
