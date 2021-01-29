@@ -6,7 +6,7 @@ description: All API calls must be authenticated with a community ID and API key
 
 {% hint style="info" %}
 API integration is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 ### Retrieving Your Credentials

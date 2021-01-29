@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="info" %}
 The free version of Sonoran CAD is limited to one \(1\) server.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
 ### Configuring An Additional Server

@@ -12,7 +12,7 @@ NOTE: If you have not already, you will need to configure your [custom login pag
 
 {% hint style="info" %}
 Community customizations is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
 #### 1. Configure Your Emails

@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="info" %}
 API endpoints are not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}

@@ -6,7 +6,7 @@ description: Let us help you enable and configure database sync for your communi
 
 {% hint style="info" %}
 Database Sync is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}

@@ -146,5 +146,4 @@
   * [Terms of Service](other/policy/terms-of-service.md)
   * [Privacy Policy](other/policy/privacy-policy.md)
   * [Refund and Purchase Policy](other/policy/refund-and-purchase-policy.md)
-* [Submit a Tutorial](other/submit-a-tutorial.md)
 

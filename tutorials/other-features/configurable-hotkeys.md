@@ -6,7 +6,7 @@ description: Learn more about Sonoran CAD's customizable global hotkey system!
 
 {% hint style="warning" %}
 Configurable hotkeys are not included with the free version.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="info" %}
