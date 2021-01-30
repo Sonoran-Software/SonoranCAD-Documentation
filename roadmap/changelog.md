@@ -8,6 +8,15 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.7.4 - 1/29/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Lookup - Custom Records Tab  
+-Fixed an issue causing the reports result section in the lookup window to not properly display the results table.
+{% endtab %}
+{% endtabs %}
+
 ### 3.7.3 - 1/29/2021
 
 {% tabs %}
