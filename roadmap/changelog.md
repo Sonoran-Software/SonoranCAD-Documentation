@@ -8,6 +8,36 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.8.0 - 2/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Geographical Settings - Emergency Code  
+- Improved the geographical setting section's emergency code \(911\) to be fully customizable.
+
+Geographical Settings - Currency  
+- Geographical customization now allows you to change the currency delimiter from $ to any other currency symbol.
+
+Geographical Settings - 10-Codes  
+- Geographical customization allows you to customize references of "10-Codes" to other phrasing.
+
+Geographical Settings - Penal Codes  
+- Geographical customization allows you to customize references of "Penal Codes" to other phrasing.
+
+10-Codes - Import/Export CSV and JSON  
+- 10-Codes can now be imported and exported via CSV and JSON.
+
+Penal Codes - CSV Export  
+- Penal codes can now be exported to a CSV file as well.
+
+Change Community ID - Update Subscription  
+- For all newly created subscriptions, updating your community ID will auto-update the community ID on your Stripe subscription as well.
+
+Billing - Set Community ID  
+- When setting the community ID of a subscription in the billing page, the options are restricted to communities you are already in.
+{% endtab %}
+{% endtabs %}
+
 ### 3.7.4 - 1/29/2021
 
 {% tabs %}
