@@ -36,9 +36,17 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 ![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
 
-### Full Translation Support
+### Full Translation and Locality Support
 
 Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-support.md). Regardless of your community's native language, Sonoran CAD supports it! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
+
+Sonoran CAD also offers vast [geographical location](../tutorials/customization/geographical-settings.md) support for non-American communities.
+
+### Hosted and Integrated Live Map
+
+Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time and displays 911 call blips! We even take care of hosting the live map for you!
+
+![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
 
 ### API Integration
 
@@ -47,12 +55,6 @@ In addition to over a dozen drag-and-drop integration [plugins](../integration-p
 We've complied extensive documentation for over two-dozen API endpoints and server push events!
 
 ![Sonoran CAD&apos;s extensive API endpoint documentation!](../.gitbook/assets/image%20%2848%29.png)
-
-### Live Map
-
-Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time!
-
-![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
 
 ### Custom Records and Reports
 
@@ -88,6 +90,10 @@ Looking to store official criminal records or prior call logs in a PDF format? S
 Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads.md), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
 
 ![Sonoran CAD&apos;s global hotkey configuration!](../.gitbook/assets/image%20%2846%29.png)
+
+### Easy Migration
+
+Sonoran CAD allows you to easily migrate your [10-codes ](../tutorials/customization/10-codes.md#import-10-codes-from-a-spreadsheet-csv)and [penal codes](../tutorials/customization/penal-codes.md#import-from-spreadsheet-csv) by importing directly from a spreadsheet \(CSV\) or JSON file. Fully [customizable record formats/templates](../tutorials/customization/sharing-custom-records.md) can also be exported and shared between communities.
 
 ### Voice Commands
 

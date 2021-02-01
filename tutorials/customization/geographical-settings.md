@@ -15,16 +15,16 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 The admin customization menu allows you to change your geographical settings.
 
-![Sonoran CAD&apos;s geographical customization](../../.gitbook/assets/geo.png)
+![](../../.gitbook/assets/image%20%28111%29.png)
 
-| Location | Changes |
+| Customization | Description |
 | :--- | :--- |
-| American | Emergencies are listed as 911 |
-| European | Emergencies are listed as 112 |
-| UK | Emergencies are listed as 999 |
-| Australia | Emergencies are listed as 000 |
+| Emergency Code | Replaces all instances of "911" |
+| Penal Code Name | Replaces all instances of "Penal Codes" |
+| Ten Code Name | Replaces all instances of "10-Codes" |
+| Currency Delimiter  | Replaces all instances of "$" |
 
-### My country does not use penal codes, felony charges, etc.
+### For penal codes, my country does not use felony charges, bonds, etc.
 
 Sonoran CAD allows you to customize the charge type names, bond type names, and more.
 

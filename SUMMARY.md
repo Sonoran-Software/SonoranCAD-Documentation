@@ -22,6 +22,7 @@
   * [Sharing Custom Records](tutorials/customization/sharing-custom-records.md)
   * [Geographical Settings](tutorials/customization/geographical-settings.md)
   * [Penal Codes](tutorials/customization/penal-codes.md)
+  * [10-Codes](tutorials/customization/10-codes.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
   * [Custom Login Page](tutorials/customization/custom-login-page.md)
   * [Custom Emails](tutorials/customization/custom-emails.md)

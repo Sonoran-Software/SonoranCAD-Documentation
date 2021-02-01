@@ -45,7 +45,12 @@ Adding, editing, or removing a penal code is easy. Simply click on the existing 
 
 ![Sonoran CAD - Penal Code Editor](../../.gitbook/assets/image%20%2851%29.png)
 
-## Import from Spreadsheet
+### 4. My locality doesn't call them "Penal Codes"
+
+Sonoran CAD allows you to change the naming of "Penal Codes" to anything else you'd like.  
+Learn more about our [geographical customization](geographical-settings.md).
+
+## Import from Spreadsheet \(CSV\)
 
 Sonoran CAD allows you to easily import your penal codes from a spreadsheet \(.CSV\) file.
 
