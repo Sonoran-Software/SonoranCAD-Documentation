@@ -33,6 +33,10 @@ Once you've completed your purchase, set the community ID on the subscription in
 
 ![Sonoran CAD Payment Center - Set Community ID](../../.gitbook/assets/image%20%2876%29.png)
 
+The modal will show options to set the subscription to any community you are currently a part of.
+
+![Payment Center - Set Community ID Prompt](../../.gitbook/assets/image%20%28108%29.png)
+
 ## Manage an Existing Subscription
 
 You can easily update the payment information, upgrade, downgrade, or cancel your Sonoran CAD subscription at anytime.
