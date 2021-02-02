@@ -20,7 +20,7 @@ Learn more about our [geographical customization](geographical-settings.md).
 
 ### 1. Copy the Google Sheet
 
-Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsheets/u/1/d/1QKKhrwBQQW2JMqeDplU_alo_CHPi0ML4KlYOEuPN4vs/copy) and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.
+Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsheets/u/1/d/1QKKhrwBQQW2JMqeDplU_alo_CHPi0ML4KlYOEuPN4vs/copy) and make a copy. Using a copy of our official sheet ensures your 10-codes are formatted correctly.
 
 ![Sonoran CAD - Copy 10-Codes Spreadsheet](../../.gitbook/assets/image%20%28114%29.png)
 

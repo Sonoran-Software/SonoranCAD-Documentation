@@ -23,6 +23,7 @@
   * [Geographical Settings](tutorials/customization/geographical-settings.md)
   * [Penal Codes](tutorials/customization/penal-codes.md)
   * [10-Codes](tutorials/customization/10-codes.md)
+  * [Addresses and Street Names](tutorials/customization/addresses-and-street-names.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
   * [Custom Login Page](tutorials/customization/custom-login-page.md)
   * [Custom Emails](tutorials/customization/custom-emails.md)
