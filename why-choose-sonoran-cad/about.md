@@ -85,6 +85,12 @@ Looking to store official criminal records or prior call logs in a PDF format? S
 
 ![Sonoran CAD&apos;s print to PDF system!](../.gitbook/assets/image%20%2845%29.png)
 
+### Auto Suggested Street Names and Addresses
+
+Sonoran CAD allows you to upload a [custom spreadsheet with your game's street names and addresses](../tutorials/customization/addresses-and-street-names.md). Dispatchers in the call editor can quickly and easily search and filter these names automatically.
+
+![](../.gitbook/assets/addresses.gif)
+
 ### Global Hotkeys
 
 Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads.md), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
