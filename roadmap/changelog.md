@@ -8,6 +8,15 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.8.1 - 2/2/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch - Auto Street Names  
+- The address section on dispatch calls is now a drop-down with auto-suggested street names as you type. You can customize the list of street names in the admin menu by uploading a CSV or JSON file.
+{% endtab %}
+{% endtabs %}
+
 ### 3.8.0 - 2/1/2021
 
 {% tabs %}
