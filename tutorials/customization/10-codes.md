@@ -54,3 +54,58 @@ Then, select "CSV" as the import type and select your downloaded CSV file.
 
 After selecting the CSV file, your 10-codes will be imported into the CAD and saved automatically.
 
+## Import from JSON
+
+You can also build and format your 10-Codes directly into JSON. These JSON formatted 10-Codes can then be pasted directly into the UI.
+
+### 1. Format the JSON Structure
+
+The JSON structure is an string array. Be sure to strictly follow the format.
+
+```javascript
+[
+  "10-10: Fight In Progress",
+  "10-11: Dog Case",
+  "10-15: Civil Disturbance",
+  "10-16: Domestic Problem",
+  "10-17: Meet Complainant",
+  "10-25: Report in Person (Meet)",
+  "10-31: Crime in Progress",
+  "10-32: Man with Gun",
+  "10-33: Emergency",
+  "10-34: Riot",
+  "10-35: Major Crime Alert",
+  "10-37: Suspicious Vehicle",
+  "10-45: Animal Carcass",
+  "10-46: Assist Motorist",
+  "10-52: Ambulance Needed",
+  "10-55: Intoxicated Driver",
+  "10-56: Intoxicated Pedestrian",
+  "10-57: Hit and Run",
+  "10-59: Escort",
+  "10-70: Fire Alarm",
+  "10-73: Smoke Report",
+  "10-80: Chase in Progress",
+  "10-89: Bomb Threat",
+  "10-90: Bank Alarm",
+  "10-91: Pick Up Prisoner / Subject",
+  "10-92: Improperly Parked Vehicle",
+  "10-94: Street Racing",
+  "10-96: Mental Subject",
+  "10-98: Prison / Jail Break"
+]
+```
+
+### 2. Import the JSON Structure
+
+In Sonoran CAD, navigate to Admin &gt; Customization &gt; 10-Codes
+
+In the penal codes section, select the "Import" button.  
+Then, select "JSON" and paste the JSON string array of 10-codes.
+
+![](../../.gitbook/assets/image%20%28109%29.png)
+
+![Sonoran CAD - Paste JSON Content](../../.gitbook/assets/image%20%28121%29.png)
+
+After pasting the JSON content, your 10-codes will be imported into the CAD and saved automatically.
+
