@@ -92,3 +92,45 @@ Then, select "CSV" as the import type and select your downloaded CSV file.
 
 After selecting the CSV file, your penal codes will be imported into the CAD and saved automatically.
 
+## Import from JSON
+
+You can also build and format your penal codes directly into JSON. These JSON formatted penal codes can be sent via our [API endpoint](../../sonoran-cad/api-integration/api-endpoints/general/set-penal-codes.md), or pasted directly into the UI for a more user-friendly experience.
+
+### 1. Format the JSON Structure
+
+The JSON structure is an object array. Be sure to strictly follow the format. All keys are strings, with the exception of `bondAmount` being a number.
+
+```javascript
+[
+        {
+            "code": "(2)06",
+            "type": "Felony",
+            "title": "Armed Robbery",
+            "bondType": "Federal Bail Bond",
+            "jailTime": "5-10 Years",
+            "bondAmount": 20000
+        },
+        {
+            "code": "(2)07",
+            "type": "Felony",
+            "title": "Murder",
+            "bondType": "Federal Bail Bond",
+            "jailTime": "5-50 Years",
+            "bondAmount": 100000
+        }
+    ]
+```
+
+### 2. Import the JSON Structure
+
+In Sonoran CAD, navigate to Admin &gt; Customization &gt; Penal Codes
+
+In the penal codes section, select the "Import" button.  
+Then, select "JSON" and paste the JSON object array of penal codes.
+
+![Sonoran CAD - Import Data](../../.gitbook/assets/image%20%28104%29.png)
+
+![Sonoran CAD - Paste JSON Content](../../.gitbook/assets/image%20%28120%29.png)
+
+After pasting the JSON content, your penal codes will be imported into the CAD and saved automatically.
+
