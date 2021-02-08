@@ -126,9 +126,14 @@ INVALID API KEY
     "type": "GET_ACCOUNT",
     "data": [
         {
-            "apiId": "Steam:1234" // Generally the Steam HEX
+            "apiId": "Steam:1234", // Generally the Steam HEX
+            "username": "SonoranBrian", // Sonoran CAD Username
         },
     ]
 }
 ```
+
+### Search Type
+
+The search can be by the user's `apiId` or their Sonoran CAD account `username`.
 
