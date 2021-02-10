@@ -8,6 +8,29 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.9.0 2/9/2021
+
+{% tabs %}
+{% tab title="New" %}
+Lookup - Custom Search  
+- Communities can now create custom lookup search types \(Ex: SSN on a civilian, license firearm number, etc.\). Search types can also specify a mask format, work with DB Sync, DB Merge, and all custom records.
+
+Custom Records - Custom Search Field  
+- Custom records can now have a custom searchable field set by using the UID field.
+
+Logging - User UUID from Validation  
+- Enhanced user logging for increased security and debugging.
+
+API - GET\_ACCOUNT - Search By Username  
+- The GET\_ACCOUNT API endpoint can now use the username in addition to the API ID.
+{% endtab %}
+
+{% tab title="Fixed" %}
+DB Sync - Port Length  
+- Fixed an issue where DB Sync port numbers were limited to only 5 integers instead of 6 in the UI.
+{% endtab %}
+{% endtabs %}
+
 ### 3.8.1 - 2/2/2021
 
 {% tabs %}
