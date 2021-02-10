@@ -31,7 +31,6 @@ If you haven't already, be sure to install and configure the [plugin framework](
 #### 3. Install the Plugin and all Dependencies
 
 1. Follow the [standard plugin installation guide](https://github.com/Sonoran-Software/SonoranCAD-Documentation/blob/master/integration-plugins/integration-plugins/plugin-installation) for the plugin.
-2. Ensure that the "mysql-async" line in fxmanifest.lua is not commented out.
 
 ### Usage
 
