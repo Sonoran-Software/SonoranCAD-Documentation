@@ -17,5 +17,44 @@ View our [video tutorial and showcase](https://youtu.be/KecmGjMmNiQ) on Sonoran 
 
 ## Written Tutorial
 
-Coming soon.
+### 1. Configure Search Types
+
+In the admin customization menu, expand the lookup types section.
+
+![Sonoran CAD - Custom Lookup Types](../../.gitbook/assets/image%20%28124%29.png)
+
+There are three sections for each lookup type:
+
+1. Name
+   * Label/Name of the lookup type
+2. Field Mapping ID
+   * Unique ID used to specify searchable columns in the custom record editor
+3. Mask
+   * Mask for the search bar - This uses the same mask system as the [custom records](creating-custom-record-and-report-types.md).
+
+Once configured, press save.
+
+### 2. Configure Your Custom Records
+
+In the custom records editor, specify the `Field Mapping ID` from step one on the searchable field.  
+If this searchable field is in your in-game database, you can also toggle the [database sync](../in-game-integration/database-sync-and-merge.md) mapping checkbox.
+
+![Sonoran CAD - Custom Records Field Mapping ID](../../.gitbook/assets/image%20%28122%29.png)
+
+Press save, then move onto the next step.
+
+### 3. Configure Database Sync Column \(Optional\)
+
+If the search field is provided by your in-game database with [database sync](../in-game-integration/database-sync-and-merge.md), this custom record column will be display in your database sync configuration for any character, license, or vehicle registration.
+
+This will then allow you to search characters, licenses, or vehicle registrations from your in-game database based on this custom column value.
+
+![Sonoran CAD - Database Sync and Custom Searches](../../.gitbook/assets/image%20%28125%29.png)
+
+### 4. Run a Lookup
+
+The lookup window will now display your new custom search types.  
+You can now search your records \(including database sync/merge\) using these custom search boxes.
+
+![Sonoran CAD - Custom Search Fields](../../.gitbook/assets/image%20%28123%29.png)
 
