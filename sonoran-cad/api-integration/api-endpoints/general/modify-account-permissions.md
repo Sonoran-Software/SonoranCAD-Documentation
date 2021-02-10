@@ -81,7 +81,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "APPLY_PERMISSION_KEY",
+    "type": "SET_ACCOUNT_PERMISSIONS",
     "data": [
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
