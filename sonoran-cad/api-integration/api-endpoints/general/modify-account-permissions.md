@@ -85,8 +85,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "data": [
         {
             "username": "SonoranBrian", // CAD Username
-            "apiId": "STEAM:1234",      // API ID entered in the unit identifiers
-                                        // Typically, this is their STEAM ID
+            "apiId": "STEAM:1234",      // API ID: Typically, this is their STEAM ID
             "add": [
                 // Array of permission names to ADD
                 "POLICE",
