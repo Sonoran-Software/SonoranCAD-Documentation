@@ -84,17 +84,26 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "SET_ACCOUNT_PERMISSIONS",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID entered in the unit identifiers
-                                   // Typically, this is their STEAM ID
-            "permissions": [       // Array of permission names
+            "username": "SonoranBrian", // CAD Username
+            "apiId": "STEAM:1234",      // API ID entered in the unit identifiers
+                                        // Typically, this is their STEAM ID
+            "add": [
+                // Array of permission names to ADD
                 "POLICE",
                 "POLICERECEDIT"
             ],
-            "addPerm": true // Whether to ADD or REMOVE these permissions from the user
+            "remove": [
+                // Array of permission names to REMOVE
+                "CIVILIAN"
+            ]
         },
     ]
 }
 ```
+
+The `username` and `apiId` are two separate ways to specify the account you are modifying the permissions of. You only need to specify one.
+
+The `add` and `remove` permission string arrays do not both have to be specified. You can use this API call to only add, only remove, or both add and remove permissions.
 
 | Permission String Name | Description |
 | :--- | :--- |
