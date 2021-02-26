@@ -57,7 +57,6 @@
 ## Integration Plugins
 
 * [Integration Plugins](integration-plugins/integration-plugins/README.md)
-  * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
@@ -79,6 +78,7 @@
     * [Traffic Stop](integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
     * [WraithV2](integration-plugins/integration-plugins/available-plugins/wraithv2.md)
+  * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
 
 ## Developer API Documentation <a id="sonoran-cad"></a>
 
