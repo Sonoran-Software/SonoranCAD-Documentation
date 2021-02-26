@@ -9,8 +9,11 @@ All Sonoran CAD integration plugins require the **standard** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!  
+Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
+
+![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/banner_3.png)
 
 ## Installation Video
 

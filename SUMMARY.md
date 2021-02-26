@@ -7,6 +7,10 @@
 
 * [Why Choose Sonoran CAD](why-choose-sonoran-cad/about.md)
 
+## VPS Hosting <a id="vps-hosting-1"></a>
+
+* [VPS Hosting](vps-hosting-1/vps-hosting.md)
+
 ## Tutorials
 
 * [Getting Started](tutorials/getting-started/README.md)
@@ -131,12 +135,11 @@
 ## Pricing
 
 * [Pricing FAQ](pricing/faq/README.md)
-  * [Bundle Discount - Sonoran Servers](pricing/faq/bundle-discount-sonoran-servers.md)
+  * [Free Plugin Installation and Discount - Sonoran Servers](pricing/faq/bundle-discount-sonoran-servers.md)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
   * [Create and Manage a Subscription](pricing/faq/create-and-manage-a-subscription.md)
   * [Request Discord Role](pricing/faq/request-discord-role.md)
 * [View and Compare Plans](https://app.sonorancad.com/#/pricing)
-* [VPS Hosting](pricing/vps-hosting.md)
 
 ## Roadmap
 

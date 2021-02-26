@@ -4,6 +4,13 @@ description: This guide covers the basic troubleshooting of the live map plugin.
 
 # Live Map Troubleshooting
 
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../vps-hosting-1/vps-hosting.md)!  
+Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
+{% endhint %}
+
+![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/banner_3.png)
+
 ## When are Player Blips Displayed?
 
 Players will only show on the map when **ALL** of the following conditions are met:

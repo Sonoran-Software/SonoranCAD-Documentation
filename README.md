@@ -7,7 +7,7 @@ description: >-
 # Sonoran CAD
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](pricing/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](vps-hosting-1/vps-hosting.md)!
 {% endhint %}
 
 ![](.gitbook/assets/sonorancad-logo_full.png)

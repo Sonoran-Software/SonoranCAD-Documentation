@@ -9,7 +9,7 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../pricing/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
 {% endhint %}
 
 This simple plugin exposes a check to see if an API ID exists. This is useful if you want to inform players they need to create an account on the CAD.
