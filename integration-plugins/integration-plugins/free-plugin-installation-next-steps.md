@@ -24,7 +24,7 @@ For every Sonoran CAD plugin installed, there will be a `config_{pluginName}.lua
 
 You can open these configuration files with a text editor and change values.
 
-For more information on a plugin's configuration options, you can view the individual plugin guides on the [Available Plugins](available-plugins/) page.
+For more information on a plugin's configuration options, you can view the individual plugin guides on the [Available Plugins](available-plugins/) page and scroll down to the configuration section.
 
 If you modify a configuration file, be sure to save it and `restart sonorancad` in your server console, or restart the server.
 
