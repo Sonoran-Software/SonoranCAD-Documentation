@@ -53,6 +53,7 @@
 ## Integration Plugins
 
 * [Integration Plugins](integration-plugins/integration-plugins/README.md)
+  * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
