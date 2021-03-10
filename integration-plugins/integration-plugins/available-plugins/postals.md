@@ -65,19 +65,19 @@ Ex: `nearest-postals-1.4`
 **As of Nearest-Postal v1.4.1 you do not need to manually add the export, as it is now already included in the Nearest-Postal script.**
 {% endhint %}
 
-2. If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not** the Sonoran CAD plugin file\). This will be the **very last line** in the nearest postal's `cl.lua` file.
+If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource \(**not the Sonoran CAD plugin file**\). This will be the **very last line** in the nearest postal's `cl.lua` file.
 
 ```lua
 exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
 ```
 
-The screenshot below shows an example of the export above being pasted as the **very last line** in the nearest postal's `cl.lua` file \(**not** the Sonoran CAD plugin file\).
+The screenshot below shows an example of the export above being pasted as the **very last line** in the nearest postal's `cl.lua` file \(**not the Sonoran CAD plugin file**\).
 
 ![Nearest Postal&apos;s cl.lua File Example](../../../.gitbook/assets/image%20%2881%29.png)
 
 #### 3. Ensure Proper Startup Order
 
-Be sure that you are starting the nearest postals addon/resource before you `ensure sonorancad` in your `server.cfg`.
+Be sure that you are starting the nearest-postals addon/resource **before/above** where you `ensure sonorancad` in your `server.cfg`.
 
 #### 4. Restart both Resources
 
