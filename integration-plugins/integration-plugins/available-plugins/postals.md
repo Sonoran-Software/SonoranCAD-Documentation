@@ -75,7 +75,11 @@ The screenshot below shows an example of the export above being pasted as the **
 
 ![Nearest Postal&apos;s cl.lua File Example](../../../.gitbook/assets/image%20%2881%29.png)
 
-#### 3. Restart both Resources
+#### 3. Ensure Proper Startup Order
+
+Be sure that you are starting the nearest postals addon/resource before you `ensure sonorancad` in your `server.cfg`.
+
+#### 4. Restart both Resources
 
 Be sure to restart both the Sonoran CAD resource and the nearest-postals script, or restart your server entirely to apply the changes made.
 
