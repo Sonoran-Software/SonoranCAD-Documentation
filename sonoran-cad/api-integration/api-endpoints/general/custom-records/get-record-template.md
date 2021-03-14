@@ -22,6 +22,10 @@ This endpoint allows you to retrieve all custom record and report templates in y
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="templateId" type="number" required=false %}
+Unique template ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="string" required=true %}
 Your community's ID
 {% endapi-method-parameter %}
@@ -71,9 +75,7 @@ INVALID API KEY
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
     "type": "GET_TEMPLATES",
-    "data": [
-        // Array left empty to stay consistent with other API call formatting
-    ]
+    "templateId": 123, // OPTIONAL - Matches a specific record's recordTypeId field
 }
 ```
 
