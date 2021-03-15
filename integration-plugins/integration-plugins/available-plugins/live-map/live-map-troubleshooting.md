@@ -72,7 +72,7 @@ You should see brackets **with or without additional blip data**.
 
 If you do **not** see the brackets \(with or without additional data\), the issue may be caused by one of the following:
 
-1. The live map resource is not running on your server.
+1. The `sonoran_livemap` resource is not running on your server.
 2. The live map port `30121` \(by default\) is used by another service.
 3. Your live map port is not open.
    * If you are unsure how to open the live map port, you will need to **contact your hosting provider**.
