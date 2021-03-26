@@ -18,8 +18,6 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Sonoran CAD's development branch maintains the same rate limiting as production. However, rate limits only result in a one minute block as opposed to an hour.
 
-Currently, communities may not exceed more than 80 requests per minute.
-
 ### Development API Server
 
 All API endpoints and requests should be made to the following address:
