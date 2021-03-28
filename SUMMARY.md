@@ -51,8 +51,8 @@
   * [Voice Commands](tutorials/other-features/voice-commands.md)
   * [Volume and Language](tutorials/other-features/volume-and-language.md)
 * [Integration Features](tutorials/in-game-integration/README.md)
-  * [Database Sync Credentials](tutorials/in-game-integration/database-sync-credentials.md)
-  * [Database Sync and Merge](tutorials/in-game-integration/database-sync-and-merge.md)
+  * [Database Sync and Merge](tutorials/in-game-integration/database-sync-and-merge/README.md)
+    * [Database Sync Credentials](tutorials/in-game-integration/database-sync-and-merge/database-sync-credentials.md)
   * [Discord Webhooks](tutorials/in-game-integration/discord-webhooks.md)
 
 ## Integration Plugins

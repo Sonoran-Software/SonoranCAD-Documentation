@@ -6,11 +6,11 @@ description: Getting your database Credentials to use with Database Sync.
 
 {% hint style="info" %}
 Database Sync is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
 {% endhint %}
 
 Database Sync is a read-only system. All characters, licenses, and vehicle registrations pulled from your database can not be modified in the CAD.  
@@ -27,11 +27,11 @@ Database Merge allows you to save off additional, manually specified data in the
 
 2. At the top of your screen click on **`User Accounts`**.
 
-![](../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28136%29.png)
 
 3. You will now want to create a new user account, to do so click **`Add user account`** .
 
-![](../../.gitbook/assets/image%20%28135%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 
 4. Fill out a User name and Password to use. _`Make sure you write these down as you're going to need them.`_
 
@@ -51,7 +51,7 @@ Database Merge allows you to save off additional, manually specified data in the
 | Password | Password |
 
 {% hint style="warning" %}
-See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
+See [Database Sync and Merge Connection Credentials](./#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
 {% endhint %}
 {% endtab %}
 
@@ -62,13 +62,13 @@ See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#
 
 2. At the top of your screen click `Tools` and then `User Manager.`
 
-![](../../.gitbook/assets/image%20%28131%29.png)
+![](../../../.gitbook/assets/image%20%28131%29.png)
 
 3. At the top left click `Add`.
 
 4. Enter a User name, Password, and enter `%` in the From host field. Check off `Global Privileges` and click `Save`.
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 
 
@@ -84,7 +84,7 @@ See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#
 | Database | Database |
 
 {% hint style="warning" %}
-See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
+See [Database Sync and Merge Connection Credentials](./#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
 {% endhint %}
 {% endtab %}
 
@@ -95,11 +95,11 @@ See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#
 
 2. Scroll down until you see **TOOLS** on the left hand side of your screen and select **`Databases`.**
 
-![](../../.gitbook/assets/image%20%28133%29.png)
+![](../../../.gitbook/assets/image%20%28133%29.png)
 
 3. In the Center of your screen you will see you're database Credentials. 
 
-![](../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28134%29.png)
 
 
 
@@ -115,7 +115,7 @@ See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#
 
 
 {% hint style="warning" %}
-See [Database Sync and Merge Connection Credentials](database-sync-and-merge.md#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
+See [Database Sync and Merge Connection Credentials](./#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
 {% endhint %}
 {% endtab %}
 {% endtabs %}

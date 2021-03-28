@@ -37,7 +37,7 @@ Once configured, press save.
 ### 2. Configure Your Custom Records
 
 In the custom records editor, specify the `Field Mapping ID` from step one on the searchable field.  
-If this searchable field is in your in-game database, you can also toggle the [database sync](../in-game-integration/database-sync-and-merge.md) mapping checkbox.
+If this searchable field is in your in-game database, you can also toggle the [database sync](../in-game-integration/database-sync-and-merge/) mapping checkbox.
 
 ![Sonoran CAD - Custom Records Field Mapping ID](../../.gitbook/assets/image%20%28122%29.png)
 
@@ -45,7 +45,7 @@ Press save, then move onto the next step.
 
 ### 3. Configure Database Sync Column \(Optional\)
 
-If the search field is provided by your in-game database with [database sync](../in-game-integration/database-sync-and-merge.md), this custom record column will be display in your database sync configuration for any character, license, or vehicle registration.
+If the search field is provided by your in-game database with [database sync](../in-game-integration/database-sync-and-merge/), this custom record column will be display in your database sync configuration for any character, license, or vehicle registration.
 
 This will then allow you to search characters, licenses, or vehicle registrations from your in-game database based on this custom column value.
 
