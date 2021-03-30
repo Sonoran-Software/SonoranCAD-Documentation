@@ -39,21 +39,21 @@ At the top of your screen click on **`User Accounts`**.
 
 The `Host Name` field should be set as `Any Host` and the value as `%`. This will allow external IPs \(Sonoran CAD\) to connect to your database.
 
-![phpMyAdmin - New User Information](../../../.gitbook/assets/image%20%28142%29.png)
+![phpMyAdmin - New User Information](../../../.gitbook/assets/image%20%28145%29.png)
 
 #### **5. Once created, edit the user account privileges**
 
-![phpMyAdmin - Edit Account Privileges](../../../.gitbook/assets/image%20%28140%29.png)
+![phpMyAdmin - Edit Account Privileges](../../../.gitbook/assets/image%20%28141%29.png)
 
 #### **6. Select your specific database**
 
-![phpMyAdmin - Set Database](../../../.gitbook/assets/image%20%28143%29.png)
+![phpMyAdmin - Set Database](../../../.gitbook/assets/image%20%28146%29.png)
 
 #### **7. Select only the required permissions**
 
 `SELECT` and `SHOW VIEW` will ensure this account can only read from your database.
 
-![phpMyAdmin - Read Only Permissions](../../../.gitbook/assets/image%20%28144%29.png)
+![phpMyAdmin - Read Only Permissions](../../../.gitbook/assets/image%20%28147%29.png)
 
 #### 8. Save the user and set credentials in Sonoran CAD
 
@@ -74,25 +74,42 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 {% endtab %}
 
 {% tab title="HeidiSQL" %}
-#### HeidiSQL - Database Credentials
+## HeidiSQL - Database Credentials
 
-1. Login to your database using HeidiSQL. 
+#### 1. Login to your database using HeidiSQL. 
 
-2. At the top of your screen click `Tools` and then `User Manager.`
+#### 2. Open the User Manager
 
-![](../../../.gitbook/assets/image%20%28131%29.png)
+At the top of your screen click `Tools` and then `User Manager.`  
+Then, click `Add` at the top left.
 
-3. At the top left click `Add`.
+![HeidiSQL - Open User Manager](../../../.gitbook/assets/image%20%28131%29.png)
 
-4. Enter a User name, Password, and enter `%` in the From host field. Check off `Global Privileges` and click `Save`.
+#### 3. Enter the Account Information
 
-![](../../../.gitbook/assets/image%20%28138%29.png)
+Enter a user name, password, and enter `%` in the From host field. This will allow external IPs \(Sonoran CAD\) to connect to your database.
 
+Under `Allow Access To` select `Add Object`
 
+![HeidiSQL - User Account Credentials](../../../.gitbook/assets/image%20%28142%29.png)
 
-5. You will now want to go to [http://whatsmyip.org](http://whatsmyip.org) and get your Public IP Address to use as your Host.
+#### 4. Select the Database
 
-### Database Translation Information
+Select the name of your database, then hit `Ok`.
+
+![HeidiSQL - Select Database](../../../.gitbook/assets/image%20%28140%29.png)
+
+#### 5. Select the Permissions
+
+Check off the `EXECUTE`, `SELECT`, and `SHOW VIEW` read permissions. Then press `Save`.
+
+![HeidiSQL - Select User Permissions](../../../.gitbook/assets/image%20%28144%29.png)
+
+#### 6. Save the user and set credentials in Sonoran CAD
+
+You will now want to go to [http://whatsmyip.org](http://whatsmyip.org) and get your Public IP Address to use as your Host.
+
+Database Translation Information
 
 | HeidiSQL | SonoranCAD |
 | :--- | :--- |
@@ -107,21 +124,27 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 {% endtab %}
 
 {% tab title="Zap Hosting" %}
-#### Zap Hosting - Database Credentials
+## Zap Hosting - Database Credentials
 
-1. Login to your Zap Hosting Account and Navigate to your FiveM Server.
+#### 1. Login
 
-2. Scroll down until you see **TOOLS** on the left hand side of your screen and select **`Databases`.**
+Login to your Zap Hosting Account and Navigate to your FiveM Server.
 
-![](../../../.gitbook/assets/image%20%28133%29.png)
+#### 2. View the Tools Section
 
-3. In the Center of your screen you will see you're database Credentials. 
+Scroll down until you see **TOOLS** on the left hand side of your screen and select **`Databases`.**
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![ZAP Hosting Tools - Database](../../../.gitbook/assets/image%20%28133%29.png)
 
+#### 3. View Database Credentials
 
+In the Center of your screen you will see you're database Credentials. 
 
-### Database Translation Information
+![Zap Hosting - Database Credentials](../../../.gitbook/assets/image%20%28134%29.png)
+
+#### 4. Set DB Credentials in Sonoran CAD
+
+Database Translation Information
 
 | Zap Hosting | SonoranCAD |
 | :--- | :--- |
@@ -129,8 +152,6 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 | Database | Database |
 | User | Username |
 | Password | Password |
-
-
 
 {% hint style="warning" %}
 See [Database Sync and Merge Connection Credentials](./#written-configuration-guide) to figure out how to add Credentials to your CAD Instance using the information above.
