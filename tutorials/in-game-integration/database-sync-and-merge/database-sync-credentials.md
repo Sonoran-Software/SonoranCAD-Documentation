@@ -21,27 +21,45 @@ Database Merge allows you to save off additional, manually specified data in the
 
 {% tabs %}
 {% tab title="phpMyAdmin" %}
-#### phpMyAdmin - Database Credentials
+## phpMyAdmin - Database Credentials
 
-1. Navigate to your phpMyAdmin Instance.
+#### **1. Navigate to your phpMyAdmin Web Panel**
 
-2. At the top of your screen click on **`User Accounts`**.
+#### **2. Navigate to User Accounts**
+
+At the top of your screen click on **`User Accounts`**.
 
 ![](../../../.gitbook/assets/image%20%28136%29.png)
 
-3. You will now want to create a new user account, to do so click **`Add user account`** .
+**3. Create a new user account**
 
-![](../../../.gitbook/assets/image%20%28135%29.png)
+![phpMyAdmin - New User Account](../../../.gitbook/assets/image%20%28135%29.png)
 
-4. Fill out a User name and Password to use. _`Make sure you write these down as you're going to need them.`_
+#### **4. Fill out the account information**
 
-5. Check off `Global Privileges.` Scroll down to the bottom of the page and click `Go.`
+The `Host Name` field should be set as `Any Host` and the value as `%`. This will allow external IPs \(Sonoran CAD\) to connect to your database.
 
-6. At the next page you're going to want to click `Go` again.
+![phpMyAdmin - New User Information](../../../.gitbook/assets/image%20%28142%29.png)
 
-7. You will now want to go to [http://whatsmyip.org](http://whatsmyip.org) and get your Public IP Address to use as your Host.
+#### **5. Once created, edit the user account privileges**
 
-### Database Translation Information
+![phpMyAdmin - Edit Account Privileges](../../../.gitbook/assets/image%20%28140%29.png)
+
+#### **6. Select your specific database**
+
+![phpMyAdmin - Set Database](../../../.gitbook/assets/image%20%28143%29.png)
+
+#### **7. Select only the required permissions**
+
+`SELECT` and `SHOW VIEW` will ensure this account can only read from your database.
+
+![phpMyAdmin - Read Only Permissions](../../../.gitbook/assets/image%20%28144%29.png)
+
+#### 8. Save the user and set credentials in Sonoran CAD
+
+You will now want to go to [http://whatsmyip.org](http://whatsmyip.org) and get your Public IP Address to use as your Host.
+
+Database Translation Information**:**
 
 | phpMyAdmin | SonoranCAD |
 | :--- | :--- |
