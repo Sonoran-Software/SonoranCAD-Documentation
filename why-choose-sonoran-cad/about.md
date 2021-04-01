@@ -93,7 +93,7 @@ Sonoran CAD allows you to upload a [custom spreadsheet with your game's street n
 
 ### Global Hotkeys
 
-Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads.md), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
+Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads/), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
 
 ![Sonoran CAD&apos;s global hotkey configuration!](../.gitbook/assets/image%20%2846%29.png)
 

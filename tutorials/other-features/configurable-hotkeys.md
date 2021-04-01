@@ -10,7 +10,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 {% endhint %}
 
 {% hint style="info" %}
-Hotkeys are enabled **globally** on the [Desktop ](../../downloads.md)application. This means users do not have to have the app or page in focus or visible for the hotkeys to be registered.
+Hotkeys are enabled **globally** on the [Desktop ](../../downloads/)application. This means users do not have to have the app or page in focus or visible for the hotkeys to be registered.
 {% endhint %}
 
 ### Configure your Hotkeys

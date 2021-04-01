@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Sonoran CAD](README.md)
-* [Download The App](downloads.md)
+* [Download The App](downloads/README.md)
+  * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
 
 ## Why Choose Sonoran CAD?
 

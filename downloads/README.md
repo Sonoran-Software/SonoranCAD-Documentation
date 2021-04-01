@@ -7,17 +7,17 @@ description: >-
 
 # Download The App
 
-![](.gitbook/assets/sonorancad-logo_full.png)
+![](../.gitbook/assets/sonorancad-logo_full.png)
 
 | Website | iOS App Store | Google Play Store | Windows Desktop |
 | :--- | :--- | :--- | :--- |
 | [View](https://app.sonorancad.com/) | [Download](https://apps.apple.com/us/app/sonoran-cad/id1496539456) | [Download](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US) | [Download](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) |
 
-![Sonoran CAD - CAD/MDT Software](.gitbook/assets/image%20%2893%29.png)
+![Sonoran CAD - CAD/MDT Software](../.gitbook/assets/image%20%2893%29.png)
 
 ### Windows Desktop
 
-Our [Windows desktop application](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) allows you to access [global hotkeys](tutorials/other-features/configurable-hotkeys.md) regardless of whether or not the app is in-focus. You can even configure these on your stream deck or custom key binds to set your status, toggle your panic status, open lookup windows, and more!
+Our [Windows desktop application](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) allows you to access [global hotkeys](../tutorials/other-features/configurable-hotkeys.md) regardless of whether or not the app is in-focus. You can even configure these on your stream deck or custom key binds to set your status, toggle your panic status, open lookup windows, and more!
 
 ### iOS and Android
 
