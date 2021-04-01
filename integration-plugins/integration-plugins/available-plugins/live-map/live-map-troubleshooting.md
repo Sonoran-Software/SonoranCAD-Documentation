@@ -136,7 +136,7 @@ If you do not see the  `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, or`EVENT_UNIT_ST
 
 When re-deploying the live map with new configurations, your local web browser may be caching an older version of the config.
 
-In Chrome, you can hold `shift` and click `refresh` at the same time on the live map page to clear your browser's cache.
+In Chrome, you can hold `shift` and click `refresh` at the same time on the live map page to [clear your browser's cache](../../../../downloads/web-browser-clear-cache.md).
 
 For more information on clearing your Desktop application's cache, click [here](../../../../downloads/desktop-app-clear-cache.md).
 

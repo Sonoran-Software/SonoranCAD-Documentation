@@ -2,6 +2,7 @@
 
 * [Sonoran CAD](README.md)
 * [Download The App](downloads/README.md)
+  * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
 
 ## Why Choose Sonoran CAD?
