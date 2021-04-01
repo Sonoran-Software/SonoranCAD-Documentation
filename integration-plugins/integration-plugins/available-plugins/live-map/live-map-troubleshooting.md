@@ -132,9 +132,11 @@ If the `APIID` listed is different, [update your API ID set in your CAD's user a
 
 If you do not see the  `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, or`EVENT_UNIT_STATUS` push events displayed in debug mode when you perform these actions in the CAD, **double check that your push events listener is correctly setup in step 3C**.
 
-## 6. Clear Local Browser Cache
+## 6. Clear Local Browser or Desktop Cache
 
 When re-deploying the live map with new configurations, your local web browser may be caching an older version of the config.
 
 In Chrome, you can hold `shift` and click `refresh` at the same time on the live map page to clear your browser's cache.
+
+For more information on clearing your Desktop application's cache, click [here](../../../../downloads/desktop-app-clear-cache.md).
 
