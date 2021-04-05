@@ -8,15 +8,17 @@ description: This guide covers creating a new criminal record in Sonoran CAD.
 
 In the police or dispatch page, select "New Record" in the top toolbar.
 
-![Sonoran CAD&apos;s &quot;New Record&quot; button](../../.gitbook/assets/screen-shot-2020-04-19-at-2.26.59-am.png)
+![Sonoran CAD&apos;s Records Center](../../.gitbook/assets/image%20%28152%29.png)
 
 ### Select The Record Type
 
-A dropdown menu will appear, where users can select the new record type.
+Click the "New Record" button and a dropdown menu will appear, where users can select the new record type.
 
-Records are comprised of several sections:
+![Selecting the New Record you would like to make](../../.gitbook/assets/image%20%28156%29.png)
 
-1. [Record Flags]()
+Records \(by default\) are comprised of several sections:
+
+1. Record Flags
 2. Agency/Department Information
 3. Civilian Information
 4. Vehicle Information
@@ -24,9 +26,13 @@ Records are comprised of several sections:
 6. Narrative
 7. Status
 
-Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database]().
+{% hint style="info" %}
+All records and reports are fully customizable, you may change the fields as much as you want. Each of the default record types are customizable as well and may look different if your community has customized the record shown below.
+{% endhint %}
 
-![Sonoran CAD&apos;s record information search feature](../../.gitbook/assets/screen-shot-2020-04-19-at-2.30.10-am.png)
+Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database](../in-game-integration/database-sync-and-merge/).
+
+![Sonoran CAD&apos;s record information search feature](../../.gitbook/assets/image%20%28151%29.png)
 
 
 
