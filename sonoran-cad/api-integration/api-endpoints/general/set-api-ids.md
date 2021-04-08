@@ -76,8 +76,11 @@ INVALID API KEY
         {
           "username": "Brian1234",
           "sessionId": "2daf5d1-8256-4373-9a", // OPTIONAL - Authentication
-          "id1": "11000010499F33C",
-          "id2": "SomeOtherKey", // OPTIONAL - Only need one key
+          "apiIds": [
+              "11000010499F33C",
+              "ABCD123",
+          ],
+          "pushNew": true, // Push new API IDs to array or override entirely
 		    }
     ]
 }
@@ -89,14 +92,20 @@ INVALID API KEY
 
 The `sessionId` field is an optional field for authentication purposes.
 
-The following data is output to the developer web console in your browser: `LOGIN COMMUNITY: {TEST2} USERNAME: {SonoranBrian1} SESSIONID: {75afeea-a869-4dea-b2}`
+The following data object is [emitted from your web browser](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) via `window.parent.postMessage` and can be captured by a parent page when hosting it in a live map:
 
-This string contains your session ID, and can be captured with resources like our [in-game tablet](../../../../integration-plugins/integration-plugins/available-plugins/tablet.md).
+```javascript
+{
+  "username": "SonoranBrian",
+  "session": "1234-5678-9012-3456"
+}
+```
+
+This object contains your session ID, and can be captured with resources like our [in-game tablet](../../../../integration-plugins/integration-plugins/available-plugins/tablet.md).
 
 This is how the in-game tablet and [API ID](../../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) plugin work to automatically link your API ID when using the tablet.
 
-#### API IDs \(id1 and id2\)
+#### Push New
 
-Only ONE API ID must be specified for this call. If you leave one blank, it will still override the API ID.  
-Ex: If you would like to only update `id1`, do not declare `id2` in the API call at all.
+The `pushNew` boolean determines whether or not to update the user account's existing API IDs and "push" \(add\) these new `apiIds` or to overwrite their saved API IDs entirely.
 
