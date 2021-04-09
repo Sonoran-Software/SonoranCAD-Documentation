@@ -94,7 +94,7 @@ Note: The `apiIds` will automatically filter out any duplicate values.
 
 The `sessionId` field is an optional field for authentication purposes.
 
-The following data object is [emitted from your web browser](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) via `window.parent.postMessage` and can be captured by a parent page when hosting it in a live map:
+The following data object is [emitted from your web browser](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) via `window.parent.postMessage` and can be captured by a parent page when hosting it in an iframe:
 
 ```javascript
 {
@@ -111,5 +111,5 @@ This is how the in-game tablet and [API ID](../../../../integration-plugins/inte
 
 The `pushNew` boolean determines whether or not to update the user account's existing API IDs and "push" \(add\) these new `apiIds` or to overwrite their saved API IDs entirely.
 
-If not set, the default is `true` \(add onto existing API IDs\).
+If not set, the default value is `true` \(add onto existing API IDs\).
 
