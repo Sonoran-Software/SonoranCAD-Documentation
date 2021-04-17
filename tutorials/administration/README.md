@@ -2,7 +2,7 @@
 description: Everything you need to know about administrating your new CAD system.
 ---
 
-# Adminstration
+# Administration
 
 ## Deleting or Transferring Your CAD
 
