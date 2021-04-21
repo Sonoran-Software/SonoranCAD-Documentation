@@ -84,7 +84,7 @@ INVALID API KEY
             "title": "Traffic Stop",
             "code": "10-39 - Traffic Stop",
             "description": "Traffic Stop - Blue Sedan - XP123BS",
-            "notes": "",
+            "notes": [],
             "metaData": {
                 "someKey": "someValue" // OPTIONAL: metaData for API custom storage
             },

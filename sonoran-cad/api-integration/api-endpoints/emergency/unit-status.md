@@ -74,7 +74,8 @@ INVALID API KEY
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
-            "status": 0, // Status Int (ENUM)
+            "status": 0,           // Status Int (ENUM)
+            "serverId": 1          // Server ID
         },
     ]
 }

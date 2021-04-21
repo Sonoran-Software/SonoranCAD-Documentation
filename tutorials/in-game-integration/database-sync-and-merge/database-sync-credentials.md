@@ -17,7 +17,7 @@ Database Sync is a read-only system. All characters, licenses, and vehicle regis
   
 Database Merge allows you to save off additional, manually specified data in the CAD.
 
-### Getting your Credentials
+## 1. Getting your Credentials
 
 {% tabs %}
 {% tab title="phpMyAdmin" %}
@@ -159,7 +159,16 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 {% endtab %}
 {% endtabs %}
 
+## 2. Port Forwarding
 
+If your database port has not already been opened, you will need to forward/open this port.  
+Typically, the default MySQL port is `3306`.
+
+To check if your MySQL port has been properly opened, [visit a port checking utility](https://www.yougetsignal.com/tools/open-ports/) and enter your MySQL server's IP address and port.
+
+**If you are unsure how to open a port, you will need to contact your hosting provider.**
+
+\*\*\*\*
 
 
 
