@@ -67,7 +67,6 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | apiKey | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings. |
 | postTime | Update locations every x ms. Default 5000. It is recommend to not set this lower than 5000 ms due to rate limiting. |
 | serverId | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here. |
-| serverType | DEPRECATED |
 | primaryIdentifier | The identifier type your community uses in the CAD to enter their API IDs. Valid values are: `license`, `steam`, or `discord.` |
 | apiSendEnabled | When disabled, the integration will not send any API requests to SonoranCAD. |
 | debugMode | When set to `true`, useful debugging information it outputted to the console. Keep disabled in production due to console spam. This can be toggled by entering `sonoran debugmode` in console. |
@@ -92,7 +91,23 @@ add_ace resource.sonorancad command allow
 add_ace resource.sonoran_updatehelper command allow
 ```
 
-### 5. Installing Plugins
+### 5. Configure Push Events
+
+In the CAD admin panel, navigate to: Advanced &gt; In-Game Integration  
+Expand the "Server Events and Integrated Live Map" section.
+
+Enter your server's public IP address and your game server's port. By default, this is port `30120`.
+
+#### 5A. Admin Panel Configuration
+
+Set your game server port and IP address in the admin panel of Sonoran CAD.  
+The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map/).
+
+![Sonoran CAD - Push Events and Map Port](../../.gitbook/assets/image%20%28157%29.png)
+
+Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
+
+### 6. Installing Plugins
 
 Check out our [Available Plugins](available-plugins/) to make the integration useful.  
 For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.  

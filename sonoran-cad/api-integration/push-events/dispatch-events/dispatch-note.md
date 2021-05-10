@@ -1,3 +1,7 @@
+---
+description: This push event sends data when a note is added to an existing dispatch call.
+---
+
 # Dispatch Note
 
 ### EVENT\_DISPATCH\_CLOSED POST

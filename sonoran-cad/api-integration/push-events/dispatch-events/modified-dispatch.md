@@ -1,3 +1,7 @@
+---
+description: This push event sends data when an existing dispatch call is modified.
+---
+
 # Modified Dispatch
 
 ### EVENT\_DISPATCH\_EDIT POST

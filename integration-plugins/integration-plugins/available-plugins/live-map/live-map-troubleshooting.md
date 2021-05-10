@@ -53,15 +53,15 @@ You can search \(control/command + f\) for the keyword "map".
 
 ## 3. Check Ports
 
-The live map requires two, separate, open ports that are not used by any other service or resource.
+The live map requires one additional port that are not used by any other service or resource.
 
-If you are using/forwarding ports other than the default `30121` \(map port\) and `3232` \(listener port\) you will need to update the convars and admin panel per the [installation tutorial](./).
+If you are using/forwarding ports other than the default `30121` \(map port\) and `30120` \(listener/game server port\) you will need to update the convars and admin panel per the [installation tutorial](./).
 
 ### 3A. Check IP and Ports for Common Mistakes
 
 Ensure the IP and ports are listed correctly without spaces, common mistypes, possible incorrect port numbers, etc.
 
-![Ensure your map IP, map port, and listener port are set correctly](../../../../.gitbook/assets/livemap_config.png)
+![Ensure your map IP, map port, and game port are set correctly](../../../../.gitbook/assets/livemap_config.png)
 
 ### 3B. Ensure the Map Port is Open
 
@@ -81,18 +81,17 @@ If you do **not** see the brackets \(with or without additional data\), the issu
 
 ### 3C. Ensure the Listener Port is Open
 
-Navigate to `mapIp:listenerPort` in your web browser, you should see the following page. This means that you have properly configured your push events listener page:
+Navigate to `mapIp:gamePort/sonorancad/event` in your web browser, you should see the following page. This means that you have properly configured your push events listener page:
 
-![Event Listener: Web Browser View](../../../../.gitbook/assets/screen-shot-2020-11-11-at-12.16.32-am.png)
+![Event Listener: Web Browser View](../../../../.gitbook/assets/image%20%28161%29.png)
 
 If the page is not displayed, the issue may be caused by one of the following:
 
-1.  You do not have the [push events](../push-events.md) plugin running.
-2. The port numbers are not set correctly.
-3. You do not have the ports open.
+1. The port number is not correct.
+2. You do not have the port open.
    * If you are unsure how to open the live map port, you will need to **contact your hosting provider**.
    * You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened this port.
-4. You are using a [different port than the default](./#using-different-ports) and did not configure that in your `server.cfg`.
+3. You are using a [different port than the default](./#using-different-ports) and did not configure that in your `server.cfg`.
 
 ## 4. Ensure Your API ID is Set
 

@@ -21,20 +21,22 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 In the admin panel, navigate to: Advanced &gt; In-Game Integration  
 Expand the "Server Events and Integrated Live Map" section.
 
-Enter your server's public IP address and your new listener port. By default, this is port `3232`.  
+Enter your server's public IP address and your game server's port. Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
+
+  
 Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
 
 ![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
 
 #### 2. Framework Configuration and Installation
 
-Ensure you have **port forwarded** your new listener port. By default, this is port `3232`.  
-You will need to download and install the [`pushevents`](../../../integration-plugins/integration-plugins/available-plugins/push-events.md) plugin installed in order to receive the events.
+You will need to download and install the [`pushevents`]() plugin installed in order to receive the events.
 
-{% hint style="danger" %}
-You will need to properly port forward your listener port.  
-If you are unsure how to do this, you will need to **contact your hosting provider**.
-{% endhint %}
+If you are not using the default game port `30120` you will need to specify the `SonoranListenPort`  in your `server.cfg` file.
+
+  
+Ex: Your game server is running on port 9000:  
+Add `set SonoranListenPort 9000` to your `server.cfg` file.
 
 ### Developer Documentation
 

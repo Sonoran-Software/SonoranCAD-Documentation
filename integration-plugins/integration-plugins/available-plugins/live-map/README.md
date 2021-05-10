@@ -14,7 +14,7 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% endhint %}
 
 {% hint style="danger" %}
-The live map will require you to open **two additional ports** on your server.  
+The live map will require you to open **one additional port** on your server.  
 **You will need to contact your hosting provider if you are unsure how to do this.**
 {% endhint %}
 
@@ -39,7 +39,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and all Dependencies
 
 1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_livemap/releases)to download the live map plugin .zip file.
-2. Download and install the [push events listener](../push-events.md) plugin.
+2. Download and install the [push events listener]() plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -84,18 +84,18 @@ IMPORTANT: You must use an unused port for both the map and listener ports. It c
 
 1. IP: Set IP to the **public** IP address of your server, 
 2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
-3. Listener Port: The port you have specified in the the [`pushevents`](../../../../sonoran-cad/api-integration/push-events/) plugin, by default this is `3232`.
+3. Listener Port: The port you have specified in the the [`pushevents`](../../../../sonoran-cad/api-integration/push-events/) plugin, by default this is `30120`.
 4. Click "Save and Deploy" to deploy your live map.
 
 Click Save And Deploy. After a few seconds, the live map should appear as a button on most CAD screens \(Police, Dispatch, etc\) and will auto-update with your unit positions.
 
 #### C. Port Forwarding
 
-You will need to port forward BOTH of the ports specified in the Map Port and Listener Port.  
-These ports are accessed by Sonoran CAD to server position data and view the blips.  
+You will need to port forward specified in the Map Port.  
+This port is accessed by Sonoran CAD to serve position data and view the blips.  
 **If you are unsure how to port forward, you will need to contact your hosting provider.**
 
-You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened these ports.
+You can use a [port checker](https://www.yougetsignal.com/tools/open-ports/) to ensure you have properly opened your map port.
 
 ### **5**. Set Your API ID
 
@@ -153,17 +153,16 @@ Select "Upload Custom" and upload all six correctly named files.
 
 ## Using Different Ports
 
-If you are not using the default ports `30121` \(map port\) and `3232` \(listener/push events port\) you will need to change these.
+If you are not using the default map port `30121` you will need to change the configuration.
 
-Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **TWO** open ports not being used by any other service.
+Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **one** additional open port not being used by any other service.
 
 1. Navigate to your server's `server.cfg` file.
 2. Add the lines to set the convar values to the ports you are using
-   * Ex: Your hosting provider opens port `8000` and `9000` for you to use.
+   * Ex: Your hosting provider opens port `8000` for you to use.
      * `set socket_port 8000` for the live map port.
-     * `set SonoranListenPort 9000` for the [push events](../../../../sonoran-cad/api-integration/push-events/) port.
-       * **Make sure both of these lines are BEFORE/ABOVE your `ensure sonoran_livemap` and `ensure sonorancad` lines in the `server.cfg`.**
-3. Update the ports in the admin panel setting the new map and listener ports.
+       * **Make this line is BEFORE/ABOVE your `ensure sonoran_livemap` and `ensure sonorancad` lines in the `server.cfg`.**
+3. Update the port in the [admin panel](../../framework-installation.md#5-configure-push-events) setting the new map and listener ports.
 4. Save everything, restart your server, and deploy the live map.
 
 **If you are unsure how to open additional ports, you will need to contact your hosting provider.**
