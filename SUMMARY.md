@@ -20,6 +20,7 @@
   * [Registering Your Community](tutorials/getting-started/registering-your-community.md)
   * [Inviting Users to Your CAD](tutorials/getting-started/inviting-users-to-your-cad.md)
   * [Granting Account Permissions](tutorials/getting-started/permissions.md)
+  * [Customizing Your Layout](tutorials/getting-started/customizing-your-layout.md)
   * [View Your Limits](tutorials/getting-started/view-your-limits.md)
   * [Finding your Community ID and Authentication Code](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 * [Customization](tutorials/customization/README.md)

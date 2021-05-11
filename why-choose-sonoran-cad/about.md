@@ -6,8 +6,6 @@ description: >-
 
 # Why Choose Sonoran CAD
 
-![](../.gitbook/assets/sonorancad-logo_full.png)
-
 ![](../.gitbook/assets/image%20%2893%29.png)
 
 ### Downloadable Apps
@@ -29,6 +27,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
 * [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
 * [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
+* [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
 * [Automated GPS Routing for Dispatch Calls](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
@@ -47,6 +46,16 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time and displays 911 call blips! We even take care of hosting the live map for you!
 
 ![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
+
+### Multitasking Window and Tab System
+
+Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
+
+[Every panel and window can be locked into position and customized.](../tutorials/getting-started/customizing-your-layout.md)
+
+Drag-and-drop allows you to easily view calls, attach units, and more!
+
+![Sonoran CAD - Custom Layouts](../.gitbook/assets/3_10_features.gif)
 
 ### API Integration
 
@@ -69,10 +78,6 @@ Whether it's your own firearms registration system, an in-depth vehicle accident
 Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
 
 ![Sonoran CAD&apos;s custom email branding!](../.gitbook/assets/image%20%2847%29.png)
-
-### Multitasking Window and Tab System
-
-Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
 
 ### Self-Dispatch
 
