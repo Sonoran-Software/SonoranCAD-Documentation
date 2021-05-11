@@ -57,6 +57,16 @@ Drag-and-drop allows you to easily view calls, attach units, and more!
 
 ![Sonoran CAD - Custom Layouts](../.gitbook/assets/3_10_features%20%281%29.gif)
 
+### [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
+
+Enforce security in your TeamSpeak 3 channels by requiring them to be signed into the CAD. Additionally, kick users from secured TS channels when they log off.
+
+### [Stream Deck Integration](../integration-plugins/stream-deck-integration.md)
+
+Check out our official [Stream Deck profiles](../integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](../downloads/), these actions can be done even while the app is minimized.
+
+![Sonoran CAD - Stream Deck](../.gitbook/assets/image%20%28173%29.png)
+
 ### API Integration
 
 In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
