@@ -60,6 +60,7 @@
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
+* [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
 * [Integration Plugins](integration-plugins/integration-plugins/README.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
