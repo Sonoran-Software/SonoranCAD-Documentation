@@ -8,6 +8,136 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.10.0 5/10/2021
+
+{% tabs %}
+{% tab title="New" %}
+SSO Accounts  
+- All user accounts have been migrated over to a general "Sonoran" account. This allows for a centralized place to edit your account info, view your billing, and more.
+
+Custom Layouts  
+- Users can now fully customize the placement of any window and lock them to create a custom layout. This includes all default dispatching windows and additional popout windows. Layouts are also saved locally to the user's device.
+
+Dispatch Editor - Drag and Drop Units  
+- Active units can be dragged over to the call editor to more easily attach them.
+
+Active Units & Groups - Drag and Drop  
+- Units can be dragged and dropped into a new or existing group.
+
+Dispatch Call History - Drag and Drop Units  
+- Units and unit groups can be dragged and dropped directly to an active call, removed from a call, or dragged from one call to another without having to open the full call in the editor.
+
+Dispatch Call Note: Attach/Detach  
+- Dispatch calls now receive a note when a unit or unit group is attached or detached.
+
+Emergency Calls - Drag and Drop  
+- Emergency/911 calls can now be dragged and dropped from the call list to the dispatch editor.
+
+Status Change - Dispatch Call Note  
+- Units attached to a dispatch call will send a note to the call when updating their status.
+
+Custom Search - Partial Matches  
+- Custom search types now allow for partial searches.
+
+Translation: Chinese  
+- Added Chinese translations to the CAD settings.
+
+Translation - Traditional Chinese  
+- Added Traditional Chinese translations.
+
+Login - Emit Session Data  
+- Data is now emitted to the page's parent \(for iframe\) allowing the username and session ID to be captured for authentication with the auto API ID set feature.
+
+API: Set API ID  
+- The set API ID endpoint now allows for an array to be sent along with specification to push or overwrite the existing account IDs.
+
+Active Calls - Postal Column  
+- The active calls list now has an optional field to view the call's postal field.
+
+BOLO Records - Status Field  
+- The custom records UI now requires BOLO records to contain a "Status" field.
+
+Civilian 911 - Modify Caller Name  
+- Civilians can now remove their name in the 911 caller to remain anonymous.
+{% endtab %}
+
+{% tab title="Changed" %}
+Push Events - Server Port  
+- The push event system now utilizes your existing game server port. This reduces the number of open ports your server requires. Push events are now sent to [http://ip:gameport/sonorancad/event](http://ip:gameport/sonorancad/event). The framework will automatically forward events to this new path if you have not updated your port in the CAD admin panel.
+
+API - SET\_ACCOUNT\_PERMISSIONS  
+- Separated the account permission arrays in the SET\_ACCOUNT\_PERMISSION API endpoint to allow a caller to both add and remove specific permissions in a single call. Also, added an additional option to specify the user by their CAD username as opposed to only their API ID. Additionally, added an option to toggle the account status from PENDING to ACTIVE.
+
+API: NEW\_CHARACTER Response  
+- API NEW\_CHARACTER responds with the full JSON character record built.
+
+API IDs - Array  
+- API IDs are now stored as an array and allow for more API IDs to be stored. The UI has also been improved and will auto-save.
+
+API: Unit Push Events  
+- Push events including unit updates no longer contain the full unit structure, but instead include the unique identifier ID.
+
+API: Change Unit Status  
+- The change unit status endpoint now requires a server ID argument.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Live Map - Custom Upload  
+- Fixed an upload limit issue causing some custom live map uploads to fail.
+
+Remove Record  
+- Fixed an issue preventing users from removing a record due to an incorrect UUID placement.
+
+Default Records - Flags  
+- Fixed an issue where the default record type templates contained records with hidden flags.
+
+911 - Text to Speech  
+- Fixed an issue where the webpage text to speech for "Incoming 911" would fail.
+
+Record - Get Owner  
+- Fixed an issue where searching for a record's owner would fail on types other than a civilian.
+
+Custom Search - Case Sensitivity  
+- Fixed an issue where custom searches were not case-insensitive and would fail on searches with lowercase DB values.
+
+Unit Location - Duplicate API IDs  
+- Fixed an issue where unit locations would not update via API if multiple user accounts had conflicting API IDs.
+
+DB Sync/Merge Primary Key Column  
+- Resolved issues with DB Sync/Merge mapping manual values properly if the user had a primary key column name set as a reserved MySQL character. Ex: '\#"
+
+DB Sync/Merge - Character ID vs Primary Key  
+- Resolved an issue with DB Sync/Merge if the community has a different character unique ID that is not the primary key column.
+
+Character Records: Validation  
+- Fixed an issue where custom character validation was not being processed for required fields.
+
+Custom Records: Supervisor Status  
+- Fixed an issue where custom records with a status field in a section before fields requiring a supervisor may not be indexed properly as requiring supervisor permissions.
+
+DBSync - Character Multi-Table  
+- Fixed an issue where database sync would fail to select the correct "owner ID" when using multiple character tables.
+
+Dispatch Address Filter - Mistype  
+- Fixed an issue on the dispatch address field filtering where backspacing after a misspelling would fail to re-correct the filtered list.
+
+Lookup - Closed BOLO  
+- Fixed an issue with the lookup UI preview showing a BOLO's status as 0 or 1 instead of "Closed" and "Open".
+
+Call Note - Permission  
+- Fixed an issue where units could not add a note to the call unless they were in self-dispatch.
+
+Clear Subscription - Handle non-existing subscriptions  
+- Fixed an issue where clearing a subscription's ID on an expired subscription would fail.
+
+Police Supervisor Panel - DMV Records  
+- Fixed an issue where the police supervisor panel would also show DMV records that required supervisor completion.
+
+Favicon - Alternate Sizes  
+- Fixed an issue with alternate sized favicons not displaying and causing a mixed-media SSL warning.
+{% endtab %}
+{% endtabs %}
+
 ### 3.9.0 2/9/2021
 
 {% tabs %}
