@@ -22,7 +22,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 | Max Civilian Vehicle Registrations | This allows you to restrict the number of vehicle registrations a single civilian can register. |
 
 {% hint style="warning" %}
-License and vehicle registration restrictions do not apply to communities that have [database sync](../in-game-integration/database-sync-and-merge/) enabled.  
+License and vehicle registration restrictions do not apply to communities that have [database sync](../../integration-plugins/database-sync-and-merge/) enabled.  
   
 This is because all licenses and vehicle registrations are pulled from your own in-game database.
 {% endhint %}

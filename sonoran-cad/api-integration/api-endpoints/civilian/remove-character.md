@@ -9,7 +9,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 {% endhint %}
 
 {% hint style="danger" %}
-Characters can NOT be removed from communities using [Database Sync](../../../../tutorials/in-game-integration/database-sync-and-merge/), as all characters are pulled from your server's in-game database.
+Characters can NOT be removed from communities using [Database Sync](../../../../integration-plugins/database-sync-and-merge/), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/civilian/remove\_character" %}

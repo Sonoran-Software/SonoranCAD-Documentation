@@ -30,7 +30,7 @@ Records \(by default\) are comprised of several sections:
 All records and reports are fully customizable, you may change the fields as much as you want. Each of the default record types are customizable as well and may look different if your community has customized the record shown below.
 {% endhint %}
 
-Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database](../in-game-integration/database-sync-and-merge/).
+Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database](../../integration-plugins/database-sync-and-merge/).
 
 ![Sonoran CAD&apos;s record information search feature](../../.gitbook/assets/image%20%28151%29.png)
 

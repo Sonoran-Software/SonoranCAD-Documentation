@@ -53,13 +53,13 @@
   * [Configurable Hotkeys](tutorials/other-features/configurable-hotkeys.md)
   * [Voice Commands](tutorials/other-features/voice-commands.md)
   * [Volume and Language](tutorials/other-features/volume-and-language.md)
-* [Integration Features](tutorials/in-game-integration/README.md)
-  * [Database Sync and Merge](tutorials/in-game-integration/database-sync-and-merge/README.md)
-    * [Database Sync Credentials](tutorials/in-game-integration/database-sync-and-merge/database-sync-credentials.md)
-  * [Discord Webhooks](tutorials/in-game-integration/discord-webhooks.md)
 
-## Integration Plugins
+## Integration Capabilities <a id="integration-plugins"></a>
 
+* [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
+  * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
+* [Discord Webhooks](integration-plugins/discord-webhooks.md)
+* [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
 * [Integration Plugins](integration-plugins/integration-plugins/README.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)

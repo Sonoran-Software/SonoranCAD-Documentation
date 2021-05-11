@@ -6,11 +6,11 @@ description: Let us help you enable and configure database sync for your communi
 
 {% hint style="info" %}
 Database Sync is not enabled with the free version of Sonoran CAD.  
-For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!
 {% endhint %}
 
 Database Sync is a read-only system. All characters, licenses, and vehicle registrations pulled from your database can not be modified in the CAD.  
@@ -51,7 +51,7 @@ This section specifies the SQL connection string information.
 
 #### 2. Enter the required fields below.
 
-![Sonoran CAD&apos;s Database Sync connection configuration](../../../.gitbook/assets/sync_connection.png)
+![Sonoran CAD&apos;s Database Sync connection configuration](../../.gitbook/assets/sync_connection.png)
 
 <table>
   <thead>
@@ -106,7 +106,7 @@ This will query your database for the version.
   
 If you see an alert similar to the following, your connection is successful:
 
-![Database Sync connection credentials successfully entered](../../../.gitbook/assets/db_connected.png)
+![Database Sync connection credentials successfully entered](../../.gitbook/assets/db_connected.png)
 
 #### 4. Save the Configuration
 
@@ -145,7 +145,7 @@ _NOTE:_ Sonoran CAD requires character mapping for characters, licenses and vehi
 
 Below is an example of a mapping from a character table:
 
-![Sonoran CAD character mapping example configuration](../../../.gitbook/assets/mapping_char.png)
+![Sonoran CAD character mapping example configuration](../../.gitbook/assets/mapping_char.png)
 
 {% hint style="info" %}
 Note: As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -158,7 +158,7 @@ This will query your database for one character row with all of the columns you 
   
 If you see an alert similar to the following, your mapping is valid.
 
-![Sonoran CAD character mapping configured successfully](../../../.gitbook/assets/db_test_char.png)
+![Sonoran CAD character mapping configured successfully](../../.gitbook/assets/db_test_char.png)
 
 **4. Save the Configuration**
 
@@ -187,7 +187,7 @@ _NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull
 
 Below is an example of a mapping from a license table:
 
-![Example of a Sonoran CAD license mapping](../../../.gitbook/assets/db_example_lic.png)
+![Example of a Sonoran CAD license mapping](../../.gitbook/assets/db_example_lic.png)
 
 {% hint style="info" %}
 _Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -200,7 +200,7 @@ This will query your database for one license row with all of the columns you ha
   
 If you see an alert similar to the following, your mapping is valid:
 
-![Sonoran CAD license mapping configured successfully](../../../.gitbook/assets/db_lic_succ.png)
+![Sonoran CAD license mapping configured successfully](../../.gitbook/assets/db_lic_succ.png)
 
 #### 4. Save the Configuration
 
@@ -234,7 +234,7 @@ _NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull
 
 Below is an example of a mapping from a vehicle registration table:
 
-![Example of a Sonoran CAD vehicle registration mapping](../../../.gitbook/assets/db_example_veh.png)
+![Example of a Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_example_veh.png)
 
 {% hint style="info" %}
 _Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
@@ -247,7 +247,7 @@ This will query your database for one vehicle registration record with all of th
   
 If you see an alert similar to the following, your mapping is valid:
 
-![Successful Sonoran CAD vehicle registration mapping](../../../.gitbook/assets/db_succ_veh.png)
+![Successful Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_succ_veh.png)
 
 #### 4. Save the Configuration
 
@@ -268,7 +268,7 @@ Some communities may store values in a JSON column. The following example pulls 
 }
 ```
 
-![JSON Column in Database Sync](../../../.gitbook/assets/image%20%2865%29.png)
+![JSON Column in Database Sync](../../.gitbook/assets/image%20%2865%29.png)
 {% endtab %}
 
 {% tab title="Friendly Mapping" %}
@@ -276,7 +276,7 @@ Some communities may store values in a JSON column. The following example pulls 
 
 {% hint style="info" %}
 Friendly Mapping requires the **Pro** version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../getting-started/view-your-limits.md).
+For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 Friendly mapping allows you to convert any raw database value to a more user friendly value.  
@@ -286,7 +286,7 @@ Ex: `drive_license` in your database is converted to `Driver's License`.
 
 In the Friendly Mapping column, press the `MODIFY` button.
 
-![Sonoran CAD - Database Sync Friendly Mapping](../../../.gitbook/assets/image%20%2879%29.png)
+![Sonoran CAD - Database Sync Friendly Mapping](../../.gitbook/assets/image%20%2879%29.png)
 
 #### 2. Configure the New Friendly Mapping
 
@@ -294,7 +294,7 @@ Enter the new raw database value and the friendly value you would like to conver
 Ex: A civilian character's `JOB` being changed from the raw DB value of `ambulance` to `EMT`.  
 Ex: A license record's `TYPE` bring changed from the raw DB value of `drive_license` to `Driver's License`.
 
-![Sonoran CAD - Database Sync Friendly Mapping Editor](../../../.gitbook/assets/image%20%2880%29.png)
+![Sonoran CAD - Database Sync Friendly Mapping Editor](../../.gitbook/assets/image%20%2880%29.png)
 
 #### 3. Save the Configuration
 
