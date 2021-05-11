@@ -6,6 +6,8 @@ description: >-
 
 # Customizing Your Layout
 
+![Sonoran CAD - Layout and Resize](../../.gitbook/assets/3_10_features.gif)
+
 ## Getting Started
 
 ### 1. Menu Options

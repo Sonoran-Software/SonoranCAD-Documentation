@@ -51,11 +51,11 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
 
-[Every panel and window can be locked into position and customized.](../tutorials/getting-started/customizing-your-layout.md)
+[Every panel and window can be locked into position and customized.](../tutorials/customization/customizing-your-layout.md)
 
 Drag-and-drop allows you to easily view calls, attach units, and more!
 
-![Sonoran CAD - Custom Layouts](../.gitbook/assets/3_10_features.gif)
+![Sonoran CAD - Custom Layouts](../.gitbook/assets/3_10_features%20%281%29.gif)
 
 ### API Integration
 
