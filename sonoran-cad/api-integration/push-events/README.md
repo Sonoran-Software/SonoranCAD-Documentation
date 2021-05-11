@@ -23,20 +23,7 @@ Expand the "Server Events and Integrated Live Map" section.
 
 Enter your server's public IP address and your game server's port. Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
 
-  
-Learn more about [configuring multiple servers](../../../tutorials/customization/configuring-multiple-servers.md).
-
-![Sonoran CAD&apos;s Event Listener Configuration](../../../.gitbook/assets/map_config_cad.png)
-
-#### 2. Framework Configuration and Installation
-
-You will need to download and install the [`pushevents`]() plugin installed in order to receive the events.
-
-If you are not using the default game port `30120` you will need to specify the `SonoranListenPort`  in your `server.cfg` file.
-
-  
-Ex: Your game server is running on port 9000:  
-Add `set SonoranListenPort 9000` to your `server.cfg` file.
+Push event configuration is covered as a part of the [framework installation](../../../integration-plugins/integration-plugins/framework-installation.md#5-configure-push-events).
 
 ### Developer Documentation
 

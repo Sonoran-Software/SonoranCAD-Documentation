@@ -7,7 +7,7 @@ description: >-
 # Development Branch
 
 {% hint style="warning" %}
-The development API and CAD branches are entirely separate from the current production version. To be added to the development database, or for more information in working with our development team please [contact us](https://support.sonoransoftware.com).
+The development API and CAD branches are entirely separate from the current production version. For more information in working with our development team please [contact us](https://support.sonoransoftware.com). or join our community [Discord](http://discord.sonorancad.com/).
 {% endhint %}
 
 {% hint style="success" %}
@@ -33,4 +33,8 @@ The latest CAD development version can be accessed at the following address:
 ```text
 https://cad.dev.sonoransoftware.com
 ```
+
+### Developer Discord
+
+Join our [Discord ](http://discord.sonorancad.com/)and view the `#request-role` channel for access to our community testing and development channel. Here you can discuss API related issues, development, and more.
 

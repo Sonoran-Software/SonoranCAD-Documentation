@@ -14,5 +14,5 @@ Sonoran CAD will attempt to automatically detect your local language. However, y
 
 Our translation support is made possible by community contributions.
 
-If you would like to add additional support for your local language, please submit a PR to our [GitHub ](https://github.com/Sonoran-Software/sonorancad_translations)language repository. Or, join our Discord and ask for the community contributor role in the lobby.
+If you would like to add additional support for your local language, please submit a PR to our [GitHub ](https://github.com/Sonoran-Software/sonorancad_translations)language repository. Or, join our [Discord ](http://discord.sonorancad.com/)and ask for the community contributor role in the lobby.
 

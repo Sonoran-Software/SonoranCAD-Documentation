@@ -71,15 +71,31 @@ Check out our official [Stream Deck profiles](../integration-plugins/stream-deck
 
 In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
 
-We've complied extensive documentation for over two-dozen API endpoints and server push events!
+We've complied extensive documentation for over two-dozen API endpoints and server [push events](../sonoran-cad/api-integration/push-events/)!
 
-![Sonoran CAD&apos;s extensive API endpoint documentation!](../.gitbook/assets/image%20%2848%29.png)
+```javascript
+{
+    "id": "YOUR_COMMUNITY_ID",
+    "key": "YOUR_API_KEY",
+    "type": "ATTACH_UNIT",
+    "data": [
+        {
+            "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
+            "units": ["STEAN:1234"] // Array of API IDs
+                                // Typically, this is their STEAM Hex
+        },
+    ]
+}
+```
 
 ### Custom Records and Reports
 
 Create your very own [custom report and record formats](../tutorials/customization/creating-custom-record-and-report-types.md) for your community to use!
 
 Whether it's your own firearms registration system, an in-depth vehicle accident report format, or a custom incident record, Sonoran CAD allows you to customize it all.
+
+You can even index specific record fields for [custom search types](../tutorials/customization/custom-search-types.md). Allowing you to run a lookup on your record's custom ID numbers, phone numbers, and more!
 
 ![Create custom record and report formats!](../.gitbook/assets/image%20%2844%29.png)
 
