@@ -1,5 +1,7 @@
 ---
-description: Check if a given API ID is linked to an account.
+description: >-
+  Check if a given API ID is linked to an account and enable /apiid to view
+  yours.
 ---
 
 # Check API ID
