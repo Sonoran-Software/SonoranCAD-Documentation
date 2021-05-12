@@ -38,12 +38,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_livemap/releases)to download the live map plugin .zip file.
-2. Download and install the [push events listener]() plugin.
+Click [HERE ](https://github.com/Sonoran-Software/sonoran_livemap/releases)to download the live map plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../../plugin-installation/) for the live map and push events listener plugin.
+Follow the [standard plugin installation guide](../../plugin-installation/) for the live map and push events listener plugin.
 
 ### 4. Configuration
 
@@ -72,7 +71,7 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 | blip\_file | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP |
 | livemap\_access\_control | string | "\*" | Sets the domain that is allowed to access the blips.json file \(E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips\), "\*" will allow everyone |
 
-All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000.
+All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000. **You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
 
 #### B. Admin Panel Configuration
 
