@@ -8,6 +8,55 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.10.1 5/12/2021
+
+{% tabs %}
+{% tab title="New" %}
+Tablet - Auto Set API ID  
+- The tablet resource now automatically sets a users API ID in the CAD when they login.
+
+Quick Resize - Lock Button  
+- Added an additional "Lock Window" button while quick-resize is enabled, preventing users from having to right-click to access the lock menu.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Dispatch - Call Notes  
+- Fixed an issue where units couldn't see new call notes until they refreshed the page.
+
+Primary Unit - Display  
+- Fixed an issue causing the primary unit on the dispatch call editor to not properly work.
+
+Popout Windows - Save Size/Position on Minimized  
+- Fixed an issue causing some popout windows to not save their size and positioning after being minimized.
+
+Self Dispatch - Create Call  
+- Fixed an issue where users with self-dispatch enabled couldn't create a new dispatch call.
+
+Self Dispatch - Edit Call  
+- Fixed an issue where users with self-dispatch were unable to edit an existing dispatch call.
+
+Self Dispatch - Clear Call  
+- Fixed an issue where users with self-dispatch were unable to clear themselves from a call.
+
+Call Viewer - Initial Width  
+- Fixed an issue where the initial unlocked placement of the call editor was 1px too wide for the police, fire, and EMS pages.
+
+Record Viewer  
+- Fixed an issue with records having a blank space below the bottom action bar.
+
+Small Screens - Increase initial width  
+- Improved and fixed issues with some popout windows being too small by default.
+
+Civilian - Popout Windows  
+- Fixed an issue with civilian popout windows being stuck below the character UI.
+
+Dispatch Login - Security Warning  
+- Fixed an issue where dispatchers logging in would make a get call request resulting a security warning without the police, fire, or EMS permission.
+{% endtab %}
+{% endtabs %}
+
+
+
 ### 3.10.0 5/10/2021
 
 {% tabs %}

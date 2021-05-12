@@ -1,5 +1,7 @@
 ---
-description: View your CAD in-game with our easy to use tablet resource!
+description: >-
+  Automatically set user's API IDs in the CAD on a login, and view your CAD
+  in-game with our easy to use tablet resource!
 ---
 
 # Tablet
@@ -34,4 +36,8 @@ You can find this URL under Admin &gt; Customization &gt; Custom Login Page
 ### 4. In-Game Command
 
 Use the `/showcad` command in-game to toggle your tablet.
+
+### 5. Auto API ID
+
+When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) will automatically be set in the CAD.
 
