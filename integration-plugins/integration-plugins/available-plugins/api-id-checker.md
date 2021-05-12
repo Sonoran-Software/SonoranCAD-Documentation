@@ -28,6 +28,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Follow the [standard plugin installation guide](../plugin-installation/) for the API ID plugin.
 
+| Config Option | Description |
+| :--- | :--- |
+| forceSetApiId | Enable the [tablet resource](tablet.md) to automatically set the user's [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)s when they log in. |
+
 ## Usage
 
 ### Command

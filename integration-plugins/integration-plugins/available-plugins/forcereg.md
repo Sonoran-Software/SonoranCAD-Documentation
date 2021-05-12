@@ -31,6 +31,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
+### 5. \(OPTIONAL\) Utilize the Tablet's Auto API ID
+
+The [tablet resource](tablet.md#5-auto-api-id) can be configured to automatically set user's API IDs when they login, removing the need for users to manually type this in.
+
 ## Further Configuration
 
 | Option | Description | Default Value |

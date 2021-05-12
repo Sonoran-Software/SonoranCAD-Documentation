@@ -39,5 +39,7 @@ Use the `/showcad` command in-game to toggle your tablet.
 
 ### 5. Auto API ID
 
-When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) will automatically be set in the CAD.
+When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.  
+  
+To enable this, open the [check API plugin](api-id-checker.md)'s config and set `forceSetApiId` to `true`.
 
