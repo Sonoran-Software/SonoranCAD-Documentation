@@ -29,7 +29,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and all Dependencies
 
 1. Click [HERE](https://github.com/Sonoran-Software/sonoran_dispatchnotify/releases) to download the DispatchNotify plugin .zip file.
-2. Download and install the [pushevents](https://github.com/Sonoran-Software/sonoran_pushevents/releases/tag/latest) and [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands/releases/tag/latest) plugins.
+2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands/releases/tag/latest) plugins.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -54,7 +54,6 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
 
 * No notifications for 911 calls
   * Units must be logged into the CAD \(by default\) or meeting the requirements depending on how the plugin is configured.
-  * Ensure the pushevents plugin is functioning properly and the port is forwarded.
   * If using pNotify notifications, ensure that resource is running.
 * Units do not automatically attach to calls
   * Ensure their API ID is set so the server knows who they are.

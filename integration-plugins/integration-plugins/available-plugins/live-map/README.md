@@ -42,7 +42,7 @@ Click [HERE ](https://github.com/Sonoran-Software/sonoran_livemap/releases)to do
 
 ### 3. Install the Plugin and all Dependencies
 
-Follow the [standard plugin installation guide](../../plugin-installation/) for the live map and push events listener plugin.
+Follow the [standard plugin installation guide](../../plugin-installation/) for the live map plugin.
 
 ### 4. Configuration
 
