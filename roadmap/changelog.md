@@ -8,6 +8,40 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.10.2 5/12/2021
+
+{% tabs %}
+{% tab title="New" %}
+Window Layout - Classic Version  
+- Added a toggle in the settings modal to enable "Classic Layout" removing the ability to customize your layout, reverting back to the older static, responsive layout.
+
+Quick Dropdown Menu UI  
+- Improved UI style and consistency for the quick action dropdown menus on the active dispatch calls, units, and emergency call windows.
+{% endtab %}
+
+{% tab title="Changed" %}
+Capacitor - Disable Stripe Library  
+- Stripe library now only loads on the billing page, removing this from mobile capacitor builds.
+
+Tablet - Allow Window Drag  
+- Popout window dragging is now re-enabled for tablet users.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self Dispatch - Duplicated Calls  
+- Fixed an issue where self dispatchers would see new dispatch calls duplicated if they are initially attached.
+
+Set API ID  
+- Fixed an issue causing an error when new accounts set their API ID.
+
+Self Dispatch - Close from Active Calls  
+- Fixed an issue preventing users in self dispatch mode from closing an active call.
+
+Electron - Reload Exception  
+- Fixed an issue on the desktop version causing reloads from resetting a window layout or changing the language translation to throw a popup exception.
+{% endtab %}
+{% endtabs %}
+
 ### 3.10.1 5/12/2021
 
 {% tabs %}
