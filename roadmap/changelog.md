@@ -8,6 +8,35 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.10.3 5/14/2021
+
+{% tabs %}
+{% tab title="Changed" %}
+SQL Connections  
+- SQL connections are now cleared back to the connection pool in-between data processing to free up idle connections as quickly as possible.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Dispatch Address - Type to Filter  
+- Fixed an issue causing the dispatch addresses dropdown to not support live filtering via text input.
+
+Record Editor - Copy Link  
+- Fixed an issue where the copy record link button was not showing in the record viewer.
+
+Record Editor - Get Owner  
+- Fixed an issue preventing the "Get Owner' button from displaying in the admin menu's lookup tool.
+
+Dispatch - Note Updates  
+- Fixed an issue where dispatchers could not receive new call notes.
+
+Dispatch Preview - Scroll Description  
+- Fixed an issue where previewing a dispatch call wouldn't allow you to scroll down on the description.
+
+Android - Settings Menu  
+- Fixed an exception for android devices preventing the settings modal from displaying.
+{% endtab %}
+{% endtabs %}
+
 ### 3.10.2 5/12/2021
 
 {% tabs %}
