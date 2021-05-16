@@ -29,11 +29,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and all Dependencies
 
 1. Click [HERE](https://github.com/Sonoran-Software/sonoran_dispatchnotify/releases) to download the DispatchNotify plugin .zip file.
-2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands/releases/tag/latest) plugins.
+2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands/releases/tag/latest) plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation.md) for the pushevents and callcommands plugins.
+1. Follow the [standard plugin installation guide](../plugin-installation.md) for the callcommands plugin.
 
 ### 4. Set Your API ID
 
@@ -57,11 +57,9 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
   * If using pNotify notifications, ensure that resource is running.
 * Units do not automatically attach to calls
   * Ensure their API ID is set so the server knows who they are.
-  * Ensure the pushevents plugin is functional.
 * Caller is not notified when units attach to the call
   * If the caller ever leaves the server and rejoins, this feature does not work.
   * If dispatch created the call within the CAD, there is no way to notify a caller.
-  * Check the civilian has entered an API ID if they placed the call from within the CAD.
   * Ensure you are not overriding the 911 command \(default `/911`\) with another resource.
 
 
