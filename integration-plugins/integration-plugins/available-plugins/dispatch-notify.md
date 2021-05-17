@@ -50,6 +50,111 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
 | /rcall | Respond/Attach to the new dispatch call |
 | /togglegps | Toggle the GPS auto-lock when dispatch updates the postal code |
 
+### Configuration
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Config Value</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">enableUnitNotify</td>
+      <td style="text-align:left">Enable incoming 911 call notifications</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">emergencyCallType</td>
+      <td style="text-align:left">Specifies what emergency calls are displayed as. Some countries use different
+        numbers (like 999)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">civilCallType</td>
+      <td style="text-align:left">Specifies non-emergency call types. If unused, set to blank (&quot;&quot;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">dotCallType</td>
+      <td style="text-align:left">Some communities use 511 for tow calls. Specify below, or set blank (&quot;&quot;)
+        to disable</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">respondCommandName</td>
+      <td style="text-align:left">Command to respond to calls with</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">enableUnitResponse</td>
+      <td style="text-align:left">
+        <p>Enable call responding (self-dispatching)</p>
+        <p>If disabled, running commandName will return an error to the unit</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">dispatchDisablesSelfResponse</td>
+      <td style="text-align:left">If a dispatcher is detected to be online, automatically disable the response
+        command.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">enableCallerNotify</td>
+      <td style="text-align:left">Enable &quot;units are on the way&quot; notifications</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">callerNotifyMethod</td>
+      <td style="text-align:left">
+        <p>notifyMethod: how should the caller be notified?</p>
+        <p><b>none</b>: disable notification</p>
+        <p><b>chat</b>: Sends a message in chat</p>
+        <p><b>pnotify</b>: Uses pNotify to show a notification</p>
+        <p><b>custom</b>: Use the custom event instead</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">notifyMessage</td>
+      <td style="text-align:left">
+        <p>NotifyMessage: Message template to use when sending to the player</p>
+        <p>You can use the following replacements:</p>
+        <p><b>{officer} </b>- officer name</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">incomingCallMessage</td>
+      <td style="text-align:left">How should officers be notified of a new 911 call? Parameters:
+        <br /><b>{location}</b> - location of call (street + postal)
+        <br /><b>{description}</b> - description as given by civilian
+        <br /><b>{caller}</b> - caller&apos;s name
+        <br /><b>{callId}</b> - ID of the call so LEO can respond with /r911
+        <br /><b>{command}</b> - The command to use</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">unitDutyMethod</td>
+      <td style="text-align:left">How to detect if units are online?
+        <br /><b>incad</b>: units must be logged into the CAD
+        <br /><b>permissions</b>: units must have the &quot;sonorancad.dispatchnotify&quot;
+        ACE permission (see docs)
+        <br /><b>esxjob</b>: requires esxsupport plugin, use jobs instead for on duty
+        detection
+        <br /><b>custom</b>: Use custom function (defined below as unitDutyCustom)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">esxJobsAllowed</td>
+      <td style="text-align:left">What jobs should count as being on duty?</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">waypointType</td>
+      <td style="text-align:left">Type of waypoint to use when officer is attached
+        <br /><b>postal</b>: set gps to caller&apos;s postal (less accurate, more realistic)
+        - REQUIRES <a href="postals.md">CONFIGURED POSTAL PLUGIN</a>
+        <br /><b>exact</b>: set gps to caller&apos;s position (less realistic)
+        <br /><b>none</b>: disable waypointing</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">waypointFallbackEnabled</td>
+      <td style="text-align:left">Fall back to postal if exact coordinates cannot be found (for self-generated
+        calls)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Troubleshooting
 
 * No notifications for 911 calls
