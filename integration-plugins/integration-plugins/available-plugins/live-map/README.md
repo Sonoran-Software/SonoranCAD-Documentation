@@ -73,6 +73,16 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 
 All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000. **You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
 
+#### Config File Options
+
+| Config Option | Description |
+| :--- | :--- |
+| hideNonUnits | If the player isn't logged into the CAD, don't show them |
+| refreshTimer | How often to check if units change state \(ms\) |
+| enableCallerBlips | Show incoming calls on the map? |
+| useCadName | Use in-CAD name for online units? false uses in-game name or ESX name \(if [esxsupport plugin](../esx-support.md) is loaded\) |
+| infoDisplayNames | Localization/translation options |
+
 #### B. Admin Panel Configuration
 
 {% hint style="warning" %}
