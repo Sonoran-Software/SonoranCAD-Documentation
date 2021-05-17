@@ -66,7 +66,7 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 
 | Name | Type | Default Value | Description |
 | :--- | :--- | ---: | :--- |
-| socket\_port | int | 30121 | Sets the port the socket server should listen on |
+| socket\_port | int | 30121 | Sets the port the live map socket server should listen on |
 | livemap\_debug | int | 0 | Sets how much information gets printed to the console \(0 = none, 1 = basic information, 2 = all\) |
 | blip\_file | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP |
 | livemap\_access\_control | string | "\*" | Sets the domain that is allowed to access the blips.json file \(E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips\), "\*" will allow everyone |
