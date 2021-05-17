@@ -36,11 +36,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 This plugin does nothing on its own, but rather adds support for ESX that other plugins can take advantage of. Currently, the following plugins are supported:
 
-* dispatchnotify
-  * Adds ability to show character names in dispatch responses \(officer names\)
-  * Adds ability to restrict functionality to certain jobs \(like police\). See the dispatchnotify documentation for how to do this.
-* callcommands
-  * Adds ability to show character names for the caller when they use /911. This is automatic when the plugin is installed.
-* livemap
-  * Adds ability to show character names on the map. \(WIP\)
+* [dispatchnotify](dispatch-notify.md)
+  * Adds the ability to show character names in dispatch responses \(officer names\)
+  * Adds the ability to restrict functionality to certain jobs \(like police\). See the [dispatchnotify documentation](dispatch-notify.md) for how to do this.
+* [callcommands](call-commands.md)
+  * Adds the ability to show character names for the caller when they use /911. This is automatic when the plugin is installed.
+* [livemap](live-map/)
+  * Adds the ability to show character names on the map.
 
