@@ -86,15 +86,14 @@ All above convars are set via the `set` command in your server config, such as `
 #### B. Admin Panel Configuration
 
 {% hint style="warning" %}
-IMPORTANT: You must use an unused port for both the map and listener ports. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
+IMPORTANT: You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
 {% endhint %}
 
 ![](../../../../.gitbook/assets/livemap_config.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
 2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
-3. Listener Port: The port players use to connect to your server. By default this is `30120`.
-4. Click "Save and Deploy" to deploy your live map.
+3. Click "Save and Deploy" to deploy your live map.
 
 Click Save And Deploy. After a few seconds, the live map should appear as a button on most CAD screens \(Police, Dispatch, etc\) and will auto-update with your unit positions.
 

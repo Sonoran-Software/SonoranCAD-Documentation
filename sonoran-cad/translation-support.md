@@ -2,7 +2,7 @@
 description: Learn more about Sonoran CAD's i18n international translation support.
 ---
 
-# Translation Support
+# 🌎 Translation Support
 
 ## Setting the Language In-App
 

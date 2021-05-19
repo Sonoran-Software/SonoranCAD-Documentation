@@ -4,7 +4,7 @@ description: >-
   hosting for your gaming community!
 ---
 
-# VPS Hosting
+# 🖥️ VPS Hosting
 
 ## [Sonoran Servers](https://sonoranservers.com)
 

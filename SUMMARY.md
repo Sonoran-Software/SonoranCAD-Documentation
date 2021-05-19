@@ -11,7 +11,7 @@
 
 ## VPS Hosting <a id="vps-hosting-1"></a>
 
-* [VPS Hosting](vps-hosting-1/vps-hosting.md)
+* [🖥️ VPS Hosting](vps-hosting-1/vps-hosting.md)
 
 ## Tutorials
 
@@ -87,7 +87,7 @@
 
 ## Developer API Documentation <a id="sonoran-cad"></a>
 
-* [API Integration](sonoran-cad/api-integration/README.md)
+* [📖 API Integration](sonoran-cad/api-integration/README.md)
   * [Getting Started](sonoran-cad/api-integration/getting-started/README.md)
     * [Retrieving Your Credentials](sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md)
     * [Integration API ID](sonoran-cad/api-integration/getting-started/setting-your-api-id.md)
@@ -144,7 +144,8 @@
       * [Modify Account Permissions](sonoran-cad/api-integration/api-endpoints/general/modify-account-permissions.md)
       * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch.md)
-* [Translation Support](sonoran-cad/translation-support.md)
+* [💵 Developer Bounties](sonoran-cad/developer-bounties.md)
+* [🌎 Translation Support](sonoran-cad/translation-support.md)
 
 ## Pricing
 

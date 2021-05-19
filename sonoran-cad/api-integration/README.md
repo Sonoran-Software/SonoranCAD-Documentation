@@ -4,7 +4,7 @@ description: >-
   locations, panic statuses, send 911 calls and more from in-game.
 ---
 
-# API Integration
+# 📖 API Integration
 
 ## How are API calls sent?
 
