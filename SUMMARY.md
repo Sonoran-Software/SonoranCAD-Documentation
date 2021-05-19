@@ -7,7 +7,7 @@
 
 ## Why Choose Sonoran CAD?
 
-* [Why Choose Sonoran CAD](why-choose-sonoran-cad/about.md)
+* [🏆 Why Choose Sonoran CAD](why-choose-sonoran-cad/about.md)
 
 ## VPS Hosting <a id="vps-hosting-1"></a>
 
@@ -61,7 +61,7 @@
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
 * [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
-* [Integration Plugins](integration-plugins/integration-plugins/README.md)
+* [In-Game Integration Plugins](integration-plugins/integration-plugins/README.md)
   * [Framework Installation](integration-plugins/integration-plugins/framework-installation.md)
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
@@ -158,7 +158,7 @@
 
 ## Roadmap
 
-* [Changelog](roadmap/changelog.md)
+* [📋 Changelog](roadmap/changelog.md)
 * [Trello](https://trello.com/b/ZVAUud4A/sonoran-cad)
 
 ## Other

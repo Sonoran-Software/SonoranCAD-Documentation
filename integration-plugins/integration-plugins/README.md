@@ -5,7 +5,7 @@ description: >-
   system below!
 ---
 
-# Integration Plugins
+# In-Game Integration Plugins
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!
@@ -25,7 +25,7 @@ All Sonoran CAD plugins follow a standard installation process. Learn more about
 
 ### Available Plugins
 
-View our vast array of our integration plugins, ready to drag-and-drop!
+View our vast array of our integration plugins, ready for drag-and-drop installation for your server!
 
 {% page-ref page="available-plugins/" %}
 
@@ -33,7 +33,7 @@ View our vast array of our integration plugins, ready to drag-and-drop!
 
 ### Developer Documentation
 
-Looking to write your own plugins for Sonoran CAD? Learn more about writing your own integration plugins and accessing our API endpoints below!
+Looking to write your own plugins for Sonoran CAD? Learn more about writing your own integration plugins and accessing our API documentation.
 
 
 

@@ -2,7 +2,7 @@
 description: View the latest changes to Sonoran CAD!
 ---
 
-# Changelog
+# 📋 Changelog
 
 {% hint style="info" %}
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
