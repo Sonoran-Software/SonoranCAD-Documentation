@@ -67,6 +67,10 @@ Check out our official [Stream Deck profiles](../integration-plugins/stream-deck
 
 ![Sonoran CAD - Stream Deck Profile](../.gitbook/assets/image%20%28173%29.png)
 
+### 💬 [Discord Integration](../integration-plugins/discord-webhooks.md)
+
+[Discord webhooks](../integration-plugins/discord-webhooks.md) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more!
+
 ### 📖 API Integration
 
 In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
