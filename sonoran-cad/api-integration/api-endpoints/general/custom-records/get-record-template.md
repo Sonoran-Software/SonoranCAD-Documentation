@@ -12,7 +12,7 @@ This API endpoint requires the **Plus** version of Sonoran CAD or higher. For mo
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_templates" %}
 {% api-method-summary %}
-New Record
+Get Record Templates
 {% endapi-method-summary %}
 
 {% api-method-description %}

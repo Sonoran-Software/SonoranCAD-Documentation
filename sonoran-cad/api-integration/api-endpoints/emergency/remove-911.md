@@ -14,7 +14,7 @@ This endpoint allows you to remove an existing emergency/911 call from the CAD.
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/remove\_911" %}
 {% api-method-summary %}
-Set API IDs
+Remove 911
 {% endapi-method-summary %}
 
 {% api-method-description %}

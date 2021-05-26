@@ -12,7 +12,7 @@ This API endpoint requires the **Standard** version of Sonoran CAD or higher. Fo
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/get\_account\_identifiers" %}
 {% api-method-summary %}
-Get Active Units
+Get Account Identifiers
 {% endapi-method-summary %}
 
 {% api-method-description %}
