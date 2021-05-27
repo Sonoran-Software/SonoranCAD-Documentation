@@ -10,11 +10,11 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/set\_call\_postal" %}
 {% api-method-summary %}
-Attach Unit
+Set Call Postal
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to attach new units to an existing dispatch call.
+This endpoint allows you to easily update the postal on a dispatch call.
 {% endapi-method-description %}
 
 {% api-method-spec %}
