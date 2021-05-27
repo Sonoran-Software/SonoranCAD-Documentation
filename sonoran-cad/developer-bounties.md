@@ -34,22 +34,6 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Wraith Plate Reader</td>
-      <td style="text-align:left">$15</td>
-      <td style="text-align:left">
-        <p>The Wraith radar will display a vehicle registration&apos;s <code>status</code> on
-          the UI.</p>
-        <p></p>
-        <p>Communities should be able to set a config option (<code>statusFieldUid</code>)
-          to pull a custom status field&apos;s value. The plugin will then search
-          vehicle registrations for a matching field UID and pull the status value
-          from it.
-          <br />
-          <br />This will allow communities with custom records to display custom values
-          like &quot;Stolen&quot; on the automated plate reader flags.</p>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left">Civilian Integration</td>
       <td style="text-align:left">$15</td>
       <td style="text-align:left">Improve the UI on the <code>/showid</code> to display a proper civilian
