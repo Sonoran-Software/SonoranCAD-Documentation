@@ -30,7 +30,10 @@ To assist you, use this [Permission Mask Calculator](https://sonoran-software.gi
 
 ### User Setup
 
-In order for permissions to synchronize properly, **every** player will need to [add their Discord ID as an API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) on their account. Users can use the command `/myid` to get their Discord ID. They can then use `/syncme` to force a permissions sync.
+1. Every user in the Discord can use the command `/myid` to get their Discord ID.
+2. Every user will paste this Discord ID as a new [API ID in the CAD](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+3. Community members can use the `/syncme` command in Discord to force a permissions sync.
+4. Communities should **no longer use public permission keys in the CAD**, as the bot will automatically remove CAD permissions from users if they don't have a Discord role for it.
 
 Now, whenever a role is added or removed, the bot will automatically update the user's permissions to match! If the user ever leaves the server, the bot will immediately remove all permissions from their account, although they will still be in the community.
 
