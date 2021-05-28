@@ -25,6 +25,8 @@ To assist you, use this [Permission Mask Calculator](https://sonoran-software.gi
 | /maprole &lt;role&gt; &lt;permission mask&gt; | Maps a role to a particular permission mask. |
 | /unmaprole &lt;role&gt; | Removes the permissions sync with the specified role. |
 | /syncroles | Forces a server-wide recalculation of all permissions. This can take some time depending on the size of your server. |
+| /myid | Gets your Discord ID. |
+| /syncme | Forces the bot to sync your permissions. You should only need to use this after initially setting your API ID in SonoranCAD. |
 
 ### User Setup
 
@@ -36,7 +38,7 @@ Now, whenever a role is added or removed, the bot will automatically update the 
 
 * It is advised to not sync potentially dangerous permissions \(such as Admin Access permissions\) with Discord roles **unless** you trust staff with that role, or it's just you.
 * The community owner is completely ignored during the synchronization process.
-* "Principle of Least Privilege" should be exercised during this setup. Don't give out permissions you don't think users performing the role won't need.
+* "Principle of Least Privilege" should be exercised during this setup. Don't give out permissions you don't think users performing the role would need.
 * Discontinue use of permission keys ASAP. The bot "takes over" synchronization and will remove permissions granted by permission keys if they don't have a role that grants it.
   * Same goes for manual permission grants, **unless there is no role granting that permission**.
 
