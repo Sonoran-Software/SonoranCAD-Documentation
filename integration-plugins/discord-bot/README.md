@@ -1,8 +1,8 @@
 ---
 description: >-
-  SonoranBot - our official Discord bot, provides deep integration with your
-  Discord server, providing many features including syncing roles on your server
-  with permissions in the CAD!
+  Our official Discord bot provides deep integration for your community,
+  including automatically syncing roles on your server with permissions in the
+  CAD!
 ---
 
 # Discord Bot
@@ -18,7 +18,23 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 
 
+### Getting Started
+
+Get started with SonoranBot today by inviting it to your Discord:
+
 {% page-ref page="getting-started-discord-bot.md" %}
+
+### Commands
+
+Reference a list of bot commands:
+
+{% page-ref page="commands-reference.md" %}
+
+### Features
+
+Learn more about SonoranBot's integration features:
+
+{% page-ref page="features/" %}
 
 
 

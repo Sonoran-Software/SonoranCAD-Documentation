@@ -15,12 +15,12 @@ Setting up the bot requires you to have Administrator permissions on the Discord
 {% endhint %}
 
 1. When the bot joins your server, it will attempt to post a message to the "System Channel" that the server has. If unset, the bot will do nothing. 
-2. To begin the setup process, type `!setup` in any channel the bot has access to. You will be sent a direct message \(DM\) with instructions. **Be sure DMs are enabled**!
+2. To begin the setup process, type `s!setup` in any channel the bot has access to. You will be sent a direct message \(DM\) with instructions. **Be sure DMs are enabled**!
 3. Follow the prompts from the bot to finish the setup process.
 
 ### Commands Reference
 
-By default, the bot uses the `!` prefix for all commands. This can be changed with the `setprefix` command, as noted below.
+By default, the bot uses the `s!` prefix for all commands. This can be changed with the `setprefix` command, as noted below.
 
 {% page-ref page="commands-reference.md" %}
 
