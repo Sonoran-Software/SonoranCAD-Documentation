@@ -1,8 +1,8 @@
 ---
-description: This endpoint allows you to ban a user account in your community.
+description: This endpoint allows you to kick or ban a user account in your community.
 ---
 
-# Ban User
+# Kick or Ban User
 
 {% hint style="warning" %}
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
@@ -84,7 +84,8 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
-            "isBan": true // Ban (true) or un-ban (false)
+            "isBan": true, // OPTIONAL: Ban (true) or un-ban (false)
+            "isKick": false // OPTIONAL: Kick instead of ban
         },
     ]
 }

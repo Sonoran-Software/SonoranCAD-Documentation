@@ -150,7 +150,7 @@
       * [Check API ID](sonoran-cad/api-integration/api-endpoints/general/check-api-id.md)
       * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
       * [Modify Account Permissions](sonoran-cad/api-integration/api-endpoints/general/modify-account-permissions.md)
-      * [Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
+      * [Kick or Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch.md)
 * [💵 Developer Bounties](sonoran-cad/developer-bounties.md)
 * [🌎 Translation Support](sonoran-cad/translation-support.md)
