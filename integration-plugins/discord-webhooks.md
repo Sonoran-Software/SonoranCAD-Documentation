@@ -64,3 +64,25 @@ Toggle the desired notification events for the specific webhook. Press the “Sa
 _Note:_ Some webhooks allow you to customize the notification settings even further. For example, you can specify to only receive a webhook when a police record is added, edited or removed.
 {% endhint %}
 
+### Footer Metadata
+
+Webhook footers contain metadata that can be pulled from a bot for further integration.  
+These follow the format: `USERNAME or ID` \| `TYPE` \| `ID`
+
+![Sonoran CAD - Webhook Footer Data](../.gitbook/assets/image%20%28182%29.png)
+
+| Type | ID Value |
+| :--- | :--- |
+| 0: UNIT\_PANIC | Identifier ID |
+| 1: TEN\_CODES |  |
+| 2: PENAL\_CODES |  |
+| 3: SIGNAL | Signal Value |
+| 4: ACCOUNT |  |
+| 5: NEW\_DISPATCH | Call ID |
+| 6: EDIT\_DISPATCH | Call ID |
+| 7: CLOSE\_DISPATCH | Call ID |
+| 8: EMERGENCY | Call ID |
+| 9: RECORD\_ADD | Record ID |
+| 10: RECORD\_EDIT | Record ID |
+| 11: RECORD\_REMOVE | Record ID |
+
