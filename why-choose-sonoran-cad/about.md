@@ -37,7 +37,9 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 ### 🌎 Full Translation and Locality Support
 
-Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-support.md). Regardless of your community's native language, Sonoran CAD supports it! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
+Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-support.md). Regardless of your community's native language, Sonoran CAD supports it!  
+  
+Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
 
 Sonoran CAD also offers vast [geographical location](../tutorials/customization/geographical-settings.md) support for non-American communities.
 
