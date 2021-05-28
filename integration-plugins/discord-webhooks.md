@@ -67,7 +67,7 @@ _Note:_ Some webhooks allow you to customize the notification settings even furt
 ### Footer Metadata
 
 Webhook footers contain metadata that can be pulled from a bot for further integration.  
-These follow the format: `USERNAME or ID` \| `TYPE` \| `ID`
+These follow the format: `USERNAME or UUID` \| `TYPE` \| `ID`
 
 ![Sonoran CAD - Webhook Footer Data](../.gitbook/assets/image%20%28182%29.png)
 
