@@ -58,6 +58,11 @@
 
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
+* [Discord Bot](integration-plugins/discord-bot/README.md)
+  * [Getting Started - Discord Bot](integration-plugins/discord-bot/getting-started-discord-bot.md)
+  * [Commands Reference](integration-plugins/discord-bot/commands-reference.md)
+  * [Features](integration-plugins/discord-bot/features/README.md)
+    * [Permissions Synchronization](integration-plugins/discord-bot/features/permissions-synchronization.md)
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
 * [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
