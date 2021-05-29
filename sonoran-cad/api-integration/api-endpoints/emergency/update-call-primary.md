@@ -16,7 +16,7 @@ Set Call Primary
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to easily update the postal on a dispatch call.
+This endpoint allows you to easily update the primary unit on a dispatch call.
 {% endapi-method-description %}
 
 {% api-method-spec %}
