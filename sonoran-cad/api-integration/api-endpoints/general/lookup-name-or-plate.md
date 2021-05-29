@@ -83,10 +83,10 @@ INVALID EMPTY SEARCH
     "data": [
         {
             "apiId": "STEAM:1234", // OPTIONAL FIELD - Will return results to user's CAD
-            "types": [2, 3] // Search only for warrant and BOLO records
+            "types": [2, 3], // Search only for warrant and BOLO records
             "first": "John", // (Partial) First name
             "last": "Doe", // (Partial) Last name
-            "mi": "M" // Middle Initial
+            "mi": "M", // Middle Initial
             "plate": "1234ABCD" // (Partial) License Plate
         }
     ]
