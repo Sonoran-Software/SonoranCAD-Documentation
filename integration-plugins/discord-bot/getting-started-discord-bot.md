@@ -2,11 +2,7 @@
 
 ## Inviting the Bot
 
-{% hint style="danger" %}
-Invite link is currently unavailable due to the bot undergoing testing.
-{% endhint %}
-
-To get started, you must invite the bot to your Discord, which you can do by clicking this link. You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
+To get started, you must invite the bot to your Discord, which you can do by [clicking this link](https://discord.com/oauth2/authorize?client_id=747991263172755528&scope=bot%20applications.commands&permissions=805686352). You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
 
 ### Bot Setup
 

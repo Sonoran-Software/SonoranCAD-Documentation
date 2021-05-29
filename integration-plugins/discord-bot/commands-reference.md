@@ -19,6 +19,7 @@ description: 'List of all bot commands. <> are required arguments, [] are option
 | :--- | :--- | :--- | :--- |
 | setprefix | &lt;newprefix&gt; | Sets a new command prefix for the bot. | Manage Server |
 | setup | None | Begins the setup process. | Administrator |
+| showrolemap | None | Shows the current role mapping setup. | Administrator |
 
-This list was last updated on 5/27/2021. Use the `help` command for an updated list of commands you have access to.
+This list was last updated on 5/29/2021. Use the `help` command for an updated list of commands you have access to.
 
