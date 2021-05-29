@@ -10,7 +10,7 @@ To get started, you must invite the bot to your Discord, which you can do by [cl
 Setting up the bot requires you to have Administrator permissions on the Discord server for security reasons. You must also have access to your server's [API Key information](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md).
 {% endhint %}
 
-1. When the bot joins your server, it will attempt to post a message to the "System Channel" that the server has. If unset, the bot will do nothing. 
+1. When the bot joins your server, it will attempt to post a message to the "System Channel" that the server has. If unset, the bot will attempt to DM the owner of the Discord server, but the owner doesn't need to be the one to set up the bot.
 2. To begin the setup process, type `s!setup` in any channel the bot has access to. You will be sent a direct message \(DM\) with instructions. **Be sure DMs are enabled**!
 3. Follow the prompts from the bot to finish the setup process.
 
