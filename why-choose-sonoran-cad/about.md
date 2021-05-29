@@ -6,7 +6,7 @@ description: >-
 
 # 🏆 Why Choose Sonoran CAD
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/layout_3_11.gif)
 
 ### 📱 Downloadable Apps
 

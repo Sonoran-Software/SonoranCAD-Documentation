@@ -12,7 +12,6 @@ description: 'List of all bot commands. <> are required arguments, [] are option
 | ping | None | Check the bot's ping. |
 | uptime | None | Check the bot's uptime. |
 | checkperms | None | Check what your permission level is for certain actions. |
-|  |  |  |
 
 ### Setup and Settings
 

@@ -12,21 +12,21 @@ API IDs are set individually per community. Your API IDs on one community will n
 
 ### Editing Your Account's API ID
 
-#### 1. In the side menu, select open the settings modal:
+1. From the start menu, navigate to System &gt; Settings
 
-![Sonoran CAD&apos;s Settings Modal](../../../.gitbook/assets/settings_modal.png)
+![Sonoran CAD - Settings Navigation](../../../.gitbook/assets/image%20%28184%29.png)
 
 #### 2. Paste in your API ID and Press Save
 
-{% hint style="danger" %}
-It is **highly recommended** that you use the API ID plugin to retrieve the correct credentials. Without the correct API ID, many integration features will NOT work.
+{% hint style="info" %}
+It is **highly recommended** that your community uses the [API ID plugin](../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) to automatically check in-game if your API ID is properly set and retrieve the correct credentials with a command. Without the correct API ID, many integration features will NOT work.
 
-Sonoran CAD's [API ID plugin](../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) automatically checks in-game if your API ID is properly set, and also event includes a command to get your proper API ID!
+For retrieving a Discord API ID, we highly recommend the `/myid` command with our [Discord bot](../../../integration-plugins/discord-bot/features/permissions-synchronization.md#getting-started).
 {% endhint %}
 
-Typically, your API ID will be your **Steam Hex** as shown below. This is how our public [plugins ](../../../integration-plugins/integration-plugins/available-plugins/)are currently structured. Your API ID may include the `steam:` prefix as well.  
+Typically, your API ID will be your **Steam Hex** or a Discord numerical ID. This is how our public [plugins ](../../../integration-plugins/integration-plugins/available-plugins/)are currently structured.  
   
 However, your community may choose to integrate their own identifier system with custom API integration scripts. If this is the case, you will need to ask an administrator from your community for what to enter.
 
-![Sonoran CAD&apos;s API ID Setting](../../../.gitbook/assets/api_id.png)
+![Sonoran CAD&apos;s API ID Setting](../../../.gitbook/assets/image%20%28185%29.png)
 

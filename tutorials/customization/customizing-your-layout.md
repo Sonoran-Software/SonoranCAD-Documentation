@@ -6,9 +6,9 @@ description: >-
 
 # Customizing Your Layout
 
-![Sonoran CAD - Layout and Resize](../../.gitbook/assets/3_10_features.gif)
-
 ## Getting Started
+
+![Sonoran CAD - Layout and Resize](../../.gitbook/assets/layout_lock.gif)
 
 ### 1. Menu Options
 
@@ -43,7 +43,29 @@ When a window is locked into place it can no longer be moved. Additionally, the 
 
 ### 5. Reset Layouts
 
-If something goes wrong or you just want to start fresh, you can reset your saved layouts in the settings menu.
+If something goes wrong or you just want to start fresh, you can reset your saved layouts in the layout customization menu.
 
-![Sonoran CAD - Reset Layout](../../.gitbook/assets/image%20%28167%29.png)
+Simply right click on the empty area in the taskbar, or navigate to Start &gt; System &gt; Customization
+
+### 6. Taskbar
+
+The taskbar is a desktop style action bar that will contain the "Start Menu" \(Sonoran CAD logo\) and your active/pinned tabs.
+
+The taskbar can be positioned on the top, bottom, left, or right of your screen.
+
+To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System &gt; Customization
+
+![Sonoran CAD - Layout Customization Menu](../../.gitbook/assets/image%20%28183%29.png)
+
+### 7. Tab System
+
+Sonoran CAD's advanced tab system allows for efficient window management and quickly accessing new programs.
+
+![Sonoran CAD - Tab System](../../.gitbook/assets/50682631f7d5d1cb885ec88710e9e80b.gif)
+
+**Drag-and-Drop:** Tabs can be dragged and dropped into new positions for organization. Pinned tabs will save their ordering past a refresh.
+
+**Duplicate Windows:** When more than one window of the same type is minimized, the tab will show the number of minimized tabs in the top right. Clicking on a tab with more than one window minimized will display a menu allowing you to select a specific tab or open an entirely new one.
+
+**Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
 
