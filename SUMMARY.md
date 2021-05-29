@@ -124,6 +124,7 @@
       * [New Dispatch](sonoran-cad/api-integration/api-endpoints/emergency/new-dispatch.md)
       * [Attach Unit](sonoran-cad/api-integration/api-endpoints/emergency/attach-units.md)
       * [Update Call Postal](sonoran-cad/api-integration/api-endpoints/emergency/update-call-postal.md)
+      * [Update Call Primary](sonoran-cad/api-integration/api-endpoints/emergency/update-call-primary.md)
       * [Close Call](sonoran-cad/api-integration/api-endpoints/emergency/close-call.md)
       * [911 Call](sonoran-cad/api-integration/api-endpoints/emergency/911-call.md)
       * [Unit Panic](sonoran-cad/api-integration/api-endpoints/emergency/unit-panic.md)
