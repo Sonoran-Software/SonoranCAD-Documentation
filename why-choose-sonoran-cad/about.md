@@ -28,12 +28,18 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
 * [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
 * [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
-* [Automated GPS Routing for Dispatch Calls](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
+* [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
 **View one of our plugin showcase videos** [**here**](https://www.youtube.com/watch?v=pfE3HdCF20o)**!**
 
 ![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
+
+### 💬 Discord Permission Integration <a id="discord-permission-integration"></a>
+
+Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
+
+​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more!
 
 ### 🌎 Full Translation and Locality Support
 
@@ -68,10 +74,6 @@ Enforce security in your TeamSpeak 3 channels by requiring them to be signed int
 Check out our official [Stream Deck profiles](../integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](../downloads/), these actions can be done even while the app is minimized.
 
 ![Sonoran CAD - Stream Deck Profile](../.gitbook/assets/image%20%28173%29.png)
-
-### 💬 [Discord Integration](../integration-plugins/discord-webhooks.md)
-
-[Discord webhooks](../integration-plugins/discord-webhooks.md) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more!
 
 ### 📖 API Integration
 
