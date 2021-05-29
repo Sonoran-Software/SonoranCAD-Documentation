@@ -83,6 +83,8 @@ INVALID API KEY
             "postal": "456",
             "title": "Traffic Stop",
             "code": "10-39 - Traffic Stop",
+            "primary": 123, // Primary unit identifier on the call
+            "trackPrimary": true, // Track the primary unit in-game with the Dispatch Notify plugin
             "description": "Traffic Stop - Blue Sedan - XP123BS",
             "notes": [],
             "metaData": {
