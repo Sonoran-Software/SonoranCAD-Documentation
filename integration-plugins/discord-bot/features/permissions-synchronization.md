@@ -20,13 +20,48 @@ The bot provides a few "slash" commands to set up the roles sync process.
 
 To assist you, use this [Permission Mask Calculator](https://sonoran-software.github.io/sonoranbot-perms/) to calculate the proper code to send with the `/maprole` command below.
 
-| Command | Description |
-| :--- | :--- |
-| /maprole &lt;role&gt; &lt;permission mask&gt; | Maps a role to a particular permission mask. |
-| /unmaprole &lt;role&gt; | Removes the permissions sync with the specified role. |
-| /syncroles | Forces a server-wide recalculation of all permissions. This can take some time depending on the size of your server. |
-| /myid | Gets your Discord ID. |
-| /syncme | Forces the bot to sync your permissions. You should only need to use this after initially setting your API ID in SonoranCAD. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">/maprole &lt;role&gt; &lt;type&gt; &lt;value&gt;</td>
+      <td style="text-align:left">
+        <p>Maps a role to a particular permission key or mask, depending on the &quot;type&quot;
+          selected:</p>
+        <p></p>
+        <p>Permission Key - A permission key for your community</p>
+        <p>Permission Code - A permission mask</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/unmaprole &lt;role&gt;</td>
+      <td style="text-align:left">Removes the permissions sync with the specified role.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/syncroles</td>
+      <td style="text-align:left">Forces a server-wide recalculation of all permissions. This can take some
+        time depending on the size of your server.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/myid</td>
+      <td style="text-align:left">Gets your Discord ID.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/syncme</td>
+      <td style="text-align:left">Forces the bot to sync your permissions. You should only need to use this
+        after initially setting your API ID in SonoranCAD.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/codelink</td>
+      <td style="text-align:left">Sends you the link to the Permission Mask Calculator.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### User Setup
 
