@@ -8,6 +8,58 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.11.0 5/29/2021
+
+{% tabs %}
+{% tab title="New" %}
+Discord Bot  
+- Released a new Discord bot to sync Discord roles with CAD account permissions automatically. Kicking and banning a user from Discord will also preform those actions on the user in the CAD.
+
+Emergency Services - Layout Overhaul  
+- The UI for police, fire, EMS, and Dispatchers has been overhauled to a more "Desktop" style theme. This includes a new taskbar with customizable positions. In addition, tabs of the same type now condense together. Tabs can be pinned in addition to dragging and dropping their positions. Pinned tabs will save their position past a reload.
+
+API: set\_call\_postal  
+- Added an endpoint to update a dispatch call's postal code.
+
+API: set\_call\_primary  
+- Added an endpoint to update a dispatch call's primary unit.
+
+Wraith - Custom Fields  
+- Communities can now customize the status and expiration date fields to be displayed in the Wraith lookups with custom records.
+{% endtab %}
+
+{% tab title="Changed" %}
+Dispatch - Update Call Clearing Editor  
+- Dispatch updating a call no longer clears the call from their UI editor.
+
+Chinese Translation Labels  
+- Changed the Chinese symbols for the simplified and traditional Chinese translation menu options.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Dispatch Call Notes  
+- Fixed an issue where dispatchers were not getting call notes if the call was not being viewed. Causing them to override the existing call notes if they opened a new existing call and updated it.
+
+Dispatch Call Edits  
+- Fixed an issue where dispatchers were not receiving updated call data if a self-dispatcher updated information.
+
+Department Editor - Error Codes  
+- Fixed an issue with invalid i18n translations in the department editor for error codes.
+
+DMV Pending - Default Filter  
+- Fixed an issue where the PENDING records section for DMV had the default filter set to only DMV records, hiding vehicle and license records.
+
+Wraith Plugin - Closed BOLO Records  
+- Fixed an issue with the Wraith V2 integration plugin where "Closed" BOLO records would still be displayed.
+
+Call Close - Detach Units  
+- Fixed an issue where units were not being detached in the database when a call was closed.
+
+Admin - Lookup Window  
+- Fixed an issue where the "Get Owner" lookup window in the admin menu could not be dragged above the accounts table.
+{% endtab %}
+{% endtabs %}
+
 ### 3.10.3 5/14/2021
 
 {% tabs %}
