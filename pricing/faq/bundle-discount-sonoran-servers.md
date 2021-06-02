@@ -31,7 +31,7 @@ If you haven't already, [purchase any VPS plan from Sonoran Servers](https://inf
 
 1. [Login ](https://sonoranservers.com/index.php?rp=/login)to your sonoranservers.com account.
 
-![Sonoran Servers - Login](../../.gitbook/assets/image%20%2891%29.png)
+![Sonoran Servers - Login](../../.gitbook/assets/image%20%2882%29%20%281%29.png)
 
 
 
@@ -52,7 +52,7 @@ If you haven't already, [purchase any VPS plan from Sonoran Servers](https://inf
 1. Open the [Sonoran CAD billing portal](accessing-the-payment-center.md).
 2. On the CAD subscription you would like to apply the discount to, select "Bundle and Save"
 
-![Sonoran CAD - Billing Portal](../../.gitbook/assets/image%20%2892%29.png)
+![Sonoran CAD - Billing Portal](../../.gitbook/assets/image%20%2888%29%20%281%29.png)
 
 3. Enter in your Sonoran Servers username, password, and IP address copied from earlier.
 

@@ -73,7 +73,7 @@ Enforce security in your TeamSpeak 3 channels by requiring them to be signed int
 
 Check out our official [Stream Deck profiles](../integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](../downloads/), these actions can be done even while the app is minimized.
 
-![Sonoran CAD - Stream Deck Profile](../.gitbook/assets/image%20%28173%29.png)
+![Sonoran CAD - Stream Deck Profile](../.gitbook/assets/image%20%28176%29.png)
 
 ### 📖 API Integration
 

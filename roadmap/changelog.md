@@ -8,6 +8,64 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.11.1 6/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Tab: Labels  
+- Tabs can now have their text and icon displays toggled. By default, desktop users have tabs that display both the icon and text with mobile users only seeing the icon.
+
+Dispatch: Unit Identifier  
+- Dispatch now has a unit identifier panel by default.
+
+Dropdown Filter - Backspace  
+- Improved dropdown auto-filtering to properly re-compute options after backspacing from a typo for dropdowns like; dispatch address, code, primary unit, and charge title.
+
+Window: Bring to Top  
+- Added a "Bring to Top" menu option when right-clicking a locked window.
+
+Penal Code - Value Safety Checks  
+- Adding or modifying penal codes will ensure that any property is not set to NULL.
+{% endtab %}
+
+{% tab title="Changed" %}
+Unit Status - Mobile Enhancement  
+- Improved the unit status buttons display style for mobile users.
+
+Mobile: Auto Height  
+- Improved the automatic height calculation of windows for mobile users.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Start Menu: Icon  
+- Fixed an issue causing the start menu's Sonoran CAD icon from not properly displaying in apps.
+
+iOS Padding  
+- Fixed an issue where the taskbar wouldn't add extra padding to account for iOS "safe" areas.
+
+Active Units Tab  
+- Fixed an issue where the active units tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+
+Mobile: Side Taskbar  
+- Fixed an issue for mobile users where the taskbar would be closed and unable to be reopened if they customized it to be displayed on the side.
+
+Live Map: Dynamic Start Menu Display  
+- Fixed an issue where the live map option in the start menu would still display even if the live map was disabled in the admin menu.
+
+Tabs: Navigation  
+- Fixed an issue where old tabs would still be minimized if you navigated to the menu and back from an emergency services page.
+
+Active BOLOs: Status  
+- Fixed an issue where BOLOs with the status set to CLOSED would still be displayed in the active BOLO window.
+
+Active Calls: Tab  
+- Fixed an issue where the active calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+
+Emergency Calls: Tab  
+- Fixed an issue where the emergency calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+{% endtab %}
+{% endtabs %}
+
 ### 3.11.0 5/29/2021
 
 {% tabs %}

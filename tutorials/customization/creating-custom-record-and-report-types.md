@@ -61,9 +61,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-![The &apos;SELECT&apos; field option](../../.gitbook/assets/image%20%2818%29.png)
+![The &apos;SELECT&apos; field option](../../.gitbook/assets/image%20%2818%29%20%281%29.png)
 
-![A &apos;SELECT&apos; field shown in the record editor](../../.gitbook/assets/image%20%2820%29.png)
+![A &apos;SELECT&apos; field shown in the record editor](../../.gitbook/assets/image%20%2816%29%20%282%29.png)
 
 #### 3. TextArea:
 
@@ -125,7 +125,7 @@ This will show the field label and value in the lookup table preview.
 
 ![Input field with PREVIEW toggled](../../.gitbook/assets/image%20%2814%29.png)
 
-![Previewed field shown in a lookup table](../../.gitbook/assets/image%20%285%29.png)
+![Previewed field shown in a lookup table](../../.gitbook/assets/image%20%285%29%20%281%29.png)
 
 #### 2. Supervisor
 

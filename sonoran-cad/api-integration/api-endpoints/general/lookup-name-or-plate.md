@@ -49,7 +49,7 @@ A successful call will be met with the following response:
 _Detailed contents of the record type arrays can be found further below._
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "records": []
 }
@@ -61,7 +61,7 @@ _Detailed contents of the record type arrays can be found further below._
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
@@ -73,7 +73,7 @@ INVALID EMPTY SEARCH
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### API Call Example
+## API Call Example
 
 ```javascript
 {
@@ -101,13 +101,13 @@ To perform a plate based search, simply fill in the `plate` property and leave t
 
 {% tabs %}
 {% tab title="API ID" %}
-### API ID
+## API ID
 
 Adding the [API ID](../../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
 {% endtab %}
 
 {% tab title="Record Types" %}
-#### Record Type
+### Record Type
 
 The record "type" is an enumerator used to distinguish the category of the custom record/report. These integer values are entered as an array in the `types` field of the lookup call.
 
@@ -132,15 +132,13 @@ The `characters` object array will always be included with the search. The `type
 {% endtab %}
 
 {% tab title="Response Object Types" %}
-### Response Object Types
+## Response Object Types
 
-#### Records Formatting
+### Records Formatting
 
 All record results are returned in an object array. For more information on custom record structuring, see the documentation below:
 
 {% page-ref page="custom-records/" %}
 {% endtab %}
 {% endtabs %}
-
-
 

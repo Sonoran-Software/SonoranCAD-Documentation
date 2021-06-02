@@ -12,7 +12,7 @@ Our [desktop application](../downloads/) allows for global hotkey access to chan
 
 For users with a [Stream Deck](https://www.elgato.com/en/stream-deck), you can utilize these functions for quick access while in-game.
 
-![Sonoran CAD - Stream Deck](../.gitbook/assets/image%20%28176%29.png)
+![Sonoran CAD - Stream Deck](../.gitbook/assets/image%20%28176%29%20%281%29.png)
 
 ## Installation
 
