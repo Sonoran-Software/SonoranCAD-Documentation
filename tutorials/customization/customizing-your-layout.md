@@ -55,7 +55,7 @@ The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
 To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System &gt; Customization
 
-![Sonoran CAD - Layout Customization Menu](../../.gitbook/assets/image%20%28183%29.png)
+![Sonoran CAD - Layout Customization Menu](../../.gitbook/assets/image%20%283%29.png)
 
 ### 7. Tab System
 
@@ -68,4 +68,9 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Duplicate Windows:** When more than one window of the same type is minimized, the tab will show the number of minimized tabs in the top right. Clicking on a tab with more than one window minimized will display a menu allowing you to select a specific tab or open an entirely new one.
 
 **Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
+
+**Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.  
+_Note: Text will only be displayed if the taskbar is in the top or bottom position._
+
+![Sonoran CAD - Tabs with Icon and Text](../../.gitbook/assets/image%20%2811%29.png)
 
