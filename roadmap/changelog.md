@@ -8,6 +8,24 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.11.2 6/1/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Dispatch Classic Layout  
+- Fixed an issue where the dispatch classic layout would be off on full-sized desktops.
+
+Server Selector  
+- Fixed an issue where the server selector wouldn't work in the fire, EMS, and police pages.
+
+Electron: Top Taskbar Cover  
+- Fixed a bug in the desktop application where the taskbar would cover the application header.
+
+Active Units - UI  
+- Fixed an issue with the UI causing active units to not properly be displayed when new units login.
+{% endtab %}
+{% endtabs %}
+
 ### 3.11.1 6/1/2021
 
 {% tabs %}
