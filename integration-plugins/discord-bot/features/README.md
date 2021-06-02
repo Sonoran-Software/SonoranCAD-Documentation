@@ -1,3 +1,7 @@
+---
+description: Learn more about Sonoran Bot's features!
+---
+
 # Features
 
 ### Permissions Synchronization
