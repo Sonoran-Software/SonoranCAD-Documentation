@@ -6,7 +6,11 @@ description: Granting permissions to user accounts is easy! We'll help you get s
 
 ## Permission Granting Options
 
-User accounts can be manually granted permissions by an administrator in your community. Or, you can create and give a "[Permission Key](permissions.md#permission-keys)" out to users so they may grant themselves a set of permissions.
+User accounts can be granted automatically with our [Discord bot](../../integration-plugins/discord-bot/), manually granted by an administrator in your community, or by generating a "[Permission Key](permissions.md#permission-keys)" for users to access independently.
+
+### Discord Bot Roles
+
+Our [Discord bot](../../integration-plugins/discord-bot/) allows you to automatically sync Discord roles with CAD permissions.
 
 ### Manually Granting Permissions
 
