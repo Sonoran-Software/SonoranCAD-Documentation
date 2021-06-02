@@ -4,6 +4,10 @@ description: Get started with the official Sonoran Bot today!
 
 # Getting Started - Discord Bot
 
+## Video Tutorial
+
+Click [HERE](https://www.youtube.com/watch?v=uFMhJa4jbCo) to watch our video tutorial and showcase.
+
 ## Setup
 
 {% hint style="warning" %}
