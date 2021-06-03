@@ -76,7 +76,8 @@ INVALID API KEY
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
             "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-            "primary": 123 // Identifier ID
+            "primary": 123, // Identifier ID
+            "trackPrimary": false // Toggle unit tracking for in-game with Dispatch Notify plugin
         },
     ]
 }
