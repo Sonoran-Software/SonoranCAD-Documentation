@@ -20,7 +20,7 @@ description: >-
         
 ```
 
-The `ident` is a unique number specifying the a unit "identifier" being attached to a call.
+The `ident` is a unique number specifying the a unit "identifier" being detached from a call.
 
 The `callId` represents the specific dispatch call they are being removed from.
 
