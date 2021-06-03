@@ -36,6 +36,7 @@ You can find this URL under Admin &gt; Customization &gt; Custom Login Page
 ### 4. In-Game Command
 
 Use the `/showcad` command in-game to toggle your tablet.
+You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
 
 ### 5. Auto API ID
 
