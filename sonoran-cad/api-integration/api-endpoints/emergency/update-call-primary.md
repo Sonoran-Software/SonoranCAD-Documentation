@@ -82,3 +82,7 @@ INVALID API KEY
 }
 ```
 
+### Clearing the Primary Identifier
+
+If you wish to clear the call's primary identifier, it is recommended to set the value to `-1`.
+
