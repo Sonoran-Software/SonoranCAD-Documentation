@@ -49,9 +49,7 @@ This allows the section to be filled via search when creating a new one.
 
 {% tabs %}
 {% tab title="Field Type" %}
-Fields can be an text, select, or textarea, date, time, or checkboxes.
-
-1. Input: These fields are generic text-boxes.
+Fields can be a set to `text`, `select`, `textarea`, `date`, `time`, `label`, `address` or `checkboxes`.
 
 #### 1. Text:
 
@@ -116,6 +114,18 @@ The linked records field allows you to link and cross-reference other records an
 Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
 
 ![Sonoran CAD - Custom Flags](../../.gitbook/assets/image%20%2895%29.png)
+
+#### 10. Label
+
+Labels can display static text, along with color attributes.
+
+![Sonoran CAD - Custom Record Label](../../.gitbook/assets/image%20%2813%29.png)
+
+#### 11. Address
+
+The address dropdown will auto-filter [street address names that have been imported via CSV](addresses-and-street-names.md).
+
+![Sonoran CAD - Custom Record Address Field](../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif)
 {% endtab %}
 
 {% tab title="Field Options" %}

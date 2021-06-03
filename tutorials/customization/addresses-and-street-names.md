@@ -55,3 +55,9 @@ In the dispatch call editor, the `address` section is now a dropdown. This dropd
 
 ![](../../.gitbook/assets/addresses.gif)
 
+### 6. Utilize in Custom Records
+
+Custom records can also have a field with the type set to `address`. This field will auto-filter the same list of street addresses from your gamemode.
+
+![Custom Records - Address Field](../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif)
+

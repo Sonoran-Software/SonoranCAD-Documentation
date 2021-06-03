@@ -133,11 +133,13 @@ The `field` object contains all of the data for an individual custom record fiel
 | :--- | :--- |
 | "input" | Standard Textbox |
 | "textarea" | Multi-line Textbox |
+| "address" | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
 | "select" | Dropdown \(Uses `options` array\) |
 | "date" | Date Picker |
 | "time" | Time Picker |
 | "image" | Image URL Viewer/Uploader |
 | "checkboxes" | List of Checkboxes \(Uses `options` array\) |
+| "label" | Text Label |
 
 #### Mask
 
