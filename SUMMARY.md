@@ -177,4 +177,5 @@
   * [Terms of Service](other/policy/terms-of-service.md)
   * [Privacy Policy](other/policy/privacy-policy.md)
   * [Refund and Purchase Policy](other/policy/refund-and-purchase-policy.md)
+  * [Discord Bot](other/policy/discord-bot.md)
 

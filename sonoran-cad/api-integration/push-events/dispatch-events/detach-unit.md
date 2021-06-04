@@ -17,7 +17,6 @@ description: >-
     "callId": 123        // Dispatch Call ID
   }
 }
-        
 ```
 
 The `ident` is a unique number specifying the a unit "identifier" being detached from a call.

@@ -35,12 +35,11 @@ You can find this URL under Admin &gt; Customization &gt; Custom Login Page
 
 ### 4. In-Game Command
 
-Use the `/showcad` command in-game to toggle your tablet.
-You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
+Use the `/showcad` command in-game to toggle your tablet. You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
 
 ### 5. Auto API ID
 
-When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.  
-  
+When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.
+
 To enable this, open the [check API plugin](api-id-checker.md)'s config and set `forceSetApiId` to `true`.
 
