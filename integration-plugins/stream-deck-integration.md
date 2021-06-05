@@ -18,7 +18,7 @@ For users with a [Stream Deck](https://www.elgato.com/en/stream-deck), you can u
 
 ### 1. Download the Profile
 
-Download the profile for your [Stream Deck](http://sonoransoftware.com/assets/files/sonorancad/SonoranCADFull.streamDeckProfile) or [Stream Deck Mini](http://sonoransoftware.com/assets/files/sonorancad/SonoranCADMini.streamDeckProfile).
+Download the profile for your [Stream Deck](https://sonoransoftware.com/assets/files/sonorancad/SonoranCADFull.streamDeckProfile) or [Stream Deck Mini](https://sonoransoftware.com/assets/files/sonorancad/SonoranCADMini.streamDeckProfile).
 
 ### 2. Import the File
 
