@@ -61,11 +61,11 @@ The record "type" is an enumerator used to distinguish the category of the custo
 
 | Enum | Description |
 | :--- | :--- |
-| 2 | Warrant |
-| 3 | BOLO |
-| 4 | License |
-| 5 | Vehicle Registration |
-| 7 | Character |
+| 2 | Custom Warrant |
+| 3 | Custom BOLO |
+| 4 | Custom License |
+| 5 | Custom Vehicle Registration |
+| 7 | Custom Character |
 | 8 | Custom Police Record |
 | 9 | Custom Police Report |
 | 10 | Custom Medical Record |
@@ -87,8 +87,9 @@ The "Section" object contains all of the data for a custom record section. These
     "fields": [], // Array of "FIELD" objects
     "searchCiv": false, // If this is a civilian character section,
                         //  display the search button to help search and import character data automatically
-    "searchVeh": false  // If this is a vehicle information section,
+    "searchVeh": false, // If this is a vehicle information section,
                         //  display the search button to help search and import vehicle data automatically
+    "enableDuplicate": true // Allow users to duplicate this section while filling out the record/report 
 }
 ```
 
@@ -103,6 +104,7 @@ The `category` field contains an enumerator representing the section type. These
 | 2 | Agency |
 | 5 | Speed |
 | 6 | Charges |
+| 9 | Linked Records |
 {% endtab %}
 
 {% tab title="Field" %}
@@ -119,6 +121,7 @@ The `field` object contains all of the data for an individual custom record fiel
     "isPreviewed": false, // Should this field be seen in the lookup preview table?
     "isSupervisor": false, // Is this field restricted to supervisors only?
     "isRequired": false, // Is this field required to be filled before submitting?
+    "unique": false, // Ensure unique value against any other records of this type (recordTypeId) - Non-DB Sync and custom sections only!
     "mask": "###", // Force 3 number entry (See Details)
     "maskReverse": false, // Fill mask in reverse order (Money)
     "dbMap": false, // Allow this field to be mapped with DB Sync

@@ -41,11 +41,11 @@ Add your desired custom and premade sections, edit fields, and more!
 
 ![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/image%20%288%29.png)
 
-If your section is a custom character or vehicle field, you can toggle on the search button:
+If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one.
 
-![Sonoran CAD: Custom Section Search Toggle](../../.gitbook/assets/image%20%2869%29.png)
+The enable duplicate button allows users to click and create a new copy of the section while filing the record.
 
-This allows the section to be filled via search when creating a new one.
+![Sonoran CAD: Custom Record Section Options](../../.gitbook/assets/image%20%2818%29.png)
 
 {% tabs %}
 {% tab title="Field Type" %}
@@ -154,6 +154,16 @@ Required fields will require the unit to enter something into the field before t
 ![Input field with REQUIRED toggled](../../.gitbook/assets/image%20%2822%29.png)
 
 ![Required field shown in the record editor](../../.gitbook/assets/image%20%286%29.png)
+
+#### 4. Unique
+
+Unique fields enforce that no duplicate values for this field are stored in the database. These values are enforced for the specific record template only.
+
+Unique fields can only be on non-DB Sync records and in custom sections.
+
+![Sonoran CAD - Unique Field](../../.gitbook/assets/image%20%2820%29.png)
+
+![Sonoran CAD - Unique Field Error](../../.gitbook/assets/image%20%2816%29.png)
 {% endtab %}
 
 {% tab title="Field Mask" %}
