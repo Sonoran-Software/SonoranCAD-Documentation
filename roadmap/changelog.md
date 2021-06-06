@@ -8,6 +8,58 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.12.0 6/5/2021
+
+{% tabs %}
+{% tab title="New" %}
+Custom Records - Duplicatable Section  
+- Custom record sections can be toggled as "duplicatable" allowing the user to duplicate a section \(similar to charges\) while filling out the report.
+
+Custom Records - Unique Field  
+- Custom records now support enforcing unique fields for any non-db sync record type.
+
+Custom Records - Address Type  
+- Custom records now have an "Address" type that will display a dropdown containing the community's imported spreadsheet of street addresses. This auto-filters as you type, just as the dispatch editor does.
+
+Custom Records - Removed Vehicle Limit  
+- Custom records can now have an unlimited number of 'plate' UID fields that will index and make the vehicle plate searchable. \(Previous limit of 3 vehicle sections per record.\)
+
+Custom Records - Removed Civilian Limit  
+- Custom records can now have an unlimited number of 'first', 'last', and 'mi' UID fields that will index and make the character names searchable. \(Previous limit of 3 civilian sections per record.\)
+
+Emergency Call Columns - Persist  
+- Modifying the displayed column preferences on the emergency calls list will persist past a refresh on a local device.
+
+Active Calls Columns - Persist  
+- Modifying the displayed column preferences on the calls list will persist past a refresh on a local device.
+
+Active Units Columns - Persist  
+- Modifying the displayed column preferences on the active units list will persist past a refresh on a local device.
+{% endtab %}
+
+{% tab title="Changed" %}
+Custom Records - Required Field Color  
+- Changed the custom records required field text from red to orange for higher contrast.
+
+API: Set Call Primary  
+- Heavily optimized the set\_call\_primary API endpoint for quick unit tracking updates via Dispatch Notify. Added an additional required 'trackPrimary' field to the call to toggle the unit tracking.
+
+API: Set Call Postal  
+- Heavily optimized the set\_call\_postal API endpoint for quick unit tracking updates via Dispatch Notify.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Character Tab: Icon  
+- Fixed an issue causing the character Windows minimized tab to not have an icon.
+
+Live Map - Self DIspatch  
+- Fixed an issue where units with self-dispatch enabled would be marked as a true dispatcher, preventing them from being shown on the live map.
+
+Unit Group Columns - Dropdown  
+- Fixed an issue where the active units group column dropdown had incorrect column values.
+{% endtab %}
+{% endtabs %}
+
 ### 3.11.2 6/1/2021
 
 {% tabs %}
