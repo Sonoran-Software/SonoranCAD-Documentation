@@ -78,10 +78,10 @@ These follow the format: `USERNAME or UUID` \| `TYPE` \| `ID`
 | 2: PENAL\_CODES |  |
 | 3: SIGNAL | Signal Value |
 | 4: ACCOUNT |  |
-| 5: NEW\_DISPATCH | Call ID |
-| 6: EDIT\_DISPATCH | Call ID |
+| 5: NEW\_DISPATCH | Call ID \| Server ID |
+| 6: EDIT\_DISPATCH | Call ID \| Server ID |
 | 7: CLOSE\_DISPATCH | Call ID |
-| 8: EMERGENCY | Call ID |
+| 8: EMERGENCY | Call ID \| Server ID |
 | 9: RECORD\_ADD | Record ID |
 | 10: RECORD\_EDIT | Record ID |
 | 11: RECORD\_REMOVE | Record ID |
