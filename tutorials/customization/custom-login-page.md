@@ -21,6 +21,10 @@ The custom login page allows your community members to register, sign-in, and ac
 
 ## DNS Record Method \(Recommended\)
 
+{% hint style="danger" %}
+This method is temporarily unavailable. An announcement will be posted in our Discord with an update soon.
+{% endhint %}
+
 ### 1. Add your Domain name to Cloudflare
 
 Due to certificate limitations, **Sonoran CAD requires custom domain name records to be managed by Cloudflare**. Cloudflare is a free service allowing you to [sign up and add your domain](https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website) simply by changing the name servers.
