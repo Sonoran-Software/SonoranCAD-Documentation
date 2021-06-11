@@ -8,6 +8,35 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.12.1 6/10/2021
+
+{% tabs %}
+{% tab title="New" %}
+Custom Login Page: DNS Record  
+- Custom login pages can now be created by adding a simple CNAME DNS record. Communities no longer need to host an iFrame webpage. The old query strings \(other than community ID\) have also been depreciated.
+
+Webhook Footer - Server ID  
+- Added the server ID metadata to specific webhook footers for the discord bot parsing.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Active Units - Sorting  
+- Fixed an issue where some columns of the active units table wouldn't properly sort.
+
+Custom Search Types - Disable on Civilian  
+- Fixed an issue where custom search types were displayed in the civilian menu.
+
+PDF: Margins  
+- Fixed an issue with PDF records sometimes running outside of the page margins.
+
+Self Clear - Disable without Perms  
+- Fixed an issue where units could not self-clear from a call unless they had dispatch or self-dispatch permissions.
+
+API: Unit Status  
+- Fixed an issue with the unit status API endpoint not updating the status on the user's local UI.
+{% endtab %}
+{% endtabs %}
+
 ### 3.12.0 6/5/2021
 
 {% tabs %}
