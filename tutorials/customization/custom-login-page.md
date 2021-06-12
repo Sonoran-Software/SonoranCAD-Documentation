@@ -73,3 +73,15 @@ Replace `YOUR_COMMUNITY_ID_HERE` in the `index.html` file with your [community I
 
 Now that you've saved the custom URL inside of the HTML file, you can host this with your own domain on your own web server. Users can now register and access your CAD from your custom domain, and will even receive your [custom branded emails](custom-emails.md) for account actions.
 
+## In-Game Tablet
+
+When using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), the easiest way to display your custom login page is by adding a query string.
+
+Open the `tablet/html/index.html` file and paste your custom community URL.  
+  
+`https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
+
+Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).
+
+![Tablet HTML file](../../.gitbook/assets/screen-shot-2020-07-22-at-10.23.09-pm.png)
+
