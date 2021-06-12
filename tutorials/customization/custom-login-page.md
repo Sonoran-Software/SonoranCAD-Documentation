@@ -81,7 +81,8 @@ Open the `tablet/html/index.html` file and paste your custom community URL.
   
 `https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
 
-Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).
+Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).  
+EX: `https://app.sonorancad.com/#/comid?=dojrp`
 
 ![Tablet HTML file](../../.gitbook/assets/screen-shot-2020-07-22-at-10.23.09-pm.png)
 
