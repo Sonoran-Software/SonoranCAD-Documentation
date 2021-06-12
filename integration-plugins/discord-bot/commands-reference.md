@@ -13,6 +13,13 @@ description: 'List of all bot commands. <> are required arguments, [] are option
 | uptime | None | Check the bot's uptime. |
 | checkperms | None | Check what your permission level is for certain actions. |
 
+### Usable by Linked Servers
+
+| Command | Arguments | Description | Permission Needed |
+| :--- | :--- | :--- | :--- |
+| panic | None | Toggles panic button for your unit. | Police/Fire/EMS |
+| penal | &lt;search term&gt; | Searches the community's penal code titles. | All |
+
 ### Setup and Settings
 
 | Command | Arguments | Description | Permission Needed |
