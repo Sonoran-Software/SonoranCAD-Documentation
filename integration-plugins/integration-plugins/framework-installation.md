@@ -91,6 +91,14 @@ add_ace resource.sonorancad command allow
 add_ace resource.sonoran_updatehelper command allow
 ```
 
+### 4.5. Convar Overrides
+
+Starting with framework version 2.6.2, you can override any configuration option in your `config.json` file by specifying a convar before the sonorancad resource starts.
+
+For example, `set sonoran_serverId 2` in your server configuration will set the server ID of your server to `2` regardless of what `config.json` is set to. This is useful for communities that share the same resources.
+
+IMPORTANT: This feature does not work with arrays \(like statusLabels\). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
+
 ### 5. Configure Push Events
 
 In the CAD admin panel, navigate to: Advanced &gt; In-Game Integration  
