@@ -8,6 +8,10 @@ description: Allows players to fetch ID information from the CAD on demand.
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="warning" %}
+There is a new improved and updated UI for showid. To use it you must enable it in the config and download a resource for it. More information below!
+{% endhint %}
+
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
 {% endhint %}
@@ -34,6 +38,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
+### 5. [Optional] Install improved ID Card UI resource
+
+1. [Link HERE]
+
 ## Further Configuration
 
 | Option | Description | Default Value |
@@ -41,6 +49,7 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 | cacheTime | Time to cache characters in seconds | 3600 |
 | allowCustomIds | Allow players to use /setid to set a custom name. | true |
 | allowPurge | Allow players to use /refreshid to "purge" their character list from cache. | true |
+| enableCardUi | Allows for a more realistic identification ui with /showid | false |
 
 ## Usage
 
