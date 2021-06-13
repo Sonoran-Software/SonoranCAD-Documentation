@@ -74,7 +74,7 @@ The `flagOnStatuses` array contains a list of values that will result in a flag 
 
 Ex: `flagOnStatuses = {"STOLEN", "EXPIRED", "PENDING", "SUSPENDED"}`
 
-### 5. Set Your API ID
+### 6. Set Your API ID
 
 In order to have locked plate results sent back to your CAD, don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 
