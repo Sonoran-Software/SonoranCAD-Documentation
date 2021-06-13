@@ -43,6 +43,37 @@ In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 Use of this plugin requires the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 {% endhint %}
 
+| Config Option | Description |
+| :--- | :--- |
+| useExpires | use vehicle registration expirations, or not |
+| useMiddleInitial | use middle initials? |
+| alertNoRegistration | alert if no registration was found on scan? |
+| statusUid | Custom record field UID containing the status |
+| expiresUid | Custom record field UID containing the expiration date |
+| flagOnStatuses | List of statuses to flag/alert on |
+
+### 5. Custom Record Handling
+
+If you wish to have the plugin alert when the vehicle is not registered, is marked as stolen, etc. you will need to ensure you have set the custom record field's UID in your config.
+
+#### Find your custom record field's UID
+
+In the CAD navigate to Admin &gt; Customization &gt; Custom Records &gt; select your custom vehicle registration record.
+
+The very last column of the field containing your status and expiration dates will have the field's UID \(unique identifier, sometimes referred to as 'field mapping id'\).
+
+![Custom Records - Field UID](../../../.gitbook/assets/image%20%28130%29.png)
+
+#### Set the UID in your Config
+
+By default, the `statusUid` is `status` and `expiresUid` is `expiration` for the default record. If you have customized these, you will need to update the UID in your config.
+
+#### Set Statuses to be Flagged
+
+The `flagOnStatuses` array contains a list of values that will result in a flag being displayed on the radar popup if they're found in the corresponding `statusUid` field.
+
+Ex: `flagOnStatuses = {"STOLEN", "EXPIRED", "PENDING", "SUSPENDED"}`
+
 ### 5. Set Your API ID
 
 In order to have locked plate results sent back to your CAD, don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
