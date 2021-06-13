@@ -240,7 +240,7 @@ Be sure to save your custom record format after enabling this!
 
 ![Custom Records - DB Sync Mapping Toggle](../../.gitbook/assets/image%20%28186%29.png)
 
-### 2. Configure the New Mapped Field
+### 2. Configure the Newly Mapped Field
 
 Back in our database sync editor, we can now see the new `Job` field has been added. We can map this new field to our database as any other field.
 
