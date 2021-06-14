@@ -15,7 +15,7 @@ ESX v2 is not supported by this plugin and will not function. Only ESX v1 is sup
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/server-hosting.md)!
 {% endhint %}
 
 ### Installation

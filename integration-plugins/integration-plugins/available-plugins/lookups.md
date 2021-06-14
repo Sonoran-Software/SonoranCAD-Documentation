@@ -13,7 +13,7 @@ This plugin is currently only used as a dependency for other plugins, and **does
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/server-hosting.md)!
 {% endhint %}
 
 This plugin Implements name and plate lookups via the CAD.
