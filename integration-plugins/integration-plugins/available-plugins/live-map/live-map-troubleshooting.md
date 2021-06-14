@@ -5,7 +5,7 @@ description: This guide covers the basic troubleshooting of the live map plugin.
 # Live Map Troubleshooting
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../vps-hosting-1/server-hosting.md)!  
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../sonoran-servers/server-hosting.md)!  
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 

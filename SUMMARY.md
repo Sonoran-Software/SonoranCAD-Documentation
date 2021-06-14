@@ -9,9 +9,9 @@
 
 * [🏆 Why Choose Sonoran CAD](why-choose-sonoran-cad/about.md)
 
-## VPS Hosting <a id="vps-hosting-1"></a>
+## Sonoran Servers
 
-* [🖥️ Server Hosting](vps-hosting-1/server-hosting.md)
+* [🖥️ Server Hosting](sonoran-servers/server-hosting.md)
 
 ## Tutorials
 

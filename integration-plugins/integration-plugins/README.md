@@ -8,7 +8,7 @@ description: >-
 # In-Game Integration Plugins
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../sonoran-servers/server-hosting.md)!
 {% endhint %}
 
 ### Framework Installation Guide

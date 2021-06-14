@@ -11,7 +11,7 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../sonoran-servers/server-hosting.md)!
 {% endhint %}
 
 ## Installation Video
