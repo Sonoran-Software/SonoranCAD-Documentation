@@ -8,6 +8,31 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.12.2 6/14/2021
+
+{% tabs %}
+{% tab title="New" %}
+Report Window - Save Last Window's Size  
+- Resizing a popout window will save this width and height preference for when you open a new window of this type.
+
+Account Secret ID  
+- User accounts now have a "Secret ID" similar to an API unique to each community account. These can be used with third party/external applications for authentication/security \(Discord bot role sync\) and can be refreshed/regenerated in the UI if ever leaked.
+{% endtab %}
+
+{% tab title="Change" %}
+Custom Map Images - File Size  
+- Increased the file size limit of custom map images from 25 to 30MB each.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self-Dispatch 911 Calls  
+- Fixed an issue causing self-dispatchers to not receive incoming 911 calls properly.
+
+API: set\_api\_id pushNew Flag  
+- Fixed an issue in the set\_api\_id endpoint preventing the pushNew flag from working properly.
+{% endtab %}
+{% endtabs %}
+
 ### 3.12.1 6/10/2021
 
 {% tabs %}
