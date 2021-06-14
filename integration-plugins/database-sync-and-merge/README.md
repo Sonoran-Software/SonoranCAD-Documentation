@@ -7,8 +7,10 @@ description: >-
 
 # Database Sync and Merge
 
-{% hint style="info" %}
-Database Sync is not enabled with the free version of Sonoran CAD.  
+{% hint style="warning" %}
+Database Sync requires the **plus** version of Sonoran CAD or higher.  
+Database Merge requires the **pro** version of Sonoran CAD.
+
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -26,7 +28,7 @@ View our [video tutorial](https://youtu.be/UfMup7KkpEg) on enabling Database Syn
 
 Configuring Sonoran CAD's Database Sync may seem complicated, but you are simply specifying your table names and column values where your in-game data is stored.
 
-REQUIRED fields in the CAD are shown in red. All other fields are optional, and are not required to work properly.
+REQUIRED fields in the CAD are shown in red. All other fields are optional and are not required to work properly.
 
 ## Connection Credentials
 
