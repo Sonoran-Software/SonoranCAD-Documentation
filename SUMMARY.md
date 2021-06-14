@@ -11,7 +11,7 @@
 
 ## VPS Hosting <a id="vps-hosting-1"></a>
 
-* [🖥️ VPS Hosting](vps-hosting-1/vps-hosting.md)
+* [🖥️ Server Hosting](vps-hosting-1/vps-hosting.md)
 
 ## Tutorials
 
