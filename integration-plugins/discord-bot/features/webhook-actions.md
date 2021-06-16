@@ -64,11 +64,11 @@ When a Discord webhook is fired, SonoranBot will add a reaction allowing you to 
 1. Configure [Webhooks](../../discord-webhooks.md) to the channel you desire.
 2. Give the bot access to the channel these webhooks are going to. It needs at least the ability to read the channel and add reactions to messages.
 
-## Examples
+## Reaction Examples
 
 ### Call Attachment
 
-![](../../../.gitbook/assets/dispatch.png)
+![](../../../.gitbook/assets/image%20%28189%29.png)
 
 ### Opening a Record
 
