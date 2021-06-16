@@ -1,40 +1,76 @@
 ---
-description: Some logs sent by SonoranCAD can be reacted to for certain actions.
+description: >-
+  React to Sonoran CAD event webhooks to attach to dispatch calls, view modified
+  records, and more!
 ---
 
 # Webhook Actions
 
 {% hint style="warning" %}
-This feature requires the **Plus** version of SonoranCAD or higher due to the API calls it needs.
+Due to the API calls, this feature requires the **Plus** version of SonoranCAD or higher.
 {% endhint %}
 
-### Using Webhook Actions
+## Using Webhook Actions
 
-When a webhook is fired, SonoranBot will add a reaction \(currently a + symbol for attaching to calls, or a newspaper to open a record\) to it which triggers a specific action. They currently are:
+When a Discord webhook is fired, SonoranBot will add a reaction allowing you to react for a specific action.
 
-* New Dispatch \(Call\)
-  * Attaches you to the call automatically. Must have Police/Fire/EMS permissions.
-* Dispatch Modified \(Call\)
-  * Attaches you to the call automatically. Must have Police/Fire/EMS/permissions.
-* New Record Added/Modified
-  * Automatically populates a record search with the record being the result. Depending on the record, related records will also appear in the search. Must be in one of the menus \(such as Police or DMV\) for this to work.
+### Available Reactions
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Webhook</th>
+      <th style="text-align:left">Reaction Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">New Dispatch</td>
+      <td style="text-align:left">
+        <p>React to attach to the dispatch call in the CAD.</p>
+        <p>Remove the reaction to detach.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Modified Dispatch</td>
+      <td style="text-align:left">
+        <p>React to attach to the dispatch call in the CAD.</p>
+        <p>Remove the reaction to detach.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">New Record</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>Automatically populates a record search with the record being the result.
+          Depending on the record, related records will also appear in the search.
+          Must be in one of the menus (such as Police or DMV) for this to work.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Modified Record</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>Automatically populates a record search with the record being the result.
+          Depending on the record, related records will also appear in the search.
+          Must be in one of the menus (such as Police or DMV) for this to work.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Setting Up
 
-Setup is very easy. 
-
-1. Set up [Webhooks](../../discord-webhooks.md) to the channel you desire.
+1. Configure [Webhooks](../../discord-webhooks.md) to the channel you desire.
 2. Give the bot access to the channel these webhooks are going to. It needs at least the ability to read the channel and add reactions to messages.
 
-That's it! More features may be added in the future.
+## Examples
 
-### Examples
-
-#### Call Attachment
+### Call Attachment
 
 ![](../../../.gitbook/assets/dispatch.png)
 
-#### Opening a Record
+### Opening a Record
 
 ![](../../../.gitbook/assets/record.png)
 
