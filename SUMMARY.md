@@ -97,6 +97,7 @@
   * [Getting Started](sonoran-cad/api-integration/getting-started/README.md)
     * [Retrieving Your Credentials](sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md)
     * [Integration API ID](sonoran-cad/api-integration/getting-started/setting-your-api-id.md)
+    * [Account Secret ID](sonoran-cad/api-integration/getting-started/account-secret-id.md)
   * [Push Events](sonoran-cad/api-integration/push-events/README.md)
     * [Unit Events](sonoran-cad/api-integration/push-events/unit-events/README.md)
       * [Unit Login](sonoran-cad/api-integration/push-events/unit-events/unit-login.md)
