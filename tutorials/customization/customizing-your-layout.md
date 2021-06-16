@@ -10,6 +10,12 @@ description: >-
 
 ![Sonoran CAD - Layout and Resize](../../.gitbook/assets/layout_lock.gif)
 
+{% hint style="info" %}
+Wanting to simplify your layout and remove customization?  
+  
+Enable the "Classic Layout" in the customization menu.
+{% endhint %}
+
 ### 1. Menu Options
 
 You can right click on any panel and to reveal multiple menu options.
@@ -73,4 +79,18 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 _Note: Text will only be displayed if the taskbar is in the top or bottom position._
 
 ![Sonoran CAD - Tabs with Icon and Text](../../.gitbook/assets/image%20%2811%29.png)
+
+### 8. Classic Layout
+
+For some users, modifying the positions of dispatching panels may be too complicated. You can easily toggle on the "Classic Layout" to have the call windows automatically placed and responsive. Don't worry, popout windows can still be moved around and locked into place as normal.
+
+#### Enable Classic Mode:
+
+Right Click on the Task Bar &gt; Customization &gt; Classic Layout
+
+![Sonoran CAD - Classic Layout](../../.gitbook/assets/image%20%28190%29.png)
+
+#### Change Taskbar and Button Position\(s\)
+
+Don't forget, you can easily [move the taskbar to the top or sides of the screen](customizing-your-layout.md#6-taskbar), [change what buttons appear](customizing-your-layout.md#7-tab-system), and [change the order of the buttons](customizing-your-layout.md#7-tab-system)!
 
