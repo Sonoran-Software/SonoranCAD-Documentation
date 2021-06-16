@@ -8,6 +8,23 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.12.3 6/16/2021
+
+{% tabs %}
+{% tab title="New" %}
+PDF - Chinese Localization  
+- PDF records now support Chinese localization, and will print in a font supporting Chinese characters if the user has their language set to Traditional or Simplified Chinese.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self Dispatch - Notes  
+- Fixed an issue where self-dispatchers attaching to an active call would not receive new notes on the call until a page refresh was executed.
+
+Hide Secret ID Field Until Logged In  
+- Fixed an issue where the secret ID field was still displayed as blank before logging into a specific community.
+{% endtab %}
+{% endtabs %}
+
 ### 3.12.2 6/14/2021
 
 {% tabs %}
