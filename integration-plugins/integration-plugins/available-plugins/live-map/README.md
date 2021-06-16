@@ -159,6 +159,10 @@ Select "Upload Custom" and upload all six correctly named files.
 
 ![Live Map - Custom Map Uploader](../../../../.gitbook/assets/image%20%28101%29.png)
 
+### 3. File Size
+
+Custom map images are limited to 30MB each. **However, if you are uploading more than 100MB of images total, you will need to upload in separate batches.**
+
 ## Using Different Ports
 
 If you are not using the default map port `30121` you will need to change the configuration.
