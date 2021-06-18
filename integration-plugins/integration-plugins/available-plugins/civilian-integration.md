@@ -40,7 +40,9 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 ### 5. [Optional] Install improved ID Card UI resource
 
-1. [Link HERE]
+1. Click [HERE](https://github.com/JacobTDev/id_card_ui/releases) to download the `id_card_ui` resource .zip file.
+2. Place the `id_card_ui` folder inside your existing `[sonorancad]` folder.
+3. Ensure `id_card_ui` in your `server.cfg` file.
 
 ## Further Configuration
 
@@ -49,7 +51,7 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 | cacheTime | Time to cache characters in seconds | 3600 |
 | allowCustomIds | Allow players to use /setid to set a custom name. | true |
 | allowPurge | Allow players to use /refreshid to "purge" their character list from cache. | true |
-| enableCardUi | Allows for a more realistic identification ui with /showid | false |
+| enableIDCardUI | Allows for a more realistic identification ui with /showid | false |
 
 ## Usage
 
