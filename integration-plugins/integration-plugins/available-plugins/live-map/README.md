@@ -113,6 +113,11 @@ Don't forget to have each community member set their account [API ID](../../../.
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
+This is found in the task bar's start menu under Unit Management &gt; Live Map  
+You can also [pin the live map button to your taskbar](../../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
+
+![Sonoran CAD: Live Map Button](../../../../.gitbook/assets/screen-shot-2021-06-18-at-11.12.10-pm.png)
+
 **The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
 ## When are Player Blips Displayed?
