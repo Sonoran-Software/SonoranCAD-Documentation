@@ -1,7 +1,8 @@
 ---
 description: >-
   Notify officers of incoming calls, allow them to attach to them, notify the
-  caller, and route units via GPS in real-time...all in one!
+  caller, and route units via GPS in real-time to calls and the lead pursuit
+  officer...all in one!
 ---
 
 # Dispatch Notify
@@ -155,13 +156,37 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
   </tbody>
 </table>
 
+## Dispatch Call Responding
+
+### 1. Civilian Places a 911 Call
+
+### 2. Officer Attaches to the Call
+
+#### A. Call Attach Command
+
+#### B. GPS Toggle Command
+
+## Primary Unit Tracking \(Pursuit\)
+
+Dispatch notify can also be used to track the primary unit on a call. This will auto route attached units via GPS to the primary unit in real-time. Additionally, the postal code on the call will be continually updated for dispatchers to easily view. This is highly useful for pursuits, where additional units need to catch up and join the chase.
+
+### 1. Toggle Unit Tracking for the Primary Unit
+
+#### A. Via the CAD UI:
+
+#### B. Via in-game Command:
+
+{% hint style="danger" %}
+This documentation is under construction.
+{% endhint %}
+
 ### Troubleshooting
 
 * No notifications for 911 calls
   * Units must be logged into the CAD \(by default\) or meeting the requirements depending on how the plugin is configured.
   * If using pNotify notifications, ensure that resource is running.
 * Units do not automatically attach to calls
-  * Ensure their API ID is set so the server knows who they are.
+  * Ensure their [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) is set so the server knows who they are.
 * Caller is not notified when units attach to the call
   * If the caller ever leaves the server and rejoins, this feature does not work.
   * If dispatch created the call within the CAD, there is no way to notify a caller.
