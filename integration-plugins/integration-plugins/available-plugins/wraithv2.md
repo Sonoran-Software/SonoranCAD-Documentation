@@ -41,6 +41,8 @@ In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
 Use of this plugin requires the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+
+You also need [pNotify](https://github.com/Nick78111/pNotify), a third party plugin that is not bundled by default.
 {% endhint %}
 
 | Config Option | Description |
