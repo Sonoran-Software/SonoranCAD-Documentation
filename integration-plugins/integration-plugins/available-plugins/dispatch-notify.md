@@ -173,7 +173,7 @@ By default, this command is `/rcall <callid>`, where callid is the ID shown in t
 
 #### B. GPS Toggle Command
 
-Units can optionally choose to disable the postal updating when dispatch updates the call \(or primary unit tracking\) by using the `/gpslock` command. This is a toggle and will be shown in chat what it gets changed to. This is `ON` by default.
+Units can optionally choose to disable the postal updating when dispatch updates the call \(or primary unit tracking\) by using the `/togglegps` command. This is a toggle and will be shown in chat what it gets changed to. This is `ON` by default.
 
 ## Primary Unit Tracking \(Pursuit\)
 
