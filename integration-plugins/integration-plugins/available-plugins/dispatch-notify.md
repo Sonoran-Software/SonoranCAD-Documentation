@@ -35,6 +35,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 3. Install the Plugin and all Dependencies
 
 1. Follow the [standard plugin installation guide](../plugin-installation.md) for the callcommands plugin.
+2. Optionally, install the [postals](postals.md) plugin as well.
 
 ### 4. Set Your API ID
 
@@ -160,11 +161,19 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
 
 ### 1. Civilian Places a 911 Call
 
+This call can be placed from the Civilian menu of the CAD, or via the `/911` command in-game, supplied by the callcommands plugin.
+
 ### 2. Officer Attaches to the Call
+
+All on-duty officers get a notification \(if configured\) and can use the attach command to respond to the call.
 
 #### A. Call Attach Command
 
+By default, this command is `/rcall <callid>`, where callid is the ID shown in the call notification.
+
 #### B. GPS Toggle Command
+
+Units can optionally choose to disable the postal updating when dispatch updates the call \(or primary unit tracking\) by using the `/gpslock` command. This is a toggle and will be shown in chat what it gets changed to. This is `ON` by default.
 
 ## Primary Unit Tracking \(Pursuit\)
 
@@ -174,11 +183,13 @@ Dispatch notify can also be used to track the primary unit on a call. This will 
 
 #### A. Via the CAD UI:
 
-#### B. Via in-game Command:
+Dispatchers can set the primary unit to any unit currently attached to the call. The slider next to the Primary Unit box will toggle tracking mode. When enabled, the postal will automatically update based on the primary unit's location and be sent to all attached units.
 
-{% hint style="danger" %}
-This documentation is under construction.
-{% endhint %}
+![](../../../.gitbook/assets/image%20%28193%29.png)
+
+A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
+
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 ### Troubleshooting
 
