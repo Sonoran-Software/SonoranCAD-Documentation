@@ -12,7 +12,7 @@ Only the community owner can delete or transfer the community.
 
 Navigate to  Admin &gt; Advanced &gt; Transfer or Delete CAD
 
-![Advanced Dropdown Menu](../../.gitbook/assets/3%20%281%29%20%281%29.png)
+![Advanced Dropdown Menu](../../.gitbook/assets/3%20%281%29%20%281%29%20%281%29.png)
 
 ##   2. Transfer or Delete the CAD                   
 

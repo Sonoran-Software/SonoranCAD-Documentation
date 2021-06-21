@@ -25,8 +25,8 @@ In your `server.cfg` file add the following new line:
 ### 3. Edit the index.html File
 
 Open the `tablet/html/index.html` file and paste your custom community URL.  
-The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.  
-  
+The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
+
 `https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).  

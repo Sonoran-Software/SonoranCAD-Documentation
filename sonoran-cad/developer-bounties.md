@@ -11,6 +11,7 @@ description: >-
 | Plugin | Bounty | Description |
 | :--- | :--- | :--- |
 | Civilian Integration | $15 | Improve the UI on the `/showid` to display a proper civilian license UI. UI should be mocked from a real-life license/ID. |
+| Five PD Integration | $$$ | General FivePD integration, reach out via Discord to discuss. |
 | Custom | $$$ | New plugin ideas and features can be discussed at any time. Anyone is welcome to submit a PR. |
 
 ## How to Claim
