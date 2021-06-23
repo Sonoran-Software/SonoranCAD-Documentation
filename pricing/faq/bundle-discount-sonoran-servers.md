@@ -23,6 +23,10 @@ Reach out on our [customer support site](https://support.sonoransoftware.com) an
 
 ![Sonoran Servers &amp; Sonoran CAD - Bundle and Save!](../../.gitbook/assets/image%20%2889%29.png)
 
+{% hint style="info" %}
+Sonoran Servers products that are less than $20/month are ineligable for this offer.
+{% endhint %}
+
 ### 1. Purchase a Server from Sonoran Servers
 
 If you haven't already, [purchase any ](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started)[server plan with Windows as the operating system](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started)[ from Sonoran Servers](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started).
