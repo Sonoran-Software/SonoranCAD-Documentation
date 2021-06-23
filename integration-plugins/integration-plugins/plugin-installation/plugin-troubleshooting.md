@@ -117,3 +117,13 @@ If you're still having trouble, our dedicated support team is here to help.
 
 [Reach out to us and generate a support ticket at any time](https://support.sonoransoftware.com).
 
+## Common Errors
+
+### Error: Ensure config.json is present
+
+Your framework or plugin config is not correctly named `config.json`. Ensure that is has been spelt correctly, is not `config.json.json`, etc.
+
+You may need to open the file in a text editor to more easily see the file extension, and ensure that it is correctly named as `config.json`.
+
+
+
