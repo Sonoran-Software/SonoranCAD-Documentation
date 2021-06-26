@@ -83,6 +83,10 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 
 Add the following to your `server.cfg` \(if you don't want pNotify or wraith, leave those out\):
 
+{% hint style="danger" %}
+It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
+{% endhint %}
+
 ```javascript
 ensure pNotify
 ensure wk_wars2x
