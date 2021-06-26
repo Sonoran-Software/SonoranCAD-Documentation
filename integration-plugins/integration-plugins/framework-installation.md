@@ -78,6 +78,9 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | allowAutoUpdate | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours. |
 | autoUpdateUrl | Where to check for updated versions. Don't touch this unless you have a reason. |
 | allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players. |
+| noUnitTimer | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache. |
+| enableCanary | When enabled, allows the CAD to update to beta \(aka canary\) releases. |
+| forceSetApiId | When enabled, the tablet resource will show an alert message stating they must set their API ID. |
 
 ### 4. Server Config
 
