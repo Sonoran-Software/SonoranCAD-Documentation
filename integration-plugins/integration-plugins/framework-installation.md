@@ -43,7 +43,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 {
     "communityID": "",
     "apiKey": "",
-    "apiUrl": "https://api.sonorancad.com/",
+    "mode": "production",
     "postTime": 5000,
     "serverId": "1",
     "primaryIdentifier": "steam",
@@ -53,7 +53,10 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
     "statusLabels": ["UNAVAILABLE", "BUSY", "AVAILABLE", "ENROUTE", "ON_SCENE"],
     "allowAutoUpdate": true,
     "autoUpdateUrl": "https://raw.githubusercontent.com/Sonoran-Software/SonoranCADLuaIntegration/{branch}/sonorancad/version.json",
-    "allowUpdateWithPlayers": false
+    "allowUpdateWithPlayers": false,
+    "noUnitTimer": false,
+    "enableCanary": false,
+    "forceSetApiId": false
 }
 ```
 
