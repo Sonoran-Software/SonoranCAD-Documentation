@@ -41,6 +41,12 @@ Users can now visit this custom domain to view the CAD with a custom login page,
 
 ![Sonoran CAD - Custom Login URL](../../.gitbook/assets/image%20%2873%29.png)
 
+{% hint style="warning" %}
+When updating or changing an existing DNS record, it may take some time for the change to propagate \(based on your TTL\).  
+  
+You can try running `ipconfig /flushdns` in a Windows CMD window and restarting your browser. Otherwise, you can test with other browsers/devices/users while you wait.
+{% endhint %}
+
 ## iFrame Method
 
 If you are unable to use Cloudflare for DNS management, you can also host an HTML page that renders the CAD in an iFrame.
