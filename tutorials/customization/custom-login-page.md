@@ -24,7 +24,8 @@ The custom login page allows your community members to register, sign-in, and ac
 ### 1. Add a CNAME Record for your Domain
 
 {% hint style="warning" %}
-**If you are unsure how to add a DNS record, you will need to contact your domain registrar.** Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add&domain=register).
+**If you are unsure how to add a DNS record, you will need to contact your domain registrar.**  
+Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add&domain=register).
 {% endhint %}
 
 In your domain's DNS records, add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
