@@ -21,31 +21,15 @@ The custom login page allows your community members to register, sign-in, and ac
 
 ## DNS Record Method \(Recommended\)
 
-{% hint style="danger" %}
-This method is temporarily unavailable. An announcement will be posted in our Discord with an update soon.
-{% endhint %}
+### 1. Add a CNAME Record for your Domain
 
-### 1. Add your Domain name to Cloudflare
-
-Due to certificate limitations, **Sonoran CAD requires custom domain name records to be managed by Cloudflare**. Cloudflare is a free service allowing you to [sign up and add your domain](https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website) simply by changing the name servers.
-
-### 2. Add a CNAME Record
-
-In Cloudflare, select your domain name and open the DNS management panel.  
-Add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
+In your domain's DNS records, add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
 
 This record sets `cad.sonoranroleplay.com` as the custom login page URL.
 
 ![Cloudflare - DNS Record ](../../.gitbook/assets/image%20%2896%29.png)
 
-### 3. Ensure TLS/SSL Mode is Full
-
-In Cloudflare, select your domain and navigate to the SSL/TLS panel.  
-Ensure the mode is set to `Full`.
-
-![Cloudflare - SSL/TLS Mode](../../.gitbook/assets/image%20%2891%29.png)
-
-### 3. Set the Domain Name in Sonoran CAD
+### 2. Set the Domain Name in Sonoran CAD
 
 In the Sonoran CAD customization menu, set the custom login page URL.  
 This should not contain any `https://` or other extensions.
