@@ -34,6 +34,8 @@
   * [10-Codes](tutorials/customization/10-codes.md)
   * [Addresses and Street Names](tutorials/customization/addresses-and-street-names.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
+  * [Tone Board](tutorials/customization/tone-board.md)
+  * [Custom Audio Notifications](tutorials/customization/custom-audio-notifications.md)
   * [Custom Emails](tutorials/customization/custom-emails.md)
   * [Quick Links](tutorials/customization/quick-links.md)
   * [Custom Page Colors](tutorials/customization/custom-page-colors.md)

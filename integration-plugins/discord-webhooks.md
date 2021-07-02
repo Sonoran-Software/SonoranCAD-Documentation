@@ -91,4 +91,6 @@ These follow the format: `USERNAME or UUID` \| `TYPE` \| `ID`
 | 9: RECORD\_ADD | Record ID |
 | 10: RECORD\_EDIT | Record ID |
 | 11: RECORD\_REMOVE | Record ID |
+| 12: TONE\_PLAYED | Tone Label |
+| 999: SYSTEM | Systemwide Broadcast \(From Sonoran\) |
 
