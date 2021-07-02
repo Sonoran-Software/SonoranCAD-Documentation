@@ -8,6 +8,76 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3/13/0 7/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch Tone Board  
+- Custom audio tones can be configured and played by dispatchers. Customizations include the label, icon, color, and sound file.
+
+Hotkey - Tone Board  
+- A global hotkey can be configured to open the dispatch tone board more quickly.
+
+Custom Audio Notifications  
+- Customizable audio notifications for new dispatches, panics, alerts, and more.
+
+Active Units - Show/Hide Dispatchers  
+- The active units panel now has a toggle to show or hide dispatchers.
+
+Custom Records - ID Field  
+- Custom record fields can now have the type set to "ID" to display the unique record ID.
+
+Tone Board - Webhook  
+- Added a Discord webhook to log when a user plays a tone from the tone board.
+
+Lookup Filter - Save Preferences  
+- Lookup filter preferences are saved locally and won't reset when you open a new or different lookup window.
+
+Text-to-speech - Toggle  
+- Toggle off text-to-speech in the settings menu.
+{% endtab %}
+
+{% tab title="Changed" %}
+API: get\_active\_units - onlyUnits flag  
+- The get\_active\_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
+
+Dispatch Panel - Table UI  
+- Small UI changes and improvements to the dispatch panels with tables and their column customization, search boxes, and buttons.
+
+S3 Hosting  
+- All image and file uploads have been migrated from AWS S3 to Sonoran S3.
+
+Discord Bot IP - Bad Request Whitelist  
+- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify\_secret
+{% endtab %}
+
+{% tab title="Fixed" %}
+Tablet - Resize Window Save  
+- Fixed an issue with the in-game tablet not being able to detect as a non-mobile user agent - locking draggable windows and not persisting the saved size preferences.
+
+Custom Records - Disabled Scrollbar  
+- Fixed an issue where text-areas couldn't be scrolled if the record editing was disabled. \(Ex: Viewing a civilian record\)
+
+Unit Group - Remove from Call  
+- Fixed an issue preventing unit groups from being removed from a dispatch call.
+
+Dispatch Call - PDF  
+- Fixed an issue preventing call logs from printing to PDF.
+
+Records Webhook: Charges  
+- Fixed an issue causing record webhooks to not display values from the "Charges" sections.
+
+SSO - Change Username Push Event  
+Improved username update handling with the SSO system.
+
+Unit Group - Add to Call  
+- Fixed an issue causing the unit group's "Add to Call" button to be all white.
+
+Dispatch - Change Server  
+- Fixed an issue where dispatchers changing servers would still show on the active units list for other dispatchers.
+{% endtab %}
+{% endtabs %}
+
 ### 3.12.3 6/16/2021
 
 {% tabs %}
