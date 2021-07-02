@@ -15,7 +15,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 In the admin page, navigate to `Customization` &gt; `Customization` &gt; `Tone Board`
 
-![Sonoran CAD - Tone Board Customization](../../.gitbook/assets/image%20%28199%29.png)
+![Sonoran CAD - Tone Board Customization](../../.gitbook/assets/image%20%28200%29.png)
 
 ### 2. Customize the Available Tones
 
@@ -30,7 +30,7 @@ Here, you can add new tones and specify the following:
 
 Tone buttons support icons from several different web libraries. Clicking the search icon will open the Font Awesome icon library search. Here, you can search for an icon - click on it - and paste the icon name into the CAD.
 
-![Font Awesome - Example Icon Name](../../.gitbook/assets/image%20%28197%29.png)
+![Font Awesome - Example Icon Name](../../.gitbook/assets/image%20%28198%29.png)
 
 #### Save your Tones
 
@@ -59,7 +59,7 @@ If you filter down the options to a single tone, the search label will turn gree
 
 The tone board is also designed to auto-focus this search box whenever it is opened, or the header is clicked.
 
-![Tone Board - Filtering](../../.gitbook/assets/image%20%28198%29.png)
+![Tone Board - Filtering](../../.gitbook/assets/image%20%28199%29.png)
 
 #### Hotkey Auto-Window
 
