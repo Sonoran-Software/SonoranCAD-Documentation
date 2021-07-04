@@ -4,6 +4,19 @@ description: Changes to Sonoran Bot.
 
 # Change Log
 
+## 2021-07-04
+
+{% tabs %}
+{% tab title="Updates" %}
+* Update to the latest discord.js dev release - will add buttons/dropdown support soon!
+{% endtab %}
+
+{% tab title="Fixes" %}
+* Resolve crash when a command is used before the community is set up.
+* Resolve some permissions-related issues with embeds and reactions.
+{% endtab %}
+{% endtabs %}
+
 ## 2021-06-26
 
 {% tabs %}
