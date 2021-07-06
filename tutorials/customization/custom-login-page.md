@@ -4,7 +4,7 @@ description: >-
   you!
 ---
 
-# Custom Login Page
+# Custom Domain & Login Page
 
 {% hint style="warning" %}
 Custom login pages require the **standard** version or higher.  
@@ -33,6 +33,10 @@ In your domain's DNS records, add a `CNAME` type record with the `name` set to a
 The example record below sets `cad.sonoranroleplay.com` as the custom login page URL.
 
 ![Cloudflare - DNS Record ](../../.gitbook/assets/image%20%2896%29.png)
+
+{% hint style="info" %}
+**Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
+{% endhint %}
 
 ### 2. Set the Domain Name in Sonoran CAD
 
