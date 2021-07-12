@@ -10,10 +10,10 @@ description: >-
 
 ![Sonoran CAD - Layout and Resize](../../.gitbook/assets/layout_lock.gif)
 
-{% hint style="info" %}
-Wanting to simplify your layout and remove customization?  
-  
-Enable the "Classic Layout" in the customization menu.
+{% hint style="warning" %}
+By default, "[Classic Layout](customizing-your-layout.md#enable-classic-mode)" is enabled in the customization menu.
+
+To customize your dispatch/unit panel layout, you will need to disable this.
 {% endhint %}
 
 ### 1. Menu Options
@@ -55,13 +55,23 @@ Simply right click on the empty area in the taskbar, or navigate to Start &gt; S
 
 ### 6. Taskbar
 
+#### Search Box
+
+The task bar can be opened with a configurable [hotkey](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/tutorials/other-features/configurable-hotkeys) or with our [Streamdeck](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/integration-plugins/stream-deck-integration) integration. When opened, a search bar will be automatically focused on all non-mobile devices.‌
+
+Here, you can search to quickly filter options. When the results have been filtered down to a single window, the search label will turn green indicating the window shortcut is available. Simply press `ENTER` to open the window.
+
+![Sonoran CAD - Taskbar Filter](../../.gitbook/assets/image%20%28202%29.png)
+
+#### Positioning
+
 The taskbar is a desktop style action bar that will contain the "Start Menu" \(Sonoran CAD logo\) and your active/pinned tabs.
 
 The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
 To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System &gt; Customization
 
-![Sonoran CAD - Layout Customization Menu](../../.gitbook/assets/image%20%283%29.png)
+![Sonoran CAD - Taskbar Positioning](../../.gitbook/assets/image%20%28191%29.png)
 
 ### 7. Tab System
 

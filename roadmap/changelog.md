@@ -8,7 +8,53 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
-### 3/13/0 7/1/2021
+### 3.14.0 7/11/2021
+
+{% tabs %}
+{% tab title="New" %}
+Start Menu - Quick Search  
+- The start menu now has an auto-focused search box to filter window options for all mid-sized screen users and larger.
+
+Hotkey: Start Menu  
+- Added a new configurable hotkey to toggle the start menu.
+
+Vue 3  
+- Migrated the UI to Vue JS 3. This should also resolve issues some users experienced with the in-game tablet.
+{% endtab %}
+
+{% tab title="Changed" %}
+Classic Layout - Default Enabled  
+- The "Classic Layout" is enabled by default for all users. This can be disabled in the customization menu to allow users to customize their dispatching panels into different locations.
+
+Desktop Header  
+- Updated the desktop header bar to match the new header in emergency pages.
+{% endtab %}
+
+{% tab title="Fixed" %}
+New Record - Conflict with Lookup Filters  
+- Fixed an issue causing the saved lookup preferences from also impacting the available records types in the records center.
+
+Tone Board - Direct Upload  
+- Fixed an issue causing direct upload of audio files to the dispatch tone board from properly setting the new URL.
+
+Window Layout  
+- Fixed issues with custom window layouts not saving or persisting properly.
+
+Self-Dispatch: Logout  
+- Fixed a permissions issue for self-dispatchers logging out.
+
+Image Uploader - Name  
+- Changed the file uploader to no longer be labeled as only an image loader.
+
+Admin - Get Owner  
+- Fixed an issue preventing the admin page's "Get Owner" button from properly searching for the record owner.
+
+BOLO Update  
+- Fixed an issue where updating or removing a bolo would not automatically update this in the other unit's screen without re-opening the window or searching again.
+{% endtab %}
+{% endtabs %}
+
+### 3.13.0 7/1/2021
 
 {% tabs %}
 {% tab title="New" %}
