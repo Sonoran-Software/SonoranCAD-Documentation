@@ -13,7 +13,7 @@ description: >-
 {% hint style="warning" %}
 By default, "[Classic Layout](customizing-your-layout.md#enable-classic-mode)" is enabled in the customization menu.
 
-To customize your dispatch/unit panel layout, you will need to disable this.
+To customize your dispatch/unit panel layout, you will need to [disable this](customizing-your-layout.md#8-classic-layout).
 {% endhint %}
 
 ### 1. Menu Options
@@ -86,7 +86,7 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
 
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.  
-_Note: Text will only be displayed if the taskbar is in the top or bottom position._
+_Note: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
 ![Sonoran CAD - Tabs with Icon and Text](../../.gitbook/assets/image%20%2811%29.png)
 

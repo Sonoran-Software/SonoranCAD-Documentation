@@ -77,7 +77,9 @@ The following convars can be set in your `server.cfg` file:
 | blip\_file | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP |
 | livemap\_access\_control | string | "\*" | Sets the domain that is allowed to access the blips.json file \(E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips\), "\*" will allow everyone |
 
-All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000. **You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
+All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the live map port to 30000.
+
+**You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
 
 If you are using a Live Map port other than the default \(`30121`\) you will need to specify this in your `server.cfg` file. [Learn more about using a different live map port](./#using-different-ports).
 
