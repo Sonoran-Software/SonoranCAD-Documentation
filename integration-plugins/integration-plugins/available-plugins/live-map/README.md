@@ -89,10 +89,11 @@ All above convars are set via the `set` command in your server config, such as `
 IMPORTANT: You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
 {% endhint %}
 
-![](../../../../.gitbook/assets/livemap_config.png)
+![Sonoran CAD - Live Map Admin Panel Config](../../../../.gitbook/assets/image%20%28203%29.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
 2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
+   * Learn more about [setting your live map port](./#using-different-ports).
 3. Click "Save and Deploy" to deploy your live map.
 
 Click Save And Deploy. After a few seconds, the live map should appear as a button on most CAD screens \(Police, Dispatch, etc\) and will auto-update with your unit positions.
@@ -170,7 +171,7 @@ Custom map images are limited to 30MB each. **However, if you are uploading more
 
 ## Using Different Ports
 
-If you are not using the default map port `30121` you will need to change the configuration.
+If you are not using the default live map port \(`30121`\) you will need to change the configuration.
 
 Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **one** additional open port not being used by any other service.
 
