@@ -50,7 +50,7 @@ This requires the resource `sonoran_livemap` to be loaded. This is bundled with 
 
 1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 #### ERROR: Couldn't start resource sonoran\_livemap
 
 Particularly with **Linux**, some users have an additional installation step.
