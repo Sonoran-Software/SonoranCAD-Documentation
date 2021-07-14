@@ -8,6 +8,26 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.14.1 7/14/2021
+
+{% tabs %}
+{% tab title="New" %}
+Server Selector - Loading  
+- Added a loading screen when switching servers to prevent confusion on delay.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Server Selector  
+- Fixed an issue causing a failure when trying to switch servers in the fire, police, ems, or dispatch page.
+
+Custom Records - Image  
+- Fixed an issue causing the custom record image field to not display the uploader.
+
+Taskbar - Pinned Windows  
+- Fixed an issue causing the pinned windows on the taskbar to not load after more than one visit back to the community menu.
+{% endtab %}
+{% endtabs %}
+
 ### 3.14.0 7/11/2021
 
 {% tabs %}
