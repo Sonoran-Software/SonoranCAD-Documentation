@@ -46,7 +46,9 @@ Follow the [standard plugin installation guide](../../plugin-installation/) for 
 
 ### 4. Configuration
 
-This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base resource.
+This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base framework installation.
+
+#### A. Start the sonoran\_livemap Resource
 
 1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
@@ -62,9 +64,11 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 
 ![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
 
-#### A. Live Map Configuration
+#### B. Live Map Resource Configuration
 
-**Convars:**
+**sonoran\_livemap Convars:**
+
+The following convars can be set in your `server.cfg` file:
 
 | Name | Type | Default Value | Description |
 | :--- | :--- | ---: | :--- |
@@ -75,7 +79,14 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 
 All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000. **You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
 
-#### Config File Options
+If you are using a Live Map port other than the default \(`30121`\) you will need to specify this in your `server.cfg` file. [Learn more about using a different live map port](./#using-different-ports).
+
+Be sure to add this line above the `ensure sonoran_livemap` line.  
+Ex: `set socket_port 30000`
+
+#### Livemap Plugin Config File Options:
+
+The following config options are also available for customization in the livemap plugin config:
 
 | Config Option | Description |
 | :--- | :--- |
@@ -85,22 +96,20 @@ All above convars are set via the `set` command in your server config, such as `
 | useCadName | Use in-CAD name for online units? false uses in-game name or ESX name \(if [esxsupport plugin](../esx-support.md) is loaded\) |
 | infoDisplayNames | Localization/translation options |
 
-#### B. Admin Panel Configuration
+#### C. Admin Panel Configuration
 
 {% hint style="warning" %}
-IMPORTANT: You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
+I**MPORTANT:** You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
 {% endhint %}
 
 ![Sonoran CAD - Live Map Admin Panel Config](../../../../.gitbook/assets/image%20%28204%29.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
-2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
+2. Map Port: The port you specified via `socket_port` [above](./#b-live-map-resource-configuration) or the default, which is `30121`.
    * Learn more about [setting your live map port](./#using-different-ports).
 3. Click "Save and Deploy" to deploy your live map.
 
-Click Save And Deploy. After a few seconds, the live map should appear as a button on most CAD screens \(Police, Dispatch, etc\) and will auto-update with your unit positions.
-
-#### C. Port Forwarding
+#### D. Port Forwarding
 
 You will need to port forward specified in the Map Port.  
 This port is accessed by Sonoran CAD to serve position data and view the blips.  
