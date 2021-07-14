@@ -50,15 +50,17 @@ This requires the resource `sonoran_livemap` to be loaded. This is bundled with 
 
 1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
+{% hint style="info" %}
 #### ERROR: Couldn't start resource sonoran\_livemap
-
-![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
 
 Particularly with **Linux**, some users have an additional installation step.
 
 First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.
 
 You will have to do this step whenever the `sonoran_livemap` resource is updated.
+{% endhint %}
+
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
 
 #### A. Live Map Configuration
 
@@ -89,7 +91,7 @@ All above convars are set via the `set` command in your server config, such as `
 IMPORTANT: You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
 {% endhint %}
 
-![Sonoran CAD - Live Map Admin Panel Config](../../../../.gitbook/assets/image%20%28203%29.png)
+![Sonoran CAD - Live Map Admin Panel Config](../../../../.gitbook/assets/image%20%28204%29.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
 2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
