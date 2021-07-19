@@ -6,7 +6,7 @@ description: The EVENT_RECORD_ADD is sent when a new record has been added in th
 
 {% hint style="warning" %}
 This push event requires the **pro** version of Sonoran CAD or higher.  
-For more information, see our [pricing ](../../../pricing/faq/)page.
+For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 ### EVENT\_RECORD\_ADD
@@ -27,7 +27,7 @@ Note: This event will NOT be fired when adding a record via API, as your server 
 
 The `record` object will contain the custom record object, in accordance with the record format below:
 
-{% page-ref page="../api-endpoints/general/custom-records/" %}
+{% page-ref page="../../api-endpoints/general/custom-records/" %}
 
 
 

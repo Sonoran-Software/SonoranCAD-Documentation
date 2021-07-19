@@ -1,17 +1,17 @@
 ---
-description: This endpoint sets your community's street sign configuration.
+description: This endpoint allows you to modify existing street signs.
 ---
 
-# Set Street Sign Config
+# Update Street Sign
 
 {% hint style="warning" %}
 This API endpoint requires the **pro** version of Sonoran CAD or higher.  
-For more information, see our [pricing ](../../../pricing/faq/)page.
+For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/SET\_STREETSIGN\_CONFIG" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/UPDATE\_STREETSIGN" %}
 {% api-method-summary %}
-Set Street Sign Config
+Update Street Sign
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -30,7 +30,7 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-SET\_STREETSIGN\_CONFIG
+UPDATE\_STREETSIGN
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
@@ -70,26 +70,16 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "SET_STREETSIGN_CONFIG",
+    "type": "UPDATE_STREETSIGN",
     "data": [
         {
           "serverId": 1, // Server Id
-          "signConfig": [
-              {
-                  "id": 1,
-                  "label": "Some street sign",
-                  "text1": "",
-                  "text2": "",
-                  "text3": ""
-              },
-              {
-                  "id": 2,
-                  "label": "Another street sign",
-                  "text1": "",
-                  "text2": "",
-                  "text3": ""
-              }
-          ]
+          "signData": {
+              "ids": [1, 2],
+              "text1": "",
+              "text2": "",
+              "text3": ""
+          }
 		    }
     ]
 }
