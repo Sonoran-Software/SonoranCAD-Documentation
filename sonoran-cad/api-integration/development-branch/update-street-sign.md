@@ -4,6 +4,11 @@ description: This endpoint allows you to modify existing street signs.
 
 # Update Street Sign
 
+{% hint style="warning" %}
+This API endpoint requires the **pro** version of Sonoran CAD or higher.  
+For more information, see our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
+
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/UPDATE\_STREETSIGN" %}
 {% api-method-summary %}
 Update Street Sign

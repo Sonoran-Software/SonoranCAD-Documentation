@@ -4,6 +4,11 @@ description: This endpoint sets your community's street sign configuration.
 
 # Set Street Sign Config
 
+{% hint style="warning" %}
+This API endpoint requires the **pro** version of Sonoran CAD or higher.  
+For more information, see our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
+
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/SET\_STREETSIGN\_CONFIG" %}
 {% api-method-summary %}
 Set Street Sign Config
