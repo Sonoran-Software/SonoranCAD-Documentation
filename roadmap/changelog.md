@@ -8,6 +8,55 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.14.2 7/18/2021
+
+{% tabs %}
+{% tab title="New" %}
+Permission Update - Auto Update UI  
+- Editing a user's permissions will now live update these without requiring them to refresh their page. This makes the Discord permissions sync feature more seamless.
+
+Discord Bot - Multi-Server  
+- The Discord bot now supports permission sync with multiple different servers for a single community.
+
+Discord Bot - linkme  
+- The discord bot now automatically runs the /syncme command after linking your secret ID.
+
+API: set\_streetsign\_config  
+- Added an endpoint to set the street sign configuration in the CAD. This is for an upcoming integration plugin.
+
+API: update\_streetsign  
+- Added an endpoint to update street signs in the CAD from in-game. This is for an upcoming integration plugin.
+
+Push Event: event\_streetsign\_updated  
+- Added a push event for when street signs are updated in the CAD. This is for an upcoming integration plugin.
+
+Push Event: event\_record\_add  
+- Added a push event when records are added.
+
+Push Event: event\_record\_edit  
+- Added a push event when records are edited.
+
+Push Event: event\_record\_remove  
+- Added a push event when records are removed.
+
+Websocket Connection - Keepalive  
+- Added a manual keepalive heartbeat from server to client in attempt to prevent Cloudflare from closing some user's websocket connections, resulting in an unstable connection.
+{% endtab %}
+
+{% tab title="Changed" %}
+Mobile Taskbar Focus  
+- The taskbar search no longer auto-focuses for tablet devices.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Secret ID - Default Blank  
+- Fixed an issue causing the secret ID to be blank for some users, requiring a refresh before utilizing it.
+
+Dispatch Update Call - Duplication  
+- Fixed an issue where dispatchers would see call notes duplicated if they manually updated the call.
+{% endtab %}
+{% endtabs %}
+
 ### 3.14.1 7/14/2021
 
 {% tabs %}
