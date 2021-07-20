@@ -11,6 +11,13 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ## Customizing Tones
 
+{% hint style="danger" %}
+There is an active bug preventing users from direct-uploading custom tones \(v3.13.0\).
+
+**This has been patched on the web version only.**  
+Communities will need to use the web version to upload tones until the next release.
+{% endhint %}
+
 ### 1. Access the Customization Menu
 
 In the admin page, navigate to `Customization` &gt; `Customization` &gt; `Tone Board`
