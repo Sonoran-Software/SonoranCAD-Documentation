@@ -9,9 +9,10 @@
 
 * [🏆 Why Choose Sonoran CAD?](why-choose-sonoran-cad/about.md)
 
-## Sonoran Servers
+## Other Products
 
-* [🖥️ Server Hosting](sonoran-servers/server-hosting.md)
+* [🖥️ Server Hosting](other-products/server-hosting.md)
+* [📝 Sonoran CMS](other-products/sonoran-cms.md)
 
 ## Tutorials
 

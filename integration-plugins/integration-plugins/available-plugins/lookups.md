@@ -13,7 +13,7 @@ This plugin is currently only used as a dependency for other plugins, and **does
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../sonoran-servers/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
 This plugin Implements name and plate lookups via the CAD.
