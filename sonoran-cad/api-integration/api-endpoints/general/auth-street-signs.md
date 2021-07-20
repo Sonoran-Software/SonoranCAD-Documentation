@@ -1,24 +1,21 @@
 ---
-description: >-
-  This endpoint allows you to retrieve your community's server configuration.
-  This contains valuable Live Map configuration data and can be used to ensure
-  correct Live Map configs.
+description: This endpoint authenticates the use of our integrated street signs plugin.
 ---
 
-# Get Servers
+# Auth Street Signs
 
 {% hint style="warning" %}
-API endpoint requires the **Plus** version of Sonoran CAD or higher.  
+This API endpoint requires the **Pro** version of Sonoran CAD or higher.  
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_servers" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/general/auth\_streetsigns" %}
 {% api-method-summary %}
-Get Servers
+Authenticate Street Signs
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to retrieve your community's server configuration. This contains valuable Live Map configuration data and can be used to ensure correct Live Map configs.
+This endpoint authenticates the use of our integrated street signs plugin.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,11 +30,11 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-GET\_SERVERS
+AUTH\_STREETSIGNS
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
-Array of request objects
+{% api-method-parameter name="data" type="object" required=true %}
+Request object
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -49,23 +46,7 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-{
-  "servers": [
-    {
-      "id": 1,
-      "name": "Server 1",
-      "description": "Default server description",
-      "signal": null,
-      "mapUrl": "https://cadapi.dev.sonoransoftware.com/map/community/map_example/index.html",
-      "mapIp": "123.456.78.9",
-      "mapPort": "30121",
-      "listenerPort": "0000",
-      "enableMap": false,
-      "mapType": "POSTAL",
-      "isStatic": false
-    }
-  ]
-}
+Success
 ```
 {% endapi-method-response-example %}
 
@@ -75,10 +56,8 @@ The following 400 errors may be sent in response:
 {% endapi-method-response-example-description %}
 
 ```http
-INVALID REQUEST TYPE
-INVALID COMMUNITY ID
-API IS NOT ENABLED FOR THIS COMMUNITY
-INVALID API KEY
+Error: Server ID: x has IP set to: '1.2.3.4' -> your IP: '4.3.2.1'
+Server not found with ID: 123
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -89,8 +68,10 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "GET_SERVERS",
-    "data": []
+    "type": "AUTH_STREETSIGNS",
+    "data": {
+        "serverId": 1
+    }
 }
 ```
 

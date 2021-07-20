@@ -1,6 +1,8 @@
+---
+description: This endpoint verifies a user account's secret ID.
+---
+
 # Verify Secret
-
-
 
 {% hint style="warning" %}
 This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
@@ -12,7 +14,7 @@ Get Account
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to retrieve information on a specified account in your community.
+This endpoint verifies a user account's secret ID.
 {% endapi-method-description %}
 
 {% api-method-spec %}
