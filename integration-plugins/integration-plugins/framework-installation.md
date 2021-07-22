@@ -88,6 +88,8 @@ Add the following to your `server.cfg` \(if you don't want pNotify or wraith, le
 
 {% hint style="danger" %}
 It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
+
+**DO NOT** start the whole \[sonorancad\] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
 ```javascript
