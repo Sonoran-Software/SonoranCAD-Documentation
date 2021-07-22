@@ -2,7 +2,7 @@
 description: Adds support for ESX to other plugins.
 ---
 
-# ESX Support
+# ESX Support \(QBUS\)
 
 
 
@@ -12,6 +12,8 @@ This plugin only functions with other plugins that require the **standard** vers
 
 {% hint style="info" %}
 ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
+
+**QBUS and QBUS "renamed" frameworks like RepentzFW will also work with this plugin**
 {% endhint %}
 
 {% hint style="success" %}
