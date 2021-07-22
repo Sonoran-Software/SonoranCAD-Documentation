@@ -31,7 +31,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-**View one of our plugin showcase videos** [**here**](https://www.youtube.com/watch?v=pfE3HdCF20o)**!**
+**View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
 
 ![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
 

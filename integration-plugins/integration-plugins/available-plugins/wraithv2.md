@@ -20,6 +20,10 @@ Click to view our [WraithV2 plate reader and lookup installation video](https://
 
 **Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
+## Showcase Video
+
+View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
+
 ## Installation Guide
 
 ### 1. Download and Install the Framework
