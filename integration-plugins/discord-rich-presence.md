@@ -67,7 +67,7 @@ Back in the admin customization menu, we can paste the Discord application's Cli
 
 ![Sonoran CAD - Custom Discord Presence Config](../.gitbook/assets/image%20%28215%29.png)
 
-Once saved, your Discord presence for all community members will reflect your custom icon, title, and buttons. **Updating the presence icon will require you to restart the desktop application!**
+Once saved, your Discord presence for all community members will reflect your custom icon, title, and buttons.
 
 ![Sonoran CAD - Custom Discord Presence View](../.gitbook/assets/image%20%28214%29.png)
 
