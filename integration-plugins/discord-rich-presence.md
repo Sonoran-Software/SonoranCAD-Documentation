@@ -32,7 +32,7 @@ Navigate to Admin &gt; Customization &gt; Customization &gt; Discord Rich Presen
 #### For communities on the **Standard** plan or higher:
 
 - Button \#2 may be customized to any [Sonoran CAD](../tutorials/customization/custom-login-page.md#in-game-tablet) or [Sonoran CMS](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms) invitation link.  
-- Ex: `https://sonorancad.com/#/?id=mycommunityid` or `https://sonorancms.com/#/?id=mycommunityid`
+- Ex: `https://sonorancad.com/#/?comid=mycommunityid` or `https://sonorancms.com/#/?comid=mycommunityid`
 
 #### For communities on the Pro plan:
 
