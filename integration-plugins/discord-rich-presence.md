@@ -9,7 +9,7 @@ description: Our desktop app allows you to advertise your community right in Dis
 {% endhint %}
 
 {% hint style="info" %}
-Rich presence is included with all versions of Sonoran CAD, but customization requires the **Standard** plan or higher.  
+Rich presence is included with all versions of Sonoran CAD, but customization requires the **Standard** plan or higher, and the **Pro** plan for complete customization with the icon.  
 For more information, see our [pricing](../pricing/faq/) or view how to check your community [limits](../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -41,7 +41,7 @@ Navigate to Admin &gt; Customization &gt; Customization &gt; Discord Rich Presen
 
 ### Customizing the Icon
 
-Communities on the Pro version may customize the rich presence icon:
+Communities on the **Pro** version may customize the rich presence icon:
 
 #### 1. Create a new Discord Application
 

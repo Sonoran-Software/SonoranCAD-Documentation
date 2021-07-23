@@ -12,9 +12,5 @@ Sonoran CMS is the most advanced, in-depth, and customizable Community Managemen
 
 Our community management system is your all-in-one tool suite for custom applications, patrol logs, rosters, and more!
 
-Learn more at the link below: 
-
-{% page-ref page="sonoran-cms.md" %}
-
-
+[Learn more about Sonoran CMS!](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms)
 
