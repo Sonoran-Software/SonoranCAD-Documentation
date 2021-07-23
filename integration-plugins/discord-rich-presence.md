@@ -37,7 +37,7 @@ Navigate to Admin &gt; Customization &gt; Customization &gt; Discord Rich Presen
 #### For communities on the Pro plan:
 
 - Both buttons may be customized to any URL desired.  
-- The Icon can also be customized with a Discord developer application.
+- The Icon and title can also be customized with a Discord developer application.
 
 ### Customizing the Icon
 
