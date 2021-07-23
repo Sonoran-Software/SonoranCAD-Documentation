@@ -21,21 +21,65 @@ When running our [desktop application](../downloads/), Discord can automatically
 
 ## Customizing your Rich Presence
 
-{% hint style="info" %}
-The invite button will only display in Discord's rich presence if both the `label` and `Community ID` fields have a value.
-{% endhint %}
+![Sonoran CAD - Discord Presence Customization](../.gitbook/assets/image%20%28211%29.png)
+
+### Customizing Buttons
+
+Discord presence currently allows for two customizable buttons.
 
 Navigate to Admin &gt; Customization &gt; Customization &gt; Discord Rich Presence
 
-Communities can customize the invite button in your CAD. This invite button can invite users to your Sonoran CAD community or direct users to your community's new member application with [Sonoran CMS](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms).
+#### For communities on the **Standard** plan or higher:
 
-![Sonoran CAD - Customize Discord Rich Presence](../.gitbook/assets/image%20%28210%29.png)
+- Button \#2 may be customized to any [Sonoran CAD](../tutorials/customization/custom-login-page.md#in-game-tablet) or [Sonoran CMS](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms) invitation link.  
+- Ex: `https://sonorancad.com/#/?id=mycommunityid` or `https://sonorancms.com/#/?id=mycommunityid`
 
-You will need your [Sonoran CAD community ID](../tutorials/getting-started/finding-your-community-id-and-authentication-code.md), or [Sonoran CMS community ID](https://info.sonorancms.com/tutorials/getting-started/view-your-limits). Additionally, the button text can be customized for more info.
+#### For communities on the Pro plan:
+
+- Both buttons may be customized to any URL desired.  
+- The Icon can also be customized with a Discord developer application.
+
+### Customizing the Icon
+
+Communities on the Pro version may customize the rich presence icon:
+
+#### 1. Create a new Discord Application
+
+On [https://discord.com/developers/applications](https://discord.com/developers/applications) create a new application
+
+![Discord Developer - New Application](../.gitbook/assets/image%20%28213%29.png)
+
+#### 2. Copy your Client ID
+
+Under OAuth2, copy your `Client ID` 
+
+![Discord Developer - Application Client ID](../.gitbook/assets/image%20%28216%29.png)
+
+#### 3. Add an Icon
+
+Next, upload an icon for your new application. Be sure to copy down the name of the icon for later.
+
+![Discord Developer - Application Icon](../.gitbook/assets/image%20%28212%29.png)
+
+#### 4. Configure in Sonoran CAD
+
+Back in the admin customization menu, we can paste the Discord application's Client ID and Icon name.
+
+![Sonoran CAD - Custom Discord Presence Config](../.gitbook/assets/image%20%28215%29.png)
+
+Once saved, your Discord presence for all community members will reflect your custom icon, title, and buttons. **Updating the presence icon will require you to restart the desktop application!**
+
+![Sonoran CAD - Custom Discord Presence View](../.gitbook/assets/image%20%28214%29.png)
 
 ## Toggle On/Off Rich Presence
 
-In the settings menu, you can toggle this display on or off for your individual desktop client.
+### Community Toggle
+
+To hide the invite button for your community's Discord rich presence, simply leave the button text and URL blank.
+
+### User Toggle
+
+In the settings menu, users can toggle this display on or off for their individual desktop client.
 
 ![Sonoran CAD Settings - Disable Discord&apos;s Rich Presence](../.gitbook/assets/image%20%28207%29.png)
 
