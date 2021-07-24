@@ -10,7 +10,7 @@ Get Version
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API endpoint allows communities with a large number of penal codes to set them easily with a single API call.
+This API endpoint is used to check the subscription version of your Sonoran CAD community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
