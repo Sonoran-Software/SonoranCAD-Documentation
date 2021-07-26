@@ -78,6 +78,7 @@
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
+    * [Smart Signs](integration-plugins/integration-plugins/available-plugins/smart-signs.md)
     * [TeamSpeak 3](integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)

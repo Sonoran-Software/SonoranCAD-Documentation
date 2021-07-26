@@ -22,6 +22,14 @@ Learn more about our [geographical customization](geographical-settings.md).
 
 ## Import 10-Codes from a Spreadsheet \(CSV\)
 
+Sonoran CAD allows you to import 10-codes directly from a spreadsheet.
+
+{% hint style="danger" %}
+**Spreadsheet \(CSV\) importing is only supported directly from Google sheets.**
+
+Support will not be provided to users modifying their spreadsheets with Excel, or any other program. The official Google sheet includes specific safety checks preventing invalid formats, blank spaces, etc.
+{% endhint %}
+
 ### 1. Copy the Google Sheet
 
 Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsheets/u/1/d/1QKKhrwBQQW2JMqeDplU_alo_CHPi0ML4KlYOEuPN4vs/copy) and make a copy. Using a copy of our official sheet ensures your 10-codes are formatted correctly.

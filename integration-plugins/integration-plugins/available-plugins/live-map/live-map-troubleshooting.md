@@ -25,7 +25,7 @@ Players will only show on the map when **ALL** of the following conditions are m
 
 ## ERROR: Couldn't start resource sonoran\_livemap
 
-![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%28203%29.png)
 
 Particularly with **Linux**, some users have an additional installation step,[ per the installation guide](./).
 

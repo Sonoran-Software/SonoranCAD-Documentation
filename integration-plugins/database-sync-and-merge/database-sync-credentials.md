@@ -134,7 +134,7 @@ Login to your Zap Hosting Account and Navigate to your FiveM Server.
 
 Scroll down until you see **TOOLS** on the left hand side of your screen and select **`Databases`.**
 
-![ZAP Hosting Tools - Database](../../.gitbook/assets/image%20%28139%29%20%283%29%20%283%29%20%282%29.png)
+![ZAP Hosting Tools - Database](../../.gitbook/assets/image%20%28139%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
 #### 3. View Database Credentials
 

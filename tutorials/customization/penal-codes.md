@@ -54,6 +54,12 @@ Learn more about our [geographical customization](geographical-settings.md).
 
 Sonoran CAD allows you to easily import your penal codes from a spreadsheet \(.CSV\) file.
 
+{% hint style="danger" %}
+**Spreadsheet \(CSV\) importing is only supported directly from Google sheets.**
+
+Support will not be provided to users modifying their spreadsheets with Excel, or any other program. The official Google sheet includes specific safety checks preventing invalid formats, blank spaces, etc.
+{% endhint %}
+
 ### 1. Copy the Google Sheet
 
 Navigate to our [official penal code Google sheet ](https://docs.google.com/spreadsheets/u/0/d/10TCczXferWWFi8sYtccrqocRZ4WdpKB1s4hwRm2Iy6I/copy)and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.

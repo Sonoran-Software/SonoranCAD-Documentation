@@ -62,7 +62,7 @@ First, run `start webpack` in your server console _before_ running `start sonora
 You will have to do this step whenever the `sonoran_livemap` resource is updated.
 {% endhint %}
 
-![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%28203%29.png)
 
 #### B. Live Map Resource Configuration
 
