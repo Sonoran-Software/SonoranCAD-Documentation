@@ -55,6 +55,14 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 ![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
 
+### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
+
+![Sonoran CAD x London Studios](../.gitbook/assets/image%20%28217%29.png)
+
+We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD!
+
+[Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/integration-plugins/available-plugins/smart-signs.md)
+
 ### 💻 Multitasking Window and Tab System
 
 Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
