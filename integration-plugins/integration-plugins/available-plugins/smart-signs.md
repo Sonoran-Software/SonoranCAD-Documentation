@@ -30,7 +30,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click[ HERE ](https://store.londonstudios.net/)to download the Sonoran CAD Smart Sign plugin .zip file from London Studios.
+1. Click HERE to download the free Sonoran CAD Smart Sign plugin .zip file from London Studios.
 
 ### 3. Install the Plugin and all Dependencies
 
