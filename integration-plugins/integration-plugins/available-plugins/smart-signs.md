@@ -40,7 +40,9 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 The downloaded zip file contains both the `smartsigns` plugin and the `stream` folder.
 
-Copy the `stream` folder to the inside of your main `[sonorancad]` framework directory.
+Copy the `stream` folder to the `[sonorancad]/sonorancad/` directory.
+
+![Sonoran CAD - Smart Signs Stream Directory](../../../.gitbook/assets/image%20%28219%29.png)
 
 ### 5. Configure your Sign Locations
 
