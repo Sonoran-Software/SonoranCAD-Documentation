@@ -46,6 +46,16 @@ The `stream` assets folder must be copied over to the `[sonorancad]/sonorancad` 
 
 ![Smart Signs - Stream Assets](../../../.gitbook/assets/image%20%28219%29.png)
 
+### 5.5 TEMPORARY FIX: Update SonoranCAD FXManifest File Manually
+
+{% hint style="danger" %}
+The v2.6.3 `fxmanifest.lua` file has a small error in it and the updated file is going to be released soon in v2.6.4.
+{% endhint %}
+
+Please manually update `[sonorancad]/sonorancad/fxmanifest.lua` with the [following file](https://raw.githubusercontent.com/Sonoran-Software/SonoranCADLuaIntegration/v2.6.4-StreamFolder_FolderStructurer_fixes/sonorancad/fxmanifest.lua).
+
+![Updated FXManifest File](../../../.gitbook/assets/image%20%28221%29.png)
+
 ### 6. Set your Game Server IP/Port
 
 In the Admin panel, navigate to Advanced &gt; In-Game Integration &gt; Push Events and Live Map
