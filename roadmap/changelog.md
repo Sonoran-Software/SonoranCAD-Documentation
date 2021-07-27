@@ -8,6 +8,43 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.15.0 7/27/2021
+
+{% tabs %}
+{% tab title="New" %}
+Street Signs Integration  
+- Our new street signs integration plugin and UI allows you to modify in-game street signs right from the CAD! This is visible for dispatchers and users in the DMV page.
+
+Street Signs - Permission  
+- Added a new permission to allow users to modify street signs in the dispatch and DMV page. By default, only the CAD owner will have this new permission.
+
+Discord RPC  
+- The desktop application now adds rich presence info and buttons to your Discord profile. You can customize the invite link to your Sonoran CAD community, or your community's Sonoran CMS new member application.
+
+Dispatch Signal - Draggable Window  
+- Desktop users only now can access the dispatch signal window as a draggable/lockable window and not a popup modal.
+
+Tabs - Quick Close  
+- On tabs with multiple minimized windows, the preview will display a close button to more efficiently close multiple tabs.
+{% endtab %}
+
+{% tab title="Changed" %}
+Push Event: Detach Unit  
+- The EVENT\_UNIT\_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Custom Login Pages  
+- Fixed an issue causing requests for custom login page info to fail.
+
+Record Lookup - Fire and EMS  
+- Fixed a permissions error preventing fire and EMS users from searching for a character or vehicle to import into a custom record.
+
+10-Codes CSV Upload - Null Check  
+- Added a null/empty string check when importing and setting 10-codes.
+{% endtab %}
+{% endtabs %}
+
 ### 3.14.2 7/18/2021
 
 {% tabs %}

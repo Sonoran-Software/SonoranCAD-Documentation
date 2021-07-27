@@ -50,7 +50,15 @@ The `stream` assets folder must be copied over to the `[sonorancad]/sonorancad` 
 
 ![Smart Signs - Stream Assets](../../../.gitbook/assets/image%20%28219%29.png)
 
-### 6. Modifying Signs in the CAD
+### 6. Set your Game Server IP/Port
+
+In the Admin panel, navigate to Advanced &gt; In-Game Integration &gt; Push Events and Live Map
+
+Ensure your game server's IP and game port are set. The CAD will use this to push sign updates to your server.
+
+![Sonoran CAD - Push Event Panel](../../../.gitbook/assets/image%20%28220%29.png)
+
+### 7. Modifying Signs in the CAD
 
 The street sign panel can be found in both the Dispatch and DMV pages. Users will need the `Modify Street Signs` permissions in order to update them.
 
