@@ -6,10 +6,6 @@ description: >-
 
 # Smart Signs
 
-{% hint style="danger" %}
-**This plugin has not yet been released.**
-{% endhint %}
-
 ![Sonoran CAD x London Studios](../../../.gitbook/assets/image%20%28217%29.png)
 
 ![London Studios - Smart Signs](../../../.gitbook/assets/image%20%2850%29.png)
