@@ -4,10 +4,6 @@ description: Our desktop app allows you to advertise your community right in Dis
 
 # Discord Rich Presence
 
-{% hint style="danger" %}
-**THIS FEATURE HAS NOT YET BEEN RELEASED.**
-{% endhint %}
-
 {% hint style="info" %}
 Rich presence is included with all versions of Sonoran CAD, but customization requires the **Standard** plan or higher, and the **Pro** plan for complete customization with the icon.  
 For more information, see our [pricing](../pricing/faq/) or view how to check your community [limits](../tutorials/getting-started/view-your-limits.md).
