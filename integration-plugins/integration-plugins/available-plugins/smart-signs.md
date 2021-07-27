@@ -36,19 +36,13 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Follow the [standard plugin installation guide](../plugin-installation/) for the Smart Signs plugin.
 
-### 4. Copy the Stream Folder
-
-The downloaded zip file contains both the `smartsigns` plugin and the `stream` folder.
-
-Copy the `stream` folder to the `[sonorancad]/sonorancad/` directory.
-
-![Sonoran CAD - Smart Signs Stream Directory](../../../.gitbook/assets/image%20%28219%29.png)
-
-### 5. Configure your Sign Locations
+### 4. Configure your Sign Locations
 
 In the `config_smartsigns.lua` file, you can specify sign locations and labels.
 
-### 6. Modifying Signs in the CAD
+The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](https://docs.londonstudios.net/#document-6).
+
+### 5. Modifying Signs in the CAD
 
 The street sign panel can be found in both the Dispatch and DMV pages. Users will need the `Modify Street Signs` permissions in order to update them.
 
