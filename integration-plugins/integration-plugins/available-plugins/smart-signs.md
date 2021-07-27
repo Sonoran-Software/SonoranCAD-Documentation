@@ -42,7 +42,15 @@ In the `config_smartsigns.lua` file, you can specify sign locations and labels.
 
 The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](https://docs.londonstudios.net/#document-6).
 
-### 5. Modifying Signs in the CAD
+### 5. Copy the Stream Assets Folder
+
+The downloaded zip file contains both the `smartsigns` plugin and the `stream` assets folder.
+
+The `stream` assets folder must be copied over to the `[sonorancad]/sonorancad` directory.
+
+![Smart Signs - Stream Assets](../../../.gitbook/assets/image%20%28219%29.png)
+
+### 6. Modifying Signs in the CAD
 
 The street sign panel can be found in both the Dispatch and DMV pages. Users will need the `Modify Street Signs` permissions in order to update them.
 
