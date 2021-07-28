@@ -40,7 +40,7 @@ If you have the original London Studios SmartSigns resource **please remove and/
 
 In the `config_smartsigns.lua` file, you can specify sign locations and labels.
 
-The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](https://docs.londonstudios.net/#document-6).
+The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration).
 
 ### 5. Copy the Stream Assets Folder
 
@@ -56,19 +56,19 @@ Ensure your game server's IP and game port are set. The CAD will use this to pus
 
 ![Sonoran CAD - Push Event Panel](../../../.gitbook/assets/image%20%28220%29.png)
 
-### 7. Modifying Signs in the CAD
+## How to use
 
-The street sign panel can be found in both the Dispatch and DMV pages. Users will need the `Modify Street Signs` permissions in order to update them.
+### In-Game Usage
+
+This script works by approaching a sign. When a player approaches a sign and are in the range of the control panel, they are able to edit the text of the sign if they meet the required permission checks. The resource has been optimized so that the signs will load and unload for players based on how close they are to each sign which is perfect for larger servers as it means that server resources will not be used unnecessarily.
+
+### Modifying Signs in the CAD
+
+The street sign panel can be found on both the Dispatch and DMV pages. Users will need the `Modify Street Signs` permissions in order to update them.
 
 Here, you can easily search to filter sign labels. Sign text can also be easily duplicated from one sign to another.
 
 ![Sonoran CAD - Street Signs UI](../../../.gitbook/assets/streetsigns.gif)
-
-## How to use
-
-### Usage
-
-This script works by approaching a sign. When a player approaches a sign and are in the range of the control panel, they are able to edit the text of the sign if they meet the required permission checks. The resource has been optimized so that the signs will load and unload for players based on how close they are to each sign which is perfect for larger servers as it means that server resources will not be used unnecessarily.
 
 ### Full Feature List
 
