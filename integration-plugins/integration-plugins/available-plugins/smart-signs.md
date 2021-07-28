@@ -179,7 +179,7 @@ This command will spawn a sign prop in which can be repositioned with the follow
 **N** — rotate sign anti-clockwise  
 **ENTER** — finish placement
 
-Once you press ENTER you will recieve a notification in the bottom left of your screen with the coordinates. You can then type these into your config file and the sign will be spawned next time you start the **smartsigns** resource.
+Once you press ENTER you will receive a notification in the bottom left of your screen with the coordinates. You can then type these into your config file and the sign will be spawned next time you start the **smartsigns** resource.
 
 ## Permission Checks
 
