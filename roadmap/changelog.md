@@ -8,6 +8,24 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.15.1 7/30/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Server Selector  
+- Fixed an issue where navigating to and from the community menu would display the incorrect server in the server selector, even though you were properly logged into the correct one.  
+  
+Change Server - Login  
+- Fixed an issue where an undisposed event handler would be registered multiple times with menu navigations, causing multiple unit logins when switching your server.  
+  
+Active Units - Dispatch Flag  
+- Fixed an issue causing units to display the dispatch flag incorrectly in the active units panel.
+
+Modify Signs Permission - Translation  
+- Fixed an issue causing a translation file error with the modify signs permission label.
+{% endtab %}
+{% endtabs %}
+
 ### 3.15.0 7/27/2021
 
 {% tabs %}
