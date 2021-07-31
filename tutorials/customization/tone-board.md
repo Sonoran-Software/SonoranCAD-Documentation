@@ -43,6 +43,14 @@ Tone buttons support icons from several different web libraries. Clicking the se
 
 Don't forget to press save!
 
+## Selecting the Tone "Play To" Groups
+
+The tone board can be set to play tones for specific identifiers, groups, agencies, departments, subdivisions, and dispatch calls.
+
+You can click on any one of these items and select "Tone Board" to add this group to the play target on the tone board.
+
+![Sonoran CAD - Tone Board Targets](../../.gitbook/assets/234d6952821e29dc788b4d10c92e5622.gif)
+
 ## Playing Tones as Dispatch
 
 ### Opening the Tone Board Window
@@ -66,7 +74,7 @@ If you filter down the options to a single tone, the search label will turn gree
 
 The tone board is also designed to auto-focus this search box whenever it is opened, or the header is clicked.
 
-![Tone Board - Filtering](../../.gitbook/assets/image%20%28199%29.png)
+![Sonoran CAD - Tone Board](../../.gitbook/assets/image%20%28231%29.png)
 
 #### Hotkey Auto-Window
 
