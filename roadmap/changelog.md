@@ -13,7 +13,7 @@ _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android an
 {% tabs %}
 {% tab title="New" %}
 Tones - Specific Users  
-- The toneboard now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
+- The tone board now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
 
 Dispatch Call - Presave Data  
 - Dispatchers can now save filled call templates for use with common calls.
