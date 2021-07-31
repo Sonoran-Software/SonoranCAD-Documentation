@@ -11,13 +11,6 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ## Customizing Tones
 
-{% hint style="danger" %}
-There is an active bug preventing users from direct-uploading custom tones \(v3.13.0\).
-
-**This has been patched on the web version only.**  
-Communities will need to use the web version to upload tones until the next release.
-{% endhint %}
-
 ### 1. Access the Customization Menu
 
 In the admin page, navigate to `Customization` &gt; `Customization` &gt; `Tone Board`
@@ -35,7 +28,7 @@ Here, you can add new tones and specify the following:
 
 #### Tone Icons
 
-Tone buttons support icons from several different web libraries. Clicking the search icon will open the Font Awesome icon library search. Here, you can search for an icon - click on it - and paste the icon name into the CAD.
+Tone buttons support icons from several different web libraries. Clicking the search icon will open the [Font Awesome icon library](https://fontawesome.com/v5.15/icons) search. Here, you can search for an icon - click on it - and paste the icon name into the CAD. You can also use [material theme icons](https://fonts.google.com/icons).
 
 ![Font Awesome - Example Icon Name](../../.gitbook/assets/image%20%28198%29.png)
 
@@ -78,11 +71,11 @@ The tone board is also designed to auto-focus this search box whenever it is ope
 
 #### Hotkey Auto-Window
 
-[Global hotkeys](../other-features/configurable-hotkeys.md) allow you open the tone board in a more advanced way. Opening the tone board with your [keyboard ](../other-features/configurable-hotkeys.md)or [Streamdeck ](../../integration-plugins/stream-deck-integration.md)shortcut will first check for any existing tone board window opened or minimized. If one is found, that existing window will be opened and focused to the search bar. Otherwise, a new tone board window will be opened with the search box focused.
+[Global hotkeys](../other-features/configurable-hotkeys.md) allow you to open the tone board in a more advanced way. Opening the tone board with your [keyboard ](../other-features/configurable-hotkeys.md)or [Streamdeck ](../../integration-plugins/stream-deck-integration.md)shortcut will first check for any existing tone board window opened or minimized. If one is found, that existing window will be opened and focused to the search bar. Otherwise, a new tone board window will be opened with the search box focused.
 
 #### Manual Tone Select
 
-Instead of using the search filtering, users can also manually click the tone board button to play the audio.
+Instead of using the search box filtering, users can also manually click the tone board button to play the audio.
 
 
 
