@@ -8,6 +8,50 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.16.0 7/31/2021
+
+{% tabs %}
+{% tab title="New" %}
+Tones - Specific Users  
+- The toneboard now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
+
+Dispatch Call - Presave Data  
+- Dispatchers can now save filled call templates for use with common calls.
+
+Lookup - Disable Partial  
+- The lookup window now has a partial search toggle, allowing you to run a standard partial search or filter an exact search term. Your preference is also saved to the local device for any new windows.
+
+Active Units Dropdown - Icons  
+- Added icons to the active units dropdown menu for faster selection.
+
+API: Partial Lookup  
+- The API lookup by name/plate now includes a partial flag to toggle a partial or exact search. If undefined, a partial is assumed as default.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Community Customization - Save  
+- Fixed an issue causing the community customization info to not properly save.
+
+Civilian Records - No Partial  
+- The civilian lookup panel ensures all lookups are exact, preventing partial matches from showing.
+
+Custom Record - UID Values  
+- Added additional safety checks and sanitization for communities that somehow manage to manually add dashes to custom field UID values, resulting in an SQL syntax error if the fields are indexed for unique or custom search values.
+
+Smart Signs - Cancel Edit  
+- Fixed an issue causing the smart signs UI to duplicate the sign if you cancel an edit. Resulting from Lua's 1 based indices vs JS 0 based indices.
+
+Tone Board - Hotkey  
+- Fixed an issue causing the tone board hotkey from not properly detecting if a tone board already existed, resulting in a new window every time.
+
+Dispatch Call Notes - Reversed  
+- Fixed an issue causing the call notes for dispatch to be in reversed history for the initial load in.
+
+Checkout - Set Community ID  
+- Fixed an issue where the popup to set your community ID after purchasing a subscription would be blank.
+{% endtab %}
+{% endtabs %}
+
 ### 3.15.1 7/30/2021
 
 {% tabs %}
