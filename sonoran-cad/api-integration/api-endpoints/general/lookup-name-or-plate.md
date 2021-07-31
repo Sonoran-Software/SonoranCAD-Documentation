@@ -87,7 +87,8 @@ INVALID EMPTY SEARCH
             "first": "John", // (Partial) First name
             "last": "Doe", // (Partial) Last name
             "mi": "M", // Middle Initial
-            "plate": "1234ABCD" // (Partial) License Plate
+            "plate": "1234ABCD", // (Partial) License Plate
+            "partial": true, // OPTIONAL - Partial lookup is ran if not defined
         }
     ]
 }
