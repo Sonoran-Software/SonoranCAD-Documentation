@@ -15,7 +15,14 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
-This plugin notifies officers of incoming calls and allows them to attach to calls via command. When the officer is attached to the dispatch call their GPS is automatically routed to the postal code. GPS routing is updated whenever the dispatch postal is updated and civilians making the emergency call are also notified when an officer is en-route.
+This plugin
+
+* Notifies officers of incoming calls
+* [Allows officers to attach to calls via command](dispatch-notify.md#2-officer-attaches-to-the-call)
+* Automatically routes attached units to the postal code
+* Unit GPS routing is updated whenever the dispatch postal is updated
+* [Allows the call postal and GPS routing to be automatically updated to the primary unit's location](dispatch-notify.md#primary-unit-tracking-pursuit)
+* Notifies the civilian making the emergency call when an officer is en-route.
 
 ## Video Showcase
 
@@ -37,11 +44,17 @@ If you haven't already, be sure to install and configure the [plugin framework](
 1. Follow the [standard plugin installation guide](../plugin-installation.md) for the callcommands plugin.
 2. Optionally, install the [postals](postals.md) plugin as well.
 
-### 4. Set Your API ID
+### 4. Add your Game Server IP and Port
+
+Be sure to have your game server IP and port set in the admin panel under `Advanced` &gt; `In-Game Integration` &gt; `Server Events and Integrated Live Map`
+
+![Sonoran CAD - Server IP and Port](../../../.gitbook/assets/image%20%28220%29.png)
+
+### 5. Set Your API ID
 
 Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
-### 5. Configuration
+### 6. Configuration
 
 Review the `config_dispatchnotify.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
 
