@@ -63,6 +63,8 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/integration-plugins/available-plugins/smart-signs.md)
 
+[View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
+
 ### 💻 Multitasking Window and Tab System
 
 Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.

@@ -18,6 +18,10 @@ This plugin utilizes API endpoints that require the **Pro** version of Sonoran C
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
+## Video Showcase
+
+[View our video showcase of the Smart Signs plugin here!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
+
 ## Installation Guide
 
 ### 1. Download and Install the Framework
