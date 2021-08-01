@@ -59,7 +59,7 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 ![Sonoran CAD x London Studios](../.gitbook/assets/image%20%28217%29.png)
 
-We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD!
+We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
 [Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/integration-plugins/available-plugins/smart-signs.md)
 
