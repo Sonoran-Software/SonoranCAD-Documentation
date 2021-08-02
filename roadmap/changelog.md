@@ -20,6 +20,9 @@ Lookup - DB Sync
 
 Close Dispatch  
 - Fixed an issue where closing a call through a manual call update would fail.
+
+Record Searchable Fields - Trim Spaces  
+- Fixed an issue where searchable record fields were not having leading or trailing spaces trimmed.
 {% endtab %}
 {% endtabs %}
 
