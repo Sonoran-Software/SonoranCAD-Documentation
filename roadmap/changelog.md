@@ -8,6 +8,21 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.16.1 8/1/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Smart Signs - Push Events  
+ - Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
+
+Lookup - DB Sync  
+- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
+
+Close Dispatch  
+- Fixed an issue where closing a call through a manual call update would fail.
+{% endtab %}
+{% endtabs %}
+
 ### 3.16.0 7/31/2021
 
 {% tabs %}
