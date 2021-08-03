@@ -60,6 +60,7 @@
 
 ## Integration Capabilities <a id="integration-plugins"></a>
 
+* [📺 Twitch Overlay and Bot](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
 * [Discord Bot](integration-plugins/discord-bot/README.md)
