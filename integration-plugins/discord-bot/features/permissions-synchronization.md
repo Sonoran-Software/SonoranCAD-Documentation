@@ -58,11 +58,13 @@ To assist you, use this [Permission Mask Calculator](https://sonoran-software.gi
     </tr>
     <tr>
       <td style="text-align:left">/linkme &lt;secret ID&gt;</td>
-      <td style="text-align:left">Using the Secret ID, link your current discord account to SonoranCAD.</td>
+      <td style="text-align:left">Using the Secret ID, link your current discord account to SonoranCAD. <b>Primary Server Only</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">/changesecret &lt;new secret&gt;</td>
-      <td style="text-align:left">Update the Secret Key mapping your Discord to SonoranCAD.</td>
+      <td style="text-align:left">Update the Secret Key mapping your Discord to SonoranCAD. <b>Primary Server Only</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">/caduser</td>

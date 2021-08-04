@@ -24,6 +24,10 @@ To begin the setup process, use the `/setup` command that should have appeared o
 
 **3. Invite to Additional Servers**
 
+{% hint style="info" %}
+The /linkme command is only used on the primary server. Your users will automatically be associated with the secondary server\(s\).
+{% endhint %}
+
 If your community has multiple discord servers \(for example, a LEO or civilian only server\), you can invite the bot to these servers as well and use the role mapping functionality. 
 
 ## Commands Reference
