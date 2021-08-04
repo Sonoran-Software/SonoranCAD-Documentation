@@ -20,6 +20,10 @@ Setting up the bot requires you to have the "Manage Server" permissions on the D
 
 #### 2. Run the Setup Command
 
+{% hint style="danger" %}
+The `s!setup` command no longer works. Please use the new command in the instructions.
+{% endhint %}
+
 To begin the setup process, use the `/setup` command that should have appeared on your server as a slash command. You will need the Community ID and API Key for this step. Once set up, the bot will automatically set up the other commands for permissions sync and other features.
 
 **3. Invite to Additional Servers**
