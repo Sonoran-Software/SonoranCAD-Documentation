@@ -252,5 +252,9 @@ Back in our database sync editor, we can now see the new `Job` field has been ad
 
 ### The given key 'XXXXX' was not present in the dictionary
 
-MariaDB Server 10.6.1 Beta is known to cause issues with the .Net Connectors. It is recommended to downgrade to the latest stable build \(10.5.10\).
+MariaDB Server 10.6.1+ Beta is known to cause issues with the .Net Connectors. It is recommended to downgrade to the latest stable build \(10.5.10\).
+
+This issue is also often for users self-hosting their own database and not having the proper .Net Connectors installed. Due to the issue's scope, we are unable to provide much support.
+
+You can learn more about installing these on your MySQL server here: [https://dev.mysql.com/doc/connector-net/en/connector-net-installation.html](https://dev.mysql.com/doc/connector-net/en/connector-net-installation.html)
 
