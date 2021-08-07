@@ -22,32 +22,16 @@ Our Twitch bot can also be configured to send out chat messages when data is mod
 
 The overlay is immensely customizable, allowing you to customize every piece of data displayed.
 
-### 1. Adding the Overlay to OBS
+### 1. Access the Overlay
 
-[OBS Studio](https://obsproject.com/) is recommended for use of this overlay, but other stream casting software may also be used. The browser source type supports native transparency, and can even update in the background while minimized.
-
-In OBS, add a new `Browser` source.
-
-Set the URL to `https://sonorancad.com` and customize the `Width` and `Height` properties to your screen size.
-
-![OBS - New Browser Source](../.gitbook/assets/image%20%28240%29.png)
-
-![OBS - Browser Properties](../.gitbook/assets/image%20%28238%29.png)
-
-### 2. Interact with the Browser Source
-
-In OBS, right click on your new browser source to "interact" with it on the screen. By running the browser source through OBS, native transparency will be supported and processing can run in the background.
-
-Then, login to Sonoran CAD as you normally would.
-
-![OBS - Browser Interaction](../.gitbook/assets/image%20%28233%29.png)
-
-### 3. Access the Overlay
+{% hint style="info" %}
+It is recommended to configure and save your overlay layout in a regular web browser. This layout is saved on the account level and will be persisted to your OBS browser window.
+{% endhint %}
 
 While using the OBS browser, In the police, fire, or EMS page select the "Stream Overlay" button in the taskbar.  
 This can be found under `System` &gt; `Stream Overlay` or by searching for it in the search bar.
 
-### 4. Customize the Data and Font
+### 2. Customize the Data and Font
 
 The overlay has multiple window types. The `Unit & Call Data` window can display customizable unit and call data. The `Call Notes` window will display the live notes section of your attached call.
 
@@ -98,7 +82,7 @@ Here, you can change the font, color, size, weight, and alignment.
 
 ![Stream Overlay - Font Customization](../.gitbook/assets/image%20%28237%29.png)
 
-### 5. Customize the Window
+### 3. Customize the Window
 
 Each window can also have a customizable background. You can set the color with a HEX or RGB code.  
 Or, use custom CSS for the `background` property.
@@ -107,11 +91,39 @@ Ex: `linear-gradient(0deg, rgba(228,0,54,1) 0%, rgba(149,0,228,1) 35%);`
 
 ![Stream Overlay - Custom CSS Background](../.gitbook/assets/image%20%28236%29.png)
 
-### 6. Start the Overlay
+### 5. Save your Layout
 
-The window can be easily dragged around and resized. Once you've customized the window to your liking, select `LOCK WINDOW`.
+Make sure you SAVE your layout. This layout configuration is saved on the account level, and will persist to your stream layout loaded in OBS.
 
-You can also toggle on `Stream Mode` in the top toolbar. This will hide the toolbar on your stream.
+### 6. Adding the Overlay to OBS
+
+[OBS Studio](https://obsproject.com/) is recommended for use of this overlay, but other stream casting software may also be used. The browser source type supports native transparency, and can even update in the background while minimized.
+
+In OBS, add a new `Browser` source.
+
+Set the URL to `https://sonorancad.com` and customize the `Width` and `Height` properties to your screen size.
+
+![OBS - New Browser Source](../.gitbook/assets/image%20%28240%29.png)
+
+![OBS - Browser Properties](../.gitbook/assets/image%20%28238%29.png)
+
+### 7. Interact with the Browser Source
+
+In OBS, right click on your new browser source to "interact" with it on the screen. By running the browser source through OBS, native transparency will be supported and processing can run in the background.
+
+Then, login to Sonoran CAD as you normally would. Access the police, fire, or EMS page and enable the stream overlay mode.
+
+![OBS - Browser Interaction](../.gitbook/assets/image%20%28233%29.png)
+
+{% hint style="info" %}
+Tip: In the OBS browser, be sure to set the community as your default in the community menu.  
+  
+Then, overlay will automatically resume when reloaded.
+{% endhint %}
+
+### 8. Start the Overlay
+
+You can toggle on `Stream Mode` in the top toolbar. This will hide the toolbar on your stream.
 
 Once a window is locked, the data will be displayed and update in real-time. You can now use Sonoran CAD on your regular web, desktop, or mobile app and watch the OBS browser window update.
 
