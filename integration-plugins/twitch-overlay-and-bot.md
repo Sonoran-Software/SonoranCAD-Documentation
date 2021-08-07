@@ -42,7 +42,9 @@ To add a window, select `New` &gt; {Window Type}
 {% hint style="warning" %}
 The free version of the stream overlay is designed for trialing. This is limited to three \(3\) live data keys and one \(1\) Unit & Call Data window type. The Twitch bot is also unavailable with the free version.
 
-[Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)
+**If you have more than three {keys} the rest beyond this will not update.**
+
+\*\*\*\*[Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)
 {% endhint %}
 
 #### Data Keys
@@ -134,7 +136,7 @@ To unlock a window, right-click and select `Unlock Window`.
 Sonoran CAD's stream overlay also comes with a configurable Twitch bot. This bot will send out chat updates when unit or call data is updated.
 
 {% hint style="warning" %}
-The Twitch bot is not included with the free version of the Stream Overlay.  
+The Twitch bot is **not included with the free version** of the Stream Overlay.  
   
 [Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)
 {% endhint %}
