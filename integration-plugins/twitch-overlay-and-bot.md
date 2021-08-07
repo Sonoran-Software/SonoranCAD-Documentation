@@ -158,6 +158,8 @@ Now, whenever one of those data fields is updated, your Twitch bot will send a c
 
 The free version of the livestream overlay allows anyone to test out the basic functionality. The free version does not allow use of the Twitch bot, and is locked to a single unit/call data window with a maximum of three "data keys".
 
+The full version of Sonoran CAD's livestream overlay and Twitch bot is available for $7.99/mo.
+
 Users can purchase a license to the full version in their billing center:
 
 {% page-ref page="../pricing/faq/create-and-manage-a-subscription.md" %}
