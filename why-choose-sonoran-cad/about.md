@@ -65,6 +65,14 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
+### 📺 Twitch Bot and Overlay
+
+Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
+
+![](../.gitbook/assets/live-banner.png)
+
+![](../.gitbook/assets/overlay.gif)
+
 ### 💻 Multitasking Window and Tab System
 
 Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
