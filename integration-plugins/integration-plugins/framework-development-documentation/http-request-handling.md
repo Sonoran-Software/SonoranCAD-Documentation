@@ -41,15 +41,15 @@ Send a payload to trigger a specific HTTP event that was defined in the plugin c
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="data" type="object" required=false %}
+{% api-method-parameter name="data" type="object" required=true %}
 A JSON object containing the payload to be sent
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="type" type="string" required=false %}
+{% api-method-parameter name="type" type="string" required=true %}
 The registered type this data should be sent to
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="key" type="string" required=false %}
+{% api-method-parameter name="key" type="string" required=true %}
 Your API Key
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
