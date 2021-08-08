@@ -98,6 +98,8 @@
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
     * [WraithV2](integration-plugins/integration-plugins/available-plugins/wraithv2.md)
   * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
+  * [Framework Development Documentation](integration-plugins/integration-plugins/framework-development-documentation/README.md)
+    * [HTTP Request Handling](integration-plugins/integration-plugins/framework-development-documentation/http-request-handling.md)
 
 ## Developer API Documentation <a id="sonoran-cad"></a>
 
