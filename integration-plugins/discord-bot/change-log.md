@@ -4,6 +4,14 @@ description: Changes to Sonoran Bot.
 
 # Change Log
 
+### 2021-08-08
+
+{% tabs %}
+{% tab title="Updates" %}
+* Add new `/changeprimary` command to allow admins to change what guild should the bot consider to be the "primary" for the purposes of commands.
+{% endtab %}
+{% endtabs %}
+
 ## 2021-07-04
 
 {% tabs %}

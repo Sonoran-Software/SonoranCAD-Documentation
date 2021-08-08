@@ -25,8 +25,17 @@ description: 'List of all bot commands. <> are required arguments, [] are option
 | Command | Arguments | Description | Permission Needed |
 | :--- | :--- | :--- | :--- |
 | setprefix | &lt;newprefix&gt; | Sets a new command prefix for the bot. | Manage Server |
-| setup | None | Begins the setup process. | Administrator |
 | showrolemap | None | Shows the current role mapping setup. | Administrator |
 
-This list was last updated on 5/29/2021. Use the `help` command for an updated list of commands you have access to.
+## Slash Commands Reference
+
+The following commands are general commands for controlling the bot's behavior. Features may add additional commands to the bot.
+
+| Command | Arguments | Description | Permission Needed |
+| :--- | :--- | :--- | :--- |
+| setup | None | Sets up a new guild. | Manage Server |
+| changeprimary | newguildid | Change the primary server the bot will use. This affects the linking commands. | Manage Server |
+| caduser | \[discordid\] | Shows if you have connected with SonoranCAD properly. | Everyone |
+
+This list was last updated on 8/8/2021. Use the `help` command for an updated list of commands you have access to.
 
