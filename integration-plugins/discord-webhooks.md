@@ -64,6 +64,12 @@ Toggle the desired notification events for the specific webhook. Press the “Sa
 _Note:_ Some webhooks allow you to customize the notification settings even further. For example, you can specify to only receive a webhook when a police record is added, edited or removed.
 {% endhint %}
 
+### 7. Integrate Reactions with Sonoran Bot
+
+Our official [Discord bot](discord-bot/) allows you to react to webhooks like a dispatch call notification to attach, or a record notification to view it in your CAD.
+
+[Leard more about this integration!](discord-bot/features/webhook-actions.md)
+
 ### Footer Metadata
 
 Webhook footers contain metadata that can be pulled from a bot for further integration.  
@@ -78,11 +84,13 @@ These follow the format: `USERNAME or UUID` \| `TYPE` \| `ID`
 | 2: PENAL\_CODES |  |
 | 3: SIGNAL | Signal Value |
 | 4: ACCOUNT |  |
-| 5: NEW\_DISPATCH | Call ID |
-| 6: EDIT\_DISPATCH | Call ID |
+| 5: NEW\_DISPATCH | Call ID \| Server ID |
+| 6: EDIT\_DISPATCH | Call ID \| Server ID |
 | 7: CLOSE\_DISPATCH | Call ID |
-| 8: EMERGENCY | Call ID |
+| 8: EMERGENCY | Call ID \| Server ID |
 | 9: RECORD\_ADD | Record ID |
 | 10: RECORD\_EDIT | Record ID |
 | 11: RECORD\_REMOVE | Record ID |
+| 12: TONE\_PLAYED | Tone Label |
+| 999: SYSTEM | Systemwide Broadcast \(From Sonoran\) |
 

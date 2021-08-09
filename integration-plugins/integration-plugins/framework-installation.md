@@ -11,7 +11,7 @@ All Sonoran CAD integration plugins require the **standard** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!  
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!  
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
@@ -43,7 +43,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 {
     "communityID": "",
     "apiKey": "",
-    "apiUrl": "https://api.sonorancad.com/",
+    "mode": "production",
     "postTime": 5000,
     "serverId": "1",
     "primaryIdentifier": "steam",
@@ -53,7 +53,10 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
     "statusLabels": ["UNAVAILABLE", "BUSY", "AVAILABLE", "ENROUTE", "ON_SCENE"],
     "allowAutoUpdate": true,
     "autoUpdateUrl": "https://raw.githubusercontent.com/Sonoran-Software/SonoranCADLuaIntegration/{branch}/sonorancad/version.json",
-    "allowUpdateWithPlayers": false
+    "allowUpdateWithPlayers": false,
+    "noUnitTimer": false,
+    "enableCanary": false,
+    "forceSetApiId": false
 }
 ```
 
@@ -75,10 +78,19 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | allowAutoUpdate | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours. |
 | autoUpdateUrl | Where to check for updated versions. Don't touch this unless you have a reason. |
 | allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players. |
+| noUnitTimer | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache. |
+| enableCanary | When enabled, allows the CAD to update to beta \(aka canary\) releases. |
+| forceSetApiId | When enabled, the tablet resource will show an alert message stating they must set their API ID. |
 
 ### 4. Server Config
 
 Add the following to your `server.cfg` \(if you don't want pNotify or wraith, leave those out\):
+
+{% hint style="danger" %}
+It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
+
+**DO NOT** start the whole \[sonorancad\] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
+{% endhint %}
 
 ```javascript
 ensure pNotify
@@ -90,6 +102,14 @@ ensure tablet
 add_ace resource.sonorancad command allow
 add_ace resource.sonoran_updatehelper command allow
 ```
+
+### 4.5. Convar Overrides
+
+Starting with framework version 2.6.2, you can override any configuration option in your `config.json` file by specifying a convar before the sonorancad resource starts.
+
+For example, `set sonoran_serverId 2` in your server configuration will set the server ID of your server to `2` regardless of what `config.json` is set to. This is useful for communities that share the same resources.
+
+IMPORTANT: This feature does not work with arrays \(like statusLabels\). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
 
 ### 5. Configure Push Events
 
@@ -112,6 +132,10 @@ Learn more about [configuring multiple servers](../../tutorials/customization/co
 Check out our [Available Plugins](available-plugins/) to make the integration useful.  
 For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.  
 You can also view our [standard plugin installation guide](plugin-installation/).
+
+### 7. Using the wk\_wars2x Radar
+
+As of new installations, the configuration file has been renamed to prevent it being overwritten by updates. To use the radar for the first time, you must rename the file `config.dist.lua` within the `wk_wars2x` folder to `config.lua`.
 
 ## Updates
 

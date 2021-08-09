@@ -4,7 +4,7 @@ description: >-
   available to gaming communities. Check out some of our latest features below!
 ---
 
-# 🏆 Why Choose Sonoran CAD
+# 🏆 Why Choose Sonoran CAD?
 
 ![](../.gitbook/assets/layout_3_11.gif)
 
@@ -31,7 +31,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-**View one of our plugin showcase videos** [**here**](https://www.youtube.com/watch?v=pfE3HdCF20o)**!**
+**View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
 
 ![Sonoran CAD&apos;s custom plugin framework and installation system!](../.gitbook/assets/image%20%2849%29.png)
 
@@ -39,7 +39,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
 
-​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more!
+​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more! You can even [react to webhooks](../integration-plugins/discord-bot/features/webhook-actions.md) like dispatch events to attach your unit, or react to record webhooks to view the full record in the CAD.
 
 ### 🌎 Full Translation and Locality Support
 
@@ -54,6 +54,24 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time and displays 911 call blips! We even take care of hosting the live map for you!
 
 ![Sonoran CAD&apos;s custom live map!](../.gitbook/assets/live_map.png)
+
+### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
+
+![Sonoran CAD x London Studios](../.gitbook/assets/image%20%28217%29.png)
+
+We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
+
+[Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/integration-plugins/available-plugins/smart-signs.md)
+
+[View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
+
+### 📺 Twitch Bot and Overlay
+
+Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
+
+![](../.gitbook/assets/live-banner.png)
+
+![](../.gitbook/assets/overlay.gif)
 
 ### 💻 Multitasking Window and Tab System
 

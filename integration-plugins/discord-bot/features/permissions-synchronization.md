@@ -57,20 +57,38 @@ To assist you, use this [Permission Mask Calculator](https://sonoran-software.gi
         after initially setting your API ID in SonoranCAD.</td>
     </tr>
     <tr>
-      <td style="text-align:left">/codelink</td>
-      <td style="text-align:left">Sends you the link to the Permission Mask Calculator.</td>
+      <td style="text-align:left">/linkme &lt;secret ID&gt;</td>
+      <td style="text-align:left">Using the Secret ID, link your current discord account to SonoranCAD. <b>Primary Server Only</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/changesecret &lt;new secret&gt;</td>
+      <td style="text-align:left">Update the Secret Key mapping your Discord to SonoranCAD. <b>Primary Server Only</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/caduser</td>
+      <td style="text-align:left">Checks if you have correctly linked your Discord account to SonoranCAD.</td>
     </tr>
   </tbody>
 </table>
 
 ### User Setup
 
-1. Every user in the Discord can use the command `/myid` to get their Discord ID.
-2. Every user will paste this Discord ID as a new [API ID in the CAD](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+1. Every user in the Discord will get their[ Secret ID from their Settings page](../../../sonoran-cad/api-integration/getting-started/account-secret-id.md).
+2. Every user in the Discord will then use `/linkme <secretid>` to link their SonoranCAD account to their current Discord account. This will automatically populate their API ID.
 3. Community members can use the `/syncme` command in Discord to force a permissions sync.
 4. Communities should **no longer use public permission keys in the CAD**, as the bot will automatically remove CAD permissions from users if they don't have a Discord role for it.
 
 Now, whenever a role is added or removed, the bot will automatically update the user's permissions to match! If the user ever leaves the server, the bot will immediately remove all permissions from their account, although they will still be in the community.
+
+### Changing your Account Secret ID
+
+Sometimes, you may wish to change your secret ID. If you do so from the [Settings page](../../../sonoran-cad/api-integration/getting-started/account-secret-id.md), you must use the `/changesecret <new key>` command or the bot will remove all your permissions on SonoranCAD \(if the optional security setting below is enabled\).
+
+### Optional Security Setting
+
+By default, the bot will not remove permissions from users who do not have a matching secret key to their Discord ID. This can be enabled by setting `stripUnmappedUsers` to true with the `s!setting` command.
 
 ### Best Practices and FAQ
 

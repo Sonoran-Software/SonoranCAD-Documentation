@@ -40,7 +40,7 @@ Array of request objects
 A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
-```
+```text
 0 - FREE
 1 - STARTER
 2 - STANDARD

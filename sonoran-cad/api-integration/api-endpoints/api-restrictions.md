@@ -20,7 +20,9 @@ description: >-
 | emergency/[close\_call](emergency/close-call.md) | Plus |
 | emergency/[get\_active\_units](emergency/get-active-units.md) | Plus |
 | emergency/[get\_calls](emergency/get-calls.md) | Plus |
-| emergency/[set\_call\_postal](emergency/update-call-postal.md) |  |
+| emergency/[set\_call\_postal](emergency/update-call-postal.md) | Plus |
+| emergency/[set\_streetsign\_config](emergency/set-street-sign-config.md) | Pro |
+| emergency/[update\_streetsign](emergency/update-street-sign.md) | Pro |
 | civilian/[get\_characters](civilian/get-characters.md) | Standard |
 | civilian/[new\_character](civilian/new-character.md) | Standard |
 | civilian/[edit\_character](civilian/edit-character.md) | Standard |
@@ -42,4 +44,5 @@ description: >-
 | general/[get\_version](general/get-version.md) | Free |
 | general/[get\_servers](general/get-servers.md) | Plus |
 | general/[set\_servers](general/set-servers.md) | Plus |
+| general/[auth\_streetsigns](general/auth-street-signs.md) | Pro |
 

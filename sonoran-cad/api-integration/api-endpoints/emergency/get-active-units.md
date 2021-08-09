@@ -54,6 +54,7 @@ A successful call will be met with the following response:
      "isPanic": false, // PANIC State
      "location": "1234 E. Test Ave",
      "aop": "South District",
+     "isDispatch": false,
      "data": {
              "apiId1": "STEAM:1234", // API ID - Typically Steam Hex
              "apiId2": "STEAM:1234", // API ID - Typically Steam Hex
@@ -93,7 +94,8 @@ INVALID API KEY
     "type": "GET_ACTIVE_UNITS",
     "data": [
         {
-            "serverId": 1 // Default 1 - See guide on setting up multiple servers
+            "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "onlyUnits": true // Don't show active dispatchers (OPTIONAL: Default = TRUE if undefined)
         },
     ]
 }

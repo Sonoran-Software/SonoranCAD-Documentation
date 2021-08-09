@@ -1,17 +1,18 @@
 # Table of contents
 
 * [Sonoran CAD](README.md)
-* [Download The App](downloads/README.md)
+* [📱Download The App](downloads/README.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
 
 ## Why Choose Sonoran CAD?
 
-* [🏆 Why Choose Sonoran CAD](why-choose-sonoran-cad/about.md)
+* [🏆 Why Choose Sonoran CAD?](why-choose-sonoran-cad/about.md)
 
-## VPS Hosting <a id="vps-hosting-1"></a>
+## Other Products
 
-* [🖥️ VPS Hosting](vps-hosting-1/vps-hosting.md)
+* [🖥️ Server Hosting](other-products/server-hosting.md)
+* [📝 Sonoran CMS](other-products/sonoran-cms.md)
 
 ## Tutorials
 
@@ -23,6 +24,7 @@
   * [View Your Limits](tutorials/getting-started/view-your-limits.md)
   * [Finding your Community ID and Authentication Code](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 * [Customization](tutorials/customization/README.md)
+  * [Custom Domain & Login Page](tutorials/customization/custom-login-page.md)
   * [Customizing Your Layout](tutorials/customization/customizing-your-layout.md)
   * [Community Branding and Settings](tutorials/customization/community-branding-and-info.md)
   * [Creating Custom Record and Report Types](tutorials/customization/creating-custom-record-and-report-types.md)
@@ -33,7 +35,8 @@
   * [10-Codes](tutorials/customization/10-codes.md)
   * [Addresses and Street Names](tutorials/customization/addresses-and-street-names.md)
   * [Unit Status Codes](tutorials/customization/unit-status-codes.md)
-  * [Custom Login Page](tutorials/customization/custom-login-page.md)
+  * [Tone Board](tutorials/customization/tone-board.md)
+  * [Custom Audio Notifications](tutorials/customization/custom-audio-notifications.md)
   * [Custom Emails](tutorials/customization/custom-emails.md)
   * [Quick Links](tutorials/customization/quick-links.md)
   * [Custom Page Colors](tutorials/customization/custom-page-colors.md)
@@ -48,6 +51,7 @@
   * [Adding a Criminal Record](tutorials/records-management/adding-a-criminal-record.md)
   * [PDF Records](tutorials/records-management/pdf-records.md)
 * [Administration](tutorials/administration/README.md)
+  * [Remove User Account](tutorials/administration/remove-user-account.md)
   * [Deleting or Transferring your CAD](tutorials/administration/deleting-or-transferring-your-cad.md)
 * [Other Features](tutorials/other-features/README.md)
   * [Configurable Hotkeys](tutorials/other-features/configurable-hotkeys.md)
@@ -56,6 +60,7 @@
 
 ## Integration Capabilities <a id="integration-plugins"></a>
 
+* [📺 Twitch Overlay and Bot](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
 * [Discord Bot](integration-plugins/discord-bot/README.md)
@@ -63,6 +68,9 @@
   * [Commands Reference](integration-plugins/discord-bot/commands-reference.md)
   * [Features](integration-plugins/discord-bot/features/README.md)
     * [Permissions Synchronization](integration-plugins/discord-bot/features/permissions-synchronization.md)
+    * [Webhook Actions](integration-plugins/discord-bot/features/webhook-actions.md)
+  * [Change Log](integration-plugins/discord-bot/change-log.md)
+* [Discord Rich Presence](integration-plugins/discord-rich-presence.md)
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
 * [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
@@ -71,12 +79,11 @@
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
-    * [TeamSpeak 3](integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
     * [Civilian Integration](integration-plugins/integration-plugins/available-plugins/civilian-integration.md)
     * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
-    * [ESX Support](integration-plugins/integration-plugins/available-plugins/esx-support.md)
+    * [ESX Support \(QBUS\)](integration-plugins/integration-plugins/available-plugins/esx-support.md)
     * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
     * [Kick](integration-plugins/integration-plugins/available-plugins/kick.md)
     * [Locations](integration-plugins/integration-plugins/available-plugins/locations.md)
@@ -84,11 +91,15 @@
       * [Live Map Troubleshooting](integration-plugins/integration-plugins/available-plugins/live-map/live-map-troubleshooting.md)
     * [Lookups](integration-plugins/integration-plugins/available-plugins/lookups.md)
     * [Postals](integration-plugins/integration-plugins/available-plugins/postals.md)
+    * [Smart Signs](integration-plugins/integration-plugins/available-plugins/smart-signs.md)
     * [Tablet](integration-plugins/integration-plugins/available-plugins/tablet.md)
+    * [TeamSpeak 3](integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
     * [Traffic Stop](integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
     * [WraithV2](integration-plugins/integration-plugins/available-plugins/wraithv2.md)
   * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
+  * [Framework Development Documentation](integration-plugins/integration-plugins/framework-development-documentation/README.md)
+    * [HTTP Request Handling](integration-plugins/integration-plugins/framework-development-documentation/http-request-handling.md)
 
 ## Developer API Documentation <a id="sonoran-cad"></a>
 
@@ -96,7 +107,12 @@
   * [Getting Started](sonoran-cad/api-integration/getting-started/README.md)
     * [Retrieving Your Credentials](sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md)
     * [Integration API ID](sonoran-cad/api-integration/getting-started/setting-your-api-id.md)
+    * [Account Secret ID](sonoran-cad/api-integration/getting-started/account-secret-id.md)
   * [Push Events](sonoran-cad/api-integration/push-events/README.md)
+    * [Record Events](sonoran-cad/api-integration/push-events/record-events/README.md)
+      * [Record Added](sonoran-cad/api-integration/push-events/record-events/record-added.md)
+      * [Record Edited](sonoran-cad/api-integration/push-events/record-events/record-edited.md)
+      * [Record Removed](sonoran-cad/api-integration/push-events/record-events/record-removed.md)
     * [Unit Events](sonoran-cad/api-integration/push-events/unit-events/README.md)
       * [Unit Login](sonoran-cad/api-integration/push-events/unit-events/unit-login.md)
       * [Unit Logoff](sonoran-cad/api-integration/push-events/unit-events/unit-logoff.md)
@@ -112,6 +128,7 @@
       * [Detach Unit](sonoran-cad/api-integration/push-events/dispatch-events/detach-unit.md)
     * [Event 911](sonoran-cad/api-integration/push-events/event-911.md)
     * [Remove 911](sonoran-cad/api-integration/push-events/remove-911.md)
+    * [Sign Updated](sonoran-cad/api-integration/push-events/sign-updated.md)
   * [API Endpoints](sonoran-cad/api-integration/api-endpoints/README.md)
     * [API Restrictions](sonoran-cad/api-integration/api-endpoints/api-restrictions.md)
     * [Emergency](sonoran-cad/api-integration/api-endpoints/emergency/README.md)
@@ -127,6 +144,8 @@
       * [Update Call Primary](sonoran-cad/api-integration/api-endpoints/emergency/update-call-primary.md)
       * [Close Call](sonoran-cad/api-integration/api-endpoints/emergency/close-call.md)
       * [911 Call](sonoran-cad/api-integration/api-endpoints/emergency/911-call.md)
+      * [Set Street Sign Config](sonoran-cad/api-integration/api-endpoints/emergency/set-street-sign-config.md)
+      * [Update Street Sign](sonoran-cad/api-integration/api-endpoints/emergency/update-street-sign.md)
       * [Unit Panic](sonoran-cad/api-integration/api-endpoints/emergency/unit-panic.md)
       * [Update Unit Location](sonoran-cad/api-integration/api-endpoints/emergency/update-unit-location.md)
     * [Civilian](sonoran-cad/api-integration/api-endpoints/civilian/README.md)
@@ -152,6 +171,8 @@
       * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
       * [Modify Account Permissions](sonoran-cad/api-integration/api-endpoints/general/modify-account-permissions.md)
       * [Kick or Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
+      * [Verify Secret](sonoran-cad/api-integration/api-endpoints/general/verify-secret.md)
+      * [Auth Street Signs](sonoran-cad/api-integration/api-endpoints/general/auth-street-signs.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch.md)
 * [💵 Developer Bounties](sonoran-cad/developer-bounties.md)
 * [🌎 Translation Support](sonoran-cad/translation-support.md)

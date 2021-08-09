@@ -11,20 +11,28 @@ Click [HERE](https://www.youtube.com/watch?v=uFMhJa4jbCo) to watch our video tut
 ## Setup
 
 {% hint style="warning" %}
-Setting up the bot requires you to have Administrator permissions on the Discord server for security reasons. You must also have access to your server's [API Key information](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md).
+Setting up the bot requires you to have the "Manage Server" permissions on the Discord server for security reasons. You must also have access to your server's [API Key information](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md).
 {% endhint %}
 
 #### 1. Invite the Bot to Your Server
 
 [Invite the bot to your Discord server](https://discord.com/oauth2/authorize?client_id=747991263172755528&scope=bot%20applications.commands&permissions=805686352). You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
 
-#### 2. Receive the Setup Message
+#### 2. Run the Setup Command
 
-When the bot joins your server, it will attempt to post a message to the "System Channel" that the server has. If unset, the bot will attempt to DM the owner of the Discord server, but the owner doesn't need to be the one to set up the bot.
+{% hint style="danger" %}
+The `s!setup` command no longer works. Please use the new command in the instructions.
+{% endhint %}
 
-#### 3. Run the Setup Command
+To begin the setup process, use the `/setup` command that should have appeared on your server as a slash command. You will need the Community ID and API Key for this step. Once set up, the bot will automatically set up the other commands for permissions sync and other features.
 
-To begin the setup process, type `s!setup` in any channel the bot has access to. You will be sent a direct message \(DM\) with instructions. **Be sure DMs are enabled**! Follow the prompts from the bot to finish the setup process.
+**3. Invite to Additional Servers**
+
+{% hint style="info" %}
+The /linkme command is only used on the primary server. Your users will automatically be associated with the secondary server\(s\).
+{% endhint %}
+
+If your community has multiple discord servers \(for example, a LEO or civilian only server\), you can invite the bot to these servers as well and use the role mapping functionality. 
 
 ## Commands Reference
 

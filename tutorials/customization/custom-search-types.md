@@ -51,7 +51,13 @@ This will then allow you to search characters, licenses, or vehicle registration
 
 ![Sonoran CAD - Database Sync and Custom Searches](../../.gitbook/assets/image%20%28125%29.png)
 
-### 4. Run a Lookup
+### 4. Make a NEW Record
+
+With the exception of database sync records, any existing records with this field will **not** be searchable.
+
+You will need to create a new record with the custom searchable field in order to find it via custom lookup.
+
+### 5. Run a Lookup
 
 The lookup window will now display your new custom search types.  
 You can now search your records \(including database sync/merge\) using these custom search boxes.

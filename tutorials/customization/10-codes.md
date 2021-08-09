@@ -1,3 +1,7 @@
+---
+description: Learn more about importing your 10-codes into Sonoran CAD.
+---
+
 # 10-Codes
 
 ## What are 10-Codes?
@@ -17,6 +21,14 @@ Sonoran CAD allows you to change the naming of "10-Codes" to anything else you'd
 Learn more about our [geographical customization](geographical-settings.md).
 
 ## Import 10-Codes from a Spreadsheet \(CSV\)
+
+Sonoran CAD allows you to import 10-codes directly from a spreadsheet.
+
+{% hint style="danger" %}
+**Spreadsheet \(CSV\) importing is only supported directly from Google sheets.**
+
+Support will not be provided to users modifying their spreadsheets with Excel, or any other program. The official Google sheet includes specific safety checks preventing invalid formats, blank spaces, etc.
+{% endhint %}
 
 ### 1. Copy the Google Sheet
 

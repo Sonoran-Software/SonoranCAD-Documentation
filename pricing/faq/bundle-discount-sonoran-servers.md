@@ -2,7 +2,7 @@
 description: >-
   Not only do Sonoran Servers customers receive free CAD plugin installation,
   but can save 30% on your Sonoran CAD subscription every month when you
-  purchase a VPS from Sonoran Servers!
+  purchase a Windows Server from Sonoran Servers!
 ---
 
 # Free Plugin Installation and Discount - Sonoran Servers
@@ -11,9 +11,9 @@ description: >-
 
 ![](../../.gitbook/assets/banner_2.png)
 
-### 1. Purchase a VPS from Sonoran Servers
+### 1. Purchase a Windows Server Product from Sonoran Servers
 
-If you haven't already, [purchase any VPS plan from Sonoran Servers](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started).
+If you haven't already, [purchase any server plan with Windows as the operating system from Sonoran Servers](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started).
 
 ### 2. Contact Support
 
@@ -23,11 +23,15 @@ Reach out on our [customer support site](https://support.sonoransoftware.com) an
 
 ![Sonoran Servers &amp; Sonoran CAD - Bundle and Save!](../../.gitbook/assets/image%20%2889%29.png)
 
-### 1. Purchase a VPS from Sonoran Servers
+{% hint style="info" %}
+Sonoran Servers products that are less than $20/month are ineligable for this offer.
+{% endhint %}
 
-If you haven't already, [purchase any VPS plan from Sonoran Servers](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started).
+### 1. Purchase a Server from Sonoran Servers
 
-### 2. Copy Your VPS Account Information
+If you haven't already, [purchase any ](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started)[server plan with Windows as the operating system](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started)[ from Sonoran Servers](https://info.sonoranservers.com/tutorials/windows-server/purchasing-and-getting-started).
+
+### 2. Copy Your Server Account Information
 
 1. [Login ](https://sonoranservers.com/index.php?rp=/login)to your sonoranservers.com account.
 
@@ -39,15 +43,15 @@ If you haven't already, [purchase any VPS plan from Sonoran Servers](https://inf
 
 ![Sonoran Servers - Service Panel](../../.gitbook/assets/image%20%2886%29.png)
 
-3. Select your VPS plan.
+3. Select your Server plan.
 
 ![Sonoran Servers - Products &amp; Plans](../../.gitbook/assets/image%20%2884%29.png)
 
 4. View and copy your server IP address.
 
-![Sonoran Servers - VPS Information](../../.gitbook/assets/image%20%2883%29.png)
+![Sonoran Servers - Server Information](../../.gitbook/assets/image%20%2883%29.png)
 
-### 3. Link Your VPS Plan in Sonoran CAD
+### 3. Link Your Server Plan in Sonoran CAD
 
 1. Open the [Sonoran CAD billing portal](accessing-the-payment-center.md).
 2. On the CAD subscription you would like to apply the discount to, select "Bundle and Save"
@@ -58,7 +62,7 @@ If you haven't already, [purchase any VPS plan from Sonoran Servers](https://inf
 
 {% hint style="warning" %}
 This Email and Password is the one you use to login to https://sonoranservers.com  
-**NOT YOUR VPS PASSWORD**
+**NOT YOUR SERVER PASSWORD**
 {% endhint %}
 
 ![Sonoran CAD - Bundle and Save](../../.gitbook/assets/image%20%2885%29.png)
@@ -71,13 +75,13 @@ This Email and Password is the one you use to login to https://sonoranservers.co
 
 ### Discount Information
 
-One \(1\) 30% discount may be applied to one \(1\) Sonoran CAD subscription for every active VPS plan with Sonoran Servers.
+One \(1\) 30% discount may be applied to one \(1\) Sonoran CAD subscription for every active Server plan with Sonoran Servers.
 
-The 30% discount is applied to your Sonoran CAD subscription every month, for the lifetime of your Sonoran Servers VPS plan.
+The 30% discount is applied to your Sonoran CAD subscription every month, for the lifetime of your Sonoran Servers plan.
 
-Canceling your Sonoran Servers VPS plan will remove the bundle discount from your Sonoran CAD subscription.
+Canceling your Sonoran Servers plan will remove the bundle discount from your Sonoran CAD subscription.
 
-You may migrate the bundle discount to a different Sonoran CAD subscription at anytime. Doing so will remove the bundle discount from the old Sonoran CAD subscription.
+You may migrate the bundle discount to a different Sonoran CAD subscription at any time. Doing so will remove the bundle discount from the old Sonoran CAD subscription.
 
 ## Free Five PD Installation
 

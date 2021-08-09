@@ -4,7 +4,7 @@ description: Learn how to request roles in the Sonoran Software Discord server.
 
 # Request Discord Role
 
-See the guides below for claiming a `Customer`, `Instagram`, or `Twitter` role in our Discord.
+See the guides below for claiming a `Customer`or `Instagram` role in our Discord.
 
 #### Customer Lobby
 
@@ -12,7 +12,7 @@ The `Customer` role grants users access to the \#customer-lobby channel.
 
 #### General Lobby
 
-The `Instagram` and `Twitter` roles grant access to the \#general-lobby channel.
+The `Instagram` role grant access to the \#general-lobby channel.
 
 #### Advertising
 
@@ -39,16 +39,16 @@ On our [support website](https://support.sonoransoftware.com), select the "Disco
 ![Sonoran Support - Request Discord Role](../../.gitbook/assets/image%20%2862%29.png)
 {% endtab %}
 
-{% tab title="Instagram and Twitter" %}
+{% tab title="Instagram" %}
 #### 1. Copy your Discord Username
 
 In Discord, click your username to copy your Discord tag.
 
 ![Copy Discord Tag](../../.gitbook/assets/image%20%2842%29.png)
 
-#### 2. Follow us on Instagram and Twitter
+#### 2. Follow us on Instagram
 
-Follow us on our [Twitter ](https://twitter.com/sonoransoftware)and [Instagram](https://www.instagram.com/sonoransoftware/) accounts for the latest updates, announcements, special offers, and more!
+Follow us on our [Instagram](https://www.instagram.com/sonoransoftware/) accounts for the latest updates, announcements, special offers, and more!
 
 #### 3. Enter your Information
 

@@ -1,21 +1,24 @@
 ---
-description: Let us help you enable and configure database sync for your community.
+description: >-
+  Database Sync is a highly advanced feature allowing you to automatically pull
+  all character, license, and vehicle registration data from your own in-game
+  database directly to Sonoran CAD.
 ---
 
 # Database Sync and Merge
 
-{% hint style="info" %}
-Database Sync is not enabled with the free version of Sonoran CAD.  
+{% hint style="warning" %}
+Database Sync requires the **plus** version of Sonoran CAD or higher.  
+Database Merge requires the **pro** version of Sonoran CAD.
+
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
 {% endhint %}
 
-Database Sync is a read-only system. All characters, licenses, and vehicle registrations pulled from your database can not be modified in the CAD.  
-  
-Database Merge allows you to save off additional, manually specified data in the CAD.
+Database Sync is a highly advanced feature allowing you to automatically pull all character, license, and vehicle registration data from your own in-game database directly to Sonoran CAD.
 
 ## Video Configuration Tutorial
 
@@ -23,35 +26,39 @@ View our [video tutorial](https://youtu.be/UfMup7KkpEg) on enabling Database Syn
 
 ## Written Configuration Guide
 
-Configuring Sonoran CAD's Database Sync may seem complicated, but you are simply specifying your table names and column values.
+Configuring Sonoran CAD's Database Sync may seem complicated, but you are simply specifying your table names and column values where your in-game data is stored.
 
-REQUIRED fields in the CAD are shown in red. All other fields are optional, and are not required to work properly.
+REQUIRED fields in the CAD are shown in red. All other fields are optional and are not required to work properly.
 
-{% tabs %}
-{% tab title="Connection Credentials" %}
-### Connection Credentials
+## Connection Credentials
 
-{% hint style="warning" %}
-Sonoran CAD requires an **external** connection to your database.  
-  
-If you're unsure what your connection credentials are, [view our guide on retrieving your connection credentials.](database-sync-credentials.md)  
-  
-You will also need to ensure your database port is open and port forwarded. Typically, port`3306`is the default MySQL port.
-{% endhint %}
+In order for Sonoran CAD to connect to your SQL database, connection credentials must be configured properly.
 
-{% hint style="danger" %}
-Sonoran CAD never needs any permissions to write to your database.  
-To follow the best security practices, it's [recommended to create a new MySQL user with read-only permissions on your database tables](database-sync-credentials.md).
-{% endhint %}
+### 1. Retrieve your SQL Connection Credentials
 
-In order for Sonoran CAD to connect to your SQL database, connection credentials must be configured properly.  
-This section specifies the SQL connection string information.
+Sonoran CAD requires an **external** connection to your database.
 
-#### 1. Toggle the “Enable Database Sync”
+View our guide on creating a new read-only SQL user for external use.
 
-#### 2. Enter the required fields below.
+{% page-ref page="database-sync-credentials.md" %}
 
-![Sonoran CAD&apos;s Database Sync connection configuration](../../.gitbook/assets/sync_connection.png)
+### 2. Enable Database Sync and Merge
+
+Expand the `SQL Connection Credentials` section of the configuration, and toggle on Database Sync and the optional Database Merge feature.
+
+#### What is Database Merge?
+
+Database Merge is an additional feature that allows you to save off additional, manually specified data in the CAD.
+
+**Example:**
+
+DB Merge pulls a character record into the CAD, but the `address` field in your custom record is blank \(your DB doesn't have this info\). DB merge allows you to manually edit the record pulled from your database and edit any blank field.
+
+Next time you look up this character, it will pull the same character info from your database and then merge this with the manually specified data saved in Sonoran CAD.
+
+### 3. Enter the required fields below.
+
+![Sonoran CAD - DB Sync SQL Credentials](../../.gitbook/assets/image%20%28176%29.png)
 
 <table>
   <thead>
@@ -74,8 +81,8 @@ This section specifies the SQL connection string information.
           />
         </p>
         <p><em>Note:</em> This IP will never be <code>localhost</code> or <code>127.0.0.1</code>.
-          This must be the external IP or domain to reach your database. See the
-          warnings/notices above on creating an external connection.</p>
+          This must be the external IP or domain to reach your database. <a href="../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md">Learn more about creating an external SQL connection.</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -99,211 +106,155 @@ This section specifies the SQL connection string information.
   </tbody>
 </table>
 
-#### 3. Test the Connection
+### 3. Test the Connection
 
 Once the required SQL connection fields have been specified, select the “Test Connection” button.  
 This will query your database for the version.  
   
 If you see an alert similar to the following, your connection is successful:
 
-![Database Sync connection credentials successfully entered](../../.gitbook/assets/db_connected.png)
+![DB Sync - Connection Successful](../../.gitbook/assets/image%20%28155%29.png)
 
-#### 4. Save the Configuration
+If you see an error message, it's likely you have not [properly setup your new SQL user's credentials](database-sync-credentials.md) or opened the database port for external use.
 
-If the test was successful, press “Save Connection Credentials” and continue.
-{% endtab %}
+## Character Mapping
 
-{% tab title="Character Mapping" %}
-### Character Mapping
-
-{% hint style="info" %}
-_NOTE:_ Sonoran CAD requires character mapping for characters, licenses and vehicle registrations.
+{% hint style="warning" %}
+Sonoran CAD requires character mapping to be properly configured for the additional license and vehicle registration mapping.
 {% endhint %}
 
-#### 1. Toggle the “Enable Character Mapping”
+### 1. What is DB Sync Mapping?
 
-#### 2. Enter the required fields below. Leave any fields that you do not have blank
+The DB sync configuration is designed to show Sonoran CAD the specific tables and columns that data can be pulled from in your database.
 
-| Field | Description |
-| :--- | :--- |
-| Character Table | This is the name of the table that contains your characters. |
-| Character ID | This is name of the column containing the unique ID of your character.   **IMPORTANT:** This ID is used to link licenses and vehicle registrations to a character. Typically this is a Steam ID, but can be any unique character identifier that maps to licenses and vehicle registrations. |
-| First Name | This is the name of the column containing the character’s first name. |
-| Last Name | This is the name of the column containing the character’s last name. |
-| DOB | This is the name of the column containing the character’s date of birth. |
-| Age | This is the name of the column containing the character’s age. |
-| Sex | This is the name of the column containing the character’s sex. |
-| Address | This is the name of the column containing the character’s address. |
-| Zip Code | This is the name of the column containing the character’s ZIP code. |
-| Occupation | This is the name of the column containing the character’s occupation/job. |
-| Height | This is the name of the column containing the character’s height. |
-| Weight | This is the name of the column containing the character’s weight. |
-| Skin Color | This is the name of the column containing the character’s skin color. |
-| Hair Color | This is the name of the column containing the character’s hair color. |
-| Eye Color | This is the name of the column containing the character’s eye color. |
-| Image URL | This is the name of the column containing a URL to the character’s image. |
+### 2. Table Columns and Name
 
-Below is an example of a mapping from a character table:
+The `table name` field will contain the name of your database table containing character records.
 
-![Sonoran CAD character mapping example configuration](../../.gitbook/assets/mapping_char.png)
+The `column name` field will contain the name of the specific column in the character records table containing data for this row.
 
-{% hint style="info" %}
-Note: As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
-{% endhint %}
+The `Character Mapping Column` contains a unique ID for the specific character. This unique identifier will also map records in your license and vehicle registration tables back to the character that owns them. Typically, this is a Steam ID or license ID.
 
-#### 3. Test the Mapping
+Character records can also pull data from multiple different tables, such as a properties table to add address information. Just be sure that those additional tables have a proper `identifier` column to map back to the other characters table.
 
-Once the required character mapping fields have been specified, select the “Test Character Mapping” button.  
-This will query your database for one character row with all of the columns you have specified.  
-  
-If you see an alert similar to the following, your mapping is valid.
+**Example:**
 
-![Sonoran CAD character mapping configured successfully](../../.gitbook/assets/db_test_char.png)
+In our database, the `characters` table contains our character records. The `identifier` column contains the character's unique ID, the `firstname` column contains the characters first name, the `lastname` character contains the characters last name, etc.
 
-**4. Save the Configuration**
+![SQL Table Example](../../.gitbook/assets/image%20%28141%29.png)
 
-If the test was successful, press “Save Character Mapping” and continue.
-{% endtab %}
+![DB Sync Character Mapping Example](../../.gitbook/assets/image%20%28152%29.png)
 
-{% tab title="License Mapping" %}
-### License Mapping
+### 3. Enable, Save and Test
 
-{% hint style="info" %}
-_NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull license information. The owner ID on the license record is used to map the license to a corresponding character ID.
-{% endhint %}
+Be sure that you have enabled character mapping via the toggle. Once your character mapping has been completed, hit the save button and then the test button. The test button will attempt to select a single random character with the mapping configuration specified.
 
-#### 1. Toggle the “Enable License Mapping”
+If you see "Success!" move onto the next section.
 
-#### 2. Enter the required fields below. Leave any fields that you do not have blank.
+## License and Vehicle Mapping
 
-| Field | Description |
-| :--- | :--- |
-| License Table | This is the name of the table that contains your licenses |
-| Primary Key | This is the name of your licensing table’s primary key/unique index. |
-| Owner ID | This is name of the column containing the unique ID of the character that owns this license.  **IMPORTANT:** This ID is the same character ID specified in the character mapping above. Typically this is a Steam ID, but can be any unique character identifier. |
-| Type | This is the name of the column containing the license type. This could contain values like “DRIVERS”, “CDL”, “Firearm”, etc. |
-| Status | This is the name of the column containing the license status. This could contain values like “ACTIVE”, “SUSPENDED”, “REVOKED”, etc. |
-| Expiration | This is the name of the column containing the license expiration date. |
+Licenses and Vehicle registrations can also be automatically pulled via CAD search with Database Sync.
 
-Below is an example of a mapping from a license table:
+### 1. Table Columns and Names
 
-![Example of a Sonoran CAD license mapping](../../.gitbook/assets/db_example_lic.png)
+Similar to the character mapping, specify the table name containing your vehicle registrations or licenses. Unlike character mapping, data for these records can only be pulled from a single table.
 
-{% hint style="info" %}
-_Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
-{% endhint %}
+The vehicle and license mapping will also need to have the `Character Mapping Column` specified. Again, this is the name of the column in your license/vehicle table containing a unique ID that maps back to the character that owns it.
 
-#### 3. Test the Configuration
+**Example:**
 
-Once the required license mapping fields have been specified, select the “Test License Mapping” button.  
-This will query your database for one license row with all of the columns you have specified.  
-  
-If you see an alert similar to the following, your mapping is valid:
+In our database, the `owned_vehicles` table contains our stored vehicles. The `owner` column contains the character's unique ID that owns the vehicle, and the `plate` column contains the vehicle's license plate.
 
-![Sonoran CAD license mapping configured successfully](../../.gitbook/assets/db_lic_succ.png)
+![SQL Vehicle Table Example](../../.gitbook/assets/image%20%28132%29.png)
 
-#### 4. Save the Configuration
+![DB Sync - Vehicle Mapping Example](../../.gitbook/assets/image%20%28188%29.png)
 
-If the test was successful, press “Save License Mapping” and continue.
-{% endtab %}
+### 2. Enable, Save and Test
 
-{% tab title="Vehicle Registration Mapping" %}
-### Vehicle Registration Mapping
+Be sure that you have enabled the license/vehicle mapping via the toggle. Once your mapping has been completed, hit the save button and then the test button. The test button will attempt to select a single random license or vehicle with the mapping configuration specified.
 
-{% hint style="info" %}
-_NOTE:_ Sonoran CAD requires valid character mapping in order to search and pull vehicle registration information. The owner ID on the vehicle registration record is used to map the license to a character.
-{% endhint %}
+If you see "Success!" move onto the next section.
 
-#### 1. Toggle the “Enable Vehicle Mapping”
+## JSON Columns
 
-#### 2. Enter the required fields below. Leave any fields that you do not have blank.
+Many databases store data in a JSON formatted column. Sonoran CAD can also parse these columns for data.
 
-| Field | Description |
-| :--- | :--- |
-| Vehicle Table | This is the name of the table that contains your vehicle registrations. |
-| Primary Key | This is the name of your vehicle registration table’s primary key/unique index. |
-| Owner ID | This is name of the column containing the unique ID of the character that owns this vehicle registration.  **IMPORTANT:** This ID is the same character ID specified in the character mapping above. Typically this is a Steam ID, but can be any unique character identifier. |
-| Plate | This is the name of the column containing the vehicle's license plate. |
-| Type | This is the name of the column containing the vehicle type. This could contain values like “CAR”, “TRUCK”, “SUV”, etc. |
-| Make | This is the name of the column containing the vehicle make. |
-| Model | This is the name of the column containing the vehicle model. |
-| Color | This is the name of the column containing the vehicle color. |
-| Year | This is the name of the column containing the vehicle year |
-| Expiration | This is the name of the column containing the vehicle registration expiration date. |
-| Status | This is the name of the column containing the vehicle status. This could contain values like “VALID”, “STOLEN”, etc. |
+### 1. View the JSON Data
 
-Below is an example of a mapping from a vehicle registration table:
+In our database, the `accounts` column stores JSON formatted data. For this example, we want to display the `bank` money in the custom character record.
 
-![Example of a Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_example_veh.png)
+![SQL - JSON Column Example](../../.gitbook/assets/image%20%28153%29.png)
 
-{% hint style="info" %}
-_Note:_ As shown in the figures above, the table name and column names are directly entered into the corresponding fields.
-{% endhint %}
+To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu/).
 
-#### 3. Test the Configuration
+In the [JSON formatter](http://jsonviewer.stack.hu/), we can paste it and select `Format`.
 
-Once the required vehicle registration mapping fields have been specified, select the “Test Vehicle Mapping” button.  
-This will query your database for one vehicle registration record with all of the columns specified.  
-  
-If you see an alert similar to the following, your mapping is valid:
+![](../../.gitbook/assets/image%20%28187%29.png)
 
-![Successful Sonoran CAD vehicle registration mapping](../../.gitbook/assets/db_succ_veh.png)
+We can see that the JSON "key" for the bank account amount is `bank`.
 
-#### 4. Save the Configuration
+### 2. Set the JSON Column and Key
 
-If the test was successful, press “Save Vehicle Mapping” and continue.
-{% endtab %}
+Back in the mapping panel, we toggle the field as a `JSON Column` and set the column name to `accounts` as this is the column in our character table that contains the JSON data.
 
-{% tab title="Advanced - JSON" %}
-### Advanced - JSON
+We can then set the JSON Key for this data as `bank`.
 
-Some communities may store values in a JSON column. The following example pulls the `color` key value from a JSON column named `vehicleinfo`.
+![DB Sync - JSON Column](../../.gitbook/assets/image%20%28139%29.png)
 
-```javascript
-// Example of JSON column "vehicleinfo"
-{
-    "color": "Red",
-    "type": "SUV",
-    "somethingElse": "Some Value"
-}
-```
-
-![JSON Column in Database Sync](../../.gitbook/assets/image%20%2865%29.png)
-{% endtab %}
-
-{% tab title="Friendly Mapping" %}
-### Friendly Mapping
-
-{% hint style="info" %}
-Friendly Mapping requires the **Pro** version of Sonoran CAD.  
-For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
-{% endhint %}
+## Friendly Mapping
 
 Friendly mapping allows you to convert any raw database value to a more user friendly value.  
 Ex: `drive_license` in your database is converted to `Driver's License`.
 
-#### 1. Open the Friendly Mapping Editor
+### 1. Find Values to "Friendly Map"
 
-In the Friendly Mapping column, press the `MODIFY` button.
+In our SQL table, we can see the character's job columns has text values that can be improved. The `taxi` job value can be automatically converted to `Taxi Driver` in DB Sync records, and the `cardealer` jon can be automatically converted to `Car Dealer`.
 
-![Sonoran CAD - Database Sync Friendly Mapping](../../.gitbook/assets/image%20%2879%29.png)
+![SQL Table - Unfriendly Values](../../.gitbook/assets/image%20%28173%29.png)
 
-#### 2. Configure the New Friendly Mapping
+### 2. Configure the Friendly Mapping
 
-Enter the new raw database value and the friendly value you would like to convert it to.  
-Ex: A civilian character's `JOB` being changed from the raw DB value of `ambulance` to `EMT`.  
-Ex: A license record's `TYPE` bring changed from the raw DB value of `drive_license` to `Driver's License`.
+In our character table mapping, we can select `Modify` on the `job` field's friendly mapping.
 
-![Sonoran CAD - Database Sync Friendly Mapping Editor](../../.gitbook/assets/image%20%2880%29.png)
+![DB Sync - Modify Friendly Mapping](../../.gitbook/assets/image%20%28160%29.png)
 
-#### 3. Save the Configuration
+In the editor, we can now map the raw database value of `taxi` to a friendly value of `Taxi Driver` and the raw db value of `cardealer` to `Car Dealer`.
 
-Press `SAVE` in the friendly mapping editor.  
-Press `SAVE MAPPING CONFIGURATION` in the DB Sync editor.
-{% endtab %}
-{% endtabs %}
+Be sure to hit save in the friendly mapping editor, and then save the configuration for your mapping section.
 
+These new friendly mapped values will even work with [custom search types](../../tutorials/customization/custom-search-types.md)!
 
+![Friendly Mapping Editor](../../.gitbook/assets/image%20%28143%29.png)
 
+## Custom Record Fields
 
+Sonoran CAD's records are entirely customizable, this includes database sync records! You can easily enable database sync mapping for any custom field you add to a character, license, or vehicle registration record.
+
+### 1. Edit your Custom Record
+
+Navigate to Admin &gt; Customization &gt; Custom Records
+
+Select your custom character, license, or vehicle registration record to open the editor.
+
+Simply check the box to enable database sync mapping for any new or existing field. For this example, we'll enable it for a new `job` field in our character's table.
+
+Be sure to save your custom record format after enabling this!
+
+![Custom Records - DB Sync Mapping Toggle](../../.gitbook/assets/image%20%28186%29.png)
+
+### 2. Configure the Newly Mapped Field
+
+Back in our database sync editor, we can now see the new `Job` field has been added. We can map this new field to our database as any other field.
+
+![Database Sync - Custom Field Mapping](../../.gitbook/assets/image%20%28133%29.png)
+
+## Know Issues
+
+### The given key 'XXXXX' was not present in the dictionary
+
+MariaDB Server 10.6.1+ Beta is known to cause issues with the .Net Connectors. It is recommended to downgrade to the latest stable build \(10.5.10\).
+
+This issue is also often for users self-hosting their own database and not having the proper .Net Connectors installed. Due to the issue's scope, we are unable to provide much support.
+
+You can learn more about installing these on your MySQL server here: [https://dev.mysql.com/doc/connector-net/en/connector-net-installation.html](https://dev.mysql.com/doc/connector-net/en/connector-net-installation.html)
 

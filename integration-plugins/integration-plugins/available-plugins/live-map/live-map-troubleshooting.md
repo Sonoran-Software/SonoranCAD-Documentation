@@ -5,7 +5,7 @@ description: This guide covers the basic troubleshooting of the live map plugin.
 # Live Map Troubleshooting
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../vps-hosting-1/vps-hosting.md)!  
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!  
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
@@ -25,7 +25,7 @@ Players will only show on the map when **ALL** of the following conditions are m
 
 ## ERROR: Couldn't start resource sonoran\_livemap
 
-![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%28203%29.png)
 
 Particularly with **Linux**, some users have an additional installation step,[ per the installation guide](./).
 

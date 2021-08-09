@@ -5,7 +5,7 @@ description: >-
   today!
 ---
 
-# Download The App
+# 📱Download The App
 
 ![](../.gitbook/assets/sonorancad-logo_full.png)
 

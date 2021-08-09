@@ -1,10 +1,10 @@
 ---
 description: >-
-  Looking for a VPS host for your community? Check out our official server
+  Looking for a server host for your community? Check out our official server
   hosting for your gaming community!
 ---
 
-# 🖥️ VPS Hosting
+# 🖥️ Server Hosting
 
 ## [Sonoran Servers](https://sonoranservers.com)
 
@@ -20,7 +20,7 @@ Looking to host your next gaming server? Sonoran Servers has you covered!
 
 ![](../.gitbook/assets/banner_3.png)
 
-Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows VPS.
+Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows Server Product.
 
 [Click to learn more about this promotion](../pricing/faq/bundle-discount-sonoran-servers.md#free-plugin-installation)!
 
@@ -28,7 +28,7 @@ Sonoran Servers customers are eligible to receive free CAD plugin installation a
 
 ![](../.gitbook/assets/image%20%28127%29.png)
 
-We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers are also eligible to receive free FivePD installation with the purchase of a Windows VPS.‌
+We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers are also eligible to receive free FivePD installation with the purchase of a Windows Server Product.‌
 
 ​[Learn more about our free Five PD installation](https://sonoranservers.com/fivepd.php)!
 

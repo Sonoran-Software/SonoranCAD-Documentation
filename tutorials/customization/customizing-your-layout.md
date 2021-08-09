@@ -10,6 +10,12 @@ description: >-
 
 ![Sonoran CAD - Layout and Resize](../../.gitbook/assets/layout_lock.gif)
 
+{% hint style="warning" %}
+By default, "[Classic Layout](customizing-your-layout.md#enable-classic-mode)" is enabled in the customization menu.
+
+To customize your dispatch/unit panel layout, you will need to [disable this](customizing-your-layout.md#8-classic-layout).
+{% endhint %}
+
 ### 1. Menu Options
 
 You can right click on any panel and to reveal multiple menu options.
@@ -49,13 +55,23 @@ Simply right click on the empty area in the taskbar, or navigate to Start &gt; S
 
 ### 6. Taskbar
 
+#### Search Box
+
+The task bar can be opened with a configurable [hotkey](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/tutorials/other-features/configurable-hotkeys) or with our [Streamdeck](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/integration-plugins/stream-deck-integration) integration. When opened, a search bar will be automatically focused on all non-mobile devices.‌
+
+Here, you can search to quickly filter options. When the results have been filtered down to a single window, the search label will turn green indicating the window shortcut is available. Simply press `ENTER` to open the window.
+
+![Sonoran CAD - Taskbar Filter](../../.gitbook/assets/image%20%28202%29.png)
+
+#### Positioning
+
 The taskbar is a desktop style action bar that will contain the "Start Menu" \(Sonoran CAD logo\) and your active/pinned tabs.
 
 The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
 To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System &gt; Customization
 
-![Sonoran CAD - Layout Customization Menu](../../.gitbook/assets/image%20%283%29.png)
+![Sonoran CAD - Taskbar Positioning](../../.gitbook/assets/image%20%28191%29.png)
 
 ### 7. Tab System
 
@@ -70,7 +86,21 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
 
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.  
-_Note: Text will only be displayed if the taskbar is in the top or bottom position._
+_Note: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
 ![Sonoran CAD - Tabs with Icon and Text](../../.gitbook/assets/image%20%2811%29.png)
+
+### 8. Classic Layout
+
+For some users, modifying the positions of dispatching panels may be too complicated. You can easily toggle on the "Classic Layout" to have the call windows automatically placed and responsive. Don't worry, popout windows can still be moved around and locked into place as normal.
+
+#### Enable Classic Mode:
+
+Right Click on the Task Bar &gt; Customization &gt; Classic Layout
+
+![Sonoran CAD - Classic Layout](../../.gitbook/assets/image%20%28190%29.png)
+
+#### Change Taskbar and Button Position\(s\)
+
+Don't forget, you can easily [move the taskbar to the top or sides of the screen](customizing-your-layout.md#6-taskbar), [change what buttons appear](customizing-your-layout.md#7-tab-system), and [change the order of the buttons](customizing-your-layout.md#7-tab-system)!
 

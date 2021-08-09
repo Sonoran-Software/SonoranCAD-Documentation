@@ -8,6 +8,379 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.16.1 8/1/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Smart Signs - Push Events  
+ - Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
+
+Lookup - DB Sync  
+- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
+
+Close Dispatch  
+- Fixed an issue where closing a call through a manual call update would fail.
+
+Record Searchable Fields - Trim Spaces  
+- Fixed an issue where searchable record fields were not having leading or trailing spaces trimmed.
+{% endtab %}
+{% endtabs %}
+
+### 3.16.0 7/31/2021
+
+{% tabs %}
+{% tab title="New" %}
+Tones - Specific Users  
+- The tone board now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
+
+Dispatch Call - Presave Data  
+- Dispatchers can now save filled call templates for use with common calls.
+
+Lookup - Disable Partial  
+- The lookup window now has a partial search toggle, allowing you to run a standard partial search or filter an exact search term. Your preference is also saved to the local device for any new windows.
+
+Active Units Dropdown - Icons  
+- Added icons to the active units dropdown menu for faster selection.
+
+API: Partial Lookup  
+- The API lookup by name/plate now includes a partial flag to toggle a partial or exact search. If undefined, a partial is assumed as default.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Community Customization - Save  
+- Fixed an issue causing the community customization info to not properly save.
+
+Civilian Records - No Partial  
+- The civilian lookup panel ensures all lookups are exact, preventing partial matches from showing.
+
+Custom Record - UID Values  
+- Added additional safety checks and sanitization for communities that somehow manage to manually add dashes to custom field UID values, resulting in an SQL syntax error if the fields are indexed for unique or custom search values.
+
+Smart Signs - Cancel Edit  
+- Fixed an issue causing the smart signs UI to duplicate the sign if you cancel an edit. Resulting from Lua's 1 based indices vs JS 0 based indices.
+
+Tone Board - Hotkey  
+- Fixed an issue causing the tone board hotkey from not properly detecting if a tone board already existed, resulting in a new window every time.
+
+Dispatch Call Notes - Reversed  
+- Fixed an issue causing the call notes for dispatch to be in reversed history for the initial load in.
+
+Checkout - Set Community ID  
+- Fixed an issue where the popup to set your community ID after purchasing a subscription would be blank.
+{% endtab %}
+{% endtabs %}
+
+### 3.15.1 7/30/2021
+
+{% tabs %}
+{% tab title="Fixed" %}
+Server Selector  
+- Fixed an issue where navigating to and from the community menu would display the incorrect server in the server selector, even though you were properly logged into the correct one.  
+  
+Change Server - Login  
+- Fixed an issue where an undisposed event handler would be registered multiple times with menu navigations, causing multiple unit logins when switching your server.  
+  
+Active Units - Dispatch Flag  
+- Fixed an issue causing units to display the dispatch flag incorrectly in the active units panel.
+
+Modify Signs Permission - Translation  
+- Fixed an issue causing a translation file error with the modify signs permission label.
+{% endtab %}
+{% endtabs %}
+
+### 3.15.0 7/27/2021
+
+{% tabs %}
+{% tab title="New" %}
+Street Signs Integration  
+- Our new street signs integration plugin and UI allows you to modify in-game street signs right from the CAD! This is visible for dispatchers and users in the DMV page.
+
+Street Signs - Permission  
+- Added a new permission to allow users to modify street signs in the dispatch and DMV page. By default, only the CAD owner will have this new permission.
+
+Discord RPC  
+- The desktop application now adds rich presence info and buttons to your Discord profile. You can customize the invite link to your Sonoran CAD community, or your community's Sonoran CMS new member application.
+
+Dispatch Signal - Draggable Window  
+- Desktop users only now can access the dispatch signal window as a draggable/lockable window and not a popup modal.
+
+Tabs - Quick Close  
+- On tabs with multiple minimized windows, the preview will display a close button to more efficiently close multiple tabs.
+{% endtab %}
+
+{% tab title="Changed" %}
+Push Event: Detach Unit  
+- The EVENT\_UNIT\_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Custom Login Pages  
+- Fixed an issue causing requests for custom login page info to fail.
+
+Record Lookup - Fire and EMS  
+- Fixed a permissions error preventing fire and EMS users from searching for a character or vehicle to import into a custom record.
+
+10-Codes CSV Upload - Null Check  
+- Added a null/empty string check when importing and setting 10-codes.
+{% endtab %}
+{% endtabs %}
+
+### 3.14.2 7/18/2021
+
+{% tabs %}
+{% tab title="New" %}
+Permission Update - Auto Update UI  
+- Editing a user's permissions will now live update these without requiring them to refresh their page. This makes the Discord permissions sync feature more seamless.
+
+Discord Bot - Multi-Server  
+- The Discord bot now supports permission sync with multiple different servers for a single community.
+
+Discord Bot - linkme  
+- The discord bot now automatically runs the /syncme command after linking your secret ID.
+
+API: set\_streetsign\_config  
+- Added an endpoint to set the street sign configuration in the CAD. This is for an upcoming integration plugin.
+
+API: update\_streetsign  
+- Added an endpoint to update street signs in the CAD from in-game. This is for an upcoming integration plugin.
+
+Push Event: event\_streetsign\_updated  
+- Added a push event for when street signs are updated in the CAD. This is for an upcoming integration plugin.
+
+Push Event: event\_record\_add  
+- Added a push event when records are added.
+
+Push Event: event\_record\_edit  
+- Added a push event when records are edited.
+
+Push Event: event\_record\_remove  
+- Added a push event when records are removed.
+
+Websocket Connection - Keepalive  
+- Added a manual keepalive heartbeat from server to client in attempt to prevent Cloudflare from closing some user's websocket connections, resulting in an unstable connection.
+{% endtab %}
+
+{% tab title="Changed" %}
+Mobile Taskbar Focus  
+- The taskbar search no longer auto-focuses for tablet devices.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Secret ID - Default Blank  
+- Fixed an issue causing the secret ID to be blank for some users, requiring a refresh before utilizing it.
+
+Dispatch Update Call - Duplication  
+- Fixed an issue where dispatchers would see call notes duplicated if they manually updated the call.
+{% endtab %}
+{% endtabs %}
+
+### 3.14.1 7/14/2021
+
+{% tabs %}
+{% tab title="New" %}
+Server Selector - Loading  
+- Added a loading screen when switching servers to prevent confusion on delay.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Server Selector  
+- Fixed an issue causing a failure when trying to switch servers in the fire, police, ems, or dispatch page.
+
+Custom Records - Image  
+- Fixed an issue causing the custom record image field to not display the uploader.
+
+Taskbar - Pinned Windows  
+- Fixed an issue causing the pinned windows on the taskbar to not load after more than one visit back to the community menu.
+{% endtab %}
+{% endtabs %}
+
+### 3.14.0 7/11/2021
+
+{% tabs %}
+{% tab title="New" %}
+Start Menu - Quick Search  
+- The start menu now has an auto-focused search box to filter window options for all mid-sized screen users and larger.
+
+Hotkey: Start Menu  
+- Added a new configurable hotkey to toggle the start menu.
+
+Vue 3  
+- Migrated the UI to Vue JS 3. This should also resolve issues some users experienced with the in-game tablet.
+{% endtab %}
+
+{% tab title="Changed" %}
+Classic Layout - Default Enabled  
+- The "Classic Layout" is enabled by default for all users. This can be disabled in the customization menu to allow users to customize their dispatching panels into different locations.
+
+Desktop Header  
+- Updated the desktop header bar to match the new header in emergency pages.
+{% endtab %}
+
+{% tab title="Fixed" %}
+New Record - Conflict with Lookup Filters  
+- Fixed an issue causing the saved lookup preferences from also impacting the available records types in the records center.
+
+Tone Board - Direct Upload  
+- Fixed an issue causing direct upload of audio files to the dispatch tone board from properly setting the new URL.
+
+Window Layout  
+- Fixed issues with custom window layouts not saving or persisting properly.
+
+Self-Dispatch: Logout  
+- Fixed a permissions issue for self-dispatchers logging out.
+
+Image Uploader - Name  
+- Changed the file uploader to no longer be labeled as only an image loader.
+
+Admin - Get Owner  
+- Fixed an issue preventing the admin page's "Get Owner" button from properly searching for the record owner.
+
+BOLO Update  
+- Fixed an issue where updating or removing a bolo would not automatically update this in the other unit's screen without re-opening the window or searching again.
+{% endtab %}
+{% endtabs %}
+
+### 3.13.0 7/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch Tone Board  
+- Custom audio tones can be configured and played by dispatchers. Customizations include the label, icon, color, and sound file.
+
+Hotkey - Tone Board  
+- A global hotkey can be configured to open the dispatch tone board more quickly.
+
+Custom Audio Notifications  
+- Customizable audio notifications for new dispatches, panics, alerts, and more.
+
+Active Units - Show/Hide Dispatchers  
+- The active units panel now has a toggle to show or hide dispatchers.
+
+Custom Records - ID Field  
+- Custom record fields can now have the type set to "ID" to display the unique record ID.
+
+Tone Board - Webhook  
+- Added a Discord webhook to log when a user plays a tone from the tone board.
+
+Lookup Filter - Save Preferences  
+- Lookup filter preferences are saved locally and won't reset when you open a new or different lookup window.
+
+Text-to-speech - Toggle  
+- Toggle off text-to-speech in the settings menu.
+{% endtab %}
+
+{% tab title="Changed" %}
+API: get\_active\_units - onlyUnits flag  
+- The get\_active\_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
+
+Dispatch Panel - Table UI  
+- Small UI changes and improvements to the dispatch panels with tables and their column customization, search boxes, and buttons.
+
+S3 Hosting  
+- All image and file uploads have been migrated from AWS S3 to Sonoran S3.
+
+Discord Bot IP - Bad Request Whitelist  
+- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify\_secret
+{% endtab %}
+
+{% tab title="Fixed" %}
+Tablet - Resize Window Save  
+- Fixed an issue with the in-game tablet not being able to detect as a non-mobile user agent - locking draggable windows and not persisting the saved size preferences.
+
+Custom Records - Disabled Scrollbar  
+- Fixed an issue where text-areas couldn't be scrolled if the record editing was disabled. \(Ex: Viewing a civilian record\)
+
+Unit Group - Remove from Call  
+- Fixed an issue preventing unit groups from being removed from a dispatch call.
+
+Dispatch Call - PDF  
+- Fixed an issue preventing call logs from printing to PDF.
+
+Records Webhook: Charges  
+- Fixed an issue causing record webhooks to not display values from the "Charges" sections.
+
+SSO - Change Username Push Event  
+Improved username update handling with the SSO system.
+
+Unit Group - Add to Call  
+- Fixed an issue causing the unit group's "Add to Call" button to be all white.
+
+Dispatch - Change Server  
+- Fixed an issue where dispatchers changing servers would still show on the active units list for other dispatchers.
+{% endtab %}
+{% endtabs %}
+
+### 3.12.3 6/16/2021
+
+{% tabs %}
+{% tab title="New" %}
+PDF - Chinese Localization  
+- PDF records now support Chinese localization, and will print in a font supporting Chinese characters if the user has their language set to Traditional or Simplified Chinese.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self Dispatch - Notes  
+- Fixed an issue where self-dispatchers attaching to an active call would not receive new notes on the call until a page refresh was executed.
+
+Hide Secret ID Field Until Logged In  
+- Fixed an issue where the secret ID field was still displayed as blank before logging into a specific community.
+{% endtab %}
+{% endtabs %}
+
+### 3.12.2 6/14/2021
+
+{% tabs %}
+{% tab title="New" %}
+Report Window - Save Last Window's Size  
+- Resizing a popout window will save this width and height preference for when you open a new window of this type.
+
+Account Secret ID  
+- User accounts now have a "Secret ID" similar to an API unique to each community account. These can be used with third party/external applications for authentication/security \(Discord bot role sync\) and can be refreshed/regenerated in the UI if ever leaked.
+{% endtab %}
+
+{% tab title="Change" %}
+Custom Map Images - File Size  
+- Increased the file size limit of custom map images from 25 to 30MB each.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self-Dispatch 911 Calls  
+- Fixed an issue causing self-dispatchers to not receive incoming 911 calls properly.
+
+API: set\_api\_id pushNew Flag  
+- Fixed an issue in the set\_api\_id endpoint preventing the pushNew flag from working properly.
+{% endtab %}
+{% endtabs %}
+
+### 3.12.1 6/10/2021
+
+{% tabs %}
+{% tab title="New" %}
+Custom Login Page: DNS Record  
+- Custom login pages can now be created by adding a simple CNAME DNS record. Communities no longer need to host an iFrame webpage. The old query strings \(other than community ID\) have also been depreciated.
+
+Webhook Footer - Server ID  
+- Added the server ID metadata to specific webhook footers for the discord bot parsing.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Active Units - Sorting  
+- Fixed an issue where some columns of the active units table wouldn't properly sort.
+
+Custom Search Types - Disable on Civilian  
+- Fixed an issue where custom search types were displayed in the civilian menu.
+
+PDF: Margins  
+- Fixed an issue with PDF records sometimes running outside of the page margins.
+
+Self Clear - Disable without Perms  
+- Fixed an issue where units could not self-clear from a call unless they had dispatch or self-dispatch permissions.
+
+API: Unit Status  
+- Fixed an issue with the unit status API endpoint not updating the status on the user's local UI.
+{% endtab %}
+{% endtabs %}
+
 ### 3.12.0 6/5/2021
 
 {% tabs %}

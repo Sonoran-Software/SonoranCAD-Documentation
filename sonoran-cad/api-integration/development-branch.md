@@ -11,7 +11,7 @@ The development API and CAD branches are entirely separate from the current prod
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
 {% endhint %}
 
 ### Rate Limiting

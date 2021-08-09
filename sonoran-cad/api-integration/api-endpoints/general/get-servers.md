@@ -7,6 +7,11 @@ description: >-
 
 # Get Servers
 
+{% hint style="warning" %}
+API endpoint requires the **Plus** version of Sonoran CAD or higher.  
+For more information, see our [pricing ](../../../../pricing/faq/)page.
+{% endhint %}
+
 {% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_servers" %}
 {% api-method-summary %}
 Get Servers

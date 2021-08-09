@@ -33,7 +33,8 @@ description: This push event is sent whenever a unit logs into the CAD.
                      "group": "CAR 51", // Name of unit group
                 }
             },
-            "isDispatch": false
+            "isDispatch": false,
+            "selfDispatch": false
         }
     ]
 }

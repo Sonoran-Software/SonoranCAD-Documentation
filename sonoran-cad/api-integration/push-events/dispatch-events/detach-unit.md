@@ -13,7 +13,8 @@ description: >-
   "key": "YOUR_API_KEY", // Authenticate legitimate event traffic
   "type": "EVENT_DISPATCH_UNIT_DETACH",
   "data": {
-    "ident": 1,          // Identifier/Unit ID
+    "ident": 1,              // (Option 1) Single Identifier/Unit ID
+    "idents": [123, 456],    // (Option 2) Multiple Identifiers/Unit IDs
     "callId": 123        // Dispatch Call ID
   }
 }

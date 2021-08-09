@@ -7,7 +7,7 @@ description: >-
 # Tablet
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
 ## Installation
@@ -24,14 +24,15 @@ In your `server.cfg` file add the following new line:
 
 ### 3. Edit the index.html File
 
-Open the `tablet/html/index.html` file and paste in your custom community URL.
+Open the `tablet/html/index.html` file and paste your custom community URL.  
+The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
+
+`https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
+
+Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).  
+EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
 ![Tablet HTML file](../../../.gitbook/assets/screen-shot-2020-07-22-at-10.23.09-pm.png)
-
-This is the same URL as your [custom login page](../../../tutorials/customization/custom-login-page.md).  
-You can find this URL under Admin &gt; Customization &gt; Custom Login Page
-
-![](../../../.gitbook/assets/screen-shot-2020-07-22-at-10.24.24-pm.png)
 
 ### 4. In-Game Command
 

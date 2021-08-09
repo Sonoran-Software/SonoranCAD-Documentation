@@ -19,7 +19,7 @@ The live map will require you to open **one additional port** on your server.
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../vps-hosting-1/vps-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
 ## Installation Video
@@ -46,23 +46,29 @@ Follow the [standard plugin installation guide](../../plugin-installation/) for 
 
 ### 4. Configuration
 
-This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base resource.
+This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base framework installation.
+
+#### A. Start the sonoran\_livemap Resource
 
 1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
+{% hint style="warning" %}
 #### ERROR: Couldn't start resource sonoran\_livemap
-
-![Error message without starting webpack](../../../../.gitbook/assets/image%20%2850%29.png)
 
 Particularly with **Linux**, some users have an additional installation step.
 
 First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.
 
 You will have to do this step whenever the `sonoran_livemap` resource is updated.
+{% endhint %}
 
-#### A. Live Map Configuration
+![Error message without starting webpack](../../../../.gitbook/assets/image%20%28203%29.png)
 
-**Convars:**
+#### B. Live Map Resource Configuration
+
+**sonoran\_livemap Convars:**
+
+The following convars can be set in your `server.cfg` file:
 
 | Name | Type | Default Value | Description |
 | :--- | :--- | ---: | :--- |
@@ -71,9 +77,18 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 | blip\_file | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP |
 | livemap\_access\_control | string | "\*" | Sets the domain that is allowed to access the blips.json file \(E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips\), "\*" will allow everyone |
 
-All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the port to 30000. **You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
+All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the live map port to 30000.
 
-#### Config File Options
+**You DO NOT need to add any of these to your server config if you are not changing them from their default values**, they will use the defaults if there is no convar set.
+
+If you are using a Live Map port other than the default \(`30121`\) you will need to specify this in your `server.cfg` file. [Learn more about using a different live map port](./#using-different-ports).
+
+Be sure to add this line above the `ensure sonoran_livemap` line.  
+Ex: `set socket_port 30000`
+
+#### Livemap Plugin Config File Options:
+
+The following config options are also available for customization in the livemap plugin config:
 
 | Config Option | Description |
 | :--- | :--- |
@@ -83,21 +98,20 @@ All above convars are set via the `set` command in your server config, such as `
 | useCadName | Use in-CAD name for online units? false uses in-game name or ESX name \(if [esxsupport plugin](../esx-support.md) is loaded\) |
 | infoDisplayNames | Localization/translation options |
 
-#### B. Admin Panel Configuration
+#### C. Admin Panel Configuration
 
 {% hint style="warning" %}
-IMPORTANT: You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
+I**MPORTANT:** You must use an unused port for the map port. It cannot be the same as the port used to connect to your server \(which is by default 30120\).
 {% endhint %}
 
-![](../../../../.gitbook/assets/livemap_config.png)
+![Sonoran CAD - Live Map Admin Panel Config](../../../../.gitbook/assets/image%20%28204%29.png)
 
 1. IP: Set IP to the **public** IP address of your server, 
-2. Map Port: The port you specified via `socket_port` above or the default, which is `30121`.
+2. Map Port: The port you specified via `socket_port` [above](./#b-live-map-resource-configuration) or the default, which is `30121`.
+   * Learn more about [setting your live map port](./#using-different-ports).
 3. Click "Save and Deploy" to deploy your live map.
 
-Click Save And Deploy. After a few seconds, the live map should appear as a button on most CAD screens \(Police, Dispatch, etc\) and will auto-update with your unit positions.
-
-#### C. Port Forwarding
+#### D. Port Forwarding
 
 You will need to port forward specified in the Map Port.  
 This port is accessed by Sonoran CAD to serve position data and view the blips.  
@@ -112,6 +126,11 @@ Don't forget to have each community member set their account [API ID](../../../.
 ### **6. Enjoy!**
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
+
+This is found in the task bar's start menu under Unit Management &gt; Live Map  
+You can also [pin the live map button to your taskbar](../../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
+
+![Sonoran CAD: Live Map Button](../../../../.gitbook/assets/screen-shot-2021-06-18-at-11.12.10-pm.png)
 
 **The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
@@ -159,9 +178,13 @@ Select "Upload Custom" and upload all six correctly named files.
 
 ![Live Map - Custom Map Uploader](../../../../.gitbook/assets/image%20%28101%29.png)
 
+### 3. File Size
+
+Custom map images are limited to 30MB each. **However, if you are uploading more than 100MB of images total, you will need to upload in separate batches.**
+
 ## Using Different Ports
 
-If you are not using the default map port `30121` you will need to change the configuration.
+If you are not using the default live map port \(`30121`\) you will need to change the configuration.
 
 Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **one** additional open port not being used by any other service.
 
