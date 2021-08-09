@@ -10,21 +10,21 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 
 | Plugin Name | **Standard** | Plus | Pro |
 | :--- | :--- | :--- | :--- |
-| Call Commands | Yes | Yes | Yes |
-| Check API ID | Yes | Yes | Yes |
-| Civilian Integration | **No** | Yes | Yes |
-| Dispatch Notify | **No** | Yes | Yes |
-| ESX/QBUS Support | Yes | Yes | Yes |
-| ForceReg | Yes | Yes | Yes |
-| Kick | Yes | Yes | Yes |
-| Locations | Yes | Yes | Yes |
-| Live Map | **No** | Yes | Yes |
-| Lookups | **No** | Yes | Yes |
-| Postals | Yes | Yes | Yes |
-| Smart Signs | **No** | **No** | Yes |
-| Tablet | Yes | Yes | Yes |
-| Teamspeak Integration | Yes | Yes | Yes |
-| Traffic Stop | **No** | Yes | Yes |
-| Unit Status | Yes | Yes | Yes |
-| Wraith Radar | **No** | Yes | Yes |
+| [Call Commands](call-commands.md) | Yes | Yes | Yes |
+| [Check API ID](api-id-checker.md) | Yes | Yes | Yes |
+| [Civilian Integration](civilian-integration.md) | **No** | Yes | Yes |
+| [Dispatch Notify](dispatch-notify.md) | **No** | Yes | Yes |
+| [ESX/QBUS Support](esx-support.md) | Yes | Yes | Yes |
+| [ForceReg](forcereg.md) | Yes | Yes | Yes |
+| [Kick](kick.md) | Yes | Yes | Yes |
+| [Locations](locations.md) | Yes | Yes | Yes |
+| [Live Map](live-map/) | **No** | Yes | Yes |
+| [Lookups](lookups.md) | **No** | Yes | Yes |
+| [Postals](postals.md) | Yes | Yes | Yes |
+| [Smart Signs](smart-signs.md) | **No** | **No** | Yes |
+| [Tablet](tablet.md) | Yes | Yes | Yes |
+| [Teamspeak Integration](teamspeak-3.md) | Yes | Yes | Yes |
+| [Traffic Stop](traffic-stop.md) | **No** | Yes | Yes |
+| [Unit Status](unit-status.md) | Yes | Yes | Yes |
+| [Wraith Radar](wraithv2.md) | **No** | Yes | Yes |
 
