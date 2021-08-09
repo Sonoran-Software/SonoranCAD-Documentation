@@ -1,11 +1,15 @@
 ---
-description: 'Adds support for ESX to other plugins, as well as the ability to issue fines.'
+description: >-
+  Adds support for ESX to other plugins, as well as the ability to issue fines
+  automatically to users in-game.
 ---
 
-# ESX Support \(QBUS\)
+# ESX Support \(QBUS\) and Auto-Fines
 
 {% hint style="warning" %}
-This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](https://github.com/Sonoran-Software/SonoranCAD-Documentation/blob/master/pricing/faq)page.
+This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro** version.
+
+For more information, view our [pricing ](https://github.com/Sonoran-Software/SonoranCAD-Documentation/blob/master/pricing/faq)page.
 {% endhint %}
 
 {% hint style="info" %}
@@ -45,6 +49,16 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 ### 6. Configuration
 
 Review the `config_esxsupport.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
+
+## Auto-Fines
+
+Civilians in-game can be automatically billed with esx\_billing.
+
+To do so, simply enable `issueFines` in the config and add a list of custom record types to the `fineableForms` array.
+
+Ex: `fineableForms = {"Arrest Report", "Speeding Citation"}`
+
+The fines are pulled from your custom record's "Charges" section.
 
 ## Usage
 
