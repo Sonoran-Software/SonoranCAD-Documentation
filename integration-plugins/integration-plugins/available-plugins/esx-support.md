@@ -60,7 +60,10 @@ To do so, simply enable `issueFines` in the config and add a list of custom reco
 
 Ex: `fineableForms = {"Arrest Report", "Speeding Citation"}`
 
-The fines are pulled from your custom record's "Charges" section.
+The fines are pulled from your custom record's:
+
+* `Charges` section -&gt; `Fine` field
+* `Speed` section -&gt; `Fine` field
 
 ## Usage
 
