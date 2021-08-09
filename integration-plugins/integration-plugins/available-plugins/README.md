@@ -10,7 +10,7 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 
 | Plugin Name | **Standard** | Plus | Pro |
 | :--- | :--- | :--- | :--- |
-| Call CommandsX | Yes | Yes | Yes |
+| Call Commands | Yes | Yes | Yes |
 | Check API ID | Yes | Yes | Yes |
 | Civilian Integration | **No** | Yes | Yes |
 | Dispatch Notify | **No** | Yes | Yes |
