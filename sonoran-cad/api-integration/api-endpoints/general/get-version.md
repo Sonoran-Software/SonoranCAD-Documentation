@@ -10,7 +10,7 @@ Get Version
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API endpoint is used to check the subscription version of your Sonoran CAD community.
+This API endpoint gets the current plan used by the community.
 {% endapi-method-description %}
 
 {% api-method-spec %}
