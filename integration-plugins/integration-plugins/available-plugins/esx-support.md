@@ -36,7 +36,9 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Follow the [standard plugin installation guide](https://github.com/Sonoran-Software/SonoranCAD-Documentation/blob/master/integration-plugins/integration-plugins/plugin-installation) for the plugin.
 
-### 4. Add your Game Server IP and Port
+### 4. \[Optional\] Add your Game Server IP and Port
+
+_This step is only required if you wish to use the automatic fine capability._
 
 Be sure to have your game server IP and port set in the admin panel under `Advanced` &gt; `In-Game Integration` &gt; `Server Events and Integrated Live Map`
 
@@ -54,7 +56,7 @@ Review the `config_esxsupport.lua` file to configure the plugin to behave how yo
 
 Civilians in-game can be automatically billed with esx\_billing.
 
-To do so, simply enable `issueFines` in the config and add a list of custom record types to the `fineableForms` array.
+To do so, simply enable `issueFines` in the config and add a list of custom record types to the `fineableForms` array. Also, be sure that you have [configured your server IP and port](esx-support.md#4-optional-add-your-game-server-ip-and-port) in the admin menu.
 
 Ex: `fineableForms = {"Arrest Report", "Speeding Citation"}`
 
