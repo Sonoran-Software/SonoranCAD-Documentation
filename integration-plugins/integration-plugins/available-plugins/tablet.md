@@ -34,9 +34,11 @@ EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
 ![Tablet HTML file](../../../.gitbook/assets/screen-shot-2020-07-22-at-10.23.09-pm.png)
 
-### 4. In-Game Command
+### 4. In-Game Commands
 
-Use the `/showcad` command in-game to toggle your tablet. You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
+* Use the `/showcad` command in-game to toggle your tablet. You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
+* Use the `/cadsize <width> <height>` command to resize the tablet to best fit your screen. This size persists on reload of the client.
+* Use the `/cadrefresh` command to refresh the tablet if it's not loading properly.
 
 ### 5. Auto API ID
 
