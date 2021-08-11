@@ -16,8 +16,6 @@ Sonoran CAD has a built-in livestream overlay, allowing you to display your live
 
 Our Twitch bot can also be configured to send out chat messages when data is modified.
 
-
-
 ## Configuring the Overlay
 
 The overlay is immensely customizable, allowing you to customize every piece of data displayed.
