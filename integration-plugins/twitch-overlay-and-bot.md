@@ -67,6 +67,54 @@ You can now place the text field anywhere in your OBS stream layout.
 
 You can also customize the fonts, change the background and more!
 
+## Custom Text Files
+
+While the stream overlay generates a unique text file for every toggled data field, you can also configure custom text files with multiple data fields. This makes formatting on your overlay easier with less individual fields.
+
+### 1. Add a New Custom File
+
+In the overlay configuration section, expand the `Custom Text Files` section and select `Add`.
+
+![Stream Overlay - Custom Text Files](../.gitbook/assets/image%20%28249%29.png)
+
+### 2. Set the File Name and Data Keys
+
+Set the custom text file's name and data keys using the text boxes. The data keys are formatted as `{someKey}` and will have their values replaced automatically with the live unit or dispatch call data.
+
+{% hint style="warning" %}
+In order for the data key to be replaced/updated in the custom text file, the **field MUST be toggled/enabled** in the Unit Updates or Call Updates section above.
+{% endhint %}
+
+| Key | Description |
+| :--- | :--- |
+| {unit\_status} | Unit Status |
+| {unit\_location} | Unit Location |
+| {unit\_aop} | Unit AOP |
+| {unit\_number} | Unit Number |
+| {unit\_name} | Unit Name |
+| {unit\_agency} | Unit Agency |
+| {unit\_department} | Unit Department |
+| {unit\_subdivision} | Unit Subdivision |
+| {unit\_rank} | Unit Rank |
+| {unit\_group} | Unit Group |
+| {unit\_panic} | Unit Panic Status |
+| {call\_id} | Dispatch Call ID |
+| {call\_origin} | Dispatch Call Origin |
+| {call\_status} | Dispatch Call Status |
+| {call\_priority} | Dispatch Call Priority |
+| {call\_block} | Dispatch Call Block |
+| {call\_address} | Dispatch Call Address |
+| {call\_postal} | Dispatch Call Postal |
+| {call\_title} | Dispatch Call Title |
+| {call\_code} | Dispatch Call 10-Code |
+| {call\_description} | Dispatch Call Description |
+
+### 3. Add the Text File to OBS
+
+**Be sure to save your new configuration!**
+
+\*\*\*\*[As with the regular text files](twitch-overlay-and-bot.md#5-configure-data-in-obs), these custom formatted ones can be imported and live-updated through OBS.
+
 ## Configuring the Twitch Bot
 
 Sonoran CAD's stream overlay also comes with a configurable Twitch bot. This bot will send out chat updates when unit or call data is updated.
