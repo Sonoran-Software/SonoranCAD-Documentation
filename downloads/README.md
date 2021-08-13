@@ -11,7 +11,7 @@ description: >-
 
 | Website | iOS App Store | Google Play Store | Windows Desktop |
 | :--- | :--- | :--- | :--- |
-| [View](https://app.sonorancad.com/) | [Download](https://apps.apple.com/us/app/sonoran-cad/id1496539456) | [Download](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US) | [Download](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) |
+| [View](https://app.sonorancad.com/) | [Download](https://apps.apple.com/us/app/sonoran-cad/id1496539456) | [Download](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US) | [Download](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe) |
 
 ![Sonoran CAD - CAD/MDT Software](../.gitbook/assets/image%20%2893%29.png)
 
