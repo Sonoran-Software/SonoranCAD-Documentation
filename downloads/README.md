@@ -12,7 +12,7 @@ description: >-
 {% hint style="danger" %}
 **As of 8/12/2021 the Sonoran CAD Desktop application has moved to a new GitHub repository.**
 
-Please uninstall the old Sonoran CAD desktop app and install the latest version from the [download link](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe) as soon as possible.
+Please install the latest version from the [download link](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe) as soon as possible.
 {% endhint %}
 
 | Website | iOS App Store | Google Play Store | Windows Desktop |
