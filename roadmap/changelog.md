@@ -8,6 +8,53 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.17.0 8/13/2021
+
+{% tabs %}
+{% tab title="New" %}
+Stream Overlay and Twitch Bot  
+- Our new stream overlay allows you to customize and display your active unit information, call information, and more to your Livestream. Our Twitch bot automatically sends customizable chat updates when your unit information or attached call info is updated.
+
+French Translation  
+- Added French translations.
+
+Active Units - Multiple Sessions  
+- Implemented an improved active unit handler, fixing edge cases where users with multiple sessions would log their unit out even though they're still logged in on another device.
+
+Disable Highlighting  
+- Disabled text highlighting for a better drag-and-drop experience.
+
+Desktop - Livemap Window  
+- For desktop users, the live map now opens in a proper popup window if you click the "External" icon.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Pinned Tabs - Top Taskbar  
+- Fixed an issue causing user's pinned tabs from loading if their taskbar position was set to the top of the screen.
+
+Mobile - Switch Servers Popup  
+- Fixed an issue on mobile devices preventing a user from changing their server.
+
+Call Editor - Detach and Attach  
+- Fixed an issue where removing units from a call via editor, then adding them back would attach and immediately detach them.
+
+Active Calls - Search by ID  
+- Fixed an issue preventing users from searching in the active calls list by call ID.
+
+Active Calls - Detach  
+- Fixed an issue where users in self-dispatch mode would not see call detachments if they cleared themselves via the active calls window.
+
+Custom Login Page - Direct to Community  
+- Fixed an issue causing custom login pages to not take the user directly to the community menu on login.
+
+Record Center Preview - Capitalization  
+- Fixed an issue causing record previews in the record panel to not be displayed as all uppercase letters.
+
+Dispatch Saved Types - Backspace  
+- Fixed an issue where backspacing on the dispatch's saved call types would remove or freeze the call editor from the UI.
+{% endtab %}
+{% endtabs %}
+
 ### 3.16.1 8/1/2021
 
 {% tabs %}
