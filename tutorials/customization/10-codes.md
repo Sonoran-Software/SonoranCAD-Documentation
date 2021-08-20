@@ -68,6 +68,13 @@ Then, select "CSV" as the import type and select your downloaded CSV file.
 
 After selecting the CSV file, your 10-codes will be imported into the CAD and saved automatically.
 
+### Troubleshooting
+
+Having issues importing your CSV? [Be sure you are using and editing our Google Sheet with the Google Sheets program only](10-codes.md#1-copy-the-google-sheet).
+
+Our Google sheet includes specific error checking and validation to handle common mistakes.  
+**Support is not provided if you are using Excel, or any other program.**
+
 ## Import from JSON
 
 You can also build and format your 10-Codes directly into JSON. These JSON formatted 10-Codes can then be pasted directly into the UI.

@@ -100,6 +100,13 @@ Then, select "CSV" as the import type and select your downloaded CSV file.
 
 After selecting the CSV file, your penal codes will be imported into the CAD and saved automatically.
 
+### Troubleshooting
+
+Having issues importing your CSV? [Be sure you are using and editing our Google Sheet with the Google Sheets program only](penal-codes.md#1-copy-the-google-sheet).
+
+Our Google sheet includes specific error checking and validation to handle common mistakes.  
+**Support is not provided if you are using Excel, or any other program.**
+
 ## Import from JSON
 
 You can also build and format your penal codes directly into JSON. These JSON formatted penal codes can be sent via our [API endpoint](../../sonoran-cad/api-integration/api-endpoints/general/set-penal-codes.md), or pasted directly into the UI for a more user-friendly experience.
