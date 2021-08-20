@@ -64,6 +64,8 @@ Support will not be provided to users modifying their spreadsheets with Excel, o
 
 Navigate to our [official penal code Google sheet ](https://docs.google.com/spreadsheets/u/0/d/10TCczXferWWFi8sYtccrqocRZ4WdpKB1s4hwRm2Iy6I/copy)and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.
 
+**You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
+
 ![Penal Codes - Copy Sheet](../../.gitbook/assets/image%20%28107%29.png)
 
 ### 2. Add Your Penal Codes
