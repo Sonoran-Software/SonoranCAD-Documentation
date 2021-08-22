@@ -8,6 +8,49 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.18.0 8/21/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch Lookup - Send to Unit  
+- Dispatchers can send lookup results to specific units. This also supports shortcuts from the active units list and drag-and-drop support.
+
+Stream Overlay: Multi-line  
+- The stream overlay custom text files now has multi-line support.
+
+Twitch Bot - Notes  
+- The livestream bot can now be configured to send chat messages when a new call note is added.
+
+Twitch Bot: Lookup Events  
+- The Twitch bot can now be configured to send chat updates when the user runs a lookup in the CAD.
+
+Tone Files - Formats  
+- Added wav, mp4, and m4a audio file format support to the tone board uploader.
+
+Self-Dispatch: Auto Attach  
+- When creating a new dispatch call via self-dispatch, it will automatically add your identifier to the call.
+
+Server IP - Optional Outbound Field  
+- Community servers can now specify a different inbound/outbound IP address. This is useful for communities on shared hosts, who authenticate and send data on a different IP than they receive push events and traffic to their server.
+
+Stream Overlay - Copy Fields  
+- Users can now more quickly create custom text files by copying field keys right from the UI.
+
+Stream Overlay: Custom Text Safety Checks  
+- Added safety checks to the custom overlay text files to ensure the user has every field enabled.
+{% endtab %}
+
+{% tab title="Changed" %}
+API ID - Trim Spaces  
+- Added a check to ensure API IDs are not added with leading or trailing spaces.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Lookup - Header  
+- Fixed an issue causing the lookup window to not display the updated header when searches are ran.
+{% endtab %}
+{% endtabs %}
+
 ### 3.17.0 8/13/2021
 
 {% tabs %}
