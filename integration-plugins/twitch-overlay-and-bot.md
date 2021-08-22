@@ -32,58 +32,23 @@ In the stream overlay, open the txt file directory viewer and select a folder fo
 
 ![Stream Overlay - Text file Location](../.gitbook/assets/8d764649f961657fc6245ce3cce2a62d.gif)
 
-### 3. Toggle Desired Keys
-
-In the `Configuration` tab, toggle on the desired data fields for your unit and dispatch call information.
-
-For every field toggled, a text file will be generated to be viewed in OBS.
+### 3. Toggle and Configure Keys
 
 {% hint style="warning" %}
 The free version of the overlay is limited to three \(3\) data keys.  
 Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
 {% endhint %}
 
-![Stream Overlay - Data Field Toggles](../.gitbook/assets/image%20%28247%29.png)
+In the `Configuration` tab, toggle on the desired data fields for your unit and dispatch call information.
 
-### 4. Save your Configuration
+For every field toggled, a text file will be generated to be viewed in OBS.  
+However, we **recommend creating custom text files** to combine multiple data fields in a single text file.
 
-Don't forget to save your configuration!
+![Stream Overlay - Custom Text Files](../.gitbook/assets/image%20%28251%29.png)
 
-### 5. Configure Data in OBS
+#### Data Field Keys:
 
-In OBS, add a new text source:
-
-![OBS - New Text Source](../.gitbook/assets/image%20%28245%29.png)
-
-In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
-
-_Note: These files are generated and updated when your unit or call data changes. Re-opening the police, fire, or EMS pages will fully regenerate all files._
-
-![Stream Overlay - Text Files](../.gitbook/assets/image%20%28241%29.png)
-
-![Stream Overlay - Text file Viewer](../.gitbook/assets/image%20%28246%29.png)
-
-You can now place the text field anywhere in your OBS stream layout.
-
-You can also customize the fonts, change the background and more!
-
-## Custom Text Files
-
-While the stream overlay generates a unique text file for every toggled data field, you can also configure custom text files with multiple data fields. This makes formatting on your overlay easier with less individual fields.
-
-### 1. Add a New Custom File
-
-In the overlay configuration section, expand the `Custom Text Files` section and select `Add`.
-
-![Stream Overlay - Custom Text Files](../.gitbook/assets/image%20%28249%29.png)
-
-### 2. Set the File Name and Data Keys
-
-Set the custom text file's name and data keys using the text boxes. The data keys are formatted as `{someKey}` and will have their values replaced automatically with the live unit or dispatch call data.
-
-{% hint style="warning" %}
-In order for the data key to be replaced/updated in the custom text file, the **field MUST be toggled/enabled** in the Unit Updates or Call Updates section above.
-{% endhint %}
+These can be easily copied from the UI, by pressing the `Copy` button next to the toggled field and pasting into the custom file's key textbox.
 
 | Key | Description |
 | :--- | :--- |
@@ -109,11 +74,25 @@ In order for the data key to be replaced/updated in the custom text file, the **
 | {call\_code} | Dispatch Call 10-Code |
 | {call\_description} | Dispatch Call Description |
 
-### 3. Add the Text File to OBS
+### 4. Save your Configuration
 
-**Be sure to save your new configuration!**
+Don't forget to save your configuration!
 
-\*\*\*\*[As with the regular text files](twitch-overlay-and-bot.md#5-configure-data-in-obs), these custom formatted ones can be imported and live-updated through OBS.
+### 5. Configure Data in OBS
+
+In OBS, add a new text source:
+
+![OBS - New Text Source](../.gitbook/assets/image%20%28245%29.png)
+
+In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
+
+![Stream Overlay - Text Files](../.gitbook/assets/image%20%28241%29.png)
+
+![Stream Overlay - Text file Viewer](../.gitbook/assets/image%20%28246%29.png)
+
+You can now place the text field anywhere in your OBS stream layout.
+
+You can also customize the fonts, change the background and more!
 
 ## Configuring the Twitch Bot
 

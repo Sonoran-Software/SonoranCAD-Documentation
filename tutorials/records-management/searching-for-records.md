@@ -11,7 +11,7 @@ description: >-
 From the start menu select `Record Management` &gt; `Lookup` to open a new lookup window.  
 You can also [minimize and pin this window type](../customization/customizing-your-layout.md#7-tab-system) to your taskbar for faster access.
 
-![Sonoran CAD - New Lookup](../../.gitbook/assets/image%20%28252%29.png)
+![Sonoran CAD - New Lookup](../../.gitbook/assets/image%20%28253%29.png)
 
 ## Running a Search
 

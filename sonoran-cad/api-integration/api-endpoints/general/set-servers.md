@@ -71,27 +71,27 @@ INVALID API KEY
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
     "type": "GET_SERVERS",
-    "data": [
-        {
-            "servers": [
-                {
-                    "id": 1,
-                    "name": "Server 1",
-                    "description": "Main Server",
-                    "signal": "",
-                    "mapUrl": "",
-                    "mapIp": "",
-                    "mapPort" 0,
-                    "listenerPort": 3232,
-                    "mapPort": 30121,
-                    "enableMap": true,
-                    "isStatic": false,
-                    "mapType": "NORMAL",
-                }
-            ]
-            "deployMap": true // Deploy the Live Map with these server changes
-        },
-    ]
+    "data": {
+        "servers": [
+            {
+                "id": 1,
+                "name": "Server 1",
+                "description": "Main Server",
+                "signal": "",
+                "mapUrl": "",
+                "mapIp": "",
+                "mapPort" 0,
+                "listenerPort": 3232,
+                "differingOutbound": false, // Different outbound/egress IP than the mapIp
+                "outboundIp": "",
+                "mapPort": 30121,
+                "enableMap": true,
+                "isStatic": false,
+                "mapType": "NORMAL",
+            }
+        ]
+        "deployMap": true // Deploy the Live Map with these server changes
+    },
 }
 ```
 

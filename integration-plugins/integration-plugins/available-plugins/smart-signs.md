@@ -58,6 +58,12 @@ In the Admin panel, navigate to Advanced &gt; In-Game Integration &gt; Push Even
 
 Ensure your game server's IP and game port are set. The CAD will use this to push sign updates to your server.
 
+#### Differing Inbound/Outbound IP Addresses
+
+`Error: Server ID: 123 has IP set to: 1.2.3.4 -> your IP: '2.3.4.5'`
+
+Some hosting providers may have your game server sending traffic out from a different IP address than is used to connect to your game server. If this is the case, toggle the `Differing Outbound IP` checkbox for this server and fill in the `Outbound IP` field.
+
 ![Sonoran CAD - Push Event Panel](../../../.gitbook/assets/image%20%28220%29.png)
 
 ## How to use
