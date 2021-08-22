@@ -14,15 +14,15 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 This plugin is for sending plate reads to other plugins.
 
+## Showcase Video
+
+View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
+
 ## Installation Video
 
 Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
 
 **Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
-
-## Showcase Video
-
-View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
 
 ## Installation Guide
 

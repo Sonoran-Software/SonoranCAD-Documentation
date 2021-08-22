@@ -7,7 +7,7 @@ description: >-
 # Voice Commands
 
 {% hint style="danger" %}
-Currently, Sonoran CAD only supports voice commands in the Chrome desktop browser. 
+Currently, Sonoran CAD only supports voice commands in the **Chrome desktop browser**. 
 
 Voice recognition is provided by Google, and performance may vary based upon pronunciation, speed, and other factors.
 {% endhint %}
