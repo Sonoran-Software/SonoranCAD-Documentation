@@ -10,6 +10,8 @@ description: >-
 
 ![Sonoran CAD - Stream Overlay](../.gitbook/assets/overlay.gif)
 
+![Stream Overlay - Bodycam](../.gitbook/assets/image%20%28255%29.png)
+
 ## What is Sonoran CAD's Livestream Overlay?
 
 Sonoran CAD has a built-in livestream overlay, allowing you to display your live unit information, call information, and more!
@@ -96,7 +98,41 @@ You can also customize the fonts, change the background and more!
 
 ## Bodycam Overlay
 
-Coming Soon
+{% hint style="warning" %}
+The free version of the overlay does not include the customizable bodycam asset.  
+Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
+{% endhint %}
+
+The stream overlay also includes a customizable version of the popular [XION Chase Cam asset](https://github.com/zhivotnoya/XION-ChaseCam).
+
+This allows you to customize a bodycam overlay on your stream, with your real-time unit and call information.
+
+![Sonoran CAD - Stream Overlay Bodycam](../.gitbook/assets/image%20%28255%29.png)
+
+### 1. Configuring the Bodycam Contents
+
+In the livestream overlay config section, expand the `Bodycam` section.
+
+Here, you can enable and customize the data placement and keys just as before with the [customizable text files](twitch-overlay-and-bot.md#3-toggle-and-configure-keys).
+
+You can also optionally specify a different port \(`9990` is the default\).
+
+![](../.gitbook/assets/image%20%28256%29.png)
+
+### 2. Add the Bodycam to OBS
+
+In OBS, add a new "Browser" source and paste the URL listed in the bodycam section.  
+By default, this will be `http://localhost:9990`
+
+![OBS - New Browser Source](../.gitbook/assets/image%20%28257%29.png)
+
+Paste the URL into the browser source and hit OK.
+
+![](../.gitbook/assets/image%20%28254%29.png)
+
+### 3. Customize the Size and Placement
+
+You can now customize the size and placement of this browser window in OBS as you normally would.
 
 ## Configuring the Twitch Bot
 
