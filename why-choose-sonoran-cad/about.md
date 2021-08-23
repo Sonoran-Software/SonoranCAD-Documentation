@@ -67,11 +67,11 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 ### 📺 Twitch Bot and Overlay
 
-Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
-
 ![](../.gitbook/assets/live-banner.png)
 
-![](../.gitbook/assets/overlay.gif)
+![Sonoran CAD - Livestream Overlay](../.gitbook/assets/overlay%20%282%29.gif)
+
+Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
 ### 💻 Multitasking Window and Tab System
 

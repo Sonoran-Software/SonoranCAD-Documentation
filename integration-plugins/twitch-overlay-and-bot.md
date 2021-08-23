@@ -8,7 +8,7 @@ description: >-
 
 ![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/live-banner.png)
 
-![Sonoran CAD - Stream Overlay](../.gitbook/assets/overlay.gif)
+![](../.gitbook/assets/overlay%20%282%29.gif)
 
 ![Stream Overlay - Bodycam](../.gitbook/assets/image%20%28255%29.png)
 
