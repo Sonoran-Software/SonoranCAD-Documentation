@@ -8,6 +8,32 @@ description: View the latest changes to Sonoran CAD!
 _NOTE: All updates are released for Sonoran CAD Web, Windows Desktop, Android and iOS. Depending upon Google and Apple’s processing and review validation time, the latest Android and iOS application updates may not be available for up to 24 hours_
 {% endhint %}
 
+### 3.18.1 8/22/2021
+
+{% tabs %}
+{% tab title="New" %}
+Stream Overlay: Bodycam  
+- The stream overlay now allows users to easily self-host a customized bodycam webpage to be visible on their livestream.
+
+Unit Group - Drag-and-Drop Unit Changes  
+- Units in a group can now be dragged-and-dropped to another group.
+
+Unit Group - Edit Name  
+Dispatchers can easily update a unit group's name by clicking on the group name in the active units panel.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Pined Tabs - Open Event  
+- Fixed an issue where navigating back to the community menu, then back to an emergency page would cause the pinned tab open event to not properly register.
+
+Permission Key: Modify Street Signs  
+- Fixed an issue causing the modify street signs permission key label to not display properly.
+
+Desktop - Discord Presence  
+- Resolved an error thrown when toggling off Discord rich presence.
+{% endtab %}
+{% endtabs %}
+
 ### 3.18.0 8/21/2021
 
 {% tabs %}
