@@ -6,9 +6,9 @@ description: >-
 
 # 📺 Twitch Overlay and Bot
 
-![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/live-banner.png)
+![](../.gitbook/assets/live-banner.png)
 
-![](../.gitbook/assets/overlay%20%282%29.gif)
+![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/overlay%20%282%29.gif)
 
 ![Stream Overlay - Bodycam](../.gitbook/assets/image%20%28255%29.png)
 
