@@ -94,6 +94,10 @@ You can now place the text field anywhere in your OBS stream layout.
 
 You can also customize the fonts, change the background and more!
 
+## Bodycam Overlay
+
+Coming Soon
+
 ## Configuring the Twitch Bot
 
 Sonoran CAD's stream overlay also comes with a configurable Twitch bot. This bot will send out chat updates when unit or call data is updated.
