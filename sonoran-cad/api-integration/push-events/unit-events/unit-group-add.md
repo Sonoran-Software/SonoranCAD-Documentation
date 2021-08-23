@@ -12,6 +12,7 @@ description: This push event notifies your server when a unit is added to a unit
     "type": "EVENT_UNIT_GROUP_ADD",
     "data": {
         "identId": 1,
+        "identIds": [1, 2, 3], // OPTIONAL: Only sent when a unit group is having the name updated
         "groupName": "Ladder 61"
     }
 }
