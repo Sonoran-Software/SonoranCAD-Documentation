@@ -98,6 +98,8 @@ You can also customize the fonts, change the background and more!
 
 ## Bodycam Overlay
 
+![Sonoran CAD - Stream Overlay Bodycam](../.gitbook/assets/overlay.png)
+
 {% hint style="warning" %}
 The free version of the overlay does not include the customizable bodycam asset.  
 Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
@@ -106,8 +108,6 @@ Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overl
 The stream overlay also includes a customizable version of the popular [XION Chase Cam asset](https://github.com/zhivotnoya/XION-ChaseCam).
 
 This allows you to customize a bodycam overlay on your stream, with your real-time unit and call information.
-
-![Sonoran CAD - Stream Overlay Bodycam](../.gitbook/assets/image%20%28255%29.png)
 
 ### 1. Configuring the Bodycam Contents
 
