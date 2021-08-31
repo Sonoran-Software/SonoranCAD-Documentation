@@ -4,7 +4,7 @@ description: This push event sends data when a note is added to an existing disp
 
 # Dispatch Note
 
-### EVENT\_DISPATCH\_CLOSED POST
+### EVENT\_DISPATCH\_NOTE POST
 
 ```javascript
 {
