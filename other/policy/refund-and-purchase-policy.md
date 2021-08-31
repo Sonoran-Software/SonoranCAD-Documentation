@@ -24,7 +24,7 @@ Sonoran CAD is not responsible for any community closures, customer withdraws fr
 
 #### Integration Issues:
 
-Sonoran CAD offers many in-depth guides on installing our [integration ]()features. These features are advanced and will require some general IT, programming, or server management knowledge.
+Sonoran CAD offers many in-depth guides on installing our integration features. These features are advanced and will require some general IT, programming, or server management knowledge.
 
 We are happy to provide you with installation support at anytime. We are not responsible for issues in retrieving your database credentials, port forwarding, hosting, etc. Refunds will not be issued for these reasons.
 
