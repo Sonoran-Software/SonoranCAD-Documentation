@@ -12,7 +12,7 @@ Sonoran CAD allows your community to register and try out the CAD for an unlimit
 
 ### Community Subscriptions
 
-All Sonoran CAD community subscriptions are non refundable. Sonoran CAD and all accompanying services are provided in an as-is condition. You may cancel your subscription at anytime using the in-app payment center. Even after canceling, your upgraded subscription features will still be available for the remainder of the subscription term. For more information, see our [Pricing FAQ](../../pricing/faq/).
+**All Sonoran CAD community subscriptions are non refundable**. Sonoran CAD and all accompanying services are provided in an as-is condition. You may cancel your subscription at anytime using the in-app payment center. Even after canceling, your upgraded subscription features will still be available for the remainder of the subscription term. For more information, see our [Pricing FAQ](../../pricing/faq/).
 
 #### Upcoming Payments:
 
@@ -20,7 +20,7 @@ Emails are sent from Stripe, our billing manager, a few days before your subscri
 
 #### Community Closures:
 
-Sonoran CAD is not responsible for any community closures, customer withdraws from a gaming community, etc. Refunds will not be issued for these reasons. You may cancel or transfer your subscription at anytime, using the in-app payment center.
+Sonoran CAD is not responsible for any community closures, customer withdraws from a gaming community, etc. Refunds will not be issued for these reasons. You may [cancel](../../pricing/faq/create-and-manage-a-subscription.md#manage-an-existing-subscription) or [transfer ](../../pricing/faq/create-and-manage-a-subscription.md#migrate-a-subscription-to-another-community)your subscription at anytime, using the in-app payment center.
 
 #### Integration Issues:
 

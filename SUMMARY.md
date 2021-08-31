@@ -189,7 +189,6 @@
 ## Roadmap
 
 * [📋 Changelog](roadmap/changelog.md)
-* [Trello](https://trello.com/b/ZVAUud4A/sonoran-cad)
 
 ## Other
 
