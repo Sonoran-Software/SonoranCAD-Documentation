@@ -51,6 +51,7 @@
   * [Adding a Criminal Record](tutorials/records-management/adding-a-criminal-record.md)
   * [PDF Records](tutorials/records-management/pdf-records.md)
 * [Administration](tutorials/administration/README.md)
+  * [System Logs](tutorials/administration/system-logs.md)
   * [Remove User Account](tutorials/administration/remove-user-account.md)
   * [Deleting or Transferring your CAD](tutorials/administration/deleting-or-transferring-your-cad.md)
 * [Other Features](tutorials/other-features/README.md)
