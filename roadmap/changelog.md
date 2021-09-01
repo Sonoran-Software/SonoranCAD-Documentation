@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.19.0 9/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Community Logs  
+- Communities can now search an in-depth logging history for abuse and other user actions.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Overlay: Unit Agency  
+- Fixed an issue causing the unit agency to not properly display
+
+Overlay: Department Label  
+- Fixed the department unit update label from being plural.
+
+\#4999 Sonoran CAD Bug Report  
+- Discord webhooks for removed records still get sent even when the sliders are only set to new records only
+{% endtab %}
+{% endtabs %}
+
 ### 3.18.1 8/22/2021
 
 {% tabs %}
