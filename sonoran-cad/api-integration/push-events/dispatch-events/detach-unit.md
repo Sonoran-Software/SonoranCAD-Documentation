@@ -6,6 +6,10 @@ description: >-
 
 # Detach Unit
 
+{% hint style="info" %}
+Detaching units via the API will not send this push event. These events should be listened to locally on the game server.
+{% endhint %}
+
 ## EVENT\_UNIT\_DETACH Post
 
 ```javascript
