@@ -51,7 +51,7 @@ A successful call will be met with the following response:
     // See below for full object structuring
     "activeCalls": [], // DISPATCH CALL Array
     "emergencyCalls": [], // EMERGENCY CALL Array
-    "closedCalls": [], // DISPATCH CALL Array
+    "closedCalls": [], // CLOSED CALL Array
 }
 ```
 {% endapi-method-response-example %}
