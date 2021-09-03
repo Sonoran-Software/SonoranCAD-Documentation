@@ -10,6 +10,10 @@ description: >-
 This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
+{% hint style="info" %}
+Toggling a unit's panic status via the API will not send this push event. These events should be listened for locally on the game server.
+{% endhint %}
+
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/unit\_panic" %}
 {% api-method-summary %}
 Unit Panic
