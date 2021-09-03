@@ -145,6 +145,7 @@
       * [Detach Unit](sonoran-cad/api-integration/api-endpoints/emergency/detach-unit.md)
       * [Update Call Postal](sonoran-cad/api-integration/api-endpoints/emergency/update-call-postal.md)
       * [Update Call Primary](sonoran-cad/api-integration/api-endpoints/emergency/update-call-primary.md)
+      * [Add Call Note](sonoran-cad/api-integration/api-endpoints/emergency/add-call-note.md)
       * [Close Call](sonoran-cad/api-integration/api-endpoints/emergency/close-call.md)
       * [911 Call](sonoran-cad/api-integration/api-endpoints/emergency/911-call.md)
       * [Set Street Sign Config](sonoran-cad/api-integration/api-endpoints/emergency/set-street-sign-config.md)

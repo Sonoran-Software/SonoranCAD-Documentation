@@ -1,24 +1,24 @@
 ---
-description: This endpoint allows you to detach a unit from any active dispatch call.
+description: This endpoint allows you to add a new dispatch call note.
 ---
 
-# Detach Unit
+# Add Call Note
 
 {% hint style="warning" %}
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="info" %}
-Detaching units via the API does not send an [EVENT\_UNIT\_DETACH ](../../push-events/dispatch-events/detach-unit.md)push event. These events should be listened to locally on the game server.
+Detaching units via the API does not send an [EVENT\_DISPATCH\_NOTE ](../../push-events/dispatch-events/dispatch-note.md)push event. These events should be listened to locally on the game server.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/detach\_unit" %}
+{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/add\_call\_note" %}
 {% api-method-summary %}
-Detach Unit
+Add Call Note
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to attach new units to an existing dispatch call.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,7 +33,7 @@ Your community's API Key
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-DETACH\_UNIT
+ADD\_CALL\_NOTE
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="data" type="array" required=true %}
@@ -49,7 +49,7 @@ A successful call will be met with the following response:
 {% endapi-method-response-example-description %}
 
 ```
-UNITS DETACHED
+NOTE 'some note here' added to call #123
 ```
 {% endapi-method-response-example %}
 
@@ -73,14 +73,20 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "DETACH_UNIT",
+    "type": "ADD_CALL_NOTE",
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "units": ["STEAN:1234"] // Array of API IDs
-                                // Typically, this is their STEAM Hex
+            "prefix": "A-10", // Unit name (UTC timestamp is appended server-side)
+            "note": "This is a test!" // Note text
         },
     ]
 }
 ```
+
+### Formatting
+
+UTC: Prefix: Note
+
+`2021-09-03 22:21:25: A-10: THIS IS A TEST!`
 
