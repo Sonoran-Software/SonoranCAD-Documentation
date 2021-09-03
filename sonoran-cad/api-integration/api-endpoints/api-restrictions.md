@@ -17,6 +17,8 @@ description: >-
 | emergency/[get\_account\_identifiers](emergency/get-identifiers.md) | Standard |
 | emergency/[new\_dispatch](emergency/new-dispatch.md) | Plus |
 | emergency/[attach\_unit](emergency/attach-units.md) | Plus |
+| emergency/[detach\_unit](emergency/detach-unit.md) | Plus |
+| emergency/[add\_call\_note](emergency/add-call-note.md) | Plus |
 | emergency/[close\_call](emergency/close-call.md) | Plus |
 | emergency/[get\_active\_units](emergency/get-active-units.md) | Plus |
 | emergency/[get\_calls](emergency/get-calls.md) | Plus |

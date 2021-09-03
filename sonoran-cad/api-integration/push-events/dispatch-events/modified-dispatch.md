@@ -6,6 +6,11 @@ description: This push event sends data when an existing dispatch call is modifi
 
 ### EVENT\_DISPATCH\_EDIT POST
 
+{% hint style="warning" %}
+This push event is not sent triggered via the API.  
+API triggers should be listened to locally on the game server.
+{% endhint %}
+
 ```javascript
 {
     "key": "YOUR_API_KEY", // Authenticate legitimate event traffic

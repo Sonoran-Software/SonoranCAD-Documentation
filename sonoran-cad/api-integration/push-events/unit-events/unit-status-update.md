@@ -6,6 +6,11 @@ description: This push event is sent whenever a unit's status call is changed.
 
 ### EVENT\_UNIT\_STATUS
 
+{% hint style="warning" %}
+This push event is not sent triggered via the API.  
+API triggers should be listened to locally on the game server.
+{% endhint %}
+
 ```javascript
 {
     "key": "YOUR_API_KEY", // Authenticate legitimate event traffic

@@ -4,11 +4,12 @@ description: This event is sent when a unit toggles their panic status.
 
 # Unit Panic
 
-{% hint style="info" %}
-This push event is not sent when a panic status is toggled via the API. API toggles should be listened to locally on the game server.
-{% endhint %}
-
 ### EVENT\_UNIT\_PANIC
+
+{% hint style="warning" %}
+This push event is not sent triggered via the API.  
+API triggers should be listened to locally on the game server.
+{% endhint %}
 
 ```javascript
 {
