@@ -77,16 +77,9 @@ INVALID API KEY
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "prefix": "A-10", // Unit name (UTC timestamp is appended server-side)
             "note": "This is a test!" // Note text
         },
     ]
 }
 ```
-
-### Formatting
-
-UTC: Prefix: Note
-
-`2021-09-03 22:21:25: A-10: THIS IS A TEST!`
 
