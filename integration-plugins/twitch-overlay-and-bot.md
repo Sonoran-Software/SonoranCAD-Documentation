@@ -112,9 +112,15 @@ The stream overlay also includes a customizable version of the popular [XION Cha
 
 This allows you to customize a bodycam overlay on your stream, with your real-time unit and call information.
 
-### 1. Configuring the Bodycam Contents
+### 1. Set a File Directory
 
 **First, ensure you are using the** [**desktop** ](../downloads/)**version of Sonoran CAD.** The application has to generate physical files, and host a local webserver to work. This can not be done in a browser.
+
+In the stream overlay, open the txt file directory viewer and select a folder for the text files and bodycam webpage to be generated:
+
+![Stream Overlay - Text file Location](../.gitbook/assets/8d764649f961657fc6245ce3cce2a62d.gif)
+
+### 2. Configuring the Bodycam Contents
 
 In the livestream overlay config section, expand the `Bodycam` section.
 
@@ -124,7 +130,7 @@ You can also optionally specify a different port \(`9990` is the default\).
 
 ![](../.gitbook/assets/image%20%28256%29.png)
 
-### 2. Add the Bodycam to OBS
+### 3. Add the Bodycam to OBS
 
 In OBS, add a new "Browser" source and paste the URL listed in the bodycam section.  
 By default, this will be `http://localhost:9990`
@@ -135,7 +141,7 @@ Paste the URL into the browser source and hit OK.
 
 ![](../.gitbook/assets/image%20%28254%29.png)
 
-### 3. Customize the Size and Placement
+### 4. Customize the Size and Placement
 
 You can now customize the size and placement of this browser window in OBS as you normally would.
 
