@@ -18,90 +18,14 @@ Sonoran CAD has a built-in livestream overlay, allowing you to display your live
 
 Our Twitch bot can also be configured to send out chat messages when data is modified.
 
-## Configuring the Overlay
-
-The overlay is immensely customizable, allowing you to customize every piece of data displayed.
-
-### 1. Accessing the Overlay Window
-
-The overlay configuration modal can be opened by navigating to `Start Menu` &gt; `System` &gt; `Stream Overlay`. Or, by searching in the start menu.
-
-### 2. Configuring Text File Location
-
-While the Twitch bot can run in a browser instance of Sonoran CAD, the [desktop application](../downloads/) **is required**, to generate unit/call data txt files.
-
-In the stream overlay, open the txt file directory viewer and select a folder for the text files to be generated:
-
-![Stream Overlay - Text file Location](../.gitbook/assets/8d764649f961657fc6245ce3cce2a62d.gif)
-
-### 3. Toggle and Configure Keys
-
-{% hint style="warning" %}
-The free version of the overlay is limited to three \(3\) data keys.  
-Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
-{% endhint %}
-
-In the `Configuration` tab, toggle on the desired data fields for your unit and dispatch call information.
-
-For every field toggled, a text file will be generated to be viewed in OBS.  
-However, we **recommend creating custom text files** to combine multiple data fields in a single text file.
-
-![Stream Overlay - Custom Text Files](../.gitbook/assets/image%20%28251%29.png)
-
-#### Data Field Keys:
-
-These can be easily copied from the UI, by pressing the `Copy` button next to the toggled field and pasting into the custom file's key textbox.
-
-| Key | Description |
-| :--- | :--- |
-| {unit\_status} | Unit Status |
-| {unit\_location} | Unit Location |
-| {unit\_aop} | Unit AOP |
-| {unit\_number} | Unit Number |
-| {unit\_name} | Unit Name |
-| {unit\_agency} | Unit Agency |
-| {unit\_department} | Unit Department |
-| {unit\_subdivision} | Unit Subdivision |
-| {unit\_rank} | Unit Rank |
-| {unit\_group} | Unit Group |
-| {unit\_panic} | Unit Panic Status |
-| {call\_id} | Dispatch Call ID |
-| {call\_origin} | Dispatch Call Origin |
-| {call\_status} | Dispatch Call Status |
-| {call\_priority} | Dispatch Call Priority |
-| {call\_block} | Dispatch Call Block |
-| {call\_address} | Dispatch Call Address |
-| {call\_postal} | Dispatch Call Postal |
-| {call\_title} | Dispatch Call Title |
-| {call\_code} | Dispatch Call 10-Code |
-| {call\_description} | Dispatch Call Description |
-
-### 4. Save your Configuration
-
-Don't forget to save your configuration!
-
-### 5. Configure Data in OBS
-
-In OBS, add a new text source:
-
-![OBS - New Text Source](../.gitbook/assets/image%20%28245%29.png)
-
-In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
-
-![Stream Overlay - Text Files](../.gitbook/assets/image%20%28241%29.png)
-
-![Stream Overlay - Text file Viewer](../.gitbook/assets/image%20%28246%29.png)
-
-You can now place the text field anywhere in your OBS stream layout.
-
-You can also customize the fonts, change the background and more!
-
 ## Bodycam Overlay
 
 ![Sonoran CAD - Stream Overlay Bodycam](../.gitbook/assets/overlay.png)
 
 {% hint style="warning" %}
 The free version of the overlay does not include the customizable bodycam asset.  
+However, you can still create [custom overlay text](twitch-overlay-and-bot.md#custom-overlay-text) with the free version!
+
 Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
 
 The bodycam creates local text files and hosts a local webserver.  
@@ -130,7 +54,7 @@ Here, you can enable and customize the data placement and keys just as before wi
 * Toggle `ON` the txt file
 * `COPY` the field key
 * `PASTE` the field key into the bodycam section
-* `Save` the configuration once complete
+* `SAVE` the configuration once complete
 
 You can also optionally specify a different port for the bodycam webpage to run on \(`9990` is the default\).
 
@@ -199,6 +123,84 @@ This will contain valuable information on the twitch bot's connection, rate limi
 ![Overlay - Twitch Logs](../.gitbook/assets/image%20%28244%29.png)
 
 If you have too many data fields toggled, and are sending Twitch updates too quickly you may experience rate limiting.
+
+## Custom Overlay Text
+
+The overlay is immensely customizable, allowing you to customize every piece of data displayed.
+
+### 1. Accessing the Overlay Window
+
+The overlay configuration modal can be opened by navigating to `Start Menu` &gt; `System` &gt; `Stream Overlay`. Or, by searching in the start menu.
+
+### 2. Configuring Text File Location
+
+While the Twitch bot can run in a browser instance of Sonoran CAD, the [desktop application](../downloads/) **is required**, to generate unit/call data txt files.
+
+In the stream overlay, open the txt file directory viewer and select a folder for the text files to be generated:
+
+![Stream Overlay - Text file Location](../.gitbook/assets/8d764649f961657fc6245ce3cce2a62d.gif)
+
+### 3. Toggle and Configure Keys
+
+{% hint style="warning" %}
+The **free version** of the overlay is limited to three \(3\) data keys.  
+Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
+{% endhint %}
+
+In the `Configuration` tab, toggle on the desired data fields for your unit and dispatch call information.
+
+For every field toggled, a text file will be generated to be viewed in OBS.  
+However, we **recommend creating custom text files** to combine multiple data fields in a single text file.
+
+![Stream Overlay - Custom Text Files](../.gitbook/assets/image%20%28251%29.png)
+
+#### Data Field Keys:
+
+These can be easily copied from the UI, by pressing the `Copy` button next to the toggled field and pasting into the custom file's key textbox.
+
+| Key | Description |
+| :--- | :--- |
+| {unit\_status} | Unit Status |
+| {unit\_location} | Unit Location |
+| {unit\_aop} | Unit AOP |
+| {unit\_number} | Unit Number |
+| {unit\_name} | Unit Name |
+| {unit\_agency} | Unit Agency |
+| {unit\_department} | Unit Department |
+| {unit\_subdivision} | Unit Subdivision |
+| {unit\_rank} | Unit Rank |
+| {unit\_group} | Unit Group |
+| {unit\_panic} | Unit Panic Status |
+| {call\_id} | Dispatch Call ID |
+| {call\_origin} | Dispatch Call Origin |
+| {call\_status} | Dispatch Call Status |
+| {call\_priority} | Dispatch Call Priority |
+| {call\_block} | Dispatch Call Block |
+| {call\_address} | Dispatch Call Address |
+| {call\_postal} | Dispatch Call Postal |
+| {call\_title} | Dispatch Call Title |
+| {call\_code} | Dispatch Call 10-Code |
+| {call\_description} | Dispatch Call Description |
+
+### 4. Save your Configuration
+
+Don't forget to save your configuration!
+
+### 5. Configure Data in OBS
+
+In OBS, add a new text source:
+
+![OBS - New Text Source](../.gitbook/assets/image%20%28245%29.png)
+
+In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
+
+![Stream Overlay - Text Files](../.gitbook/assets/image%20%28241%29.png)
+
+![Stream Overlay - Text file Viewer](../.gitbook/assets/image%20%28246%29.png)
+
+You can now place the text field anywhere in your OBS stream layout.
+
+You can also customize the fonts, change the background and more!
 
 ## Purchasing the Overlay
 
