@@ -4,6 +4,7 @@
 * [📱Download The App](downloads/README.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
+  * [Steam Browser - Clear Cache](downloads/steam-browser-clear-cache.md)
 
 ## Why Choose Sonoran CAD?
 
