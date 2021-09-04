@@ -105,7 +105,7 @@ The free version of the overlay does not include the customizable bodycam asset.
 Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
 
 The bodycam creates local text files and hosts a local webserver.  
-**This requires the desktop application to run.**
+**This requires the** [**desktop** ](../downloads/)**application to run.**
 {% endhint %}
 
 The stream overlay also includes a customizable version of the popular [XION Chase Cam asset](https://github.com/zhivotnoya/XION-ChaseCam).
