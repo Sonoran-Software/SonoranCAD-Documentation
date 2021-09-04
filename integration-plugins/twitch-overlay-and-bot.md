@@ -126,7 +126,12 @@ In the livestream overlay config section, expand the `Bodycam` section.
 
 Here, you can enable and customize the data placement and keys just as before with the [customizable text files](twitch-overlay-and-bot.md#3-toggle-and-configure-keys).
 
-You can also optionally specify a different port \(`9990` is the default\).
+* Expand the `Unit Updates` or `Call Updates` Section
+* Toggle `ON` the txt file
+* `COPY` the field key
+* `PASTE` the field key into the bodycam section
+
+You can also optionally specify a different port for the bodycam webpage to run on \(`9990` is the default\).
 
 ![](../.gitbook/assets/image%20%28256%29.png)
 
