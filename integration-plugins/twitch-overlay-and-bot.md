@@ -130,6 +130,7 @@ Here, you can enable and customize the data placement and keys just as before wi
 * Toggle `ON` the txt file
 * `COPY` the field key
 * `PASTE` the field key into the bodycam section
+* `Save` the configuration once complete
 
 You can also optionally specify a different port for the bodycam webpage to run on \(`9990` is the default\).
 
