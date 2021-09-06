@@ -193,6 +193,30 @@ In the [JSON formatter](http://jsonviewer.stack.hu/), we can paste it and select
 
 We can see that the JSON "key" for the bank account amount is `bank`.
 
+## External Keys
+
+### Introduction
+
+In some cases, your license or vehicle registration tables may not directly contain a `Character Mapping ID` column \(a column with an ID that directly maps back to the character/civilian record\), but may contain a unique ID that maps back to a specific character in another table.
+
+### Example: DB Layout
+
+In this example, the `vehicle` table contains all of the vehicle information, but does not contain a `CharacterID` column. Instead, the `vehicle` table contains a `VehicleRegistrationID` column.
+
+The `VehicleRegistrationId` column then maps to the `vehicleregistration` table. The `vehicleregistration` table then contains a corresponding `CharacterId` column, which maps back to the `character` table.
+
+![Sonoran CAD - External Key DB Layout](../../.gitbook/assets/image%20%28263%29.png)
+
+### Example: CAD Config
+
+In the CAD, the configuration is simple.
+
+Toggle on the `External Key` checkbox, as the `vehicle` table's `VehicleId` needs to be mapped to an external table to be turned into the proper `characterId`.
+
+Specify the external key's table \(`vehicleregistration`\) and the external key's column `CharacterId`.
+
+![Sonoran CAD - External Key](../../.gitbook/assets/image%20%28265%29.png)
+
 ### 2. Set the JSON Column and Key
 
 Back in the mapping panel, we toggle the field as a `JSON Column` and set the column name to `accounts` as this is the column in our character table that contains the JSON data.
