@@ -10,7 +10,7 @@ description: >-
 
 ### 📱 Downloadable Apps
 
-In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US), or for [Windows Desktop](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe).  
+In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app&hl=en_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe).  
   
 It's never been more easy to access your community's CAD system, regardless of what platform you're on!
 
