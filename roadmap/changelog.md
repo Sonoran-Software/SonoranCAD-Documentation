@@ -10,6 +10,49 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.0 9/6/2021
+
+{% tabs %}
+{% tab title="New" %}
+Active Units - Multi-Select  
+- Active units and unit groups can now be multi-selected for faster management. Multi-select also allows you to drag and drop multiple units or groups at once
+
+DBSync - External Keys  
+- DB Sync now supports mapping a unique license or vehicle registration ID to an external table containing the proper character ID
+
+API: Add Call Note  
+- Added a new API endpoint to add call notes
+
+API: Detach Unit  
+- Added a new API endpoint to detach units from dispatch calls
+
+Push Event: Unit Panic  
+- Added a server push event for unit panic events
+
+Bodycam: Auto-correct Toggles  
+- Improved the bodycam data fields to auto-toggle on if listed but not enabled
+{% endtab %}
+
+{% tab title="Changed" %}
+Call Note: UTC Timestamp  
+- All dispatch call notes now have timestamps appended to them in UTC
+
+API Kick/Ban - Add username to log  
+- Improved the kick/ban log to include the username when performed via API
+{% endtab %}
+
+{% tab title="Fixed" %}
+DB Sync - Multi-Table Search by Val  
+- Fixed an issue causing custom lookups with DB sync failing when used with a multi-table civilian config
+
+DB Sync - MySQL v8 Syntax  
+- Fixed an issue causing DB Sync to fail on MySQL v8+ due to a syntax change
+
+Bodycam: Timestamp  
+- Fixed an issue causing the bodycam timestamp to glitch on restart
+{% endtab %}
+{% endtabs %}
+
 ### 3.19.0 9/1/2021
 
 {% tabs %}
