@@ -77,6 +77,7 @@ INVALID API KEY
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "callId": 123,
             "note": "This is a test!" // Note text
         },
     ]
