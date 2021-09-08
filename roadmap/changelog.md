@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.1 9/7/2021
+
+{% tabs %}
+{% tab title="New" %}
+Self-Dispatch - Save State  
+- Unit's self-dispatch mode will now save and persist through a refresh/restart
+
+Settings - Sound Volume Save  
+- System volume now saves and persists
+{% endtab %}
+
+{% tab title="Changed" %}
+FR Translations - Update  
+- Updated French translations
+{% endtab %}
+
+{% tab title="Fixed" %}
+Tablet - Window Sizes and Dragging  
+- Fixed an issue causing the in-game tablet to lock and misplace windows on re-join, requiring a layout reset to resolve. This had to do with a screen size detection plugin malfunctioning
+
+Unit Groups - Creation  
+- Fixed an issue preventing unit groups from being created via right-click
+
+Multi-Unit - Drag to Lookup  
+- Fixed an issue preventing users from dragging multiple selected units or groups to a lookup window to send them the search results
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.0 9/6/2021
 
 {% tabs %}
