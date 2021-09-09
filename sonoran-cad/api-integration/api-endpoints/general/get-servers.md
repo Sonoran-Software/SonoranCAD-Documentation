@@ -59,6 +59,8 @@ A successful call will be met with the following response:
       "mapUrl": "https://cadapi.dev.sonoransoftware.com/map/community/map_example/index.html",
       "mapIp": "123.456.78.9",
       "mapPort": "30121",
+      "differingOutbound": false, // Different outbound/egress IP than the mapIp
+      "outboundIp": "",
       "listenerPort": "0000",
       "enableMap": false,
       "mapType": "POSTAL",

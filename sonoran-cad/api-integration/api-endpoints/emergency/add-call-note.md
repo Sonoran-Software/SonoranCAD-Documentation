@@ -8,10 +8,6 @@ description: This endpoint allows you to add a new dispatch call note.
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% hint style="info" %}
-Detaching units via the API does not send an [EVENT\_DISPATCH\_NOTE ](../../push-events/dispatch-events/dispatch-note.md)push event. These events should be listened to locally on the game server.
-{% endhint %}
-
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/add\_call\_note" %}
 {% api-method-summary %}
 Add Call Note

@@ -8,10 +8,6 @@ description: This endpoint allows you to detach a unit from any active dispatch 
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% hint style="info" %}
-Detaching units via the API does not send an [EVENT\_UNIT\_DETACH ](../../push-events/dispatch-events/detach-unit.md)push event. These events should be listened to locally on the game server.
-{% endhint %}
-
 {% api-method method="post" host="https://api.sonorancad.com" path="/emergency/detach\_unit" %}
 {% api-method-summary %}
 Detach Unit
