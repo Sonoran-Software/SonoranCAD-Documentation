@@ -10,6 +10,31 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.2 9/8/2021
+
+{% tabs %}
+{% tab title="New" %}
+Unit - Drag to Tone Tab  
+- Units can now be dragged to a minimized tone tab to automatically open and attach the unit to the tone
+
+Unit & Call - Drag to Tone Board  
+- Units, groups, and dispatch calls can be dragged-and-dropped to the tone board to automatically add them to the "Send To" box
+
+Unit & Call - Drag to Lookup Tab  
+- Active units and unit groups can be dragged to a pinned lookup tab to automatically open a lookup with those unit\(s\) selected for result transmission
+{% endtab %}
+
+{% tab title="Changed" %}
+Dispatch Saved Types - Capitalization  
+- Capitalized all options in the dispatch's saved types dropdown to match consistent formatting
+{% endtab %}
+
+{% tab title="Fixed" %}
+Multi-Unit: Tone Board  
+- Fixed an issue preventing users from attaching multiple units at a time to the tone board via the active units context menu
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.1 9/7/2021
 
 {% tabs %}
