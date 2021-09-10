@@ -11,6 +11,8 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 {% hint style="info" %}
 Hotkeys are enabled **globally** on the [Desktop ](../../downloads/)application. This means users do not have to have the app or page in focus or visible for the hotkeys to be registered.
+
+For desktop users, we **highly recommend** viewing our [guide on in-game use](../../downloads/steam-browser-workaround.md)!
 {% endhint %}
 
 ### Configure your Hotkeys

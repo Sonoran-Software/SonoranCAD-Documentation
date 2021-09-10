@@ -4,7 +4,7 @@ description: Lean how to more easily view Sonoran CAD while in-game.
 
 # Steam Browser - Workaround
 
-![Sonoran CAD - In-Game Use](../.gitbook/assets/d812ed54ccfd9f58f3c4131dd3976465%20%281%29.gif)
+![Sonoran CAD - In-Game Use](../.gitbook/assets/4f17b841b0cc2ec5acea0300efc124cd.gif)
 
 ## Introduction
 
@@ -40,6 +40,11 @@ Specifically with streamers, some users may want to hide the Windows taskbar tha
 To do so, simply right-click the taskbar &gt; Taskbar Settings &gt; Automatically Hide the Taskbar
 
 ![Taskbar - Auto Hide](../.gitbook/assets/image%20%28267%29.png)
+
+### 5. Utilize the Hotkey
+
+In-game, simply press your hotkey to toggle the CAD display both on and off.  
+When the CAD is toggled off, your game will automatically regain focus!
 
 
 

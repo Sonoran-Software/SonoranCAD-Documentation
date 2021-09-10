@@ -10,6 +10,25 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.5 9/9/2021
+
+{% tabs %}
+{% tab title="New" %}
+CAD - Toggle View for In-Game Use  
+- Users can now bind a hotkey to display and hide the CAD on top of the game for a better and more native experience than the Steam Browser. Minimizing with the hotkey will also auto-refocus the game layer below
+{% endtab %}
+
+{% tab title="Fixed" %}
+Duplicate Sections - Bug  
+- Fixed an issue preventing duplicated sections from being removed once a record was filed
+
+Record Preview - Duplicated Sections  
+- Fixed an issue causing records with duplicated sections to overwrite preview fields further down in the lookup preview
+{% endtab %}
+{% endtabs %}
+
+
+
 ### 3.20.2 9/8/2021
 
 {% tabs %}
