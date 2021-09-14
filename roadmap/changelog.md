@@ -10,6 +10,28 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.6 9/13/2021
+
+{% tabs %}
+{% tab title="New" %}
+Desktop App - Save Last Size  
+- The desktop app now re-opens with the size it was last set to  
+  
+Multi-Group Set Status  
+- Dispatchers can now change the status on multiple unit groups at a time
+{% endtab %}
+
+{% tab title="Changed" %}
+Self-Dispatch - Toggle Improvements  
+- Optimized the toggle process when switching self-dispatch on and off. Additionally, fixed an issue causing the new dispatch TTS to run a second time when you toggled self-dispatch on or off
+{% endtab %}
+
+{% tab title="Fixed" %}
+Smart Signs - Top Alignment  
+- Fixed an issue causing the smart signs UI to display a sign box on the top row next to the search bar
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.5 9/9/2021
 
 {% tabs %}
