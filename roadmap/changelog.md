@@ -10,6 +10,23 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.7 9/14/2021
+
+{% tabs %}
+{% tab title="New" %}
+TTS - Numbers  
+- Text to speech now separates all numbers. Ex: "Incoming nine hundred and eleven" -&gt; "Incoming nine one one"
+{% endtab %}
+
+{% tab title="Fixed" %}
+Bodycam - Null Fields  
+- Fixed an issue where bodycam fields set to null would display the {field} key instead of being blank
+
+Modify Unit - Local Update  
+- Fixed an issue where updating your unit identifier wouldn't locally update your information until a refresh
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.6 9/13/2021
 
 {% tabs %}
