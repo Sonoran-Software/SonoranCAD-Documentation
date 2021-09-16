@@ -65,6 +65,12 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
+### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
+
+Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../integration-plugins/integration-plugins/available-plugins/tablet.md)!
+
+![](../.gitbook/assets/image%20%28269%29.png)
+
 ### 📺 Twitch Bot and Overlay
 
 ![](../.gitbook/assets/live-banner.png)

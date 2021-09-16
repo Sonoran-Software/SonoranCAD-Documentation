@@ -11,6 +11,8 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
+![Sonoran - In-Game Mini CAD](../../../.gitbook/assets/image%20%28270%29.png)
+
 ## Installation
 
 ### 1. Download and Install the Framework
