@@ -46,11 +46,15 @@ EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
 ### 5. Using the Mini-CAD
 
-* Use the `/minicad` command in-game to display your Mini-CAD. You can close the Mini-CAD by clicking on the X while displaying the tablet. You can also move the Mini-CAD this way as well.
-* Use the `Left Arrow Key` to display the previous call.
-* Use the `Right Arrow Key` to display the next call.
-* Use the `K` key to attach or detach to/from the displayed call.
-* Use the `L` key to toggle display of the call details.
+* Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+* You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window. 
+* \(Experimental\) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.
+* Use the `/minicadrefresh` command to refresh the Mini-CAD if it's not loading properly.
+* Controls
+  * Use the `Left Arrow Key` to display the previous call.
+  * Use the `Right Arrow Key` to display the next call.
+  * Use the `K` key to attach or detach to/from the displayed call.
+  * Use the `L` key to toggle display of the call details.
 
 ### 6. Auto API ID
 
