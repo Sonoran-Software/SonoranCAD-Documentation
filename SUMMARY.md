@@ -95,7 +95,7 @@
     * [Lookups](integration-plugins/integration-plugins/available-plugins/lookups.md)
     * [Postals](integration-plugins/integration-plugins/available-plugins/postals.md)
     * [Smart Signs](integration-plugins/integration-plugins/available-plugins/smart-signs.md)
-    * [Tablet](integration-plugins/integration-plugins/available-plugins/tablet.md)
+    * [Tablet & Mini-CAD](integration-plugins/integration-plugins/available-plugins/tablet.md)
     * [TeamSpeak 3](integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
     * [Traffic Stop](integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
