@@ -48,6 +48,10 @@ EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
 ### 5. Using the Mini-CAD
 
+{% hint style="warning" %}
+This plugin utilizes API endpoints that require the **Plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
+
 * Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
 * You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window. 
 * \(Experimental\) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.

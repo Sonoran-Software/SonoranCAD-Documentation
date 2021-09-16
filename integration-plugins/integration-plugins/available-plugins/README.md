@@ -22,7 +22,7 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 | [Lookups](lookups.md) | **No** | Yes | Yes |
 | [Postals](postals.md) | Yes | Yes | Yes |
 | [Smart Signs](smart-signs.md) | **No** | **No** | Yes |
-| [Tablet](tablet.md) | Yes | Yes | Yes |
+| [Tablet and Mini CAD](tablet.md) | **Partial** | Yes | Yes |
 | [Teamspeak Integration](teamspeak-3.md) | Yes | Yes | Yes |
 | [Traffic Stop](traffic-stop.md) | **No** | Yes | Yes |
 | [Unit Status](unit-status.md) | Yes | Yes | Yes |
