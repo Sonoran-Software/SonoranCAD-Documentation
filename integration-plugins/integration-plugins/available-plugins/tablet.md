@@ -25,9 +25,9 @@ This resource is included in the base framework.
 In your `server.cfg` file add the following new line:  
 `ensure tablet`
 
-### 3. Edit the Configuration File
+### 3. Set URL Convar \(Optional\)
 
-Open the `tablet/config.dist.lua` file and paste your custom community URL. Ensure that the settings for primaryIdentifier and serverid match that of your sonorancad config file.  
+If you wish to use a custom login page, you can set a convar in your server.cfg.  
 ****  
 The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
 
@@ -36,9 +36,13 @@ The easiest way to show your [custom login page](../../../tutorials/customizatio
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).  
 EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
-**Rename the** `config.dist.lua` **file to** `config.lua`
+Add the following to your server.cfg **before** starting the tablet resource:
 
-![](../../../.gitbook/assets/image_2021-09-16_013027.png)
+```text
+setr sonorantablet_cadUrl "YOUR_URL_HERE"
+```
+
+Fill in with your actual URL above with the comid you want.
 
 ### 4. Using the Tablet
 
@@ -53,6 +57,7 @@ This plugin utilizes API endpoints that require the **Plus** version of Sonoran 
 {% endhint %}
 
 * Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+* While open, use `/showcad` to focus the minicad and allow the elements to be clickable, such as the Attach button.
 * You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window. 
 * \(Experimental\) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.
 * Use the `/minicadrefresh` command to refresh the Mini-CAD if it's not loading properly.
@@ -61,6 +66,7 @@ This plugin utilizes API endpoints that require the **Plus** version of Sonoran 
   * Use the `Right Arrow Key` to display the next call.
   * Use the `K` key to attach or detach to/from the displayed call.
   * Use the `L` key to toggle display of the call details.
+  * **All these commands can be edited from the Keybinds menu.**
 
 ### 6. Auto API ID
 
