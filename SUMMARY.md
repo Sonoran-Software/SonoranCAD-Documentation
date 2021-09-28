@@ -179,6 +179,8 @@
       * [Kick or Ban User](sonoran-cad/api-integration/api-endpoints/general/ban-user.md)
       * [Verify Secret](sonoran-cad/api-integration/api-endpoints/general/verify-secret.md)
       * [Auth Street Signs](sonoran-cad/api-integration/api-endpoints/general/auth-street-signs.md)
+    * [Local Endpoints](sonoran-cad/api-integration/api-endpoints/local-endpoints-1/README.md)
+      * [Smart Lighting](sonoran-cad/api-integration/api-endpoints/local-endpoints-1/smart-lighting.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch.md)
 * [💵 Developer Bounties](sonoran-cad/developer-bounties.md)
 * [🌎 Translation Support](sonoran-cad/translation-support.md)
