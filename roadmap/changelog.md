@@ -10,6 +10,23 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.8 9/28/2021
+
+{% tabs %}
+{% tab title="New" %}
+Philips Hue - Lighting Integration  
+- Philips hue color bulbs can now be used with the smart lighting integration
+
+Wyze Color - Lighting Integration  
+- Wyze color bulbs can now be used with the smart lighting integration
+{% endtab %}
+
+{% tab title="Fixed" %}
+SetServer API  
+- Fixed an issue with the set server endpoint not setting the map URL in the livemap config
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.7 9/14/2021
 
 {% tabs %}
