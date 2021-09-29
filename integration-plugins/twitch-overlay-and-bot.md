@@ -75,6 +75,55 @@ Paste the URL into the browser source and hit OK.
 
 You can now customize the size and placement of this browser window in OBS as you normally would.
 
+## Smart Lighting
+
+{% hint style="danger" %}
+**This feature has not yet been released.**
+{% endhint %}
+
+Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
+
+When you toggle your police lights in-game, your room can flash with custom lighting patterns to further immerse and simulate real world lighting.
+
+### Supported Smart Bulbs
+
+At this time, Sonoran CAD currently supports the following smart bulb types:
+
+#### [Wyze Color](https://wyze.com/wyze-bulb-color.html)
+
+Many of our development team members personally use and recommend these bulbs. Due to the design, these tend to provide the fastest response type with more complex lighting patterns. A 4 pack typically costs ~$40 \($10/bulb\).
+
+#### [Philips Hue](https://www.philips-hue.com/en-us/products/smart-light-bulbs)
+
+Philips Hue is significantly more expensive, but is typically the most widely known option. This option will also require the purchase of a Hue bridge/hub. Due to the design, these tend to have a ~10ms+ delay when setting the color of multiple bulbs at a time.
+
+We recommend keeping the `delay` for custom sequences &gt; 500ms.
+
+### 1. Searching for Bulbs
+
+The smart lighting section has multiple `Scenes`
+
+* `Restore`: Set when you are no longer flashing emergency lights, turn signals, etc.
+* `Emergency Lights`: While you are in an emergency vehicle with the lights on
+* `Panic`: While your panic status is toggled
+* `Left Turn Signal`: While your left hand turn signal is on
+* `Right Turn Signal`: While your right hand turn signal is on
+* `Hazard Lights`: While your hazard lights are on
+
+Expand the `Scene` &gt; `Add Bulb` &gt; `Search for Bulbs` &gt; Select `Wyze` or `Philips Hue`
+
+Note: The Wyze Color bulbs require your Wyze login credentials. This makes a simulated request to your homepage for all lights on your account. The Wyze credentials are not saved on both the local Desktop app, or Sonoran CAD's servers. However, you may wish to update/reset your password, or even create a new Wyze account that shares these bulbs.
+
+![Sonoran CAD - Scan for Smart Bulbs](../.gitbook/assets/image%20%28271%29.png)
+
+### 2. Creating Sequences
+
+You can add the desired bulb to your `Scene`. Each `scene` is made up of multiple `frames`.
+
+
+
+### 3. Testing and Using In-Game
+
 ## Configuring the Twitch Bot
 
 Sonoran CAD's stream overlay also comes with a configurable Twitch bot. This bot will send out chat updates when unit or call data is updated.

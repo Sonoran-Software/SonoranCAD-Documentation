@@ -6,7 +6,7 @@ description: >-
 
 # Smart Lighting
 
-{% api-method method="post" host="http://localhost" path=":9990/set\_light\_state" %}
+{% api-method method="post" host="http://localhost" path=":9990/lighting" %}
 {% api-method-summary %}
 Set Smart Light State
 {% endapi-method-summary %}
@@ -58,5 +58,5 @@ some_state_here
 
 The local port \(`9990` by default\) can be modified in the bodycam configuration section.
 
-![Sonoran CAD - Bodycam Port](../../../../.gitbook/assets/image%20%28271%29.png)
+![Sonoran CAD - Bodycam Port](../../../../.gitbook/assets/image%20%28272%29.png)
 
