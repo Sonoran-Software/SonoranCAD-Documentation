@@ -136,7 +136,7 @@ You can press the `Test Scene` button to test the scene with your smart bulbs. P
 
 For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a [local webserver](../sonoran-cad/api-integration/api-endpoints/local-endpoints/smart-lighting.md) running from your desktop app.
 
-1. If you have modified your Bodycam port from the default `9990`, you will need to update this port in-game as well. Use the `/TODO HERE` command to change your port from `9990` to something else.
+1. If you have modified your Bodycam port from the default `9990`, you will need to update this port in-game as well. Use the `/setlightport <some port here>` command in-game to change your port from `9990` to something else.
 2. Additionally, ensure you have set your file directory in the credentials section of the stream overlay.
 
 ## Configuring the Twitch Bot
