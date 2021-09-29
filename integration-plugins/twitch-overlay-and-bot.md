@@ -77,10 +77,6 @@ You can now customize the size and placement of this browser window in OBS as yo
 
 ## Smart Lighting
 
-{% hint style="danger" %}
-**This feature has not yet been released.**
-{% endhint %}
-
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
 When you toggle your police lights in-game, your room can flash with custom lighting patterns to further immerse and simulate real world lighting.

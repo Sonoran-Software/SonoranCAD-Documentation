@@ -19,6 +19,9 @@ Philips Hue - Lighting Integration
 
 Wyze Color - Lighting Integration  
 - Wyze color bulbs can now be used with the smart lighting integration
+
+Import Penal Codes - Int Parse  
+- Added additional handling and safety checks to ensure the bondAmount column for imported penal codes is forced to an integer
 {% endtab %}
 
 {% tab title="Fixed" %}
