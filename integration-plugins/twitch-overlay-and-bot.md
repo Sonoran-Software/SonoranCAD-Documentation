@@ -120,9 +120,24 @@ Note: The Wyze Color bulbs require your Wyze login credentials. This makes a sim
 
 You can add the desired bulb to your `Scene`. Each `scene` is made up of multiple `frames`.
 
+The example below shows a very simple sequence of two lights switching back and forth between red and blue, with a `delay` of `500ms` between each frame.
 
+We recommend keeping the delays no shorter than:  
+`250ms` for Wyze Color Bulbs  
+`500ms` for Philips Hue Bulbs
+
+![](../.gitbook/assets/image%20%28272%29.png)
 
 ### 3. Testing and Using In-Game
+
+You can press the `Test Scene` button to test the scene with your smart bulbs. Press the `Test Scene` button in the `Restore` scene section to go back to your normal lighting.
+
+#### Local Webserver: In-Game Use
+
+For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a local webserver running from your desktop app.
+
+1. If you have modified your Bodycam port from the default `9990`, you will need to update this port in-game as well. Use the `/TODO HERE` command to change your port from `9990` to something else.
+2. Additionally, ensure you have set your file directory in the credentials section of the stream overlay.
 
 ## Configuring the Twitch Bot
 

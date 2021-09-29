@@ -58,5 +58,5 @@ some_state_here
 
 The local port \(`9990` by default\) can be modified in the bodycam configuration section.
 
-![Sonoran CAD - Bodycam Port](../../../../.gitbook/assets/image%20%28272%29.png)
+![Sonoran CAD - Bodycam Port](../../../../.gitbook/assets/image%20%28273%29.png)
 
