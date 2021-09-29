@@ -97,7 +97,7 @@ Many of our development team members personally use and recommend these bulbs. D
 
 Philips Hue is significantly more expensive, but is typically the most widely known option. This option will also require the purchase of a Hue bridge/hub. Due to the design, these tend to have a ~10ms+ delay when setting the color of multiple bulbs at a time.
 
-We recommend keeping the `delay` for custom sequences &gt; 500ms.
+We recommend keeping the `delay` for custom sequences &gt; 500ms when using Philips Hue bulbs.
 
 ### 1. Searching for Bulbs
 
@@ -120,7 +120,7 @@ Note: The Wyze Color bulbs require your Wyze login credentials. This makes a sim
 
 You can add the desired bulb to your `Scene`. Each `scene` is made up of multiple `frames`.
 
-The example below shows a very simple sequence of two lights switching back and forth between red and blue, with a `delay` of `500ms` between each frame.
+The example below shows a very simple sequence of two lights switching back and forth between red and blue, with a `delay` of `500ms` between each frame. You can duplicate and create advanced chase sequences, flashes, etc. with several bulbs at a time.
 
 We recommend keeping the delays no shorter than:  
 `250ms` for Wyze Color Bulbs  
@@ -134,7 +134,7 @@ You can press the `Test Scene` button to test the scene with your smart bulbs. P
 
 #### Local Webserver: In-Game Use
 
-For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a local webserver running from your desktop app.
+For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a [local webserver](../sonoran-cad/api-integration/api-endpoints/local-endpoints/smart-lighting.md) running from your desktop app.
 
 1. If you have modified your Bodycam port from the default `9990`, you will need to update this port in-game as well. Use the `/TODO HERE` command to change your port from `9990` to something else.
 2. Additionally, ensure you have set your file directory in the credentials section of the stream overlay.

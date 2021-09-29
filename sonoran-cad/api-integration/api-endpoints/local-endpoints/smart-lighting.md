@@ -48,11 +48,12 @@ some_state_here
 
 | State | Description |
 | :--- | :--- |
-| `RESTORE` | Toggle 'Restore' lights when there is no active event |
-| `EMERGENCY` | Toggle 'Emergency' lights when emergency vehicle lights are on |
-| `LEFT` | Toggle the left turn signal lights |
-| `RIGHT` | Toggle the right turn signal lights |
-| `HAZARDS` | Toggle the hazard lights |
+| `restore` | Toggle 'Restore' lights when there is no active event |
+| `emergency` | Toggle 'Emergency' lights when emergency vehicle lights are on |
+| `panic` | Toggle 'Panic' lights |
+| `left` | Toggle the left turn signal lights |
+| `right` | Toggle the right turn signal lights |
+| `hazard` | Toggle the hazard lights |
 
 ### Local Port
 
