@@ -49,7 +49,7 @@ some_state_here
 | State | Description |
 | :--- | :--- |
 | `restore` | Toggle 'Restore' lights when there is no active event |
-| `emergency` | Toggle 'Emergency' lights when emergency vehicle lights are on |
+| `lights` | Toggle 'Emergency' lights when emergency vehicle lights are on |
 | `panic` | Toggle 'Panic' lights |
 | `left` | Toggle the left turn signal lights |
 | `right` | Toggle the right turn signal lights |
