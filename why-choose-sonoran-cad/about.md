@@ -71,11 +71,13 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 ![](../.gitbook/assets/image%20%28269%29.png)
 
-### 📺 Twitch Bot and Overlay
+### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
 ![](../.gitbook/assets/live-banner.png)
 
 ![Sonoran CAD - Livestream Overlay](../.gitbook/assets/overlay%20%282%29.gif)
+
+![Sonoran CAD - Smart Lighting](../.gitbook/assets/image%20%28274%29.png)
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
