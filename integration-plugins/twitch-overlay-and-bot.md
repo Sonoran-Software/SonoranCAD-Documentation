@@ -4,7 +4,7 @@ description: >-
   your gaming stream!
 ---
 
-# 📺 Twitch Overlay and Bot
+# 📺 Twitch Bodycam, Bot, & Lighting Integration
 
 ![](../.gitbook/assets/live-banner.png)
 
@@ -76,6 +76,8 @@ Paste the URL into the browser source and hit OK.
 You can now customize the size and placement of this browser window in OBS as you normally would.
 
 ## Smart Lighting
+
+#### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
