@@ -10,6 +10,8 @@ description: >-
 
 ![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/overlay%20%282%29.gif)
 
+![Sonoran CAD - Smart Lighting](../.gitbook/assets/image%20%28276%29.png)
+
 ![Stream Overlay - Bodycam](../.gitbook/assets/image%20%28255%29.png)
 
 ## What is Sonoran CAD's Livestream Overlay?
@@ -79,6 +81,8 @@ You can now customize the size and placement of this browser window in OBS as yo
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
+![Sonoran CAD - Smart Lighting](../.gitbook/assets/image%20%28275%29.png)
+
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
 When you toggle your police lights in-game, your room can flash with custom lighting patterns to further immerse and simulate real world lighting.
@@ -110,9 +114,31 @@ The smart lighting section has multiple `Scenes`
 
 Expand the `Scene` &gt; `Add Bulb` &gt; `Search for Bulbs` &gt; Select `Wyze` or `Philips Hue`
 
-Note: The Wyze Color bulbs require your Wyze login credentials. This makes a simulated request to your homepage for all lights on your account. The Wyze credentials are not saved on both the local Desktop app, or Sonoran CAD's servers. However, you may wish to update/reset your password, or even create a new Wyze account that shares these bulbs.
-
 ![Sonoran CAD - Scan for Smart Bulbs](../.gitbook/assets/image%20%28271%29.png)
+
+#### Credentials: Wyze
+
+The Wyze Color bulbs require your Wyze login credentials. This makes a simulated request to your homepage for all lights on your account. The Wyze credentials are not saved on both the local Desktop app or Sonoran CAD's servers. However, you may wish to update/reset your password, or even create a new Wyze account that shares these bulbs.
+
+#### Credentials: Philips Hue
+
+Your Philips Hue bridge should be automatically discovered by pressing the `Scan` button in Sonoran CAD.
+
+If you are seeing the following error:  
+`Error: Unable to find a Hue bridge on the local network.`
+
+You may need to manually enter the bridge's IP address. This is most easily found using the Philips Hue mobile app.
+
+1. Select Settings
+2. Network Settings
+3. Toggle `DHCP` Off
+4. Copy the `IP address` to Sonoran CAD
+5. Toggle `DHCP` On
+6. Scan for the bridge in Sonoran CAD
+
+![Philips Hue - Copy Bridge IP](../.gitbook/assets/image%20%28277%29.png)
+
+![Sonoran CAD - Manual Hue Bridge IP](../.gitbook/assets/image%20%28278%29.png)
 
 ### 2. Creating Sequences
 
