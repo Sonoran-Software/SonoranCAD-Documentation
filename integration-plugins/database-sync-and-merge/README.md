@@ -265,6 +265,67 @@ These new friendly mapped values will even work with [custom search types](../..
 
 ![Friendly Mapping Editor](../../.gitbook/assets/image%20%28143%29.png)
 
+### Import via CSV
+
+#### 1. Copy the Google Sheet
+
+Navigate to our [official friendly mapping Google Sheet](https://docs.google.com/spreadsheets/u/1/d/1Q83yqdH-YGlAv9zW-hJ1dA5k5hYPQDLfeXby0BXB6-k/copy) and make a copy. Using a copy of our official sheet ensures your friendly mapping is formatted correctly.
+
+**You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
+
+![Sonoran CAD - Copy Friendly Mapping CSV](../../.gitbook/assets/image%20%28285%29.png)
+
+**2. Add your Friendly Mappings**
+
+Be sure to leave the top header line as it is. Below the header, add in your friendly mapping keys and values.
+
+![Sonoran CAD - Edit Friendly Mapping CSV](../../.gitbook/assets/image%20%28284%29.png)
+
+#### 3. Download the CSV
+
+In Google Sheets, navigate to File &gt; Download &gt; Comma Separated Values \(.csv\) to download the file.
+
+![Sonoran CAD - Download Friendly Mapping CSV](../../.gitbook/assets/image%20%28282%29.png)
+
+#### 4. Import the CSV File
+
+In the friendly mapping editor select `Import` &gt; `CSV` &gt; Select your downloaded Google spreadsheet
+
+Then, save the mapping and save the database sync config.
+
+![](../../.gitbook/assets/image%20%28283%29.png)
+
+### Import from JSON
+
+You can also build and format your friendly mapping from raw JSON and paste them directly into the UI.
+
+#### 1. Format the JSON Structure
+
+The JSON structure is an object array. Be sure to strictly follow the format.
+
+```javascript
+[
+  {
+    "dbValue": "0",
+    "friendlyValue": "Brown"
+  },
+  {
+    "dbValue": "1",
+    "friendlyValue": "Green"
+  },
+  {
+    "dbValue": "2",
+    "friendlyValue": "Blue"
+  }
+]
+```
+
+#### 2. Import the JSON Structure
+
+In the friendly mapping editor select `Import` &gt; `JSON` &gt; Paste your JSON formatted structure
+
+![Friendly Mapping - Import via JSON](../../.gitbook/assets/image%20%28281%29.png)
+
 ## Custom Record Fields
 
 Sonoran CAD's records are entirely customizable, this includes database sync records! You can easily enable database sync mapping for any custom field you add to a character, license, or vehicle registration record.
