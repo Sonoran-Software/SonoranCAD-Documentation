@@ -136,9 +136,9 @@ You may need to manually enter the bridge's IP address. This is most easily foun
 5. Toggle `DHCP` On
 6. Scan for the bridge in Sonoran CAD
 
-![Philips Hue - Copy Bridge IP](../.gitbook/assets/image%20%28277%29.png)
+![Philips Hue - Copy Bridge IP](../.gitbook/assets/image%20%28279%29.png)
 
-![Sonoran CAD - Manual Hue Bridge IP](../.gitbook/assets/image%20%28278%29.png)
+![Sonoran CAD - Manual Hue Bridge IP](../.gitbook/assets/image%20%28280%29.png)
 
 ### 2. Creating Sequences
 

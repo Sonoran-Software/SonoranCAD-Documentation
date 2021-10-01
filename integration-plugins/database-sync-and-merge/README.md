@@ -195,6 +195,19 @@ In the [JSON formatter](http://jsonviewer.stack.hu/), we can paste it and select
 
 We can see that the JSON "key" for the bank account amount is `bank`.
 
+### 2. Nested JSON Values
+
+Nested JSON values are also supported.  
+Here, the `eye_color` is a JSON object, with the `item` property of `0`.
+
+![Database - Nested JSON Value](../../.gitbook/assets/image%20%28278%29.png)
+
+In the DB Sync config, we list the JSON key as `eye_color.item`
+
+![](../../.gitbook/assets/image%20%28277%29.png)
+
+Then, we can use [friendly mapping](./#friendly-mapping) to convert the eye color `0` value to an actual color, like "brown".
+
 ## External Keys
 
 ### Introduction
