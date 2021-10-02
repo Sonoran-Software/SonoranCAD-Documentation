@@ -10,6 +10,35 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.20.11 10/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Friendly Mapping: Import JSON/CSV  
+- Database sync friendly mapping values can now be imported via JSON or CSV
+
+Wyze Color - Black  
+- The Wyze Color bulbs are now checked for a black hex color, and are turned off rather than set to black
+
+Philips Hue - Black  
+- Philips Hue bulbs are now checked for the black RGB code and are toggled off, as Hue does not support a black color code
+{% endtab %}
+
+{% tab title="Fixed" %}
+DB Sync - Merge in Multi-Table Values  
+- Fixed an issue with DB Sync causing multiple table values for character records to only merge in the first found value in a section and disregard the last
+
+DB Sync - Update Custom Record  
+- Fixed an issue where saving custom records with DBSync would leave some of the old, non-custom fields in the sync config
+
+Smart Lighting Restore  
+- Fixed an issue causing the restore lighting scene to not start until the second trigger
+
+DB Sync - Reserved Word Column Names  
+- Added special handling for selecting reserved MySQL words as column names
+{% endtab %}
+{% endtabs %}
+
 ### 3.20.8 9/28/2021
 
 {% tabs %}
