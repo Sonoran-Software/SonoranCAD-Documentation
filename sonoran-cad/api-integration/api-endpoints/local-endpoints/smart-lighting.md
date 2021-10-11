@@ -30,14 +30,19 @@ some_state_here
 
 ### Lighting States
 
-| State     | Description                                                    |
-| --------- | -------------------------------------------------------------- |
-| `restore` | Toggle 'Restore' lights when there is no active event          |
-| `lights`  | Toggle 'Emergency' lights when emergency vehicle lights are on |
-| `panic`   | Toggle 'Panic' lights                                          |
-| `left`    | Toggle the left turn signal lights                             |
-| `right`   | Toggle the right turn signal lights                            |
-| `hazard`  | Toggle the hazard lights                                       |
+| State         | Description                                                    |
+| ------------- | -------------------------------------------------------------- |
+| `restore`     | Toggle 'Restore' lights when there is no active event          |
+| `lights`      | Toggle 'Emergency' lights when emergency vehicle lights are on |
+| `panic`       | Toggle 'Panic' lights                                          |
+| `available`   | Toggle lights when unit status is changed                      |
+| `unavailable` | Toggle lights when unit status is changed                      |
+| `enroute`     | Toggle lights when unit status is changed                      |
+| `onscene`     | Toggle lights when unit status is changed                      |
+| `busy`        | Toggle lights when unit status is changed                      |
+| `left`        | Toggle the left turn signal lights                             |
+| `right`       | Toggle the right turn signal lights                            |
+| `hazard`      | Toggle the hazard lights                                       |
 
 ### Local Port
 

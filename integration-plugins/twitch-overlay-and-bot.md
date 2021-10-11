@@ -87,11 +87,15 @@ Sonoran CAD allows you to configure in-game events to smart lighting in your own
 
 When you toggle your police lights in-game, your room can flash with custom lighting patterns to further immerse and simulate real world lighting.
 
+{% embed url="https://www.youtube.com/watch?v=gs6RdZt3mUo" %}
+Sonoran CAD - Smart Lighting Video
+{% endembed %}
+
 ### Supported Smart Bulbs
 
 At this time, Sonoran CAD currently supports the following smart bulb types:
 
-#### [Wyze Color](https://wyze.com/wyze-bulb-color.html)
+#### [Wyze Color](https://wyze.com/wyze-bulb-color.html) (Recommended)
 
 Many of our development team members personally use and recommend these bulbs. Due to the design, these tend to provide the fastest response type with more complex lighting patterns. A 4 pack typically costs \~$40 ($10/bulb).
 
@@ -101,6 +105,12 @@ Philips Hue is significantly more expensive, but is typically the most widely kn
 
 We recommend keeping the `delay` for custom sequences > 500ms when using Philips Hue bulbs.
 
+#### [Govee](https://us.govee.com/products/wi-fi-led-bulb)
+
+Govee light bulbs are supported via Bluetooth and WiFi.
+
+Bluetooth bulbs are supported, but can have additional time when starting the initial connection. Bluetooth connections can also experience intermittent connection problems. Govee's WiFi bulbs are currently ran through the official API, resulting in rate limitations of 60 calls per second.
+
 ### 1. Searching for Bulbs
 
 The smart lighting section has multiple `Scenes`
@@ -108,6 +118,11 @@ The smart lighting section has multiple `Scenes`
 * `Restore`: Set when you are no longer flashing emergency lights, turn signals, etc.
 * `Emergency Lights`: While you are in an emergency vehicle with the lights on
 * `Panic`: While your panic status is toggled
+* `Available`: When your unit status is set to available
+* `Unavailable`: When your unit status is set to unavailable
+* `Busy`: When your unit status is set to busy
+* `Enroute`: When your unit status is set to enroute
+* `On Scene`: When your unit status is set to on scene
 * `Left Turn Signal`: While your left hand turn signal is on
 * `Right Turn Signal`: While your right hand turn signal is on
 * `Hazard Lights`: While your hazard lights are on
@@ -139,6 +154,42 @@ You may need to manually enter the bridge's IP address. This is most easily foun
 ![Philips Hue - Copy Bridge IP](<../.gitbook/assets/image (279).png>)
 
 ![Sonoran CAD - Manual Hue Bridge IP](<../.gitbook/assets/image (280).png>)
+
+#### Credentials: Govee WiFi
+
+Govee WiFi bulbs are handled via Govee's official API. Note that this does include a rate limit of 60 calls/minute.
+
+**1. Request an API Key**
+
+Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
+
+![](<../.gitbook/assets/image (286).png>)
+
+**2. Retrieve your API Key and Search**
+
+Within a few minutes, Govee should email your account API credentials to use. Paste these into Sonoran CAD and search for your Govee WiFi lights.
+
+#### Credentials: Govee Bluetooth
+
+Govee Bulb models only supporting bluetooth can be controlled by Sonoran CAD, as long as your PC supports bluetooth connections. Windows limits this to no more than 5 active bluetooth connections at one time.
+
+**1. Scan for Bluetooth devices**
+
+Sonoran CAD will scan for all locally active Bluetooth devices. Govee bulbs will typically be found with a name format: `WORD_MODELNUMBER_XXXX`.
+
+If your bulb is not discoverable, turn the bulb's power off entirely for \~5 seconds then turn it back on. This should place your bulb into discovery mode.
+
+![](<../.gitbook/assets/image (287).png>)
+
+**2. Add the Bulb**
+
+Click on the Bluetooth bulb to add it to your scene, and continue on to building your lighting sequences.
+
+Bluetooth bulbs will have their status listed on the left side. When you click the `Test` button, it may **take up to 60 seconds** for the connection to complete.
+
+![](<../.gitbook/assets/image (288).png>)
+
+
 
 ### 2. Creating Sequences
 
