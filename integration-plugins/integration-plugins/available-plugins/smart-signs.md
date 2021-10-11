@@ -6,12 +6,12 @@ description: >-
 
 # Smart Signs
 
-![Sonoran CAD x London Studios](../../../.gitbook/assets/image%20%28217%29.png)
+![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (217).png>)
 
-![London Studios - Smart Signs](../../../.gitbook/assets/image%20%2850%29.png)
+![London Studios - Smart Signs](<../../../.gitbook/assets/image (50).png>)
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **Pro **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -54,7 +54,7 @@ The `stream` assets folder must be copied over to the `[sonorancad]/sonorancad` 
 
 ### 6. Set your Game Server IP/Port
 
-In the Admin panel, navigate to Advanced &gt; In-Game Integration &gt; Push Events and Live Map
+In the Admin panel, navigate to Advanced > In-Game Integration > Push Events and Live Map
 
 Ensure your game server's IP and game port are set. The CAD will use this to push sign updates to your server.
 
@@ -64,7 +64,7 @@ Ensure your game server's IP and game port are set. The CAD will use this to pus
 
 Some hosting providers may have your game server sending traffic out from a different IP address than is used to connect to your game server. If this is the case, toggle the `Differing Outbound IP` checkbox for this server and fill in the `Outbound IP` field.
 
-![Sonoran CAD - Push Event Panel](../../../.gitbook/assets/image%20%28220%29.png)
+![Sonoran CAD - Push Event Panel](<../../../.gitbook/assets/image (220).png>)
 
 ## How to use
 
@@ -82,11 +82,11 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 ### Full Feature List
 
-**Signs** – This is the main element of the resource, allowing you to walk up to a sign and change the text from an in-game control panel at the bottom of the sign. This can be used to open a world of roleplay opportunities.  
-**Word Denylist** – You are able to set the resource up so that users cannot use specific words on a sign.  
-**Discord Logs** – You can choose to send logs to your Discord server via a webhook each time a player sets the text on a sign.  
-**Custom Model** – This resource includes high-quality letters and a custom sign model created by Beaver Mods. This will ultimately enhance realism.  
-**Highly Configurable** – This resource is highly configurable, allowing you to setup each sign separately. You can adjust the location of each sign, all messages and even add extra characters from other languages.  
+**Signs** – This is the main element of the resource, allowing you to walk up to a sign and change the text from an in-game control panel at the bottom of the sign. This can be used to open a world of roleplay opportunities.\
+**Word Denylist **– You are able to set the resource up so that users cannot use specific words on a sign.\
+**Discord Logs** – You can choose to send logs to your Discord server via a webhook each time a player sets the text on a sign.\
+**Custom Model** – This resource includes high-quality letters and a custom sign model created by Beaver Mods. This will ultimately enhance realism.\
+**Highly Configurable** – This resource is highly configurable, allowing you to setup each sign separately. You can adjust the location of each sign, all messages and even add extra characters from other languages.\
 **Permission Checks** – You can easily enable permission checks in the configuration file for ACE permissions, framework jobs/groups or SonoranCAD active unit checking.
 
 We understand that it may be confusing to use for some of our users. If you need support please feel free to open a ticket in the official London Studios Discord.
@@ -152,15 +152,15 @@ local config = {
 
 ```
 
-To change the activation key \(adjustButton\), replace it with your desired key code from [here](https://docs.fivem.net/docs/game-references/controls/).
+To change the activation key (adjustButton), replace it with your desired key code from [here](https://docs.fivem.net/docs/game-references/controls/).
 
 You can see from the above config just how configurable the resource is, allowing you to set many features such as the load in the distance and access points to edit the text of the signs, the different denied words and the animations played while the player is typing.
 
-Secondly, the **instructionalText** section allows you to convert the access message to another language.
+Secondly, the **instructionalText **section allows you to convert the access message to another language.
 
 ### **Signs Configuration**
 
-You’ll be able to configure all signs, locations and their default messages in this part of the config. We have pre-configured some for you.  
+You’ll be able to configure all signs, locations and their default messages in this part of the config. We have pre-configured some for you.\
 Below is a demonstration of how you should lay out your config. An important thing to note is that each line can support a maximum of 14 characters of A-Z and 0-9 by default. The **defaultText** value is not required, if you do not fill this out the sign will be empty by default.
 
 ```lua
@@ -176,24 +176,24 @@ signs = {
 },
 ```
 
-To make it easier to setup signs we have added a `/newsign` command which will only work while **developerMode** is set to true in `config_smartsigns.lua`.  
+To make it easier to setup signs we have added a `/newsign` command which will only work while **developerMode** is set to true in `config_smartsigns.lua`.\
 This command will spawn a sign prop in which can be repositioned with the following controls:
 
-**PAGE UP** — move sign up  
-**PAGE DOWN** — move sign down  
-**UP ARROW** — move sign forwards  
-**DOWN ARROW** — move sign backwards  
-**LEFT ARROW** — move sign to the left  
-**RIGHT ARROW** — move sign to the right  
-**B** — rotate sign clockwise  
-**N** — rotate sign anti-clockwise  
+**PAGE UP** — move sign up\
+**PAGE DOWN** — move sign down\
+**UP ARROW** — move sign forwards\
+**DOWN ARROW **— move sign backwards\
+**LEFT ARROW** — move sign to the left\
+**RIGHT ARROW** — move sign to the right\
+**B** — rotate sign clockwise\
+**N** — rotate sign anti-clockwise\
 **ENTER** — finish placement
 
 Once you press ENTER you will receive a notification in the bottom left of your screen with the coordinates. You can then type these into your config file and the sign will be spawned next time you start the **smartsigns** resource.
 
 ## Permission Checks
 
-We’ve made it simpler than ever to integrate permissions into the resource. This can be Ace Permissions, VRP or even ESX Integration \(built-in\).
+We’ve made it simpler than ever to integrate permissions into the resource. This can be Ace Permissions, VRP or even ESX Integration (built-in).
 
 This means that you can restrict certain players, permissions or even jobs/groups from setting the message on a sign.
 
@@ -261,4 +261,3 @@ ESX = {
 ```
 
 Overall, we think we’ve made it easy for you to add permission checks into the resource. If you need additional help setting it up, our support team is here to help. You can [open a support ticket here](https://support.sonoransoftware.com).
-

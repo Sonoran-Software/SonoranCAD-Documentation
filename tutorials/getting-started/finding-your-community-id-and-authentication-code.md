@@ -14,7 +14,7 @@ Looking to [change your community ID](../customization/community-branding-and-in
 
 ![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/id_bar.png)
 
-#### 2. To find this ID in the admin page, navigate to "Advanced" &gt; "Limits"
+#### 2. To find this ID in the admin page, navigate to "Advanced" > "Limits"
 
 ![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/id_limits.png)
 
@@ -23,14 +23,13 @@ Looking to [change your community ID](../customization/community-branding-and-in
 While requesting support from an official Sonoran team member, you may be asked to authenticate your community's ownership.
 
 {% hint style="danger" %}
-Your community's ownership authentication code can only be retrieved from your CAD owner.  
-  
-This code is used in support tickets to confirm that you are the registered owner of the community. **NEVER** give this code out to anyone that is not a member of the Sonoran support team!
+Your community's ownership authentication code can only be retrieved from your CAD owner.\
+\
+This code is used in support tickets to confirm that you are the registered owner of the community. **NEVER **give this code out to anyone that is not a member of the Sonoran support team!
 {% endhint %}
 
-1. In the admin page, navigate to "Advanced" &gt; "Authenticate"
+1. In the admin page, navigate to "Advanced" > "Authenticate"
 2. Press the "Request Code" button
 3. Your ownership authentication code will be displayed on the screen
 
-![Sonoran CAD&apos;s ownership authentication page](../../.gitbook/assets/auth.png)
-
+![Sonoran CAD's ownership authentication page](../../.gitbook/assets/auth.png)

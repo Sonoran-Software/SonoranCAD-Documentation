@@ -5,66 +5,46 @@ description: This endpoint allows you to update your CAD's server configuration.
 # Set Servers
 
 {% hint style="warning" %}
-API endpoint requires the **Plus** version of Sonoran CAD or higher.  
+API endpoint requires the **Plus **version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/set\_servers" %}
-{% api-method-summary %}
-Set Servers
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/general/set_servers" method="post" summary="Set Servers" %}
+{% swagger-description %}
 This endpoint allows you to set your community's server configuration and update the live map deployment. This contains additional valuable Live Map configuration data.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-SET\_SERVERS
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+SET_SERVERS
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Array of request objects
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A successful call will be met with the following response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
 Server config updated
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-The following 400 errors may be sent in response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ```javascript
 {
@@ -94,4 +74,3 @@ INVALID API KEY
     },
 }
 ```
-

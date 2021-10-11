@@ -4,34 +4,44 @@ description: 'See below for commonly asked questions and answers:'
 
 # Pricing FAQ
 
-![Sonoran Servers - Discount and Free Plugin Installation!](../../.gitbook/assets/banner_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation!](../../.gitbook/assets/banner\_3.png)
 
 Receive **free Sonoran CAD integration plugin installation**, **free Five PD installation**, and **30% off** every month when you [bundle with Sonoran Servers](bundle-discount-sonoran-servers.md)!
 
 ### Looking to compare plans?
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 ### Looking to purchase a plan?
 
-{% page-ref page="create-and-manage-a-subscription.md" %}
+{% content-ref url="create-and-manage-a-subscription.md" %}
+[create-and-manage-a-subscription.md](create-and-manage-a-subscription.md)
+{% endcontent-ref %}
 
 ### How do I change what community my subscription is applied to?
 
-At any time with an active subscription \(including canceled subscriptions that are still active\) you may change what community is benefiting from the subscription.
+At any time with an active subscription (including canceled subscriptions that are still active) you may change what community is benefiting from the subscription.
 
 Simply change the [community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md) on the active subscription to a new one.
 
-{% page-ref page="create-and-manage-a-subscription.md" %}
+{% content-ref url="create-and-manage-a-subscription.md" %}
+[create-and-manage-a-subscription.md](create-and-manage-a-subscription.md)
+{% endcontent-ref %}
 
 ### How do I cancel, upgrade, or downgrade my subscription?
 
 You can cancel, upgrade, or downgrade your subscription at any time using the payment center.
 
-{% page-ref page="create-and-manage-a-subscription.md" %}
+{% content-ref url="create-and-manage-a-subscription.md" %}
+[create-and-manage-a-subscription.md](create-and-manage-a-subscription.md)
+{% endcontent-ref %}
 
 ### Are subscriptions a one-time payment, or monthly?
 
-All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://app.sonorancad.com/#/pricing) to see what works best for your community.  
-  
+All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://app.sonorancad.com/#/pricing) to see what works best for your community.\
+\
 Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 
 ### Can I purchase a lifetime or yearly subscription?
@@ -51,4 +61,3 @@ _Communities with no active logins for 30 days will be automatically removed._
 ### Refund and Purchase Policy
 
 For more information on our refund and purchasing policy, click [here](../../other/policy/refund-and-purchase-policy.md).
-

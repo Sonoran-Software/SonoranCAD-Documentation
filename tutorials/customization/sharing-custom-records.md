@@ -8,22 +8,21 @@ description: >-
 
 ### Download the JSON File
 
-In the custom record editor \(Admin &gt; Customization &gt; Custom Records\) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.  
+In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.\
 
 
-_Do not edit this JSON formatting unless you are highly familiar with the_ [_proper formatting_](../../sonoran-cad/api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
+_Do not edit this JSON formatting unless you are highly familiar with the _[_proper formatting_](../../sonoran-cad/api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
 
-![Sonoran CAD - Download Custom Record Format](../../.gitbook/assets/image%20%2868%29.png)
+![Sonoran CAD - Download Custom Record Format](<../../.gitbook/assets/image (68).png>)
 
 ### Import a Shared JSON File
 
-In the custom record editor \(Admin &gt; Customization &gt; Custom Records\) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.
+In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.
 
-![Sonoran CAD - Import Custom Record JSON File](../../.gitbook/assets/image%20%2866%29.png)
+![Sonoran CAD - Import Custom Record JSON File](<../../.gitbook/assets/image (66).png>)
 
 Paste in the JSON content from the download to populate the record editor with the new record format.
 
-![Sonoran CAD - JSON Import Prompt](../../.gitbook/assets/image%20%2867%29.png)
+![Sonoran CAD - JSON Import Prompt](<../../.gitbook/assets/image (67).png>)
 
 From here, you can [edit the custom record and save it](creating-custom-record-and-report-types.md) as you normally would.
-

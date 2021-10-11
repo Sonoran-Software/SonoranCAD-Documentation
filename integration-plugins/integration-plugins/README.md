@@ -15,19 +15,25 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 All Sonoran CAD plugins require our API framework installation. Installing our framework is easy! Learn more below.
 
-{% page-ref page="framework-installation.md" %}
+{% content-ref url="framework-installation.md" %}
+[framework-installation.md](framework-installation.md)
+{% endcontent-ref %}
 
 ### Plugin Installation Guide
 
 All Sonoran CAD plugins follow a standard installation process. Learn more about installing plugins for your community below.
 
-{% page-ref page="plugin-installation/" %}
+{% content-ref url="plugin-installation/" %}
+[plugin-installation](plugin-installation/)
+{% endcontent-ref %}
 
 ### Available Plugins
 
 View our vast array of our integration plugins, ready for drag-and-drop installation for your server!
 
-{% page-ref page="available-plugins/" %}
+{% content-ref url="available-plugins/" %}
+[available-plugins](available-plugins/)
+{% endcontent-ref %}
 
 
 
@@ -35,5 +41,7 @@ View our vast array of our integration plugins, ready for drag-and-drop installa
 
 Looking to write your own plugins for Sonoran CAD? Learn more about writing your own integration plugins and accessing our API documentation.
 
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 

@@ -5,7 +5,7 @@ description: Handles sending emergency calls to the CAD.
 # Call Commands
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -16,7 +16,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our call [commands install video](https://youtu.be/ZeCzvU3ZfD0).
 
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 
@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_callcommands/releases)to download the call commands plugin .zip file.
 2. Download and install the[ locations ](locations.md)plugin.
-3. \(Optional\) Download and install the[ postal ](postals.md)plugin.
+3. (Optional) Download and install the[ postal ](postals.md)plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -40,16 +40,16 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### Commands
 
-| Command | Description |
-| :--- | :--- |
-| Panic | Toggles your unit panic status in the CAD |
-| 911 | Sends specific 911 call to the CAD |
-| 511 | Sends specific 511 call to the CAD \(Civil\) |
-| 311 | Sends non-emergency call to the CAD \(Civil\) |
+| Command | Description                                 |
+| ------- | ------------------------------------------- |
+| Panic   | Toggles your unit panic status in the CAD   |
+| 911     | Sends specific 911 call to the CAD          |
+| 511     | Sends specific 511 call to the CAD (Civil)  |
+| 311     | Sends non-emergency call to the CAD (Civil) |
 
 ### Custom Events
 
-```text
+```
  EVENT: SonoranCAD::callcommands:cadIncomingCall
  PARAMS:
       emergency = true/false (911 or 311 call)
@@ -58,4 +58,3 @@ If you haven't already, be sure to install and configure the [plugin framework](
       description = description of call
       source = playerId
 ```
-

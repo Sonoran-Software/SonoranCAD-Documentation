@@ -5,7 +5,7 @@ description: Allows you to change a unit's status in the CAD.
 # Unit Status
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -16,9 +16,9 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [unit status installation video](https://youtu.be/J9fwml13x9Y).
 
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
 
-## Installation **Guide**
+## Installation** Guide**
 
 ### 1. Download and Install the Framework
 
@@ -38,38 +38,22 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 ### 5. Setup User Permissions
 
-This script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) \(or whatever you configure the command to be\).
+This script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) (or whatever you configure the command to be).
 
 ## Configuration
 
-| Option | Description | Default |
-| :--- | :--- | :--- |
-| setStatusCommand | Command that will allow units to set their own status. | setstatus |
-| statusCodes | Array of status codes, configurable to be community-specific | Default SonoranCAD setup |
+| Option           | Description                                                  | Default                  |
+| ---------------- | ------------------------------------------------------------ | ------------------------ |
+| setStatusCommand | Command that will allow units to set their own status.       | setstatus                |
+| statusCodes      | Array of status codes, configurable to be community-specific | Default SonoranCAD setup |
 
 ## Usage
 
 ### Commands
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Command</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">setstatus &lt;<em>STATUS&gt;</em>
-      </td>
-      <td style="text-align:left">
-        <p>Update your unit status in the CAD.</p>
-        <p>Ex: <code>setstatus AVAILABLE</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Command              | Description                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| setstatus <_STATUS>_ | <p>Update your unit status in the CAD.</p><p>Ex: <code>setstatus AVAILABLE</code></p> |
 
 ### Function
 
@@ -81,7 +65,7 @@ cadSetUnitStatus(<apiId>, <status>, [player])
 
 * apiId: The identifier attached to the unit
 * status: A status, can be the actual string or a number, based on configuration
-* player \(optional\): server ID of the player, used to send a client event
+* player (optional): server ID of the player, used to send a client event
 
 ### Event
 
@@ -93,4 +77,3 @@ cadSetUnitStatus(<apiId>, <status>, [player])
 ]]
 
 ```
-

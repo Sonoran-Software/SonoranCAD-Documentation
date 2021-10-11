@@ -5,7 +5,7 @@ description: Implements name and plate lookups via the CAD.
 # Lookups
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **plus **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -22,7 +22,7 @@ This plugin Implements name and plate lookups via the CAD.
 
 Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
 
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 
@@ -48,10 +48,10 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 Do not set the cache timer too low or you may run into rate limiting.
 {% endhint %}
 
-| Option | Description | Default |
-| :--- | :--- | :--- |
-| maxCacheTime | How long to cache a looked-up plate. | 120 seconds |
-| stalePurgeTimer | How long between "stale" plate cleanups \(keep unscanned plates\) | 600 seconds \(10 minutes\) |
+| Option          | Description                                                     | Default                  |
+| --------------- | --------------------------------------------------------------- | ------------------------ |
+| maxCacheTime    | How long to cache a looked-up plate.                            | 120 seconds              |
+| stalePurgeTimer | How long between "stale" plate cleanups (keep unscanned plates) | 600 seconds (10 minutes) |
 
 ## Usage
 
@@ -59,10 +59,10 @@ Do not set the cache timer too low or you may run into rate limiting.
 
 NOTE: For return object definitions, see the [Developer Documentation](https://info.sonorancad.com/sonoran-cad/api-integration/api-endpoints/lookup-name-or-plate).
 
-| Function | Arguments | Description | Returns |
-| :--- | :--- | :--- | :--- |
-| cadNameLookup | FirstName, MiddleInitial, LastName, callback | Looks up a character based on the arguments specified. | Objects containing character data and all associated objects. |
-| cadPlateLookup | plate, basicFlag, callback, autoLookup | Looks up a vehicle based on specified plate number. | Objects containing vehicle data and all associated objects. |
+| Function       | Arguments                                    | Description                                            | Returns                                                       |
+| -------------- | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------- |
+| cadNameLookup  | FirstName, MiddleInitial, LastName, callback | Looks up a character based on the arguments specified. | Objects containing character data and all associated objects. |
+| cadPlateLookup | plate, basicFlag, callback, autoLookup       | Looks up a vehicle based on specified plate number.    | Objects containing vehicle data and all associated objects.   |
 
 #### Function Details
 
@@ -89,4 +89,3 @@ function cadPlateLookup(plate, basicFlag, callback, autoLookup)
 ## For Developers
 
 This plugin also adds the commands `namefind` and `platefind` which takes the above arguments and prints the returned JSON object to the console.
-

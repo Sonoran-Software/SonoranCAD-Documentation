@@ -7,69 +7,49 @@ description: >-
 # Get Record Templates
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/get\_templates" %}
-{% api-method-summary %}
-Get Record Templates
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/general/get_templates" method="post" summary="Get Record Templates" %}
+{% swagger-description %}
 This endpoint allows you to retrieve all custom record and report templates in your community.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="templateId" type="number" required=false %}
+{% swagger-parameter in="body" name="templateId" type="number" %}
 Unique template ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-GET\_TEMPLATES
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+GET_TEMPLATES
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Empty Array
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 [{RECORD TEMPLATES}]
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="" %}
 ```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ```javascript
     "id": "YOUR_COMMUNITY_ID",
@@ -82,4 +62,3 @@ INVALID API KEY
 #### Record Formatting
 
 Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](./#record-formatting). 
-

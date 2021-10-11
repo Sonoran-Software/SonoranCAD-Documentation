@@ -7,45 +7,31 @@ description: >-
 # Get Calls
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/emergency/get\_calls" %}
-{% api-method-summary %}
-Get Calls
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_calls" method="post" summary="Get Calls" %}
+{% swagger-description %}
 This endpoint allows you to retrieve all active emergency calls, active dispatch calls, and previously closed dispatch calls.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-GET\_CALLS
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+GET_CALLS
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Array of request objects
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A successful call will be met with the following response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```javascript
 {
     // See below for full object structuring
@@ -54,23 +40,17 @@ A successful call will be met with the following response:
     "closedCalls": [], // DISPATCH CALL Array
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-The following 400 errors may be sent in response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ```javascript
 {
@@ -87,7 +67,7 @@ INVALID API KEY
 
 ### Object Structuring
 
-The GET\_CALLS API endpoint returns arrays of the following object structures:
+The GET_CALLS API endpoint returns arrays of the following object structures:
 
 {% tabs %}
 {% tab title="Dispatch Call" %}
@@ -148,32 +128,31 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 
 {% tabs %}
 {% tab title="ORIGIN" %}
-| Integer \(Enumeration\) Value | Origin Description |
-| :--- | :--- |
-| 0 | CALLER |
-| 1 | RADIO DISPATCH |
-| 2 | OBSERVED |
-| 3 | WALK\_UP |
+| Integer (Enumeration) Value | Origin Description |
+| --------------------------- | ------------------ |
+| 0                           | CALLER             |
+| 1                           | RADIO DISPATCH     |
+| 2                           | OBSERVED           |
+| 3                           | WALK_UP            |
 {% endtab %}
 
-{% tab title="CALL\_STATUS" %}
-| Integer \(Enumeration\) Value | Status Description |
-| :--- | :--- |
-| 0 | PENDING |
-| 1 | ACTIVE |
-| 2 | CLOSED |
+{% tab title="CALL_STATUS" %}
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | PENDING            |
+| 1                           | ACTIVE             |
+| 2                           | CLOSED             |
 {% endtab %}
 
-{% tab title="UNIT\_STATUS" %}
+{% tab title="UNIT_STATUS" %}
 These represent the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
 
-| Integer \(Enumeration\) Value | Status Description |
-| :--- | :--- |
-| 0 | UNAVAILABLE |
-| 1 | BUSY |
-| 2 | AVAILABLE |
-| 3 | ENROUTE |
-| 4 | ON\_SCENE |
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | UNAVAILABLE        |
+| 1                           | BUSY               |
+| 2                           | AVAILABLE          |
+| 3                           | ENROUTE            |
+| 4                           | ON_SCENE           |
 {% endtab %}
 {% endtabs %}
-

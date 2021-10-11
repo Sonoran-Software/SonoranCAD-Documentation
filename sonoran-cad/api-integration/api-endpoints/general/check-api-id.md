@@ -7,75 +7,51 @@ description: >-
 # Check API ID
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/check\_apiid" %}
-{% api-method-summary %}
-Check API ID
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/general/check_apiid" method="post" summary="Check API ID" %}
+{% swagger-description %}
 The unit location API endpoint allows you to check if a user has linked their CAD's API ID.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-CHECK\_APIID
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+CHECK_APIID
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Array of unit status objects
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A successful call will be met with the following response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
 {{ USERNAME }}
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-The following 400 errors may be sent in response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-A non-linked API ID will be met with the following response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="A non-linked API ID will be met with the following response:" %}
 ```
 API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ```javascript
 {
@@ -90,4 +66,3 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     ]
 }
 ```
-

@@ -7,11 +7,11 @@ description: >-
 # Sign Updated
 
 {% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.  
+This push event requires the **pro **version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
-### EVENT\_STREETSIGN\_UPDATED
+### EVENT_STREETSIGN_UPDATED
 
 ```javascript
 {
@@ -27,4 +27,3 @@ For more information, see our [pricing ](../../../pricing/faq/)page.
   }
 }
 ```
-

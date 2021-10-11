@@ -5,7 +5,7 @@ description: Sends locations of all online players to the CAD.
 # Locations
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -16,9 +16,9 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
 
-## Installation **Guide**
+## Installation** Guide**
 
 ### 1. Download and Install the Framework
 
@@ -38,10 +38,10 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 ## Further Configuration
 
-| Option | Description | Default Value |
-| :--- | :--- | :--- |
-| checkTime | How frequently to send location updates to the server. | 5000 ms \(5 seconds\) |
-| prefixPostal | Prefixes postal to locations \(like \[111\] Some Road\). Requires Postals plugin. | True |
+| Option       | Description                                                                    | Default Value       |
+| ------------ | ------------------------------------------------------------------------------ | ------------------- |
+| checkTime    | How frequently to send location updates to the server.                         | 5000 ms (5 seconds) |
+| prefixPostal | Prefixes postal to locations (like \[111] Some Road). Requires Postals plugin. | True                |
 
 ## Usage
 
@@ -56,4 +56,3 @@ This function can **only** be used by other plugins and is not exported.
 ```lua
 function findPlayerLocation(source) -- returns location as a string
 ```
-

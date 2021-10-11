@@ -14,22 +14,26 @@ All API calls are sent via an HTTP POST with a JSON formatted body.
 
 Yes, our API calls can be integrated into nearly any gamemode with nearly any programming language.
 
-We provide a library of drag-and-drop plugins written in Lua.  
+We provide a library of drag-and-drop plugins written in Lua.\
 
 
 You can also write your own script using our API endpoints:
 
-{% page-ref page="api-endpoints/" %}
+{% content-ref url="api-endpoints/" %}
+[api-endpoints](api-endpoints/)
+{% endcontent-ref %}
 
 Or, learn more about receiving push events directly to your game server:
 
-{% page-ref page="push-events/" %}
+{% content-ref url="push-events/" %}
+[push-events](push-events/)
+{% endcontent-ref %}
 
 ## Are there rate limits?
 
 Yes, Sonoran CAD will automatically block any malicious or spammed traffic. While we don't publicly publish these limits, it's best to not make more than one call per second for an extended period of time.
 
-{% page-ref page="getting-started/" %}
-
-
+{% content-ref url="getting-started/" %}
+[getting-started](getting-started/)
+{% endcontent-ref %}
 

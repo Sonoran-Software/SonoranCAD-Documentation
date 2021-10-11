@@ -7,7 +7,7 @@ description: >-
 # Check API ID
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -32,15 +32,15 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ## Configuration
 
-| Config Option | Description |
-| :--- | :--- |
+| Config Option | Description                                                                                                                                                                      |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | forceSetApiId | Enable the [tablet resource](tablet.md) to automatically set the user's [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)s when they log in. |
 
 ## Usage
 
 ### Command
 
-This plugin supplies the command `/apiid` which will print the player's primary identifier \(the one they should use in Settings\) to their console.
+This plugin supplies the command `/apiid` which will print the player's primary identifier (the one they should use in Settings) to their console.
 
 ### Function
 
@@ -81,4 +81,3 @@ AddEventHandler("SonoranCAD::apicheck:CheckPlayerLinkedResponse", function(playe
     print(("Player %s has API ID? %s"):format(player, exists))
 end)
 ```
-

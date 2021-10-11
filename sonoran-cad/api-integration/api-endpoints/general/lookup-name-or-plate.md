@@ -12,66 +12,46 @@ This API endpoint requires the **Plus** version of Sonoran CAD or higher. For mo
 API response times may be increased slightly for communities with Database Sync enabled, depending upon the speed, latency and size of your in-game database.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/general/lookup" %}
-{% api-method-summary %}
-Lookup Name or Plate
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/general/lookup" method="post" summary="Lookup Name or Plate" %}
+{% swagger-description %}
 The lookup name endpoint allows you to retrieve all records associated with a provided name or license plate.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
+{% swagger-parameter in="body" name="type" type="string" %}
 LOOKUP
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Array containing a lookup information object
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A successful call will be met with the following response:  
-_Detailed contents of the record type arrays can be found further below._
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="A successful call will be met with the following response:
+Detailed contents of the record type arrays can be found further below." %}
+```
 {
   "records": []
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=302 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="302" description="" %}
+```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 INVALID EMPTY SEARCH
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## API Call Example
 
@@ -95,7 +75,7 @@ INVALID EMPTY SEARCH
 ```
 
 {% hint style="warning" %}
-Searches must include all name/plate data fields, but some can be left blank. Searches must include at least one field with string content \(ex: first name 'John'\) and can not have all fields left blank.
+Searches must include all name/plate data fields, but some can be left blank. Searches must include at least one field with string content (ex: first name 'John') and can not have all fields left blank.
 
 To perform a plate based search, simply fill in the `plate` property and leave the rest blank.
 {% endhint %}
@@ -114,22 +94,22 @@ The record "type" is an enumerator used to distinguish the category of the custo
 
 The `characters` object array will always be included with the search. The `types` filtering only applies to the custom records being returned.
 
-| Enum | Description |
-| :--- | :--- |
-| 2 | Warrant |
-| 3 | BOLO |
-| 4 | License |
-| 5 | Custom Vehicle Registration |
-| 7 | Custom Character Record |
-| 8 | Custom Police Record |
-| 9 | Custom Police Report |
-| 10 | Custom Medical Record |
-| 11 | Custom Medical Report |
-| 12 | Custom Fire Record |
-| 13 | Custom Fire Report |
-| 14 | Custom DMV Record |
-| 15 | Custom Law Record |
-| 16 | Custom Law Report |
+| Enum | Description                 |
+| ---- | --------------------------- |
+| 2    | Warrant                     |
+| 3    | BOLO                        |
+| 4    | License                     |
+| 5    | Custom Vehicle Registration |
+| 7    | Custom Character Record     |
+| 8    | Custom Police Record        |
+| 9    | Custom Police Report        |
+| 10   | Custom Medical Record       |
+| 11   | Custom Medical Report       |
+| 12   | Custom Fire Record          |
+| 13   | Custom Fire Report          |
+| 14   | Custom DMV Record           |
+| 15   | Custom Law Record           |
+| 16   | Custom Law Report           |
 {% endtab %}
 
 {% tab title="Response Object Types" %}
@@ -139,7 +119,8 @@ The `characters` object array will always be included with the search. The `type
 
 All record results are returned in an object array. For more information on custom record structuring, see the documentation below:
 
-{% page-ref page="custom-records/" %}
+{% content-ref url="custom-records/" %}
+[custom-records](custom-records/)
+{% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
-

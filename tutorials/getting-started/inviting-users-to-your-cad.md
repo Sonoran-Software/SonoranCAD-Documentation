@@ -1,5 +1,5 @@
 ---
-description: 'Invite your community members to join your community, and grant them access.'
+description: Invite your community members to join your community, and grant them access.
 ---
 
 # Inviting Users to Your CAD
@@ -12,13 +12,15 @@ Sonoran CAD allows your community members to easily join your CAD. Users can man
 
 For more information on hosting your own custom login page, see our guide below:
 
-{% page-ref page="../customization/custom-login-page.md" %}
+{% content-ref url="../customization/custom-login-page.md" %}
+[custom-login-page.md](../customization/custom-login-page.md)
+{% endcontent-ref %}
 
 ### Manually Join with a Community ID
 
-Users can [create an account](registering-your-account.md), and enter in your community ID in the "Join Community" popup.  
-Users can search using your community ID and can press the "Join" button to add your community.  
-  
+Users can [create an account](registering-your-account.md), and enter in your community ID in the "Join Community" popup.\
+Users can search using your community ID and can press the "Join" button to add your community.\
+\
 From there, users can select your community card in the "My Communities" section to log into your CAD.
 
 ![The join community modal allows users to search for a community ID](../../.gitbook/assets/join.png)
@@ -26,6 +28,5 @@ From there, users can select your community card in the "My Communities" section
 {% hint style="info" %}
 Forgot your community ID?
 
-You can find this in your admin panel under Advanced &gt; Limits &gt; Community ID
+You can find this in your admin panel under Advanced > Limits > Community ID
 {% endhint %}
-

@@ -5,7 +5,7 @@ description: Implements the Wraith ARS 2X plate reader for automated plate readi
 # WraithV2
 
 {% hint style="danger" %}
-This plugin utilizes API endpoints that require the **Plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **Plus **version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -22,7 +22,7 @@ View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
 
 Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
 
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 
@@ -50,14 +50,14 @@ Use of this plugin requires the [Wraith ARS 2X](https://forum.cfx.re/t/release-w
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party plugin that is not bundled by default.
 {% endhint %}
 
-| Config Option | Description |
-| :--- | :--- |
-| useExpires | use vehicle registration expirations, or not |
-| useMiddleInitial | use middle initials? |
-| alertNoRegistration | alert if no registration was found on scan? |
-| statusUid | Custom record field UID containing the status |
-| expiresUid | Custom record field UID containing the expiration date |
-| flagOnStatuses | List of statuses to flag/alert on |
+| Config Option       | Description                                            |
+| ------------------- | ------------------------------------------------------ |
+| useExpires          | use vehicle registration expirations, or not           |
+| useMiddleInitial    | use middle initials?                                   |
+| alertNoRegistration | alert if no registration was found on scan?            |
+| statusUid           | Custom record field UID containing the status          |
+| expiresUid          | Custom record field UID containing the expiration date |
+| flagOnStatuses      | List of statuses to flag/alert on                      |
 
 ### 5. Custom Record Handling
 
@@ -65,11 +65,11 @@ If you wish to have the plugin alert when the vehicle is not registered, is mark
 
 #### Find your custom record field's UID
 
-In the CAD navigate to Admin &gt; Customization &gt; Custom Records &gt; select your custom vehicle registration record.
+In the CAD navigate to Admin > Customization > Custom Records > select your custom vehicle registration record.
 
-The very last column of the field containing your status and expiration dates will have the field's UID \(unique identifier, sometimes referred to as 'field mapping id'\).
+The very last column of the field containing your status and expiration dates will have the field's UID (unique identifier, sometimes referred to as 'field mapping id').
 
-![Custom Records - Field UID](../../../.gitbook/assets/image%20%28130%29.png)
+![Custom Records - Field UID](<../../../.gitbook/assets/image (130).png>)
 
 #### Set the UID in your Config
 
@@ -87,8 +87,7 @@ In order to have locked plate results sent back to your CAD, don't forget to set
 
 ## Usage
 
-For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.  
+For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
-![Wraith ARS 2X Controls](../../../.gitbook/assets/image%20%2826%29.png)
-
+![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (26).png>)

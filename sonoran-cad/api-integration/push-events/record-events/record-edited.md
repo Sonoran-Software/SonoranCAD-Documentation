@@ -7,11 +7,11 @@ description: >-
 # Record Edited
 
 {% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.  
+This push event requires the **pro **version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-### EVENT\_RECORD\_EDIT
+### EVENT_RECORD_EDIT
 
 Note: This event will NOT be fired when editing a record via API, as your server is already aware of the record being added.
 
@@ -29,7 +29,7 @@ Note: This event will NOT be fired when editing a record via API, as your server
 
 The `record` object will contain the custom record object, in accordance with the record format below:
 
-{% page-ref page="../../api-endpoints/general/custom-records/" %}
-
-
+{% content-ref url="../../api-endpoints/general/custom-records/" %}
+[custom-records](../../api-endpoints/general/custom-records/)
+{% endcontent-ref %}
 

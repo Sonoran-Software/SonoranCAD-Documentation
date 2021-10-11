@@ -26,10 +26,9 @@ Account verification emails may not be shown in your primary inbox.
 If you're having trouble finding the email, check your spam, junk, promotions, or all mail folder.
 {% endhint %}
 
-Check your inbox for an email from Sonoran CAD.  
-  
-Select the "Verify Email" button, and your account will be automatically verified.  
+Check your inbox for an email from Sonoran CAD.\
+\
+Select the "Verify Email" button, and your account will be automatically verified.\
 
 
 ![Account verification emails are sent as shown above](../../.gitbook/assets/email.png)
-

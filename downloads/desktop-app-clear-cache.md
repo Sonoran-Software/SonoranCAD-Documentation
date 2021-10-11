@@ -8,15 +8,14 @@ You may need to manually clear your Sonoran CAD desktop application's cache for 
 
 ### 1. Open Your AppData Folder
 
-In the window search bar type `run` and open the run application.  
-Enter `appdata` then hit `Ok`  
+In the window search bar type `run` and open the run application.\
+Enter `appdata` then hit `Ok`\
 
 
-![Windows - Run AppData](../.gitbook/assets/image%20%28149%29.png)
+![Windows - Run AppData](<../.gitbook/assets/image (149).png>)
 
 ### 2. Delete the Cache Folder
 
-Navigate to `Roaming` &gt; `Sonoran CAD` and delete the `Cache` folder.
+Navigate to `Roaming` > `Sonoran CAD` and delete the `Cache` folder.
 
-![Sonoran CAD - Desktop Cache Folder](../.gitbook/assets/image%20%28148%29.png)
-
+![Sonoran CAD - Desktop Cache Folder](<../.gitbook/assets/image (148).png>)

@@ -5,8 +5,8 @@ description: Learn more about Sonoran CAD's refund and purchase policy.
 # Refund and Purchase Policy
 
 {% hint style="info" %}
-We highly recommend all communities register and try out Sonoran CAD for free, before opting to purchase an upgraded subscription.  
-  
+We highly recommend all communities register and try out Sonoran CAD for free, before opting to purchase an upgraded subscription.\
+\
 Sonoran CAD allows your community to register and try out the CAD for an unlimited amount of time before purchasing. For more information, check out our [getting started guides](../../tutorials/getting-started/).
 {% endhint %}
 
@@ -32,7 +32,6 @@ We are happy to provide you with installation support at anytime. We are not res
 
 Refunds will not be issued for any other reason including unhappiness with the provided features, user interface or layout, downloadable applications, system downtime, system maintenance, etc.
 
-### Mobile App Purchases \(iOS & Android\)
+### Mobile App Purchases (iOS & Android)
 
 Mobile app purchases are a small, one-time fee through the iOS App Store or Google Play store. All payment processing is handled through these providers. All refund requests must be made via the iOS App Store or Google Play Store.
-

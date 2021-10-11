@@ -14,25 +14,33 @@ All custom records and reports utilize the same common formatting. You can manag
 
 Access your existing custom record types built from the CAD's [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
-{% page-ref page="get-record-template.md" %}
+{% content-ref url="get-record-template.md" %}
+[get-record-template.md](get-record-template.md)
+{% endcontent-ref %}
 
 #### Create a New Record
 
 Add a new custom record to your community.
 
-{% page-ref page="new-record.md" %}
+{% content-ref url="new-record.md" %}
+[new-record.md](new-record.md)
+{% endcontent-ref %}
 
 #### Edit an Existing Record
 
 Modify and update an existing record in your community.
 
-{% page-ref page="edit-record.md" %}
+{% content-ref url="edit-record.md" %}
+[edit-record.md](edit-record.md)
+{% endcontent-ref %}
 
 #### Remove a Record
 
 Remove an existing record from your community.
 
-{% page-ref page="remove-record.md" %}
+{% content-ref url="remove-record.md" %}
+[remove-record.md](remove-record.md)
+{% endcontent-ref %}
 
 ## Record Formatting
 
@@ -59,22 +67,22 @@ This is a unique ID for this record type. It is highly recommended to get all of
 
 The record "type" is an enumerator used to distinguish the category of the custom record/report.
 
-| Enum | Description |
-| :--- | :--- |
-| 2 | Custom Warrant |
-| 3 | Custom BOLO |
-| 4 | Custom License |
-| 5 | Custom Vehicle Registration |
-| 7 | Custom Character |
-| 8 | Custom Police Record |
-| 9 | Custom Police Report |
-| 10 | Custom Medical Record |
-| 11 | Custom Medical Report |
-| 12 | Custom Fire Record |
-| 13 | Custom Fire Report |
-| 14 | Custom DMV Record |
-| 15 | Custom Law Record |
-| 16 | Custom Law Report |
+| Enum | Description                 |
+| ---- | --------------------------- |
+| 2    | Custom Warrant              |
+| 3    | Custom BOLO                 |
+| 4    | Custom License              |
+| 5    | Custom Vehicle Registration |
+| 7    | Custom Character            |
+| 8    | Custom Police Record        |
+| 9    | Custom Police Report        |
+| 10   | Custom Medical Record       |
+| 11   | Custom Medical Report       |
+| 12   | Custom Fire Record          |
+| 13   | Custom Fire Report          |
+| 14   | Custom DMV Record           |
+| 15   | Custom Law Record           |
+| 16   | Custom Law Report           |
 {% endtab %}
 
 {% tab title="Section" %}
@@ -97,14 +105,14 @@ The "Section" object contains all of the data for a custom record section. These
 
 The `category` field contains an enumerator representing the section type. These correspond to the custom or premade category types in the [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
-| Enum | Description |
-| :--- | :--- |
-| 0 | Custom |
-| 1 | Flags |
-| 2 | Agency |
-| 5 | Speed |
-| 6 | Charges |
-| 9 | Linked Records |
+| Enum | Description    |
+| ---- | -------------- |
+| 0    | Custom         |
+| 1    | Flags          |
+| 2    | Agency         |
+| 5    | Speed          |
+| 6    | Charges        |
+| 9    | Linked Records |
 {% endtab %}
 
 {% tab title="Field" %}
@@ -132,42 +140,42 @@ The `field` object contains all of the data for an individual custom record fiel
 
 #### Type
 
-| Value | Description |
-| :--- | :--- |
-| "input" | Standard Textbox |
-| "textarea" | Multi-line Textbox |
-| "address" | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
-| "select" | Dropdown \(Uses `options` array\) |
-| "date" | Date Picker |
-| "time" | Time Picker |
-| "image" | Image URL Viewer/Uploader |
-| "checkboxes" | List of Checkboxes \(Uses `options` array\) |
-| "label" | Text Label |
+| Value        | Description                                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| "input"      | Standard Textbox                                                                                                 |
+| "textarea"   | Multi-line Textbox                                                                                               |
+| "address"    | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
+| "select"     | Dropdown (Uses `options` array)                                                                                  |
+| "date"       | Date Picker                                                                                                      |
+| "time"       | Time Picker                                                                                                      |
+| "image"      | Image URL Viewer/Uploader                                                                                        |
+| "checkboxes" | List of Checkboxes (Uses `options` array)                                                                        |
+| "label"      | Text Label                                                                                                       |
 
 #### Mask
 
-Masks can be used in a field to force a specific entry format  
+Masks can be used in a field to force a specific entry format\
 Ex: `(###) ### - ####` forces a phone number format.
 
-| Token | Description |
-| :--- | :--- |
-| \# | Numeric |
-| S | Letter A-Z |
-| X | Alphanumeric |
+| Token | Description  |
+| ----- | ------------ |
+| #     | Numeric      |
+| S     | Letter A-Z   |
+| X     | Alphanumeric |
 
 #### UID
 
-The `UID` or "Unique ID" field helps internally map Database Merge fields.  
-  
+The `UID` or "Unique ID" field helps internally map Database Merge fields.\
+\
 In addition, a `UID` field with the value of `"first"` and `"last"` are required for the civilian records. A `UID` field of `"plate"` is required for a vehicle registration record. This is how the backend process determines searchable license plate and character name values.
 
 When you create a custom record and add in a `civilian` or `vehicle` section, the imported section will keep the same `UID` fields. This is how data is mapped from a character or vehicle search and placed into a custom record.
 
 #### Data
 
-The data object stores detailed objects for pre-made section types. The data object type \(charge, agency info, flags, etc.\) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` \(Custom\) then the section will contain a single field, with the `data` property containing the detailed object.
+The data object stores detailed objects for pre-made section types. The data object type (charge, agency info, flags, etc.) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` (Custom) then the section will contain a single field, with the `data` property containing the detailed object.
 
-Ex: `record.sections[index].fields[0].data` object would contain agency information if the `record.sections[index].category` is `2` \(Agency\).
+Ex: `record.sections[index].fields[0].data` object would contain agency information if the `record.sections[index].category` is `2` (Agency).
 
 ```javascript
 // Flags (Section Category 1)
@@ -209,4 +217,3 @@ Ex: `record.sections[index].fields[0].data` object would contain agency informat
 ```
 {% endtab %}
 {% endtabs %}
-

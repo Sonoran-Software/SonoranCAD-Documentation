@@ -12,7 +12,7 @@ This code only works on the Server side files since HTTP only works on servers, 
 You **must** return something, even if it's just a confirmation the data was received. Otherwise, the HTTP request will hang and eventually error on the client's side.
 {% endhint %}
 
-```text
+```
 RegisterPluginHttpEvent("yourpluginname:hello", function(data)
     debugLog(("Got data: %s"):format(json.encode(data)))
     return { result = "ok, got some data!" }
@@ -21,7 +21,7 @@ end)
 
 #### Breakdown
 
-The framework exposes the `RegisterPluginHttpEvent` function for plugins to use \(is not exported, currently\). Using this function "registers" a particular type where the framework will send the POSTed payload to the callback function.
+The framework exposes the `RegisterPluginHttpEvent` function for plugins to use (is not exported, currently). Using this function "registers" a particular type where the framework will send the POSTed payload to the callback function.
 
 **Note: This will block the HTTP request, so take care if this is requesting data from an external source like a database.**
 
@@ -29,45 +29,27 @@ To actually use this, we would POST to the URL, as noted below.
 
 Return a LUA table which will be encoded as JSON back to the requesting client.
 
-{% api-method method="post" host="http://yourserverip:serverport" path="/sonorancad/pluginevent" %}
-{% api-method-summary %}
-Plugin Event
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="http://yourserverip:serverport" path="/sonorancad/pluginevent" method="post" summary="Plugin Event" %}
+{% swagger-description %}
 Send a payload to trigger a specific HTTP event that was defined in the plugin code.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-form-data-parameters %}
-{% api-method-parameter name="data" type="object" required=true %}
+{% swagger-parameter in="body" name="data" type="object" %}
 A JSON object containing the payload to be sent
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
+{% swagger-parameter in="body" name="type" type="string" %}
 The registered type this data should be sent to
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your API Key
-{% endapi-method-parameter %}
-{% endapi-method-form-data-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 Response varies based on return statement defined in the handler.
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

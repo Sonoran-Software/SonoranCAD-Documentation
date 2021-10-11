@@ -5,79 +5,55 @@ description: This endpoint allows you to remove a character associated with a CA
 # Remove Character
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
 Characters can NOT be removed from communities using [Database Sync](../../../../integration-plugins/database-sync-and-merge/), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
-{% api-method method="post" host="https://api.sonorancad.com" path="/civilian/remove\_character" %}
-{% api-method-summary %}
-Remove Character
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/civilian/remove_character" method="post" summary="Remove Character" %}
+{% swagger-description %}
 This endpoint allows you to remove a character associated with a CAD account.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Your community's ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="key" type="string" required=true %}
+{% swagger-parameter in="body" name="key" type="string" %}
 Your community's API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-REMOVE\_CHARACTER
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+REMOVE_CHARACTER
+{% endswagger-parameter %}
 
-{% api-method-parameter name="data" type="array" required=true %}
+{% swagger-parameter in="body" name="data" type="array" %}
 Array of character objects
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A successful call will be met with the following response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
 CHARACTER {ID} REMOVED FOR {USERNAME}
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-The following 400 errors may be sent in response:
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="" %}
 ```
 API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ```javascript
 {
@@ -92,4 +68,3 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     ]
 }
 ```
-

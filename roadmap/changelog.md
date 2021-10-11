@@ -6,7 +6,7 @@ description: View the latest changes to Sonoran CAD!
 
 ## Roadmap
 
-[View our upcoming roadmap!](https://roadmap.sonorancad.com/)
+[View our upcoming roadmap!](https://roadmap.sonorancad.com)
 
 ## Changelog
 
@@ -14,28 +14,28 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
-Friendly Mapping: Import JSON/CSV  
-- Database sync friendly mapping values can now be imported via JSON or CSV
+Friendly Mapping: Import JSON/CSV\
+\- Database sync friendly mapping values can now be imported via JSON or CSV
 
-Wyze Color - Black  
-- The Wyze Color bulbs are now checked for a black hex color, and are turned off rather than set to black
+Wyze Color - Black\
+\- The Wyze Color bulbs are now checked for a black hex color, and are turned off rather than set to black
 
-Philips Hue - Black  
-- Philips Hue bulbs are now checked for the black RGB code and are toggled off, as Hue does not support a black color code
+Philips Hue - Black\
+\- Philips Hue bulbs are now checked for the black RGB code and are toggled off, as Hue does not support a black color code
 {% endtab %}
 
 {% tab title="Fixed" %}
-DB Sync - Merge in Multi-Table Values  
-- Fixed an issue with DB Sync causing multiple table values for character records to only merge in the first found value in a section and disregard the last
+DB Sync - Merge in Multi-Table Values\
+\- Fixed an issue with DB Sync causing multiple table values for character records to only merge in the first found value in a section and disregard the last
 
-DB Sync - Update Custom Record  
-- Fixed an issue where saving custom records with DBSync would leave some of the old, non-custom fields in the sync config
+DB Sync - Update Custom Record\
+\- Fixed an issue where saving custom records with DBSync would leave some of the old, non-custom fields in the sync config
 
-Smart Lighting Restore  
-- Fixed an issue causing the restore lighting scene to not start until the second trigger
+Smart Lighting Restore\
+\- Fixed an issue causing the restore lighting scene to not start until the second trigger
 
-DB Sync - Reserved Word Column Names  
-- Added special handling for selecting reserved MySQL words as column names
+DB Sync - Reserved Word Column Names\
+\- Added special handling for selecting reserved MySQL words as column names
 {% endtab %}
 {% endtabs %}
 
@@ -43,19 +43,19 @@ DB Sync - Reserved Word Column Names
 
 {% tabs %}
 {% tab title="New" %}
-Philips Hue - Lighting Integration  
-- Philips hue color bulbs can now be used with the smart lighting integration
+Philips Hue - Lighting Integration\
+\- Philips hue color bulbs can now be used with the smart lighting integration
 
-Wyze Color - Lighting Integration  
-- Wyze color bulbs can now be used with the smart lighting integration
+Wyze Color - Lighting Integration\
+\- Wyze color bulbs can now be used with the smart lighting integration
 
-Import Penal Codes - Int Parse  
-- Added additional handling and safety checks to ensure the bondAmount column for imported penal codes is forced to an integer
+Import Penal Codes - Int Parse\
+\- Added additional handling and safety checks to ensure the bondAmount column for imported penal codes is forced to an integer
 {% endtab %}
 
 {% tab title="Fixed" %}
-SetServer API  
-- Fixed an issue with the set server endpoint not setting the map URL in the livemap config
+SetServer API\
+\- Fixed an issue with the set server endpoint not setting the map URL in the livemap config
 {% endtab %}
 {% endtabs %}
 
@@ -63,16 +63,16 @@ SetServer API
 
 {% tabs %}
 {% tab title="New" %}
-TTS - Numbers  
-- Text to speech now separates all numbers. Ex: "Incoming nine hundred and eleven" -&gt; "Incoming nine one one"
+TTS - Numbers\
+\- Text to speech now separates all numbers. Ex: "Incoming nine hundred and eleven" -> "Incoming nine one one"
 {% endtab %}
 
 {% tab title="Fixed" %}
-Bodycam - Null Fields  
-- Fixed an issue where bodycam fields set to null would display the {field} key instead of being blank
+Bodycam - Null Fields\
+\- Fixed an issue where bodycam fields set to null would display the {field} key instead of being blank
 
-Modify Unit - Local Update  
-- Fixed an issue where updating your unit identifier wouldn't locally update your information until a refresh
+Modify Unit - Local Update\
+\- Fixed an issue where updating your unit identifier wouldn't locally update your information until a refresh
 {% endtab %}
 {% endtabs %}
 
@@ -80,21 +80,21 @@ Modify Unit - Local Update
 
 {% tabs %}
 {% tab title="New" %}
-Desktop App - Save Last Size  
-- The desktop app now re-opens with the size it was last set to  
-  
-Multi-Group Set Status  
-- Dispatchers can now change the status on multiple unit groups at a time
+Desktop App - Save Last Size\
+\- The desktop app now re-opens with the size it was last set to\
+\
+Multi-Group Set Status\
+\- Dispatchers can now change the status on multiple unit groups at a time
 {% endtab %}
 
 {% tab title="Changed" %}
-Self-Dispatch - Toggle Improvements  
-- Optimized the toggle process when switching self-dispatch on and off. Additionally, fixed an issue causing the new dispatch TTS to run a second time when you toggled self-dispatch on or off
+Self-Dispatch - Toggle Improvements\
+\- Optimized the toggle process when switching self-dispatch on and off. Additionally, fixed an issue causing the new dispatch TTS to run a second time when you toggled self-dispatch on or off
 {% endtab %}
 
 {% tab title="Fixed" %}
-Smart Signs - Top Alignment  
-- Fixed an issue causing the smart signs UI to display a sign box on the top row next to the search bar
+Smart Signs - Top Alignment\
+\- Fixed an issue causing the smart signs UI to display a sign box on the top row next to the search bar
 {% endtab %}
 {% endtabs %}
 
@@ -102,16 +102,16 @@ Smart Signs - Top Alignment
 
 {% tabs %}
 {% tab title="New" %}
-CAD - Toggle View for In-Game Use  
-- Users can now bind a hotkey to display and hide the CAD on top of the game for a better and more native experience than the Steam Browser. Minimizing with the hotkey will also auto-refocus the game layer below
+CAD - Toggle View for In-Game Use\
+\- Users can now bind a hotkey to display and hide the CAD on top of the game for a better and more native experience than the Steam Browser. Minimizing with the hotkey will also auto-refocus the game layer below
 {% endtab %}
 
 {% tab title="Fixed" %}
-Duplicate Sections - Bug  
-- Fixed an issue preventing duplicated sections from being removed once a record was filed
+Duplicate Sections - Bug\
+\- Fixed an issue preventing duplicated sections from being removed once a record was filed
 
-Record Preview - Duplicated Sections  
-- Fixed an issue causing records with duplicated sections to overwrite preview fields further down in the lookup preview
+Record Preview - Duplicated Sections\
+\- Fixed an issue causing records with duplicated sections to overwrite preview fields further down in the lookup preview
 {% endtab %}
 {% endtabs %}
 
@@ -121,24 +121,24 @@ Record Preview - Duplicated Sections
 
 {% tabs %}
 {% tab title="New" %}
-Unit - Drag to Tone Tab  
-- Units can now be dragged to a minimized tone tab to automatically open and attach the unit to the tone
+Unit - Drag to Tone Tab\
+\- Units can now be dragged to a minimized tone tab to automatically open and attach the unit to the tone
 
-Unit & Call - Drag to Tone Board  
-- Units, groups, and dispatch calls can be dragged-and-dropped to the tone board to automatically add them to the "Send To" box
+Unit & Call - Drag to Tone Board\
+\- Units, groups, and dispatch calls can be dragged-and-dropped to the tone board to automatically add them to the "Send To" box
 
-Unit & Call - Drag to Lookup Tab  
-- Active units and unit groups can be dragged to a pinned lookup tab to automatically open a lookup with those unit\(s\) selected for result transmission
+Unit & Call - Drag to Lookup Tab\
+\- Active units and unit groups can be dragged to a pinned lookup tab to automatically open a lookup with those unit(s) selected for result transmission
 {% endtab %}
 
 {% tab title="Changed" %}
-Dispatch Saved Types - Capitalization  
-- Capitalized all options in the dispatch's saved types dropdown to match consistent formatting
+Dispatch Saved Types - Capitalization\
+\- Capitalized all options in the dispatch's saved types dropdown to match consistent formatting
 {% endtab %}
 
 {% tab title="Fixed" %}
-Multi-Unit: Tone Board  
-- Fixed an issue preventing users from attaching multiple units at a time to the tone board via the active units context menu
+Multi-Unit: Tone Board\
+\- Fixed an issue preventing users from attaching multiple units at a time to the tone board via the active units context menu
 {% endtab %}
 {% endtabs %}
 
@@ -146,27 +146,27 @@ Multi-Unit: Tone Board
 
 {% tabs %}
 {% tab title="New" %}
-Self-Dispatch - Save State  
-- Unit's self-dispatch mode will now save and persist through a refresh/restart
+Self-Dispatch - Save State\
+\- Unit's self-dispatch mode will now save and persist through a refresh/restart
 
-Settings - Sound Volume Save  
-- System volume now saves and persists
+Settings - Sound Volume Save\
+\- System volume now saves and persists
 {% endtab %}
 
 {% tab title="Changed" %}
-FR Translations - Update  
-- Updated French translations
+FR Translations - Update\
+\- Updated French translations
 {% endtab %}
 
 {% tab title="Fixed" %}
-Tablet - Window Sizes and Dragging  
-- Fixed an issue causing the in-game tablet to lock and misplace windows on re-join, requiring a layout reset to resolve. This had to do with a screen size detection plugin malfunctioning
+Tablet - Window Sizes and Dragging\
+\- Fixed an issue causing the in-game tablet to lock and misplace windows on re-join, requiring a layout reset to resolve. This had to do with a screen size detection plugin malfunctioning
 
-Unit Groups - Creation  
-- Fixed an issue preventing unit groups from being created via right-click
+Unit Groups - Creation\
+\- Fixed an issue preventing unit groups from being created via right-click
 
-Multi-Unit - Drag to Lookup  
-- Fixed an issue preventing users from dragging multiple selected units or groups to a lookup window to send them the search results
+Multi-Unit - Drag to Lookup\
+\- Fixed an issue preventing users from dragging multiple selected units or groups to a lookup window to send them the search results
 {% endtab %}
 {% endtabs %}
 
@@ -174,42 +174,42 @@ Multi-Unit - Drag to Lookup
 
 {% tabs %}
 {% tab title="New" %}
-Active Units - Multi-Select  
-- Active units and unit groups can now be multi-selected for faster management. Multi-select also allows you to drag and drop multiple units or groups at once
+Active Units - Multi-Select\
+\- Active units and unit groups can now be multi-selected for faster management. Multi-select also allows you to drag and drop multiple units or groups at once
 
-DBSync - External Keys  
-- DB Sync now supports mapping a unique license or vehicle registration ID to an external table containing the proper character ID
+DBSync - External Keys\
+\- DB Sync now supports mapping a unique license or vehicle registration ID to an external table containing the proper character ID
 
-API: Add Call Note  
-- Added a new API endpoint to add call notes
+API: Add Call Note\
+\- Added a new API endpoint to add call notes
 
-API: Detach Unit  
-- Added a new API endpoint to detach units from dispatch calls
+API: Detach Unit\
+\- Added a new API endpoint to detach units from dispatch calls
 
-Push Event: Unit Panic  
-- Added a server push event for unit panic events
+Push Event: Unit Panic\
+\- Added a server push event for unit panic events
 
-Bodycam: Auto-correct Toggles  
-- Improved the bodycam data fields to auto-toggle on if listed but not enabled
+Bodycam: Auto-correct Toggles\
+\- Improved the bodycam data fields to auto-toggle on if listed but not enabled
 {% endtab %}
 
 {% tab title="Changed" %}
-Call Note: UTC Timestamp  
-- All dispatch call notes now have timestamps appended to them in UTC
+Call Note: UTC Timestamp\
+\- All dispatch call notes now have timestamps appended to them in UTC
 
-API Kick/Ban - Add username to log  
-- Improved the kick/ban log to include the username when performed via API
+API Kick/Ban - Add username to log\
+\- Improved the kick/ban log to include the username when performed via API
 {% endtab %}
 
 {% tab title="Fixed" %}
-DB Sync - Multi-Table Search by Val  
-- Fixed an issue causing custom lookups with DB sync failing when used with a multi-table civilian config
+DB Sync - Multi-Table Search by Val\
+\- Fixed an issue causing custom lookups with DB sync failing when used with a multi-table civilian config
 
-DB Sync - MySQL v8 Syntax  
-- Fixed an issue causing DB Sync to fail on MySQL v8+ due to a syntax change
+DB Sync - MySQL v8 Syntax\
+\- Fixed an issue causing DB Sync to fail on MySQL v8+ due to a syntax change
 
-Bodycam: Timestamp  
-- Fixed an issue causing the bodycam timestamp to glitch on restart
+Bodycam: Timestamp\
+\- Fixed an issue causing the bodycam timestamp to glitch on restart
 {% endtab %}
 {% endtabs %}
 
@@ -217,19 +217,19 @@ Bodycam: Timestamp
 
 {% tabs %}
 {% tab title="New" %}
-Community Logs  
-- Communities can now search an in-depth logging history for abuse and other user actions.
+Community Logs\
+\- Communities can now search an in-depth logging history for abuse and other user actions.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Overlay: Unit Agency  
-- Fixed an issue causing the unit agency to not properly display
+Overlay: Unit Agency\
+\- Fixed an issue causing the unit agency to not properly display
 
-Overlay: Department Label  
-- Fixed the department unit update label from being plural.
+Overlay: Department Label\
+\- Fixed the department unit update label from being plural.
 
-\#4999 Sonoran CAD Bug Report  
-- Discord webhooks for removed records still get sent even when the sliders are only set to new records only
+\#4999 Sonoran CAD Bug Report\
+\- Discord webhooks for removed records still get sent even when the sliders are only set to new records only
 {% endtab %}
 {% endtabs %}
 
@@ -237,25 +237,25 @@ Overlay: Department Label
 
 {% tabs %}
 {% tab title="New" %}
-Stream Overlay: Bodycam  
-- The stream overlay now allows users to easily self-host a customized bodycam webpage to be visible on their livestream.
+Stream Overlay: Bodycam\
+\- The stream overlay now allows users to easily self-host a customized bodycam webpage to be visible on their livestream.
 
-Unit Group - Drag-and-Drop Unit Changes  
-- Units in a group can now be dragged-and-dropped to another group.
+Unit Group - Drag-and-Drop Unit Changes\
+\- Units in a group can now be dragged-and-dropped to another group.
 
-Unit Group - Edit Name  
+Unit Group - Edit Name\
 Dispatchers can easily update a unit group's name by clicking on the group name in the active units panel.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Pined Tabs - Open Event  
-- Fixed an issue where navigating back to the community menu, then back to an emergency page would cause the pinned tab open event to not properly register.
+Pined Tabs - Open Event\
+\- Fixed an issue where navigating back to the community menu, then back to an emergency page would cause the pinned tab open event to not properly register.
 
-Permission Key: Modify Street Signs  
-- Fixed an issue causing the modify street signs permission key label to not display properly.
+Permission Key: Modify Street Signs\
+\- Fixed an issue causing the modify street signs permission key label to not display properly.
 
-Desktop - Discord Presence  
-- Resolved an error thrown when toggling off Discord rich presence.
+Desktop - Discord Presence\
+\- Resolved an error thrown when toggling off Discord rich presence.
 {% endtab %}
 {% endtabs %}
 
@@ -263,42 +263,42 @@ Desktop - Discord Presence
 
 {% tabs %}
 {% tab title="New" %}
-Dispatch Lookup - Send to Unit  
-- Dispatchers can send lookup results to specific units. This also supports shortcuts from the active units list and drag-and-drop support.
+Dispatch Lookup - Send to Unit\
+\- Dispatchers can send lookup results to specific units. This also supports shortcuts from the active units list and drag-and-drop support.
 
-Stream Overlay: Multi-line  
-- The stream overlay custom text files now has multi-line support.
+Stream Overlay: Multi-line\
+\- The stream overlay custom text files now has multi-line support.
 
-Twitch Bot - Notes  
-- The livestream bot can now be configured to send chat messages when a new call note is added.
+Twitch Bot - Notes\
+\- The livestream bot can now be configured to send chat messages when a new call note is added.
 
-Twitch Bot: Lookup Events  
-- The Twitch bot can now be configured to send chat updates when the user runs a lookup in the CAD.
+Twitch Bot: Lookup Events\
+\- The Twitch bot can now be configured to send chat updates when the user runs a lookup in the CAD.
 
-Tone Files - Formats  
-- Added wav, mp4, and m4a audio file format support to the tone board uploader.
+Tone Files - Formats\
+\- Added wav, mp4, and m4a audio file format support to the tone board uploader.
 
-Self-Dispatch: Auto Attach  
-- When creating a new dispatch call via self-dispatch, it will automatically add your identifier to the call.
+Self-Dispatch: Auto Attach\
+\- When creating a new dispatch call via self-dispatch, it will automatically add your identifier to the call.
 
-Server IP - Optional Outbound Field  
-- Community servers can now specify a different inbound/outbound IP address. This is useful for communities on shared hosts, who authenticate and send data on a different IP than they receive push events and traffic to their server.
+Server IP - Optional Outbound Field\
+\- Community servers can now specify a different inbound/outbound IP address. This is useful for communities on shared hosts, who authenticate and send data on a different IP than they receive push events and traffic to their server.
 
-Stream Overlay - Copy Fields  
-- Users can now more quickly create custom text files by copying field keys right from the UI.
+Stream Overlay - Copy Fields\
+\- Users can now more quickly create custom text files by copying field keys right from the UI.
 
-Stream Overlay: Custom Text Safety Checks  
-- Added safety checks to the custom overlay text files to ensure the user has every field enabled.
+Stream Overlay: Custom Text Safety Checks\
+\- Added safety checks to the custom overlay text files to ensure the user has every field enabled.
 {% endtab %}
 
 {% tab title="Changed" %}
-API ID - Trim Spaces  
-- Added a check to ensure API IDs are not added with leading or trailing spaces.
+API ID - Trim Spaces\
+\- Added a check to ensure API IDs are not added with leading or trailing spaces.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Lookup - Header  
-- Fixed an issue causing the lookup window to not display the updated header when searches are ran.
+Lookup - Header\
+\- Fixed an issue causing the lookup window to not display the updated header when searches are ran.
 {% endtab %}
 {% endtabs %}
 
@@ -306,46 +306,46 @@ Lookup - Header
 
 {% tabs %}
 {% tab title="New" %}
-Stream Overlay and Twitch Bot  
-- Our new stream overlay allows you to customize and display your active unit information, call information, and more to your Livestream. Our Twitch bot automatically sends customizable chat updates when your unit information or attached call info is updated.
+Stream Overlay and Twitch Bot\
+\- Our new stream overlay allows you to customize and display your active unit information, call information, and more to your Livestream. Our Twitch bot automatically sends customizable chat updates when your unit information or attached call info is updated.
 
-French Translation  
-- Added French translations.
+French Translation\
+\- Added French translations.
 
-Active Units - Multiple Sessions  
-- Implemented an improved active unit handler, fixing edge cases where users with multiple sessions would log their unit out even though they're still logged in on another device.
+Active Units - Multiple Sessions\
+\- Implemented an improved active unit handler, fixing edge cases where users with multiple sessions would log their unit out even though they're still logged in on another device.
 
-Disable Highlighting  
-- Disabled text highlighting for a better drag-and-drop experience.
+Disable Highlighting\
+\- Disabled text highlighting for a better drag-and-drop experience.
 
-Desktop - Livemap Window  
-- For desktop users, the live map now opens in a proper popup window if you click the "External" icon.
+Desktop - Livemap Window\
+\- For desktop users, the live map now opens in a proper popup window if you click the "External" icon.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Pinned Tabs - Top Taskbar  
-- Fixed an issue causing user's pinned tabs from loading if their taskbar position was set to the top of the screen.
+Pinned Tabs - Top Taskbar\
+\- Fixed an issue causing user's pinned tabs from loading if their taskbar position was set to the top of the screen.
 
-Mobile - Switch Servers Popup  
-- Fixed an issue on mobile devices preventing a user from changing their server.
+Mobile - Switch Servers Popup\
+\- Fixed an issue on mobile devices preventing a user from changing their server.
 
-Call Editor - Detach and Attach  
-- Fixed an issue where removing units from a call via editor, then adding them back would attach and immediately detach them.
+Call Editor - Detach and Attach\
+\- Fixed an issue where removing units from a call via editor, then adding them back would attach and immediately detach them.
 
-Active Calls - Search by ID  
-- Fixed an issue preventing users from searching in the active calls list by call ID.
+Active Calls - Search by ID\
+\- Fixed an issue preventing users from searching in the active calls list by call ID.
 
-Active Calls - Detach  
-- Fixed an issue where users in self-dispatch mode would not see call detachments if they cleared themselves via the active calls window.
+Active Calls - Detach\
+\- Fixed an issue where users in self-dispatch mode would not see call detachments if they cleared themselves via the active calls window.
 
-Custom Login Page - Direct to Community  
-- Fixed an issue causing custom login pages to not take the user directly to the community menu on login.
+Custom Login Page - Direct to Community\
+\- Fixed an issue causing custom login pages to not take the user directly to the community menu on login.
 
-Record Center Preview - Capitalization  
-- Fixed an issue causing record previews in the record panel to not be displayed as all uppercase letters.
+Record Center Preview - Capitalization\
+\- Fixed an issue causing record previews in the record panel to not be displayed as all uppercase letters.
 
-Dispatch Saved Types - Backspace  
-- Fixed an issue where backspacing on the dispatch's saved call types would remove or freeze the call editor from the UI.
+Dispatch Saved Types - Backspace\
+\- Fixed an issue where backspacing on the dispatch's saved call types would remove or freeze the call editor from the UI.
 {% endtab %}
 {% endtabs %}
 
@@ -353,17 +353,17 @@ Dispatch Saved Types - Backspace
 
 {% tabs %}
 {% tab title="Fixed" %}
-Smart Signs - Push Events  
- - Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
+Smart Signs - Push Events\
+ \- Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
 
-Lookup - DB Sync  
-- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
+Lookup - DB Sync\
+\- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
 
-Close Dispatch  
-- Fixed an issue where closing a call through a manual call update would fail.
+Close Dispatch\
+\- Fixed an issue where closing a call through a manual call update would fail.
 
-Record Searchable Fields - Trim Spaces  
-- Fixed an issue where searchable record fields were not having leading or trailing spaces trimmed.
+Record Searchable Fields - Trim Spaces\
+\- Fixed an issue where searchable record fields were not having leading or trailing spaces trimmed.
 {% endtab %}
 {% endtabs %}
 
@@ -371,43 +371,43 @@ Record Searchable Fields - Trim Spaces
 
 {% tabs %}
 {% tab title="New" %}
-Tones - Specific Users  
-- The tone board now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
+Tones - Specific Users\
+\- The tone board now has a selector to play tones to specific units, groups, dispatch calls, agencies, departments, or subdivisions. You can also click on the active units number/group/agency/department/subdivision or the active call for a dropdown shortcut to add these to the tone board play to selector.
 
-Dispatch Call - Presave Data  
-- Dispatchers can now save filled call templates for use with common calls.
+Dispatch Call - Presave Data\
+\- Dispatchers can now save filled call templates for use with common calls.
 
-Lookup - Disable Partial  
-- The lookup window now has a partial search toggle, allowing you to run a standard partial search or filter an exact search term. Your preference is also saved to the local device for any new windows.
+Lookup - Disable Partial\
+\- The lookup window now has a partial search toggle, allowing you to run a standard partial search or filter an exact search term. Your preference is also saved to the local device for any new windows.
 
-Active Units Dropdown - Icons  
-- Added icons to the active units dropdown menu for faster selection.
+Active Units Dropdown - Icons\
+\- Added icons to the active units dropdown menu for faster selection.
 
-API: Partial Lookup  
-- The API lookup by name/plate now includes a partial flag to toggle a partial or exact search. If undefined, a partial is assumed as default.
+API: Partial Lookup\
+\- The API lookup by name/plate now includes a partial flag to toggle a partial or exact search. If undefined, a partial is assumed as default.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Community Customization - Save  
-- Fixed an issue causing the community customization info to not properly save.
+Community Customization - Save\
+\- Fixed an issue causing the community customization info to not properly save.
 
-Civilian Records - No Partial  
-- The civilian lookup panel ensures all lookups are exact, preventing partial matches from showing.
+Civilian Records - No Partial\
+\- The civilian lookup panel ensures all lookups are exact, preventing partial matches from showing.
 
-Custom Record - UID Values  
-- Added additional safety checks and sanitization for communities that somehow manage to manually add dashes to custom field UID values, resulting in an SQL syntax error if the fields are indexed for unique or custom search values.
+Custom Record - UID Values\
+\- Added additional safety checks and sanitization for communities that somehow manage to manually add dashes to custom field UID values, resulting in an SQL syntax error if the fields are indexed for unique or custom search values.
 
-Smart Signs - Cancel Edit  
-- Fixed an issue causing the smart signs UI to duplicate the sign if you cancel an edit. Resulting from Lua's 1 based indices vs JS 0 based indices.
+Smart Signs - Cancel Edit\
+\- Fixed an issue causing the smart signs UI to duplicate the sign if you cancel an edit. Resulting from Lua's 1 based indices vs JS 0 based indices.
 
-Tone Board - Hotkey  
-- Fixed an issue causing the tone board hotkey from not properly detecting if a tone board already existed, resulting in a new window every time.
+Tone Board - Hotkey\
+\- Fixed an issue causing the tone board hotkey from not properly detecting if a tone board already existed, resulting in a new window every time.
 
-Dispatch Call Notes - Reversed  
-- Fixed an issue causing the call notes for dispatch to be in reversed history for the initial load in.
+Dispatch Call Notes - Reversed\
+\- Fixed an issue causing the call notes for dispatch to be in reversed history for the initial load in.
 
-Checkout - Set Community ID  
-- Fixed an issue where the popup to set your community ID after purchasing a subscription would be blank.
+Checkout - Set Community ID\
+\- Fixed an issue where the popup to set your community ID after purchasing a subscription would be blank.
 {% endtab %}
 {% endtabs %}
 
@@ -415,17 +415,17 @@ Checkout - Set Community ID
 
 {% tabs %}
 {% tab title="Fixed" %}
-Server Selector  
-- Fixed an issue where navigating to and from the community menu would display the incorrect server in the server selector, even though you were properly logged into the correct one.  
-  
-Change Server - Login  
-- Fixed an issue where an undisposed event handler would be registered multiple times with menu navigations, causing multiple unit logins when switching your server.  
-  
-Active Units - Dispatch Flag  
-- Fixed an issue causing units to display the dispatch flag incorrectly in the active units panel.
+Server Selector\
+\- Fixed an issue where navigating to and from the community menu would display the incorrect server in the server selector, even though you were properly logged into the correct one.\
+\
+Change Server - Login\
+\- Fixed an issue where an undisposed event handler would be registered multiple times with menu navigations, causing multiple unit logins when switching your server.\
+\
+Active Units - Dispatch Flag\
+\- Fixed an issue causing units to display the dispatch flag incorrectly in the active units panel.
 
-Modify Signs Permission - Translation  
-- Fixed an issue causing a translation file error with the modify signs permission label.
+Modify Signs Permission - Translation\
+\- Fixed an issue causing a translation file error with the modify signs permission label.
 {% endtab %}
 {% endtabs %}
 
@@ -433,36 +433,36 @@ Modify Signs Permission - Translation
 
 {% tabs %}
 {% tab title="New" %}
-Street Signs Integration  
-- Our new street signs integration plugin and UI allows you to modify in-game street signs right from the CAD! This is visible for dispatchers and users in the DMV page.
+Street Signs Integration\
+\- Our new street signs integration plugin and UI allows you to modify in-game street signs right from the CAD! This is visible for dispatchers and users in the DMV page.
 
-Street Signs - Permission  
-- Added a new permission to allow users to modify street signs in the dispatch and DMV page. By default, only the CAD owner will have this new permission.
+Street Signs - Permission\
+\- Added a new permission to allow users to modify street signs in the dispatch and DMV page. By default, only the CAD owner will have this new permission.
 
-Discord RPC  
-- The desktop application now adds rich presence info and buttons to your Discord profile. You can customize the invite link to your Sonoran CAD community, or your community's Sonoran CMS new member application.
+Discord RPC\
+\- The desktop application now adds rich presence info and buttons to your Discord profile. You can customize the invite link to your Sonoran CAD community, or your community's Sonoran CMS new member application.
 
-Dispatch Signal - Draggable Window  
-- Desktop users only now can access the dispatch signal window as a draggable/lockable window and not a popup modal.
+Dispatch Signal - Draggable Window\
+\- Desktop users only now can access the dispatch signal window as a draggable/lockable window and not a popup modal.
 
-Tabs - Quick Close  
-- On tabs with multiple minimized windows, the preview will display a close button to more efficiently close multiple tabs.
+Tabs - Quick Close\
+\- On tabs with multiple minimized windows, the preview will display a close button to more efficiently close multiple tabs.
 {% endtab %}
 
 {% tab title="Changed" %}
-Push Event: Detach Unit  
-- The EVENT\_UNIT\_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
+Push Event: Detach Unit\
+\- The EVENT_UNIT_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Custom Login Pages  
-- Fixed an issue causing requests for custom login page info to fail.
+Custom Login Pages\
+\- Fixed an issue causing requests for custom login page info to fail.
 
-Record Lookup - Fire and EMS  
-- Fixed a permissions error preventing fire and EMS users from searching for a character or vehicle to import into a custom record.
+Record Lookup - Fire and EMS\
+\- Fixed a permissions error preventing fire and EMS users from searching for a character or vehicle to import into a custom record.
 
-10-Codes CSV Upload - Null Check  
-- Added a null/empty string check when importing and setting 10-codes.
+10-Codes CSV Upload - Null Check\
+\- Added a null/empty string check when importing and setting 10-codes.
 {% endtab %}
 {% endtabs %}
 
@@ -470,48 +470,48 @@ Record Lookup - Fire and EMS
 
 {% tabs %}
 {% tab title="New" %}
-Permission Update - Auto Update UI  
-- Editing a user's permissions will now live update these without requiring them to refresh their page. This makes the Discord permissions sync feature more seamless.
+Permission Update - Auto Update UI\
+\- Editing a user's permissions will now live update these without requiring them to refresh their page. This makes the Discord permissions sync feature more seamless.
 
-Discord Bot - Multi-Server  
-- The Discord bot now supports permission sync with multiple different servers for a single community.
+Discord Bot - Multi-Server\
+\- The Discord bot now supports permission sync with multiple different servers for a single community.
 
-Discord Bot - linkme  
-- The discord bot now automatically runs the /syncme command after linking your secret ID.
+Discord Bot - linkme\
+\- The discord bot now automatically runs the /syncme command after linking your secret ID.
 
-API: set\_streetsign\_config  
-- Added an endpoint to set the street sign configuration in the CAD. This is for an upcoming integration plugin.
+API: set_streetsign_config\
+\- Added an endpoint to set the street sign configuration in the CAD. This is for an upcoming integration plugin.
 
-API: update\_streetsign  
-- Added an endpoint to update street signs in the CAD from in-game. This is for an upcoming integration plugin.
+API: update_streetsign\
+\- Added an endpoint to update street signs in the CAD from in-game. This is for an upcoming integration plugin.
 
-Push Event: event\_streetsign\_updated  
-- Added a push event for when street signs are updated in the CAD. This is for an upcoming integration plugin.
+Push Event: event_streetsign_updated\
+\- Added a push event for when street signs are updated in the CAD. This is for an upcoming integration plugin.
 
-Push Event: event\_record\_add  
-- Added a push event when records are added.
+Push Event: event_record_add\
+\- Added a push event when records are added.
 
-Push Event: event\_record\_edit  
-- Added a push event when records are edited.
+Push Event: event_record_edit\
+\- Added a push event when records are edited.
 
-Push Event: event\_record\_remove  
-- Added a push event when records are removed.
+Push Event: event_record_remove\
+\- Added a push event when records are removed.
 
-Websocket Connection - Keepalive  
-- Added a manual keepalive heartbeat from server to client in attempt to prevent Cloudflare from closing some user's websocket connections, resulting in an unstable connection.
+Websocket Connection - Keepalive\
+\- Added a manual keepalive heartbeat from server to client in attempt to prevent Cloudflare from closing some user's websocket connections, resulting in an unstable connection.
 {% endtab %}
 
 {% tab title="Changed" %}
-Mobile Taskbar Focus  
-- The taskbar search no longer auto-focuses for tablet devices.
+Mobile Taskbar Focus\
+\- The taskbar search no longer auto-focuses for tablet devices.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Secret ID - Default Blank  
-- Fixed an issue causing the secret ID to be blank for some users, requiring a refresh before utilizing it.
+Secret ID - Default Blank\
+\- Fixed an issue causing the secret ID to be blank for some users, requiring a refresh before utilizing it.
 
-Dispatch Update Call - Duplication  
-- Fixed an issue where dispatchers would see call notes duplicated if they manually updated the call.
+Dispatch Update Call - Duplication\
+\- Fixed an issue where dispatchers would see call notes duplicated if they manually updated the call.
 {% endtab %}
 {% endtabs %}
 
@@ -519,19 +519,19 @@ Dispatch Update Call - Duplication
 
 {% tabs %}
 {% tab title="New" %}
-Server Selector - Loading  
-- Added a loading screen when switching servers to prevent confusion on delay.
+Server Selector - Loading\
+\- Added a loading screen when switching servers to prevent confusion on delay.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Server Selector  
-- Fixed an issue causing a failure when trying to switch servers in the fire, police, ems, or dispatch page.
+Server Selector\
+\- Fixed an issue causing a failure when trying to switch servers in the fire, police, ems, or dispatch page.
 
-Custom Records - Image  
-- Fixed an issue causing the custom record image field to not display the uploader.
+Custom Records - Image\
+\- Fixed an issue causing the custom record image field to not display the uploader.
 
-Taskbar - Pinned Windows  
-- Fixed an issue causing the pinned windows on the taskbar to not load after more than one visit back to the community menu.
+Taskbar - Pinned Windows\
+\- Fixed an issue causing the pinned windows on the taskbar to not load after more than one visit back to the community menu.
 {% endtab %}
 {% endtabs %}
 
@@ -539,45 +539,45 @@ Taskbar - Pinned Windows
 
 {% tabs %}
 {% tab title="New" %}
-Start Menu - Quick Search  
-- The start menu now has an auto-focused search box to filter window options for all mid-sized screen users and larger.
+Start Menu - Quick Search\
+\- The start menu now has an auto-focused search box to filter window options for all mid-sized screen users and larger.
 
-Hotkey: Start Menu  
-- Added a new configurable hotkey to toggle the start menu.
+Hotkey: Start Menu\
+\- Added a new configurable hotkey to toggle the start menu.
 
-Vue 3  
-- Migrated the UI to Vue JS 3. This should also resolve issues some users experienced with the in-game tablet.
+Vue 3\
+\- Migrated the UI to Vue JS 3. This should also resolve issues some users experienced with the in-game tablet.
 {% endtab %}
 
 {% tab title="Changed" %}
-Classic Layout - Default Enabled  
-- The "Classic Layout" is enabled by default for all users. This can be disabled in the customization menu to allow users to customize their dispatching panels into different locations.
+Classic Layout - Default Enabled\
+\- The "Classic Layout" is enabled by default for all users. This can be disabled in the customization menu to allow users to customize their dispatching panels into different locations.
 
-Desktop Header  
-- Updated the desktop header bar to match the new header in emergency pages.
+Desktop Header\
+\- Updated the desktop header bar to match the new header in emergency pages.
 {% endtab %}
 
 {% tab title="Fixed" %}
-New Record - Conflict with Lookup Filters  
-- Fixed an issue causing the saved lookup preferences from also impacting the available records types in the records center.
+New Record - Conflict with Lookup Filters\
+\- Fixed an issue causing the saved lookup preferences from also impacting the available records types in the records center.
 
-Tone Board - Direct Upload  
-- Fixed an issue causing direct upload of audio files to the dispatch tone board from properly setting the new URL.
+Tone Board - Direct Upload\
+\- Fixed an issue causing direct upload of audio files to the dispatch tone board from properly setting the new URL.
 
-Window Layout  
-- Fixed issues with custom window layouts not saving or persisting properly.
+Window Layout\
+\- Fixed issues with custom window layouts not saving or persisting properly.
 
-Self-Dispatch: Logout  
-- Fixed a permissions issue for self-dispatchers logging out.
+Self-Dispatch: Logout\
+\- Fixed a permissions issue for self-dispatchers logging out.
 
-Image Uploader - Name  
-- Changed the file uploader to no longer be labeled as only an image loader.
+Image Uploader - Name\
+\- Changed the file uploader to no longer be labeled as only an image loader.
 
-Admin - Get Owner  
-- Fixed an issue preventing the admin page's "Get Owner" button from properly searching for the record owner.
+Admin - Get Owner\
+\- Fixed an issue preventing the admin page's "Get Owner" button from properly searching for the record owner.
 
-BOLO Update  
-- Fixed an issue where updating or removing a bolo would not automatically update this in the other unit's screen without re-opening the window or searching again.
+BOLO Update\
+\- Fixed an issue where updating or removing a bolo would not automatically update this in the other unit's screen without re-opening the window or searching again.
 {% endtab %}
 {% endtabs %}
 
@@ -585,69 +585,69 @@ BOLO Update
 
 {% tabs %}
 {% tab title="New" %}
-Dispatch Tone Board  
-- Custom audio tones can be configured and played by dispatchers. Customizations include the label, icon, color, and sound file.
+Dispatch Tone Board\
+\- Custom audio tones can be configured and played by dispatchers. Customizations include the label, icon, color, and sound file.
 
-Hotkey - Tone Board  
-- A global hotkey can be configured to open the dispatch tone board more quickly.
+Hotkey - Tone Board\
+\- A global hotkey can be configured to open the dispatch tone board more quickly.
 
-Custom Audio Notifications  
-- Customizable audio notifications for new dispatches, panics, alerts, and more.
+Custom Audio Notifications\
+\- Customizable audio notifications for new dispatches, panics, alerts, and more.
 
-Active Units - Show/Hide Dispatchers  
-- The active units panel now has a toggle to show or hide dispatchers.
+Active Units - Show/Hide Dispatchers\
+\- The active units panel now has a toggle to show or hide dispatchers.
 
-Custom Records - ID Field  
-- Custom record fields can now have the type set to "ID" to display the unique record ID.
+Custom Records - ID Field\
+\- Custom record fields can now have the type set to "ID" to display the unique record ID.
 
-Tone Board - Webhook  
-- Added a Discord webhook to log when a user plays a tone from the tone board.
+Tone Board - Webhook\
+\- Added a Discord webhook to log when a user plays a tone from the tone board.
 
-Lookup Filter - Save Preferences  
-- Lookup filter preferences are saved locally and won't reset when you open a new or different lookup window.
+Lookup Filter - Save Preferences\
+\- Lookup filter preferences are saved locally and won't reset when you open a new or different lookup window.
 
-Text-to-speech - Toggle  
-- Toggle off text-to-speech in the settings menu.
+Text-to-speech - Toggle\
+\- Toggle off text-to-speech in the settings menu.
 {% endtab %}
 
 {% tab title="Changed" %}
-API: get\_active\_units - onlyUnits flag  
-- The get\_active\_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
+API: get_active_units - onlyUnits flag\
+\- The get_active_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
 
-Dispatch Panel - Table UI  
-- Small UI changes and improvements to the dispatch panels with tables and their column customization, search boxes, and buttons.
+Dispatch Panel - Table UI\
+\- Small UI changes and improvements to the dispatch panels with tables and their column customization, search boxes, and buttons.
 
-S3 Hosting  
-- All image and file uploads have been migrated from AWS S3 to Sonoran S3.
+S3 Hosting\
+\- All image and file uploads have been migrated from AWS S3 to Sonoran S3.
 
-Discord Bot IP - Bad Request Whitelist  
-- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify\_secret
+Discord Bot IP - Bad Request Whitelist\
+\- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify_secret
 {% endtab %}
 
 {% tab title="Fixed" %}
-Tablet - Resize Window Save  
-- Fixed an issue with the in-game tablet not being able to detect as a non-mobile user agent - locking draggable windows and not persisting the saved size preferences.
+Tablet - Resize Window Save\
+\- Fixed an issue with the in-game tablet not being able to detect as a non-mobile user agent - locking draggable windows and not persisting the saved size preferences.
 
-Custom Records - Disabled Scrollbar  
-- Fixed an issue where text-areas couldn't be scrolled if the record editing was disabled. \(Ex: Viewing a civilian record\)
+Custom Records - Disabled Scrollbar\
+\- Fixed an issue where text-areas couldn't be scrolled if the record editing was disabled. (Ex: Viewing a civilian record)
 
-Unit Group - Remove from Call  
-- Fixed an issue preventing unit groups from being removed from a dispatch call.
+Unit Group - Remove from Call\
+\- Fixed an issue preventing unit groups from being removed from a dispatch call.
 
-Dispatch Call - PDF  
-- Fixed an issue preventing call logs from printing to PDF.
+Dispatch Call - PDF\
+\- Fixed an issue preventing call logs from printing to PDF.
 
-Records Webhook: Charges  
-- Fixed an issue causing record webhooks to not display values from the "Charges" sections.
+Records Webhook: Charges\
+\- Fixed an issue causing record webhooks to not display values from the "Charges" sections.
 
-SSO - Change Username Push Event  
+SSO - Change Username Push Event\
 Improved username update handling with the SSO system.
 
-Unit Group - Add to Call  
-- Fixed an issue causing the unit group's "Add to Call" button to be all white.
+Unit Group - Add to Call\
+\- Fixed an issue causing the unit group's "Add to Call" button to be all white.
 
-Dispatch - Change Server  
-- Fixed an issue where dispatchers changing servers would still show on the active units list for other dispatchers.
+Dispatch - Change Server\
+\- Fixed an issue where dispatchers changing servers would still show on the active units list for other dispatchers.
 {% endtab %}
 {% endtabs %}
 
@@ -655,16 +655,16 @@ Dispatch - Change Server
 
 {% tabs %}
 {% tab title="New" %}
-PDF - Chinese Localization  
-- PDF records now support Chinese localization, and will print in a font supporting Chinese characters if the user has their language set to Traditional or Simplified Chinese.
+PDF - Chinese Localization\
+\- PDF records now support Chinese localization, and will print in a font supporting Chinese characters if the user has their language set to Traditional or Simplified Chinese.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Self Dispatch - Notes  
-- Fixed an issue where self-dispatchers attaching to an active call would not receive new notes on the call until a page refresh was executed.
+Self Dispatch - Notes\
+\- Fixed an issue where self-dispatchers attaching to an active call would not receive new notes on the call until a page refresh was executed.
 
-Hide Secret ID Field Until Logged In  
-- Fixed an issue where the secret ID field was still displayed as blank before logging into a specific community.
+Hide Secret ID Field Until Logged In\
+\- Fixed an issue where the secret ID field was still displayed as blank before logging into a specific community.
 {% endtab %}
 {% endtabs %}
 
@@ -672,24 +672,24 @@ Hide Secret ID Field Until Logged In
 
 {% tabs %}
 {% tab title="New" %}
-Report Window - Save Last Window's Size  
-- Resizing a popout window will save this width and height preference for when you open a new window of this type.
+Report Window - Save Last Window's Size\
+\- Resizing a popout window will save this width and height preference for when you open a new window of this type.
 
-Account Secret ID  
-- User accounts now have a "Secret ID" similar to an API unique to each community account. These can be used with third party/external applications for authentication/security \(Discord bot role sync\) and can be refreshed/regenerated in the UI if ever leaked.
+Account Secret ID\
+\- User accounts now have a "Secret ID" similar to an API unique to each community account. These can be used with third party/external applications for authentication/security (Discord bot role sync) and can be refreshed/regenerated in the UI if ever leaked.
 {% endtab %}
 
 {% tab title="Change" %}
-Custom Map Images - File Size  
-- Increased the file size limit of custom map images from 25 to 30MB each.
+Custom Map Images - File Size\
+\- Increased the file size limit of custom map images from 25 to 30MB each.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Self-Dispatch 911 Calls  
-- Fixed an issue causing self-dispatchers to not receive incoming 911 calls properly.
+Self-Dispatch 911 Calls\
+\- Fixed an issue causing self-dispatchers to not receive incoming 911 calls properly.
 
-API: set\_api\_id pushNew Flag  
-- Fixed an issue in the set\_api\_id endpoint preventing the pushNew flag from working properly.
+API: set_api_id pushNew Flag\
+\- Fixed an issue in the set_api_id endpoint preventing the pushNew flag from working properly.
 {% endtab %}
 {% endtabs %}
 
@@ -697,28 +697,28 @@ API: set\_api\_id pushNew Flag
 
 {% tabs %}
 {% tab title="New" %}
-Custom Login Page: DNS Record  
-- Custom login pages can now be created by adding a simple CNAME DNS record. Communities no longer need to host an iFrame webpage. The old query strings \(other than community ID\) have also been depreciated.
+Custom Login Page: DNS Record\
+\- Custom login pages can now be created by adding a simple CNAME DNS record. Communities no longer need to host an iFrame webpage. The old query strings (other than community ID) have also been depreciated.
 
-Webhook Footer - Server ID  
-- Added the server ID metadata to specific webhook footers for the discord bot parsing.
+Webhook Footer - Server ID\
+\- Added the server ID metadata to specific webhook footers for the discord bot parsing.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Active Units - Sorting  
-- Fixed an issue where some columns of the active units table wouldn't properly sort.
+Active Units - Sorting\
+\- Fixed an issue where some columns of the active units table wouldn't properly sort.
 
-Custom Search Types - Disable on Civilian  
-- Fixed an issue where custom search types were displayed in the civilian menu.
+Custom Search Types - Disable on Civilian\
+\- Fixed an issue where custom search types were displayed in the civilian menu.
 
-PDF: Margins  
-- Fixed an issue with PDF records sometimes running outside of the page margins.
+PDF: Margins\
+\- Fixed an issue with PDF records sometimes running outside of the page margins.
 
-Self Clear - Disable without Perms  
-- Fixed an issue where units could not self-clear from a call unless they had dispatch or self-dispatch permissions.
+Self Clear - Disable without Perms\
+\- Fixed an issue where units could not self-clear from a call unless they had dispatch or self-dispatch permissions.
 
-API: Unit Status  
-- Fixed an issue with the unit status API endpoint not updating the status on the user's local UI.
+API: Unit Status\
+\- Fixed an issue with the unit status API endpoint not updating the status on the user's local UI.
 {% endtab %}
 {% endtabs %}
 
@@ -726,51 +726,51 @@ API: Unit Status
 
 {% tabs %}
 {% tab title="New" %}
-Custom Records - Duplicatable Section  
-- Custom record sections can be toggled as "duplicatable" allowing the user to duplicate a section \(similar to charges\) while filling out the report.
+Custom Records - Duplicatable Section\
+\- Custom record sections can be toggled as "duplicatable" allowing the user to duplicate a section (similar to charges) while filling out the report.
 
-Custom Records - Unique Field  
-- Custom records now support enforcing unique fields for any non-db sync record type.
+Custom Records - Unique Field\
+\- Custom records now support enforcing unique fields for any non-db sync record type.
 
-Custom Records - Address Type  
-- Custom records now have an "Address" type that will display a dropdown containing the community's imported spreadsheet of street addresses. This auto-filters as you type, just as the dispatch editor does.
+Custom Records - Address Type\
+\- Custom records now have an "Address" type that will display a dropdown containing the community's imported spreadsheet of street addresses. This auto-filters as you type, just as the dispatch editor does.
 
-Custom Records - Removed Vehicle Limit  
-- Custom records can now have an unlimited number of 'plate' UID fields that will index and make the vehicle plate searchable. \(Previous limit of 3 vehicle sections per record.\)
+Custom Records - Removed Vehicle Limit\
+\- Custom records can now have an unlimited number of 'plate' UID fields that will index and make the vehicle plate searchable. (Previous limit of 3 vehicle sections per record.)
 
-Custom Records - Removed Civilian Limit  
-- Custom records can now have an unlimited number of 'first', 'last', and 'mi' UID fields that will index and make the character names searchable. \(Previous limit of 3 civilian sections per record.\)
+Custom Records - Removed Civilian Limit\
+\- Custom records can now have an unlimited number of 'first', 'last', and 'mi' UID fields that will index and make the character names searchable. (Previous limit of 3 civilian sections per record.)
 
-Emergency Call Columns - Persist  
-- Modifying the displayed column preferences on the emergency calls list will persist past a refresh on a local device.
+Emergency Call Columns - Persist\
+\- Modifying the displayed column preferences on the emergency calls list will persist past a refresh on a local device.
 
-Active Calls Columns - Persist  
-- Modifying the displayed column preferences on the calls list will persist past a refresh on a local device.
+Active Calls Columns - Persist\
+\- Modifying the displayed column preferences on the calls list will persist past a refresh on a local device.
 
-Active Units Columns - Persist  
-- Modifying the displayed column preferences on the active units list will persist past a refresh on a local device.
+Active Units Columns - Persist\
+\- Modifying the displayed column preferences on the active units list will persist past a refresh on a local device.
 {% endtab %}
 
 {% tab title="Changed" %}
-Custom Records - Required Field Color  
-- Changed the custom records required field text from red to orange for higher contrast.
+Custom Records - Required Field Color\
+\- Changed the custom records required field text from red to orange for higher contrast.
 
-API: Set Call Primary  
-- Heavily optimized the set\_call\_primary API endpoint for quick unit tracking updates via Dispatch Notify. Added an additional required 'trackPrimary' field to the call to toggle the unit tracking.
+API: Set Call Primary\
+\- Heavily optimized the set_call_primary API endpoint for quick unit tracking updates via Dispatch Notify. Added an additional required 'trackPrimary' field to the call to toggle the unit tracking.
 
-API: Set Call Postal  
-- Heavily optimized the set\_call\_postal API endpoint for quick unit tracking updates via Dispatch Notify.
+API: Set Call Postal\
+\- Heavily optimized the set_call_postal API endpoint for quick unit tracking updates via Dispatch Notify.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Character Tab: Icon  
-- Fixed an issue causing the character Windows minimized tab to not have an icon.
+Character Tab: Icon\
+\- Fixed an issue causing the character Windows minimized tab to not have an icon.
 
-Live Map - Self DIspatch  
-- Fixed an issue where units with self-dispatch enabled would be marked as a true dispatcher, preventing them from being shown on the live map.
+Live Map - Self DIspatch\
+\- Fixed an issue where units with self-dispatch enabled would be marked as a true dispatcher, preventing them from being shown on the live map.
 
-Unit Group Columns - Dropdown  
-- Fixed an issue where the active units group column dropdown had incorrect column values.
+Unit Group Columns - Dropdown\
+\- Fixed an issue where the active units group column dropdown had incorrect column values.
 {% endtab %}
 {% endtabs %}
 
@@ -778,17 +778,17 @@ Unit Group Columns - Dropdown
 
 {% tabs %}
 {% tab title="Fixed" %}
-Dispatch Classic Layout  
-- Fixed an issue where the dispatch classic layout would be off on full-sized desktops.
+Dispatch Classic Layout\
+\- Fixed an issue where the dispatch classic layout would be off on full-sized desktops.
 
-Server Selector  
-- Fixed an issue where the server selector wouldn't work in the fire, EMS, and police pages.
+Server Selector\
+\- Fixed an issue where the server selector wouldn't work in the fire, EMS, and police pages.
 
-Electron: Top Taskbar Cover  
-- Fixed a bug in the desktop application where the taskbar would cover the application header.
+Electron: Top Taskbar Cover\
+\- Fixed a bug in the desktop application where the taskbar would cover the application header.
 
-Active Units - UI  
-- Fixed an issue with the UI causing active units to not properly be displayed when new units login.
+Active Units - UI\
+\- Fixed an issue with the UI causing active units to not properly be displayed when new units login.
 {% endtab %}
 {% endtabs %}
 
@@ -796,57 +796,57 @@ Active Units - UI
 
 {% tabs %}
 {% tab title="New" %}
-Tab: Labels  
-- Tabs can now have their text and icon displays toggled. By default, desktop users have tabs that display both the icon and text with mobile users only seeing the icon.
+Tab: Labels\
+\- Tabs can now have their text and icon displays toggled. By default, desktop users have tabs that display both the icon and text with mobile users only seeing the icon.
 
-Dispatch: Unit Identifier  
-- Dispatch now has a unit identifier panel by default.
+Dispatch: Unit Identifier\
+\- Dispatch now has a unit identifier panel by default.
 
-Dropdown Filter - Backspace  
-- Improved dropdown auto-filtering to properly re-compute options after backspacing from a typo for dropdowns like; dispatch address, code, primary unit, and charge title.
+Dropdown Filter - Backspace\
+\- Improved dropdown auto-filtering to properly re-compute options after backspacing from a typo for dropdowns like; dispatch address, code, primary unit, and charge title.
 
-Window: Bring to Top  
-- Added a "Bring to Top" menu option when right-clicking a locked window.
+Window: Bring to Top\
+\- Added a "Bring to Top" menu option when right-clicking a locked window.
 
-Penal Code - Value Safety Checks  
-- Adding or modifying penal codes will ensure that any property is not set to NULL.
+Penal Code - Value Safety Checks\
+\- Adding or modifying penal codes will ensure that any property is not set to NULL.
 {% endtab %}
 
 {% tab title="Changed" %}
-Unit Status - Mobile Enhancement  
-- Improved the unit status buttons display style for mobile users.
+Unit Status - Mobile Enhancement\
+\- Improved the unit status buttons display style for mobile users.
 
-Mobile: Auto Height  
-- Improved the automatic height calculation of windows for mobile users.
+Mobile: Auto Height\
+\- Improved the automatic height calculation of windows for mobile users.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Start Menu: Icon  
-- Fixed an issue causing the start menu's Sonoran CAD icon from not properly displaying in apps.
+Start Menu: Icon\
+\- Fixed an issue causing the start menu's Sonoran CAD icon from not properly displaying in apps.
 
-iOS Padding  
-- Fixed an issue where the taskbar wouldn't add extra padding to account for iOS "safe" areas.
+iOS Padding\
+\- Fixed an issue where the taskbar wouldn't add extra padding to account for iOS "safe" areas.
 
-Active Units Tab  
-- Fixed an issue where the active units tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+Active Units Tab\
+\- Fixed an issue where the active units tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
 
-Mobile: Side Taskbar  
-- Fixed an issue for mobile users where the taskbar would be closed and unable to be reopened if they customized it to be displayed on the side.
+Mobile: Side Taskbar\
+\- Fixed an issue for mobile users where the taskbar would be closed and unable to be reopened if they customized it to be displayed on the side.
 
-Live Map: Dynamic Start Menu Display  
-- Fixed an issue where the live map option in the start menu would still display even if the live map was disabled in the admin menu.
+Live Map: Dynamic Start Menu Display\
+\- Fixed an issue where the live map option in the start menu would still display even if the live map was disabled in the admin menu.
 
-Tabs: Navigation  
-- Fixed an issue where old tabs would still be minimized if you navigated to the menu and back from an emergency services page.
+Tabs: Navigation\
+\- Fixed an issue where old tabs would still be minimized if you navigated to the menu and back from an emergency services page.
 
-Active BOLOs: Status  
-- Fixed an issue where BOLOs with the status set to CLOSED would still be displayed in the active BOLO window.
+Active BOLOs: Status\
+\- Fixed an issue where BOLOs with the status set to CLOSED would still be displayed in the active BOLO window.
 
-Active Calls: Tab  
-- Fixed an issue where the active calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+Active Calls: Tab\
+\- Fixed an issue where the active calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
 
-Emergency Calls: Tab  
-- Fixed an issue where the emergency calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
+Emergency Calls: Tab\
+\- Fixed an issue where the emergency calls tab had no icon and would not automatically open a new units window if it was pinned with no actively minimized windows.
 {% endtab %}
 {% endtabs %}
 
@@ -854,51 +854,51 @@ Emergency Calls: Tab
 
 {% tabs %}
 {% tab title="New" %}
-Discord Bot  
-- Released a new Discord bot to sync Discord roles with CAD account permissions automatically. Kicking and banning a user from Discord will also preform those actions on the user in the CAD.
+Discord Bot\
+\- Released a new Discord bot to sync Discord roles with CAD account permissions automatically. Kicking and banning a user from Discord will also preform those actions on the user in the CAD.
 
-Emergency Services - Layout Overhaul  
-- The UI for police, fire, EMS, and Dispatchers has been overhauled to a more "Desktop" style theme. This includes a new taskbar with customizable positions. In addition, tabs of the same type now condense together. Tabs can be pinned in addition to dragging and dropping their positions. Pinned tabs will save their position past a reload.
+Emergency Services - Layout Overhaul\
+\- The UI for police, fire, EMS, and Dispatchers has been overhauled to a more "Desktop" style theme. This includes a new taskbar with customizable positions. In addition, tabs of the same type now condense together. Tabs can be pinned in addition to dragging and dropping their positions. Pinned tabs will save their position past a reload.
 
-API: set\_call\_postal  
-- Added an endpoint to update a dispatch call's postal code.
+API: set_call_postal\
+\- Added an endpoint to update a dispatch call's postal code.
 
-API: set\_call\_primary  
-- Added an endpoint to update a dispatch call's primary unit.
+API: set_call_primary\
+\- Added an endpoint to update a dispatch call's primary unit.
 
-Wraith - Custom Fields  
-- Communities can now customize the status and expiration date fields to be displayed in the Wraith lookups with custom records.
+Wraith - Custom Fields\
+\- Communities can now customize the status and expiration date fields to be displayed in the Wraith lookups with custom records.
 {% endtab %}
 
 {% tab title="Changed" %}
-Dispatch - Update Call Clearing Editor  
-- Dispatch updating a call no longer clears the call from their UI editor.
+Dispatch - Update Call Clearing Editor\
+\- Dispatch updating a call no longer clears the call from their UI editor.
 
-Chinese Translation Labels  
-- Changed the Chinese symbols for the simplified and traditional Chinese translation menu options.
+Chinese Translation Labels\
+\- Changed the Chinese symbols for the simplified and traditional Chinese translation menu options.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Dispatch Call Notes  
-- Fixed an issue where dispatchers were not getting call notes if the call was not being viewed. Causing them to override the existing call notes if they opened a new existing call and updated it.
+Dispatch Call Notes\
+\- Fixed an issue where dispatchers were not getting call notes if the call was not being viewed. Causing them to override the existing call notes if they opened a new existing call and updated it.
 
-Dispatch Call Edits  
-- Fixed an issue where dispatchers were not receiving updated call data if a self-dispatcher updated information.
+Dispatch Call Edits\
+\- Fixed an issue where dispatchers were not receiving updated call data if a self-dispatcher updated information.
 
-Department Editor - Error Codes  
-- Fixed an issue with invalid i18n translations in the department editor for error codes.
+Department Editor - Error Codes\
+\- Fixed an issue with invalid i18n translations in the department editor for error codes.
 
-DMV Pending - Default Filter  
-- Fixed an issue where the PENDING records section for DMV had the default filter set to only DMV records, hiding vehicle and license records.
+DMV Pending - Default Filter\
+\- Fixed an issue where the PENDING records section for DMV had the default filter set to only DMV records, hiding vehicle and license records.
 
-Wraith Plugin - Closed BOLO Records  
-- Fixed an issue with the Wraith V2 integration plugin where "Closed" BOLO records would still be displayed.
+Wraith Plugin - Closed BOLO Records\
+\- Fixed an issue with the Wraith V2 integration plugin where "Closed" BOLO records would still be displayed.
 
-Call Close - Detach Units  
-- Fixed an issue where units were not being detached in the database when a call was closed.
+Call Close - Detach Units\
+\- Fixed an issue where units were not being detached in the database when a call was closed.
 
-Admin - Lookup Window  
-- Fixed an issue where the "Get Owner" lookup window in the admin menu could not be dragged above the accounts table.
+Admin - Lookup Window\
+\- Fixed an issue where the "Get Owner" lookup window in the admin menu could not be dragged above the accounts table.
 {% endtab %}
 {% endtabs %}
 
@@ -906,28 +906,28 @@ Admin - Lookup Window
 
 {% tabs %}
 {% tab title="Changed" %}
-SQL Connections  
-- SQL connections are now cleared back to the connection pool in-between data processing to free up idle connections as quickly as possible.
+SQL Connections\
+\- SQL connections are now cleared back to the connection pool in-between data processing to free up idle connections as quickly as possible.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Dispatch Address - Type to Filter  
-- Fixed an issue causing the dispatch addresses dropdown to not support live filtering via text input.
+Dispatch Address - Type to Filter\
+\- Fixed an issue causing the dispatch addresses dropdown to not support live filtering via text input.
 
-Record Editor - Copy Link  
-- Fixed an issue where the copy record link button was not showing in the record viewer.
+Record Editor - Copy Link\
+\- Fixed an issue where the copy record link button was not showing in the record viewer.
 
-Record Editor - Get Owner  
-- Fixed an issue preventing the "Get Owner' button from displaying in the admin menu's lookup tool.
+Record Editor - Get Owner\
+\- Fixed an issue preventing the "Get Owner' button from displaying in the admin menu's lookup tool.
 
-Dispatch - Note Updates  
-- Fixed an issue where dispatchers could not receive new call notes.
+Dispatch - Note Updates\
+\- Fixed an issue where dispatchers could not receive new call notes.
 
-Dispatch Preview - Scroll Description  
-- Fixed an issue where previewing a dispatch call wouldn't allow you to scroll down on the description.
+Dispatch Preview - Scroll Description\
+\- Fixed an issue where previewing a dispatch call wouldn't allow you to scroll down on the description.
 
-Android - Settings Menu  
-- Fixed an exception for android devices preventing the settings modal from displaying.
+Android - Settings Menu\
+\- Fixed an exception for android devices preventing the settings modal from displaying.
 {% endtab %}
 {% endtabs %}
 
@@ -935,33 +935,33 @@ Android - Settings Menu
 
 {% tabs %}
 {% tab title="New" %}
-Window Layout - Classic Version  
-- Added a toggle in the settings modal to enable "Classic Layout" removing the ability to customize your layout, reverting back to the older static, responsive layout.
+Window Layout - Classic Version\
+\- Added a toggle in the settings modal to enable "Classic Layout" removing the ability to customize your layout, reverting back to the older static, responsive layout.
 
-Quick Dropdown Menu UI  
-- Improved UI style and consistency for the quick action dropdown menus on the active dispatch calls, units, and emergency call windows.
+Quick Dropdown Menu UI\
+\- Improved UI style and consistency for the quick action dropdown menus on the active dispatch calls, units, and emergency call windows.
 {% endtab %}
 
 {% tab title="Changed" %}
-Capacitor - Disable Stripe Library  
-- Stripe library now only loads on the billing page, removing this from mobile capacitor builds.
+Capacitor - Disable Stripe Library\
+\- Stripe library now only loads on the billing page, removing this from mobile capacitor builds.
 
-Tablet - Allow Window Drag  
-- Popout window dragging is now re-enabled for tablet users.
+Tablet - Allow Window Drag\
+\- Popout window dragging is now re-enabled for tablet users.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Self Dispatch - Duplicated Calls  
-- Fixed an issue where self dispatchers would see new dispatch calls duplicated if they are initially attached.
+Self Dispatch - Duplicated Calls\
+\- Fixed an issue where self dispatchers would see new dispatch calls duplicated if they are initially attached.
 
-Set API ID  
-- Fixed an issue causing an error when new accounts set their API ID.
+Set API ID\
+\- Fixed an issue causing an error when new accounts set their API ID.
 
-Self Dispatch - Close from Active Calls  
-- Fixed an issue preventing users in self dispatch mode from closing an active call.
+Self Dispatch - Close from Active Calls\
+\- Fixed an issue preventing users in self dispatch mode from closing an active call.
 
-Electron - Reload Exception  
-- Fixed an issue on the desktop version causing reloads from resetting a window layout or changing the language translation to throw a popup exception.
+Electron - Reload Exception\
+\- Fixed an issue on the desktop version causing reloads from resetting a window layout or changing the language translation to throw a popup exception.
 {% endtab %}
 {% endtabs %}
 
@@ -969,46 +969,46 @@ Electron - Reload Exception
 
 {% tabs %}
 {% tab title="New" %}
-Tablet - Auto Set API ID  
-- The tablet resource now automatically sets a users API ID in the CAD when they login.
+Tablet - Auto Set API ID\
+\- The tablet resource now automatically sets a users API ID in the CAD when they login.
 
-Quick Resize - Lock Button  
-- Added an additional "Lock Window" button while quick-resize is enabled, preventing users from having to right-click to access the lock menu.
+Quick Resize - Lock Button\
+\- Added an additional "Lock Window" button while quick-resize is enabled, preventing users from having to right-click to access the lock menu.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Dispatch - Call Notes  
-- Fixed an issue where units couldn't see new call notes until they refreshed the page.
+Dispatch - Call Notes\
+\- Fixed an issue where units couldn't see new call notes until they refreshed the page.
 
-Primary Unit - Display  
-- Fixed an issue causing the primary unit on the dispatch call editor to not properly work.
+Primary Unit - Display\
+\- Fixed an issue causing the primary unit on the dispatch call editor to not properly work.
 
-Popout Windows - Save Size/Position on Minimized  
-- Fixed an issue causing some popout windows to not save their size and positioning after being minimized.
+Popout Windows - Save Size/Position on Minimized\
+\- Fixed an issue causing some popout windows to not save their size and positioning after being minimized.
 
-Self Dispatch - Create Call  
-- Fixed an issue where users with self-dispatch enabled couldn't create a new dispatch call.
+Self Dispatch - Create Call\
+\- Fixed an issue where users with self-dispatch enabled couldn't create a new dispatch call.
 
-Self Dispatch - Edit Call  
-- Fixed an issue where users with self-dispatch were unable to edit an existing dispatch call.
+Self Dispatch - Edit Call\
+\- Fixed an issue where users with self-dispatch were unable to edit an existing dispatch call.
 
-Self Dispatch - Clear Call  
-- Fixed an issue where users with self-dispatch were unable to clear themselves from a call.
+Self Dispatch - Clear Call\
+\- Fixed an issue where users with self-dispatch were unable to clear themselves from a call.
 
-Call Viewer - Initial Width  
-- Fixed an issue where the initial unlocked placement of the call editor was 1px too wide for the police, fire, and EMS pages.
+Call Viewer - Initial Width\
+\- Fixed an issue where the initial unlocked placement of the call editor was 1px too wide for the police, fire, and EMS pages.
 
-Record Viewer  
-- Fixed an issue with records having a blank space below the bottom action bar.
+Record Viewer\
+\- Fixed an issue with records having a blank space below the bottom action bar.
 
-Small Screens - Increase initial width  
-- Improved and fixed issues with some popout windows being too small by default.
+Small Screens - Increase initial width\
+\- Improved and fixed issues with some popout windows being too small by default.
 
-Civilian - Popout Windows  
-- Fixed an issue with civilian popout windows being stuck below the character UI.
+Civilian - Popout Windows\
+\- Fixed an issue with civilian popout windows being stuck below the character UI.
 
-Dispatch Login - Security Warning  
-- Fixed an issue where dispatchers logging in would make a get call request resulting a security warning without the police, fire, or EMS permission.
+Dispatch Login - Security Warning\
+\- Fixed an issue where dispatchers logging in would make a get call request resulting a security warning without the police, fire, or EMS permission.
 {% endtab %}
 {% endtabs %}
 
@@ -1018,129 +1018,129 @@ Dispatch Login - Security Warning
 
 {% tabs %}
 {% tab title="New" %}
-SSO Accounts  
-- All user accounts have been migrated over to a general "Sonoran" account. This allows for a centralized place to edit your account info, view your billing, and more.
+SSO Accounts\
+\- All user accounts have been migrated over to a general "Sonoran" account. This allows for a centralized place to edit your account info, view your billing, and more.
 
-Custom Layouts  
-- Users can now fully customize the placement of any window and lock them to create a custom layout. This includes all default dispatching windows and additional popout windows. Layouts are also saved locally to the user's device.
+Custom Layouts\
+\- Users can now fully customize the placement of any window and lock them to create a custom layout. This includes all default dispatching windows and additional popout windows. Layouts are also saved locally to the user's device.
 
-Dispatch Editor - Drag and Drop Units  
-- Active units can be dragged over to the call editor to more easily attach them.
+Dispatch Editor - Drag and Drop Units\
+\- Active units can be dragged over to the call editor to more easily attach them.
 
-Active Units & Groups - Drag and Drop  
-- Units can be dragged and dropped into a new or existing group.
+Active Units & Groups - Drag and Drop\
+\- Units can be dragged and dropped into a new or existing group.
 
-Dispatch Call History - Drag and Drop Units  
-- Units and unit groups can be dragged and dropped directly to an active call, removed from a call, or dragged from one call to another without having to open the full call in the editor.
+Dispatch Call History - Drag and Drop Units\
+\- Units and unit groups can be dragged and dropped directly to an active call, removed from a call, or dragged from one call to another without having to open the full call in the editor.
 
-Dispatch Call Note: Attach/Detach  
-- Dispatch calls now receive a note when a unit or unit group is attached or detached.
+Dispatch Call Note: Attach/Detach\
+\- Dispatch calls now receive a note when a unit or unit group is attached or detached.
 
-Emergency Calls - Drag and Drop  
-- Emergency/911 calls can now be dragged and dropped from the call list to the dispatch editor.
+Emergency Calls - Drag and Drop\
+\- Emergency/911 calls can now be dragged and dropped from the call list to the dispatch editor.
 
-Status Change - Dispatch Call Note  
-- Units attached to a dispatch call will send a note to the call when updating their status.
+Status Change - Dispatch Call Note\
+\- Units attached to a dispatch call will send a note to the call when updating their status.
 
-Custom Search - Partial Matches  
-- Custom search types now allow for partial searches.
+Custom Search - Partial Matches\
+\- Custom search types now allow for partial searches.
 
-Translation: Chinese  
-- Added Chinese translations to the CAD settings.
+Translation: Chinese\
+\- Added Chinese translations to the CAD settings.
 
-Translation - Traditional Chinese  
-- Added Traditional Chinese translations.
+Translation - Traditional Chinese\
+\- Added Traditional Chinese translations.
 
-Login - Emit Session Data  
-- Data is now emitted to the page's parent \(for iframe\) allowing the username and session ID to be captured for authentication with the auto API ID set feature.
+Login - Emit Session Data\
+\- Data is now emitted to the page's parent (for iframe) allowing the username and session ID to be captured for authentication with the auto API ID set feature.
 
-API: Set API ID  
-- The set API ID endpoint now allows for an array to be sent along with specification to push or overwrite the existing account IDs.
+API: Set API ID\
+\- The set API ID endpoint now allows for an array to be sent along with specification to push or overwrite the existing account IDs.
 
-Active Calls - Postal Column  
-- The active calls list now has an optional field to view the call's postal field.
+Active Calls - Postal Column\
+\- The active calls list now has an optional field to view the call's postal field.
 
-BOLO Records - Status Field  
-- The custom records UI now requires BOLO records to contain a "Status" field.
+BOLO Records - Status Field\
+\- The custom records UI now requires BOLO records to contain a "Status" field.
 
-Civilian 911 - Modify Caller Name  
-- Civilians can now remove their name in the 911 caller to remain anonymous.
+Civilian 911 - Modify Caller Name\
+\- Civilians can now remove their name in the 911 caller to remain anonymous.
 {% endtab %}
 
 {% tab title="Changed" %}
-Push Events - Server Port  
-- The push event system now utilizes your existing game server port. This reduces the number of open ports your server requires. Push events are now sent to [http://ip:gameport/sonorancad/event](http://ip:gameport/sonorancad/event). The framework will automatically forward events to this new path if you have not updated your port in the CAD admin panel.
+Push Events - Server Port\
+\- The push event system now utilizes your existing game server port. This reduces the number of open ports your server requires. Push events are now sent to [http://ip:gameport/sonorancad/event](http://ip/:gameport/sonorancad/event). The framework will automatically forward events to this new path if you have not updated your port in the CAD admin panel.
 
-API - SET\_ACCOUNT\_PERMISSIONS  
-- Separated the account permission arrays in the SET\_ACCOUNT\_PERMISSION API endpoint to allow a caller to both add and remove specific permissions in a single call. Also, added an additional option to specify the user by their CAD username as opposed to only their API ID. Additionally, added an option to toggle the account status from PENDING to ACTIVE.
+API - SET_ACCOUNT_PERMISSIONS\
+\- Separated the account permission arrays in the SET_ACCOUNT_PERMISSION API endpoint to allow a caller to both add and remove specific permissions in a single call. Also, added an additional option to specify the user by their CAD username as opposed to only their API ID. Additionally, added an option to toggle the account status from PENDING to ACTIVE.
 
-API: NEW\_CHARACTER Response  
-- API NEW\_CHARACTER responds with the full JSON character record built.
+API: NEW_CHARACTER Response\
+\- API NEW_CHARACTER responds with the full JSON character record built.
 
-API IDs - Array  
-- API IDs are now stored as an array and allow for more API IDs to be stored. The UI has also been improved and will auto-save.
+API IDs - Array\
+\- API IDs are now stored as an array and allow for more API IDs to be stored. The UI has also been improved and will auto-save.
 
-API: Unit Push Events  
-- Push events including unit updates no longer contain the full unit structure, but instead include the unique identifier ID.
+API: Unit Push Events\
+\- Push events including unit updates no longer contain the full unit structure, but instead include the unique identifier ID.
 
-API: Change Unit Status  
-- The change unit status endpoint now requires a server ID argument.
+API: Change Unit Status\
+\- The change unit status endpoint now requires a server ID argument.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Live Map - Custom Upload  
-- Fixed an upload limit issue causing some custom live map uploads to fail.
+Live Map - Custom Upload\
+\- Fixed an upload limit issue causing some custom live map uploads to fail.
 
-Remove Record  
-- Fixed an issue preventing users from removing a record due to an incorrect UUID placement.
+Remove Record\
+\- Fixed an issue preventing users from removing a record due to an incorrect UUID placement.
 
-Default Records - Flags  
-- Fixed an issue where the default record type templates contained records with hidden flags.
+Default Records - Flags\
+\- Fixed an issue where the default record type templates contained records with hidden flags.
 
-911 - Text to Speech  
-- Fixed an issue where the webpage text to speech for "Incoming 911" would fail.
+911 - Text to Speech\
+\- Fixed an issue where the webpage text to speech for "Incoming 911" would fail.
 
-Record - Get Owner  
-- Fixed an issue where searching for a record's owner would fail on types other than a civilian.
+Record - Get Owner\
+\- Fixed an issue where searching for a record's owner would fail on types other than a civilian.
 
-Custom Search - Case Sensitivity  
-- Fixed an issue where custom searches were not case-insensitive and would fail on searches with lowercase DB values.
+Custom Search - Case Sensitivity\
+\- Fixed an issue where custom searches were not case-insensitive and would fail on searches with lowercase DB values.
 
-Unit Location - Duplicate API IDs  
-- Fixed an issue where unit locations would not update via API if multiple user accounts had conflicting API IDs.
+Unit Location - Duplicate API IDs\
+\- Fixed an issue where unit locations would not update via API if multiple user accounts had conflicting API IDs.
 
-DB Sync/Merge Primary Key Column  
-- Resolved issues with DB Sync/Merge mapping manual values properly if the user had a primary key column name set as a reserved MySQL character. Ex: '\#"
+DB Sync/Merge Primary Key Column\
+\- Resolved issues with DB Sync/Merge mapping manual values properly if the user had a primary key column name set as a reserved MySQL character. Ex: '#"
 
-DB Sync/Merge - Character ID vs Primary Key  
-- Resolved an issue with DB Sync/Merge if the community has a different character unique ID that is not the primary key column.
+DB Sync/Merge - Character ID vs Primary Key\
+\- Resolved an issue with DB Sync/Merge if the community has a different character unique ID that is not the primary key column.
 
-Character Records: Validation  
-- Fixed an issue where custom character validation was not being processed for required fields.
+Character Records: Validation\
+\- Fixed an issue where custom character validation was not being processed for required fields.
 
-Custom Records: Supervisor Status  
-- Fixed an issue where custom records with a status field in a section before fields requiring a supervisor may not be indexed properly as requiring supervisor permissions.
+Custom Records: Supervisor Status\
+\- Fixed an issue where custom records with a status field in a section before fields requiring a supervisor may not be indexed properly as requiring supervisor permissions.
 
-DBSync - Character Multi-Table  
-- Fixed an issue where database sync would fail to select the correct "owner ID" when using multiple character tables.
+DBSync - Character Multi-Table\
+\- Fixed an issue where database sync would fail to select the correct "owner ID" when using multiple character tables.
 
-Dispatch Address Filter - Mistype  
-- Fixed an issue on the dispatch address field filtering where backspacing after a misspelling would fail to re-correct the filtered list.
+Dispatch Address Filter - Mistype\
+\- Fixed an issue on the dispatch address field filtering where backspacing after a misspelling would fail to re-correct the filtered list.
 
-Lookup - Closed BOLO  
-- Fixed an issue with the lookup UI preview showing a BOLO's status as 0 or 1 instead of "Closed" and "Open".
+Lookup - Closed BOLO\
+\- Fixed an issue with the lookup UI preview showing a BOLO's status as 0 or 1 instead of "Closed" and "Open".
 
-Call Note - Permission  
-- Fixed an issue where units could not add a note to the call unless they were in self-dispatch.
+Call Note - Permission\
+\- Fixed an issue where units could not add a note to the call unless they were in self-dispatch.
 
-Clear Subscription - Handle non-existing subscriptions  
-- Fixed an issue where clearing a subscription's ID on an expired subscription would fail.
+Clear Subscription - Handle non-existing subscriptions\
+\- Fixed an issue where clearing a subscription's ID on an expired subscription would fail.
 
-Police Supervisor Panel - DMV Records  
-- Fixed an issue where the police supervisor panel would also show DMV records that required supervisor completion.
+Police Supervisor Panel - DMV Records\
+\- Fixed an issue where the police supervisor panel would also show DMV records that required supervisor completion.
 
-Favicon - Alternate Sizes  
-- Fixed an issue with alternate sized favicons not displaying and causing a mixed-media SSL warning.
+Favicon - Alternate Sizes\
+\- Fixed an issue with alternate sized favicons not displaying and causing a mixed-media SSL warning.
 {% endtab %}
 {% endtabs %}
 
@@ -1148,22 +1148,22 @@ Favicon - Alternate Sizes
 
 {% tabs %}
 {% tab title="New" %}
-Lookup - Custom Search  
-- Communities can now create custom lookup search types \(Ex: SSN on a civilian, license firearm number, etc.\). Search types can also specify a mask format, work with DB Sync, DB Merge, and all custom records.
+Lookup - Custom Search\
+\- Communities can now create custom lookup search types (Ex: SSN on a civilian, license firearm number, etc.). Search types can also specify a mask format, work with DB Sync, DB Merge, and all custom records.
 
-Custom Records - Custom Search Field  
-- Custom records can now have a custom searchable field set by using the UID field.
+Custom Records - Custom Search Field\
+\- Custom records can now have a custom searchable field set by using the UID field.
 
-Logging - User UUID from Validation  
-- Enhanced user logging for increased security and debugging.
+Logging - User UUID from Validation\
+\- Enhanced user logging for increased security and debugging.
 
-API - GET\_ACCOUNT - Search By Username  
-- The GET\_ACCOUNT API endpoint can now use the username in addition to the API ID.
+API - GET_ACCOUNT - Search By Username\
+\- The GET_ACCOUNT API endpoint can now use the username in addition to the API ID.
 {% endtab %}
 
 {% tab title="Fixed" %}
-DB Sync - Port Length  
-- Fixed an issue where DB Sync port numbers were limited to only 5 integers instead of 6 in the UI.
+DB Sync - Port Length\
+\- Fixed an issue where DB Sync port numbers were limited to only 5 integers instead of 6 in the UI.
 {% endtab %}
 {% endtabs %}
 
@@ -1171,8 +1171,8 @@ DB Sync - Port Length
 
 {% tabs %}
 {% tab title="New" %}
-Dispatch - Auto Street Names  
-- The address section on dispatch calls is now a drop-down with auto-suggested street names as you type. You can customize the list of street names in the admin menu by uploading a CSV or JSON file.
+Dispatch - Auto Street Names\
+\- The address section on dispatch calls is now a drop-down with auto-suggested street names as you type. You can customize the list of street names in the admin menu by uploading a CSV or JSON file.
 {% endtab %}
 {% endtabs %}
 
@@ -1180,29 +1180,29 @@ Dispatch - Auto Street Names
 
 {% tabs %}
 {% tab title="New" %}
-Geographical Settings - Emergency Code  
-- Improved the geographical setting section's emergency code \(911\) to be fully customizable.
+Geographical Settings - Emergency Code\
+\- Improved the geographical setting section's emergency code (911) to be fully customizable.
 
-Geographical Settings - Currency  
-- Geographical customization now allows you to change the currency delimiter from $ to any other currency symbol.
+Geographical Settings - Currency\
+\- Geographical customization now allows you to change the currency delimiter from $ to any other currency symbol.
 
-Geographical Settings - 10-Codes  
-- Geographical customization allows you to customize references of "10-Codes" to other phrasing.
+Geographical Settings - 10-Codes\
+\- Geographical customization allows you to customize references of "10-Codes" to other phrasing.
 
-Geographical Settings - Penal Codes  
-- Geographical customization allows you to customize references of "Penal Codes" to other phrasing.
+Geographical Settings - Penal Codes\
+\- Geographical customization allows you to customize references of "Penal Codes" to other phrasing.
 
-10-Codes - Import/Export CSV and JSON  
-- 10-Codes can now be imported and exported via CSV and JSON.
+10-Codes - Import/Export CSV and JSON\
+\- 10-Codes can now be imported and exported via CSV and JSON.
 
-Penal Codes - CSV Export  
-- Penal codes can now be exported to a CSV file as well.
+Penal Codes - CSV Export\
+\- Penal codes can now be exported to a CSV file as well.
 
-Change Community ID - Update Subscription  
-- For all newly created subscriptions, updating your community ID will auto-update the community ID on your Stripe subscription as well.
+Change Community ID - Update Subscription\
+\- For all newly created subscriptions, updating your community ID will auto-update the community ID on your Stripe subscription as well.
 
-Billing - Set Community ID  
-- When setting the community ID of a subscription in the billing page, the options are restricted to communities you are already in.
+Billing - Set Community ID\
+\- When setting the community ID of a subscription in the billing page, the options are restricted to communities you are already in.
 {% endtab %}
 {% endtabs %}
 
@@ -1210,8 +1210,8 @@ Billing - Set Community ID
 
 {% tabs %}
 {% tab title="Fixed" %}
-Lookup - Custom Records Tab  
--Fixed an issue causing the reports result section in the lookup window to not properly display the results table.
+Lookup - Custom Records Tab\
+\-Fixed an issue causing the reports result section in the lookup window to not properly display the results table.
 {% endtab %}
 {% endtabs %}
 
@@ -1219,24 +1219,24 @@ Lookup - Custom Records Tab
 
 {% tabs %}
 {% tab title="New" %}
-Penal Codes - CSV Import  
-- Communities can now import all penal codes directly from a CSV spreadsheet file.
+Penal Codes - CSV Import\
+\- Communities can now import all penal codes directly from a CSV spreadsheet file.
 
-Translation - Russian  
-- Added Russian translations.
+Translation - Russian\
+\- Added Russian translations.
 {% endtab %}
 
 {% tab title="Changed" %}
-Custom Community ID - Starter  
-- Community IDs are now randomly generated and require the starter plan or higher to customize. This helps ensure less community ID conflicts.
+Custom Community ID - Starter\
+\- Community IDs are now randomly generated and require the starter plan or higher to customize. This helps ensure less community ID conflicts.
 
-Stripe - Dynamic Tax Rates  
-- Stripe checkout sessions now automatically charge sales tax based on location, rather than requesting the user's ZIP code in the CAD prior.
+Stripe - Dynamic Tax Rates\
+\- Stripe checkout sessions now automatically charge sales tax based on location, rather than requesting the user's ZIP code in the CAD prior.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Discord - Webhook URL  
-- Fixed an issue requiring Discord webhooks to only work with discordapp.com in the URL and not discord.com.
+Discord - Webhook URL\
+\- Fixed an issue requiring Discord webhooks to only work with discordapp.com in the URL and not discord.com.
 {% endtab %}
 {% endtabs %}
 
@@ -1244,36 +1244,36 @@ Discord - Webhook URL
 
 {% tabs %}
 {% tab title="New" %}
-Live Map - Custom Map  
-- Communities can now upload custom map image files if they are using a custom live map.
+Live Map - Custom Map\
+\- Communities can now upload custom map image files if they are using a custom live map.
 {% endtab %}
 
 {% tab title="Changed" %}
-Requests - Ensure no Username Spoof  
-- Improved a possible security exploit where a user could spoof their username to confuse community webhook logs, making it more difficult for communities to properly stop misuse.
+Requests - Ensure no Username Spoof\
+\- Improved a possible security exploit where a user could spoof their username to confuse community webhook logs, making it more difficult for communities to properly stop misuse.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Custom Records - Lookup Preview Columns  
-- Fixed an issue where custom records with the same name but a different ID would cause a key conflict in the lookup preview.
+Custom Records - Lookup Preview Columns\
+\- Fixed an issue where custom records with the same name but a different ID would cause a key conflict in the lookup preview.
 
-Live Map - Static URL  
-- Fixed an issue causing the toggle "Static URL" option for the live map to be disabled.
+Live Map - Static URL\
+\- Fixed an issue causing the toggle "Static URL" option for the live map to be disabled.
 
-NSIS Installer Update  
-- Updated the Windows Desktop NSIS installer to resolve an issue where users who removed the app without using the uninstaller would have the installer freeze while re-downloading it.
+NSIS Installer Update\
+\- Updated the Windows Desktop NSIS installer to resolve an issue where users who removed the app without using the uninstaller would have the installer freeze while re-downloading it.
 
-DB Sync - Primary Key Detection  
-- Fixed an issue where database sync could find multiple primary keys in user defined tables if the MySQL database had multiple schemas with the same table name, but different primary keys in each.
+DB Sync - Primary Key Detection\
+\- Fixed an issue where database sync could find multiple primary keys in user defined tables if the MySQL database had multiple schemas with the same table name, but different primary keys in each.
 
-Remove Character  
-- Fixed an SQL error causing some users to be unable to remove their characters.
+Remove Character\
+\- Fixed an SQL error causing some users to be unable to remove their characters.
 
-Webhooks - Multiple Embeds  
-- Discord webhooks that failed due to containing more than 25 fields have now been broken down into multiple embeds.
+Webhooks - Multiple Embeds\
+\- Discord webhooks that failed due to containing more than 25 fields have now been broken down into multiple embeds.
 
-Unit Locations  
-- Fixed an issue where unit locations may not be updated if the last unit object in the API call contained an invalid API ID or had a different server ID selected.
+Unit Locations\
+\- Fixed an issue where unit locations may not be updated if the last unit object in the API call contained an invalid API ID or had a different server ID selected.
 {% endtab %}
 {% endtabs %}
 
@@ -1281,28 +1281,28 @@ Unit Locations
 
 {% tabs %}
 {% tab title="New" %}
-Payment - Set Community ID  
-- Added checks to ensure a payment can not have it's community ID set if the community ID already has an existing subscription. This prevents someone from downgrading another community ID if they switch their subscription's community ID back and forth.
+Payment - Set Community ID\
+\- Added checks to ensure a payment can not have it's community ID set if the community ID already has an existing subscription. This prevents someone from downgrading another community ID if they switch their subscription's community ID back and forth.
 
-Payment - No Community ID Set  
-- Added an additional, clickable warning badge in the payment center when a user has a subscription without a community ID set.
+Payment - No Community ID Set\
+\- Added an additional, clickable warning badge in the payment center when a user has a subscription without a community ID set.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Records Center - Pending and Supervisor  
-- Fixed an issue in the records center where completing a supervisor or pending record would not auto-update the supervisor/pending panel to remove it and required a search refresh.
+Records Center - Pending and Supervisor\
+\- Fixed an issue in the records center where completing a supervisor or pending record would not auto-update the supervisor/pending panel to remove it and required a search refresh.
 
-DB Merge - Local Edit  
-- Fixed an issue where saving a record with database merge would add a bugged local duplicate of the edited record instead of updating the existing one on the UI.
+DB Merge - Local Edit\
+\- Fixed an issue where saving a record with database merge would add a bugged local duplicate of the edited record instead of updating the existing one on the UI.
 
-DBSync - Primary Key Detection  
-- Fixed issues and improved handling for ensuring database sync tables contain a proper primary key.
+DBSync - Primary Key Detection\
+\- Fixed issues and improved handling for ensuring database sync tables contain a proper primary key.
 
-DB Merge - Primary Key  
-- Fixed an issue where saving database merge records was not using the new unique primary key system and would show merged/saved values on all license and vehicle registrations owned by that character.
+DB Merge - Primary Key\
+\- Fixed an issue where saving database merge records was not using the new unique primary key system and would show merged/saved values on all license and vehicle registrations owned by that character.
 
-Middle Initial - Check Length  
-- Fixed an issue where submitting custom reports with a middle initial field larger than one letter would fail to save in the database.
+Middle Initial - Check Length\
+\- Fixed an issue where submitting custom reports with a middle initial field larger than one letter would fail to save in the database.
 {% endtab %}
 {% endtabs %}
 
@@ -1310,28 +1310,28 @@ Middle Initial - Check Length
 
 {% tabs %}
 {% tab title="New" %}
-Custom Records - Linked Records  
-- Custom record templates can now have a "linked records" section added. You can now click the "copy link" button in any record header and "paste link" in the linked records section. Linked records can be clicked to cross-reference reports, characters, and more.
+Custom Records - Linked Records\
+\- Custom record templates can now have a "linked records" section added. You can now click the "copy link" button in any record header and "paste link" in the linked records section. Linked records can be clicked to cross-reference reports, characters, and more.
 
-Sonoran Servers - Bundle and Save  
-- Sonoran Servers customers can now link their VPS plan in the billing center and save 30% every month!
+Sonoran Servers - Bundle and Save\
+\- Sonoran Servers customers can now link their VPS plan in the billing center and save 30% every month!
 
-Lookup Results - Quick Search  
-- On a lookup window's returned results, result rows with a name or license plate have a quick search icon to open a new lookup window with that name or plate.
+Lookup Results - Quick Search\
+\- On a lookup window's returned results, result rows with a name or license plate have a quick search icon to open a new lookup window with that name or plate.
 
-Items Per Page - Save Preferences  
-- The "Items Per Page" for lookup tables, penal code tables, active units, 10-codes, and others will now locally save your selected preference.
+Items Per Page - Save Preferences\
+\- The "Items Per Page" for lookup tables, penal code tables, active units, 10-codes, and others will now locally save your selected preference.
 
-Dispatch - Track Primary Unit  
-- The dispatch UI now has a checkbox to track the primary unit. When paired with the dispatch notify plugin, units in-game will be auto routed to the current position of the primary unit. This is useful in a chase, where units can have their GPS routed to the lead unit in real time. NOTE: This additional plugin functionality is still in development.
+Dispatch - Track Primary Unit\
+\- The dispatch UI now has a checkbox to track the primary unit. When paired with the dispatch notify plugin, units in-game will be auto routed to the current position of the primary unit. This is useful in a chase, where units can have their GPS routed to the lead unit in real time. NOTE: This additional plugin functionality is still in development.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Electron - Settings Modal  
-- Fixed an issue making it difficult to close the settings modal on the Windows desktop application.
+Electron - Settings Modal\
+\- Fixed an issue making it difficult to close the settings modal on the Windows desktop application.
 
-Penal Codes - Manual Sort  
-- Fixed an issue causing penal codes to not properly save their position in the list when manually sorted and saved.
+Penal Codes - Manual Sort\
+\- Fixed an issue causing penal codes to not properly save their position in the list when manually sorted and saved.
 {% endtab %}
 {% endtabs %}
 
@@ -1339,39 +1339,39 @@ Penal Codes - Manual Sort
 
 {% tabs %}
 {% tab title="New" %}
-Hotkeys - Lookup  
-- Hotkeys can now be configured to open a new lookup window.
+Hotkeys - Lookup\
+\- Hotkeys can now be configured to open a new lookup window.
 
-Hotkeys - Record Center  
-- Hotkeys can now be configured to open the records center.
+Hotkeys - Record Center\
+\- Hotkeys can now be configured to open the records center.
 
-Custom Records - Custom Flags  
-- The flags section for custom records is now customizable for every individual custom record type.
+Custom Records - Custom Flags\
+\- The flags section for custom records is now customizable for every individual custom record type.
 
-Custom Records - Label  
-- Custom records now have a "label" type available in the record template editor.
+Custom Records - Label\
+\- Custom records now have a "label" type available in the record template editor.
 
-PDF Records - Checkbox  
-- If a custom record has a checkbox that does not have a label set, the PDF will show an "X" if it's checked.
+PDF Records - Checkbox\
+\- If a custom record has a checkbox that does not have a label set, the PDF will show an "X" if it's checked.
 
-Account - Change Email  
-- Users can now update their account's email address in the account settings menu.
+Account - Change Email\
+\- Users can now update their account's email address in the account settings menu.
 {% endtab %}
 
 {% tab title="Changed" %}
-Reconnection Handling - Components  
-- Improved reconnection handling for components and other sub-modules in the CAD's UI.
+Reconnection Handling - Components\
+\- Improved reconnection handling for components and other sub-modules in the CAD's UI.
 
-Lookup - Cooldown  
-- Decreased the lookup cooldown significantly to allow for faster re-searching.
+Lookup - Cooldown\
+\- Decreased the lookup cooldown significantly to allow for faster re-searching.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Reconnection Handling - Logout  
-- Fixed an issue causing some clients to be logged out when connection is lost and re-established.
+Reconnection Handling - Logout\
+\- Fixed an issue causing some clients to be logged out when connection is lost and re-established.
 
-Custom Record Editor - Width Label  
-- Fixed an issue causing the custom record editor's "Width" section to display with the wrong label.
+Custom Record Editor - Width Label\
+\- Fixed an issue causing the custom record editor's "Width" section to display with the wrong label.
 {% endtab %}
 {% endtabs %}
 
@@ -1379,34 +1379,34 @@ Custom Record Editor - Width Label
 
 {% tabs %}
 {% tab title="New" %}
-Selected Character  
-- Your currently selected character is saved in the civilian menu and will persist through sessions.
+Selected Character\
+\- Your currently selected character is saved in the civilian menu and will persist through sessions.
 
-API - Get Characters Ordering  
-- The API get\_characters endpoint ensures that the first character record in the list returned \(index 0\) is always the account's currently selected character.
+API - Get Characters Ordering\
+\- The API get_characters endpoint ensures that the first character record in the list returned (index 0) is always the account's currently selected character.
 
-Push Event - 911 Removed  
-- API push event EVENT\_REMOVE\_911 is now sent when an emergency call is removed.
+Push Event - 911 Removed\
+\- API push event EVENT_REMOVE\_911 is now sent when an emergency call is removed.
 
-Dispatch - 911 Origin MetaData  
-- Dispatch metadata contains the origin call ID if sent from a 911 call.
+Dispatch - 911 Origin MetaData\
+\- Dispatch metadata contains the origin call ID if sent from a 911 call.
 
-Translation - Italian  
-- Italian language files have been added.
+Translation - Italian\
+\- Italian language files have been added.
 
-Custom Records - No Name  
-- The custom record editor will now display an error if a custom record is created without a name set.
+Custom Records - No Name\
+\- The custom record editor will now display an error if a custom record is created without a name set.
 
-Custom Records - No Preview Fields  
-- The record template editor will now error if the template has no record fields with the lookup preview enabled. The lookup UI will also now properly inform the user of the issue when searching and still allow them to click and open the bad record.
+Custom Records - No Preview Fields\
+\- The record template editor will now error if the template has no record fields with the lookup preview enabled. The lookup UI will also now properly inform the user of the issue when searching and still allow them to click and open the bad record.
 {% endtab %}
 
 {% tab title="Fixed" %}
-911 Calls - UI Remove from API  
-- Fixed an issue where 911 calls would not be removed from the local user's UI screen when removed via API, requiring a page refresh.
+911 Calls - UI Remove from API\
+\- Fixed an issue where 911 calls would not be removed from the local user's UI screen when removed via API, requiring a page refresh.
 
-Lookup - DbSync and Regular Mix  
-- Fixed an issue where a lookup finding a manual character, license, or vehicle registration record while DBSync is enabled would break the search loop and return only partial results.
+Lookup - DbSync and Regular Mix\
+\- Fixed an issue where a lookup finding a manual character, license, or vehicle registration record while DBSync is enabled would break the search loop and return only partial results.
 {% endtab %}
 {% endtabs %}
 
@@ -1414,34 +1414,34 @@ Lookup - DbSync and Regular Mix
 
 {% tabs %}
 {% tab title="New" %}
-Admin - Edit Character  
-- Admins can now search and edit or remove characters for users in addition to getting the character owner's username.
+Admin - Edit Character\
+\- Admins can now search and edit or remove characters for users in addition to getting the character owner's username.
 
-Admin - Edit Records  
-- Admins can now search and edit or remove all records, in addition to searching for the record owner's account username.
+Admin - Edit Records\
+\- Admins can now search and edit or remove all records, in addition to searching for the record owner's account username.
 
-DBSync - Friendly Mapping  
-- DBSync now allows you to map specific DB value results like "driver\_license" to a more readable "Driver's License" string format.
+DBSync - Friendly Mapping\
+\- DBSync now allows you to map specific DB value results like "driver_license" to a more readable "Driver's License" string format.
 
-Stripe Checkout - External  
-- The payment system has been rewritten to use external Stripe checkout pages for all community subscription management.
+Stripe Checkout - External\
+\- The payment system has been rewritten to use external Stripe checkout pages for all community subscription management.
 
-API - Get Live Map/Servers Config  
-- The get\_servers API endpoint can now be utilized to retrieve your community's server configuration. This contains valuable information particularly for ensuring your live map ports and IP is correctly configured.
+API - Get Live Map/Servers Config\
+\- The get_servers API endpoint can now be utilized to retrieve your community's server configuration. This contains valuable information particularly for ensuring your live map ports and IP is correctly configured.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Custom Records - Null UID  
-- Fixed an issue where older custom record formats without a UID would cause the UI to not properly validate and save the record format.
+Custom Records - Null UID\
+\- Fixed an issue where older custom record formats without a UID would cause the UI to not properly validate and save the record format.
 
-DMV Edit - Supervisor Permission  
-- Fixed an issue allowing civilians to edit supervisor fields on records they have to apply to.
+DMV Edit - Supervisor Permission\
+\- Fixed an issue allowing civilians to edit supervisor fields on records they have to apply to.
 
-Import Custom Record  
-- Fixed an issue where importing a custom record from another community with the custom recordTypeId field already being set would fail to add it to your community as a new record.
+Import Custom Record\
+\- Fixed an issue where importing a custom record from another community with the custom recordTypeId field already being set would fail to add it to your community as a new record.
 
-DBSync - Custom Mapping  
-- Fixed an issue causing DBSync to lose references to custom object mappings in rare cases.
+DBSync - Custom Mapping\
+\- Fixed an issue causing DBSync to lose references to custom object mappings in rare cases.
 {% endtab %}
 {% endtabs %}
 
@@ -1449,22 +1449,22 @@ DBSync - Custom Mapping
 
 {% tabs %}
 {% tab title="New" %}
-Promotional Handling  
-- Added new side menu handling for special promotional banners and URL handling.
+Promotional Handling\
+\- Added new side menu handling for special promotional banners and URL handling.
 {% endtab %}
 
 {% tab title="Fixed" %}
-DMV - Status  
-- Fixed an issue causing the STATUS type field in custom records to not be read properly in the backend. This caused cases where all new records would show up in the PENDING section of the DMV page even if they had been approved.
+DMV - Status\
+\- Fixed an issue causing the STATUS type field in custom records to not be read properly in the backend. This caused cases where all new records would show up in the PENDING section of the DMV page even if they had been approved.
 
-DMV - Record Center Update  
-- Fixed an issue where lookup preview table results would not update locally after editing or removing a record. Causing the user to have to manually refresh the search query.
+DMV - Record Center Update\
+\- Fixed an issue where lookup preview table results would not update locally after editing or removing a record. Causing the user to have to manually refresh the search query.
 
-DB Merge - Error  
-- Fixed an issue causing DB merge searches to fail if the results only contained records, and no civilians.
+DB Merge - Error\
+\- Fixed an issue causing DB merge searches to fail if the results only contained records, and no civilians.
 
-Civilian - DBSync Add Character  
-- Fixed an issue where civilians couldn't search to link a new character with DBSync due to a race condition with the event registration.
+Civilian - DBSync Add Character\
+\- Fixed an issue where civilians couldn't search to link a new character with DBSync due to a race condition with the event registration.
 {% endtab %}
 {% endtabs %}
 
@@ -1472,11 +1472,11 @@ Civilian - DBSync Add Character
 
 {% tabs %}
 {% tab title="Fixed" %}
-My Records  
-- Fixed an issue causing the "My Records" section in the record center to not show properly.
+My Records\
+\- Fixed an issue causing the "My Records" section in the record center to not show properly.
 
-Civilian: Apply  
-- Fixed an issue where civilians without the "Add" permission for records and could only apply would have the sections all disabled.
+Civilian: Apply\
+\- Fixed an issue where civilians without the "Add" permission for records and could only apply would have the sections all disabled.
 {% endtab %}
 {% endtabs %}
 
@@ -1484,33 +1484,33 @@ Civilian: Apply
 
 {% tabs %}
 {% tab title="New" %}
-Vehicle Registration - UID Status Required  
-- All vehicle registrations now require a field with a UID of "Status". This enables the radar plugin to pull up and find the vehicle registration status.
+Vehicle Registration - UID Status Required\
+\- All vehicle registrations now require a field with a UID of "Status". This enables the radar plugin to pull up and find the vehicle registration status.
 {% endtab %}
 
 {% tab title="Changed" %}
-Reconnection and Event Handling  
-- Further improvements have been made to the reconnection and event handling logic to improve the overall user experience.
+Reconnection and Event Handling\
+\- Further improvements have been made to the reconnection and event handling logic to improve the overall user experience.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Law Section - Lookup  
-- Fixed an issue causing the lawyer page lookup section to not work properly.
+Law Section - Lookup\
+\- Fixed an issue causing the lawyer page lookup section to not work properly.
 
-Event Handling - Page Switch  
-- Fixed an issue where some event handlers would not be properly registered when switching from one page and back to another.
+Event Handling - Page Switch\
+\- Fixed an issue where some event handlers would not be properly registered when switching from one page and back to another.
 
-Verify Account  
-- Fixed an issue with the validate page's event handler preventing new users from verifying their email address.
+Verify Account\
+\- Fixed an issue with the validate page's event handler preventing new users from verifying their email address.
 
-Custom Record - Fail without UID  
-- Additional safety checks have been added to handle any legacy record containing fields without a proper UID property that prevented some users from adding custom records.
+Custom Record - Fail without UID\
+\- Additional safety checks have been added to handle any legacy record containing fields without a proper UID property that prevented some users from adding custom records.
 
-Lookup By Int  
-- Fixed an issue causing lookup by integer values \(ID, ident, status\) from not working properly.
+Lookup By Int\
+\- Fixed an issue causing lookup by integer values (ID, ident, status) from not working properly.
 
-DBSync - License and Vehicle  
-- Fixed an issue causing custom vehicle and license records to not be returned by DBSync if the custom civilian sync record contained data that the mapped vehicle or license records do not.
+DBSync - License and Vehicle\
+\- Fixed an issue causing custom vehicle and license records to not be returned by DBSync if the custom civilian sync record contained data that the mapped vehicle or license records do not.
 {% endtab %}
 {% endtabs %}
 
@@ -1518,48 +1518,48 @@ DBSync - License and Vehicle
 
 {% tabs %}
 {% tab title="New" %}
-DbSync/Records - Custom Character Mapping Fields  
-- Civilian records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
+DbSync/Records - Custom Character Mapping Fields\
+\- Civilian records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
 
-DBSync/Records - Custom Vehicle Mapping Fields  
-- Vehicle registration records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
+DBSync/Records - Custom Vehicle Mapping Fields\
+\- Vehicle registration records are fully customizable in every field. Custom DbSync fields can also be added for every custom field.
 
-Login - Multiple Sessions  
-- Users may have multiple valid session tokens based on the IP, time, and session key. This ensures sessions are not invalidated when switching devices, particularly to and from our desktop and mobile apps.
+Login - Multiple Sessions\
+\- Users may have multiple valid session tokens based on the IP, time, and session key. This ensures sessions are not invalidated when switching devices, particularly to and from our desktop and mobile apps.
 
-API Endpoint: Version Check  
-- This API endpoint allows you to check the current subscription version of the community.
+API Endpoint: Version Check\
+\- This API endpoint allows you to check the current subscription version of the community.
 
-Re-connection Handling  
-- Improved app re-connection event registration and handling. This greatly improves user experience with connection drop outs, backend service restarts, etc. and fixes common bugs where units may experience with data not updating randomly until the page is refreshed.
+Re-connection Handling\
+\- Improved app re-connection event registration and handling. This greatly improves user experience with connection drop outs, backend service restarts, etc. and fixes common bugs where units may experience with data not updating randomly until the page is refreshed.
 
-Penal Codes - Import/Export  
-- Penal code lists can now be imported and exported from one community to another.
+Penal Codes - Import/Export\
+\- Penal code lists can now be imported and exported from one community to another.
 
-Penal Codes - Manual Sort  
-- Penal codes can now be manually sorted in order using the action buttons in the admin customization menu.
+Penal Codes - Manual Sort\
+\- Penal codes can now be manually sorted in order using the action buttons in the admin customization menu.
 
-DbSync - Column Space Check  
-- All database sync column and table name values are trimmed to ensure no accidental spaces were entered that could cause an invalid SQL syntax error.
+DbSync - Column Space Check\
+\- All database sync column and table name values are trimmed to ensure no accidental spaces were entered that could cause an invalid SQL syntax error.
 
-Lookup - Trim trailing spaces  
-- Added additional checks to ensure no beginning or trailing spaces are entered into the search terms.
+Lookup - Trim trailing spaces\
+\- Added additional checks to ensure no beginning or trailing spaces are entered into the search terms.
 {% endtab %}
 
 {% tab title="Changed" %}
-Stay Signed In  
-- The stay signed in option is now enabled by default. All session tokens are now stored in local storage as opposed to session storage.
+Stay Signed In\
+\- The stay signed in option is now enabled by default. All session tokens are now stored in local storage as opposed to session storage.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Discord Webhooks  
-- Fixed an issue where Discord webhook URLs with Discord.com instead of discordapp.com would fail.
+Discord Webhooks\
+\- Fixed an issue where Discord webhook URLs with Discord.com instead of discordapp.com would fail.
 
-Side Menu - Scroll  
-- Fixed an issue where the side menu buttons would be overlapping on smaller screens.
+Side Menu - Scroll\
+\- Fixed an issue where the side menu buttons would be overlapping on smaller screens.
 
-Empty Bolo - No Table  
-- Fixed an issue where the view BOLOs tab wouldn't show anything but the top navbar if there were no BOLOs or warrants active. It now properly shows a "No Records Found" to minimize confusion.
+Empty Bolo - No Table\
+\- Fixed an issue where the view BOLOs tab wouldn't show anything but the top navbar if there were no BOLOs or warrants active. It now properly shows a "No Records Found" to minimize confusion.
 {% endtab %}
 {% endtabs %}
 
@@ -1567,37 +1567,37 @@ Empty Bolo - No Table
 
 {% tabs %}
 {% tab title="New" %}
-User Accounts - Purge  
-- Admins can now "purge" inactive users in the admin menu. This will kick all users who have not logged in for the past 30 days.
+User Accounts - Purge\
+\- Admins can now "purge" inactive users in the admin menu. This will kick all users who have not logged in for the past 30 days.
 
-Signal 100 - Webhook  
-- Webhooks can now be configured for signal 100 notifications.
+Signal 100 - Webhook\
+\- Webhooks can now be configured for signal 100 notifications.
 
-Custom Records - Import/Export  
-- You can now export and import custom records and share them with other communities.
+Custom Records - Import/Export\
+\- You can now export and import custom records and share them with other communities.
 
-Query String - Hide Switch Community  
-- Communities hosting a custom login page or using an in-game tablet can specify the "lockCommunity" query string to hide the "switch community" button in the CAD.
+Query String - Hide Switch Community\
+\- Communities hosting a custom login page or using an in-game tablet can specify the "lockCommunity" query string to hide the "switch community" button in the CAD.
 
-i18n Arabic  
-- Arabic translations have been completed and updated.
+i18n Arabic\
+\- Arabic translations have been completed and updated.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Account Delete  
-- Fixed an issue causing some account removal requests to have an error occur when sending the confirmation email.
+Account Delete\
+\- Fixed an issue causing some account removal requests to have an error occur when sending the confirmation email.
 
-Side Menu - Vertical Scroll  
-- Fixed an issue where screens in horizontal mode \(in-game tablet\) would have side drawer buttons overlap. The side drawer now properly scrolls vertically.
+Side Menu - Vertical Scroll\
+\- Fixed an issue where screens in horizontal mode (in-game tablet) would have side drawer buttons overlap. The side drawer now properly scrolls vertically.
 
-Community ID and Account - PostgreSQL Wildcard  
-- Fixed an issue where PostgreSQL queries for a community ID, email, or username with an underscore in them wouldn't escape the underscore. This caused conflict issues if the wildcard had another match.
+Community ID and Account - PostgreSQL Wildcard\
+\- Fixed an issue where PostgreSQL queries for a community ID, email, or username with an underscore in them wouldn't escape the underscore. This caused conflict issues if the wildcard had another match.
 
-Record Order - Non DB Sync  
-- Fixed an issue where records in a lookup were not always retrieved in proper chronological order. This caused issues with the UI preview not always showing the most recent template.
+Record Order - Non DB Sync\
+\- Fixed an issue where records in a lookup were not always retrieved in proper chronological order. This caused issues with the UI preview not always showing the most recent template.
 
-Live Map - Static URL Toggle Label  
-- Fixed an incorrect translation label for the live map static URL toggle label.
+Live Map - Static URL Toggle Label\
+\- Fixed an incorrect translation label for the live map static URL toggle label.
 {% endtab %}
 {% endtabs %}
 
@@ -1605,42 +1605,42 @@ Live Map - Static URL Toggle Label
 
 {% tabs %}
 {% tab title="New" %}
-Polish Translations  
-- Added Polish translations to Sonoran CAD.
+Polish Translations\
+\- Added Polish translations to Sonoran CAD.
 
-Arabic Translations  
-- Added Arabic translations to Sonoran CAD.
+Arabic Translations\
+\- Added Arabic translations to Sonoran CAD.
 
-Penal Codes - New Charge  
-- If your penal code is not in the current charge list, users can press "ENTER" or "TAB" to add the custom value to the charge field.
+Penal Codes - New Charge\
+\- If your penal code is not in the current charge list, users can press "ENTER" or "TAB" to add the custom value to the charge field.
 
-PDF - Image Error Handling  
-- Improved image conversion error handling and detection in custom record PDF files.
+PDF - Image Error Handling\
+\- Improved image conversion error handling and detection in custom record PDF files.
 {% endtab %}
 
 {% tab title="Changed" %}
-API - Unit Locations  
-- Unit location API now has a more optimized way of sending unit location updates as a single array to the client's frontend. This increases performance with less websocket traffic.
+API - Unit Locations\
+\- Unit location API now has a more optimized way of sending unit location updates as a single array to the client's frontend. This increases performance with less websocket traffic.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Panic - UI Flash  
-- Fixed an issue where a unit toggling their PANIC state would not flash their local UI screen red.
+Panic - UI Flash\
+\- Fixed an issue where a unit toggling their PANIC state would not flash their local UI screen red.
 
-Create Account - Password Error  
-- Fixed an issue where users signing up for an account and receiving an error for password standards would not display the proper translation file error message.
+Create Account - Password Error\
+\- Fixed an issue where users signing up for an account and receiving an error for password standards would not display the proper translation file error message.
 
-API IDs - Auto New Unit Identifier  
-- Fixed an issue where a user setting their API ID before every singing into an emergency page for the first time would cause their new, automatically generated identifier to not contain their API ID by default.
+API IDs - Auto New Unit Identifier\
+\- Fixed an issue where a user setting their API ID before every singing into an emergency page for the first time would cause their new, automatically generated identifier to not contain their API ID by default.
 
-API IDs - Manual New Unit Identifier  
-- Fixed an issue where creating a new unit identifier manually would not have your account API IDs added to the unit information by default.
+API IDs - Manual New Unit Identifier\
+\- Fixed an issue where creating a new unit identifier manually would not have your account API IDs added to the unit information by default.
 
-Webhook - BOLO  
-- Fixed an issue causing the BOLO webhook to send to the general police record URL when being updated.
+Webhook - BOLO\
+\- Fixed an issue causing the BOLO webhook to send to the general police record URL when being updated.
 
-PDF - Image Section Order  
-- Fixed a race condition causing custom record sections with images to be displayed at the bottom of the PDF after being converted to Base64.
+PDF - Image Section Order\
+\- Fixed a race condition causing custom record sections with images to be displayed at the bottom of the PDF after being converted to Base64.
 {% endtab %}
 {% endtabs %}
 
@@ -1648,57 +1648,57 @@ PDF - Image Section Order
 
 {% tabs %}
 {% tab title="New" %}
-i18n - Language Support  
-- Sonoran CAD now supports full i18n language support for non-English translations.
+i18n - Language Support\
+\- Sonoran CAD now supports full i18n language support for non-English translations.
 
-Record PDF - Images  
-- Images are now displayed visually in PDF records.
+Record PDF - Images\
+\- Images are now displayed visually in PDF records.
 
-API - Add/Remove Account Permission  
-- User account permissions can now be added or removed via an API endpoint.
+API - Add/Remove Account Permission\
+\- User account permissions can now be added or removed via an API endpoint.
 
-UI Theme Improvements  
-- Improved small UI elements and components to stay consistent with the UI theme.
+UI Theme Improvements\
+\- Improved small UI elements and components to stay consistent with the UI theme.
 {% endtab %}
 
 {% tab title="Changed" %}
-Police Lookup - DMV  
-- Added DMV record types to the default filter for police and dispatch lookups.
+Police Lookup - DMV\
+\- Added DMV record types to the default filter for police and dispatch lookups.
 
-DB Sync - Max Records  
-- Limited the maximum amount of initial search results for DBSync communities to prevent users from requesting tens of thousands of records at a single time.
+DB Sync - Max Records\
+\- Limited the maximum amount of initial search results for DBSync communities to prevent users from requesting tens of thousands of records at a single time.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Modify Records - Owner  
-- Fixed an issue where updating a record would also update the record owner.
+Modify Records - Owner\
+\- Fixed an issue where updating a record would also update the record owner.
 
-Db Sync - Error on no results  
-- Fixed an issue where DB Sync searches would throw an error if no characters were found under the provided search name.
+Db Sync - Error on no results\
+\- Fixed an issue where DB Sync searches would throw an error if no characters were found under the provided search name.
 
-Voice Commands - Lookup  
-- Fixed an issue causing voice command name and plate lookups to fail.
+Voice Commands - Lookup\
+\- Fixed an issue causing voice command name and plate lookups to fail.
 
-Db Sync - Lookup Without Specified Column  
-- Fixed an issue where running a lookup via DB sync where a search column \(typically middle name\) was not provided by the configuration, but was requested via user search, would fail.
+Db Sync - Lookup Without Specified Column\
+\- Fixed an issue where running a lookup via DB sync where a search column (typically middle name) was not provided by the configuration, but was requested via user search, would fail.
 
-Civilian Records - Linked to Unit Identifier  
-- Fixed an issue where creating DMV/civilian records would be linked in "My Files" for the user account's currently selected unit identifier.
+Civilian Records - Linked to Unit Identifier\
+\- Fixed an issue where creating DMV/civilian records would be linked in "My Files" for the user account's currently selected unit identifier.
 
-PDF - Sections  
-- Fixed an issue causing PDF records to not display sections and custom sections other than the civilian and vehicle ones.
+PDF - Sections\
+\- Fixed an issue causing PDF records to not display sections and custom sections other than the civilian and vehicle ones.
 
-DB Sync - Record Overwrite  
-- Fixed an issue causing database sync to overwrite some fields in custom records on lookup.
+DB Sync - Record Overwrite\
+\- Fixed an issue causing database sync to overwrite some fields in custom records on lookup.
 
-Lookup - Switch Tabs  
-- Fixed an issue where searching a license plate and then switching back to a name search would still cause a plate search to be ran on the backend.
+Lookup - Switch Tabs\
+\- Fixed an issue where searching a license plate and then switching back to a name search would still cause a plate search to be ran on the backend.
 
-Charge Count  
-- Fixed an issue where the charge count field in records would always revert back to 1 after being saved.
+Charge Count\
+\- Fixed an issue where the charge count field in records would always revert back to 1 after being saved.
 
-DB Sync - Reset to Default  
-- Added additional backend checks to ensure database sync field lists can never be empty. An empty JSON array will now automatically be reset to the default structure.
+DB Sync - Reset to Default\
+\- Added additional backend checks to ensure database sync field lists can never be empty. An empty JSON array will now automatically be reset to the default structure.
 {% endtab %}
 {% endtabs %}
 
@@ -1706,48 +1706,48 @@ DB Sync - Reset to Default
 
 {% tabs %}
 {% tab title="New" %}
-Admin - UI  
-- Improved the admin panel UI to be more consistent with the recent theme changes.
+Admin - UI\
+\- Improved the admin panel UI to be more consistent with the recent theme changes.
 {% endtab %}
 
 {% tab title="Changed" %}
-DB Sync - Mixed Lookup  
-- Improved the DB Sync lookup to more properly mix records for communities that may only have character mapping enabled, but not license or vehicle registration mapping enabled.
+DB Sync - Mixed Lookup\
+\- Improved the DB Sync lookup to more properly mix records for communities that may only have character mapping enabled, but not license or vehicle registration mapping enabled.
 
-DMV Record - Status Labels  
-- Updated the DMV status label options to pending/approved/rejected.
+DMV Record - Status Labels\
+\- Updated the DMV status label options to pending/approved/rejected.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Civilian - DMV Apply  
-- Fixed an issue preventing civilians from being able to apply for other custom DMV record types.
+Civilian - DMV Apply\
+\- Fixed an issue preventing civilians from being able to apply for other custom DMV record types.
 
-DB Sync - JSON Where Keys  
-- Fixed an issue where DB Sync searches would fail if the user had specific search columns set as a JSON key-value column.
+DB Sync - JSON Where Keys\
+\- Fixed an issue where DB Sync searches would fail if the user had specific search columns set as a JSON key-value column.
 
-Remove Record - Error  
-- Fixed an issue causing record removal to always result in an error message.
+Remove Record - Error\
+\- Fixed an issue causing record removal to always result in an error message.
 
-Civilian - Apply for Records  
-- Fixed an issue where civilians applying for a record would not properly set the DMV status as PENDING.
+Civilian - Apply for Records\
+\- Fixed an issue where civilians applying for a record would not properly set the DMV status as PENDING.
 
-Pending/Supervisor Records  
-- Fixed an issue where pending or supervisor required records would not properly populate in the pending and supervisor panels.
+Pending/Supervisor Records\
+\- Fixed an issue where pending or supervisor required records would not properly populate in the pending and supervisor panels.
 
-Record Preview - Charges  
-- Fixed an issue causing record charges from not being displayed in the lookup preview.
+Record Preview - Charges\
+\- Fixed an issue causing record charges from not being displayed in the lookup preview.
 
-Webhook - Status Field  
-- Fixed an issue causing the Discord webhooks to display the improper status label for custom status fields.
+Webhook - Status Field\
+\- Fixed an issue causing the Discord webhooks to display the improper status label for custom status fields.
 
-Record Viewer - Record Number  
-- Fixed an issue causing existing record numbers to display as 'NEW" in the record editor.
+Record Viewer - Record Number\
+\- Fixed an issue causing existing record numbers to display as 'NEW" in the record editor.
 
-PDF - Record Number  
-- Fixed an issue causing the record number to not be displayed in the PDF agency section.
+PDF - Record Number\
+\- Fixed an issue causing the record number to not be displayed in the PDF agency section.
 
-DB Merge - Check Save Record  
-- Fixed an issue where if a community had DB merge enabled but didn't have license or vehicle registration mapping enabled DB merge would still override old records.
+DB Merge - Check Save Record\
+\- Fixed an issue where if a community had DB merge enabled but didn't have license or vehicle registration mapping enabled DB merge would still override old records.
 {% endtab %}
 {% endtabs %}
 
@@ -1755,22 +1755,22 @@ DB Merge - Check Save Record
 
 {% tabs %}
 {% tab title="New" %}
-Civilian - Custom DMV Apply  
-- Civilians can now also apply for custom DMV records other than just licenses and vehicle registrations.
+Civilian - Custom DMV Apply\
+\- Civilians can now also apply for custom DMV records other than just licenses and vehicle registrations.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Download Button - Typo  
-- Fixed a typo in the side menu "Downloads" button.
+Download Button - Typo\
+\- Fixed a typo in the side menu "Downloads" button.
 
-Custom Records - Duplicate DMV Type  
-- Fixed an issue where the "DMV Record" type was listed twice in the custom record editor.
+Custom Records - Duplicate DMV Type\
+\- Fixed an issue where the "DMV Record" type was listed twice in the custom record editor.
 
-Account Registration - Error  
-- Fixed an issue preventing new account registrations from receiving proper account registration links.
+Account Registration - Error\
+\- Fixed an issue preventing new account registrations from receiving proper account registration links.
 
-Civilian - Record Apply Mobile  
-- Fixed an issue where civilians on mobile devices could not apply for a new record.
+Civilian - Record Apply Mobile\
+\- Fixed an issue where civilians on mobile devices could not apply for a new record.
 {% endtab %}
 {% endtabs %}
 
@@ -1778,195 +1778,195 @@ Civilian - Record Apply Mobile
 
 {% tabs %}
 {% tab title="New" %}
-UI Theme - Red  
-- Improved the general UI theme for records, lookup windows, reports center, tabs, etc.
+UI Theme - Red\
+\- Improved the general UI theme for records, lookup windows, reports center, tabs, etc.
 
-Records System - Overhaul  
-- All existing static record types have been migrated to the new custom records system. This allows communities to completely customize all record types as they would like to.
+Records System - Overhaul\
+\- All existing static record types have been migrated to the new custom records system. This allows communities to completely customize all record types as they would like to.
 
-Custom Reports - Legal Type  
-- Communities can now make custom "Legal" type reports. This could be used for criminal prosecution reports, lawyer reports, etc.
+Custom Reports - Legal Type\
+\- Communities can now make custom "Legal" type reports. This could be used for criminal prosecution reports, lawyer reports, etc.
 
-Custom Records - Legal Type  
-- Communities can now make custom "Legal" type records. This could be used for criminal prosecution data, lawyer records, etc.
+Custom Records - Legal Type\
+\- Communities can now make custom "Legal" type records. This could be used for criminal prosecution data, lawyer records, etc.
 
-Law Record - Webhook Event  
-- Communities can now configure a webhook event for whenever a law record/report is added, edited, or removed.
+Law Record - Webhook Event\
+\- Communities can now configure a webhook event for whenever a law record/report is added, edited, or removed.
 
-Database Sync - Multiple Character Tables  
-- Database sync now allows you to pull character data from multiple tables. Ex: Your character's name and info comes from the "Characters" table but residence/address information comes from a "housing" table.
+Database Sync - Multiple Character Tables\
+\- Database sync now allows you to pull character data from multiple tables. Ex: Your character's name and info comes from the "Characters" table but residence/address information comes from a "housing" table.
 
-Database Sync - JSON Fields  
-- Database sync now allows you to easily add JSON columns in your mapping.
+Database Sync - JSON Fields\
+\- Database sync now allows you to easily add JSON columns in your mapping.
 
-Reports Center - Records  
-- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
+Reports Center - Records\
+\- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
 
-Reports Center - Records  
-- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
+Reports Center - Records\
+\- The reports center now includes both records and reports. This allows you to view all of your identifier's past records and reports, and complete supervisor actions on both custom records and reports.
 
-Custom DMV Records - Apply  
-- Custom DMV records with a "STATUS" type field can be applied for by civilians without DMV add permissions.
+Custom DMV Records - Apply\
+\- Custom DMV records with a "STATUS" type field can be applied for by civilians without DMV add permissions.
 
-Reports Center - Filter Types  
-- You can now filter and view record/report types in the report center. This allows you to view your fire and EMS reports in the police page if necessary.
+Reports Center - Filter Types\
+\- You can now filter and view record/report types in the report center. This allows you to view your fire and EMS reports in the police page if necessary.
 
-Emergency Call - Push Event  
-- Push events are now sent for new 911/emergency calls in the CAD to your local game server.
+Emergency Call - Push Event\
+\- Push events are now sent for new 911/emergency calls in the CAD to your local game server.
 
-Records Lookup - Overhaul  
-- The lookup UI has been updated with filtering types, a new search by identifier, search by ID, reports, and more.
+Records Lookup - Overhaul\
+\- The lookup UI has been updated with filtering types, a new search by identifier, search by ID, reports, and more.
 
-DMV - Overhaul  
-- The DMV page now implements the new lookup and record center windows to easily search for pending records, records requiring supervisors, etc.
+DMV - Overhaul\
+\- The DMV page now implements the new lookup and record center windows to easily search for pending records, records requiring supervisors, etc.
 
-Admin - Account Last Login  
-- User account "Last Login" timestamps now show in the admin accounts menu.
+Admin - Account Last Login\
+\- User account "Last Login" timestamps now show in the admin accounts menu.
 
-Database Sync - Overhaul  
-- The database sync system has been completely rewritten to handle all of the new custom record formats. This creates a more streamlined code base and allows for more advanced features.
+Database Sync - Overhaul\
+\- The database sync system has been completely rewritten to handle all of the new custom record formats. This creates a more streamlined code base and allows for more advanced features.
 
-Database Merge - Overhaul  
-- The entire database merge functionality has been rewritten to work with new custom records and reports.
+Database Merge - Overhaul\
+\- The entire database merge functionality has been rewritten to work with new custom records and reports.
 
-Reports Center - Supervisor Completion  
-- Completing all supervisor fields on a record/report in now has local clientside checks to automatically remove the record from your local UI. This removes the need to manually refresh the panel to update pending reports/records.
+Reports Center - Supervisor Completion\
+\- Completing all supervisor fields on a record/report in now has local clientside checks to automatically remove the record from your local UI. This removes the need to manually refresh the panel to update pending reports/records.
 
-Custom Records - PDF Section Headers  
-- Custom records now display the custom section name in PDF records.
+Custom Records - PDF Section Headers\
+\- Custom records now display the custom section name in PDF records.
 
-Custom Fields - Required and Supervisor  
-- If a field is required and supervisor only, the label color displays as orange instead of red to remain visible.
+Custom Fields - Required and Supervisor\
+\- If a field is required and supervisor only, the label color displays as orange instead of red to remain visible.
 
-Kick Unit API - Not Found  
-- Added additional handling and 404 response for the KICK\_UNIT API endpoint if the API ID does not exist.
+Kick Unit API - Not Found\
+\- Added additional handling and 404 response for the KICK_UNIT API endpoint if the API ID does not exist.
 
-Emergency Code - Australia  
-- Communities can now select "Australia" as their geographical customization setting to change the emergency code to 000.
+Emergency Code - Australia\
+\- Communities can now select "Australia" as their geographical customization setting to change the emergency code to 000.
 
-Custom Record Editor - Section Expansion  
-- Custom sections in the custom record editor can now be expanded or collapsed. This makes organization much cleaner when working with large custom record types.
+Custom Record Editor - Section Expansion\
+\- Custom sections in the custom record editor can now be expanded or collapsed. This makes organization much cleaner when working with large custom record types.
 
-Admin - Account API IDs  
-- User account API IDs are now displayed in the admin account menu.
+Admin - Account API IDs\
+\- User account API IDs are now displayed in the admin account menu.
 
-Custom Records - Wipe  
-- All custom record and report types can now be wiped in the admin "Advanced" menu.
+Custom Records - Wipe\
+\- All custom record and report types can now be wiped in the admin "Advanced" menu.
 
-Admin - Dark Dropdowns  
-- Updated UI dropdown colors for a more consistent dark theme.
+Admin - Dark Dropdowns\
+\- Updated UI dropdown colors for a more consistent dark theme.
 
-API - Set API ID  
-- API IDs can now be set via an API call. This allows for automated API ID configuration via in-game command, or other options.
+API - Set API ID\
+\- API IDs can now be set via an API call. This allows for automated API ID configuration via in-game command, or other options.
 
-API - Penal Codes  
-- Penal codes can now be set via an API call.
+API - Penal Codes\
+\- Penal codes can now be set via an API call.
 
-Record Editor - Action Bar Display  
-- The action bar on the record editor now always displays, but will have the buttons disabled with a tooltip explaining any insufficient permissions.
+Record Editor - Action Bar Display\
+\- The action bar on the record editor now always displays, but will have the buttons disabled with a tooltip explaining any insufficient permissions.
 
-UI Render Exception Handling  
-- Added a new UI render exception handling system for custom records. This prevents specific corner cases where a malformed custom record will break rendering.
+UI Render Exception Handling\
+\- Added a new UI render exception handling system for custom records. This prevents specific corner cases where a malformed custom record will break rendering.
 
-Record Viewer - DB Sync  
-- The record viewer now shows if the record is from "Database Sync" in the top header.
+Record Viewer - DB Sync\
+\- The record viewer now shows if the record is from "Database Sync" in the top header.
 
-Civilian - Select Server ID  
-- Civilians can now change their current server ID. This allows 911 calls to send to the correct server for communities utilizing multiple servers.
+Civilian - Select Server ID\
+\- Civilians can now change their current server ID. This allows 911 calls to send to the correct server for communities utilizing multiple servers.
 
-Police Supervisor - Permission  
-- Police record supervisor fields now require the police supervisor account permission to be filled out.
+Police Supervisor - Permission\
+\- Police record supervisor fields now require the police supervisor account permission to be filled out.
 
-Fire Supervisor - Permission  
-- Fire record supervisor fields now require the fire supervisor account permission to be filled out.
+Fire Supervisor - Permission\
+\- Fire record supervisor fields now require the fire supervisor account permission to be filled out.
 
-Medical Supervisor - Permission  
-- Medical record supervisor fields now require the medical supervisor account permission to be filled out.
+Medical Supervisor - Permission\
+\- Medical record supervisor fields now require the medical supervisor account permission to be filled out.
 
-DMV Supervisor - Permission  
-- DMV record supervisor fields now require the DMV supervisor account permission to be filled out.
+DMV Supervisor - Permission\
+\- DMV record supervisor fields now require the DMV supervisor account permission to be filled out.
 
-Law Supervisor - Permission  
-- Law record supervisor fields now require the law supervisor account permission to be filled out.
+Law Supervisor - Permission\
+\- Law record supervisor fields now require the law supervisor account permission to be filled out.
 
-Law Record - Add Permission  
-- Users with the law record ADD permission can add new law records/reports.
+Law Record - Add Permission\
+\- Users with the law record ADD permission can add new law records/reports.
 
-Law Record - Edit Permission  
-- Users with the law record EDIT permission can edit law records/reports.
+Law Record - Edit Permission\
+\- Users with the law record EDIT permission can edit law records/reports.
 
-Law Record - Remove Permission  
-- Users with the law record REMOVE permission can remove law records/reports.
+Law Record - Remove Permission\
+\- Users with the law record REMOVE permission can remove law records/reports.
 
-API - Parse Improvements  
-- Added massive efficiency and error information parsing to the API calls. This improves system performance for failed API exceptions, and provides more detailed information to developers.
+API - Parse Improvements\
+\- Added massive efficiency and error information parsing to the API calls. This improves system performance for failed API exceptions, and provides more detailed information to developers.
 
-API - Remove 911 Call  
-- You can now remove existing emergency/911 calls via API.
+API - Remove 911 Call\
+\- You can now remove existing emergency/911 calls via API.
 
-API - Lookup Record by Int  
-- A new API endpoint has been added to search for records based on integer values representing the record status, supervisor status, associated identifier, or unique record ID.
+API - Lookup Record by Int\
+\- A new API endpoint has been added to search for records based on integer values representing the record status, supervisor status, associated identifier, or unique record ID.
 
-API - Lookup - Types  
-- API lookups now require a "types" enumerator/integer array to filter specific record types to search.
+API - Lookup - Types\
+\- API lookups now require a "types" enumerator/integer array to filter specific record types to search.
 
-API - Get Units by ID  
-- You can now search and retrieve unit identifiers via API with the user's API IDs.
+API - Get Units by ID\
+\- You can now search and retrieve unit identifiers via API with the user's API IDs.
 
-API - New Record  
-- You can now add new custom records via API.
+API - New Record\
+\- You can now add new custom records via API.
 
-API - Edit Record  
-- You can now modify existing custom records via API endpoint.
+API - Edit Record\
+\- You can now modify existing custom records via API endpoint.
 
-API - Get Record Templates  
-- You can now get your community's custom record templates via an API endpoint.
+API - Get Record Templates\
+\- You can now get your community's custom record templates via an API endpoint.
 
-API - Get Account  
-- You can now retrieve detailed user account information via API.
+API - Get Account\
+\- You can now retrieve detailed user account information via API.
 {% endtab %}
 
 {% tab title="Changed" %}
-API ID - Require Community Login  
-- The API ID section in the settings modal requires that the user is actively logged into a community to be set.
+API ID - Require Community Login\
+\- The API ID section in the settings modal requires that the user is actively logged into a community to be set.
 
-API Lookup - Single Method  
-- API record lookups have been consolidated to a single "Lookup" endpoint. There is no longer a separate name and plate search endpoint.
+API Lookup - Single Method\
+\- API record lookups have been consolidated to a single "Lookup" endpoint. There is no longer a separate name and plate search endpoint.
 
-Custom Record Limits - Increase  
-- Custom record limits have been increased to account for all of the new custom record/report types.
+Custom Record Limits - Increase\
+\- Custom record limits have been increased to account for all of the new custom record/report types.
 
-API - Remove Record Endpoint Path  
-- The remove record endpoint has been migrated from the "emergency" path to the "general" API endpoint path to be consistent with the new add and edit record endpoints.
+API - Remove Record Endpoint Path\
+\- The remove record endpoint has been migrated from the "emergency" path to the "general" API endpoint path to be consistent with the new add and edit record endpoints.
 
-API - Lookup Record Endpoint Path  
-- The lookup API endpoint has been migrated to the /general API endpoint path to be consistent with the new record endpoints.
+API - Lookup Record Endpoint Path\
+\- The lookup API endpoint has been migrated to the /general API endpoint path to be consistent with the new record endpoints.
 {% endtab %}
 
 {% tab title="Fixed" %}
-Live Map - Duplicate Server Names  
-- Fixed an issue where deploying your live map with two identical server names would cause an overlap issue with our dynamic reverse proxy and override the first server's proxy address/port.
+Live Map - Duplicate Server Names\
+\- Fixed an issue where deploying your live map with two identical server names would cause an overlap issue with our dynamic reverse proxy and override the first server's proxy address/port.
 
-Custom Records - Type  
-- Fixed an issue where custom records would be classified internally as the incorrect type. UI prevention and better backend detection methods were implemented.
+Custom Records - Type\
+\- Fixed an issue where custom records would be classified internally as the incorrect type. UI prevention and better backend detection methods were implemented.
 
-Report Center - Exit Tab  
-- Fixed an issue where the report center window could not be closed from the minimized tab.
+Report Center - Exit Tab\
+\- Fixed an issue where the report center window could not be closed from the minimized tab.
 
-Search By Identifier - Online Units  
-- Fixed where unit options in a search by identifier method would only show currently online units.
+Search By Identifier - Online Units\
+\- Fixed where unit options in a search by identifier method would only show currently online units.
 
-Version Downgrade - Live Map Disable  
-- Fixed an issue where the live map was not disabled when a community CAD's version was downgraded.
+Version Downgrade - Live Map Disable\
+\- Fixed an issue where the live map was not disabled when a community CAD's version was downgraded.
 
-Lawyer - Lookup Permissions  
-- Fixed an issue causing users with the lawyer permission only to be unable to lookup records.
+Lawyer - Lookup Permissions\
+\- Fixed an issue causing users with the lawyer permission only to be unable to lookup records.
 
-Charges - Manual Entry  
-- Fixed an issue preventing issues from manually entering a charge title on a record that does not exist.
+Charges - Manual Entry\
+\- Fixed an issue preventing issues from manually entering a charge title on a record that does not exist.
 
-NEW\_DISPATCH - Call ID  
-- Fixed an issue where the NEW\_DISPATCH push event would not contain the new call ID.
+NEW_DISPATCH - Call ID\
+\- Fixed an issue where the NEW_DISPATCH push event would not contain the new call ID.
 {% endtab %}
 {% endtabs %}
 
@@ -2208,8 +2208,8 @@ NEW\_DISPATCH - Call ID
    * Fixed an issue causing unit logoff events to not properly fire and be sent to community listeners.
 4. Join Community Logo
    * Fixed an issue causing communities with a thin narrow logo from having text cutoff in the join community preview.
-5. Attach Unit\(s\) - API
-   * Fixed an issue with the attach unit\(s\) API call where an SQL connection was not properly opened. Also fixed a small API documentation issue for this particular call.
+5. Attach Unit(s) - API
+   * Fixed an issue with the attach unit(s) API call where an SQL connection was not properly opened. Also fixed a small API documentation issue for this particular call.
 6. Unit Status - API Push Event
    * Fixed an issue with the unit status API call sending community listeners a push event with the changed unit identifier ID integers instead of the proper unit JSON data.
 7. Admin Panel - Loading without Permissions
@@ -2217,7 +2217,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 2.0.0 \(Full Release\) 5/16/2020
+### 2.0.0 (Full Release) 5/16/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2280,7 +2280,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.22.0 \(Beta\) 5/07/2020
+### 1.22.0 (Beta) 5/07/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2294,7 +2294,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.21.1 \(Beta\) 5/01/2020
+### 1.21.1 (Beta) 5/01/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2327,7 +2327,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.21.0 \(Beta\) 4/22/2020
+### 1.21.0 (Beta) 4/22/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2349,7 +2349,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.20.4 \(Beta\) - 4/19/2020
+### 1.20.4 (Beta) - 4/19/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2380,7 +2380,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.20.3 \(Beta\) - 04/17/2020
+### 1.20.3 (Beta) - 04/17/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2405,7 +2405,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.20.2 \(Beta\) - 04/15/2020
+### 1.20.2 (Beta) - 04/15/2020
 
 {% tabs %}
 {% tab title="Fixed" %}
@@ -2422,7 +2422,7 @@ NEW\_DISPATCH - Call ID
 {% endtab %}
 {% endtabs %}
 
-### 1.20.1 \(Beta\) - 04/13/2020
+### 1.20.1 (Beta) - 04/13/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2482,7 +2482,7 @@ PDF Records - Desktop
 {% endtab %}
 {% endtabs %}
 
-### 1.20.0 \(Beta\) - 04/12/2020
+### 1.20.0 (Beta) - 04/12/2020
 
 {% tabs %}
 {% tab title="Changed" %}
@@ -2492,7 +2492,7 @@ Records System - Backend Restructure
 
 DBSync - Character Hide ID
 
-* Character ID \(often Steam IDs\) are no longer displayed on the UI when searching for a character with database sync. 
+* Character ID (often Steam IDs) are no longer displayed on the UI when searching for a character with database sync. 
 
 Dispatch - Clear Panic Permissions
 
@@ -2522,7 +2522,7 @@ Penal Code - Empty Bond
 {% endtab %}
 {% endtabs %}
 
-### 1.19.1 \(Beta\) - 04/05/2020
+### 1.19.1 (Beta) - 04/05/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2544,7 +2544,7 @@ Self-Dispatch - Calls
 {% endtab %}
 {% endtabs %}
 
-### 1.19.0 \(Beta\) - 04/04/2020
+### 1.19.0 (Beta) - 04/04/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2592,7 +2592,7 @@ Dispatch - Signal
 {% endtab %}
 {% endtabs %}
 
-### 1.18.0 \(Beta\) - 03/30/2020
+### 1.18.0 (Beta) - 03/30/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2613,7 +2613,7 @@ Custom Login - Header Branding
 {% endtab %}
 {% endtabs %}
 
-### 1.17.1 \(Beta\) - 03/28/2020
+### 1.17.1 (Beta) - 03/28/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2634,7 +2634,7 @@ Custom Login - Header Branding
 {% endtab %}
 {% endtabs %}
 
-### 1.17.0 \(Beta\) - 03/00/2020
+### 1.17.0 (Beta) - 03/00/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2665,7 +2665,7 @@ Server Mode - European/UK
 {% endtab %}
 {% endtabs %}
 
-### 1.16.0 \(Beta\) - 03/24/2020
+### 1.16.0 (Beta) - 03/24/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2719,7 +2719,7 @@ Session Invalidate - UI
 {% endtab %}
 {% endtabs %}
 
-### 1.15.2 \(Beta\) - 03/22/2020
+### 1.15.2 (Beta) - 03/22/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2730,7 +2730,7 @@ Session Invalidate - UI
 {% endtab %}
 {% endtabs %}
 
-### 1.15.1 \(Beta\) - 03/18/2020
+### 1.15.1 (Beta) - 03/18/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2760,7 +2760,7 @@ Session Invalidate - UI
 {% endtab %}
 {% endtabs %}
 
-### 1.15.0 \(Beta\) - 03/04/2020
+### 1.15.0 (Beta) - 03/04/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2804,7 +2804,7 @@ Session Invalidate - UI
 7. Community Card - Ellipsis
    * Changed community card title/header to cut off into an ellipsis if the name is too long. This prevents the remove icon from being bumped down to the next line.
 8. Civilian Card - Header
-   * Forced all civilian card headers \(name\) to be capitalized.
+   * Forced all civilian card headers (name) to be capitalized.
 9. Privacy Policy - Login Only
    * The privacy policy button only displays in the side nav bar on the login screen. This helps reduce clutter on the community pages.
 {% endtab %}
@@ -2837,7 +2837,7 @@ Session Invalidate - UI
 {% endtab %}
 {% endtabs %}
 
-### 1.14.0 \(Beta\) - 02/16/2020
+### 1.14.0 (Beta) - 02/16/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2846,7 +2846,7 @@ Session Invalidate - UI
 2. Dispatch - Live Editor
    * If a dispatcher has the call editor open and the call is updated by someone else, this will live-update their editor as well.
 3. Timezone
-   * All clock values in Sonoran CAD are now synced based upon your community's set timezone. By default, this is UTC time. This can be customized in: Admin &gt; Customization &gt; Community Info
+   * All clock values in Sonoran CAD are now synced based upon your community's set timezone. By default, this is UTC time. This can be customized in: Admin > Customization > Community Info
 4. Dispatch Call - Notes
    * All dispatch calls now have a notes section. Notes can be added using the input section below, and will be auto formatted with a timestamp and unit number.
 5. 911 Call - Autoremove
@@ -2891,14 +2891,14 @@ Session Invalidate - UI
 {% endtab %}
 {% endtabs %}
 
-### 1.13.X \(Beta\) - 02/09/2020
+### 1.13.X (Beta) - 02/09/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. Unit - Self Dispatch
-   * Units with dispatch permissions can now enable "Self Dispatch"
+   *   Units with dispatch permissions can now enable "Self Dispatch"
 
-     Self dispatching allows you to create a call, edit your existing call, or attach yourself onto an existing active call.
+       Self dispatching allows you to create a call, edit your existing call, or attach yourself onto an existing active call.
 2. Lookup - Civilian ID
    * When running a lookup, all applicable civilian ID information will also be displayed.
 
@@ -2929,7 +2929,7 @@ Compare Plans - Pricing
 {% endtab %}
 {% endtabs %}
 
-### 1.12.0 \(Beta\) - 02/04/2020
+### 1.12.0 (Beta) - 02/04/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -2948,10 +2948,9 @@ Vehicle Type - Aircraft
 
 Active Units - Panic
 
-* Regular units can toggle another unit's PANIC status with the proper permissions.
+*   Regular units can toggle another unit's PANIC status with the proper permissions.
 
-  Active Units - Kick
-
+    Active Units - Kick
 * Regular units can now kick other units in the active units window if they have the proper permissions.
 
 API Fail - Error Catching
@@ -2989,7 +2988,7 @@ Ban - Check Owner
 {% endtab %}
 {% endtabs %}
 
-### 1.11.4 \(Beta\) - 01/30/2020
+### 1.11.4 (Beta) - 01/30/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3009,16 +3008,16 @@ Ban - Check Owner
 {% endtab %}
 {% endtabs %}
 
-### 1.11.3 \(Beta\) - 01/30/2020
+### 1.11.3 (Beta) - 01/30/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. DbSync - JSON Key
-   * Communities that have a JSON field can now specify the a key in the column containing the value. The DbSync tutorial document covers this new SQL syntax in section 1.5 \(Advanced\).
+   * Communities that have a JSON field can now specify the a key in the column containing the value. The DbSync tutorial document covers this new SQL syntax in section 1.5 (Advanced).
 2. Query String - Force Mobile
-   * sonorancad.com/\#/?forcemobile=TRUE
+   *   sonorancad.com/#/?forcemobile=TRUE
 
-     Your CAD will forcefully format the emergency services action bars to mobile format. This is beneficial for communities that are embedding the CAD in-game on a smaller format that does not quite meet the standard mobile dimensions.
+       Your CAD will forcefully format the emergency services action bars to mobile format. This is beneficial for communities that are embedding the CAD in-game on a smaller format that does not quite meet the standard mobile dimensions.
 {% endtab %}
 
 {% tab title="Changed" %}
@@ -3043,7 +3042,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.11.2 \(Beta\) - 01/28/2020
+### 1.11.2 (Beta) - 01/28/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3073,7 +3072,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.11.1 \(Beta\) - 01/25/2020
+### 1.11.1 (Beta) - 01/25/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3098,7 +3097,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.11.0 \(Beta\) - 01/25/2020
+### 1.11.0 (Beta) - 01/25/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3129,7 +3128,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.10.4 \(Beta\) - 01/22/2020
+### 1.10.4 (Beta) - 01/22/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3158,7 +3157,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.10.3 \(Beta\) - 01/22/2020
+### 1.10.3 (Beta) - 01/22/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3203,7 +3202,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.10.2 \(Beta\) - 01/21/2020
+### 1.10.2 (Beta) - 01/21/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3232,7 +3231,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.10.1 \(Beta\) - 01/19/2020
+### 1.10.1 (Beta) - 01/19/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3289,7 +3288,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.7 \(Beta\) - 01/12/2020
+### 1.9.7 (Beta) - 01/12/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3310,16 +3309,17 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.6 \(Beta\) - 01/11/2020
+### 1.9.6 (Beta) - 01/11/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. Custom Login Page
-   * Communities can customize their own login page to display their community name and logo. Users logging in from this page will be directly logged into the community, as opposed to navigating to the community selection menu. All account creation and password recovery emails sent from this page will also navigate the user to your community's custom login page.
+   * Communities can customize their own login page to display their community name and logo. Users logging in from this page will be directly logged into the community, as opposed to navigating to the community selection menu.\
+     All account creation and password recovery emails sent from this page will also navigate the user to your community's custom login page.
 {% endtab %}
 {% endtabs %}
 
-### 1.9.5 \(Beta\) - 01/11/2020
+### 1.9.5 (Beta) - 01/11/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3335,7 +3335,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.4 \(Beta\) - 01/09/2020
+### 1.9.4 (Beta) - 01/09/2020
 
 {% tabs %}
 {% tab title="New" %}
@@ -3360,12 +3360,12 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.3 \(Beta\) - 01/08/2020
+### 1.9.3 (Beta) - 01/08/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. Call Closed - 10-08
-   * When a call is closed or a unit is removed, that unit is then marked as 10-08 \(Available\)
+   * When a call is closed or a unit is removed, that unit is then marked as 10-08 (Available)
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -3376,12 +3376,12 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.1 \(Beta\) - 01/06/2020
+### 1.9.1 (Beta) - 01/06/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. New Dispatch - 10-06
-   * When receiving a new dispatch, units are automatically updated to 10-06 \(Busy\)
+   * When receiving a new dispatch, units are automatically updated to 10-06 (Busy)
 2. Voice Commands - Status
    * Voice commands for the unit status now include 10-97 and 10-23.
 3. Account Subscriptions - Menu Access
@@ -3409,26 +3409,26 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.9.0 \(Beta\) - 01/05/2020
+### 1.9.0 (Beta) - 01/05/2020
 
 {% tabs %}
 {% tab title="New" %}
 1. Payment Center
    * Sonoran CAD now has a built in payment center. Here, you can start, stop and manage paid subscriptions for your community. This is currently available in the admin panel’s limits section.
 2. Unit Status
-   * Units can now set their status to ENROUTE \(10-97\) or ON SCENE \(10-23\).
+   * Units can now set their status to ENROUTE (10-97) or ON SCENE (10-23).
 3. Dispatch - Call Status
    * Dispatch call statuses can now be set to either PENDING, ACTIVE or CLOSED and no longer contain status options that are unit specific.
 {% endtab %}
 {% endtabs %}
 
-### 1.8.2 \(Beta\) - 01/02/2020
+### 1.8.2 (Beta) - 01/02/2020
 
 {% tabs %}
 {% tab title="Changed" %}
 1. Community Menu - Permissions
    * Community menu buttons are now only displayed if the user has the permissions, as opposed to simply being disabled if permissions are not present.
-2. Bond Amount -&gt; Bond/Ticket
+2. Bond Amount -> Bond/Ticket
    * Changed the wording in the charges section from "Bond Amount" to "Bond/Ticket Amount"
 {% endtab %}
 
@@ -3440,7 +3440,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.8.1 \(Beta\) - 12/23/2019
+### 1.8.1 (Beta) - 12/23/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3470,7 +3470,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.8.0 \(Beta\) - 12/22/2019
+### 1.8.0 (Beta) - 12/22/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3517,7 +3517,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.7.4 \(Beta\) - 12/20/2019
+### 1.7.4 (Beta) - 12/20/2019
 
 {% tabs %}
 {% tab title="Changed" %}
@@ -3533,7 +3533,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.7.3 \(Beta\) - 12/19/2019
+### 1.7.3 (Beta) - 12/19/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3553,7 +3553,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.7.2 \(Beta\) - 12/18/2019
+### 1.7.2 (Beta) - 12/18/2019
 
 {% tabs %}
 {% tab title="Changed" %}
@@ -3569,7 +3569,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.7.1 \(Beta\) - 12/18/2019
+### 1.7.1 (Beta) - 12/18/2019
 
 {% tabs %}
 {% tab title="Changed" %}
@@ -3587,14 +3587,14 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.7.0 \(Beta\) - 12/18/2019
+### 1.7.0 (Beta) - 12/18/2019
 
 {% tabs %}
 {% tab title="New" %}
 1. In-Depth Permissions
    * A more in-depth permissions system allows admins to specify more in-depth permissions.
 2. Live Map
-   * Paid communities can specify a link to a map \(commonly used as a live map\) for their community. This can be viewed in a pop-out window for all emergency units and dispatchers.
+   * Paid communities can specify a link to a map (commonly used as a live map) for their community. This can be viewed in a pop-out window for all emergency units and dispatchers.
 3. Police - Edit Other Units
    * Emergency units with permissions can select a unit in the "Active Units" window to edit their rank, status, department, etc.
 4. Discord Configuration - Menu
@@ -3620,7 +3620,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.6.0 \(Beta\) - 12/15/2019
+### 1.6.0 (Beta) - 12/15/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3668,7 +3668,7 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.5.4 \(Beta\) - 12/03/2019
+### 1.5.4 (Beta) - 12/03/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3687,7 +3687,7 @@ UI Border
 {% tab title="Changed" %}
 1. Dispatch Updated - Shorten Notice
    * When a dispatch call is updated, text-to-speech simply states, "Dispatch Updated." This will shorten the lengthy text-to-speech response whenever a call is modified.
-2. Primary Officer -&gt; Primary Unit
+2. Primary Officer -> Primary Unit
    * Changed the wording of "Primary Officer" on a dispatch call to "Primary Unit" - This helps better encompass the phrasing for a fire or EMS dispatch.
 3. Mobile - Admin Codes UI
    * Improved the UI positioning for admin penal and 10-code editing for mobile devices.
@@ -3711,20 +3711,19 @@ UI Border
 {% endtab %}
 {% endtabs %}
 
-### 1.5.3 \(Beta\) - 11/30/2019
+### 1.5.3 (Beta) - 11/30/2019
 
 {% tabs %}
 {% tab title="New" %}
 Delete/Remove CAD
 
 * Community owners can now remove their CAD system in the admin menu. This process requires email verification.
-
-1. Penal Code Types
-   * Added "Infraction" and "Warning" to penal code charge type options.
-2. Record Charges - Mobile Optimization
-   * Improved UI layout for police record charges.
-3. Lookup Results - Mobile UI Optimization
-   * Increased record lookup results height for mobile users.
+* Penal Code Types
+  * Added "Infraction" and "Warning" to penal code charge type options.
+* Record Charges - Mobile Optimization
+  * Improved UI layout for police record charges.
+* Lookup Results - Mobile UI Optimization
+  * Increased record lookup results height for mobile users.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -3741,7 +3740,7 @@ Delete/Remove CAD
 {% endtab %}
 {% endtabs %}
 
-### 1.5.2 \(Beta\) - 11/29/2019
+### 1.5.2 (Beta) - 11/29/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3766,7 +3765,7 @@ Delete/Remove CAD
 {% endtab %}
 {% endtabs %}
 
-### 1.5.1 \(Beta\) - 11/28/2019
+### 1.5.1 (Beta) - 11/28/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3786,14 +3785,14 @@ Delete/Remove CAD
 {% endtab %}
 {% endtabs %}
 
-### 1.5.0 \(Beta\) - 11/27/2019
+### 1.5.0 (Beta) - 11/27/2019
 
 {% tabs %}
 {% tab title="New" %}
 1. Database Sync
-   * Communities can specify a SQL connection string and mapping for their database structure for characters, vehicle registrations and licenses.
+   *   Communities can specify a SQL connection string and mapping for their database structure for characters, vehicle registrations and licenses.
 
-     Sonoran CAD will then search for characters, vehicle registrations and licenses directly from your community's database for full integration!
+       Sonoran CAD will then search for characters, vehicle registrations and licenses directly from your community's database for full integration!
 2. Subscription Upgrades
    * A payment system for communities to upgrade their limits, enable new features and more!
 3. Civilian Page
@@ -3805,9 +3804,9 @@ Delete/Remove CAD
 6. Vehicle Registrations
    * Civilian vehicle registration records can be created, modified and searched.
 7. BOLO System
-   * A way for police and dispatch to add, edit, search, and remove BOLOs.
+   *   A way for police and dispatch to add, edit, search, and remove BOLOs.
 
-     BOLOs can be viewed in the BOLO window or in an applicable name/plate search.
+       BOLOs can be viewed in the BOLO window or in an applicable name/plate search.
 8. License Type Customization
    * Communities with this feature can customize their civilian license types.
 9. Community Info Customization
@@ -3816,28 +3815,28 @@ Delete/Remove CAD
     * View your community CAD limits in the "Limits" section in the admin panel.
 11. Lookup - Dynamic Tabs
 
-    * The lookup window now only displays record tab types \(BOLO, Warrant, Arrest, etc.\) if they are present.
+    *   The lookup window now only displays record tab types (BOLO, Warrant, Arrest, etc.) if they are present.
 
-      When no results are found, a "No Records Found" message is displayed.
+        When no results are found, a "No Records Found" message is displayed.
 
-    12. Record Tabs - Dynamic
+    12\. Record Tabs - Dynamic
 
     * When running a lookup, the selected record tab will now be set to the first record type available based on priority.
 
-    13. Unit Info - Clear Department
+    13\. Unit Info - Clear Department
 
     * Add the ability to quickly clear a unit's agency, department or subdivision in the unit editor.
 
-    14. PWA Auto Updater
+    14\. PWA Auto Updater
 
     * You will no longer have to clear your local cache to get the latest Sonoran CAD version.
 {% endtab %}
 
 {% tab title="Changed" %}
 1. District Rename to Agency
-   * "Districts" are now called "Agencies" - The full structure is as follows:
+   *   "Districts" are now called "Agencies" - The full structure is as follows:
 
-     Agency &gt; Department &gt; Subdivision
+       Agency > Department > Subdivision
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -3854,7 +3853,7 @@ Delete/Remove CAD
 {% endtab %}
 {% endtabs %}
 
-### 1.4.0 \(Alpha\) - 11/15/2019
+### 1.4.0 (Alpha) - 11/15/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3865,9 +3864,9 @@ Delete/Remove CAD
 3. Penal Code Window - Police/Dispatch
    * A new window for police to view and search for penal codes.
 4. Voice Commands - Lookup
-   * The ability to lookup a name or license plate via voice commands. “Sonoran lookup &lt;name/plate&gt; &lt;plate/name&gt;”
+   * The ability to lookup a name or license plate via voice commands. “Sonoran lookup \<name/plate> \<plate/name>”
 5. Record Notice Flags
-   * Special flags can be added to a name or license plate to be shown when running a lookup. \(Armed, Mentally Ill, etc.\) These flags are also be repeated aloud by TTS to help officers running lookups via voice commands.
+   * Special flags can be added to a name or license plate to be shown when running a lookup. (Armed, Mentally Ill, etc.) These flags are also be repeated aloud by TTS to help officers running lookups via voice commands.
 6. Improved Dynamic Window Height
    * Dynamically computed popup window height based upon number of results and content within a window.
 7. 10-Codes Filter Search
@@ -3897,18 +3896,19 @@ Delete/Remove CAD
 {% endtab %}
 {% endtabs %}
 
-### 1.3.2 \(Alpha\) - 11/09/2019
+### 1.3.2 (Alpha) - 11/09/2019
 
 {% tabs %}
 {% tab title="New" %}
 1. PWA App Installations for OSX and iOS
-   * PWA \(Progressive Web Application\) installations have been configured for all platforms, but specifically allows OSX and iOS users to experience a native app experience with Sonoran CAD. For more information, view the \#downloads channel in Discord, or click “Downloads” on the side navigation menu on the website.
+   * PWA (Progressive Web Application) installations have been configured for all platforms, but specifically allows OSX and iOS users to experience a native app experience with Sonoran CAD. For more information, view the #downloads channel in Discord, or click “Downloads” on the side navigation menu on the website.
 {% endtab %}
 
 {% tab title="Changed" %}
 Desktop - Splash Screen Font
 
-1. * Updated the splash screen font for the electron desktop application for windows
+1.
+   * Updated the splash screen font for the electron desktop application for windows
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -3917,7 +3917,7 @@ Desktop - Splash Screen Font
 {% endtab %}
 {% endtabs %}
 
-### 1.3.1 \(Alpha\) - 11/06/2019
+### 1.3.1 (Alpha) - 11/06/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3944,7 +3944,7 @@ Desktop - Splash Screen Font
 {% endtab %}
 {% endtabs %}
 
-### 1.3.0 \(Alpha\) - 11/05/2019
+### 1.3.0 (Alpha) - 11/05/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3961,7 +3961,7 @@ Desktop - Splash Screen Font
 6. Lookup Search - Shortcut
    * Police and dispatch can now press enter/return in the lookup textbox to search faster than manually pressing the search button.
 7. Police Call Viewer - Status
-   * Added new functionality to update units on the police call viewer in real time \(status changes\).
+   * Added new functionality to update units on the police call viewer in real time (status changes).
 8. Support Discord Links
    * Navigation links to the Sonoran CAD Discord have been added to the side navigation menu.
 9. Reset Password - Email Template
@@ -3973,11 +3973,12 @@ Desktop - Splash Screen Font
 {% tab title="Fixed" %}
 App Logo - Android
 
-1. * Fixed an issue causing the splash screen logo on Android to get cut off.
+1.
+   * Fixed an issue causing the splash screen logo on Android to get cut off.
 {% endtab %}
 {% endtabs %}
 
-### 1.2.1 \(Alpha\) - 10/30/2019
+### 1.2.1 (Alpha) - 10/30/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -3991,7 +3992,7 @@ App Logo - Android
 {% endtab %}
 {% endtabs %}
 
-### 1.2.0 \(Alpha\) - 10/29/2019
+### 1.2.0 (Alpha) - 10/29/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -4011,7 +4012,7 @@ App Logo - Android
    * Users can enter a full or partial name, or search by a license plate.
    * NOTE: Currently, only arrest records are shown, more will be added soon.
 5. Voice Commands - PANIC
-   * The police page will now prompt users for access to their microphone \(Chrome\).
+   * The police page will now prompt users for access to their microphone (Chrome).
    * The voice command "Sonoran Panic" will toggle your unit's PANIC state.
 {% endtab %}
 
@@ -4023,7 +4024,7 @@ App Logo - Android
    * Sonoran CAD now sends all emails from no-reply@sonoransoftware.com
 3. Dispatch - Separate Connection Grouping
    * Dispatchers are now added to an additional SignalR grouping.
-   * This will be to ensure server calls \(Ex: ackDispatchCall\) are only sent to dispatchers, and not all other units within the server.
+   * This will be to ensure server calls (Ex: ackDispatchCall) are only sent to dispatchers, and not all other units within the server.
 4. Dispatch - Postal or Address
    * Dispatches now only require the postal or address.
    * Text-to-speech notifications state the postal and/or the address when applicable.
@@ -4042,13 +4043,13 @@ App Logo - Android
 4. Registration Email Template
    * Fixed the background of the Sonoran LLC logo.
 5. Disconnection - Null Value
-   * Disconnection context values being NULL after hours of inactivity.
+   *   Disconnection context values being NULL after hours of inactivity.
 
-     Fixed an issue where this causes an unhandled exception after disconnection from the connection hub.
+       Fixed an issue where this causes an unhandled exception after disconnection from the connection hub.
 {% endtab %}
 {% endtabs %}
 
-### 1.1.0 \(Alpha\) - 10/15/2019
+### 1.1.0 (Alpha) - 10/15/2019
 
 {% tabs %}
 {% tab title="New" %}
@@ -4056,11 +4057,11 @@ App Logo - Android
    * Police units can press the red "PANIC" button to inform other online units and dispatchers when in distress. This will pulse the screen red for the unit. The unit on the dispatcher panel will also pulse red.
 2. Audio Alerts
    * Police unit's will recieve customized audio alerts when a dispatch is created, updated or removed.
-   * Police unit's will hear a brief tone when changing their 10-status. \(10-06, 10-07, 10-08\)
+   * Police unit's will hear a brief tone when changing their 10-status. (10-06, 10-07, 10-08)
 3. Settings Modal
    * The left drawer now contains a "Settings" option. Opening this will allow the user to change their system volume for audio alerts and tones.
 4. Dispatch Call - Unit Removal Logic
-   * Sonoran CAD now tracks the removed units when updating a call. Removing units from a call will now inform the unit that the call is closed \(for them\) and will clear their screen.
+   * Sonoran CAD now tracks the removed units when updating a call. Removing units from a call will now inform the unit that the call is closed (for them) and will clear their screen.
 5. Dispatch Active Calls - 10-Status Logic
    * Unit 10-Statuses are updated in real-time. However, when a new dispatcher first loads in, existing calls are pulled from the database. When a unit updates their status, this is not updated in the unit's current active call. As a result, dispatchers loading in previous calls will show unit's status colors incorrectly. Dispatchers now search locally for updated unit statuses on their active calls list.
 6. Status - Cooldown
@@ -4093,4 +4094,3 @@ App Logo - Android
    * Fixed an issue where sidebar navigation items would be incorrect when refreshing the community admin, police or dispatch page.
 {% endtab %}
 {% endtabs %}
-

@@ -7,7 +7,7 @@ description: >-
 # Kick
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **Standard** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **Standard **version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -31,4 +31,3 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 4. Set Your API ID
 
 This plugin kicks user accounts from the CAD based upon their [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md). Be sure your members have this set properly to properly link your in-game user to the CAD.
-

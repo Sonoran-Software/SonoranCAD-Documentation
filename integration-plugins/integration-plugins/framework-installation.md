@@ -7,15 +7,15 @@ description: >-
 # Framework Installation
 
 {% hint style="warning" %}
-All Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
+All Sonoran CAD integration plugins require the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!  
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!\
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/banner_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/banner\_3.png)
 
 ## Installation Video
 
@@ -64,32 +64,32 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 
 #### Configuration Details
 
-| Option | Description |
-| :--- | :--- |
-| communityID | Your SonoranCAD [Community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md). |
-| apiKey | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings. |
-| postTime | Update locations every x ms. Default 5000. It is recommend to not set this lower than 5000 ms due to rate limiting. |
-| serverId | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here. |
-| primaryIdentifier | The identifier type your community uses in the CAD to enter their API IDs. Valid values are: `license`, `steam`, or `discord.` |
-| apiSendEnabled | When disabled, the integration will not send any API requests to SonoranCAD. |
-| debugMode | When set to `true`, useful debugging information it outputted to the console. Keep disabled in production due to console spam. This can be toggled by entering `sonoran debugmode` in console. |
-| updateBranch | Use this branch when checking for updates. Keep `master` unless you know what you're doing. |
-| statusLabels | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings. |
-| allowAutoUpdate | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours. |
-| autoUpdateUrl | Where to check for updated versions. Don't touch this unless you have a reason. |
-| allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players. |
-| noUnitTimer | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache. |
-| enableCanary | When enabled, allows the CAD to update to beta \(aka canary\) releases. |
-| forceSetApiId | When enabled, the tablet resource will show an alert message stating they must set their API ID. |
+| Option                 | Description                                                                                                                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| communityID            | Your SonoranCAD [Community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).                                                                                                             |
+| apiKey                 | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings.                                                                                               |
+| postTime               | <p>Update locations every x ms. Default 5000.<br>It is recommend to not set this lower than 5000 ms due to rate limiting.</p>                                                                                                     |
+| serverId               | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here.                                                                                                   |
+| primaryIdentifier      | <p>The identifier type your community uses in the CAD to enter their API IDs.<br>Valid values are: <code>license</code>, <code>steam</code>, or <code>discord.</code></p>                                                         |
+| apiSendEnabled         | When disabled, the integration will not send any API requests to SonoranCAD.                                                                                                                                                      |
+| debugMode              | <p>When set to <code>true</code>, useful debugging information it outputted to the console.<br>Keep disabled in production due to console spam.<br>This can be toggled by entering <code>sonoran debugmode</code> in console.</p> |
+| updateBranch           | <p>Use this branch when checking for updates.<br>Keep <code>master</code> unless you know what you're doing.</p>                                                                                                                  |
+| statusLabels           | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings.                                                                                                     |
+| allowAutoUpdate        | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours.                                                                                                           |
+| autoUpdateUrl          | Where to check for updated versions. Don't touch this unless you have a reason.                                                                                                                                                   |
+| allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players.     |
+| noUnitTimer            | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache.                                                                           |
+| enableCanary           | When enabled, allows the CAD to update to beta (aka canary) releases.                                                                                                                                                             |
+| forceSetApiId          | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                  |
 
 ### 4. Server Config
 
-Add the following to your `server.cfg` \(if you don't want pNotify or wraith, leave those out\):
+Add the following to your `server.cfg` (if you don't want pNotify or wraith, leave those out):
 
 {% hint style="danger" %}
 It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
 
-**DO NOT** start the whole \[sonorancad\] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
+**DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
 ```javascript
@@ -109,31 +109,31 @@ Starting with framework version 2.6.2, you can override any configuration option
 
 For example, `set sonoran_serverId 2` in your server configuration will set the server ID of your server to `2` regardless of what `config.json` is set to. This is useful for communities that share the same resources.
 
-IMPORTANT: This feature does not work with arrays \(like statusLabels\). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
+IMPORTANT: This feature does not work with arrays (like statusLabels). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
 
 ### 5. Configure Push Events
 
-In the CAD admin panel, navigate to: Advanced &gt; In-Game Integration  
+In the CAD admin panel, navigate to: Advanced > In-Game Integration\
 Expand the "Server Events and Integrated Live Map" section.
 
 Enter your server's public IP address and your game server's port. By default, this is port `30120`.
 
 #### 5A. Admin Panel Configuration
 
-Set your game server port and IP address in the admin panel of Sonoran CAD.  
+Set your game server port and IP address in the admin panel of Sonoran CAD.\
 The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map/).
 
-![Sonoran CAD - Push Events and Map Port](../../.gitbook/assets/image%20%28157%29.png)
+![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (157).png>)
 
 Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
 
 ### 6. Installing Plugins
 
-Check out our [Available Plugins](available-plugins/) to make the integration useful.  
-For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.  
+Check out our [Available Plugins](available-plugins/) to make the integration useful.\
+For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.\
 You can also view our [standard plugin installation guide](plugin-installation/).
 
-### 7. Using the wk\_wars2x Radar
+### 7. Using the wk_wars2x Radar
 
 As of new installations, the configuration file has been renamed to prevent it being overwritten by updates. To use the radar for the first time, you must rename the file `config.dist.lua` within the `wk_wars2x` folder to `config.lua`.
 
@@ -147,13 +147,12 @@ Or, run `sonoran update` to instantly check and apply any updates for the framew
 
 The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update plugins, and more.
 
-| Command | Description |
-| :--- | :--- |
-| `sonoran help` | Display list of commands |
-| `sonoran update` | Run core/framework updater |
-| `sonoran pluginupdate` | Run plugin updater |
-| `sonoran plugin <name>` | Display information about a plugin |
-| `sonoran debugmode` | Toggle debug mode on/off |
-| `sonoran info` | Dump version info and configuration data |
-| `sonoran support` | Dump information for support staff |
-
+| Command                 | Description                              |
+| ----------------------- | ---------------------------------------- |
+| `sonoran help`          | Display list of commands                 |
+| `sonoran update`        | Run core/framework updater               |
+| `sonoran pluginupdate`  | Run plugin updater                       |
+| `sonoran plugin <name>` | Display information about a plugin       |
+| `sonoran debugmode`     | Toggle debug mode on/off                 |
+| `sonoran info`          | Dump version info and configuration data |
+| `sonoran support`       | Dump information for support staff       |
