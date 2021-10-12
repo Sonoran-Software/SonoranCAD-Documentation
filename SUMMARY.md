@@ -49,6 +49,7 @@
 * [Dispatching](tutorials/dispatching/README.md)
   * [Creating a Call](tutorials/dispatching/creating-a-call.md)
   * [Self Dispatch](tutorials/dispatching/self-dispatch.md)
+  * [Timers](tutorials/dispatching/timers.md)
 * [Records Management](tutorials/records-management/README.md)
   * [Record Lookups](tutorials/records-management/searching-for-records.md)
   * [Adding a Criminal Record](tutorials/records-management/adding-a-criminal-record.md)
