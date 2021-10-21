@@ -20,7 +20,7 @@ Your community ID is a unique identifier for your community. This is what users 
 EX: Arizona Serious Roleplay - ID: AZSRP
 {% endhint %}
 
-![The community CAD registration modal is shown as above](../../.gitbook/assets/new_community.png)
+![The community CAD registration modal is shown as above](../../.gitbook/assets/new\_community.PNG)
 
 #### 2. Register Your Community
 

@@ -8,7 +8,7 @@ description: Lean how to more easily view Sonoran CAD while in-game.
 
 ## Introduction
 
-Many users utilize Steam's browser/overlay system. The Steam browser utilizes an out-of-date version of [CEF ](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework)to run. Because of this, the Steam browser is known for it's infamous freezing, lagging, and general lack of support for developers.
+Many users utilize Steam's browser/overlay system. The Steam browser utilizes an out-of-date version of [CEF ](https://en.wikipedia.org/wiki/Chromium\_Embedded\_Framework)to run. Because of this, the Steam browser is known for it's infamous freezing, lagging, and general lack of support for developers.
 
 While the Steam browser works well for basic websites, some users may experience issues with larger web apps like Sonoran CAD.
 
@@ -20,10 +20,10 @@ While the Steam browser works well for basic websites, some users may experience
 
 ### 2. Configure your Hotkey
 
-Once you've opened the desktop app, open the settings modal to configure your `show` hotkey.  
+Once you've opened the desktop app, open the settings modal to configure your `show` hotkey.\
 When pressed, this will open the desktop app on-top of your game client.
 
-![Sonoran CAD - Desktop Hotkey: Show](../.gitbook/assets/image%20%28266%29.png)
+![Sonoran CAD - Desktop Hotkey: Show](<../.gitbook/assets/image (270).png>)
 
 ### 3. Configure your Game Client
 
@@ -31,20 +31,18 @@ Depending on what game you're running, ensure it's in "Borderless Windowed" mode
 
 In GTAV, this mode is actually just called `Full Screen`.
 
-![GTA - Windowed Borderless Mode](../.gitbook/assets/image%20%28268%29.png)
+![GTA - Windowed Borderless Mode](<../.gitbook/assets/image (271).png>)
 
-### 4. Auto-Hide Windows Taskbar \(Optional\)
+### 4. Auto-Hide Windows Taskbar (Optional)
 
 Specifically with streamers, some users may want to hide the Windows taskbar that appears when the CAD is placed on top of the game.
 
-To do so, simply right-click the taskbar &gt; Taskbar Settings &gt; Automatically Hide the Taskbar
+To do so, simply right-click the taskbar > Taskbar Settings > Automatically Hide the Taskbar
 
-![Taskbar - Auto Hide](../.gitbook/assets/image%20%28267%29.png)
+![Taskbar - Auto Hide](<../.gitbook/assets/image (272).png>)
 
 ### 5. Utilize the Hotkey
 
-In-game, simply press your hotkey to toggle the CAD display both on and off.  
+In-game, simply press your hotkey to toggle the CAD display both on and off.\
 When the CAD is toggled off, your game will automatically regain focus!
-
-
 

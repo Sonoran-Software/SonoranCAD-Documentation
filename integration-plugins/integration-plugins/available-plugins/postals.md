@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_postals/releases)to download the postals plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_postals/releases)to download the postals plugin .zip file.
 2. Download and install the [locations ](locations.md)plugin.
 
 ### 3. Install the Plugin and Dependencies
@@ -73,7 +73,7 @@ exports('getPostal', function() if nearest ~= nil then return postals[nearest.i]
 
 The screenshot below shows an example of the export above being pasted as the **very last line** in the nearest postal's `cl.lua` file (**not the Sonoran CAD plugin file**).
 
-![Nearest Postal's cl.lua File Example](<../../../.gitbook/assets/image (81).png>)
+![Nearest Postal's cl.lua File Example](<../../../.gitbook/assets/image (71).png>)
 
 #### 3. Ensure Proper Startup Order
 

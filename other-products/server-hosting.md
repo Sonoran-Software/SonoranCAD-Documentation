@@ -18,7 +18,7 @@ Looking to host your next gaming server? Sonoran Servers has you covered!
 
 ## Sonoran CAD - Free Plugin Installation and 30% Off Monthly
 
-![](../.gitbook/assets/banner\_3.png)
+![](../.gitbook/assets/Banner\_3.png)
 
 Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows Server Product.
 
@@ -26,7 +26,7 @@ Sonoran Servers customers are eligible to receive free CAD plugin installation a
 
 ## Five PD - Free Installation
 
-![](<../.gitbook/assets/image (127).png>)
+![](<../.gitbook/assets/image (117).png>)
 
 We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers are also eligible to receive free FivePD installation with the purchase of a Windows Server Product.‌
 

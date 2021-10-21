@@ -9,7 +9,7 @@ description: >-
 
 ## Free Plugin Installation
 
-![](../../.gitbook/assets/banner_2.png)
+![](../../.gitbook/assets/Banner\_2.png)
 
 ### 1. Purchase a Windows Server Product from Sonoran Servers
 
@@ -21,15 +21,14 @@ Reach out on our [customer support site](https://support.sonoransoftware.com) an
 
 ## CAD: 30% off Discount
 
-![Sonoran Servers &amp; Sonoran CAD - Bundle and Save!](../../.gitbook/assets/image%20%2889%29.png)
+![Sonoran Servers & Sonoran CAD - Bundle and Save!](<../../.gitbook/assets/image (83).png>)
 
 [Learn more about this offer!](https://info.sonoranservers.com/pricing/promotions-and-discounts/30-off-software)
 
 ## Free Five PD Installation
 
-![Sonoran Servers - Free Five PD Installation](../../.gitbook/assets/image%20%28127%29.png)
+![Sonoran Servers - Free Five PD Installation](<../../.gitbook/assets/image (117).png>)
 
 We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers can also receive free FivePD installation!
 
 [Learn more about our free Five PD installation](https://sonoranservers.com/fivepd.php)!
-

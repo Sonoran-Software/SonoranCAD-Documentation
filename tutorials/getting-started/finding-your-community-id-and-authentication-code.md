@@ -12,11 +12,11 @@ Looking to [change your community ID](../customization/community-branding-and-in
 
 #### 1. Your community ID is displayed in the side navigation bar while logged in:
 
-![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/id_bar.png)
+![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/id\_bar.png)
 
 #### 2. To find this ID in the admin page, navigate to "Advanced" > "Limits"
 
-![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/id_limits.png)
+![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/id\_limits.png)
 
 ### Authenticating your Ownership
 
@@ -32,4 +32,4 @@ This code is used in support tickets to confirm that you are the registered owne
 2. Press the "Request Code" button
 3. Your ownership authentication code will be displayed on the screen
 
-![Sonoran CAD's ownership authentication page](../../.gitbook/assets/auth.png)
+![Sonoran CAD's ownership authentication page](../../.gitbook/assets/auth.PNG)

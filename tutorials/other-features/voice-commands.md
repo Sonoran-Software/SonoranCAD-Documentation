@@ -7,7 +7,7 @@ description: >-
 # Voice Commands
 
 {% hint style="danger" %}
-Currently, Sonoran CAD only supports voice commands in the **Chrome desktop browser**. 
+Currently, Sonoran CAD only supports voice commands in the **Chrome desktop browser**.&#x20;
 
 Voice recognition is provided by Google, and performance may vary based upon pronunciation, speed, and other factors.
 {% endhint %}
@@ -16,13 +16,13 @@ Voice recognition is provided by Google, and performance may vary based upon pro
 
 When navigating to a page with voice commands enabled, the browser will prompt you for microphone access.
 
-![Enable microphone access](../../.gitbook/assets/voice_allow.png)
+![Enable microphone access](../../.gitbook/assets/voice\_allow.PNG)
 
 ### 2. Ensure Your Microphone is being Received
 
 Now that microphone access has been granted, a red circle will appear at the top right of the browser tab.
 
-![A red, blinking light appears in the browser tab](../../.gitbook/assets/voice_red.png)
+![A red, blinking light appears in the browser tab](../../.gitbook/assets/voice\_red.PNG)
 
 ### 3. Test out the Voice Commands
 
@@ -30,21 +30,19 @@ Your keyword can be changed from "Sonoran" to something customizable. For more i
 
 #### PANIC
 
-```text
+```
 Sonoran, Panic
 ```
 
 #### Lookup Name
 
-```text
+```
 Sonoran, lookup name John Doe
 ```
 
 #### Lookup Plate
 
-```text
+```
 Sonoran, lookup plate ABCD1234
 ```
-
-
 

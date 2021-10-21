@@ -14,15 +14,15 @@ API IDs are set individually per community. Your API IDs set in one community wi
 
 ### 1. Open Settings
 
-From the start menu, navigate to System &gt; Settings
+From the start menu, navigate to System > Settings
 
-![Sonoran CAD - Settings Navigation](../../../.gitbook/assets/image%20%28184%29.png)
+![Sonoran CAD - Settings Navigation](<../../../.gitbook/assets/image (163).png>)
 
 ### 2. Paste in your API ID and Press Save
 
 When inputting your API ID, it is important to note that it is **case-sensitive**. Make sure you are putting in the **proper upper and lower case letters**!
 
-![Sonoran CAD&apos;s API ID Setting](../../../.gitbook/assets/image%20%28185%29.png)
+![Sonoran CAD's API ID Setting](<../../../.gitbook/assets/image (165).png>)
 
 #### 1. Determine what API ID is Used
 
@@ -37,4 +37,3 @@ Assuming your community has the [API ID plugin](../../../integration-plugins/int
 #### 3. Retrieve your API ID from Discord
 
 If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../../integration-plugins/discord-bot/).
-

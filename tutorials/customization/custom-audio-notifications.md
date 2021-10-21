@@ -7,7 +7,7 @@ description: >-
 # Custom Audio Notifications
 
 {% hint style="info" %}
-Custom audio notifications are limited based upon your community's version.  
+Custom audio notifications are limited based upon your community's version.\
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -15,9 +15,9 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### 1. Access the Customization Menu
 
-In the admin page, navigate to `Customization` &gt; `Customization` &gt; `Notification Tones` 
+In the admin page, navigate to `Customization` > `Customization` > `Notification Tones`&#x20;
 
-![Sonoran CAD - Custom Audio Notifications](../../.gitbook/assets/image%20%28197%29.png)
+![Sonoran CAD - Custom Audio Notifications](<../../.gitbook/assets/image (204).png>)
 
 ### 2. Customize the Audio Tones
 
@@ -27,9 +27,8 @@ Here, you can specify the audio file that will play for new dispatches, panic so
 
 Don't forget to press save!
 
-### 4. Toggle On/Off Text-To-Speech \(Optional\)
+### 4. Toggle On/Off Text-To-Speech (Optional)
 
 Text-to-speech notifications are currently only available on the Chrome web version. You can toggle these on/off in the settings menu.
 
-![Sonoran CAD - Toggle TTS](../../.gitbook/assets/image%20%28201%29.png)
-
+![Sonoran CAD - Toggle TTS](<../../.gitbook/assets/image (205).png>)

@@ -12,10 +12,9 @@ Most modern browsers allow you to hold `Shift` and click `Refresh` at the same t
 
 ### Chrome - Settings
 
-In the Chrome address bar, paste the following:  
+In the Chrome address bar, paste the following:\
 `chrome://settings/clearBrowserData?search=cache`
 
 Select the following options and press `Clear Data`.
 
-![Chrome - Clear Cache](../.gitbook/assets/image%20%28150%29.png)
-
+![Chrome - Clear Cache](<../.gitbook/assets/image (135).png>)

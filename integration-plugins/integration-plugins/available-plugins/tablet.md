@@ -11,7 +11,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
-![Sonoran - In-Game Mini CAD](<../../../.gitbook/assets/image (270).png>)
+![Sonoran - In-Game Mini CAD](<../../../.gitbook/assets/image (273).png>)
 
 ## Installation
 
@@ -58,7 +58,7 @@ This plugin utilizes API endpoints that require the **Plus **version of Sonoran 
 
 * Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
 * While open, use `/showcad` to focus the minicad and allow the elements to be clickable, such as the Attach button.
-* You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window. 
+* You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window.&#x20;
 * (Experimental) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.
 * Use the `/minicadrefresh` command to refresh the Mini-CAD if it's not loading properly.
 * Controls

@@ -7,7 +7,7 @@ description: >-
 # PDF Records
 
 {% hint style="info" %}
-PDF records are not included with the free version.  
+PDF records are not included with the free version.\
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -21,9 +21,9 @@ Your Ad-Blocker may be preventing the PDF from opening in a new window. Disable 
 
 To download a PDF copy of a criminal or civilian record, select the PDF button in the bottom action bar.
 
-![PDF print options are shown at the bottom of the record viewer](../../.gitbook/assets/screen-shot-2020-04-19-at-1.50.25-am.png)
+![PDF print options are shown at the bottom of the record viewer](<../../.gitbook/assets/Screen Shot 2020-04-19 at 1.50.25 AM.png>)
 
-![PDF records are generated and can be saved](../../.gitbook/assets/screen-shot-2020-04-19-at-1.51.53-am.png)
+![PDF records are generated and can be saved](<../../.gitbook/assets/Screen Shot 2020-04-19 at 1.51.53 AM.png>)
 
 ### Call Logs
 
@@ -33,7 +33,6 @@ Prior call logs can also be printed to a PDF record.
 2. Select the "Call History" tab
 3. Click the call and select "Print Call"
 
-![The &quot;Call History&quot; tab&apos;s PDF print option is displayed for all users](../../.gitbook/assets/screen-shot-2020-04-19-at-1.56.11-am.png)
+![The "Call History" tab's PDF print option is displayed for all users](<../../.gitbook/assets/Screen Shot 2020-04-19 at 1.56.11 AM.png>)
 
-![Call logs are formatted and printed to a PDF as shown](../../.gitbook/assets/screen-shot-2020-04-19-at-1.58.03-am.png)
-
+![Call logs are formatted and printed to a PDF as shown](<../../.gitbook/assets/Screen Shot 2020-04-19 at 1.58.03 AM.png>)

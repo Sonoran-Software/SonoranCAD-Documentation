@@ -37,11 +37,11 @@ Make sure you have not forgotten to enable the plugin in the plugin config file!
 
 Enter `sonoran info` into your server console.
 
-![Sonoran Info - Disabled Plugins](<../../../.gitbook/assets/image (57).png>)
+![Sonoran Info - Disabled Plugins](<../../../.gitbook/assets/image (52).png>)
 
 If the plugin you are having trouble with is listed as DISABLED, you may have forgotten to enable it in the plugin configuration.
 
-![The "enabled" field should be set to "true"](../../../.gitbook/assets/enable_config.png)
+![The "enabled" field should be set to "true"](../../../.gitbook/assets/enable\_config.png)
 
 ### 3. Ensure your plugin is up-to-date and download the latest release.
 
@@ -67,7 +67,7 @@ The image below shows an API Call being made from the server to Sonoran CAD. Thi
 
 Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's user account](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 
-![Debug Mode - Unit Location API Call](../../../.gitbook/assets/debug_console.png)
+![Debug Mode - Unit Location API Call](../../../.gitbook/assets/debug\_console.png)
 
 ### 2. Check the Community ID and API Key
 

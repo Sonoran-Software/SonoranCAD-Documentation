@@ -10,7 +10,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](other-products/server-hosting.md)!
 {% endhint %}
 
-![](.gitbook/assets/sonorancad-logo_full.png)
+![](<.gitbook/assets/SonoranCAD Logo\_Full.png>)
 
 ![Sonoran CAD's advanced dispatching and record management system](.gitbook/assets/layout\_3\_11.gif)
 
@@ -32,7 +32,7 @@ Check out our advanced integration features, custom plugin system, downloadable 
 
 * [Website](https://sonorancad.com/app/)
 * [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456)
-* [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en_US)
+* [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US)
 * [Windows Desktop](https://github.com/SonoranBrian/sc2\_quasar/releases/latest/download/Sonoran-CAD-Setup.exe)
 
 ### How do I get started?

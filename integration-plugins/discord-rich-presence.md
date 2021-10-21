@@ -13,11 +13,11 @@ For more information, see our [pricing](../pricing/faq/) or view how to check yo
 
 When running our [desktop application](../downloads/), Discord can automatically detect and display information about your community.
 
-![Sonoran CAD - Discord Rich Presence](<../.gitbook/assets/image (208).png>)
+![Sonoran CAD - Discord Rich Presence](<../.gitbook/assets/image (212).png>)
 
 ## Customizing your Rich Presence
 
-![Sonoran CAD - Discord Presence Customization](<../.gitbook/assets/image (211).png>)
+![Sonoran CAD - Discord Presence Customization](<../.gitbook/assets/image (214).png>)
 
 ### Customizing Buttons
 
@@ -43,11 +43,11 @@ Communities on the **Pro** version may customize the rich presence icon:
 
 On [https://discord.com/developers/applications](https://discord.com/developers/applications) create a new application
 
-![Discord Developer - New Application](<../.gitbook/assets/image (213).png>)
+![Discord Developer - New Application](<../.gitbook/assets/image (215).png>)
 
 #### 2. Copy your Client ID
 
-Under OAuth2, copy your `Client ID` 
+Under OAuth2, copy your `Client ID`&#x20;
 
 ![Discord Developer - Application Client ID](<../.gitbook/assets/image (216).png>)
 
@@ -55,17 +55,17 @@ Under OAuth2, copy your `Client ID`
 
 Next, upload an icon for your new application. Be sure to copy down the name of the icon for later.
 
-![Discord Developer - Application Icon](<../.gitbook/assets/image (212).png>)
+![Discord Developer - Application Icon](<../.gitbook/assets/image (217).png>)
 
 #### 4. Configure in Sonoran CAD
 
 Back in the admin customization menu, we can paste the Discord application's Client ID and Icon name.
 
-![Sonoran CAD - Custom Discord Presence Config](<../.gitbook/assets/image (215).png>)
+![Sonoran CAD - Custom Discord Presence Config](<../.gitbook/assets/image (218).png>)
 
 Once saved, your Discord presence for all community members will reflect your custom icon, title, and buttons.
 
-![Sonoran CAD - Custom Discord Presence View](<../.gitbook/assets/image (214).png>)
+![Sonoran CAD - Custom Discord Presence View](<../.gitbook/assets/image (219).png>)
 
 ## Toggle On/Off Rich Presence
 
@@ -77,4 +77,4 @@ To hide the invite button for your community's Discord rich presence, simply lea
 
 In the settings menu, users can toggle this display on or off for their individual desktop client.
 
-![Sonoran CAD Settings - Disable Discord's Rich Presence](<../.gitbook/assets/image (207).png>)
+![Sonoran CAD Settings - Disable Discord's Rich Presence](<../.gitbook/assets/image (213).png>)

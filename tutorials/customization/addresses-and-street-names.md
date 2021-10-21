@@ -15,9 +15,9 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### 1. Copy the Google Sheet
 
-Navigate to our official [street name Google sheet](https://docs.google.com/spreadsheets/u/1/d/1wMEiv1EcDI4VnTjCLbechJHzUEQoMQTK_ujWU3BfKIk/copy) and make a copy. Using a copy of our official sheet ensures your street names are formatted correctly.
+Navigate to our official [street name Google sheet](https://docs.google.com/spreadsheets/u/1/d/1wMEiv1EcDI4VnTjCLbechJHzUEQoMQTK\_ujWU3BfKIk/copy) and make a copy. Using a copy of our official sheet ensures your street names are formatted correctly.
 
-![Sonoran CAD - Copy Street Name Spreadsheet](<../../.gitbook/assets/image (118).png>)
+![Sonoran CAD - Copy Street Name Spreadsheet](<../../.gitbook/assets/image (107).png>)
 
 ### 2. Add Your Street Names
 
@@ -28,13 +28,13 @@ Now that you have copied this sheet into your Google Drive, you can add new rows
 ****Every street name must be on a separate row to be properly imported into Sonoran CAD.
 {% endhint %}
 
-![Sonoran CAD - Street Names CSV](<../../.gitbook/assets/image (116).png>)
+![Sonoran CAD - Street Names CSV](<../../.gitbook/assets/image (108).png>)
 
 ### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](<../../.gitbook/assets/image (119).png>)
+![Google Sheets - Download CSV](<../../.gitbook/assets/image (109).png>)
 
 ### 4. Import the CSV File
 
@@ -43,9 +43,9 @@ In Sonoran CAD, navigate to Admin > Customization > Customization > Addresses
 In the addresses section, select the "Import" button.\
 Then, select "CSV" as the import type and select your downloaded CSV file.
 
-![Sonoran CAD - Import Data](<../../.gitbook/assets/image (109).png>)
+![Sonoran CAD - Import Data](<../../.gitbook/assets/image (104).png>)
 
-![File Selector - Select CSV](<../../.gitbook/assets/image (117).png>)
+![File Selector - Select CSV](<../../.gitbook/assets/image (110).png>)
 
 After selecting the CSV file, your street names and addresses will be imported into the CAD and saved automatically.
 

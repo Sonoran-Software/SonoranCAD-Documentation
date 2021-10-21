@@ -30,7 +30,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran_esxsupport/releases/tag/latest) to download the esxsupport plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_esxsupport/releases/tag/latest) to download the esxsupport plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -42,7 +42,7 @@ _This step is only required if you wish to use the automatic fine capability._
 
 Be sure to have your game server IP and port set in the admin panel under `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
 
-![Sonoran CAD - Server IP and Port](<../../../.gitbook/assets/image (220).png>)
+![Sonoran CAD - Server IP and Port](<../../../.gitbook/assets/image (224).png>)
 
 ### 5. Set Your API ID
 
@@ -54,7 +54,7 @@ Review the `config_esxsupport.lua` file to configure the plugin to behave how yo
 
 ## Auto-Fines
 
-Civilians in-game can be automatically billed with esx_billing.
+Civilians in-game can be automatically billed with esx\_billing.
 
 To do so, simply enable `issueFines` in the config and add a list of custom record types to the `fineableForms` array. Also, be sure that you have [configured your server IP and port](esx-support.md#4-optional-add-your-game-server-ip-and-port) in the admin menu.
 

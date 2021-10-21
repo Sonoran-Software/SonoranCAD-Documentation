@@ -31,7 +31,7 @@ Records follow the standard record editing and lookup system, and require a civi
 \
 Reports can be searched in the unit's report center via number or identifier.
 
-![Sonoran CAD's Custom Record Types](<../../.gitbook/assets/image (2).png>)
+![Sonoran CAD's Custom Record Types](<../../.gitbook/assets/image (1).png>)
 
 ### 3. Add Custom and Pre-made Sections
 
@@ -39,13 +39,13 @@ Reports can be searched in the unit's report center via number or identifier.
 
 Add your desired custom and premade sections, edit fields, and more!
 
-![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (8).png>)
+![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (2).png>)
 
 If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one.
 
 The enable duplicate button allows users to click and create a new copy of the section while filing the record.
 
-![Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (18).png>)
+![Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (169).png>)
 
 {% tabs %}
 {% tab title="Field Type" %}
@@ -59,67 +59,67 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-![The 'SELECT' field option](<../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png>)
+![The 'SELECT' field option](<../../.gitbook/assets/image (3).png>)
 
-![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16) (2) (2) (2) (2) (2).png>)
+![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16).png>)
 
 #### 3. TextArea:
 
 The select field allows you to create a large text area.
 
-![The 'TEXTAREA' field option](<../../.gitbook/assets/image (21).png>)
+![The 'TEXTAREA' field option](<../../.gitbook/assets/image (4).png>)
 
-![A 'TEXTAREA' field shown in the record editor](<../../.gitbook/assets/image (1).png>)
+![A 'TEXTAREA' field shown in the record editor](<../../.gitbook/assets/image (5).png>)
 
 #### 4. Checkboxes
 
 The checkboxes type allows you to create multiple checkboxes, similar to the premade flags section.
 
-![The 'CHECKBOXES' field option](<../../.gitbook/assets/image (29).png>)
+![The 'CHECKBOXES' field option](<../../.gitbook/assets/image (26).png>)
 
-![A 'CHECKBOXES' field shown in the record editor.](<../../.gitbook/assets/image (34).png>)
+![A 'CHECKBOXES' field shown in the record editor.](<../../.gitbook/assets/image (27).png>)
 
 #### 5. Date
 
 The date field allows you to specify a date field. You can also specify the formatting in the mask column.
 
-![The 'DATE' field option](<../../.gitbook/assets/image (36).png>)
+![The 'DATE' field option](<../../.gitbook/assets/image (28).png>)
 
-![The 'DATE' field shown in the record editor](<../../.gitbook/assets/image (39).png>)
+![The 'DATE' field shown in the record editor](<../../.gitbook/assets/image (29).png>)
 
 #### 6. Time
 
 The time field allows you to specify a time field.
 
-![The 'TIME' field option](<../../.gitbook/assets/image (31).png>)
+![The 'TIME' field option](<../../.gitbook/assets/image (30).png>)
 
-![The 'TIME' field shown in the record editor](<../../.gitbook/assets/image (38).png>)
+![The 'TIME' field shown in the record editor](<../../.gitbook/assets/image (31).png>)
 
 #### 7. Image
 
 The image field allows you to specify an image to be displayed.
 
-![The 'IMAGE' field option.](<../../.gitbook/assets/image (40).png>)
+![The 'IMAGE' field option.](<../../.gitbook/assets/image (32).png>)
 
-![The 'IMAGE' field shown in the record editor](<../../.gitbook/assets/image (32).png>)
+![The 'IMAGE' field shown in the record editor](<../../.gitbook/assets/image (33).png>)
 
 #### 8. Linked Records
 
 The linked records field allows you to link and cross-reference other records and reports to this record.
 
-![Sonoran CAD - Linked Records](<../../.gitbook/assets/image (94).png>)
+![Sonoran CAD - Linked Records](<../../.gitbook/assets/image (85).png>)
 
 #### 9. Flags
 
 Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
 
-![Sonoran CAD - Custom Flags](<../../.gitbook/assets/image (95).png>)
+![Sonoran CAD - Custom Flags](<../../.gitbook/assets/image (86).png>)
 
 #### 10. Label
 
 Labels can display static text, along with color attributes.
 
-![Sonoran CAD - Custom Record Label](<../../.gitbook/assets/image (13).png>)
+![Sonoran CAD - Custom Record Label](<../../.gitbook/assets/image (168).png>)
 
 #### 11. Address
 
@@ -133,9 +133,9 @@ The address dropdown will auto-filter [street address names that have been impor
 
 This will show the field label and value in the lookup table preview.
 
-![Input field with PREVIEW toggled](<../../.gitbook/assets/image (14).png>)
+![Input field with PREVIEW toggled](<../../.gitbook/assets/image (6).png>)
 
-![Previewed field shown in a lookup table](<../../.gitbook/assets/image (5) (1).png>)
+![Previewed field shown in a lookup table](<../../.gitbook/assets/image (5) (2).png>)
 
 #### 2. Supervisor
 
@@ -143,17 +143,17 @@ This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.\
 
 
-![Input field with SUPERVISOR toggled](<../../.gitbook/assets/image (12).png>)
+![Input field with SUPERVISOR toggled](<../../.gitbook/assets/image (7).png>)
 
-![Supervisor field highlighted red](<../../.gitbook/assets/image (19).png>)
+![Supervisor field highlighted red](<../../.gitbook/assets/image (8).png>)
 
 #### 3. Required
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
-![Input field with REQUIRED toggled](<../../.gitbook/assets/image (22).png>)
+![Input field with REQUIRED toggled](<../../.gitbook/assets/image (9).png>)
 
-![Required field shown in the record editor](<../../.gitbook/assets/image (6).png>)
+![Required field shown in the record editor](<../../.gitbook/assets/image (10).png>)
 
 #### 4. Unique
 
@@ -161,9 +161,9 @@ Unique fields enforce that no duplicate values for this field are stored in the 
 
 Unique fields can only be on non-DB Sync records and in custom sections.
 
-![Sonoran CAD - Unique Field](<../../.gitbook/assets/image (20).png>)
+![Sonoran CAD - Unique Field](<../../.gitbook/assets/image (170).png>)
 
-![Sonoran CAD - Unique Field Error](<../../.gitbook/assets/image (16).png>)
+![Sonoran CAD - Unique Field Error](<../../.gitbook/assets/image (171).png>)
 {% endtab %}
 
 {% tab title="Field Mask" %}
@@ -179,13 +179,13 @@ The field mask allows you to specify a required format for the field.
 
 Specifying `###` allows the user to only enter 3 numbers in the field.
 
-![](<../../.gitbook/assets/image (35).png>)
+![](<../../.gitbook/assets/image (34).png>)
 
 #### Example: Phone Number
 
 Specifying `(###) ### - ####` formats the user's input into a phone number.
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../.gitbook/assets/image (35).png>)
 {% endtab %}
 
 {% tab title="Field Size" %}
@@ -193,9 +193,9 @@ The field size slider allows you to select a field size value between 1 and 12.
 
 Every row of a record has a space divisible by 12.
 
-![Record fields with sizes 3, 3, and 8](<../../.gitbook/assets/image (7).png>)
+![Record fields with sizes 3, 3, and 8](<../../.gitbook/assets/image (11).png>)
 
-![Record editor with custom field sizes](<../../.gitbook/assets/image (4).png>)
+![Record editor with custom field sizes](<../../.gitbook/assets/image (12).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -203,7 +203,7 @@ Every row of a record has a space divisible by 12.
 
 Be sure to set the record name, and press SAVE
 
-![Saving your new custom record](<../../.gitbook/assets/image (17).png>)
+![Saving your new custom record](<../../.gitbook/assets/image (13).png>)
 
 ## Using your new Record Type
 
@@ -217,7 +217,7 @@ In the police, dispatch, fire, or EMS page, select "REPORTS" in the top action m
 From here, you can create a new report, search existing reports, and view reports requiring supervisor actions.\
 
 
-![Sonoran CAD Reports Center](<../../.gitbook/assets/image (9).png>)
+![Sonoran CAD Reports Center](<../../.gitbook/assets/image (14).png>)
 
 ### 2. Creating a New Report
 

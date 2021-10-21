@@ -62,7 +62,7 @@ Next time you look up this character, it will pull the same character info from 
 
 ### 3. Enter the required fields below.
 
-![Sonoran CAD - DB Sync SQL Credentials](<../../.gitbook/assets/image (176).png>)
+![Sonoran CAD - DB Sync SQL Credentials](<../../.gitbook/assets/image (178).png>)
 
 | Field        | Description                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,7 +80,7 @@ This will query your database for the version.\
 \
 If you see an alert similar to the following, your connection is successful:
 
-![DB Sync - Connection Successful](<../../.gitbook/assets/image (155).png>)
+![DB Sync - Connection Successful](<../../.gitbook/assets/image (179).png>)
 
 If you see an error message, it's likely you have not [properly setup your new SQL user's credentials](database-sync-credentials.md) or opened the database port for external use.
 
@@ -108,9 +108,9 @@ Character records can also pull data from multiple different tables, such as a p
 
 In our database, the `characters` table contains our character records. The `identifier` column contains the character's unique ID, the `firstname` column contains the characters first name, the `lastname` character contains the characters last name, etc.
 
-![SQL Table Example](<../../.gitbook/assets/image (141).png>)
+![SQL Table Example](<../../.gitbook/assets/image (180).png>)
 
-![DB Sync Character Mapping Example](<../../.gitbook/assets/image (152).png>)
+![DB Sync Character Mapping Example](<../../.gitbook/assets/image (181).png>)
 
 ### 3. Enable, Save and Test
 
@@ -132,9 +132,9 @@ The vehicle and license mapping will also need to have the `Character Mapping Co
 
 In our database, the `owned_vehicles` table contains our stored vehicles. The `owner` column contains the character's unique ID that owns the vehicle, and the `plate` column contains the vehicle's license plate.
 
-![SQL Vehicle Table Example](<../../.gitbook/assets/image (132).png>)
+![SQL Vehicle Table Example](<../../.gitbook/assets/image (182).png>)
 
-![DB Sync - Vehicle Mapping Example](<../../.gitbook/assets/image (188).png>)
+![DB Sync - Vehicle Mapping Example](<../../.gitbook/assets/image (183).png>)
 
 ### 2. Enable, Save and Test
 
@@ -150,13 +150,13 @@ Many databases store data in a JSON formatted column. Sonoran CAD can also parse
 
 In our database, the `accounts` column stores JSON formatted data. For this example, we want to display the `bank` money in the custom character record.
 
-![SQL - JSON Column Example](<../../.gitbook/assets/image (153).png>)
+![SQL - JSON Column Example](<../../.gitbook/assets/image (184).png>)
 
 To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu).
 
 In the [JSON formatter](http://jsonviewer.stack.hu), we can paste it and select `Format`.
 
-![](<../../.gitbook/assets/image (187).png>)
+![](<../../.gitbook/assets/image (185).png>)
 
 We can see that the JSON "key" for the bank account amount is `bank`.
 
@@ -165,11 +165,11 @@ We can see that the JSON "key" for the bank account amount is `bank`.
 Nested JSON values are also supported.\
 Here, the `eye_color` is a JSON object, with the `item` property of `0`.
 
-![Database - Nested JSON Value](<../../.gitbook/assets/image (278).png>)
+![Database - Nested JSON Value](<../../.gitbook/assets/image (283).png>)
 
 In the DB Sync config, we list the JSON key as `eye_color.item`
 
-![](<../../.gitbook/assets/image (277).png>)
+![](<../../.gitbook/assets/image (284).png>)
 
 Then, we can use [friendly mapping](./#friendly-mapping) to convert the eye color `0` value to an actual color, like "brown".
 
@@ -185,7 +185,7 @@ In this example, the `vehicle` table contains all of the vehicle information, bu
 
 The `VehicleRegistrationId` column then maps to the `vehicleregistration` table. The `vehicleregistration` table then contains a corresponding `CharacterId` column, which maps back to the `character` table.
 
-![Sonoran CAD - External Key DB Layout](<../../.gitbook/assets/image (263).png>)
+![Sonoran CAD - External Key DB Layout](<../../.gitbook/assets/image (268).png>)
 
 ### Example: CAD Config
 
@@ -195,7 +195,7 @@ Toggle on the `External Key` checkbox, as the `vehicle` table's `VehicleId` need
 
 Specify the external key's table (`vehicleregistration`) and the external key's column `CharacterId`.
 
-![Sonoran CAD - External Key](<../../.gitbook/assets/image (265).png>)
+![Sonoran CAD - External Key](<../../.gitbook/assets/image (269).png>)
 
 ### 2. Set the JSON Column and Key
 
@@ -203,7 +203,7 @@ Back in the mapping panel, we toggle the field as a `JSON Column` and set the co
 
 We can then set the JSON Key for this data as `bank`.
 
-![DB Sync - JSON Column](<../../.gitbook/assets/image (139).png>)
+![DB Sync - JSON Column](<../../.gitbook/assets/image (186).png>)
 
 ## Friendly Mapping
 
@@ -214,13 +214,13 @@ Ex: `drive_license` in your database is converted to `Driver's License`.
 
 In our SQL table, we can see the character's job columns has text values that can be improved. The `taxi` job value can be automatically converted to `Taxi Driver` in DB Sync records, and the `cardealer` jon can be automatically converted to `Car Dealer`.
 
-![SQL Table - Unfriendly Values](<../../.gitbook/assets/image (173).png>)
+![SQL Table - Unfriendly Values](<../../.gitbook/assets/image (187).png>)
 
 ### 2. Configure the Friendly Mapping
 
 In our character table mapping, we can select `Modify` on the `job` field's friendly mapping.
 
-![DB Sync - Modify Friendly Mapping](<../../.gitbook/assets/image (160).png>)
+![DB Sync - Modify Friendly Mapping](<../../.gitbook/assets/image (188).png>)
 
 In the editor, we can now map the raw database value of `taxi` to a friendly value of `Taxi Driver` and the raw db value of `cardealer` to `Car Dealer`.
 
@@ -228,7 +228,7 @@ Be sure to hit save in the friendly mapping editor, and then save the configurat
 
 These new friendly mapped values will even work with [custom search types](../../tutorials/customization/custom-search-types.md)!
 
-![Friendly Mapping Editor](<../../.gitbook/assets/image (143).png>)
+![Friendly Mapping Editor](<../../.gitbook/assets/image (189).png>)
 
 ### Import via CSV
 
@@ -238,19 +238,19 @@ Navigate to our [official friendly mapping Google Sheet](https://docs.google.com
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 
-![Sonoran CAD - Copy Friendly Mapping CSV](<../../.gitbook/assets/image (285).png>)
+![Sonoran CAD - Copy Friendly Mapping CSV](<../../.gitbook/assets/image (286).png>)
 
 **2. Add your Friendly Mappings**
 
 Be sure to leave the top header line as it is. Below the header, add in your friendly mapping keys and values.
 
-![Sonoran CAD - Edit Friendly Mapping CSV](<../../.gitbook/assets/image (284).png>)
+![Sonoran CAD - Edit Friendly Mapping CSV](<../../.gitbook/assets/image (287).png>)
 
 #### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Sonoran CAD - Download Friendly Mapping CSV](<../../.gitbook/assets/image (282).png>)
+![Sonoran CAD - Download Friendly Mapping CSV](<../../.gitbook/assets/image (288).png>)
 
 #### 4. Import the CSV File
 
@@ -258,7 +258,7 @@ In the friendly mapping editor select `Import` > `CSV` > Select your downloaded 
 
 Then, save the mapping and save the database sync config.
 
-![](<../../.gitbook/assets/image (283).png>)
+![](<../../.gitbook/assets/image (289).png>)
 
 ### Import from JSON
 
@@ -289,7 +289,7 @@ The JSON structure is an object array. Be sure to strictly follow the format.
 
 In the friendly mapping editor select `Import` > `JSON` > Paste your JSON formatted structure
 
-![Friendly Mapping - Import via JSON](<../../.gitbook/assets/image (281).png>)
+![Friendly Mapping - Import via JSON](<../../.gitbook/assets/image (285).png>)
 
 ## Custom Record Fields
 
@@ -305,10 +305,10 @@ Simply check the box to enable database sync mapping for any new or existing fie
 
 Be sure to save your custom record format after enabling this!
 
-![Custom Records - DB Sync Mapping Toggle](<../../.gitbook/assets/image (186).png>)
+![Custom Records - DB Sync Mapping Toggle](<../../.gitbook/assets/image (190).png>)
 
 ### 2. Configure the Newly Mapped Field
 
 Back in our database sync editor, we can now see the new `Job` field has been added. We can map this new field to our database as any other field.
 
-![Database Sync - Custom Field Mapping](<../../.gitbook/assets/image (133).png>)
+![Database Sync - Custom Field Mapping](<../../.gitbook/assets/image (191).png>)

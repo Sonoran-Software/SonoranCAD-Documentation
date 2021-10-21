@@ -6,13 +6,13 @@ description: Learn more about Sonoran CAD's advanced logging feature!
 
 Sonoran CAD logs all user actions in-depth, allowing community administrators to take action against user abuse and help debug common issues.
 
-![Sonoran CAD - Admin Logs](../../.gitbook/assets/image%20%28260%29.png)
+![Sonoran CAD - Admin Logs](<../../.gitbook/assets/image (264).png>)
 
 ## Searching for Logs
 
 ### 1. Access the Log Panel
 
-In the admin page, navigate to `Advanced` &gt; `Logs`
+In the admin page, navigate to `Advanced` > `Logs`
 
 ### 2. Filtering and Searching for Logs
 
@@ -24,14 +24,14 @@ The log `Type` dropdown allows you to search and select specific log types. This
 
 If left blank, no log filtering will be applied.
 
-![](../../.gitbook/assets/image%20%28259%29.png)
+![](<../../.gitbook/assets/image (262).png>)
 
 #### Log Date
 
-The log `Date` selection allows you to choose the specific date the logs are from.  
+The log `Date` selection allows you to choose the specific date the logs are from.\
 _Note: Dates and the accompanying timestamps are based in UTC._
 
-![](../../.gitbook/assets/image%20%28258%29.png)
+![](<../../.gitbook/assets/image (263).png>)
 
 #### Username
 
@@ -40,4 +40,3 @@ The log `Username` selection allows you to search and filter logs down to a spec
 #### Log Text
 
 You can also filter logs based on partial text put into the `Log` field.
-

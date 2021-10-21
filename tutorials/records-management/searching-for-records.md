@@ -8,10 +8,10 @@ description: >-
 
 ## Getting Started
 
-From the start menu select `Record Management` &gt; `Lookup` to open a new lookup window.  
+From the start menu select `Record Management` > `Lookup` to open a new lookup window.\
 You can also [minimize and pin this window type](../customization/customizing-your-layout.md#7-tab-system) to your taskbar for faster access.
 
-![Sonoran CAD - New Lookup](../../.gitbook/assets/image%20%28253%29.png)
+![Sonoran CAD - New Lookup](<../../.gitbook/assets/image (255).png>)
 
 ## Running a Search
 
@@ -33,7 +33,7 @@ Click on the filter button just above the results tab to expand the filters sect
 
 Here, you can toggle on/off exactly what record types to search for.
 
-![](../../.gitbook/assets/image%20%28250%29.png)
+![](<../../.gitbook/assets/image (256).png>)
 
 ### Send Lookup to Units
 
@@ -45,7 +45,7 @@ You can click on any active unit and select `Lookup` to open a new lookup window
 
 Additionally, units and unit groups can be dragged-and-dropped directly to the lookup window.
 
-![Sonoran CAD - Send Lookup to Unit\(s\)](../../.gitbook/assets/sendlookup%20%281%29.gif)
+![Sonoran CAD - Send Lookup to Unit(s)](../../.gitbook/assets/sendlookup.gif)
 
 #### Manual Search and Selection
 
@@ -53,7 +53,7 @@ Next to the search button, you can click on the `Send to Unit(s)` button to togg
 
 Using the dropdown, you can type to filter active units or select them from the list directly.
 
-![Sonoran CAD - Send Lookup to Unit\(s\)](../../.gitbook/assets/sendlookup.gif)
+![Sonoran CAD - Send Lookup to Unit(s)](<../../.gitbook/assets/sendlookup (1).gif>)
 
 ### Lookup from Plate Lock
 
@@ -69,5 +69,4 @@ Any record results returned can be opened and printed to [PDF](pdf-records.md).
 
 
 
-## 
-
+##

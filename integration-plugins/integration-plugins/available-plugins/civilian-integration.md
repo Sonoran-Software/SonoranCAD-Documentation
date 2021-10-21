@@ -14,7 +14,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 This plugin allows players to fetch their character information from the CAD. Basic functionality is provided with the /showid command, but developers are encouraged to use the export for their own creations.
 
-![Sonoran CAD - Civilian Integration Lookup](../../../.gitbook/assets/screen-shot-2020-12-12-at-10.00.21-pm.png)
+![Sonoran CAD - Civilian Integration Lookup](<../../../.gitbook/assets/Screen Shot 2020-12-12 at 10.00.21 PM.png>)
 
 ## Installation
 
@@ -24,7 +24,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran_civintegration/releases/tag/latest) to download the `civilianintegration` plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_civintegration/releases/tag/latest) to download the `civilianintegration` plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -36,12 +36,12 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 ## Further Configuration
 
-| Option | Description | Default Value |
-| :--- | :--- | :--- |
-| cacheTime | Time to cache characters in seconds | 3600 |
-| allowCustomIds | Allow players to use /setid to set a custom name. | true |
-| allowPurge | Allow players to use /refreshid to "purge" their character list from cache. | true |
-| enableIDCardUI | **Recommended**: Allows for a more realistic identification ui with /showid | false |
+| Option         | Description                                                                 | Default Value |
+| -------------- | --------------------------------------------------------------------------- | ------------- |
+| cacheTime      | Time to cache characters in seconds                                         | 3600          |
+| allowCustomIds | Allow players to use /setid to set a custom name.                           | true          |
+| allowPurge     | Allow players to use /refreshid to "purge" their character list from cache. | true          |
+| enableIDCardUI | **Recommended**: Allows for a more realistic identification ui with /showid | false         |
 
 ## Usage
 
@@ -49,12 +49,12 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 The plugin comes with a few basic commands to show off the functionality.
 
-| Command | Description |
-| :--- | :--- |
-| /showid \[id\] | Shows the current ID of the specified player ID. If not specified, will show the current player's ID. Currently, it is displayed only to the calling client. |
-| /setid | Sets a custom ID \(first/last name, and date of birth\). Overrides the currently selected CAD ID. Can be disabled in configuration. |
-| /resetid | Resets the custom ID specified above. |
-| /refreshid | Removes the "cached" characters for the client. This allows players to swap characters in the CAD without relogging or waiting for the cache timer. |
+| Command       | Description                                                                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| /showid \[id] | Shows the current ID of the specified player ID. If not specified, will show the current player's ID. Currently, it is displayed only to the calling client. |
+| /setid        | Sets a custom ID (first/last name, and date of birth). Overrides the currently selected CAD ID. Can be disabled in configuration.                            |
+| /resetid      | Resets the custom ID specified above.                                                                                                                        |
+| /refreshid    | Removes the "cached" characters for the client. This allows players to swap characters in the CAD without relogging or waiting for the cache timer.          |
 
 ### Export
 
@@ -72,5 +72,4 @@ Example:
     end)
 ```
 
-This function can also be used in other plugins \(without the export bit\).
-
+This function can also be used in other plugins (without the export bit).

@@ -15,7 +15,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/Banner\_3.png)
 
 ## Installation Video
 
@@ -89,7 +89,7 @@ Add the following to your `server.cfg` (if you don't want pNotify or wraith, lea
 {% hint style="danger" %}
 It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
 
-**DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
+**DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
 ```javascript
@@ -123,7 +123,7 @@ Enter your server's public IP address and your game server's port. By default, t
 Set your game server port and IP address in the admin panel of Sonoran CAD.\
 The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map/).
 
-![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (157).png>)
+![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (144).png>)
 
 Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
 
@@ -133,7 +133,7 @@ Check out our [Available Plugins](available-plugins/) to make the integration us
 For basic functionality, we recommend at least the [`locations`](available-plugins/locations.md), [`callcommands`](available-plugins/call-commands.md), and [`postals`](available-plugins/postals.md) plugins.\
 You can also view our [standard plugin installation guide](plugin-installation/).
 
-### 7. Using the wk_wars2x Radar
+### 7. Using the wk\_wars2x Radar
 
 As of new installations, the configuration file has been renamed to prevent it being overwritten by updates. To use the radar for the first time, you must rename the file `config.dist.lua` within the `wk_wars2x` folder to `config.lua`.
 

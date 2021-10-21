@@ -6,7 +6,7 @@ description: >-
 
 # Free Plugin Installation - Next Steps
 
-![Sonoran Servers - CAD Bundle Program](https://gblobscdn.gitbook.com/assets%2F-M4pGN81fb4R6zFhodcu%2F-MU0jWI0XNTj0okGoEY2%2F-MU0kAzkpUlHYFxoJw2f%2FBanner_3.png?alt=media&token=31511ed4-b1cb-4abe-a60a-c0f02790ca35)
+![Sonoran Servers - CAD Bundle Program](https://gblobscdn.gitbook.com/assets%2F-M4pGN81fb4R6zFhodcu%2F-MU0jWI0XNTj0okGoEY2%2F-MU0kAzkpUlHYFxoJw2f%2FBanner\_3.png?alt=media\&token=31511ed4-b1cb-4abe-a60a-c0f02790ca35)
 
 If you haven't already, [check out our page for more information on this promotion](../../pricing/faq/bundle-discount-sonoran-servers.md).
 
@@ -14,17 +14,16 @@ If you haven't already, [check out our page for more information on this promoti
 
 Every plugin installed will have a separate folder. These are located in the `\sonorancad\plugins` directory.
 
-![Sonoran CAD - Plugin Folders](../../.gitbook/assets/image%20%28129%29.png)
+![Sonoran CAD - Plugin Folders](<../../.gitbook/assets/image (118).png>)
 
 ## 2. View and Change Configuration Files
 
 For every Sonoran CAD plugin installed, there will be a `config_{pluginName}.lua` file present.
 
-![Sonoran CAD - Plugin Config File](../../.gitbook/assets/image%20%28128%29.png)
+![Sonoran CAD - Plugin Config File](<../../.gitbook/assets/image (119).png>)
 
 You can open these configuration files with a text editor and change values.
 
 For more information on a plugin's configuration options, you can view the individual plugin guides on the [Available Plugins](available-plugins/) page and scroll down to the configuration section.
 
 If you modify a configuration file, be sure to save it and `restart sonorancad` in your server console, or restart the server.
-

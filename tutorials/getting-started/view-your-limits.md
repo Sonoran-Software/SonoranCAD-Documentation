@@ -6,13 +6,12 @@ description: >-
 
 # View Your Limits
 
-### Admin &gt; Advanced &gt; Limits
+### Admin > Advanced > Limits
 
-In the admin page, select "Advanced" &gt; "Limits" to view your community limitations.
+In the admin page, select "Advanced" > "Limits" to view your community limitations.
 
-![Sonoran CAD&apos;s limits section](../../.gitbook/assets/limits.png)
+![Sonoran CAD's limits section](../../.gitbook/assets/limits.PNG)
 
 ### Interested in a Paid Subscription?
 
 View our [pricing ](https://app.sonorancad.com/#/pricing)page for more information!
-

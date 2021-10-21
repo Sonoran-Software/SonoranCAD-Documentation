@@ -9,7 +9,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/Banner\_3.png)
 
 ## When are Player Blips Displayed?
 
@@ -23,7 +23,7 @@ Players will only show on the map when **ALL** of the following conditions are m
    * If the server API IDs are based on the Steam HEX,** the player must have Steam running**.
    * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
-## ERROR: Couldn't start resource sonoran_livemap
+## ERROR: Couldn't start resource sonoran\_livemap
 
 ![Error message without starting webpack](<../../../../.gitbook/assets/image (203).png>)
 
@@ -43,7 +43,7 @@ Navigate to `mapIp:gamePort/info.json` in your web browser:
 
 _Your game port is typically `30120` by default, but could be different for others._
 
-![View your resource manifest for active plugins](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.22.58-pm.png)
+![View your resource manifest for active plugins](<../../../../.gitbook/assets/Screen Shot 2020-06-20 at 12.22.58 PM.png>)
 
 You can search (control/command + f) for the keyword "map".
 
@@ -61,14 +61,14 @@ If you are using/forwarding ports other than the default `30121` (map port) and 
 
 Ensure the IP and ports are listed correctly without spaces, common mistypes, possible incorrect port numbers, etc.
 
-![Ensure your map IP, map port, and game port are set correctly](../../../../.gitbook/assets/livemap_config.png)
+![Ensure your map IP, map port, and game port are set correctly](../../../../.gitbook/assets/livemap\_config.png)
 
 ### 3B. Ensure the Map Port is Open
 
 Navigate to `mapIp:mapPort/blips.json` in a web browser:\
 You should see brackets **with or without additional blip data**.
 
-![View your blips.json file](../../../../.gitbook/assets/screen-shot-2020-06-20-at-12.10.28-pm.png)
+![View your blips.json file](<../../../../.gitbook/assets/Screen Shot 2020-06-20 at 12.10.28 PM.png>)
 
 If you do **not** see the brackets (with or without additional data), the issue may be caused by one of the following:
 
@@ -84,7 +84,7 @@ If you do **not** see the brackets (with or without additional data), the issue 
 
 Navigate to `mapIp:gamePort/sonorancad/event` in your web browser, you should see the following page. This means that you have properly configured your push events listener page:
 
-![Event Listener: Web Browser View](<../../../../.gitbook/assets/image (161).png>)
+![Event Listener: Web Browser View](<../../../../.gitbook/assets/image (145).png>)
 
 If the page is not displayed, the issue may be caused by one of the following:
 
@@ -118,17 +118,17 @@ Push events are sent to your server when a unit signs into the CAD (on the polic
 
 You should see push events being received with the types `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, and `EVENT_UNIT_STATUS` when those actions are performed in the CAD.
 
-| Event             | Description                                      |
-| ----------------- | ------------------------------------------------ |
-| EVENT_UNIT_LOGIN  | When you login to the police, fire, or EMS page. |
-| EVENT_UNIT_LOGOUT | When you exit the police, fire, or EMS page.     |
-| EVENT_UNIT_STATUS | When your unit status is updated.                |
+| Event               | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| EVENT\_UNIT\_LOGIN  | When you login to the police, fire, or EMS page. |
+| EVENT\_UNIT\_LOGOUT | When you exit the police, fire, or EMS page.     |
+| EVENT\_UNIT\_STATUS | When your unit status is updated.                |
 
 Ensure the `APIID` listed in the push event data matches the [API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 
 If the `APIID` listed is different, [update your API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to the one displayed in debug mode. **These IDs must match up exactly**.
 
-![](<../../../../.gitbook/assets/image (27).png>)
+![](<../../../../.gitbook/assets/image (23).png>)
 
 If you do not see the  `EVENT_UNIT_LOGIN`, `EVENT_UNIT_LOGOUT`, or`EVENT_UNIT_STATUS` push events displayed in debug mode when you perform these actions in the CAD, **double check that your push events listener is correctly setup in step 3C**.
 

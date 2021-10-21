@@ -32,7 +32,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and Dependencies
 
-1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran_wraithv2/releases)to download the WraithV2 plugin .zip file.
+1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran\_wraithv2/releases)to download the WraithV2 plugin .zip file.
 2. Download and install the [lookups ](lookups.md)plugin.
 3. Ensure the third-party [pNotify](https://github.com/Nick78111/pNotify) addon is installed.
 
@@ -69,7 +69,7 @@ In the CAD navigate to Admin > Customization > Custom Records > select your cust
 
 The very last column of the field containing your status and expiration dates will have the field's UID (unique identifier, sometimes referred to as 'field mapping id').
 
-![Custom Records - Field UID](<../../../.gitbook/assets/image (130).png>)
+![Custom Records - Field UID](<../../../.gitbook/assets/image (177).png>)
 
 #### Set the UID in your Config
 
@@ -90,4 +90,4 @@ In order to have locked plate results sent back to your CAD, don't forget to set
 For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
-![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (26).png>)
+![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (21).png>)

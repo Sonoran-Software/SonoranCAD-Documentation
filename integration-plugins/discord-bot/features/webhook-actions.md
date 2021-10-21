@@ -16,48 +16,12 @@ When a Discord webhook is fired, SonoranBot will add a reaction allowing you to 
 
 ### Available Reactions
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Webhook</th>
-      <th style="text-align:left">Reaction Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">New Dispatch</td>
-      <td style="text-align:left">
-        <p>React to attach to the dispatch call in the CAD.</p>
-        <p>Remove the reaction to detach.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Modified Dispatch</td>
-      <td style="text-align:left">
-        <p>React to attach to the dispatch call in the CAD.</p>
-        <p>Remove the reaction to detach.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">New Record</td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Automatically populates a record search with the record being the result.
-          Depending on the record, related records will also appear in the search.
-          Must be in one of the menus (such as Police or DMV) for this to work.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Modified Record</td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Automatically populates a record search with the record being the result.
-          Depending on the record, related records will also appear in the search.
-          Must be in one of the menus (such as Police or DMV) for this to work.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Webhook           | Reaction Description                                                                                                                                                                                                                   |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| New Dispatch      | <p>React to attach to the dispatch call in the CAD.</p><p>Remove the reaction to detach.</p>                                                                                                                                           |
+| Modified Dispatch | <p>React to attach to the dispatch call in the CAD.</p><p>Remove the reaction to detach.</p>                                                                                                                                           |
+| New Record        | <p></p><p>Automatically populates a record search with the record being the result. Depending on the record, related records will also appear in the search. Must be in one of the menus (such as Police or DMV) for this to work.</p> |
+| Modified Record   | <p></p><p>Automatically populates a record search with the record being the result. Depending on the record, related records will also appear in the search. Must be in one of the menus (such as Police or DMV) for this to work.</p> |
 
 ### Setting Up
 
@@ -68,9 +32,8 @@ When a Discord webhook is fired, SonoranBot will add a reaction allowing you to 
 
 ### Call Attachment
 
-![](../../../.gitbook/assets/image%20%28189%29.png)
+![](<../../../.gitbook/assets/image (192).png>)
 
 ### Opening a Record
 
 ![](../../../.gitbook/assets/record.png)
-

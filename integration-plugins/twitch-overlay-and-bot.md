@@ -10,9 +10,9 @@ description: >-
 
 ![Sonoran CAD - Live Stream Overlay](<../.gitbook/assets/overlay (2).gif>)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (276).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (279).png>)
 
-![Stream Overlay - Bodycam](<../.gitbook/assets/image (255).png>)
+![Stream Overlay - Bodycam](<../.gitbook/assets/image (258).png>)
 
 ## What is Sonoran CAD's Livestream Overlay?
 
@@ -60,18 +60,18 @@ Here, you can enable and customize the data placement and keys just as before wi
 
 You can also optionally specify a different port for the bodycam webpage to run on (`9990` is the default).
 
-![](<../.gitbook/assets/image (256).png>)
+![](<../.gitbook/assets/image (259).png>)
 
 ### 3. Add the Bodycam to OBS
 
 In OBS, add a new "Browser" source and paste the URL listed in the bodycam section.\
 By default, this will be `http://localhost:9990`
 
-![OBS - New Browser Source](<../.gitbook/assets/image (257).png>)
+![OBS - New Browser Source](<../.gitbook/assets/image (260).png>)
 
 Paste the URL into the browser source and hit OK.
 
-![](<../.gitbook/assets/image (254).png>)
+![](<../.gitbook/assets/image (261).png>)
 
 ### 4. Customize the Size and Placement
 
@@ -81,7 +81,7 @@ You can now customize the size and placement of this browser window in OBS as yo
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (275).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (280).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
@@ -129,7 +129,7 @@ The smart lighting section has multiple `Scenes`
 
 Expand the `Scene` > `Add Bulb` > `Search for Bulbs` > Select `Wyze` or `Philips Hue`
 
-![Sonoran CAD - Scan for Smart Bulbs](<../.gitbook/assets/image (271).png>)
+![Sonoran CAD - Scan for Smart Bulbs](<../.gitbook/assets/image (276).png>)
 
 #### Credentials: Wyze
 
@@ -151,9 +151,9 @@ You may need to manually enter the bridge's IP address. This is most easily foun
 5. Toggle `DHCP` On
 6. Scan for the bridge in Sonoran CAD
 
-![Philips Hue - Copy Bridge IP](<../.gitbook/assets/image (279).png>)
+![Philips Hue - Copy Bridge IP](<../.gitbook/assets/image (281).png>)
 
-![Sonoran CAD - Manual Hue Bridge IP](<../.gitbook/assets/image (280).png>)
+![Sonoran CAD - Manual Hue Bridge IP](<../.gitbook/assets/image (282).png>)
 
 #### Credentials: Govee WiFi
 
@@ -163,7 +163,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-![](<../.gitbook/assets/image (286).png>)
+![](<../.gitbook/assets/image (290).png>)
 
 **2. Retrieve your API Key and Search**
 
@@ -179,7 +179,7 @@ Sonoran CAD will scan for all locally active Bluetooth devices. Govee bulbs will
 
 If your bulb is not discoverable, turn the bulb's power off entirely for \~5 seconds then turn it back on. This should place your bulb into discovery mode.
 
-![](<../.gitbook/assets/image (287).png>)
+![](<../.gitbook/assets/image (293).png>)
 
 **2. Add the Bulb**
 
@@ -187,7 +187,7 @@ Click on the Bluetooth bulb to add it to your scene, and continue on to building
 
 Bluetooth bulbs will have their status listed on the left side. When you click the `Test` button, it may **take up to 60 seconds** for the connection to complete.
 
-![](<../.gitbook/assets/image (288).png>)
+![](<../.gitbook/assets/image (294).png>)
 
 
 
@@ -201,7 +201,7 @@ We recommend keeping the delays no shorter than:\
 `250ms` for Wyze Color Bulbs\
 `500ms` for Philips Hue Bulbs
 
-![](<../.gitbook/assets/image (272).png>)
+![](<../.gitbook/assets/image (277).png>)
 
 ### 3. Testing and Using In-Game
 
@@ -233,7 +233,7 @@ Create a new Twitch OAuth token by going to [https://twitchapps.com/tmi/](https:
 Using the overlay in OBS, select the `Twitch Bot` button in the taskbar.\
 Paste in your Twitch channel name and OAuth key.
 
-![Overlay - Twitch Bot Credentials](<../.gitbook/assets/image (248).png>)
+![Overlay - Twitch Bot Credentials](<../.gitbook/assets/image (250).png>)
 
 Once set, you can press `Test` to display a test message in your Twitch chat.
 
@@ -243,7 +243,7 @@ Every piece of unit and call data can be toggled on or off individually.
 
 **It is highly recommended to only toggle on data updates that will not be frequently spammed.** Toggling too many data fields and updating data too quickly may result in **Twitch rate limiting your bot.**
 
-![Overlay - Twitch Data Fields](<../.gitbook/assets/image (242).png>)
+![Overlay - Twitch Data Fields](<../.gitbook/assets/image (252).png>)
 
 ### 4. Save and Run
 
@@ -259,7 +259,7 @@ If you're having issues seeing the Twitch bot messages, view the `Twitch Logs` p
 
 This will contain valuable information on the twitch bot's connection, rate limiting, and other errors.
 
-![Overlay - Twitch Logs](<../.gitbook/assets/image (244).png>)
+![Overlay - Twitch Logs](<../.gitbook/assets/image (251).png>)
 
 If you have too many data fields toggled, and are sending Twitch updates too quickly you may experience rate limiting.
 
@@ -291,35 +291,35 @@ In the `Configuration` tab, toggle on the desired data fields for your unit and 
 For every field toggled, a text file will be generated to be viewed in OBS.\
 However, we **recommend creating custom text files** to combine multiple data fields in a single text file.
 
-![Stream Overlay - Custom Text Files](<../.gitbook/assets/image (251).png>)
+![Stream Overlay - Custom Text Files](<../.gitbook/assets/image (254).png>)
 
 #### Data Field Keys:
 
 These can be easily copied from the UI, by pressing the `Copy` button next to the toggled field and pasting into the custom file's key textbox.
 
-| Key                | Description               |
-| ------------------ | ------------------------- |
-| {unit_status}      | Unit Status               |
-| {unit_location}    | Unit Location             |
-| {unit_aop}         | Unit AOP                  |
-| {unit_number}      | Unit Number               |
-| {unit_name}        | Unit Name                 |
-| {unit_agency}      | Unit Agency               |
-| {unit_department}  | Unit Department           |
-| {unit_subdivision} | Unit Subdivision          |
-| {unit_rank}        | Unit Rank                 |
-| {unit_group}       | Unit Group                |
-| {unit_panic}       | Unit Panic Status         |
-| {call_id}          | Dispatch Call ID          |
-| {call_origin}      | Dispatch Call Origin      |
-| {call_status}      | Dispatch Call Status      |
-| {call_priority}    | Dispatch Call Priority    |
-| {call_block}       | Dispatch Call Block       |
-| {call_address}     | Dispatch Call Address     |
-| {call_postal}      | Dispatch Call Postal      |
-| {call_title}       | Dispatch Call Title       |
-| {call_code}        | Dispatch Call 10-Code     |
-| {call_description} | Dispatch Call Description |
+| Key                 | Description               |
+| ------------------- | ------------------------- |
+| {unit\_status}      | Unit Status               |
+| {unit\_location}    | Unit Location             |
+| {unit\_aop}         | Unit AOP                  |
+| {unit\_number}      | Unit Number               |
+| {unit\_name}        | Unit Name                 |
+| {unit\_agency}      | Unit Agency               |
+| {unit\_department}  | Unit Department           |
+| {unit\_subdivision} | Unit Subdivision          |
+| {unit\_rank}        | Unit Rank                 |
+| {unit\_group}       | Unit Group                |
+| {unit\_panic}       | Unit Panic Status         |
+| {call\_id}          | Dispatch Call ID          |
+| {call\_origin}      | Dispatch Call Origin      |
+| {call\_status}      | Dispatch Call Status      |
+| {call\_priority}    | Dispatch Call Priority    |
+| {call\_block}       | Dispatch Call Block       |
+| {call\_address}     | Dispatch Call Address     |
+| {call\_postal}      | Dispatch Call Postal      |
+| {call\_title}       | Dispatch Call Title       |
+| {call\_code}        | Dispatch Call 10-Code     |
+| {call\_description} | Dispatch Call Description |
 
 ### 4. Save your Configuration
 
@@ -329,13 +329,13 @@ Don't forget to save your configuration!
 
 In OBS, add a new text source:
 
-![OBS - New Text Source](<../.gitbook/assets/image (245).png>)
+![OBS - New Text Source](<../.gitbook/assets/image (246).png>)
 
 In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
 
-![Stream Overlay - Text Files](<../.gitbook/assets/image (241).png>)
+![Stream Overlay - Text Files](<../.gitbook/assets/image (249).png>)
 
-![Stream Overlay - Text file Viewer](<../.gitbook/assets/image (246).png>)
+![Stream Overlay - Text file Viewer](<../.gitbook/assets/image (248).png>)
 
 You can now place the text field anywhere in your OBS stream layout.
 

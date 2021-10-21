@@ -7,7 +7,7 @@ description: >-
 # Penal Codes
 
 {% hint style="info" %}
-Community customization is not included with the free version.  
+Community customization is not included with the free version.\
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -15,9 +15,9 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 Penal codes can easily be referenced and cited in records/reports as charges.
 
-![Sonoran CAD - Penal Code Reference Window](../../.gitbook/assets/image%20%2853%29.png)
+![Sonoran CAD - Penal Code Reference Window](<../../.gitbook/assets/image (47).png>)
 
-![Sonoran CAD - Charges Section](../../.gitbook/assets/image%20%2852%29.png)
+![Sonoran CAD - Charges Section](<../../.gitbook/assets/image (46).png>)
 
 ### 1. Charge Types
 
@@ -27,7 +27,7 @@ You can also use the "Auto Sort" feature to quickly format the order of these ch
 
 Be sure to hit "Save" before exiting the page.
 
-![Sonoran CAD - Custom Charge Types](../../.gitbook/assets/image%20%2856%29.png)
+![Sonoran CAD - Custom Charge Types](<../../.gitbook/assets/image (45).png>)
 
 ### 2. Bond Types
 
@@ -35,27 +35,27 @@ You can create your own "Bond'/Bail Type" options for penal codes. Again, if you
 
 You can also use the "Auto Sort" feature to quickly format the order of these charge types.
 
-![Sonoran CAD - Custom Bond &amp; Bail Types](../../.gitbook/assets/image%20%2854%29.png)
+![Sonoran CAD - Custom Bond & Bail Types](<../../.gitbook/assets/image (48).png>)
 
 ### 3. Penal Codes
 
 Adding, editing, or removing a penal code is easy. Simply click on the existing code to edit it, or press "New Penal Code" to create a new one.
 
-![Sonoran CAD - Penal Code Management](../../.gitbook/assets/image%20%2855%29.png)
+![Sonoran CAD - Penal Code Management](<../../.gitbook/assets/image (50).png>)
 
-![Sonoran CAD - Penal Code Editor](../../.gitbook/assets/image%20%2851%29.png)
+![Sonoran CAD - Penal Code Editor](<../../.gitbook/assets/image (49).png>)
 
 ### 4. My locality doesn't call them "Penal Codes"
 
-Sonoran CAD allows you to change the naming of "Penal Codes" to anything else you'd like.  
+Sonoran CAD allows you to change the naming of "Penal Codes" to anything else you'd like.\
 Learn more about our [geographical customization](geographical-settings.md).
 
-## Import from Spreadsheet \(CSV\)
+## Import from Spreadsheet (CSV)
 
-Sonoran CAD allows you to easily import your penal codes from a spreadsheet \(.CSV\) file.
+Sonoran CAD allows you to easily import your penal codes from a spreadsheet (.CSV) file.
 
 {% hint style="danger" %}
-**Spreadsheet \(CSV\) importing is only supported directly from Google sheets.**
+**Spreadsheet (CSV) importing is only supported directly from Google sheets.**
 
 Support will not be provided to users modifying their spreadsheets with Excel, or any other program. The official Google sheet includes specific safety checks preventing invalid formats, blank spaces, etc.
 {% endhint %}
@@ -66,7 +66,7 @@ Navigate to our [official penal code Google sheet ](https://docs.google.com/spre
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 
-![Penal Codes - Copy Sheet](../../.gitbook/assets/image%20%28107%29.png)
+![Penal Codes - Copy Sheet](<../../.gitbook/assets/image (94).png>)
 
 ### 2. Add Your Penal Codes
 
@@ -75,28 +75,28 @@ Now that you have copied this sheet into your Google Drive, you can add new rows
 {% hint style="warning" %}
 **Do NOT modify the very first row.** These names must remain the same to properly format the penal code structure.
 
-Additionally, the `bondAmount` column must be kept as a number.  
+Additionally, the `bondAmount` column must be kept as a number.\
 All other columns must be formatted as text.
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28103%29.png)
+![](<../../.gitbook/assets/image (95).png>)
 
 ### 3. Download the CSV
 
-In Google Sheets, navigate to File &gt; Download &gt; Comma Separated Values \(.csv\) to download the file.
+In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](../../.gitbook/assets/image%20%28106%29.png)
+![Google Sheets - Download CSV](<../../.gitbook/assets/image (96).png>)
 
 ### 4. Import the CSV File
 
-In Sonoran CAD, navigate to Admin &gt; Customization &gt; Penal Codes
+In Sonoran CAD, navigate to Admin > Customization > Penal Codes
 
-In the penal codes section, select the "Import" button.  
+In the penal codes section, select the "Import" button.\
 Then, select "CSV" as the import type and select your downloaded CSV file.
 
-![Sonoran CAD - Import Data](../../.gitbook/assets/image%20%28104%29.png)
+![Sonoran CAD - Import Data](<../../.gitbook/assets/image (97).png>)
 
-![File Selector - Select File](../../.gitbook/assets/image%20%28105%29.png)
+![File Selector - Select File](<../../.gitbook/assets/image (98).png>)
 
 After selecting the CSV file, your penal codes will be imported into the CAD and saved automatically.
 
@@ -104,7 +104,7 @@ After selecting the CSV file, your penal codes will be imported into the CAD and
 
 Having issues importing your CSV? [Be sure you are using and editing our Google Sheet with the Google Sheets program only](penal-codes.md#1-copy-the-google-sheet).
 
-Our Google sheet includes specific error checking and validation to handle common mistakes.  
+Our Google sheet includes specific error checking and validation to handle common mistakes.\
 **Support is not provided if you are using Excel, or any other program.**
 
 ## Import from JSON
@@ -138,14 +138,13 @@ The JSON structure is an object array. Be sure to strictly follow the format. Al
 
 ### 2. Import the JSON Structure
 
-In Sonoran CAD, navigate to Admin &gt; Customization &gt; Penal Codes
+In Sonoran CAD, navigate to Admin > Customization > Penal Codes
 
-In the penal codes section, select the "Import" button.  
+In the penal codes section, select the "Import" button.\
 Then, select "JSON" and paste the JSON object array of penal codes.
 
-![Sonoran CAD - Import Data](../../.gitbook/assets/image%20%28104%29.png)
+![Sonoran CAD - Import Data](<../../.gitbook/assets/image (97).png>)
 
-![Sonoran CAD - Paste JSON Content](../../.gitbook/assets/image%20%28120%29.png)
+![Sonoran CAD - Paste JSON Content](<../../.gitbook/assets/image (111).png>)
 
 After pasting the JSON content, your penal codes will be imported into the CAD and saved automatically.
-

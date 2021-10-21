@@ -10,6 +10,44 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.21.0 1/12/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch Timers
+
+&#x20;\- Dispatchers can create customizable timers and attach units, groups, and dispatch calls for periodic notifications
+
+Smart Lights - Unit Status
+
+&#x20;\- Smart lighting scenes are now available for your unit status
+
+Govee - Lighting Integration
+
+&#x20;\- Govee smart bulbs are now supported with our lighting integration via Bluetooth and WiFi
+
+Norwegian Translations
+
+&#x20;\- Added Norwegian translations
+
+Server Config - Trim IP/Port
+
+&#x20;\- Added additional safety checks on the backend to trim any spaces in server IPs or ports
+
+UNIT\_PANIC Push - Panic Bool
+
+&#x20;\- The EVENT\_UNIT\_PANIC push event now includes an `isPanic` bool
+{% endtab %}
+
+{% tab title="Changed" %}
+Unit - Group Menu Consolidation
+
+&#x20;\- The unit group section on the unit context menu is broken into a separate menu
+{% endtab %}
+{% endtabs %}
+
+
+
 ### 3.20.11 10/1/2021
 
 {% tabs %}
@@ -354,7 +392,7 @@ Dispatch Saved Types - Backspace\
 {% tabs %}
 {% tab title="Fixed" %}
 Smart Signs - Push Events\
- \- Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
+&#x20;\- Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
 
 Lookup - DB Sync\
 \- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
@@ -451,7 +489,7 @@ Tabs - Quick Close\
 
 {% tab title="Changed" %}
 Push Event: Detach Unit\
-\- The EVENT_UNIT_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
+\- The EVENT\_UNIT\_DETACH now may contain a plural 'idents' field as opposed to a single 'ident' field when more than one unit is being detached at a time.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -479,22 +517,22 @@ Discord Bot - Multi-Server\
 Discord Bot - linkme\
 \- The discord bot now automatically runs the /syncme command after linking your secret ID.
 
-API: set_streetsign_config\
+API: set\_streetsign\_config\
 \- Added an endpoint to set the street sign configuration in the CAD. This is for an upcoming integration plugin.
 
-API: update_streetsign\
+API: update\_streetsign\
 \- Added an endpoint to update street signs in the CAD from in-game. This is for an upcoming integration plugin.
 
-Push Event: event_streetsign_updated\
+Push Event: event\_streetsign\_updated\
 \- Added a push event for when street signs are updated in the CAD. This is for an upcoming integration plugin.
 
-Push Event: event_record_add\
+Push Event: event\_record\_add\
 \- Added a push event when records are added.
 
-Push Event: event_record_edit\
+Push Event: event\_record\_edit\
 \- Added a push event when records are edited.
 
-Push Event: event_record_remove\
+Push Event: event\_record\_remove\
 \- Added a push event when records are removed.
 
 Websocket Connection - Keepalive\
@@ -611,8 +649,8 @@ Text-to-speech - Toggle\
 {% endtab %}
 
 {% tab title="Changed" %}
-API: get_active_units - onlyUnits flag\
-\- The get_active_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
+API: get\_active\_units - onlyUnits flag\
+\- The get\_active\_units endpoint now has an optional `onlyUnits` flag to show or hide dispatchers. Unit objects also contain an `isDispatch` boolean flag.
 
 Dispatch Panel - Table UI\
 \- Small UI changes and improvements to the dispatch panels with tables and their column customization, search boxes, and buttons.
@@ -621,7 +659,7 @@ S3 Hosting\
 \- All image and file uploads have been migrated from AWS S3 to Sonoran S3.
 
 Discord Bot IP - Bad Request Whitelist\
-\- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify_secret
+\- SonoranBot API failures no longer count towards a community API blacklist. Ex: verify\_secret
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -688,8 +726,8 @@ Custom Map Images - File Size\
 Self-Dispatch 911 Calls\
 \- Fixed an issue causing self-dispatchers to not receive incoming 911 calls properly.
 
-API: set_api_id pushNew Flag\
-\- Fixed an issue in the set_api_id endpoint preventing the pushNew flag from working properly.
+API: set\_api\_id pushNew Flag\
+\- Fixed an issue in the set\_api\_id endpoint preventing the pushNew flag from working properly.
 {% endtab %}
 {% endtabs %}
 
@@ -756,10 +794,10 @@ Custom Records - Required Field Color\
 \- Changed the custom records required field text from red to orange for higher contrast.
 
 API: Set Call Primary\
-\- Heavily optimized the set_call_primary API endpoint for quick unit tracking updates via Dispatch Notify. Added an additional required 'trackPrimary' field to the call to toggle the unit tracking.
+\- Heavily optimized the set\_call\_primary API endpoint for quick unit tracking updates via Dispatch Notify. Added an additional required 'trackPrimary' field to the call to toggle the unit tracking.
 
 API: Set Call Postal\
-\- Heavily optimized the set_call_postal API endpoint for quick unit tracking updates via Dispatch Notify.
+\- Heavily optimized the set\_call\_postal API endpoint for quick unit tracking updates via Dispatch Notify.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -860,10 +898,10 @@ Discord Bot\
 Emergency Services - Layout Overhaul\
 \- The UI for police, fire, EMS, and Dispatchers has been overhauled to a more "Desktop" style theme. This includes a new taskbar with customizable positions. In addition, tabs of the same type now condense together. Tabs can be pinned in addition to dragging and dropping their positions. Pinned tabs will save their position past a reload.
 
-API: set_call_postal\
+API: set\_call\_postal\
 \- Added an endpoint to update a dispatch call's postal code.
 
-API: set_call_primary\
+API: set\_call\_primary\
 \- Added an endpoint to update a dispatch call's primary unit.
 
 Wraith - Custom Fields\
@@ -1071,11 +1109,11 @@ Civilian 911 - Modify Caller Name\
 Push Events - Server Port\
 \- The push event system now utilizes your existing game server port. This reduces the number of open ports your server requires. Push events are now sent to [http://ip:gameport/sonorancad/event](http://ip/:gameport/sonorancad/event). The framework will automatically forward events to this new path if you have not updated your port in the CAD admin panel.
 
-API - SET_ACCOUNT_PERMISSIONS\
-\- Separated the account permission arrays in the SET_ACCOUNT_PERMISSION API endpoint to allow a caller to both add and remove specific permissions in a single call. Also, added an additional option to specify the user by their CAD username as opposed to only their API ID. Additionally, added an option to toggle the account status from PENDING to ACTIVE.
+API - SET\_ACCOUNT\_PERMISSIONS\
+\- Separated the account permission arrays in the SET\_ACCOUNT\_PERMISSION API endpoint to allow a caller to both add and remove specific permissions in a single call. Also, added an additional option to specify the user by their CAD username as opposed to only their API ID. Additionally, added an option to toggle the account status from PENDING to ACTIVE.
 
-API: NEW_CHARACTER Response\
-\- API NEW_CHARACTER responds with the full JSON character record built.
+API: NEW\_CHARACTER Response\
+\- API NEW\_CHARACTER responds with the full JSON character record built.
 
 API IDs - Array\
 \- API IDs are now stored as an array and allow for more API IDs to be stored. The UI has also been improved and will auto-save.
@@ -1157,8 +1195,8 @@ Custom Records - Custom Search Field\
 Logging - User UUID from Validation\
 \- Enhanced user logging for increased security and debugging.
 
-API - GET_ACCOUNT - Search By Username\
-\- The GET_ACCOUNT API endpoint can now use the username in addition to the API ID.
+API - GET\_ACCOUNT - Search By Username\
+\- The GET\_ACCOUNT API endpoint can now use the username in addition to the API ID.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -1383,10 +1421,10 @@ Selected Character\
 \- Your currently selected character is saved in the civilian menu and will persist through sessions.
 
 API - Get Characters Ordering\
-\- The API get_characters endpoint ensures that the first character record in the list returned (index 0) is always the account's currently selected character.
+\- The API get\_characters endpoint ensures that the first character record in the list returned (index 0) is always the account's currently selected character.
 
 Push Event - 911 Removed\
-\- API push event EVENT_REMOVE\_911 is now sent when an emergency call is removed.
+\- API push event EVENT\_REMOVE\_911 is now sent when an emergency call is removed.
 
 Dispatch - 911 Origin MetaData\
 \- Dispatch metadata contains the origin call ID if sent from a 911 call.
@@ -1421,13 +1459,13 @@ Admin - Edit Records\
 \- Admins can now search and edit or remove all records, in addition to searching for the record owner's account username.
 
 DBSync - Friendly Mapping\
-\- DBSync now allows you to map specific DB value results like "driver_license" to a more readable "Driver's License" string format.
+\- DBSync now allows you to map specific DB value results like "driver\_license" to a more readable "Driver's License" string format.
 
 Stripe Checkout - External\
 \- The payment system has been rewritten to use external Stripe checkout pages for all community subscription management.
 
 API - Get Live Map/Servers Config\
-\- The get_servers API endpoint can now be utilized to retrieve your community's server configuration. This contains valuable information particularly for ensuring your live map ports and IP is correctly configured.
+\- The get\_servers API endpoint can now be utilized to retrieve your community's server configuration. This contains valuable information particularly for ensuring your live map ports and IP is correctly configured.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -1839,7 +1877,7 @@ Custom Fields - Required and Supervisor\
 \- If a field is required and supervisor only, the label color displays as orange instead of red to remain visible.
 
 Kick Unit API - Not Found\
-\- Added additional handling and 404 response for the KICK_UNIT API endpoint if the API ID does not exist.
+\- Added additional handling and 404 response for the KICK\_UNIT API endpoint if the API ID does not exist.
 
 Emergency Code - Australia\
 \- Communities can now select "Australia" as their geographical customization setting to change the emergency code to 000.
@@ -1965,8 +2003,8 @@ Lawyer - Lookup Permissions\
 Charges - Manual Entry\
 \- Fixed an issue preventing issues from manually entering a charge title on a record that does not exist.
 
-NEW_DISPATCH - Call ID\
-\- Fixed an issue where the NEW_DISPATCH push event would not contain the new call ID.
+NEW\_DISPATCH - Call ID\
+\- Fixed an issue where the NEW\_DISPATCH push event would not contain the new call ID.
 {% endtab %}
 {% endtabs %}
 
@@ -2492,7 +2530,7 @@ Records System - Backend Restructure
 
 DBSync - Character Hide ID
 
-* Character ID (often Steam IDs) are no longer displayed on the UI when searching for a character with database sync. 
+* Character ID (often Steam IDs) are no longer displayed on the UI when searching for a character with database sync.&#x20;
 
 Dispatch - Clear Panic Permissions
 
@@ -2737,7 +2775,7 @@ Session Invalidate - UI
 1. Custom Login Page - Query Strings
    * In order to reduce the strain on Sonoran CAD's servers, all custom login pages must now specify multiple attributes as query strings. You can copy and paste the entire URL from the Custom Login Page section in the Admin Customization menu.
 2. Edit Unit - Permission Label
-   * Changed the edit identifier label to have the same label name on both account permissions and permission keys. 
+   * Changed the edit identifier label to have the same label name on both account permissions and permission keys.&#x20;
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -2748,7 +2786,7 @@ Session Invalidate - UI
 3. DMV Permission
    * Fixed an issue where DMV record statuses could not be edited in the civilian page without the DMV page permission.
 4. Lua Resource - Download Links
-   * Fixed an issue where the Lua Resource download buttons in the admin panel downloaded the outdated files instead of the latest GutHub release. 
+   * Fixed an issue where the Lua Resource download buttons in the admin panel downloaded the outdated files instead of the latest GutHub release.&#x20;
 5. API Tutorial - Download
    * Fixed an issue where some tutorial video links were downloads for desktop application users.
 6. Record Add Vehicle - Plate Search
@@ -3244,7 +3282,7 @@ UI Border
 4. Panic - API
    * Unit's can have their PANIC status toggled via an API request.
 5. Unit Info - Location and AOP
-   * Unit identifiers can now specify their current location and AOP. 
+   * Unit identifiers can now specify their current location and AOP.&#x20;
 6. Custom Emails
    * Customize branding and wording in emails sent from your custom login page. This includes account verification/creation and forgotten password emails.
 7. Custom Page Colors
@@ -3295,7 +3333,7 @@ UI Border
 1. Default Community
    * Users can now locally set their "Default Community" in the community menu. This will always display the community's custom login screen even for mobile and desktop applications. This makes signing into your regular community even faster!
 2. Admin - Kick Account
-   * Community admins can now kick an account to forcefully remove it from a community as opposed to banning the account. 
+   * Community admins can now kick an account to forcefully remove it from a community as opposed to banning the account.&#x20;
 {% endtab %}
 
 {% tab title="Changed" %}
@@ -3324,7 +3362,7 @@ UI Border
 {% tabs %}
 {% tab title="New" %}
 1. Unit 10-Status - Admin Customization
-   * Communities can customize the default 10-06, 10-07, and 10-08 in status options for available, busy and unavailable. 
+   * Communities can customize the default 10-06, 10-07, and 10-08 in status options for available, busy and unavailable.&#x20;
 2. Affiliate Tracking System
    * A new affiliate system has been added to help Sonoran CAD grow and reward those who participate.
 {% endtab %}
@@ -3633,7 +3671,7 @@ UI Border
 4. Department - Configure Location
    * Admins can specify department location and zip code to auto-fill when creating a new record.
 5. Penal Code - Jail Time
-   * Added a jail time specification box in the penal code specification section. 
+   * Added a jail time specification box in the penal code specification section.&#x20;
 6. Penal Code - No Bail
    * Added a “No Bail” option on the penal code’s bail type drop down.
 7. Civilians - Auto Approve DMV Records
@@ -3858,7 +3896,7 @@ Delete/Remove CAD
 {% tabs %}
 {% tab title="New" %}
 1. Penal Codes
-   * Penal codes can now be added, edited and removed in the admin menu. 
+   * Penal codes can now be added, edited and removed in the admin menu.&#x20;
 2. Records Charges - Penal Code Select
    * Police/Dispatch can now add charges by filtering for a specific penal code.
 3. Penal Code Window - Police/Dispatch

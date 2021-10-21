@@ -6,9 +6,9 @@ description: >-
 
 # Smart Signs
 
-![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (217).png>)
+![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (220).png>)
 
-![London Studios - Smart Signs](<../../../.gitbook/assets/image (50).png>)
+![London Studios - Smart Signs](<../../../.gitbook/assets/image (222).png>)
 
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **Pro **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
@@ -64,7 +64,7 @@ Ensure your game server's IP and game port are set. The CAD will use this to pus
 
 Some hosting providers may have your game server sending traffic out from a different IP address than is used to connect to your game server. If this is the case, toggle the `Differing Outbound IP` checkbox for this server and fill in the `Outbound IP` field.
 
-![Sonoran CAD - Push Event Panel](<../../../.gitbook/assets/image (220).png>)
+![Sonoran CAD - Push Event Panel](<../../../.gitbook/assets/image (224).png>)
 
 ## How to use
 

@@ -7,7 +7,7 @@ description: >-
 
 # Live Map
 
-![Sonoran CAD's Custom Integrated Live Map System](../../../../.gitbook/assets/live_map.png)
+![Sonoran CAD's Custom Integrated Live Map System](../../../../.gitbook/assets/live\_map.png)
 
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **plus **version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
@@ -24,7 +24,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## Installation Video
 
-Click to view our [live map installation video](https://youtu.be/dhUCfvdLZ_U).
+Click to view our [live map installation video](https://youtu.be/dhUCfvdLZ\_U).
 
 **Be sure you have already installed our **[**plugin framework**](../../framework-installation.md)**!**
 
@@ -38,7 +38,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-Click [HERE ](https://github.com/Sonoran-Software/sonoran_livemap/releases)to download the live map plugin .zip file.
+Click [HERE ](https://github.com/Sonoran-Software/sonoran\_livemap/releases)to download the live map plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -48,12 +48,12 @@ Follow the [standard plugin installation guide](../../plugin-installation/) for 
 
 This requires the resource `sonoran_livemap` to be loaded. This is bundled with the base framework installation.
 
-#### A. Start the sonoran_livemap Resource
+#### A. Start the sonoran\_livemap Resource
 
 1. Add a new line for `ensure sonoran_livemap` into your `server.cfg` file.
 
 {% hint style="warning" %}
-#### ERROR: Couldn't start resource sonoran_livemap
+#### ERROR: Couldn't start resource sonoran\_livemap
 
 Particularly with **Linux**, some users have an additional installation step.
 
@@ -66,16 +66,16 @@ You will have to do this step whenever the `sonoran_livemap` resource is updated
 
 #### B. Live Map Resource Configuration
 
-**sonoran_livemap Convars:**
+**sonoran\_livemap Convars:**
 
 The following convars can be set in your `server.cfg` file:
 
-| Name                   | Type   |       Default Value | Description                                                                                                                                                                                                                     |
-| ---------------------- | ------ | ------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| socket_port            | int    |               30121 | Sets the port the live map socket server should listen on                                                                                                                                                                       |
-| livemap_debug          | int    |                   0 | Sets how much information gets printed to the console (0 = none, 1 = basic information, 2 = all)                                                                                                                                |
-| blip_file              | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP                                                                                                                                                    |
-| livemap_access_control | string |                "\*" | Sets the domain that is allowed to access the blips.json file (E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips), "\*" will allow everyone |
+| Name                     | Type   |       Default Value | Description                                                                                                                                                                                                                     |
+| ------------------------ | ------ | ------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| socket\_port             | int    |               30121 | Sets the port the live map socket server should listen on                                                                                                                                                                       |
+| livemap\_debug           | int    |                   0 | Sets how much information gets printed to the console (0 = none, 1 = basic information, 2 = all)                                                                                                                                |
+| blip\_file               | string | "server/blips.json" | Sets the file that will contain the generated blips that is exposed via HTTP                                                                                                                                                    |
+| livemap\_access\_control | string |                "\*" | Sets the domain that is allowed to access the blips.json file (E.g. "[https://example.com](https://example.com)" will only allow the UI on [http://example.com](http://example.com) to get the blips), "\*" will allow everyone |
 
 All above convars are set via the `set` command in your server config, such as `set socket_port 30000` if you wanted to change the live map port to 30000.
 
@@ -104,9 +104,9 @@ The following config options are also available for customization in the livemap
 I**MPORTANT:** You must use an unused port for the map port. It cannot be the same as the port used to connect to your server (which is by default 30120).
 {% endhint %}
 
-![Sonoran CAD - Live Map Admin Panel Config](<../../../../.gitbook/assets/image (204).png>)
+![Sonoran CAD - Live Map Admin Panel Config](<../../../../.gitbook/assets/image (207).png>)
 
-1. IP: Set IP to the **public** IP address of your server, 
+1. IP: Set IP to the **public** IP address of your server,&#x20;
 2. Map Port: The port you specified via `socket_port` [above](./#b-live-map-resource-configuration) or the default, which is `30121`.
    * Learn more about [setting your live map port](./#using-different-ports).
 3. Click "Save and Deploy" to deploy your live map.
@@ -130,7 +130,7 @@ In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" bu
 This is found in the task bar's start menu under Unit Management > Live Map\
 You can also [pin the live map button to your taskbar](../../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
-![Sonoran CAD: Live Map Button](../../../../.gitbook/assets/screen-shot-2021-06-18-at-11.12.10-pm.png)
+![Sonoran CAD: Live Map Button](<../../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
 
 **The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your **[**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)** set.**
 
@@ -167,16 +167,16 @@ Extract the images from the YTD files with a program like OpenIV.\
 `minimap_sea_2_0.png`\
 `minimap_sea_2_1.png`
 
-![OpenIV - Extract Images](<../../../../.gitbook/assets/image (100).png>)
+![OpenIV - Extract Images](<../../../../.gitbook/assets/image (91).png>)
 
-![OpenIV - Save Images](<../../../../.gitbook/assets/image (102).png>)
+![OpenIV - Save Images](<../../../../.gitbook/assets/image (92).png>)
 
 ### 2. Upload Images
 
 Navigate to Admin > Advanced > In-Game Integration > Live Map and Push Events\
 Select "Upload Custom" and upload all six correctly named files.
 
-![Live Map - Custom Map Uploader](<../../../../.gitbook/assets/image (101).png>)
+![Live Map - Custom Map Uploader](<../../../../.gitbook/assets/image (93).png>)
 
 ### 3. File Size
 

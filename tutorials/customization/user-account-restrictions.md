@@ -13,7 +13,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### User Account Restrictions
 
-![Sonoran CAD's user account restriction configuration](../../.gitbook/assets/restrict.png)
+![Sonoran CAD's user account restriction configuration](../../.gitbook/assets/restrict.PNG)
 
 | Field                              | Description                                                                                     |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------- |

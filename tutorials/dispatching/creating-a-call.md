@@ -10,7 +10,7 @@ description: This guide covers creating a new dispatch call in Sonoran CAD.
 
 To add a unit to your call editor, click on an available unit or unit group, and select "Add to Call"
 
-![Sonoran CAD - Add Unit to Call](../../.gitbook/assets/image%20%28229%29.png)
+![Sonoran CAD - Add Unit to Call](<../../.gitbook/assets/image (226).png>)
 
 Additionally, you can also drag-and-drop the unit number to your editor.
 
@@ -18,17 +18,17 @@ Additionally, you can also drag-and-drop the unit number to your editor.
 
 ### Insert Call Information
 
-In the call editor, you can view attached units and fill out the call information.  
+In the call editor, you can view attached units and fill out the call information.\
 Once completed, select "Create Call" to initiate the new dispatch call.
 
-![Sonoran CAD - Unit Editor](../../.gitbook/assets/image%20%28225%29.png)
+![Sonoran CAD - Unit Editor](<../../.gitbook/assets/image (227).png>)
 
 ### Track, Update, and Manage the Call
 
-The new dispatch will be displayed in your "Active Calls" window.  
+The new dispatch will be displayed in your "Active Calls" window.\
 You can select this call at anytime to preview, edit, or close.
 
-![Sonoran CAD - Active Calls](../../.gitbook/assets/image%20%28223%29.png)
+![Sonoran CAD - Active Calls](<../../.gitbook/assets/image (228).png>)
 
 ### Close the Call
 
@@ -36,7 +36,7 @@ To close the active dispatch, click on the active call and press "Close Call".
 
 Or, you can select "Edit Call", change the status to "Closed", and press "Update Call".
 
-![Sonoran CAD - Close Call](../../.gitbook/assets/image%20%28224%29.png)
+![Sonoran CAD - Close Call](<../../.gitbook/assets/image (229).png>)
 
 ## Unit Management
 
@@ -44,23 +44,23 @@ Or, you can select "Edit Call", change the status to "Closed", and press "Update
 
 You can click on a unit's status for a dropdown menu to quickly modify it.
 
-![Sonoran CAD - Unit Status](../../.gitbook/assets/image%20%28227%29.png)
+![Sonoran CAD - Unit Status](<../../.gitbook/assets/image (231).png>)
 
 ### Modifying Information
 
 Click on any active unit and select "Edit Unit" to change their identifier information.
 
-![Sonoran CAD - Edit Unit](../../.gitbook/assets/image%20%28222%29.png)
+![Sonoran CAD - Edit Unit](<../../.gitbook/assets/image (230).png>)
 
 ### Unit Groups
 
 Unit groups are a way to combine two units together, typically when they're in the save vehicle or apparatus.
 
-To add a unit to a group, simply select the unit and select "Add to Group" &gt; New Group or an existing group
+To add a unit to a group, simply select the unit and select "Add to Group" > New Group or an existing group
 
-![Sonoran CAD - Unit Group](../../.gitbook/assets/image%20%28230%29.png)
+![Sonoran CAD - Unit Group](<../../.gitbook/assets/image (232).png>)
 
-Or, you can drag-and-drop a unit to the Unit Groups section.  
+Or, you can drag-and-drop a unit to the Unit Groups section.\
 Drag it to the header to create a new group, or drag it to an existing group to add it.
 
 ![Sonoran CAD - Unit Group](../../.gitbook/assets/3aa5a1745988325dd443220e1f3586b1.gif)
@@ -85,17 +85,16 @@ To add a new saved call type, simply fill the information out in your editor, an
 
 Saving a call with an identical title as another one will override it.
 
-![Saved Dispatch Calls - Create](../../.gitbook/assets/image%20%28232%29.png)
+![Saved Dispatch Calls - Create](<../../.gitbook/assets/image (233).png>)
 
 ### Open a Saved Call Type
 
 To open a saved call type, simply select it from the dropdown at the top of the editor. The dropdown will also automatically filter as you type.
 
-![Saved Dispatch Calls - Select](../../.gitbook/assets/image%20%28228%29.png)
+![Saved Dispatch Calls - Select](<../../.gitbook/assets/image (234).png>)
 
 ### Remove a Saved Call Type
 
 To remove a saved call type, simply select it from the dropdown and press the trash icon.
 
-![Saved Dispatch Calls - Remove](../../.gitbook/assets/image%20%28226%29.png)
-
+![Saved Dispatch Calls - Remove](<../../.gitbook/assets/image (235).png>)

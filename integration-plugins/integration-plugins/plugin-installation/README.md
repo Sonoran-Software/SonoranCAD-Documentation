@@ -13,7 +13,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/Banner\_3.png)
 
 ## Installation Video
 
@@ -39,10 +39,10 @@ Extract the plugins to your `sonorancad\plugins` folder.
 
 ### 3. Configure and Enable the Config
 
-1. **Open** the `CHANGEMEconfig_postals.lua` file (name depends on the plugin) and configure as desired. The files are usually commented, and more details are on its [plugin page](../available-plugins/postals.md). 
+1. **Open** the `CHANGEMEconfig_postals.lua` file (name depends on the plugin) and configure as desired. The files are usually commented, and more details are on its [plugin page](../available-plugins/postals.md).&#x20;
 2. **Enable** the plugin by changing the `enabled` variable from `false` to `true` in the plugin config.
 
-![](../../../.gitbook/assets/screen-shot-2020-05-25-at-10.00.45-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2020-05-25 at 10.00.45 PM.png>)
 
 2\. **Rename** and remove the `CHANGEME` from the file to`config_postals.lua` (depending on name of plugin).
 
