@@ -89,6 +89,7 @@
     * [Civilian Integration](integration-plugins/integration-plugins/available-plugins/civilian-integration.md)
     * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
     * [ESX Support (QBUS) and Auto-Fines](integration-plugins/integration-plugins/available-plugins/esx-support.md)
+    * [FivePD](integration-plugins/integration-plugins/available-plugins/fivepd.md)
     * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
     * [Kick](integration-plugins/integration-plugins/available-plugins/kick.md)
     * [Locations](integration-plugins/integration-plugins/available-plugins/locations.md)

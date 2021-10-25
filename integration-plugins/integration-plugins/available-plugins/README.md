@@ -15,6 +15,7 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 | [Civilian Integration](civilian-integration.md) | **No**       | Yes         | Yes |
 | [Dispatch Notify](dispatch-notify.md)           | **No**       | Yes         | Yes |
 | [ESX/QBUS Support](esx-support.md)              | **Partial**  | **Partial** | Yes |
+| [FivePD](fivepd.md)                             | No           | Yes         | Yes |
 | [ForceReg](forcereg.md)                         | Yes          | Yes         | Yes |
 | [Kick](kick.md)                                 | Yes          | Yes         | Yes |
 | [Locations](locations.md)                       | Yes          | Yes         | Yes |
