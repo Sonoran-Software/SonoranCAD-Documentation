@@ -10,7 +10,33 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.21.0 1/12/2021
+### 3.21.3 10/19/2021
+
+{% tabs %}
+{% tab title="New" %}
+
+
+Desktop Update Search - Show Downloading
+
+* The desktop splash screen now includes live details on update searches and download progress
+{% endtab %}
+
+{% tab title="Changed" %}
+
+
+CHANGED: Websocket Connection Endpoint
+
+* Updated the backend websocket connection to resolve disconnection issues
+{% endtab %}
+
+{% tab title="Fixed" %}
+Govee - Lighting Fixes
+
+* Fixed issues with the Govee lighting integration where the Bluetooth server couldn't be unpacked and WiFi based lights wouldn't load
+{% endtab %}
+{% endtabs %}
+
+### 3.21.0 10/12/2021
 
 {% tabs %}
 {% tab title="New" %}
