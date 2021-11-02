@@ -17,9 +17,5 @@ Under the Web API section, your community ID and API key will be listed as shown
 
 ![](../../../.gitbook/assets/api.PNG)
 
-{% content-ref url="setting-your-api-id.md" %}
-[setting-your-api-id.md](setting-your-api-id.md)
-{% endcontent-ref %}
-
 
 
