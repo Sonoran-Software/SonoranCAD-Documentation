@@ -8,7 +8,7 @@ description: >-
 # Get Servers
 
 {% hint style="warning" %}
-API endpoint requires the **Plus **version of Sonoran CAD or higher.\
+API endpoint requires the **Standard **version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
