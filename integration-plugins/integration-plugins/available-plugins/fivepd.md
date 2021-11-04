@@ -33,3 +33,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 4. Set Your API ID
 
 Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+
+
+
+This plugin was sponsored by [LakeSide RP](https://discord.gg/465evprDC3).
