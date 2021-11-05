@@ -87,6 +87,12 @@ Sonoran CAD allows you to configure in-game events to smart lighting in your own
 
 When you toggle your police lights in-game, your room can flash with custom lighting patterns to further immerse and simulate real world lighting.
 
+{% hint style="warning" %}
+The smart lighting integration is **not included with the free version** of the Stream Overlay.\
+\
+[Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=gs6RdZt3mUo" %}
 Sonoran CAD - Smart Lighting Video
 {% endembed %}
@@ -343,9 +349,9 @@ You can also customize the fonts, change the background and more!
 
 ## Purchasing the Overlay
 
-The free version of the livestream overlay allows anyone to test out the basic functionality. The free version does not allow use of the [Twitch bot](twitch-overlay-and-bot.md#configuring-the-twitch-bot), [bodycam](twitch-overlay-and-bot.md#bodycam-overlay), and is locked to a maximum of three custom "data keys".
+The free version of the livestream overlay allows anyone to test out the basic functionality. The free version does not allow use of the [Twitch bot](twitch-overlay-and-bot.md#configuring-the-twitch-bot), [bodycam](twitch-overlay-and-bot.md#bodycam-overlay), or [smart lighting integration](twitch-overlay-and-bot.md#smart-lighting) and is locked to a maximum of three custom "data keys".
 
-The full version of Sonoran CAD's livestream overlay and Twitch bot is available for $7.99/mo.
+The full version of Sonoran CAD's livestreaming tools is available for $7.99/mo.
 
 Users can purchase a license to the full version in their billing center:
 
