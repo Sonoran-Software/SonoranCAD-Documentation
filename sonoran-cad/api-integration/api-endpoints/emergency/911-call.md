@@ -67,8 +67,21 @@ INVALID API KEY
 }
 ```
 
-#### Server ID
+### Server ID
 
 Because Sonoran CAD allows you to separate units and dispatchers into separate servers, the serverId field ensures this emergency call is sent to the appropriate dispatcher.\
 \
 For more information, see our guide on [configuring multiple servers](../../../../tutorials/customization/configuring-multiple-servers.md).
+
+### Meta Data
+
+The `metaData` object can be used to store custom API data in the 911 call.
+
+Additionally, the following `metaData` properties will auto-set the dispatch call information:
+
+| Property   | Type    | Description                                        |
+| ---------- | ------- | -------------------------------------------------- |
+| `priority` | Integer | <p>Dispatch call priority</p><p>Values 1, 2, 3</p> |
+| `block`    | String  | Dispatch Call Block                                |
+| `postal`   | String  | Dispatch Call Postal                               |
+| `code`     | String  | Dispatch Call 10-Code                              |
