@@ -15,20 +15,28 @@ This API endpoint requires the **plus **version of Sonoran CAD or higher. For mo
 This endpoint allows you to retrieve all active emergency calls, active dispatch calls, and previously closed dispatch calls.
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
 Your community's ID
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="key" type="string" %}
+{% swagger-parameter in="body" name="key" type="string" required="true" %}
 Your community's API Key
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="type" type="string" %}
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
 GET_CALLS
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="data" type="array" %}
+{% swagger-parameter in="body" name="data" type="array" required="true" %}
 Array of request objects
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="closedLimit" type="int" required="false" %}
+Limit number of closed dispatch calls returned (Max 100, Default 10)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="closedOffset" type="int" %}
+Used to paginate through the closed dispatches when paired with the limit
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
@@ -60,6 +68,8 @@ INVALID API KEY
     "data": [
         {
             "serverId": 1 // Default 1 - See out guide on setting up multiple servers
+            "closedLimit": 100, // OPTIONAL: Limit number of closed calls retuned (Max 100, default 10)
+            "closedOffset": 0 // OPTIONAL: Used to paginate beyond the limit
         },
     ]
 }
@@ -67,7 +77,7 @@ INVALID API KEY
 
 ### Object Structuring
 
-The GET_CALLS API endpoint returns arrays of the following object structures:
+The GET\_CALLS API endpoint returns arrays of the following object structures:
 
 {% tabs %}
 {% tab title="Dispatch Call" %}
@@ -133,7 +143,7 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 | 0                           | CALLER             |
 | 1                           | RADIO DISPATCH     |
 | 2                           | OBSERVED           |
-| 3                           | WALK_UP            |
+| 3                           | WALK\_UP           |
 {% endtab %}
 
 {% tab title="CALL_STATUS" %}
@@ -153,6 +163,6 @@ These represent the default [unit status](../../../../tutorials/customization/un
 | 1                           | BUSY               |
 | 2                           | AVAILABLE          |
 | 3                           | ENROUTE            |
-| 4                           | ON_SCENE           |
+| 4                           | ON\_SCENE          |
 {% endtab %}
 {% endtabs %}
