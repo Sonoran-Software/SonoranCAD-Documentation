@@ -10,6 +10,58 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.21.4 11/05/2021
+
+{% tabs %}
+{% tab title="New" %}
+Closed Calls - Pagination
+
+* Closed dispatch calls now support full server side pagination to view the entire history
+
+GET\_CALLS API - Pagination
+
+* The GET\_CALLS API endpoint now supports pagination for closed dispatch calls
+
+Emergency Call MetaData - Postal, Block, etc.
+
+* The call\_911 endpoint now has additional metadata support to specify the call postal, block, etc
+
+Active Bolos/Warrants - Pagination
+
+* Added proper server sided pagination for active warrants and bolos. Resolves issues and improves performance for communities with several hundred or more active records at a time
+{% endtab %}
+
+{% tab title="Changed" %}
+GET\_SERVERS - Standard
+
+* Updated the GET\_SERVERS endpoint to only require the standard version
+
+Translation Updates
+
+* Updated submitted translation files
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#5831 & 5835 - Dispatch Identifier Change
+
+* Fixed an issue where updating your identifier on the dispatch page doesn't update it for other units, along with displaying the proper dispatch icon after
+
+DB Sync - Structure Save Null Checks
+
+* Added null checks when trimming db sync fields preventing an object reference error
+
+\#5757 - Webhook Tutorial Link
+
+* Fixed a tutorial button for Discord webhooks going to an invalid page
+
+Drag-and-drop Custom Layout
+
+* Fixed an issue preventing drag-and-drop from working on custom layouts
+{% endtab %}
+{% endtabs %}
+
+
+
 ### 3.21.3 10/19/2021
 
 {% tabs %}
