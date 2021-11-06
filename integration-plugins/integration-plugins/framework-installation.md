@@ -137,6 +137,20 @@ You can also view our [standard plugin installation guide](plugin-installation/)
 
 As of new installations, the configuration file has been renamed to prevent it being overwritten by updates. To use the radar for the first time, you must rename the file `config.dist.lua` within the `wk_wars2x` folder to `config.lua`.
 
+### 8. Steam API Key
+
+If your framework has the `primaryIdentifier` set to `steam` in the [configuration ](framework-installation.md#3.-configure-and-rename)(used for your API ID type), you'll need to ensure a Steam API key is set in your `server.cfg` file.
+
+You can register a new Steam API Key at [http://steamcommunity.com/dev/apikey](http://steamcommunity.com/dev/apikey)
+
+Then, paste it into your `server.cfg`
+
+```
+# Steam Web API key
+# If you want to use Steam authentication (https://steamcommunity.com/dev/apikey) # -> replace "" with the key
+set steam_webApiKey "YOUR_KEY_HERE"
+```
+
 ## Updates
 
 Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!

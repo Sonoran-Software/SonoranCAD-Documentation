@@ -73,3 +73,5 @@ This plugin utilizes API endpoints that require the **Plus **version of Sonoran 
 When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.
 
 To enable this, open the [check API plugin](api-id-checker.md)'s config and set `forceSetApiId` to `true`.
+
+Additionally, communities using Steam as their framework's `primaryIdentifier` **will need to ensure they have a **[**Steam key set**](../framework-installation.md#8.-steam-api-key)** for their server**.
