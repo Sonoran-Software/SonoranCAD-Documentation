@@ -10,6 +10,36 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.21.8 11/11/2021
+
+{% tabs %}
+{% tab title="New" %}
+Unit Groups - Dropdown Expanded View
+
+* Unit groups can now have the units section expanded to view the details of the group
+{% endtab %}
+
+{% tab title="Changed" %}
+Desktop Download - Round Percentage
+
+* The desktop auto-updater now rounds download progress to one decimal
+
+Bodycam - Anti-Tamper
+
+* Changed the way the bodycam webpage is served, preventing users from tampering with the branding
+{% endtab %}
+
+{% tab title="Fixed" %}
+Tone Board - UI Limits
+
+* Fixed an issue causing the UI to limit the custom tone board by one more than it should
+
+\#5915 Dispatch Call Notes PDF
+
+* Fixed a formatting issue with dispatch call notes in PDF
+{% endtab %}
+{% endtabs %}
+
 ### 3.21.4 11/05/2021
 
 {% tabs %}
