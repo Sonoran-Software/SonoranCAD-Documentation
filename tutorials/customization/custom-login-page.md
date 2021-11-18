@@ -56,7 +56,7 @@ You can try running `ipconfig /flushdns` in a Windows CMD window and restarting 
 
 ## iFrame Method
 
-If you are unable to use Cloudflare for DNS management, you can also host an HTML page that renders the CAD in an iFrame.
+If you are unable to use the [DNS method](custom-login-page.md#dns-record-method-recommended), you can also host an HTML page that renders the CAD in an iFrame.
 
 ### 1. Download the HTML File
 
