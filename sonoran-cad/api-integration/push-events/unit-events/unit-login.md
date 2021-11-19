@@ -31,6 +31,7 @@ description: This push event is sent whenever a unit logs into the CAD.
                      "subdivision": "Speed Enforcement",
                      "rank": "CPT",
                      "group": "CAR 51", // Name of unit group
+                     "page": 0 // Police
                 }
             },
             "isDispatch": false,
@@ -42,13 +43,25 @@ description: This push event is sent whenever a unit logs into the CAD.
 
 ### Enumeration Values
 
+#### Unit Status
+
 Sonoran CAD uses integer enumeration values for the unit `STATUS` field. See the tables below for more information. These values reflect the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
 
-| Integer \(Enumeration\) Value | Status Description |
-| :--- | :--- |
-| 0 | UNAVAILABLE |
-| 1 | BUSY |
-| 2 | AVAILABLE |
-| 3 | ENROUTE |
-| 4 | ON\_SCENE |
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | UNAVAILABLE        |
+| 1                           | BUSY               |
+| 2                           | AVAILABLE          |
+| 3                           | ENROUTE            |
+| 4                           | ON\_SCENE          |
 
+#### Unit Page
+
+The unit's `data.page` property reflects what page in the CAD the unit is viewing.
+
+| Integer (Enumeration) Value | Description |
+| --------------------------- | ----------- |
+| 0                           | POLICE      |
+| 1                           | FIRE        |
+| 2                           | EMS         |
+| 3                           | DISPATCH    |

@@ -95,6 +95,18 @@ Sonoran CAD uses integer enumeration values for the unit's `status` fields. See 
 | 1                          | BUSY               |
 | 2                          | AVAILABLE          |
 | 3                          | ENROUTE            |
-| 4                          | ON_SCENE           |
+| 4                          | ON\_SCENE          |
+{% endtab %}
+
+{% tab title="PAGE" %}
+The unit's `data.page` property reflects what page in the CAD the unit is viewing.
+
+| Integer (Enumeration) Value | Description |
+| --------------------------- | ----------- |
+| 0                           | POLICE      |
+| 1                           | FIRE        |
+| 2                           | EMS         |
+| 3                           | DISPATCH    |
 {% endtab %}
 {% endtabs %}
+
