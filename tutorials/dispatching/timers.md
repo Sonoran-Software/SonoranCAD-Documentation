@@ -46,7 +46,7 @@ The timer panel has options to start, pause, restart, and remove a timer.
 
 Additionally, you can expand the timer to change the name and duration.
 
-![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (292).png>)
+![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (292) (1).png>)
 
 ### Via the Context Menu
 
