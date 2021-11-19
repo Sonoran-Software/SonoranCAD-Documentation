@@ -169,7 +169,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-![](<../.gitbook/assets/image (290).png>)
+![](<../.gitbook/assets/image (290) (1).png>)
 
 **2. Retrieve your API Key and Search**
 

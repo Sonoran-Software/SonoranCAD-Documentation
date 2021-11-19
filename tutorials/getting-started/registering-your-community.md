@@ -11,16 +11,10 @@ _NOTE:_ If you have not already, you will need to [create a user account](regist
 Once logged in, press "Create Community" on the community selection menu.\
 You will be prompted for three information fields:
 
-1. Community ID
-2. Community Name
-3. Website (Optional)
+1. Community Name
+2. Website (Optional)
 
-{% hint style="info" %}
-Your community ID is a unique identifier for your community. This is what users will use to sign into your specific CAD. Typically, it is the abbreviation of your community.\
-EX: Arizona Serious Roleplay - ID: AZSRP
-{% endhint %}
-
-![The community CAD registration modal is shown as above](../../.gitbook/assets/new\_community.PNG)
+![The community CAD registration modal is shown as above](<../../.gitbook/assets/image (290).png>)
 
 #### 2. Register Your Community
 
