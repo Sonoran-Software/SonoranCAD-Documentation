@@ -10,9 +10,7 @@ Receive **free Sonoran CAD integration plugin installation**, **free Five PD ins
 
 ### Looking to compare plans?
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+[View our pricing page!](https://sonorancad.com/#/pricing)
 
 ### Looking to purchase a plan?
 
