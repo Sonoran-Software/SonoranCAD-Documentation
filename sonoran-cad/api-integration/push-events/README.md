@@ -35,7 +35,7 @@ Many of our [integration plugins](../../../integration-plugins/integration-plugi
 
 You can create your own webserver to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may want to "intercept" these events with your own listener (a Discord bot as an example) and _then _forward them onto your in-game listener (like our [integration framework](../../../integration-plugins/integration-plugins/framework-installation.md)). For this, simply set your IP and game port&#x20;
+In addition, you may already be receiving these events in your integration framework. The integration framework can be configured to "forward" all push events received to another custom webserver, like the example shown below.
 
 ```javascript
 // ----------------------------
@@ -46,7 +46,6 @@ In addition, you may want to "intercept" these events with your own listener (a 
 // Use the JS HTTP library to create a new webserver
 //    Pass any traffic to the 'handler' function
 let server = require('http').createServer(handler);
-let port = 30150;
 
 // Sonoran CAD community API key
 //  Used to authenticate traffic received
@@ -55,6 +54,7 @@ const API_KEY = "YOUR_API_KEY";
 // Start the webserver on a specific port
 //    Ensure you have this port OPEN on your external IP
 //    https://portchecker.co/
+let port = 30150;
 server.listen(port);
 
 // Webserver traffic handler
