@@ -29,18 +29,18 @@ Push event configuration is covered as a part of the [framework installation](..
 
 Many of our [integration plugins](../../../integration-plugins/integration-plugins/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
 
-## Webserver Example
+## Web Server Example
 
 ### Javascript
 
-You can create your own webserver to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
+You can create your own web server to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may already be receiving these events in your integration framework. The integration framework can be configured to "forward" all push events received to another custom webserver, like the example shown below.
+In addition, you may already be receiving these events in your integration framework. The integration framework can be configured to "[forward](../../../integration-plugins/integration-plugins/framework-installation.md#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's http://IP:Port.
 
 ```javascript
 // ----------------------------
 // Webserver Handling
-//  Description: Create webserver and listen to CAD push events locally
+//  Description: Create web server and listen to CAD push events locally
 // ----------------------------
 
 // Use the JS HTTP library to create a new webserver

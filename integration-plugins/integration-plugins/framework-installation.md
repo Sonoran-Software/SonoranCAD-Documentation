@@ -82,8 +82,8 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | allowUpdateWithPlayers    | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players.     |
 | noUnitTimer               | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache.                                                                           |
 | enableCanary              | When enabled, allows the CAD to update to beta (aka canary) releases.                                                                                                                                                             |
-| enablePushEventForwarding | Enables push event forwarding to the specific URL defined in the next opto                                                                                                                                                        |
-|                           |                                                                                                                                                                                                                                   |
+| enablePushEventForwarding | Enables push event forwarding to the specific URL defined in the next option                                                                                                                                                      |
+| pushEventForwardUrl       | [Web server](../../sonoran-cad/api-integration/push-events/#webserver-example) URL to forward push events to.                                                                                                                     |
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                  |
 
 ### 4. Server Config
@@ -130,6 +130,12 @@ The map port can be left blank, unless you are also installing the [integrated l
 ![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (144).png>)
 
 Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
+
+#### 5B. Forward Push Events to an External Server
+
+You may wish to also send push events to another external web server, like a Discord bot.
+
+In the framework configuration file, simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your web server address.
 
 ### 6. Installing Plugins
 
