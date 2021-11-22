@@ -88,3 +88,10 @@ api.post('/emergency/unit_panic', JSON.stringify(data))
  });
 ```
 
+### Lua
+
+Coming soon.
+
+### .Net (C#)
+
+Coming soon.
