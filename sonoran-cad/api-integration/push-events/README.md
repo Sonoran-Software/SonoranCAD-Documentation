@@ -79,7 +79,7 @@ async function handler (req, res) {
       // Authenticate data
       //  Sonoran CAD sends your API KEY with the POST data
       //  Check this here to prevent someone random sending you requests
-      if (data.key === config.authKey) {
+      if (data.key === API_KEY) {
         // Switch Case: handle each event type
         switch (data.type) {
           case "EVENT_911":
