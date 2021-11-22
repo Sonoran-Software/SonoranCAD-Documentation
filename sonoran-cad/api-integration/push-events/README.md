@@ -64,7 +64,8 @@ async function handler (req, res) {
   let responseMessage = ""; // Response text back to server
   
   // Only handle POST requests
-  if (req.method === "POST") {
+  // Only handle requests sent to /sonorancad/event (CAD push events)
+  if (req.method === "POST" && req.url === '/sonorancad/event') {
     req.on('data', function(chunk) {
       // Read and piece each part of data together
       data += chunk;
