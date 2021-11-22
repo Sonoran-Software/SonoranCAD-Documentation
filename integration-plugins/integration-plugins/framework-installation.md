@@ -56,7 +56,9 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
     "allowUpdateWithPlayers": false,
     "noUnitTimer": false,
     "enableCanary": false,
-    "forceSetApiId": false
+    "forceSetApiId": false,
+    "enablePushEventForwarding": false,
+    "pushEventForwardUrl": "https://host"
 }
 ```
 
@@ -64,23 +66,25 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 
 #### Configuration Details
 
-| Option                 | Description                                                                                                                                                                                                                       |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| communityID            | Your SonoranCAD [Community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).                                                                                                             |
-| apiKey                 | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings.                                                                                               |
-| postTime               | <p>Update locations every x ms. Default 5000.<br>It is recommend to not set this lower than 5000 ms due to rate limiting.</p>                                                                                                     |
-| serverId               | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here.                                                                                                   |
-| primaryIdentifier      | <p>The identifier type your community uses in the CAD to enter their API IDs.<br>Valid values are: <code>license</code>, <code>steam</code>, or <code>discord.</code></p>                                                         |
-| apiSendEnabled         | When disabled, the integration will not send any API requests to SonoranCAD.                                                                                                                                                      |
-| debugMode              | <p>When set to <code>true</code>, useful debugging information it outputted to the console.<br>Keep disabled in production due to console spam.<br>This can be toggled by entering <code>sonoran debugmode</code> in console.</p> |
-| updateBranch           | <p>Use this branch when checking for updates.<br>Keep <code>master</code> unless you know what you're doing.</p>                                                                                                                  |
-| statusLabels           | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings.                                                                                                     |
-| allowAutoUpdate        | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours.                                                                                                           |
-| autoUpdateUrl          | Where to check for updated versions. Don't touch this unless you have a reason.                                                                                                                                                   |
-| allowUpdateWithPlayers | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players.     |
-| noUnitTimer            | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache.                                                                           |
-| enableCanary           | When enabled, allows the CAD to update to beta (aka canary) releases.                                                                                                                                                             |
-| forceSetApiId          | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                  |
+| Option                    | Description                                                                                                                                                                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| communityID               | Your SonoranCAD [Community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).                                                                                                             |
+| apiKey                    | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings.                                                                                               |
+| postTime                  | <p>Update locations every x ms. Default 5000.<br>It is recommend to not set this lower than 5000 ms due to rate limiting.</p>                                                                                                     |
+| serverId                  | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here.                                                                                                   |
+| primaryIdentifier         | <p>The identifier type your community uses in the CAD to enter their API IDs.<br>Valid values are: <code>license</code>, <code>steam</code>, or <code>discord.</code></p>                                                         |
+| apiSendEnabled            | When disabled, the integration will not send any API requests to SonoranCAD.                                                                                                                                                      |
+| debugMode                 | <p>When set to <code>true</code>, useful debugging information it outputted to the console.<br>Keep disabled in production due to console spam.<br>This can be toggled by entering <code>sonoran debugmode</code> in console.</p> |
+| updateBranch              | <p>Use this branch when checking for updates.<br>Keep <code>master</code> unless you know what you're doing.</p>                                                                                                                  |
+| statusLabels              | Should match what you have set in your CAD's [unit status code](../../tutorials/customization/unit-status-codes.md) settings.                                                                                                     |
+| allowAutoUpdate           | When enabled, the resource will update itself. When disabled, it will simply show an update notification every 2 hours.                                                                                                           |
+| autoUpdateUrl             | Where to check for updated versions. Don't touch this unless you have a reason.                                                                                                                                                   |
+| allowUpdateWithPlayers    | When enabled, it will run the updates even with players on the server. The updater will stop/start all associated resources which could cause client crashes. When disabled, the resource "waits" until there are no players.     |
+| noUnitTimer               | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache.                                                                           |
+| enableCanary              | When enabled, allows the CAD to update to beta (aka canary) releases.                                                                                                                                                             |
+| enablePushEventForwarding | Enables push event forwarding to the specific URL defined in the next opto                                                                                                                                                        |
+|                           |                                                                                                                                                                                                                                   |
+| forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                  |
 
 ### 4. Server Config
 
