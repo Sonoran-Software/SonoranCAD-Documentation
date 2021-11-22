@@ -40,7 +40,7 @@ In addition, you may want to "intercept" these events with your own listener (a 
 ```javascript
 // ----------------------------
 // Webserver Handling
-//  Description: Create and listen to CAD push events locally
+//  Description: Create webserver and listen to CAD push events locally
 // ----------------------------
 
 // Use the JS HTTP library to create a new webserver
@@ -51,10 +51,6 @@ let port = 30150;
 // Sonoran CAD community API key
 //  Used to authenticate traffic received
 const API_KEY = "YOUR_API_KEY";
-
-// Forward push event traffic to another service or script
-const FORWARD_TRAFFIC = true;
-const FORWARD_ENDPOINT = "123.456.789:1234";
 
 // Start the webserver on a specific port
 //    Ensure you have this port OPEN on your external IP
@@ -97,11 +93,6 @@ async function handler (req, res) {
             sendResponse(success);
             break;
         }
-        
-        // Handle push event traffic forwarding (to our game server or other endpoint)
-        if (FORWARD_TRAFFIC) {
-          forwardTraffic(data);
-        }
       } else {
         // Server traffic didn't have the proper API key
         responseMessage = "Authentication Key Failed!";
@@ -120,34 +111,5 @@ async function handler (req, res) {
     // Return response
     res.end(responseMessage);
   }
-}
-
-// ----------------------------
-// TRAFFIC FORWARDING
-// Description: Some users may wish to listen to CAD push events on
-//  their local web server (Discord bot or other external service) and
-//  *then* forward them onto another service.
-//  This allows push events to be received in multiple areas, both a
-//  Discord bot AND the game server.
-// ----------------------------
-// Import Axios library
-// https://www.npmjs.com/package/axios
-// Install command: `npm i axios` 
-import axios from 'axios';
-// Set the `api` object to be used, sending to our gameserver/external service
-let api = axios.create({ baseURL: FORWARD_ENDPOINT });
-
-function forwardTraffic(data) {
-  // Send the POST request
-  //  Format the data to JSON
-  api.post(FORWARD_ENDPOINT , JSON.stringify(data))
-    .then((response) => {
-      // Response back from the server
-      console.log(response);
-    })
-    .catch((err) => {
-      // Error response back from the server
-      console.log(err);
-   });
 }
 ```
