@@ -10,6 +10,30 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.21.9 11/21/2021
+
+{% tabs %}
+{% tab title="New" %}
+Unit Info - Include Page
+
+* The unit info object now contains a `page` property reflecting what emergency page the unit is logged into, viewable via API.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Add Record Push Event - ID
+
+* Fixed an issue where the add record push event didn't have the new record ID set on it
+
+Tablet Record Windows - Resize
+
+* Fixed an issue causing the record windows on the in-game tablet to not save resize preferences
+
+Pagination - Block All Selection
+
+* Fixed an issue with the BOLO and call history tabs where changing the "record per page" to all broke functionality
+{% endtab %}
+{% endtabs %}
+
 ### 3.21.8 11/11/2021
 
 {% tabs %}
