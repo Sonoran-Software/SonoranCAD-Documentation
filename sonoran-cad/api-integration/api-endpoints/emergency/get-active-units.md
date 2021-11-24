@@ -89,13 +89,13 @@ Sonoran CAD uses integer enumeration values for the unit's `status` fields. See 
 
 {% tabs %}
 {% tab title="UNIT_STATUS" %}
-| nteger (Enumeration) Value | Status Description |
-| -------------------------- | ------------------ |
-| 0                          | UNAVAILABLE        |
-| 1                          | BUSY               |
-| 2                          | AVAILABLE          |
-| 3                          | ENROUTE            |
-| 4                          | ON\_SCENE          |
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | UNAVAILABLE        |
+| 1                           | BUSY               |
+| 2                           | AVAILABLE          |
+| 3                           | ENROUTE            |
+| 4                           | ON\_SCENE          |
 {% endtab %}
 
 {% tab title="PAGE" %}

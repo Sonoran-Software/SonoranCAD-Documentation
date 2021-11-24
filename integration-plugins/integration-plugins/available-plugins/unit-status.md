@@ -26,7 +26,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_unitstatus/releases) to download the unit status plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_unitstatus/releases) to download the unit status plugin .zip file.
 
 ### 3. Install the Plugin
 
@@ -39,12 +39,6 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 ### 5. Setup User Permissions
 
 This script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) (or whatever you configure the command to be).
-
-**Example**
-
-`add_ace builtin.everyone command.setstatus allow`
-
-This line in your `config.cfg` file will allow everyone to access the command. We highly reccomend creating [proper ace permission groups](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) to prevent users from spamming.
 
 ## Configuration
 

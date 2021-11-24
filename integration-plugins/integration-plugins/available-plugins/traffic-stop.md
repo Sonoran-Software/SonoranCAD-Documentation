@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_trafficstop/releases) to download the traffic stop plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_trafficstop/releases) to download the traffic stop plugin .zip file.
 2. Download and install the [locations ](locations.md)plugin.
 3. (Optional) Download and install the [postals ](postals.md)plugin.
 
@@ -50,12 +50,6 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 5. Enable User Permissions
 
 The default command ships with [ACE permission checks](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) enabled. **You will need to allow `command.ts` for who you want to use this command.**
-
-**Example**
-
-`add_ace builtin.everyone command.ts allow`
-
-This line in your `config.cfg` file will allow everyone to access the command. We highly reccomend creating [proper ace permission groups](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) to prevent users from spamming.
 
 ### **6**. Set Your API ID
 
