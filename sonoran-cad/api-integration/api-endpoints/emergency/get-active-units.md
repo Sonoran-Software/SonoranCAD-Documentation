@@ -75,7 +75,10 @@ INVALID API KEY
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "onlyUnits": true // Don't show active dispatchers (OPTIONAL: Default = TRUE if undefined)
+            "onlyUnits": true, // Don't show active dispatchers (OPTIONAL: Default = TRUE if undefined)
+            "includeOffline": false, // OPTIONAL: Don't show offline units
+            "limit": 100, // OPTIONAL: Default's to max 100 results
+            "offset": 0, // OPTIOANL: Default's to 0 (start position for limit)
         },
     ]
 }
