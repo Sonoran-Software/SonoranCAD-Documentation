@@ -12,7 +12,9 @@ This plugin utilizes API endpoints that require the **plus **version of Sonoran 
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
-This plugin allows Sonoran Radio customers to connect the radio with the Sonoran CAD.
+This plugin allows Sonoran Radio customers to connect the radio with the Sonoran CAD. View your unit status, dispatch call information, toggle a panic, and more!
+
+![Sonoran Radio - CAD Dispatch Information](../../../.gitbook/assets/unknown.png)
 
 ## Installation
 
