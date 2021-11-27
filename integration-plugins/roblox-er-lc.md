@@ -2,7 +2,7 @@
 description: Learn more about our Roblox integration with ER:LC!
 ---
 
-# Roblox ER:LC
+# 🎮 Roblox ER:LC
 
 ![Sonoran CAD x ER:LC](<../.gitbook/assets/image (292).png>)
 

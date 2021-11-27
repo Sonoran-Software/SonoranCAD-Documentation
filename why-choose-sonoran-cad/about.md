@@ -81,6 +81,14 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
+### &#x20;ER:LC Roblox Integration
+
+![Sonoran CAD x ER:LC](<../.gitbook/assets/image (292).png>)
+
+Do you play Roblox? Sonoran CAD is integrated with Emergency Response Liberty County!
+
+Update your unit locations in realtime, run name and plate searches, create automated traffic stops, and more!
+
 ### 💻 Multitasking Window and Tab System
 
 Only Sonoran CAD lets you easily multitask and open multiple search windows, records, penal codes references, ten code lists, and more! Our workflow allows you to handle even the most complicated and demanding patrols.
