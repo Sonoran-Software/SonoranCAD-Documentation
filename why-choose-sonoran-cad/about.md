@@ -83,11 +83,11 @@ Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integr
 
 ### &#x20;ER:LC Roblox Integration
 
-![Sonoran CAD x ER:LC](<../.gitbook/assets/image (292).png>)
+![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
 Do you play Roblox? Sonoran CAD is integrated with Emergency Response Liberty County!
 
-Update your unit locations in realtime, run name and plate searches, create automated traffic stops, and more!
+Update your unit locations in real time, run name and plate searches, create automated traffic stops, and more!
 
 ### 💻 Multitasking Window and Tab System
 

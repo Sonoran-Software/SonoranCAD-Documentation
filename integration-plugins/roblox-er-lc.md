@@ -4,10 +4,10 @@ description: Learn more about our Roblox integration with ER:LC!
 
 # 🎮 Roblox ER:LC
 
-![Sonoran CAD x ER:LC](<../.gitbook/assets/image (292).png>)
+![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
 {% hint style="danger" %}
-This integration has **not yet been released by ER:LC** and is expected to be released on **10/28/2021**.
+This integration has **not yet been released by ER:LC** and is expected to be released on **11/28/2021**.
 {% endhint %}
 
 ## What is ER:LC?
