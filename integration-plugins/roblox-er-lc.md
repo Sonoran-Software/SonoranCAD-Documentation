@@ -7,7 +7,7 @@ description: Learn more about our Roblox integration with ER:LC!
 ![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
 {% hint style="danger" %}
-This integration has **not yet been released by ER:LC** and is expected to be released on **11/28/2021**.
+These** **features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](roblox-er-lc.md#in-game-commands-and-features), or [view our pricing page](../pricing/faq/) for more information.
 {% endhint %}
 
 ## What is ER:LC?
@@ -93,11 +93,23 @@ Select `New` under API ID and paste in your Roblox API ID.
 
 ### Unit Locations
 
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
+
 Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
 
 ![Sonoran CAD - Unit Locations](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.17.54 AM.png>)
 
 ### Plate Search
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
 
 | Command                | Description        |
 | ---------------------- | ------------------ |
@@ -112,6 +124,12 @@ Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) 
 
 ### Name Search
 
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
+
 | Command              |                   |
 | -------------------- | ----------------- |
 | `/ns <name>`         | Run a name lookup |
@@ -124,6 +142,12 @@ Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) 
 ![Sonoran CAD: Name Search](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.25.04 AM.png>)
 
 ### Traffic Stop
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
 
 | Command               | Description                                          |
 | --------------------- | ---------------------------------------------------- |
@@ -140,6 +164,12 @@ Note: Don't include your location in the traffic stop info, the command will aut
 
 ### 911 Calls
 
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
+
 | Command           | Description                                 |
 | ----------------- | ------------------------------------------- |
 | `/setname <name>` | Sets a roleplay name used when calling 911. |
@@ -153,6 +183,12 @@ Using your cell phone in-game, you can call emergency services. This 911 call wi
 Automated alarms from fire alarms or bank robberies will also be automatically sent to the CAD's emergency call section.
 
 ### Panic
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
 
 | Command  | Description                      |
 | -------- | -------------------------------- |
