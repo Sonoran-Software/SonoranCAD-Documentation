@@ -7,6 +7,10 @@ description: Learn more about our Roblox integration with ER:LC!
 ![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
 {% hint style="danger" %}
+This update has **not yet been released by ER:LC** and has an expected release date of **10/30/2021**.
+{% endhint %}
+
+{% hint style="warning" %}
 These** **features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](roblox-er-lc.md#in-game-commands-and-features), or [view our pricing page](../pricing/faq/) for more information.
 {% endhint %}
 
@@ -180,7 +184,7 @@ Using your cell phone in-game, you can call emergency services. This 911 call wi
 
 #### Automated Alarms
 
-Automated alarms from fire alarms or bank robberies will also be automatically sent to the CAD's emergency call section.
+Automated alarms from fire alarms or robberies will also be automatically sent to the CAD's emergency call section.
 
 ### Panic
 
