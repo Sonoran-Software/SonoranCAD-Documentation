@@ -7,7 +7,7 @@ description: Learn more about our Roblox integration with ER:LC!
 ![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
 {% hint style="danger" %}
-This update has **not yet been released by ER:LC** and has an expected release date of **10/30/2021**.
+This update has **not yet been released by ER:LC** and has an expected release date of **11/30/2021**.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -117,10 +117,10 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 | Command                | Description        |
 | ---------------------- | ------------------ |
-| `/ps <plate>`          | Run a plate search |
-| `/platesearch <plate>` | Run a plate search |
+| `/sp <plate>`          | Run a plate search |
+| `/searchplate <plate>` | Run a plate search |
 
-Ex: `/ps abc1234`
+Ex: `/sp abc1234`
 
 Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, running a pate search in-game will automatically pop up the results on your CAD screen.
 
@@ -136,10 +136,10 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 | Command              |                   |
 | -------------------- | ----------------- |
-| `/ns <name>`         | Run a name lookup |
-| `/namesearch <name>` | Run a name lookup |
+| `/sn <name>`         | Run a name lookup |
+| `/searchname <name>` | Run a name lookup |
 
-Ex: `/ns Brian Sauce`
+Ex: `/sn Brian Sauce`
 
 Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD,  running a name search in-game will automatically pop up the results on your CAD screen.
 
