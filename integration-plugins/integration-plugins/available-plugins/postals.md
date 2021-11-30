@@ -7,7 +7,7 @@ description: >-
 # Postals
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -18,9 +18,9 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
-## Installation** Guide**
+## Installation **Guide**
 
 ### 1. Download and Install the Framework
 
@@ -77,7 +77,7 @@ The screenshot below shows an example of the export above being pasted as the **
 
 #### 3. Ensure Proper Startup Order
 
-Be sure that you are starting the nearest-postals addon/resource **before/above **where you `ensure sonorancad` in your `server.cfg`.
+Be sure that you are starting the nearest-postals addon/resource **before/above** where you `ensure sonorancad` in your `server.cfg`.
 
 #### 4. Restart both Resources
 

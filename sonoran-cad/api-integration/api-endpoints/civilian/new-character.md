@@ -5,7 +5,7 @@ description: This endpoint allows you to add a new character to an existing user
 # New Character
 
 {% hint style="warning" %}
-This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -71,4 +71,4 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 
 #### Record Formatting
 
-Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting). 
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting).&#x20;

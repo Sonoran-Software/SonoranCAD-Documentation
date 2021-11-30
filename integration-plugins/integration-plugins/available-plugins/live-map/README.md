@@ -10,7 +10,7 @@ description: >-
 ![Sonoran CAD's Custom Integrated Live Map System](../../../../.gitbook/assets/live\_map.png)
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus **version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -26,9 +26,9 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [live map installation video](https://youtu.be/dhUCfvdLZ\_U).
 
-**Be sure you have already installed our **[**plugin framework**](../../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../../framework-installation.md)**!**
 
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your **[**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)** set.**
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
 ## Installation Guide
 
@@ -57,7 +57,7 @@ This requires the resource `sonoran_livemap` to be loaded. This is bundled with 
 
 Particularly with **Linux**, some users have an additional installation step.
 
-First, run `start webpack` in your server console _before _running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.
+First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.
 
 You will have to do this step whenever the `sonoran_livemap` resource is updated.
 {% endhint %}
@@ -132,7 +132,7 @@ You can also [pin the live map button to your taskbar](../../../../tutorials/cus
 
 ![Sonoran CAD: Live Map Button](<../../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
 
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your **[**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)** set.**
+**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
 ## When are Player Blips Displayed?
 
@@ -143,13 +143,13 @@ Players will only show on the map when **ALL** of the following conditions are m
 3. The player has the [correct server selected in the CAD](../../../../tutorials/customization/configuring-multiple-servers.md), on the top right of the page.
 4. The player is actively logged into the server.
 5. The player has Steam, Discord, or other identifier type program running:
-   * If the server API IDs are based on the Steam HEX,** the player must have Steam running**.
+   * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
    * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
 ## Using a Custom Map
 
 {% hint style="danger" %}
-This feature requires the **pro **version of SonoranCAD.\
+This feature requires the **pro** version of SonoranCAD.\
 For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
@@ -186,7 +186,7 @@ Custom map images are limited to 30MB each. **However, if you are uploading more
 
 If you are not using the default live map port (`30121`) you will need to change the configuration.
 
-Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **one **additional open port not being used by any other service.
+Your hosting provider may give you other ports, or you may have services already running on these default ports. You will need **one** additional open port not being used by any other service.
 
 1. Navigate to your server's `server.cfg` file.
 2. Add the lines to set the convar values to the ports you are using

@@ -6,7 +6,7 @@ description: >-
 
 # Custom Records
 
-## Record API Endpoints
+## \`Record API Endpoints
 
 All custom records and reports utilize the same common formatting. You can manage custom records via the endpoints shown below.
 
@@ -140,17 +140,24 @@ The `field` object contains all of the data for an individual custom record fiel
 
 #### Type
 
-| Value        | Description                                                                                                      |
-| ------------ | ---------------------------------------------------------------------------------------------------------------- |
-| "input"      | Standard Textbox                                                                                                 |
-| "textarea"   | Multi-line Textbox                                                                                               |
-| "address"    | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
-| "select"     | Dropdown (Uses `options` array)                                                                                  |
-| "date"       | Date Picker                                                                                                      |
-| "time"       | Time Picker                                                                                                      |
-| "image"      | Image URL Viewer/Uploader                                                                                        |
-| "checkboxes" | List of Checkboxes (Uses `options` array)                                                                        |
-| "label"      | Text Label                                                                                                       |
+| `INPUT`                | Standard Textbox                                                                                                 |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `TEXTAREA`             | Multi-line Textbox                                                                                               |
+| `ADDRESS`              | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
+| `SELECT`               | Dropdown (Uses `options` array)                                                                                  |
+| `DATE`                 | Date Picker                                                                                                      |
+| `TIME`                 | Time Picker                                                                                                      |
+| `IMAGE`                | Image URL Viewer/Uploader                                                                                        |
+| `CHECKBOXES`           | List of Checkboxes (Uses `options` array)                                                                        |
+| `LABEL`                | Text Label                                                                                                       |
+| `UNIT_NUMBER`          | Auto filled unit number                                                                                          |
+| `UNIT_NAME`            | Auto filled unit name                                                                                            |
+| `UNIT_RANK`            | Auto filled unit rank                                                                                            |
+| `UNIT_AGENCY`          | Auto filled unit agency                                                                                          |
+| `UNIT_DEPARTMENT`      | Auto filled unit department                                                                                      |
+| `UNIT_SUBDIVISION`     | Auto filled unit subdivision                                                                                     |
+| `UNIT_AGENCY_LOCATION` | Auto filled unit agency location                                                                                 |
+| `UNIT_AGENCY_ZIP`      | Auto filled unit agency zip                                                                                      |
 
 #### Mask
 

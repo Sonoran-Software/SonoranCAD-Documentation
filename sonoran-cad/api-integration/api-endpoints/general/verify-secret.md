@@ -5,7 +5,7 @@ description: This endpoint verifies a user account's secret ID.
 # Verify Secret
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/verify_secret" method="post" summary="Get Account" %}

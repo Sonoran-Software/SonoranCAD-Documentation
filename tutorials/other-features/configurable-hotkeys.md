@@ -10,7 +10,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 {% endhint %}
 
 {% hint style="info" %}
-Hotkeys are enabled **globally **on the [Desktop ](../../downloads/)application. This means users do not have to have the app or page in focus or visible for the hotkeys to be registered.
+Hotkeys are enabled **globally** on the [Desktop ](../../downloads/)application. This means users do not have to have the app or page in focus or visible for the hotkeys to be registered.
 
 For desktop users, we **highly recommend** viewing our [guide on in-game use](../../downloads/steam-browser-workaround.md)!
 {% endhint %}
@@ -25,5 +25,5 @@ Once changed, your settings are automatically applied and saved.
 ![Sonoran CAD's hotkey configuration menu](../../.gitbook/assets/hotkeys.PNG)
 
 {% hint style="info" %}
-_Note: _This image also displays [custom unit status options](../customization/unit-status-codes.md), and may differ slightly from your view.
+_Note:_ This image also displays [custom unit status options](../customization/unit-status-codes.md), and may differ slightly from your view.
 {% endhint %}

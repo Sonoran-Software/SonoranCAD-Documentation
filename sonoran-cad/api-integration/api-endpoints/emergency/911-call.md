@@ -7,7 +7,7 @@ description: >-
 # 911 Call
 
 {% hint style="warning" %}
-This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/call_911" method="post" summary="Emergency Call" %}

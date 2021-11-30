@@ -20,7 +20,7 @@ Select **TRANSFER CAD** or **REMOVE CAD**:
 
 ![Transfer or Remove CAD options](<../../.gitbook/assets/4 (2) (1) (1).png>)
 
-Once you have chosen an option, you will be **required **to verify your email. (This will be the email you originally signed up for the CAD with.) Upon clicking the verification link, the process will be completed.
+Once you have chosen an option, you will be **required** to verify your email. (This will be the email you originally signed up for the CAD with.) Upon clicking the verification link, the process will be completed.
 
 {% hint style="danger" %}
 Once a CAD is deleted, there is NO WAY for us to recover it. Please consider this before making your choice.

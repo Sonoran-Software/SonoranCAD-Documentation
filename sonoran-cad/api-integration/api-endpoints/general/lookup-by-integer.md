@@ -7,7 +7,7 @@ description: >-
 # Lookup By Integer
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -81,14 +81,14 @@ Adding the [API ID](../../getting-started/setting-your-api-id.md) field is _opti
 {% tab title="Search Type" %}
 ### SearchType Enumerator
 
-The `searchType` enumerator determines how your `value` integer is interpreted. 
+The `searchType` enumerator determines how your `value` integer is interpreted.&#x20;
 
-| Enum | Description       |
-| ---- | ----------------- |
-| 0    | IDENTIFIER        |
-| 1    | SUPERVISOR_STATUS |
-| 2    | ACTIVE_STATUS     |
-| 3    | NUMBER            |
+| Enum | Description        |
+| ---- | ------------------ |
+| 0    | IDENTIFIER         |
+| 1    | SUPERVISOR\_STATUS |
+| 2    | ACTIVE\_STATUS     |
+| 3    | NUMBER             |
 {% endtab %}
 
 {% tab title="Value" %}

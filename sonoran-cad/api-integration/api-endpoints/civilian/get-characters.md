@@ -7,7 +7,7 @@ description: >-
 # Get Characters
 
 {% hint style="warning" %}
-This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/civilian/get_characters" method="post" summary="Get Characters" %}

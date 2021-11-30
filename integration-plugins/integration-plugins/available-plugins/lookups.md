@@ -5,7 +5,7 @@ description: Implements name and plate lookups via the CAD.
 # Lookups
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -22,7 +22,7 @@ This plugin Implements name and plate lookups via the CAD.
 
 Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
 
-**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 
@@ -32,7 +32,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_lookups/releases)to download the lookups plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_lookups/releases)to download the lookups plugin .zip file.
 
 ### 3. Install the Plugin
 

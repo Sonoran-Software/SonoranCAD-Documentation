@@ -5,7 +5,7 @@ description: This endpoint authenticates the use of our integrated street signs 
 # Auth Street Signs
 
 {% hint style="warning" %}
-This API endpoint requires the **Pro **version of Sonoran CAD or higher.\
+This API endpoint requires the **Pro** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 

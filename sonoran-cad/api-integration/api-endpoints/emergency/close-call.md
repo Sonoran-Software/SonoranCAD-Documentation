@@ -5,7 +5,7 @@ description: This endpoint allows you to close an existing dispatch call.
 # Close Call
 
 {% hint style="warning" %}
-This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/close_call" method="post" summary="Close Call" %}

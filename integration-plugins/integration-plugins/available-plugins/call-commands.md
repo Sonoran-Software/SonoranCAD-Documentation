@@ -5,7 +5,7 @@ description: Handles sending emergency calls to the CAD.
 # Call Commands
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -16,7 +16,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our call [commands install video](https://youtu.be/ZeCzvU3ZfD0).
 
-**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 
@@ -26,7 +26,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_callcommands/releases)to download the call commands plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_callcommands/releases)to download the call commands plugin .zip file.
 2. Download and install the[ locations ](locations.md)plugin.
 3. (Optional) Download and install the[ postal ](postals.md)plugin.
 

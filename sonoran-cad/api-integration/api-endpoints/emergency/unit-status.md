@@ -5,7 +5,7 @@ description: Update your unit's current status in the CAD via API.
 # Unit Status
 
 {% hint style="warning" %}
-This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/unit_status" method="post" summary="Update Unit Status" %}
@@ -69,4 +69,4 @@ The unit status enumeration values are shown below. These reflect the default un
 | 1                           | BUSY               |
 | 2                           | AVAILABLE          |
 | 3                           | ENROUTE            |
-| 4                           | ON_SCENE           |
+| 4                           | ON\_SCENE          |

@@ -7,7 +7,7 @@ description: >-
 # Addresses and Street Names
 
 {% hint style="warning" %}
-Street address customization requires the **plus **version of Sonoran CAD or higher.\
+Street address customization requires the **plus** version of Sonoran CAD or higher.\
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 

@@ -7,7 +7,7 @@ description: >-
 # ESX Support (QBUS) and Auto-Fines
 
 {% hint style="warning" %}
-This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro **version.
+This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro** version.
 
 For more information, view our [pricing ](../../../pricing/faq)page.
 {% endhint %}

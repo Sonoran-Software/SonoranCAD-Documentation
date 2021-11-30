@@ -7,7 +7,7 @@ description: >-
 # Remove Record
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/remove_record" method="post" summary="Remove Record" %}

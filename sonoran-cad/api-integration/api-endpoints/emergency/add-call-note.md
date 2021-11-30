@@ -5,7 +5,7 @@ description: This endpoint allows you to add a new dispatch call note.
 # Add Call Note
 
 {% hint style="warning" %}
-This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/add_call_note" method="post" summary="Add Call Note" %}

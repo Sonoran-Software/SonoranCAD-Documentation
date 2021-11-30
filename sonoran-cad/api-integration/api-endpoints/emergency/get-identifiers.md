@@ -7,7 +7,7 @@ description: >-
 # Get Account Identifiers
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_account_identifiers" method="post" summary="Get Account Identifiers" %}
@@ -97,6 +97,6 @@ Sonoran CAD uses integer enumeration values for the unit's `status` fields. See 
 | 1                          | BUSY               |
 | 2                          | AVAILABLE          |
 | 3                          | ENROUTE            |
-| 4                          | ON_SCENE           |
+| 4                          | ON\_SCENE          |
 {% endtab %}
 {% endtabs %}

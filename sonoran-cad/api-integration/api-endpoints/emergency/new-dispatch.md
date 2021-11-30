@@ -7,7 +7,7 @@ description: >-
 # New Dispatch
 
 {% hint style="warning" %}
-This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/new_dispatch" method="post" summary="New Dispatch" %}
@@ -92,7 +92,7 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 | 0                           | CALLER             |
 | 1                           | RADIO DISPATCH     |
 | 2                           | OBSERVED           |
-| 3                           | WALK_UP            |
+| 3                           | WALK\_UP           |
 {% endtab %}
 
 {% tab title="STATUS" %}

@@ -5,7 +5,7 @@ description: This guide covers the installation process for a general integratio
 # Plugin Installation
 
 {% hint style="warning" %}
-All Sonoran CAD integration plugins require the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+All Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -23,7 +23,7 @@ View our [framework installation](https://youtu.be/EsQWGnyrvm8) video also cover
 
 This example uses the postals plugin.
 
-**If you have not already installed the **[**plugin framework**](../framework-installation.md)**, please do so before continuing.**
+**If you have not already installed the** [**plugin framework**](../framework-installation.md)**, please do so before continuing.**
 
 ### 1. Download
 

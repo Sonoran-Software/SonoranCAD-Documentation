@@ -7,7 +7,7 @@ description: >-
 # Check API ID
 
 {% hint style="warning" %}
-This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/check_apiid" method="post" summary="Check API ID" %}

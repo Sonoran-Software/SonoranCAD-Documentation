@@ -5,7 +5,7 @@ description: Our desktop app allows you to advertise your community right in Dis
 # Discord Rich Presence
 
 {% hint style="info" %}
-Rich presence is included with all versions of Sonoran CAD, but customization requires the **Standard** plan or higher, and the **Pro **plan for complete customization with the icon.\
+Rich presence is included with all versions of Sonoran CAD, but customization requires the **Standard** plan or higher, and the **Pro** plan for complete customization with the icon.\
 For more information, see our [pricing](../pricing/faq/) or view how to check your community [limits](../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
@@ -25,7 +25,7 @@ Discord presence currently allows for two customizable buttons.
 
 Navigate to Admin > Customization > Customization > Discord Rich Presence
 
-#### For communities on the **Standard **plan or higher:
+#### For communities on the **Standard** plan or higher:
 
 \- Button #2 may be customized to any [Sonoran CAD](../tutorials/customization/custom-login-page.md#in-game-tablet) or [Sonoran CMS](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms) invitation link.\
 \- Ex: `https://sonorancad.com/#/?comid=mycommunityid` or `https://sonorancms.com/#/?comid=mycommunityid`

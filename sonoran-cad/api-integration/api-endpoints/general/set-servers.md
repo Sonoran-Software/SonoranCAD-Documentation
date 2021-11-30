@@ -5,7 +5,7 @@ description: This endpoint allows you to update your CAD's server configuration.
 # Set Servers
 
 {% hint style="warning" %}
-API endpoint requires the **Plus **version of Sonoran CAD or higher.\
+API endpoint requires the **Plus** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 

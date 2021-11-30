@@ -5,7 +5,7 @@ description: Implements the Wraith ARS 2X plate reader for automated plate readi
 # WraithV2
 
 {% hint style="danger" %}
-This plugin utilizes API endpoints that require the **Plus **version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **Plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -22,7 +22,7 @@ View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
 
 Click to view our [WraithV2 plate reader and lookup installation video](https://youtu.be/IgaISh1CykE).
 
-**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
 ## Installation Guide
 

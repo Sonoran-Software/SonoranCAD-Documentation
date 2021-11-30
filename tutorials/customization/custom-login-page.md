@@ -35,7 +35,7 @@ The example record below sets `cad.sonoranroleplay.com` as the custom login page
 ![Cloudflare - DNS Record ](<../../.gitbook/assets/image (173).png>)
 
 {% hint style="info" %}
-**Cloudflare Users: **Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
+**Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
 {% endhint %}
 
 ### 2. Set the Domain Name in Sonoran CAD

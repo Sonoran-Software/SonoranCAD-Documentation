@@ -20,7 +20,7 @@ Players will only show on the map when **ALL** of the following conditions are m
 3. The player has the [correct server selected in the CAD](../../../../tutorials/customization/configuring-multiple-servers.md), on the top right of the page.
 4. The player is actively logged into the server.
 5. The player has Steam, Discord, or other identifier type program running:
-   * If the server API IDs are based on the Steam HEX,** the player must have Steam running**.
+   * If the server API IDs are based on the Steam HEX, **the player must have Steam running**.
    * If the server API IDs are based on Discord IDs, **the player must have Discord running**.
 
 ## ERROR: Couldn't start resource sonoran\_livemap
@@ -29,13 +29,13 @@ Players will only show on the map when **ALL** of the following conditions are m
 
 Particularly with **Linux**, some users have an additional installation step,[ per the installation guide](./).
 
-First, run `start webpack` in your server console _before _running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.‌
+First, run `start webpack` in your server console _before_ running `start sonoran_livemap` in order to build it for the first time. You can `stop webpack` after it has been built.‌
 
 You will have to do this step whenever the `sonoran_livemap` resource is updated.
 
 ## 1. Check your Subscription Version
 
-Your community's subscription may have expired and failed to renew. Do a quick check on your [community limits](../../../../tutorials/getting-started/view-your-limits.md) to make sure your community version is on the **Plus **version or higher.
+Your community's subscription may have expired and failed to renew. Do a quick check on your [community limits](../../../../tutorials/getting-started/view-your-limits.md) to make sure your community version is on the **Plus** version or higher.
 
 ## 2. Search the Resource Manifest
 

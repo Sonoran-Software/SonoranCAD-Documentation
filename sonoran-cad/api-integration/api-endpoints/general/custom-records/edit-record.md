@@ -7,7 +7,7 @@ description: >-
 # Edit Record
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/edit_record" method="post" summary="Edit Record" %}
@@ -63,4 +63,4 @@ INVALID API KEY
 
 Custom records require a strict format with several dozen different data fields. Due to the complexity, it is highly recommended to create a new custom record template in the CAD UI, and then [retrieve the record template](get-record-template.md) for adding new records.
 
-Or, view a detailed explanation of [custom record formatting](./#record-formatting). 
+Or, view a detailed explanation of [custom record formatting](./#record-formatting).&#x20;

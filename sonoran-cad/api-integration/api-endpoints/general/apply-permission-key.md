@@ -7,7 +7,7 @@ description: >-
 # Apply Permission Key
 
 {% hint style="warning" %}
-This API endpoint requires the **plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/apply_permission_key" method="post" summary="Apply Permission Key" %}

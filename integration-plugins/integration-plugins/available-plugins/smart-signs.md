@@ -11,7 +11,7 @@ description: >-
 ![London Studios - Smart Signs](<../../../.gitbook/assets/image (222).png>)
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **Pro **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -83,7 +83,7 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 ### Full Feature List
 
 **Signs** – This is the main element of the resource, allowing you to walk up to a sign and change the text from an in-game control panel at the bottom of the sign. This can be used to open a world of roleplay opportunities.\
-**Word Denylist **– You are able to set the resource up so that users cannot use specific words on a sign.\
+**Word Denylist** – You are able to set the resource up so that users cannot use specific words on a sign.\
 **Discord Logs** – You can choose to send logs to your Discord server via a webhook each time a player sets the text on a sign.\
 **Custom Model** – This resource includes high-quality letters and a custom sign model created by Beaver Mods. This will ultimately enhance realism.\
 **Highly Configurable** – This resource is highly configurable, allowing you to setup each sign separately. You can adjust the location of each sign, all messages and even add extra characters from other languages.\
@@ -156,7 +156,7 @@ To change the activation key (adjustButton), replace it with your desired key co
 
 You can see from the above config just how configurable the resource is, allowing you to set many features such as the load in the distance and access points to edit the text of the signs, the different denied words and the animations played while the player is typing.
 
-Secondly, the **instructionalText **section allows you to convert the access message to another language.
+Secondly, the **instructionalText** section allows you to convert the access message to another language.
 
 ### **Signs Configuration**
 
@@ -182,7 +182,7 @@ This command will spawn a sign prop in which can be repositioned with the follow
 **PAGE UP** — move sign up\
 **PAGE DOWN** — move sign down\
 **UP ARROW** — move sign forwards\
-**DOWN ARROW **— move sign backwards\
+**DOWN ARROW** — move sign backwards\
 **LEFT ARROW** — move sign to the left\
 **RIGHT ARROW** — move sign to the right\
 **B** — rotate sign clockwise\

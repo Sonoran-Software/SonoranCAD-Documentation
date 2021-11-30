@@ -7,7 +7,7 @@ description: >-
 # Remove 911
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 This endpoint allows you to remove an existing emergency/911 call from the CAD.

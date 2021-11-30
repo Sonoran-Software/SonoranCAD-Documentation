@@ -7,7 +7,7 @@ description: >-
 # Get Record Templates
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/get_templates" method="post" summary="Get Record Templates" %}
@@ -61,4 +61,4 @@ INVALID API KEY
 
 #### Record Formatting
 
-Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](./#record-formatting). 
+Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](./#record-formatting).&#x20;

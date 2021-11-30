@@ -7,7 +7,7 @@ description: >-
 # Update Unit Location
 
 {% hint style="warning" %}
-iThis API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+iThis API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/unit_location" method="post" summary="Unit Location" %}
@@ -68,7 +68,7 @@ INVALID API KEY
 
 #### API ID
 
-The **apiId **field contains a unique ID that every unit identifier must have specified in Sonoran CAD. Users can set this field in their identifier to properly map unit update API calls to their CAD identifier.\
+The **apiId** field contains a unique ID that every unit identifier must have specified in Sonoran CAD. Users can set this field in their identifier to properly map unit update API calls to their CAD identifier.\
 \
 For more information, see our guide on setting your unit's API ID:
 
@@ -78,6 +78,6 @@ For more information, see our guide on setting your unit's API ID:
 
 #### Rate Limiting
 
-To avoid being rate limited when frequently updating multiple unit locations, it is best to group multiple unit location update together into the **data **array field. When compared to making a separate API call with every location update, grouping multiple location updates into a single call every few seconds is more efficient.
+To avoid being rate limited when frequently updating multiple unit locations, it is best to group multiple unit location update together into the **data** array field. When compared to making a separate API call with every location update, grouping multiple location updates into a single call every few seconds is more efficient.
 
 _NOTE:_ We recommend updating unit locations in a group no more frequently than every 5 seconds.

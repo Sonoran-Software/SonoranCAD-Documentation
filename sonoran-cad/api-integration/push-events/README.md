@@ -7,7 +7,7 @@ description: >-
 # Push Events
 
 {% hint style="warning" %}
-All push events require the **Plus **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
+All push events require the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}

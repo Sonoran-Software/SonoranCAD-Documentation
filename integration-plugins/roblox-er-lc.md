@@ -6,12 +6,8 @@ description: Learn more about our Roblox integration with ER:LC!
 
 ![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
 
-{% hint style="danger" %}
-This update has **not yet been released by ER:LC** and has an expected release date of **11/30/2021**.
-{% endhint %}
-
 {% hint style="warning" %}
-These** **features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](roblox-er-lc.md#in-game-commands-and-features), or [view our pricing page](../pricing/faq/) for more information.
+These **** features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](roblox-er-lc.md#in-game-commands-and-features), or [view our pricing page](../pricing/faq/) for more information.
 {% endhint %}
 
 ## What is ER:LC?
@@ -30,6 +26,12 @@ We're excited to support the following in-game integration options with ER:LC
 * and more!
 
 ## Getting Started
+
+### ER:LC Video Tutorial
+
+Check out ER:LC's official Sonoran CAD tutorial for more info!
+
+{% embed url="https://www.youtube.com/watch?v=N6nPVLnTac0" %}
 
 ### For Server Owners
 

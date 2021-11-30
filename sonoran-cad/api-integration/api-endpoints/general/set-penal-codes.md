@@ -7,7 +7,7 @@ description: >-
 # Set Penal Codes
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/general/set_penal_codes" method="post" summary="Set Penal Codes" %}

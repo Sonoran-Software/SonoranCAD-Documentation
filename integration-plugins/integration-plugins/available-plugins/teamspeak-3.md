@@ -8,7 +8,7 @@ description: >-
 # TeamSpeak 3
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}

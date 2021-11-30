@@ -25,7 +25,7 @@ While requesting support from an official Sonoran team member, you may be asked 
 {% hint style="danger" %}
 Your community's ownership authentication code can only be retrieved from your CAD owner.\
 \
-This code is used in support tickets to confirm that you are the registered owner of the community. **NEVER **give this code out to anyone that is not a member of the Sonoran support team!
+This code is used in support tickets to confirm that you are the registered owner of the community. **NEVER** give this code out to anyone that is not a member of the Sonoran support team!
 {% endhint %}
 
 1. In the admin page, navigate to "Advanced" > "Authenticate"

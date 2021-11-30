@@ -53,7 +53,7 @@ This will then allow you to search characters, licenses, or vehicle registration
 
 ### 4. Make a NEW Record
 
-With the exception of database sync records, any existing records with this field will **not **be searchable.
+With the exception of database sync records, any existing records with this field will **not** be searchable.
 
 You will need to create a new record with the custom searchable field in order to find it via custom lookup.
 

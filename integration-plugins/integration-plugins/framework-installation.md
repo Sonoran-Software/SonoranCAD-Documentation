@@ -7,7 +7,7 @@ description: >-
 # Framework Installation
 
 {% hint style="warning" %}
-All Sonoran CAD integration plugins require the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
+All Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}

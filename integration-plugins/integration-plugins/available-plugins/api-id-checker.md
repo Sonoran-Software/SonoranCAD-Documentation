@@ -7,7 +7,7 @@ description: >-
 # Check API ID
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -24,7 +24,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_apicheck/releases)to download the API ID plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_apicheck/releases)to download the API ID plugin .zip file.
 
 ### 3. Install the Plugin
 

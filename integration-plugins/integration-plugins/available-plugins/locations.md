@@ -5,7 +5,7 @@ description: Sends locations of all online players to the CAD.
 # Locations
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard **version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -16,9 +16,9 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-**Be sure you have already installed our **[**plugin framework**](../framework-installation.md)**!**
+**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
 
-## Installation** Guide**
+## Installation **Guide**
 
 ### 1. Download and Install the Framework
 
@@ -26,7 +26,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_locations/releases)to download the locations plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_locations/releases)to download the locations plugin .zip file.
 
 ### 3. Install the Plugin
 

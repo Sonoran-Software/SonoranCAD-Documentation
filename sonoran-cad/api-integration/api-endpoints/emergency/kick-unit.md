@@ -7,7 +7,7 @@ description: >-
 # Kick Unit
 
 {% hint style="warning" %}
-This API endpoint requires the **standard **version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/kick_unit" method="post" summary="Kick Unit" %}
