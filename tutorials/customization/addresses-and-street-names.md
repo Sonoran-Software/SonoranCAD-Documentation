@@ -15,7 +15,10 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### 1. Copy the Google Sheet
 
-Navigate to our official [street name Google sheet](https://docs.google.com/spreadsheets/u/1/d/1wMEiv1EcDI4VnTjCLbechJHzUEQoMQTK\_ujWU3BfKIk/copy) and make a copy. Using a copy of our official sheet ensures your street names are formatted correctly.
+* [GTAV Street Names](https://docs.google.com/spreadsheets/u/1/d/1wMEiv1EcDI4VnTjCLbechJHzUEQoMQTK\_ujWU3BfKIk/copy)
+* [ER:LC Roblox Street Names](https://docs.google.com/spreadsheets/u/1/d/1jDUxfCffxyGHoXQ-rpzrWRNFEhDmMs3-TA9U-mdNBjg/copy)
+
+Navigate to one of our official street name Google sheet and make a copy. Using a copy of our official sheet ensures your street names are formatted correctly.
 
 ![Sonoran CAD - Copy Street Name Spreadsheet](<../../.gitbook/assets/image (107).png>)
 

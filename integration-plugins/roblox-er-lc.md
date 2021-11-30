@@ -201,3 +201,17 @@ Please [view our pricing page](../pricing/faq/) for more information.
 | `/panic` | Toggles your unit's panic status |
 
 Additionally, you can also use the desktop application's [panic hotkey](../tutorials/other-features/configurable-hotkeys.md).
+
+## Auto-Complete Street Addresses
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
+
+Sonoran CAD allows you to import the street addresses from your game to auto-complete in new dispatch calls, custom reports, and more!
+
+We've [created a list](https://docs.google.com/spreadsheets/u/1/d/1jDUxfCffxyGHoXQ-rpzrWRNFEhDmMs3-TA9U-mdNBjg/copy) specifically for ER:LC! [Learn more about importing these street addresses](roblox-er-lc.md#undefined).
+
+![](../.gitbook/assets/addresses.gif)
