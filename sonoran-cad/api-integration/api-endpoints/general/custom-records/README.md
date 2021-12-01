@@ -109,7 +109,6 @@ The `category` field contains an enumerator representing the section type. These
 | ---- | -------------- |
 | 0    | Custom         |
 | 1    | Flags          |
-| 2    | Agency         |
 | 5    | Speed          |
 | 6    | Charges        |
 | 9    | Linked Records |
@@ -130,6 +129,7 @@ The `field` object contains all of the data for an individual custom record fiel
     "isSupervisor": false, // Is this field restricted to supervisors only?
     "isRequired": false, // Is this field required to be filled before submitting?
     "unique": false, // Ensure unique value against any other records of this type (recordTypeId) - Non-DB Sync and custom sections only!
+    "readOnly": false, // Prevent users from modifying auto-filled fields
     "mask": "###", // Force 3 number entry (See Details)
     "maskReverse": false, // Fill mask in reverse order (Money)
     "dbMap": false, // Allow this field to be mapped with DB Sync

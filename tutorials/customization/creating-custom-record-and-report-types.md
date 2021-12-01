@@ -35,8 +35,6 @@ Reports can be searched in the unit's report center via number or identifier.
 
 ### 3. Add Custom and Pre-made Sections
 
-##
-
 Add your desired custom and premade sections, edit fields, and more!
 
 ![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (2).png>)
@@ -82,6 +80,8 @@ The checkboxes type allows you to create multiple checkboxes, similar to the pre
 #### 5. Date
 
 The date field allows you to specify a date field. You can also specify the formatting in the mask column.
+
+When `readOnly` is selected, this field will auto-fill the current date for new records.
 
 ![The 'DATE' field option](<../../.gitbook/assets/image (28).png>)
 
@@ -170,6 +170,16 @@ Unique fields can only be on non-DB Sync records and in custom sections.
 ![Sonoran CAD - Unique Field](<../../.gitbook/assets/image (170).png>)
 
 ![Sonoran CAD - Unique Field Error](<../../.gitbook/assets/image (171).png>)
+
+#### 5. Read Only
+
+Read only fields prevent the user from entering new or modified text. This is used for auto-filled fields like unit information when a new record is created.
+
+Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
+
+![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305).png>)
+
+![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302).png>)
 {% endtab %}
 
 {% tab title="Field Mask" %}
