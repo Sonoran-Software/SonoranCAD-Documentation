@@ -69,6 +69,9 @@ INVALID EMPTY SEARCH
             "mi": "M", // Middle Initial
             "plate": "1234ABCD", // (Partial) License Plate
             "partial": true, // OPTIONAL - Partial lookup is ran if not defined
+            "agency": "Yavapai County", // OPTIONAL - Agency of filing identifier
+            "department": "YCSO", // OPTIONAL - Department of filing identifier
+            "subdivision": "Speed Enforcement" // OPTIONAL - Subdivision of filing identifier
         }
     ]
 }
