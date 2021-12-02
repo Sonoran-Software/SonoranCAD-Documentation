@@ -10,6 +10,54 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.22.0 12/1/2021
+
+{% tabs %}
+{% tab title="New" %}
+Custom Records - Identifier Fields
+
+* Custom fields can now be added to records to auto-fill unit information for new records
+
+Custom Records - Read Only Toggle
+
+* Custom records can now have auto-filled fields marked as "read only" to prevent users from modifying the values
+
+Notepad
+
+* Added a notepad for quick multi-notes
+
+\#5683 Search Via Department/Agency
+
+* Added the option to search for record by agency, department, or subdivision instead of just a specific identifier. Improved the agency, department, and subdivision drop downs to only display departments that existed in the admin menu. Improved the identifier drop down to auto-filter while typing.
+
+Unit Group - Individual Options Once Expanded
+
+* Added individual unit context menu options when a unit group is expanded
+
+Unit Group - Flash if one is Panicked
+
+* Unit groups will now panic flash if it contains a unit in a panic state. The group can be expanded to view the individual unit in panic
+
+API: GET\_ACTIVE\_UNITS - offline and pagination
+
+* Added support to the GET\_ACTIVE\_UNITS endpoint to include offline unit identifiers. Added proper pagination support up to 100 identifiers per page
+
+New Subscription: Set ID Before Checkout
+
+* When purchasing a subscription, users are asked to set the community ID before purchase to help reduce the number of subscriptions without an ID set after purchase
+
+API Lookup - Identifier Info
+
+* The API lookup endpoint now contains optional properties to search based on an identifier agency, department, or subdivision
+{% endtab %}
+
+{% tab title="Fixed" %}
+Timer Group Attachment
+
+* Fixed an issue preventing unit groups from being attached to the first timer in an existing list from the group context menu
+{% endtab %}
+{% endtabs %}
+
 ### 3.21.9 11/21/2021
 
 {% tabs %}
