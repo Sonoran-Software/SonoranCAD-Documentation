@@ -107,8 +107,8 @@ payload["type"] = "UNIT_PANIC"
 --    Here, we're specifying one unit to PANIC
 local postData = {
     {
-        "apiId": "STEAM:5678",  -- Unit with their API ID set as `STEAM:5678`
-        "isPanic": true         -- Panic ON
+        ["apiId"] = "STEAM:5678",  -- Unit with their API ID set as `STEAM:5678`
+        ["isPanic"] = true         -- Panic ON
     },
 }
 -- Add this data to our payload
