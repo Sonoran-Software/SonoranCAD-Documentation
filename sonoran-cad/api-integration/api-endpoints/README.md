@@ -115,7 +115,7 @@ local postData = {
 payload["data"] = postData
 
 -- Send POST request with JSON encoded body (payload)
-PerformHttpRequest("http://api.sonorancad.com/emergency/unit_panic", function(statusCode, res, headers)
+PerformHttpRequest("https://api.sonorancad.com/emergency/unit_panic", function(statusCode, res, headers)
     if statusCode == 200 and res ~= nil then
         -- Status code 200 (Success)
         print("result: "..tostring(res))
