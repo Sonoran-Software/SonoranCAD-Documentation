@@ -64,13 +64,26 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "EDIT_CHARACTER",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID - Typically, this is their Steam Hex
-            "character": {}, // Custom character record
-        },
+            "user": "STEAM:1234",  // API ID or user UUID/GUID that 'owns' this record
+            "useDictionary": true, // OPTION 1: Key/Value from template
+            "recordId": 123,       // OPTION 1: Record ID being modified
+            "replaceValues": {
+                // Field UID and Value
+                "first": "Brian",
+                "last": "Sosnowski"
+            },
+            "record": null        // OPTION 2: Full raw JSON structure
+        }
     ]
 }
 ```
 
-#### Record Formatting
+### Formatting Data for Custom Records
 
-Custom records require a strict format with several dozen different data fields. You can view a detailed explanation of [custom record formatting](../general/custom-records/#record-formatting).&#x20;
+Custom records can be easily modified with a set of key/value pairs, or full raw JSON.
+
+Learn more about these formatting options below:
+
+{% content-ref url="../general/custom-records/api-options-for-adding-and-modifying-records.md" %}
+[api-options-for-adding-and-modifying-records.md](../general/custom-records/api-options-for-adding-and-modifying-records.md)
+{% endcontent-ref %}

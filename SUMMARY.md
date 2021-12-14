@@ -63,7 +63,7 @@
   * [Voice Commands](tutorials/other-features/voice-commands.md)
   * [Volume and Language](tutorials/other-features/volume-and-language.md)
 
-## Integration Capabilities <a href="integration-plugins" id="integration-plugins"></a>
+## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
@@ -109,7 +109,7 @@
     * [HTTP Request Handling](integration-plugins/integration-plugins/framework-development-documentation/http-request-handling.md)
 * [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc.md)
 
-## Developer API Documentation <a href="sonoran-cad" id="sonoran-cad"></a>
+## Developer API Documentation <a href="#sonoran-cad" id="sonoran-cad"></a>
 
 * [📖 API Integration](sonoran-cad/api-integration/README.md)
   * [Getting Started](sonoran-cad/api-integration/getting-started/README.md)
@@ -171,6 +171,7 @@
       * [Set Penal Codes](sonoran-cad/api-integration/api-endpoints/general/set-penal-codes.md)
       * [Set API IDs](sonoran-cad/api-integration/api-endpoints/general/set-api-ids.md)
       * [Custom Records](sonoran-cad/api-integration/api-endpoints/general/custom-records/README.md)
+        * [API Options for Adding and Modifying Records](sonoran-cad/api-integration/api-endpoints/general/custom-records/api-options-for-adding-and-modifying-records.md)
         * [Get Record Templates](sonoran-cad/api-integration/api-endpoints/general/custom-records/get-record-template.md)
         * [New Record](sonoran-cad/api-integration/api-endpoints/general/custom-records/new-record.md)
         * [Edit Record](sonoran-cad/api-integration/api-endpoints/general/custom-records/edit-record.md)

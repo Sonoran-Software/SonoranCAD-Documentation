@@ -177,7 +177,7 @@ Read only fields prevent the user from entering new or modified text. This is us
 
 Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
 
-![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305).png>)
+![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1).png>)
 
 ![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302).png>)
 {% endtab %}

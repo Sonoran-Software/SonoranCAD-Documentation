@@ -55,7 +55,7 @@ INVALID API KEY
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
     "type": "GET_TEMPLATES",
-    "templateId": 123, // OPTIONAL - Matches a specific record's recordTypeId field
+    "recordTypeId": 123, // OPTIONAL - Matches a specific record's recordTypeId field
 }
 ```
 

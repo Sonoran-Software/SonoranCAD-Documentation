@@ -53,14 +53,27 @@ INVALID API KEY
     "type": "NEW_RECORD",
     "data": [
         {
-            // Your record data here...
-        },
+            "user": "STEAM:1234",  // API ID or user UUID/GUID that 'owns' this record
+            "useDictionary": true, // OPTION 1: Key/Value from template
+            "recordTypeId": 7,     // OPTION 1: Custom template ID number
+            "replaceValues": {
+                // Field UID and Value
+                "first": "Brian",
+                "last": "Sosnowski"
+            },
+            "record": null,        // OPTION 2: Full raw JSON structure
+        }
     ]
 }
 ```
 
-#### Record Formatting
+### Formatting Data for Custom Records
 
-Custom records require a strict format with several dozen different data fields. Due to the complexity, it is highly recommended to create a new custom record template in the CAD UI, and then [retrieve the record template](get-record-template.md) for adding new records.
+Custom records can be easily modified with a set of key/value pairs, or full raw JSON.
 
-Or, view a detailed explanation of [custom record formatting](./#record-formatting).&#x20;
+Learn more about these formatting options below:
+
+{% content-ref url="api-options-for-adding-and-modifying-records.md" %}
+[api-options-for-adding-and-modifying-records.md](api-options-for-adding-and-modifying-records.md)
+{% endcontent-ref %}
+
