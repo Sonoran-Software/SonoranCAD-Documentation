@@ -109,12 +109,6 @@ At this time, Sonoran CAD currently supports the following smart bulb types:
 
 #### [Wyze Color](https://wyze.com/wyze-bulb-color.html) (Recommended)
 
-{% hint style="danger" %}
-As of **12/06/2021** Wyze has updated their bulbs breaking their "local API" with some level of encoding. This means **Wyze color bulbs are not currently working** with our integration.\
-\
-We've reached out to Wyze to try and determine the encoding process, in addition to [our forums post](https://forums.wyzecam.com/t/wyze-local-api-encoding-changes/206479). **We encourage other developers to help aid in this discovery.**
-{% endhint %}
-
 Many of our development team members personally use and recommend these bulbs. Due to the design, these tend to provide the fastest response type with more complex lighting patterns. A 4 pack typically costs \~$40 ($10/bulb).
 
 #### [Philips Hue](https://www.philips-hue.com/en-us/products/smart-light-bulbs)
