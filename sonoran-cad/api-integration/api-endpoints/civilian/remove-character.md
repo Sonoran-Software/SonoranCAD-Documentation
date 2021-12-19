@@ -62,7 +62,6 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "REMOVE_CHARACTER",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID - Typically, this is their Steam Hex
             "id": -1, // Unique character ID - Use GET_CHARACTERS to retrieve
         },
     ]
