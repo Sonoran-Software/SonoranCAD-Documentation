@@ -14,6 +14,33 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
+Records API - Simplified Dictionary
+
+* Creating and editing records can now be easily done through the API with a simplified key/value dictionary
+
+Records API - API ID Support Addition
+
+* Record adding and removal via API now also accepts API IDs in addition to the existing user UUID field
+
+Record API - Webhook Support
+
+* Added webhook support for all custom record API endpoints
+
+{% tab title="Fixed" %}
+#6255 Notepad Label
+
+* The notepad shows police.header.notepad and when you click on it it does not bring up the notepad. This is both on the desktop app and the website
+
+Wyze Color - API Updates
+
+* Updated the lighting integration to handle Wyze's new payload encryption + encoding
+{% endtab %}
+{% endtabs %}
+
+### 3.22.0 12/1/2021
+
+{% tabs %}
+{% tab title="New" %}
 Custom Records - Identifier Fields
 
 * Custom fields can now be added to records to auto-fill unit information for new records
