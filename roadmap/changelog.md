@@ -25,6 +25,7 @@ Records API - API ID Support Addition
 Record API - Webhook Support
 
 * Added webhook support for all custom record API endpoints
+{% endtab %}
 
 {% tab title="Fixed" %}
 #6255 Notepad Label
