@@ -6,7 +6,7 @@ description: >-
 
 # Custom Records
 
-## \`Record API Endpoints
+## Record API Endpoints
 
 All custom records and reports utilize the same common formatting. You can manage custom records via the endpoints shown below.
 
@@ -145,6 +145,7 @@ The `field` object contains all of the data for an individual custom record fiel
 | `TEXTAREA`             | Multi-line Textbox                                                                                               |
 | `ADDRESS`              | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
 | `SELECT`               | Dropdown (Uses `options` array)                                                                                  |
+| `STATUS`               | DB Status Enums (See below)                                                                                      |
 | `DATE`                 | Date Picker                                                                                                      |
 | `TIME`                 | Time Picker                                                                                                      |
 | `IMAGE`                | Image URL Viewer/Uploader                                                                                        |
@@ -158,6 +159,18 @@ The `field` object contains all of the data for an individual custom record fiel
 | `UNIT_SUBDIVISION`     | Auto filled unit subdivision                                                                                     |
 | `UNIT_AGENCY_LOCATION` | Auto filled unit agency location                                                                                 |
 | `UNIT_AGENCY_ZIP`      | Auto filled unit agency zip                                                                                      |
+
+#### Status
+
+The `STATUS` field type is required for `Vehicle Registration` type records and provides additional optional functionality for `BOLO` and `Warrant` records. This status allows the database to search for BOLO/Warrant records that are open or closed, and vehicle registrations that are approved or pending in the DMV panel.
+
+The `STATUS` field value contains an enumeration (integer) value as follows:
+
+| Enumerator (Int) | DMV Records | Warrant/BOLO Records |
+| ---------------- | ----------- | -------------------- |
+| `0`              | `PENDING`   | `ACTIVE`             |
+| `1`              | `APPROVED`  | `CLOSED`             |
+| `2`              | `REJECTED`  | N/A                  |
 
 #### Mask
 
