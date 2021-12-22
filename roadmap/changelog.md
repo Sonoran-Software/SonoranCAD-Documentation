@@ -10,7 +10,31 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.22.0 12/1/2021
+### 3.22.6 12/21/2021
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch - Auto Status Toggles for Attach/Detatch/Close
+
+* Dispatchers can now configure automatic status changes for units when they're attached, detached, or have their dispatch call closed
+
+Record Filter - Icon w/Number
+
+* Updated the lookup's record type filter bar with a better icon, lighter background, and selected count number for better awareness
+{% endtab %}
+
+{% tab title="Fixed" %}
+API Record Remove - Webhook
+
+* Fixed an issue causing record removal via API to not send a webhook event
+
+API: remove_record isReport property
+
+* Removed an unused isReport field from the remove record API endpoint
+{% endtab %}
+{% endtabs %}
+
+### 3.22.4 12/18/2021
 
 {% tabs %}
 {% tab title="New" %}
