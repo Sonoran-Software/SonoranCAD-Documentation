@@ -1,0 +1,24 @@
+---
+description: >-
+  Starting in version 2.8.10 error codes are given with framework error messages
+  to help point you to a corresponding help article. Match your error code to
+  the links on this page.
+---
+
+# Error Codes
+
+| Code/Link                                                                                                                                                                                                       | Meaning and Fixes                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| API\_ERROR                                                                                                                                                                                                      | API may be down.                                                                                    |
+| [API\_PAID\_ONLY](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins)                                                                                                        | Framework requires a paid version of the API to function.                                           |
+| [CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/framework-installation#3.-configure-and-rename)                                                                             | Config file was not found or is corrupted. Ensure it was renamed!                                   |
+| PLUGIN\_DEPENDENCY\_ERROR                                                                                                                                                                                       | A plugin requires another plugin, but it was not present.                                           |
+| [PLUGIN\_CONFIG\_OUTDATED](https://info.sonorancad.com/integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting#3.-ensure-your-plugin-is-up-to-date-and-download-the-latest-release.) | Look in the shipped config file for the plugin and make changes as needed.                          |
+| PLUGIN\_CORE\_OUTDATED                                                                                                                                                                                          | Framework is outdated for the plugin. Update the framework.                                         |
+| [MAP\_CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                               | Map configuration is incorrect.                                                                     |
+| [PORT\_CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                              | Game server port is incorrect.                                                                      |
+| [PORT\_MISSING\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                             | Game server port is missing.                                                                        |
+| [PORT\_OUTBOUND\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/smart-signs#differing-inbound-outbound-ip-addresses)                                              | Outbound IP doesn't match reported IP from your server.                                             |
+| [PORT\_OUTBOUND\_MISMATCH](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/smart-signs#differing-inbound-outbound-ip-addresses)                                           | Server IP doesn't match reported IP from your server.                                               |
+| ERROR\_ABORT                                                                                                                                                                                                    | An unexpected error occurred and SonoranCAD aborted startup. Review logs further up for any errors. |
+| [STEAM\_ERROR](https://forum.cfx.re/t/using-the-steam-api-key-manually-on-the-server/805987)                                                                                                                    | Steam Web API key wasn't found. This must be set.                                                   |

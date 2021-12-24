@@ -107,6 +107,7 @@
   * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
   * [Framework Development Documentation](integration-plugins/integration-plugins/framework-development-documentation/README.md)
     * [HTTP Request Handling](integration-plugins/integration-plugins/framework-development-documentation/http-request-handling.md)
+  * [Error Codes](integration-plugins/integration-plugins/error-codes.md)
 * [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc.md)
 
 ## Developer API Documentation <a href="#sonoran-cad" id="sonoran-cad"></a>
