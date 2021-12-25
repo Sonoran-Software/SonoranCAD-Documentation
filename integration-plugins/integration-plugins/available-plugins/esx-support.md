@@ -77,14 +77,27 @@ This plugin can be used to issue fines to players when reports/records are enter
 * [livemap](live-map/)
   * Adds the ability to show character names on the map.
 
+## Legacy ESX Support
+
+This is mainly for ESX v1 releases that were made before the character system implementation using only the `users` database table. Theses versions of ESX used the `users` table only for player information of active characters and a `characters` table that held all character information (active and secondary characters of your players).
+
+
+
+Due to different handling of character information such as first name and last names, this option allows you to use esxsupport plugin with older "Legacy" ESX v1 releases.
+
+
+
+Simply set `legacyESX` to true in your `config_esxsupport.lua`
+
 ## Configuration
 
-| Config Value  | Description                                                                                                         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------- |
-| identityType  | Newer ESX version use license instead of steam for identity.                                                        |
-| usePrefix     | Some ESX versions don't use the prefix (such as license:abc) with the identity, set to false to disable the prefix. |
-| usingQbus     | If you are using Qbus set this to true.                                                                             |
-| QbusEventName | Change to the prefix to the name of the event you are using for Qbus                                                |
-| issueFines    | Whether to issue fines to players for finable reports/forms                                                         |
-| fineNotify    | Whether to send a message in chat when a player is issued a fine                                                    |
-| fineableForms | A list of the names of forms that should issue fines to players.                                                    |
+| Config Value  | Description                                                                                                                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| identityType  | Newer ESX version use license instead of steam for identity.                                                                                                                                 |
+| usePrefix     | Some ESX versions don't use the prefix (such as license:abc) with the identity, set to false to disable the prefix.                                                                          |
+| usingQbus     | If you are using Qbus set this to true.                                                                                                                                                      |
+| QbusEventName | Change to the prefix to the name of the event you are using for Qbus                                                                                                                         |
+| issueFines    | Whether to issue fines to players for finable reports/forms                                                                                                                                  |
+| fineNotify    | Whether to send a message in chat when a player is issued a fine                                                                                                                             |
+| fineableForms | A list of the names of forms that should issue fines to players.                                                                                                                             |
+| legacyESX     | <p>Set to true if default settings do not get character name properly (older esx_identity/ESX legacy versions)<br><br>created for and tested with:<br>ESX v1.1.0 <br>esx_identity v1.0.2</p> |
