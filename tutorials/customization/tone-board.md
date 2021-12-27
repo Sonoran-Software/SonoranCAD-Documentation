@@ -39,7 +39,7 @@ You can even use something as easy as Discord.
 ![Discord - Copy Direct File Link](../../.gitbook/assets/a0350734a9e02995f0a1a9e255e26e70.gif)
 
 Your direct link will look something like this:\
-[https://cdn.discordapp.com/attachments/12345/abc123/signal\_100.mp3](https://cdn.discordapp.com/attachments/674670399161761812/925123546919866428/signal\_100.mp3)
+`https://cdn.discordapp.com/attachments/12345/abc123/signal_100.mp3`
 
 ### 3. Customize the Available Tones
 
