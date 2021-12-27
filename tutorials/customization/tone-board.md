@@ -17,7 +17,31 @@ In the admin page, navigate to `Customization` > `Customization` > `Tone Board`
 
 ![Sonoran CAD - Tone Board Customization](<../../.gitbook/assets/image (200).png>)
 
-### 2. Customize the Available Tones
+### 2. Uploading Tones
+
+#### Direct Upload
+
+You can upload .mp3, .wav, and .mp4 files directly to the CAD with the **plus** version.
+
+![Sonoran CAD - Tone Uploader](<../../.gitbook/assets/image (297).png>)
+
+#### External Upload
+
+If your community is not on the plus version or higher, you will need to link your tone from an external URL. You can upload to a website or file store of your choosing, but it must be a direct link ending in the file extension (.mp3, .mp4, .wav).
+
+You can even use something as easy as Discord.
+
+1. Upload your tone file to Discord in any chat
+2. Right click on the file name or download button
+3. Select `Copy Link`
+4. Paste the direct URL into Sonoran CAD
+
+![Discord - Copy Direct File Link](../../.gitbook/assets/a0350734a9e02995f0a1a9e255e26e70.gif)
+
+Your direct link will look something like this:\
+[https://cdn.discordapp.com/attachments/12345/abc123/signal\_100.mp3](https://cdn.discordapp.com/attachments/674670399161761812/925123546919866428/signal\_100.mp3)
+
+### 3. Customize the Available Tones
 
 Here, you can add new tones and specify the following:
 
