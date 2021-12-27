@@ -115,13 +115,15 @@ Many of our development team members personally use and recommend these bulbs. D
 
 Philips Hue is significantly more expensive, but is typically the most widely known option. This option will also require the purchase of a Hue bridge/hub. Due to the design, these tend to have a \~10ms+ delay when setting the color of multiple bulbs at a time.
 
-We recommend keeping the `delay` for custom sequences > 500ms when using Philips Hue bulbs.
+**Therefore, we recommend keeping the `delay` between frames above 500ms when using Philips Hue bulbs.**
 
 #### [Govee](https://us.govee.com/products/wi-fi-led-bulb)
 
 Govee light bulbs are supported via Bluetooth and WiFi.
 
-Bluetooth bulbs are supported, but can have additional time when starting the initial connection. Bluetooth connections can also experience intermittent connection problems. Govee's WiFi bulbs are currently ran through the official API, resulting in rate limitations of 60 calls per second.
+Bluetooth bulbs are supported, but can have additional time when starting the initial connection. Bluetooth connections can also experience intermittent connection problems. Govee's WiFi bulbs are currently ran through the official API, resulting in rate limitations of 60 calls per minute.
+
+**Therefore, we recommend keeping the `delay` between lighting frames above 1,000ms when using Govee wifi bulbs.**
 
 ### 1. Searching for Bulbs
 
