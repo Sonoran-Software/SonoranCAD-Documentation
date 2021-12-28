@@ -9,7 +9,7 @@ description: >-
 ### EVENT\_DISPATCH\_NEW POST
 
 {% hint style="warning" %}
-This push event is not sent triggered via the API.  
+This push event is not sent triggered via the API.\
 API triggers should be listened to locally on the game server.
 {% endhint %}
 
@@ -18,6 +18,7 @@ API triggers should be listened to locally on the game server.
     "key": "YOUR_API_KEY", // Authenticate legitimate event traffic
     "type": "EVENT_DISPATCH_NEW",
     "data": [
+        "eventOriginIdent": 123, // Identifier that created/caused this event
         "dispatch": {
             "callId": -1,
             "origin": 0, // See ORIGIN Enum
@@ -49,24 +50,23 @@ Sonoran CAD uses integer enumeration values for the `ORIGIN` and `STATUS` fields
 
 {% tabs %}
 {% tab title="ORIGIN" %}
-| Integer \(Enumeration\) Value | Origin Description |
-| :--- | :--- |
-| 0 | CALLER |
-| 1 | RADIO DISPATCH |
-| 2 | OBSERVED |
-| 3 | WALK UP |
+| Integer (Enumeration) Value | Origin Description |
+| --------------------------- | ------------------ |
+| 0                           | CALLER             |
+| 1                           | RADIO DISPATCH     |
+| 2                           | OBSERVED           |
+| 3                           | WALK UP            |
 {% endtab %}
 
 {% tab title="STATUS" %}
-| Integer \(Enumeration\) Value | Status Description |
-| :--- | :--- |
-| 0 | PENDING |
-| 1 | ACTIVE |
-| 2 | CLOSED |
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | PENDING            |
+| 1                           | ACTIVE             |
+| 2                           | CLOSED             |
 {% endtab %}
 {% endtabs %}
 
 ### Idents
 
 The `idents` field is an array of identifier/unit IDs. These IDs can be mapped by caching a table from the [get units endpoint](../../api-endpoints/emergency/get-active-units.md).
-
