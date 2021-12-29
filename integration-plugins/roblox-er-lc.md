@@ -67,7 +67,7 @@ Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
 ![](<../.gitbook/assets/image (296).png>)
 
-![](<../.gitbook/assets/image (295) (1).png>)
+![](<../.gitbook/assets/image (295) (1) (1).png>)
 
 ### For Community Members
 

@@ -16,6 +16,6 @@ Enter `appdata` then hit `Ok`\
 
 ### 2. Delete the Cache Folder
 
-Navigate to `Roaming` > `Sonoran CAD` and delete the `Cache` folder.
+Navigate to `Roaming` > `Sonoran CAD` and delete the `Cache`, `Local Storage`, and `Session Storage` folders.
 
-![Sonoran CAD - Desktop Cache Folder](<../.gitbook/assets/image (134).png>)
+![Desktop App - Cache Folders](<../.gitbook/assets/image (295).png>)

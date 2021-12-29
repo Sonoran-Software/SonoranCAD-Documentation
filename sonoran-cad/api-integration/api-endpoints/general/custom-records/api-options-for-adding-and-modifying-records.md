@@ -54,7 +54,7 @@ The `replaceValues` dictionary specifies the field UID (unique ID) and the desir
 
 You can easily copy a template field's UID in the admin menu by expanding the section and copying the very last column in the editor. This is shown as the `Field Mapping ID` or `Field UID`.
 
-![Custom Records - Field UID](<../../../../../.gitbook/assets/image (295).png>)
+![Custom Records - Field UID](<../../../../../.gitbook/assets/image (295) (1).png>)
 
 #### **Example Dictionary**
 
