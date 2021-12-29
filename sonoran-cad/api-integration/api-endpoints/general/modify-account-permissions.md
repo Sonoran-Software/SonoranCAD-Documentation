@@ -60,9 +60,9 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "SET_ACCOUNT_PERMISSIONS",
     "data": [
         {
-            "username": "SonoranBrian", // CAD Username
-            "apiId": "STEAM:1234",      // API ID: Typically, this is their STEAM ID
-            "active": true,             // Set account status to ACTIVE or PENDING
+            "apiId": "STEAM:1234",      // (OPTION 1) API ID: Typically, this is their STEAM ID
+            "username": "SonoranBrian", // (OPTION 2) CAD Username
+            "active": true,             // OPTIONAL: Set account status to ACTIVE (true) or PENDING (false)
             "add": [
                 // Array of permission names to ADD
                 "POLICE",
