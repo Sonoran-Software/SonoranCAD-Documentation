@@ -78,3 +78,9 @@ To hide the invite button for your community's Discord rich presence, simply lea
 In the settings menu, users can toggle this display on or off for their individual desktop client.
 
 ![Sonoran CAD Settings - Disable Discord's Rich Presence](<../.gitbook/assets/image (213).png>)
+
+## Known Issues
+
+#### My presence visible, but not to others?
+
+If your Discord presence is visible to you personally but not to others, ensure the button labels don't include any sort of `:emoji:` in them.
