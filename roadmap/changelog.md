@@ -10,6 +10,50 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.23.0 01/05/2022
+
+{% tabs %}
+{% tab title="New" %}
+Command Line
+
+* Dispatchers can now utilize a CLI to quickly create and close dispatches, attach, detach, view, clear, change statuses, add notes, and more all via keyboard
+
+#6638 Custom Records - Drag Support
+
+* Custom record sections and fields can now be dragged-and-dropped to be re-ordered
+
+Lighting Integration - Draggable Frames
+
+* Lighting sequence frames can now be dragged-and-dropped for easy re-ordering
+
+Desktop App - Code Signing Certificate
+
+* Added a code signing certificate to the desktop application to help with Windows Defender and general trust
+
+Dispatch Push Event - Include Action Creator Identifer
+
+* Include the identifier of the dispatcher that’s added/modified calls to the push events
+
+Stripe Pending Cancellation - Status
+
+* Added a feature to highlight subscriptions pending cancellation instead of still listing them as active or cancelled
+
+Record Center - Lookup Filter Icon/Number
+
+* Updated the record filter icon to match the lookup window, including displaying the number of record type filters
+{% endtab %}
+
+{% tab title="Fixed" %}
+#6698 BOLO Removal
+
+* Fixed an issue causing bolo removals to locally remove a second one from the UI
+
+#6694 Close Dispatch without Idents
+
+* Fixed an issue with dispatch auto-status causing an error when closing a dispatch without any attached units
+{% endtab %}
+{% endtabs %}
+
 ### 3.22.6 12/21/2021
 
 {% tabs %}
