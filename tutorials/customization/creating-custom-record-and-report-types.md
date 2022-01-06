@@ -179,7 +179,7 @@ Note: The `date` field will auto-fill with the current date if `readOnly` is tog
 
 ![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1).png>)
 
-![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302).png>)
+![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302) (1).png>)
 {% endtab %}
 
 {% tab title="Field Mask" %}

@@ -75,7 +75,7 @@ Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
 At the top right of your screen, select the gear icon to open your local settings menu.
 
-![ER:LC - Local Settings Button](<../.gitbook/assets/image (300).png>)
+![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1).png>)
 
 #### 2. Copy your API ID
 

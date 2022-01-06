@@ -21,18 +21,30 @@ The custom login page allows your community members to register, sign-in, and ac
 
 ## DNS Record Method (Recommended)
 
-### 1. Add a CNAME Record for your Domain
-
 {% hint style="warning" %}
 **If you are unsure how to add a DNS record, you will need to contact your domain registrar.**\
 ****Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add\&domain=register).
 {% endhint %}
 
+### 1. Add a CNAME and TXT Record for your Domain
+
+#### CNAME Record
+
 In your domain's DNS records, add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
 
 The example record below sets `cad.sonoranroleplay.com` as the custom login page URL.
 
-![Cloudflare - DNS Record ](<../../.gitbook/assets/image (173).png>)
+#### TXT Record
+
+In your domain's DNS records add a `TXT` type record with the `name` set to anything (typically `@`, or left blank) and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
+
+This verifies that your Sonoran CAD community owns this domain.
+
+#### DNS Example
+
+The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
+
+![Sonoran CAD - DNS Example](<../../.gitbook/assets/image (302).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
@@ -40,7 +52,7 @@ The example record below sets `cad.sonoranroleplay.com` as the custom login page
 
 ### 2. Set the Domain Name in Sonoran CAD
 
-In the Sonoran CAD customization menu, set the custom login page URL.\
+Now that you have a `CNAME` and `TXT` record on your domain, in the Sonoran CAD customization menu, set the custom login page URL.\
 This should not contain any `https://` or other extensions.
 
 Don't forget to press save!\
