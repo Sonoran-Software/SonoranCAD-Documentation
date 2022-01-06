@@ -10,7 +10,7 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.23.0 01/05/2022
+### 3.23.0 01/06/2022
 
 {% tabs %}
 {% tab title="New" %}
@@ -41,6 +41,14 @@ Stripe Pending Cancellation - Status
 Record Center - Lookup Filter Icon/Number
 
 * Updated the record filter icon to match the lookup window, including displaying the number of record type filters
+
+Custom Record Add - Prevent Duplicate Required Type
+
+* Added safety checks to prevent a user from manually uploading a duplicate required record type, preventing them from removing it
+
+Custom Domain - DNS Check
+
+* Added DNS verification with a TXT record community ID check
 {% endtab %}
 
 {% tab title="Fixed" %}
