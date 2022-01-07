@@ -75,3 +75,15 @@ When a user signs into the CAD using the in-game tablet, their[ API ID](../../..
 To enable this, open the [check API plugin](api-id-checker.md)'s config and set `forceSetApiId` to `true`.
 
 Additionally, communities using Steam as their framework's `primaryIdentifier` **will need to ensure they have a** [**Steam key set**](../framework-installation.md#8.-steam-api-key) **for their server**.
+
+## Known Issues
+
+### Timeout SonoranCAD::mini:CallSync
+
+Some users may see `SonoranCAD::mini:CallSync` listed multiple times after recieving a timeout.
+
+When your client recieves a timeout from the server for any reason, it will display a list of the most recent requests. Because Sonoran's Mini-CAD runs frequent sync requests, these will consequenty be displayed.
+
+**This is not an issue with or related to Sonoran CAD**. This is a general timeout between the client and server listing all recent calls as diagnostic information.
+
+![Sonoran CAD Mini - Timeout Debug](<../../../.gitbook/assets/Screen Shot 2022-01-06 at 9.28.58 PM.png>)
