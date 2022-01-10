@@ -118,6 +118,8 @@ In the dispatch page (or with self-dispatch enabled) you can open the live map w
 
 The map allows you to zoom in or out, select different street, building, and postal overlays, and more! Hover over a unit icon for more information.
 
+Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
+
 ![Sonoran CAD - ER:LC Live Map](<../.gitbook/assets/image (303).png>)
 
 ### Unit Locations
