@@ -16,6 +16,7 @@ Emergency Response Liberty County is the largest Roblox RP game mode. Play as a 
 
 We're excited to support the following in-game integration options with ER:LC
 
+* Live Map
 * Live unit locations
 * Traffic stop command
 * In-game plate search
@@ -45,7 +46,7 @@ In Sonoran CAD, navigate to the admin menu > `Advanced` > `In-Game Integration` 
 
 Copy your community ID and API key, you'll need to enter these in Roblox.
 
-![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303).png>)
+![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1).png>)
 
 ![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301).png>)
 
@@ -96,6 +97,28 @@ Select `New` under API ID and paste in your Roblox API ID.
 ![Sonoran CAD: New API ID](<../.gitbook/assets/image (293).png>)
 
 ## In-Game Commands and Features
+
+### Live Map
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
+
+#### 1. Set the Map Type
+
+In the admin menu, navigate to > `Advanced` > `Server Events and Integrated Live Map`
+
+Enable the map and set the type to `ER:LC ROBLOX`.
+
+#### 2. View the Live Map
+
+In the dispatch page (or with self-dispatch enabled) you can open the live map window under `Unit Management` > `Live Map`
+
+The map allows you to zoom in or out, select different street, building, and postal overlays, and more! Hover over a unit icon for more information.
+
+![Sonoran CAD - ER:LC Live Map](<../.gitbook/assets/image (303).png>)
 
 ### Unit Locations
 
