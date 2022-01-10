@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.23.1 01/09/2022
+
+{% tabs %}
+{% tab title="New" %}
+ER:LC - Live Map
+
+* Added an interactive live map for ER:LC Roblox communities
+
+Portuguese Translation
+
+* Added Portuguese translations
+{% endtab %}
+{% endtabs %}
+
 ### 3.23.0 01/06/2022
 
 {% tabs %}
