@@ -99,8 +99,8 @@ Simply set `legacyESX` to true in your `config_esxsupport.lua`
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | identityType  | Newer ESX version use license instead of steam for identity.                                                                                                                                 |
 | usePrefix     | Some ESX versions don't use the prefix (such as license:abc) with the identity, set to false to disable the prefix.                                                                          |
-| usingQbus     | If you are using Qbus set this to true.                                                                                                                                                      |
-| QbusEventName | Change to the prefix to the name of the event you are using for Qbus                                                                                                                         |
+| usingQbus     | If you are using Qbus/QBCore set this to true.                                                                                                                                               |
+| QbusEventName | Change to the prefix to the name of the event you are using for Qbus/QBCore (NOTE: this is primarily used for renamed QBCore frameworks)                                                     |
 | issueFines    | Whether to issue fines to players for finable reports/forms                                                                                                                                  |
 | fineNotify    | Whether to send a message in chat when a player is issued a fine                                                                                                                             |
 | fineableForms | A list of the names of forms that should issue fines to players.                                                                                                                             |
