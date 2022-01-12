@@ -1,10 +1,10 @@
 ---
 description: >-
-  Adds support for ESX to other plugins, as well as the ability to issue fines
-  automatically to users in-game.
+  Adds support for ESX, QBCore and QBUS to other plugins, as well as the ability
+  to issue fines automatically to users in-game.
 ---
 
-# ESX Support (QBUS) and Auto-Fines
+# ESX Support (QBCore/QBUS) and Auto-Fines
 
 {% hint style="warning" %}
 This plugin only functions with other plugins that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro** version.
@@ -15,7 +15,7 @@ For more information, view our [pricing ](../../../pricing/faq)page.
 {% hint style="info" %}
 ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
 
-**QBUS and QBUS "renamed" frameworks like RepentzFW should also work with this plugin**
+**QBCore and QBCore "renamed" frameworks like RepentzFW/PepeFW should also work with this plugin**
 {% endhint %}
 
 {% hint style="success" %}
@@ -79,7 +79,11 @@ This plugin can be used to issue fines to players when reports/records are enter
 
 ## Legacy ESX Support
 
-This is mainly for ESX v1 releases that were made before the character system implementation using only the `users` database table. Theses versions of ESX used the `users` table only for player information of active characters and a `characters` table that held all character information (active and secondary characters of your players).
+{% hint style="warning" %}
+Legacy ESX Support utilizes MySQL-Async in order to get character information from your database directly. ESX requires this in older versions so this shouldn't be an issue.
+{% endhint %}
+
+This is mainly for ESX v1 releases that were made before the character system implementation using only the `users` database table. These versions of ESX used the `users` table only for player information of active characters and a `characters` table that held all character information (active and secondary characters of your players).
 
 
 
