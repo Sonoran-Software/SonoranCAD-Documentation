@@ -205,11 +205,15 @@ Please [view our pricing page](../pricing/faq/) for more information.
 | ----------------- | ------------------------------------------- |
 | `/setname <name>` | Sets a roleplay name used when calling 911. |
 
-#### From the Cell Phone
-
 Using your cell phone in-game, you can call emergency services. This 911 call will be sent directly to Sonoran CAD.
 
-#### Automated Alarms
+### Automated Alarms
+
+{% hint style="warning" %}
+This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
+
+Please [view our pricing page](../pricing/faq/) for more information.
+{% endhint %}
 
 Automated alarms from fire alarms or robberies will also be automatically sent to the CAD's emergency call section.
 
