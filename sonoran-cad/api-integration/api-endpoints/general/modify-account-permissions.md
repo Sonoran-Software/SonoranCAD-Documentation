@@ -100,6 +100,7 @@ The `active` boolean is optional and will update the user's account status to `A
 | POLEDITUNIT             | Permission to edit their unit identifier              |
 | POLEDITOTHERUNIT        | Permission to edit other unit identifiers             |
 | SELFDISPATCH            | Permission to enable self dispatch                    |
+| LIVEMAP                 | Access to the live map                                |
 | MEDRECADD               | Permission to add medical records                     |
 | MEDRECEDIT              | Permission to edit medical records                    |
 | MEDRECREMOVE            | Permission to remove medical records                  |
