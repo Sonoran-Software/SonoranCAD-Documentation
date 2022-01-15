@@ -32,3 +32,11 @@ Don't forget to press save!
 Text-to-speech notifications are currently only available on the Chrome web version. You can toggle these on/off in the settings menu.
 
 ![Sonoran CAD - Toggle TTS](<../../.gitbook/assets/image (205).png>)
+
+## Troubleshooting
+
+### Text-To-Speech Cuts Out Game Audio
+
+For some users, text-to-speech sounds may cut out in-game or other audio sources. This is because the selected voice may be a Windows or system based source.
+
+Simply change the selected TTS voice to a non-windows or system based source to resolve.
