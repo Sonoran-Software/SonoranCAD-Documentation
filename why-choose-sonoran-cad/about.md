@@ -26,16 +26,16 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated Traffic Stop Dispatching](../integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
 * [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
 * [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
-* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map/)
+* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map.md)
 * [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-**View a **[**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
+**View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
 
 ![Sonoran CAD's custom plugin framework and installation system!](<../.gitbook/assets/image (43).png>)
 
-### 💬 Discord Permission Integration <a href="discord-permission-integration" id="discord-permission-integration"></a>
+### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
 Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-Maqgxy\_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
 
@@ -51,9 +51,9 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 ### 📍 Hosted and Integrated Live Map
 
-Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map/) even shows your unit identifier information in real time and displays 911 call blips! We even take care of hosting the live map for you!
+Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
-![Sonoran CAD's custom live map!](../.gitbook/assets/live\_map.png)
+![Sonoran CAD - Live Map](../.gitbook/assets/map\_2\_final.gif)
 
 ### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
 

@@ -23,7 +23,7 @@ In the admin page, navigate to `Customization` > `Customization` > `Tone Board`
 
 You can upload .mp3, .wav, and .mp4 files directly to the CAD with the **plus** version.
 
-![Sonoran CAD - Tone Uploader](<../../.gitbook/assets/image (297).png>)
+![Sonoran CAD - Tone Uploader](<../../.gitbook/assets/image (297) (1).png>)
 
 #### External Upload
 

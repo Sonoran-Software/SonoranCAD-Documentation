@@ -24,7 +24,7 @@ From the start menu: `Unit Management` > `Timers`
 
 Press `New` to create a new timer.
 
-![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (296) (1).png>)
+![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (296) (1) (1).png>)
 
 ### Drag-And-Drop to Tab
 
@@ -68,4 +68,4 @@ In addition to dragging a unit, group, or dispatch call to a minimized tab you c
 
 Click on a unit, group, or dispatch call: `Timers` > `Select a Timer`
 
-![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1).png>)
+![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1) (1).png>)

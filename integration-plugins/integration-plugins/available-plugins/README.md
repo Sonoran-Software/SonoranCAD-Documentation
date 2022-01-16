@@ -19,7 +19,7 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 | [ForceReg](forcereg.md)                           | Yes          | Yes         | Yes |
 | [Kick](kick.md)                                   | Yes          | Yes         | Yes |
 | [Locations](locations.md)                         | Yes          | Yes         | Yes |
-| [Live Map](live-map/)                             | **No**       | Yes         | Yes |
+| [Live Map](live-map.md)                           | **No**       | Yes         | Yes |
 | [Lookups](lookups.md)                             | **No**       | Yes         | Yes |
 | [Postals](postals.md)                             | Yes          | Yes         | Yes |
 | [Smart Signs](smart-signs.md)                     | **No**       | **No**      | Yes |

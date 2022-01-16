@@ -66,7 +66,7 @@ Select `Edit Server Settings` in the menu.
 
 Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
-![](<../.gitbook/assets/image (296).png>)
+![](<../.gitbook/assets/image (296) (1).png>)
 
 ![](<../.gitbook/assets/image (295) (1) (1).png>)
 
@@ -76,13 +76,13 @@ Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
 At the top right of your screen, select the gear icon to open your local settings menu.
 
-![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1).png>)
+![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1) (1).png>)
 
 #### 2. Copy your API ID
 
 Then, select `View Your API ID` and copy your in-game API ID.
 
-![ER:LC - View your API ID](<../.gitbook/assets/image (298).png>)
+![ER:LC - View your API ID](<../.gitbook/assets/image (298) (1).png>)
 
 ![ER:LC - Copy your API ID](<../.gitbook/assets/image (299).png>)
 

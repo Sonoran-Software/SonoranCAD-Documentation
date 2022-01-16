@@ -80,6 +80,12 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 ![Sonoran CAD - Street Signs UI](../../../.gitbook/assets/streetsigns.gif)
 
+### Live Map
+
+You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
+
+![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (304).png>)
+
 ### Full Feature List
 
 **Signs** – This is the main element of the resource, allowing you to walk up to a sign and change the text from an in-game control panel at the bottom of the sign. This can be used to open a world of roleplay opportunities.\

@@ -74,7 +74,7 @@ This plugin can be used to issue fines to players when reports/records are enter
   * Adds the ability to restrict functionality to certain jobs (like police). See the [dispatchnotify documentation](dispatch-notify.md) for how to do this.
 * [callcommands](call-commands.md)
   * Adds the ability to show character names for the caller when they use /911. This is automatic when the plugin is installed.
-* [livemap](live-map/)
+* [livemap](live-map.md)
   * Adds the ability to show character names on the map.
 
 ## Legacy ESX Support

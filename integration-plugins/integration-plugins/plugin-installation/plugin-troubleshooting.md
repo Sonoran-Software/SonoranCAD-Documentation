@@ -77,8 +77,8 @@ Your community ID and API key is also listed in the debug API call information. 
 
 For live map and push event troubleshooting, see our dedicated guide here:
 
-{% content-ref url="../available-plugins/live-map/live-map-troubleshooting.md" %}
-[live-map-troubleshooting.md](../available-plugins/live-map/live-map-troubleshooting.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Still Having Trouble?
