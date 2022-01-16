@@ -10,6 +10,29 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.24.0 01/16/2022
+
+{% tabs %}
+{% tab title="New" %}
+GTA Live Map - Overhaul
+
+* An entirely new live map system allows you to edit and view units, emergency calls, smart signs, and more!
+
+Live Map - Permissions
+
+* Access to the live map is now restricted via user permission.
+{% endtab %}
+{% tab title="Fixed" %}
+Window - Draggable Area
+
+* Fixed an issue causing draggable windows to be draggable from anywhere, preventing users from scrolling or grabbing inside the window.
+
+Custom Layout - Drag-and-Drop
+
+* Fixed an issue causing users with custom layouts to not be able to drag-and-drop elements from one window to another.
+{% endtab %}
+{% endtabs %}
+
 ### 3.23.1 01/09/2022
 
 {% tabs %}
