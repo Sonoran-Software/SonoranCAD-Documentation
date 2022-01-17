@@ -30,6 +30,14 @@ Window - Draggable Area
 Custom Layout - Drag-and-Drop
 
 * Fixed an issue causing users with custom layouts to not be able to drag-and-drop elements from one window to another.
+
+#6859 Window Options
+
+* Fixed an issue causing windows to not force display the close and minimize options.
+
+#6871 Window Scrolling
+
+* Fixed an issue causing custom windows to have disabled vertical scrolling.
 {% endtab %}
 {% endtabs %}
 
