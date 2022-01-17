@@ -180,3 +180,23 @@ The Sonoran CAD integration framework comes with several commands. These command
 | `sonoran debugmode`     | Toggle debug mode on/off                 |
 | `sonoran info`          | Dump version info and configuration data |
 | `sonoran support`       | Dump information for support staff       |
+
+## Troubleshooting
+
+### Server Crashes
+
+1\. Check to make sure `sonoran_updatehelper` or `[sonorancad]` is not being started in your server.cfg.
+
+{% hint style="danger" %}
+It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
+
+**DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
+{% endhint %}
+
+2\. Try updating your smartsigns plugin manually to the latest version. This is done by copying over the lua files from the latest release found [here](available-plugins/smart-signs.md) and overrideing the old files.
+
+{% hint style="info" %}
+We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.
+{% endhint %}
+
+![](<../../.gitbook/assets/image (306).png>)
