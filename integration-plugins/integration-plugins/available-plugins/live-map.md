@@ -16,25 +16,23 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Video
-
-**Be sure you have already installed our** [**plugin framework**](../framework-installation.md)**!**
-
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
-
 ## Installation Guide
 
-### 1. Install the Unit Locations Plugin
+### 1. Download and Install the Framework
+
+If you haven't already, be sure to install and configure the [plugin framework](../framework-installation.md) first.
+
+### 2. Install Desired Blip Plugins
+
+#### Install the Unit Locations Plugin
 
 The [unit locations plugin](locations.md) includes all logic required to display and update unit locations on the live map.
-
-### 2. (Optional) Additional Blip Plugins
 
 #### &#x20;Install the Smart Signs Plugin
 
 The [smart signs plugin](smart-signs.md) allows you to change in-game smart signs right from the live map. This is an optional install feature for pro communities.
 
-#### Install Call Commands
+#### Install the Call Commands Plugin
 
 The [call commands plugin](call-commands.md) allows you to create emergency 911 calls in-game with a command, and provides the emergency call blips on the live map.
 
@@ -49,6 +47,10 @@ Here, you can enable and select a default map option for GTA, Roblox, or others.
 ### 4. Set Your API ID
 
 Don't forget to have each community member set their account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
+
+### 5. User Access Permission
+
+Users will need to be granted access to view the live map. This can be done via [Discord role sync](../../discord-bot/), [permission key](../../../tutorials/getting-started/permissions.md#permission-keys), or by [manually granting permissions](../../../tutorials/getting-started/permissions.md#manually-granting-permissions) in the admin menu.
 
 ### **6. Enjoy!**
 
@@ -110,7 +112,7 @@ You can drag the emergency call to your call editor to import and view the infor
 ## Using a Custom Map
 
 {% hint style="danger" %}
-This feature requires the **pro** version of SonoranCAD.\
+This feature requires the **pro** version of Sonoran CAD.\
 For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
