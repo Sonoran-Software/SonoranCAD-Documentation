@@ -28,9 +28,15 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 The [unit locations plugin](locations.md) includes all logic required to display and update unit locations on the live map.
 
-### 2. (Optional) Install the Smart Signs Plugin
+### 2. (Optional) Additional Blip Plugins
+
+#### &#x20;Install the Smart Signs Plugin
 
 The [smart signs plugin](smart-signs.md) allows you to change in-game smart signs right from the live map. This is an optional install feature for pro communities.
+
+#### Install Call Commands
+
+The [call commands plugin](call-commands.md) allows you to create emergency 911 calls in-game with a command, and provides the emergency call blips on the live map.
 
 ### 3. Choose Your Map
 
