@@ -35,7 +35,7 @@ For more information, see our [pricing ](../../../pricing/faq/)page.
 
 ### playTonesTo Object
 
-The `playTonesTo` array specifies who or what the tone was sent to.
+The[ tone board](../../../tutorials/customization/tone-board.md) allows you to play tones to specific identifiers, dispatch calls, departments, and more. The `playTonesTo` array specifies who or what the tone was sent to.
 
 #### type Enum
 
