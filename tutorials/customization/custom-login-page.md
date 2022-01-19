@@ -44,11 +44,15 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - DNS Example](<../../.gitbook/assets/image (302).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (302).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
 {% endhint %}
+
+If you are using Sonoran Servers, our company's server hosting for your domain name, please note the differences in how to enter the settings pictured below. Each DNS system is a bit different and requires different input for the Host Name. Typically the hostname is left blank or in this case a `@` is used to point the record at the root domain name of "`sonoranrp.com`"
+
+![Sonoran CAD - Sonoran Servers DNS Example](<../../.gitbook/assets/image (292).png>)
 
 ### 2. Set the Domain Name in Sonoran CAD
 

@@ -23,7 +23,7 @@ In the Admin Customization menu, expand the "Servers" section to add, edit, or r
 
 In the civilian page, the top right header allows users to swap back and forth between servers.
 
-![Users can select their server in the top header](<../../.gitbook/assets/image (292) (1).png>)
+![Users can select their server in the top header](<../../.gitbook/assets/image (292) (1) (1).png>)
 
 #### Emergency Pages
 
