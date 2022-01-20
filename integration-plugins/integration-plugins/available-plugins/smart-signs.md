@@ -40,7 +40,7 @@ Once "purchased" you can [download the asset from your keymaster account](https:
 
 In your `server.cfg` add a new line:
 
-`ensure smartsigns`
+`ensure smartsigns_sonoran`
 
 ### 3. Configure your Sign Locations
 
