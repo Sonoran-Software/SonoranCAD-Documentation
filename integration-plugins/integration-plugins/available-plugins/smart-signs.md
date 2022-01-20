@@ -24,35 +24,33 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## Installation Guide
 
-### 1. Download and Install the Framework
-
-If you haven't already, be sure to install and configure the [plugin framework](../framework-installation.md) first.
-
-### 2. Download the Plugin and all Dependencies
-
-Click [HERE](https://sonoran.link/UWCLJjhU) to download the free Sonoran CAD Smart Sign plugin .zip file from London Studios.
-
-### 3. Install the Plugin and all Dependencies
-
-Follow the [standard plugin installation guide](../plugin-installation/) for the Smart Signs plugin.
-
 {% hint style="danger" %}
-If you have the original London Studios SmartSigns resource **please remove and/or disable it from running**. Our plugin completely replicates the functionality of the original resource and they will conflict if both are running at the same time.
+If you have the original London Studios Smart Signs resource **please remove and/or disable it from running**. Our plugin completely replicates the functionality of the original resource and they will conflict if both are running at the same time.
 {% endhint %}
 
-### 4. Configure your Sign Locations
+### 1. Download the Resource
 
-In the `config_smartsigns.lua` file, you can specify sign locations and labels.
+[Purchase the resource for free](https://sonoran.link/UWCLJjhU) from London Studios.
+
+This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
+
+Once "purchased" you can [download the asset from your keymaster account](https://keymaster.fivem.net/asset-grants).
+
+### 2. Start the Resource
+
+In your `server.cfg` add a new line:
+
+`ensure smartsigns`
+
+### 3. Configure your Sign Locations
+
+Rename `config_RENAME.lua` to `config.lua`.
+
+In the `config.lua` file, you can specify sign locations and labels.
 
 The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration).
 
-### 5. Copy the Stream Assets Folder
-
-The downloaded zip file contains both the `smartsigns` plugin and the `stream` assets folder.
-
-The `stream` assets folder must be copied over to the `[sonorancad]/sonorancad` directory.
-
-### 6. Set your Game Server IP/Port
+### 4. Set your Game Server IP/Port
 
 In the Admin panel, navigate to Advanced > In-Game Integration > Push Events and Live Map
 
@@ -110,12 +108,7 @@ The config examples below are not the full configuration file and further explan
 The first section is called **main**, allowing you to set the following:
 
 ```lua
-local config = {
-    enabled = false,
-    configVersion = "1.0",
-    pluginName = "smartsigns",
-    pluginAuthor = "SonoranCAD",
-
+config = {
     main = {
         loadInDistance = 300.0,
         accessPointDistance = 3.0,
