@@ -38,7 +38,7 @@ Once "purchased" you can [download the asset from your keymaster account](https:
 
 ### 2. Start the Resource
 
-In your `server.cfg` add a new line:
+In your `server.cfg` add a new line **after/below** your `ensure sonorancad` line:
 
 `ensure smartsigns_sonoran`
 
