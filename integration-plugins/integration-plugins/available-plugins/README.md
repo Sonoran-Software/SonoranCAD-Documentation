@@ -8,8 +8,9 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 
 ****
 
-| [Call Commands](call-commands.md)                 | Yes         | Yes         | Yes |
+| Plugin Name                                       | Standard    | Plus        | Pro |
 | ------------------------------------------------- | ----------- | ----------- | --- |
+| [Call Commands](call-commands.md)                 | Yes         | Yes         | Yes |
 | [Check API ID](api-id-checker.md)                 | Yes         | Yes         | Yes |
 | [Civilian Integration](civilian-integration.md)   | **No**      | Yes         | Yes |
 | [Dispatch Notify](dispatch-notify.md)             | **No**      | Yes         | Yes |

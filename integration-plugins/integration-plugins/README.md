@@ -41,7 +41,7 @@ View our vast array of our integration plugins, ready for drag-and-drop installa
 
 Looking to write your own plugins for Sonoran CAD? Learn more about writing your own integration plugins and accessing our API documentation.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../sonoran-cad/api-integration/" %}
+[api-integration](../../sonoran-cad/api-integration/)
 {% endcontent-ref %}
 
