@@ -47,3 +47,4 @@ description: >-
 | general/[get\_servers](general/get-servers.md)                             | Standard             |
 | general/[set\_servers](general/set-servers.md)                             | Plus                 |
 | general/[auth\_streetsigns](general/auth-street-signs.md)                  | Pro                  |
+| general/[set\_postals](general/set-postal-config.md)                       | Pro                  |
