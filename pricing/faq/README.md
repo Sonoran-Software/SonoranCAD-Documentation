@@ -4,7 +4,7 @@ description: 'See below for commonly asked questions and answers:'
 
 # Pricing FAQ
 
-![Sonoran Servers - Discount and Free Plugin Installation!](../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - VPS Discount](../../.gitbook/assets/banner\_update-1.png)
 
 Receive **free Sonoran CAD integration plugin installation**, **free Five PD installation**, and **30% off** every month when you [bundle with Sonoran Servers](bundle-discount-sonoran-servers.md)!
 
