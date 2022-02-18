@@ -84,7 +84,7 @@ Then, select `View Your API ID` and copy your in-game API ID.
 
 ![ER:LC - View your API ID](<../.gitbook/assets/image (298) (1).png>)
 
-![ER:LC - Copy your API ID](<../.gitbook/assets/image (299).png>)
+![ER:LC - Copy your API ID](<../.gitbook/assets/image (299) (1).png>)
 
 #### 3. Add Your API ID to Sonoran CAD
 

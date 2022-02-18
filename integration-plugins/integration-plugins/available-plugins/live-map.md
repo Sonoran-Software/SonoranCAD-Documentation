@@ -28,6 +28,10 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 The [unit locations plugin](locations.md) includes all logic required to display and update unit locations on the live map.
 
+#### Install the Postals Plugin
+
+The [postals ](postals.md)plugin allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
+
 #### &#x20;Install the Smart Signs Plugin
 
 The [smart signs plugin](smart-signs.md) allows you to change in-game smart signs right from the live map. This is an optional install feature for pro communities.
@@ -65,9 +69,34 @@ You can also [pin the live map button to your taskbar](../../../tutorials/custom
 
 ## **Using the Live Map**
 
+### **Map Controls**
+
+#### **Postal Search**
+
+With the [postals ](postals.md)plugin configured, you can manually enter and search for a postal code on the live map.
+
+Or, quickly auto-open and search for the location by clicking the search icon:
+
+* In the active call's postal field
+* In the active unit's location field
+
+![Live Map - Postal Search](../../../.gitbook/assets/map\_search\_postal.gif)
+
+![Live Map - Location Search](../../../.gitbook/assets/map\_search\_btn.gif)
+
+#### Blip Customization
+
+You can toggle specific blips visibility and outline colors for police, fire, EMS, and dispatch.
+
+![Live Map - Blip Customization](<../../../.gitbook/assets/image (299).png>)
+
 ### **Unit Blips**
 
 Unit blips display the live location of all police, fire, EMS, and dispatch units in-game. You can hover over a unit for brief details, or click on one for more options.
+
+You can also easily filter the map to specific units by selecting them in the active units panel.
+
+![Live Map - Unit Filter](../../../.gitbook/assets/map\_filter.gif)
 
 #### Menu Options
 
@@ -76,6 +105,10 @@ Clicking on a unit blip allows you to add the unit to a call, add the unit to a 
 ![Live Map - Unit Blip Options](<../../../.gitbook/assets/image (297).png>)
 
 #### Drag-and-Drop
+
+{% hint style="warning" %}
+Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../roblox-er-lc.md) edition.
+{% endhint %}
 
 Drag-and-drop is also supported for unit blips. The following drag-and-drop options are supported:
 
