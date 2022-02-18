@@ -10,6 +10,59 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.25.0 02/17/2022
+
+{% tabs %}
+{% tab title="New" %}
+Live Map - Optimization
+
+* Optimized the live map to increase performance with larger communities.
+
+Live Map - Search for Postal
+
+* Pro communities can now search and zoom to a postal on the live map with the postals plugin configured.
+
+Live Map - Selected Unit Filter
+
+* Units displayed on the live map can now be filtered by selecting units/groups in the active units panel.
+
+#6998 Blip Customization
+
+* Live map unit blips can now have the unit number display toggled on/off. Unit blips can be filtered down to unit type. Additionally, unit blips have customizable outline colors.
+
+#7414 Wyze LED Strips
+
+* Expansion of supported light integrations. For example, Wyze has multiple other smart bulbs, such as LED light strips, which could be really cool to have like under a table, behind a desk, or on the walls. Would also allow for more customization. 
+
+EVENT_TONE Push Event
+
+* Added a push event for when tones are played.
+
+Unit Login - Clear Position
+
+* Unit positions are cleared on an initial login until their position is updated in-game. Preventing units who are no longer in-game from displaying on the map.
+
+{% endtab %}
+{% tab title="Fixed" %}
+#7092 Live Map Duplication
+
+* Fixed an issue causing the live map image to duplicate after closing and re-opening.
+
+Desktop - Prevent Zoom Out
+
+* Prevented users from ctrl - zooming out in the desktop app.
+
+#7455 Maintain Full Screen after Toggle Key
+
+* When showing (w/ global hotkeys) a Sonoran CAD Desktop window that was fullscreen when it was hidden (w/ global hotkeys), it'll show back up no longer full screen in a smaller window.
+
+DBSync Save - Handle null columns on trim
+
+* Added safety checks if the user enabled license or vehicle mapping but had a null owner or table name set.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.24.0 01/16/2022
 
 {% tabs %}
