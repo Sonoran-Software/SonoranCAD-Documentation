@@ -18,9 +18,11 @@ Looking to host your next gaming server? Sonoran Servers has you covered!
 
 ## Sonoran CAD - Free Plugin Installation and 30% Off Monthly
 
-![](../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - 30% Software Discount](../.gitbook/assets/banner\_update-1.png)
 
-Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows Server Product.
+![Sonoran Servers - Free Sonoran One](../.gitbook/assets/Bannerprojectsenoranone.png)
+
+Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows VPS. Or, receive Sonoran One for free with the purchase of a dedicated server!
 
 [Click to learn more about this promotion](../pricing/faq/bundle-discount-sonoran-servers.md#free-plugin-installation)!
 
