@@ -22,7 +22,7 @@ Our Twitch bot can also be configured to send out chat messages when data is mod
 
 ## Bodycam Overlay
 
-![Sonoran CAD - Stream Overlay Bodycam](../.gitbook/assets/overlay.png)
+![](../.gitbook/assets/BODYCAM-UI3.png)
 
 {% hint style="warning" %}
 The free version of the overlay does not include the customizable bodycam asset.\
@@ -359,7 +359,9 @@ You can also customize the fonts, change the background and more!
 
 The free version of the livestream overlay allows anyone to test out the basic functionality. The free version does not allow use of the [Twitch bot](twitch-overlay-and-bot.md#configuring-the-twitch-bot), [bodycam](twitch-overlay-and-bot.md#bodycam-overlay), or [smart lighting integration](twitch-overlay-and-bot.md#smart-lighting) and is locked to a maximum of three custom "data keys".
 
-The full version of Sonoran CAD's livestreaming tools is available for $7.99/mo.
+The full, individual license for Sonoran CAD's livestreaming tools is available for $7.99/mo.
+
+Or, **include the livestreaming tools for your **_**entire**_** community** with [Sonoran One](https://sonoran.one).
 
 Users can purchase a license to the full version in their billing center:
 
