@@ -30,7 +30,7 @@ The [unit locations plugin](locations.md) includes all logic required to display
 
 #### Install the Postals Plugin
 
-The [postals ](postals.md)plugin allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
+The [postals ](postals.md)plugin (**for Pro communities only**) allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
 
 #### &#x20;Install the Smart Signs Plugin
 
@@ -72,6 +72,12 @@ You can also [pin the live map button to your taskbar](../../../tutorials/custom
 ### **Map Controls**
 
 #### **Postal Search**
+
+{% hint style="warning" %}
+The postal search functionality requires the **Pro** version of Sonoran CAD.
+
+For more information, view our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
 
 With the [postals ](postals.md)plugin configured, you can manually enter and search for a postal code on the live map.
 
