@@ -66,7 +66,7 @@ Select `Edit Server Settings` in the menu.
 
 Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
-![](<../.gitbook/assets/image (296) (1).png>)
+![](<../.gitbook/assets/image (296) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (295) (1) (1).png>)
 
@@ -92,9 +92,9 @@ From the community menu select the `Settings` modal.
 
 Select `New` under API ID and paste in your Roblox API ID.
 
-![Sonoran CAD Settings](<../.gitbook/assets/image (290).png>)
+![Sonoran CAD Settings](<../.gitbook/assets/image (290) (1).png>)
 
-![Sonoran CAD: New API ID](<../.gitbook/assets/image (293).png>)
+![Sonoran CAD: New API ID](<../.gitbook/assets/image (293) (1).png>)
 
 ## In-Game Commands and Features
 

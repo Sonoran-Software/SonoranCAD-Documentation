@@ -24,7 +24,7 @@ From the start menu: `Unit Management` > `Timers`
 
 Press `New` to create a new timer.
 
-![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (296) (1) (1).png>)
+![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (296) (1) (1) (1).png>)
 
 ### Drag-And-Drop to Tab
 

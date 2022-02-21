@@ -177,7 +177,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-![](<../.gitbook/assets/image (290) (1) (1).png>)
+![](<../.gitbook/assets/image (290) (1) (1) (1).png>)
 
 **2. Retrieve your API Key and Search**
 
@@ -193,7 +193,7 @@ Sonoran CAD will scan for all locally active Bluetooth devices. Govee bulbs will
 
 If your bulb is not discoverable, turn the bulb's power off entirely for \~5 seconds then turn it back on. This should place your bulb into discovery mode.
 
-![](<../.gitbook/assets/image (293) (1).png>)
+![](<../.gitbook/assets/image (293) (1) (1).png>)
 
 **2. Add the Bulb**
 

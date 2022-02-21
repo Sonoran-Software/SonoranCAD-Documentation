@@ -134,7 +134,7 @@ Emergency calls placed in-game will also appear on the live map. You can hover o
 
 Clicking on the emergency blip allows you to import the call to your editor or remove the emergency call.
 
-![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (296).png>)
+![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (296) (1).png>)
 
 #### Drag-and-Drop
 

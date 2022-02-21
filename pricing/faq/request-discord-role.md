@@ -56,4 +56,26 @@ On our [support website](https://support.sonoransoftware.com), select the "Disco
 
 ![Sonoran Support - Request Role](<../../.gitbook/assets/image (55).png>)
 {% endtab %}
+
+{% tab title="GitHub" %}
+Users who star our primary GitHub repository are granted access to the `#community-development` channel in our Discord. This allows you to speak more directly with our development team to ask API related questions.
+
+
+
+#### 1. Star our Repo on GitHub
+
+Navigate to our [main GitHub repository](https://github.com/Sonoran-Software/SonoranCADLuaIntegration) and star it with your GitHub account.
+
+![GitHub - Star Repository](<../../.gitbook/assets/image (296).png>)
+
+#### 2. Copy your Discord and GitHub Usernames
+
+![](<../../.gitbook/assets/image (293).png>)![](<../../.gitbook/assets/image (305).png>)
+
+#### 3. Enter your Information
+
+Paste your Discord and GitHub username into the support app to be granted access to our `#community-development` channel.
+
+![](<../../.gitbook/assets/image (290).png>)
+{% endtab %}
 {% endtabs %}
