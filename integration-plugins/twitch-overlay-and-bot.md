@@ -177,7 +177,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-![](<../.gitbook/assets/image (290) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (290) (1) (1) (1) (1).png>)
 
 **2. Retrieve your API Key and Search**
 
@@ -201,7 +201,7 @@ Click on the Bluetooth bulb to add it to your scene, and continue on to building
 
 Bluetooth bulbs will have their status listed on the left side. When you click the `Test` button, it may **take up to 60 seconds** for the connection to complete.
 
-![](<../.gitbook/assets/image (294) (1).png>)
+![](<../.gitbook/assets/image (294) (1) (1).png>)
 
 
 

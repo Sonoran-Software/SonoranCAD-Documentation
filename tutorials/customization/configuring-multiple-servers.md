@@ -29,4 +29,4 @@ In the civilian page, the top right header allows users to swap back and forth b
 
 In the police, fire, EMS, and dispatch pages; users can select their server by clicking on the start menu.
 
-![Emergency Pages - Server Selector](<../../.gitbook/assets/image (300) (1) (1) (1).png>)
+![Emergency Pages - Server Selector](<../../.gitbook/assets/image (300) (1) (1) (1) (1).png>)

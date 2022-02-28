@@ -46,7 +46,7 @@ In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Eve
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map).
 
-![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (298).png>)
+![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (298) (1).png>)
 
 ### 4. Set Your API ID
 
@@ -94,7 +94,7 @@ Or, quickly auto-open and search for the location by clicking the search icon:
 
 You can toggle specific blips visibility and outline colors for police, fire, EMS, and dispatch.
 
-![Live Map - Blip Customization](<../../../.gitbook/assets/image (299).png>)
+![Live Map - Blip Customization](<../../../.gitbook/assets/image (299) (1).png>)
 
 ### **Unit Blips**
 

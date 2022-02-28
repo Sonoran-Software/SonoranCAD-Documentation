@@ -76,6 +76,6 @@ Navigate to our [main GitHub repository](https://github.com/Sonoran-Software/Son
 
 Paste your Discord and GitHub username into the support app to be granted access to our `#community-development` channel.
 
-![](<../../.gitbook/assets/image (290).png>)
+![](<../../.gitbook/assets/image (290) (1).png>)
 {% endtab %}
 {% endtabs %}

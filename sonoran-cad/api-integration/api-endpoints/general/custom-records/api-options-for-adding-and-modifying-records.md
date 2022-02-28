@@ -36,7 +36,7 @@ For **adding a new record or character**, you will need to specify the `recordTy
 
 The `recordTypeId` is a unique number for your custom record template. This is visible in the custom record JSON's `recordTypeId` field, or next to the template name in the admin menu.
 
-![Custom Records - Record Type ID](<../../../../../.gitbook/assets/image (306) (1) (1).png>)
+![Custom Records - Record Type ID](<../../../../../.gitbook/assets/image (306) (1) (1) (1).png>)
 
 ### 2. Getting the \`recordId\`
 

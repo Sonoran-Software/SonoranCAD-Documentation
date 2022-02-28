@@ -199,4 +199,4 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (306).png>)
+![](<../../.gitbook/assets/image (306) (1).png>)

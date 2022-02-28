@@ -48,13 +48,13 @@ Copy your community ID and API key, you'll need to enter these in Roblox.
 
 ![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1).png>)
 
-![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301).png>)
+![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301) (1).png>)
 
 #### 2. Access the Server Owner Menu
 
 Once you've joined your private server as the owner, click the menu on the top right of your screen.
 
-![ER:LC Server Owner Menu](<../.gitbook/assets/image (294).png>)
+![ER:LC Server Owner Menu](<../.gitbook/assets/image (294) (1).png>)
 
 #### 3. Edit the Server Settings
 
@@ -76,15 +76,15 @@ Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
 At the top right of your screen, select the gear icon to open your local settings menu.
 
-![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1) (1).png>)
+![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1) (1) (1).png>)
 
 #### 2. Copy your API ID
 
 Then, select `View Your API ID` and copy your in-game API ID.
 
-![ER:LC - View your API ID](<../.gitbook/assets/image (298) (1).png>)
+![ER:LC - View your API ID](<../.gitbook/assets/image (298) (1) (1).png>)
 
-![ER:LC - Copy your API ID](<../.gitbook/assets/image (299) (1).png>)
+![ER:LC - Copy your API ID](<../.gitbook/assets/image (299) (1) (1).png>)
 
 #### 3. Add Your API ID to Sonoran CAD
 
@@ -92,7 +92,7 @@ From the community menu select the `Settings` modal.
 
 Select `New` under API ID and paste in your Roblox API ID.
 
-![Sonoran CAD Settings](<../.gitbook/assets/image (290) (1).png>)
+![Sonoran CAD Settings](<../.gitbook/assets/image (290) (1) (1).png>)
 
 ![Sonoran CAD: New API ID](<../.gitbook/assets/image (293) (1).png>)
 

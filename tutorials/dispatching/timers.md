@@ -52,7 +52,7 @@ Additionally, you can expand the timer to change the name and duration.
 
 When a unit, group, or call is [attached to a timer](timers.md#undefined) you can click on the timer icon. A timer menu will be displayed, allowing you to start, pause, restart, or clear the timer's attachment.
 
-![Sonoran CAD - Timer Context Menu](<../../.gitbook/assets/image (299) (1) (1).png>)
+![Sonoran CAD - Timer Context Menu](<../../.gitbook/assets/image (299) (1) (1) (1).png>)
 
 ## Timer Attachments
 
@@ -68,4 +68,4 @@ In addition to dragging a unit, group, or dispatch call to a minimized tab you c
 
 Click on a unit, group, or dispatch call: `Timers` > `Select a Timer`
 
-![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1) (1).png>)
+![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1) (1) (1).png>)

@@ -14,7 +14,7 @@ You will be prompted for three information fields:
 1. Community Name
 2. Website (Optional)
 
-![The community CAD registration modal is shown as above](<../../.gitbook/assets/image (290) (1) (1).png>)
+![The community CAD registration modal is shown as above](<../../.gitbook/assets/image (290) (1) (1) (1).png>)
 
 #### 2. Register Your Community
 
