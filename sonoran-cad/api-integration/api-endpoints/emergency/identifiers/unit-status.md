@@ -5,7 +5,7 @@ description: Update your unit's current status in the CAD via API.
 # Unit Status
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/unit_status" method="post" summary="Update Unit Status" %}
@@ -61,7 +61,7 @@ INVALID API KEY
 }
 ```
 
-The unit status enumeration values are shown below. These reflect the default unit status options. Your community may have changed the wording with custom [unit status codes](../../../../tutorials/customization/unit-status-codes.md).
+The unit status enumeration values are shown below. These reflect the default unit status options. Your community may have changed the wording with custom [unit status codes](../../../../../tutorials/customization/unit-status-codes.md).
 
 | Integer (Enumeration) Value | Status Description |
 | --------------------------- | ------------------ |

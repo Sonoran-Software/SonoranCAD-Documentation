@@ -98,7 +98,7 @@ The `value` integer is the primary search key for the `searchType` specified.
 
 #### Identifier (searchType 0)
 
-When specifying an identifier `searchType` the `value` represents the unique identifier ID of a specific unit. You can retrieve this unique identifier ID via the [Get Identifiers endpoint](../emergency/get-identifiers.md).
+When specifying an identifier `searchType` the `value` represents the unique identifier ID of a specific unit. You can retrieve this unique identifier ID via the [Get Identifiers endpoint](../emergency/identifiers/get-identifiers.md).
 
 This will return all records associated with the provided unit identifier.
 

@@ -45,7 +45,7 @@ View all general endpoints for user account actions, administrative actions, and
 
 ### Javascript
 
-This example makes a [unit panic request](emergency/unit-panic.md) based on a unit's API ID. This uses the [Axios library](https://www.npmjs.com/package/axios) to help make the HTTP POST request.
+This example makes a [unit panic request](emergency/identifiers/unit-panic.md) based on a unit's API ID. This uses the [Axios library](https://www.npmjs.com/package/axios) to help make the HTTP POST request.
 
 The server response is then logged to console.
 
@@ -90,7 +90,7 @@ api.post('/emergency/unit_panic', JSON.stringify(data))
 
 ### Lua
 
-This example makes a [unit panic request](emergency/unit-panic.md) based on a unit's API ID. This uses the[ FiveM performHttpRequest native](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest/) to help make the HTTP POST request.
+This example makes a [unit panic request](emergency/identifiers/unit-panic.md) based on a unit's API ID. This uses the[ FiveM performHttpRequest native](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest/) to help make the HTTP POST request.
 
 The server response is then logged to console.
 
