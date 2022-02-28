@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 #### 12. Unit Information
 
-The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, and `UNIT_AGENCY_ZIP` field types will all automatically insert the unit's information when they create a new record.
+The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
 ![Sonoran CAD - Custom Record Unit Information Fields](<../../.gitbook/assets/image (304) (1) (1).png>)
 {% endtab %}

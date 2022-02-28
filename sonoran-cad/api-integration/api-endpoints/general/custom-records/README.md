@@ -159,6 +159,7 @@ The `field` object contains all of the data for an individual custom record fiel
 | `UNIT_SUBDIVISION`     | Auto filled unit subdivision                                                                                     |
 | `UNIT_AGENCY_LOCATION` | Auto filled unit agency location                                                                                 |
 | `UNIT_AGENCY_ZIP`      | Auto filled unit agency zip                                                                                      |
+| `UNIT_LOCATION`        | Auto filled unit location                                                                                        |
 
 #### Status
 
