@@ -60,7 +60,7 @@ Once you've joined your private server as the owner, click the menu on the top r
 
 Select `Edit Server Settings` in the menu.
 
-![ER:LC Edit Server Settings](<../.gitbook/assets/image (291).png>)
+![ER:LC Edit Server Settings](<../.gitbook/assets/image (291) (1).png>)
 
 #### 4. Enter your Community ID and API Key
 
