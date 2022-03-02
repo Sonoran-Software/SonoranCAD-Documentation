@@ -1,5 +1,5 @@
 ---
-description: Common troubleshooting for common issues encountered with Database Sync
+description: Troubleshooting for common issues encountered with Database Sync
 ---
 
 # Troubleshooting
