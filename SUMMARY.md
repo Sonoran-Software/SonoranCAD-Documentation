@@ -68,9 +68,9 @@
 
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
-  * [Troubleshooting](integration-plugins/database-sync-and-merge/troubleshooting.md)
-  * [QBCore License Mapping](integration-plugins/database-sync-and-merge/qbcore-license-mapping.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
+  * [QBCore License Mapping](integration-plugins/database-sync-and-merge/qbcore-license-mapping.md)
+  * [Troubleshooting](integration-plugins/database-sync-and-merge/troubleshooting.md)
 * [Discord Bot](integration-plugins/discord-bot/README.md)
   * [Getting Started - Discord Bot](integration-plugins/discord-bot/getting-started-discord-bot.md)
   * [Commands Reference](integration-plugins/discord-bot/commands-reference.md)
