@@ -10,6 +10,35 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.25.2 03/04/2022
+
+{% tabs %}
+{% tab title="New" %}
+#7615 Custom Records - Unit Location Field
+
+* The UNIT_LOCATION custom field type can be used to autofill the unit location on a new record.
+
+API: GET_IDENTIFIERS
+
+* The new GET_IDENTIFIERS endpoint allows you to retrieve all unit identifiers for a user and view the currently selected one.
+
+#7066 API: SET_IDENTIFIER
+
+* Added an endpoint to change the selected unit identifier via API.
+
+#7511 Modify Identifier
+
+* Unit identifiers can now be added, edited, and removed via API.
+
+{% endtab %}
+{% tab title="Changed" %}
+Custom Records - Show Field UIDs
+
+* The custom record editor now shows the field mapping ID column (UID) for all record types.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.25.0 02/17/2022
 
 {% tabs %}
