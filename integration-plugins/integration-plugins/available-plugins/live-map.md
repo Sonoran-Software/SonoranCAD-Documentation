@@ -63,7 +63,7 @@ In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" bu
 This is found in the task bar's start menu under Unit Management > Live Map\
 You can also [pin the live map button to your taskbar](../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
-![Sonoran CAD: Live Map Button](<../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
+![Sonoran CAD: Live Map Button](../../../.gitbook/assets/screen-shot-2021-06-18-at-11.12.10-pm.png)
 
 **The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
 
@@ -146,7 +146,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
-![Live Map - Smart Signs](<../../../.gitbook/assets/image (304).png>)
+![Live Map - Smart Signs](<../../../.gitbook/assets/image (300) (1).png>)
 
 ## Using a Custom Map
 

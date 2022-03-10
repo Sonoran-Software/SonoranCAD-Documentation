@@ -60,14 +60,12 @@ INVALID API KEY
                 "signal": "",
                 "mapUrl": "",
                 "mapIp": "",
-                "mapPort" 0,
                 "listenerPort": 3232,
                 "differingOutbound": false, // Different outbound/egress IP than the mapIp
                 "outboundIp": "",
-                "mapPort": 30121,
                 "enableMap": true,
                 "isStatic": false,
-                "mapType": "NORMAL",
+                "mapType": "NORMAL" // NORMAL, POSTAL, OCRP POSTAL
             }
         ]
         "deployMap": true // Deploy the Live Map with these server changes

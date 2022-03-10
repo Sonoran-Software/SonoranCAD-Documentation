@@ -32,4 +32,4 @@ This code is used in support tickets to confirm that you are the registered owne
 2. Press the "Request Code" button
 3. Your ownership authentication code will be displayed on the screen
 
-![Sonoran CAD's ownership authentication page](../../.gitbook/assets/auth.PNG)
+![Sonoran CAD's ownership authentication page](../../.gitbook/assets/auth.png)

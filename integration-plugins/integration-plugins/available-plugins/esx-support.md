@@ -14,8 +14,6 @@ For more information, view our [pricing ](../../../pricing/faq)page.
 
 {% hint style="info" %}
 ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
-
-**QBCore and QBCore "renamed" frameworks like RepentzFW/PepeFW should also work with this plugin**
 {% endhint %}
 
 {% hint style="success" %}

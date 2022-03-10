@@ -10,13 +10,13 @@ description: >-
 
 In the sidebar menu, select the settings button:
 
-![The settings button is displayed in the side navigation menu](<../../.gitbook/assets/Screen Shot 2020-04-19 at 2.00.55 AM.png>)
+![The settings button is displayed in the side navigation menu](../../.gitbook/assets/screen-shot-2020-04-19-at-2.00.55-am.png)
 
 ### Change your Volume and Language
 
 You can easily adjust your volume, and set your text-to-speech voice in the settings modal:
 
-![Sonoran CAD's settings modal](<../../.gitbook/assets/Screen Shot 2020-04-19 at 2.02.29 AM.png>)
+![Sonoran CAD's settings modal](../../.gitbook/assets/screen-shot-2020-04-19-at-2.02.29-am.png)
 
 ### Translation Support
 

@@ -15,7 +15,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/banner\_3.png)
 
 ## Installation Video
 

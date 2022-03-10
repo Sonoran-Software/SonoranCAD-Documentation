@@ -14,7 +14,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 This plugin allows players to fetch their character information from the CAD. Basic functionality is provided with the /showid command, but developers are encouraged to use the export for their own creations.
 
-![Sonoran CAD - Civilian Integration Lookup](<../../../.gitbook/assets/Screen Shot 2020-12-12 at 10.00.21 PM.png>)
+![Sonoran CAD - Civilian Integration Lookup](../../../.gitbook/assets/screen-shot-2020-12-12-at-10.00.21-pm.png)
 
 ## Installation
 
