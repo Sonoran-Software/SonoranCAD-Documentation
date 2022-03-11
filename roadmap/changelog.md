@@ -14,6 +14,47 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
+#7314 Custom Records - Dependencies
+
+* Custom record sections and fields can now have their visibility toggled via custom dependencies from other record fields.
+
+Custom Records - Copy/Paste Sections
+
+* The custom record editor now allows you to copy/paste record sections.
+
+#7920 Record Logs
+
+* Modified the custom record add and edit logs to include more details on the record type and ID.
+
+Inactivity - Email Notice
+
+* Automated emails are sent to community owners if no logins have been made in 3 weeks, giving them 7 days notice prior to community deletion.
+
+DB Sync - Safety Checks
+
+* Added safety checks and errors for database sync configurations that have license or vehicle mapping enabled, but no table name or character mapping column set.
+
+Custom Records - Required Type Duplicate Check
+
+* Added additional safety checks to ensure a community does not have duplicate required custom record types and the ability to remove duplicated required types.
+
+{% endtab %}
+{% tab title="Fixed" %}
+DMV New Record - Disable with Sync
+
+* Fixed an issue allowing new licenses or vehicle registrations to be created in the DMV panel even if DB Sync is enabled.
+
+API SET_SERVERS - Deploy Map
+
+* Fixed an issue with the SET_SERVERS endpoint not properly deploying the new live map.
+
+{% endtab %}
+{% endtabs %}
+
+### 3.25.2 03/04/2022
+
+{% tabs %}
+{% tab title="New" %}
 #7615 Custom Records - Unit Location Field
 
 * The UNIT_LOCATION custom field type can be used to autofill the unit location on a new record.
