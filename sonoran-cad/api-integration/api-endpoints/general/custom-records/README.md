@@ -97,7 +97,15 @@ The "Section" object contains all of the data for a custom record section. These
                         //  display the search button to help search and import character data automatically
     "searchVeh": false, // If this is a vehicle information section,
                         //  display the search button to help search and import vehicle data automatically
-    "enableDuplicate": true // Allow users to duplicate this section while filling out the record/report 
+    "enableDuplicate": true, // Allow users to duplicate this section while filling out the record/report
+    "dependency": {
+        "type": "", // Unused
+        "fid": "_5678_wxyz",
+        "acceptableValues": [
+            "Something",
+            "Example",
+        ]
+    } 
 }
 ```
 
@@ -134,7 +142,15 @@ The `field` object contains all of the data for an individual custom record fiel
     "maskReverse": false, // Fill mask in reverse order (Money)
     "dbMap": false, // Allow this field to be mapped with DB Sync
     "isFromSync": false, // DB Sync Internal Processing (Ignore)
-    "uid": "_1234_abcd" // Random unique field ID (DB Sync and Merge)
+    "uid": "_1234_abcd", // Random unique field ID (DB Sync and Merge)
+    "dependency": {
+        "type": "", // Unused
+        "fid": "_5678_wxyz",
+        "acceptableValues": [
+            "Something",
+            "Example",
+        ]
+    }
 }
 ```
 
