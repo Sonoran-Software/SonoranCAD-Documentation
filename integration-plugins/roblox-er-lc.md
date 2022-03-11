@@ -46,9 +46,9 @@ In Sonoran CAD, navigate to the admin menu > `Advanced` > `In-Game Integration` 
 
 Copy your community ID and API key, you'll need to enter these in Roblox.
 
-![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1).png>)
+![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1) (1).png>)
 
-![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301) (1).png>)
+![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301) (1) (1).png>)
 
 #### 2. Access the Server Owner Menu
 
@@ -120,7 +120,7 @@ The map allows you to zoom in or out, select different street, building, and pos
 
 Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
 
-![Sonoran CAD - ER:LC Live Map](<../.gitbook/assets/image (303).png>)
+![Sonoran CAD - ER:LC Live Map](<../.gitbook/assets/image (303) (1).png>)
 
 ### Unit Locations
 

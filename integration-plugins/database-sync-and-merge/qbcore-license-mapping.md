@@ -10,7 +10,7 @@ You will first need to edit the License record to adapt it for how QBCore stores
 
 `Admin Panel` -> `Customization` -> `Custom Records` -> Click `#4 - License`
 
-![Sonoran CAD Custom Record Editor](<../../.gitbook/assets/image (301).png>)
+![Sonoran CAD Custom Record Editor](<../../.gitbook/assets/image (301) (1).png>)
 
 ### **2**. Edit License Information Section
 
@@ -36,7 +36,7 @@ We are aware of the misspelling "licence", this is intentional in QBCore to diff
 
 ![Sonoran CAD DBSync Settings](<../../.gitbook/assets/image (298).png>)
 
-![Sonoran CAD DBSync Friendly Mapping Settings](<../../.gitbook/assets/image (300).png>)
+![Sonoran CAD DBSync Friendly Mapping Settings](<../../.gitbook/assets/image (300) (1).png>)
 
 Congratulations! You should now be all set up to display your licenses from QBCore in Sonoran CAD. Feel free to test a record lookup to verify everything is in order.
 

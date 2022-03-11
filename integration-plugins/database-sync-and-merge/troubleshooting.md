@@ -18,7 +18,7 @@ With slow DNS server settings, this can sometimes cause lookups to take 5-20 sec
 
 > skip-name-resolve
 
-![MySQL my.ini configuration file](<../../.gitbook/assets/image (302).png>)
+![MySQL my.ini configuration file](<../../.gitbook/assets/image (302) (1).png>)
 
 3\. Save the my.ini file and then restart your MySQL server. For XAMPP simply click Stop in the XAMPP Control Panel then click Start.
 

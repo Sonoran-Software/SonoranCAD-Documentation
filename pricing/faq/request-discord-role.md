@@ -70,7 +70,7 @@ Navigate to our [main GitHub repository](https://github.com/Sonoran-Software/Son
 
 #### 2. Copy your Discord and GitHub Usernames
 
-![](<../../.gitbook/assets/image (293).png>)![](<../../.gitbook/assets/image (305).png>)
+![](<../../.gitbook/assets/image (293).png>)![](<../../.gitbook/assets/image (305) (1).png>)
 
 #### 3. Enter your Information
 

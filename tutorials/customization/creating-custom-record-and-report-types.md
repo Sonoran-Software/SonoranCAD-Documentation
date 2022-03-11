@@ -45,15 +45,15 @@ The enable duplicate button allows users to click and create a new copy of the s
 
 ![Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (169).png>)
 
-{% tabs %}
-{% tab title="Field Type" %}
-Fields can be a set to `text`, `select`, `textarea`, `date`, `time`, `label`, `address` or `checkboxes`.
+<details>
 
-#### 1. Text:
+<summary>Field Types</summary>
+
+**Text**
 
 These fields are generic text boxes.
 
-#### 2. Select:
+#### Select
 
 The select field allows you to customize a dropdown box.
 
@@ -61,23 +61,23 @@ The select field allows you to customize a dropdown box.
 
 ![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1).png>)
 
-#### 3. TextArea:
+#### Text Area
 
-The select field allows you to create a large text area.
+The text area field allows you to create a large text area.
 
 ![The 'TEXTAREA' field option](<../../.gitbook/assets/image (4).png>)
 
 ![A 'TEXTAREA' field shown in the record editor](<../../.gitbook/assets/image (5).png>)
 
-#### 4. Checkboxes
+#### Checkboxes
 
-The checkboxes type allows you to create multiple checkboxes, similar to the premade flags section.
+The checkboxes type allows you to create multiple checkboxes.
 
 ![The 'CHECKBOXES' field option](<../../.gitbook/assets/image (26).png>)
 
 ![A 'CHECKBOXES' field shown in the record editor.](<../../.gitbook/assets/image (27).png>)
 
-#### 5. Date
+#### Date
 
 The date field allows you to specify a date field. You can also specify the formatting in the mask column.
 
@@ -85,9 +85,7 @@ When `readOnly` is selected, this field will auto-fill the current date for new 
 
 ![The 'DATE' field option](<../../.gitbook/assets/image (28).png>)
 
-![The 'DATE' field shown in the record editor](<../../.gitbook/assets/image (29).png>)
-
-#### 6. Time
+![The 'DATE' field shown in the record editorTime](<../../.gitbook/assets/image (29).png>)
 
 The time field allows you to specify a time field.
 
@@ -95,7 +93,7 @@ The time field allows you to specify a time field.
 
 ![The 'TIME' field shown in the record editor](<../../.gitbook/assets/image (31).png>)
 
-#### 7. Image
+#### Image
 
 The image field allows you to specify an image to be displayed.
 
@@ -103,57 +101,58 @@ The image field allows you to specify an image to be displayed.
 
 ![The 'IMAGE' field shown in the record editor](<../../.gitbook/assets/image (33).png>)
 
-#### 8. Linked Records
+#### Linked Records
 
 The linked records field allows you to link and cross-reference other records and reports to this record.
 
 ![Sonoran CAD - Linked Records](<../../.gitbook/assets/image (85).png>)
 
-#### 9. Flags
+#### Flags
 
 Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
 
 ![Sonoran CAD - Custom Flags](<../../.gitbook/assets/image (86).png>)
 
-#### 10. Label
+#### Label
 
 Labels can display static text, along with color attributes.
 
 ![Sonoran CAD - Custom Record Label](<../../.gitbook/assets/image (168).png>)
 
-#### 11. Address
+#### Address
 
 The address dropdown will auto-filter [street address names that have been imported via CSV](addresses-and-street-names.md).
 
 ![Sonoran CAD - Custom Record Address Field](../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif)
 
-#### 12. Unit Information
+**Unit Information**
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-![Sonoran CAD - Custom Record Unit Information Fields](<../../.gitbook/assets/image (304) (1) (1).png>)
-{% endtab %}
+![](<../../.gitbook/assets/image (302).png>)
 
-{% tab title="Field Options" %}
-#### 1. Preview:
+</details>
+
+<details>
+
+<summary>Field Options</summary>
+
+#### Preview
 
 This will show the field label and value in the lookup table preview.
 
-![Input field with PREVIEW toggled](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (305).png>)![](<../../.gitbook/assets/image (16).png>)
 
-![Previewed field shown in a lookup table](<../../.gitbook/assets/image (5) (1).png>)
-
-#### 2. Supervisor
+#### Supervisor
 
 This will disable the field for all non-supervisor unit identifiers.\
-Your unit's supervisor status can be set in the unit identifier editor.\
-
+Your unit's supervisor status can be set in the unit identifier editor.
 
 ![Input field with SUPERVISOR toggled](<../../.gitbook/assets/image (7).png>)
 
 ![Supervisor field highlighted red](<../../.gitbook/assets/image (8).png>)
 
-#### 3. Required
+#### Required
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
@@ -161,35 +160,33 @@ Required fields will require the unit to enter something into the field before t
 
 ![Required field shown in the record editor](<../../.gitbook/assets/image (10).png>)
 
-#### 4. Unique
+#### Unique
 
 Unique fields enforce that no duplicate values for this field are stored in the database. These values are enforced for the specific record template only.
 
 Unique fields can only be on non-DB Sync records and in custom sections.
 
-![Sonoran CAD - Unique Field](<../../.gitbook/assets/image (170).png>)
-
-![Sonoran CAD - Unique Field Error](<../../.gitbook/assets/image (171).png>)
-
-#### 5. Read Only
+**Read Only**
 
 Read only fields prevent the user from entering new or modified text. This is used for auto-filled fields like unit information when a new record is created.
 
 Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
 
-![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1) (1).png>)
+![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1) (1) (1).png>)
 
-![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302) (1) (1).png>)
-{% endtab %}
+![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302) (1) (1) (1).png>)
 
-{% tab title="Field Mask" %}
+</details>
+
+<details>
+
+<summary>Field Mask</summary>
+
 The field mask allows you to specify a required format for the field.
 
-| Token | Description  |
-| ----- | ------------ |
-| #     | Numeric      |
-| S     | Letter A-Z   |
-| X     | Alphanumeric |
+* `#`: Number
+* `S`: A-Z Letter
+* `X`: Alphanumeric
 
 #### Example: Numbers
 
@@ -202,18 +199,44 @@ Specifying `###` allows the user to only enter 3 numbers in the field.
 Specifying `(###) ### - ####` formats the user's input into a phone number.
 
 ![](<../../.gitbook/assets/image (35).png>)
-{% endtab %}
 
-{% tab title="Field Size" %}
-The field size slider allows you to select a field size value between 1 and 12.
+</details>
 
-Every row of a record has a space divisible by 12.
+<details>
 
-![Record fields with sizes 3, 3, and 8](<../../.gitbook/assets/image (11).png>)
+<summary>Field Size</summary>
 
-![Record editor with custom field sizes](<../../.gitbook/assets/image (12).png>)
-{% endtab %}
-{% endtabs %}
+The field size slider allows you to select a field size value between 1 and 12.Every row of a record has a space divisible by 12.
+
+![](<../../.gitbook/assets/image (294).png>)![](<../../.gitbook/assets/image (82).png>)
+
+</details>
+
+<details>
+
+<summary>Dependencies</summary>
+
+Dependencies allow you to make an individual field or entire section visible based on conditions.
+
+**Copy Parent Field ID**
+
+Expand a field and copy the unique `Field Mapping ID`.
+
+****![](<../../.gitbook/assets/image (88).png>)
+
+**Set Child Dependency**
+
+On a section or field, click the dependency button to open the editor.
+
+Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
+
+![](<../../.gitbook/assets/image (303).png>)![](<../../.gitbook/assets/image (301).png>)
+
+Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
+
+Text fields as the dependency parent will allow you to enter what text values will display this section or field.
+
+</details>
 
 ### 4. Save the Record
 

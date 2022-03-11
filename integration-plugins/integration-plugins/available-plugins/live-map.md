@@ -146,7 +146,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
-![Live Map - Smart Signs](<../../../.gitbook/assets/image (300) (1).png>)
+![Live Map - Smart Signs](<../../../.gitbook/assets/image (300) (1) (2).png>)
 
 ## Using a Custom Map
 
