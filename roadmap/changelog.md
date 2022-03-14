@@ -10,6 +10,45 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.25.6 03/14/2022
+
+{% tabs %}
+{% tab title="New" %}
+#7977 Link Dispatch Call
+
+* Dispatch calls can now be linked in custom records for quick reference.
+
+{% endtab %}
+{% tab title="Changed" %}
+ERLC Map Update
+
+* Updated the ERLC live map image.
+
+{% endtab %}
+{% tab title="Fixed" %}
+Linked Records - Remove
+
+* Fixed an issue where clicking the delete button on a linked record still opened the record preview after removing it.
+
+#7978 Field Dependency
+
+* Fixed an issue causing field dependencies to not function properly.
+
+#7981 Field Add Exception
+
+* Fixed an issue generating a console error when adding a new field to a custom record.
+
+Admin Customization - Sonoran One
+
+* Fixed an issue where Sonoran One members couldn't access the proper tone board and custom search customization options.
+
+Custom Record Dependency - Select
+
+* Fixed an issue causing custom record dependencies on a select field to throw an exception.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.25.3 03/11/2022
 
 {% tabs %}
