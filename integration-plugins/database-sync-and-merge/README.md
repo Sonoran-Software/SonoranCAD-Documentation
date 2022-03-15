@@ -212,6 +212,12 @@ Ex: `drive_license` in your database is converted to `Driver's License`.
 
 ### 1. Find Values to "Friendly Map"
 
+{% hint style="warning" %}
+MySQL `tinyint` column types may be displayed as numerical values `0` and `1` but be read as `True` and `False` by Sonoran CAD.\
+\
+Instead of mapping the "Database Vaue" as `0` or `1` you will need to map `False` and `True`.
+{% endhint %}
+
 In our SQL table, we can see the character's job columns has text values that can be improved. The `taxi` job value can be automatically converted to `Taxi Driver` in DB Sync records, and the `cardealer` jon can be automatically converted to `Car Dealer`.
 
 ![SQL Table - Unfriendly Values](<../../.gitbook/assets/image (187).png>)

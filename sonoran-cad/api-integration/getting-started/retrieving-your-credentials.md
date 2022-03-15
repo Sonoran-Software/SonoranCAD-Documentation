@@ -15,7 +15,7 @@ In the admin menu, select Advanced > In-Game Integration
 
 Under the Web API section, your community ID and API key will be listed as shown:
 
-![](../../../.gitbook/assets/api.png)
+![](../../../.gitbook/assets/api.PNG)
 
 
 
