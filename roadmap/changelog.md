@@ -14,10 +14,6 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
-#7977 Link Dispatch Call
-
-* Dispatch calls can now be linked in custom records for quick reference.
-
 Database Merge - Flag Section Handling
 
 * Database merge now supports saving custom flag sections on database sync records.
