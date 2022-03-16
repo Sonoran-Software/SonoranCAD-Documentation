@@ -23,7 +23,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" required="true" %}
-GET_BLIPS
+MODIFY_BLIP
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" required="true" %}
@@ -31,18 +31,8 @@ Array of request objects
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
-```json
-// Blip object
-[
-    {
-        "id": 1,
-        "coordinates": {
-            "x": 0,
-            "y": 0
-        },
-        "icon": "https://example.com/icon.png"
-    }
-]
+```
+Blip 123 modified!
 ```
 {% endswagger-response %}
 

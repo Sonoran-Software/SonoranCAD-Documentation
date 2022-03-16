@@ -25,7 +25,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" required="true" %}
-GET_BLIPS
+REMOVE_BLIP
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" required="true" %}
