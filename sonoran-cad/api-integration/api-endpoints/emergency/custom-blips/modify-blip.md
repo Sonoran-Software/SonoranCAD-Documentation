@@ -59,6 +59,8 @@ INVALID API KEY
                 "y": 1
             },
             "icon": "https://example.com/icon.png" // OPTIONAL - Icon Update
+            "color": "#df03fc", // OPTIONAL - Hex Color Code
+            "tooltip": "Example added from the API!" // OPTIONAL - Blip Tooltip
         },
     ]
 }

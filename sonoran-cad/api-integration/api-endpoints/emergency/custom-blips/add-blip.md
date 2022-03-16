@@ -72,7 +72,9 @@ INVALID API KEY
                     "x": 123,
                     "y": 456
                 },
-                "icon": "https://example.com/icon.png" // URL or Icon Name
+                "icon": "https://example.com/icon.png", // URL or Icon Name
+                "color": "#df03fc", // Hex Color Code
+                "tooltip": "Example added from the API!" // Blip Tooltip
             }
         },
     ]
