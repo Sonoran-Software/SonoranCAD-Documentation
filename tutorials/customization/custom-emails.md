@@ -22,11 +22,11 @@ Here, you can set the email header, sub-header, and body text.\
 \
 _NOTE:_ Your community logo will automatically be inserted into all emails.
 
-![The email customization panel allows you to enter your own text](../../.gitbook/assets/emailconfig.PNG)
+![The email customization panel allows you to enter your own text](../../.gitbook/assets/emailconfig.png)
 
 #### 2. Save and Enjoy!
 
 Once saved, all user account registration and password recovery emails sent from your custom login page will be customized as configured.
 
-![Custom emails are sent to users as configured](../../.gitbook/assets/emailExample.PNG)
+![Custom emails are sent to users as configured](../../.gitbook/assets/emailexample.png)
 

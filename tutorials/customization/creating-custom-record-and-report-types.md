@@ -57,9 +57,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-![The 'SELECT' field option](<../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png>)
+![The 'SELECT' field option](<../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png>)
 
-![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16) (2) (2) (2) (2) (1).png>)
+![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1).png>)
 
 #### Text Area
 
@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-![](<../../.gitbook/assets/image (280) (1).png>)
+![](<../../.gitbook/assets/image (280).png>)
 
 </details>
 
@@ -230,7 +230,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3).png>)![](<../../.gitbook/assets/image (301).png>)
+![](<../../.gitbook/assets/image (303).png>)![](<../../.gitbook/assets/image (301).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 

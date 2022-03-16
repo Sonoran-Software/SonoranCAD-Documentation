@@ -10,13 +10,13 @@ description: >-
 
 On the website or app, select "Create Account"
 
-![The account registration panel allows users to input their information](../../.gitbook/assets/account.PNG)
+![The account registration panel allows users to input their information](../../.gitbook/assets/account.png)
 
 #### 2. Enter Your Account Information
 
 Enter in your email, username, and password. Then, select the green "Create Account" button.
 
-![Verification emails are sent for user registration](../../.gitbook/assets/email\_notif.PNG)
+![Verification emails are sent for user registration](../../.gitbook/assets/email\_notif.png)
 
 #### 3. Verify Your Email Address
 
@@ -31,4 +31,4 @@ Check your inbox for an email from Sonoran CAD.\
 Select the "Verify Email" button, and your account will be automatically verified.\
 
 
-![Account verification emails are sent as shown above](../../.gitbook/assets/email.PNG)
+![Account verification emails are sent as shown above](../../.gitbook/assets/email.png)

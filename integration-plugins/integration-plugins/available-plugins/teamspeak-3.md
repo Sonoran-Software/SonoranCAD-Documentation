@@ -71,4 +71,4 @@ Signing out of or exiting the CAD will result in the user being kicked from any 
 
 ![TS3 - Server Group Granted](<../../../.gitbook/assets/image (143).png>)
 
-![TS3 - Channel Kicked](<../../../.gitbook/assets/image (164) (1).png>)
+![TS3 - Channel Kicked](<../../../.gitbook/assets/image (164).png>)

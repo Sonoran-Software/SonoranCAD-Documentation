@@ -94,7 +94,7 @@ Select `New` under API ID and paste in your Roblox API ID.
 
 ![Sonoran CAD Settings](<../.gitbook/assets/image (290) (1) (1).png>)
 
-![Sonoran CAD: New API ID](<../.gitbook/assets/image (293) (1).png>)
+![Sonoran CAD: New API ID](<../.gitbook/assets/image (297) (1) (1).png>)
 
 ## In-Game Commands and Features
 

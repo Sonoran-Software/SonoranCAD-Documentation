@@ -10,7 +10,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](other-products/server-hosting.md)!
 {% endhint %}
 
-![](<.gitbook/assets/SonoranCAD Logo\_Full.png>)
+![](.gitbook/assets/sonorancad-logo\_full.png)
 
 ![Sonoran CAD's advanced dispatching and record management system](.gitbook/assets/layout\_3\_11.gif)
 

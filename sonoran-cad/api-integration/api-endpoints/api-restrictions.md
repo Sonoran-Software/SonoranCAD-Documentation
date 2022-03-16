@@ -25,6 +25,10 @@ description: >-
 | emergency/[set\_call\_postal](emergency/update-call-postal.md)                  | Plus                 |
 | emergency/[set\_streetsign\_config](emergency/set-street-sign-config.md)        | Pro                  |
 | emergency/[update\_streetsign](emergency/update-street-sign.md)                 | Pro                  |
+| emergency/[get\_blips](emergency/custom-blips/get-map-blips.md)                 | Pro                  |
+| emergency/[add\_blip](emergency/custom-blips/add-blip.md)                       | Pro                  |
+| emergency/[modify\_blip](emergency/custom-blips/modify-blip.md)                 | Pro                  |
+| emergency/[remove\_blip](emergency/custom-blips/remove-blip.md)                 | Pro                  |
 | civilian/[get\_characters](civilian/get-characters.md)                          | Standard             |
 | civilian/[new\_character](civilian/new-character.md)                            | Standard             |
 | civilian/[edit\_character](civilian/edit-character.md)                          | Standard             |

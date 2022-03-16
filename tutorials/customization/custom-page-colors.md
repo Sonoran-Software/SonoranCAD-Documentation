@@ -13,7 +13,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 The admin customization menu allows you to customize the page colors in Sonoran CAD:
 
-![Sonoran CAD's custom page color options](<../../.gitbook/assets/page colors.PNG>)
+![Sonoran CAD's custom page color options](../../.gitbook/assets/page-colors.png)
 
 | Field                 | Description                                                                                      |
 | --------------------- | ------------------------------------------------------------------------------------------------ |

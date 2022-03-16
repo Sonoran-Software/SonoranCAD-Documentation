@@ -22,7 +22,7 @@ Here, you can configure your prefix and hotkey buttons using the drop-downs belo
 
 Once changed, your settings are automatically applied and saved.
 
-![Sonoran CAD's hotkey configuration menu](../../.gitbook/assets/hotkeys.PNG)
+![Sonoran CAD's hotkey configuration menu](../../.gitbook/assets/hotkeys.png)
 
 {% hint style="info" %}
 _Note:_ This image also displays [custom unit status options](../customization/unit-status-codes.md), and may differ slightly from your view.
