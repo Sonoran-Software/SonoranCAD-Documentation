@@ -71,9 +71,9 @@ INVALID API KEY
                 "coordinates": {
                     "x": 123,
                     "y": 456
-                }
-            },
-            "icon": "https://example.com/icon.png" // URL or Icon Name
+                },
+                "icon": "https://example.com/icon.png" // URL or Icon Name
+            }
         },
     ]
 }
