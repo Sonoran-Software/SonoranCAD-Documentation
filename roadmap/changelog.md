@@ -10,6 +10,31 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.25.7 03/15/2022
+
+{% tabs %}
+{% tab title="New" %}
+#7977 Link Dispatch Call
+
+* Dispatch calls can now be linked in custom records for quick reference.
+
+{% endtab %}
+{% tab title="Changed" %}
+Database Merge - Flag Section Handling
+
+* Database merge now supports saving custom flag sections on database sync records.
+
+Database Merge - Checkbox Handling
+
+* Database merge now supports select and checkbox fields for custom records with database sync.
+
+Database Sync - Checkbox Handling via Friendly Mapping
+
+* Custom record checkboxes can now have their values set via DB Sync and friendly mapping.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.25.6 03/14/2022
 
 {% tabs %}
