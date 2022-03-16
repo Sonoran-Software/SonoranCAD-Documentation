@@ -199,6 +199,7 @@
       * [Verify Secret](sonoran-cad/api-integration/api-endpoints/general/verify-secret.md)
       * [Auth Street Signs](sonoran-cad/api-integration/api-endpoints/general/auth-street-signs.md)
       * [Set Postal Config](sonoran-cad/api-integration/api-endpoints/general/set-postal-config.md)
+      * [Send Photo](sonoran-cad/api-integration/api-endpoints/general/send-photo.md)
     * [Local Endpoints](sonoran-cad/api-integration/api-endpoints/local-endpoints/README.md)
       * [Smart Lighting](sonoran-cad/api-integration/api-endpoints/local-endpoints/smart-lighting.md)
   * [Development Branch](sonoran-cad/api-integration/development-branch.md)

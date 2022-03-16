@@ -52,3 +52,4 @@ description: >-
 | general/[set\_servers](general/set-servers.md)                                  | Plus                 |
 | general/[auth\_streetsigns](general/auth-street-signs.md)                       | Pro                  |
 | general/[set\_postals](general/set-postal-config.md)                            | Pro                  |
+| general/send\_photo                                                             | Pro                  |
