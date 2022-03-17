@@ -65,7 +65,9 @@ INVALID EMPTY SEARCH
             "apiId": "STEAM:1234", // OPTIONAL FIELD - Will return results to user's CAD
             "searchType": 0, // See the "Search Type" enum
             "value": 1, // See the "Value" information
-            "types": [2, 3] // Search only for warrant and BOLO records
+            "types": [2, 3], // Search only for warrant and BOLO records
+            "limit": 10, // OPTIONAL: Only the 10 most recent records
+            "offset": 0, // OPTIONAL: Start from the first page of (10) records
         }
     ]
 }
