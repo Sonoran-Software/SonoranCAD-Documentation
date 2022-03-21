@@ -5,7 +5,7 @@ description: This endpoint allows you to retrieve all active units in your CAD.
 # Get Active Units
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_active_units" method="post" summary="Get Active Units" %}
@@ -88,7 +88,7 @@ INVALID API KEY
 
 ### Enumeration Values
 
-Sonoran CAD uses integer enumeration values for the unit's `status` fields. See the tables below for more information. These represent the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
+Sonoran CAD uses integer enumeration values for the unit's `status` fields. See the tables below for more information. These represent the default [unit status](../../../../../tutorials/customization/unit-status-codes.md) options.
 
 {% tabs %}
 {% tab title="UNIT_STATUS" %}

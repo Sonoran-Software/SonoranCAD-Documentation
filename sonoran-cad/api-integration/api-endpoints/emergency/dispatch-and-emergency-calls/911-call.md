@@ -4,10 +4,10 @@ description: >-
   to your dispatchers.
 ---
 
-# 911 Call
+# New 911 Call
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/call_911" method="post" summary="Emergency Call" %}
@@ -71,7 +71,7 @@ INVALID API KEY
 
 Because Sonoran CAD allows you to separate units and dispatchers into separate servers, the serverId field ensures this emergency call is sent to the appropriate dispatcher.\
 \
-For more information, see our guide on [configuring multiple servers](../../../../tutorials/customization/configuring-multiple-servers.md).
+For more information, see our guide on [configuring multiple servers](../../../../../tutorials/customization/configuring-multiple-servers.md).
 
 ### Meta Data
 

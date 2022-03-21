@@ -1,18 +1,16 @@
 ---
-description: >-
-  This endpoint allows you to forcefully kick an active unit back to the
-  community menu.
+description: This endpoint allows you to easily update the postal on a dispatch call.
 ---
 
-# Kick Unit
+# Update Call Postal
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/kick_unit" method="post" summary="Kick Unit" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/set_call_postal" method="post" summary="Set Call Postal" %}
 {% swagger-description %}
-This endpoint allows you to forcefully kick an active unit back to the community menu.
+This endpoint allows you to easily update the postal on a dispatch call.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -24,16 +22,16 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-KICK_UNIT
+SET_CALL_POSTAL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
-Array of unit status objects
+Array of request objects
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-UNIT KICKED
+CALL 123 POSTAL SET TO 456
 ```
 {% endswagger-response %}
 
@@ -51,13 +49,12 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "KICK_UNIT",
+    "type": "SET_CALL_POSTAL",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID entered in the unit identifiers
-                                   // Typically, this is their STEAM ID
-            "reason": "Automated AFK Timer", // "You have been kicked for {REASON}"
-            "serverId": 1
+            "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
+            "postal": "321"
         },
     ]
 }

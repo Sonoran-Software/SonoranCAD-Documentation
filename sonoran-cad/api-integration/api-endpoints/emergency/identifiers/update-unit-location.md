@@ -7,7 +7,7 @@ description: >-
 # Update Unit Location
 
 {% hint style="warning" %}
-iThis API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+iThis API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/unit_location" method="post" summary="Unit Location" %}
@@ -72,8 +72,8 @@ The **apiId** field contains a unique ID that every unit identifier must have sp
 \
 For more information, see our guide on setting your unit's API ID:
 
-{% content-ref url="../../getting-started/setting-your-api-id.md" %}
-[setting-your-api-id.md](../../getting-started/setting-your-api-id.md)
+{% content-ref url="../../../getting-started/setting-your-api-id.md" %}
+[setting-your-api-id.md](../../../getting-started/setting-your-api-id.md)
 {% endcontent-ref %}
 
 #### Rate Limiting

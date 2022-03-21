@@ -1,18 +1,20 @@
 ---
 description: >-
-  This endpoint allows you to update the primary unit identifier on a dispatch
-  call.
+  This endpoint allows you to remove an existing emergency/911 call from the
+  CAD.
 ---
 
-# Update Call Primary
+# Remove 911
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/set_call_primary" method="post" summary="Set Call Primary" %}
+This endpoint allows you to remove an existing emergency/911 call from the CAD.
+
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/remove_911" method="post" summary="Remove 911" %}
 {% swagger-description %}
-This endpoint allows you to easily update the primary unit on a dispatch call.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -24,7 +26,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-SET_CALL_PRIMARY
+REMOVE_911
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
@@ -33,7 +35,7 @@ Array of request objects
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-CALL 123 POSTAL SET TO 456
+API ID(s) set!
 ```
 {% endswagger-response %}
 
@@ -51,18 +53,15 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "SET_CALL_PRIMARY",
+    "type": "REMOVE_911",
     "data": [
         {
-            "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-            "primary": 123, // Identifier ID
-            "trackPrimary": false // Toggle unit tracking for in-game with Dispatch Notify plugin
-        },
+          "callId": 1 // Call ID
+		    }
     ]
 }
 ```
 
-### Clearing the Primary Identifier
+#### Call ID
 
-If you wish to clear the call's primary identifier, it is recommended to set the value to `-1`.
+The call ID integer value can be retrieved from the [get calls API endpoint](get-calls.md), or returned in the response message when [creating a 911 call via an API call](911-call.md).

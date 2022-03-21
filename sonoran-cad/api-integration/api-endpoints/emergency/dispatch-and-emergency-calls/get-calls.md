@@ -7,7 +7,7 @@ description: >-
 # Get Calls
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_calls" method="post" summary="Get Calls" %}
@@ -155,7 +155,7 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 {% endtab %}
 
 {% tab title="UNIT_STATUS" %}
-These represent the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
+These represent the default [unit status](../../../../../tutorials/customization/unit-status-codes.md) options.
 
 | Integer (Enumeration) Value | Status Description |
 | --------------------------- | ------------------ |

@@ -7,7 +7,7 @@ description: >-
 # New Dispatch
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/new_dispatch" method="post" summary="New Dispatch" %}

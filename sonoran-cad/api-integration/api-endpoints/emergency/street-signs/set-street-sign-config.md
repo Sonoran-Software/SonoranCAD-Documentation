@@ -1,16 +1,17 @@
 ---
-description: This endpoint allows you to close an existing dispatch call.
+description: This endpoint sets your community's street sign configuration.
 ---
 
-# Close Call
+# Set Street Sign Config
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **pro** version of Sonoran CAD or higher.\
+For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/close_call" method="post" summary="Close Call" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/SET_STREETSIGN_CONFIG" method="post" summary="Set Street Sign Config" %}
 {% swagger-description %}
-This endpoint allows you to close an existing dispatch call.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -22,7 +23,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-CLOSE_CALL
+SET_STREETSIGN_CONFIG
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
@@ -31,7 +32,7 @@ Array of request objects
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-UNITS ATTACHED
+API ID(s) set!
 ```
 {% endswagger-response %}
 
@@ -49,12 +50,27 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "CLOSE_CALL",
+    "type": "SET_STREETSIGN_CONFIG",
     "data": [
         {
-            "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-        },
+          "serverId": 1, // Server Id
+          "signConfig": [
+              {
+                  "id": 1,
+                  "label": "Some street sign",
+                  "text1": "",
+                  "text2": "",
+                  "text3": ""
+              },
+              {
+                  "id": 2,
+                  "label": "Another street sign",
+                  "text1": "",
+                  "text2": "",
+                  "text3": ""
+              }
+          ]
+		    }
     ]
 }
 ```

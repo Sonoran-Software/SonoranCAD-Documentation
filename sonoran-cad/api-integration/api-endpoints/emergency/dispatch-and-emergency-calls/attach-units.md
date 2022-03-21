@@ -1,14 +1,14 @@
 ---
-description: This endpoint allows you to detach a unit from any active dispatch call.
+description: This endpoint allows you to attach new units to an existing dispatch call.
 ---
 
-# Detach Unit
+# Attach Unit
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/detach_unit" method="post" summary="Detach Unit" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/attach_unit" method="post" summary="Attach Unit" %}
 {% swagger-description %}
 This endpoint allows you to attach new units to an existing dispatch call.
 {% endswagger-description %}
@@ -22,7 +22,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-DETACH_UNIT
+ATTACH_UNIT
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
@@ -31,7 +31,7 @@ Array of request objects
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-UNITS DETACHED
+UNITS ATTACHED
 ```
 {% endswagger-response %}
 
@@ -49,10 +49,11 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "DETACH_UNIT",
+    "type": "ATTACH_UNIT",
     "data": [
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
             "units": ["STEAN:1234"] // Array of API IDs
                                 // Typically, this is their STEAM Hex
         },

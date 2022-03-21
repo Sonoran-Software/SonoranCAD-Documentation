@@ -69,4 +69,4 @@ Sonoran CAD uses integer enumeration values for the `ORIGIN` and `STATUS` fields
 
 ### Idents
 
-The `idents` field is an array of identifier/unit IDs. These IDs can be mapped by caching a table from the [get units endpoint](../../api-endpoints/emergency/get-active-units.md).
+The `idents` field is an array of identifier/unit IDs. These IDs can be mapped by caching a table from the [get units endpoint](../../api-endpoints/emergency/identifiers/get-active-units.md).

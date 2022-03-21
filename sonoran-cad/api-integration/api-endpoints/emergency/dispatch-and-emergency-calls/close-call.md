@@ -1,17 +1,16 @@
 ---
-description: This endpoint allows you to modify existing street signs.
+description: This endpoint allows you to close an existing dispatch call.
 ---
 
-# Update Street Sign
+# Close Dispatch
 
 {% hint style="warning" %}
-This API endpoint requires the **pro** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/UPDATE_STREETSIGN" method="post" summary="Update Street Sign" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/close_call" method="post" summary="Close Call" %}
 {% swagger-description %}
-
+This endpoint allows you to close an existing dispatch call.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -23,7 +22,7 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-UPDATE_STREETSIGN
+CLOSE_CALL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
@@ -32,7 +31,7 @@ Array of request objects
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-API ID(s) set!
+UNITS ATTACHED
 ```
 {% endswagger-response %}
 
@@ -50,17 +49,12 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "UPDATE_STREETSIGN",
+    "type": "CLOSE_CALL",
     "data": [
         {
-          "serverId": 1, // Server Id
-          "signData": {
-              "ids": [1, 2],
-              "text1": "",
-              "text2": "",
-              "text3": ""
-          }
-		    }
+            "serverId": 1, // Default 1 - See guide on setting up multiple servers
+            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
+        },
     ]
 }
 ```

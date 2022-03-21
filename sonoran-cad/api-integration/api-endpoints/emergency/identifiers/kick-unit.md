@@ -1,20 +1,18 @@
 ---
 description: >-
-  This endpoint allows you to remove an existing emergency/911 call from the
-  CAD.
+  This endpoint allows you to forcefully kick an active unit back to the
+  community menu.
 ---
 
-# Remove 911
+# Kick Unit
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-This endpoint allows you to remove an existing emergency/911 call from the CAD.
-
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/remove_911" method="post" summary="Remove 911" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/kick_unit" method="post" summary="Kick Unit" %}
 {% swagger-description %}
-
+This endpoint allows you to forcefully kick an active unit back to the community menu.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -26,16 +24,16 @@ Your community's API Key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" %}
-REMOVE_911
+KICK_UNIT
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="array" %}
-Array of request objects
+Array of unit status objects
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```
-API ID(s) set!
+UNIT KICKED
 ```
 {% endswagger-response %}
 
@@ -53,15 +51,14 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "REMOVE_911",
+    "type": "KICK_UNIT",
     "data": [
         {
-          "callId": 1 // Call ID
-		    }
+            "apiId": "STEAM:1234", // API ID entered in the unit identifiers
+                                   // Typically, this is their STEAM ID
+            "reason": "Automated AFK Timer", // "You have been kicked for {REASON}"
+            "serverId": 1
+        },
     ]
 }
 ```
-
-#### Call ID
-
-The call ID integer value can be retrieved from the [get calls API endpoint](get-calls.md), or returned in the response message when [creating a 911 call via an API call](911-call.md).
