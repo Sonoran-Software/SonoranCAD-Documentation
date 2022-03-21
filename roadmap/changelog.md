@@ -27,6 +27,16 @@ API: SEND_PHOTO
 * The lookup_int endpoint now supports pagination with limits and offsets.
 
 {% endtab %}
+{% tab title="Changed" %}
+Admin Accounts: Pagination
+
+* The admin page's account table now uses server-sided pagination for a more optimized experience.
+{% endtab %}
+{% tab title="Fixed" %}
+#8051 Edit Record Webhook
+
+* Fixed an issue where sending a webhook for editing a record was based on the add toggle and not the edit one.
+{% endtab %}
 {% endtabs %}
 
 ### 3.25.7 03/15/2022
