@@ -13,7 +13,7 @@ For more information, see our [pricing ](../../../../../pricing/faq/)page.
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_blips" method="post" summary="Get Blips" %}
 {% swagger-description %}
-This endpoint allows you to ban a user account in your community.
+This endpoint allows you to retrieve all custom blips on your live map.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}

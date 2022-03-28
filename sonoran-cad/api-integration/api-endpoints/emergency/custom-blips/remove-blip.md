@@ -13,7 +13,7 @@ For more information, see our [pricing ](../../../../../pricing/faq/)page.
 
 {% swagger baseUrl="https://api.sonorancad.com" path="/emergency/remove_blip" method="post" summary="Remove Blip" %}
 {% swagger-description %}
-This endpoint allows you to ban a user account in your community.
+This endpoint allows you to remove a custom blip from the live map.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
