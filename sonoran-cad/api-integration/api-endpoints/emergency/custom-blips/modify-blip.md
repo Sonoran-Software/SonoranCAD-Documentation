@@ -53,7 +53,8 @@ INVALID API KEY
     "type": "MODIFY_BLIP",
     "data": [
         {
-            "id": 123, // Blip ID
+            "id": 123, // Blip IDm
+            "subType": "Example", // OPTIONAL - Differentiate custom types
             "coordinates": { // OPTIONAL - Coordinate Update
                 "x": 0,
                 "y": 1
@@ -61,6 +62,16 @@ INVALID API KEY
             "icon": "https://example.com/icon.png" // OPTIONAL - Icon Update
             "color": "#df03fc", // OPTIONAL - Hex Color Code
             "tooltip": "Example added from the API!" // OPTIONAL - Blip Tooltip
+            "data": [ // OPTIONAL - Display Data
+                {
+                    "title": "Example 1",
+                    "text": "123",
+                },
+                {
+                    "title": "Example 2",
+                    "text": "456",
+                }
+            ]
         },
     ]
 }

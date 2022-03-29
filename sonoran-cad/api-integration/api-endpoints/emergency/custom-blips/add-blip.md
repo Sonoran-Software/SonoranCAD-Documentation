@@ -68,13 +68,24 @@ INVALID API KEY
             "serverId": 1, // Server ID
             "blip": {
                 "id": -1, // New ID
+                "subType": "Example", // Differentiate custom blips
                 "coordinates": {
                     "x": 123,
                     "y": 456
                 },
                 "icon": "https://example.com/icon.png", // URL or Icon Name
                 "color": "#df03fc", // Hex Color Code
-                "tooltip": "Example added from the API!" // Blip Tooltip
+                "tooltip": "Example added from the API!", // Blip Tooltip
+                "data": [
+                    {
+                        "title": "Example 1",
+                        "text": "123",
+                    },
+                    {
+                        "title": "Example 2",
+                        "text": "456",
+                    }
+                ]
             }
         },
     ]

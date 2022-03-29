@@ -38,11 +38,23 @@ Array of request objects
 [
     {
         "id": 1,
+        "subType": "Example", // Differentiate custom blips types
         "coordinates": {
             "x": 0,
             "y": 0
         },
-        "icon": "https://example.com/icon.png"
+        "color": "#000FFF",
+        "icon": "https://example.com/icon.png",
+        "data": [
+            {
+                "title": "Example 1",
+                "text": "123",
+            },
+            {
+                "title": "Example 2",
+                "text": "456",
+            }
+        ]
     }
 ]
 ```
