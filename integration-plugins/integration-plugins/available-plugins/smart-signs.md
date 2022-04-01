@@ -28,6 +28,10 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 If you have the original London Studios Smart Signs resource **please remove and/or disable it from running**. Our plugin completely replicates the functionality of the original resource and they will conflict if both are running at the same time.
 {% endhint %}
 
+{% hint style="warning" %}
+This plugin is installed as a standalone resource rather than a traditional plugin. **Do not install into your sonorancad/plugins folder**! It is instead used like a regular resource.
+{% endhint %}
+
 ### 1. Download the Resource
 
 [Purchase the resource for free](https://sonoran.link/UWCLJjhU) from London Studios.
@@ -82,7 +86,7 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
-![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (300) (1) (2).png>)
+![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (304).png>)
 
 ### Full Feature List
 

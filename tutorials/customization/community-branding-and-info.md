@@ -13,7 +13,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 The admin customization info section allows you to customize your community's image, name, timezone, and more!
 
-![Sonoran CAD's community customization menu](../../.gitbook/assets/com\_info.png)
+![Sonoran CAD's community customization menu](../../.gitbook/assets/com\_info.PNG)
 
 | Field                 | Description                                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 Looking to change your community ID?\
 Navigate to Admin > Advanced > Change Community ID
 
-![Sonoran CAD's Community ID Change](../../.gitbook/assets/change\_com\_id.png)
+![Sonoran CAD's Community ID Change](../../.gitbook/assets/change\_com\_id.PNG)
 
 Here, you can enter in and request a new community ID.\
 Once submitted, you will be logged out. All active community members will also need to log out and back in to avoid any issues.

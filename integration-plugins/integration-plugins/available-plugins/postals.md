@@ -51,38 +51,24 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### Using [Nearest-Postal](https://forum.cfx.re/t/release-nearest-postal-script/293511)
 
+{% hint style="warning" %}
+The plugin only supports 1.5.0 or higher of the nearest postals plugin. Be sure to download the latest version before using.
+{% endhint %}
+
 If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), some minor configuration is required.
 
 #### 1. Set the Resource Name
 
 In the Sonoran CAD postals plugin config, change the `nearestPostalsResourceName` value to the _**exact**_ name of your nearest postals resource.\
 \
-Ex: `nearest-postals-1.4`
+Ex: `nearest-postals-1.5`
 
-#### 2. Add the Export Code
-
-{% hint style="info" %}
-**As of Nearest-Postal v1.4.1 you do not need to manually add the export, as it is now already included in the Nearest-Postal script.**
-{% endhint %}
-
-If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you must add the following code to the very bottom of the `cl.lua` file in your nearest postal resource (**not the Sonoran CAD plugin file**). This will be the **very last line** in the nearest postal's `cl.lua` file.
-
-```lua
-exports('getPostal', function() if nearest ~= nil then return postals[nearest.i].code else return nil end end)
-```
-
-The screenshot below shows an example of the export above being pasted as the **very last line** in the nearest postal's `cl.lua` file (**not the Sonoran CAD plugin file**).
-
-![Nearest Postal's cl.lua File Example](<../../../.gitbook/assets/image (71).png>)
-
-#### 3. Ensure Proper Startup Order
+#### 2. Ensure Proper Startup Order
 
 Be sure that you are starting the nearest-postals addon/resource **before/above** where you `ensure sonorancad` in your `server.cfg`.
-
-#### 4. Restart both Resources
 
 Be sure to restart both the Sonoran CAD resource and the nearest-postals script, or restart your server entirely to apply the changes made.
 
 ### Custom Postal Scripts
 
-This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to paste the above export into your custom script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
+This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to create an export called getPostal in that script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).

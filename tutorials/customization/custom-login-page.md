@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (302) (1) (1).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (302).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
@@ -99,4 +99,4 @@ Open the `tablet/html/index.html` file and paste your custom community URL.
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).\
 EX: `https://app.sonorancad.com/#/?comid=dojrp`
 
-![Tablet HTML file](../../.gitbook/assets/screen-shot-2020-07-22-at-10.23.09-pm.png)
+![Tablet HTML file](<../../.gitbook/assets/Screen Shot 2020-07-22 at 10.23.09 PM.png>)

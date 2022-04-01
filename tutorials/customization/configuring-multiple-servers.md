@@ -15,7 +15,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 In the Admin Customization menu, expand the "Servers" section to add, edit, or remove additional servers in your CAD.
 
-![Additional servers are configured in the customization menu](../../.gitbook/assets/servers.png)
+![Additional servers are configured in the customization menu](../../.gitbook/assets/servers.PNG)
 
 ### Changing Servers in the CAD
 

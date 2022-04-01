@@ -57,9 +57,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-![The 'SELECT' field option](<../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png>)
+![The 'SELECT' field option](<../../.gitbook/assets/image (3).png>)
 
-![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1).png>)
+![A 'SELECT' field shown in the record editor](<../../.gitbook/assets/image (16).png>)
 
 #### Text Area
 
@@ -141,7 +141,7 @@ The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `
 
 This will show the field label and value in the lookup table preview.
 
-![](<../../.gitbook/assets/image (305).png>)![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (305).png>)![](<../../.gitbook/assets/image (16) (1).png>)
 
 #### Supervisor
 
@@ -172,9 +172,9 @@ Read only fields prevent the user from entering new or modified text. This is us
 
 Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
 
-![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1) (1) (1).png>)
+![Custom Records - Read Only Toggle](<../../.gitbook/assets/image (305) (1) (1).png>)
 
-![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302) (1) (1) (1).png>)
+![Custom Records - Read Only Fields](<../../.gitbook/assets/image (302) (1) (1).png>)
 
 </details>
 
@@ -208,7 +208,7 @@ Specifying `(###) ### - ####` formats the user's input into a phone number.
 
 The field size slider allows you to select a field size value between 1 and 12.Every row of a record has a space divisible by 12.
 
-![](<../../.gitbook/assets/image (294).png>)![](<../../.gitbook/assets/image (82).png>)
+![](<../../.gitbook/assets/image (294) (1).png>)![](<../../.gitbook/assets/image (82) (1).png>)
 
 </details>
 
@@ -222,7 +222,7 @@ Dependencies allow you to make an individual field or entire section visible bas
 
 Expand a field and copy the unique `Field Mapping ID`.
 
-****![](<../../.gitbook/assets/image (88).png>)
+****![](<../../.gitbook/assets/image (88) (1).png>)
 
 **Set Child Dependency**
 

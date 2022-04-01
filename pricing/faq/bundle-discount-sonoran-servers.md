@@ -9,7 +9,7 @@ description: >-
 
 ## Free Plugin Installation
 
-![](../../.gitbook/assets/banner\_2.png)
+![](../../.gitbook/assets/Banner\_2.png)
 
 ### 1. Purchase a Windows Server Product from Sonoran Servers
 

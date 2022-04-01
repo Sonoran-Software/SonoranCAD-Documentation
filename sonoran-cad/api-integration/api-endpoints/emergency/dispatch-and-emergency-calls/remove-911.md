@@ -56,8 +56,9 @@ INVALID API KEY
     "type": "REMOVE_911",
     "data": [
         {
+          "serverId": 1,
           "callId": 1 // Call ID
-		    }
+	}
     ]
 }
 ```

@@ -46,7 +46,7 @@ When viewing a record's JSON from a lookup endpoint, the record's `id` field is 
 
 You can also view a record's ID in the UI with an `id` type custom field.
 
-![Custom Records - Record ID](<../../../../../.gitbook/assets/image (305) (1) (1).png>)
+![Custom Records - Record ID](<../../../../../.gitbook/assets/image (305) (2).png>)
 
 ### 3. Creating the \`replaceValues\` Dictionary
 
