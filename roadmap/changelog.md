@@ -10,6 +10,28 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.26.2 04/01/2022
+
+{% tabs %}
+{% tab title="New" %}
+Custom Blips - Display JSON
+
+* Custom blips can now have text data displayed upon selection.
+
+Custom Blips - subType
+
+* Added a `subType` property to custom blips, allowing users to toggle visibility on/off for different custom 
+blip types.
+
+{% endtab %}
+{% tab title="Fixed" %}
+#8257 Tone Board Shortcut
+
+* Fixed an issue where opening the tone board from a shortcut, like the active units, failed.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.26.0 03/21/2022
 
 {% tabs %}
