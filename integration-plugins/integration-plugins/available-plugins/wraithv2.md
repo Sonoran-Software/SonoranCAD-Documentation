@@ -91,3 +91,25 @@ For more information on using the in-game UI, please view the [Wraith ARS 2X](ht
 **Results are sent directly to your CAD when a license plate is locked.**
 
 ![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (21).png>)
+
+## Troubleshooting
+
+### AI Cars are Spamming the Reader
+
+The framework ships with the `wk_wars2x` plate reader included. This will have the `config.use_sonorancad` set to `true`. When enabled, the plate reader will not run a lookup on any AI vehicle.
+
+![Wraith - Use Sonoran CAD Config Option](<../../../.gitbook/assets/Screen Shot 2022-04-02 at 4.18.19 PM.png>)
+
+### Vehicles Aren't Being Flagged
+
+#### Status
+
+Keep in mind that AI vehicles won't display or be ran unless there's a vehicle registration record added to the CAD with that plate.
+
+Ensure that you've correctly followed [step 5](wraithv2.md#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the plugin config.
+
+Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.&#x20;
+
+#### BOLO and Warrant
+
+Ensure that your custom BOLO and Warrant records have a field with the `type` set to `status`. Otherwise, there's no way to determine if the BOLO/Warrant is active, closed, etc. The plate reader will warn of any active BOLO or Warrant records with the vehicle plate attached _and_ the `status` type field set to active/open.

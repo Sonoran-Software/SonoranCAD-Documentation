@@ -10,7 +10,7 @@ description: >-
 
 ![Sonoran CAD - Live Stream Overlay](<../.gitbook/assets/overlay (2).gif>)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (279).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1).png>)
 
 ![Stream Overlay - Bodycam](<../.gitbook/assets/image (258).png>)
 
@@ -87,7 +87,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (280).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (2).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
