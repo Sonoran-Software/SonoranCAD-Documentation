@@ -14,6 +14,10 @@ The `Customer` role grants users access to the #customer-lobby channel.
 
 The `Instagram` role grant access to the #general-lobby channel.
 
+#### Community Development
+
+The `Community Developer` role grants access to our #community-development channel.
+
 #### Advertising
 
 Users who Nitro Boost our Discord are granted access to the #advertise-here channel. Please see the pinned message in that channel for more information.
@@ -58,15 +62,15 @@ On our [support website](https://support.sonoransoftware.com), select the "Disco
 {% endtab %}
 
 {% tab title="GitHub" %}
-Users who star our primary GitHub repository are granted access to the `#community-development` channel in our Discord. This allows you to speak more directly with our development team to ask API related questions.
+Users who follow our GitHub organization are granted access to the `#community-development` channel in our Discord. This allows you to speak more directly with our development team to ask API related questions.
 
 
 
-#### 1. Star our Repo on GitHub
+#### 1. Follow our Organization on GitHub
 
-Navigate to our [main GitHub repository](https://github.com/Sonoran-Software/SonoranCADLuaIntegration) and star it with your GitHub account.
+Navigate to our [GitHub organization and follow it](https://github.com/Sonoran-Software) with your GitHub account.
 
-![GitHub - Star Repository](<../../.gitbook/assets/image (296).png>)
+![GitHub - Follow Organization](<../../.gitbook/assets/image (16).png>)
 
 #### 2. Copy your Discord and GitHub Usernames
 
