@@ -54,7 +54,7 @@ INVALID API KEY
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
             "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-            "units": ["STEAN:1234"] // Array of API IDs
+            "units": ["STEAM:1234"] // Array of API IDs
                                 // Typically, this is their STEAM Hex
         },
     ]
