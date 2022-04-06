@@ -55,7 +55,7 @@ INVALID API KEY
     "type": "REMOVE_BLIP",
     "data": [
         {
-            "id": 123 // Blip ID
+            "ids": [1, 2, 3] // Blip ID
         },
     ]
 }

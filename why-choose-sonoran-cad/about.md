@@ -69,7 +69,7 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../integration-plugins/integration-plugins/available-plugins/tablet.md)!
 
-![](<../.gitbook/assets/image (274).png>)
+![](<../.gitbook/assets/image (273).png>)
 
 ### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
@@ -77,7 +77,7 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 ![Sonoran CAD - Livestream Overlay](<../.gitbook/assets/overlay (2).gif>)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1).png>)
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
@@ -97,7 +97,7 @@ Only Sonoran CAD lets you easily multitask and open multiple search windows, rec
 
 Drag-and-drop allows you to easily view calls, attach units, and more!
 
-![Sonoran CAD - Custom Layouts](../.gitbook/assets/3\_10\_features.gif)
+![Sonoran CAD - Custom Layouts](<../.gitbook/assets/3\_10\_features (1).gif>)
 
 ### 🎤 [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
 
@@ -107,7 +107,7 @@ Enforce security in your TeamSpeak 3 channels by requiring them to be signed int
 
 Check out our official [Stream Deck profiles](../integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](../downloads/), these actions can be done even while the app is minimized.
 
-![Sonoran CAD - Stream Deck Profile](<../.gitbook/assets/image (176) (1) (1).png>)
+![Sonoran CAD - Stream Deck Profile](<../.gitbook/assets/image (176) (1).png>)
 
 ### 📖 API Integration
 
