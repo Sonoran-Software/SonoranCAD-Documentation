@@ -19,7 +19,7 @@ API triggers should be listened to locally on the game server.
     "type": "EVENT_DISPATCH_CLOSED",
     "data": {
         "eventOriginIdent": 123, // Identifier that created/caused this event
-        "callId": -1,
+        "callIds": [1234, 5678]
     }
 }
 ```
