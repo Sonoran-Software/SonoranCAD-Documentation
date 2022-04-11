@@ -32,8 +32,6 @@ API: remove_blip array IDs
 
 * The remove_blip API method has changed the `id` property to an `ids` array.
 {% endtab %}
-
-{% endtab %}
 {% tab title="Fixed" %}
 DB Merge - Select
 
