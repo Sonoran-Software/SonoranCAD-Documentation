@@ -10,6 +10,41 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.27.0 04/11/2022
+
+{% tabs %}
+{% tab title="New" %}
+#8372 Multi-Select Emergency & Dispatch Calls
+
+* Dispatchers can now multi-select emergency and dispatch calls to delete multiple at a time.
+
+{% endtab %}
+{% tab title="Changed" %}
+EVENT_REMOVE_911 - ID Array
+
+* The EVENT_REMOVE_911 push event has changed the `callId` property to a `callIds` array.
+
+EVENT_DISPATCH_CLOSED - ID Array
+
+* The EVENT_DISPATCH_CLOSED push event has changed the `callId` property to a `callIds` array.
+
+API: remove_blip array IDs
+
+* The remove_blip API method has changed the `id` property to an `ids` array.
+{% endtab %}
+
+{% endtab %}
+{% tab title="Fixed" %}
+DB Merge - Select
+
+* Fixed an issue causing db merge to not properly set the `value` on select type fields.
+
+#8338 Custom Records - Supervisor Checkbox
+
+* Removed the supervisor only attribute from the custom record checkbox section, resolving an issue where reports with supervisor checkboxes would always show as awaiting supervisor.
+{% endtab %}
+{% endtabs %}
+
 ### 3.26.1 04/01/2022
 
 {% tabs %}
