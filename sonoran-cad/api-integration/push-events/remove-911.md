@@ -12,8 +12,7 @@ description: This push event sends data when a 911 call is removed.
     "type": "EVENT_REMOVE_911",
     "data": [
         {
-            "callId": 1234,
+            "callIds": [1234, 5678]
         }
     ]
 ```
-
