@@ -18,6 +18,14 @@ description: View the latest changes to Sonoran CAD!
 
 * Dispatchers can now multi-select emergency and dispatch calls to delete multiple at a time.
 
+#8453 Preview Duplicates
+
+* Previewing custom records with duplicated section preview fields will display an icon. Hovering over the icon will display a tooltip with all duplicate value entries.
+
+API: Lookup By Int - Direct Number Handling
+
+* When looking up a specific record number via the API (Discord bot webhook reactions for new records) the UI will open the full record directly, instead of opening a search tab with the ID inserted.
+
 {% endtab %}
 {% tab title="Changed" %}
 EVENT_REMOVE_911 - ID Array
@@ -40,6 +48,11 @@ DB Merge - Select
 #8338 Custom Records - Supervisor Checkbox
 
 * Removed the supervisor only attribute from the custom record checkbox section, resolving an issue where reports with supervisor checkboxes would always show as awaiting supervisor.
+
+#8457 Custom Record Required Dependencies
+
+* Fixed an issue where custom record required fields that were hidden via dependency would prevent the user from submitting the record.
+
 {% endtab %}
 {% endtabs %}
 
