@@ -66,6 +66,8 @@
 
 ## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
+* [🗃 Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
+  * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
