@@ -32,6 +32,7 @@ Array of request objects
 2 - STANDARD
 3 - PLUS
 4 - PRO
+6 - SONORAN ONE
 ```
 {% endswagger-response %}
 
