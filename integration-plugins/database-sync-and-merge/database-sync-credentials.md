@@ -43,7 +43,7 @@ The `Host Name` field should be set as `Any Host` and the value as `%`. This wil
 
 #### **5. Once created, edit the user account privileges**
 
-![phpMyAdmin - Edit Account Privileges](<../../.gitbook/assets/image (143) (1) (1).png>)
+![phpMyAdmin - Edit Account Privileges](<../../.gitbook/assets/image (143) (1) (1) (1).png>)
 
 #### **6. Select your specific database**
 
@@ -134,7 +134,7 @@ Login to your Zap Hosting Account and Navigate to your FiveM Server.
 
 Scroll down until you see **TOOLS** on the left hand side of your screen and select **`Databases`.**
 
-![ZAP Hosting Tools - Database](<../../.gitbook/assets/image (139) (3) (3) (3) (1) (1) (1) (1) (2).png>)
+![ZAP Hosting Tools - Database](<../../.gitbook/assets/image (139) (3) (3) (3) (1) (1) (1) (1) (1) (2).png>)
 
 #### 3. View Database Credentials
 

@@ -86,7 +86,7 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
-![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (304).png>)
+![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (300).png>)
 
 ### Full Feature List
 
