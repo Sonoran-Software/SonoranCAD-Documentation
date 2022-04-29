@@ -59,6 +59,7 @@ INVALID API KEY
                 "x": 0,
                 "y": 1
             },
+            "radius": 100, // OPTIONAL - Displays a circle radius
             "icon": "https://example.com/icon.png" // OPTIONAL - Icon Update
             "color": "#df03fc", // OPTIONAL - Hex Color Code
             "tooltip": "Example added from the API!" // OPTIONAL - Blip Tooltip
