@@ -94,27 +94,7 @@ The GET\_CALLS API endpoint returns arrays of the following object structures:
     "code": "10-39 - Traffic Stop",
     "description": "Traffic Stop - Blue Sedan - XP123BS",
     "notes": "",
-    "units": [
-     {
-         "id": -1,
-         "accId": "123-456-7890", // Account UUID
-         "status": 0, // See UNIT_STATUS Enum
-         "isPanic": false, // PANIC State
-         "location": "1234 E. Test Ave",
-         "aop": "South District",
-         "data": {
-             "apiId1": "STEAM:1234", // API ID - Typically Steam Hex
-             "apiId2": "STEAM:1234", // API ID - Typically Steam Hex
-             "unitNum": "A-10",
-             "name": "Brian Sosnowski",
-             "district": "Maricopa County",
-             "department": "MCSO",
-             "subdivision": "Speed Enforcement",
-             "rank": "CPT",
-             "group": "CAR 51", // Name of unit group
-         }
-     },
-    ] // Array of Unit structures
+    "idents": [1, 2, 3] // Array of identifier IDs
 }
 ```
 {% endtab %}
