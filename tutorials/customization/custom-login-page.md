@@ -90,13 +90,19 @@ Now that you've saved the custom URL inside of the HTML file, you can host this 
 
 ## In-Game Tablet
 
-When using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), the easiest way to display your custom login page is by adding a query string.
+If you wish to use a custom login page when using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), you can set a convar in your server.cfg.\
+****\
+****The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
 
-Open the `tablet/html/index.html` file and paste your custom community URL.
-
-`https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
+`"https://sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).\
-EX: `https://app.sonorancad.com/#/?comid=dojrp`
+EX: `https://sonorancad.com/#/?comid=dojrp`
 
-![Tablet HTML file](<../../.gitbook/assets/Screen Shot 2020-07-22 at 10.23.09 PM.png>)
+Add the following to your server.cfg **before** starting the tablet resource:
+
+```
+setr sonorantablet_cadUrl "YOUR_URL_HERE"
+```
+
+Fill in with your actual URL above with the comid you want.
