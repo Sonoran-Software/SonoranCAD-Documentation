@@ -274,4 +274,28 @@ If the "NEW REPORT" button, or actions on the report viewer are disabled, you ar
 The supervisor panel shows all reports that have a blank field that requires supervisor permissions.\
 If you do not have the supervisor panel enabled, you will need to have the [supervisor permission granted on your account](../getting-started/permissions.md).
 
-###
+## Updating Old Records with New Preview Fields
+
+Many communities decide to enable a custom field for preview _after_ many records of that type have already been created.
+
+Ex: Adding a previewed field to show the license "Type"
+
+Communities can process a manual updating of historical records in the custom records menu.
+
+![Resync Preview Fields](<../../.gitbook/assets/image (278).png>)
+
+![Resync Preview Fields - Confirm](<../../.gitbook/assets/image (136).png>)
+
+### How does the re-sync work?
+
+Sonoran CAD will search for all records of this type and attempt to automatically update any historical records with the latest preview field preferences.
+
+{% hint style="warning" %}
+Because Sonoran CAD records are entirely customizable, changing the field UID (unique ID) from one revision to the next will result in a failure to match and update the preview field.
+
+\
+Database sync records do not have the option to re-sync, as they will always be up-to-date.
+
+\
+A re-sync is only available once per 10 minutes.
+{% endhint %}
