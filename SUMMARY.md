@@ -5,6 +5,7 @@
   * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
+  * [FiveM Tablet - Clear Cache](downloads/fivem-clear-cache.md)
   * [Steam Browser - Clear Cache](downloads/steam-browser-clear-cache.md)
 
 ## Why Choose Sonoran CAD?

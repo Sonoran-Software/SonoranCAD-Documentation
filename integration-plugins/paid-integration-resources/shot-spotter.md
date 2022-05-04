@@ -4,7 +4,7 @@ description: Learn more about our Shot Spotter script on the Sonoran Store!
 
 # Shot Spotter
 
-![Sonoran Store - Shot Spotter](<../../.gitbook/assets/image (16).png>)
+![Sonoran Store - Shot Spotter](<../../.gitbook/assets/image (16) (2).png>)
 
 The Sonoran Shot Spotter offers the most in-depth, integrated, and customizable shot spotter network available.
 

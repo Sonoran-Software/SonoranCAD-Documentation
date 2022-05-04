@@ -70,7 +70,7 @@ Users who follow our GitHub organization are granted access to the `#community-d
 
 Navigate to our [GitHub organization and follow it](https://github.com/Sonoran-Software) with your GitHub account.
 
-![GitHub - Follow Organization](<../../.gitbook/assets/image (16) (2) (1).png>)
+![GitHub - Follow Organization](<../../.gitbook/assets/image (16) (2) (1) (1).png>)
 
 #### 2. Copy your Discord and GitHub Usernames
 

@@ -4,7 +4,7 @@ description: Learn more about our Speed Camera script on the Sonoran Store!
 
 # Speed Cameras
 
-![Sonoran Store - Speed Camera](<../../.gitbook/assets/image (16) (2).png>)
+![Sonoran Store - Speed Camera](<../../.gitbook/assets/image (16) (2) (1).png>)
 
 The Sonoran Speed Camera offers the most in-depth, integrated, and customizable traffic camera network available.
 
