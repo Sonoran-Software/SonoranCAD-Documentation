@@ -10,6 +10,49 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.28.0 05/04/2022
+
+{% tabs %}
+{% tab title="New" %}
+Preview Field Update - Re-index
+
+* When a record template is updated to add or remove preview fields you can now re-index and update all previously formed records to match.
+
+#8718 Custom Record Dependency - Equal, Not Equal, Contains
+
+* Custom record dependencies can now be set to equal, not equal, or contains.
+
+Record Webhooks - Dependencies
+
+* Added dependency checking to discord webhooks to not display "hidden" fields or sections.
+
+Live Map - Range Circle
+
+* Custom live map blips can now have a radius field specified. When set, this will show a transparent circle to reflect range.
+
+911 and Dispatch Calls - Last Updated Timestamp
+
+* Emergency and dispatch calls now contain an `updated` timestamp field in UTC. This allows a framework plugin or API method to be used to automatically close any inactive calls after a certain time.
+
+{% endtab %}
+{% tab title="Changed" %}
+Server ID - Safety Checks
+
+* Added safety checks to ensure all server IDs are 1 based via index and disabled the ID field in the UI.
+
+{% endtab %}
+{% tab title="Fixed" %}
+Self-Dispatch: Close Call
+
+* Fixed an issue where users in self-dispatch couldn't close a dispatch call from the editor.
+
+#8682 Supervisor Checkbox
+
+* Fixed an issue with supervisor toggled checkboxes (legacy) from not being removed from the supervisor panel.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.27.0 04/12/2022
 
 {% tabs %}
