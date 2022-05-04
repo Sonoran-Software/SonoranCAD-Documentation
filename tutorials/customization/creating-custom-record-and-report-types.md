@@ -57,9 +57,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-<img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
+<img src="../../.gitbook/assets/image (3).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
 #### Text Area
 
@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -222,7 +222,7 @@ Dependencies allow you to make an individual field or entire section visible bas
 
 Expand a field and copy the unique `Field Mapping ID`.
 
-****![](<../../.gitbook/assets/image (88) (1).png>)
+****![](<../../.gitbook/assets/image (88) (1).png>)****
 
 **Set Child Dependency**
 
@@ -230,11 +230,22 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1).png>)![](<../../.gitbook/assets/image (301).png>)
+![](<../../.gitbook/assets/image (303).png>)![](<../../.gitbook/assets/image (301).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
 Text fields as the dependency parent will allow you to enter what text values will display this section or field.
+
+#### Dependency Types
+
+There are multiple options for dependency types.
+
+* `Equal`
+  * Dependency will display if the entered content are an exact match to the specified value(s)
+* `Not Equal`
+  * Dependency will display if the entered content is NOT equal to the specified value(s)
+* `Contains`
+  * Dependency will display if the entered content contains any of the specified values(s)
 
 </details>
 
