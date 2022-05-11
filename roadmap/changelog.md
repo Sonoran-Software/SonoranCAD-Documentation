@@ -10,6 +10,31 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.28.1 05/11/2022
+
+{% tabs %}
+{% tab title="New" %}
+Layout - Header/Footer
+
+* Updated the standard layout for consistency with other products.
+
+#8909 Set Status - Call Note
+
+* The set_status API endpoint now supports status change notes on dispatch calls, allowing for the in-game /setstatus command to also add a call note.
+
+{% endtab %}
+{% tab title="Fixed" %}
+#8893 Dispatch Call Notes
+
+* Fixed an issue where a dispatcher adding call notes and clearing the editor wouldn't show the notes when re-opening the call until a refresh was made.
+
+ID Field - Disable Unique Toggle
+
+* Added a check to prevent the user from toggling the unique field on custom record ID fields.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.28.0 05/04/2022
 
 {% tabs %}
