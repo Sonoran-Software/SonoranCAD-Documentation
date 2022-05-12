@@ -50,7 +50,7 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "GET_SERVERS",
+    "type": "SET_SERVERS",
     "data": {
         "servers": [
             {
