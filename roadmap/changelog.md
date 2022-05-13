@@ -10,6 +10,27 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.28.2 05/13/2022
+
+{% tabs %}
+{% tab title="New" %}
+Admin - Identifier Management
+
+* Admins can now view and manage all unit identifiers in the admin accounts menu.
+
+{% endtab %}
+{% tab title="Fixed" %}
+#8934 New Dispatch Status Notes
+
+* Fixed an issue causing new dispatch calls to not automatically add notes when a unit changed their status, before the call was "updated" manually.
+
+DB Sync Records - Disable Get Owner
+
+* Fixed an issue causing the admin get owner button on record searches from displaying on database sync records.
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.28.1 05/11/2022
 
 {% tabs %}
