@@ -87,7 +87,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (2).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 

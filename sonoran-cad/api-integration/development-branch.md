@@ -7,7 +7,7 @@ description: >-
 # Development Branch
 
 {% hint style="warning" %}
-The development API and CAD branches are entirely separate from the current production version. For more information in working with our development team please [contact us](https://support.sonoransoftware.com). or join our community [Discord](http://discord.sonorancad.com).
+The development API and CAD branches are entirely separate from the current production version. For more information in working with our development team please [contact us](https://support.sonoransoftware.com). or join our community [Discord](http://discord.sonorancad.com/).
 {% endhint %}
 
 {% hint style="success" %}
@@ -50,4 +50,4 @@ When building or testing our API library, you can upgrade your development CAD t
 
 ### Developer Discord
 
-Join our [Discord ](http://discord.sonorancad.com)and view the `#request-role` channel for access to our community testing and development channel. Here you can discuss API related issues, development, and more.
+Join our [Discord ](http://discord.sonorancad.com/)and view the `#request-role` channel for access to our community testing and development channel. Here you can discuss API related issues, development, and more.

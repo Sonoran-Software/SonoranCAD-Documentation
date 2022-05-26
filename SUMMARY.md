@@ -68,6 +68,7 @@
 ## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
 * [🗃 Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
+  * [Power Grid](integration-plugins/paid-integration-resources/power-grid.md)
   * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)
   * [Shot Spotter](integration-plugins/paid-integration-resources/shot-spotter.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)

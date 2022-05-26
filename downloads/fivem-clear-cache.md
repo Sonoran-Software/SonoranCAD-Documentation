@@ -12,7 +12,7 @@ Make sure to close FiveM before performing these steps
 
 To do this, right-click on your **FiveM** application shortcut and click on the Open file location.
 
-![](<../.gitbook/assets/image (280).png>)
+![](<../.gitbook/assets/image (280) (1).png>)
 
 Now you will need to go to the **FiveM Application Data**.
 
