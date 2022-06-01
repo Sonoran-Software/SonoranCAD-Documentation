@@ -36,7 +36,10 @@ REMOVE\_BLIP: Map Update
 
 \#9023 Custom Lookup Masks
 
-* Fixed an issue where running a lookup for a custom search type doesn't work if the lookup mask is not clear of formatti#9112 Partial Identifier Username Search
+* Fixed an issue where running a lookup for a custom search type doesn't work if the lookup mask is not clear of formatting
+
+\#9112 Partial Identifier Username Search
+
 * Partial search strings do not work for searching Unit Identifiers in the Admin Panel.
 {% endtab %}
 {% endtabs %}
