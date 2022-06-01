@@ -10,6 +10,37 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.29.0 06/01/2022
+
+{% tabs %}
+{% tab title="New" %}
+Discord SSO
+
+* Added a sign in with Discord option.
+
+Apple SSO
+
+* Added a sign in with Apple option.
+
+
+{% endtab %}
+
+{% tab title="Fixed" %}
+NEW\_RECORD: User Link
+
+* Fixed an issue with the API new\_record endpoint not properly linking the record's owner via API ID.
+
+REMOVE\_BLIP: Map Update
+
+* REMOVE\_BLIP: Map Update
+
+\#9023 Custom Lookup Masks
+
+* Fixed an issue where running a lookup for a custom search type doesn't work if the lookup mask is not clear of formatti#9112 Partial Identifier Username Search
+* Partial search strings do not work for searching Unit Identifiers in the Admin Panel.
+{% endtab %}
+{% endtabs %}
+
 ### 3.28.2 05/13/2022
 
 {% tabs %}
@@ -17,17 +48,16 @@ description: View the latest changes to Sonoran CAD!
 Admin - Identifier Management
 
 * Admins can now view and manage all unit identifiers in the admin accounts menu.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
-#8934 New Dispatch Status Notes
+\#8934 New Dispatch Status Notes
 
 * Fixed an issue causing new dispatch calls to not automatically add notes when a unit changed their status, before the call was "updated" manually.
 
 DB Sync Records - Disable Get Owner
 
 * Fixed an issue causing the admin get owner button on record searches from displaying on database sync records.
-
 {% endtab %}
 {% endtabs %}
 
@@ -39,20 +69,19 @@ Layout - Header/Footer
 
 * Updated the standard layout for consistency with other products.
 
-#8909 Set Status - Call Note
+\#8909 Set Status - Call Note
 
-* The set_status API endpoint now supports status change notes on dispatch calls, allowing for the in-game /setstatus command to also add a call note.
-
+* The set\_status API endpoint now supports status change notes on dispatch calls, allowing for the in-game /setstatus command to also add a call note.
 {% endtab %}
+
 {% tab title="Fixed" %}
-#8893 Dispatch Call Notes
+\#8893 Dispatch Call Notes
 
 * Fixed an issue where a dispatcher adding call notes and clearing the editor wouldn't show the notes when re-opening the call until a refresh was made.
 
 ID Field - Disable Unique Toggle
 
 * Added a check to prevent the user from toggling the unique field on custom record ID fields.
-
 {% endtab %}
 {% endtabs %}
 
@@ -64,7 +93,7 @@ Preview Field Update - Re-index
 
 * When a record template is updated to add or remove preview fields you can now re-index and update all previously formed records to match.
 
-#8718 Custom Record Dependency - Equal, Not Equal, Contains
+\#8718 Custom Record Dependency - Equal, Not Equal, Contains
 
 * Custom record dependencies can now be set to equal, not equal, or contains.
 
@@ -79,23 +108,22 @@ Live Map - Range Circle
 911 and Dispatch Calls - Last Updated Timestamp
 
 * Emergency and dispatch calls now contain an `updated` timestamp field in UTC. This allows a framework plugin or API method to be used to automatically close any inactive calls after a certain time.
-
 {% endtab %}
+
 {% tab title="Changed" %}
 Server ID - Safety Checks
 
 * Added safety checks to ensure all server IDs are 1 based via index and disabled the ID field in the UI.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
 Self-Dispatch: Close Call
 
 * Fixed an issue where users in self-dispatch couldn't close a dispatch call from the editor.
 
-#8682 Supervisor Checkbox
+\#8682 Supervisor Checkbox
 
 * Fixed an issue with supervisor toggled checkboxes (legacy) from not being removed from the supervisor panel.
-
 {% endtab %}
 {% endtabs %}
 
@@ -103,45 +131,45 @@ Self-Dispatch: Close Call
 
 {% tabs %}
 {% tab title="New" %}
-#8372 Multi-Select Emergency & Dispatch Calls
+\#8372 Multi-Select Emergency & Dispatch Calls
 
 * Dispatchers can now multi-select emergency and dispatch calls to delete multiple at a time.
 
-#8453 Preview Duplicates
+\#8453 Preview Duplicates
 
 * Previewing custom records with duplicated section preview fields will display an icon. Hovering over the icon will display a tooltip with all duplicate value entries.
 
 API: Lookup By Int - Direct Number Handling
 
 * When looking up a specific record number via the API (Discord bot webhook reactions for new records) the UI will open the full record directly, instead of opening a search tab with the ID inserted.
-
 {% endtab %}
+
 {% tab title="Changed" %}
-EVENT_REMOVE_911 - ID Array
+EVENT\_REMOVE\_911 - ID Array
 
-* The EVENT_REMOVE_911 push event has changed the `callId` property to a `callIds` array.
+* The EVENT\_REMOVE\_911 push event has changed the `callId` property to a `callIds` array.
 
-EVENT_DISPATCH_CLOSED - ID Array
+EVENT\_DISPATCH\_CLOSED - ID Array
 
-* The EVENT_DISPATCH_CLOSED push event has changed the `callId` property to a `callIds` array.
+* The EVENT\_DISPATCH\_CLOSED push event has changed the `callId` property to a `callIds` array.
 
-API: remove_blip array IDs
+API: remove\_blip array IDs
 
-* The remove_blip API method has changed the `id` property to an `ids` array.
+* The remove\_blip API method has changed the `id` property to an `ids` array.
 {% endtab %}
+
 {% tab title="Fixed" %}
 DB Merge - Select
 
 * Fixed an issue causing db merge to not properly set the `value` on select type fields.
 
-#8338 Custom Records - Supervisor Checkbox
+\#8338 Custom Records - Supervisor Checkbox
 
 * Removed the supervisor only attribute from the custom record checkbox section, resolving an issue where reports with supervisor checkboxes would always show as awaiting supervisor.
 
-#8457 Custom Record Required Dependencies
+\#8457 Custom Record Required Dependencies
 
 * Fixed an issue where custom record required fields that were hidden via dependency would prevent the user from submitting the record.
-
 {% endtab %}
 {% endtabs %}
 
@@ -155,15 +183,13 @@ Custom Blips - Display JSON
 
 Custom Blips - subType
 
-* Added a `subType` property to custom blips, allowing users to toggle visibility on/off for different custom 
-blip types.
-
+* Added a `subType` property to custom blips, allowing users to toggle visibility on/off for different custom blip types.
 {% endtab %}
+
 {% tab title="Fixed" %}
-#8257 Tone Board Shortcut
+\#8257 Tone Board Shortcut
 
 * Fixed an issue where opening the tone board from a shortcut, like the active units, failed.
-
 {% endtab %}
 {% endtabs %}
 
@@ -175,22 +201,23 @@ Live Map - Custom Blips
 
 * Custom blips can now be added, edited, and removed in real-time via API endpoints.
 
-API: SEND_PHOTO
+API: SEND\_PHOTO
 
 * Photos can now be sent from in-game to the user as a pop-up via API. Allowing for easy image attachments for custom records.
 
-#8028 API lookup_int Limit
+\#8028 API lookup\_int Limit
 
-* The lookup_int endpoint now supports pagination with limits and offsets.
-
+* The lookup\_int endpoint now supports pagination with limits and offsets.
 {% endtab %}
+
 {% tab title="Changed" %}
 Admin Accounts: Pagination
 
 * The admin page's account table now uses server-sided pagination for a more optimized experience.
 {% endtab %}
+
 {% tab title="Fixed" %}
-#8051 Edit Record Webhook
+\#8051 Edit Record Webhook
 
 * Fixed an issue where sending a webhook for editing a record was based on the add toggle and not the edit one.
 {% endtab %}
@@ -211,19 +238,18 @@ Database Merge - Checkbox Handling
 Database Sync - Checkbox Handling via Friendly Mapping
 
 * Custom record checkboxes can now have their values set via DB Sync and friendly mapping.
-
 {% endtab %}
+
 {% tab title="Changed" %}
 Admin Accounts: Pagination
 
 * The admin page's account table now uses server-sided pagination for a more optimized experience.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
-#8051 Edit Record Webhook
+\#8051 Edit Record Webhook
 
 * Fixed an issue where sending a webhook for editing a record was based on the add toggle and not the edit one.
-
 {% endtab %}
 {% endtabs %}
 
@@ -231,27 +257,27 @@ Admin Accounts: Pagination
 
 {% tabs %}
 {% tab title="New" %}
-#7977 Link Dispatch Call
+\#7977 Link Dispatch Call
 
 * Dispatch calls can now be linked in custom records for quick reference.
-
 {% endtab %}
+
 {% tab title="Changed" %}
 ERLC Map Update
 
 * Updated the ERLC live map image.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
 Linked Records - Remove
 
 * Fixed an issue where clicking the delete button on a linked record still opened the record preview after removing it.
 
-#7978 Field Dependency
+\#7978 Field Dependency
 
 * Fixed an issue causing field dependencies to not function properly.
 
-#7981 Field Add Exception
+\#7981 Field Add Exception
 
 * Fixed an issue generating a console error when adding a new field to a custom record.
 
@@ -262,7 +288,6 @@ Admin Customization - Sonoran One
 Custom Record Dependency - Select
 
 * Fixed an issue causing custom record dependencies on a select field to throw an exception.
-
 {% endtab %}
 {% endtabs %}
 
@@ -270,7 +295,7 @@ Custom Record Dependency - Select
 
 {% tabs %}
 {% tab title="New" %}
-#7314 Custom Records - Dependencies
+\#7314 Custom Records - Dependencies
 
 * Custom record sections and fields can now have their visibility toggled via custom dependencies from other record fields.
 
@@ -278,7 +303,7 @@ Custom Records - Copy/Paste Sections
 
 * The custom record editor now allows you to copy/paste record sections.
 
-#7920 Record Logs
+\#7920 Record Logs
 
 * Modified the custom record add and edit logs to include more details on the record type and ID.
 
@@ -293,17 +318,16 @@ DB Sync - Safety Checks
 Custom Records - Required Type Duplicate Check
 
 * Added additional safety checks to ensure a community does not have duplicate required custom record types and the ability to remove duplicated required types.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
 DMV New Record - Disable with Sync
 
 * Fixed an issue allowing new licenses or vehicle registrations to be created in the DMV panel even if DB Sync is enabled.
 
-API SET_SERVERS - Deploy Map
+API SET\_SERVERS - Deploy Map
 
-* Fixed an issue with the SET_SERVERS endpoint not properly deploying the new live map.
-
+* Fixed an issue with the SET\_SERVERS endpoint not properly deploying the new live map.
 {% endtab %}
 {% endtabs %}
 
@@ -311,28 +335,27 @@ API SET_SERVERS - Deploy Map
 
 {% tabs %}
 {% tab title="New" %}
-#7615 Custom Records - Unit Location Field
+\#7615 Custom Records - Unit Location Field
 
-* The UNIT_LOCATION custom field type can be used to autofill the unit location on a new record.
+* The UNIT\_LOCATION custom field type can be used to autofill the unit location on a new record.
 
-API: GET_IDENTIFIERS
+API: GET\_IDENTIFIERS
 
-* The new GET_IDENTIFIERS endpoint allows you to retrieve all unit identifiers for a user and view the currently selected one.
+* The new GET\_IDENTIFIERS endpoint allows you to retrieve all unit identifiers for a user and view the currently selected one.
 
-#7066 API: SET_IDENTIFIER
+\#7066 API: SET\_IDENTIFIER
 
 * Added an endpoint to change the selected unit identifier via API.
 
-#7511 Modify Identifier
+\#7511 Modify Identifier
 
 * Unit identifiers can now be added, edited, and removed via API.
-
 {% endtab %}
+
 {% tab title="Changed" %}
 Custom Records - Show Field UIDs
 
 * The custom record editor now shows the field mapping ID column (UID) for all record types.
-
 {% endtab %}
 {% endtabs %}
 
@@ -352,25 +375,25 @@ Live Map - Selected Unit Filter
 
 * Units displayed on the live map can now be filtered by selecting units/groups in the active units panel.
 
-#6998 Blip Customization
+\#6998 Blip Customization
 
 * Live map unit blips can now have the unit number display toggled on/off. Unit blips can be filtered down to unit type. Additionally, unit blips have customizable outline colors.
 
-#7414 Wyze LED Strips
+\#7414 Wyze LED Strips
 
-* Expansion of supported light integrations. For example, Wyze has multiple other smart bulbs, such as LED light strips, which could be really cool to have like under a table, behind a desk, or on the walls. Would also allow for more customization. 
+* Expansion of supported light integrations. For example, Wyze has multiple other smart bulbs, such as LED light strips, which could be really cool to have like under a table, behind a desk, or on the walls. Would also allow for more customization.
 
-EVENT_TONE Push Event
+EVENT\_TONE Push Event
 
 * Added a push event for when tones are played.
 
 Unit Login - Clear Position
 
 * Unit positions are cleared on an initial login until their position is updated in-game. Preventing units who are no longer in-game from displaying on the map.
-
 {% endtab %}
+
 {% tab title="Fixed" %}
-#7092 Live Map Duplication
+\#7092 Live Map Duplication
 
 * Fixed an issue causing the live map image to duplicate after closing and re-opening.
 
@@ -378,14 +401,13 @@ Desktop - Prevent Zoom Out
 
 * Prevented users from ctrl - zooming out in the desktop app.
 
-#7455 Maintain Full Screen after Toggle Key
+\#7455 Maintain Full Screen after Toggle Key
 
 * When showing (w/ global hotkeys) a Sonoran CAD Desktop window that was fullscreen when it was hidden (w/ global hotkeys), it'll show back up no longer full screen in a smaller window.
 
 DBSync Save - Handle null columns on trim
 
 * Added safety checks if the user enabled license or vehicle mapping but had a null owner or table name set.
-
 {% endtab %}
 {% endtabs %}
 
@@ -401,6 +423,7 @@ Live Map - Permissions
 
 * Access to the live map is now restricted via user permission.
 {% endtab %}
+
 {% tab title="Fixed" %}
 Window - Draggable Area
 
@@ -410,11 +433,11 @@ Custom Layout - Drag-and-Drop
 
 * Fixed an issue causing users with custom layouts to not be able to drag-and-drop elements from one window to another.
 
-#6859 Window Options
+\#6859 Window Options
 
 * Fixed an issue causing windows to not force display the close and minimize options.
 
-#6871 Window Scrolling
+\#6871 Window Scrolling
 
 * Fixed an issue causing custom windows to have disabled vertical scrolling.
 {% endtab %}
@@ -442,7 +465,7 @@ Command Line
 
 * Dispatchers can now utilize a CLI to quickly create and close dispatches, attach, detach, view, clear, change statuses, add notes, and more all via keyboard
 
-#6638 Custom Records - Drag Support
+\#6638 Custom Records - Drag Support
 
 * Custom record sections and fields can now be dragged-and-dropped to be re-ordered
 
@@ -476,11 +499,11 @@ Custom Domain - DNS Check
 {% endtab %}
 
 {% tab title="Fixed" %}
-#6698 BOLO Removal
+\#6698 BOLO Removal
 
 * Fixed an issue causing bolo removals to locally remove a second one from the UI
 
-#6694 Close Dispatch without Idents
+\#6694 Close Dispatch without Idents
 
 * Fixed an issue with dispatch auto-status causing an error when closing a dispatch without any attached units
 {% endtab %}
@@ -504,7 +527,7 @@ API Record Remove - Webhook
 
 * Fixed an issue causing record removal via API to not send a webhook event
 
-API: remove_record isReport property
+API: remove\_record isReport property
 
 * Removed an unused isReport field from the remove record API endpoint
 {% endtab %}
@@ -528,7 +551,7 @@ Record API - Webhook Support
 {% endtab %}
 
 {% tab title="Fixed" %}
-#6255 Notepad Label
+\#6255 Notepad Label
 
 * The notepad shows police.header.notepad and when you click on it it does not bring up the notepad. This is both on the desktop app and the website
 
@@ -690,22 +713,16 @@ Drag-and-drop Custom Layout
 {% endtab %}
 {% endtabs %}
 
-
-
 ### 3.21.3 10/19/2021
 
 {% tabs %}
 {% tab title="New" %}
-
-
 Desktop Update Search - Show Downloading
 
 * The desktop splash screen now includes live details on update searches and download progress
 {% endtab %}
 
 {% tab title="Changed" %}
-
-
 CHANGED: Websocket Connection Endpoint
 
 * Updated the backend websocket connection to resolve disconnection issues
@@ -724,37 +741,35 @@ Govee - Lighting Fixes
 {% tab title="New" %}
 Dispatch Timers
 
-&#x20;\- Dispatchers can create customizable timers and attach units, groups, and dispatch calls for periodic notifications
+\- Dispatchers can create customizable timers and attach units, groups, and dispatch calls for periodic notifications
 
 Smart Lights - Unit Status
 
-&#x20;\- Smart lighting scenes are now available for your unit status
+\- Smart lighting scenes are now available for your unit status
 
 Govee - Lighting Integration
 
-&#x20;\- Govee smart bulbs are now supported with our lighting integration via Bluetooth and WiFi
+\- Govee smart bulbs are now supported with our lighting integration via Bluetooth and WiFi
 
 Norwegian Translations
 
-&#x20;\- Added Norwegian translations
+\- Added Norwegian translations
 
 Server Config - Trim IP/Port
 
-&#x20;\- Added additional safety checks on the backend to trim any spaces in server IPs or ports
+\- Added additional safety checks on the backend to trim any spaces in server IPs or ports
 
 UNIT\_PANIC Push - Panic Bool
 
-&#x20;\- The EVENT\_UNIT\_PANIC push event now includes an `isPanic` bool
+\- The EVENT\_UNIT\_PANIC push event now includes an `isPanic` bool
 {% endtab %}
 
 {% tab title="Changed" %}
 Unit - Group Menu Consolidation
 
-&#x20;\- The unit group section on the unit context menu is broken into a separate menu
+\- The unit group section on the unit context menu is broken into a separate menu
 {% endtab %}
 {% endtabs %}
-
-
 
 ### 3.20.11 10/1/2021
 
@@ -860,8 +875,6 @@ Record Preview - Duplicated Sections\
 \- Fixed an issue causing records with duplicated sections to overwrite preview fields further down in the lookup preview
 {% endtab %}
 {% endtabs %}
-
-
 
 ### 3.20.2 9/8/2021
 
@@ -1100,7 +1113,7 @@ Dispatch Saved Types - Backspace\
 {% tabs %}
 {% tab title="Fixed" %}
 Smart Signs - Push Events\
-&#x20;\- Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
+\- Fixed an issue with smart signs when capital letters were sent from the CAD, resulting in blank spaces on in-game signs.
 
 Lookup - DB Sync\
 \- Fixed an issue causing some DB Sync lookups to fail if you had only license or only vehicle mapping enabled.
@@ -1757,8 +1770,6 @@ Dispatch Login - Security Warning\
 \- Fixed an issue where dispatchers logging in would make a get call request resulting a security warning without the police, fire, or EMS permission.
 {% endtab %}
 {% endtabs %}
-
-
 
 ### 3.10.0 5/10/2021
 
@@ -3238,7 +3249,7 @@ Records System - Backend Restructure
 
 DBSync - Character Hide ID
 
-* Character ID (often Steam IDs) are no longer displayed on the UI when searching for a character with database sync.&#x20;
+* Character ID (often Steam IDs) are no longer displayed on the UI when searching for a character with database sync.
 
 Dispatch - Clear Panic Permissions
 
@@ -3483,7 +3494,7 @@ Session Invalidate - UI
 1. Custom Login Page - Query Strings
    * In order to reduce the strain on Sonoran CAD's servers, all custom login pages must now specify multiple attributes as query strings. You can copy and paste the entire URL from the Custom Login Page section in the Admin Customization menu.
 2. Edit Unit - Permission Label
-   * Changed the edit identifier label to have the same label name on both account permissions and permission keys.&#x20;
+   * Changed the edit identifier label to have the same label name on both account permissions and permission keys.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -3494,7 +3505,7 @@ Session Invalidate - UI
 3. DMV Permission
    * Fixed an issue where DMV record statuses could not be edited in the civilian page without the DMV page permission.
 4. Lua Resource - Download Links
-   * Fixed an issue where the Lua Resource download buttons in the admin panel downloaded the outdated files instead of the latest GutHub release.&#x20;
+   * Fixed an issue where the Lua Resource download buttons in the admin panel downloaded the outdated files instead of the latest GutHub release.
 5. API Tutorial - Download
    * Fixed an issue where some tutorial video links were downloads for desktop application users.
 6. Record Add Vehicle - Plate Search
@@ -3952,8 +3963,6 @@ UI Border
 
 {% tabs %}
 {% tab title="New" %}
-
-
 1. Panic - Location
    * Unit PANIC text-to-speech alerts now state the unit's location
 2. BOLO - Agency Information
@@ -3990,7 +3999,7 @@ UI Border
 4. Panic - API
    * Unit's can have their PANIC status toggled via an API request.
 5. Unit Info - Location and AOP
-   * Unit identifiers can now specify their current location and AOP.&#x20;
+   * Unit identifiers can now specify their current location and AOP.
 6. Custom Emails
    * Customize branding and wording in emails sent from your custom login page. This includes account verification/creation and forgotten password emails.
 7. Custom Page Colors
@@ -4041,7 +4050,7 @@ UI Border
 1. Default Community
    * Users can now locally set their "Default Community" in the community menu. This will always display the community's custom login screen even for mobile and desktop applications. This makes signing into your regular community even faster!
 2. Admin - Kick Account
-   * Community admins can now kick an account to forcefully remove it from a community as opposed to banning the account.&#x20;
+   * Community admins can now kick an account to forcefully remove it from a community as opposed to banning the account.
 {% endtab %}
 
 {% tab title="Changed" %}
@@ -4070,7 +4079,7 @@ UI Border
 {% tabs %}
 {% tab title="New" %}
 1. Unit 10-Status - Admin Customization
-   * Communities can customize the default 10-06, 10-07, and 10-08 in status options for available, busy and unavailable.&#x20;
+   * Communities can customize the default 10-06, 10-07, and 10-08 in status options for available, busy and unavailable.
 2. Affiliate Tracking System
    * A new affiliate system has been added to help Sonoran CAD grow and reward those who participate.
 {% endtab %}
@@ -4379,7 +4388,7 @@ UI Border
 4. Department - Configure Location
    * Admins can specify department location and zip code to auto-fill when creating a new record.
 5. Penal Code - Jail Time
-   * Added a jail time specification box in the penal code specification section.&#x20;
+   * Added a jail time specification box in the penal code specification section.
 6. Penal Code - No Bail
    * Added a “No Bail” option on the penal code’s bail type drop down.
 7. Civilians - Auto Approve DMV Records
@@ -4604,7 +4613,7 @@ Delete/Remove CAD
 {% tabs %}
 {% tab title="New" %}
 1. Penal Codes
-   * Penal codes can now be added, edited and removed in the admin menu.&#x20;
+   * Penal codes can now be added, edited and removed in the admin menu.
 2. Records Charges - Penal Code Select
    * Police/Dispatch can now add charges by filtering for a specific penal code.
 3. Penal Code Window - Police/Dispatch
