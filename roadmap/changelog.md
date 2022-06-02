@@ -32,7 +32,7 @@ NEW\_RECORD: User Link
 
 REMOVE\_BLIP: Map Update
 
-* REMOVE\_BLIP: Map Update
+* Fixed an issue where removing an array custom map blips wouldn't remove them from the user's UI without a refresh.
 
 \#9023 Custom Lookup Masks
 
