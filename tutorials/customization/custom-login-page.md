@@ -36,7 +36,7 @@ The example record below sets `cad.sonoranroleplay.com` as the custom login page
 
 #### TXT Record
 
-In your domain's DNS records add a `TXT` type record with the `name` set to anything (typically `@`, or left blank) and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
+In your domain's DNS records add a `TXT` type record with the `name` set to `sonorancad_verify_domain` and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
 
 This verifies that your Sonoran CAD community owns this domain.
 
@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (302).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.

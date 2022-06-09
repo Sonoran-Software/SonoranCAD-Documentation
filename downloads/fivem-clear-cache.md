@@ -20,7 +20,7 @@ Now you will need to go to the **FiveM Application Data**.
 
 You will find a **data** folder there; click on it.
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16) (2).png>)
 
 Here you must delete the **cache, nui-storage**, **server-cache** and **server-cache-priv** folders. &#x20;
 
