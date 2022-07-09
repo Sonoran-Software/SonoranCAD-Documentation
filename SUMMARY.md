@@ -71,6 +71,7 @@
   * [Power Grid](integration-plugins/paid-integration-resources/power-grid.md)
   * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)
   * [Shot Spotter](integration-plugins/paid-integration-resources/shot-spotter.md)
+  * [Evidence Camera](integration-plugins/paid-integration-resources/evidence-camera.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
