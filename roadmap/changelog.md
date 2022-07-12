@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.29.3 07/12/2022
+
+{% tabs %}
+{% tab title="Fixed" %}
+Join Community Safety
+
+* Added additional safeties on community join to handle errors and duplication.
+
+Custom Domain DNS
+
+* Fixed an issue with custom domain DNS checks failing.
+
+Tablet Live Map
+
+* Fixed an issue with the live map on tablet devices not having proper default height
+{% endtab %}
+{% endtabs %}
+
+
+
 ### 3.29.0 06/01/2022
 
 {% tabs %}
