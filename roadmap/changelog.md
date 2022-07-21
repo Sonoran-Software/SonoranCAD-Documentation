@@ -10,6 +10,30 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.29.4 07/21/2022
+
+{% tabs %}
+{% tab title="New" %}
+Account Removal - In App
+
+* Added a button to request account removal from within the app, removing the need to use the external accounts website.
+{% endtab %}
+
+{% tab title="Fixed" %}
+DBSync - Character Pull
+
+* Fixed an issue with loading database sync characters.
+
+Root Domain - Community Query String
+
+* Fixed an issue with the ?comid query string not persisting to the /login page on redirect.
+
+Dispatch From Emergency - Remove Call
+
+* Fixed an issue where creating a dispatch from an emergency call would not remove the emergency call.
+{% endtab %}
+{% endtabs %}
+
 ### 3.29.3 07/12/2022
 
 {% tabs %}
