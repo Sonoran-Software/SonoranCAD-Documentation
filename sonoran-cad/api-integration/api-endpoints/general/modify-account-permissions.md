@@ -62,6 +62,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
         {
             "apiId": "STEAM:1234",      // (OPTION 1) API ID: Typically, this is their STEAM ID
             "username": "SonoranBrian", // (OPTION 2) CAD Username
+            "accId": 000-000-000,       // (OPTION 3) Sonoran SSO UUID
             "active": true,             // OPTIONAL: Set account status to ACTIVE (true) or PENDING (false)
             "add": [
                 // Array of permission names to ADD
@@ -77,7 +78,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 }
 ```
 
-The `username` and `apiId` are two separate ways to specify the account you are modifying the permissions of. You only need to specify one.
+The `username`, `apiId`, and `accId` are separate ways to specify the account you are modifying the permissions of. You only need to specify one.
 
 The `add` and `remove` permission string arrays do not both have to be specified. You can use this API call to only add, only remove, or both add and remove permissions.
 
