@@ -128,3 +128,4 @@ The `active` boolean is optional and will update the user's account status to `A
 | ADMININGAMEINTEGRATION  | Permission to access the in-game integration panel    |
 | ADMINDISCORDINTEGRATION | Permission to access the Discord integration panel    |
 | ADMINLIMITS             | Permission to view the community limits panel         |
+| ADMINLOGS               | Permission to view the community logs                 |
