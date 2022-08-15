@@ -10,6 +10,29 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.29.5 08/15/2022
+
+{% tabs %}
+{% tab title="New" %}
+Sonoran CMS - Permissions Sync
+
+* Sonoran CMS can now automatically manage Sonoran CAD user permissions
+
+API ban\_user - accId
+
+* Added an `accId` option to the endpoint.
+
+API set\_account\_permissions - accId
+
+* Added an `accId` option to the endpoint.
+{% endtab %}
+
+{% tab title="Fixed" %}
+API - Remove 911 UI Call\
+\- Fixed an issue with 911 calls being removed via API not updating in the UI until a refresh.
+{% endtab %}
+{% endtabs %}
+
 ### 3.29.4 07/21/2022
 
 {% tabs %}
