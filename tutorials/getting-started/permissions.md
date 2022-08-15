@@ -8,6 +8,14 @@ description: Granting permissions to user accounts is easy! We'll help you get s
 
 User accounts can be granted automatically with our [Discord bot](../../integration-plugins/discord-bot/), manually granted by an administrator in your community, or by generating a "[Permission Key](permissions.md#permission-keys)" for users to access independently.
 
+### [Sonoran CMS - Permission Sync](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms)
+
+Sonoran CMS is your single point of management for your community's documents, whitelisting, in-game permissions, community website, and more!
+
+In addition to whitelisting and in-game permissions, [Sonoran CMS can automatically manage your Sonoran CAD permissions](https://info.sonorancms.com/integration-capabilities/sonoran-cad-sync)!
+
+![Sonoran CAD x Sonoran CMS - Permission Sync](../../.gitbook/assets/CMS-CAD-Sync.png)
+
 ### Discord Bot Roles
 
 Our [Discord bot](../../integration-plugins/discord-bot/) allows you to automatically sync Discord roles with CAD permissions.
