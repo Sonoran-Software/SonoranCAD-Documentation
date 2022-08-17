@@ -16,6 +16,22 @@ The `citizenid` column stores a unique player ID. This will be our `Character Ma
 
 ![](<../../.gitbook/assets/image (309).png>)
 
+### Multiple Residency
+
+QB Core also allows players to own multiple residences at once.
+
+Sonoran CAD's DB Sync will pull all of these from their external `player_houses` table.
+
+![QB Core - DB Sync - Residency Mapping](<../../.gitbook/assets/image (8).png>)
+
+Because multiple residences can be listed at once, it's recommended you update your custom record's residence field to the `textarea` type.
+
+![](<../../.gitbook/assets/image (7).png>)
+
+The custom record now shows the residency textarea with all owned addresses.
+
+![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (9).png>)
+
 ## Vehicle Mapping
 
 QB Core stores the vehicle information in the `player_vehicles` table.

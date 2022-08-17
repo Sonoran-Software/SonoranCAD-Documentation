@@ -148,15 +148,15 @@ This will show the field label and value in the lookup table preview.
 This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.
 
-<img src="../../.gitbook/assets/image (7).png" alt="Input field with SUPERVISOR toggled" data-size="original">
+<img src="../../.gitbook/assets/image (7) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
 
-<img src="../../.gitbook/assets/image (8).png" alt="Supervisor field highlighted red" data-size="original">
+<img src="../../.gitbook/assets/image (8) (1).png" alt="Supervisor field highlighted red" data-size="original">
 
 #### Required
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
-<img src="../../.gitbook/assets/image (9).png" alt="Input field with REQUIRED toggled" data-size="original">
+<img src="../../.gitbook/assets/image (9) (1).png" alt="Input field with REQUIRED toggled" data-size="original">
 
 <img src="../../.gitbook/assets/image (10).png" alt="Required field shown in the record editor" data-size="original">
 
