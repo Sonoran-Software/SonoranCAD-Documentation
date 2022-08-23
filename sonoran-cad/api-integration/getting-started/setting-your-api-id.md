@@ -10,11 +10,11 @@ description: >-
 API IDs are set individually per community. Your API IDs set in one community will not transfer over to another.
 {% endhint %}
 
-## FiveM - Setting API ID with CAD Tablet
+## GTA RP - Setting API ID with CAD Tablet
 
 1. Type `/showcad` in the game chat to open the Tablet.
 2. Login to Sonoran CAD using the tablet.
-3. Make sure you have already joined the FiveM server's CAD community. Do so now if you have not.
+3. Make sure you have already joined the GTA RP server's CAD community. Do so now if you have not.
 4. Click the red banner's "retry" button and the page will refresh.
 5. Your API ID should now be set for that CAD community.
 
