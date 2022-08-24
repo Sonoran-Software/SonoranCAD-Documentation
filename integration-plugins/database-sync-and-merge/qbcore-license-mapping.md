@@ -14,7 +14,7 @@ The `citizenid` column stores a unique player ID. This will be our `Character Ma
 
 ![](<../../.gitbook/assets/image (308).png>)
 
-![](<../../.gitbook/assets/image (309).png>)
+![](<../../.gitbook/assets/image (309) (1).png>)
 
 ### Multiple Residency
 
@@ -44,7 +44,7 @@ You can configure other custom fields may include color, make, model, etc. Vehic
 
 ![](<../../.gitbook/assets/image (307).png>)
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16) (4).png>)
 
 ## License Mapping
 

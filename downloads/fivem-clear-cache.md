@@ -16,7 +16,7 @@ To do this, right-click on your GTA RP application shortcut and click on the Ope
 
 Now you will need to go to the GTA RP **Application Data**.
 
-![](<../.gitbook/assets/image (279).png>)
+![](<../.gitbook/assets/image (279) (1).png>)
 
 You will find a **data** folder there; click on it.
 
@@ -24,4 +24,4 @@ You will find a **data** folder there; click on it.
 
 Here you must delete the **cache, nui-storage**, **server-cache** and **server-cache-priv** folders. &#x20;
 
-![](<../.gitbook/assets/image (278).png>)
+![](<../.gitbook/assets/image (278) (2).png>)
