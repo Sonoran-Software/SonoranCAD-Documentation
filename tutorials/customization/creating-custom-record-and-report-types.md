@@ -31,13 +31,13 @@ Records follow the standard record editing and lookup system, and require a civi
 \
 Reports can be searched in the unit's report center via number or identifier.
 
-![Sonoran CAD's Custom Record Types](<../../.gitbook/assets/image (1).png>)
+![Sonoran CAD's Custom Record Types](<../../.gitbook/assets/image (1) (1).png>)
 
 ### 3. Add Custom and Pre-made Sections
 
 Add your desired custom and premade sections, edit fields, and more!
 
-![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (2).png>)
+![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (2) (1).png>)
 
 If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one.
 
@@ -57,7 +57,7 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-<img src="../../.gitbook/assets/image (3).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
+<img src="../../.gitbook/assets/image (3) (2).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
 <img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
@@ -65,9 +65,9 @@ The select field allows you to customize a dropdown box.
 
 The text area field allows you to create a large text area.
 
-<img src="../../.gitbook/assets/image (4).png" alt="The &#x27;TEXTAREA&#x27; field option" data-size="original">
+<img src="../../.gitbook/assets/image (4) (1).png" alt="The &#x27;TEXTAREA&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (5).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (5) (3).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor" data-size="original">
 
 #### Checkboxes
 
@@ -117,7 +117,7 @@ Custom flag options can be added to every record template. When checked, these f
 
 Labels can display static text, along with color attributes.
 
-<img src="../../.gitbook/assets/image (168).png" alt="Sonoran CAD - Custom Record Label" data-size="original">
+<img src="../../.gitbook/assets/image (168) (1).png" alt="Sonoran CAD - Custom Record Label" data-size="original">
 
 #### Address
 
@@ -310,3 +310,35 @@ Database sync records do not have the option to re-sync, as they will always be 
 \
 A re-sync is only available once per 10 minutes.
 {% endhint %}
+
+## Linking Vehicle and Character Searches
+
+Custom records allow the addition of a character and vehicle search button in sections. Clicking these allows the user to search and import a vehicle or character into the record section.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Custom Record - Vehicle and Civilian search sections</p></figcaption></figure>
+
+In order for these searches to properly place the vehicle and civilian record in your custom record fields, specific field `uid` values must match.
+
+### Civilian Field UIDs
+
+The default `Civilian` record has the following field UIDs:
+
+`first` `last` `mi` `dob` `age` `sex` `aka` `zip` `occupation` `height` `weight` `skin` `hair` `eyes` `emergencyContact` `emergencyRelationship` `emergencyContactNumber` `residence`
+
+![](<../../.gitbook/assets/image (1).png>)
+
+When creating your custom record section with civilian search imports, those field UIDs will also need to match. The image below shows a custom record with the civilian search section toggled with the matching field UIDs.
+
+![](<../../.gitbook/assets/image (2).png>)
+
+### Vehicle Field UIDs
+
+The default `Vehicle Registration` record has the following field UIDs
+
+`type` `plate` `make` `model` `color` `year`
+
+![](../../.gitbook/assets/image.png)&#x20;
+
+&#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
+
+![](<../../.gitbook/assets/image (5).png>)
