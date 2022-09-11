@@ -99,7 +99,7 @@ The "Section" object contains all of the data for a custom record section. These
                         //  display the search button to help search and import vehicle data automatically
     "enableDuplicate": true, // Allow users to duplicate this section while filling out the record/report
     "dependency": {
-        "type": "", // Unused
+        "type": "", // EQUAL, NOTEQUAL, CONTAINS
         "fid": "_5678_wxyz",
         "acceptableValues": [
             "Something",

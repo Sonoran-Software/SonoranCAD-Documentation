@@ -39,7 +39,7 @@ Add your desired custom and premade sections, edit fields, and more!
 
 ![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (2).png>)
 
-If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one.
+If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one. [Learn more about ensuring civilian and vehicle searches link to your custom record fields](creating-custom-record-and-report-types.md#linking-vehicle-and-character-searches).
 
 The enable duplicate button allows users to click and create a new copy of the section while filing the record.
 
@@ -59,7 +59,7 @@ The select field allows you to customize a dropdown box.
 
 <img src="../../.gitbook/assets/image (3).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
 #### Text Area
 
@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<img src="../../.gitbook/assets/image (280) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
 
 </details>
 
@@ -148,15 +148,15 @@ This will show the field label and value in the lookup table preview.
 This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.
 
-<img src="../../.gitbook/assets/image (7).png" alt="Input field with SUPERVISOR toggled" data-size="original">
+<img src="../../.gitbook/assets/image (7) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
 
-<img src="../../.gitbook/assets/image (8).png" alt="Supervisor field highlighted red" data-size="original">
+<img src="../../.gitbook/assets/image (8) (1).png" alt="Supervisor field highlighted red" data-size="original">
 
 #### Required
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
-<img src="../../.gitbook/assets/image (9).png" alt="Input field with REQUIRED toggled" data-size="original">
+<img src="../../.gitbook/assets/image (9) (1).png" alt="Input field with REQUIRED toggled" data-size="original">
 
 <img src="../../.gitbook/assets/image (10).png" alt="Required field shown in the record editor" data-size="original">
 
@@ -222,7 +222,7 @@ Dependencies allow you to make an individual field or entire section visible bas
 
 Expand a field and copy the unique `Field Mapping ID`.
 
-****![](<../../.gitbook/assets/image (88) (1).png>)
+****![](<../../.gitbook/assets/image (88) (1).png>)****
 
 **Set Child Dependency**
 
@@ -235,6 +235,17 @@ Paste the unique `Field Mapping ID` from before. The box will light up green whe
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
 Text fields as the dependency parent will allow you to enter what text values will display this section or field.
+
+#### Dependency Types
+
+There are multiple options for dependency types.
+
+* `Equal`
+  * Dependency will display if the entered content are an exact match to the specified value(s)
+* `Not Equal`
+  * Dependency will display if the entered content is NOT equal to the specified value(s)
+* `Contains`
+  * Dependency will display if the entered content contains any of the specified values(s)
 
 </details>
 
@@ -274,4 +285,60 @@ If the "NEW REPORT" button, or actions on the report viewer are disabled, you ar
 The supervisor panel shows all reports that have a blank field that requires supervisor permissions.\
 If you do not have the supervisor panel enabled, you will need to have the [supervisor permission granted on your account](../getting-started/permissions.md).
 
-###
+## Updating Old Records with New Preview Fields
+
+Many communities decide to enable a custom field for preview _after_ many records of that type have already been created.
+
+Ex: Adding a previewed field to show the license "Type"
+
+Communities can process a manual updating of historical records in the custom records menu.
+
+![Resync Preview Fields](<../../.gitbook/assets/image (278) (1).png>)
+
+![Resync Preview Fields - Confirm](<../../.gitbook/assets/image (136) (1).png>)
+
+### How does the re-sync work?
+
+Sonoran CAD will search for all records of this type and attempt to automatically update any historical records with the latest preview field preferences.
+
+{% hint style="warning" %}
+Because Sonoran CAD records are entirely customizable, changing the field UID (unique ID) from one revision to the next will result in a failure to match and update the preview field.
+
+\
+Database sync records do not have the option to re-sync, as they will always be up-to-date.
+
+\
+A re-sync is only available once per 10 minutes.
+{% endhint %}
+
+## Linking Vehicle and Character Searches
+
+Custom records allow the addition of a character and vehicle search button in sections. Clicking these allows the user to search and import a vehicle or character into the record section.
+
+<figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption><p>Custom Record - Vehicle and Civilian search sections</p></figcaption></figure>
+
+In order for these searches to properly place the vehicle and civilian record in your custom record fields, specific field `uid` values must match.
+
+### Civilian Field UIDs
+
+The default `Civilian` record has the following field UIDs:
+
+`first` `last` `mi` `dob` `age` `sex` `aka` `zip` `occupation` `height` `weight` `skin` `hair` `eyes` `emergencyContact` `emergencyRelationship` `emergencyContactNumber` `residence`
+
+![](<../../.gitbook/assets/image (6).png>)
+
+When creating your custom record section with civilian search imports, those field UIDs will also need to match. The image below shows a custom record with the civilian search section toggled with the matching field UIDs.
+
+![](<../../.gitbook/assets/image (16).png>)
+
+### Vehicle Field UIDs
+
+The default `Vehicle Registration` record has the following field UIDs
+
+`type` `plate` `make` `model` `color` `year`
+
+![](<../../.gitbook/assets/image (279).png>)&#x20;
+
+&#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
+
+![](<../../.gitbook/assets/image (278).png>)

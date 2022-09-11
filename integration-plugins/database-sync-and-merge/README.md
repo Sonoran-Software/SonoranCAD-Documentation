@@ -152,9 +152,9 @@ In our database, the `accounts` column stores JSON formatted data. For this exam
 
 ![SQL - JSON Column Example](<../../.gitbook/assets/image (184).png>)
 
-To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu).
+To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu/).
 
-In the [JSON formatter](http://jsonviewer.stack.hu), we can paste it and select `Format`.
+In the [JSON formatter](http://jsonviewer.stack.hu/), we can paste it and select `Format`.
 
 ![](<../../.gitbook/assets/image (185).png>)
 

@@ -58,8 +58,9 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "type": "BAN_USER",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID entered in the unit identifiers
-                                   // Typically, this is their STEAM ID
+            "apiId": "STEAM:1234",  // (Option 1) API ID entered in the unit identifiers
+                                    //   Typically, this is their STEAM ID
+            "accId": "000-000-000", // (Option 2) Sonoran SSO UUID
             "isBan": true, // OPTIONAL: Ban (true) or un-ban (false)
             "isKick": false // OPTIONAL: Kick instead of ban
         },

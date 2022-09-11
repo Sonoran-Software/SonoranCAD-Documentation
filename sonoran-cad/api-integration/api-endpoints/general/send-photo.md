@@ -51,7 +51,7 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "SET_API_ID",
+    "type": "SEND_PHOTO",
     "data": [
         {
           "apiId": "STEAM:1234", // User API ID

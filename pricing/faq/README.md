@@ -12,7 +12,7 @@ Receive **free Sonoran CAD integration plugin installation**, **free Five PD ins
 
 ### Looking to compare plans?
 
-[View our pricing page!](https://sonorancad.com/#/pricing)
+[View our pricing page!](https://sonorancad.com/pricing)
 
 ### Looking to purchase a plan?
 
@@ -40,7 +40,7 @@ You can cancel, upgrade, or downgrade your subscription at any time using the pa
 
 ### Are subscriptions a one-time payment, or monthly?
 
-All of Sonoran CAD's subscriptions are monthly. You can [compare our plans](https://app.sonorancad.com/#/pricing) to see what works best for your community.\
+All of Sonoran CAD's subscriptions are monthly. You can [compare our plans ](https://sonorancad.com/pricing)to see what works best for your community.\
 \
 Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 

@@ -78,6 +78,25 @@ Additionally, communities using Steam as their framework's `primaryIdentifier` *
 
 ## Known Issues
 
+### Tablet SSO Sign In via Discord/Apple
+
+The in-game tablet utilizes an iFrame. Because Apple and Discord have disabled their oauth pages from being viewed inside of an iFrame, users will be unable to use these sign in methods from in-game.
+
+#### 1. Utilize the official Desktop App Overlay system
+
+{% content-ref url="../../../downloads/steam-browser-workaround.md" %}
+[steam-browser-workaround.md](../../../downloads/steam-browser-workaround.md)
+{% endcontent-ref %}
+
+#### 2. Link your Discord/Apple created account to a Sonoran login email/password.
+
+Because your account was created using Discord/Apple, your email does not yet have a password set to login via Sonoran.
+
+1. Navigate to the [account website](https://account.sonoransoftware.com) -> Recover Password
+2. Enter in the email address of the Discord/Apple account
+3. Check your email for a link to setting your new password
+4. Sign-in on the Tablet using the Sonoran sign-in method (Discord can still be used elsewhere)
+
 ### Timeout SonoranCAD::mini:CallSync
 
 Some users may see `SonoranCAD::mini:CallSync` listed multiple times after recieving a timeout.

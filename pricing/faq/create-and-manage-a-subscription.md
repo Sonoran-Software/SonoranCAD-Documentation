@@ -8,7 +8,7 @@ description: Learn more about managing a new or existing Sonoran CAD subscriptio
 
 ### 1. Access the Payment Center
 
-Access the payment center on the Web or Desktop version of Sonoran CAD by going to [app.sonorancad.com/#/billing](https://app.sonorancad.com/#/billing), or by viewing the guide below.
+Access the payment center on the Web or Desktop version of Sonoran CAD by going to [sonorancad.com/billing](https://sonorancad.com/billing), or by viewing the guide below.
 
 {% content-ref url="accessing-the-payment-center.md" %}
 [accessing-the-payment-center.md](accessing-the-payment-center.md)
@@ -45,7 +45,7 @@ You can easily update the payment information, upgrade, downgrade, or cancel you
 
 ### 1. Access the Payment Center
 
-Access the payment center on the Web or Desktop version of Sonoran CAD by going to [app.sonorancad.com/#/billing](https://app.sonorancad.com/#/billing), or by viewing the guide below.
+Access the payment center on the Web or Desktop version of Sonoran CAD by going to [sonorancad.com/billing](https://sonorancad.com/billing), or by viewing the guide below.
 
 {% content-ref url="accessing-the-payment-center.md" %}
 [accessing-the-payment-center.md](accessing-the-payment-center.md)
@@ -69,7 +69,7 @@ Sonoran CAD subscriptions can be easily transferred from one community to anothe
 
 ### 1. Access the Payment Center
 
-Access the payment center on the Web or Desktop version of Sonoran CAD by going to [app.sonorancad.com/#/billing](https://app.sonorancad.com/#/billing), or by viewing the guide below.
+Access the payment center on the Web or Desktop version of Sonoran CAD by going to [sonorancad.com/billing](https://sonorancad.com/billing), or by viewing the guide below.
 
 {% content-ref url="accessing-the-payment-center.md" %}
 [accessing-the-payment-center.md](accessing-the-payment-center.md)

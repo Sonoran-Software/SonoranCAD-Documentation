@@ -1,8 +1,54 @@
 ---
-description: Find out how to map QBCore player licenses to DBSync!
+description: Find out how to map a QB Core database with Sonoran CAD!
 ---
 
-# QBCore License Mapping
+# QB Core Mapping Tutorial
+
+## Character Mapping
+
+QB Core stores player information in the `players` table.
+
+The player's first and last name is stored as JSON in the `charinfo` column. We'll toggle these as a `JSON Column` and set the JSON keys to `firstname` and `lastname`.
+
+The `citizenid` column stores a unique player ID. This will be our `Character Mapping Column`.
+
+![](<../../.gitbook/assets/image (308).png>)
+
+![](<../../.gitbook/assets/image (309) (1).png>)
+
+### Multiple Residency
+
+QB Core also allows players to own multiple residences at once.
+
+Sonoran CAD's DB Sync will pull all of these from their external `player_houses` table.
+
+![QB Core - DB Sync - Residency Mapping](<../../.gitbook/assets/image (8).png>)
+
+Because multiple residences can be listed at once, it's recommended you update your custom record's residence field to the `textarea` type.
+
+![](<../../.gitbook/assets/image (7).png>)
+
+The custom record now shows the residency textarea with all owned addresses.
+
+![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (9).png>)
+
+## Vehicle Mapping
+
+QB Core stores the vehicle information in the `player_vehicles` table.
+
+The `Unique ID` for vehicles is stored in the `citizenid` column and matches the values stored in the `citizenid` column from our player mapping.
+
+The `plate` column stores the vehicle's license plates.
+
+You can configure other custom fields may include color, make, model, etc. Vehicle colors are often stored as a number. You can use [friendly mapping](./#friendly-mapping) to convert a number to a color name.
+
+![](<../../.gitbook/assets/image (307).png>)
+
+![](<../../.gitbook/assets/image (16) (4).png>)
+
+## License Mapping
+
+Because of how licenses are stored in QB Core, this process adds a couple of extra steps.
 
 ### 1. Open Admin panel to License Record
 

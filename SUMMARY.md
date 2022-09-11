@@ -5,6 +5,7 @@
   * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
+  * [GTA RP Tablet - Clear Cache](downloads/fivem-clear-cache.md)
   * [Steam Browser - Clear Cache](downloads/steam-browser-clear-cache.md)
 
 ## Why Choose Sonoran CAD?
@@ -67,11 +68,14 @@
 ## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
 * [🗃 Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
+  * [Evidence Camera](integration-plugins/paid-integration-resources/evidence-camera.md)
+  * [Power Grid](integration-plugins/paid-integration-resources/power-grid.md)
   * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)
+  * [Shot Spotter](integration-plugins/paid-integration-resources/shot-spotter.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
-  * [QBCore License Mapping](integration-plugins/database-sync-and-merge/qbcore-license-mapping.md)
+  * [QB Core Mapping Tutorial](integration-plugins/database-sync-and-merge/qbcore-license-mapping.md)
   * [Troubleshooting](integration-plugins/database-sync-and-merge/troubleshooting.md)
 * [Discord Bot](integration-plugins/discord-bot/README.md)
   * [Getting Started - Discord Bot](integration-plugins/discord-bot/getting-started-discord-bot.md)

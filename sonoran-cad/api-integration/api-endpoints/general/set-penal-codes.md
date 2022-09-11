@@ -75,6 +75,6 @@ INVALID API KEY
 
 ### Penal Code Format
 
-Your penal codes must be sent as a JSON object array in the exact format shown. Depending on how your community's penal codes are structure, you may want to write a script to automate this formatting. Then, send your penal codes via API with something like [Postman](https://www.postman.com).
+Your penal codes must be sent as a JSON object array in the exact format shown. Depending on how your community's penal codes are structure, you may want to write a script to automate this formatting. Then, send your penal codes via API with something like [Postman](https://www.postman.com/).
 
 ![Penal Codes set via API](<../../../../.gitbook/assets/image (54).png>)

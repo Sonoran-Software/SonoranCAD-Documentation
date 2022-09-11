@@ -36,7 +36,7 @@ The example record below sets `cad.sonoranroleplay.com` as the custom login page
 
 #### TXT Record
 
-In your domain's DNS records add a `TXT` type record with the `name` set to anything (typically `@`, or left blank) and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
+In your domain's DNS records add a `TXT` type record with the `name` set to `sonorancad_verify_domain` and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
 
 This verifies that your Sonoran CAD community owns this domain.
 
@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (302).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16) (2).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
@@ -90,13 +90,19 @@ Now that you've saved the custom URL inside of the HTML file, you can host this 
 
 ## In-Game Tablet
 
-When using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), the easiest way to display your custom login page is by adding a query string.
+If you wish to use a custom login page when using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), you can set a convar in your server.cfg.\
+****\
+****The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
 
-Open the `tablet/html/index.html` file and paste your custom community URL.
-
-`https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE`
+`"https://sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).\
-EX: `https://app.sonorancad.com/#/?comid=dojrp`
+EX: `https://sonorancad.com/#/?comid=dojrp`
 
-![Tablet HTML file](<../../.gitbook/assets/Screen Shot 2020-07-22 at 10.23.09 PM.png>)
+Add the following to your server.cfg **before** starting the tablet resource:
+
+```
+setr sonorantablet_cadUrl "YOUR_URL_HERE"
+```
+
+Fill in with your actual URL above with the comid you want.

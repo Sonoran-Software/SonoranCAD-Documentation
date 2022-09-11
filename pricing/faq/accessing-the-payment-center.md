@@ -10,13 +10,13 @@ The payment center is only accessible from the **web or desktop version of Sonor
 
 ### Access the Payment Center
 
-1. Sign into [app.sonorancad.com](https://app.sonorancad.com)
+1. Sign into [sonorancad.com](https://app.sonorancad.com)
 2. In the side navigation menu, select "My Account"
 
 ![Sonoran CAD - Access Account Menu](<../../.gitbook/assets/image (64).png>)
 
 3\. Select "Subscriptions"\
-&#x20; \- This will open [app.sonorancad.com/#/billing](https://app.sonorancad.com/#/billing)\
+&#x20; \- This will open [sonorancad.com/billing](https://sonorancad.com/billing)\
 
 
 ![](<../../.gitbook/assets/image (65).png>)

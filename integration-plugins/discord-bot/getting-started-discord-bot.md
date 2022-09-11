@@ -16,7 +16,7 @@ Setting up the bot requires you to have the "Manage Server" permissions on the D
 
 #### 1. Invite the Bot to Your Server
 
-[Invite the bot to your Discord server](https://discord.com/oauth2/authorize?client_id=747991263172755528&scope=bot%20applications.commands&permissions=805686352). You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
+[Invite the bot to your Discord server](https://discord.com/oauth2/authorize?client\_id=747991263172755528\&scope=bot%20applications.commands\&permissions=344537287888). You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
 
 #### 2. Run the Setup Command
 
@@ -29,20 +29,23 @@ To begin the setup process, use the `/setup` command that should have appeared o
 **3. Invite to Additional Servers**
 
 {% hint style="info" %}
-The /linkme command is only used on the primary server. Your users will automatically be associated with the secondary server\(s\).
+The /linkme command is only used on the primary server. Your users will automatically be associated with the secondary server(s).
 {% endhint %}
 
-If your community has multiple discord servers \(for example, a LEO or civilian only server\), you can invite the bot to these servers as well and use the role mapping functionality. 
+If your community has multiple discord servers (for example, a LEO or civilian only server), you can invite the bot to these servers as well and use the role mapping functionality.&#x20;
 
 ## Commands Reference
 
 By default, the bot uses the `s!` prefix for all commands. This can be changed with the `setprefix` command, as noted below.
 
-{% page-ref page="commands-reference.md" %}
+{% content-ref url="commands-reference.md" %}
+[commands-reference.md](commands-reference.md)
+{% endcontent-ref %}
 
 ## Features
 
 See the [Features](features/) section for instructions on how to use the various features of the Bot.
 
-{% page-ref page="features/" %}
-
+{% content-ref url="features/" %}
+[features](features/)
+{% endcontent-ref %}
