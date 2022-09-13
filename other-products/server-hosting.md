@@ -8,7 +8,7 @@ description: >-
 
 ## [Sonoran Servers](https://sonoranservers.com)
 
-![](<../.gitbook/assets/image (126) (1).png>)
+![](<../.gitbook/assets/image (126).png>)
 
 We've configured, built, and collocated our hardware to provide clients with our reliable performance and exceptional customer support experience.
 

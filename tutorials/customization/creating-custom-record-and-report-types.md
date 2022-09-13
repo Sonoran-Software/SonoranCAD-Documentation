@@ -57,9 +57,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-<img src="../../.gitbook/assets/image (3).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
+<img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
 #### Text Area
 
@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -230,7 +230,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (303).png>)![](<../../.gitbook/assets/image (301).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)![](<../../.gitbook/assets/image (301).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
@@ -337,7 +337,7 @@ The default `Vehicle Registration` record has the following field UIDs
 
 `type` `plate` `make` `model` `color` `year`
 
-![](<../../.gitbook/assets/image (279).png>)&#x20;
+![](<../../.gitbook/assets/image (309).png>)&#x20;
 
 &#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
 

@@ -10,7 +10,7 @@ description: >-
 
 ![Sonoran CAD - Live Stream Overlay](<../.gitbook/assets/overlay (2).gif>)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (2).png>)
 
 ![Stream Overlay - Bodycam](<../.gitbook/assets/image (258).png>)
 
@@ -87,7 +87,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (2).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
@@ -177,7 +177,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-<img src="../.gitbook/assets/image (290) (1) (1) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (295) (1) (1) (1).png" alt="" data-size="original">
 
 **2. Retrieve your API Key and Search**
 
