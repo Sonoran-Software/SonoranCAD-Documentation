@@ -30,7 +30,7 @@ Check out our advanced integration features, custom plugin system, downloadable 
 
 ### How do I access Sonoran CAD?
 
-* [Website](https://sonorancad.com/app/)
+* [Website](https://sonorancad.com/)
 * [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456)
 * [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US)
 * [Windows Desktop](https://github.com/SonoranBrian/sc2\_quasar/releases/latest/download/Sonoran-CAD-Setup.exe)
