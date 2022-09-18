@@ -34,7 +34,7 @@ If you wish to use a custom login page, you can set a convar in your server.cfg.
 `"https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).\
-EX: `https://app.sonorancad.com/#/?comid=dojrp`
+EX: `https://app.sonorancad.com/#/?comid=midwestrp`
 
 Add the following to your server.cfg **before** starting the tablet resource:
 

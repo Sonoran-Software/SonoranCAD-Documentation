@@ -97,7 +97,7 @@ If you wish to use a custom login page when using the [in-game Tablet resource](
 `"https://sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).\
-EX: `https://sonorancad.com/#/?comid=dojrp`
+EX: `https://sonorancad.com/#/?comid=midwestrp`
 
 Add the following to your server.cfg **before** starting the tablet resource:
 
