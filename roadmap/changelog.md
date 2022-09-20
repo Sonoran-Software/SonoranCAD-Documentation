@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.29.6
+
+{% tabs %}
+{% tab title="New" %}
+\#10281 QB Core Multi-House DB Sync Mapping
+
+* Multi-match for a single field now works for database sync, allowing multiple properties to be displayed specifically for QB Core.
+{% endtab %}
+
+{% tab title="Fixed" %}
+DB Sync Search Char by Custom Value
+
+* Fixed an issue causing the db sync search by custom value to not properly link all the character information.
+
+\#10725 Civilian Checkbox Fields
+
+* Fixed an issue causing non-db sync creation to not properly copy over checkbox values from a civilian to a new DMV record.
+{% endtab %}
+{% endtabs %}
+
 ### 3.29.5 08/15/2022
 
 {% tabs %}
