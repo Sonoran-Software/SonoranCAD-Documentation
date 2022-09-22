@@ -30,7 +30,7 @@ Because multiple residences can be listed at once, it's recommended you update y
 
 The custom record now shows the residency textarea with all owned addresses.
 
-![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (9).png>)
+![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (9) (2).png>)
 
 ## Vehicle Mapping
 

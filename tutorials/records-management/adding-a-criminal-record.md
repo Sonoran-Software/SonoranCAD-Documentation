@@ -1,14 +1,16 @@
 ---
-description: This guide covers creating a new criminal record in Sonoran CAD.
+description: This guide covers creating a new record in Sonoran CAD.
 ---
 
-# Adding a Criminal Record
+# Adding a Record
 
 ### Open the Record Editor
 
-In the police or dispatch page, select "New Record" in the top toolbar.
+In the police, fire, EMS, or dispatch page open the record panel.
 
-![Sonoran CAD's Records Center](<../../.gitbook/assets/image (136) (1) (1) (1) (1) (1) (1) (1).png>)
+This can be found as a [pinned tab](../customization/customizing-your-layout.md#7.-tab-system), via [taskbar search](../customization/customizing-your-layout.md#search-box), or in the taskbar sub menu.
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### Select The Record Type
 
