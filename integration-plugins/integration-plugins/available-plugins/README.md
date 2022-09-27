@@ -29,4 +29,5 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 | [Teamspeak Integration](teamspeak-3.md)                                        | Yes         | Yes         | Yes |
 | [Traffic Stop](traffic-stop.md)                                                | **No**      | Yes         | Yes |
 | [Unit Status](unit-status.md)                                                  | Yes         | Yes         | Yes |
+| [VehReg](vehreg.md)                                                            | No          | Yes         | Yes |
 | [Wraith Radar](wraithv2.md)                                                    | **No**      | Yes         | Yes |

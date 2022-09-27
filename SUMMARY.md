@@ -114,6 +114,7 @@
     * [TeamSpeak 3](integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
     * [Traffic Stop](integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
     * [Unit Status](integration-plugins/integration-plugins/available-plugins/unit-status.md)
+    * [VehReg](integration-plugins/integration-plugins/available-plugins/vehreg.md)
     * [WraithV2](integration-plugins/integration-plugins/available-plugins/wraithv2.md)
   * [Free Plugin Installation - Next Steps](integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
   * [Framework Development Documentation](integration-plugins/integration-plugins/framework-development-documentation/README.md)
