@@ -36,3 +36,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 | defaultRegExpire | The default date that all registrations will expire                    | 01/02/2030 |
 | defaultRegStatus | The default status that all registrations will have \| MUST BE IN CAPS | VALID      |
 | language         | Array of language used within the script                               | English    |
+
+## Usage
+
+### Commands
+
+| reg | Register your current vehicle in CAD |
+| --- | ------------------------------------ |
+
