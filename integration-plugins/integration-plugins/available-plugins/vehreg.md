@@ -1,10 +1,8 @@
 ---
-description: Allows you to register your current vehicle in Sonoran CAD via FiveM command
+description: Register a vehicle with a single in-game command!
 ---
 
 # VehReg
-
-
 
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
