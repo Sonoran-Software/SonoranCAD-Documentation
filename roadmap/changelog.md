@@ -10,6 +10,44 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.30.0 10/04/2022
+
+{% tabs %}
+{% tab title="New" %}
+Admin Identifier Search - via Unit Number
+
+* Admins can now search for unit identifiers via unit number.
+
+\#10700 Call Notes Time Zone
+
+* Call notes now display with the local community time zone.
+{% endtab %}
+
+{% tab title="Changed" %}
+Lookup via Identifier - Optimization
+
+* Updated the way lookups via identifier are ran, now following the explicit department structure defined by admins.
+
+Record Template Optimization
+
+* Moved community record templates to a new database column and separate WS/API methods to send them to the client. This dramatically reduces the size of the community login method, community search, etc. by minimizing the data size.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#10859 Call Note Duplication
+
+* Fixed an issue causing dispatch call notes to duplicate after manually running a call update.
+
+Custom Lookup Types - Client Save
+
+* Fixed an issue causing custom lookup types to not save on the client's admin panel without a refresh.
+
+Dispatch Close - Console Error
+
+* Fixed an issue causing dispatch close events from throwing a client error in the console.
+{% endtab %}
+{% endtabs %}
+
 ### 3.29.6 09/20/2022
 
 {% tabs %}
