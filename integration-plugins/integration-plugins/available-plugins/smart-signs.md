@@ -1,7 +1,7 @@
 ---
 description: >-
-  Our smart signs integration plugin allows you to update roadway signs in-game
-  directly from the CAD!
+  Our smart signs integration resource allows you to update roadway signs
+  in-game directly from the CAD!
 ---
 
 # Smart Signs
@@ -11,7 +11,7 @@ description: >-
 ![London Studios - Smart Signs](<../../../.gitbook/assets/image (222).png>)
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This resource utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -25,11 +25,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 ## Installation Guide
 
 {% hint style="danger" %}
-If you have the original London Studios Smart Signs resource **please remove and/or disable it from running**. Our plugin completely replicates the functionality of the original resource and they will conflict if both are running at the same time.
-{% endhint %}
-
-{% hint style="warning" %}
-This plugin is installed as a standalone resource rather than a traditional plugin. **Do not install into your sonorancad/plugins folder**! It is instead used like a regular resource.
+If you have the original London Studios Smart Signs resource **please remove and/or disable it from running**. Our resource completely replicates the functionality of the original resource and they will conflict if both are running at the same time.
 {% endhint %}
 
 ### 1. Download the Resource
@@ -40,13 +36,21 @@ This resource is managed through Tebex and will require you to login with FiveM.
 
 Once "purchased" you can [download the asset from your keymaster account](https://keymaster.fivem.net/asset-grants).
 
-### 2. Start the Resource
+### 2. Install the Resource
+
+We suggest installing the `smartsigns_sonoran` folder within the `[sonorancad]` folder your integration framework is installed in. The final location of the resource would be `/resources/[sonorancad]/sonoran_smartsigns`
+
+{% hint style="warning" %}
+This plugin is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
+{% endhint %}
+
+### 3. Start the Resource
 
 In your `server.cfg` add a new line **after/below** your `ensure sonorancad` line:
 
 `ensure smartsigns_sonoran`
 
-### 3. Configure your Sign Locations
+### 4. Configure your Sign Locations
 
 Rename `config_RENAME.lua` to `config.lua`.
 
@@ -54,7 +58,7 @@ In the `config.lua` file, you can specify sign locations and labels.
 
 The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration).
 
-### 4. Set your Game Server IP/Port
+### 5. Set your Game Server IP/Port
 
 In the Admin panel, navigate to Advanced > In-Game Integration > Push Events and Live Map
 
