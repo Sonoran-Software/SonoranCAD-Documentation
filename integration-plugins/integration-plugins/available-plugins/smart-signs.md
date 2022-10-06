@@ -20,7 +20,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## Video Showcase
 
-[View our video showcase of the Smart Signs plugin here!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
+[View our video showcase of the Smart Signs resource here!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
 ## Installation Guide
 
@@ -41,7 +41,7 @@ Once "purchased" you can [download the asset from your keymaster account](https:
 We suggest installing the `smartsigns_sonoran` folder within the `[sonorancad]` folder your integration framework is installed in. The final location of the resource would be `/resources/[sonorancad]/sonoran_smartsigns`
 
 {% hint style="warning" %}
-This plugin is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
+This resource is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
 {% endhint %}
 
 ### 3. Start the Resource
@@ -56,7 +56,7 @@ Rename `config_RENAME.lua` to `config.lua`.
 
 In the `config.lua` file, you can specify sign locations and labels.
 
-The smart signs plugin also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration).
+The smart signs resource also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration).
 
 ### 5. Set your Game Server IP/Port
 
