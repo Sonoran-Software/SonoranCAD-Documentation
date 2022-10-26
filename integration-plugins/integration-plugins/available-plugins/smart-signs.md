@@ -38,21 +38,29 @@ Once "purchased" you can [download the asset from your keymaster account](https:
 
 ### 2. Install the Resource
 
-We suggest installing the `smartsigns_sonoran` folder within the `[sonorancad]` folder your integration framework is installed in. The final location of the resource would be `/resources/[sonorancad]/sonoran_smartsigns`
+We suggest installing the `smartsigns_sonoran` and `smartsigns_sononran_helper` folders within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below...
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Smartsigns installed to [sonorancad] folder</p></figcaption></figure>
 
 {% hint style="warning" %}
 This resource is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
 {% endhint %}
 
-### 3. Start the Resource
+### 3. Add Requirements to Server.cfg file
 
-In your `server.cfg` add a new line **after/below** your `ensure sonorancad` line:
+In your `server.cfg` add the following new line **after/below** your `ensure sonorancad` line:
 
-`ensure smartsigns_sonoran`
+```lua
+ensure smartsigns_sonoran
+
+# Permissions for Sonoran Smartsigns Auto-updater (REQUIRED)
+add_ace resource.smartsigns_sonoran command allow
+add_ace resource.smartsigns_sonoran_helper command allow
+```
 
 ### 4. Configure your Sign Locations
 
-Rename `config_RENAME.lua` to `config.lua`.
+Rename `config_RENAMEME.lua` to `config.lua`.
 
 In the `config.lua` file, you can specify sign locations and labels.
 
@@ -105,10 +113,10 @@ We understand that it may be confusing to use for some of our users. If you need
 
 ## Smart Signs Configuration
 
-You can easily open the `config_smartsigns.lua` and configure the script to your liking in either **notepad**, **notepad ++** or using **Visual Studio Code.**
+You can easily open the `config.lua` and configure the script to your liking in either **notepad**, **notepad ++** or using **Visual Studio Code.**
 
 {% hint style="warning" %}
-The config examples below are not the full configuration file and further explanation comments of what each setting does can be found in the `config_smartsigns.lua` file.
+The config examples below are not the full configuration file and further explanation comments of what each setting does can be found in the `config.lua` file.
 {% endhint %}
 
 ### **Main Configuration**
@@ -183,7 +191,7 @@ signs = {
 },
 ```
 
-To make it easier to setup signs we have added a `/newsign` command which will only work while **developerMode** is set to true in `config_smartsigns.lua`.\
+To make it easier to setup signs we have added a `/newsign` command which will only work while **developerMode** is set to true in `config.lua`.\
 This command will spawn a sign prop in which can be repositioned with the following controls:
 
 **PAGE UP** — move sign up\
@@ -204,9 +212,21 @@ We’ve made it simpler than ever to integrate permissions into the resource. Th
 
 This means that you can restrict certain players, permissions or even jobs/groups from setting the message on a sign.
 
+
+
+### **Sonoran CAD Permission Integration**
+
+In the `config.lua` file, you can easily enable a permission check to allow "active units" in the CAD to change smartsigns in game.
+
+Simply ensure that `useUnitPermission` is set to `true` to enable this check
+
+```lua
+useUnitPermission = true,
+```
+
 ### **Ace Permission Integration**
 
-In the `config_smartsigns.lua` file, you can easily enable ace permissions and set the required permission.
+In the `config.lua` file, you can easily enable ace permissions and set the required permission.
 
 You could then add this to certain players in the `server.cfg` or even groups as part of a server framework.
 
@@ -221,7 +241,7 @@ acePermissions = {
 
 ### **vRP Integration**
 
-In the `config_smartsigns.lua` file, you can easily enable vRP Integration including both `vRP.hasPermission` checks and `vRP.hasGroup` checks. This can allow you to restrict it to a police job for example, or highways maintenance job, if that exists on your server.
+In the `config.lua` file, you can easily enable vRP Integration including both `vRP.hasPermission` checks and `vRP.hasGroup` checks. This can allow you to restrict it to a police job for example, or highways maintenance job, if that exists on your server.
 
 Simply changed enabled to true to enable vRP integration. This will then generate the necessary vRP Proxy on the server, enabling global vRP functions such as GetUserId.
 
@@ -249,7 +269,7 @@ vRP = {
 
 ### **ESX Integration**
 
-In the `config_smartsigns.lua` file, you can easily enable ESX Integration using a job check.
+In the `config.lua` file, you can easily enable ESX Integration using a job check.
 
 Simply changed enabled to true to enable ESX integration. This will then generate the necessary ESX Shared Object on the server, enabling you to use ESX functions.
 

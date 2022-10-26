@@ -325,7 +325,7 @@ The default `Civilian` record has the following field UIDs:
 
 `first` `last` `mi` `dob` `age` `sex` `aka` `zip` `occupation` `height` `weight` `skin` `hair` `eyes` `emergencyContact` `emergencyRelationship` `emergencyContactNumber` `residence`
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 When creating your custom record section with civilian search imports, those field UIDs will also need to match. The image below shows a custom record with the civilian search section toggled with the matching field UIDs.
 
