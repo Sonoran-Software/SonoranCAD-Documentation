@@ -1,7 +1,7 @@
 ---
 description: >-
   Not only do Sonoran Servers customers receive free CAD plugin installation,
-  but can save 30% on your Sonoran CAD subscription every month when you
+  but can save 30%-100% on your Sonoran CAD subscription every month when you
   purchase a Windows Server from Sonoran Servers!
 ---
 
@@ -19,16 +19,11 @@ If you haven't already, [purchase any server plan with Windows as the operating 
 
 Reach out on our [customer support site](https://support.sonoransoftware.com) and a team member will help install and configure your Sonoran CAD integration plugins for free!
 
-## CAD: 30% off Discount
+## CAD: 30%-100% off Discount
 
 ![Sonoran Servers & Sonoran CAD - Bundle and Save!](<../../.gitbook/assets/image (83).png>)
 
+![Sonoran One - Free with a Dedicated Server](<../../.gitbook/assets/Bannerprojectsenoranone (1).png>)
+
 [Learn more about this offer!](https://info.sonoranservers.com/pricing/promotions-and-discounts/30-off-software)
 
-## Free Five PD Installation
-
-![Sonoran Servers - Free Five PD Installation](<../../.gitbook/assets/image (117).png>)
-
-We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers can also receive free FivePD installation!
-
-[Learn more about our free Five PD installation](https://sonoranservers.com/fivepd.php)!
