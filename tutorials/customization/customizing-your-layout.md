@@ -25,7 +25,7 @@ You can right click on any panel and to reveal multiple menu options.
 3. Minimize: This minimizes the window to a tab at the top of your screen.
 4. Close: This closes the window.
 
-![Sonoran CAD - Window Menu Options](<../../.gitbook/assets/image (147).png>)
+![Sonoran CAD - Window Menu Options](<../../.gitbook/assets/image (325).png>)
 
 ### 2. Quick Resize
 
@@ -35,7 +35,7 @@ You can select one of the quick positions to move the window to one of the 9 qua
 
 Additionally, you can hover over the top edges of the window to click and drag the size.
 
-![Sonoran CAD - Quick Resize](<../../.gitbook/assets/image (146).png>)
+![Sonoran CAD - Quick Resize](<../../.gitbook/assets/image (379).png>)
 
 ### 3. Dragging to Position
 
@@ -61,7 +61,7 @@ The task bar can be opened with a configurable [hotkey](https://app.gitbook.com/
 
 Here, you can search to quickly filter options. When the results have been filtered down to a single window, the search label will turn green indicating the window shortcut is available. Simply press `ENTER` to open the window.
 
-![Sonoran CAD - Taskbar Filter](<../../.gitbook/assets/image (206).png>)
+![Sonoran CAD - Taskbar Filter](<../../.gitbook/assets/image (17).png>)
 
 #### Positioning
 
@@ -71,7 +71,7 @@ The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
 To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System > Customization
 
-![Sonoran CAD - Taskbar Positioning](<../../.gitbook/assets/image (193).png>)
+![Sonoran CAD - Taskbar Positioning](<../../.gitbook/assets/image (14).png>)
 
 ### 7. Tab System
 
@@ -88,7 +88,7 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.\
 _Note: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
-![Sonoran CAD - Tabs with Icon and Text](<../../.gitbook/assets/image (167).png>)
+![Sonoran CAD - Tabs with Icon and Text](<../../.gitbook/assets/image (356).png>)
 
 ### 8. Classic Layout
 
@@ -98,7 +98,7 @@ For some users, modifying the positions of dispatching panels may be too complic
 
 Right Click on the Task Bar > Customization > Classic Layout
 
-![Sonoran CAD - Classic Layout](<../../.gitbook/assets/image (194).png>)
+![Sonoran CAD - Classic Layout](<../../.gitbook/assets/image (39).png>)
 
 #### Change Taskbar and Button Position(s)
 

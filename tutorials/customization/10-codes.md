@@ -13,7 +13,7 @@ Ex: 10-10: Fight in Progress
 
 Under Admin > Customization > 10-Codes you can add, edit, or remove 10-codes for your community.
 
-![Sonoran CAD - 10-Codes](<../../.gitbook/assets/image (100).png>)
+![Sonoran CAD - 10-Codes](<../../.gitbook/assets/image (186).png>)
 
 ### My locality doesn't call them "10-Codes"
 
@@ -36,7 +36,7 @@ Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsh
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 
-![Sonoran CAD - Copy 10-Codes Spreadsheet](<../../.gitbook/assets/image (101).png>)
+![Sonoran CAD - Copy 10-Codes Spreadsheet](<../../.gitbook/assets/image (102).png>)
 
 ### 2. Add Your 10-Codes
 
@@ -47,13 +47,13 @@ Now that you have copied this sheet into your Google Drive, you can add new rows
 ****Every 10-code must be on a separate row to be properly imported into Sonoran CAD.
 {% endhint %}
 
-![Sonoran CAD - 10-Codes CSV](<../../.gitbook/assets/image (102).png>)
+![Sonoran CAD - 10-Codes CSV](<../../.gitbook/assets/image (254).png>)
 
 ### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](<../../.gitbook/assets/image (103).png>)
+![Google Sheets - Download CSV](<../../.gitbook/assets/image (177).png>)
 
 ### 4. Import the CSV File
 
@@ -62,9 +62,9 @@ In Sonoran CAD, navigate to Admin > Customization > 10-Codes
 In the 10-codes section, select the "Import" button.\
 Then, select "CSV" as the import type and select your downloaded CSV file.
 
-![Sonoran CAD - Import Data](<../../.gitbook/assets/image (104).png>)
+![Sonoran CAD - Import Data](<../../.gitbook/assets/image (143).png>)
 
-![File Selector - Select CSV](<../../.gitbook/assets/image (105).png>)
+![File Selector - Select CSV](<../../.gitbook/assets/image (129).png>)
 
 After selecting the CSV file, your 10-codes will be imported into the CAD and saved automatically.
 
@@ -124,8 +124,8 @@ In Sonoran CAD, navigate to Admin > Customization > 10-Codes
 In the penal codes section, select the "Import" button.\
 Then, select "JSON" and paste the JSON string array of 10-codes.
 
-![](<../../.gitbook/assets/image (104).png>)
+![](<../../.gitbook/assets/image (143).png>)
 
-![Sonoran CAD - Paste JSON Content](<../../.gitbook/assets/image (112).png>)
+![Sonoran CAD - Paste JSON Content](<../../.gitbook/assets/image (98).png>)
 
 After pasting the JSON content, your 10-codes will be imported into the CAD and saved automatically.

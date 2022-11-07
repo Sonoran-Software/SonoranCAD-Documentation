@@ -75,7 +75,7 @@ Our official [Discord bot](discord-bot/) allows you to react to webhooks like a 
 Webhook footers contain metadata that can be pulled from a bot for further integration.\
 These follow the format: `USERNAME or UUID` | `TYPE` | `ID`
 
-![Sonoran CAD - Webhook Footer Data](<../.gitbook/assets/image (161).png>)
+![Sonoran CAD - Webhook Footer Data](<../.gitbook/assets/image (365).png>)
 
 | Type               | ID Value                            |
 | ------------------ | ----------------------------------- |

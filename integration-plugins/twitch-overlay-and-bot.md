@@ -8,11 +8,11 @@ description: >-
 
 ![](../.gitbook/assets/live-banner.png)
 
-![Sonoran CAD - Live Stream Overlay](<../.gitbook/assets/overlay (2).gif>)
+![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/overlay.gif)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (2).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119).png>)
 
-![Stream Overlay - Bodycam](<../.gitbook/assets/image (258).png>)
+![Stream Overlay - Bodycam](<../.gitbook/assets/image (240).png>)
 
 ## What is Sonoran CAD's Livestream Overlay?
 
@@ -60,18 +60,18 @@ Here, you can enable and customize the data placement and keys just as before wi
 
 You can also optionally specify a different port for the bodycam webpage to run on (`9990` is the default).
 
-![](<../.gitbook/assets/image (259).png>)
+![](<../.gitbook/assets/image (169).png>)
 
 ### 3. Add the Bodycam to OBS
 
 In OBS, add a new "Browser" source and paste the URL listed in the bodycam section.\
 By default, this will be `http://localhost:9990`
 
-![OBS - New Browser Source](<../.gitbook/assets/image (260).png>)
+![OBS - New Browser Source](<../.gitbook/assets/image (213).png>)
 
 Paste the URL into the browser source and hit OK.
 
-![](<../.gitbook/assets/image (261).png>)
+![](<../.gitbook/assets/image (149).png>)
 
 ### 4. Customize the Size and Placement
 
@@ -87,7 +87,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (137).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
@@ -143,7 +143,7 @@ The smart lighting section has multiple `Scenes`
 
 Expand the `Scene` > `Add Bulb` > `Search for Bulbs` > Select `Wyze` or `Philips Hue`
 
-![Sonoran CAD - Scan for Smart Bulbs](<../.gitbook/assets/image (276).png>)
+![Sonoran CAD - Scan for Smart Bulbs](<../.gitbook/assets/image (87).png>)
 
 #### Credentials: Wyze
 
@@ -165,9 +165,9 @@ You may need to manually enter the bridge's IP address. This is most easily foun
 5. Toggle `DHCP` On
 6. Scan for the bridge in Sonoran CAD
 
-![Philips Hue - Copy Bridge IP](<../.gitbook/assets/image (281).png>)
+![Philips Hue - Copy Bridge IP](<../.gitbook/assets/image (117).png>)
 
-![Sonoran CAD - Manual Hue Bridge IP](<../.gitbook/assets/image (282).png>)
+![Sonoran CAD - Manual Hue Bridge IP](<../.gitbook/assets/image (221).png>)
 
 #### Credentials: Govee WiFi
 
@@ -177,7 +177,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-<img src="../.gitbook/assets/image (295) (1) (1) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (259).png" alt="" data-size="original">
 
 **2. Retrieve your API Key and Search**
 
@@ -193,7 +193,7 @@ Sonoran CAD will scan for all locally active Bluetooth devices. Govee bulbs will
 
 If your bulb is not discoverable, turn the bulb's power off entirely for \~5 seconds then turn it back on. This should place your bulb into discovery mode.
 
-![](<../.gitbook/assets/image (293) (1) (1).png>)
+![](<../.gitbook/assets/image (67).png>)
 
 **2. Add the Bulb**
 
@@ -201,7 +201,7 @@ Click on the Bluetooth bulb to add it to your scene, and continue on to building
 
 Bluetooth bulbs will have their status listed on the left side. When you click the `Test` button, it may **take up to 60 seconds** for the connection to complete.
 
-![](<../.gitbook/assets/image (294) (1) (1).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 
 
@@ -215,7 +215,7 @@ We recommend keeping the delays no shorter than:\
 `250ms` for Wyze Color Bulbs\
 `500ms` for Philips Hue Bulbs
 
-![](<../.gitbook/assets/image (277).png>)
+![](<../.gitbook/assets/image (212).png>)
 
 ### 3. Testing and Using In-Game
 
@@ -247,7 +247,7 @@ Create a new Twitch OAuth token by going to [https://twitchapps.com/tmi/](https:
 Using the overlay in OBS, select the `Twitch Bot` button in the taskbar.\
 Paste in your Twitch channel name and OAuth key.
 
-![Overlay - Twitch Bot Credentials](<../.gitbook/assets/image (250).png>)
+![Overlay - Twitch Bot Credentials](<../.gitbook/assets/image (147).png>)
 
 Once set, you can press `Test` to display a test message in your Twitch chat.
 
@@ -257,7 +257,7 @@ Every piece of unit and call data can be toggled on or off individually.
 
 **It is highly recommended to only toggle on data updates that will not be frequently spammed.** Toggling too many data fields and updating data too quickly may result in **Twitch rate limiting your bot.**
 
-![Overlay - Twitch Data Fields](<../.gitbook/assets/image (252).png>)
+![Overlay - Twitch Data Fields](<../.gitbook/assets/image (121).png>)
 
 ### 4. Save and Run
 
@@ -265,7 +265,7 @@ Once you have configured your Twitch Bot's credentials and data fields, press `S
 
 Now, whenever one of those data fields is updated, your Twitch bot will send a chat message.
 
-![Sonoran CAD - Stream Overlay](../.gitbook/assets/overlay.gif)
+![Sonoran CAD - Stream Overlay](<../.gitbook/assets/overlay (2).gif>)
 
 ### Debugging the Twitch Bot
 
@@ -273,7 +273,7 @@ If you're having issues seeing the Twitch bot messages, view the `Twitch Logs` p
 
 This will contain valuable information on the twitch bot's connection, rate limiting, and other errors.
 
-![Overlay - Twitch Logs](<../.gitbook/assets/image (251).png>)
+![Overlay - Twitch Logs](<../.gitbook/assets/image (146).png>)
 
 If you have too many data fields toggled, and are sending Twitch updates too quickly you may experience rate limiting.
 
@@ -305,7 +305,7 @@ In the `Configuration` tab, toggle on the desired data fields for your unit and 
 For every field toggled, a text file will be generated to be viewed in OBS.\
 However, we **recommend creating custom text files** to combine multiple data fields in a single text file.
 
-![Stream Overlay - Custom Text Files](<../.gitbook/assets/image (254).png>)
+![Stream Overlay - Custom Text Files](<../.gitbook/assets/image (127).png>)
 
 #### Data Field Keys:
 
@@ -343,13 +343,13 @@ Don't forget to save your configuration!
 
 In OBS, add a new text source:
 
-![OBS - New Text Source](<../.gitbook/assets/image (246).png>)
+![OBS - New Text Source](<../.gitbook/assets/image (231).png>)
 
 In the text source properties, select `Read from File` and select one of your generated data key files from the [location specified earlier](twitch-overlay-and-bot.md#2-configuring-text-file-location).
 
-![Stream Overlay - Text Files](<../.gitbook/assets/image (249).png>)
+![Stream Overlay - Text Files](<../.gitbook/assets/image (103).png>)
 
-![Stream Overlay - Text file Viewer](<../.gitbook/assets/image (248).png>)
+![Stream Overlay - Text file Viewer](<../.gitbook/assets/image (216).png>)
 
 You can now place the text field anywhere in your OBS stream layout.
 

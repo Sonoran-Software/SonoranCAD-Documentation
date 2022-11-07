@@ -6,7 +6,7 @@ description: Learn more about Sonoran CAD's advanced logging feature!
 
 Sonoran CAD logs all user actions in-depth, allowing community administrators to take action against user abuse and help debug common issues.
 
-![Sonoran CAD - Admin Logs](<../../.gitbook/assets/image (264).png>)
+![Sonoran CAD - Admin Logs](<../../.gitbook/assets/image (176).png>)
 
 ## Searching for Logs
 
@@ -24,14 +24,14 @@ The log `Type` dropdown allows you to search and select specific log types. This
 
 If left blank, no log filtering will be applied.
 
-![](<../../.gitbook/assets/image (262).png>)
+![](<../../.gitbook/assets/image (162).png>)
 
 #### Log Date
 
 The log `Date` selection allows you to choose the specific date the logs are from.\
 _Note: Dates and the accompanying timestamps are based in UTC._
 
-![](<../../.gitbook/assets/image (263).png>)
+![](<../../.gitbook/assets/image (170).png>)
 
 #### Username
 

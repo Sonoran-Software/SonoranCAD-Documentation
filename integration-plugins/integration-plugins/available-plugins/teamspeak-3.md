@@ -44,14 +44,14 @@ In the `config_ts3integration.json` file, enter in the following:
 | enforced\_channels  | A list of channels that units will be kicked from if they log out of the CAD                                                                                                                                                                        |
 | logoutGraceTime     | <p>The amount of time between the user logging out of the CAD and being kicked from the TS3 <code>enforced_channels</code>.</p><p>This prevents brief internet disconnections from the CAD from continually kicking users out of their channel.</p> |
 
-![TS3 - Integration Config](<../../../.gitbook/assets/image (140).png>)
+![TS3 - Integration Config](<../../../.gitbook/assets/image (353).png>)
 
 ### 5. Retrieve Your Individual TS3 ID
 
 Every member from your community will need to retrieve their unique TS3 ID.\
 This is found in TS under Tools > Identities > Default > Unique ID
 
-![TS3 - Retrieve your unique ID](<../../../.gitbook/assets/image (141).png>)
+![TS3 - Retrieve your unique ID](<../../../.gitbook/assets/image (310).png>)
 
 ### 6. Add your TS3 ID as an API ID
 
@@ -61,7 +61,7 @@ Paste in this TS3 unique ID as a [new API ID in the CAD](../../../sonoran-cad/ap
 Every member of your community will need to add their unique ID to their CAD account in your community.
 {% endhint %}
 
-![API ID - Paste New ID](<../../../.gitbook/assets/image (142).png>)
+![API ID - Paste New ID](<../../../.gitbook/assets/image (372).png>)
 
 ### 7. Utilize the TS3 Integration
 
@@ -69,6 +69,6 @@ Once configured, when the user joins the TS3 server they will be granted the `on
 
 Signing out of or exiting the CAD will result in the user being kicked from any of the `enforced_channels` from the config.
 
-![TS3 - Server Group Granted](<../../../.gitbook/assets/image (143).png>)
+![TS3 - Server Group Granted](<../../../.gitbook/assets/image (341).png>)
 
-![TS3 - Channel Kicked](<../../../.gitbook/assets/image (164).png>)
+![TS3 - Channel Kicked](<../../../.gitbook/assets/image (164) (2).png>)

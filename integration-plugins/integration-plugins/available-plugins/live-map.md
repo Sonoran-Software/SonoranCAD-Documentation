@@ -46,7 +46,7 @@ In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Eve
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map).
 
-![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (298) (1).png>)
+![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (53).png>)
 
 ### 4. Set Your API ID
 
@@ -94,7 +94,7 @@ Or, quickly auto-open and search for the location by clicking the search icon:
 
 You can toggle specific blips visibility and outline colors for police, fire, EMS, and dispatch.
 
-![Live Map - Blip Customization](<../../../.gitbook/assets/image (299) (1).png>)
+![Live Map - Blip Customization](<../../../.gitbook/assets/image (45).png>)
 
 ### **Unit Blips**
 
@@ -108,7 +108,7 @@ You can also easily filter the map to specific units by selecting them in the ac
 
 Clicking on a unit blip allows you to add the unit to a call, add the unit to a group, send the unit lookup results, edit the unit's information, toggle their panic state, and more.
 
-![Live Map - Unit Blip Options](<../../../.gitbook/assets/image (297).png>)
+![Live Map - Unit Blip Options](<../../../.gitbook/assets/image (66).png>)
 
 #### Drag-and-Drop
 
@@ -134,7 +134,7 @@ Emergency calls placed in-game will also appear on the live map. You can hover o
 
 Clicking on the emergency blip allows you to import the call to your editor or remove the emergency call.
 
-![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (296) (1).png>)
+![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (42).png>)
 
 #### Drag-and-Drop
 
@@ -146,7 +146,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
-![Live Map - Smart Signs](<../../../.gitbook/assets/image (300).png>)
+![Live Map - Smart Signs](<../../../.gitbook/assets/image (73).png>)
 
 ## Using a Custom Map
 
@@ -169,16 +169,16 @@ Extract the images from the YTD files with a program like OpenIV.\
 `minimap_sea_2_0.png`\
 `minimap_sea_2_1.png`
 
-![OpenIV - Extract Images](<../../../.gitbook/assets/image (91).png>)
+![OpenIV - Extract Images](<../../../.gitbook/assets/image (131).png>)
 
-![OpenIV - Save Images](<../../../.gitbook/assets/image (92).png>)
+![OpenIV - Save Images](<../../../.gitbook/assets/image (193).png>)
 
 ### 2. Upload Images
 
 Navigate to Admin > Advanced > In-Game Integration > Live Map and Push Events\
 Select "Upload Custom" and upload all six correctly named files.
 
-![Live Map - Custom Map Uploader](<../../../.gitbook/assets/image (93).png>)
+![Live Map - Custom Map Uploader](<../../../.gitbook/assets/image (179).png>)
 
 ### 3. File Size
 

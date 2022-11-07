@@ -33,7 +33,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 **View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
 
-![Sonoran CAD's custom plugin framework and installation system!](<../.gitbook/assets/image (43).png>)
+![Sonoran CAD's custom plugin framework and installation system!](<../.gitbook/assets/image (327).png>)
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
@@ -57,7 +57,7 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 ### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
 
-![Sonoran CAD x London Studios](<../.gitbook/assets/image (220).png>)
+![Sonoran CAD x London Studios](<../.gitbook/assets/image (46).png>)
 
 We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
@@ -69,15 +69,15 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../integration-plugins/integration-plugins/available-plugins/tablet.md)!
 
-![](<../.gitbook/assets/image (273).png>)
+![](<../.gitbook/assets/image (250).png>)
 
 ### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
 ![](../.gitbook/assets/live-banner.png)
 
-![Sonoran CAD - Livestream Overlay](<../.gitbook/assets/overlay (2).gif>)
+![Sonoran CAD - Livestream Overlay](../.gitbook/assets/overlay.gif)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (278) (1) (1) (1) (1) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (95).png>)
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
@@ -97,7 +97,7 @@ Only Sonoran CAD lets you easily multitask and open multiple search windows, rec
 
 Drag-and-drop allows you to easily view calls, attach units, and more!
 
-![Sonoran CAD - Custom Layouts](<../.gitbook/assets/3\_10\_features (1).gif>)
+![Sonoran CAD - Custom Layouts](../.gitbook/assets/3\_10\_features.gif)
 
 ### 🎤 [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
 
@@ -139,13 +139,13 @@ Whether it's your own firearms registration system, an in-depth vehicle accident
 
 You can even index specific record fields for [custom search types](../tutorials/customization/custom-search-types.md). Allowing you to run a lookup on your record's custom ID numbers, phone numbers, and more!
 
-![Create custom record and report formats!](<../.gitbook/assets/image (39).png>)
+![Create custom record and report formats!](<../.gitbook/assets/image (376).png>)
 
 ### 📧 Custom Branding
 
 Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
 
-![Sonoran CAD's custom email branding!](<../.gitbook/assets/image (40).png>)
+![Sonoran CAD's custom email branding!](<../.gitbook/assets/image (318).png>)
 
 ### 🧍 Self-Dispatch
 
@@ -156,7 +156,7 @@ Sonoran CAD allows your units to easily [self-dispatch](../tutorials/dispatching
 
 Looking to store official criminal records or prior call logs in a PDF format? Sonoran CAD allows you to easily view and [print records to PDF](../tutorials/records-management/pdf-records.md).
 
-![Sonoran CAD's print to PDF system!](<../.gitbook/assets/image (41).png>)
+![Sonoran CAD's print to PDF system!](<../.gitbook/assets/image (328).png>)
 
 ### 🏠 Auto Suggested Street Names and Addresses
 
@@ -168,7 +168,7 @@ Sonoran CAD allows you to upload a [custom spreadsheet with your game's street n
 
 Only Sonoran CAD allows you to configure customizable [hotkeys](../tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](../downloads/), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
 
-![Sonoran CAD's global hotkey configuration!](<../.gitbook/assets/image (42).png>)
+![Sonoran CAD's global hotkey configuration!](<../.gitbook/assets/image (342).png>)
 
 ### 📦 Easy Migration
 

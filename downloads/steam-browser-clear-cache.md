@@ -8,10 +8,10 @@ description: Learn how to clear your Steam browser's cache.
 
 In the Steam application, navigate to `Steam` > `Settings`
 
-![Steam - Open Settings](<../.gitbook/assets/image (265).png>)
+![Steam - Open Settings](<../.gitbook/assets/image (94).png>)
 
 ### 2. Clear Web Browser Cache
 
 In the settings page, select `Web Browser` > `Delete Web Browser Cache`
 
-![Steam - Clear Browser Cache](<../.gitbook/assets/image (266).png>)
+![Steam - Clear Browser Cache](<../.gitbook/assets/image (222).png>)

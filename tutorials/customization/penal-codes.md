@@ -15,9 +15,9 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 Penal codes can easily be referenced and cited in records/reports as charges.
 
-![Sonoran CAD - Penal Code Reference Window](<../../.gitbook/assets/image (47).png>)
+![Sonoran CAD - Penal Code Reference Window](<../../.gitbook/assets/image (338).png>)
 
-![Sonoran CAD - Charges Section](<../../.gitbook/assets/image (46).png>)
+![Sonoran CAD - Charges Section](<../../.gitbook/assets/image (368).png>)
 
 ### 1. Charge Types
 
@@ -27,7 +27,7 @@ You can also use the "Auto Sort" feature to quickly format the order of these ch
 
 Be sure to hit "Save" before exiting the page.
 
-![Sonoran CAD - Custom Charge Types](<../../.gitbook/assets/image (45).png>)
+![Sonoran CAD - Custom Charge Types](<../../.gitbook/assets/image (369).png>)
 
 ### 2. Bond Types
 
@@ -35,15 +35,15 @@ You can create your own "Bond'/Bail Type" options for penal codes. Again, if you
 
 You can also use the "Auto Sort" feature to quickly format the order of these charge types.
 
-![Sonoran CAD - Custom Bond & Bail Types](<../../.gitbook/assets/image (48).png>)
+![Sonoran CAD - Custom Bond & Bail Types](<../../.gitbook/assets/image (326).png>)
 
 ### 3. Penal Codes
 
 Adding, editing, or removing a penal code is easy. Simply click on the existing code to edit it, or press "New Penal Code" to create a new one.
 
-![Sonoran CAD - Penal Code Management](<../../.gitbook/assets/image (50).png>)
+![Sonoran CAD - Penal Code Management](<../../.gitbook/assets/image (361).png>)
 
-![Sonoran CAD - Penal Code Editor](<../../.gitbook/assets/image (49).png>)
+![Sonoran CAD - Penal Code Editor](<../../.gitbook/assets/image (345).png>)
 
 ### 4. My locality doesn't call them "Penal Codes"
 
@@ -66,7 +66,7 @@ Navigate to our [official penal code Google sheet ](https://docs.google.com/spre
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 
-![Penal Codes - Copy Sheet](<../../.gitbook/assets/image (94).png>)
+![Penal Codes - Copy Sheet](<../../.gitbook/assets/image (185).png>)
 
 ### 2. Add Your Penal Codes
 
@@ -79,13 +79,13 @@ Additionally, the `bondAmount` column must be kept as a number.\
 All other columns must be formatted as text.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (95).png>)
+![](<../../.gitbook/assets/image (208).png>)
 
 ### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](<../../.gitbook/assets/image (96).png>)
+![Google Sheets - Download CSV](<../../.gitbook/assets/image (155).png>)
 
 ### 4. Import the CSV File
 
@@ -96,7 +96,7 @@ Then, select "CSV" as the import type and select your downloaded CSV file.
 
 ![Sonoran CAD - Import Data](<../../.gitbook/assets/image (97).png>)
 
-![File Selector - Select File](<../../.gitbook/assets/image (98).png>)
+![File Selector - Select File](<../../.gitbook/assets/image (202).png>)
 
 After selecting the CSV file, your penal codes will be imported into the CAD and saved automatically.
 
@@ -145,6 +145,6 @@ Then, select "JSON" and paste the JSON object array of penal codes.
 
 ![Sonoran CAD - Import Data](<../../.gitbook/assets/image (97).png>)
 
-![Sonoran CAD - Paste JSON Content](<../../.gitbook/assets/image (111).png>)
+![Sonoran CAD - Paste JSON Content](<../../.gitbook/assets/image (210).png>)
 
 After pasting the JSON content, your penal codes will be imported into the CAD and saved automatically.

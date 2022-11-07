@@ -10,13 +10,13 @@ In the police, fire, EMS, or dispatch page open the record panel.
 
 This can be found as a [pinned tab](../customization/customizing-your-layout.md#7.-tab-system), via [taskbar search](../customization/customizing-your-layout.md#search-box), or in the taskbar sub menu.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 ### Select The Record Type
 
 Click the "New Record" button and a dropdown menu will appear, where users can select the new record type.
 
-![Selecting the New Record you would like to make](<../../.gitbook/assets/image (137).png>)
+![Selecting the New Record you would like to make](<../../.gitbook/assets/image (167).png>)
 
 Records (by default) are comprised of several sections:
 
@@ -34,5 +34,5 @@ All records and reports are fully customizable, you may change the fields as muc
 
 Civilian and vehicle information sections also include a search feature. Here, you can search and import information from a registered civilian or vehicle. This feature can also [search for civilians and vehicles directly from your in-game database](../../integration-plugins/database-sync-and-merge/).
 
-![Sonoran CAD's record information search feature](<../../.gitbook/assets/image (139).png>)
+![Sonoran CAD's record information search feature](<../../.gitbook/assets/image (192).png>)
 

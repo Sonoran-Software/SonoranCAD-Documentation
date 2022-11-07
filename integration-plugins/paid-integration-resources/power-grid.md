@@ -4,7 +4,7 @@ description: Learn more about our Power Grid script on the Sonoran Store!
 
 # Power Grid
 
-![Sonoran - Power Grid](<../../.gitbook/assets/image (280).png>)
+![Sonoran - Power Grid](<../../.gitbook/assets/image (276).png>)
 
 Sonoran's Power Grid network allows players to manipulate and disable nearly any in-game feature imaginable!
 

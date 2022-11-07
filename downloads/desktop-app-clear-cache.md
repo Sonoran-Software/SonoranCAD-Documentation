@@ -12,10 +12,10 @@ In the window search bar type `run` and open the run application.\
 Enter `appdata` then hit `Ok`\
 
 
-![Windows - Run AppData](<../.gitbook/assets/image (133).png>)
+![Windows - Run AppData](<../.gitbook/assets/image (105).png>)
 
 ### 2. Delete the Cache Folder
 
 Navigate to `Roaming` > `Sonoran CAD` and delete the `Cache`, `Local Storage`, and `Session Storage` folders.
 
-![Desktop App - Cache Folders](<../.gitbook/assets/image (295).png>)
+![Desktop App - Cache Folders](<../.gitbook/assets/image (108).png>)

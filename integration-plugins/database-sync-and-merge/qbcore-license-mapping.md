@@ -12,9 +12,9 @@ The player's first and last name is stored as JSON in the `charinfo` column. We'
 
 The `citizenid` column stores a unique player ID. This will be our `Character Mapping Column`.
 
-![](<../../.gitbook/assets/image (308).png>)
+![](<../../.gitbook/assets/image (268).png>)
 
-![](<../../.gitbook/assets/image (309) (1).png>)
+![](<../../.gitbook/assets/image (294).png>)
 
 ### Multiple Residency
 
@@ -22,15 +22,15 @@ QB Core also allows players to own multiple residences at once.
 
 Sonoran CAD's DB Sync will pull all of these from their external `player_houses` table.
 
-![QB Core - DB Sync - Residency Mapping](<../../.gitbook/assets/image (8).png>)
+![QB Core - DB Sync - Residency Mapping](<../../.gitbook/assets/image (283).png>)
 
 Because multiple residences can be listed at once, it's recommended you update your custom record's residence field to the `textarea` type.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (284).png>)
 
 The custom record now shows the residency textarea with all owned addresses.
 
-![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (9) (2).png>)
+![QB Core - Multi Residence in Custom Record with DB Sync](<../../.gitbook/assets/image (288).png>)
 
 ## Vehicle Mapping
 
@@ -42,9 +42,9 @@ The `plate` column stores the vehicle's license plates.
 
 You can configure other custom fields may include color, make, model, etc. Vehicle colors are often stored as a number. You can use [friendly mapping](./#friendly-mapping) to convert a number to a color name.
 
-![](<../../.gitbook/assets/image (307).png>)
+![](<../../.gitbook/assets/image (271).png>)
 
-![](<../../.gitbook/assets/image (16) (4).png>)
+![](<../../.gitbook/assets/image (295).png>)
 
 ## License Mapping
 
@@ -56,7 +56,7 @@ You will first need to edit the License record to adapt it for how QBCore stores
 
 `Admin Panel` -> `Customization` -> `Custom Records` -> Click `#4 - License`
 
-![Sonoran CAD Custom Record Editor](<../../.gitbook/assets/image (301) (1).png>)
+![Sonoran CAD Custom Record Editor](<../../.gitbook/assets/image (83).png>)
 
 ### **2**. Edit License Information Section
 
@@ -66,7 +66,7 @@ Replace the last three fields in the `License Information:` section with the fol
 **Don't forget to click Save before continuing!**
 {% endhint %}
 
-![Sonoran CAD custom record editor](<../../.gitbook/assets/image (290).png>)
+![Sonoran CAD custom record editor](<../../.gitbook/assets/image (247).png>)
 
 ### 3. Open DBSync Settings
 
@@ -80,10 +80,10 @@ As of writing on 2/28/2022, the following pictured settings will work for QBCore
 We are aware of the misspelling "licence", this is intentional in QBCore to differentiate between another piece of data referred to as "license"
 {% endhint %}
 
-![Sonoran CAD DBSync Settings](<../../.gitbook/assets/image (298).png>)
+![Sonoran CAD DBSync Settings](<../../.gitbook/assets/image (8).png>)
 
-![Sonoran CAD DBSync Friendly Mapping Settings](<../../.gitbook/assets/image (300) (1).png>)
+![Sonoran CAD DBSync Friendly Mapping Settings](<../../.gitbook/assets/image (59).png>)
 
 Congratulations! You should now be all set up to display your licenses from QBCore in Sonoran CAD. Feel free to test a record lookup to verify everything is in order.
 
-![Example QBCore DBSynced license data](<../../.gitbook/assets/image (306).png>)
+![Example QBCore DBSynced license data](<../../.gitbook/assets/image (75).png>)

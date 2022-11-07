@@ -28,15 +28,15 @@ Typically, you can double click the `.streamDeckProfile` file and automatically 
 
 1. Select "Edit Profiles"
 
-![Stream Deck - Edit Profile](<../.gitbook/assets/image (154).png>)
+![Stream Deck - Edit Profile](<../.gitbook/assets/image (347).png>)
 
 2\. Select "Import"
 
-![Stream Deck - Import Profile](<../.gitbook/assets/image (156).png>)
+![Stream Deck - Import Profile](<../.gitbook/assets/image (384).png>)
 
 3\. Select the downloaded Stream Deck Profile
 
-![Stream Deck - Select Profile](<../.gitbook/assets/image (157).png>)
+![Stream Deck - Select Profile](<../.gitbook/assets/image (311).png>)
 
 ### 3. Configure your Hotkeys
 
@@ -45,7 +45,7 @@ In Sonoran CAD, you can [view and manage your hotkeys](../tutorials/other-featur
 If you change them from the default values, you will need to update them in your Stream Deck.\
 Simply click on the icon, click the `Hotkey` field, and change the key.
 
-![Stream Deck - Change Hotkey](<../.gitbook/assets/image (159).png>)
+![Stream Deck - Change Hotkey](<../.gitbook/assets/image (364).png>)
 
 ## Configuration
 
@@ -57,25 +57,25 @@ You can edit the Sonoran CAD launch key to automatically launch the [Sonoran CAD
 
 Select the Sonoran CAD launch logo and click the `...` file browser under the file path bar.
 
-![Stream Deck - Select Launch Path](<../.gitbook/assets/image (150).png>)
+![Stream Deck - Select Launch Path](<../.gitbook/assets/image (315).png>)
 
 #### 2. Navigate to %appdata%
 
 Paste \`%appdata% into the file browser bar and press enter.
 
-![Navigate to AppData](<../.gitbook/assets/image (151).png>)
+![Navigate to AppData](<../.gitbook/assets/image (335).png>)
 
 #### 3. Select the Application
 
 Select the Sonoran CAD desktop application under AppData > Local > Programs > Sonoran CAD.exe
 
-![Select the Sonoran CAD.exe](<../.gitbook/assets/image (152).png>)
+![Select the Sonoran CAD.exe](<../.gitbook/assets/image (370).png>)
 
 #### 4. Launch Sonoran CAD
 
 You can now press the Sonoran CAD icon on your Stream Deck to launch the desktop application.
 
-![Launch Sonoran CAD via Stream Deck](<../.gitbook/assets/image (153).png>)
+![Launch Sonoran CAD via Stream Deck](<../.gitbook/assets/image (336).png>)
 
 ### Auto-Launch Profile
 
@@ -85,11 +85,11 @@ Your Stream Deck can automatically launch the Sonoran CAD profile when you open 
 
 Hit the gear icon, or the dropdown under your profile name:
 
-![Stream Deck - Edit Profile](<../.gitbook/assets/image (154).png>)
+![Stream Deck - Edit Profile](<../.gitbook/assets/image (347).png>)
 
 #### Select the Application
 
 Select the Sonoran CAD profile and "Other" from the application dropdown.\
 Then, follow the [same steps to locate the Sonoran CAD.exe as before](stream-deck-integration.md#2-navigate-to-appdata).
 
-![Stream Deck - Auto Launech Profile](<../.gitbook/assets/image (155).png>)
+![Stream Deck - Auto Launech Profile](<../.gitbook/assets/image (317).png>)

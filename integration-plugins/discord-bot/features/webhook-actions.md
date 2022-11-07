@@ -32,7 +32,7 @@ When a Discord webhook is fired, SonoranBot will add a reaction allowing you to 
 
 ### Call Attachment
 
-![](<../../../.gitbook/assets/image (192).png>)
+![](<../../../.gitbook/assets/image (15).png>)
 
 ### Opening a Record
 

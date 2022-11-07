@@ -48,7 +48,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 Be sure to have your game server IP and port set in the admin panel under `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
 
-![Sonoran CAD - Server IP and Port](<../../../.gitbook/assets/image (224).png>)
+![Sonoran CAD - Server IP and Port](<../../../.gitbook/assets/image (195).png>)
 
 ### 5. Set Your API ID
 
@@ -113,11 +113,11 @@ Dispatch notify can also be used to track the primary unit on a call. This will 
 
 Dispatchers can set the primary unit to any unit currently attached to the call. The slider next to the Primary Unit box will toggle tracking mode. When enabled, the postal will automatically update based on the primary unit's location and be sent to all attached units.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (195).png>)
+![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (30).png>)
 
 A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (196).png>)
+![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1).png>)
 
 ## Troubleshooting
 

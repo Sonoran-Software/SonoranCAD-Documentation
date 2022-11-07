@@ -17,14 +17,14 @@ In the admin customization menu, expand the Quick Links section:
 
 #### 1. Add, edit and remove quick links by specifying the label, link, and color code.
 
-![Sonoran CAD's quick link customization panel](<../../.gitbook/assets/image (18).png>)
+![Sonoran CAD's quick link customization panel](<../../.gitbook/assets/image (332).png>)
 
 #### 2. Be sure to press SAVE
 
-![Save Quick Links](<../../.gitbook/assets/image (19).png>)
+![Save Quick Links](<../../.gitbook/assets/image (357).png>)
 
 ### Viewing Quick Links
 
 In the police, fire, EMS, or Dispatch page, click the "Quick Links" button in the header.
 
-![Sonoran CAD Quick Links Page](<../../.gitbook/assets/image (20).png>)
+![Sonoran CAD Quick Links Page](<../../.gitbook/assets/image (351).png>)

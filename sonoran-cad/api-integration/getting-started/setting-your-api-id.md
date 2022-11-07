@@ -24,13 +24,13 @@ API IDs are set individually per community. Your API IDs set in one community wi
 
 From the start menu, navigate to System > Settings
 
-![Sonoran CAD - Settings Navigation](<../../../.gitbook/assets/image (163).png>)
+![Sonoran CAD - Settings Navigation](<../../../.gitbook/assets/image (316).png>)
 
 ### 2. Paste in your API ID and Press Save
 
 When inputting your API ID, it is important to note that it is **case-sensitive**. Make sure you are putting in the **proper upper and lower case letters**!
 
-![Sonoran CAD's API ID Setting](<../../../.gitbook/assets/image (165).png>)
+![Sonoran CAD's API ID Setting](<../../../.gitbook/assets/image (366).png>)
 
 #### 1. Determine what API ID is Used
 

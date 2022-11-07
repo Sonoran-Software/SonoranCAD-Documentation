@@ -44,7 +44,7 @@ _This step is only required if you wish to use the automatic fine capability._
 
 Be sure to have your game server IP and port set in the admin panel under `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
 
-![Sonoran CAD - Server IP and Port](<../../../../.gitbook/assets/image (224).png>)
+![Sonoran CAD - Server IP and Port](<../../../../.gitbook/assets/image (195).png>)
 
 ### 5. Set Your API ID
 

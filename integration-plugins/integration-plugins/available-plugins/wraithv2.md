@@ -69,7 +69,7 @@ In the CAD navigate to Admin > Customization > Custom Records > select your cust
 
 The very last column of the field containing your status and expiration dates will have the field's UID (unique identifier, sometimes referred to as 'field mapping id').
 
-![Custom Records - Field UID](<../../../.gitbook/assets/image (177).png>)
+![Custom Records - Field UID](<../../../.gitbook/assets/image (43).png>)
 
 #### Set the UID in your Config
 
@@ -90,7 +90,7 @@ In order to have locked plate results sent back to your CAD, don't forget to set
 For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
-![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (21).png>)
+![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (314).png>)
 
 ## Troubleshooting
 

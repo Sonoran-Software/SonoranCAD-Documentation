@@ -11,18 +11,18 @@ description: >-
 In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.\
 
 
-_Do not edit this JSON formatting unless you are highly familiar with the _[_proper formatting_](../../sonoran-cad/api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
+_Do not edit this JSON formatting unless you are highly familiar with the_ [_proper formatting_](../../sonoran-cad/api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
 
-![Sonoran CAD - Download Custom Record Format](<../../.gitbook/assets/image (60).png>)
+![Sonoran CAD - Download Custom Record Format](<../../.gitbook/assets/image (242).png>)
 
 ### Import a Shared JSON File
 
 In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.
 
-![Sonoran CAD - Import Custom Record JSON File](<../../.gitbook/assets/image (61).png>)
+![Sonoran CAD - Import Custom Record JSON File](<../../.gitbook/assets/image (113).png>)
 
 Paste in the JSON content from the download to populate the record editor with the new record format.
 
-![Sonoran CAD - JSON Import Prompt](<../../.gitbook/assets/image (62).png>)
+![Sonoran CAD - JSON Import Prompt](<../../.gitbook/assets/image (175).png>)
 
 From here, you can [edit the custom record and save it](creating-custom-record-and-report-types.md) as you normally would.

@@ -15,7 +15,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 The admin customization menu allows you to change your geographical settings.
 
-![](<../../.gitbook/assets/image (106).png>)
+![](<../../.gitbook/assets/image (138).png>)
 
 | Customization       | Description                             |
 | ------------------- | --------------------------------------- |

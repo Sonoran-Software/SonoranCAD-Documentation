@@ -19,7 +19,7 @@ description: >-
 ****[Please click here for our official method](steam-browser-workaround.md).
 {% endhint %}
 
-![Sonoran CAD - CAD/MDT Software](<../.gitbook/assets/image (84).png>)
+![Sonoran CAD - CAD/MDT Software](<../.gitbook/assets/image (258).png>)
 
 ### Windows Desktop
 

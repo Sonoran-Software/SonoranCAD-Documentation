@@ -127,7 +127,7 @@ Enter your server's public IP address and your game server's port. By default, t
 Set your game server port and IP address in the admin panel of Sonoran CAD.\
 The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map.md).
 
-![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (144).png>)
+![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (322).png>)
 
 Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
 
@@ -199,4 +199,4 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (306) (1).png>)
+![](<../../.gitbook/assets/image (29).png>)

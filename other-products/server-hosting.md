@@ -8,7 +8,7 @@ description: >-
 
 ## [Sonoran Servers](https://sonoranservers.com)
 
-![](<../.gitbook/assets/image (126).png>)
+![](<../.gitbook/assets/image (126) (1).png>)
 
 We've configured, built, and collocated our hardware to provide clients with our reliable performance and exceptional customer support experience.
 
@@ -28,7 +28,7 @@ Sonoran Servers customers are eligible to receive free CAD plugin installation a
 
 ## Five PD - Free Installation
 
-![](<../.gitbook/assets/image (117).png>)
+![](<../.gitbook/assets/image (166).png>)
 
 We've partnered up with GTA Police Mods to be the official hosting provider of FivePD. Sonoran Servers customers are also eligible to receive free FivePD installation with the purchase of a Windows Server Product.‌
 

@@ -17,4 +17,4 @@ In the Chrome address bar, paste the following:\
 
 Select the following options and press `Clear Data`.
 
-![Chrome - Clear Cache](<../.gitbook/assets/image (135).png>)
+![Chrome - Clear Cache](<../.gitbook/assets/image (218).png>)

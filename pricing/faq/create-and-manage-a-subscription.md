@@ -19,14 +19,14 @@ Access the payment center on the Web or Desktop version of Sonoran CAD by going 
 In the payment center, select "New Subscription"\
 From there, select the monthly subscription you would like to start.
 
-![Sonoran CAD - Payment Center Selection](<../../.gitbook/assets/image (66).png>)
+![Sonoran CAD - Payment Center Selection](<../../.gitbook/assets/image (248).png>)
 
 ### 3. Complete the Purchase
 
 After selecting the desired subscription plan, you will be redirected to a Stripe checkout page.\
 Here, you can enter your billing information and start the subscription.
 
-![Sonoran CAD - Stripe Checkout](<../../.gitbook/assets/image (67).png>)
+![Sonoran CAD - Stripe Checkout](<../../.gitbook/assets/image (180).png>)
 
 ### 4. Set your Community ID
 
@@ -37,7 +37,7 @@ Once you've completed your purchase, set the community ID on the subscription in
 
 The modal will show options to set the subscription to any community you are currently a part of.
 
-![Payment Center - Set Community ID Prompt](<../../.gitbook/assets/image (99).png>)
+![Payment Center - Set Community ID Prompt](<../../.gitbook/assets/image (228).png>)
 
 ## Manage an Existing Subscription
 
@@ -55,13 +55,13 @@ Access the payment center on the Web or Desktop version of Sonoran CAD by going 
 
 On any active subscription, select "Modify" to open the Stripe customer portal.
 
-![Sonoran CAD Payment Center - Modify Subscription](<../../.gitbook/assets/image (75) (1).png>)
+![Sonoran CAD Payment Center - Modify Subscription](<../../.gitbook/assets/image (75) (2).png>)
 
 ### 3. Utilize the Stripe Customer Portal
 
 Once opened, you can easily update your payment information, upgrade, downgrade, or cancel an existing subscription.
 
-![Sonoran CAD - Stripe Customer Portal](<../../.gitbook/assets/image (68).png>)
+![Sonoran CAD - Stripe Customer Portal](<../../.gitbook/assets/image (90).png>)
 
 ## Migrate a Subscription to Another Community
 
@@ -80,4 +80,4 @@ Access the payment center on the Web or Desktop version of Sonoran CAD by going 
 Select "Set Community ID" on the subscription in your billing center.\
 [Where can I find my community ID?](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 
-![Sonoran CAD Payment Center - Set Community ID](<../../.gitbook/assets/image (78).png>)
+![Sonoran CAD Payment Center - Set Community ID](<../../.gitbook/assets/image (78) (2).png>)

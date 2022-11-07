@@ -14,13 +14,13 @@ If you haven't already, [check out our page for more information on this promoti
 
 Every plugin installed will have a separate folder. These are located in the `\sonorancad\plugins` directory.
 
-![Sonoran CAD - Plugin Folders](<../../.gitbook/assets/image (118).png>)
+![Sonoran CAD - Plugin Folders](<../../.gitbook/assets/image (201).png>)
 
 ## 2. View and Change Configuration Files
 
 For every Sonoran CAD plugin installed, there will be a `config_{pluginName}.lua` file present.
 
-![Sonoran CAD - Plugin Config File](<../../.gitbook/assets/image (119).png>)
+![Sonoran CAD - Plugin Config File](<../../.gitbook/assets/image (141).png>)
 
 You can open these configuration files with a text editor and change values.
 

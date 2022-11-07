@@ -21,7 +21,7 @@ Reach out on our [customer support site](https://support.sonoransoftware.com) an
 
 ## CAD: 30%-100% off Discount
 
-![Sonoran Servers & Sonoran CAD - Bundle and Save!](<../../.gitbook/assets/image (83).png>)
+![Sonoran Servers & Sonoran CAD - Bundle and Save!](<../../.gitbook/assets/image (89).png>)
 
 ![Sonoran One - Free with a Dedicated Server](<../../.gitbook/assets/Bannerprojectsenoranone (1).png>)
 

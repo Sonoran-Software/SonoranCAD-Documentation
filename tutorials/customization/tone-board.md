@@ -15,7 +15,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 In the admin page, navigate to `Customization` > `Customization` > `Tone Board`
 
-![Sonoran CAD - Tone Board Customization](<../../.gitbook/assets/image (200).png>)
+![Sonoran CAD - Tone Board Customization](<../../.gitbook/assets/image (82).png>)
 
 ### 2. Uploading Tones
 
@@ -23,7 +23,7 @@ In the admin page, navigate to `Customization` > `Customization` > `Tone Board`
 
 You can upload .mp3, .wav, and .mp4 files directly to the CAD with the **plus** version.
 
-![Sonoran CAD - Tone Uploader](<../../.gitbook/assets/image (297) (1).png>)
+![Sonoran CAD - Tone Uploader](<../../.gitbook/assets/image (74).png>)
 
 #### External Upload
 
@@ -54,7 +54,7 @@ Here, you can add new tones and specify the following:
 
 Tone buttons support icons from several different web libraries. Clicking the search icon will open the [Font Awesome icon library](https://fontawesome.com/v5.15/icons) search. Here, you can search for an icon - click on it - and paste the icon name into the CAD. You can also use [material theme icons](https://fonts.google.com/icons).
 
-![Font Awesome - Example Icon Name](<../../.gitbook/assets/image (201).png>)
+![Font Awesome - Example Icon Name](<../../.gitbook/assets/image (12).png>)
 
 #### Save your Tones
 
@@ -91,7 +91,7 @@ If you filter down the options to a single tone, the search label will turn gree
 
 The tone board is also designed to auto-focus this search box whenever it is opened, or the header is clicked.
 
-![Sonoran CAD - Tone Board](<../../.gitbook/assets/image (236).png>)
+![Sonoran CAD - Tone Board](<../../.gitbook/assets/image (139).png>)
 
 #### Hotkey Auto-Window
 

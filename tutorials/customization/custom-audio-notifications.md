@@ -17,7 +17,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 In the admin page, navigate to `Customization` > `Customization` > `Notification Tones`&#x20;
 
-![Sonoran CAD - Custom Audio Notifications](<../../.gitbook/assets/image (204).png>)
+![Sonoran CAD - Custom Audio Notifications](<../../.gitbook/assets/image (38).png>)
 
 ### 2. Customize the Audio Tones
 
@@ -31,7 +31,7 @@ Don't forget to press save!
 
 Text-to-speech notifications are currently only available on the Chrome web version. You can toggle these on/off in the settings menu.
 
-![Sonoran CAD - Toggle TTS](<../../.gitbook/assets/image (205).png>)
+![Sonoran CAD - Toggle TTS](<../../.gitbook/assets/image (58).png>)
 
 ## Troubleshooting
 

@@ -6,9 +6,9 @@ description: >-
 
 # Smart Signs
 
-![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (220).png>)
+![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (46).png>)
 
-![London Studios - Smart Signs](<../../../.gitbook/assets/image (222).png>)
+![London Studios - Smart Signs](<../../../.gitbook/assets/image (13).png>)
 
 {% hint style="warning" %}
 This resource utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
@@ -40,7 +40,7 @@ Once "purchased" you can [download the asset from your keymaster account](https:
 
 We suggest installing the `smartsigns_sonoran` and `smartsigns_sononran_helper` folders within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below...
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Smartsigns installed to [sonorancad] folder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (300).png" alt=""><figcaption><p>Smartsigns installed to [sonorancad] folder</p></figcaption></figure>
 
 {% hint style="warning" %}
 This resource is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
@@ -78,7 +78,7 @@ Ensure your game server's IP and game port are set. The CAD will use this to pus
 
 Some hosting providers may have your game server sending traffic out from a different IP address than is used to connect to your game server. If this is the case, toggle the `Differing Outbound IP` checkbox for this server and fill in the `Outbound IP` field.
 
-![Sonoran CAD - Push Event Panel](<../../../.gitbook/assets/image (224).png>)
+![Sonoran CAD - Push Event Panel](<../../../.gitbook/assets/image (195).png>)
 
 ## How to use
 
@@ -98,7 +98,7 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
-![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (300).png>)
+![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (73).png>)
 
 ### Full Feature List
 

@@ -17,7 +17,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain! In addition, user signups and password recovery emails have your [custom branding](custom-emails.md). Logging in also takes you directly to the community, instead of having to select the community at the menu.
 
-![Sonoran CAD Custom Login Page Example](<../../.gitbook/assets/image (172).png>)
+![Sonoran CAD Custom Login Page Example](../../.gitbook/assets/image.png)
 
 ## DNS Record Method (Recommended)
 
@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16) (2).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (290).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
@@ -52,7 +52,7 @@ The example below shows the `TXT` record verifying the community ID, and `cad.so
 
 If you are using Sonoran Servers, our company's server hosting for your domain name, please note the differences in how to enter the settings pictured below. Each DNS system is a bit different and requires different input for the Host Name. Typically the hostname is left blank or in this case a `@` is used to point the record at the root domain name of "`sonoranrp.com`"
 
-![Sonoran CAD - Sonoran Servers DNS Example](<../../.gitbook/assets/image (292).png>)
+![Sonoran CAD - Sonoran Servers DNS Example](<../../.gitbook/assets/image (114).png>)
 
 ### 2. Set the Domain Name in Sonoran CAD
 
@@ -62,7 +62,7 @@ This should not contain any `https://` or other extensions.
 Don't forget to press save!\
 Users can now visit this custom domain to view the CAD with a custom login page, including receiving your [branded emails](custom-emails.md) for signups and password recovery messages.
 
-![Sonoran CAD - Custom Login URL](<../../.gitbook/assets/image (174).png>)
+![Sonoran CAD - Custom Login URL](<../../.gitbook/assets/image (5).png>)
 
 {% hint style="warning" %}
 When updating or changing an existing DNS record, it may take some time for the change to propagate (based on your TTL).\
@@ -82,7 +82,7 @@ If you are unable to use the [DNS method](custom-login-page.md#dns-record-method
 
 Replace `YOUR_COMMUNITY_ID_HERE` in the `index.html` file with your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md).
 
-![](<../../.gitbook/assets/image (175).png>)
+![](<../../.gitbook/assets/image (25).png>)
 
 ### 3. Host the HTML File
 

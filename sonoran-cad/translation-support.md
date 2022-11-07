@@ -8,7 +8,7 @@ description: Learn more about Sonoran CAD's i18n international translation suppo
 
 Sonoran CAD will attempt to automatically detect your local language. However, you can manually set your language preferences in the side menu's "Settings" modal.
 
-![Sonoran CAD - Language Settings](<../.gitbook/assets/image (58).png>)
+![Sonoran CAD - Language Settings](<../.gitbook/assets/image (229).png>)
 
 ## Add or Improve Translations
 

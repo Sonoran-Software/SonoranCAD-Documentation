@@ -37,7 +37,7 @@ Make sure you have not forgotten to enable the plugin in the plugin config file!
 
 Enter `sonoran info` into your server console.
 
-![Sonoran Info - Disabled Plugins](<../../../.gitbook/assets/image (52).png>)
+![Sonoran Info - Disabled Plugins](<../../../.gitbook/assets/image (382).png>)
 
 If the plugin you are having trouble with is listed as DISABLED, you may have forgotten to enable it in the plugin configuration.
 

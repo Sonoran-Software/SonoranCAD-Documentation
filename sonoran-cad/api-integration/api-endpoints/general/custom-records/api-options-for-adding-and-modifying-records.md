@@ -36,7 +36,7 @@ For **adding a new record or character**, you will need to specify the `recordTy
 
 The `recordTypeId` is a unique number for your custom record template. This is visible in the custom record JSON's `recordTypeId` field, or next to the template name in the admin menu.
 
-![Custom Records - Record Type ID](<../../../../../.gitbook/assets/image (306) (1) (1) (1).png>)
+![Custom Records - Record Type ID](<../../../../../.gitbook/assets/image (282).png>)
 
 ### 2. Getting the \`recordId\`
 
@@ -46,7 +46,7 @@ When viewing a record's JSON from a lookup endpoint, the record's `id` field is 
 
 You can also view a record's ID in the UI with an `id` type custom field.
 
-![Custom Records - Record ID](<../../../../../.gitbook/assets/image (305) (2).png>)
+![Custom Records - Record ID](<../../../../../.gitbook/assets/image (34).png>)
 
 ### 3. Creating the \`replaceValues\` Dictionary
 
@@ -54,7 +54,7 @@ The `replaceValues` dictionary specifies the field UID (unique ID) and the desir
 
 You can easily copy a template field's UID in the admin menu by expanding the section and copying the very last column in the editor. This is shown as the `Field Mapping ID` or `Field UID`.
 
-![Custom Records - Field UID](<../../../../../.gitbook/assets/image (295) (1).png>)
+![Custom Records - Field UID](<../../../../../.gitbook/assets/image (54).png>)
 
 #### **Example Dictionary**
 
