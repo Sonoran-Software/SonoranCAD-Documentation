@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.30.1 11/8/2022
+
+{% tabs %}
+{% tab title="New" %}
+CMS Discovery Links
+
+* The CAD now links to the CMS discovery page on all non-custom domains.
+
+Civilian DMV Error
+
+* Added a more descriptive error to the DMV dropdown if DB sync is enabled and there are no other custom types available.
+{% endtab %}
+{% endtabs %}
+
 ### 3.30.0 10/04/2022
 
 {% tabs %}
