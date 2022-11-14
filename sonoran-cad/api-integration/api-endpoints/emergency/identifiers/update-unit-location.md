@@ -57,10 +57,18 @@ INVALID API KEY
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
             "location": "1234 W. Example St.",
+            "coordinates": { // X/Y coordinates for live map (floats)
+                "x": 1000,
+                "y": 2000,
+            }
         },
         {
             "apiId": "STEAM:5678",
             "location": "5678 E. Test Ave.",
+            "coordinates": {
+                "x": 1000,
+                "y": 2000,
+            }
         }
     ]
 }
