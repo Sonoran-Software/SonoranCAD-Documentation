@@ -60,7 +60,9 @@ INVALID API KEY
             "location": "1234 E. Test St.",
             "description": "Help, someone is breaking into my house!",
             "metaData": {
-                "someKey": "someValue" // OPTIONAL: metaData for API custom storage
+                "someKey": "someValue", // OPTIONAL: metaData for API custom storage
+                "x": 1000, // OPTIONAL: Live Map X Coordinate
+                "y": 1000 // OPTIONAL: Live Map Y Coordinate
             },
         }
     ]
