@@ -10,6 +10,44 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.31.0 11/16/2022
+
+{% tabs %}
+{% tab title="New" %}
+\#8844 Live Map External Desktop Window
+
+* Windows desktop users can now open the interactive live map in a fully external window.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Live Map CAD Based Update - Coordinate Removal
+
+* Fixed an issue where updating a smart sign via CAD would cause it to disappear from the live map.
+
+Switch Communities - Bug
+
+* Fixed an issue preventing users from "switching communities" on a custom domain or with a community set as default on the login page.
+
+Discover Button - Custom Domain Fix
+
+* Fixed an issue with detecting custom and non-custom domains, preventing the "Discover" CMS button from appearing on non-custom domains.
+{% endtab %}
+{% endtabs %}
+
+### 3.30.1 11/08/2022
+
+{% tabs %}
+{% tab title="New" %}
+CMS Discovery Links
+
+* The CAD now links to the CMS discovery page on all non-custom domains.
+
+Civilian DMV Error
+
+* Added a more descriptive error to the DMV dropdown if DB sync is enabled and there are no other custom types available.
+{% endtab %}
+{% endtabs %}
+
 ### 3.30.0 10/04/2022
 
 {% tabs %}
