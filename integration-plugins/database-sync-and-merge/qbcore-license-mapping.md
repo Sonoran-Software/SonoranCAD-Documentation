@@ -12,7 +12,7 @@ The player's first and last name is stored as JSON in the `charinfo` column. We'
 
 The `citizenid` column stores a unique player ID. This will be our `Character Mapping Column`.
 
-![](<../../.gitbook/assets/image (268).png>)
+![](<../../.gitbook/assets/image (268) (1).png>)
 
 ![](<../../.gitbook/assets/image (294).png>)
 

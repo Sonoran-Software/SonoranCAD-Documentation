@@ -1,7 +1,5 @@
 ---
-description: >-
-  Sonoran CAD allows you to restrict how many characters, licenses, or vehicle
-  registrations a user may have!
+description: Sonoran CAD allows you to restrict how many characters a user can create!
 ---
 
 # User Account Restrictions
@@ -13,17 +11,9 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### User Account Restrictions
 
-![Sonoran CAD's user account restriction configuration](../../.gitbook/assets/restrict.PNG)
+<figure><img src="../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
-| Field                              | Description                                                                                     |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Max Civilian Characters            | This allows you to restrict the number of civilian characters a single user can register.       |
-| Max Civilian Licenses              | This allows you to restrict the number of licenses a single civilian can register.              |
-| Max Civilian Vehicle Registrations | This allows you to restrict the number of vehicle registrations a single civilian can register. |
-
-{% hint style="warning" %}
-License and vehicle registration restrictions do not apply to communities that have [database sync](../../integration-plugins/database-sync-and-merge/) enabled.\
-\
-This is because all licenses and vehicle registrations are pulled from your own in-game database.
-{% endhint %}
+| Field                   | Description                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------------- |
+| Max Civilian Characters | This allows you to restrict the number of civilian characters a single user can register. |
 
