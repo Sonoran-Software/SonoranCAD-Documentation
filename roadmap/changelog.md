@@ -10,7 +10,7 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.31.0 11/17/2022
+### 3.31.0 11/21/2022
 
 {% tabs %}
 {% tab title="New" %}
