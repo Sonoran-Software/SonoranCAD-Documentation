@@ -54,8 +54,22 @@ INVALID API KEY
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
             "callId": 123,
+            "label": "A-10", // OPTIONAL (sender of the note)
             "note": "This is a test!" // Note text
         },
     ]
+}
+```
+
+### Note Object
+
+Call notes are formatted on dispatch calls with the following object:
+
+```json
+{
+    "time": "12:00:00",
+    "label": "A-10",
+    "type": "text",
+    "content": "This is a note!"
 }
 ```

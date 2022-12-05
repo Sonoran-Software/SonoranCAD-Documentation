@@ -93,7 +93,7 @@ The GET\_CALLS API endpoint returns arrays of the following object structures:
     "title": "Traffic Stop",
     "code": "10-39 - Traffic Stop",
     "description": "Traffic Stop - Blue Sedan - XP123BS",
-    "notes": "",
+    "notes": [],
     "idents": [1, 2, 3] // Array of identifier IDs
 }
 ```
