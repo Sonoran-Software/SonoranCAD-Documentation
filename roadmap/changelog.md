@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.0 12/TBD/2022
+
+{% tabs %}
+{% tab title="New" %}
+Tone Board - Repeat
+
+* Dispatchers can now set a tone to automatically repeat every X seconds for X number of times.
+
+\#9013 Link Records to Dispatch Call
+
+* Call notes have been overhauled and can now have linked records and dispatch calls pasted into them.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Lookup Record by ID - Set Record Number
+
+* Fixed an issue where opening a record via specific ID would not have the ID field set properly in the record popup.
+
+Create Template - Plate Type Checks
+
+* Fixed an issue with the custom record template editor not properly ensuring a `plate` field mapping ID existed on the vehicle registration type.
+
+Emergency Call - Dispatch Address Autofill
+
+* Fixed an issue where the address field would not auto populate when opening an emergency call in the dispatch call editor.
+{% endtab %}
+{% endtabs %}
+
 ### 3.31.0 11/21/2022
 
 {% tabs %}
