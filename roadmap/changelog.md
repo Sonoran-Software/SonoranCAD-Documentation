@@ -21,6 +21,10 @@ Tone Board - Repeat
 \#9013 Link Records to Dispatch Call
 
 * Call notes have been overhauled and can now have linked records and dispatch calls pasted into them.
+
+Dispatch Call Preview - Copy Link
+
+* Added a copy link button in the dispatch call preview window
 {% endtab %}
 
 {% tab title="Fixed" %}
