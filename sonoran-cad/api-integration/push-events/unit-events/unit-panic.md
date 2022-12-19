@@ -4,7 +4,7 @@ description: This event is sent when a unit toggles their panic status.
 
 # Unit Panic
 
-### EVENT_UNIT_PANIC
+### EVENT\_UNIT\_PANIC
 
 ```javascript
 {
@@ -12,7 +12,7 @@ description: This event is sent when a unit toggles their panic status.
     "type": "EVENT_UNIT_PANIC",
     "data": [
         {
-            "identId": 1, // Identifier ID
+            "identIds": [1, 2, 3], // Identifier IDs
             "isPanic": true
         }
     ]
