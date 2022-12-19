@@ -24,4 +24,4 @@ You will find a **data** folder there; click on it.
 
 Here you must delete the **cache, nui-storage**, **server-cache** and **server-cache-priv** folders. &#x20;
 
-![](<../.gitbook/assets/image (278) (2).png>)
+![](<../.gitbook/assets/image (278) (2) (1).png>)
