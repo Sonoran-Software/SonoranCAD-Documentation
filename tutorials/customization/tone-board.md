@@ -101,3 +101,11 @@ The tone board is also designed to auto-focus this search box whenever it is ope
 
 Instead of using the search box filtering, users can also manually click the tone board button to play the audio.
 
+### Tone Board Repeat
+
+Tones can be repeated at a specific interval.
+
+When sending a new tone, toggle `repeat` on and customize the `seconds` and `count` values. When the tone is sent, the repeat timer and counter will visualize any actively repeating tones.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+

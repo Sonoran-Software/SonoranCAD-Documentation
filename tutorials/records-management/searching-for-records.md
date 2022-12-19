@@ -55,6 +55,14 @@ Using the dropdown, you can type to filter active units or select them from the 
 
 ![Sonoran CAD - Send Lookup to Unit(s)](../../.gitbook/assets/sendlookup.gif)
 
+### Copy Record Links
+
+Records can be [linked to other records](../customization/creating-custom-record-and-report-types.md#linked-records) via the `Linked Records` custom section, or [added to dispatch call notes](../dispatching/creating-a-call.md#note-links).
+
+Press the link icon in the top left to copy the record to your clipboard.
+
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Sonoran CAD - Copy Record Link</p></figcaption></figure>
+
 ### Lookup from Plate Lock
 
 Our [Wraith radar plugin](../../integration-plugins/integration-plugins/available-plugins/wraithv2.md) allows you to lock your plate reader in-game and have the lookup automatically ran in your CAD.

@@ -30,6 +30,20 @@ You can select this call at anytime to preview, edit, or close.
 
 ![Sonoran CAD - Active Calls](<../../.gitbook/assets/image (196).png>)
 
+### Call Notes
+
+Notes can be sent by units attached to the call.
+
+#### Text Notes
+
+Text based notes can be added in the note box and sent by pressing `enter` or `add note`.
+
+#### Note Links
+
+Record links for characters, arrest reports, etc. can also be sent in the dispatch call notes section. [Copy a record link](../records-management/searching-for-records.md#copy-record-links), then press the `Paste` button in the call notes section.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Sonoran CAD - Dispatch Call Notes</p></figcaption></figure>
+
 ### Close the Call
 
 To close the active dispatch, click on the active call and press "Close Call".
