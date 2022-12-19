@@ -7,7 +7,7 @@ description: >-
 # Depreciated: ESX Support
 
 {% hint style="warning" %}
-This plugin is being phased out in favor of the newer [frameworksupport](../framework-support.md) support plugin. Please begin using that instead.
+This plugin is being phased out in favor of the newer [frameworksupport](./) support plugin. Please begin using that instead.
 {% endhint %}
 
 {% hint style="warning" %}

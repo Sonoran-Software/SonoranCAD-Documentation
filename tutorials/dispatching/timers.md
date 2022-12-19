@@ -24,7 +24,7 @@ From the start menu: `Unit Management` > `Timers`
 
 Press `New` to create a new timer.
 
-![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (187).png>)
+![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (296) (1) (1) (1).png>)
 
 ### Drag-And-Drop to Tab
 
@@ -46,13 +46,13 @@ The timer panel has options to start, pause, restart, and remove a timer.
 
 Additionally, you can expand the timer to change the name and duration.
 
-![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (126).png>)
+![Sonoran CAD - Timer Panel](<../../.gitbook/assets/image (292) (1) (1) (1).png>)
 
 ### Via the Context Menu
 
 When a unit, group, or call is [attached to a timer](timers.md#undefined) you can click on the timer icon. A timer menu will be displayed, allowing you to start, pause, restart, or clear the timer's attachment.
 
-![Sonoran CAD - Timer Context Menu](<../../.gitbook/assets/image (275).png>)
+![Sonoran CAD - Timer Context Menu](<../../.gitbook/assets/image (299) (1) (1).png>)
 
 ## Timer Attachments
 
@@ -68,4 +68,4 @@ In addition to dragging a unit, group, or dispatch call to a minimized tab you c
 
 Click on a unit, group, or dispatch call: `Timers` > `Select a Timer`
 
-![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (18).png>)
+![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1) (1) (1).png>)

@@ -23,7 +23,7 @@ Reach out on our [customer support site](https://support.sonoransoftware.com) an
 
 ![Sonoran Servers & Sonoran CAD - Bundle and Save!](<../../.gitbook/assets/image (89).png>)
 
-![Sonoran One - Free with a Dedicated Server](<../../.gitbook/assets/Bannerprojectsenoranone (1).png>)
+![Sonoran One - Free with a Dedicated Server](../../.gitbook/assets/Bannerprojectsenoranone.png)
 
 [Learn more about this offer!](https://info.sonoranservers.com/pricing/promotions-and-discounts/30-off-software)
 

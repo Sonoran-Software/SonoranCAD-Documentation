@@ -70,16 +70,16 @@ Users who follow our GitHub organization are granted access to the `#community-d
 
 Navigate to our [GitHub organization and follow it](https://github.com/Sonoran-Software) with your GitHub account.
 
-![GitHub - Follow Organization](<../../.gitbook/assets/image (40).png>)
+![GitHub - Follow Organization](<../../.gitbook/assets/image (16) (2) (1) (1) (1) (1).png>)
 
 #### 2. Copy your Discord and GitHub Usernames
 
-![](<../../.gitbook/assets/image (209).png>)![](<../../.gitbook/assets/image (76).png>)
+![](<../../.gitbook/assets/image (209).png>)![](<../../.gitbook/assets/image (305) (1).png>)
 
 #### 3. Enter your Information
 
 Paste your Discord and GitHub username into the support app to be granted access to our `#community-development` channel.
 
-![](<../../.gitbook/assets/image (125).png>)
+![](<../../.gitbook/assets/image (290) (1).png>)
 {% endtab %}
 {% endtabs %}

@@ -57,9 +57,9 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-<img src="../../.gitbook/assets/image (305).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
+<img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (16) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (16) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
 #### Text Area
 
@@ -129,7 +129,7 @@ The address dropdown will auto-filter [street address names that have been impor
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<img src="../../.gitbook/assets/image (63).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -148,15 +148,15 @@ This will show the field label and value in the lookup table preview.
 This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.
 
-<img src="../../.gitbook/assets/image (383).png" alt="Input field with SUPERVISOR toggled" data-size="original">
+<img src="../../.gitbook/assets/image (7) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
 
-<img src="../../.gitbook/assets/image (346).png" alt="Supervisor field highlighted red" data-size="original">
+<img src="../../.gitbook/assets/image (8) (1).png" alt="Supervisor field highlighted red" data-size="original">
 
 #### Required
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
-<img src="../../.gitbook/assets/image (374).png" alt="Input field with REQUIRED toggled" data-size="original">
+<img src="../../.gitbook/assets/image (9) (1).png" alt="Input field with REQUIRED toggled" data-size="original">
 
 <img src="../../.gitbook/assets/image (375).png" alt="Required field shown in the record editor" data-size="original">
 
@@ -172,9 +172,9 @@ Read only fields prevent the user from entering new or modified text. This is us
 
 Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
 
-<img src="../../.gitbook/assets/image (302).png" alt="Custom Records - Read Only Toggle" data-size="original">
+<img src="../../.gitbook/assets/image (305) (1) (1).png" alt="Custom Records - Read Only Toggle" data-size="original">
 
-<img src="../../.gitbook/assets/image (35).png" alt="Custom Records - Read Only Fields" data-size="original">
+<img src="../../.gitbook/assets/image (302) (1) (1).png" alt="Custom Records - Read Only Fields" data-size="original">
 
 </details>
 
@@ -208,7 +208,7 @@ Specifying `(###) ### - ####` formats the user's input into a phone number.
 
 The field size slider allows you to select a field size value between 1 and 12.Every row of a record has a space divisible by 12.
 
-![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (215).png>)
+![](<../../.gitbook/assets/image (294) (1).png>)![](<../../.gitbook/assets/image (215).png>)
 
 </details>
 
@@ -230,7 +230,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (106).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
@@ -293,9 +293,9 @@ Ex: Adding a previewed field to show the license "Type"
 
 Communities can process a manual updating of historical records in the custom records menu.
 
-![Resync Preview Fields](<../../.gitbook/assets/image (269).png>)
+![Resync Preview Fields](<../../.gitbook/assets/image (278) (1).png>)
 
-![Resync Preview Fields - Confirm](<../../.gitbook/assets/image (303).png>)
+![Resync Preview Fields - Confirm](<../../.gitbook/assets/image (136) (1).png>)
 
 ### How does the re-sync work?
 
@@ -325,7 +325,7 @@ The default `Civilian` record has the following field UIDs:
 
 `first` `last` `mi` `dob` `age` `sex` `aka` `zip` `occupation` `height` `weight` `skin` `hair` `eyes` `emergencyContact` `emergencyRelationship` `emergencyContactNumber` `residence`
 
-![](<../../.gitbook/assets/image (286).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 When creating your custom record section with civilian search imports, those field UIDs will also need to match. The image below shows a custom record with the civilian search section toggled with the matching field UIDs.
 
@@ -337,7 +337,7 @@ The default `Vehicle Registration` record has the following field UIDs
 
 `type` `plate` `make` `model` `color` `year`
 
-![](<../../.gitbook/assets/image (297).png>)&#x20;
+![](<../../.gitbook/assets/image (291).png>)&#x20;
 
 &#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
 

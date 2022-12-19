@@ -6,7 +6,7 @@ description: >-
 
 # Evidence Camera
 
-![Sonoran Store - Evidence Camera](<../../.gitbook/assets/image (298).png>)
+![Sonoran Store - Evidence Camera](<../../.gitbook/assets/image (16) (3).png>)
 
 The Sonoran Evidence Camera allows you to capture, hold, and share in-game photos with other players. Or, upload the in-game photo directly to Sonoran CAD for easy reports!
 
