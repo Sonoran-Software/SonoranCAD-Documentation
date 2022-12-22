@@ -66,7 +66,7 @@ INVALID API KEY
             "primary": 123, // Primary unit identifier on the call
             "trackPrimary": true, // Track the primary unit in-game with the Dispatch Notify plugin
             "description": "Traffic Stop - Blue Sedan - XP123BS",
-            "notes": [],
+            "notes": [], // Array of call note objects
             "metaData": {
                 "someKey": "someValue" // OPTIONAL: metaData for API custom storage
             },
@@ -103,3 +103,16 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 | 2                           | CLOSED             |
 {% endtab %}
 {% endtabs %}
+
+### Note Object
+
+Call notes are formatted on dispatch calls with the following object:
+
+```json
+{
+    "time": "12:00:00",
+    "label": "A-10",
+    "type": "text",
+    "content": "This is a note!"
+}
+```
