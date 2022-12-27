@@ -15,8 +15,8 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 ### 1. Copy the Google Sheet
 
-* [GTAV Street Names](https://docs.google.com/spreadsheets/d/1wMEiv1EcDI4VnTjCLbechJHzUEQoMQTK\_ujWU3BfKIk/copy)
-* [ER:LC Roblox Street Names](https://docs.google.com/spreadsheets/d/1jDUxfCffxyGHoXQ-rpzrWRNFEhDmMs3-TA9U-mdNBjg/copy)
+* [GTAV Street Names](https://docs.google.com/spreadsheets/d/1IkbNJNhMYToqHQE6eb3ujp6ufkjPkLgDgq29g9woGR0/copy)
+* [ER:LC Roblox Street Names](https://docs.google.com/spreadsheets/d/1QEuImE6GH1H6sZFltLMYt7HUcExBF3\_-hhNWAB9r6Hg/edit?usp=sharing)
 
 Navigate to one of our official street name Google sheet and make a copy. Using a copy of our official sheet ensures your street names are formatted correctly.
 

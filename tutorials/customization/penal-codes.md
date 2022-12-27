@@ -62,7 +62,7 @@ Support will not be provided to users modifying their spreadsheets with Excel, o
 
 ### 1. Copy the Google Sheet
 
-Navigate to our [official penal code Google sheet ](https://docs.google.com/spreadsheets/u/0/d/10TCczXferWWFi8sYtccrqocRZ4WdpKB1s4hwRm2Iy6I/copy)and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.
+Navigate to our [official penal code Google sheet](https://docs.google.com/spreadsheets/d/1Hcm0gHPq8nZx8aPetDRiQXgeAoQMz3CYk2ouwyabmOc/copy) and make a copy. Using a copy of our official sheet ensures your penal codes are formatted correctly.
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 

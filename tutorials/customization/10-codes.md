@@ -32,7 +32,7 @@ Support will not be provided to users modifying their spreadsheets with Excel, o
 
 ### 1. Copy the Google Sheet
 
-Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsheets/u/1/d/1QKKhrwBQQW2JMqeDplU\_alo\_CHPi0ML4KlYOEuPN4vs/copy) and make a copy. Using a copy of our official sheet ensures your 10-codes are formatted correctly.
+Navigate to our official [10-code Google sheet](https://docs.google.com/spreadsheets/d/1XOqjkrKcvP6hc9F6DynK03HqLVY8KWV7M4g6aQddBu8/copy) and make a copy. Using a copy of our official sheet ensures your 10-codes are formatted correctly.
 
 **You may ONLY use the Google sheet directly. Editing this via Excel or any other program is NOT supported.**
 
