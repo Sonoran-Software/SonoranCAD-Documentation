@@ -42,7 +42,7 @@ Text based notes can be added in the note box and sent by pressing `enter` or `a
 
 Record links for characters, arrest reports, etc. can also be sent in the dispatch call notes section. [Copy a record link](../records-management/searching-for-records.md#copy-record-links), then press the `Paste` button in the call notes section.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Sonoran CAD - Dispatch Call Notes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption><p>Sonoran CAD - Dispatch Call Notes</p></figcaption></figure>
 
 ### Close the Call
 
