@@ -25,6 +25,8 @@ In the admin customization menu, expand the Quick Links section:
 
 ### Viewing Quick Links
 
-In the police, fire, EMS, or Dispatch page, click the "Quick Links" button in the header.
+Quick links can be found in the taskbar under Documentation > Quick Links
 
-![Sonoran CAD Quick Links Page](<../../.gitbook/assets/image (351).png>)
+Or via the taskbar search and [pinning](customizing-your-layout.md#7.-tab-system) system.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Sonoran CAD - Quick Links Page</p></figcaption></figure>

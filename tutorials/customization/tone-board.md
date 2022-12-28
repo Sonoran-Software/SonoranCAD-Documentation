@@ -107,5 +107,5 @@ Tones can be repeated at a specific interval.
 
 When sending a new tone, toggle `repeat` on and customize the `seconds` and `count` values. When the tone is sent, the repeat timer and counter will visualize any actively repeating tones.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
