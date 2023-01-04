@@ -18,6 +18,8 @@ It's never been more easy to access your community's CAD system, regardless of w
 
 Tired of having to manually register civilians? With Sonoran CAD's [Database Sync](../integration-plugins/database-sync-and-merge/), all of your in-game characters, licenses, and vehicle registrations are automatically in your CAD!
 
+<figure><img src="../.gitbook/assets/Database Sync.png" alt=""><figcaption><p>Sonoran CAD - Satabse Sync</p></figcaption></figure>
+
 ### 🎮 In-Game Integration Plugins
 
 Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugins** for your game server!
@@ -33,13 +35,15 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 **View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
 
-![Sonoran CAD's custom plugin framework and installation system!](<../.gitbook/assets/image (327).png>)
+<figure><img src="../.gitbook/assets/in-game integration.png" alt=""><figcaption><p>Sonoran CAD's custom plugin framework and installation system!</p></figcaption></figure>
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
 Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-Maqgxy\_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
 
 ​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-Maqgxy\_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more! You can even [react to webhooks](../integration-plugins/discord-bot/features/webhook-actions.md) like dispatch events to attach your unit, or react to record webhooks to view the full record in the CAD.
+
+<figure><img src="../.gitbook/assets/webhook.png" alt=""><figcaption><p>Sonoran CAD - Discord Webhooks</p></figcaption></figure>
 
 ### 🌎 Full Translation and Locality Support
 
@@ -53,11 +57,9 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
-![Sonoran CAD - Live Map](../.gitbook/assets/map\_2\_final.gif)
+<figure><img src="../.gitbook/assets/live map.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
 ### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
-
-![Sonoran CAD x London Studios](<../.gitbook/assets/image (46).png>)
 
 We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
@@ -65,17 +67,17 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
+<figure><img src="../.gitbook/assets/SmartSigns (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
+
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 
 Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../integration-plugins/integration-plugins/available-plugins/tablet.md)!
 
-![](<../.gitbook/assets/image (112).png>)
+<figure><img src="../.gitbook/assets/minicad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
 
 ### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
-![](../.gitbook/assets/live-banner.png)
-
-![Sonoran CAD - Livestream Overlay](../.gitbook/assets/overlay.gif)
+<figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption><p>Sonoran CAD - Stream Overlay</p></figcaption></figure>
 
 ![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119).png>)
 
@@ -97,7 +99,7 @@ Only Sonoran CAD lets you easily multitask and open multiple search windows, rec
 
 Drag-and-drop allows you to easily view calls, attach units, and more!
 
-![Sonoran CAD - Custom Layouts](<../.gitbook/assets/3\_10\_features (1).gif>)
+<figure><img src="../.gitbook/assets/multi-windows.png" alt=""><figcaption><p>Sonoran CAD - Custom Layouts</p></figcaption></figure>
 
 ### 🎤 [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
 
@@ -107,7 +109,7 @@ Enforce security in your TeamSpeak 3 channels by requiring them to be signed int
 
 Check out our official [Stream Deck profiles](../integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](../downloads/), these actions can be done even while the app is minimized.
 
-![Sonoran CAD - Stream Deck Profile](<../.gitbook/assets/image (176) (1) (1).png>)
+<figure><img src="../.gitbook/assets/streamdeck.png" alt=""><figcaption><p>Sonoran CAD - Stream Deck Profile</p></figcaption></figure>
 
 ### 📖 API Integration
 
@@ -115,21 +117,7 @@ In addition to over a dozen drag-and-drop integration [plugins](../integration-p
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](../sonoran-cad/api-integration/push-events/)!
 
-```javascript
-{
-    "id": "YOUR_COMMUNITY_ID",
-    "key": "YOUR_API_KEY",
-    "type": "ATTACH_UNIT",
-    "data": [
-        {
-            "serverId": 1, // Default 1 - See guide on setting up multiple servers
-            "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-            "units": ["STEAN:1234"] // Array of API IDs
-                                // Typically, this is their STEAM Hex
-        },
-    ]
-}
-```
+<figure><img src="../.gitbook/assets/api-integration.png" alt=""><figcaption><p>Sonoran CAD - API Integration</p></figcaption></figure>
 
 ### 📝 Custom Records and Reports
 
@@ -139,7 +127,7 @@ Whether it's your own firearms registration system, an in-depth vehicle accident
 
 You can even index specific record fields for [custom search types](../tutorials/customization/custom-search-types.md). Allowing you to run a lookup on your record's custom ID numbers, phone numbers, and more!
 
-![Create custom record and report formats!](<../.gitbook/assets/image (376).png>)
+<figure><img src="../.gitbook/assets/custom records n reports (1).png" alt=""><figcaption><p>Sonoran CAD - Custom Reports</p></figcaption></figure>
 
 ### 📧 Custom Branding
 
@@ -156,7 +144,7 @@ Sonoran CAD allows your units to easily [self-dispatch](../tutorials/dispatching
 
 Looking to store official criminal records or prior call logs in a PDF format? Sonoran CAD allows you to easily view and [print records to PDF](../tutorials/records-management/pdf-records.md).
 
-![Sonoran CAD's print to PDF system!](<../.gitbook/assets/image (328).png>)
+<figure><img src="../.gitbook/assets/pdfrecords.png" alt=""><figcaption><p>Sonoran CAD - PDF Records</p></figcaption></figure>
 
 ### 🏠 Auto Suggested Street Names and Addresses
 
