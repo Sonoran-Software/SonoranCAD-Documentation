@@ -67,7 +67,7 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
-<figure><img src="../.gitbook/assets/SmartSigns (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SmartSigns.png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 

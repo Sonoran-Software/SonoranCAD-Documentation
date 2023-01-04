@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.1 01/04/2023
+
+{% tabs %}
+{% tab title="Fixed" %}
+Custom Character Records - Unique Fields
+
+* Fixed an issue where unique fields on custom character records would throw an error stating that the unique value was taken by record number -1.
+
+\#12056 Call Notes PDF
+
+* Fixed an issue where dispatch call notes printed to PDF would not be formatted correctly.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.0 12/19/2022
 
 {% tabs %}
