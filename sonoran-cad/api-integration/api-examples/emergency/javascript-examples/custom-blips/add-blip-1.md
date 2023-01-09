@@ -11,6 +11,8 @@ This API endpoint requires the **pro** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../../../pricing/faq/)page.
 {% endhint %}
 
+This framework export handles the [Add Blip API endpoint](../../../../api-endpoints/emergency/custom-blips/add-blip.md).
+
 ```javascript
 function addBlips(blips, cb) {
     exports["sonorancad"].performApiRequest(blips, "ADD_BLIP", function (res) {

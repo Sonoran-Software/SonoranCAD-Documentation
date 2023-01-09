@@ -19,7 +19,13 @@ For more information, see our [pricing](../../../pricing/faq/) or view how to ch
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Available API Endpoints
+## Framework Use
+
+The [Sonoran CAD plugin framework](../../../integration-plugins/integration-plugins/framework-installation.md) handles common errors, rate limiting, auto-updating, etc.&#x20;
+
+When integrating external scripts with Sonoran CAD, the best practice is utilizing the CAD framework exports. By using the framework exports users will not have to add or configure their community ID and API key a second time, the framework will ensure proper rate limits, etc.
+
+## Framework Endpoint Examples
 
 ### Emergency Endpoints
 

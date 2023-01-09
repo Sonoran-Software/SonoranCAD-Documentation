@@ -12,46 +12,7 @@ This API endpoint requires the **Plus** version of Sonoran CAD or higher. For mo
 API response times may be increased slightly for communities with Database Sync enabled, depending upon the speed, latency and size of your in-game database.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/lookup" method="post" summary="Lookup Name or Plate" %}
-{% swagger-description %}
-The lookup name endpoint allows you to retrieve all records associated with a provided name or license plate.
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" type="string" %}
-LOOKUP
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array containing a lookup information object
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:
-Detailed contents of the record type arrays can be found further below." %}
-```
-{
-  "records": []
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="302" description="" %}
-```
-INVALID REQUEST TYPE
-INVALID COMMUNITY ID
-API IS NOT ENABLED FOR THIS COMMUNITY
-INVALID API KEY
-INVALID EMPTY SEARCH
-```
-{% endswagger-response %}
-{% endswagger %}
+This framework export handles the [Lookup Name or Plate API endpoint](../../../../api-endpoints/general/lookup-name-or-plate.md).
 
 ## API Call Example
 

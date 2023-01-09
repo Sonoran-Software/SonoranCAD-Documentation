@@ -11,52 +11,7 @@ This API endpoint requires the **pro** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/add_blip" method="post" summary="Add Blip" %}
-{% swagger-description %}
-This endpoint allows you to add a custom blip to your live map.
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Your community's ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="key" type="string" required="true" %}
-Your community's API Key
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-ADD_BLIP
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" required="true" %}
-Array of request objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
-```json
-// Blip object with ID set
-[
-    {
-        "id": 1234,
-        "coordinates": {
-            "x": 0,
-            "y": 0
-        },
-        "icon": "https://example.com/icon.png"
-    }
-]
-```
-{% endswagger-response %}
-
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
-```http
-INVALID REQUEST TYPE
-INVALID COMMUNITY ID
-API ENDPOINT IS NOT ENABLED FOR THIS COMMUNITY
-INVALID API KEY
-```
-{% endswagger-response %}
-{% endswagger %}
+This framework export handles the [Add Blip API endpoint](../../../../api-endpoints/emergency/custom-blips/add-blip.md).
 
 ```javascript
 function addBlip(coords, colorHex, subType, toolTip, icon, dataTable, cb) {

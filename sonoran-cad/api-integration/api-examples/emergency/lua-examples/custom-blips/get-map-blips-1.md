@@ -11,6 +11,8 @@ This API endpoint requires the **pro** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../../../pricing/faq/)page.
 {% endhint %}
 
+This framework export handles the [Remove Blip API endpoint](../../../../api-endpoints/emergency/custom-blips/remove-blip.md).
+
 ```lua
 function removeWithSubtype(subType, cb)
     Utilities.CAD.getBlips(function(res)
