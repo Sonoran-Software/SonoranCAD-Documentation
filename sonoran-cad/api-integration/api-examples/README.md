@@ -1,0 +1,30 @@
+---
+description: >-
+  View all of our API example calls, learn about our data structuring, and
+  integrate your scripts with Sonoran CAD.
+---
+
+# API Examples
+
+{% hint style="warning" %}
+### Call examples will be using the [Sonoran CAD Framework](../../../integration-plugins/integration-plugins/framework-installation.md)
+{% endhint %}
+
+{% hint style="info" %}
+API endpoints are not enabled with the free version of Sonoran CAD.\
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
+{% endhint %}
+
+{% hint style="success" %}
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+{% endhint %}
+
+## Available API Endpoints
+
+### Emergency Endpoints
+
+View all emergency endpoints including unit actions, emergency calls, dispatching, and more!
+
+{% content-ref url="emergency/" %}
+[emergency](emergency/)
+{% endcontent-ref %}
