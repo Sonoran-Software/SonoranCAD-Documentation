@@ -8,7 +8,7 @@ description: Adds a Sonoran account to your CAD.
 This API endpoint is not available to the public and exists for internal documentation only for the CMS program.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/join_community" method="post" summary="Get Servers" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/sso/community" method="post" summary="Join Community" %}
 {% swagger-description %}
 This endpoint allows you to retrieve your community's server configuration. This contains valuable Live Map configuration data and can be used to ensure correct Live Map configs.
 {% endswagger-description %}
