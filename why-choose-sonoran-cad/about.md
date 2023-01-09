@@ -33,8 +33,6 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-**View a** [**showcase video on our WraithV2 plugin here**](https://www.youtube.com/watch?v=5oL7Mg6LQgg)**!**
-
 <figure><img src="../.gitbook/assets/in-game integration.png" alt=""><figcaption><p>Sonoran CAD's custom plugin framework and installation system!</p></figcaption></figure>
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
@@ -116,6 +114,8 @@ Check out our official [Stream Deck profiles](../integration-plugins/stream-deck
 In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](../sonoran-cad/api-integration/push-events/)!
+
+Easily integrate external scripts with our [LUA and JS export examples](../sonoran-cad/api-integration/api-examples/)!
 
 <figure><img src="../.gitbook/assets/api-integration.png" alt=""><figcaption><p>Sonoran CAD - API Integration</p></figcaption></figure>
 

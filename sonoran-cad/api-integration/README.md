@@ -23,6 +23,12 @@ You can also write your own script using our API endpoints:
 [api-endpoints](api-endpoints/)
 {% endcontent-ref %}
 
+Easily integrate external scripts with our LUA and JS export examples:
+
+{% content-ref url="api-examples/" %}
+[api-examples](api-examples/)
+{% endcontent-ref %}
+
 Or, learn more about receiving push events directly to your game server:
 
 {% content-ref url="push-events/" %}
