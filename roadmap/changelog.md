@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.2 01/11/2023
+
+{% tabs %}
+{% tab title="New" %}
+API: SET\_API\_ID Account
+
+* Added an `account` GUID field as another option to set a user's API IDs remotely.
+
+API: JOIN\_COMMUNITY
+
+* Added an internal endpoint for the CMS to automatically add users to your CAD when they are accepted in the CMS.
+
+API: LEAVE\_COMMUNITY
+
+* Added an internal endpoint for the CMS to automatically remove users from your CAD when they are removed or de-ranked in the CMS.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Record Tab Name Conflicts
+
+* Fixed an issue where different record templates with the same name would conflict in lookup and report center categorization tabs.
+
+\#12424 Multi-Server Group Dispatches
+
+* Fixed an issue where dispatching with multiple servers and the same group name would cause groups in both servers to be attached and detached from calls.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.1 01/04/2023
 
 {% tabs %}
