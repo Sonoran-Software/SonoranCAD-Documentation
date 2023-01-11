@@ -6,19 +6,19 @@ description: >-
 
 # 🏆 Why Choose Sonoran CAD?
 
-![](../.gitbook/assets/layout\_3\_11.gif)
-
-### 📱 Downloadable Apps
+### a📱 Downloadable Apps
 
 In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD\_Windows/releases/latest/download/Sonoran-CAD.exe).\
 \
 It's never been more easy to access your community's CAD system, regardless of what platform you're on!
 
+<figure><img src="../.gitbook/assets/downloadable-apps.png" alt=""><figcaption><p>Sonoran CAD - Downloadable Apps</p></figcaption></figure>
+
 ### 💾 Database Sync
 
 Tired of having to manually register civilians? With Sonoran CAD's [Database Sync](../integration-plugins/database-sync-and-merge/), all of your in-game characters, licenses, and vehicle registrations are automatically in your CAD!
 
-<figure><img src="../.gitbook/assets/Database Sync.png" alt=""><figcaption><p>Sonoran CAD - Satabse Sync</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Database Sync.png" alt=""><figcaption><p>Sonoran CAD - Database Sync</p></figcaption></figure>
 
 ### 🎮 In-Game Integration Plugins
 
@@ -33,7 +33,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-<figure><img src="../.gitbook/assets/in-game integration.png" alt=""><figcaption><p>Sonoran CAD's custom plugin framework and installation system!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ingameinte-2.png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
@@ -50,6 +50,8 @@ Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-su
 Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
 
 Sonoran CAD also offers vast [geographical location](../tutorials/customization/geographical-settings.md) support for non-American communities.
+
+<figure><img src="../.gitbook/assets/translationsupport.png" alt=""><figcaption><p>Sonoran CAD - Translations</p></figcaption></figure>
 
 ### 📍 Hosted and Integrated Live Map
 
@@ -133,8 +135,6 @@ You can even index specific record fields for [custom search types](../tutorials
 
 Sonoran CAD enables you to place your community's name and [branding](../tutorials/customization/community-branding-and-info.md) in the CAD, [customize user account emails](../tutorials/customization/custom-emails.md), host a [custom login page](../tutorials/customization/custom-login-page.md) on **your own domain**, and more!
 
-![Sonoran CAD's custom email branding!](<../.gitbook/assets/image (318).png>)
-
 ### 🧍 Self-Dispatch
 
 Don't have a dedicated dispatcher for your community?\
@@ -150,7 +150,7 @@ Looking to store official criminal records or prior call logs in a PDF format? S
 
 Sonoran CAD allows you to upload a [custom spreadsheet with your game's street names and addresses](../tutorials/customization/addresses-and-street-names.md). Dispatchers in the call editor can quickly and easily search and filter these names automatically.
 
-![](../.gitbook/assets/addresses.gif)
+<figure><img src="../.gitbook/assets/AutoSuggest.png" alt=""><figcaption><p>Sonoran CAD - Street Addresses</p></figcaption></figure>
 
 ### ⌨️ Global Hotkeys
 

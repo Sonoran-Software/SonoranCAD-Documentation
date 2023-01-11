@@ -6,13 +6,13 @@ description: >-
 
 # Stream Deck Integration
 
+<figure><img src="../.gitbook/assets/streamdeck.png" alt=""><figcaption></figcaption></figure>
+
 ## Introduction
 
 Our [desktop application](../downloads/) allows for global hotkey access to change your status, panic, open a new lookup, record center, and more **even when the app is minimized.**
 
 For users with a [Stream Deck](https://www.elgato.com/en/stream-deck), you can utilize these functions for quick access while in-game.
-
-![Sonoran CAD - Stream Deck](<../.gitbook/assets/image (176) (1).png>)
 
 ## Installation
 

@@ -7,7 +7,7 @@ description: >-
 
 # 📱Download The App
 
-![](<../.gitbook/assets/SonoranCAD Logo\_Full.png>)
+<figure><img src="../.gitbook/assets/downloadable-apps.png" alt=""><figcaption></figcaption></figure>
 
 | Website                             | iOS App Store                                                      | Google Play Store                                                                      | Windows Desktop                                                                                              |
 | ----------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |

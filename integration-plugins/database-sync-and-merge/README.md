@@ -18,6 +18,8 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/Database Sync.png" alt=""><figcaption></figcaption></figure>
+
 Database Sync is a highly advanced feature allowing you to automatically pull all character, license, and vehicle registration data from your own in-game database directly to Sonoran CAD.
 
 This feature is specifically designed for frameworks like ESX and QBus/QBCore, but is compatible with any MySQL database.

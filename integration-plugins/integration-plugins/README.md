@@ -11,6 +11,8 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/ingameinte-2.png" alt=""><figcaption></figcaption></figure>
+
 ### Framework Installation Guide
 
 All Sonoran CAD plugins require our API framework installation. Installing our framework is easy! Learn more below.

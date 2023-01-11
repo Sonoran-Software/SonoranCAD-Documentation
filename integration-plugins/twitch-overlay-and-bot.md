@@ -6,13 +6,9 @@ description: >-
 
 # 📺 Twitch Bodycam, Bot, & Lighting Integration
 
-![](../.gitbook/assets/live-banner.png)
-
-![Sonoran CAD - Live Stream Overlay](../.gitbook/assets/overlay.gif)
+<figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption></figcaption></figure>
 
 ![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (137).png>)
-
-![Stream Overlay - Bodycam](<../.gitbook/assets/image (240).png>)
 
 ## What is Sonoran CAD's Livestream Overlay?
 

@@ -11,6 +11,8 @@ Street address customization requires the **plus** version of Sonoran CAD or hig
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/AutoSuggest.png" alt=""><figcaption></figcaption></figure>
+
 ## Import Street Names from a Spreadsheet (CSV)
 
 ### 1. Copy the Google Sheet

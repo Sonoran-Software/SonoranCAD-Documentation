@@ -15,6 +15,8 @@ For more information, see our [pricing](../pricing/faq/) or view how to check yo
 Currently, Discord webhooks can only be created using the Desktop version of Discord.
 {% endhint %}
 
+<figure><img src="../.gitbook/assets/webhook.png" alt=""><figcaption></figcaption></figure>
+
 ### 1. Open your Server Settings
 
 Open the "Server Settings" panel in the top right of your Discord server.

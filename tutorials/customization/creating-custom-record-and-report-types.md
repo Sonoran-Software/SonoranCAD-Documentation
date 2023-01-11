@@ -9,7 +9,7 @@ Custom record and reports are limited based upon your subscription version.\
 For more information, please view our [pricing page](../../pricing/faq/).
 {% endhint %}
 
-## What are custom records and reports?
+<figure><img src="../../.gitbook/assets/custom records n reports (1).png" alt=""><figcaption></figcaption></figure>
 
 Sonoran CAD allows your community to create custom records and incident reports for police, fire, and EMS services. This tutorial will cover the basics of creating a new custom report or record and general usage of the system.
 

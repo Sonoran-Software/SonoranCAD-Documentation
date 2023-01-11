@@ -8,13 +8,13 @@ description: >-
 
 ## Getting Started
 
-![Sonoran CAD - Layout and Resize](../../.gitbook/assets/layout\_lock.gif)
-
 {% hint style="warning" %}
 By default, "[Classic Layout](customizing-your-layout.md#enable-classic-mode)" is enabled in the customization menu.
 
 To customize your dispatch/unit panel layout, you will need to [disable this](customizing-your-layout.md#8-classic-layout).
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/multi-windows.png" alt=""><figcaption></figcaption></figure>
 
 ### 1. Menu Options
 

@@ -8,7 +8,7 @@ description: >-
 
 ![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (46).png>)
 
-![London Studios - Smart Signs](<../../../.gitbook/assets/image (13).png>)
+<figure><img src="../../../.gitbook/assets/SmartSigns.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 This resource utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.

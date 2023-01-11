@@ -17,6 +17,8 @@ Having trouble opening the PDF in the web version?
 Your Ad-Blocker may be preventing the PDF from opening in a new window. Disable your Ad-Blocker on our website to prevent this issue.
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/pdfrecords.png" alt=""><figcaption></figcaption></figure>
+
 ### Records
 
 To download a PDF copy of a criminal or civilian record, select the PDF button in the bottom action bar.

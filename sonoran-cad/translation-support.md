@@ -4,6 +4,8 @@ description: Learn more about Sonoran CAD's i18n international translation suppo
 
 # 🌎 Translation Support
 
+<figure><img src="../.gitbook/assets/translationsupport.png" alt=""><figcaption></figcaption></figure>
+
 ## Setting the Language In-App
 
 Sonoran CAD will attempt to automatically detect your local language. However, you can manually set your language preferences in the side menu's "Settings" modal.

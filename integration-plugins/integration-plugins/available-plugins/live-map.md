@@ -6,7 +6,7 @@ description: >-
 
 # Live Map
 
-![Sonoran CAD - Live Map](../../../.gitbook/assets/map\_2\_final.gif)
+<figure><img src="../../../.gitbook/assets/live map.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.

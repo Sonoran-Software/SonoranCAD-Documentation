@@ -6,6 +6,8 @@ description: >-
 
 # 📖 API Integration
 
+<figure><img src="../../.gitbook/assets/api-integration.png" alt=""><figcaption></figcaption></figure>
+
 ## How are API calls sent?
 
 All API calls are sent via an HTTP POST with a JSON formatted body.
