@@ -54,7 +54,8 @@ INVALID API KEY
     "type": "SET_API_ID",
     "data": [
         {
-          "username": "Brian1234",
+          "username": "Brian1234",  // OPTION 1: Account Username
+          "account": "000-000-000", // OPTION 2: Account GUID
           "sessionId": "2daf5d1-8256-4373-9a", // OPTIONAL - Authentication
           "apiIds": [
               "11000010499F33C",
