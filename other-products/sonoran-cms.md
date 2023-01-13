@@ -6,8 +6,10 @@ description: Learn more about Sonoran's community management system.
 
 ![](<../.gitbook/assets/image (20).png>)
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 ![Sonoran CAD x Sonoran CMS - Permission Sync](../.gitbook/assets/CMS-CAD-Sync.png)
 
-Sonoran CMS is your single point of management for your community's documents, whitelisting, in-game permissions, community website, and more!
+Sonoran CMS is your single point of management for your community's documents, whitelisting, in-game permissions, community website, forums, Discord roles, and more!
 
 [Learn more about Sonoran CMS!](https://info.sonorancms.com/why-choose-sonoran-cms/why-choose-sonoran-cms)

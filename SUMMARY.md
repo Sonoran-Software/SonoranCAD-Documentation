@@ -70,6 +70,7 @@
 * [🗃 Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
   * [Mobile Command Center](integration-plugins/paid-integration-resources/mobile-command-center.md)
   * [ATM Robbery](integration-plugins/paid-integration-resources/atm-robbery.md)
+  * [In-Vehicle Radar](integration-plugins/paid-integration-resources/in-vehicle-radar.md)
   * [Evidence Camera](integration-plugins/paid-integration-resources/evidence-camera.md)
   * [Power Grid](integration-plugins/paid-integration-resources/power-grid.md)
   * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)

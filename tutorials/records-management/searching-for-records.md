@@ -61,7 +61,7 @@ Records can be [linked to other records](../customization/creating-custom-record
 
 Press the link icon in the top left to copy the record to your clipboard.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Sonoran CAD - Copy Record Link</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Sonoran CAD - Copy Record Link</p></figcaption></figure>
 
 ### Lookup from Plate Lock
 
