@@ -102,7 +102,6 @@
     * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
     * [Framework Support (ESX/QBCore) and Auto Fines](integration-plugins/integration-plugins/available-plugins/framework-support-esx-qbcore-and-auto-fines/README.md)
       * [Depreciated: ESX Support](integration-plugins/integration-plugins/available-plugins/framework-support-esx-qbcore-and-auto-fines/esx-support.md)
-    * [Fire Siren](integration-plugins/integration-plugins/available-plugins/fire-siren.md)
     * [FivePD](integration-plugins/integration-plugins/available-plugins/fivepd.md)
     * [ForceReg](integration-plugins/integration-plugins/available-plugins/forcereg.md)
     * [Kick](integration-plugins/integration-plugins/available-plugins/kick.md)
@@ -274,3 +273,5 @@
   * [Privacy Policy](other/policy/privacy-policy.md)
   * [Refund and Purchase Policy](other/policy/refund-and-purchase-policy.md)
   * [Discord Bot](other/policy/discord-bot.md)
+* [Archive](other/archive/README.md)
+  * [Fire Siren](other/archive/fire-siren.md)
