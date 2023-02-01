@@ -65,9 +65,9 @@ If you wish to have the plugin alert when the vehicle is not registered, is mark
 
 #### Find your custom record field's UID
 
-In the CAD navigate to Admin > Customization > Custom Records > select your custom vehicle registration record.
+In the CAD navigate to `Admin` > `Customization` > `Custom Records` > select your custom `Vehicle Registration` record.
 
-The very last column of the field containing your status and expiration dates will have the field's UID (unique identifier, sometimes referred to as 'field mapping id').
+The very last column of the field containing your status and expiration dates will have the `Field Mapping ID`.
 
 ![Custom Records - Field UID](<../../../.gitbook/assets/image (43).png>)
 
