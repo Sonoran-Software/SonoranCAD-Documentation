@@ -6,7 +6,7 @@ description: >-
 
 # 🏆 Why Choose Sonoran CAD?
 
-### a📱 Downloadable Apps
+### 📱 Downloadable Apps
 
 In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD\_Windows/releases/latest/download/Sonoran-CAD.exe).\
 \

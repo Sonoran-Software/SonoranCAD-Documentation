@@ -6,7 +6,7 @@ description: Learn more about Sonoran's community management system.
 
 ![](<../.gitbook/assets/image (20).png>)
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ![Sonoran CAD x Sonoran CMS - Permission Sync](../.gitbook/assets/CMS-CAD-Sync.png)
 

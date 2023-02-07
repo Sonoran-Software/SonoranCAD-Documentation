@@ -8,17 +8,13 @@ description: >-
 
 #### 1. Navigate to the Login Page
 
-On the website or app, select "Create Account"
+On the website or app, select one of the login options:
 
-![The account registration panel allows users to input their information](../../.gitbook/assets/account.PNG)
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Enter Your Account Information
+Users can register a Sonoran Software account at [account.sonoransoftware.com](https://account.sonoransoftware.com/).
 
-Enter in your email, username, and password. Then, select the green "Create Account" button.
-
-![Verification emails are sent for user registration](../../.gitbook/assets/email\_notif.PNG)
-
-#### 3. Verify Your Email Address
+#### 2. Verify Your Email Address
 
 {% hint style="warning" %}
 Account verification emails may not be shown in your primary inbox.
@@ -26,7 +22,7 @@ Account verification emails may not be shown in your primary inbox.
 If you're having trouble finding the email, check your spam, junk, promotions, or all mail folder.
 {% endhint %}
 
-Check your inbox for an email from Sonoran CAD.\
+If you've registered a new account, check your inbox for an email from Sonoran CAD.\
 \
 Select the "Verify Email" button, and your account will be automatically verified.\
 
