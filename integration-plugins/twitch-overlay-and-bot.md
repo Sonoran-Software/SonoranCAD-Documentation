@@ -94,7 +94,7 @@ The smart lighting integration is **not included with the free version** of the 
 \
 [Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)\
 \
-The bodycam creates local text files and hosts a local webserver.\
+The smart lighting integration creates local text files and hosts a local webserver.\
 **This requires the** [**desktop** ](../downloads/)**application to run.**
 {% endhint %}
 
