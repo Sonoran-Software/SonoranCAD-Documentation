@@ -92,8 +92,13 @@ When you toggle your police lights in-game, your room can flash with custom ligh
 {% hint style="warning" %}
 The smart lighting integration is **not included with the free version** of the Stream Overlay.\
 \
-[Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)
+[Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)\
+\
+The bodycam creates local text files and hosts a local webserver.\
+**This requires the** [**desktop** ](../downloads/)**application to run.**
 {% endhint %}
+
+
 
 {% embed url="https://www.youtube.com/watch?v=gs6RdZt3mUo" %}
 Sonoran CAD - Smart Lighting Video
