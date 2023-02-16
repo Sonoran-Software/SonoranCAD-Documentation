@@ -26,7 +26,7 @@ S3 Optimization
 
 ERLC Live Map - Single Image
 
-* Consolidated the ERLC live map to a single common image, hosted and updated via ERLC.#12424 Multi-Server Group Dispatches#12424 Multi-Server Group Dispatches#12424 Multi-Server Group Dispatches
+* Consolidated the ERLC live map to a single common image, hosted and updated via ERLC.
 {% endtab %}
 
 {% tab title="Fixed" %}
