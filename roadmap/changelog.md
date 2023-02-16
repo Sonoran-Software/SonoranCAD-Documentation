@@ -10,6 +10,36 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.3 02/16/2023
+
+{% tabs %}
+{% tab title="New" %}
+Call Notes - Local Timezone
+
+* Call notes with the new overhaul now convert to local community timezone format.
+{% endtab %}
+
+{% tab title="Changed" %}
+S3 Optimization
+
+* Improved S3 storage with community removals.
+
+ERLC Live Map - Single Image
+
+* Consolidated the ERLC live map to a single common image, hosted and updated via ERLC.#12424 Multi-Server Group Dispatches#12424 Multi-Server Group Dispatches#12424 Multi-Server Group Dispatches
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#12424 Multi-Server Group Dispatches
+
+* Fixed an issue where dispatching with multiple servers and the same group name would cause groups in both servers to be attached and detached from calls.
+
+Record Tab Name Conflicts
+
+* Fixed an issue where different record templates with the same name would conflict in lookup and report center categorization tabs.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.2 01/11/2023
 
 {% tabs %}
