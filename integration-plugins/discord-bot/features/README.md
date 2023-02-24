@@ -6,9 +6,9 @@ description: Learn more about Sonoran Bot's features!
 
 ### Permissions Synchronization
 
-Sync your Discord roles with permissions in SonoranCAD! Setup is required, so check out the link below.
+Sync your Discord roles with permissions in Sonoran CAD! Setup is required, so check out the link below.
 
-{% page-ref page="permissions-synchronization.md" %}
-
-
+{% content-ref url="permissions-synchronization.md" %}
+[permissions-synchronization.md](permissions-synchronization.md)
+{% endcontent-ref %}
 
