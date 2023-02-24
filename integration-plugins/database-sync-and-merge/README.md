@@ -319,4 +319,4 @@ Be sure to save your custom record format after enabling this!
 
 Back in our database sync editor, we can now see the new `Job` field has been added. We can map this new field to our database as any other field.
 
-![Database Sync - Custom Field Mapping](<../../.gitbook/assets/image (3) (2).png>)
+![Database Sync - Custom Field Mapping](<../../.gitbook/assets/image (3).png>)

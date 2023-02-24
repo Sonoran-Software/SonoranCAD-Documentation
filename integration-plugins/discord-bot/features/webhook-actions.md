@@ -6,6 +6,10 @@ description: >-
 
 # Webhook Actions
 
+{% hint style="danger" %}
+This feature is currently unavailable in the new SonoranBot.&#x20;
+{% endhint %}
+
 {% hint style="warning" %}
 Due to the API calls, this feature requires the **Plus** version of SonoranCAD or higher.
 {% endhint %}

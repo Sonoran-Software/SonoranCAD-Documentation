@@ -1,5 +1,5 @@
 ---
-description: Sync your Discord roles with Sonoran CAD permissions!
+description: Sync your Discord roles with SonoranCAD permissions!
 ---
 
 # Permissions Synchronization
@@ -26,20 +26,21 @@ In addition to automatically adding users when applications are accepted, [Sonor
 You must be an **Administrator** on the Discord server in order to set up this process.
 {% endhint %}
 
-The bot provides a few "slash" commands to set up the roles sync process.
+The bot provides a brand new menu to assist you with assigning roles to permissions.
 
-To assist you, use this [Permission Mask Calculator](https://sonoran-software.github.io/sonoranbot-perms/) to calculate the proper code to send with the `/maprole` command below.
+<figure><img src="../../../.gitbook/assets/Screenshot_13.png" alt=""><figcaption></figcaption></figure>
 
-| Command                          | Description                                                                                                                                                                                              |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/maprole <role> <type> <value>` | <p>Maps a role to a particular permission key or mask, depending on the "type" selected:</p><p></p><p>Permission Key - A permission key for your community</p><p>Permission Code - A permission mask</p> |
-| `/unmaprole <role>`              | Removes the permissions sync with the specified role.                                                                                                                                                    |
-| `/syncroles`                     | Forces a server-wide recalculation of all permissions. This can take some time depending on the size of your server.                                                                                     |
-| `/myid`                          | Gets your Discord ID.                                                                                                                                                                                    |
-| `/syncme`                        | Forces the bot to sync your permissions. You should only need to use this after initially setting your API ID in SonoranCAD.                                                                             |
-| `/linkme <secret ID>`            | Using the Secret ID, link your current discord account to SonoranCAD. **Primary Server Only**                                                                                                            |
-| `/changesecret <new secret>`     | Update the Secret Key mapping your Discord to Sonoran CAD. **Primary Server Only**                                                                                                                       |
-| `/caduser`                       | Checks if you have correctly linked your Discord account to SonoranCAD.                                                                                                                                  |
+Select a role:
+
+<figure><img src="../../../.gitbook/assets/Screenshot_14.png" alt=""><figcaption></figcaption></figure>
+
+Clicking "Set Mapping" will present an option to specify a code (using the linked tool) or an existing permission key. Enter "0" as the permission mask to delete the current mapping instead.
+
+<figure><img src="../../../.gitbook/assets/Screenshot_15.png" alt=""><figcaption></figcaption></figure>
+
+Successfully entering this information will bring you back to the main role mapping screen with the new permission set.
+
+<figure><img src="../../../.gitbook/assets/Screenshot_16.png" alt=""><figcaption></figcaption></figure>
 
 ### User Setup
 
@@ -66,3 +67,10 @@ By default, the bot will not remove permissions from users who do not have a mat
 * Discontinue use of permission keys ASAP. The bot "takes over" synchronization and will remove permissions granted by permission keys if they don't have a role that grants it.
   * Same goes for manual permission grants, **unless there is no role granting that permission**.
 
+### ADVANCED: Migration from Legacy SonoranBot
+
+Until the old bot is fully decommissioned, a /migrate command is provided to allow admins to move existing role mappings and account links to the new bot to ensure a smooth transition.&#x20;
+
+<figure><img src="../../../.gitbook/assets/Screenshot_17.png" alt=""><figcaption></figcaption></figure>
+
+Clicking yes will initiate the process and you will be prompted when completed. On larger communities, this can take several seconds to complete. **This feature will migrate all existing linked guilds and their role mappings** and only can be used once.

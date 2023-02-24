@@ -17,7 +17,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain! In addition, user signups and password recovery emails have your [custom branding](custom-emails.md). Logging in also takes you directly to the community, instead of having to select the community at the menu.
 
-![Sonoran CAD Custom Login Page Example](<../../.gitbook/assets/image (3).png>)
+![Sonoran CAD Custom Login Page Example](<../../.gitbook/assets/image (4).png>)
 
 ## DNS Record Method (Recommended)
 
