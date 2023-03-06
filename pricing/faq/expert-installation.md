@@ -18,17 +18,21 @@ Expert installation is a one-time payment of $34.99 and covers a single install 
 
 ## How do I purchase expert installation?
 
+### For free:
+
+Expert installation is offered to [Sonoran Servers customers for free](bundle-discount-sonoran-servers.md)!
+
 ### At checkout:
 
 When purchasing a new subscription for Sonoran CAD, CMS, or Radio; click `Add` on the `Expert Installation` option under `Add to your order` on the checkout page.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Expert Installation - Add to Order</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Expert Installation - Add to Order</p></figcaption></figure>
 
 ### In the billing portal:
 
 In the CAD billing portal, select `New Subscription` > `Expert Installation`
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Expert Installation - New Purchase</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Expert Installation - New Purchase</p></figcaption></figure>
 
 ## Requirements for Installation
 
