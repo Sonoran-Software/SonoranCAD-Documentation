@@ -153,6 +153,8 @@
     * [Remove 911](sonoran-cad/api-integration/push-events/remove-911.md)
     * [Sign Updated](sonoran-cad/api-integration/push-events/sign-updated.md)
     * [Tone Played](sonoran-cad/api-integration/push-events/tone-played.md)
+    * [Civilian](sonoran-cad/api-integration/push-events/civilian/README.md)
+      * [Character Selected](sonoran-cad/api-integration/push-events/civilian/character-selected.md)
   * [API Endpoints](sonoran-cad/api-integration/api-endpoints/README.md)
     * [API Restrictions](sonoran-cad/api-integration/api-endpoints/api-restrictions.md)
     * [Emergency](sonoran-cad/api-integration/api-endpoints/emergency/README.md)
