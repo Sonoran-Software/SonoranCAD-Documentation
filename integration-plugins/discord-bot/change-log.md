@@ -4,6 +4,14 @@ description: Changes to Sonoran Bot.
 
 # Change Log
 
+### 2023-02-24
+
+{% tabs %}
+{% tab title="Updates" %}
+* Release of the v2 Sonoran Bot.
+{% endtab %}
+{% endtabs %}
+
 ### 2021-08-08
 
 {% tabs %}
@@ -41,6 +49,4 @@ description: Changes to Sonoran Bot.
 * The bot will also attempt to message the first available channel its welcome message, if a system channel is not configured.
 {% endtab %}
 {% endtabs %}
-
-
 

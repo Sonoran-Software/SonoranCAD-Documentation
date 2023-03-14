@@ -10,7 +10,7 @@ description: >-
 
 On the website or app, select one of the login options:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users can register a Sonoran Software account at [account.sonoransoftware.com](https://account.sonoransoftware.com/).
 

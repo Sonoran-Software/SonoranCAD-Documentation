@@ -58,6 +58,10 @@ If your subscription expires, your CAD will automatically be downgraded to the f
 
 _Communities with no active logins for 30 days will be automatically removed._
 
+### I purchased expert installation, how do I activate this?
+
+If you've purchased [expert installation](expert-installation.md), simply reach out to our [customer support team](https://support.sonoransoftware.com).
+
 ### Refund and Purchase Policy
 
 For more information on our refund and purchasing policy, click [here](../../other/policy/refund-and-purchase-policy.md).

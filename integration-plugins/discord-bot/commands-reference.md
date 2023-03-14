@@ -1,45 +1,26 @@
 ---
-description: List of all bot commands. <> are required arguments, [] are optional.
+description: Learn more about Sonoran Bot's Discord commands.
 ---
 
 # Commands Reference
 
 {% hint style="warning" %}
-Due to Discord changes, SonoranBot commands can only be used by mentioning it along with the command. An example is provided below.
+All commands are done via the **slash command** feature.
+
+SonoranBot will not respond to mentions or message-based commands.
 {% endhint %}
 
-### Publicly Usable
+By default, only server administrators (those with Administrator in the guild) can execute any of the below commands. You must use [Discord's permissions setting feature](https://discord.com/blog/slash-commands-permissions-discord-apps-bots) to give users access.
 
-| Command    | Arguments  | Description                                                                                       |
-| ---------- | ---------- | ------------------------------------------------------------------------------------------------- |
-| help       | \[command] | Shows a help box for the specific command (if given). Will only show commands you have access to. |
-| ping       | None       | Check the bot's ping.                                                                             |
-| uptime     | None       | Check the bot's uptime.                                                                           |
-| checkperms | None       | Check what your permission level is for certain actions.                                          |
+### Role Sync
 
-Example command: `@SonoranBot help`
-
-### Usable by Linked Servers
-
-| Command | Arguments      | Description                                 | Permission Needed |
-| ------- | -------------- | ------------------------------------------- | ----------------- |
-| panic   | None           | Toggles panic button for your unit.         | Police/Fire/EMS   |
-| penal   | \<search term> | Searches the community's penal code titles. | All               |
-
-### Setup and Settings
-
-| Command     | Arguments | Description                           | Permission Needed |
-| ----------- | --------- | ------------------------------------- | ----------------- |
-| showrolemap | None      | Shows the current role mapping setup. | Administrator     |
-
-## Slash Commands Reference
-
-The following commands are general commands for controlling the bot's behavior. Features may add additional commands to the bot.
-
-| Command       | Arguments    | Description                                                                    | Permission Needed |
-| ------------- | ------------ | ------------------------------------------------------------------------------ | ----------------- |
-| setup         | None         | Sets up a new guild.                                                           | Manage Server     |
-| changeprimary | newguildid   | Change the primary server the bot will use. This affects the linking commands. | Manage Server     |
-| caduser       | \[discordid] | Shows if you have connected with SonoranCAD properly.                          | Everyone          |
-
-This list was last updated on 8/8/2021. Use the `help` command for an updated list of commands you have access to.
+| Command    | Mode    | Description                                              |
+| ---------- | ------- | -------------------------------------------------------- |
+| /guildlink | CAD/CMS | Links a guild to an existing CAD or CMS community.       |
+| /linkme    | CAD     | Links your Discord to your SonoranCAD account.           |
+| /migrate   | CAD     | Migrate rolemap and linked accounts from the legacy Bot. |
+| /rolemap   | CAD/CMS | Opens role mapping settings                              |
+| /settings  | CAD/CMS | Allows adjustment of various settings in the bot.        |
+| /setup     |         | Sets up the bot with your CAD/CMS community.             |
+| /syncme    | CAD/CMS | Forces a sync with CAD/CMS for yourself.                 |
+| /syncroles | CAD/CMS | Forces a CAD/CMS sync for the entire guild.              |
