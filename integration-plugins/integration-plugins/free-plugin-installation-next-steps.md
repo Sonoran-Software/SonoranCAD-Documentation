@@ -1,12 +1,12 @@
 ---
 description: >-
   This guide covers the next steps after receiving free Sonoran CAD plugin
-  installation with your Sonoran Servers Windows Server.
+  installation with your Sonoran Servers Windows Server or Expert Installation.
 ---
 
 # Free Plugin Installation - Next Steps
 
-![Sonoran Servers - CAD Bundle Program](https://gblobscdn.gitbook.com/assets%2F-M4pGN81fb4R6zFhodcu%2F-MU0jWI0XNTj0okGoEY2%2F-MU0kAzkpUlHYFxoJw2f%2FBanner\_3.png?alt=media\&token=31511ed4-b1cb-4abe-a60a-c0f02790ca35)
+![Sonoran Servers - Bundle Program](<../../.gitbook/assets/banner\_update-1 (1).png>)
 
 If you haven't already, [check out our page for more information on this promotion](../../pricing/faq/bundle-discount-sonoran-servers.md).
 
