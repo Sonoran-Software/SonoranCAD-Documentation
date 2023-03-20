@@ -10,43 +10,6 @@ description: >-
 This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/edit_record" method="post" summary="Edit Record" %}
-{% swagger-description %}
-This endpoint allows you to modify an existing custom record to your community.
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" type="string" %}
-EDIT_RECORD
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of record objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
-```
-{UPDATED RECORD OBJECT}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400" description="" %}
-```
-INVALID REQUEST TYPE
-INVALID COMMUNITY ID
-API IS NOT ENABLED FOR THIS COMMUNITY
-INVALID API KEY
-```
-{% endswagger-response %}
-{% endswagger %}
-
 ```javascript
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
@@ -54,6 +17,7 @@ INVALID API KEY
     "data": [
         {
             "user": "STEAM:1234",  // API ID or user UUID/GUID that 'owns' this record
+            "templateId": 5,       // Template ID (shown in Admin menu next to name) or on the record's `recordTypeId` field
             "useDictionary": true, // OPTION 1: Key/Value from template
             "recordId": 123,       // OPTION 1: Record ID being modified
             "replaceValues": {
