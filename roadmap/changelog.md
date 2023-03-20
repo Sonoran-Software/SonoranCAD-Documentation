@@ -23,6 +23,12 @@ Push Event - Character Selected
 * Added a push event for when a user selects a different civilian in the portal.
 {% endtab %}
 
+{% tab title="Changed" %}
+API EDIT\_RECORD - DB Merge Handling
+
+* Added a `templateId` field on the EDIT\_RECORD/EDIT\_CHARACTER endpoint to specify the type of record being edited. This allows the API to dynamically determine if the record being edited is a DB sync based record, and create a DB merge record for it.
+{% endtab %}
+
 {% tab title="Fixed" %}
 \#13575 - Civilian Unique Fields
 
