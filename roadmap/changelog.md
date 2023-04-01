@@ -10,6 +10,36 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.5 03/20/2023
+
+{% tabs %}
+{% tab title="New" %}
+Custom Records - Read-only time field - Auto set
+
+* Time fields will now auto populate based on the community time zone when set to read only for new records.
+
+Push Event - Character Selected
+
+* Added a push event for when a user selects a different civilian in the portal.
+{% endtab %}
+
+{% tab title="Changed" %}
+API EDIT\_RECORD - DB Merge Handling
+
+* Added a `templateId` field on the EDIT\_RECORD/EDIT\_CHARACTER endpoint to specify the type of record being edited. This allows the API to dynamically determine if the record being edited is a DB sync based record, and create a DB merge record for it.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#13575 - Civilian Unique Fields
+
+* Fixed an issue with civilian unique fields not working properly.
+
+\#12458 Admin Kick
+
+* Fixed an issue where kicking a user in the admin panel didn't update the UI until a refresh was done.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.3 02/16/2023
 
 {% tabs %}

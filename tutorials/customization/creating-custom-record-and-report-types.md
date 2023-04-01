@@ -170,7 +170,7 @@ Unique fields can only be on non-DB Sync records and in custom sections.
 
 Read only fields prevent the user from entering new or modified text. This is used for auto-filled fields like unit information when a new record is created.
 
-Note: The `date` field will auto-fill with the current date if `readOnly` is toggled.
+Note: The `date` and `time` fields will auto-fill with the current date/time if `readOnly` is toggled, based on the [community's timezone](community-branding-and-info.md).
 
 <img src="../../.gitbook/assets/image (305) (1) (1).png" alt="Custom Records - Read Only Toggle" data-size="original">
 

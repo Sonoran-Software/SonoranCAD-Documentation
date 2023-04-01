@@ -200,3 +200,18 @@ We have gotten isolated reports of servers crashing with the following error, th
 {% endhint %}
 
 ![](<../../.gitbook/assets/image (306) (1).png>)
+
+### Warning: Could not find file X
+
+1.) Check that the file in question is actually present in the specified file path. To find the correct path please read the example below:
+
+```
+Started resource sonorancad (3 warnings)
+^3Warning: Could not find file `html/config.js` (defined in fxmanifest.lua:16^7
+```
+
+In this example, you would navigate to the `sonorancad` **resource**, open the `html` **folder** and ensure the **file** `config.js` is present.&#x20;
+
+{% hint style="info" %}
+This is simply a **WARNING**, if the resource works **AS EXPECTED**, you can simply ignore the warning and continue
+{% endhint %}

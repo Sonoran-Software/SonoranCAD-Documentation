@@ -65,6 +65,7 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
     "data": [
         {
             "user": "STEAM:1234",  // API ID or user UUID/GUID that 'owns' this record
+            "templateId": 5,       // Template ID (shown in Admin menu next to name) or on the record's `recordTypeId` field
             "useDictionary": true, // OPTION 1: Key/Value from template
             "recordId": 123,       // OPTION 1: Record ID being modified
             "replaceValues": {

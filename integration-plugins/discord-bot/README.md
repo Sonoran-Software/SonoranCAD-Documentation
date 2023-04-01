@@ -8,29 +8,35 @@ description: >-
 # Discord Bot
 
 {% hint style="warning" %}
-Due to system limitations, the Discord bot cannot be used with the free version of Sonoran CAD.  
+Due to system limitations, the Discord bot cannot be used with the free version of Sonoran CAD.\
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 
 
+{% embed url="https://www.youtube.com/watch?v=VATCtHH7GQw" %}
+
 ### Getting Started
 
 Get started with SonoranBot today by inviting it to your Discord:
 
-{% page-ref page="getting-started-discord-bot.md" %}
+{% content-ref url="getting-started-discord-bot.md" %}
+[getting-started-discord-bot.md](getting-started-discord-bot.md)
+{% endcontent-ref %}
 
 ### Commands
 
 Reference a list of bot commands:
 
-{% page-ref page="commands-reference.md" %}
+{% content-ref url="commands-reference.md" %}
+[commands-reference.md](commands-reference.md)
+{% endcontent-ref %}
 
 ### Features
 
 Learn more about SonoranBot's integration features:
 
-{% page-ref page="features/" %}
-
-
+{% content-ref url="features/" %}
+[features](features/)
+{% endcontent-ref %}
 

@@ -6,15 +6,18 @@ description: >-
 
 # Expert Installation
 
-{% hint style="danger" %}
-This service is in testing and has not yet been released!
-{% endhint %}
+<figure><img src="../../.gitbook/assets/install2.png" alt=""><figcaption></figcaption></figure>
 
 ## What is expert installation?
 
-Our support agents are available 7 days/week to help install and configure all of your Sonoran CAD, CMS, and Radio plugins on your Windows server!
+Our support agents are available 7 days/week to help install and configure all of your Sonoran CAD, CMS, and Radio plugins on your Windows VPS or dedicated server!
 
-Expert installation is a one-time payment of $34.99 and covers a single install of Sonoran CAD, Sonoran CMS, and Sonoran Radio's addons/plugins.
+Expert installation is a one-time payment of $34.99 and covers THREE (3) non-transferable installation credits.\
+These credits can be used for:
+
+* Sonoran CAD - Framework and Plugin Installation
+* Sonoran CMS - Addon Installation
+* Sonoran Radio - In-Game Radio and Addon Installation
 
 ## How do I purchase expert installation?
 
@@ -44,4 +47,10 @@ In the CAD billing portal, select `New Subscription` > `Expert Installation`
 
 ### Can I redeem another product installation at a later date?
 
-Yes! Your purchase is valid for an installation of one CAD, CMS, and Radio configuration. You could have the agent install and configure CAD plugins and install CMS plugins at a later date.
+Yes! Your purchase is valid for three installation credits. You could have the agent install and configure CAD plugins and install CMS plugins at a later date.
+
+### The support agent has installed my plugins, what's next?
+
+{% content-ref url="../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md" %}
+[free-plugin-installation-next-steps.md](../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
+{% endcontent-ref %}

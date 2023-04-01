@@ -12,6 +12,8 @@ Setting up the bot requires you to have the `Manage Server` permissions on the D
 You must also have access to your server's [API Key information](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md).
 {% endhint %}
 
+{% embed url="https://www.youtube.com/watch?v=VATCtHH7GQw" %}
+
 ### 1. Invite the Bot to Your Server
 
 [Invite the bot to your Discord server](https://discord.com/api/oauth2/authorize?client\_id=1060274480930361424\&permissions=9395244032\&scope=bot%20applications.commands). You must have the "Manage Server" permission to add bots; plus any permissions the bot requires to function.
