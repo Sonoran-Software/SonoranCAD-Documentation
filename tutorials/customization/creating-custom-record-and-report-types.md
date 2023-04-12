@@ -222,7 +222,7 @@ Dependencies allow you to make an individual field or entire section visible bas
 
 Expand a field and copy the unique `Field Mapping ID`.
 
-****![](<../../.gitbook/assets/image (27).png>)****
+![](<../../.gitbook/assets/image (27).png>)
 
 **Set Child Dependency**
 
@@ -316,6 +316,8 @@ A re-sync is only available once per 10 minutes.
 Custom records allow the addition of a character and vehicle search button in sections. Clicking these allows the user to search and import a vehicle or character into the record section.
 
 <figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption><p>Custom Record - Vehicle and Civilian search sections</p></figcaption></figure>
+
+Character and vehicle searches will not fill out fields in your record if the record field UIDs are incorrect.
 
 In order for these searches to properly place the vehicle and civilian record in your custom record fields, specific field `uid` values must match.
 
