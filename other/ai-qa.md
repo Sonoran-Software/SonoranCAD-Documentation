@@ -14,4 +14,10 @@ To make a meme:
 1. Dream
 2. Coconut Machine
 3. Schleme
-5. Meme
+5. Meme#
+How do I contact Brian?
+To contact brian:
+1. Don't
+2. Try
+3. Memes
+4. Test
