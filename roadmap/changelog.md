@@ -10,6 +10,30 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.6 05/09/2023
+
+{% tabs %}
+{% tab title="New" %}
+\#14828 Unit Group Name Change
+
+* Added an EVENT\_UNIT\_GROUP\_CHANGE\_NAME push event when unit group names are updated.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#14702 - EDIT Record/Character User Field
+
+* Fixed an issue causing the EDIT\_RECORD and EDIT\_CHARACTER endpoint's "user" property from properly updating the record owner.
+
+Login - SSO Username Conflict
+
+* Added additional handling to automatically remedy an edge case where conflicting and outdated usernames would cause account issues on login.
+
+\#14565 - ERLC LiveMap Pop Out
+
+* Fixed an issue causing the ERLC live map to not properly display in a desktop popout window.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.5 03/20/2023
 
 {% tabs %}
