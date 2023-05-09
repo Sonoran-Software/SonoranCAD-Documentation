@@ -28,7 +28,7 @@ You must be an **Administrator** on the Discord server in order to set up this p
 
 The bot provides a brand new menu to assist you with assigning roles to permissions.
 
-<figure><img src="../../../.gitbook/assets/Screenshot_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot_13 (1).png" alt=""><figcaption></figcaption></figure>
 
 Select a role:
 

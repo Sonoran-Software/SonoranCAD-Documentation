@@ -30,7 +30,7 @@ Now that you have copied this sheet into your Google Drive, you can add new rows
 
 {% hint style="warning" %}
 **Do NOT add additional columns.**\
-****Every street name must be on a separate row to be properly imported into Sonoran CAD.
+Every street name must be on a separate row to be properly imported into Sonoran CAD.
 {% endhint %}
 
 ![Sonoran CAD - Street Names CSV](<../../.gitbook/assets/image (253).png>)

@@ -6,7 +6,7 @@ description: >-
 
 # Live Map
 
-<figure><img src="../../../.gitbook/assets/live map.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/live map (1).png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
 {% hint style="warning" %}
 This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
@@ -46,7 +46,7 @@ In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Eve
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map).
 
-![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (298) (1).png>)
+![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (53).png>)
 
 ### 4. Set Your API ID
 
@@ -94,7 +94,7 @@ Or, quickly auto-open and search for the location by clicking the search icon:
 
 You can toggle specific blips visibility and outline colors for police, fire, EMS, and dispatch.
 
-![Live Map - Blip Customization](<../../../.gitbook/assets/image (299) (1).png>)
+![Live Map - Blip Customization](<../../../.gitbook/assets/image (45).png>)
 
 ### **Unit Blips**
 
@@ -134,7 +134,7 @@ Emergency calls placed in-game will also appear on the live map. You can hover o
 
 Clicking on the emergency blip allows you to import the call to your editor or remove the emergency call.
 
-![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (296) (1).png>)
+![Live Map - Emergency Call Blip](<../../../.gitbook/assets/image (42).png>)
 
 #### Drag-and-Drop
 
@@ -146,7 +146,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
-![Live Map - Smart Signs](<../../../.gitbook/assets/image (144).png>)
+![Live Map - Smart Signs](<../../../.gitbook/assets/image (73).png>)
 
 ## Using a Custom Map
 

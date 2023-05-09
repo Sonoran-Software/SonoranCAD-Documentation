@@ -33,7 +33,7 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 * [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
 * And much more!
 
-<figure><img src="../.gitbook/assets/ingameinte-2.png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ingameinte-2 (1).png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
@@ -57,7 +57,7 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
-<figure><img src="../.gitbook/assets/live map.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/live map (1).png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
 ### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
 
@@ -67,7 +67,7 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
-<figure><img src="../.gitbook/assets/SmartSigns.png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SmartSigns (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 
@@ -79,7 +79,7 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 <figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption><p>Sonoran CAD - Stream Overlay</p></figcaption></figure>
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1).png>)
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
@@ -129,7 +129,7 @@ Whether it's your own firearms registration system, an in-depth vehicle accident
 
 You can even index specific record fields for [custom search types](../tutorials/customization/custom-search-types.md). Allowing you to run a lookup on your record's custom ID numbers, phone numbers, and more!
 
-<figure><img src="../.gitbook/assets/custom records n reports (1).png" alt=""><figcaption><p>Sonoran CAD - Custom Reports</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/custom records n reports.png" alt=""><figcaption><p>Sonoran CAD - Custom Reports</p></figcaption></figure>
 
 ### 📧 Custom Branding
 

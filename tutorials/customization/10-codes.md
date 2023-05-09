@@ -44,7 +44,7 @@ Now that you have copied this sheet into your Google Drive, you can add new rows
 
 {% hint style="warning" %}
 **Do NOT add additional columns.**\
-****Every 10-code must be on a separate row to be properly imported into Sonoran CAD.
+Every 10-code must be on a separate row to be properly imported into Sonoran CAD.
 {% endhint %}
 
 ![Sonoran CAD - 10-Codes CSV](<../../.gitbook/assets/image (254).png>)

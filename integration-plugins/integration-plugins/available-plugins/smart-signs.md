@@ -8,7 +8,7 @@ description: >-
 
 ![Sonoran CAD x London Studios](<../../../.gitbook/assets/image (46).png>)
 
-<figure><img src="../../../.gitbook/assets/SmartSigns.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SmartSigns (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 This resource utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
@@ -98,7 +98,7 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
-![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (144).png>)
+![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (73).png>)
 
 ### Full Feature List
 
