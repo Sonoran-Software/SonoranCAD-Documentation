@@ -149,7 +149,7 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 Ex: `/sp abc1234`
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, running a pate search in-game will automatically pop up the results on your CAD screen.
+Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, running a plate search in-game will automatically pop up the results on your CAD screen.
 
 ![Sonoran CAD: Plate Search](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.24.49 AM.png>)
 
