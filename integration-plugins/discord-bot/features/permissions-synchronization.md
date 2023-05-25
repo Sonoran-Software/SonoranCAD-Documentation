@@ -7,7 +7,9 @@ description: Sync your Discord roles with SonoranCAD permissions!
 {% hint style="warning" %}
 This feature requires the **Plus** version of Sonoran CAD to function.&#x20;
 
-For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).&#x20;
+
+Sync CAD permissions between Sonoran CMS and Discord for [free](https://info.sonorancms.com/integration-capabilities/sonoran-cad-sync)!
 {% endhint %}
 
 ## Manage with Sonoran CMS!
