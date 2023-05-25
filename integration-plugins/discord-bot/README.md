@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="warning" %}
 Due to system limitations, the Discord bot cannot be used with the free version of Sonoran CAD.\
-For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).\
 For the [Permissions Synchronization](/features/permissions-synchronization.md) feature you will need the **Plus** version of Sonoran CAD to function. Or free with [Sonoran CMS](https://info.sonorancms.com/integration-capabilities/sonoran-cad-sync)!
 {% endhint %}
 
