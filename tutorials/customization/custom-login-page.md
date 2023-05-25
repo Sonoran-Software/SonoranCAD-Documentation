@@ -23,7 +23,7 @@ The custom login page allows your community members to register, sign-in, and ac
 
 {% hint style="warning" %}
 **If you are unsure how to add a DNS record, you will need to contact your domain registrar.**\
-****Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add\&domain=register).
+Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add\&domain=register).
 {% endhint %}
 
 ### 1. Add a CNAME and TXT Record for your Domain
@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16) (2).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (290).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
@@ -91,8 +91,8 @@ Now that you've saved the custom URL inside of the HTML file, you can host this 
 ## In-Game Tablet
 
 If you wish to use a custom login page when using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), you can set a convar in your server.cfg.\
-****\
-****The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
+\
+The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
 
 `"https://sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 

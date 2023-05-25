@@ -141,6 +141,7 @@
       * [Unit Login](sonoran-cad/api-integration/push-events/unit-events/unit-login.md)
       * [Unit Logoff](sonoran-cad/api-integration/push-events/unit-events/unit-logoff.md)
       * [Unit Status Update](sonoran-cad/api-integration/push-events/unit-events/unit-status-update.md)
+      * [Unit Group Name Change](sonoran-cad/api-integration/push-events/unit-events/unit-group-name-change.md)
       * [Unit Group Add](sonoran-cad/api-integration/push-events/unit-events/unit-group-add.md)
       * [Unit Group Remove](sonoran-cad/api-integration/push-events/unit-events/unit-group-remove.md)
     * [Dispatch Events](sonoran-cad/api-integration/push-events/dispatch-events/README.md)
@@ -271,6 +272,7 @@
 
 ## Other
 
+* [AI QA](other/ai-qa.md)
 * [Contact Us](https://support.sonoransoftware.com)
 * [Policy](other/policy/README.md)
   * [Terms of Service](other/policy/terms-of-service.md)

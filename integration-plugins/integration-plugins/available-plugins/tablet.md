@@ -28,8 +28,8 @@ In your `server.cfg` file add the following new line:\
 ### 3. Set URL Convar (Optional)
 
 If you wish to use a custom login page, you can set a convar in your server.cfg.\
-****\
-****The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
+\
+The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
 
 `"https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
 
