@@ -309,11 +309,11 @@ Navigate to Admin > Customization > Custom Records
 
 Select your custom character, license, or vehicle registration record to open the editor.
 
-Simply check the box to enable database sync mapping for any new or existing field. For this example, we'll enable it for a new `job` field in our character's table.
+Simply add a field if the desired field doesn't already exist and note the `Label` name for the next step. For this example, we'll enable database sync for a new `job` field in our character's table.
 
 Be sure to save your custom record format after enabling this!
 
-![Custom Records - DB Sync Mapping Toggle](<../../.gitbook/assets/image (11).png>)
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Custom Records - DB Sync Mapping Toggle</p></figcaption></figure>
 
 ### 2. Configure the Newly Mapped Field
 

@@ -42,13 +42,4 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## ~~Configuration~~
 
-| Option                    | Description                                                                                         |
-| ------------------------- | --------------------------------------------------------------------------------------------------- |
-| firesirenResourceName     | Resource name of the Inferno Collection: Fire/EMS Pager + Fire Siren script                         |
-| nearestPostalResourceName | Resource name of the nearest-postal script                                                          |
-| postalsType               | Postals type to use, should be the same as configured in the nearest postal resource.               |
-| fireSirens                | A list of all configured fire sirens - should be the same as configured in the fire siren resource. |
-| fireCalls                 | Codes that will trigger a fire siren                                                                |
-| addCallNote               | True/false, enable adding call notes                                                                |
-| callNoteMessage           | What note to add to a call                                                                          |
-| callNoteStation           | Adds the station name where the alarm was triggered                                                 |
+<table><thead><tr><th width="168">Option</th><th>Description</th></tr></thead><tbody><tr><td>firesirenResourceName</td><td>Resource name of the Inferno Collection: Fire/EMS Pager + Fire Siren script</td></tr><tr><td>nearestPostalResourceName</td><td>Resource name of the nearest-postal script</td></tr><tr><td>postalsType</td><td>Postals type to use, should be the same as configured in the nearest postal resource.</td></tr><tr><td>fireSirens</td><td>A list of all configured fire sirens - should be the same as configured in the fire siren resource.</td></tr><tr><td>fireCalls</td><td>Codes that will trigger a fire siren</td></tr><tr><td>addCallNote</td><td>True/false, enable adding call notes</td></tr><tr><td>callNoteMessage</td><td>What note to add to a call</td></tr><tr><td>callNoteStation</td><td>Adds the station name where the alarm was triggered</td></tr></tbody></table>

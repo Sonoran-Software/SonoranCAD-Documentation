@@ -5,9 +5,9 @@ description: Sync your Discord roles with SonoranCAD permissions!
 # Permissions Synchronization
 
 {% hint style="warning" %}
-This feature requires the **Plus** version of Sonoran CAD to function.&#x20;
+This feature requires the **Plus** version of Sonoran CAD to function.
 
-For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).&#x20;
+For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
 
 Sync CAD permissions between Sonoran CMS and Discord for [free](https://info.sonorancms.com/integration-capabilities/sonoran-cad-sync)!
 {% endhint %}
@@ -30,7 +30,7 @@ You must be an **Administrator** on the Discord server in order to set up this p
 
 The bot provides a brand new menu to assist you with assigning roles to permissions.
 
-<figure><img src="../../../.gitbook/assets/Screenshot_13 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot_13 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Select a role:
 
@@ -71,7 +71,7 @@ By default, the bot will not remove permissions from users who do not have a mat
 
 ### ADVANCED: Migration from Legacy SonoranBot
 
-Until the old bot is fully decommissioned, a /migrate command is provided to allow admins to move existing role mappings and account links to the new bot to ensure a smooth transition.&#x20;
+Until the old bot is fully decommissioned, a /migrate command is provided to allow admins to move existing role mappings and account links to the new bot to ensure a smooth transition.
 
 <figure><img src="../../../.gitbook/assets/Screenshot_17.png" alt=""><figcaption></figcaption></figure>
 

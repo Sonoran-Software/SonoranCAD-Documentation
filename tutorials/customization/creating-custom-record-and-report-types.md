@@ -59,7 +59,7 @@ The select field allows you to customize a dropdown box.
 
 <img src="../../.gitbook/assets/image (305).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
 
-<img src="../../.gitbook/assets/image (16) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<img src="../../.gitbook/assets/image (16) (1) (1) (2).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
 
 #### Text Area
 

@@ -28,12 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Configuration&#x20;
 
-| Option           | Description                                                            | Default    |
-| ---------------- | ---------------------------------------------------------------------- | ---------- |
-| reigsterCommand  | The command used to register current vehicle                           | reg        |
-| defaultRegExpire | The default date that all registrations will expire                    | 01/02/2030 |
-| defaultRegStatus | The default status that all registrations will have \| MUST BE IN CAPS | VALID      |
-| language         | Array of language used within the script                               | English    |
+<table><thead><tr><th>Option</th><th width="276">Description</th><th>Default</th></tr></thead><tbody><tr><td>reigsterCommand</td><td>The command used to register current vehicle</td><td>reg</td></tr><tr><td>defaultRegExpire</td><td>The default date that all registrations will expire</td><td>01/02/2030</td></tr><tr><td>defaultRegStatus</td><td>The default status that all registrations will have | MUST BE IN CAPS</td><td>VALID</td></tr><tr><td>language</td><td>Array of language used within the script</td><td>English</td></tr></tbody></table>
 
 ## Usage
 

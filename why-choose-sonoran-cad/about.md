@@ -79,7 +79,7 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 <figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption><p>Sonoran CAD - Stream Overlay</p></figcaption></figure>
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (2).png>)
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](../integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
