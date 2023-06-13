@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption></figcaption></figure>
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (2).png>)
 
 ## What is Sonoran CAD's Livestream Overlay?
 
@@ -83,7 +83,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (1) (1).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
@@ -178,7 +178,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-<img src="../.gitbook/assets/image (259).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (290) (1) (1) (1).png" alt="" data-size="original">
 
 **2. Retrieve your API Key and Search**
 
@@ -194,7 +194,7 @@ Sonoran CAD will scan for all locally active Bluetooth devices. Govee bulbs will
 
 If your bulb is not discoverable, turn the bulb's power off entirely for \~5 seconds then turn it back on. This should place your bulb into discovery mode.
 
-![](<../.gitbook/assets/image (67).png>)
+![](<../.gitbook/assets/image (293) (1) (1).png>)
 
 **2. Add the Bulb**
 

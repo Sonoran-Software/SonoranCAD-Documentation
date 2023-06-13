@@ -8,7 +8,7 @@ description: >-
 
 ## [Sonoran Servers](https://sonoranservers.com)
 
-![](<../.gitbook/assets/image (126) (1).png>)
+![](<../.gitbook/assets/image (126) (2).png>)
 
 We've configured, built, and collocated our hardware to provide clients with our reliable performance and exceptional customer support experience.
 
@@ -18,9 +18,9 @@ Looking to host your next gaming server? Sonoran Servers has you covered!
 
 ## Sonoran CAD - Free Plugin Installation and 30% Off Monthly
 
-![Sonoran Servers - 30% Software Discount](<../.gitbook/assets/banner\_update-1 (1).png>)
+![Sonoran Servers - 30% Software Discount](../.gitbook/assets/banner\_update-1.png)
 
-![Sonoran Servers - Free Sonoran One](../.gitbook/assets/Bannerprojectsenoranone.png)
+![Sonoran Servers - Free Sonoran One](<../.gitbook/assets/Bannerprojectsenoranone (1).png>)
 
 Sonoran Servers customers are eligible to receive free CAD plugin installation and 30% off their CAD subscription every month with the purchase of a Windows VPS. Or, receive Sonoran One for free with the purchase of a dedicated server!
 

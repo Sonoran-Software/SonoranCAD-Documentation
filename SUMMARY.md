@@ -189,6 +189,7 @@
         * [Set Street Sign Config](sonoran-cad/api-integration/api-endpoints/emergency/street-signs/set-street-sign-config.md)
         * [Update Street Sign](sonoran-cad/api-integration/api-endpoints/emergency/street-signs/update-street-sign.md)
     * [Civilian](sonoran-cad/api-integration/api-endpoints/civilian/README.md)
+      * [Set Character](sonoran-cad/api-integration/api-endpoints/civilian/set-character.md)
       * [Get Characters](sonoran-cad/api-integration/api-endpoints/civilian/get-characters.md)
       * [New Character](sonoran-cad/api-integration/api-endpoints/civilian/new-character.md)
       * [Edit Character](sonoran-cad/api-integration/api-endpoints/civilian/edit-character.md)

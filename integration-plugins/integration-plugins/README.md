@@ -11,7 +11,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/ingameinte-2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ingameinte-2.png" alt=""><figcaption></figcaption></figure>
 
 ### Framework Installation Guide
 

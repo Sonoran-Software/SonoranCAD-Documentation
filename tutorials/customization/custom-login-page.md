@@ -44,7 +44,7 @@ This verifies that your Sonoran CAD community owns this domain.
 
 The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
 
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (290).png>)
+![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16) (2).png>)
 
 {% hint style="info" %}
 **Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
