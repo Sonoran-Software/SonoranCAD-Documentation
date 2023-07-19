@@ -172,7 +172,7 @@ To check if your MySQL port has been properly opened, [visit a port checking uti
 
 ## IP Whitelisting
 
-My community wants to whitelist only the Sonoran CAD IP address to connect on this SQL user account.
+My community wants to whitelist **only** the Sonoran CAD IP address to connect on this SQL user account. How can I do this?
 
 You may whitelist the following IP:
 
