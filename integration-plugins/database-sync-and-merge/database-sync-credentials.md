@@ -176,7 +176,7 @@ My community wants to whitelist **only** the Sonoran CAD IP address to connect o
 
 You may whitelist the following IP:
 
-`23.27.5.16`
+`23.27.5.3`
 
 
 
