@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.7 08/08/2023
+
+{% tabs %}
+{% tab title="Fixed" %}
+\#15065 Record Dependencies
+
+* Added a more visible ADD button for setting field dependencies to resolve issues with users unable to use dependencies.
+
+\#16407 - Linked Civilians
+
+* Fixed an issue causing linked civilians in dispatch call notes to not open properly.
+
+Lookup Preview - Unneeded Icon
+
+* Removed an unneeded copy style button from the warrants tab in the lookup search previews.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.6 05/09/2023
 
 {% tabs %}
