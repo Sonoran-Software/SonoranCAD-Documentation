@@ -97,6 +97,8 @@ Because your account was created using Discord/Apple, your email does not yet ha
 3. Check your email for a link to setting your new password
 4. Sign-in on the Tablet using the Sonoran sign-in method (Discord can still be used elsewhere)
 
+If you are having an issue using the Sonoran sign-ing method please see [below](tablet.md#tablet-showing-grey).
+
 ### Timeout SonoranCAD::mini:CallSync
 
 Some users may see `SonoranCAD::mini:CallSync` listed multiple times after recieving a timeout.
