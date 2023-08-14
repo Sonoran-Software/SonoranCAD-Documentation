@@ -106,3 +106,13 @@ When your client recieves a timeout from the server for any reason, it will disp
 **This is not an issue with or related to Sonoran CAD**. This is a general timeout between the client and server listing all recent calls as diagnostic information.
 
 ![Sonoran CAD Mini - Timeout Debug](<../../../.gitbook/assets/Screen Shot 2022-01-06 at 9.28.58 PM.png>)
+
+### Tablet Showing Grey
+
+Some users may get a grey, black or blank screen when using the Sonoran Login method before and then opening the tablet and it just being a grey screen.
+
+To resolve this, close FiveM, then to go to your `FiveM Application Data` folder then to `data` and then delete the `nui-storage` folder. 
+
+If you still are having issues reach out to our [support team](https://support.sonoransoftware.com).
+
+![Sonoran CAD Tablet - Blank Screen Issue](<../../../.gitbook/assets/Tablet Blank Error.png>)
