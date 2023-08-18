@@ -127,7 +127,7 @@ Enter your server's public IP address and your game server's port. By default, t
 Set your game server port and IP address in the admin panel of Sonoran CAD.\
 The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map.md).
 
-![Sonoran CAD - Push Events and Map Port](<../../.gitbook/assets/image (322).png>)
+![Sonoran CAD - Game Port](<../../.gitbook/assets/Sonoran CAD - Game Port.png>)
 
 Learn more about [configuring multiple servers](../../tutorials/customization/configuring-multiple-servers.md).
 
