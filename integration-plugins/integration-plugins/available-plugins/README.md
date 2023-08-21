@@ -6,7 +6,7 @@ description: View Sonoran CAD's vast library of integration plugins for your com
 
 Below is a table of which plugins require which version of SonoranCAD to function due to the required API endpoints. **The framework does not work with the Free or Starter version of SonoranCAD.**
 
-***
+
 
 | Plugin Name                                                       | Standard    | Plus        | Pro     |
 | ----------------------------------------------------------------- | ----------- | ----------- | ------- |

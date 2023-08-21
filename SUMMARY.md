@@ -260,6 +260,7 @@
 ## Pricing
 
 * [Pricing FAQ](pricing/faq/README.md)
+  * [Military and First Responder Discount](pricing/faq/military-and-first-responder-discount.md)
   * [Expert Installation](pricing/faq/expert-installation.md)
   * [Free Plugin Installation and Discount - Sonoran Servers](pricing/faq/bundle-discount-sonoran-servers.md)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
