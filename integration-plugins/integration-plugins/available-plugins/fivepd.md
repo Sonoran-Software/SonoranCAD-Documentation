@@ -23,6 +23,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 ### 2. Download the Plugin and all Dependencies
 
 1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_fivepd/archive/refs/tags/latest.zip) to download the `fivepd` plugin .zip file.
+2. (Optional) Download and install the [dispatchnotify](dispatch-notify.md) plugin.
+
+{% hint style="info" %}
+If you don't have a dispatcher and would like a way to attach to a call in-game, use our Dispatch Notify plugin.
+{% endhint %}
 
 ### 3. Install the Plugin and all Dependencies
 
