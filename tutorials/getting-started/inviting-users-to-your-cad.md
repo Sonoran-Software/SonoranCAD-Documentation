@@ -29,7 +29,7 @@ Users can search using your community ID and can press the "Join" button to add 
 \
 From there, users can select your community card in the "My Communities" section to log into your CAD.
 
-![The join community modal allows users to search for a community ID](../../.gitbook/assets/join.PNG)
+![Sonoran CAD - Joining a Community](../../.gitbook/assets/CAD\_JoinCommBig.png)
 
 {% hint style="info" %}
 Forgot your community ID?

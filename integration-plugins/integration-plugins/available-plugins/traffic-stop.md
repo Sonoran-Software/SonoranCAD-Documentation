@@ -30,11 +30,11 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_trafficstop/releases) to download the traffic stop plugin .zip file.
 2. Download and install the [locations ](locations.md)plugin.
-3. (Optional) Download and install the [postals ](postals.md)plugin.
+3. (Optional) Download and install the [postals](postals.md) plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation/) for the traffic stop, locations, and postals plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the traffic stop and locations plugins.
 
 ### 4. Configuration
 

@@ -22,10 +22,11 @@ You can right click on any panel and to reveal multiple menu options.
 
 1. [Lock/Unlock Window](customizing-your-layout.md#4-locking-unlocking): This locks and saves the window's position into place.
 2. [Quick Resize](customizing-your-layout.md#2-quick-resize): This opens the quick resize tools for the window.
-3. Minimize: This minimizes the window to a tab at the top of your screen.
-4. Close: This closes the window.
+3. Bring to Top:  This brings the window in front of any other open windows.
+4. Minimize: This minimizes the window to a tab at the top of your screen.
+5. Close: This closes the window.
 
-![Sonoran CAD - Window Menu Options](<../../.gitbook/assets/image (325).png>)
+![Sonoran CAD - Window Menu Options](../../.gitbook/assets/CAD\_MenuOptions.png)
 
 ### 2. Quick Resize
 
@@ -69,7 +70,7 @@ The taskbar is a desktop style action bar that will contain the "Start Menu" (So
 
 The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
-To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to System > Customization
+To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to `System > Customization`
 
 ![Sonoran CAD - Taskbar Positioning](<../../.gitbook/assets/image (14).png>)
 
@@ -96,7 +97,7 @@ For some users, modifying the positions of dispatching panels may be too complic
 
 #### Enable Classic Mode:
 
-Right Click on the Task Bar > Customization > Classic Layout
+Right Click on the `Task Bar > Customization > Classic Layout`
 
 ![Sonoran CAD - Classic Layout](<../../.gitbook/assets/image (39).png>)
 

@@ -33,7 +33,7 @@ New accounts are automatically set to "PENDING"\
 To view pending accounts, you will need to change the accounts drop down in the top left of the window from "Active" to "Pending"
 {% endhint %}
 
-![The account grid displays all user accounts in your community](../../.gitbook/assets/accounts.PNG)
+![The account grid displays all user accounts in your community](../../.gitbook/assets/CAD\_Accounts.png)
 
 #### 2. Select an Account
 
@@ -48,16 +48,16 @@ Permission keys are a great way to allow users to automatically grant themselves
 
 #### 1. Create a Permission Key
 
-In the admin menu, select Accounts > Permission Keys\
+In the admin menu, select `Accounts > Permission Keys`\
 Here, you can create a new permission key. Simply enter the new key name, toggle the associated permissions, and press save.
 
-![Permissions can be toggled in the permission key editor](../../.gitbook/assets/permkey.PNG)
+![Sonoran CAD - Permission Key Editor](../../.gitbook/assets/permkey.PNG)
 
 #### 2. Apply a Permission Key
 
 At the community menu, your users can enter the new permission key. After pressing enter, the associated permissions will automatically be applied to their account.
 
-![Permission keys can be entered in the community menu](../../.gitbook/assets/applykey.PNG)
+![Sonoran CAD - Apply Permission Key](../../.gitbook/assets/CAD\_MenuPermKey.png)
 
 {% hint style="info" %}
 Invalid Key Error?

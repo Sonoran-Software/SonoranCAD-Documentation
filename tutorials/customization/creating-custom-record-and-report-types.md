@@ -21,7 +21,7 @@ View our [video tutorial](https://youtu.be/UclCEnm5FHM) on creating custom repor
 
 ### 1. Navigate to the Record Editor
 
-Navigate to Admin > Customization > Custom Records
+Navigate to `Admin > Customization > Custom Records`
 
 ### 2. Select the new Record Type
 
@@ -31,13 +31,13 @@ Records follow the standard record editing and lookup system, and require a civi
 \
 Reports can be searched in the unit's report center via number or identifier.
 
-![Sonoran CAD's Custom Record Types](<../../.gitbook/assets/image (308).png>)
+![Sonoran CAD's Custom Record Types](../../.gitbook/assets/CAD\_NewCustomRecord.png)
 
 ### 3. Add Custom and Pre-made Sections
 
 Add your desired custom and premade sections, edit fields, and more!
 
-![Select custom or premade sections from the dropdown buttons](<../../.gitbook/assets/image (306).png>)
+![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/CAD\_CustomPreMadeSection.png)
 
 If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one. [Learn more about ensuring civilian and vehicle searches link to your custom record fields](creating-custom-record-and-report-types.md#linking-vehicle-and-character-searches).
 

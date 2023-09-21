@@ -28,11 +28,12 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_sonrad/releases/tag/latest) to download the `sonrad` plugin .zip file.
 2. Download and install the[ locations ](locations.md)plugin.
-3. (Optional) Download and install the[ postal ](postals.md)plugin.
+3. Download and install the [apicheck ](api-id-checker.md)plugin.
+4. (Optional) Download and install the[ postal ](postals.md)plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation/) for the locations and API check plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the sonrad, locations, and API check plugins.
 
 ### 4. Set Your API ID
 

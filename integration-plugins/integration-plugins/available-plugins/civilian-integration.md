@@ -24,11 +24,13 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_civintegration/releases/tag/latest) to download the `civilianintegration` plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_civintegration/releases/tag/latest) to download the `civintegration` plugin .zip file.
+2. Download and install the [apicheck ](api-id-checker.md)plugin.
+3. Download and install the[ locations](https://github.com/Sonoran-Software/sonoran\_locations/releases) plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
-1. Follow the [standard plugin installation guide](../plugin-installation/) for the locations and API check plugin.
+1. Follow the [standard plugin installation guide](../plugin-installation/) for the civintegration, locations, and API check plugins.
 
 ### 4. Set Your API ID
 
