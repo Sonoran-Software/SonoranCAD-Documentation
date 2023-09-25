@@ -73,14 +73,6 @@ Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's 
 
 Your community ID and API key is also listed in the debug API call information. Be sure that the [community ID and API key](../../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) are correct.
 
-## Live Map and Push Events
-
-For live map and push event troubleshooting, see our dedicated guide here:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 ## Still Having Trouble?
 
 If you're still having trouble, our dedicated support team is here to help.
