@@ -24,17 +24,17 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Install Desired Blip Plugins
 
-#### Install the Unit Locations Plugin
+#### Install the Locations Plugin
 
-The [unit locations plugin](locations.md) includes all logic required to display and update unit locations on the live map.
+The [locations plugin](locations.md) includes all logic required to display and update unit locations on the live map.
 
 #### Install the Postals Plugin
 
-The [postals ](postals.md)plugin (**for Pro communities only**) allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
+The [postals ](postals.md)plugin (for **Pro** communities only) allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
 
 #### &#x20;Install the Smart Signs Plugin
 
-The [smart signs plugin](smart-signs.md) allows you to change in-game smart signs right from the live map. This is an optional install feature for pro communities.
+The [smart signs plugin](smart-signs.md) (Optional, for **Pro** communities only) allows you to change in-game smart signs right from the live map. This is an optional install feature.
 
 #### Install the Call Commands Plugin
 
@@ -60,12 +60,14 @@ Users will need to be granted access to view the live map. This can be done via 
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
-This is found in the task bar's start menu under Unit Management > Live Map\
+This is found in the task bar's start menu under `Unit Management` > `Live Map`\
 You can also [pin the live map button to your taskbar](../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
-![Sonoran CAD: Live Map Button](<../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
+{% hint style="info" %}
+The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+{% endhint %}
 
-**The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your** [**API ID**](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) **set.**
+![Sonoran CAD: Live Map Button](<../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
 
 ## **Using the Live Map**
 
