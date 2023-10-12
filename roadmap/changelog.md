@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.8 10/12/2023
+
+{% tabs %}
+{% tab title="Fixed" %}
+DB Sync - Custom Lookup on License
+
+* Fixed an issue causing custom search types to fail on DB sync license records.
+
+\#17855 - Self Dispatch Restore
+
+* Fixed an issue where a user in self-dispatch mode would be stuck in self dispatch mode forever if permissions were removed.
+
+\#17218 - Map Postal Search
+
+* Fixed an issue where postal search would not work in the pop-out desktop version of the live map.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.7 08/08/2023
 
 {% tabs %}
