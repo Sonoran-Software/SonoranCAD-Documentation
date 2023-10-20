@@ -99,7 +99,6 @@
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
     * [Civilian Integration](integration-plugins/integration-plugins/available-plugins/civilian-integration.md)
-    * [CMS Time Clock Sync](integration-plugins/integration-plugins/available-plugins/cms-time-clock-sync.md)
     * [Dispatch Notify](integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
     * [Framework Support (ESX/QBCore) and Auto Fines](integration-plugins/integration-plugins/available-plugins/framework-support-esx-qbcore-and-auto-fines/README.md)
       * [Depreciated: ESX Support](integration-plugins/integration-plugins/available-plugins/framework-support-esx-qbcore-and-auto-fines/esx-support.md)
