@@ -68,9 +68,9 @@ _Note:_ Some webhooks allow you to customize the notification settings even furt
 
 ### 7. Integrate Reactions with Sonoran Bot
 
-Our official [Discord bot](discord-bot/) allows you to react to webhooks like a dispatch call notification to attach, or a record notification to view it in your CAD.
+Our official [Discord bot](discord-bot-integration.md) allows you to react to webhooks like a dispatch call notification to attach, or a record notification to view it in your CAD.
 
-[Leard more about this integration!](discord-bot/features/webhook-actions.md)
+[Leard more about this integration!](broken-reference)
 
 ### Footer Metadata
 

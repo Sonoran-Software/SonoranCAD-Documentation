@@ -44,4 +44,4 @@ Assuming your community has the [API ID plugin](../../../integration-plugins/int
 
 #### 3. Retrieve your API ID from Discord
 
-If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../../integration-plugins/discord-bot/).
+If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../../integration-plugins/discord-bot-integration.md).

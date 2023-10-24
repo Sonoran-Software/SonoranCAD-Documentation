@@ -54,7 +54,7 @@ Don't forget to have each community member set their account [API ID](../../../s
 
 ### 5. User Access Permission
 
-Users will need to be granted access to view the live map. This can be done via [Discord role sync](../../discord-bot/), [permission key](../../../tutorials/getting-started/permissions.md#permission-keys), or by [manually granting permissions](../../../tutorials/getting-started/permissions.md#manually-granting-permissions) in the admin menu.
+Users will need to be granted access to view the live map. This can be done via [Discord role sync](../../discord-bot-integration.md), [permission key](../../../tutorials/getting-started/permissions.md#permission-keys), or by [manually granting permissions](../../../tutorials/getting-started/permissions.md#manually-granting-permissions) in the admin menu.
 
 ### **6. Enjoy!**
 
