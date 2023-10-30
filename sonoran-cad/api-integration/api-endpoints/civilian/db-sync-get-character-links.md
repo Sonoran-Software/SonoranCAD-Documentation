@@ -1,12 +1,18 @@
+---
+description: >-
+  This endpoint allows you to get a user's currently linked DB sync character
+  IDs in the CAD.
+---
+
 # DB Sync: Get Character Links
 
 {% hint style="warning" %}
 This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/civilian/get_character_links" method="post" summary="Set Character Links" %}
+{% swagger baseUrl="https://api.sonorancad.com" path="/civilian/get_character_links" method="post" summary="Get Character Links" %}
 {% swagger-description %}
-This endpoint allows you to set a user's currently linked DB sync characters in the CAD.
+This endpoint allows you to get a user's currently linked DB sync character IDs in the CAD.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
