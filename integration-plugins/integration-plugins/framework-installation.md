@@ -111,9 +111,9 @@ add_ace resource.sonoran_updatehelper command allow
 
 Starting with framework version 2.6.2, you can override any configuration option in your `config.json` file by specifying a convar before the sonorancad resource starts.
 
-For example, `set sonoran_serverId 2` in your server configuration will set the server ID of your server to `2` regardless of what `config.json` is set to. This is useful for communities that share the same resources.
-
 IMPORTANT: This feature does not work with arrays (like statusLabels). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
+
+NOTE: A convar will NOT overwrite your current config option you have set, you **MUST LEAVE THE CONFIG OPTION BLANK** for the convar to overwrite.
 
 ### 5. Configure Push Events
 
@@ -210,8 +210,9 @@ Started resource sonorancad (3 warnings)
 ^3Warning: Could not find file `html/config.js` (defined in fxmanifest.lua:16^7
 ```
 
-In this example, you would navigate to the `sonorancad` **resource**, open the `html` **folder** and ensure the **file** `config.js` is present.&#x20;
+In this example, you would navigate to the `sonorancad` **resource**, open the `html` **folder** and ensure the **file** `config.js` is present.
 
 {% hint style="info" %}
 This is simply a **WARNING**, if the resource works **AS EXPECTED**, you can simply ignore the warning and continue
 {% endhint %}
+
