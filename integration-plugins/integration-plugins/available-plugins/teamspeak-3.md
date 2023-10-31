@@ -72,3 +72,15 @@ Signing out of or exiting the CAD will result in the user being kicked from any 
 ![TS3 - Server Group Granted](<../../../.gitbook/assets/image (341).png>)
 
 ![TS3 - Channel Kicked](<../../../.gitbook/assets/image (164) (1).png>)
+
+## Advanced Configuration
+
+You may utilize [convars](https://docs.fivem.net/docs/scripting-reference/convars/) in your `server.cfg` if you wish to store your TS3 connection info there instead. There is no default version of these convars preset. If you wish to use convars in your `server.cfg` instead of your config file please **LEAVE ts3server\_user BLANK** in your config file. Convars are as follows:
+
+| Convar Name               | Config Equivelant  |
+| ------------------------- | ------------------ |
+| `sonorants3_server_host`  | `ts3server_host`   |
+| `sonorants3_server_port`  | `ts3server_port`   |
+| `sonorants3_server_qport` | `ts3server_qport`  |
+| `sonorants3_server_user`  | `ts3server_user`   |
+| `sonorants3_server_pass`  | `ts3server_pass`   |
