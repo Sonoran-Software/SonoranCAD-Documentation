@@ -58,6 +58,7 @@ You also need [pNotify](https://github.com/Nick78111/pNotify), a third party plu
 | statusUid           | Custom record field UID containing the status          |
 | expiresUid          | Custom record field UID containing the expiration date |
 | flagOnStatuses      | List of statuses to flag/alert on                      |
+| vehTypeFilter       | List of Classes that will NOT get ran through CAD      |
 
 ### 5. Custom Record Handling
 

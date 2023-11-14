@@ -31,7 +31,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Configure your TeamSpeak Connection
 
-In the `config_ts3integration.json` file, enter in the following:
+Your TeamSpeak server credentials can either be set in the config or as convars in your `server.cfg` file. In the `config_ts3integration.json` file, you can modify the following settings:
 
 |                     |                                                                                                                                                                                                                                                     |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,6 +43,16 @@ In the `config_ts3integration.json` file, enter in the following:
 | onduty\_servergroup | <p>Name of the server group that the plugin will grant users when they're on duty.</p><p>You will need to configure this server group with permissions to join specific channels, etc.</p>                                                          |
 | enforced\_channels  | A list of channels that units will be kicked from if they log out of the CAD                                                                                                                                                                        |
 | logoutGraceTime     | <p>The amount of time between the user logging out of the CAD and being kicked from the TS3 <code>enforced_channels</code>.</p><p>This prevents brief internet disconnections from the CAD from continually kicking users out of their channel.</p> |
+
+Convars that can be set are as follows:&#x20;
+
+* sonorants3\_server\_host
+* sonorants3\_server\_port
+* sonorants3\_server\_qport
+* sonorants3\_server\_user
+* sonorants3\_server\_pass
+
+They can be set in your `server.cfg` following the format of `set [convar] "value"`
 
 ![TS3 - Integration Config](<../../../.gitbook/assets/image (353).png>)
 
