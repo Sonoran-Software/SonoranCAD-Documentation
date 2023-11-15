@@ -45,7 +45,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
-Use of this plugin requires the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+Use of this plugin requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party plugin that is not bundled by default.
 {% endhint %}
@@ -88,10 +88,29 @@ In order to have locked plate results sent back to your CAD, don't forget to set
 
 ## Usage
 
-For more information on using the in-game UI, please view the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277) release information.\
+For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
 ![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (314).png>)
+
+## Sonoran wk\_wars2x&#x20;
+
+{% hint style="info" %}
+These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/Sonoran-Software/wk\_wars2x).
+{% endhint %}
+
+### Additional Features
+
+* Added the ability to blacklist certain vehicle classes via the config.lua, these blacklisted vehicles will show on the plate reader as the `CONFIG.noPlateValue` value (default: "NO PLATE").
+* Added the feature `CONFIG.realisticPlateScanning`. This feature is disabled by default due to certain vehicles having incorrect metadata causing this feature to display `CONFIG.noPlateValue` falsely. Behavior when enabled: when you are traveling toward/away from a vehicle that does not have a front/back plate the plate reader will not be able to scan it and will display the `CONFIG.noPlateValue` value.
+
+### Realistic Plate Scanning
+
+Set `CONFIG.realisticPlateScanning` to `true` to enable only scanning vehicles with the ALPR when they have a plate.
+
+Note: Some vehicles may show a plate due to missing vehicle metadata or being able to remove the plate with extras.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 172304.png" alt=""><figcaption><p>Sonoran wk_wars2x - Additional Config Options</p></figcaption></figure>
 
 ## Troubleshooting
 
