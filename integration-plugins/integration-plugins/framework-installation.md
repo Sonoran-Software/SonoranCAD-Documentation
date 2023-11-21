@@ -111,9 +111,9 @@ add_ace resource.sonoran_updatehelper command allow
 
 Starting with framework version 2.6.2, you can override any configuration option in your `config.json` file by specifying a convar before the sonorancad resource starts.
 
-IMPORTANT: This feature does not work with arrays (like statusLabels). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
-
-NOTE: A convar will NOT overwrite your current config option you have set, you **MUST LEAVE THE CONFIG OPTION BLANK** for the convar to overwrite.
+{% hint style="warning" %}
+This feature does not work with arrays (like statusLabels). Any other configuration option can be set using the `sonoran_<configSettingHere>` format.
+{% endhint %}
 
 ### 5. Configure Push Events
 
