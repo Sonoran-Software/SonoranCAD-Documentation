@@ -272,6 +272,7 @@
 * [AI QA](other/ai-qa.md)
 * [Contact Us](https://support.sonoransoftware.com)
 * [Policy](other/policy/README.md)
+  * [Rocket CAD Closure](other/policy/rocket-cad-closure.md)
   * [Terms of Service](other/policy/terms-of-service.md)
   * [Privacy Policy](other/policy/privacy-policy.md)
   * [Refund and Purchase Policy](other/policy/refund-and-purchase-policy.md)
