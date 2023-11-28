@@ -28,4 +28,4 @@ To take advantage of this special offer, please follow these steps:
 
 We want to ensure that you have the necessary tools and resources to continue your operations smoothly. If you have any questions or require assistance, our support team is ready to assist you.
 
-We appreciate your understanding during this transition period, and we look forward to serving you on Sonoran CAD
+We appreciate your understanding during this transition period, and we look forward to serving you on Sonoran CAD.
