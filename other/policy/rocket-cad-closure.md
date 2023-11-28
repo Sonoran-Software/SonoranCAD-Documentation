@@ -16,7 +16,7 @@ We understand the impact this may have on your operations, and are offering all 
 1. **2 Months Free on Sonoran CAD Pro:**
    * We are pleased to offer all active Rocket CAD customers two months of free access to [Sonoran CAD Pro](../../why-choose-sonoran-cad/about.md), our advanced CAD solution. This will give you ample time to migrate your operations seamlessly.
 2. **30% Lifetime Discount:**
-   * Additionally, by contacting our customer support team at [https://support.sonoransoftware.com](https://support.sonoransoftware.com/), you can secure a 30% lifetime discount on any Sonoran CAD version. This ensures continued savings as you transition to our platform.
+   * Additionally, you can secure a 30% lifetime discount on any Sonoran CAD version. This ensures continued savings as you transition to our platform.
 
 ## **How to Avail the Offer:**
 
