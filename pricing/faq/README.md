@@ -10,6 +10,8 @@ description: 'See below for commonly asked questions and answers:'
 
 Receive **free Sonoran CAD integration plugin installation**, **free Five PD installation**, and **30-100% off** every month when you [bundle with Sonoran Servers](bundle-discount-sonoran-servers.md)!
 
+Additionally, you can get **25% off** if you choose to purchase CAD, CMS, Radio, or Sonoran One as a **quarterly** subscription (available at Stripe checkout).
+
 ### Looking to compare plans?
 
 [View our pricing page!](https://sonorancad.com/pricing)
@@ -40,13 +42,17 @@ You can cancel, upgrade, or downgrade your subscription at any time using the pa
 
 ### Are subscriptions a one-time payment, or monthly?
 
-All of Sonoran CAD's subscriptions are monthly. You can [compare our plans ](https://sonorancad.com/pricing)to see what works best for your community.\
-\
-Subscriptions are renewed one month after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
+With Sonoran CAD, you have the option to choose either a monthly or quarterly subscription. We offer multiple different subscription levels at different price ranges. You can [compare our plans ](https://sonorancad.com/pricing)to see what works best for your community.
+
+By choosing a **quarterly subscription**, you are given a **25% discount**. Simply select the **3-month billing** option at checkout and the discount will automatically be applied!
+
+<figure><img src="../../.gitbook/assets/Sono_QuarterlyCrop.png" alt=""><figcaption><p>Sonoran Software - Quarterly Plan</p></figcaption></figure>
+
+Monthly subscriptions are renewed one month after the start date, and quarterly subscriptions are renewed three months after the start date. You will receive an email from Stripe a few days before you are charged again. This way, you aren't charged again without prior notice.
 
 ### Can I purchase a lifetime or yearly subscription?
 
-Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly recurring basis. We do not offer quarterly or yearly subscriptions.
+Due to ongoing server hosting, development, maintenance, and customer support costs, we are unable to offer a lifetime subscription. All subscriptions are charged on a monthly or quarterly recurring basis. We do not offer yearly subscriptions, although we do offer **quarterly subscriptions at a 25% discount** as stated before.
 
 ### What payment methods are accepted?
 
