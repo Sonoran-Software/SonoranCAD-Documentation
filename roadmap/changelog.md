@@ -10,6 +10,48 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.32.9 11/30/2023
+
+{% tabs %}
+{% tab title="New" %}
+API: GET\_CHARACTER\_LINKS
+
+* Added the `GET_CHARACTER_LINKS` endpoint to retrieve all linked character sync IDs from a user account.
+
+API: LINK\_CHARACTER Endpoint
+
+* Added the `LINK_CHARACTER` endpoint to add or remove a DB sync character to a user's account.
+
+\#17899 PDF Dependency Hiding
+
+* When printing a record to PDF, sections and fields hidden by dependencies will no longer display on the page.
+
+Tone Board Customization - Icon Search
+
+* The admin tone board icon search now utilizes a new icon search system removing the need to use an external link.
+{% endtab %}
+
+{% tab title="Changed" %}
+Calls Table - Query Optimization
+
+* Optimized database queries for emergency calls and dispatches to improve loading times.
+
+Record Search - Query Optimization
+
+* Optimized database queries for records to improve loading times.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#18514 - Window Lock Removal
+
+* Fixed an issue causing previously locked and removed/closed windows to re-appear on refresh.
+
+\#18735 - Old Links
+
+* Updated old links redirecting users to the wrong pricing page.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.8 10/12/2023
 
 {% tabs %}
