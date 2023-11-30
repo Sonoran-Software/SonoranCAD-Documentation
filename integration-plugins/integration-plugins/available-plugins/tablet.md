@@ -31,7 +31,7 @@ If you wish to use a custom login page, you can set a convar in your server.cfg.
 \
 The easiest way to show your [custom login page](../../../tutorials/customization/custom-login-page.md) is to use a query string.
 
-`"https://app.sonorancad.com/#/?comid=YOUR_COMMUNITY_ID_HERE"`
+`"https://sonorancad.com/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).\
 EX: `https://app.sonorancad.com/#/?comid=midwestrp`
@@ -58,7 +58,7 @@ This plugin utilizes API endpoints that require the **Plus** version of Sonoran 
 
 * Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
 * While open, use `/showcad` to focus the minicad and allow the elements to be clickable, such as the Attach button.
-* You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window.&#x20;
+* You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window.
 * (Experimental) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.
 * Use the `/minicadrefresh` command to refresh the Mini-CAD if it's not loading properly.
 * Controls
@@ -113,7 +113,7 @@ When your client recieves a timeout from the server for any reason, it will disp
 
 Some users may get a grey, black or blank screen when using the Sonoran Login method before and then opening the tablet and it just being a grey screen.
 
-To resolve this, close FiveM, then to go to your `FiveM Application Data` folder then to `data` and then delete the `nui-storage` folder. 
+To resolve this, close FiveM, then to go to your `FiveM Application Data` folder then to `data` and then delete the `nui-storage` folder.
 
 If you still are having issues reach out to our [support team](https://support.sonoransoftware.com).
 
