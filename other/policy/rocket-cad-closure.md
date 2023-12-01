@@ -23,7 +23,7 @@ We understand the impact this may have on your operations, and are offering all 
 To take advantage of this special offer, please follow these steps:
 
 1. Visit our customer support portal at [https://support.sonoransoftware.com](https://support.sonoransoftware.com/).
-2. Submit a support request including a receipt of an **active RocketCAD subscription** of more than $0, from **before November 28th 2023**.
+2. Submit a support request including a receipt of an **active paid RocketCAD subscription**, from with a start date **before November 30th 2023**.
 3. Our support team will guide you through the process of claiming your two months free on Sonoran CAD Pro and applying the 30% lifetime discount.
 
 We want to ensure that you have the necessary tools and resources to continue your operations smoothly. If you have any questions or require assistance, our support team is ready to assist you.
