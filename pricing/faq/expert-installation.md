@@ -54,3 +54,7 @@ Yes! Your purchase is valid for three installation credits. You could have the a
 {% content-ref url="../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md" %}
 [free-plugin-installation-next-steps.md](../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
 {% endcontent-ref %}
+
+### Can I get a refund if I have redeemed this service?
+
+No. If you have already redeemed the Expert Installation service then you can not get a refund if you decide you want to refund the purchase that included the Expert Installation.
