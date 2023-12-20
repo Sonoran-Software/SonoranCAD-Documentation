@@ -10,6 +10,38 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.0 12/20/2023
+
+{% tabs %}
+{% tab title="New" %}
+UI Color Revamp
+
+* An all new UI refresh has been put in place brightening up the UI for a more friendly experience. Image uploaders show a preview with an easy click-to-upload, admin customization has been moved to cards, and more!
+
+Custom Records - Header Image
+
+* Custom reports can now have images added to the header that will display on both PDF and on-screen UI.
+
+Community Customization - Free
+
+* All communities can now customize their community image, name, timezone, geographical settings, unit status codes, quick links, notification tones, custom community emails, custom page colors, and user account restrictions on the free version.
+
+Image Uploading - Free
+
+* All communities can now upload tones, images, and more on the free version.
+
+Draggable Windows - Layers
+
+* Clicking anywhere on a popout/draggable window will now bring it to the top layer, vs having to right click and select "Bring to Top".
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#19351 Discord Rich Presence after Downgrade
+
+* Fixed an issue where downgrading from Pro does not set your Discord Rich Presence button #2 back to a CAD or CMS URL preventing you from updating your community customization.
+{% endtab %}
+{% endtabs %}
+
 ### 3.32.9 11/30/2023
 
 {% tabs %}
