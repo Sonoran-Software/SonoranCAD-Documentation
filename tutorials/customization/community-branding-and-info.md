@@ -4,11 +4,6 @@ description: Customize your community's settings, branding, information, and mor
 
 # Community Branding and Settings
 
-{% hint style="warning" %}
-Community customization requires the **standard** version of Sonoran CAD or higher.\
-For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
-{% endhint %}
-
 ### Community Information
 
 The admin customization info section allows you to customize your community's image, name, timezone, and more!
