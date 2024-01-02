@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.1 01/02/2024
+
+{% tabs %}
+{% tab title="New" %}
+In-Game Integration - UI Improvements
+
+* Re-organized the in-game integration page into three separate tabs. Users can now click to copy their community ID and API key in lowercase.
+
+\#19593 ERLC - Push Event IP
+
+* Communities using the integrated ER:LC live map mode can now specify an IP and port for push events for custom third-party integrations.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#19500 Charge and Bond Type
+
+* Fixed an issue where charge types and bond types wouldn't properly save in the penal code customization tab.
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.0 12/20/2023
 
 {% tabs %}
