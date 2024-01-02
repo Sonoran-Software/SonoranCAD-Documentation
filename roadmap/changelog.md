@@ -27,6 +27,10 @@ In-Game Integration - UI Improvements
 \#19500 Charge and Bond Type
 
 * Fixed an issue where charge types and bond types wouldn't properly save in the penal code customization tab.
+
+Backend Performance Issues
+
+* Updated an internal MySQL library causing unhandled exceptions and performance issues the prior night.
 {% endtab %}
 {% endtabs %}
 
