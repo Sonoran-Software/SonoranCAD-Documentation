@@ -10,6 +10,28 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.2 01/26/2024
+
+
+
+{% tabs %}
+{% tab title="Changed" %}
+Inactive Community - Pending Account Handling
+
+* Users logging into a CAD community that are in a PENDING state (no permissions) will no longer increment the community's last login time. This resolves an issue where old communities that are no longer in use never expire if they have a popular or similar community ID.
+
+\#19828 - Disable Autocomplete
+
+* Autocomplete in browsers has been disabled on search boxes and custom record inputs. This improves user privacy, particularly when streaming.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#19672 - Custom Lookup Types
+
+* Fixed an issue causing standard communities to not enable a custom lookup type.
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.1 01/02/2024
 
 {% tabs %}
