@@ -144,7 +144,7 @@
       * [Dispatch Note](sonoran-cad/api-integration/push-events/dispatch-events/dispatch-note.md)
       * [Attach Unit](sonoran-cad/api-integration/push-events/dispatch-events/attach-unit.md)
       * [Detach Unit](sonoran-cad/api-integration/push-events/dispatch-events/detach-unit.md)
-      * [Toggle Bodycam](sonoran-cad/api-integration/push-events/dispatch-events/detach-unit-1.md)
+      * [Toggle Bodycam](sonoran-cad/api-integration/push-events/dispatch-events/toggle-bodycam.md)
     * [Event 911](sonoran-cad/api-integration/push-events/event-911.md)
     * [Remove 911](sonoran-cad/api-integration/push-events/remove-911.md)
     * [Sign Updated](sonoran-cad/api-integration/push-events/sign-updated.md)
