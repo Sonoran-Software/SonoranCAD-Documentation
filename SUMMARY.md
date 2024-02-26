@@ -14,7 +14,7 @@
 
 ## Other Products
 
-* [🖥 Server Hosting](other-products/server-hosting.md)
+* [🖥️ Server Hosting](other-products/server-hosting.md)
 * [📝 Sonoran CMS](other-products/sonoran-cms.md)
 * [📡 Sonoran Radio](other-products/sonoran-radio.md)
 
@@ -67,7 +67,7 @@
 
 ## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
-* [🗃 Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
+* [🗃️ Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
   * [Mobile Command Center](integration-plugins/paid-integration-resources/mobile-command-center.md)
   * [ATM Robbery](integration-plugins/paid-integration-resources/atm-robbery.md)
   * [In-Vehicle Radar](integration-plugins/paid-integration-resources/in-vehicle-radar.md)
@@ -75,6 +75,7 @@
   * [Power Grid](integration-plugins/paid-integration-resources/power-grid.md)
   * [Speed Cameras](integration-plugins/paid-integration-resources/speed-cameras.md)
   * [Shot Spotter](integration-plugins/paid-integration-resources/shot-spotter.md)
+* [🛠️ Integrated Vendors](integration-plugins/integrated-vendors.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
   * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
