@@ -34,7 +34,7 @@ The easiest way to show your [custom login page](../../../tutorials/customizatio
 `"https://sonorancad.com/?comid=YOUR_COMMUNITY_ID_HERE"`
 
 Simply replace `YOUR_COMMUNITY_ID_HERE` in the URL with your [community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).\
-EX: `https://app.sonorancad.com/#/?comid=midwestrp`
+EX: `https://app.sonorancad.com/?comid=midwestrp`
 
 Add the following to your server.cfg **before** starting the tablet resource:
 
@@ -46,7 +46,7 @@ Fill in with your actual URL above with the comid you want.
 
 ### 4. Using the Tablet
 
-* Use the `/showcad` command in-game to toggle your tablet. You can also add a custom keybind to open the tablet by going to `GTA Settings > Keybinds > FiveM`
+* Use the `/showcad` command in-game to toggle your tablet. You can also add a custom keybind to open the tablet by going to `GTA Settings` > `Keybinds` > `FiveM`
 * Use the `/cadsize <width> <height>` command to resize the tablet to best fit your screen. This size persists on reload of the client.
 * Use the `/cadrefresh` command to refresh the tablet if it's not loading properly.
 

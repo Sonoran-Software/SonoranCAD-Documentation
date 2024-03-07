@@ -28,7 +28,7 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 {% endhint %}
 
 Looking to change your community ID?\
-Navigate to `Admin > Advanced > Change Community ID`
+Navigate to `Admin` > `Advanced` > `Change Community ID`
 
 ![Sonoran CAD's Community ID Change](../../.gitbook/assets/CAD\_ChangeCommId.png)
 

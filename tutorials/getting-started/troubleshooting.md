@@ -1,10 +1,18 @@
+---
+description: Troubleshooting steps for common issues in CAD
+---
+
 # Troubleshooting
 
 ## Cannot Load Sonoran CAD
 
 ### Tablet Not Loading
 
-If you are using the in-game Tablet, please ensure that you are using the `Login with Sonoran` option and/or have cleared your `nui-storage` folder as shown [here](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/tablet#known-issues).&#x20;
+If you are using the in-game Tablet, please ensure that you are using the `Login with Sonoran` option, as both Apple and Discord have disabled OAuth over iFrames.&#x20;
+
+If you've created your account through Discord or Apple and would like to link it to a Sonoran login, please follow the steps shown [here](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/tablet#tablet-sso-sign-in-via-discord-apple).&#x20;
+
+Alternatively, if the tablet shows completely blank, then please delete your `nui-storage` folder as shown [here](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/tablet#known-issues).&#x20;
 
 ### CAD Not Loading After Recent Update
 
@@ -18,7 +26,7 @@ In certain cases, antivirus programs such as ESET are also known to block connec
 2. Press the `F5` key to open Advanced setup.
 3. Click `Web access protection`. Expand `URL list management` and click `Edit` next to `Address list`
 4. Select `List of allowed addresses` and click `Edit`
-5. Click **`Add`** in the `Edit list` window. Paste `*.sonorancad.com*` in the respective field, click `OK` → `OK` to save your changes, and exit the Advanced setup window.
+5. Click `Add` in the `Edit list` window. Paste `*.sonorancad.com*` in the respective field, click `OK` → `OK` to save your changes, and exit the Advanced setup window.
    * If using CMS, also add `*sonorancms.com*`
 
 For more information, see [here](https://support.eset.com/en/kb2960-exclude-a-safe-website-from-being-blocked-by-web-access-protection).

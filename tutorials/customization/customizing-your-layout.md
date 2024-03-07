@@ -97,7 +97,7 @@ For some users, modifying the positions of dispatching panels may be too complic
 
 #### Enable Classic Mode:
 
-Right Click on the `Task Bar > Customization > Classic Layout`
+Right Click on the `Task Bar` > `Customization` > `Classic Layout`
 
 ![Sonoran CAD - Classic Layout](<../../.gitbook/assets/image (39).png>)
 
