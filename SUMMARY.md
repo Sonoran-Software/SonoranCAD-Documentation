@@ -92,6 +92,7 @@
   * [Plugin Installation](integration-plugins/integration-plugins/plugin-installation/README.md)
     * [Plugin Troubleshooting](integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting.md)
   * [Available Plugins](integration-plugins/integration-plugins/available-plugins/README.md)
+    * [Body Camera](integration-plugins/integration-plugins/available-plugins/body-camera.md)
     * [Call Commands](integration-plugins/integration-plugins/available-plugins/call-commands.md)
     * [Check API ID](integration-plugins/integration-plugins/available-plugins/api-id-checker.md)
     * [Civilian Integration](integration-plugins/integration-plugins/available-plugins/civilian-integration.md)
