@@ -55,7 +55,7 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 ### 🎥Live Bodycam Footage In-CAD
 
-Sonoran CAD's [bodycam system](../integration-plugins/integration-plugins/available-plugins/body-camera.md) offers live image feeds from in-game, right in the CAD!
+Sonoran CAD's [bodycam system](../integration-plugins/integration-plugins/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
 
 <figure><img src="../.gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
 
