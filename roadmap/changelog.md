@@ -10,9 +10,17 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.3 03/13/2024
+
+{% tabs %}
+{% tab title="New" %}
+Live Bodycam
+
+* Added an in-game bodycam feed for units, visible inside the CAD via active units, dedicated window, and live map!
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.2 01/26/2024
-
-
 
 {% tabs %}
 {% tab title="Changed" %}

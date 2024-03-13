@@ -53,6 +53,12 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 <figure><img src="../.gitbook/assets/translationsupport.png" alt=""><figcaption><p>Sonoran CAD - Translations</p></figcaption></figure>
 
+### 🎥Live Bodycam Footage In-CAD
+
+Sonoran CAD's [bodycam system](../integration-plugins/integration-plugins/available-plugins/body-camera.md) offers live image feeds from in-game, right in the CAD!
+
+<figure><img src="../.gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
+
 ### 📍 Hosted and Integrated Live Map
 
 Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
