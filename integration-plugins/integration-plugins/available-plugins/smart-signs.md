@@ -98,6 +98,8 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
+Users will need both the `Modify Street Signs` and the `Self Dispatch` permissions in order to view and edit signs from the live map.&#x20;
+
 ![Sonoran CAD - Live Map Smart Signs](<../../../.gitbook/assets/image (144).png>)
 
 ### Full Feature List
