@@ -8,26 +8,27 @@ Below is a table of which plugins require which version of SonoranCAD to functio
 
 ***
 
-| Plugin Name                                                       | Standard    | Plus        | Pro |
-| ----------------------------------------------------------------- | ----------- | ----------- | --- |
-| [Call Commands](call-commands.md)                                 | Yes         | Yes         | Yes |
-| [Check API ID](api-id-checker.md)                                 | Yes         | Yes         | Yes |
-| [Civilian Integration](civilian-integration.md)                   | **No**      | Yes         | Yes |
-| [Dispatch Notify](dispatch-notify.md)                             | **No**      | Yes         | Yes |
-| [Framework Support](framework-support-esx-qbcore-and-auto-fines/) | **Partial** | **Partial** | Yes |
-| [Fire Siren](../../../other/archive/fire-siren.md)                | **No**      | Yes         | Yes |
-| [FivePD](fivepd.md)                                               | No          | Yes         | Yes |
-| [ForceReg](forcereg.md)                                           | Yes         | Yes         | Yes |
-| [Kick](kick.md)                                                   | Yes         | Yes         | Yes |
-| [Locations](locations.md)                                         | Yes         | Yes         | Yes |
-| [Live Map](live-map.md)                                           | **No**      | Yes         | Yes |
-| [Lookups](lookups.md)                                             | **No**      | Yes         | Yes |
-| [Postals](postals.md)                                             | Yes         | Yes         | Yes |
-| [Smart Signs](smart-signs.md)                                     | **No**      | **No**      | Yes |
-| [Sonoran Radio (sonrad)](sonoran-radio-sonrad.md)                 | No          | Partial     | Yes |
-| [Tablet and Mini CAD](tablet.md)                                  | **Partial** | Yes         | Yes |
-| [Teamspeak Integration](teamspeak-3.md)                           | Yes         | Yes         | Yes |
-| [Traffic Stop](traffic-stop.md)                                   | **No**      | Yes         | Yes |
-| [Unit Status](unit-status.md)                                     | Yes         | Yes         | Yes |
-| [VehReg](vehreg.md)                                               | No          | Yes         | Yes |
-| [Wraith Radar](wraithv2.md)                                       | **No**      | Yes         | Yes |
+| Plugin Name                                                       | Standard | Plus    | Pro |
+| ----------------------------------------------------------------- | -------- | ------- | --- |
+| [Body Camera](bodycam.md)                                         | No       | No      | Yes |
+| [Call Commands](call-commands.md)                                 | Yes      | Yes     | Yes |
+| [Check API ID](api-id-checker.md)                                 | Yes      | Yes     | Yes |
+| [Civilian Integration](civilian-integration.md)                   | No       | Yes     | Yes |
+| [Dispatch Notify](dispatch-notify.md)                             | No       | Yes     | Yes |
+| [Framework Support](framework-support-esx-qbcore-and-auto-fines/) | Partial  | Partial | Yes |
+| [Fire Siren](../../../other/archive/fire-siren.md)                | No       | Yes     | Yes |
+| [FivePD](fivepd.md)                                               | No       | Yes     | Yes |
+| [ForceReg](forcereg.md)                                           | Yes      | Yes     | Yes |
+| [Kick](kick.md)                                                   | Yes      | Yes     | Yes |
+| [Locations](locations.md)                                         | Yes      | Yes     | Yes |
+| [Live Map](live-map.md)                                           | No       | Yes     | Yes |
+| [Lookups](lookups.md)                                             | No       | Yes     | Yes |
+| [Postals](postals.md)                                             | Yes      | Yes     | Yes |
+| [Smart Signs](smart-signs.md)                                     | No       | No      | Yes |
+| [Sonoran Radio (sonrad)](sonoran-radio-sonrad.md)                 | No       | Partial | Yes |
+| [Tablet and Mini CAD](tablet.md)                                  | Partial  | Yes     | Yes |
+| [Teamspeak Integration](teamspeak-3.md)                           | Yes      | Yes     | Yes |
+| [Traffic Stop](traffic-stop.md)                                   | No       | Yes     | Yes |
+| [Unit Status](unit-status.md)                                     | Yes      | Yes     | Yes |
+| [VehReg](vehreg.md)                                               | No       | Yes     | Yes |
+| [Wraith Radar](wraithv2.md)                                       | No       | Yes     | Yes |
