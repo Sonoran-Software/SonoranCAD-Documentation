@@ -53,11 +53,18 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
     "autoUpdateUrl": "https://raw.githubusercontent.com/Sonoran-Software/SonoranCADLuaIntegration/{branch}/sonorancad/version.json",
     "allowUpdateWithPlayers": false,
     "noUnitTimer": false,
-    "enableCanary": false,
     "forceSetApiId": false,
     "enablePushEventForwarding": false,
     "pushEventForwardUrl": "https://host",
-    "disableOverride": false
+    "disableOverride": false,
+    "bodycamEnabled": true,
+    "bodycamBeepFrequency": 300000,
+    "bodycamScreenshotFrequency": 2000,
+    "bodycamPlayBeeps": true,
+    "bodycamOverlayEnabled": true,
+    "bodycamOverlayLocation": "top-right",
+    "bodycamCommandToggle": "bodycam",
+    "bodycamCommandChangeFrequncy": "bodycamfreq"
 }
 ```
 
@@ -85,6 +92,8 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | pushEventForwardUrl       | <p><a href="../../sonoran-cad/api-integration/push-events/#webserver-example">Web server</a> URL to forward push events to.<br><br><mark style="color:red;"><strong>NOTE: DO NOT ENABLE IF YOU DO NOT KNOW WHAT YOU ARE DOING (Used for custom development only!)</strong></mark></p>                  |
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                                                                                       |
 | disableOverride           | <p>By default, the framework will try and automatically correct your <a href="../../tutorials/customization/configuring-multiple-servers.md">server's IP, port, and outgoing IP address</a> if it detects something different.<br><br>Set this to <code>true</code> to disable this functionality.</p> |
+
+For information regarding the bodycam script config values, please see our [Bodycam Plugin guide.](/available-plugins/bodycam.md)
 
 ### 4. Server Config
 
