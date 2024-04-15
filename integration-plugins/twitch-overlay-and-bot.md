@@ -148,7 +148,14 @@ Expand the `Scene` > `Add Bulb` > `Search for Bulbs` > Select `Wyze` or `Philips
 
 #### Credentials: Wyze
 
-The Wyze Color bulbs require your Wyze login credentials. This makes a simulated request to your homepage for all lights on your account. The Wyze credentials are not saved on both the local Desktop app or Sonoran CAD's servers. However, you may wish to update/reset your password, or even create a new Wyze account that shares these bulbs.
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+* Username: Email address used to login to your Wyze account
+* `Password`: Password used to login to your Wyze account
+* `Key ID`: The "Key ID" in the [Wyze API key generator](https://developer-api-console.wyze.com/#/apikey/view)
+* `API Key`: The "API Key" in the [Wyze API key generator](https://developer-api-console.wyze.com/#/apikey/view)
 
 #### Credentials: Philips Hue
 

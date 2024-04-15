@@ -12,37 +12,32 @@ This API endpoint requires the **Plus** version of Sonoran CAD or higher. For mo
 API response times may be increased slightly for communities with Database Sync enabled, depending upon the speed, latency and size of your in-game database.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/lookup" method="post" summary="Lookup Name or Plate" %}
-{% swagger-description %}
+## Lookup Name or Plate
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/lookup`
+
 The lookup name endpoint allows you to retrieve all records associated with a provided name or license plate.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description                                  |
+| ---- | ------ | -------------------------------------------- |
+| id   | string | Your community's ID                          |
+| key  | string | Your community's API Key                     |
+| type | string | LOOKUP                                       |
+| data | array  | Array containing a lookup information object |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-LOOKUP
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array containing a lookup information object
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:
 Detailed contents of the record type arrays can be found further below." %}
 ```
 {
   "records": []
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="302" description="" %}
+{% tab title="302 " %}
 ```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
@@ -50,8 +45,8 @@ API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 INVALID EMPTY SEARCH
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ## API Call Example
 
