@@ -37,24 +37,31 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Configure Postal Script and Exports
 
-1. If you're using the publicly available [nearest postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](postals.md#using-nearest-postal) section below.
-2. If you're using a custom postal codes file, you will need to add the file to the plugin and sonorancad's fxmanifest as shown in the [usage ](postals.md#custom-postal-codes-file)section below.
+1. If you're using the publicly available [nearest-postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](postals.md#using-nearest-postal) section below.
+2. If you're using a custom postal codes file, you will need to add the file to the plugin and Sonoran CAD's fxmanifest as shown in the [usage ](postals.md#custom-postal-codes-file)section below.
 3. If you're using an event triggered by a custom postals script, you must configure it as explained in the [usage](postals.md#custom-postal-events) section below.
-4. If you're using a custom postal script, you can learn more about the exports provided in the [usage ](postals.md#custom-postal-scripts)section below.
 
 ## Configuration
 
-<table data-header-hidden><thead><tr><th width="264.3333333333333">Option</th><th width="312">Description</th><th>Default</th></tr></thead><tbody><tr><td>Option</td><td>Description</td><td>Default</td></tr><tr><td>sendTimer</td><td>Time between sending postal updates to the server.</td><td>950 ms</td></tr><tr><td>shouldSendPostalData</td><td>Toggles the plugin on/off</td><td>True</td></tr><tr><td>nearestPostalResourceName</td><td>If using our <a href="https://forum.cfx.re/t/release-nearest-postal-script/293511">nearest-postal</a> script, specify the name of its folder here</td><td>nearest-postal</td></tr><tr><td>mode</td><td>Specify what "mode" this plugin should use to determine postals. If using nearest-postal, set this to <code>resource</code>. If using an event fired by another resource, set this to <code>event</code>. If using a custom postals file, set this to <code>file</code>.</td><td>resource</td></tr><tr><td>nearestPostalEvent</td><td>If you've set <code>mode</code> to <code>event</code>, specify the name of the event fired by your postals resource here</td><td></td></tr><tr><td>customPostalCodesFile</td><td>If you've set <code>mode</code> to <code>file</code>, copy your custom postal codes file to the postals plugin folder, and add the name of that file here.</td><td></td></tr></tbody></table>
+| Option                    | Description                                                                                                                                                                                                                             | Default        |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Option                    | Description                                                                                                                                                                                                                             | Default        |
+| sendTimer                 | Time between sending postal updates to the server.                                                                                                                                                                                      | 950 ms         |
+| shouldSendPostalData      | Toggles the plugin on/off                                                                                                                                                                                                               | True           |
+| nearestPostalResourceName | If using our [nearest-postal](https://forum.cfx.re/t/release-nearest-postal-script/293511) script, specify the name of its folder here                                                                                                  | nearest-postal |
+| mode                      | Specify what "mode" this plugin should use to determine postals. If using nearest-postal, set this to `resource`. If using an event fired by another resource, set this to `event`. If using a custom postals file, set this to `file`. | resource       |
+| nearestPostalEvent        | If you've set `mode` to `event`, specify the name of the event fired by your postals resource here                                                                                                                                      |                |
+| customPostalCodesFile     | If you've set `mode` to `file`, copy your custom postal codes file to the postals plugin folder, and add the name of that file here.                                                                                                    |                |
 
 ## Usage
 
 ### Using [Nearest-Postal](https://forum.cfx.re/t/release-nearest-postal-script/293511)
 
 {% hint style="warning" %}
-The plugin only supports 1.5.0 or higher of the nearest postals plugin. Be sure to download the latest version before using.
+The plugin only supports 1.5.0 or higher of the nearest-postal plugin. Be sure to download the latest version before using.
 {% endhint %}
 
-If you're using the publicly available [nearest postals script](https://forum.cfx.re/t/release-nearest-postal-script/293511), some minor configuration is required.
+If you're using the publicly available [nearest-postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511), some minor configuration is required.
 
 #### 1. Set the Resource Name
 
@@ -68,15 +75,11 @@ Be sure that you are starting the nearest-postals addon/resource **before/above*
 
 Be sure to restart both the Sonoran CAD resource and the nearest-postal script, or restart your server entirely to apply the changes made.
 
-### Custom Postal Events
-
-If you're using a custom script that triggers an event containing the nearest postal to a character, first set `mode` to `event`, then specify the name of the event fired by your postals resource in `nearestPostalEvent` in the config.
-
 ### Custom Postal Codes File
 
 If you want to use your own custom postal codes file with this plugin, open the config and change `mode` to `file`. Next, copy your custom postal codes file to the postals plugin folder, and set the value of `customPostalCodesFile` to the name of this file.
 
-Finally, open the fxmanifest.lua file for sonorancad, and change the files { } section at the bottom to look like this, replacing postals\_file.json with the name of your postal file:
+Finally, open the `fxmanifest.lua` file for Sonoran CAD, and change the `files { }` section at the bottom to look like this, replacing `postals_file.json` with the name of your postal file:
 
 ```lua
 files {
@@ -90,9 +93,13 @@ files {
 ```
 
 {% hint style="danger" %}
-Do not simply replace the `files { }` section with that and be done. It is crucial that you change `postals_file.json` to match the name of your custom postals file.
+Do not simply replace the `files { }` section with that and be done. It is crucial that you change `postals_file.json` to match the name of your custom postals file!
 {% endhint %}
 
-### Custom Postal Scripts
+### Custom Postal Events
 
-This plugin no longer has a "custom" option. If you're not using the nearest postal script, you will need to create an export called getPostal in that script and have it return the player's current postal as a string. Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
+If you're not using the nearest-postal script or a custom postal codes file, you will need to create a export in your postals script, and have it return the player's current postal as a string.
+
+Additionally, you will need to edit the config to set `mode` to `event`, then specify the name of this event in `nearestPostalEvent`.
+
+Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
