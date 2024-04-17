@@ -43,15 +43,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ## Configuration
 
-| Option                    | Description                                                                                                                                                                                                                             | Default        |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| Option                    | Description                                                                                                                                                                                                                             | Default        |
-| sendTimer                 | Time between sending postal updates to the server.                                                                                                                                                                                      | 950 ms         |
-| shouldSendPostalData      | Toggles the plugin on/off                                                                                                                                                                                                               | True           |
-| nearestPostalResourceName | If using our [nearest-postal](https://forum.cfx.re/t/release-nearest-postal-script/293511) script, specify the name of its folder here                                                                                                  | nearest-postal |
-| mode                      | Specify what "mode" this plugin should use to determine postals. If using nearest-postal, set this to `resource`. If using an event fired by another resource, set this to `event`. If using a custom postals file, set this to `file`. | resource       |
-| nearestPostalEvent        | If you've set `mode` to `event`, specify the name of the event fired by your postals resource here                                                                                                                                      |                |
-| customPostalCodesFile     | If you've set `mode` to `file`, copy your custom postal codes file to the postals plugin folder, and add the name of that file here.                                                                                                    |                |
+<table><thead><tr><th>Option</th><th>Description</th><th width="100">Default</th></tr></thead><tbody><tr><td>sendTimer</td><td>Time between sending postal updates to the server.</td><td>950 ms</td></tr><tr><td>shouldSendPostalData</td><td>Toggles the plugin on/off</td><td>True</td></tr><tr><td>nearestPostalResourceName</td><td>If using our <a href="https://forum.cfx.re/t/release-nearest-postal-script/293511">nearest-postal</a> script, specify the name of its folder here</td><td>nearest-postal</td></tr><tr><td>mode</td><td>Specify what "mode" this plugin should use to determine postals. If using nearest-postal, set this to <code>resource</code>. If using an event fired by another resource, set this to <code>event</code>. If using a custom postals file, set this to <code>file</code>.</td><td>resource</td></tr><tr><td>nearestPostalEvent</td><td>If you've set <code>mode</code> to <code>event</code>, specify the name of the event fired by your postals resource here</td><td></td></tr><tr><td>customPostalCodesFile</td><td>If you've set <code>mode</code> to <code>file</code>, copy your custom postal codes file to the postals plugin folder, and add the name of that file here.</td><td></td></tr></tbody></table>
 
 ## Usage
 
@@ -65,7 +57,7 @@ If you're using the publicly available [nearest-postal script](https://forum.cfx
 
 #### 1. Set the Resource Name
 
-In the Sonoran CAD postals plugin config, change the `nearestPostalsResourceName` value to the _**exact**_ name of your nearest postals resource. The "name of the resource" is whatever its folder is called.\
+In the Sonoran CAD postals plugin config, change the `nearestPostalsResourceName` value to the _**exact**_ name of your nearest postals resource.\
 \
 Ex: `nearest-postals-1.5`
 
