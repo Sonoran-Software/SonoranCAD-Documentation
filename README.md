@@ -10,9 +10,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](other-products/server-hosting.md)!
 {% endhint %}
 
-![](<.gitbook/assets/SonoranCAD Logo\_Full.png>)
-
-![Sonoran CAD's advanced dispatching and record management system](.gitbook/assets/layout\_3\_11.gif)
+<figure><img src=".gitbook/assets/cad-fina.png" alt=""><figcaption></figcaption></figure>
 
 ### What is Sonoran CAD?
 
@@ -44,4 +42,3 @@ We've compiled a list of tutorials to help you get started and get the most out 
 {% content-ref url="tutorials/getting-started/" %}
 [getting-started](tutorials/getting-started/)
 {% endcontent-ref %}
-
