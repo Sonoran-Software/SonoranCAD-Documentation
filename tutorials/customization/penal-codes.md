@@ -79,13 +79,13 @@ Additionally, the `bondAmount` column must be kept as a number.\
 All other columns must be formatted as text.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (208).png>)
+![](../../.gitbook/assets/CAD\_PenalCodesSheet.png)
 
 ### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](<../../.gitbook/assets/image (155).png>)
+![Google Sheets - Download CSV](../../.gitbook/assets/CAD\_PenalCodesSheetDownload.png)
 
 ### 4. Import the CSV File
 
