@@ -10,6 +10,12 @@ description: >-
 This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
+## Edit Record
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/edit_record`
+
+This endpoint allows you to edit an existing custom record to your community.
+
 ```javascript
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
