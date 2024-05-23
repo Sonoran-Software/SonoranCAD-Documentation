@@ -22,7 +22,8 @@ function call911(caller, location, description, postal, plate, cb) {
         description: description,
         metaData: {
             plate: plate,
-            postal: postal
+            postal: postal,
+            useCallLocation: true
         }
     }, "CALL_911", cb);
 }
@@ -30,14 +31,15 @@ function call911(caller, location, description, postal, plate, cb) {
 
 ### Parameters
 
-| Property      | Type     | Description                           |
-| ------------- | -------- | ------------------------------------- |
-| `caller`      | String   | Name of the caller                    |
-| `location`    | String   | Street(s) name                        |
-| `description` | String   | Call description                      |
-| `postal`      | Integer  | Postal location of the call           |
-| `plate`       | String   | OPTIONAL: Plate to report in the call |
-| `cb`          | Function | OPTIONAL: Callback function           |
+| Property          | Type     | Description                                                         |
+| ----------------- | -------- | ------------------------------------------------------------------- |
+| `caller`          | String   | Name of the caller                                                  |
+| `location`        | String   | Street(s) name                                                      |
+| `description`     | String   | Call description                                                    |
+| `postal`          | Integer  | Postal location of the call                                         |
+| `plate`           | String   | OPTIONAL: Plate to report in the call                               |
+| `useCallLocation` | Boolean  | Should the postal location be drawn when using the `/rcall` command |
+| `cb`              | Function | OPTIONAL: Callback function                                         |
 
 ## Troubleshooting&#x20;
 

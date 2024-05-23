@@ -37,16 +37,15 @@ end
 
 ### Parameters
 
-| Property      | Type     | Description                           |
-| ------------- | -------- | ------------------------------------- |
-| `caller`      | String   | Name of the caller                    |
-| `location`    | String   | Street(s) name                        |
-| `description` | String   | Call description                      |
-| `postal`      | Integer  | Postal location of the call           |
-| `plate`       | String   | OPTIONAL: Plate to report in the call |
-| `cb`          | Function | OPTIONAL: Callback function           |
-
-
+| Property          | Type     | Description                                                         |
+| ----------------- | -------- | ------------------------------------------------------------------- |
+| `caller`          | String   | Name of the caller                                                  |
+| `location`        | String   | Street(s) name                                                      |
+| `description`     | String   | Call description                                                    |
+| `useCallLocation` | Boolean  | Should the postal location be drawn when using the `/rcall` command |
+| `postal`          | Integer  | Postal location of the call                                         |
+| `plate`           | String   | OPTIONAL: Plate to report in the call                               |
+| `cb`              | Function | OPTIONAL: Callback function                                         |
 
 ## [Callcommands](https://github.com/Sonoran-Software/sonoran\_callcommands) Export
 
