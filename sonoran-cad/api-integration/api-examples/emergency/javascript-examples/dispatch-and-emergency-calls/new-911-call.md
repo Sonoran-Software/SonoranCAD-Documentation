@@ -38,3 +38,12 @@ function call911(caller, location, description, postal, plate, cb) {
 | `postal`      | Integer  | Postal location of the call           |
 | `plate`       | String   | OPTIONAL: Plate to report in the call |
 | `cb`          | Function | OPTIONAL: Callback function           |
+
+## Troubleshooting&#x20;
+
+1. "`/rcall` is not drawing a postal route to the call location&#x20;
+   1. If you are using the Raw API Call method, please ensure that you have `useCallLocation` set to true.
+2. "Units are not getting the call in-game"
+   1. Please ensure that you have the [dispatchnotify ](../../../../../../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)plugin installed
+   2. Please ensure the unit is on duty with the configured method in [dispatchnotify](../../../../../../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
+   3. Please ensure your server's port and IP are correctly set in the Admin -> In-game Integration -> Livemap section of CAD
