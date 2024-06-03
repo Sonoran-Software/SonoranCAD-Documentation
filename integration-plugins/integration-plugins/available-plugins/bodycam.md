@@ -101,6 +101,14 @@ This means that you do not have the [screenshot-basic](https://github.com/citize
 
 We recommend that you update your server artifacts, as newer versions come with this resource installed by default. Alternatively, you can manually install it from [GitHub](https://github.com/citizenfx/screenshot-basic).
 
+### No Images/Loading on ZAP Hosting
+
+We are aware of an issue with the CFX proxy being unreachable on ZAP Hosting, a required piece for the body camera functionality.
+
+Your CFX proxy URL is formatted as `https://someCFXUsernameHere.users.cfx.re/` with `someCFXUsernameHere` being your CFX username. This proxy is native functionality to all FiveM servers.
+
+We suggest contacting ZAP hosting directly (your game server provider) to try and resolve this issue.
+
 ## Technology and Limitations
 
 ### The Goal:
