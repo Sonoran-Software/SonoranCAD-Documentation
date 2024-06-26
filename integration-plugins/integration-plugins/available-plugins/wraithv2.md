@@ -133,3 +133,15 @@ Ensure that the `flagOnStatuses` array has the exact string/text values that mat
 #### BOLO and Warrant
 
 Ensure that your custom BOLO and Warrant records have a field with the `type` set to `status`. Otherwise, there's no way to determine if the BOLO/Warrant is active, closed, etc. The plate reader will warn of any active BOLO or Warrant records with the vehicle plate attached _and_ the `status` type field set to active/open.
+
+### Error: attempt to index a nil value (local 'vehicle')
+
+Some servers will see this error in their server console:
+
+```
+sv_wraithv2.lua:112 - attempt to index a nil value (local 'vehicle')
+```
+
+To fix this, navigate to your `[sonorancad]/wk_wars2x` folder, and rename `config.dist.lua` to just `config.lua`&#x20;
+
+The config not being renamed is the most common cause of this error, however, if for some reason that doesn't fix it, feel free to open a [support ticket](https://support.sonoransoftware.com) with us.

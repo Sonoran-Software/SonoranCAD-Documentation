@@ -95,3 +95,19 @@ If you're not using the nearest-postal script or a custom postal codes file, you
 Additionally, you will need to edit the config to set `mode` to `event`, then specify the name of this event in `nearestPostalEvent`.
 
 Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
+
+## Troubleshooting
+
+### The configured postals file (postals\_file.json) was not found
+
+This error may be seen by users attempting to set up the plugin to use a [custom postal codes file](postals.md#custom-postal-codes-file). Specifically, the error will look something like this, substituting `postals_file.json` for whatever you've named your custom postal codes file to:
+
+```
+The configured postals file (postals_file.json) was not found. Please check it.
+```
+
+This means that either the postal codes file has not been correctly added to the fxmanifest, or that it has not been added at all. Please reference the above instructions on how to do so.&#x20;
+
+We recommend replacing the `files { }` section of your fxmanifest with the given code snippet, then changing `postals_file.json` to match the name of whatever postals file you're using.&#x20;
+
+If you've manually entered the line, verify that all the lines in the section **except for the last** are followed with a comma to ensure that the system can properly read it.
