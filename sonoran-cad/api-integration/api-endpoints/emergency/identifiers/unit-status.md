@@ -49,7 +49,7 @@ INVALID API KEY
 {
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
-    "type": "UNIT_STATUS ",
+    "type": "UNIT_STATUS",
     "data": [
         {
             "apiId": "STEAM:1234", // API ID entered in the unit identifiers
