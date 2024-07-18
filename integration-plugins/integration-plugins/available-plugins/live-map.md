@@ -30,7 +30,9 @@ The [locations plugin](locations.md) includes all logic required to display and 
 
 #### Install the Postals Plugin
 
-The [postals ](postals.md)plugin (for **Pro** communities only) allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
+The [postals ](postals.md)plugin\* allows you to automatically search the live map for postals, zoom to an active unit location, or active call location.
+
+\* Postal Search feature requires a **Pro** subscription
 
 #### &#x20;Install the Smart Signs Plugin
 
