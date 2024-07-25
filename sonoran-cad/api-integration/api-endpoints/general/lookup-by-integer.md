@@ -87,6 +87,7 @@ The `searchType` enumerator determines how your `value` integer is interpreted.&
 | 2    | ACTIVE\_STATUS     |
 | 3    | NUMBER             |
 | 4    | SECRET             |
+| 5    | ACCOUNT            |
 {% endtab %}
 
 {% tab title="Value" %}
@@ -127,6 +128,10 @@ When specifying a number `searchType` the `value` represents the unique record n
 Secret (searchType 4)
 
 When specifying a user account secret ID, the `value` represents the unique user account secret UUID. Users will find this secret key in their [API ID settings](../../getting-started/setting-your-api-id.md) menu.
+
+Account (searchType 5)
+
+When specifying a user account ID, the `value` represents the unique user account UUID. This value is internal, and not exposed to on the UI. The [verify\_secret ](verify-secret.md)endpoint will allow communities to capture the account UUID programmatically.
 {% endtab %}
 
 {% tab title="Record Types" %}
