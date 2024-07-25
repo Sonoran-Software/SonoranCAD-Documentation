@@ -205,7 +205,7 @@
         * [New Record](sonoran-cad/api-integration/api-endpoints/general/custom-records/new-record.md)
         * [Edit Record](sonoran-cad/api-integration/api-endpoints/general/custom-records/edit-record.md)
         * [Remove Record](sonoran-cad/api-integration/api-endpoints/general/custom-records/remove-record.md)
-      * [Lookup By Integer](sonoran-cad/api-integration/api-endpoints/general/lookup-by-integer.md)
+      * [Lookup By Value](sonoran-cad/api-integration/api-endpoints/general/lookup-by-integer.md)
       * [Lookup Name or Plate](sonoran-cad/api-integration/api-endpoints/general/lookup-name-or-plate.md)
       * [Get Account](sonoran-cad/api-integration/api-endpoints/general/get-account.md)
       * [Check API ID](sonoran-cad/api-integration/api-endpoints/general/check-api-id.md)

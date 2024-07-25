@@ -1,10 +1,10 @@
 ---
 description: >-
-  Sonoran CAD has additional record lookup capabilities via integer values for
+  Sonoran CAD has additional record lookup capabilities via specific values for
   unit identifiers, record or supervisor status, and more!
 ---
 
-# Lookup By Integer
+# Lookup By Value
 
 {% hint style="warning" %}
 This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
@@ -14,11 +14,11 @@ This API endpoint requires the **Plus** version of Sonoran CAD or higher. For mo
 API response times may be increased slightly for communities with Database Sync enabled, depending upon the speed, latency and size of your in-game database.
 {% endhint %}
 
-## Lookup By Int
+## Lookup By Value
 
-<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/lookup_int`
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/lookup_value`
 
-The lookup name endpoint allows you to retrieve all records associated with a specific integer value.
+The lookup name endpoint allows you to retrieve all records associated with a specific value.
 
 #### Request Body
 
@@ -86,6 +86,7 @@ The `searchType` enumerator determines how your `value` integer is interpreted.&
 | 1    | SUPERVISOR\_STATUS |
 | 2    | ACTIVE\_STATUS     |
 | 3    | NUMBER             |
+| 4    | SECRET             |
 {% endtab %}
 
 {% tab title="Value" %}
@@ -121,7 +122,11 @@ The `value` integer enumeration here is used particularly to search open/closed 
 
 #### Number (searchType 3)
 
-When specifying a number `searchType` the `value` represents the unique record number being searched. You can find the specific record number via any [lookup ](lookup-name-or-plate.md)or [lookup by integer](lookup-by-integer.md) result.
+When specifying a number `searchType` the `value` represents the unique record number being searched. You can find the specific record number via any [lookup ](lookup-name-or-plate.md)or [lookup by ](lookup-by-integer.md)[value](lookup-by-integer.md#lookup-by-int) result.
+
+Secret (searchType 4)
+
+When specifying a user account secret ID, the `value` represents the unique user account secret UUID. Users will find this secret key in their [API ID settings](../../getting-started/setting-your-api-id.md) menu.
 {% endtab %}
 
 {% tab title="Record Types" %}
