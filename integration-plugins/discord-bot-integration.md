@@ -20,22 +20,30 @@ For the [Permissions Synchronization](../features/permissions-synchronization.md
 
 Get started with SonoranBot today by inviting it to your Discord:
 
-{% embed url="https://info.sonoranbot.com/en/tutorials/getting-started" %}
+{% content-ref url="https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/getting-started" %}
+[Getting Started](https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/getting-started)
+{% endcontent-ref %}
 
 ### CAD Integration
 
 Learn more about SonoranBot's CAD integration features:
 
-{% embed url="https://info.sonoranbot.com/en/tutorials/getting-started/sonoran-cad-integration" %}
+{% content-ref url="https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/sonoran-cad-integration" %}
+[Sonoran CAD Integration](https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/sonoran-cad-integration)
+{% endcontent-ref %}
 
 ### Settings
 
 Configure SonoranBot's settings in your server:
 
-{% embed url="https://info.sonoranbot.com/en/tutorials/getting-started/settings" %}
+{% content-ref url="https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/usage/settings" %}
+[Settings](https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/usage/settings)
+{% endcontent-ref %}
 
 ### Commands
 
 Reference a list of bot commands:
 
-{% embed url="https://info.sonoranbot.com/en/tutorials/getting-started/settings/commands" %}
+{% content-ref url="https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/usage/commands" %}
+[Commands](https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/usage/commands)
+{% endcontent-ref %}
