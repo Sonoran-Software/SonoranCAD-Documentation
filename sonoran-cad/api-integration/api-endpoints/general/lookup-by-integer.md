@@ -131,7 +131,7 @@ When specifying a user account secret ID, the `value` represents the unique user
 
 Account (searchType 5)
 
-When specifying a user account ID, the `value` represents the unique user account UUID. This value is internal, and not exposed to on the UI. The [verify\_secret ](verify-secret.md)endpoint will allow communities to capture the account UUID programmatically.
+When specifying a user account ID, the `value` represents the unique user account UUID. This value is internal, and not exposed to on the UI. The [verify\_secret ](verify-secret.md)or [get\_account ](get-account.md)endpoints will allow communities to capture the account UUID programmatically.
 {% endtab %}
 
 {% tab title="Record Types" %}
