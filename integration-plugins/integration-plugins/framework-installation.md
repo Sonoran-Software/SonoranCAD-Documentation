@@ -30,7 +30,7 @@ Download the[ latest zip file from our Github.](https://github.com/Sonoran-Softw
 ![Extract the zip file into your resources directory. Keep the \[sonorancad\] folder intact.](../../.gitbook/assets/2.png)
 
 {% hint style="warning" %}
-If you already have `pNotify` or the `wk_wars2x` resource, remove them from your resources folder and use the Sonoran CAD plugin version.
+If you already have the `wk_wars2x` resource, please remove it from your resources folder and use the Sonoran version included with the framework download.
 {% endhint %}
 
 ### 3. Configure and Rename
@@ -93,7 +93,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                                                                                       |
 | disableOverride           | <p>By default, the framework will try and automatically correct your <a href="../../tutorials/customization/configuring-multiple-servers.md">server's IP, port, and outgoing IP address</a> if it detects something different.<br><br>Set this to <code>true</code> to disable this functionality.</p> |
 
-For information regarding the bodycam script config values, please see our [Bodycam Plugin guide.](/available-plugins/bodycam.md)
+For information regarding the bodycam script config values, please see our [Bodycam Plugin guide.](../../available-plugins/bodycam.md)
 
 ### 4. Server Config
 
@@ -224,4 +224,3 @@ In this example, you would navigate to the `sonorancad` **resource**, open the `
 {% hint style="info" %}
 This is simply a **WARNING**, if the resource works **AS EXPECTED**, you can simply ignore the warning and continue
 {% endhint %}
-
