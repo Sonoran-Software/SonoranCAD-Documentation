@@ -10,6 +10,32 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.5 08/02/2024
+
+{% tabs %}
+{% tab title="New" %}
+\#22809 Permission Keys - Hide Input
+
+* The permission key input on the community menu will be hidden if the community has no keys configured to reduce user confusion.
+
+Community Selection - UI Overhaul
+
+* Overhauled the community selection menu, complete with the CMS discovery spotlight.
+
+API: GET\_CHARACTERS
+
+* Added an optional account UUID parameter to process the request via Sonoran Account ID.
+
+API: SET\_CHARACTER
+
+* Added an optional account UUID parameter to process the request via Sonoran Account ID.
+
+API: LOOKUP\_VALUE
+
+* The lookup\_int API endpoint has been renamed to lookup\_value. This endpoint now allows for a lookup via account secret ID as a string.
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.3 03/13/2024
 
 {% tabs %}
