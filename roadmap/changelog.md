@@ -34,6 +34,12 @@ API: LOOKUP\_VALUE
 
 * The lookup\_int API endpoint has been renamed to lookup\_value. This endpoint now allows for a lookup via account secret ID as a string.
 {% endtab %}
+
+{% tab title="Fixed" %}
+Permission Check - Refresh
+
+* Fixed an issue causing a permission check to fail when refreshing the page, kicking the user back to the community menu
+{% endtab %}
 {% endtabs %}
 
 ### 3.33.3 03/13/2024
