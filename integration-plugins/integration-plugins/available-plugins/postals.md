@@ -41,6 +41,12 @@ If you haven't already, be sure to install and configure the [plugin framework](
 2. If you're using a custom postal codes file, you will need to add the file to the plugin and Sonoran CAD's fxmanifest as shown in the [usage ](postals.md#custom-postal-codes-file)section below.
 3. If you're using an event triggered by a custom postals script, you must configure it as explained in the [usage](postals.md#custom-postal-events) section below.
 
+{% hint style="danger" %}
+nearestPostalResourceName should **ONLY** be filled out if you're using [our specific nearest postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511). In other words, **do not** put the name of your HUD script here, as **that will not work**.\
+\
+Due to the potential of resource conflicts, we recommend those using other nearest postal or HUD scripts to setup a [custom postal codes file](postals.md#custom-postal-codes-file) with this plugin.
+{% endhint %}
+
 ## Configuration
 
 <table><thead><tr><th>Option</th><th>Description</th><th width="100">Default</th></tr></thead><tbody><tr><td>sendTimer</td><td>Time between sending postal updates to the server.</td><td>950 ms</td></tr><tr><td>shouldSendPostalData</td><td>Toggles the plugin on/off</td><td>True</td></tr><tr><td>nearestPostalResourceName</td><td>If using our <a href="https://forum.cfx.re/t/release-nearest-postal-script/293511">nearest-postal</a> script, specify the name of its folder here</td><td>nearest-postal</td></tr><tr><td>mode</td><td>Specify what "mode" this plugin should use to determine postals. If using nearest-postal, set this to <code>resource</code>. If using an event fired by another resource, set this to <code>event</code>. If using a custom postals file, set this to <code>file</code>.</td><td>resource</td></tr><tr><td>nearestPostalEvent</td><td>If you've set <code>mode</code> to <code>event</code>, specify the name of the event fired by your postals resource here</td><td></td></tr><tr><td>customPostalCodesFile</td><td>If you've set <code>mode</code> to <code>file</code>, copy your custom postal codes file to the postals plugin folder, and add the name of that file here.</td><td></td></tr></tbody></table>
