@@ -8,28 +8,23 @@ description: Sonoran CAD allows you to retrieve detailed user account data via A
 This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/get_account" method="post" summary="Get Account" %}
-{% swagger-description %}
+## Get Account
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/get_account`
+
 This endpoint allows you to retrieve information on a specified account in your community.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description              |
+| ---- | ------ | ------------------------ |
+| id   | string | Your community's ID      |
+| key  | string | Your community's API Key |
+| type | string | GET\_ACCOUNT             |
+| data | array  | Array of request objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-GET_ACCOUNT
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of request objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```javascript
 // Account Object
   {
@@ -87,17 +82,17 @@ Array of request objects
     ]
   }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -106,8 +101,9 @@ INVALID API KEY
     "type": "GET_ACCOUNT",
     "data": [
         {
-            "apiId": "Steam:1234", // Generally the Steam HEX
-            "username": "SonoranBrian", // Sonoran CAD Username
+            "apiId": "Steam:1234", // (OPTION 1): Generally the Steam HEX
+            "username": "SonoranBrian", // (OPTION 2): Sonoran CAD Username
+            "account": "000-000-000" // (OPTION 3): Sonoran Account UUID
         },
     ]
 }
@@ -115,4 +111,4 @@ INVALID API KEY
 
 ### Search Type
 
-The search can be by the user's `apiId` or their Sonoran CAD account `username`.
+The search can be by the user's `apiId`, their Sonoran CAD account `username`, or their Sonoran `account` uuid.

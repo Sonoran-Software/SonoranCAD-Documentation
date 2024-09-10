@@ -8,42 +8,37 @@ description: Update your unit's current status in the CAD via API.
 This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/unit_status" method="post" summary="Update Unit Status" %}
-{% swagger-description %}
+## Update Unit Status
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/unit_status`
+
 The unit location API endpoint allows you to update a unit's location from in-game.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description                  |
+| ---- | ------ | ---------------------------- |
+| id   | string | Your community's ID          |
+| key  | string | Your community's API Key     |
+| type | string | UNIT\_STATUS                 |
+| data | array  | Array of unit status objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-UNIT_STATUS
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of unit status objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 UNIT STATUS UPDATED
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -52,8 +47,9 @@ INVALID API KEY
     "type": "UNIT_STATUS",
     "data": [
         {
-            "apiId": "STEAM:1234", // API ID entered in the unit identifiers
+            "apiId": "STEAM:1234", // (OPTION 1): API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
+            "account": "000-000-000", // (OPTION 2): Sonoran Account UUID
             "status": 0,           // Status Int (ENUM)
             "serverId": 1          // Server ID
         },
