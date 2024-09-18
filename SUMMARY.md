@@ -26,7 +26,7 @@
   * [Inviting Users to Your CAD](tutorials/getting-started/inviting-users-to-your-cad.md)
   * [Granting Account Permissions](tutorials/getting-started/permissions.md)
   * [View Your Limits](tutorials/getting-started/view-your-limits.md)
-  * [Finding your Community ID and Authentication Code](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
+  * [Community ID and API Keys](tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
   * [Troubleshooting](tutorials/getting-started/troubleshooting.md)
 * [Customization](tutorials/customization/README.md)
   * [Custom Domain & Login Page](tutorials/customization/custom-login-page.md)
