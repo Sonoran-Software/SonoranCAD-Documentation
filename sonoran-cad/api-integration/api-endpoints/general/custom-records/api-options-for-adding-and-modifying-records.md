@@ -65,6 +65,67 @@ You can easily copy a template field's UID in the admin menu by expanding the se
 }
 ```
 
+### Dictionary For Non-Custom Sections
+
+For section types like `flags`, `charges`, `speed`, or `link` these objects are stored in a `data` object on the first `field` in the section. These `section` type enums can be found under the [custom record formatting](./#section).
+
+For these, the dictionary value should be a JSON string of the object that the `data` property will be set to.
+
+<details>
+
+<summary>JSON String - Flags Data</summary>
+
+<pre class="language-json"><code class="lang-json"><strong>// Stringified JSON for the FLAGS object
+</strong><strong>// Value will be stored in the section[index].fields[0].data
+</strong><strong>// NOTE: `flags` property is an ARRAY of flag strings
+</strong><strong>"replaceValues": {
+</strong>    "someUidFlagsField": "{\"flags\":[\"FLAG 1\",\"FLAG 2\"]}"
+}
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>JSON String - Charges Data</summary>
+
+<pre class="language-json"><code class="lang-json"><strong>// Stringified JSON for the CHARGES object
+</strong><strong>// Value will be stored in the section[index].fields[0].data
+</strong><strong>// NOTE: `charges` property is an ARRAY of charge objects
+</strong><strong>"replaceValues": {
+</strong>    "someUidChargesField": "{\"charges\":[{\"jailTime\":\"1 Year\",\"arrestCharge\":\"Some Crime\",\"arrestBondType\":\"Federal Bail Bond\",\"arrestBondAmount\":123,\"arrestChargeCode\":\"(1)23\",\"arrestChargeType\":\"Felony\",\"arrestChargeCounts\":1}]}"
+}
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>JSON String - Speed Data</summary>
+
+<pre class="language-json"><code class="lang-json"><strong>// Stringfied JSON for the SPEED object
+</strong><strong>// Value will be stored in the section[index].fields[0].data
+</strong><strong>"replaceValues": {
+</strong>    "someUidSpeedField": "{\"date\":\"2024/09/01\",\"fine\":\"123\",\"time\":\"03:30\",\"paceType\":\"Radar\",\"speedLimit\":\"50\",\"vehicleSpeed\":\"100\"}"
+}
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>JSON String - Link Data</summary>
+
+<pre class="language-json"><code class="lang-json"><strong>// Stringified JSON for the Link object
+</strong><strong>// Value will be stored in the section[index].fields[0].data
+</strong><strong>// NOTE: `records` property is an ARRAY of record link objects
+</strong><strong>"replaceValues": {
+</strong>    "someUidLinkField": "{\"records\":[{\"link\":3,\"type\":8,\"label\":\"Arrest #3\"}]}"
+}
+</code></pre>
+
+</details>
+
 ## Option 2 - Raw JSON
 
 The more complicated but complete way to add or modify custom records via API is supplying the full, raw JSON structure of the record.
