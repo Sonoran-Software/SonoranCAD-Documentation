@@ -51,7 +51,7 @@ Your community ID is also listed in the following places:
 
 2\. In the Admin panel under `Advanced` > `Limits`
 
-![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/CAD\_CommLimitsCircle.png)
+![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/CAD\_Limits.png)
 
 ## Authenticating your Ownership
 

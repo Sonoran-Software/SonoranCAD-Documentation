@@ -28,6 +28,10 @@ Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranser
 
 ### 1. Add a CNAME and TXT Record for your Domain
 
+{% hint style="info" %}
+Due to [DNS requirements](https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root), if you wish to use the Apex / root domain instead of a subdomain (i.e. dojrp.com vs cad.dojrp.com), you must have a domain registered with Cloudflare, or otherwise[ transfer your existing domain to Cloudflare](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/).
+{% endhint %}
+
 #### CNAME Record
 
 In your domain's DNS records, add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
@@ -62,7 +66,7 @@ This should not contain any `https://` or other extensions.
 Don't forget to press save!\
 Users can now visit this custom domain to view the CAD with a custom login page, including receiving your [branded emails](custom-emails.md) for signups and password recovery messages.
 
-![Sonoran CAD - Custom Login URL](<../../.gitbook/assets/image (5).png>)
+![Sonoran CAD - Custom Login URL](../../.gitbook/assets/CAD\_CustomLoginUrl.png)
 
 {% hint style="warning" %}
 When updating or changing an existing DNS record, it may take some time for the change to propagate (based on your TTL).\
