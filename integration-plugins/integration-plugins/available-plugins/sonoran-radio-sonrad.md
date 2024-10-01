@@ -41,4 +41,4 @@ Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/g
 
 ## Usage
 
-When you have installed and enabled the plugin in the configuration file, your panic button in the Sonoran Radio will activate your unit's panic on Sonoran CAD. This will also synchronize your current unit status onto the main screen of the Sonoran Radio UI.
+[Learn more about the Sonoran Radio integration here!](https://info.sonoranradio.com/tutorials/integrations/sonoran-cad-integration)
