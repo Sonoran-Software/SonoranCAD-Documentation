@@ -10,6 +10,60 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.33.6 10/07/2024
+
+{% tabs %}
+{% tab title="New" %}
+MODIFY\_IDENTIFIER API Account Param
+
+* Added an `account` parameter to specify a user as an alternative to `apiId`
+
+GET\_IDENTIFIERS ACCOUNT Param
+
+* Added an `account` parameter to specify a user as an alternative to `apiId`
+
+SET\_IDENTIFIER ACCOUNT Param
+
+* Added an `account` parameter to specify a user as an alternative to `apiId`
+
+UNIT\_STATUS ACCOUNT Param
+
+* Added an `account` parameter to specify a user as an alternative to `apiId`
+
+GET\_ACCOUNT ACCOUNT Param
+
+* Added an `account` parameter to specify a user as an alternative to `apiId`
+
+
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#24607 - Remove Identifier API ID
+
+* Removed the need to supply a valid API ID when removing an identifier via API.
+
+\#24650 Date Input Mask
+
+* Fixed an issue allowing users to manually enter anything into a date field instead of the formatted mask, if the user was not using the date picker.
+
+\#24457 Leave Community on Join
+
+* Fixed an issue causing the leave community button to display on smaller screens when searching to join a new community.
+
+\#20555 - Dispatch Modified Webhook
+
+* Fixed an issue causing the Discord webhook for dispatch call updates to send based on whether or not the new dispatch webhook was enabled, instead of whether or not the modified dispatch webhook was enabled.
+
+API - ADD/Edit Record Custom Section
+
+* Added new handling and documentation to allow for the key-value replacement system via API for non-custom sections on records like charges, record links, etc.
+
+\#25090 - Dispatch Unit Attach API
+
+* Fixed an issue causing the NEW\_DISPATCH endpoint to not always notify the newly attached units of the incoming call
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.5 08/02/2024
 
 {% tabs %}
