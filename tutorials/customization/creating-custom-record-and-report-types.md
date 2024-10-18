@@ -344,3 +344,19 @@ The default `Vehicle Registration` record has the following field UIDs
 &#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
 
 ![](<../../.gitbook/assets/image (280).png>)
+
+## Common Issues
+
+### ERROR: This record template has no fields enabled for preview.
+
+You may encounter this error whilst attempting to save a custom record template.
+
+To designate a field as a "preview field", simple toggle the magnifying glass icon in the custom record editor, as shown below.&#x20;
+
+<figure><img src="../../.gitbook/assets/CAD_ToggleMagGlass.png" alt=""><figcaption><p>Sonoran CAD - Enable Field for Preview</p></figcaption></figure>
+
+"Preview Fields" are what show up when you run a record lookup (first, last, age, plate, etc.). The image below shows an example of "preview fields" on a vehicle registration record.
+
+<figure><img src="../../.gitbook/assets/CAD_RecordLookup2.png" alt=""><figcaption><p>Sonoran CAD - Preview Fields Example (Shown in Yellow)</p></figcaption></figure>
+
+We require at least one field to be enabled for preview, as running a lookup with no preview fields would return a blank list of records.
