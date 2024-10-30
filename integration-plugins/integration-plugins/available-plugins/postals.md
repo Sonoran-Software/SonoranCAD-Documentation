@@ -42,9 +42,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 3. If you're using an event triggered by a custom postals script, you must configure it as explained in the [usage](postals.md#custom-postal-events) section below.
 
 {% hint style="danger" %}
-nearestPostalResourceName should **ONLY** be filled out if you're using [our specific nearest postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511). In other words, **do not** put the name of your HUD script here, as **that will not work**.\
-\
-Due to the potential of resource conflicts, we recommend those using other nearest postal or HUD scripts to setup a [custom postal codes file](postals.md#custom-postal-codes-file) with this plugin.
+nearestPostalResourceName should **ONLY** be filled out if you're using [our specific nearest postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511). In other words, **do not** put the name of your HUD script here, as **that will not work**.
 {% endhint %}
 
 ## Configuration
