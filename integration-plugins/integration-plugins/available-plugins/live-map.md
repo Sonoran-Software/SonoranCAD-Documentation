@@ -48,7 +48,9 @@ In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Eve
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map).
 
-![Sonoran CAD - Live Map Type Selection](<../../../.gitbook/assets/image (298) (1).png>)
+
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-08 at 3.11.55 PM.png" alt=""><figcaption><p>Sonoran CAD - Live Map Type Selection</p></figcaption></figure>
 
 ### 4. Set Your API ID
 
@@ -152,7 +154,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 ![Live Map - Smart Signs](<../../../.gitbook/assets/image (144).png>)
 
-## Using a Custom Map
+## Using a Custom Map (FiveM)
 
 {% hint style="danger" %}
 This feature requires the **pro** version of Sonoran CAD.\
@@ -187,3 +189,29 @@ Select "Upload Custom" and upload all six correctly named files.
 ### 3. File Size
 
 Custom map images are limited to 30MB each. **However, if you are uploading more than 100MB of images total, you will need to upload in separate batches.**
+
+## Using a Custom Map (Roblox)
+
+Sonoran CAD allows any Roblox game to also send and update live map positions.
+
+* [ER:LC](../../roblox-er-lc.md)
+  * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
+* [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
+  * Requires a custom map upload from the game
+
+<details>
+
+<summary>For Roblox Developers</summary>
+
+Maple County has recently added Sonoran CAD live map access to their Roblox game mode.\
+To do the same for your game:
+
+1. Send Unit Location API updates with the `coordinate` `x` and `y` values
+2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
+3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
+
+![](../../../.gitbook/assets/image.png)
+
+For more help, reach out to our [support team](https://support.sonoransoftware.com).
+
+</details>

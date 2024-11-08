@@ -110,7 +110,9 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 In the admin menu, navigate to > `Advanced` > `Server Events and Integrated Live Map`
 
-Enable the map and set the type to `ER:LC ROBLOX`.
+Enable the map, set the game toggle to `Roblox` and set the type to `ER:LC ROBLOX`.
+
+Learn more about custom Roblox live maps here.
 
 #### 2. View the Live Map
 
