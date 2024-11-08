@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.33.8 11/08/2024
+
+{% tabs %}
+{% tab title="New" %}
+Live Map: Custom Roblox Maps
+
+* Added documentation and support for custom Roblox live maps, with initial support for Maple County | Fall Update
+{% endtab %}
+{% endtabs %}
+
 ### 3.33.6 10/07/2024
 
 {% tabs %}
@@ -33,8 +43,6 @@ UNIT\_STATUS ACCOUNT Param
 GET\_ACCOUNT ACCOUNT Param
 
 * Added an `account` parameter to specify a user as an alternative to `apiId`
-
-
 {% endtab %}
 
 {% tab title="Fixed" %}
