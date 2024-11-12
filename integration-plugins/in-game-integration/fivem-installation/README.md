@@ -27,15 +27,17 @@ View our installation tutorial video for help on installing our framework.
 
 ### 1. Download the ZIP
 
-Download a pre-configured version of the in-game integration resource from the panel. This download will already have your community ID and API Key in the `config.lua` file.
+Download a pre-configured version of the in-game integration resource from the panel. This download will already have your community ID and API Key in the `config.lua` file in addition to file renaming done for you.
 
-Navigate to `Admin` -> `Advanced` -> `In-Game Integration`&#x20;
+Navigate to `Admin` -> `Advanced` -> `In-Game Integration` -> `FiveM`
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
 
 ### 2. Extract the ZIP File
 
 Extract the `.zip` file into your resources directory. Place the `[sonorancad]` folder directly in the resources root directory.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
 
 ### 3. Update Your Server Config
 
@@ -58,9 +60,17 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
-{% hint style="success" %}
-Once completed please move to the [#additional-configuration](./#additional-configuration "mention") section to complete your setup
-{% endhint %}
+### 4. Configure the Resource
+
+Modify the `/configuration/config.lua` file for any additional configuration values.
+
+### 5. Configure the Submodules
+
+The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](submodule-configuration/) in the `/configuration` folder.
+
+{% content-ref url="available-plugins/" %}
+[available-plugins](available-plugins/)
+{% endcontent-ref %}
 
 ***
 

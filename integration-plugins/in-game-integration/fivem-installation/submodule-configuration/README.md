@@ -31,7 +31,8 @@ This example uses the `postals` submodule.
 
 ### 1. Configure and Enable the Submodule
 
-* Navigate to the `\sonorancad\configuration` folder and locate the configuration file for your desired submodule. For this example we will be using the `postals_config.dist` file (name depends on the submodule ). More details are on the [specific submodule page](../available-plugins/).&#x20;
+* Navigate to the `\sonorancad\configuration` folder and locate the configuration file for your desired submodule.
+  * For this example we will be using the `postals_config.dist` file (name depends on the submodule ). More details are on the [specific submodule page](../available-plugins/).&#x20;
 * **Enable** the submodule by changing the `enabled` variable from `false` to `true` in the plugin config.
 
 ![](<../../../../.gitbook/assets/Screen Shot 2020-05-25 at 10.00.45 PM.png>)
@@ -39,7 +40,7 @@ This example uses the `postals` submodule.
 ### 2. Rename and Save
 
 * **Rename** and remove the `.dist` from the file to `postals_config.lua` (depending on name of plugin).
-  * If you've downloaded the pre-configured FiveM resource from the admin panel, this has already been done for you.
+  * If you've downloaded the [pre-configured FiveM resource from the admin panel](../), this has already been done for you.
 * **Save** the configuration file.
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="369"><figcaption></figcaption></figure>
