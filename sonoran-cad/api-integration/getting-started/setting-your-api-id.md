@@ -40,7 +40,7 @@ If you're not sure, ask an administrator from your community.
 
 #### 2. Retrieving an API ID from In-Game
 
-Assuming your community has the [API ID plugin](../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) installed, enter `/apiid` in-game. This will display a chat message with your API ID.
+Assuming your community has the [API ID plugin](../../../roadmap/v2-legacy/available-plugins/api-id-checker.md) installed, enter `/apiid` in-game. This will display a chat message with your API ID.
 
 #### 3. Retrieve your API ID from Discord
 

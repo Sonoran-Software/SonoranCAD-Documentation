@@ -55,6 +55,6 @@ All of our products are covered in our [48-hour moneyback guarantee](https://son
 
 ### The support agent has installed my plugins, what's next?
 
-{% content-ref url="../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md" %}
-[free-plugin-installation-next-steps.md](../../integration-plugins/integration-plugins/free-plugin-installation-next-steps.md)
+{% content-ref url="../../integration-plugins/in-game-integration/free-plugin-installation-next-steps.md" %}
+[free-plugin-installation-next-steps.md](../../integration-plugins/in-game-integration/free-plugin-installation-next-steps.md)
 {% endcontent-ref %}

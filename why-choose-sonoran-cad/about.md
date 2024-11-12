@@ -24,13 +24,13 @@ Tired of having to manually register civilians? With Sonoran CAD's [Database Syn
 
 Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugins** for your game server!
 
-* [Automated Plate Reader Lookup (Results Sent Back to CAD)](../integration-plugins/integration-plugins/available-plugins/wraithv2.md)
-* [Automated Traffic Stop Dispatching](../integration-plugins/integration-plugins/available-plugins/traffic-stop.md)
-* [Live Unit Locations](../integration-plugins/integration-plugins/available-plugins/locations.md)
-* [/911, /511, /311 and /Panic](../integration-plugins/integration-plugins/available-plugins/call-commands.md)
-* [Custom Integrated Live Map](../integration-plugins/integration-plugins/available-plugins/live-map.md)
-* [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
-* [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../integration-plugins/integration-plugins/available-plugins/dispatch-notify.md)
+* [Automated Plate Reader Lookup (Results Sent Back to CAD)](../roadmap/v2-legacy/available-plugins/wraithv2.md)
+* [Automated Traffic Stop Dispatching](../roadmap/v2-legacy/available-plugins/traffic-stop.md)
+* [Live Unit Locations](../roadmap/v2-legacy/available-plugins/locations.md)
+* [/911, /511, /311 and /Panic](../roadmap/v2-legacy/available-plugins/call-commands.md)
+* [Custom Integrated Live Map](../roadmap/v2-legacy/available-plugins/live-map.md)
+* [TeamSpeak 3 Integration](../roadmap/v2-legacy/available-plugins/teamspeak-3.md)
+* [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](../roadmap/v2-legacy/available-plugins/dispatch-notify.md)
 * And much more!
 
 <figure><img src="../.gitbook/assets/integrationplugins.png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
@@ -55,13 +55,13 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 ### 🎥Live Bodycam Footage In-CAD
 
-Sonoran CAD's [bodycam system](../integration-plugins/integration-plugins/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
+Sonoran CAD's [bodycam system](../roadmap/v2-legacy/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
 
 <figure><img src="../.gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📍 Hosted and Integrated Live Map
 
-Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugins/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
+Sonoran CAD's custom[ live map plugin](../roadmap/v2-legacy/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
 <figure><img src="../.gitbook/assets/livemap.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
@@ -69,7 +69,7 @@ Sonoran CAD's custom[ live map plugin](../integration-plugins/integration-plugin
 
 We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
-[Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/integration-plugins/available-plugins/smart-signs.md)
+[Learn more about this free script included with Sonoran CAD Pro!](../roadmap/v2-legacy/available-plugins/smart-signs.md)
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
@@ -77,7 +77,7 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 
-Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../integration-plugins/integration-plugins/available-plugins/tablet.md)!
+Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../roadmap/v2-legacy/available-plugins/tablet.md)!
 
 <figure><img src="../.gitbook/assets/mini-cad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
 
@@ -107,7 +107,7 @@ Drag-and-drop allows you to easily view calls, attach units, and more!
 
 <figure><img src="../.gitbook/assets/Multi-Task-Windows.png" alt=""><figcaption><p>Sonoran CAD - Custom Layouts</p></figcaption></figure>
 
-### 🎤 [TeamSpeak 3 Integration](../integration-plugins/integration-plugins/available-plugins/teamspeak-3.md)
+### 🎤 [TeamSpeak 3 Integration](../roadmap/v2-legacy/available-plugins/teamspeak-3.md)
 
 Enforce security in your TeamSpeak 3 channels by requiring them to be signed into the CAD. Additionally, kick users from secured TS channels when they log off.
 
@@ -119,7 +119,7 @@ Check out our official [Stream Deck profiles](../integration-plugins/stream-deck
 
 ### 📖 API Integration
 
-In addition to over a dozen drag-and-drop integration [plugins](../integration-plugins/integration-plugins/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
+In addition to over a dozen drag-and-drop integration [plugins](../roadmap/v2-legacy/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](../sonoran-cad/api-integration/push-events/)!
 

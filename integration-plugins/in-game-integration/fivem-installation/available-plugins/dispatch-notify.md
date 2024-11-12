@@ -8,14 +8,14 @@ description: >-
 # Dispatch Notify
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-This plugin
+This submodule:
 
 * Notifies officers of incoming calls
 * [Allows officers to attach to calls via command](dispatch-notify.md#2-officer-attaches-to-the-call)
@@ -28,35 +28,29 @@ This plugin
 
 Check out our video showcase of this plugin [here](https://youtu.be/eWmeFpz8jiA).
 
-## Installation
+## Installation Guide
 
-### 1. Download and Install the Framework
+### 1. Download and Install the Core
 
-If you haven't already, be sure to install and configure the [plugin framework](../framework-installation.md) first.
+If you haven't already, be sure to install and configure the [SonoranCAD Core](../) first.
 
-### 2. Download the Plugin and all Dependencies
+### 2. Activate the Submodule and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_dispatchnotify/releases) to download the DispatchNotify plugin .zip file.
-2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran\_callcommands/releases/tag/latest) plugin.
-3. (Optional) download and install the [postals](postals.md) plugin.
+1. Follow the [submodule activation guide](../submodule-configuration/#activating-a-submodule) for the `callcommands`, and `dispatchnotify`submodules.
 
-### 3. Install the Plugin and all Dependencies
-
-1. Follow the [standard plugin installation guide](https://app.gitbook.com/s/-M4pGN81fb4R6zFhodcu/integration-plugins/integration-plugins/plugin-installation.md) for the dispatchnotify and callcommands plugins.
-
-### 4. Add your Game Server IP and Port
+### 3. Add your Game Server IP and Port
 
 Be sure to have your game server IP and port set in the admin panel under `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
 
-![Sonoran CAD - Server IP and Port](<../../../.gitbook/assets/image (195).png>)
+![Sonoran CAD - Server IP and Port](<../../../../.gitbook/assets/image (195).png>)
 
-### 5. Set Your API ID
+### 4. Set Your API ID
 
-Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
-### 6. Configuration
+### 5. Configuration
 
-Review the `config_dispatchnotify.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
+Review the `dispatchnotify_config.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
 
 ## Commands
 
@@ -82,7 +76,7 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
 | incomingCallMessage          | <p>How should officers be notified of a new 911 call? Parameters:<br><strong>{location}</strong> - location of call (street + postal)<br><strong>{description}</strong> - description as given by civilian<br><strong>{caller}</strong> - caller's name<br><strong>{callId}</strong> - ID of the call so LEO can respond with /r911<br><strong>{command}</strong> - The command to use</p>         |
 | unitDutyMethod               | <p>How to detect if units are online?<br><strong>incad</strong>: units must be logged into the CAD<br><strong>permissions</strong>: units must have the "sonorancad.dispatchnotify" ACE permission (see docs)<br><strong>esxjob</strong>: requires esxsupport plugin, use jobs instead for on duty detection<br><strong>custom</strong>: Use custom function (defined below as unitDutyCustom)</p> |
 | esxJobsAllowed               | What jobs should count as being on duty?                                                                                                                                                                                                                                                                                                                                                           |
-| waypointType                 | <p>Customise the title of a call made in the CAD<br><strong>postal</strong>: set gps to caller's postal (less accurate, more realistic) - REQUIRES <a href="postals.md">CONFIGURED POSTAL PLUGIN</a><br><strong>exact</strong>: set gps to caller's position (less realistic)<br><strong>none</strong>: disable waypointing</p>                                                                    |
+| waypointType                 | <p>Customise the title of a call made in the CAD<br><strong>postal</strong>: set gps to caller's postal (less accurate, more realistic) - REQUIRES <a href="../../../../roadmap/v2-legacy/available-plugins/postals.md">CONFIGURED POSTAL PLUGIN</a><br><strong>exact</strong>: set gps to caller's position (less realistic)<br><strong>none</strong>: disable waypointing</p>                    |
 | waypointFallbackEnabled      | Fall back to postal if exact coordinates cannot be found (for self-generated calls)                                                                                                                                                                                                                                                                                                                |
 | callTitle                    | <p>Type of waypoint to use when officer is attached<br><strong>Default</strong>: OFFICER RESPONSE</p>                                                                                                                                                                                                                                                                                              |
 | sendNotesToUnits             | Enable "the sending of notes to units" notifications                                                                                                                                                                                                                                                                                                                                               |
@@ -90,14 +84,14 @@ Review the `config_dispatchnotify.lua` file to configure the plugin to behave ho
 | notifyMessage                | <p>NotifyMessage: Message template to use when sending to the player</p><p>You can use the following replacements:</p><p><strong>{callid}</strong> - The CAD Call ID</p><p><strong>{note}</strong> - The Note Added</p>                                                                                                                                                                            |
 | enableAddNote                | Enable "the adding of the notes" notifications                                                                                                                                                                                                                                                                                                                                                     |
 | addNoteCommand               | Command to add notes to a call with                                                                                                                                                                                                                                                                                                                                                                |
-| enableAddPlate               | Enable "the adding of plates that are locked" notifications - REQUIRES [CONFIGURED WRAITHV2 PLUGIN](wraithv2.md)                                                                                                                                                                                                                                                                                   |
+| enableAddPlate               | Enable "the adding of plates that are locked" notifications - REQUIRES [CONFIGURED WRAITHV2 PLUGIN](../../../../roadmap/v2-legacy/available-plugins/wraithv2.md)                                                                                                                                                                                                                                   |
 | addPlateCommand              | Command to add plates to a call with                                                                                                                                                                                                                                                                                                                                                               |
 
 ## Dispatch Call Responding
 
 ### 1. Civilian Places a 911 Call
 
-This call can be placed from the Civilian menu of the CAD, or via the `/911` command in-game, supplied by the [callcommands plugin](call-commands.md).
+This call can be placed from the Civilian menu of the CAD, or via the `/911` command in-game, supplied by the [callcommands plugin](../../../../roadmap/v2-legacy/available-plugins/call-commands.md).
 
 ### 2. Officer Attaches to the Call
 
@@ -121,19 +115,19 @@ Dispatch notify can also be used to track the primary unit on a call. This will 
 
 Dispatchers can set the primary unit to any unit currently attached to the call. The slider next to the Primary Unit box will toggle tracking mode. When enabled, the postal will automatically update based on the primary unit's location and be sent to all attached units.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (30).png>)
+![Sonoran CAD - Primary Unit](<../../../../.gitbook/assets/image (30).png>)
 
 A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1) (1).png>)
+![Sonoran CAD - Primary Unit](<../../../../.gitbook/assets/image (1) (1) (1).png>)
 
 ## Troubleshooting
 
 * No notifications for 911 calls
-  * Units must be logged into the CAD (by default) or meeting the requirements depending on how the plugin is configured.
+  * Units must be logged into the CAD (by default) or meeting the requirements depending on how the submodule is configured.
   * If using pNotify notifications, ensure that resource is running.
 * Units do not automatically attach to calls
-  * Ensure their [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) is set so the server knows who they are.
+  * Ensure their [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) is set so the server knows who they are.
 * Caller is not notified when units attach to the call
   * If the caller ever leaves the server and rejoins, this feature does not work.
   * If dispatch created the call within the CAD, there is no way to notify a caller.

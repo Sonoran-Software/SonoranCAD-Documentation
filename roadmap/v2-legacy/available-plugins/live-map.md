@@ -58,7 +58,7 @@ Don't forget to have each community member set their account [API ID](../../../s
 
 ### 5. User Access Permission
 
-Users will need to be granted access to view the live map. This can be done via [Discord role sync](../../discord-bot-integration.md), [permission key](../../../tutorials/getting-started/permissions.md#permission-keys), or by [manually granting permissions](../../../tutorials/getting-started/permissions.md#manually-granting-permissions) in the admin menu.
+Users will need to be granted access to view the live map. This can be done via [Discord role sync](../../../integration-plugins/discord-bot-integration.md), [permission key](../../../tutorials/getting-started/permissions.md#permission-keys), or by [manually granting permissions](../../../tutorials/getting-started/permissions.md#manually-granting-permissions) in the admin menu.
 
 ### **6. Enjoy!**
 
@@ -119,7 +119,7 @@ Clicking on a unit blip allows you to add the unit to a call, add the unit to a 
 #### Drag-and-Drop
 
 {% hint style="warning" %}
-Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../roblox-er-lc.md) edition.
+Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../../integration-plugins/roblox-er-lc.md) edition.
 {% endhint %}
 
 Drag-and-drop is also supported for unit blips. The following drag-and-drop options are supported:
@@ -194,7 +194,7 @@ Custom map images are limited to 30MB each. **However, if you are uploading more
 
 Sonoran CAD allows any Roblox game to also send and update live map positions.
 
-* [ER:LC](../../roblox-er-lc.md)
+* [ER:LC](../../../integration-plugins/roblox-er-lc.md)
   * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
 * [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
   * Requires a custom map upload from the game
@@ -210,7 +210,7 @@ To do the same for your game:
 2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
 3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (3).png>)
 
 For more help, reach out to our [support team](https://support.sonoransoftware.com).
 

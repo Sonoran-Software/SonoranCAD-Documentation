@@ -23,11 +23,11 @@ Expand the "Server Events and Integrated Live Map" section.
 
 Enter your server's public IP address and your game server's port. Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
 
-Push event configuration is covered as a part of the [framework installation](../../../integration-plugins/integration-plugins/framework-installation.md#5-configure-push-events).
+Push event configuration is covered as a part of the [framework installation](../../../roadmap/v2-legacy/framework-installation.md#5-configure-push-events).
 
 ## Developer Documentation
 
-Many of our [integration plugins](../../../integration-plugins/integration-plugins/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
+Many of our [integration plugins](../../../roadmap/v2-legacy/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
 
 ## Web Server Example
 
@@ -35,7 +35,7 @@ Many of our [integration plugins](../../../integration-plugins/integration-plugi
 
 You can create your own web server to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may already be receiving these events in your integration framework. The integration framework can be configured to "[forward](../../../integration-plugins/integration-plugins/framework-installation.md#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's http://IP:Port.
+In addition, you may already be receiving these events in your integration framework. The integration framework can be configured to "[forward](../../../roadmap/v2-legacy/framework-installation.md#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's http://IP:Port.
 
 ```javascript
 // ----------------------------

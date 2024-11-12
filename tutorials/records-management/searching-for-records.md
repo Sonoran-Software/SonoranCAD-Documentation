@@ -65,7 +65,7 @@ Press the link icon in the top left to copy the record to your clipboard.
 
 ### Lookup from Plate Lock
 
-Our [Wraith radar plugin](../../integration-plugins/integration-plugins/available-plugins/wraithv2.md) allows you to lock your plate reader in-game and have the lookup automatically ran in your CAD.
+Our [Wraith radar plugin](../../roadmap/v2-legacy/available-plugins/wraithv2.md) allows you to lock your plate reader in-game and have the lookup automatically ran in your CAD.
 
 ### Voice Commands
 

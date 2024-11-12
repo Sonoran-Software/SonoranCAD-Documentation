@@ -230,7 +230,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (3) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 

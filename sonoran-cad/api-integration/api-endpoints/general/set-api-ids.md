@@ -8,44 +8,37 @@ description: This endpoint allows you to manually set a user's API IDs.
 This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-This endpoint allows you to manually set a user's [API ID](../../getting-started/setting-your-api-id.md). This endpoint is used in our [tablet](../../../../integration-plugins/integration-plugins/available-plugins/tablet.md) and [API ID plugin ](../../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md)to automatically link your in-game user to the CAD.
+This endpoint allows you to manually set a user's [API ID](../../getting-started/setting-your-api-id.md). This endpoint is used in our [tablet](../../../../roadmap/v2-legacy/available-plugins/tablet.md) and [API ID plugin ](../../../../roadmap/v2-legacy/available-plugins/api-id-checker.md)to automatically link your in-game user to the CAD.
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/set_api_id" method="post" summary="Set API IDs" %}
-{% swagger-description %}
+## Set API IDs
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/set_api_id`
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description              |
+| ---- | ------ | ------------------------ |
+| id   | string | Your community's ID      |
+| key  | string | Your community's API Key |
+| type | string | SET\_API\_ID             |
+| data | array  | Array of request objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-SET_API_ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of request objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 API ID(s) set!
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -84,9 +77,9 @@ The following data object is [emitted from your web browser](https://developer.m
 }
 ```
 
-This object contains your session ID, and can be captured with resources like our [in-game tablet](../../../../integration-plugins/integration-plugins/available-plugins/tablet.md).
+This object contains your session ID, and can be captured with resources like our [in-game tablet](../../../../roadmap/v2-legacy/available-plugins/tablet.md).
 
-This is how the in-game tablet and [API ID](../../../../integration-plugins/integration-plugins/available-plugins/api-id-checker.md) plugin work to automatically link your API ID when using the tablet.
+This is how the in-game tablet and [API ID](../../../../roadmap/v2-legacy/available-plugins/api-id-checker.md) plugin work to automatically link your API ID when using the tablet.
 
 #### Push New
 

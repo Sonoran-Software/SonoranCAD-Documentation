@@ -39,7 +39,7 @@ Once configured, press save.
 In the custom records editor, specify the `Field Mapping ID` from step one on the searchable field.\
 If this searchable field is in your in-game database, you can also set up [database sync](../../integration-plugins/database-sync-and-merge/) mapping to pull that data from in-game when records are opened.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Sonoran CAD - Custom Records Field Mapping ID</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Sonoran CAD - Custom Records Field Mapping ID</p></figcaption></figure>
 
 Press save, then move onto the next step.
 

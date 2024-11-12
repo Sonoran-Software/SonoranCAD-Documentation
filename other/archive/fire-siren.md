@@ -26,7 +26,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ### ~~1. Download and Install the Framework~~
 
-~~If you haven't already, be sure to install and configure the~~ [~~plugin framework~~](../../integration-plugins/integration-plugins/framework-installation.md) ~~first.~~
+~~If you haven't already, be sure to install and configure the~~ [~~plugin framework~~](../../roadmap/v2-legacy/framework-installation.md) ~~first.~~
 
 ### ~~2. Download the Plugin~~
 
@@ -34,7 +34,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ### ~~3. Install the Plugin~~
 
-1. ~~Follow the~~ [~~standard plugin installation guide~~](../../integration-plugins/integration-plugins/plugin-installation/) ~~for the firesiren plugin.~~
+1. ~~Follow the~~ [~~standard plugin installation guide~~](../../roadmap/v2-legacy/plugin-installation/) ~~for the firesiren plugin.~~
 
 ### ~~4. Install Dependencies~~
 

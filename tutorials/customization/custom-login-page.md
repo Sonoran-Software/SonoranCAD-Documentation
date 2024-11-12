@@ -94,7 +94,7 @@ Now that you've saved the custom URL inside of the HTML file, you can host this 
 
 ## In-Game Tablet
 
-If you wish to use a custom login page when using the [in-game Tablet resource](../../integration-plugins/integration-plugins/available-plugins/tablet.md), you can set a convar in your server.cfg.\
+If you wish to use a custom login page when using the [in-game Tablet resource](../../roadmap/v2-legacy/available-plugins/tablet.md), you can set a convar in your server.cfg.\
 \
 The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
 
