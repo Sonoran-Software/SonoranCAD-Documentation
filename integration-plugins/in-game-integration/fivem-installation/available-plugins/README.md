@@ -4,7 +4,11 @@ description: View Sonoran CAD's vast library of integration plugins for your com
 
 # FiveM Submodules
 
-Below is a table of which plugins require which version of SonoranCAD to function due to the required API endpoints. **The framework does not work with the Free or Starter version of SonoranCAD.**
+Below is a table of which plugins require which version of Sonoran CAD to function due to the required API endpoints.
+
+**The FiveM resource does not work with the Free or Starter version of Sonoran CAD.**
+
+Each submodule can be [easily enabled and configured](../submodule-configuration/) in the `sonorancad/configuration` folder.
 
 ***
 

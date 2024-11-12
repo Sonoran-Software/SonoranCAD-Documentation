@@ -15,30 +15,44 @@ Sonoran Servers customers receive **free plugin installation** and **30% off** t
 
 ![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/Banner\_3.png)
 
-## Installation Video
+## Install the Resource
 
-View our [framework installation](https://youtu.be/EsQWGnyrvm8) video also covers activation of a standard submodule ([Unit Status](../../../../roadmap/v2-legacy/available-plugins/unit-status.md)).
+If you have not already, [install the base FiveM resource](../).
 
 ## Activating a Submodule
 
-This example uses the `postals` submodule.
+The [FiveM resource](../) contains multiple "submodules" for each integration. These can be individually enabled/disabled and configured.
 
-**If you have not already completed the** [..](../ "mention")**, please do so before continuing.**
+{% content-ref url="../available-plugins/" %}
+[available-plugins](../available-plugins/)
+{% endcontent-ref %}
+
+This example uses the `postals` submodule.
 
 ### 1. Configure and Enable the Submodule
 
-1. Navigate to the `\sonorancad\configuration` folder and locate the configuration file for your desired submodule. For this example we will be using the `postals_config.dist` file (name depends on the submodule ) and configure as desired. The files are usually commented, and more details are on its [submodule page](../available-plugins/postals.md).&#x20;
-2. **Enable** the submodule by changing the `enabled` variable from `false` to `true` in the plugin config.
+* Navigate to the `\sonorancad\configuration` folder and locate the configuration file for your desired submodule. For this example we will be using the `postals_config.dist` file (name depends on the submodule ). More details are on the [specific submodule page](../available-plugins/).&#x20;
+* **Enable** the submodule by changing the `enabled` variable from `false` to `true` in the plugin config.
 
 ![](<../../../../.gitbook/assets/Screen Shot 2020-05-25 at 10.00.45 PM.png>)
 
-2\. **Rename** and remove the `.dist` from the file to `postals_config.lua` (depending on name of plugin).
+### 2. Rename and Save
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+* **Rename** and remove the `.dist` from the file to `postals_config.lua` (depending on name of plugin).
+  * If you've downloaded the pre-configured FiveM resource from the admin panel, this has already been done for you.
+* **Save** the configuration file.
 
-### 2. Restart Sonoran CAD
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="369"><figcaption></figcaption></figure>
+
+### 3. Restart Sonoran CAD
 
 Restart the `sonorancad` resource by entering `ensure sonorancad` in the server console and enjoy your submodule!
+
+Learn more about the available submodules:
+
+{% content-ref url="../available-plugins/" %}
+[available-plugins](../available-plugins/)
+{% endcontent-ref %}
 
 ## Updates
 
