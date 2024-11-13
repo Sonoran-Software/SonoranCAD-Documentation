@@ -18,7 +18,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## What is the live Body Camera?
 
-Sonoran CAD is the only external CAD system offering live image feeds from in-game users accessible through the [live map](bodycam.md#live-map), [active units preview](../../../../roadmap/v2-legacy/available-plugins/bodycam.md#preview), or a [dedicated window](../../../../roadmap/v2-legacy/available-plugins/bodycam.md#window).
+Sonoran CAD is the only external CAD system offering live image feeds from in-game users accessible through the [live map](bodycam.md#live-map), [active units preview](bodycam.md#preview), or a [dedicated window](bodycam.md#window).
 
 This feature updates the image feed at intervals that can be configured by the user (1-10 seconds).
 
