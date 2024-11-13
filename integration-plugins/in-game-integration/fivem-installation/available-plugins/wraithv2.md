@@ -52,29 +52,68 @@ You also need [pNotify](https://github.com/Nick78111/pNotify), a third party res
 
 ### 4. Custom Record Handling
 
-If you wish to have the plugin alert when the vehicle is not registered, is marked as stolen, etc. you will need to ensure you have set the custom record field's UID in your config.
+The in-game radar can alert you about expired registrations, BOLOs, warrants, and more:
 
-#### Find your custom record field's UID
+<details>
 
-In the CAD navigate to `Admin` > `Customization` > `Custom Records` > select your custom `Vehicle Registration` record.
+<summary>Alert on Vehicle Status (Expired, Stolen, etc.)</summary>
 
-The very last column of the field containing your status and expiration dates will have the `Field Mapping ID`.
+When a vehicle is scanned by your radar, you can be notified if the vehicle registration status is inactive, expired, etc.
 
-![Custom Records - Field UID](<../../../../.gitbook/assets/image (43).png>)
+### 1. Get the Status field ID
 
-#### Set the UID in your Config
+In the custom record configuration panel, copy the field ID for your vehicle registration's status field. Typically this would be a dropdown (or "select") type field with options like "Active", "Pending", "Expired", etc.
 
-By default, the `statusUid` is `status` and `expiresUid` is `expiration` for the default record. If you have customized these, you will need to update the UID in your config.
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.36.39 PM.png>)
 
-#### Set Statuses to be Flagged
+### 2. Set the Field ID in your Config
 
-The `flagOnStatuses` array contains a list of values that will result in a flag being displayed on the radar popup if they're found in the corresponding `statusUid` field.
+Ensure the `statusUid` configuration value matches your status field ID from the custom record.
 
-Ex: `flagOnStatuses = {"STOLEN", "EXPIRED", "PENDING", "SUSPENDED"}`
+If your vehicle registration record has an expiration date value in it, be sure to set the `expiresUid` value to its field ID and set `useExpires` to `true`. This will display the registration expiration date in the notifications.
+
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.44.27 PM (1).png>)
+
+### 3. Set Status Flag Options
+
+Customize the `flagOnStatuses` list to configure which vehicle registration statuses your radar will alter you on.
+
+If the vehicle registration's status field (the record field ID that matches your `statusUid`) matches one of the `flagOnStatuses` values, your in-game radar will alert you.
+
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.46.54 PM.png>)
+
+</details>
+
+<details>
+
+<summary>Alert on BOLO or Warrant</summary>
+
+When a vehicle is scanned by your radar, you can be notified of any active warrant or BOLO record with that license plate on it.
+
+### 1. Ensure your Warrant or BOLO Record has a Status Field
+
+In order for the radar to determine if the warrant or BOLO record is active, ensure your custom record has a `status` type field on it.
+
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.50.05 PM.png>)
+
+### 2. Ensure your Warrant or BOLO Record has a Plate Field
+
+In order to match the vehicle plate with a record, ensure your custom record has a field with the field ID set to `plate`.
+
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.51.37 PM.png>)
+
+### 3. Receive In-Game Alerts
+
+Your radar will alter you when a scanned vehicle matches:
+
+* A Warrant or BOLO record with the `status` type field of `ACTIVE`
+* A license plate matching the `plate` field ID of one of those active records
+
+</details>
 
 ### 5. Set Your API ID
 
-In order to have locked plate results sent back to your CAD, don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+In order to have locked plate lookup results sent back to your CAD, don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 
 ## Usage
 
