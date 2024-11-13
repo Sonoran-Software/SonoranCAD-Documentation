@@ -10,10 +10,10 @@ Sonoran CAD integration submodules require the **standard** version of Sonoran C
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!\
-Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
+Sonoran Servers customers receive **free submodule activation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Submodule Activation](../../../.gitbook/assets/Banner\_3.png)
 
 {% hint style="info" %}
 **Updating From v2.X.X or earlier?** see our [recommended update steps below](./#update-from-v2.x.x-or-earlier)
@@ -152,7 +152,7 @@ Open `sonorancad\configuration\config.CHANGEME.json`, update the values, then sa
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                                                                                          |
 | disableOverride           | <p>By default, the framework will try and automatically correct your <a href="../../../tutorials/customization/configuring-multiple-servers.md">server's IP, port, and outgoing IP address</a> if it detects something different.<br><br>Set this to <code>true</code> to disable this functionality.</p> |
 
-For information regarding the bodycam script config values, please see our [Bodycam Plugin guide.](../../../available-plugins/bodycam.md)
+For information regarding the bodycam script config values, please see our [Bodycam Submodule Guide.](available-plugins/bodycam.md)
 
 ### 4. Server Config
 
@@ -215,7 +215,7 @@ In the framework configuration file, simply set `enablePushEventForwarding` to `
 
 Check out our pre-bundled [submodule-configuration](submodule-configuration/ "mention")to make the integration useful.\
 For basic functionality, we recommend at least the [`locations`](../../../roadmap/v2-legacy/available-plugins/locations.md), [`callcommands`](../../../roadmap/v2-legacy/available-plugins/call-commands.md), and [`postals`](../../../roadmap/v2-legacy/available-plugins/postals.md) submodules.\
-You can also view our [standard plugin installation guide](../../../roadmap/v2-legacy/plugin-installation/).
+You can also view our [standard submodule activation guide](submodule-configuration/).
 
 ### 4. Using the wk\_wars2x Radar
 
@@ -237,23 +237,21 @@ set steam_webApiKey "YOUR_KEY_HERE"
 
 ## Updates
 
-Sonoran CAD's integration framework and plugins will automatically update with the latest features, fixes, and changes!
+Sonoran CAD's integration framework and submodules will automatically update with the latest features, fixes, and changes!
 
 Or, run `sonoran update` to instantly check and apply any updates for the framework core.
 
 ## Commands
 
-The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update plugins, and more.
+The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update submodules , and more.
 
-| Command                 | Description                              |
-| ----------------------- | ---------------------------------------- |
-| `sonoran help`          | Display list of commands                 |
-| `sonoran update`        | Run core/framework updater               |
-| `sonoran pluginupdate`  | Run plugin updater                       |
-| `sonoran plugin <name>` | Display information about a plugin       |
-| `sonoran debugmode`     | Toggle debug mode on/off                 |
-| `sonoran info`          | Dump version info and configuration data |
-| `sonoran support`       | Dump information for support staff       |
+| Command             | Description                              |
+| ------------------- | ---------------------------------------- |
+| `sonoran help`      | Display list of commands                 |
+| `sonoran update`    | Run core/framework updater               |
+| `sonoran debugmode` | Toggle debug mode on/off                 |
+| `sonoran info`      | Dump version info and configuration data |
+| `sonoran support`   | Dump information for support staff       |
 
 ## Troubleshooting
 
@@ -267,7 +265,7 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
-2\. Try updating your smartsigns plugin manually to the latest version. This is done by copying over the lua files from the latest release found [here](../../../roadmap/v2-legacy/available-plugins/smart-signs.md) and overrideing the old files.
+2\. Try updating your smartsigns submodule manually to the latest version. This is done by copying over the lua files from the latest release found [here](../../../roadmap/v2-legacy/available-plugins/smart-signs.md) and overrideing the old files.
 
 {% hint style="info" %}
 We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.

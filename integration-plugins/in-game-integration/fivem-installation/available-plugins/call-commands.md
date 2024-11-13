@@ -12,13 +12,11 @@ This submodule utilizes API endpoints that require the **standard** version of S
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Video
+## Activation Video
 
 Click to view our call [commands install video](https://youtu.be/ZeCzvU3ZfD0).
 
-**Be sure you have already installed our** [**plugin framework**](../../../../roadmap/v2-legacy/framework-installation.md)**!**
-
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 

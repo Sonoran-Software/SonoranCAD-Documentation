@@ -7,20 +7,18 @@ description: >-
 # Traffic Stop
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Video
+## Activation Video
 
 Click to view our [traffic stop installation guide](https://youtu.be/QmI7Wst2ytY).
 
-**Be sure you have already installed our** [**plugin framework**](../../../../roadmap/v2-legacy/framework-installation.md)**!**
-
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -34,7 +32,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 
 | Option   | Description                       | Default         |
 | -------- | --------------------------------- | --------------- |
-| enablets | Enables the plugin.               | True            |
+| enablets | Enables the submodule.            | True            |
 | origin   | Origin of the new call.           | 2 (OBSERVED)    |
 | status   | Status of the new call            | 1 (ACTIVE)      |
 | priority | Priority of the new call          | 1               |

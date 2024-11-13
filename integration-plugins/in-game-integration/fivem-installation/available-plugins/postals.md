@@ -14,13 +14,11 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Video
+## Activation Video
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-**Be sure you have already installed our** [**plugin framework**](../../../../roadmap/v2-legacy/framework-installation.md)**!**
-
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 

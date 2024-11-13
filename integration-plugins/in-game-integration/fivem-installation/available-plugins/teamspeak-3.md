@@ -1,21 +1,21 @@
 ---
 description: >-
-  The TeamSpeak 3 integration plugin requires that users must be logged into the
-  CAD police, fire, EMS, or Dispatch page in order to access specific voice
+  The TeamSpeak 3 integration submodule requires that users must be logged into
+  the CAD police, fire, EMS, or Dispatch page in order to access specific voice
   channels.
 ---
 
 # TeamSpeak 3
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -36,7 +36,7 @@ Your TeamSpeak server credentials can either be set in the config or as [convars
 | ts3server\_qport    | <p>Sever Query Port</p><p>Default is <code>10011</code></p>                                                                                                                                                                                         |
 | ts3server\_user     | <p>Typically, this will be your server admin username.</p><p>If you do not have one, you <a href="https://www.teamspeak3.com/support/teamspeak-3-add-server-query-user.php">can create a new one</a>.</p>                                           |
 | ts3server\_pass     | <p>Typically, this will be your server admin password.</p><p>If you do not have one, you <a href="https://www.teamspeak3.com/support/teamspeak-3-add-server-query-user.php">can create a new one</a>.</p>                                           |
-| onduty\_servergroup | <p>Name of the server group that the plugin will grant users when they're on duty.</p><p>You will need to configure this server group with permissions to join specific channels, etc.</p>                                                          |
+| onduty\_servergroup | <p>Name of the server group that the submodule will grant users when they're on duty.</p><p>You will need to configure this server group with permissions to join specific channels, etc.</p>                                                       |
 | enforced\_channels  | A list of channels that units will be kicked from if they log out of the CAD                                                                                                                                                                        |
 | logoutGraceTime     | <p>The amount of time between the user logging out of the CAD and being kicked from the TS3 <code>enforced_channels</code>.</p><p>This prevents brief internet disconnections from the CAD from continually kicking users out of their channel.</p> |
 

@@ -5,14 +5,14 @@ description: Register a vehicle with a single in-game command!
 # VehReg
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 

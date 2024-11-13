@@ -16,7 +16,7 @@ This submodule allows players to fetch their character information from the CAD.
 
 ![Sonoran CAD - Civilian Integration Lookup](<../../../../.gitbook/assets/Screen Shot 2020-12-12 at 10.00.21 PM.png>)
 
-## Installation
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -43,7 +43,7 @@ Don't forget to set your account [API ID](../../../../sonoran-cad/api-integratio
 
 ### Commands
 
-The plugin comes with a few basic commands to show off the functionality.
+The submodule comes with a few basic commands to show off the functionality.
 
 <table data-header-hidden><thead><tr><th width="184.59915045830542">Command</th><th>Description</th></tr></thead><tbody><tr><td>Command</td><td>Description</td></tr><tr><td>/showid [id]</td><td>Shows the current ID of the specified player ID. If not specified, will show the current player's ID. Currently, it is displayed only to the calling client.</td></tr><tr><td>/setid</td><td>Sets a custom ID (first/last name, and date of birth). Overrides the currently selected CAD ID. Can be disabled in configuration.</td></tr><tr><td>/resetid</td><td>Resets the custom ID specified above.</td></tr><tr><td>/refreshid</td><td>Removes the "cached" characters for the client. This allows players to swap characters in the CAD without relogging or waiting for the cache timer.</td></tr></tbody></table>
 
@@ -63,4 +63,4 @@ Example:
     end)
 ```
 
-This function can also be used in other plugins (without the export bit).
+This function can also be used in other submodules (without the export bit).

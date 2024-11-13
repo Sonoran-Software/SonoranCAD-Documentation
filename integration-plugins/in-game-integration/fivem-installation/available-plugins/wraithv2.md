@@ -5,20 +5,20 @@ description: Implements the Wraith ARS 2X plate reader for automated plate readi
 # WraithV2
 
 {% hint style="danger" %}
-This plugin utilizes API endpoints that require the **Plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **Plus** version of SonoranCAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-This plugin is for sending plate reads to other plugins.
+This submodule is for sending plate reads to other submodules.
 
 ## Showcase Video
 
 View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -35,7 +35,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
-Use of this plugin requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
@@ -155,7 +155,7 @@ The framework ships with the `wk_wars2x` plate reader included. This will have t
 
 Keep in mind that AI vehicles won't display or be ran unless there's a vehicle registration record added to the CAD with that plate.
 
-Ensure that you've correctly followed [step 5](../../../../roadmap/v2-legacy/available-plugins/wraithv2.md#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the plugin config.
+Ensure that you've correctly followed [step 5](../../../../roadmap/v2-legacy/available-plugins/wraithv2.md#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the submodule  config.
 
 Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.&#x20;
 

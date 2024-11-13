@@ -5,14 +5,14 @@ description: Requires players to register on the CAD via a nag screen or freezin
 # ForceReg
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](https://app.gitbook.com/s/-M4pGN81fb4R6zFhodcu/pricing/faq/)page.
+This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](https://app.gitbook.com/s/-M4pGN81fb4R6zFhodcu/pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -42,7 +42,7 @@ The [tablet resource](../../../../roadmap/v2-legacy/available-plugins/tablet.md#
 
 ### Automated Functionality
 
-This plugin requires no configuration by default and will show a message at the top of the screen telling players to register for the CAD. Depending on the selected option, this behavior can change.
+This submodule requires no configuration by default and will show a message at the top of the screen telling players to register for the CAD. Depending on the selected option, this behavior can change.
 
 ### Event
 

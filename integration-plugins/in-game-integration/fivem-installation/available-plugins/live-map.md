@@ -55,7 +55,7 @@ The postal search functionality requires the **Pro** version of Sonoran CAD.
 For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-With the [postals ](../../../../roadmap/v2-legacy/available-plugins/postals.md)plugin configured, you can manually enter and search for a postal code on the live map.
+With the [postals ](postals.md)submodule configured, you can manually enter and search for a postal code on the live map.
 
 Or, quickly auto-open and search for the location by clicking the search icon:
 

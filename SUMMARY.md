@@ -117,7 +117,7 @@
   * [FiveM Development Documentation](integration-plugins/in-game-integration/framework-development-documentation/README.md)
     * [HTTP Request Handling](integration-plugins/in-game-integration/framework-development-documentation/http-request-handling.md)
   * [Error Codes](integration-plugins/in-game-integration/error-codes.md)
-  * [Free Plugin Installation - Next Steps](integration-plugins/in-game-integration/free-plugin-installation-next-steps.md)
+  * [Free Submodule Activation - Next Steps](integration-plugins/in-game-integration/free-plugin-installation-next-steps.md)
 * [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc.md)
 
 ## Developer API Documentation <a href="#sonoran-cad" id="sonoran-cad"></a>

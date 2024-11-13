@@ -5,20 +5,20 @@ description: Adds support for ESX and QBCore automatic in-game fines.
 # Framework Support (ESX/QBCore) and Auto Fines
 
 {% hint style="warning" %}
-This submodule only functions with other plugins that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro** version.
+This submodule only functions with other submodules that require the **standard** version of Sonoran CAD or higher. The auto-fine functionality requires the **pro** version.
 
 For more information, view our pricing page.
 {% endhint %}
 
 {% hint style="info" %}
-ESX v2 is not supported by this plugin and will not function. Only ESX v1 is supported.
+ESX v2 is not supported by this submodule and will not function. Only ESX v1 is supported.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official server hosting!
 {% endhint %}
 
-## Installation Guide
+## Activation Guide
 
 #### 1. Download and Install the Core
 
@@ -40,7 +40,7 @@ Don't forget to set your account API ID to properly link your in-game user to th
 
 #### 5. Configuration
 
-Review the `frameworksupport_config.lua` file to configure the plugin to behave how you like. The file is well documented. Please review **all** the settings!
+Review the `frameworksupport_config.lua` file to configure the submodule to behave how you like. The file is well documented. Please review **all** the settings!
 
 ### Auto-Fines
 
@@ -55,16 +55,16 @@ The fines are pulled from your custom records:
 * `Charges` section -> `Fine` field
 * `Speed` section -> `Fine` field
 
-### Usage
+## Usage
 
-This plugin can be used to issue fines to players when reports/records are entered into the CAD that include fines. You can configure the reports/records that are finable in the configuration. This plugin also adds support for ESX that other plugins can take advantage of. Currently, the following plugins are supported:
+This submodule can be used to issue fines to players when reports/records are entered into the CAD that include fines. You can configure the reports/records that are finable in the configuration. This submodule also adds support for ESX that other submodules can take advantage of. Currently, the following submodules are supported:
 
-* [dispatchnotify](../../../../../roadmap/v2-legacy/available-plugins/dispatch-notify.md)
+* [dispatchnotify](../dispatch-notify.md)
   * Adds the ability to show character names in dispatch responses (officer names)
-  * Adds the ability to restrict functionality to certain jobs (like police). See the dispatchnotify documentation for how to do this.
-* [callcommands](../../../../../roadmap/v2-legacy/available-plugins/call-commands.md)
-  * Adds the ability to show character names for the caller when they use /911. This is automatic when the plugin is installed.
-* [livemap](../../../../../roadmap/v2-legacy/available-plugins/live-map.md)
+  * Adds the ability to restrict functionality to certain jobs (like police). See the [dispatchnotify documentation](../dispatch-notify.md) for how to do this.
+* [callcommands](../call-commands.md)
+  * Adds the ability to show character names for the caller when they use /911. This is automatic when the submodule is installed.
+* [livemap](../live-map.md)
   * Adds the ability to show character names on the map.
 
 ### Legacy ESX Support
@@ -75,7 +75,7 @@ Legacy ESX Support utilizes MySQL-Async in order to get character information fr
 
 This is mainly for ESX v1 releases that were made before the character system implementation using only the `users` database table. These versions of ESX used the `users` table only for player information of active characters and a `characters` table that held all character information (active and secondary characters of your players).
 
-Due to different handling of character information such as first name and last names, this option allows you to use esxsupport plugin with older "Legacy" ESX v1 releases.
+Due to different handling of character information such as first name and last names, this option allows you to use esxsupport submodule with older "Legacy" ESX v1 releases.
 
 Simply set `legacyESX` to true in your `config_esxsupport.lua`
 

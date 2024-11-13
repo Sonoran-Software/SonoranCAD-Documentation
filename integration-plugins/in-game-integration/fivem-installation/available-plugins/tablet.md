@@ -13,7 +13,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 <figure><img src="../../../../.gitbook/assets/minicad.png" alt=""><figcaption><p>Sonoran CAD - Mini-CAD</p></figcaption></figure>
 
-## Installation
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -53,7 +53,7 @@ Fill in with your actual URL above with the comid you want.
 ### 5. Using the Mini-CAD
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **Plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **Plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 * Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
@@ -72,7 +72,7 @@ This plugin utilizes API endpoints that require the **Plus** version of Sonoran 
 
 When a user signs into the CAD using the in-game tablet, their[ API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.
 
-To enable this, open the [check API plugin](../../../../roadmap/v2-legacy/available-plugins/api-id-checker.md)'s config and set `forceSetApiId` to `true`.
+To enable this, open the submodule [Check API Id's](api-id-checker.md) config and set `forceSetApiId` to `true`.
 
 Additionally, communities using Steam as their framework's `primaryIdentifier` **will need to ensure they have a** [**Steam key set**](../../../../roadmap/v2-legacy/framework-installation.md#8.-steam-api-key) **for their server**.
 

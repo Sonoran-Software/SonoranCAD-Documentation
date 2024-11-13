@@ -1,10 +1,10 @@
 ---
-description: Have your plugin handle HTTP requests sent to a special URL.
+description: Have your submodule handle HTTP requests sent to a special URL.
 ---
 
 # HTTP Request Handling
 
-## Plugin Code
+## Submodule Code
 
 This code only works on the Server side files since HTTP only works on servers, obviously!
 
@@ -29,11 +29,11 @@ To actually use this, we would POST to the URL, as noted below.
 
 Return a LUA table which will be encoded as JSON back to the requesting client.
 
-## Plugin Event
+## Submodule Event
 
 <mark style="color:green;">`POST`</mark> `http://yourserverip:serverport/sonorancad/pluginevent`
 
-Send a payload to trigger a specific HTTP event that was defined in the plugin code.
+Send a payload to trigger a specific HTTP event that was defined in the submodule code.
 
 #### Request Body
 

@@ -5,14 +5,14 @@ description: Allows you to change a unit's status in the CAD.
 # Unit Status
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -53,7 +53,7 @@ This line in your `config.cfg` file will allow everyone to access the command. W
 
 ### Function
 
-This is a server-side function only and is exported as `cadSetUnitStatus`. Use `setUnitStatus` if using with other plugins.
+This is a server-side function only and is exported as `cadSetUnitStatus`. Use `setUnitStatus` if using with other submodules.
 
 ```lua
 cadSetUnitStatus(<apiId>, <status>, [player])

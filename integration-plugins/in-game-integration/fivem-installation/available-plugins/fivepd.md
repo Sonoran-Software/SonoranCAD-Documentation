@@ -5,16 +5,16 @@ description: Connects FivePD with the Sonoran CAD
 # FivePD
 
 {% hint style="warning" %}
-This plugin utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-This plugin allows players to see FivePD callout information in the CAD.
+This submodule allows players to see FivePD callout information in the CAD.
 
-## Installation Guide
+## Activation Guide
 
 ### 1. Download and Install the Core
 
@@ -34,4 +34,4 @@ Don't forget to set your account [API ID](../../../../sonoran-cad/api-integratio
 
 
 
-This plugin was sponsored by [LakeSide RP](https://discord.gg/465evprDC3).
+This submodule was sponsored by [LakeSide RP](https://discord.gg/465evprDC3).

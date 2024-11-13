@@ -42,10 +42,6 @@ We suggest installing the `smartsigns_sonoran` and `smartsigns_sononran_helper` 
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption><p>Smartsigns installed to [sonorancad] folder</p></figcaption></figure>
 
-{% hint style="warning" %}
-This resource is installed as a standalone resource rather than a traditional plugin. **Do not install into your /\[sonorancad]/sonorancad/plugins folder**! It is instead used like a regular resource.
-{% endhint %}
-
 ### 3. Add Requirements to Server.cfg file
 
 In your `server.cfg` add the following new line **after/below** your `ensure sonorancad` line:
