@@ -30,7 +30,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 
 ### 3. Configure Postal Script and Exports
 
-1. If you're using the publicly available [nearest-postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](../../../../roadmap/v2-legacy/available-plugins/postals.md#using-nearest-postal) section below.
+1. If you're using the publicly available [nearest-postal script](https://forum.cfx.re/t/release-nearest-postal-script/293511), you will need to follow the steps in the [usage](postals.md#using-nearest-postal) section below.
 2. If you're using a custom postal codes file, you will need to add the file to the plugin and Sonoran CAD's fxmanifest as shown in the [usage ](postals.md#custom-postal-codes-file)section below.
 3. If you're using an event triggered by a custom postals script, you must configure it as explained in the [usage](postals.md#custom-postal-events) section below.
 

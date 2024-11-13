@@ -199,7 +199,7 @@ Enter your server's public IP address and your game server's port. By default, t
 #### 2A. Admin Panel Configuration
 
 Set your game server port and IP address in the admin panel of Sonoran CAD.\
-The map port can be left blank, unless you are also installing the [integrated live map](../../../roadmap/v2-legacy/available-plugins/live-map.md).
+The map port can be left blank, unless you are also installing the [integrated live map](available-plugins/live-map.md).
 
 ![Sonoran CAD - Game Port](<../../../.gitbook/assets/Sonoran CAD - Game Port.png>)
 
@@ -265,7 +265,7 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
-2\. Try updating your smartsigns submodule manually to the latest version. This is done by copying over the lua files from the latest release found [here](../../../roadmap/v2-legacy/available-plugins/smart-signs.md) and overrideing the old files.
+2\. Try updating your smartsigns submodule manually to the latest version. This is done by copying over the lua files from the latest release found [here](available-plugins/smart-signs.md) and overrideing the old files.
 
 {% hint style="info" %}
 We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.

@@ -5,7 +5,7 @@ description: Requires players to register on the CAD via a nag screen or freezin
 # ForceReg
 
 {% hint style="warning" %}
-This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](https://app.gitbook.com/s/-M4pGN81fb4R6zFhodcu/pricing/faq/)page.
+This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](broken-reference)page.
 {% endhint %}
 
 {% hint style="success" %}
@@ -28,7 +28,7 @@ Don't forget to set your account [API ID](../../../../sonoran-cad/api-integratio
 
 ### 4. (OPTIONAL) Utilize the Tablet's Auto API ID
 
-The [tablet resource](../../../../roadmap/v2-legacy/available-plugins/tablet.md#5-auto-api-id) can be configured to automatically set user's API IDs when they login, removing the need for users to manually type this in.
+The [tablet resource](tablet.md) can be configured to automatically set user's API IDs when they login, removing the need for users to manually type this in.
 
 ## Further Configuration
 

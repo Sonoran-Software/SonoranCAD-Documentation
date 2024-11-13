@@ -126,7 +126,7 @@ The framework ships with the `wk_wars2x` plate reader included. This will have t
 
 Keep in mind that AI vehicles won't display or be ran unless there's a vehicle registration record added to the CAD with that plate.
 
-Ensure that you've correctly followed [step 5](wraithv2.md#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the plugin config.
+Ensure that you've correctly followed [step 5](wraithv2.md#id-5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the plugin config.
 
 Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.&#x20;
 

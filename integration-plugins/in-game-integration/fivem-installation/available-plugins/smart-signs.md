@@ -60,7 +60,7 @@ Rename `config_RENAMEME.lua` to `config.lua`.
 
 In the `config.lua` file, you can enable options depending on your framework you are using or permissions you would like to integrate with.
 
-The smart signs resource also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](../../../../roadmap/v2-legacy/available-plugins/smart-signs.md#smart-signs-configuration) from London Studios for the most up to date information.
+The smart signs resource also has support with ESX, VRP, Discord logging, ace permissions, and more. [View the documentation](smart-signs.md#smart-signs-configuration) from London Studios for the most up to date information.
 
 ### 5. Configure your Discord Webhook URL (optional)
 

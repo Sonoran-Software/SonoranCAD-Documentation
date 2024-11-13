@@ -74,7 +74,7 @@ When a user signs into the CAD using the in-game tablet, their[ API ID](../../..
 
 To enable this, open the submodule [Check API Id's](api-id-checker.md) config and set `forceSetApiId` to `true`.
 
-Additionally, communities using Steam as their framework's `primaryIdentifier` **will need to ensure they have a** [**Steam key set**](../../../../roadmap/v2-legacy/framework-installation.md#8.-steam-api-key) **for their server**.
+Additionally, communities using Steam as their framework's `primaryIdentifier` **will need to ensure they have a** [**Steam key set**](../#id-5.-steam-api-key) **for their server**.
 
 ## Known Issues
 

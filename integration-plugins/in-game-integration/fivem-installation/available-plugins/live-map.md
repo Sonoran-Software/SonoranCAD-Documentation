@@ -120,7 +120,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 ### Smart Sign Blips
 
-[Smart signs](../../../../roadmap/v2-legacy/available-plugins/smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
+[Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
 ![Live Map - Smart Signs](<../../../../.gitbook/assets/image (144).png>)
 
@@ -128,7 +128,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 {% hint style="danger" %}
 This feature requires the **pro** version of Sonoran CAD.\
-For more information, view our [pricing ](../../../../pricing/faq/)page.
+For more information, view our [pricing ](broken-reference)page.
 {% endhint %}
 
 Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.

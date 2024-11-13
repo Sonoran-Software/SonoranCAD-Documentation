@@ -35,7 +35,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
-Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk\_wars2x)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
@@ -125,7 +125,7 @@ For more information on using the in-game UI, please view the Sonoran version of
 ## Sonoran wk\_wars2x&#x20;
 
 {% hint style="info" %}
-These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/Sonoran-Software/wk\_wars2x).
+These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/sonoran-Software/wk\_wars2x).
 {% endhint %}
 
 ### Additional Features

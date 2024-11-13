@@ -2,6 +2,7 @@
 description: >-
   Adds support for ESX, QBCore and QBUS to other submodules, as well as the
   ability to issue fines automatically to users in-game.
+hidden: true
 ---
 
 # Depreciated: ESX Support
