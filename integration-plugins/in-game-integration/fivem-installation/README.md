@@ -15,6 +15,10 @@ Sonoran Servers customers receive **free plugin installation** and **30% off** t
 
 ![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/Banner\_3.png)
 
+{% hint style="info" %}
+**Updating From v2.X.X or earlier?** see our [recommended update steps below](./#update-from-v2.x.x-or-earlier)
+{% endhint %}
+
 ## Installation Video
 
 View our installation tutorial video for help on installing our framework.
@@ -285,3 +289,9 @@ In this example, you would navigate to the `sonorancad` **resource**, open the `
 {% hint style="info" %}
 This is simply a **WARNING**, if the resource works **AS EXPECTED**, you can simply ignore the warning and continue
 {% endhint %}
+
+## Update from v2.x.x or earlier
+
+We recommend a full reinstall of the SonoranCAD Integration. You may copy over the **contents** of your plugin configuration files to the new submodule's configuration files. Ensure that the file name is not changed as the submodules use the same contents but different file names.
+
+See the [Installation steps above](./#pre-configured-resource-installation-recommended) to reinstall
