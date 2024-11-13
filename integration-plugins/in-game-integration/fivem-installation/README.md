@@ -23,9 +23,9 @@ Sonoran Servers customers receive **free submodule activation** and **30% off** 
 
 View our installation tutorial video for help on installing our framework.
 
-{% hint style="danger" %}
-**Coming soon!**
-{% endhint %}
+{% embed url="https://youtu.be/QimkcbTPl44" %}
+
+
 
 ## Pre-Configured Resource Installation (Recommended) <a href="#pre-configured-resource-installation-recommended" id="pre-configured-resource-installation-recommended"></a>
 
