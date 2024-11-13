@@ -16,7 +16,7 @@ description: >-
 
 In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
 
-Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](../../../../roadmap/v2-legacy/available-plugins/live-map.md#using-a-custom-map).
+Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map-fivem).
 
 
 
