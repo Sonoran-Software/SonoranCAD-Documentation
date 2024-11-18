@@ -32,12 +32,12 @@ Don't forget to set your account [API ID](../../../../sonoran-cad/api-integratio
 
 ## Further Configuration
 
-| Option         | Description                                                                 | Default Value |
-| -------------- | --------------------------------------------------------------------------- | ------------- |
-| cacheTime      | Time to cache characters in seconds                                         | 3600          |
-| allowCustomIds | Allow players to use /setid to set a custom name.                           | true          |
-| allowPurge     | Allow players to use /refreshid to "purge" their character list from cache. | true          |
-| enableIDCardUI | **Recommended**: Allows for a more realistic identification ui with /showid | false         |
+| Option         | Description                                                                                                                                                                                                                                                                            | Default Value |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| cacheTime      | Time to cache characters in seconds                                                                                                                                                                                                                                                    | 3600          |
+| allowCustomIds | Allow players to use /setid to set a custom name.                                                                                                                                                                                                                                      | true          |
+| allowPurge     | Allow players to use /refreshid to "purge" their character list from cache.                                                                                                                                                                                                            | true          |
+| enableIDCardUI | <p><strong>Recommended</strong>: Allows for a more realistic identification ui with /showid<br><br><strong>IF USING:</strong> Please ensure you start the resource <code>sonoran_idcard</code> <strong>BEFORE</strong> <code>sonorancad</code> in your server resource start order</p> | false         |
 
 ## Usage
 
