@@ -82,7 +82,7 @@ The Sonoran CAD FiveM resources has multiple "submodules" for every integration 
 
 ### 1. Download the ZIP
 
-Download the[ latest zip file from our Github.](https://github.com/Sonoran-Software/SonoranCADLuaIntegration/releases)
+Download the[ latest zip file from our Github.](https://github.com/Sonoran-Software/SonoranCADFiveM/releases)
 
 ### 2. Extract the ZIP File
 
