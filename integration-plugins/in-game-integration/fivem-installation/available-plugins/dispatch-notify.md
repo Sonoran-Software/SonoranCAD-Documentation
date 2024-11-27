@@ -36,7 +36,11 @@ If you haven't already, be sure to install and configure the [SonoranCAD Core](.
 
 ### 2. Activate the Submodule and all Dependencies
 
-1. Follow the [submodule activation guide](../submodule-configuration/#activating-a-submodule) for the `callcommands`, and `dispatchnotify`submodules.
+Dispatch Notify requires you to [enable the following submodules](../submodule-configuration/#activating-a-submodule):
+
+* &#x20;`callcommands`
+* `locations`
+* `postals`
 
 ### 3. Add your Game Server IP and Port
 
