@@ -35,20 +35,21 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
-Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk\_wars2x)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk_wars2x)[ ](https://github.com/Sonoran-Software/wk_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
 
-| Config Option       | Description                                            |
-| ------------------- | ------------------------------------------------------ |
-| useExpires          | use vehicle registration expirations, or not           |
-| useMiddleInitial    | use middle initials?                                   |
-| alertNoRegistration | alert if no registration was found on scan?            |
-| statusUid           | Custom record field UID containing the status          |
-| expiresUid          | Custom record field UID containing the expiration date |
-| flagOnStatuses      | List of statuses to flag/alert on                      |
-| vehTypeFilter       | List of Classes that will NOT get ran through CAD      |
+| Config Option       | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| useExpires          | use vehicle registration expirations, or not                   |
+| useMiddleInitial    | use middle initials?                                           |
+| alertNoRegistration | alert if no registration was found on scan?                    |
+| statusUid           | Custom record field UID containing the status                  |
+| expiresUid          | Custom record field UID containing the expiration date         |
+| flagOnStatuses      | List of statuses to flag/alert on                              |
+| vehTypeFilter       | List of Classes that will NOT get ran through CAD              |
+| notificationTimers  | Time in MS, for how long each alert type will last via pNotify |
 
 ### 4. Custom Record Handling
 
@@ -117,7 +118,7 @@ In order to have locked plate lookup results sent back to your CAD, don't forget
 
 ## Usage
 
-For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)release information.\
+For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
 ![Wraith ARS 2X Controls](<../../../../.gitbook/assets/image (314).png>)
@@ -125,13 +126,14 @@ For more information on using the in-game UI, please view the Sonoran version of
 ## Sonoran wk\_wars2x&#x20;
 
 {% hint style="info" %}
-These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/sonoran-Software/wk\_wars2x).
+These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/sonoran-Software/wk_wars2x).
 {% endhint %}
 
 ### Additional Features
 
 * Added the ability to blacklist certain vehicle classes via the config.lua, these blacklisted vehicles will show on the plate reader as the `CONFIG.noPlateValue` value (default: "NO PLATE").
 * Added the feature `CONFIG.realisticPlateScanning`. This feature is disabled by default due to certain vehicles having incorrect metadata causing this feature to display `CONFIG.noPlateValue` falsely. Behavior when enabled: when you are traveling toward/away from a vehicle that does not have a front/back plate the plate reader will not be able to scan it and will display the `CONFIG.noPlateValue` value.
+* Added custom sounds when a BOLO, Warrant or unregistered vehicle plate is scanned.
 
 ### Realistic Plate Scanning
 
@@ -140,6 +142,10 @@ Set `CONFIG.realisticPlateScanning` to `true` to enable only scanning vehicles w
 Note: Some vehicles may show a plate due to missing vehicle metadata or being able to remove the plate with extras.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-11-14 172304.png" alt=""><figcaption><p>Sonoran wk_wars2x - Additional Config Options</p></figcaption></figure>
+
+### Custom Alert Tones
+
+Custom tones will now play when you scan a plate that is has either a BOLO, Warrant or is unregistered. These tones can be customized by replacing the existing files in the `/sonorancad/submodules/wraithv2/sfx` folder with your own. **Please note the files names need to be the same as the ones you are replacing**
 
 ## Troubleshooting
 
