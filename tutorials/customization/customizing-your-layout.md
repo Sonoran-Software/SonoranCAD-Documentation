@@ -26,7 +26,7 @@ You can right click on any panel and to reveal multiple menu options.
 4. Minimize: This minimizes the window to a tab at the top of your screen.
 5. Close: This closes the window.
 
-![Sonoran CAD - Window Menu Options](../../.gitbook/assets/CAD\_MenuOptions.png)
+![Sonoran CAD - Window Menu Options](../../.gitbook/assets/CAD_MenuOptions.png)
 
 ### 2. Quick Resize
 
@@ -58,7 +58,7 @@ Simply right click on the empty area in the taskbar, or navigate to Start > Syst
 
 #### Search Box
 
-The task bar can be opened with a configurable [hotkey](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-MeOE39Q3hdjvmYX\_1Gy/tutorials/other-features/configurable-hotkeys) or with our [Streamdeck](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-MeOE39Q3hdjvmYX\_1Gy/integration-plugins/stream-deck-integration) integration. When opened, a search bar will be automatically focused on all non-mobile devices.‌
+The task bar can be opened with a configurable [hotkey](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/tutorials/other-features/configurable-hotkeys) or with our [Streamdeck](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-MeOE39Q3hdjvmYX_1Gy/integration-plugins/stream-deck-integration) integration. When opened, a search bar will be automatically focused on all non-mobile devices.‌
 
 Here, you can search to quickly filter options. When the results have been filtered down to a single window, the search label will turn green indicating the window shortcut is available. Simply press `ENTER` to open the window.
 
@@ -87,7 +87,7 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
 
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.\
-_Note: Text will only be displayed if the taskbar is in the top or bottom screen position._
+&#xNAN;_&#x4E;ote: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
 ![Sonoran CAD - Tabs with Icon and Text](<../../.gitbook/assets/image (356).png>)
 

@@ -59,7 +59,7 @@ The `Host Name` field should be set as `Any Host` and the value as `%`. This wil
 
 You will now want to go to [http://whatsmyip.org](http://whatsmyip.org) and get your Public IP Address to use as your Host.
 
-Database Translation Information**:**
+Database Translation Informatio&#x6E;**:**
 
 | phpMyAdmin | SonoranCAD   |
 | ---------- | ------------ |

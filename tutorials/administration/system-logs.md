@@ -29,7 +29,7 @@ If left blank, no log filtering will be applied.
 #### Log Date
 
 The log `Date` selection allows you to choose the specific date the logs are from.\
-_Note: Dates and the accompanying timestamps are based in UTC._
+&#xNAN;_&#x4E;ote: Dates and the accompanying timestamps are based in UTC._
 
 ![](<../../.gitbook/assets/image (170).png>)
 

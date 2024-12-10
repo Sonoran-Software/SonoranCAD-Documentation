@@ -91,6 +91,7 @@
   * [FiveM Installation](integration-plugins/in-game-integration/fivem-installation/README.md)
     * [Submodule Configuration](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/README.md)
       * [Submodule Troubleshooting](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/plugin-troubleshooting.md)
+      * [Submodule Configuration Updates](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/submodule-configuration-updates.md)
     * [FiveM Submodules](integration-plugins/in-game-integration/fivem-installation/available-plugins/README.md)
       * [Body Camera](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md)
       * [Call Commands](integration-plugins/in-game-integration/fivem-installation/available-plugins/call-commands.md)

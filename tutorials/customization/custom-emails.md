@@ -20,7 +20,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 In the admin customization menu, expand the "Custom Community Emails" section.\
 Here, you can set the email header, sub-header, and body text.\
 \
-_NOTE:_ Your community logo will automatically be inserted into all emails.
+&#xNAN;_&#x4E;OTE:_ Your community logo will automatically be inserted into all emails.
 
 ![The email customization panel allows you to enter your own text](../../.gitbook/assets/emailconfig.PNG)
 

@@ -369,7 +369,7 @@ The free version of the livestream overlay allows anyone to test out the basic f
 
 The full, individual license for Sonoran CAD's livestreaming tools is available for $7.99/mo.
 
-Or, **include the livestreaming tools for your **_**entire**_** community** with [Sonoran One](https://sonoran.one).
+Or, **include the livestreaming tools for your&#x20;**_**entire**_**&#x20;community** with [Sonoran One](https://sonoran.one).
 
 Users can purchase a license to the full version in their billing center:
 
