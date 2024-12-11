@@ -45,7 +45,7 @@ description: >-
 | general/[lookup](general/lookup-name-or-plate.md)                                           | Plus                 |
 | general/[lookup\_int](general/lookup-by-integer.md)                                         | Plus                 |
 | general/[get\_account](general/get-account.md)                                              | Plus                 |
-| general/[get\_accounts](general/get-accounts.md)                                            | Plus                 |
+| general/[get\_accounts](general/get-account-1.md)                                           | Plus                 |
 | general/[set\_account\_permissions](general/modify-account-permissions.md)                  | Plus                 |
 | general/heartbeat                                                                           | Standard             |
 | general/[get\_version](general/get-version.md)                                              | Free                 |

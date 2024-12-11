@@ -33,3 +33,6 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 | reg | Register your current vehicle in CAD |
 | --- | ------------------------------------ |
 
+## Developer Documentation
+
+You can now implement our vehicle registration system into your own scripts by simply calling a server event! See our [Server Events documentation](../../framework-development-documentation/server-events.md#sonorancad-registervehicle) for usage.
