@@ -6,7 +6,7 @@ description: >-
 
 # Submodule Configuration Updates
 
-`Warning message here TODO`: This means one of your submodules has been updated, but there is a newer configuration file available with additional properties. To resolve, we need to manually migrate the configuration file for the submodule.
+`Submodule Updater: X has a new configuration version`: This means one of your submodules has been updated, but there is a newer configuration file available with additional properties. To resolve, we need to manually migrate the configuration file for the submodule.
 
 ## 1. Open the Configuration Files
 
