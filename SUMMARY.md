@@ -212,7 +212,7 @@
       * [Lookup By Value](sonoran-cad/api-integration/api-endpoints/general/lookup-by-integer.md)
       * [Lookup Name or Plate](sonoran-cad/api-integration/api-endpoints/general/lookup-name-or-plate.md)
       * [Get Account](sonoran-cad/api-integration/api-endpoints/general/get-account.md)
-      * [Get Accounts](sonoran-cad/api-integration/api-endpoints/general/get-account-1.md)
+      * [Get Accounts](sonoran-cad/api-integration/api-endpoints/general/get-accounts.md)
       * [Check API ID](sonoran-cad/api-integration/api-endpoints/general/check-api-id.md)
       * [Apply Permission Key](sonoran-cad/api-integration/api-endpoints/general/apply-permission-key.md)
       * [Modify Account Permissions](sonoran-cad/api-integration/api-endpoints/general/modify-account-permissions.md)
