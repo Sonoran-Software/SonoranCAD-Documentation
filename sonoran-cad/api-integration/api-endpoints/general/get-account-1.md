@@ -111,7 +111,7 @@ INVALID API KEY
     "data": [
         {
             "limit": 100, // OPTIONAL: Max number of accounts to return (Default/Max = 100)
-            "offset": 0, // OPTIONAL: Number of accounts to skip (Default = 100)
+            "offset": 0, // OPTIONAL: Number of accounts to skip (Default = 0)
             "status": 1 // OPTIONAL: Account Status (Default = Active)
         },
     ]
