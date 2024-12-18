@@ -1,5 +1,7 @@
 ---
-description: Requires players to register on the CAD via a nag screen or freezing them.
+description: >-
+  Requires players to register on the CAD via a nag screen or freezing them.
+  This can be restricted to specific jobs or ACE permissions.
 ---
 
 # ForceReg
@@ -32,11 +34,15 @@ The [tablet resource](tablet.md) can be configured to automatically set user's A
 
 ## Further Configuration
 
-| Option         | Description                                           | Default Value |
-| -------------- | ----------------------------------------------------- | ------------- |
-| captiveOption  | The mode to use for telling players to sign up.       | Nag           |
-| captiveMessage | Message to show to the player.                        | See Config    |
-| verifyMessage  | Message to show how to confirm the player registered. | See Config    |
+| Option            | Description                                                                                                                          | Default Value                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| captiveOption     | The mode to use for telling players to sign up.                                                                                      | Nag                                                                                              |
+| captiveMessage    | Message to show to the player.                                                                                                       | See Config                                                                                       |
+| verifyMessage     | Message to show how to confirm the player registered.                                                                                | See Config                                                                                       |
+| whitelist.enabled | Restrict forcing registration to only the configured people                                                                          | `false`                                                                                          |
+| whitelist.mode    | What the whitelist will use to check if a player is whitelisted                                                                      | <p><code>qb-core</code><br>Options: <code>qb-core</code>, <code>esx</code>, <code>ace</code></p> |
+| whitelist.aces    | Ace permissions that will pass the whitelist and will get the ForceReg notifications if `whitelist.mode` is set to `ace`.            | `forcereg.whitelist`                                                                             |
+| whitelist.jobs    | QBCore of ESX jobs that will pass the whitelist and get the ForceReg notifications if `whitelist.mode` is set to `qb-core` or `esx`. | `police`                                                                                         |
 
 ## Usage
 
