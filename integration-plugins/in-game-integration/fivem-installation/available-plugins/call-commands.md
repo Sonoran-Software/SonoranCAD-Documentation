@@ -37,6 +37,14 @@ If you haven't already, be sure to install and configure the [SonoranCAD Core](.
 | 511     | Sends specific 511 call to the CAD (Civil)  |
 | 311     | Sends non-emergency call to the CAD (Civil) |
 
+### Key Binds
+
+Users can toggle a `panic` event via a customizable keybind in their GTA `Settings` -> `Key Bindings` -> `FiveM` -> `(sonorancad)`
+
+By default, this keybind is blank.
+
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt="" width="375"><figcaption><p>Sonoran CAD: Panic Keybind</p></figcaption></figure>
+
 ### Custom Events
 
 ```
