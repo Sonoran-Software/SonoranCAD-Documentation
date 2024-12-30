@@ -221,6 +221,7 @@
       * [Verify Secret](sonoran-cad/api-integration/api-endpoints/general/verify-secret.md)
       * [Auth Street Signs](sonoran-cad/api-integration/api-endpoints/general/auth-street-signs.md)
       * [Set Postal Config](sonoran-cad/api-integration/api-endpoints/general/set-postal-config.md)
+      * [Set Clock Time](sonoran-cad/api-integration/api-endpoints/general/set-clock-time.md)
       * [Send Photo](sonoran-cad/api-integration/api-endpoints/general/send-photo.md)
       * [Leave Community](sonoran-cad/api-integration/api-endpoints/general/leave-community.md)
       * [Join Community](sonoran-cad/api-integration/api-endpoints/general/join-community.md)
