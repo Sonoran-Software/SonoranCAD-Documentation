@@ -22,7 +22,17 @@ If you haven't already, be sure to install and configure the [SonoranCAD Core](.
 
 Follow the [submodule activation guide](../submodule-configuration/#activating-a-submodule) for the required submodules.
 
-### 4. Configuration&#x20;
+### 3. Configure Custom Record Fields
+
+When a player registers a vehicle in-game, the submodule must know what fields in your custom vehicle registration to enter the vehicle information into. The `recordData` portion of the config contains the `Field Mapping ID` for the default vehicle record template.
+
+Custom record templates are found in `Admin` > `Customization` > `Custom Records`
+
+If you have modified the [vehicle registration template](../../../../tutorials/customization/creating-custom-record-and-report-types.md), update the `recordData` configuration accordingly.
+
+<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption><p>Vehreg: Custom Record Field Mapping</p></figcaption></figure>
+
+### 4. Additional Configuration&#x20;
 
 <table><thead><tr><th>Option</th><th width="276">Description</th><th>Default</th></tr></thead><tbody><tr><td>reigsterCommand</td><td>The command used to register current vehicle</td><td>reg</td></tr><tr><td>defaultRegExpire</td><td>The default date that all registrations will expire</td><td>01/02/2030</td></tr><tr><td>defaultRegStatus</td><td>The default status that all registrations will have | MUST BE IN CAPS</td><td>VALID</td></tr><tr><td>language</td><td>Array of language used within the script</td><td>English</td></tr><tr><td>recordData</td><td>Array of field UID's based on your vehicle registration record</td><td>Default from CAD</td></tr></tbody></table>
 
