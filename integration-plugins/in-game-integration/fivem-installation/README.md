@@ -13,7 +13,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free submodule activation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Submodule Activation](../../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Submodule Activation](../../../.gitbook/assets/Banner_3.png)
 
 {% hint style="info" %}
 **Updating From v2.X.X or earlier?** see our [recommended update steps below](./#update-from-v2.x.x-or-earlier)
@@ -24,8 +24,6 @@ Sonoran Servers customers receive **free submodule activation** and **30% off** 
 View our installation tutorial video for help on installing our framework.
 
 {% embed url="https://youtu.be/QimkcbTPl44" %}
-
-
 
 ## Pre-Configured Resource Installation (Recommended) <a href="#pre-configured-resource-installation-recommended" id="pre-configured-resource-installation-recommended"></a>
 
@@ -66,7 +64,7 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 
 ### 4. Configure the Resource
 
-Modify the `/configuration/config.lua` file for any additional configuration values.
+Modify the `/configuration/config.json`file for any additional configuration values.
 
 ### 5. Configure the Submodules
 
