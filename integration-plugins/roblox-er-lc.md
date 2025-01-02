@@ -48,7 +48,7 @@ Copy your community ID and API key, you'll need to enter these in Roblox.
 
 ![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1) (1).png>)
 
-![Sonoran CAD: Community ID and API Key](<../.gitbook/assets/image (301) (2).png>)
+![Sonoran CAD: Community ID and API Key](../.gitbook/assets/CAD_WebAPICredentials.png)
 
 #### 2. Access the Server Owner Menu
 
