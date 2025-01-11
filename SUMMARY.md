@@ -227,6 +227,8 @@
       * [Join Community](sonoran-cad/api-integration/api-endpoints/general/join-community.md)
     * [Local Endpoints](sonoran-cad/api-integration/api-endpoints/local-endpoints/README.md)
       * [Smart Lighting](sonoran-cad/api-integration/api-endpoints/local-endpoints/smart-lighting.md)
+    * [Internal](sonoran-cad/api-integration/api-endpoints/internal/README.md)
+      * [FiveM Download](sonoran-cad/api-integration/api-endpoints/internal/fivem-download.md)
   * [API Examples](sonoran-cad/api-integration/api-examples/README.md)
     * [Emergency](sonoran-cad/api-integration/api-examples/emergency/README.md)
       * [LUA Examples](sonoran-cad/api-integration/api-examples/emergency/lua-examples/README.md)
