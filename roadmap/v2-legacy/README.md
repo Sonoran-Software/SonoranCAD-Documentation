@@ -3,9 +3,11 @@ description: >-
   Sonoran CAD's robust API system comes complete with dozens of already
   developed integration plugins. Learn more about our framework and plugin
   system below!
+hidden: true
+noIndex: true
 ---
 
-# In-Game Integration Plugins
+# v2.X.X - Legacy
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
