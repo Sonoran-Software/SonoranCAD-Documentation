@@ -10,6 +10,33 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.34.0 01/16/2025
+
+{% tabs %}
+{% tab title="New" %}
+PDF Print - Linked Records
+
+* Added PDF print handling for linked records sections
+
+Dispatch & Emergency Calls - Pagination Overhaul
+
+* Overhauled and added proper server-side pagination for emergency calls and dispatch calls.&#x20;
+* Emergency calls now show all available calls instead of a maximum of 10.
+* Active dispatch calls now show all available calls instead of a maximum of 10.
+* Table column selector UI has also been refreshed and condensed.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Unit Info - Overflow
+
+* Fixed an issue causing unit information to overflow the display if long enough
+
+\#26313 - Ident Update
+
+* Fixed an issue causing the local UI to not update when switching your own identifier
+{% endtab %}
+{% endtabs %}
+
 ## 3.33.8 11/08/2024
 
 {% tabs %}
@@ -2550,7 +2577,7 @@ Billing - Set Community ID\
 {% tabs %}
 {% tab title="Fixed" %}
 Lookup - Custom Records Tab\
-\-Fixed an issue causing the reports result section in the lookup window to not properly display the results table.
+-Fixed an issue causing the reports result section in the lookup window to not properly display the results table.
 {% endtab %}
 {% endtabs %}
 
