@@ -69,9 +69,11 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
                 "CIVILIAN"
             ],
             "set": [
-                // Optional array of the ONLY permissions the user will get
+                // (Optional) Array of the ONLY permissions the user will get
                 // This overrides ADD and REMOVE
-            ]
+            ],
+            "join": true // (OPTIONAL) will force-join the user to the community.
+            // This force join only works when using `accId`
         },
     ]
 }
