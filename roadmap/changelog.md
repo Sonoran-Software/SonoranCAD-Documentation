@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.34.1 01/22/2025
+
+{% tabs %}
+{% tab title="Fixed" %}
+\#26902: Unit Column Selector
+
+* Fixed an issue causing the table column selector on the active units panel to fail
+
+\#26857: Saved Call Types Filter
+
+* Fixed an issue causing the type-to-filter in the dispatch editor's saved call types to not properly filter options
+
+\#26833: DMV Pending Hide DB Sync
+
+* Fixed an issue causing the DMV panel to display license and vehicle record filters as an option in the pending area, even if DB sync was enabled
+{% endtab %}
+{% endtabs %}
+
 ## 3.34.0 01/16/2025
 
 {% tabs %}
