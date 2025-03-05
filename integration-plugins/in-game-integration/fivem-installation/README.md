@@ -48,6 +48,7 @@ In your `server.cfg` file, add the following:
 ```
 ensure pNotify
 ensure wk_wars2x
+ensure nearest-postal
 ensure sonorancad
 ensure tablet
 
