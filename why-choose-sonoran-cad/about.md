@@ -8,7 +8,7 @@ description: >-
 
 ### 📱 Downloadable Apps
 
-In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD\_Windows/releases/latest/download/Sonoran-CAD.exe).\
+In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe).\
 \
 It's never been more easy to access your community's CAD system, regardless of what platform you're on!
 
@@ -37,9 +37,9 @@ Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugin
 
 ### 💬 Discord Permission Integration <a href="#discord-permission-integration" id="discord-permission-integration"></a>
 
-Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-Maqgxy\_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
+Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-bot) automatically **syncs Discord roles with CAD account permissions**. This allows you to easily grant and remove permissions from a user's CAD account all through Discord!‌
 
-​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/\~/drafts/-Maqgxy\_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more! You can even [react to webhooks](broken-reference) like dispatch events to attach your unit, or react to record webhooks to view the full record in the CAD.
+​[Discord webhooks](https://app.gitbook.com/@sonoran/s/sonoran-software/~/drafts/-Maqgxy_VS4uxPXm0a98/integration-plugins/discord-webhooks) instantly notify your community when changes are made, calls are placed, units toggle their panic status, and more! You can even [react to webhooks](broken-reference) like dispatch events to attach your unit, or react to record webhooks to view the full record in the CAD.
 
 <figure><img src="../.gitbook/assets/discord-webhooks.png" alt=""><figcaption><p>Sonoran CAD - Discord Webhooks</p></figcaption></figure>
 
@@ -136,6 +136,12 @@ Whether it's your own firearms registration system, an in-depth vehicle accident
 You can even index specific record fields for [custom search types](../tutorials/customization/custom-search-types.md). Allowing you to run a lookup on your record's custom ID numbers, phone numbers, and more!
 
 <figure><img src="../.gitbook/assets/custom-records.png" alt=""><figcaption><p>Sonoran CAD - Custom Reports</p></figcaption></figure>
+
+### [🧑‍🎨️ Scene Diagram Builder](../tutorials/records-management/scene-diagram-builder.md)
+
+Create detailed scene diagrams in custom reports!
+
+<figure><img src="../.gitbook/assets/base (1).png" alt=""><figcaption><p>Sonoran CAD - Diagram Builder</p></figcaption></figure>
 
 ### 📧 Custom Branding
 

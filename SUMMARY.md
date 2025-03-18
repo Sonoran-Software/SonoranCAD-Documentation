@@ -57,6 +57,7 @@
   * [Record Lookups](tutorials/records-management/searching-for-records.md)
   * [Adding a Record](tutorials/records-management/adding-a-criminal-record.md)
   * [PDF Records](tutorials/records-management/pdf-records.md)
+  * [Scene Diagram Builder](tutorials/records-management/scene-diagram-builder.md)
 * [Administration](tutorials/administration/README.md)
   * [System Logs](tutorials/administration/system-logs.md)
   * [Remove User Account](tutorials/administration/remove-user-account.md)
