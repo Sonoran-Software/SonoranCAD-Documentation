@@ -62,9 +62,9 @@ Or, quickly auto-open and search for the location by clicking the search icon:
 * In the active call's postal field
 * In the active unit's location field
 
-![Live Map - Postal Search](../../../../.gitbook/assets/map\_search\_postal.gif)
+![Live Map - Postal Search](../../../../.gitbook/assets/map_search_postal.gif)
 
-![Live Map - Location Search](../../../../.gitbook/assets/map\_search\_btn.gif)
+![Live Map - Location Search](../../../../.gitbook/assets/map_search_btn.gif)
 
 #### Blip Customization
 
@@ -78,7 +78,7 @@ Unit blips display the live location of all police, fire, EMS, and dispatch unit
 
 You can also easily filter the map to specific units by selecting them in the active units panel.
 
-![Live Map - Unit Filter](../../../../.gitbook/assets/map\_filter.gif)
+![Live Map - Unit Filter](../../../../.gitbook/assets/map_filter.gif)
 
 #### Menu Options
 
@@ -180,7 +180,7 @@ To do the same for your game:
 2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
 3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
 
-![](<../../../../.gitbook/assets/image (3).png>)
+![](<../../../../.gitbook/assets/image (3) (1).png>)
 
 For more help, reach out to our [support team](https://support.sonoransoftware.com).
 

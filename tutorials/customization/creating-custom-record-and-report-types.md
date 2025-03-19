@@ -31,13 +31,13 @@ Records follow the standard record editing and lookup system, and require a civi
 \
 Reports can be searched in the unit's report center via number or identifier.
 
-![Sonoran CAD's Custom Record Types](../../.gitbook/assets/CAD\_NewCustomRecord.png)
+![Sonoran CAD's Custom Record Types](../../.gitbook/assets/CAD_NewCustomRecord.png)
 
 ### 3. Add Custom and Pre-made Sections
 
 Add your desired custom and premade sections, edit fields, and more!
 
-![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/CAD\_CustomPreMadeSection.png)
+![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/CAD_CustomPreMadeSection.png)
 
 If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one. [Learn more about ensuring civilian and vehicle searches link to your custom record fields](creating-custom-record-and-report-types.md#linking-vehicle-and-character-searches).
 
@@ -230,7 +230,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 

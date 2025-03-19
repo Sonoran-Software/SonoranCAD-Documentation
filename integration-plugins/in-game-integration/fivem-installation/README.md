@@ -33,13 +33,13 @@ Download a pre-configured version of the in-game integration resource from the p
 
 Navigate to `Admin` -> `Advanced` -> `In-Game Integration` -> `FiveM`
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
 
 ### 2. Extract the ZIP File
 
 Extract the `.zip` file into your resources directory. Place the `[sonorancad]` folder directly in the resources root directory.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
 
 ### 3. Update Your Server Config
 

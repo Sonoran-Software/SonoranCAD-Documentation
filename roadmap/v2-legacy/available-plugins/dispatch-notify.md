@@ -36,8 +36,8 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_dispatchnotify/releases) to download the DispatchNotify plugin .zip file.
-2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran\_callcommands/releases/tag/latest) plugin.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_dispatchnotify/releases) to download the DispatchNotify plugin .zip file.
+2. Download and install the [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands/releases/tag/latest) plugin.
 3. (Optional) download and install the [postals](postals.md) plugin.
 
 ### 3. Install the Plugin and all Dependencies
@@ -125,7 +125,7 @@ Dispatchers can set the primary unit to any unit currently attached to the call.
 
 A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1) (1) (1) (1).png>)
+![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)
 
 ## Troubleshooting
 

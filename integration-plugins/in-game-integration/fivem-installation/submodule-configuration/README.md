@@ -13,7 +13,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/Banner_3.png)
 
 ## Install the Resource
 
@@ -43,7 +43,7 @@ This example uses the `postals` submodule.
   * If you've downloaded the [pre-configured FiveM resource from the admin panel](../), this has already been done for you.
 * **Save** the configuration file.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="369"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
 ### 3. Restart Sonoran CAD
 
