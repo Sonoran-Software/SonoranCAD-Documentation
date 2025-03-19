@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.35.0 03/19/2025
+
+{% tabs %}
+{% tab title="New" %}
+Scene Diagram Builder
+
+* Added a new scene diagram builder for custom records
+{% endtab %}
+{% endtabs %}
+
 ## 3.34.1 01/22/2025
 
 {% tabs %}
