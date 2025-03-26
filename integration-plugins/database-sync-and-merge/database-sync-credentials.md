@@ -178,10 +178,11 @@ You may whitelist the following IPs:
 
 ```
 23.27.5.3
+24.199.66.94
 198.199.90.248
 ```
 
-Last Updated : 8/12/2024
+Last Updated : 3/24/2025
 
 
 
