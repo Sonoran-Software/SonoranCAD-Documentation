@@ -4,6 +4,11 @@ description: This push event is sent whenever a unit logs into the CAD.
 
 # Unit Login
 
+{% hint style="warning" %}
+This push event requires the **plus** version of Sonoran CAD or higher.\
+For more information, see our [pricing ](../../../../pricing/faq/)page.
+{% endhint %}
+
 ### EVENT\_UNIT\_LOGIN
 
 ```javascript

@@ -28,7 +28,7 @@ description: >-
 | [EVENT\_911](event-911.md)                                                | Plus                 |
 | [EVENT\_REMOVE\_911](remove-911.md)                                       | Plus                 |
 | [EVENT\_STREETSIGN\_UPDATED](sign-updated.md)                             | Pro                  |
-| [EVENT\_TONE](tone-played.md)                                             | Plus                 |
+| [EVENT\_TONE](tone-played.md)                                             | Pro                  |
 | [EVENT\_CHAR\_SELECTED](civilian/character-selected.md)                   | Pro                  |
 | [EVENT\_NEW\_CALLOUT](ers/new-callout.md)                                 | Pro                  |
 

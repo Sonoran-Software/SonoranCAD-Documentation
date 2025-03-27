@@ -4,6 +4,11 @@ description: This push event is sent whenever a unit's status call is changed.
 
 # Unit Status Update
 
+{% hint style="warning" %}
+This push event requires the **plus** version of Sonoran CAD or higher.\
+For more information, see our [pricing ](../../../../pricing/faq/)page.
+{% endhint %}
+
 ### EVENT\_UNIT\_STATUS
 
 ```javascript
@@ -21,17 +26,16 @@ description: This push event is sent whenever a unit's status call is changed.
 
 ### Ident Field
 
-The `identIds` array contains the unit identifier ID\(s\).
+The `identIds` array contains the unit identifier ID(s).
 
 ### Enumeration Values
 
 Sonoran CAD uses integer enumeration values for the unit `STATUS` field. See the tables below for more information. These values reflect the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
 
-| Integer \(Enumeration\) Value | Status Description |
-| :--- | :--- |
-| 0 | UNAVAILABLE |
-| 1 | BUSY |
-| 2 | AVAILABLE |
-| 3 | ENROUTE |
-| 4 | ON\_SCENE |
-
+| Integer (Enumeration) Value | Status Description |
+| --------------------------- | ------------------ |
+| 0                           | UNAVAILABLE        |
+| 1                           | BUSY               |
+| 2                           | AVAILABLE          |
+| 3                           | ENROUTE            |
+| 4                           | ON\_SCENE          |

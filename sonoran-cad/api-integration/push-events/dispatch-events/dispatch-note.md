@@ -4,6 +4,11 @@ description: This push event sends data when a note is added to an existing disp
 
 # Dispatch Note
 
+{% hint style="warning" %}
+This push event requires the **plus** version of Sonoran CAD or higher.\
+For more information, see our [pricing ](../../../../pricing/faq/)page.
+{% endhint %}
+
 ### EVENT\_DISPATCH\_NOTE POST
 
 {% hint style="warning" %}

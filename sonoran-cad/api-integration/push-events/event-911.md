@@ -6,6 +6,11 @@ description: >-
 
 # Event 911
 
+{% hint style="warning" %}
+This push event requires the **plus** version of Sonoran CAD or higher.\
+For more information, see our [pricing ](../../../pricing/faq/)page.
+{% endhint %}
+
 ### EVENT\_911 POST
 
 ```javascript
@@ -33,4 +38,3 @@ description: >-
 #### API IDs
 
 The API ID list will only be returned if the 911 call was placed via the CAD interface and not via an API call.
-
