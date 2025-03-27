@@ -134,6 +134,7 @@
     * [Integration API ID](sonoran-cad/api-integration/getting-started/setting-your-api-id.md)
     * [Account Secret ID](sonoran-cad/api-integration/getting-started/account-secret-id.md)
   * [Push Events](sonoran-cad/api-integration/push-events/README.md)
+    * [Event Restrictions](sonoran-cad/api-integration/push-events/event-restrictions.md)
     * [Record Events](sonoran-cad/api-integration/push-events/record-events/README.md)
       * [Record Added](sonoran-cad/api-integration/push-events/record-events/record-added.md)
       * [Record Edited](sonoran-cad/api-integration/push-events/record-events/record-edited.md)
