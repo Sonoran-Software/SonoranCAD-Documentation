@@ -6,7 +6,7 @@ description: >-
 
 # Attach Unit
 
-## EVENT\_UNIT\_ATTACH Post
+## EVENT\_DISPATCH\_UNIT\_ATTACH Post
 
 {% hint style="warning" %}
 This push event is not sent triggered via the API.\

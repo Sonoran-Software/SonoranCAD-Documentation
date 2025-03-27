@@ -6,7 +6,7 @@ description: >-
 
 # Detach Unit
 
-## EVENT\_UNIT\_DETACH Post
+## EVENT\_DISPATCH\_UNIT\_DETACH Post
 
 {% hint style="warning" %}
 This push event is not sent triggered via the API.\
