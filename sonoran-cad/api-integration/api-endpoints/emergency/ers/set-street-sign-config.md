@@ -44,11 +44,18 @@ INVALID API KEY
     "id": "YOUR_COMMUNITY_ID",
     "key": "YOUR_API_KEY",
     "type": "SET_AVAILABLE_CALLOUTS",
-    "data": [
-        {
-          "id": "some_callout_name",
-          "data": {}
-        }
-    ]
+    "data": {
+        "callouts": [
+            {
+              "id": "some_callout_name",
+              "data": {}
+            },
+            {
+              "id": "some_callout_name_2",
+              "data": {}
+            }
+        ],
+        "serverId": 1
+    }
 }
 ```
