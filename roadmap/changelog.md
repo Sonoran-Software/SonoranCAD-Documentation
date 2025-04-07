@@ -10,6 +10,22 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.36.0 04/08/2025
+
+{% tabs %}
+{% tab title="New" %}
+ERS Integration
+
+* Added a new ERS integration system allowing dispatchers to generate callouts via live map, lookup ERS character records, auto generate 911 calls, and more!
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#28018 Leave Community
+
+* Fixed an issue causing the leave community button to not display on a specific screen size.
+{% endtab %}
+{% endtabs %}
+
 ## 3.35.0 03/19/2025
 
 {% tabs %}
