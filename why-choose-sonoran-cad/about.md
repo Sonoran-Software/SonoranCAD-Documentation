@@ -75,11 +75,11 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 <figure><img src="../.gitbook/assets/smart signs (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
-### 🚔 ERS Integration
+### 🚔 [ERS Integration](../integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam-1.md)
 
 Does your community play Emergency Response Simulator?
 
-Sonoran CAD's ERS integration allows dispatchers to create callouts from the live map, lookup character records, and more!
+[Sonoran CAD's ERS integration](../integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam-1.md) allows dispatchers to create callouts from the live map, lookup character records, and more!
 
 <figure><img src="../.gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
 

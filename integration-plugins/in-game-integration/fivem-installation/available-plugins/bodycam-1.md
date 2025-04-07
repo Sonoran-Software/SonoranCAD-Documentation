@@ -40,5 +40,18 @@ The ERS submodule comes with three record templates (character, license, vehicle
 
 Importing and using these record templates will ensure ERS callout character, license, and vehicle registration records are automatically generated.
 
+* Client/server file drag-and-drop?
 
+## Features
 
+### Live Map Callout Generation
+
+TODO
+
+### Record Lookups
+
+TODO
+
+### Automatic Call Generation
+
+TODO 911 and Dispatch
