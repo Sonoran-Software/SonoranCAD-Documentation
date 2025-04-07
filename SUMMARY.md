@@ -88,7 +88,7 @@
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
 * [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
-* [In-Game Integration](integration-plugins/in-game-integration/README.md)
+* [🎮 FiveM](integration-plugins/in-game-integration/README.md)
   * [FiveM Installation](integration-plugins/in-game-integration/fivem-installation/README.md)
     * [Submodule Configuration](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/README.md)
       * [Submodule Troubleshooting](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/plugin-troubleshooting.md)
@@ -123,7 +123,6 @@
     * [Server Events](integration-plugins/in-game-integration/framework-development-documentation/server-events.md)
     * [HTTP Request Handling](integration-plugins/in-game-integration/framework-development-documentation/http-request-handling.md)
   * [Error Codes](integration-plugins/in-game-integration/error-codes.md)
-  * [Free Submodule Activation - Next Steps](integration-plugins/in-game-integration/free-plugin-installation-next-steps.md)
 * [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc.md)
 
 ## Developer API Documentation <a href="#sonoran-cad" id="sonoran-cad"></a>
