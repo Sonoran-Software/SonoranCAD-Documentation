@@ -99,6 +99,7 @@
       * [Check API ID](integration-plugins/in-game-integration/fivem-installation/available-plugins/api-id-checker.md)
       * [Civilian Integration](integration-plugins/in-game-integration/fivem-installation/available-plugins/civilian-integration.md)
       * [Dispatch Notify](integration-plugins/in-game-integration/fivem-installation/available-plugins/dispatch-notify.md)
+      * [Emergency Response Simulator (ERS)](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam-1.md)
       * [Framework Support (ESX/QBCore) and Auto Fines](integration-plugins/in-game-integration/fivem-installation/available-plugins/framework-support-esx-qbcore-and-auto-fines/README.md)
         * [Depreciated: ESX Support](integration-plugins/in-game-integration/fivem-installation/available-plugins/framework-support-esx-qbcore-and-auto-fines/esx-support.md)
       * [FivePD](integration-plugins/in-game-integration/fivem-installation/available-plugins/fivepd.md)

@@ -75,6 +75,14 @@ We've partnered up with London Studios to integrate their Smart Signs plugin dir
 
 <figure><img src="../.gitbook/assets/smart signs (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
+### 🚔 ERS Integration
+
+Does your community play Emergency Response Simulator?
+
+Sonoran CAD's ERS integration allows dispatchers to create callouts from the live map, lookup character records, and more!
+
+<figure><img src="../.gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
+
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 
 Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../roadmap/v2-legacy/available-plugins/tablet.md)!
