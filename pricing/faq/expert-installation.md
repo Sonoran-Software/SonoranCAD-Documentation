@@ -23,7 +23,7 @@ These credits can be used for:
 
 ### For free:
 
-Expert installation is offered to [Sonoran Servers customers for free](bundle-discount-sonoran-servers.md)!
+Expert installation is offered to [Sonoran Servers customers for free](broken-reference)!
 
 ### At checkout:
 
@@ -51,7 +51,7 @@ Yes! Your purchase is valid for three installation credits. You could have the a
 
 ### Is this purchase eligible for a refund?
 
-All of our products are covered in our [48-hour moneyback guarantee](https://sonoransoftware.com/assets/files/internal/purchase\_policy.pdf). However, this service is not non-refundable after the labor has been performed, regardless if one or all credits have been used.
+All of our products are covered in our [48-hour moneyback guarantee](https://sonoransoftware.com/assets/files/internal/purchase_policy.pdf). However, this service is not non-refundable after the labor has been performed, regardless if one or all credits have been used.
 
 ### The support agent has installed my plugins, what's next?
 

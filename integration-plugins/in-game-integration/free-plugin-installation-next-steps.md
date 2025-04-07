@@ -6,9 +6,9 @@ description: >-
 
 # Free Submodule Activation - Next Steps
 
-![Sonoran Servers - Bundle Program](<../../.gitbook/assets/banner\_update-1 (1).png>)
+![Sonoran Servers - Bundle Program](<../../.gitbook/assets/banner_update-1 (1).png>)
 
-If you haven't already, [check out our page for more information on this promotion](../../pricing/faq/bundle-discount-sonoran-servers.md).
+If you haven't already, [check out our page for more information on this promotion](broken-reference).
 
 ## 1. Locate your Installed Submodules
 

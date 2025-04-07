@@ -9,11 +9,8 @@ All Sonoran CAD integration submodules require the **standard** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!\
-Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
-
-![Sonoran Servers - Discount and Free Plugin Installation](../../../../.gitbook/assets/Banner_3.png)
 
 ## Install the Resource
 

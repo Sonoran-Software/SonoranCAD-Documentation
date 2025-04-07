@@ -6,26 +6,30 @@ description: >-
 
 # FiveM Installation
 
+{% hint style="warning" %}
 Sonoran CAD integration submodules require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
-
-{% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!\
-Sonoran Servers customers receive **free submodule activation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Submodule Activation](../../../.gitbook/assets/Banner_3.png)
+## A. One-Click Installation (RocketNode)
 
-{% hint style="info" %}
-**Updating From v2.X.X or earlier?** see our [recommended update steps below](./#update-from-v2.x.x-or-earlier)
-{% endhint %}
+We've partnered with Rocket Node to bring you one-click Sonoran CAD installation for FiveM — making it easier than ever to host your community and connect with Sonoran CAD.
 
-## Installation Video
+* [Purchase your FiveM Game Server!](https://sonoran.link/v2E9hKGm)
+* Use code `SONORAN`to save big!
 
-View our installation tutorial video for help on installing our framework.
+{% embed url="https://www.youtube.com/watch?v=h8Ftx14j8l8" %}
+
+The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](submodule-configuration/) in the `/configuration` folder.
+
+{% content-ref url="submodule-configuration/" %}
+[submodule-configuration](submodule-configuration/)
+{% endcontent-ref %}
+
+***
+
+## B. Pre-Configured Resource Installation <a href="#pre-configured-resource-installation-recommended" id="pre-configured-resource-installation-recommended"></a>
 
 {% embed url="https://youtu.be/QimkcbTPl44" %}
-
-## Pre-Configured Resource Installation (Recommended) <a href="#pre-configured-resource-installation-recommended" id="pre-configured-resource-installation-recommended"></a>
 
 ### 1. Download the ZIP
 
@@ -130,6 +134,10 @@ Open `sonorancad\configuration\config.CHANGEME.json`, update the values, then sa
 
 #### Configuration Details
 
+<details>
+
+<summary>Configuration Options</summary>
+
 | Option                    | Description                                                                                                                                                                                                                                                                                               |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | communityID               | Your SonoranCAD [Community ID](../../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).                                                                                                                                                                                  |
@@ -150,6 +158,8 @@ Open `sonorancad\configuration\config.CHANGEME.json`, update the values, then sa
 | pushEventForwardUrl       | <p><a href="../../../sonoran-cad/api-integration/push-events/#webserver-example">Web server</a> URL to forward push events to.<br><br><mark style="color:red;"><strong>NOTE: DO NOT ENABLE IF YOU DO NOT KNOW WHAT YOU ARE DOING (Used for custom development only!)</strong></mark></p>                  |
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                                                                                          |
 | disableOverride           | <p>By default, the framework will try and automatically correct your <a href="../../../tutorials/customization/configuring-multiple-servers.md">server's IP, port, and outgoing IP address</a> if it detects something different.<br><br>Set this to <code>true</code> to disable this functionality.</p> |
+
+</details>
 
 For information regarding the bodycam script config values, please see our [Bodycam Submodule Guide.](available-plugins/bodycam.md)
 
@@ -286,9 +296,3 @@ In this example, you would navigate to the `sonorancad` **resource**, open the `
 {% hint style="info" %}
 This is simply a **WARNING**, if the resource works **AS EXPECTED**, you can simply ignore the warning and continue
 {% endhint %}
-
-## Update from v2.x.x or earlier
-
-We recommend a full reinstall of the SonoranCAD Integration. You may copy over the **contents** of your plugin configuration files to the new submodule's configuration files. Ensure that the file name is not changed as the submodules use the same contents but different file names.
-
-See the [Installation steps above](./#pre-configured-resource-installation-recommended) to reinstall
