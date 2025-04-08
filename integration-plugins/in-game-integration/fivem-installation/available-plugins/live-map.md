@@ -138,6 +138,7 @@ Sonoran CAD allows communities to upload custom map images to the integrated, ho
 Extract the images from the YTD files with a program like OpenIV.\
 **You will need six files named exactly as follows:**
 
+`minimap_sea_-1_0.png` (Optional: [See Roxwood Expansion Section](live-map.md#roxwood-expansion))\
 `minimap_sea_0_0.png`\
 `minimap_sea_0_1.png`\
 `minimap_sea_1_0.png`\
@@ -159,6 +160,12 @@ Select "Upload Custom" and upload all six correctly named files.
 ### 3. File Size
 
 Custom map images are limited to 30MB each. **However, if you are uploading more than 100MB of images total, you will need to upload in separate batches.**
+
+### Roxwood Expansion
+
+If your community is utilizing the Roxwood map expansion, there will be an extra tile to upload. Ensure this tile is named `minimap_sea_-1_0.png`.
+
+<div><figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Live Map: Roxwood Tile</p></figcaption></figure> <figure><img src="../../../../.gitbook/assets/392764c1b6d8d6c83eca8b7bf78b32fd.gif" alt="" width="375"><figcaption><p>Live Map: Roxwood Expansion Area</p></figcaption></figure></div>
 
 ## Using a Custom Map (Roblox)
 
