@@ -17,6 +17,10 @@ description: View the latest changes to Sonoran CAD!
 ERS Integration
 
 * Added a new ERS integration system allowing dispatchers to generate callouts via live map, lookup ERS character records, auto generate 911 calls, and more!
+
+Live Map - Roxwood Support
+
+* Added official support for the Roxwood expansion area on the custom live map.
 {% endtab %}
 
 {% tab title="Fixed" %}
