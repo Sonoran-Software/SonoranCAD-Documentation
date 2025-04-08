@@ -16,6 +16,12 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 <figure><img src="../../../../.gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
 
+{% hint style="warning" %}
+**This integration is coming soon!**
+
+**Stay tuned for the next release.**
+{% endhint %}
+
 ## What is Emergency Response Simulator?
 
 Emergency Response Simulator is a paid, third-party script for FiveM.
