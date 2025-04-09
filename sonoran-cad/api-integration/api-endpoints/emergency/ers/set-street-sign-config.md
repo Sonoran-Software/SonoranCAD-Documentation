@@ -19,13 +19,13 @@ For more information, see our [pricing ](../../../../../pricing/faq/)page.
 | ---- | ------ | ------------------------ |
 | id   | string | Your community's ID      |
 | key  | string | Your community's API Key |
-| type | string | SET\_STREETSIGN\_CONFIG  |
+| type | string | SET\_AVAILABLE\_CALLOUTS |
 | data | array  | Array of request objects |
 
 {% tabs %}
 {% tab title="200 A successful call will be met with the following response:" %}
 ```
-API ID(s) set!
+Updated 1234 callouts
 ```
 {% endtab %}
 
