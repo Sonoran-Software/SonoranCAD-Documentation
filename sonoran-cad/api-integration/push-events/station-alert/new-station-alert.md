@@ -29,7 +29,9 @@ For more information, see our [pricing ](../../../../pricing/faq/)page.
       }
     ],
     "message": "Some TTS message here!", // May also be a base 64 string for AI audio
-    "color": "blue",
+    "colors": [
+      "blue"
+    ],
     "tone": "tone1", // May also be a S3 URL to hosted tone audio
   }
 }
