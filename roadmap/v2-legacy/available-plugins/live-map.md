@@ -175,6 +175,9 @@ Extract the images from the YTD files with a program like OpenIV.\
 `minimap_sea_2_0.png`\
 `minimap_sea_2_1.png`
 
+**Roxwood Expansion**
+If your community is utilizing the Roxwood map expansion, there will be an extra tile to upload. Ensure this tile is named `minimap_sea_-1_0.png`.
+
 ![OpenIV - Extract Images](<../../../.gitbook/assets/image (131).png>)
 
 ![OpenIV - Save Images](<../../../.gitbook/assets/image (193).png>)
