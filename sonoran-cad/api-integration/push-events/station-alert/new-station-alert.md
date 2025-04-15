@@ -9,7 +9,7 @@ This push event requires the **plus** version of Sonoran CAD or higher.\
 For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-### EVENT\_NEW\_CALLOUT
+### EVENT\_STATION\_ALERT
 
 ```javascript
 {
