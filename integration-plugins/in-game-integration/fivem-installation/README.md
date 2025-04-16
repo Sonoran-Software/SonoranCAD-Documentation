@@ -47,18 +47,10 @@ Extract the `.zip` file into your resources directory. Place the `[sonorancad]` 
 
 ### 3. Update Your Server Config
 
-In your `server.cfg` file, add the following:
+In your `server.cfg` file, simply add the following:
 
 ```
-ensure pNotify
-ensure wk_wars2x
-ensure nearest-postal
-ensure sonorancad
-ensure tablet
-
-# permissions for auto-updater (REQUIRED)
-add_ace resource.sonorancad command allow
-add_ace resource.sonoran_updatehelper command allow
+exec @sonorancad/sonorancad.cfg
 ```
 
 {% hint style="danger" %}
