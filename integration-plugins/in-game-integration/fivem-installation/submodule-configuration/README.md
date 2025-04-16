@@ -40,7 +40,7 @@ This example uses the `postals` submodule.
   * If you've downloaded the [pre-configured FiveM resource from the admin panel](../), this has already been done for you.
 * **Save** the configuration file.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="369"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
 ### 3. Restart Sonoran CAD
 

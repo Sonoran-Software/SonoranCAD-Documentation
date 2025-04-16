@@ -67,7 +67,7 @@ Sonoran CAD's custom[ live map plugin](../roadmap/v2-legacy/available-plugins/li
 
 ### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
 
-We've partnered up with London Studios to integrate their Smart Signs plugin directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
+We've partnered up with London Studios to integrate their Smart Signs script directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
 [Learn more about this free script included with Sonoran CAD Pro!](../roadmap/v2-legacy/available-plugins/smart-signs.md)
 
@@ -82,6 +82,14 @@ Does your community play Emergency Response Simulator?
 [Sonoran CAD's ERS integration](../integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md) allows dispatchers to create callouts from the live map, lookup character records, and more!
 
 <figure><img src="../.gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
+
+### 🚒 Station Alert Integration
+
+We've partnered up with Inferno Collection to integrate their Station Alert script directly with Sonoran CAD! Dispatchers can toggle station doors, lights, and text-to-speech messages right from Sonoran CAD!
+
+[Learn more about this free script included with Sonoran CAD Pro!](../integration-plugins/in-game-integration/fivem-installation/available-plugins/station-alert.md)
+
+<figure><img src="../.gitbook/assets/inferno (1).png" alt=""><figcaption><p>Sonoran CAD x Inferno Collection</p></figcaption></figure>
 
 ### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
 
