@@ -47,7 +47,7 @@ Extract the `.zip` file into your resources directory. Place the `[sonorancad]` 
 
 ### 3. Update Your Server Config
 
-In your `server.cfg` file, simply add the following:
+In your `server.cfg` file, simply add the following line:
 
 ```
 exec @sonorancad/sonorancad.cfg
@@ -58,6 +58,19 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
+
+<details>
+
+<summary>Advanced - Remove Tablet, pNotify, etc.</summary>
+
+Adding the `exec @sonorancad/sonorancad.cfg` starts multiple resources bundled with the download. If you wish to not use one or more of the resources (or with a different name) you will need to:
+
+* Copy/paste the contents of `sonorancad.cfg` to your `server.cfg`
+* Remove the `exec @sonorancad/sonorancad.cfg` line from your `server.cfg`
+
+Do not update the contents of `sonorancad.cfg` as it will be overwritten on resource updates.
+
+</details>
 
 ### 4. Configure the Resource
 
