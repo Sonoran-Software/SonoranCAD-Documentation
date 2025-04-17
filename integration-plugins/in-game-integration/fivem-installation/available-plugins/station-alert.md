@@ -22,8 +22,8 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Users can get the Station Alert resource from Inferno Collection.
 
-* For Sonoran CAD Pro users, [download the FREE Station Alert (Sonoran Edition) package](https://sonoran.link/FtMqEnXF).
-* For Sonoran CAD Plus users, [purchase the paid Station Alert package](https://sonoran.link/AUd3Abat).
+* For Sonoran CAD **Pro** users, [download the FREE Station Alert (Sonoran Edition) package](https://sonoran.link/FtMqEnXF).
+* For Sonoran CAD **Plus** users, [purchase the paid Station Alert package](https://sonoran.link/AUd3Abat).
 
 This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
 
@@ -46,13 +46,13 @@ ensure inferno-station-alert
 
 ### 4. Configuration Options
 
-Learn more about the Station Alert configuration in the [Inferno Collection documentation](https://sonoran.link/9c29kSqK).
-
 Information on adding stations, lights, speakers, and more can be found in the [quick start guide](https://docs.inferno-collection.com/station-alert/usage/).
+
+The [configuration documentation](https://docs.inferno-collection.com/station-alert/config/) provides further customization options.&#x20;
 
 ## Usage
 
-### Live Map
+### 🌎 Live Map
 
 On the live map, ensure you toggle station blips on. Clicking on a station will open the alert panel.
 
@@ -66,7 +66,7 @@ The following example:
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
 
-### Station Alert Panel
+### 🚨 Station Alert Panel
 
 Dispatchers can also access the dedicated `Station Alert` panel under `Unit Management`.
 
@@ -74,7 +74,7 @@ Here, you can type-to-filter and select multiple stations at once.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
 
-### Dispatch Call Editor
+### 📞 Dispatch Call Editor
 
 The dispatch call editor has a shortcut to quickly access nearby stations from an emergency call.
 

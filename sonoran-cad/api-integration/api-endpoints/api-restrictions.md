@@ -29,6 +29,8 @@ description: >-
 | emergency/[add\_blip](emergency/custom-blips/add-blip.md)                                   | Pro                  |
 | emergency/[modify\_blip](emergency/custom-blips/modify-blip.md)                             | Pro                  |
 | emergency/[remove\_blip](emergency/custom-blips/remove-blip.md)                             | Pro                  |
+| emergency/[set\_available\_callouts](emergency/ers/set-street-sign-config.md)               | Pro                  |
+| emergency/[set\_stations](emergency/station-alert/set-stations.md)                          | Plus                 |
 | civilian/[get\_characters](civilian/get-characters.md)                                      | Standard             |
 | civilian/[new\_character](civilian/new-character.md)                                        | Standard             |
 | civilian/[edit\_character](civilian/edit-character.md)                                      | Standard             |
@@ -53,4 +55,5 @@ description: >-
 | general/[set\_servers](general/set-servers.md)                                              | Plus                 |
 | general/[auth\_streetsigns](general/auth-street-signs.md)                                   | Pro                  |
 | general/[set\_postals](general/set-postal-config.md)                                        | Pro                  |
-| general/send\_photo                                                                         | Pro                  |
+| general/[send\_photo](general/send-photo.md)                                                | Pro                  |
+

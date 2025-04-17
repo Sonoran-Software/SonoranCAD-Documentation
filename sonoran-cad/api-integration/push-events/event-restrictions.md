@@ -31,4 +31,4 @@ description: >-
 | [EVENT\_TONE](tone-played.md)                                             | Pro                  |
 | [EVENT\_CHAR\_SELECTED](civilian/character-selected.md)                   | Pro                  |
 | [EVENT\_NEW\_CALLOUT](ers/new-callout.md)                                 | Pro                  |
-
+| [EVENT\_STATION\_ALERT](station-alert/new-station-alert.md)               | Plus                 |
