@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.37.0 04/17/2025
+
+{% tabs %}
+{% tab title="New" %}
+Station Alert - Integration
+
+* Added a new panel and live map integration for the free station alert resource.
+
+Dispatch Call Editor - Nearby Stations
+
+* Added a new nearby stations quick access icon in the dispatch call editor.
+
+Dispatch Call Editor - Nearby Units
+
+* Added a new nearby units quick attach icon in the dispatch call editor.
+{% endtab %}
+{% endtabs %}
+
 ## 3.36.0 04/08/2025
 
 {% tabs %}
