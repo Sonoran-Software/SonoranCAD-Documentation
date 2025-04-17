@@ -20,6 +20,10 @@ Under Admin > Customization > 10-Codes you can add, edit, or remove 10-codes for
 Sonoran CAD allows you to change the naming of "10-Codes" to anything else you'd like.\
 Learn more about our [geographical customization](geographical-settings.md).
 
+## Import from Premade Spreadsheet (CSV)
+
+We've compiled 10-code spreadsheets for all 50 US states. Download a CSV from our [10-code repository](https://github.com/Sonoran-Software/CAD-10-Codes) and [import it into the CAD](10-codes.md#id-4.-import-the-csv-file).
+
 ## Import 10-Codes from a Spreadsheet (CSV)
 
 Sonoran CAD allows you to import 10-codes directly from a spreadsheet.

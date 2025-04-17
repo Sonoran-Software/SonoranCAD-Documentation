@@ -50,7 +50,11 @@ Adding, editing, or removing a penal code is easy. Simply click on the existing 
 Sonoran CAD allows you to change the naming of "Penal Codes" to anything else you'd like.\
 Learn more about our [geographical customization](geographical-settings.md).
 
-## Import from Spreadsheet (CSV)
+## Import from Premade Spreadsheet (CSV)
+
+We've compiled penal code spreadsheets for all 50 US states. [Download a CSV from our penal code repository](https://github.com/Sonoran-Software/CAD-Penal-Codes) and [import it into the CAD](penal-codes.md#id-4.-import-the-csv-file).
+
+## Import from Customized Spreadsheet (CSV)
 
 Sonoran CAD allows you to easily import your penal codes from a spreadsheet (.CSV) file.
 
@@ -79,13 +83,13 @@ Additionally, the `bondAmount` column must be kept as a number.\
 All other columns must be formatted as text.
 {% endhint %}
 
-![](../../.gitbook/assets/CAD\_PenalCodesSheet.png)
+![](../../.gitbook/assets/CAD_PenalCodesSheet.png)
 
 ### 3. Download the CSV
 
 In Google Sheets, navigate to File > Download > Comma Separated Values (.csv) to download the file.
 
-![Google Sheets - Download CSV](../../.gitbook/assets/CAD\_PenalCodesSheetDownload.png)
+![Google Sheets - Download CSV](../../.gitbook/assets/CAD_PenalCodesSheetDownload.png)
 
 ### 4. Import the CSV File
 
