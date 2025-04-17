@@ -81,7 +81,15 @@ Drag it to the header to create a new group, or drag it to an existing group to 
 
 ### Unit Attachments
 
-The fastest way to add a unit to an existing call, is to drag-and-drop it:
+#### Attach Nearest Units
+
+When emergency calls are sent from in-game, they contain a coordinate location. Importing the emergency call from the table or live map will display an option to select and attach the closest units.
+
+<figure><img src="../../.gitbook/assets/5feded729bf315a9005a757571cb8c6e.gif" alt=""><figcaption><p>Dispatch Editor: Nearest Units</p></figcaption></figure>
+
+#### Drag-and-Drop
+
+Drag-and-drop is another fast way to add a unit to an existing call:
 
 ![Sonoran CAD - Attach Unit to Existing Call](../../.gitbook/assets/e168e0fb6bc579ec8c9839a2e741f872.gif)
 
