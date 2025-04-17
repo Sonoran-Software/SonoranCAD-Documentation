@@ -125,7 +125,7 @@ Dispatchers can set the primary unit to any unit currently attached to the call.
 
 A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
 
-![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+![Sonoran CAD - Primary Unit](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Troubleshooting
 

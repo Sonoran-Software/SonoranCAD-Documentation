@@ -6,10 +6,6 @@ description: >-
 
 # Station Alert
 
-{% hint style="danger" %}
-This resource is not yet available - coming soon!
-{% endhint %}
-
 <figure><img src="../../../../.gitbook/assets/inferno (1).png" alt=""><figcaption><p>Sonoran CAD x Inferno Collection</p></figcaption></figure>
 
 {% hint style="warning" %}
@@ -24,40 +20,37 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ### 1. Download the Resource
 
-[Purchase the resource for free](https://www.sonoran.store/package/4913039) from Inferno Collection.
+Users can get the Station Alert resource from Inferno Collection.
 
-* For Sonoran CAD Pro users, purchase the FREE `SOME_NAME_TODO`  package
-* For Sonoran CAD Plus users, purchase the paid `SOME_NAME_TODO`  package
+* For Sonoran CAD Pro users, [download the FREE Station Alert (Sonoran Edition) package](https://sonoran.link/FtMqEnXF).
+* For Sonoran CAD Plus users, [purchase the paid Station Alert package](https://sonoran.link/AUd3Abat).
 
 This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
 
-Once purchased you can [download the asset from your keymaster account](https://keymaster.fivem.net/asset-grants).
+Once purchased you can [download the resource from the CFX.re portal](https://portal.cfx.re/assets/granted-assets?search=Station+Alert).
 
 ### 2. Install the Resource
 
-We suggest installing the `TODO` folders within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below:
+We suggest installing the `inferno-station-alert` folder within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below:
 
-TODO
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Station Alert: CAD Installation</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption><p>Smartsigns installed to [sonorancad] folder</p></figcaption></figure>
+### 3. Start the Resource
 
-### 3. Add Requirements to Server.cfg file
-
-In your `server.cfg` add the following new line:
+In your `server.cfg` add the following new lines:
 
 ```lua
-ensure TODO!
+exec @inferno-station-alert/config.cfg
+ensure inferno-station-alert
 ```
 
-### 4. Configure options to your liking
+### 4. Configuration Options
 
-TODO
+Learn more about the Station Alert configuration in the [Inferno Collection documentation](https://sonoran.link/9c29kSqK).
 
-## How to use
+Information on adding stations, lights, speakers, and more can be found in the [quick start guide](https://docs.inferno-collection.com/station-alert/usage/).
 
-### In-Game Usage
-
-TODO: Link to Inferno Collection Documentation
+## Usage
 
 ### Live Map
 
@@ -71,7 +64,7 @@ The following example:
 * Plays `Example Message`  as text-to-speech at station `Davis`&#x20;
 * Plays `Tone1` from the station alert resource tones at station `Davis`&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
 
 ### Station Alert Panel
 
@@ -79,7 +72,7 @@ Dispatchers can also access the dedicated `Station Alert` panel under `Unit Mana
 
 Here, you can type-to-filter and select multiple stations at once.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
 
 ### Dispatch Call Editor
 
