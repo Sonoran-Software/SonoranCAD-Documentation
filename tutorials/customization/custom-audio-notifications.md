@@ -21,7 +21,7 @@ In the admin page, navigate to `Customization` > `Customization` > `Notification
 
 ### 2. Customize the Audio Tones
 
-Here, you can specify the audio file that will play for new dispatches, panic sounds, dispatch signals, and more. Direct uploading is supported for communities on the [plus version](../../pricing/faq/) or higher.
+Here, you can specify the audio file that will play for new dispatches, panic sounds, dispatch signals, and more.
 
 ### 3. Save
 
