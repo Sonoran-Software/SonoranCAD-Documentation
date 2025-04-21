@@ -209,6 +209,12 @@ We can then set the JSON Key for this data as `bank`.
 
 ## Friendly Mapping
 
+{% hint style="warning" %}
+Friendly Mapping requires the **pro** version of Sonoran CAD.
+
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
+{% endhint %}
+
 Friendly mapping allows you to convert any raw database value to a more user friendly value.\
 Ex: `drive_license` in your database is converted to `Driver's License`.
 
