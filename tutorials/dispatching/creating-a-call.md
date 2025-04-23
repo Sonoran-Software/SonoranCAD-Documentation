@@ -85,7 +85,9 @@ Drag it to the header to create a new group, or drag it to an existing group to 
 
 When emergency calls are sent from in-game, they contain a coordinate location. Importing the emergency call from the table or live map will display an option to select and attach the closest units.
 
-<figure><img src="../../.gitbook/assets/5feded729bf315a9005a757571cb8c6e.gif" alt=""><figcaption><p>Dispatch Editor: Nearest Units</p></figcaption></figure>
+Entering a postal code will work as a secondary option to find the nearest units. You must have the [postals submodule](../../integration-plugins/in-game-integration/fivem-installation/available-plugins/postals.md) enabled.
+
+<div><figure><img src="../../.gitbook/assets/5feded729bf315a9005a757571cb8c6e.gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Units</p></figcaption></figure> <figure><img src="../../.gitbook/assets/Screen Recording 2025-04-23 131726 (1).gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Postal Units</p></figcaption></figure></div>
 
 #### Drag-and-Drop
 
