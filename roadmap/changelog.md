@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.37.2 04/29/2025
+
+{% tabs %}
+{% tab title="New" %}
+Call Editor: Nearest via Postal
+
+* Added support for nearest units and stations in the dispatch call editor by adding a postal location, if the emergency call does not contain coordinates.
+
+Wipe Dispatch and Emergency Calls
+
+* Added a new option in the admin records wipe panel to wipe dispatch and emergency calls.
+
+Translation Overhaul Start
+
+* Added CAD translations to translate.sonoransoftware.com for easier community pushes. Added UA translations.
+{% endtab %}
+{% endtabs %}
+
 ## 3.37.0 04/17/2025
 
 {% tabs %}
