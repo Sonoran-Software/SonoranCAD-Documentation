@@ -10,6 +10,22 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+## 3.37.3 05/12/2025
+
+{% tabs %}
+{% tab title="New" %}
+Station Alert: Indicator Colors
+
+* Added support for yellow and magenta color indicators in the station alert panel
+{% endtab %}
+
+{% tab title="Fixed" %}
+Character Restrictions: Explanation Label
+
+* Removed an explanation label for a feature no longer available to reduce confusion
+{% endtab %}
+{% endtabs %}
+
 ## 3.37.2 04/29/2025
 
 {% tabs %}
