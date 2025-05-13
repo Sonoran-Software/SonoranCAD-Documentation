@@ -86,7 +86,17 @@ The Sonoran CAD FiveM resources has multiple "submodules" for every integration 
 
 ### 6. Configure the Auto-Updater
 
-The SonoranCAD FiveM resource contains an auto-updater that will override all non-configuration files when a new version of SonoranCAD is released. To disable this auto-update entirely please set `allowAutoUpdate` to `false` in the `config.json`. If you would like to edit files and do not want your edits overwritten, please add their direct path relative to the `[sonorancad]` folder to the `/sonorancad/configuration/updaterIgnore.json` file. Sample paths can be found there.
+The Sonoran CAD FiveM resource contains an auto-updater that will override all non-configuration files when a new version of Sonoran CAD is released.
+
+#### Whitelist Specific Files
+
+Some communities have custom files inside the `[sonorancad]` folder they don't wish to have overwritten, like custom plate reader images.
+
+Simply add the direct path to the directory or individual files to the `sonorancad/configuration/updaterIgnore.json` file.
+
+#### Disable Automatic Updates
+
+To disable this auto-update entirely set `allowAutoUpdate` to `false` in the `config.json`.
 
 ***
 
