@@ -402,12 +402,12 @@ end)
 The `call911` function facilitates the creation of a 911 emergency call within the SonoranCAD system by sending a structured API request.
 
 ```lua
-exports.sonorancad.call911(caller, location, description, postal, plate, cb)
+exports.sonorancad.call911(caller, location, description, postal, plate, cb, coords, customMeta)
 ```
 
 {% tabs %}
 {% tab title="Parameters" %}
-<table><thead><tr><th width="176" align="center">Parameter</th><th width="120" align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code>caller</code></td><td align="center"><code>string</code></td><td align="center">Name of the individual initiating the call.</td></tr><tr><td align="center"><code>location</code></td><td align="center"><code>string</code></td><td align="center">Description of the call's location (e.g., street address).</td></tr><tr><td align="center"><code>description</code></td><td align="center"><code>string</code></td><td align="center">Detailed information about the emergency situation.</td></tr><tr><td align="center"><code>postal</code></td><td align="center"><code>string</code></td><td align="center">Postal code corresponding to the call's location.</td></tr><tr><td align="center"><code>plate</code></td><td align="center"><code>string</code></td><td align="center">(Optional) License plate number associated with the call, if applicable.</td></tr><tr><td align="center"><code>cb</code></td><td align="center"><code>function</code></td><td align="center">(Optional) Callback function to handle the API response.</td></tr></tbody></table>
+<table><thead><tr><th width="176" align="center">Parameter</th><th width="120" align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code>caller</code></td><td align="center"><code>string</code></td><td align="center">Name of the individual initiating the call.</td></tr><tr><td align="center"><code>location</code></td><td align="center"><code>string</code></td><td align="center">Description of the call's location (e.g., street address).</td></tr><tr><td align="center"><code>description</code></td><td align="center"><code>string</code></td><td align="center">Detailed information about the emergency situation.</td></tr><tr><td align="center"><code>postal</code></td><td align="center"><code>string</code></td><td align="center">Postal code corresponding to the call's location.</td></tr><tr><td align="center"><code>plate</code></td><td align="center"><code>string</code></td><td align="center">(Optional) License plate number associated with the call, if applicable.</td></tr><tr><td align="center"><code>cb</code></td><td align="center"><code>function</code></td><td align="center">(Optional) Callback function to handle the API response.</td></tr><tr><td align="center"><code>coords</code></td><td align="center"><code>table</code></td><td align="center">A table containing the X and Y coordinates of the emergency call's location, typically sourced from in-game player or vehicle position. This is used to place the call accurately on the live map in CAD systems or dispatch plugins.</td></tr><tr><td align="center"><code>customMeta</code></td><td align="center"><code>table</code></td><td align="center">A flexible table for including any custom metadata relevant to the emergency call.</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Returns" %}
@@ -429,7 +429,11 @@ exports.sonorancad.call911(
         else
             print("Failed to place 911 call:", response.error)
         end
-    end
+    end,
+    { x = 84.49, y = 953.593 },
+    {
+        someMetaData = "yes this is metadata"
+    } 
 )
 ```
 {% endtab %}
@@ -621,3 +625,67 @@ end)
 {% endtab %}
 {% endtabs %}
 
+### createDispatchCall
+
+Creates a dispatch call in SonoranCAD
+
+```lua
+exports.sonorancad.createDispatchCall(origin, status, priority, block, address, postal, title, code, primary, trackPrimary, description, notes, metaData, units, cb)
+```
+
+{% tabs %}
+{% tab title="Parameter" %}
+
+
+| Parameter      | Type       | Description                                                                              |
+| -------------- | ---------- | ---------------------------------------------------------------------------------------- |
+| `origin`       | `number`   | Source of the dispatch call (see ORIGIN enum in SonoranCAD documentation). Typically `0` |
+| `status`       | `number`   | Initial call status (see STATUS enum). Typically `0`                                     |
+| `priority`     | `number`   | Call priority: `1` (high), `2` (medium), `3` (low).                                      |
+| `block`        | `string`   | Block or unit number of the incident location.                                           |
+| `address`      | `string`   | Full address or street description of the incident.                                      |
+| `postal`       | `string`   | Postal code corresponding to the call’s location.                                        |
+| `title`        | `string`   | Short title of the dispatch call (e.g., "Traffic Stop").                                 |
+| `code`         | `string`   | CAD signal or code (e.g., "10-39 - Traffic Stop").                                       |
+| `primary`      | `number`   | Identifier of the primary unit assigned to the call.                                     |
+| `trackPrimary` | `boolean`  | Whether to track the primary unit on the live map.                                       |
+| `description`  | `string`   | Detailed description of the situation.                                                   |
+| `notes`        | `array`    | Array of note objects related to the call. Optional.                                     |
+| `metaData`     | `array`    | Custom key-value metadata for internal tracking or display. Optional.                    |
+| `units`        | `array`    | Array of unit API IDs (e.g., Steam hex IDs) to assign to the call.                       |
+| `cb`           | `function` | Callback function to handle the API response.                                            |
+{% endtab %}
+
+{% tab title="Return" %}
+This function does not return a value directly. The data modification happens asynchronously using API requests.
+{% endtab %}
+
+{% tab title="Example Usage" %}
+```lua
+-- Example: Creating a dispatch call
+createDispatchCall(
+    0,                              -- origin
+    0,                              -- status
+    1,                              -- priority (1 = High)
+    "123",                          -- block number
+    "1234 Elm Street",             -- address
+    "56789",                        -- postal
+    "Structure Fire",              -- title
+    "10-70 - Structure Fire",      -- code
+    456,                            -- primary unit ID
+    true,                           -- trackPrimary
+    "Caller reports flames visible from second floor window.", -- description
+    {},                             -- notes (optional)
+    { severity = "high", buildingType = "residential" },       -- custom metaData
+    { "STEAM:110000112345678" },    -- units (API IDs)
+    function(response)
+        if response.success then
+            print("Dispatch call successfully created.")
+        else
+            print("Failed to create dispatch call:", response.error)
+        end
+    end
+)
+```
+{% endtab %}
+{% endtabs %}
