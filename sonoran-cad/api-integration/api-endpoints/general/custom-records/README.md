@@ -220,6 +220,15 @@ Ex: `record.sections[index].fields[0].data` object would contain agency informat
    "flags": ["Some Flag", "Another Flag"]
 }
 
+// Checkboxes (Custom Section Category 0)
+// Checkboxes options are set in the field.options array
+// Checkboxes selection are set in the field.data.flags array
+// Ex: options: ["Checkbox 1", "Checkbox 2", "Checkbox 3"]
+// Ex: Select #1 & #3 data: { flags: ["Checkbox 1", "Checkbox 3"] }
+{
+   "flags": ["Checkbox 1", "Checkbox 3"]
+}
+
 // Agency (Section Category 2)
 {
    "name": "LSPD", // Agency Name

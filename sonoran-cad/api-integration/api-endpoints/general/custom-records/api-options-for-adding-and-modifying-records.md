@@ -65,6 +65,26 @@ You can easily copy a template field's UID in the admin menu by expanding the se
 }
 ```
 
+### Dictionary for Checkboxes Fields
+
+For the custom `checkboxes` field, the available box options are stored in the `field.options` array and the selection values are stored in the `field.data.flags` array.
+
+<details>
+
+<summary>JSON String - Checkboxes Data</summary>
+
+```json
+// Checkboxes options are set in the field.options array
+// Checkboxes selections are set in the field.data.flags array
+// Ex: options: ["Checkbox 1", "Checkbox 2", "Checkbox 3"]
+// Ex: Select #1 & #3 data: { flags: ["Checkbox 1", "Checkbox 3"] }
+"replaceValues": {
+    "someUidCheckboxesField": "{\"flags\":[\"Checkbox 1\",\"Checkbox 3\"]}"
+}
+```
+
+</details>
+
 ### Dictionary For Non-Custom Sections
 
 For section types like `flags`, `charges`, `speed`, or `link` these objects are stored in a `data` object on the first `field` in the section. These `section` type enums can be found under the [custom record formatting](./#section).
