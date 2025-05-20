@@ -41,7 +41,7 @@ Enter `sonoran info` into your server console.
 
 If the submodule you are having trouble with is listed as DISABLED, you may have forgotten to enable it in the submodule configuration.
 
-![The "enabled" field should be set to "true"](../../../../.gitbook/assets/enable\_config.png)
+![The "enabled" field should be set to "true"](../../../../.gitbook/assets/enable_config.png)
 
 ### 3. Ensure your API ID is set correctly.
 
@@ -61,7 +61,7 @@ The image below shows an API Call being made from the server to Sonoran CAD. Thi
 
 Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
 
-![Debug Mode - Unit Location API Call](../../../../.gitbook/assets/debug\_console.png)
+![Debug Mode - Unit Location API Call](../../../../.gitbook/assets/debug_console.png)
 
 ### 2. Check the Community ID and API Key
 
@@ -81,3 +81,17 @@ Your framework or plugin config is not correctly named `config.json`. Ensure tha
 
 You may need to open the file in a text editor to more easily see the file extension, and ensure that it is correctly named as `config.json`.
 
+### Community Has Been API Blacklisted
+
+The CAD backend will temporarily "blacklist" (deny) all API calls if multiple requests are made with an invalid format.
+
+#### Causes
+
+* Third-party or custom integration scripts may not be utilizing our API correctly. Try disabling them to rule out the issue.
+* A bug with one of our [FiveM submodules](../available-plugins/).
+
+#### Diagnosis
+
+1. Enable debug mode on your FiveM server by entering the server command `sonoran debugmode`. All API calls made will have the full JSON payload printed in your server console.
+2. Wait for your next API blacklist notice. In your server console, you should see multiple failed/errored API calls at the same time as your blacklist. The JSON will show the full, bad data being sent to Sonoran CAD. Based on the `type` of these API calls, you can narrow down the source to a third-party/custom script or one of our FiveM submodules.
+   1. If the bad API calls leading to the blacklist appear to be from an official Sonoran CAD submodule, [reach out to our support team](https://support.sonoransoftware.com/).
