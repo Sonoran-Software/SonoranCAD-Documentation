@@ -66,24 +66,9 @@ Be sure to restart both the Sonoran CAD resource and the nearest-postal script, 
 
 ### Custom Postal Codes File
 
-If you want to use your own custom postal codes file with this plugin, open the config and change `mode` to `file`. Next, copy your custom postal codes file to the postals submodule folder, and set the value of `customPostalCodesFile` to the name of this file.
+If you want to use your own custom postal codes file with this plugin, open the config and change `mode` to `file`.&#x20;
 
-Finally, open the `fxmanifest.lua` file for Sonoran CAD, and change the `files { }` section at the bottom to look like this, replacing `postals_file.json` with the name of your postal file:
-
-```lua
-files {
-'stream/**/*.ytyp',
-'core/client_nui/index.html',
-'core/client_nui/js/*.js',
-'core/client_nui/sounds/*.mp3',
-'core/client_nui/img/logo.gif',
-'submodules/postals/postals_file.json'
-}
-```
-
-{% hint style="danger" %}
-Do not simply replace the `files { }` section with that and be done. It is crucial that you change `postals_file.json` to match the name of your custom postals file!
-{% endhint %}
+Next, copy your custom postal codes file to the `submodules/postals` folder, and set the value of `customPostalCodesFile` to the name of this file. Include the .json file extension in the name.
 
 ### Custom Postal Events
 
