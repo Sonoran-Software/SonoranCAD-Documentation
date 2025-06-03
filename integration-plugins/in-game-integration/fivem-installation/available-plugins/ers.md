@@ -277,3 +277,11 @@ This allows lookups in the CAD to be ran.
 * When a callout is accepted by a unit:
   * A dispatch call is automatically generated.
   * The unit is automatically attached to the CAD dispatch call.
+
+## Limitations
+
+### Database Sync
+
+Database Sync uses the database on your FiveM server, whereas ERS uses the CAD database to create records in the CAD. Thus, when you run a lookup with with DB sync enabled, CAD will query your server's database instead of the CAD database.
+
+For this reason, the ERS integration and DB sync are incompatible. Please only enable one system at a time.
