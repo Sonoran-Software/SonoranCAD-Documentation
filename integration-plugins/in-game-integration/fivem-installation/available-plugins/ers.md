@@ -53,21 +53,6 @@ Open each JSON file and copy/paste the contents into the CAD.
 
 <figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="375"><figcaption><p>SonoranCAD - Import Record</p></figcaption></figure>
 
-### 4. Update night\_ers
-
-The ERS submodules comes with two custom files that must be added to ERS in order for the submodule to function (`s_functions.lua` & `c_functions.lua`)
-
-These files are located in:
-
-* `/sonorancad/submodules/ersintegration/Drag Files To Client`&#x20;
-* `/sonorancad/submodules/ersintegration/Drag Files To Server`
-
-Drag-and-drop these files into `night_ers` in the `client` and `server` folders to overwrite the existing files.
-
-<div><figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption><p>ERS Integration - Server Functions File</p></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>ERS Integration - Client Functions File</p></figcaption></figure></div>
-
-<figure><img src="../../../../.gitbook/assets/image (71).png" alt="" width="375"><figcaption><p>ERS - Client Folder </p></figcaption></figure>
-
 ## Configuration
 
 ERS Integration is highly configurable to allow for custom records and calls. All default configuration will work with the provided CAD records seamlessly. It is only recommended to edit if you are experienced with [custom records](../../../../tutorials/customization/creating-custom-record-and-report-types.md).&#x20;
