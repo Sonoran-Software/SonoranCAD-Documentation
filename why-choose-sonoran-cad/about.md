@@ -20,7 +20,7 @@ Tired of having to manually register civilians? With Sonoran CAD's [Database Syn
 
 <figure><img src="../.gitbook/assets/db2.png" alt=""><figcaption><p>Sonoran CAD - Database Sync</p></figcaption></figure>
 
-### 🎮 In-Game Integration Plugins
+### 🎮 FiveM In-Game Integration Plugins
 
 Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugins** for your game server!
 
@@ -53,19 +53,19 @@ Sonoran CAD also offers vast [geographical location](../tutorials/customization/
 
 <figure><img src="../.gitbook/assets/translation-support.png" alt=""><figcaption><p>Sonoran CAD - Translations</p></figcaption></figure>
 
-### 🎥Live Bodycam Footage In-CAD
+### 🎥FiveM Live Bodycam Footage In-CAD
 
 Sonoran CAD's [bodycam system](../roadmap/v2-legacy/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
 
 <figure><img src="../.gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
 
-### 📍 Hosted and Integrated Live Map
+### 📍 FiveM Live Map
 
 Sonoran CAD's custom[ live map plugin](../roadmap/v2-legacy/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
 <figure><img src="../.gitbook/assets/livemap.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
-### [🛑](https://emojipedia.org/stop-sign/) Smart Signs Integration
+### [🛑](https://emojipedia.org/stop-sign/) FiveM Smart Signs Integration
 
 We've partnered up with London Studios to integrate their Smart Signs script directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
@@ -75,7 +75,7 @@ We've partnered up with London Studios to integrate their Smart Signs script dir
 
 <figure><img src="../.gitbook/assets/smart signs (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
-### 🚔 [ERS Integration](../integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md)
+### 🚔 [FiveM ERS Integration](../integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md)
 
 Does your community play Emergency Response Simulator?
 
@@ -83,7 +83,7 @@ Does your community play Emergency Response Simulator?
 
 <figure><img src="../.gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
 
-### 🚒 Station Alert Integration
+### 🚒 FiveM Station Alert Integration
 
 We've partnered up with Inferno Collection to integrate their Station Alert script directly with Sonoran CAD! Dispatchers can toggle station doors, lights, and text-to-speech messages right from Sonoran CAD!
 
@@ -91,11 +91,17 @@ We've partnered up with Inferno Collection to integrate their Station Alert scri
 
 <figure><img src="../.gitbook/assets/inferno (1).png" alt=""><figcaption><p>Sonoran CAD x Inferno Collection</p></figcaption></figure>
 
-### [💻](https://emojipedia.org/laptop/) In-Game Mini CAD
+### [💻](https://emojipedia.org/laptop/) FiveM Mini CAD
 
 Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](../roadmap/v2-legacy/available-plugins/tablet.md)!
 
 <figure><img src="../.gitbook/assets/mini-cad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
+
+### 📞 FiveM Local Callers
+
+Nearby civilian witnesses will place an emergency call during car jackings, weapon brandishing, death, and more. Stop or cut their information short by killing them in time!
+
+<figure><img src="../.gitbook/assets/cad_local_callers.png" alt=""><figcaption><p>Sonoran CAD - Local Callers</p></figcaption></figure>
 
 ### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
