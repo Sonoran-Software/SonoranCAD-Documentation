@@ -23,12 +23,6 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## Installation Guide
 
-{% hint style="danger" %}
-**This submodule is not yet released.**
-
-Expected release date: EOD June 12th, 2025.
-{% endhint %}
-
 ### 1. Download and Install the Core
 
 If you haven't already, be sure to install and configure the [SonoranCAD Core](../) first.
@@ -43,4 +37,12 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 
 ### 4. Usage
 
-Utilization is easy, simply go near an AI ped while commiting one of the configured offenses and you should see them begin to run towards you, pull out their phone and begin to call 911. If you kill this AI before the configured timer is up, only a partial call will be put through. This is useful to help prevent police from getting a full description of you.&#x20;
+#### Emergency Calls
+
+When near an AI "local/ped" in-game, they will automatically pull out their phone and begin to place an emergency call if you are spotted committing one of the configured crimes.
+
+#### Emergency Call Information
+
+While the local caller is placing the emergency call, killing them before the configured timer expires will only send a partial report—making it harder for police to get a full description of you.
+
+Descriptions from the caller are based on clothing items. These can be configured and improved in the `clothingConfig` for custom items.
