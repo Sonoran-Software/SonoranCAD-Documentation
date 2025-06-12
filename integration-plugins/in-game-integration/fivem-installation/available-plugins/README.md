@@ -24,8 +24,8 @@ Each submodule can be [easily enabled and configured](../submodule-configuration
 | [FivePD](fivepd.md)                                                                                       | No       | Yes     | Yes |
 | [ForceReg](forcereg.md)                                                                                   | Yes      | Yes     | Yes |
 | [Kick](kick.md)                                                                                           | Yes      | Yes     | Yes |
-| [Local Callers](locations.md)                                                                             | Yes      | Yes     | Yes |
-| [Locations](locations-1.md)                                                                               | Yes      | Yes     | Yes |
+| [Local Callers](local-callers.md)                                                                         | Yes      | Yes     | Yes |
+| [Locations](locations.md)                                                                                 | Yes      | Yes     | Yes |
 | [Live Map](live-map.md)                                                                                   | No       | Yes     | Yes |
 | [Lookups](../../../../roadmap/v2-legacy/available-plugins/lookups.md)                                     | No       | Yes     | Yes |
 | [Postals](postals.md)                                                                                     | Yes      | Yes     | Yes |

@@ -32,7 +32,7 @@ If you haven't already, be sure to install and configure the [SonoranCAD Core](.
 
 ### 2. Activate Locations
 
-The [locations submodule](locations-1.md) includes all logic required to send bodycam images to the CAD.
+The [locations submodule](locations.md) includes all logic required to send bodycam images to the CAD.
 
 ### 3. Adjust the Core Configuration
 

@@ -97,7 +97,7 @@ Easily view and attach to calls, talk to other officers, and more all from the [
 
 <figure><img src="../.gitbook/assets/mini-cad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
 
-### 📞 FiveM Local Callers
+### 📞 [FiveM Local Callers](../integration-plugins/in-game-integration/fivem-installation/available-plugins/local-callers.md)
 
 Nearby civilian witnesses will place an emergency call during car jackings, weapon brandishing, death, and more. Stop or cut their information short by killing them in time!
 

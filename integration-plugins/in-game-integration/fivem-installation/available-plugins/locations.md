@@ -1,11 +1,8 @@
 ---
-description: >-
-  Nearby witnesses will send an emergency call during car jackings, weapons
-  being brandished, and more! Stop or cut their descriptions short by killing
-  them in time!
+description: Sends locations of all online players to the CAD.
 ---
 
-# Local Callers
+# Locations
 
 {% hint style="warning" %}
 This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
@@ -15,11 +12,11 @@ This submodule utilizes API endpoints that require the **standard** version of S
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/cad_local_callers.png" alt=""><figcaption></figcaption></figure>
+## Activation Video
 
-## Promo Video
+Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-Coming soon!
+**Be sure you have already installed our** [**core framework**](../)**!**
 
 ## Installation Guide
 
@@ -31,6 +28,27 @@ If you haven't already, be sure to install and configure the [SonoranCAD Core](.
 
 Follow the [submodule activation guide](../submodule-configuration/#activating-a-submodule) for the required submodules.
 
-### 3. Something
+### 3. Set Your API ID
 
-Todo!
+Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+
+## Further Configuration
+
+| Option       | Description                                                                    | Default Value       |
+| ------------ | ------------------------------------------------------------------------------ | ------------------- |
+| checkTime    | How frequently to send location updates to the server.                         | 5000 ms (5 seconds) |
+| prefixPostal | Prefixes postal to locations (like \[111] Some Road). Requires Postals plugin. | True                |
+
+## Usage
+
+### Automated Functionality
+
+This plugin requires no configuration by default and will send locations of all active players. This can be seen by dispatch or other panels.
+
+### Function
+
+This function can **only** be used by other plugins and is not exported.
+
+```lua
+function findPlayerLocation(source) -- returns location as a string
+```
