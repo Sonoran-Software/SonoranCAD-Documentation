@@ -56,3 +56,7 @@ By default, this keybind is blank.
       description = description of call
       source = playerId
 ```
+
+### Call Location
+
+By default, calls responded to via the `/rcall` command located in [Dispatch Notify](dispatch-notify.md) will attempt to be routed to the callers current location, rather than the location of the call. If you would like calls to route to the location of the original call, please set `useCallLocation` to `true`
