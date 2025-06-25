@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Sonoran CAD](README.md)
-* [📱Download The App](downloads/README.md)
+* [📱Download The App Test!](downloads/README.md)
   * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
