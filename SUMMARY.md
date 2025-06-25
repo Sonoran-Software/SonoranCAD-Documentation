@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🏆 Why Choose Sonoran CAD?](README.md)
+* [🏆 Why Sonoran CAD?](README.md)
 * [📱Download The App](downloads/README.md)
   * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
