@@ -4,7 +4,7 @@ description: >-
   available to gaming communities. Check out some of our latest features below!
 ---
 
-# 🏆 Why Choose Sonoran CAD?
+# 🏆 Why Sonoran CAD?
 
 ## What is Sonoran CAD?
 
@@ -145,7 +145,7 @@ Enforce security in your TeamSpeak 3 channels by requiring them to be signed int
 
 ### 🔢 [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
 
-Check out our official [Stream Deck profiles](integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](downloads/), these actions can be done even while the app is minimized.
+Check out our official [Stream Deck profiles](integration-plugins/stream-deck-integration.md) to change your unit status, panic, open a lookup, and more from a physical button. Along with the [Sonoran CAD desktop application](download/), these actions can be done even while the app is minimized.
 
 <figure><img src=".gitbook/assets/sdeck.png" alt=""><figcaption><p>Sonoran CAD - Stream Deck Profile</p></figcaption></figure>
 
@@ -198,7 +198,7 @@ Sonoran CAD allows you to upload a [custom spreadsheet with your game's street n
 
 ### ⌨️ Global Hotkeys
 
-Only Sonoran CAD allows you to configure customizable [hotkeys](tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](downloads/), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
+Only Sonoran CAD allows you to configure customizable [hotkeys](tutorials/other-features/configurable-hotkeys.md) for quick actions in the CAD. With our [Desktop application](download/), hotkeys are even registered globally and do not require the application to be visible or in-focus to trigger commands.
 
 ![Sonoran CAD's global hotkey configuration!](<.gitbook/assets/image (342).png>)
 

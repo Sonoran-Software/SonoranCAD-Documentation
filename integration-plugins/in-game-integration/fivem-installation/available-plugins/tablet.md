@@ -84,8 +84,8 @@ The in-game tablet utilizes an iFrame. Because Apple and Discord have disabled t
 
 #### 1. Utilize the official Desktop App Overlay system
 
-{% content-ref url="../../../../downloads/steam-browser-workaround.md" %}
-[steam-browser-workaround.md](../../../../downloads/steam-browser-workaround.md)
+{% content-ref url="../../../../download/steam-browser-workaround.md" %}
+[steam-browser-workaround.md](../../../../download/steam-browser-workaround.md)
 {% endcontent-ref %}
 
 #### 2. Link your Discord/Apple created account to a Sonoran login email/password.

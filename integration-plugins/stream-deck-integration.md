@@ -10,7 +10,7 @@ description: >-
 
 ## Introduction
 
-Our [desktop application](../downloads/) allows for global hotkey access to change your status, panic, open a new lookup, record center, and more **even when the app is minimized.**
+Our [desktop application](../download/) allows for global hotkey access to change your status, panic, open a new lookup, record center, and more **even when the app is minimized.**
 
 For users with a [Stream Deck](https://www.elgato.com/en/stream-deck), you can utilize these functions for quick access while in-game.
 
@@ -51,7 +51,7 @@ Simply click on the icon, click the `Hotkey` field, and change the key.
 
 ### Launch Application Hotkey
 
-You can edit the Sonoran CAD launch key to automatically launch the [Sonoran CAD desktop app](../downloads/).
+You can edit the Sonoran CAD launch key to automatically launch the [Sonoran CAD desktop app](../download/).
 
 #### 1. Edit the Icon Path
 
@@ -79,7 +79,7 @@ You can now press the Sonoran CAD icon on your Stream Deck to launch the desktop
 
 ### Auto-Launch Profile
 
-Your Stream Deck can automatically launch the Sonoran CAD profile when you open the [Sonoran CAD Desktop application](../downloads/).
+Your Stream Deck can automatically launch the Sonoran CAD profile when you open the [Sonoran CAD Desktop application](../download/).
 
 #### 1. Open the profile settings:
 

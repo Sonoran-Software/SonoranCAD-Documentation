@@ -1,12 +1,12 @@
 # Table of contents
 
 * [🏆 Why Sonoran CAD?](README.md)
-* [📱Download The App](downloads/README.md)
-  * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
-  * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
-  * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
-  * [GTA RP Tablet - Clear Cache](downloads/fivem-clear-cache.md)
-  * [Steam Browser - Clear Cache](downloads/steam-browser-clear-cache.md)
+* [📱Download The App](download/README.md)
+  * [Steam Browser - Workaround](download/steam-browser-workaround.md)
+  * [Web Browser - Clear Cache](download/web-browser-clear-cache.md)
+  * [Desktop App - Clear Cache](download/desktop-app-clear-cache.md)
+  * [GTA RP Tablet - Clear Cache](download/fivem-clear-cache.md)
+  * [Steam Browser - Clear Cache](download/steam-browser-clear-cache.md)
 
 ## Tutorials
 

@@ -27,7 +27,7 @@ However, you can still create [custom overlay text](twitch-overlay-and-bot.md#cu
 Learn more about the [full version of Sonoran CAD's stream overlay](twitch-overlay-and-bot.md#purchasing-the-overlay)!
 
 The bodycam creates local text files and hosts a local webserver.\
-**This requires the** [**desktop** ](../downloads/)**application to run.**
+**This requires the** [**desktop** ](../download/)**application to run.**
 {% endhint %}
 
 The stream overlay also includes a customizable version of the popular [XION Chase Cam asset](https://github.com/zhivotnoya/XION-ChaseCam).
@@ -36,7 +36,7 @@ This allows you to customize a bodycam overlay on your stream, with your real-ti
 
 ### 1. Set a File Directory
 
-**First, ensure you are using the** [**desktop** ](../downloads/)**version of Sonoran CAD.** The application has to generate physical files, and host a local webserver to work. This can not be done in a browser.
+**First, ensure you are using the** [**desktop** ](../download/)**version of Sonoran CAD.** The application has to generate physical files, and host a local webserver to work. This can not be done in a browser.
 
 In the stream overlay, open the txt file directory viewer and select a folder for the text files and bodycam webpage to be generated:
 
@@ -95,7 +95,7 @@ The smart lighting integration is **not included with the free version** of the 
 [Learn more about the full version of Sonoran CAD's stream overlay.](twitch-overlay-and-bot.md#purchasing-the-overlay)\
 \
 The smart lighting integration creates local text files and hosts a local webserver.\
-**This requires the** [**desktop** ](../downloads/)**application to run.**
+**This requires the** [**desktop** ](../download/)**application to run.**
 {% endhint %}
 
 
@@ -295,7 +295,7 @@ The overlay configuration modal can be opened by navigating to `Start Menu` > `S
 
 ### 2. Configuring Text File Location
 
-While the Twitch bot can run in a browser instance of Sonoran CAD, the [desktop application](../downloads/) **is required**, to generate unit/call data txt files.
+While the Twitch bot can run in a browser instance of Sonoran CAD, the [desktop application](../download/) **is required**, to generate unit/call data txt files.
 
 In the stream overlay, open the txt file directory viewer and select a folder for the text files to be generated:
 
