@@ -269,7 +269,7 @@
 ## Pricing
 
 * [Pricing FAQ](pricing/faq/README.md)
-  * [Military and First Responder Discount](pricing/faq/military-and-first-responder-discount.md)
+  * [Military and First Responder Discount](https://docs.sonoransoftware.com/first-responder-discount)
   * [Expert Installation](pricing/faq/expert-installation.md)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
   * [Create and Manage a Subscription](pricing/faq/create-and-manage-a-subscription.md)
