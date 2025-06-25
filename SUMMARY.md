@@ -1,16 +1,12 @@
 # Table of contents
 
-* [Sonoran CAD](README.md)
+* [🏆 Why Choose Sonoran CAD?](README.md)
 * [📱Download The App](downloads/README.md)
   * [Steam Browser - Workaround](downloads/steam-browser-workaround.md)
   * [Web Browser - Clear Cache](downloads/web-browser-clear-cache.md)
   * [Desktop App - Clear Cache](downloads/desktop-app-clear-cache.md)
   * [GTA RP Tablet - Clear Cache](downloads/fivem-clear-cache.md)
   * [Steam Browser - Clear Cache](downloads/steam-browser-clear-cache.md)
-
-## Why Choose Sonoran CAD?
-
-* [🏆 Why Choose Sonoran CAD?](why-choose-sonoran-cad/about.md)
 
 ## Tutorials
 

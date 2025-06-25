@@ -15,6 +15,6 @@ During the time period of November 30th, 2023 and January 3rd, 2024, all existin
 
 While this offer is no longer available, we look forward to serving you on Sonoran CAD. Our [support team](https://support.sonoransoftware.com) is happy to assist you with any questions, comments, or concerns.
 
-{% content-ref url="../../why-choose-sonoran-cad/about.md" %}
-[about.md](../../why-choose-sonoran-cad/about.md)
+{% content-ref url="../../" %}
+[..](../../)
 {% endcontent-ref %}
