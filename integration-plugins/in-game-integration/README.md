@@ -8,7 +8,7 @@ description: >-
 # 🎮 FiveM
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/ingameinte-2.png" alt=""><figcaption></figcaption></figure>
@@ -45,6 +45,6 @@ Looking to write your own submodules for Sonoran CAD? Learn more about writing y
 [framework-development-documentation](framework-development-documentation/)
 {% endcontent-ref %}
 
-{% content-ref url="../../sonoran-cad/api-integration/" %}
-[api-integration](../../sonoran-cad/api-integration/)
+{% content-ref url="../../api-integration/" %}
+[api-integration](../../api-integration/)
 {% endcontent-ref %}

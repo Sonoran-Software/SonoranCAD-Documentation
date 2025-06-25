@@ -11,7 +11,7 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 This simple plugin exposes a check to see if an API ID exists. This is useful if you want to inform players they need to create an account on the CAD.
@@ -24,7 +24,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_apicheck/releases)to download the API ID plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_apicheck/releases)to download the API ID plugin .zip file.
 
 ### 3. Install the Plugin
 
@@ -32,9 +32,9 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ## Configuration
 
-| Config Option | Description                                                                                                                                                                      |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| forceSetApiId | Enable the [tablet resource](tablet.md) to automatically set the user's [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md)s when they log in. |
+| Config Option | Description                                                                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| forceSetApiId | Enable the [tablet resource](tablet.md) to automatically set the user's [API ID](../../../api-integration/getting-started/setting-your-api-id.md)s when they log in. |
 
 ## Usage
 

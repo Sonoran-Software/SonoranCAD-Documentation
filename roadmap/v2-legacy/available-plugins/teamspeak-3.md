@@ -12,7 +12,7 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation Guide
@@ -23,7 +23,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_ts3integration/releases/tag/latest)to download the TS3 integration plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_ts3integration/releases/tag/latest)to download the TS3 integration plugin .zip file.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -55,7 +55,7 @@ This is found in TS under Tools > Identities > Default > Unique ID
 
 ### 6. Add your TS3 ID as an API ID
 
-Paste in this TS3 unique ID as a [new API ID in the CAD](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+Paste in this TS3 unique ID as a [new API ID in the CAD](../../../api-integration/getting-started/setting-your-api-id.md).
 
 {% hint style="warning" %}
 Every member of your community will need to add their unique ID to their CAD account in your community.

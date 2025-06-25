@@ -9,7 +9,7 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation
@@ -22,7 +22,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 1. Click [HERE](https://github.com/Sonoran-Software/vehreg/releases/tag/latest) to download the VehReg plugin .zip file.
 2. Download and install the [apicheck ](api-id-checker.md)plugin.
-3. Download and install the[ locations](https://github.com/Sonoran-Software/sonoran\_locations/releases) plugin.
+3. Download and install the[ locations](https://github.com/Sonoran-Software/sonoran_locations/releases) plugin.
 
 ### 3. Install the Plugin and all Dependencies
 

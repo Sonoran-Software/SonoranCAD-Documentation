@@ -45,9 +45,9 @@ Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~
 
 ### 🌎 Full Translation and Locality Support
 
-Only Sonoran CAD supports full [i18n localization](../sonoran-cad/translation-support.md). Regardless of your community's native language, Sonoran CAD supports it!\
+Only Sonoran CAD supports full [i18n localization](../translation-support.md). Regardless of your community's native language, Sonoran CAD supports it!\
 \
-Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](../sonoran-cad/translation-support.md).
+Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](../translation-support.md).
 
 Sonoran CAD also offers vast [geographical location](../tutorials/customization/geographical-settings.md) support for non-American communities.
 
@@ -141,11 +141,11 @@ Check out our official [Stream Deck profiles](../integration-plugins/stream-deck
 
 ### 📖 API Integration
 
-In addition to over a dozen drag-and-drop integration [plugins](../roadmap/v2-legacy/), you can write your own integration plugins using our [API documentation](../sonoran-cad/api-integration/).
+In addition to over a dozen drag-and-drop integration [plugins](../roadmap/v2-legacy/), you can write your own integration plugins using our [API documentation](../api-integration/).
 
-We've complied extensive documentation for over two-dozen API endpoints and server [push events](../sonoran-cad/api-integration/push-events/)!
+We've complied extensive documentation for over two-dozen API endpoints and server [push events](../api-integration/push-events/)!
 
-Easily integrate external scripts with our [LUA and JS export examples](../sonoran-cad/api-integration/api-examples/)!
+Easily integrate external scripts with our [LUA and JS export examples](../api-integration/api-examples/)!
 
 <figure><img src="../.gitbook/assets/API-Integration.png" alt=""><figcaption><p>Sonoran CAD - API Integration</p></figcaption></figure>
 

@@ -9,11 +9,11 @@ All Sonoran CAD integration plugins require the **standard** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!\
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!\
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../../.gitbook/assets/Banner_3.png)
 
 ## Installation Video
 
@@ -29,13 +29,13 @@ This example uses the postals plugin.
 
 Download the plugin from its repository. These are found under its plugin page, like [here](../available-plugins/postals.md) for the postals plugin.
 
-![](../../../.gitbook/assets/plugin\_1.png)
+![](../../../.gitbook/assets/plugin_1.png)
 
 ### 2. Extract
 
 Extract the plugins to your `sonorancad\plugins` folder.
 
-![](../../../.gitbook/assets/plugin\_2.png)
+![](../../../.gitbook/assets/plugin_2.png)
 
 ### 3. Configure and Enable the Config
 
@@ -46,7 +46,7 @@ Extract the plugins to your `sonorancad\plugins` folder.
 
 2\. **Rename** and remove the `CHANGEME` from the file to`config_postals.lua` (depending on name of plugin).
 
-![This is how your folder should look now.](../../../.gitbook/assets/plugin\_3.png)
+![This is how your folder should look now.](../../../.gitbook/assets/plugin_3.png)
 
 ### 4. Restart Sonoran CAD
 

@@ -11,7 +11,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Activation Video
@@ -51,7 +51,7 @@ This line in your `config.cfg` file will allow everyone to access the command. W
 
 ### 5. Set Your API ID
 
-Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ## Usage
 

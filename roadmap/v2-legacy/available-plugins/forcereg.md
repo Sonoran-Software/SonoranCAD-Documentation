@@ -9,7 +9,7 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation
@@ -20,9 +20,9 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_forcereg) to download the ForceReg plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_forcereg) to download the ForceReg plugin .zip file.
 2. Download and install the [apicheck ](api-id-checker.md)plugin.
-3. Download and install the[ locations](https://github.com/Sonoran-Software/sonoran\_locations/releases) plugin.
+3. Download and install the[ locations](https://github.com/Sonoran-Software/sonoran_locations/releases) plugin.
 
 ### 3. Install the Plugin and all Dependencies
 
@@ -30,7 +30,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 4. Set Your API ID
 
-Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ### 5. (OPTIONAL) Utilize the Tablet's Auto API ID
 

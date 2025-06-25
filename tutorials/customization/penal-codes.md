@@ -113,7 +113,7 @@ Our Google sheet includes specific error checking and validation to handle commo
 
 ## Import from JSON
 
-You can also build and format your penal codes directly into JSON. These JSON formatted penal codes can be sent via our [API endpoint](../../sonoran-cad/api-integration/api-endpoints/general/set-penal-codes.md), or pasted directly into the UI for a more user-friendly experience.
+You can also build and format your penal codes directly into JSON. These JSON formatted penal codes can be sent via our [API endpoint](../../api-integration/api-endpoints/general/set-penal-codes.md), or pasted directly into the UI for a more user-friendly experience.
 
 ### 1. Format the JSON Structure
 

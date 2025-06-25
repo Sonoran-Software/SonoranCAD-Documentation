@@ -24,7 +24,7 @@ Here, you can enable and select a default map option for GTA, Roblox, or others.
 
 ### 2. Set Your API ID
 
-Don't forget to have each community member set their account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
+Don't forget to have each community member set their account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
 
 ### 3. User Access Permission
 
@@ -38,7 +38,7 @@ This is found in the task bar's start menu under `Unit Management` > `Live Map`\
 You can also [pin the live map button to your taskbar](../../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
 {% hint style="info" %}
-The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) set.
 {% endhint %}
 
 ![Sonoran CAD: Live Map Button](<../../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)

@@ -45,7 +45,7 @@ If the submodule you are having trouble with is listed as DISABLED, you may have
 
 ### 3. Ensure your API ID is set correctly.
 
-Ensure you have set your [API ID in the CAD](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) using the value from the [API ID submodule](../available-plugins/api-id-checker.md).
+Ensure you have set your [API ID in the CAD](../../../../api-integration/getting-started/setting-your-api-id.md) using the value from the [API ID submodule](../available-plugins/api-id-checker.md).
 
 ## Debug Mode
 
@@ -59,13 +59,13 @@ For plugins that require your individual CAD user account to have the API ID set
 
 The image below shows an API Call being made from the server to Sonoran CAD. This API call is type `UNIT_LOCATION` and includes all the data necessary.
 
-Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's user account](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+Ensure the `APIID` listed in the API call matches the [API ID set in your CAD's user account](../../../../api-integration/getting-started/setting-your-api-id.md).
 
 ![Debug Mode - Unit Location API Call](../../../../.gitbook/assets/debug_console.png)
 
 ### 2. Check the Community ID and API Key
 
-Your community ID and API key is also listed in the debug API call information. Be sure that the [community ID and API key](../../../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) are correct.
+Your community ID and API key is also listed in the debug API call information. Be sure that the [community ID and API key](../../../../api-integration/getting-started/retrieving-your-credentials.md) are correct.
 
 ## Still Having Trouble?
 

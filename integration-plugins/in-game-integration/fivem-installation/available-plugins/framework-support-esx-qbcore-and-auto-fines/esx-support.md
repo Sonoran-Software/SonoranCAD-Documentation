@@ -22,7 +22,7 @@ ESX v2 is not supported by this submodule and will not function. Only ESX v1 is 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Activation Guide
@@ -45,7 +45,7 @@ Be sure to have your game server IP and port set in the admin panel under `Advan
 
 ### 4. Set Your API ID
 
-Don't forget to set your account [API ID](../../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ### 5. Configuration
 

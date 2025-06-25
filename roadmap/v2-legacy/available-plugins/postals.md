@@ -11,7 +11,7 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation Video
@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_postals/releases)to download the postals plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_postals/releases)to download the postals plugin .zip file.
 2. Download and install the [locations ](locations.md)plugin.
 
 ### 3. Install the Plugin and Dependencies

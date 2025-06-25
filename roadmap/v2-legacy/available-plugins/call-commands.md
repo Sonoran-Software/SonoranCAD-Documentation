@@ -9,7 +9,7 @@ This plugin utilizes API endpoints that require the **standard** version of Sono
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation Video
@@ -26,7 +26,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE ](https://github.com/Sonoran-Software/sonoran\_callcommands/releases)to download the call commands plugin .zip file.
+1. Click [HERE ](https://github.com/Sonoran-Software/sonoran_callcommands/releases)to download the call commands plugin .zip file.
 2. Download and install the[ locations ](locations.md)plugin.
 3. (Optional) Download and install the[ postal ](postals.md)plugin.
 

@@ -11,7 +11,7 @@ This plugin utilizes API endpoints that require the **plus** version of SonoranC
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation Video
@@ -28,7 +28,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and all Dependencies
 
-1. Click [HERE](https://github.com/Sonoran-Software/sonoran\_trafficstop/releases) to download the traffic stop plugin .zip file.
+1. Click [HERE](https://github.com/Sonoran-Software/sonoran_trafficstop/releases) to download the traffic stop plugin .zip file.
 2. Download and install the [locations ](locations.md)plugin.
 3. (Optional) Download and install the [postals](postals.md) plugin.
 
@@ -59,7 +59,7 @@ This line in your `config.cfg` file will allow everyone to access the command. W
 
 ### **6**. Set Your API ID
 
-Don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ## Usage
 

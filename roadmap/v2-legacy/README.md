@@ -10,7 +10,7 @@ noIndex: true
 # v2.X.X - Legacy
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/ingameinte-2.png" alt=""><figcaption></figcaption></figure>
@@ -45,7 +45,7 @@ View our vast array of our integration plugins, ready for drag-and-drop installa
 
 Looking to write your own plugins for Sonoran CAD? Learn more about writing your own integration plugins and accessing our API documentation.
 
-{% content-ref url="../../sonoran-cad/api-integration/" %}
-[api-integration](../../sonoran-cad/api-integration/)
+{% content-ref url="../../api-integration/" %}
+[api-integration](../../api-integration/)
 {% endcontent-ref %}
 

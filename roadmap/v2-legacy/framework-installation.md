@@ -9,11 +9,11 @@ description: >-
 ll Sonoran CAD integration plugins require the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!\
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!\
 Sonoran Servers customers receive **free plugin installation** and **30% off** their monthly CAD subscription!
 {% endhint %}
 
-![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/Banner\_3.png)
+![Sonoran Servers - Discount and Free Plugin Installation](../../.gitbook/assets/Banner_3.png)
 
 ## Installation Video
 
@@ -75,7 +75,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | Option                    | Description                                                                                                                                                                                                                                                                                            |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | communityID               | Your SonoranCAD [Community ID](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md).                                                                                                                                                                                  |
-| apiKey                    | [API Key](../../sonoran-cad/api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings.                                                                                                                                                                    |
+| apiKey                    | [API Key](../../api-integration/getting-started/retrieving-your-credentials.md) from your In-Game Integration settings.                                                                                                                                                                                |
 | postTime                  | <p>Update locations every x ms. Default 5000.<br>It is recommend to not set this lower than 5000 ms due to rate limiting.</p>                                                                                                                                                                          |
 | serverId                  | If using [multiple servers](../../tutorials/customization/configuring-multiple-servers.md) in Sonoran CAD, specify the ID here.                                                                                                                                                                        |
 | primaryIdentifier         | <p>The identifier type your community uses in the CAD to enter their API IDs.<br>Valid values are: <code>license</code>, <code>steam</code>, or <code>discord.</code></p>                                                                                                                              |
@@ -89,7 +89,7 @@ Open `sonorancad\config.CHANGEME.json`, update the values, then save it as `conf
 | noUnitTimer               | When set to `true`, the CAD will not check every minute for a current unit list. Should only be enabled for troubleshooting issues with the unit cache.                                                                                                                                                |
 | enableCanary              | When enabled, allows the CAD to update to beta (aka canary) releases.                                                                                                                                                                                                                                  |
 | enablePushEventForwarding | <p>Enables push event forwarding to the specific URL defined in the next option.<br><br><mark style="color:red;"><strong>NOTE: DO NOT ENABLE IF YOU DO NOT KNOW WHAT YOU ARE DOING (Used for custom development only!)</strong></mark></p>                                                             |
-| pushEventForwardUrl       | <p><a href="../../sonoran-cad/api-integration/push-events/#webserver-example">Web server</a> URL to forward push events to.<br><br><mark style="color:red;"><strong>NOTE: DO NOT ENABLE IF YOU DO NOT KNOW WHAT YOU ARE DOING (Used for custom development only!)</strong></mark></p>                  |
+| pushEventForwardUrl       | <p><a href="../../api-integration/push-events/#webserver-example">Web server</a> URL to forward push events to.<br><br><mark style="color:red;"><strong>NOTE: DO NOT ENABLE IF YOU DO NOT KNOW WHAT YOU ARE DOING (Used for custom development only!)</strong></mark></p>                              |
 | forceSetApiId             | When enabled, the tablet resource will show an alert message stating they must set their API ID.                                                                                                                                                                                                       |
 | disableOverride           | <p>By default, the framework will try and automatically correct your <a href="../../tutorials/customization/configuring-multiple-servers.md">server's IP, port, and outgoing IP address</a> if it detects something different.<br><br>Set this to <code>true</code> to disable this functionality.</p> |
 

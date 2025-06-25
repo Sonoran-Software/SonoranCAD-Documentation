@@ -7,21 +7,21 @@ description: >-
 # API Examples
 
 {% hint style="warning" %}
-### Call examples will be using the [Sonoran CAD Framework](../../../roadmap/v2-legacy/framework-installation.md)
+### Call examples will be using the [Sonoran CAD Framework](../../roadmap/v2-legacy/framework-installation.md)
 {% endhint %}
 
 {% hint style="info" %}
 API endpoints are not enabled with the free version of Sonoran CAD.\
-For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
+For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Framework Use
 
-The [Sonoran CAD plugin framework](../../../roadmap/v2-legacy/framework-installation.md) handles common errors, rate limiting, auto-updating, etc.&#x20;
+The [Sonoran CAD plugin framework](../../roadmap/v2-legacy/framework-installation.md) handles common errors, rate limiting, auto-updating, etc.&#x20;
 
 When integrating external scripts with Sonoran CAD, the best practice is utilizing the CAD framework exports. By using the framework exports users will not have to add or configure their community ID and API key a second time, the framework will ensure proper rate limits, etc.
 

@@ -13,7 +13,7 @@ This submodule is currently only used as a dependency for other submodules , and
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 This submodule Implements name and plate lookups via the CAD.
@@ -34,7 +34,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 
 ### 3. Set Your API ID
 
-Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ## Configuration
 

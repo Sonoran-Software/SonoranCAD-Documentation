@@ -12,7 +12,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Activation Guide
@@ -51,7 +51,7 @@ This is found in TS under Tools > Identities > Default > Unique ID
 
 ### 5. Add your TS3 ID as an API ID
 
-Paste in this TS3 unique ID as a [new API ID in the CAD](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+Paste in this TS3 unique ID as a [new API ID in the CAD](../../../../api-integration/getting-started/setting-your-api-id.md).
 
 {% hint style="warning" %}
 Every member of your community will need to add their unique ID to their CAD account in your community.

@@ -13,7 +13,7 @@ This plugin utilizes API endpoints that require the **plus** version of Sonoran 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Installation Guide
@@ -34,7 +34,7 @@ The [postals ](postals.md)plugin\* allows you to automatically search the live m
 
 \* Postal Search feature requires a **Pro** subscription
 
-#### &#x20;Install the Smart Signs Plugin
+#### Install the Smart Signs Plugin
 
 The [smart signs plugin](smart-signs.md) (Optional, for **Pro** communities only) allows you to change in-game smart signs right from the live map. This is an optional install feature.
 
@@ -48,13 +48,11 @@ In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Eve
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map).
 
-
-
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-08 at 3.11.55 PM.png" alt=""><figcaption><p>Sonoran CAD - Live Map Type Selection</p></figcaption></figure>
 
 ### 4. Set Your API ID
 
-Don't forget to have each community member set their account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
+Don't forget to have each community member set their account [API ID](../../../api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
 
 ### 5. User Access Permission
 
@@ -68,7 +66,7 @@ This is found in the task bar's start menu under `Unit Management` > `Live Map`\
 You can also [pin the live map button to your taskbar](../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
 {% hint style="info" %}
-The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../api-integration/getting-started/setting-your-api-id.md) set.
 {% endhint %}
 
 ![Sonoran CAD: Live Map Button](<../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
@@ -175,7 +173,7 @@ Extract the images from the YTD files with a program like OpenIV.\
 `minimap_sea_2_0.png`\
 `minimap_sea_2_1.png`
 
-**Roxwood Expansion**
+**Roxwood Expansion**\
 If your community is utilizing the Roxwood map expansion, there will be an extra tile to upload. Ensure this tile is named `minimap_sea_-1_0.png`.
 
 ![OpenIV - Extract Images](<../../../.gitbook/assets/image (131).png>)

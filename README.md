@@ -7,7 +7,7 @@ description: >-
 # Sonoran CAD
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 <figure><img src=".gitbook/assets/cad-fina.png" alt=""><figcaption></figcaption></figure>
@@ -30,8 +30,8 @@ Check out our advanced integration features, custom plugin system, downloadable 
 
 * [Website](https://sonorancad.com/)
 * [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456)
-* [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en\_US)
-* [Windows Desktop](https://github.com/SonoranBrian/sc2\_quasar/releases/latest/download/Sonoran-CAD-Setup.exe)
+* [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en_US)
+* [Windows Desktop](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe)
 
 ### How do I get started?
 

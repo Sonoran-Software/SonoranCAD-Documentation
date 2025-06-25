@@ -11,7 +11,7 @@ description: >-
 In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.\
 
 
-_Do not edit this JSON formatting unless you are highly familiar with the_ [_proper formatting_](../../sonoran-cad/api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
+_Do not edit this JSON formatting unless you are highly familiar with the_ [_proper formatting_](../../api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
 
 ![Sonoran CAD - Download Custom Record Format](<../../.gitbook/assets/image (242).png>)
 

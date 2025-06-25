@@ -8,7 +8,7 @@ description: >-
 # Tablet & Mini-CAD
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/minicad.png" alt=""><figcaption><p>Sonoran CAD - Mini-CAD</p></figcaption></figure>
@@ -56,7 +56,7 @@ Fill in with your actual URL above with the comid you want.
 This plugin utilizes API endpoints that require the **Plus** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
-* Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) set.
+* Use the `/minicad` command in-game to display your Mini-CAD. You must be logged into the Police or Fire CAD, and need to have your [API ID](../../../api-integration/getting-started/setting-your-api-id.md) set.
 * While open, use `/showcad` to focus the minicad and allow the elements to be clickable, such as the Attach button.
 * You can close or move the Mini-CAD by opening the tablet, and interacting with the Mini-CAD window.
 * (Experimental) Use the `/minicadsize <width> <height>` command to resize the Mini-CAD to best fit your screen. This size persists on reload of the client.
@@ -70,7 +70,7 @@ This plugin utilizes API endpoints that require the **Plus** version of Sonoran 
 
 ### 6. Auto API ID
 
-When a user signs into the CAD using the in-game tablet, their[ API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.
+When a user signs into the CAD using the in-game tablet, their[ API ID](../../../api-integration/getting-started/setting-your-api-id.md) can be automatically be set in the CAD.
 
 To enable this, open the [check API plugin](api-id-checker.md)'s config and set `forceSetApiId` to `true`.
 

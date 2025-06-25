@@ -12,7 +12,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain! In addition, user signups and password recovery emails have your [custom branding](custom-emails.md). Logging in also takes you directly to the community, instead of having to select the community at the menu.
@@ -66,7 +66,7 @@ This should not contain any `https://` or other extensions.
 Don't forget to press save!\
 Users can now visit this custom domain to view the CAD with a custom login page, including receiving your [branded emails](custom-emails.md) for signups and password recovery messages.
 
-![Sonoran CAD - Custom Login URL](../../.gitbook/assets/CAD\_CustomLoginUrl.png)
+![Sonoran CAD - Custom Login URL](../../.gitbook/assets/CAD_CustomLoginUrl.png)
 
 {% hint style="warning" %}
 When updating or changing an existing DNS record, it may take some time for the change to propagate (based on your TTL).\

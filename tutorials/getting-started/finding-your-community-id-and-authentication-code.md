@@ -29,7 +29,7 @@ In addition to the community API Key, each user will also have **their own** API
 
 This API ID can be found in game by doing `/apiid` in game, if you have the [apicheck](../../roadmap/v2-legacy/available-plugins/api-id-checker.md) plugin installed.
 
-Every user will need to find their own API ID and add it to CAD as shown [here](../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+Every user will need to find their own API ID and add it to CAD as shown [here](../../api-integration/getting-started/setting-your-api-id.md).
 
 ## Retrieving Your Credentials
 
@@ -37,7 +37,7 @@ Your community ID allows users to [manually join your community](inviting-users-
 
 Your community ID and API Key can be found in the Admin panel, under `Advanced` > `In-Game Integration`. Under the Web API section, your Community ID and API key will be listed as shown:
 
-![Sonoran CAD - Web API Information](../../.gitbook/assets/CAD\_WebAPICredentials.png)
+![Sonoran CAD - Web API Information](../../.gitbook/assets/CAD_WebAPICredentials.png)
 
 Click either box to copy its corresponding value to your clipboard.
 
@@ -47,11 +47,11 @@ Your community ID is also listed in the following places:
 
 1\. In the side navigation bar while logged in
 
-![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/CAD\_DropdownID.png)
+![Community IDs are displayed in the side navigation bar](../../.gitbook/assets/CAD_DropdownID.png)
 
 2\. In the Admin panel under `Advanced` > `Limits`
 
-![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/CAD\_Limits.png)
+![Community IDs are also displayed in the admin limits section](../../.gitbook/assets/CAD_Limits.png)
 
 ## Authenticating your Ownership
 

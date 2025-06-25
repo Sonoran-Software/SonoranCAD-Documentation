@@ -11,7 +11,7 @@ This submodule utilizes API endpoints that require the **standard** version of S
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 ## Activation Guide
@@ -26,7 +26,7 @@ Follow the [submodule activation guide](../submodule-configuration/#activating-a
 
 ### 3. Set Your API ID
 
-Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ### 4. (OPTIONAL) Utilize the Tablet's Auto API ID
 

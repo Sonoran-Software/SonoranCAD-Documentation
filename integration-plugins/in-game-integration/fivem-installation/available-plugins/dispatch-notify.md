@@ -12,7 +12,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 This submodule:
@@ -50,7 +50,7 @@ Be sure to have your game server IP and port set in the admin panel under `Advan
 
 ### 4. Set Your API ID
 
-Don't forget to set your account [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+Don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
 
 ### 5. Configuration
 
@@ -131,7 +131,7 @@ A unit can also designate themselves as primary, but only if Self Dispatch is en
   * Units must be logged into the CAD (by default) or meeting the requirements depending on how the submodule is configured.
   * If using pNotify notifications, ensure that resource is running.
 * Units do not automatically attach to calls
-  * Ensure their [API ID](../../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md) is set so the server knows who they are.
+  * Ensure their [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) is set so the server knows who they are.
 * Caller is not notified when units attach to the call
   * If the caller ever leaves the server and rejoins, this feature does not work.
   * If dispatch created the call within the CAD, there is no way to notify a caller.

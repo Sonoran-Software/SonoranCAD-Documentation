@@ -9,7 +9,7 @@ This plugin utilizes API endpoints that require the **Plus** version of SonoranC
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](../../../other-products/server-hosting.md)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
 This plugin is for sending plate reads to other plugins.
@@ -32,7 +32,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 
 ### 2. Download the Plugin and Dependencies
 
-1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran\_wraithv2/releases)to download the WraithV2 plugin .zip file.
+1. Click[ HERE ](https://github.com/Sonoran-Software/sonoran_wraithv2/releases)to download the WraithV2 plugin .zip file.
 2. Download and install the [lookups ](lookups.md)plugin.
 3. Ensure the third-party [pNotify](https://github.com/Nick78111/pNotify) addon is installed.
 
@@ -45,7 +45,7 @@ If you haven't already, be sure to install and configure the [plugin framework](
 In the `config_wraithv2.lua`file, set `isPluginEnabled` in the to `true`.
 
 {% hint style="info" %}
-Use of this plugin requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
+Use of this plugin requires the Sonoran version of [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)radar and plate reader to function. This resource is bundled with the latest SonoranCAD release as `wk_wars2x`.
 
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
@@ -84,11 +84,11 @@ Ex: `flagOnStatuses = {"STOLEN", "EXPIRED", "PENDING", "SUSPENDED"}`
 
 ### 6. Set Your API ID
 
-In order to have locked plate results sent back to your CAD, don't forget to set your account [API ID](../../../sonoran-cad/api-integration/getting-started/setting-your-api-id.md).
+In order to have locked plate results sent back to your CAD, don't forget to set your account [API ID](../../../api-integration/getting-started/setting-your-api-id.md).
 
 ## Usage
 
-For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk\_wars2x)release information.\
+For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
 ![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (314).png>)
@@ -96,7 +96,7 @@ For more information on using the in-game UI, please view the Sonoran version of
 ## Sonoran wk\_wars2x&#x20;
 
 {% hint style="info" %}
-These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/Sonoran-Software/wk\_wars2x).
+These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/Sonoran-Software/wk_wars2x).
 {% endhint %}
 
 ### Additional Features
