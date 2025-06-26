@@ -6,7 +6,7 @@ description: This endpoint sets your community's available fire stations.
 
 {% hint style="warning" %}
 This API endpoint requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../../pricing/faq/)page.
+For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 ## Set Stations
@@ -54,6 +54,7 @@ INVALID API KEY
                         "x": 1234,
                         "y": 5678
                     },
+                    "icon": "fa-solid fa-face-smile", // Or a direct HTTPS URL to an image
                     "doors": [
                         "Bay One",
                         "Engine Two"

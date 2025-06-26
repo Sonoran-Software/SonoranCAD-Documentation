@@ -78,7 +78,7 @@ Here, you can type-to-filter and select multiple stations at once.
 
 The dispatch call editor has a shortcut to quickly access nearby stations from an emergency call.
 
-When an emergency call from in-game is imported into the dispatch editor, the `Nearby Stations` icon will be available.
+When an emergency call from in-game is imported into the dispatch editor, the `Nearby Stations` icon will be available. Selecting one of these nearby stations opens the station alert builder with the `Message` box prefilled with call information.
 
 <figure><img src="../../../../.gitbook/assets/Screen_Recording_2025-04-14_154514.gif" alt="" width="375"><figcaption><p>Station Alert: Call Editor</p></figcaption></figure>
 

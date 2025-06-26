@@ -57,25 +57,31 @@ These fields are generic text boxes.
 
 The select field allows you to customize a dropdown box.
 
-<img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original"></p>
 
 #### Text Area
 
 The text area field allows you to create a large text area.
 
-<img src="../../.gitbook/assets/image (309).png" alt="The &#x27;TEXTAREA&#x27; field option" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (309).png" alt="The &#x27;TEXTAREA&#x27; field option" data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (307).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (307).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor" data-size="original"></p>
 
 #### Checkboxes
 
 The checkboxes type allows you to create multiple checkboxes.
 
-<img src="../../.gitbook/assets/image (329).png" alt="The &#x27;CHECKBOXES&#x27; field option" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (329).png" alt="The &#x27;CHECKBOXES&#x27; field option" data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (331).png" alt="A &#x27;CHECKBOXES&#x27; field shown in the record editor." data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (331).png" alt="A &#x27;CHECKBOXES&#x27; field shown in the record editor." data-size="original"></p>
+
+#### Random
+
+The random field allows you to randomly generate text. When a new record is created, this field will automatically generate the text based on the `mask` format. If the field is not disabled (`readOnly`) users can click the randomize button to continually generate new text.
+
+<div><figure><img src="../../.gitbook/assets/2471aebe51c93db063f5dfeaa6bd0cb0.gif" alt="" width="300"><figcaption><p>Sonoran CAD: Random Field</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (74).png" alt="" width="375"><figcaption><p>Sonoran CAD: Random Field</p></figcaption></figure></div>
 
 #### Date
 
@@ -83,53 +89,55 @@ The date field allows you to specify a date field. You can also specify the form
 
 When `readOnly` is selected, this field will auto-fill the current date for new records.
 
-<img src="../../.gitbook/assets/image (381).png" alt="The &#x27;DATE&#x27; field option" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (381).png" alt="The &#x27;DATE&#x27; field option" data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (319).png" alt="The &#x27;DATE&#x27; field shown in the record editorTime" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (319).png" alt="The &#x27;DATE&#x27; field shown in the record editorTime" data-size="original"></p>
+
+#### Time
 
 The time field allows you to specify a time field.
 
-<img src="../../.gitbook/assets/image (334).png" alt="The &#x27;TIME&#x27; field option" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (334).png" alt="The &#x27;TIME&#x27; field option" data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (337).png" alt="The &#x27;TIME&#x27; field shown in the record editor" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (337).png" alt="The &#x27;TIME&#x27; field shown in the record editor" data-size="original"></p>
 
 #### Image
 
 The image field allows you to specify an image to be displayed.
 
-<img src="../../.gitbook/assets/image (348).png" alt="The &#x27;IMAGE&#x27; field option." data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (348).png" alt="The &#x27;IMAGE&#x27; field option." data-size="original"></p>
 
-<img src="../../.gitbook/assets/image (363).png" alt="The &#x27;IMAGE&#x27; field shown in the record editor" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (363).png" alt="The &#x27;IMAGE&#x27; field shown in the record editor" data-size="original"></p>
 
 #### Linked Records
 
 The linked records field allows you to link and cross-reference other records and reports to this record.
 
-<img src="../../.gitbook/assets/image (233).png" alt="Sonoran CAD - Linked Records" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (233).png" alt="Sonoran CAD - Linked Records" data-size="original"></p>
 
 #### Flags
 
 Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
 
-<img src="../../.gitbook/assets/image (116).png" alt="Sonoran CAD - Custom Flags" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (116).png" alt="Sonoran CAD - Custom Flags" data-size="original"></p>
 
 #### Label
 
 Labels can display static text, along with color attributes.
 
-<img src="../../.gitbook/assets/image (21).png" alt="Sonoran CAD - Custom Record Label" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (21).png" alt="Sonoran CAD - Custom Record Label" data-size="original"></p>
 
 #### Address
 
 The address dropdown will auto-filter [street address names that have been imported via CSV](addresses-and-street-names.md).
 
-<img src="../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif" alt="Sonoran CAD - Custom Record Address Field" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif" alt="Sonoran CAD - Custom Record Address Field" data-size="original"></p>
 
 **Unit Information**
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<p align="center"><img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original"></p>
 
 </details>
 

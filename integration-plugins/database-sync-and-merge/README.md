@@ -148,6 +148,12 @@ If you see "Success!" move onto the next section.
 
 Many databases store data in a JSON formatted column. Sonoran CAD can also parse these columns for data.
 
+<details>
+
+<summary>JSON Columns (Objects)</summary>
+
+The following is for JSON columns that contain one or more object(s). Objects are formatted using `{}` and are NOT enclosed by `[]`.
+
 ### 1. View the JSON Data
 
 In our database, the `accounts` column stores JSON formatted data. For this example, we want to display the `bank` money in the custom character record.
@@ -155,8 +161,6 @@ In our database, the `accounts` column stores JSON formatted data. For this exam
 ![SQL - JSON Column Example](<../../.gitbook/assets/image (44).png>)
 
 To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu/).
-
-In the [JSON formatter](http://jsonviewer.stack.hu/), we can paste it and select `Format`.
 
 ![](<../../.gitbook/assets/image (33).png>)
 
@@ -174,6 +178,42 @@ In the DB Sync config, we list the JSON key as `eye_color.item`
 ![](<../../.gitbook/assets/image (191).png>)
 
 Then, we can use [friendly mapping](./#friendly-mapping) to convert the eye color `0` value to an actual color, like "brown".
+
+
+
+</details>
+
+<details>
+
+<summary>JSON Columns (Array)</summary>
+
+The following is for JSON columns that contain an array of objects. Arrays are enclosed by `[]` and contain one or more objects formatted by `{}`.
+
+### 1. View the JSON Data
+
+In our database, the `licenses` column stores JSON formatted data. This data is an array (list) `[]` of license objects `{}`.
+
+To more easily view the JSON data, we can copy it from the cell and paste it into a [JSON formatter](http://jsonviewer.stack.hu/).
+
+<figure><img src="../../.gitbook/assets/image (81).png" alt="" width="148"><figcaption></figcaption></figure>
+
+For this example, we want to display the status (valid/invalid) of the license type `drivers`.
+
+### 2. Configure the JSON Key
+
+We want our `Driver's License Status` field in our custom record to reflect whether or not their license is valid. The `expireDate` JSON property displays `true` (expired) or `false` (valid).
+
+For our JSON key, set it to the following:
+
+`[?(@.license='drivers')].expireDate`
+
+This tells DB sync to look in the array (list) `[]` for a license type of `drivers` and give us the `expireDate` value.
+
+<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
+Then, we can use [friendly mapping](./#friendly-mapping) to convert the `true` to `Expired` and `false` to `Valid`.
+
+</details>
 
 ## External Keys
 
