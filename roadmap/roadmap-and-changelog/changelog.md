@@ -10,7 +10,7 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-## 3.37.3 05/12/2025
+### 3.37.3 05/12/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -26,7 +26,7 @@ Character Restrictions: Explanation Label
 {% endtab %}
 {% endtabs %}
 
-## 3.37.2 04/29/2025
+### 3.37.2 04/29/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -44,7 +44,7 @@ Translation Overhaul Start
 {% endtab %}
 {% endtabs %}
 
-## 3.37.0 04/17/2025
+### 3.37.0 04/17/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -62,7 +62,7 @@ Dispatch Call Editor - Nearby Units
 {% endtab %}
 {% endtabs %}
 
-## 3.36.0 04/08/2025
+### 3.36.0 04/08/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -82,7 +82,7 @@ Live Map - Roxwood Support
 {% endtab %}
 {% endtabs %}
 
-## 3.35.0 03/19/2025
+### 3.35.0 03/19/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -92,7 +92,7 @@ Scene Diagram Builder
 {% endtab %}
 {% endtabs %}
 
-## 3.34.1 01/22/2025
+### 3.34.1 01/22/2025
 
 {% tabs %}
 {% tab title="Fixed" %}
@@ -110,7 +110,7 @@ Scene Diagram Builder
 {% endtab %}
 {% endtabs %}
 
-## 3.34.0 01/16/2025
+### 3.34.0 01/16/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -137,7 +137,7 @@ Unit Info - Overflow
 {% endtab %}
 {% endtabs %}
 
-## 3.33.8 11/08/2024
+### 3.33.8 11/08/2024
 
 {% tabs %}
 {% tab title="New" %}
