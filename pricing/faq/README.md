@@ -4,12 +4,6 @@ description: 'See below for commonly asked questions and answers:'
 
 # Pricing FAQ
 
-![Sonoran Servers - VPS Discount](../../.gitbook/assets/banner_update-1.png)
-
-![Sonoran Servers - Free Sonoran One](<../../.gitbook/assets/Bannerprojectsenoranone (1).png>)
-
-Receive **free Sonoran CAD integration plugin installation**, **free Five PD installation**, and **30-100% off** every month when you [bundle with Sonoran Servers](broken-reference)!
-
 Additionally, you can get **25% off** if you choose to purchase CAD, CMS, Radio, or Sonoran One as a **quarterly** subscription (available at Stripe checkout).
 
 ### Looking to compare plans?

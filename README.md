@@ -55,9 +55,9 @@ Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~
 
 ### 🌎 Full Translation and Locality Support
 
-Only Sonoran CAD supports full [i18n localization](translation-support.md). Regardless of your community's native language, Sonoran CAD supports it!\
+Only Sonoran CAD supports full [i18n localization](broken-reference). Regardless of your community's native language, Sonoran CAD supports it!\
 \
-Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](translation-support.md).
+Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](broken-reference).
 
 Sonoran CAD also offers vast [geographical location](tutorials/customization/geographical-settings.md) support for non-American communities.
 

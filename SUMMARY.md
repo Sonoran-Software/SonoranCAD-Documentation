@@ -264,7 +264,7 @@
         * [General](api-integration/api-examples/emergency/javascript-examples/general/README.md)
           * [Lookup Name or Plate](api-integration/api-examples/emergency/javascript-examples/general/lookup-name-or-plate.md)
   * [Development Branch](api-integration/development-branch.md)
-* [🌎 Translation Support](translation-support.md)
+* [🌎 Translation Support](https://docs.sonoransoftware.com/other/translation-support)
 
 ## Pricing
 
