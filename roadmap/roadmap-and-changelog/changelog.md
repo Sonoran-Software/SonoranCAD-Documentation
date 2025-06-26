@@ -14,6 +14,18 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
+Diagram Builder - Images
+
+* Added image upload support to the diagram builder.
+
+Diagram Builder - Free Draw
+
+* Added free draw support to the diagram builder.
+
+Diagram Builder - Text
+
+* Added text support to the diagram builder.
+
 Random ID Fields
 
 * Added new randomized fields to custom records, allowing communities to specify a specific format to automatically generate text.
