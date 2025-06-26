@@ -10,6 +10,42 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.4 06/26/2025
+
+{% tabs %}
+{% tab title="New" %}
+Random ID Fields
+
+* Added new randomized fields to custom records, allowing communities to specify a specific format to automatically generate text.
+
+Station Alert - Import Call Info
+
+* When selecting a nearby station from the call editor, the message box will be pre-filled with the call's address and description.
+
+Station Alert - Icon Support
+
+* Added custom icon support to the Station Alert submodule.
+
+DB Sync - Date Formatting
+
+* Added new handling to dynamically detect long timestamps (with time, etc.) from DB sync and strip/convert them to date only strings, allowing for proper mask formatting customization.
+
+DB Sync - Array Support
+
+* Added JSON object array support to DB sync allowing communities on frameworks like ESX to parse license information stored in an array.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Record Webhooks Encode Format for Images
+
+* Record webhooks no longer capitalize image URLs and include URL formatting for spaces and special characters.
+
+\#29318 - Call Address
+
+* Fixed an issue where importing an emergency call to the dispatch editor and then importing a second call resulted in a cleared address field.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.3 05/12/2025
 
 {% tabs %}
