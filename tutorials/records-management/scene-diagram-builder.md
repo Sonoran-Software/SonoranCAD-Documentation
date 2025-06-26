@@ -16,7 +16,7 @@ The diagram builder can be added to any [custom record template](../customizatio
 
 Custom records with a diagram section will show an interactive canvas inside the record. Select the edit icon to open up the builder.
 
-<div><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="371"><figcaption><p>Record: Diagram Viewer</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>Diagram Builder</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="371"><figcaption><p>Record: Diagram Viewer</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (83).png" alt="" width="375"><figcaption><p>Diagram Builder</p></figcaption></figure></div>
 
 ### Adding, Editing, and Removing Elements
 
@@ -64,3 +64,7 @@ Hover over any of the top action items for a tooltip listing the shortcut.
 
 
 </details>
+
+### Default Images and More
+
+Communities can also customize the diagram builder to have default images (like a [medical diagram](scene-diagram-builder.md#using-the-diagram-builder)) for each record type. Simply hit the edit (pencil icon) in the custom record builder on the diagram to customize and save the template.
