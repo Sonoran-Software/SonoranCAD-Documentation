@@ -8,7 +8,7 @@ hidden: true
 # Depreciated: ESX Support
 
 {% hint style="warning" %}
-This submodule is being phased out in favor of the newer [frameworksupport](../../../../../roadmap/v2-legacy/available-plugins/framework-support-esx-qbcore-and-auto-fines/) support submodule. Please begin using that instead.
+This submodule is being phased out in favor of the newer [frameworksupport](broken-reference) support submodule. Please begin using that instead.
 {% endhint %}
 
 {% hint style="warning" %}

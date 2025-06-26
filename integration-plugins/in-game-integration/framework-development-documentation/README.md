@@ -4,7 +4,7 @@ description: Work in progress, documents features developers can use in their ow
 
 # FiveM Development Documentation
 
-{% content-ref url="../../../roadmap/v2-legacy/framework-development-documentation/http-request-handling.md" %}
-[http-request-handling.md](../../../roadmap/v2-legacy/framework-development-documentation/http-request-handling.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 

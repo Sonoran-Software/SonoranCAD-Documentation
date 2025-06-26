@@ -27,7 +27,7 @@ Each submodule can be [easily enabled and configured](../submodule-configuration
 | [Local Callers](local-callers.md)                                                             | Yes      | Yes     | Yes |
 | [Locations](locations.md)                                                                     | Yes      | Yes     | Yes |
 | [Live Map](live-map.md)                                                                       | No       | Yes     | Yes |
-| [Lookups](../../../../roadmap/v2-legacy/available-plugins/lookups.md)                         | No       | Yes     | Yes |
+| [Lookups](broken-reference)                                                                   | No       | Yes     | Yes |
 | [Postals](postals.md)                                                                         | Yes      | Yes     | Yes |
 | [Smart Signs](smart-signs.md)                                                                 | No       | No      | Yes |
 | [Sonoran Radio (sonrad)](sonoran-radio-sonrad.md)                                             | No       | Partial | Yes |

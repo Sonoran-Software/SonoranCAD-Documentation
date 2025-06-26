@@ -34,13 +34,13 @@ Tired of having to manually register civilians? With Sonoran CAD's [Database Syn
 
 Sonoran CAD's integration framework includes **over a dozen drag-and-drop plugins** for your game server!
 
-* [Automated Plate Reader Lookup (Results Sent Back to CAD)](roadmap/v2-legacy/available-plugins/wraithv2.md)
-* [Automated Traffic Stop Dispatching](roadmap/v2-legacy/available-plugins/traffic-stop.md)
-* [Live Unit Locations](roadmap/v2-legacy/available-plugins/locations.md)
-* [/911, /511, /311 and /Panic](roadmap/v2-legacy/available-plugins/call-commands.md)
-* [Custom Integrated Live Map](roadmap/v2-legacy/available-plugins/live-map.md)
-* [TeamSpeak 3 Integration](roadmap/v2-legacy/available-plugins/teamspeak-3.md)
-* [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](roadmap/v2-legacy/available-plugins/dispatch-notify.md)
+* [Automated Plate Reader Lookup (Results Sent Back to CAD)](broken-reference)
+* [Automated Traffic Stop Dispatching](broken-reference)
+* [Live Unit Locations](broken-reference)
+* [/911, /511, /311 and /Panic](broken-reference)
+* [Custom Integrated Live Map](broken-reference)
+* [TeamSpeak 3 Integration](broken-reference)
+* [Automated GPS Routing for Dispatch Calls and Live Pursuit GPS Tracking](broken-reference)
 * And much more!
 
 <figure><img src=".gitbook/assets/integrationplugins.png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
@@ -65,13 +65,13 @@ Sonoran CAD also offers vast [geographical location](tutorials/customization/geo
 
 ### 🎥FiveM Live Bodycam Footage In-CAD
 
-Sonoran CAD's [bodycam system](roadmap/v2-legacy/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
+Sonoran CAD's [bodycam system](broken-reference) offers live image feeds from in-game, right in the CAD!
 
 <figure><img src=".gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📍 FiveM Live Map
 
-Sonoran CAD's custom[ live map plugin](roadmap/v2-legacy/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
+Sonoran CAD's custom[ live map plugin](broken-reference) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
 <figure><img src=".gitbook/assets/livemap.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
@@ -79,7 +79,7 @@ Sonoran CAD's custom[ live map plugin](roadmap/v2-legacy/available-plugins/live-
 
 We've partnered up with London Studios to integrate their Smart Signs script directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
-[Learn more about this free script included with Sonoran CAD Pro!](roadmap/v2-legacy/available-plugins/smart-signs.md)
+[Learn more about this free script included with Sonoran CAD Pro!](broken-reference)
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
@@ -103,7 +103,7 @@ We've partnered up with Inferno Collection to integrate their Station Alert scri
 
 ### [💻](https://emojipedia.org/laptop/) FiveM Mini CAD
 
-Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](roadmap/v2-legacy/available-plugins/tablet.md)!
+Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](broken-reference)!
 
 <figure><img src=".gitbook/assets/mini-cad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
 
@@ -139,7 +139,7 @@ Drag-and-drop allows you to easily view calls, attach units, and more!
 
 <figure><img src=".gitbook/assets/Multi-Task-Windows.png" alt=""><figcaption><p>Sonoran CAD - Custom Layouts</p></figcaption></figure>
 
-### 🎤 [TeamSpeak 3 Integration](roadmap/v2-legacy/available-plugins/teamspeak-3.md)
+### 🎤 [TeamSpeak 3 Integration](broken-reference)
 
 Enforce security in your TeamSpeak 3 channels by requiring them to be signed into the CAD. Additionally, kick users from secured TS channels when they log off.
 
@@ -151,7 +151,7 @@ Check out our official [Stream Deck profiles](integration-plugins/stream-deck-in
 
 ### 📖 API Integration
 
-In addition to over a dozen drag-and-drop integration [plugins](roadmap/v2-legacy/), you can write your own integration plugins using our [API documentation](api-integration/).
+In addition to over a dozen drag-and-drop integration [plugins](broken-reference), you can write your own integration plugins using our [API documentation](api-integration/).
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](api-integration/push-events/)!
 
@@ -212,4 +212,4 @@ Common tasks are made even easier with our [voice commands](tutorials/other-feat
 
 ### 📋 Frequent Updates
 
-As shown in our [changelog](roadmap/changelog.md), new features, fixes, and suggestions are added all the time!
+As shown in our [changelog](roadmap/roadmap-and-changelog/changelog.md), new features, fixes, and suggestions are added all the time!

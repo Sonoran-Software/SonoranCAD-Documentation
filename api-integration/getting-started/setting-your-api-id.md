@@ -24,13 +24,13 @@ API IDs are set individually per community. Your API IDs set in one community wi
 
 From the start menu, navigate to System > Settings
 
-![Sonoran CAD - Settings Navigation](<../../../.gitbook/assets/image (316).png>)
+![Sonoran CAD - Settings Navigation](<../../.gitbook/assets/image (316).png>)
 
 ### 2. Paste in your API ID and Press Save
 
 When inputting your API ID, it is important to note that it is **case-sensitive**. Make sure you are putting in the **proper upper and lower case letters**!
 
-![Sonoran CAD's API ID Setting](<../../../.gitbook/assets/image (366).png>)
+![Sonoran CAD's API ID Setting](<../../.gitbook/assets/image (366).png>)
 
 #### 1. Determine what API ID is Used
 
@@ -40,8 +40,8 @@ If you're not sure, ask an administrator from your community.
 
 #### 2. Retrieving an API ID from In-Game
 
-Assuming your community has the [API ID plugin](../../../roadmap/v2-legacy/available-plugins/api-id-checker.md) installed, enter `/apiid` in-game. This will display a chat message with your API ID.
+Assuming your community has the [API ID plugin](broken-reference) installed, enter `/apiid` in-game. This will display a chat message with your API ID.
 
 #### 3. Retrieve your API ID from Discord
 
-If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../../integration-plugins/discord-bot-integration.md).
+If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../integration-plugins/discord-bot-integration.md).

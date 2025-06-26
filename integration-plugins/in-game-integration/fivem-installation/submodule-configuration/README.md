@@ -62,7 +62,7 @@ Or, run `sonoran pluginupdate` to instantly check and update all submodules.
 
 If you're having trouble installing a plugin, check out our common troubleshooting guide:
 
-{% content-ref url="../../../../roadmap/v2-legacy/plugin-installation/plugin-troubleshooting.md" %}
-[plugin-troubleshooting.md](../../../../roadmap/v2-legacy/plugin-installation/plugin-troubleshooting.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 

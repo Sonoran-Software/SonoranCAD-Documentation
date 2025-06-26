@@ -5,10 +5,10 @@ description: This endpoint allows you to manually set a user's API IDs.
 # Set API IDs
 
 {% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
-This endpoint allows you to manually set a user's [API ID](../../getting-started/setting-your-api-id.md). This endpoint is used in our [tablet](../../../../roadmap/v2-legacy/available-plugins/tablet.md) and [API ID plugin ](../../../../roadmap/v2-legacy/available-plugins/api-id-checker.md)to automatically link your in-game user to the CAD.
+This endpoint allows you to manually set a user's [API ID](../../getting-started/setting-your-api-id.md). This endpoint is used in our [tablet](broken-reference) and [API ID plugin ](broken-reference)to automatically link your in-game user to the CAD.
 
 ## Set API IDs
 
@@ -77,9 +77,9 @@ The following data object is [emitted from your web browser](https://developer.m
 }
 ```
 
-This object contains your session ID, and can be captured with resources like our [in-game tablet](../../../../roadmap/v2-legacy/available-plugins/tablet.md).
+This object contains your session ID, and can be captured with resources like our [in-game tablet](broken-reference).
 
-This is how the in-game tablet and [API ID](../../../../roadmap/v2-legacy/available-plugins/api-id-checker.md) plugin work to automatically link your API ID when using the tablet.
+This is how the in-game tablet and [API ID](broken-reference) plugin work to automatically link your API ID when using the tablet.
 
 #### Push New
 

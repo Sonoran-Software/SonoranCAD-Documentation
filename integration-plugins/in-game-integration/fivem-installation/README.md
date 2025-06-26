@@ -242,7 +242,7 @@ In the framework configuration file, simply set `enablePushEventForwarding` to `
 ### 3. Activating Submodules
 
 Check out our pre-bundled [submodule-configuration](submodule-configuration/ "mention")to make the integration useful.\
-For basic functionality, we recommend at least the [`locations`](../../../roadmap/v2-legacy/available-plugins/locations.md), [`callcommands`](../../../roadmap/v2-legacy/available-plugins/call-commands.md), and [`postals`](../../../roadmap/v2-legacy/available-plugins/postals.md) submodules.\
+For basic functionality, we recommend at least the [`locations`](broken-reference), [`callcommands`](broken-reference), and [`postals`](broken-reference) submodules.\
 You can also view our [standard submodule activation guide](submodule-configuration/).
 
 ### 4. Using the wk\_wars2x Radar

@@ -7,7 +7,7 @@ description: >-
 # New 911 Call
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="info" %}
@@ -47,9 +47,9 @@ end
 | `plate`           | String   | OPTIONAL: Plate to report in the call                               |
 | `cb`              | Function | OPTIONAL: Callback function                                         |
 
-## [Callcommands](https://github.com/Sonoran-Software/sonoran\_callcommands) Export
+## [Callcommands](https://github.com/Sonoran-Software/sonoran_callcommands) Export
 
-This method utilizes the [callcommands](https://github.com/Sonoran-Software/sonoran\_callcommands) plugin to execute a 911 call.
+This method utilizes the [callcommands](https://github.com/Sonoran-Software/sonoran_callcommands) plugin to execute a 911 call.
 
 ```lua
 -- Parameters
@@ -75,7 +75,7 @@ TriggerServerEvent('SonoranCAD::callcommands:SendCallApi', true, 'Bystander', st
    1. If you are using the Raw API Call method, please ensure that you have `useCallLocation` set to true.
    2. On either version of the call, please ensure that the postal is a valid, integer value
 2. "Units are not getting the call in-game"
-   1. Please ensure that you have the [dispatchnotify ](../../../../../../roadmap/v2-legacy/available-plugins/dispatch-notify.md)plugin installed
-   2. Please ensure the unit is on duty with the configured method in [dispatchnotify](../../../../../../roadmap/v2-legacy/available-plugins/dispatch-notify.md)
+   1. Please ensure that you have the [dispatchnotify ](broken-reference)plugin installed
+   2. Please ensure the unit is on duty with the configured method in [dispatchnotify](broken-reference)
    3. Please ensure your server's port and IP are correctly set in the Admin -> In-game Integration -> Livemap section of CAD
 
