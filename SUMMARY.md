@@ -270,7 +270,7 @@
 
 * [Pricing FAQ](pricing/faq/README.md)
   * [Military and First Responder Discount](https://docs.sonoransoftware.com/first-responder-discount)
-  * [Expert Installation](pricing/faq/expert-installation.md)
+  * [Expert Installation](https://docs.sonoransoftware.com/promotions/expert-installation)
   * [Accessing the Payment Center](pricing/faq/accessing-the-payment-center.md)
   * [Create and Manage a Subscription](pricing/faq/create-and-manage-a-subscription.md)
   * [Request Discord Role](pricing/faq/request-discord-role.md)

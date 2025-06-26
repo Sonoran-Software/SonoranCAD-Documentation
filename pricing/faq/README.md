@@ -66,7 +66,7 @@ _Communities with no active logins for 30 days will be automatically removed._
 
 ### I purchased expert installation, how do I activate this?
 
-If you've purchased [expert installation](expert-installation.md), simply reach out to our [customer support team](https://support.sonoransoftware.com).
+If you've purchased [expert installation](broken-reference), simply reach out to our [customer support team](https://support.sonoransoftware.com).
 
 ### Refund and Purchase Policy
 
