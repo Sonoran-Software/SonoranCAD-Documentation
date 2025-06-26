@@ -1,7 +1,7 @@
 ---
 description: >-
-  Sonoran CAD is the most advanced, in-depth, and customizable CAD/MDT software
-  available to gaming communities. Check out some of our latest features below!
+  Experience Sonoran CAD, the free, most popular dispatching software for FiveM,
+  ER:LC & gaming communities alike!
 ---
 
 # 🏆 Why Sonoran CAD?
