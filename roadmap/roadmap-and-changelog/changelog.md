@@ -30,6 +30,10 @@ Random ID Fields
 
 * Added new randomized fields to custom records, allowing communities to specify a specific format to automatically generate text.
 
+Emergency Calls - Merge
+
+* Added the ability to merge emergency calls into new or existing dispatch calls for updated descriptions, locations, and more.
+
 Station Alert - Import Call Info
 
 * When selecting a nearby station from the call editor, the message box will be pre-filled with the call's address and description.
