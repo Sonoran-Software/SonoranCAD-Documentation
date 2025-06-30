@@ -40,6 +40,7 @@
   * [Advanced Query Strings](tutorials/customization/advanced-query-strings.md)
 * [Dispatching](tutorials/dispatching/README.md)
   * [Creating a Call](tutorials/dispatching/creating-a-call.md)
+  * [Unit Management](tutorials/dispatching/unit-management.md)
   * [Self Dispatch](tutorials/dispatching/self-dispatch.md)
   * [Timers](tutorials/dispatching/timers.md)
   * [Command Line Interface (CLI)](tutorials/dispatching/command-line-interface-cli.md)
