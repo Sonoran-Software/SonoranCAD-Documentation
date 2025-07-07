@@ -8,12 +8,14 @@ description: >-
 
 ## What is Sonoran CAD?
 
+<figure><img src=".gitbook/assets/cad-fina.png" alt="" width="375"><figcaption></figcaption></figure>
+
 Sonoran CAD is the largest, most popular dispatch and records management system for gaming communities.
 
 With seamless integrations for FiveM, ER:LC on Roblox, and more, it delivers unmatched power, speed, and customization—taking your roleplay experience to the next level.
 
-{% content-ref url="https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/getting-started" %}
-[Getting Started](https://app.gitbook.com/s/gJnyZgUQPWpA5p9njAAR/tutorials/getting-started)
+{% content-ref url="tutorials/getting-started/" %}
+[getting-started](tutorials/getting-started/)
 {% endcontent-ref %}
 
 ### 📱 Downloadable Apps
