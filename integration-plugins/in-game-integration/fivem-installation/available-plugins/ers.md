@@ -72,11 +72,12 @@ ERS Integration is highly configurable to allow for custom records and calls. Al
     Put all needed configuration in this file.
 ]]
 local config = {
-    enabled = true,
+    enabled = false,
     pluginName = "ersintegration", -- name your plugin here
     pluginAuthor = "SonoranCAD", -- author
-    configVersion = "1.0",
+    configVersion = "1.2",
     -- put your configuration options below
+    DOBFormat = "en", -- Make sure this matches | en: dd/mm/yyyy | us: mm/dd/yyyy | iso: yyyy/mm/dd
     create911Call = true, -- Create a 911 call when an ERS callout is created
     createEmergencyCall = true, -- Create an emergency call when an ERS callout is accepted
     callPriority = 2, -- Priority of the call created in CAD (1-3) | Only used if createEmergencyCall is true
@@ -95,11 +96,15 @@ local config = {
             ["first"] = "FirstName",
             ["last"] = "LastName",
             ["dob"] = "DOB",
+            ["age"] = function(pedData)
+                return returnAgeFromDobString(pedData.DOB)
+            end,
             ["sex"] = "Gender",
             ["residence"] = "Address",
-            ["zip"] = "Zip",
+            ["zip"] = "PostalCode",
             ["phone"] = "Phone",
             ["skin"] = "Nationality",
+            ["img"] = "ProfilePicture"
             -- Add more keys as needed:
             -- email = "Email"  -- Example: if pedData.Email exists.
         },
@@ -166,28 +171,28 @@ local config = {
         licenseTypeConfigs = {
             DRIVER = {
                 type = "DRIVER",
-                is_valid = "is_license_car_valid",
-                license = "license_car",
+                is_valid = "License_Car_Is_Valid",
+                license = "License_Car",
             },
             MOTORCYCLE = {
                 type = "MOTORCYCLE",
-                is_valid = "is_license_bike_valid",
-                license = "license_bike",
+                is_valid = "License_Bike_Is_Valid",
+                license = "License_Bike",
             },
             BOAT = {
                 type = "BOAT",
-                is_valid = "is_license_boat_valid",
-                license = "license_boat",
+                is_valid = "License_Boat_Is_Valid",
+                license = "License_Boat",
             },
             PILOT = {
                 type = "PILOT",
-                is_valid = "is_license_pilot_valid",
-                license = "license_pilot",
+                is_valid = "License_Pilot_Is_Valid",
+                license = "License_Pilot",
             },
             CDL = {
                 type = "CDL",
-                is_valid = "is_license_truck_valid",
-                license = "license_truck",
+                is_valid = "License_Truck_Is_Valid",
+                license = "License_Truck",
             },
         },
         licenseRecordValues = {
@@ -198,32 +203,68 @@ local config = {
             ["878766af4964853a7"] = function(pedData, ctx)
                 return pedData[ctx.is_valid] and "VALID" or "EXPIRED"
             end,
-            ["_54iz1scv7"] = function(pedData)
-                return os.date("%m/%d/%Y", os.time() + (60 * 60 * 24 * 365)) -- +1 year
+            ["_54iz1scv7"] = function(pedData, ctx)
+                if pedData[ctx.license] == "Expired" then
+                    return os.date("%m/%d/%Y", os.time() - (60 * 60 * 24 * math.random(1, 365))) -- Within the last year
+                end
+
+                return os.date("%m/%d/%Y", os.time() + (60 * 60 * 24 * math.random(1, 365))) -- Within a year
             end,
             -- Civilian Information
-            ["first"] = "first_name",
-            ["last"] = "last_name",
+            ["first"] = "FirstName",
+            ["last"] = "LastName",
             ["mi"] = "", -- No M.I. mapped
-            ["dob"] = "dob",
+            ["dob"] = "DOB",
             ["age"] = function(pedData)
-                local birth = os.date("*t", os.time({year=tonumber(pedData.dob:sub(7,10)), month=tonumber(pedData.dob:sub(1,2)), day=tonumber(pedData.dob:sub(4,5))}))
-                local now = os.date("*t")
-                local age = now.year - birth.year
-                if now.month < birth.month or (now.month == birth.month and now.day < birth.day) then
-                    age = age - 1
-                end
-                return tostring(age)
+                return returnAgeFromDobString(pedData.DOB)
             end,
-            ["sex"] = "gender",
-            ["residence"] = "address",
-            ["zip"] = "postalCode",
-        }
+            ["sex"] = "Gender",
+            ["residence"] = "Address",
+            ["zip"] = "PostalCode",
+        },
+        boloRecordID = 3, -- Record ID for BOLO records
+        boloRecordValues = {
+            ['_olgxdruc3'] = 'bolo_description'
+        },
+        warrantRecordID = 2, -- Record ID for warrant records
+        warrantDescription = '_avb6wvgyi', -- Field ID for warrant description
+        warrantFlags = '_hlshajq0f' -- Field ID for warrant flags
     }
 
 }
 
 if config.enabled then Config.RegisterPluginConfig(config.pluginName, config) end
+
+function returnAgeFromDobString(dobString)
+    local day, month, year
+
+    if config.DOBFormat == "en" then -- dd/mm/yyyy
+        day = tonumber(dobString:sub(1,2))
+        month = tonumber(dobString:sub(4,5))
+        year = tonumber(dobString:sub(7,10))
+
+    elseif config.DOBFormat == "us" then -- mm/dd/yyyy
+        month = tonumber(dobString:sub(1,2))
+        day = tonumber(dobString:sub(4,5))
+        year = tonumber(dobString:sub(7,10))
+
+    elseif config.DOBFormat == "iso" then -- yyyy/mm/dd
+        year = tonumber(dobString:sub(1,4))
+        month = tonumber(dobString:sub(6,7))
+        day = tonumber(dobString:sub(9,10))
+    else
+        errorLog("Unsupported DOB format: " .. tostring(config.DOBFormat))
+    end
+
+    local today = os.date("*t")
+    local age = today.year - year
+
+    if today.month < month or (today.month == month and today.day < day) then
+        age = age - 1
+    end
+
+    return tostring(age)
+end
 
 ```
 
@@ -235,7 +276,7 @@ if config.enabled then Config.RegisterPluginConfig(config.pluginName, config) en
 
 <summary>Default Configuration Values</summary>
 
-<table><thead><tr><th>Value</th><th width="113">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>create911Call</code></td><td><code>bool</code></td><td>Create a 911 call when an ERS callout is created</td></tr><tr><td><code>createEmergencyCall</code></td><td><code>bool</code></td><td>Create an emergency call when an ERS callout is accepted</td></tr><tr><td><code>callPriority</code></td><td><code>integer</code></td><td>Priority of the call created in CAD (1-3)</td></tr><tr><td><code>callCodes</code></td><td><code>array</code></td><td>Call codes for each ERS callout type. | Left side is the callout ID and right side is the corresponding 10 code</td></tr><tr><td><code>autoAddCall</code></td><td><code>bool</code></td><td>Automatically add members to the call when an ERS callout is accepted</td></tr><tr><td><code>customRecords</code></td><td><code>array</code></td><td>Array of record customization for CAD records. Please see comments in file for more information on record customization</td></tr></tbody></table>
+<table><thead><tr><th>Value</th><th width="113">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>DOBFormat</code></td><td><code>string</code></td><td>Language code for the DOB format. Available options can be found in the configuration file</td></tr><tr><td><code>create911Call</code></td><td><code>bool</code></td><td>Create a 911 call when an ERS callout is created</td></tr><tr><td><code>createEmergencyCall</code></td><td><code>bool</code></td><td>Create an emergency call when an ERS callout is accepted</td></tr><tr><td><code>callPriority</code></td><td><code>integer</code></td><td>Priority of the call created in CAD (1-3)</td></tr><tr><td><code>callCodes</code></td><td><code>array</code></td><td>Call codes for each ERS callout type. | Left side is the callout ID and right side is the corresponding 10 code</td></tr><tr><td><code>autoAddCall</code></td><td><code>bool</code></td><td>Automatically add members to the call when an ERS callout is accepted</td></tr><tr><td><code>customRecords</code></td><td><code>array</code></td><td>Array of record customization for CAD records. Please see comments in file for more information on record customization</td></tr></tbody></table>
 
 </details>
 
