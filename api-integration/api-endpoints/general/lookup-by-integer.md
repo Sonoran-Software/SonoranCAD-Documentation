@@ -7,7 +7,7 @@ description: >-
 # Lookup By Value
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -58,6 +58,7 @@ INVALID EMPTY SEARCH
     "data": [
         {
             "apiId": "STEAM:1234", // OPTIONAL FIELD - Will return results to user's CAD
+            "account": "000-000-000", // OPTIONAL FIELD - Will return results to user's CAD (via account UUID)
             "searchType": 0, // See the "Search Type" enum
             "value": 1, // See the "Value" information
             "types": [2, 3], // Search only for warrant and BOLO records

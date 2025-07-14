@@ -7,45 +7,40 @@ description: >-
 # New 911 Call
 
 {% hint style="warning" %}
-This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **standard** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/call_911" method="post" summary="Emergency Call" %}
-{% swagger-description %}
+## Emergency Call
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/call_911`
+
 The 911 call API endpoint allows you to send 911 calls from in-game directly to your dispatchers.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description                     |
+| ---- | ------ | ------------------------------- |
+| id   | string | Your community's ID             |
+| key  | string | Your community's API Key        |
+| type | string | CALL\_911                       |
+| data | array  | Array of emergency call objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-CALL_911
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of emergency call objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 EMERGENCY CALL ADDED ID: {ID}
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response" %}
+{% tab title="400 The following 400 errors may be sent in response" %}
 ```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -64,6 +59,7 @@ INVALID API KEY
                 "x": 1000, // OPTIONAL: Live Map X Coordinate
                 "y": 1000 // OPTIONAL: Live Map Y Coordinate
             },
+            "deleteAfterMinutes": 30 // OPTIONAL: Delete record after X minutes (temporary record)
         }
     ]
 }
@@ -73,7 +69,7 @@ INVALID API KEY
 
 Because Sonoran CAD allows you to separate units and dispatchers into separate servers, the serverId field ensures this emergency call is sent to the appropriate dispatcher.\
 \
-For more information, see our guide on [configuring multiple servers](../../../../../tutorials/customization/configuring-multiple-servers.md).
+For more information, see our guide on [configuring multiple servers](../../../../tutorials/customization/configuring-multiple-servers.md).
 
 ### Meta Data
 

@@ -7,45 +7,40 @@ description: >-
 # New Record
 
 {% hint style="warning" %}
-This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/general/new_record" method="post" summary="New Record" %}
-{% swagger-description %}
+## New Record
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/general/new_record`
+
 This endpoint allows you to add a new custom record to your community.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description              |
+| ---- | ------ | ------------------------ |
+| id   | string | Your community's ID      |
+| key  | string | Your community's API Key |
+| type | string | NEW\_RECORD              |
+| data | array  | Array of record objects  |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-NEW_RECORD
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of record objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {NEW RECORD OBJECT}
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="" %}
+{% tab title="400 " %}
 ```
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
     "id": "YOUR_COMMUNITY_ID",
@@ -62,6 +57,7 @@ INVALID API KEY
                 "last": "Sosnowski"
             },
             "record": null,        // OPTION 2: Full raw JSON structure
+            "deleteAfterMinutes": 30 // OPTIONAL: Delete record after X minutes (temporary record)
         }
     ]
 }

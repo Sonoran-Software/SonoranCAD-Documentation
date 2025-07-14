@@ -5,55 +5,50 @@ description: This endpoint allows you to add a new character to an existing user
 # New Character
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../pricing/faq/)page.
 {% endhint %}
 
 {% hint style="danger" %}
 New characters can NOT be added to communities using [Database Sync](broken-reference), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/civilian/new_character" method="post" summary="New Character" %}
-{% swagger-description %}
+## New Character
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/civilian/new_character`
+
 This endpoint allows you to add a new character to an existing user account.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description                |
+| ---- | ------ | -------------------------- |
+| id   | string | Your community's ID        |
+| key  | string | Your community's API Key   |
+| type | string | NEW\_CHARACTER             |
+| data | array  | Array of character objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-NEW_CHARACTER
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of character objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 NEW CHARACTER ADDED TO {{ USERNAME }}
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
+{% tab title="404 " %}
 ```
 API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -70,7 +65,8 @@ API ID NOT LINKED TO AN ACCOUNT IN THIS COMMUNITY
                 "first": "Brian",
                 "last": "Sosnowski"
             },
-            "record": null        // OPTION 2: Full raw JSON structure
+            "record": null,        // OPTION 2: Full raw JSON structure
+            "deleteAfterMinutes": 30 // OPTIONAL: Delete record after X minutes (temporary record)
         }
     ]
 }
