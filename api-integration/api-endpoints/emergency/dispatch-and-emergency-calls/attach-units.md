@@ -5,45 +5,40 @@ description: This endpoint allows you to attach new units to an existing dispatc
 # Attach Unit
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/attach_unit" method="post" summary="Attach Unit" %}
-{% swagger-description %}
+## Attach Unit
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/attach_unit`
+
 This endpoint allows you to attach new units to an existing dispatch call.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description              |
+| ---- | ------ | ------------------------ |
+| id   | string | Your community's ID      |
+| key  | string | Your community's API Key |
+| type | string | ATTACH\_UNIT             |
+| data | array  | Array of request objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-ATTACH_UNIT
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of request objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 UNITS ATTACHED
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -54,8 +49,9 @@ INVALID API KEY
         {
             "serverId": 1, // Default 1 - See guide on setting up multiple servers
             "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
-            "units": ["STEAM:1234"] // Array of API IDs
+            "units": ["STEAM:1234"], // OPTION 1: Array of API IDs
                                 // Typically, this is their STEAM Hex
+            "account": "000-000-0000" // OPTION 2: Attach unit via account UUID
         },
     ]
 }
