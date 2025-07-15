@@ -10,6 +10,64 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.7 07/15/2025
+
+{% tabs %}
+{% tab title="Fixed" %}
+Civilian DMV Auto-Fill
+
+* Fixed an issue causing new civilian records to not automatically import character information.
+{% endtab %}
+{% endtabs %}
+
+### 3.37.6 07/14/2025
+
+{% tabs %}
+{% tab title="New" %}
+API NEW\_RECORD: deleteAfterMinutes
+
+* Added a new parameter to automatically delete the new record after X minutes.
+
+API NEW\_CHARACTER: deleteAfterMinutes
+
+* Added a new parameter to automatically delete the new record after X minutes.
+
+API CALL\_911 deleteAfterMinutes
+
+* Added a new parameter to automatically delete the new call after X minutes.
+
+API Lookup Account Param
+
+* Added a new `account` parameter to the lookup endpoint, sending results back to the user's CAD based on their SSO UUID.
+
+API Lookup By Value Account Param
+
+* Added a new `account` parameter to the lookup by value endpoint, sending results back to the user's CAD based on their SSO UUID.
+
+API Attach To Call Account Param
+
+* Added a new `account` parameter to the unit attachment endpoint, attaching the user based on their SSO UUID.
+
+API Detach From Call Account Param
+
+* Added a new `account` parameter to the unit detachment endpoint, attaching the user based on their SSO UUID.
+{% endtab %}
+
+{% tab title="Fixed" %}
+\#29664 - Custom Report Search Character
+
+* Fixed an issue causing custom reports with multiple, separated character or vehicle search sections to sometimes not import data to the correct section.
+
+\#29582 - Character Random ID
+
+* Fixed an issue causing the random ID field to not automatically work on character records.
+
+\#18235 - Firefox Dropdown
+
+* Fixed an issue in Firefox causing the username dropdown to be empty.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.4 06/26/2025
 
 {% tabs %}
