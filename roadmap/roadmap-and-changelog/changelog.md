@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.8 07/16/2025
+
+{% tabs %}
+{% tab title="Fixed" %}
+Random Fields - Mask Search
+
+* Fixed an issue with masks on random generation fields causing the mask characters to apply to the searchable value - causing a failure on custom searches.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.7 07/15/2025
 
 {% tabs %}
