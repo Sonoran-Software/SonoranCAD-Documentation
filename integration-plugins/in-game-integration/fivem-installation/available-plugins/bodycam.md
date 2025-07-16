@@ -52,8 +52,7 @@ The bodycam settings are stored inside of the core configuration file.
 | `defaultKeybind`                | <p>The default keybind for toggling the bodycam.<br>Default: <code>O</code></p>                                                                                                                                                         |
 | `autoEnableWithLights`          | <p>Automaticlly enable bodycam when lights are enabled / disabled. If you exit the vehicle the bodycam stays active.</p>                                                                                                                |
 | `autoEnableWithWeapons`         | <p>Automaticlly enable bodycam when a weapon is drawn. If you put away your weapon the bodycam stays active.</p>                                                                                                                        |
-| `enableClothingWhitelist`       | <p>Enable Clothing / Ped whitelist for bodycams. Forces players to have bodycams to active it.</p>                                                                                                                                      |
-| `clothing`                      | <p>Clothing / Peds that have bodycams. Must enable <code>enableClothingWhitelist</code> to be usable.</p>                                                                                                                               |
+| `clothing`                      | <p>Clothing / Peds that have bodycams.</p>                                                                                                                               |
 | `weapons`                       | <p>Weapons that when drawn enable bodycam.</p>                                                                                                                                                                                          |
 
 ## In-Game Usage
