@@ -140,14 +140,6 @@ Open `sonorancad\configuration\config.CHANGEME.json`, update the values, then sa
     "enablePushEventForwarding": false,
     "pushEventForwardUrl": "https://host",
     "disableOverride": false,
-    "bodycamEnabled": true,
-    "bodycamBeepFrequency": 300000,
-    "bodycamScreenshotFrequency": 2000,
-    "bodycamPlayBeeps": true,
-    "bodycamOverlayEnabled": true,
-    "bodycamOverlayLocation": "top-right",
-    "bodycamCommandToggle": "bodycam",
-    "bodycamCommandChangeFrequncy": "bodycamfreq"
 }
 ```
 
