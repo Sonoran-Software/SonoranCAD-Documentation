@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.9 07/28/2025
+
+{% tabs %}
+{% tab title="Fixed" %}
+\#30273 - Date Field Timezone
+
+* Fixed an issue causing the date fields on submitted records to show as a day before or after for users in some timezones.
+
+Record Vehicle and Civ Search - Section Importing
+
+* Fixed an issue where importing data on a vehicle or civ search would only fill out that section and skip importing data to sections below that did not have a separate search button enabled.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.8 07/16/2025
 
 {% tabs %}
