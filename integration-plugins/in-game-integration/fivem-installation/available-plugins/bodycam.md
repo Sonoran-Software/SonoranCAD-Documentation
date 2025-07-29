@@ -61,6 +61,26 @@ If enabled in your framework configuration, a periodic beep and blinking body ca
 
 <figure><img src="../../../../.gitbook/assets/SonoranCAD Logo_Icon_1.gif" alt="" width="85"><figcaption></figcaption></figure>
 
+### Beeps
+
+You can configure the frequency or the bodycam beeps via the configuration option `beepFrequency` and you can also configure the range at which beeps are heard via the command option `beepRange`
+
+### Automatic Activation
+
+Bodycam can now automatically activate when an officer activates their lights or draws a firearm. This automatic activation can be disabled by setting `autoEnableWithWeapons` or `autoEnableWithLights` to `false` for the respected cases
+
+### Unit Duty Requirement
+
+You can enable or disable the requirement for a unit to have to be logged into the Police, EMS or Fire portions of CAD in order to activate their bodycam
+
+### Keybind
+
+Units can now set their preferred keybind to manually toggle their bodycams on and off. To set this keybind please navigate to Settings --> Keybinds --> FiveM and look for the keybind "Toggle BodyCam" under the resource `sonorancad`
+
+### Animation
+
+Users can now toggle on and off the new animation for activating and deactivating their bodycam.
+
 ## CAD Usage
 
 ### Active Units

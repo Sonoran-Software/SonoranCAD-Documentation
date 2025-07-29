@@ -78,6 +78,7 @@ local config = {
     configVersion = "1.2",
     -- put your configuration options below
     DOBFormat = "en", -- Make sure this matches | en: dd/mm/yyyy | us: mm/dd/yyyy | iso: yyyy/mm/dd
+    clearRecordsAfter = 30, -- Clear records after this many minutes (0 = never)
     create911Call = true, -- Create a 911 call when an ERS callout is created
     createEmergencyCall = true, -- Create an emergency call when an ERS callout is accepted
     callPriority = 2, -- Priority of the call created in CAD (1-3) | Only used if createEmergencyCall is true
@@ -276,7 +277,7 @@ end
 
 <summary>Default Configuration Values</summary>
 
-<table><thead><tr><th>Value</th><th width="113">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>DOBFormat</code></td><td><code>string</code></td><td>Language code for the DOB format. Available options can be found in the configuration file</td></tr><tr><td><code>create911Call</code></td><td><code>bool</code></td><td>Create a 911 call when an ERS callout is created</td></tr><tr><td><code>createEmergencyCall</code></td><td><code>bool</code></td><td>Create an emergency call when an ERS callout is accepted</td></tr><tr><td><code>callPriority</code></td><td><code>integer</code></td><td>Priority of the call created in CAD (1-3)</td></tr><tr><td><code>callCodes</code></td><td><code>array</code></td><td>Call codes for each ERS callout type. | Left side is the callout ID and right side is the corresponding 10 code</td></tr><tr><td><code>autoAddCall</code></td><td><code>bool</code></td><td>Automatically add members to the call when an ERS callout is accepted</td></tr><tr><td><code>customRecords</code></td><td><code>array</code></td><td>Array of record customization for CAD records. Please see comments in file for more information on record customization</td></tr></tbody></table>
+<table><thead><tr><th>Value</th><th width="113">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>DOBFormat</code></td><td><code>string</code></td><td>Language code for the DOB format. Available options can be found in the configuration file</td></tr><tr><td><code>clearRecordsAfter</code></td><td><code>integer</code></td><td>Number of minutes to clear records after | 0 to never delete</td></tr><tr><td><code>create911Call</code></td><td><code>bool</code></td><td>Create a 911 call when an ERS callout is created</td></tr><tr><td><code>createEmergencyCall</code></td><td><code>bool</code></td><td>Create an emergency call when an ERS callout is accepted</td></tr><tr><td><code>callPriority</code></td><td><code>integer</code></td><td>Priority of the call created in CAD (1-3)</td></tr><tr><td><code>callCodes</code></td><td><code>array</code></td><td>Call codes for each ERS callout type. | Left side is the callout ID and right side is the corresponding 10 code</td></tr><tr><td><code>autoAddCall</code></td><td><code>bool</code></td><td>Automatically add members to the call when an ERS callout is accepted</td></tr><tr><td><code>customRecords</code></td><td><code>array</code></td><td>Array of record customization for CAD records. Please see comments in file for more information on record customization</td></tr></tbody></table>
 
 </details>
 

@@ -34,7 +34,17 @@ If you have modified the [vehicle registration template](../../../../tutorials/c
 
 ### 4. Additional Configuration&#x20;
 
-<table><thead><tr><th>Option</th><th width="276">Description</th><th>Default</th></tr></thead><tbody><tr><td>reigsterCommand</td><td>The command used to register current vehicle</td><td>reg</td></tr><tr><td>defaultRegExpire</td><td>The default date that all registrations will expire</td><td>01/02/2030</td></tr><tr><td>defaultRegStatus</td><td>The default status that all registrations will have | MUST BE IN CAPS</td><td>VALID</td></tr><tr><td>language</td><td>Array of language used within the script</td><td>English</td></tr><tr><td>recordData</td><td>Array of field UID's based on your vehicle registration record</td><td>Default from CAD</td></tr></tbody></table>
+<table><thead><tr><th>Option</th><th width="276">Description</th><th width="351">Default</th></tr></thead><tbody><tr><td>reigsterCommand</td><td>The command used to register current vehicle</td><td>reg</td></tr><tr><td>defaultRegExpire</td><td>The default date that all registrations will expire</td><td>01/02/2030</td></tr><tr><td>defaultRegStatus</td><td>The default status that all registrations will have | MUST BE IN CAPS</td><td>VALID</td></tr><tr><td>language</td><td>Array of language used within the script</td><td>English</td></tr><tr><td>recordData</td><td>Array of field UID's based on your vehicle registration record</td><td>Default from CAD</td></tr><tr><td>customData</td><td>Array of preset vehicle information, commonly used for addon vehicles where names may not be present </td><td><pre class="language-lua"><code class="lang-lua">customData = {
+    {
+        spawncode = "adder",
+        model = "Adder",
+    },
+    {
+        spawncode = "blista",
+        model = "Blista",
+    }
+}
+</code></pre></td></tr></tbody></table>
 
 ## Usage
 
