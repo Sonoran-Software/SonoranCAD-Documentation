@@ -167,6 +167,18 @@ If your community is utilizing the Roxwood map expansion, there will be an extra
 
 <div><figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Live Map: Roxwood Tile</p></figcaption></figure> <figure><img src="../../../../.gitbook/assets/392764c1b6d8d6c83eca8b7bf78b32fd.gif" alt="" width="375"><figcaption><p>Live Map: Roxwood Expansion Area</p></figcaption></figure></div>
 
+### Cayo Perico Expansion
+
+If your community is utilizing the Cayo Perico map expansion, there will be extra tiles to upload. Ensure these are named as:
+
+* `minimap_sea_2_1.png`&#x20;
+  * Bottom right of the main island + top right of Cayo Perico
+* `minimap_sea_2_2.png`&#x20;
+* `minimap_sea_3_1.png`&#x20;
+* `minimap_sea_3_2.png`&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ## Using a Custom Map (Roblox)
 
 Sonoran CAD allows any Roblox game to also send and update live map positions.
