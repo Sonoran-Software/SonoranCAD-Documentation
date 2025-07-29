@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.10 07/29/2025
+
+{% tabs %}
+{% tab title="New" %}
+Live Map - Cayo Perico
+
+* Added support to the live map for the Cayo Perico expansion
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.9 07/28/2025
 
 {% tabs %}
