@@ -11,7 +11,7 @@ description: >-
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/minicad.png" alt=""><figcaption><p>Sonoran CAD - Mini-CAD</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mini_cad.png" alt=""><figcaption><p>Sonoran CAD - Mini-CAD</p></figcaption></figure>
 
 ## Activation Guide
 
