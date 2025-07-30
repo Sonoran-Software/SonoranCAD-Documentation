@@ -85,7 +85,7 @@ The body camera will automatically activate when an officer activates their ligh
 
 ### Unit Duty Requirement
 
-You can enable or disable the requirement for a unit to have to be logged into the Police, EMS or Fire portions of CAD in order to activate their bodycam
+You can enable or disable the requirement for a unit to have to be logged into the Police, EMS or Fire portions of CAD in order to activate their bodycam by setting `requireUnitDuty` to `true`.
 
 ### Keybind
 
