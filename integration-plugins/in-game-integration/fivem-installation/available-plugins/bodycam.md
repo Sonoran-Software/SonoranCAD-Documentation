@@ -40,14 +40,22 @@ The bodycam settings are stored inside of the core configuration file.
 
 | Variable                        | Description                                                                                                                                                                                                                             |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `bodycamEnabled`                | <p>Enables or disables the body camera command.<br>Default: <code>true</code></p>                                                                                                                                                       |
-| `bodycamBeepFrequency`          | <p>Adjusts the frequency at which unit body camera beeps when turned on(in milliseconds).<br>Default: <code>30000</code> (30 seconds)</p>                                                                                               |
-| `bodycamPlayBeeps`              | <p>Enables or disables the body camera beeping when turned on.<br>Default: <code>true</code></p>                                                                                                                                        |
-| `bodycamScreenshotFrequency`    | <p>Adjusts the frequency at which unit body cameras update (in milliseconds).<br>Default: <code>2000</code> (2 seconds)</p>                                                                                                             |
-| `bodycamOverlayEnabled`         | <p>Enables or disables the blinking body camera image on screen when enabled.<br>Default <code>true</code></p>                                                                                                                          |
-| `bodycamOverlayLocation`        | <p>The position (corner) of the screen where the body camera image is displayed.<br>Options: <code>top-left</code>, <code>top-right</code>, <code>bottom-left</code>, <code>bottom-right</code> <br>Default: <code>top-right</code></p> |
-| `bodycamCommandToggle`          | <p>The command name to toggle your body camera on or off.<br>Default: <code>bodycam</code></p>                                                                                                                                          |
-| `bodycamCommandChangeFrequency` | <p>The command to adjust your individual body camera screenshot frequency to be different than the server's <code>bodycamScreenshotFrequency</code> value.<br>Default: <code>bodycamFreq</code></p>                                     |
+| `command`                       | The command name to toggle your body camera on or off.                                                                                                                                                                                  |
+| `requireUnitDuty`               | If enabled, the player must be logged into the CAD to use the body camera.                                                                                                                                                              |
+| `enableAnimation`               | Play an in-game animation when activating or deactivating the body camera.                                                                                                                                                              |
+| `enableOverlay`                 | <p>Enables or disables the blinking body camera image on screen when enabled.<br>Default <code>true</code></p>                                                                                                                          |
+| `overlayLocation`               | <p>The position (corner) of the screen where the body camera image is displayed.<br>Options: <code>top-left</code>, <code>top-right</code>, <code>bottom-left</code>, <code>bottom-right</code> <br>Default: <code>top-right</code></p> |
+| `enableBeeps`                   | <p>Enables or disables the body camera beeping when turned on.<br>Default: <code>true</code></p>                                                                                                                                        |
+| `beepType`                      | <p>Type of audio that the beeps use.</p><p><code>native</code> = GTAV Native Sounds</p><p><code>nui</code> = Custom Sound File</p>                                                                                                      |
+| `beepFrequency`                 | <p>Adjusts the frequency at which unit body camera beeps when turned on(in milliseconds).<br>Default: <code>30000</code> (30 seconds)</p>                                                                                               |
+| `beepRange`                     | The range at which a person can hear the bodycam beeps                                                                                                                                                                                  |
+| `screenshotFrequency`           | <p>Adjusts the frequency at which unit body cameras update (in milliseconds).<br>Default: <code>2000</code> (2 seconds)</p>                                                                                                             |
+| `defaultKeybind`                | The default keybind for toggling the bodycam.                                                                                                                                                                                           |
+| `autoEnableWithLights`          | Automatically enable bodycam when emergency lights are enabled/disabled.                                                                                                                                                                |
+| `autoEnableWithWeapons`         | Automatically enable bodycam when a weapon is drawn.                                                                                                                                                                                    |
+| `clothing`                      | Clothing items that must be worn in order to have a body camera.                                                                                                                                                                        |
+| `weapons`                       | Weapons that when drawn enable bodycam.                                                                                                                                                                                                 |
+| `bodycamCommandChangeFrequency` | <p>The command to adjust your individual body camera screenshot frequency to be different than the server's <code>screenshotFrequency</code> value.<br>Default: <code>bodycamFreq</code></p>                                            |
 
 ## In-Game Usage
 
@@ -63,11 +71,17 @@ If enabled in your framework configuration, a periodic beep and blinking body ca
 
 ### Beeps
 
-You can configure the frequency or the bodycam beeps via the configuration option `beepFrequency` and you can also configure the range at which beeps are heard via the command option `beepRange`
+The body camera plays server-sided beeps periodically while activated.
+
+* `beepFrequency` determines how often these beeps are played
+* `beepRange` determines how far away these beeps are heard
 
 ### Automatic Activation
 
-Bodycam can now automatically activate when an officer activates their lights or draws a firearm. This automatic activation can be disabled by setting `autoEnableWithWeapons` or `autoEnableWithLights` to `false` for the respected cases
+The body camera will automatically activate when an officer activates their lights or draws a firearm.
+
+* &#x20;`autoEnableWithWeapons` enables automatic activation when one of the `weapons` items are used.
+* &#x20;`autoEnableWithLights` to enabled automatic activation when emergency lights are enabled.
 
 ### Unit Duty Requirement
 
@@ -75,11 +89,13 @@ You can enable or disable the requirement for a unit to have to be logged into t
 
 ### Keybind
 
-Units can now set their preferred keybind to manually toggle their bodycams on and off. To set this keybind please navigate to Settings --> Keybinds --> FiveM and look for the keybind "Toggle BodyCam" under the resource `sonorancad`
+Users can customize a keybind to toggle their bodycams on and off.&#x20;
+
+Navigate to Settings > Keybinds > FiveM and look for the keybind "Toggle BodyCam" under the resource `sonorancad`
 
 ### Animation
 
-Users can now toggle on and off the new animation for activating and deactivating their bodycam.
+When toggling your body camera on or off, an animation will play if `enableAnimation` is `true`.
 
 ## CAD Usage
 
