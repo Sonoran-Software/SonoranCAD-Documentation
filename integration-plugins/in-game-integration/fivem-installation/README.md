@@ -186,22 +186,28 @@ For information regarding the bodycam script config values, please see our [Body
 
 Add the following to your `server.cfg` (if you don't want pNotify or wraith, leave those out):
 
+```
+exec @sonorancad/sonorancad.cfg
+```
+
 {% hint style="danger" %}
 It is very important that the `sonoran_updatehelper` resource is not started manually. Doing so may cause a server crash if updates are available due to a race condition.
 
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
-```
-ensure pNotify
-ensure wk_wars2x
-ensure sonorancad
-ensure tablet
+<details>
 
-# permissions for auto-updater (REQUIRED)
-add_ace resource.sonorancad command allow
-add_ace resource.sonoran_updatehelper command allow
-```
+<summary>Advanced - Remove Tablet, pNotify, etc.</summary>
+
+Adding the `exec @sonorancad/sonorancad.cfg` starts multiple resources bundled with the download. If you wish to not use one or more of the resources (or with a different name) you will need to:
+
+* Copy/paste the contents of `sonorancad.cfg` to your `server.cfg`
+* Remove the `exec @sonorancad/sonorancad.cfg` line from your `server.cfg`
+
+Do not update the contents of `sonorancad.cfg` as it will be overwritten on resource updates.
+
+</details>
 
 {% hint style="success" %}
 Once completed please move to the [#additional-configuration](./#additional-configuration "mention") section to complete your setup
