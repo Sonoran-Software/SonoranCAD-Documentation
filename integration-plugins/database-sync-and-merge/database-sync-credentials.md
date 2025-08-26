@@ -177,12 +177,13 @@ My community wants to whitelist **only** the Sonoran CAD IP address to connect o
 You may whitelist the following IPs:
 
 ```
+34.173.36.190
 23.27.5.3
 24.199.66.94
 198.199.90.248
 ```
 
-Last Updated : 3/26/2025
+Last Updated : 8/26/2025
 
 
 
