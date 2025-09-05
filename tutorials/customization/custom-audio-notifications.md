@@ -40,3 +40,16 @@ Text-to-speech notifications are currently only available on the Chrome web vers
 For some users, text-to-speech sounds may cut out in-game or other audio sources. This is because the selected voice may be a Windows or system based source.
 
 Simply change the selected TTS voice to a non-windows or system based source to resolve.
+
+### Text-To-Speech Wrong Language
+
+Text-to-speech voice and language options varry based on the user device or browser. If your text-to-speech notifications are in the wrong language (Ex: not English) use the following:
+
+#### OSX Web
+
+* Users report limited or incorrect languages when using Safari. Switch to Chrome for the best compatability.
+
+#### Windows Desktop
+
+* PC Settings > Time & Language > Speech
+  * Install additional voice options
