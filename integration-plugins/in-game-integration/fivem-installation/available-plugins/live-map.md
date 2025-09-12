@@ -89,7 +89,7 @@ Clicking on a unit blip allows you to add the unit to a call, add the unit to a 
 #### Drag-and-Drop
 
 {% hint style="warning" %}
-Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../../roblox-er-lc.md) edition.
+Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../../roblox-er-lc/) edition.
 {% endhint %}
 
 Drag-and-drop is also supported for unit blips. The following drag-and-drop options are supported:
@@ -183,7 +183,7 @@ If your community is utilizing the Cayo Perico map expansion, there will be extr
 
 Sonoran CAD allows any Roblox game to also send and update live map positions.
 
-* [ER:LC](../../../roblox-er-lc.md)
+* [ER:LC](../../../roblox-er-lc/)
   * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
 * [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
   * Requires a custom map upload from the game

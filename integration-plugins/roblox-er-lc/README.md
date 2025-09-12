@@ -4,10 +4,10 @@ description: Learn more about our Roblox integration with ER:LC!
 
 # 🎮 Roblox ER:LC
 
-![Sonoran CAD x ER:LC](<../.gitbook/assets/Artboard 1 (2).png>)
+![Sonoran CAD x ER:LC](<../../.gitbook/assets/Artboard 1 (2).png>)
 
 {% hint style="warning" %}
-These features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](roblox-er-lc.md#in-game-commands-and-features), or [view our pricing page](../pricing/faq/) for more information.
+These features utilize API endpoints that require the **standard** version of Sonoran CAD or higher. You can view the specific version requirements [listed under each feature](./#in-game-commands-and-features), or [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 ## What is ER:LC?
@@ -46,29 +46,29 @@ In Sonoran CAD, navigate to the admin menu > `Advanced` > `In-Game Integration` 
 
 Copy your community ID and API key, you'll need to enter these in Roblox.
 
-![Sonoran CAD: In-Game Integration](<../.gitbook/assets/image (303) (1) (1).png>)
+![Sonoran CAD: In-Game Integration](<../../.gitbook/assets/image (303) (1) (1).png>)
 
-![Sonoran CAD: Community ID and API Key](../.gitbook/assets/CAD_WebAPICredentials.png)
+![Sonoran CAD: Community ID and API Key](../../.gitbook/assets/CAD_WebAPICredentials.png)
 
 #### 2. Access the Server Owner Menu
 
 Once you've joined your private server as the owner, click the menu on the top right of your screen.
 
-![ER:LC Server Owner Menu](<../.gitbook/assets/image (217).png>)
+![ER:LC Server Owner Menu](<../../.gitbook/assets/image (217).png>)
 
 #### 3. Edit the Server Settings
 
 Select `Edit Server Settings` in the menu.
 
-![ER:LC Edit Server Settings](<../.gitbook/assets/image (291) (1).png>)
+![ER:LC Edit Server Settings](<../../.gitbook/assets/image (291) (1).png>)
 
 #### 4. Enter your Community ID and API Key
 
 Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
-![](<../.gitbook/assets/image (296) (1) (1).png>)
+![](<../../.gitbook/assets/image (296) (1) (1).png>)
 
-![](<../.gitbook/assets/image (295) (1) (1).png>)
+![](<../../.gitbook/assets/image (295) (1) (1).png>)
 
 ### For Community Members
 
@@ -76,15 +76,15 @@ Select `Edit` and paste in your Sonoran CAD community ID and API key.
 
 At the top right of your screen, select the gear icon to open your local settings menu.
 
-![ER:LC - Local Settings Button](<../.gitbook/assets/image (300) (1) (1) (1).png>)
+![ER:LC - Local Settings Button](<../../.gitbook/assets/image (300) (1) (1) (1).png>)
 
 #### 2. Copy your API ID
 
 Then, select `View Your API ID` and copy your in-game API ID.
 
-![ER:LC - View your API ID](<../.gitbook/assets/image (298) (1) (1).png>)
+![ER:LC - View your API ID](<../../.gitbook/assets/image (298) (1) (1).png>)
 
-![ER:LC - Copy your API ID](<../.gitbook/assets/image (299) (2).png>)
+![ER:LC - Copy your API ID](<../../.gitbook/assets/image (299) (2).png>)
 
 #### 3. Add Your API ID to Sonoran CAD
 
@@ -92,9 +92,9 @@ From the community menu select the `Settings` modal.
 
 Select `New` under API ID and paste in your Roblox API ID.
 
-![Sonoran CAD Settings](<../.gitbook/assets/image (290) (2).png>)
+![Sonoran CAD Settings](<../../.gitbook/assets/image (290) (2).png>)
 
-![Sonoran CAD: New API ID](<../.gitbook/assets/image (23) (1).png>)
+![Sonoran CAD: New API ID](<../../.gitbook/assets/image (23) (1).png>)
 
 ## In-Game Commands and Features
 
@@ -103,7 +103,7 @@ Select `New` under API ID and paste in your Roblox API ID.
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 #### 1. Set the Map Type
@@ -120,28 +120,28 @@ In the dispatch page (or with self-dispatch enabled) you can open the live map w
 
 The map allows you to zoom in or out, select different street, building, and postal overlays, and more! Hover over a unit icon for more information.
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
 
-![Sonoran CAD - ER:LC Live Map](<../.gitbook/assets/image (303) (1).png>)
+![Sonoran CAD - ER:LC Live Map](<../../.gitbook/assets/image (303) (1).png>)
 
 ### Unit Locations
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD, your unit location in-game will be updated as you move around the map.
 
-![Sonoran CAD - Unit Locations](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.17.54 AM.png>)
+![Sonoran CAD - Unit Locations](<../../.gitbook/assets/Screen Shot 2021-11-27 at 10.17.54 AM.png>)
 
 ### Plate Search
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 | Command                | Description        |
@@ -151,16 +151,16 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 Ex: `/sp abc1234`
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, running a plate search in-game will automatically pop up the results on your CAD screen.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD, running a plate search in-game will automatically pop up the results on your CAD screen.
 
-![Sonoran CAD: Plate Search](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.24.49 AM.png>)
+![Sonoran CAD: Plate Search](<../../.gitbook/assets/Screen Shot 2021-11-27 at 10.24.49 AM.png>)
 
 ### Name Search
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 | Command              |                   |
@@ -170,16 +170,16 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 Ex: `/sn Brian Sauce`
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD,  running a name search in-game will automatically pop up the results on your CAD screen.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD,  running a name search in-game will automatically pop up the results on your CAD screen.
 
-![Sonoran CAD: Name Search](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.25.04 AM.png>)
+![Sonoran CAD: Name Search](<../../.gitbook/assets/Screen Shot 2021-11-27 at 10.25.04 AM.png>)
 
 ### Traffic Stop
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 | Command               | Description                                          |
@@ -189,18 +189,18 @@ Please [view our pricing page](../pricing/faq/) for more information.
 
 Ex: `/ts Red Tahoe, ABC123`
 
-Once you have [added your Roblox API ID](roblox-er-lc.md#for-community-members) to the CAD, running the traffic stop command will automatically create and attach you to a new dispatch call with your information.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD, running the traffic stop command will automatically create and attach you to a new dispatch call with your information.
 
 Note: Don't include your location in the traffic stop info, the command will automatically add this to the call.
 
-![Sonoran CAD: Traffic Stop Dispatch](<../.gitbook/assets/Screen Shot 2021-11-27 at 10.36.11 AM.png>)
+![Sonoran CAD: Traffic Stop Dispatch](<../../.gitbook/assets/Screen Shot 2021-11-27 at 10.36.11 AM.png>)
 
 ### 911 Calls
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 | Command           | Description                                 |
@@ -214,7 +214,7 @@ Using your cell phone in-game, you can call emergency services. This 911 call wi
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 Automated alarms from fire alarms or robberies will also be automatically sent to the CAD's emergency call section.
@@ -224,25 +224,25 @@ Automated alarms from fire alarms or robberies will also be automatically sent t
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **standard** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 | Command  | Description                      |
 | -------- | -------------------------------- |
 | `/panic` | Toggles your unit's panic status |
 
-Additionally, you can also use the desktop application's [panic hotkey](../tutorials/other-features/configurable-hotkeys.md).
+Additionally, you can also use the desktop application's [panic hotkey](../../tutorials/other-features/configurable-hotkeys.md).
 
 ## Auto-Complete Street Addresses
 
 {% hint style="warning" %}
 This feature utilizes API endpoints that require the **plus** version of Sonoran CAD or higher.
 
-Please [view our pricing page](../pricing/faq/) for more information.
+Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
 Sonoran CAD allows you to import the street addresses from your game to auto-complete in new dispatch calls, custom reports, and more!
 
-We've [created a list](https://docs.google.com/spreadsheets/u/1/d/1jDUxfCffxyGHoXQ-rpzrWRNFEhDmMs3-TA9U-mdNBjg/copy) specifically for ER:LC! [Learn more about importing these street addresses](roblox-er-lc.md#undefined).
+We've [created a list](https://docs.google.com/spreadsheets/u/1/d/1jDUxfCffxyGHoXQ-rpzrWRNFEhDmMs3-TA9U-mdNBjg/copy) specifically for ER:LC! [Learn more about importing these street addresses](./#undefined).
 
-![](../.gitbook/assets/addresses.gif)
+![](../../.gitbook/assets/addresses.gif)

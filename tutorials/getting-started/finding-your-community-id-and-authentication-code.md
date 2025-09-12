@@ -21,7 +21,7 @@ First, there is your **community** API Key which allows CAD's in-game integratio
 
 To find your community API Key, see [Retrieving Your Credentials](finding-your-community-id-and-authentication-code.md#retrieving-your-credentials) below.&#x20;
 
-This key will be placed in your config.json (for [FiveM integration](broken-reference)) or the Server Settings panel (for [ER:LC integration](../../integration-plugins/roblox-er-lc.md)).
+This key will be placed in your config.json (for [FiveM integration](broken-reference)) or the Server Settings panel (for [ER:LC integration](../../integration-plugins/roblox-er-lc/)).
 
 #### **User API ID**
 

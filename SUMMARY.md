@@ -117,7 +117,8 @@
     * [Server Events](integration-plugins/in-game-integration/framework-development-documentation/server-events.md)
     * [HTTP Request Handling](integration-plugins/in-game-integration/framework-development-documentation/http-request-handling.md)
   * [Error Codes](integration-plugins/in-game-integration/error-codes.md)
-* [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc.md)
+* [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc/README.md)
+  * [Troubleshooting](integration-plugins/roblox-er-lc/troubleshooting.md)
 
 ***
 
