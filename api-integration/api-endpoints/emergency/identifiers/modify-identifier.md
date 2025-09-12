@@ -7,12 +7,12 @@ description: This endpoint allows you to add, edit, or remove unit identifiers.
 
 
 {% hint style="warning" %}
-This API endpoint requires the **Pro** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **Pro** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
 ## Modify Identifier
 
-<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/modify_identifiers`
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/modify_identifier`
 
 This endpoint allows you to retrieve all unit identifiers for a specified account in your community.
 
