@@ -7,39 +7,28 @@ description: >-
 # Get Calls
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/get_calls" method="post" summary="Get Calls" %}
-{% swagger-description %}
+## Get Calls
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/get_calls`
+
 This endpoint allows you to retrieve all active emergency calls, active dispatch calls, and previously closed dispatch calls.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" required="true" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name                                   | Type   | Description                                                               |
+| -------------------------------------- | ------ | ------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark>   | string | Your community's ID                                                       |
+| key<mark style="color:red;">\*</mark>  | string | Your community's API Key                                                  |
+| type<mark style="color:red;">\*</mark> | string | GET\_CALLS                                                                |
+| data<mark style="color:red;">\*</mark> | array  | Array of request objects                                                  |
+| closedLimit                            | int    | Limit number of closed dispatch calls returned (Max 100, Default 10)      |
+| closedOffset                           | int    | Used to paginate through the closed dispatches when paired with the limit |
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-GET_CALLS
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" required="true" %}
-Array of request objects
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="closedLimit" type="int" required="false" %}
-Limit number of closed dispatch calls returned (Max 100, Default 10)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="closedOffset" type="int" %}
-Used to paginate through the closed dispatches when paired with the limit
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```javascript
 {
     // See below for full object structuring
@@ -48,17 +37,17 @@ Used to paginate through the closed dispatches when paired with the limit
     "closedCalls": [], // CLOSED CALL Array
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -70,6 +59,7 @@ INVALID API KEY
             "serverId": 1 // Default 1 - See out guide on setting up multiple servers
             "closedLimit": 100, // OPTIONAL: Limit number of closed calls retuned (Max 100, default 10)
             "closedOffset": 0 // OPTIONAL: Used to paginate beyond the limit
+            "type": 0 // OPTIONAL: CALL_TYPE ENUM Specify emergency or dispatch calls only, returns both if not specified
         },
     ]
 }
@@ -135,7 +125,7 @@ Sonoran CAD uses integer enumeration values for the `origin` and `status` fields
 {% endtab %}
 
 {% tab title="UNIT_STATUS" %}
-These represent the default [unit status](../../../../../tutorials/customization/unit-status-codes.md) options.
+These represent the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
 
 | Integer (Enumeration) Value | Status Description |
 | --------------------------- | ------------------ |
@@ -144,5 +134,13 @@ These represent the default [unit status](../../../../../tutorials/customization
 | 2                           | AVAILABLE          |
 | 3                           | ENROUTE            |
 | 4                           | ON\_SCENE          |
+{% endtab %}
+
+{% tab title="CALL_TYPE" %}
+| Integer (Enumeration) Value | Call Type Description |
+| --------------------------- | --------------------- |
+| `0`                         | DISPATCH CALL         |
+| `1`                         | EMERGENCY CALL        |
+| `100`                       | ALL CALLS             |
 {% endtab %}
 {% endtabs %}
