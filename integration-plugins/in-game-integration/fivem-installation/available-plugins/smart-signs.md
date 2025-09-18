@@ -30,7 +30,7 @@ If you have the original London Studios Smart Signs resource **please remove and
 
 ### 1. Download the Resource
 
-[Purchase the resource for free](https://www.sonoran.store/package/4913039) from our store.
+[Purchase the resource for free](https://londonstudios.net/smart-signs-sonoran/) from our store.
 
 This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
 
