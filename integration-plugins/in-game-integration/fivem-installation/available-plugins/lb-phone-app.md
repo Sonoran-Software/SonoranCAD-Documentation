@@ -4,9 +4,13 @@ description: View the Sonoran CAD app in-game on LB Phone!
 
 # LB Phone App
 
+{% hint style="warning" %}
+LB Phone is a paid, third-party script. For support or questions on LB Phone, please contact their support team.
+{% endhint %}
+
 ## LB Phone App
 
-LB Phone is a popular, in-game phone script for FiveM. LB Phone allows you to configure custom applications (like Sonoran CAD) to add and view on the in-game phone.
+[LB Phone](https://lbscripts.com/phone) is a popular, in-game phone script for FiveM. LB Phone allows you to configure custom applications (like Sonoran CAD) to add and view on the in-game phone. [LB Phone must be purchased from LB Scripts](https://lbscripts.com/phone).
 
 ## Activation Guide
 
