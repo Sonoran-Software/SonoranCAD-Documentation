@@ -96,6 +96,7 @@
       * [FivePD](integration-plugins/in-game-integration/fivem-installation/available-plugins/fivepd.md)
       * [ForceReg](integration-plugins/in-game-integration/fivem-installation/available-plugins/forcereg.md)
       * [Kick](integration-plugins/in-game-integration/fivem-installation/available-plugins/kick.md)
+      * [LB Phone App](integration-plugins/in-game-integration/fivem-installation/available-plugins/lb-phone-app.md)
       * [Local Callers](integration-plugins/in-game-integration/fivem-installation/available-plugins/local-callers.md)
       * [Locations](integration-plugins/in-game-integration/fivem-installation/available-plugins/locations.md)
       * [Live Map](integration-plugins/in-game-integration/fivem-installation/available-plugins/live-map.md)
