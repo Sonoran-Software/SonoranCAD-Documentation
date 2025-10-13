@@ -217,6 +217,7 @@
         * [Remove Record](api-integration/api-endpoints/general/custom-records/remove-record.md)
       * [Lookup By Value](api-integration/api-endpoints/general/lookup-by-integer.md)
       * [Lookup Name or Plate](api-integration/api-endpoints/general/lookup-name-or-plate.md)
+      * [Lookup By Custom Search](api-integration/api-endpoints/general/lookup-by-custom.md)
       * [Get Account](api-integration/api-endpoints/general/get-account.md)
       * [Get Accounts](api-integration/api-endpoints/general/get-account-1.md)
       * [Check API ID](api-integration/api-endpoints/general/check-api-id.md)
