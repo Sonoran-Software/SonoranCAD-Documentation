@@ -13,7 +13,7 @@ This resource utilizes API endpoints that require the **Plus** version of Sonora
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](https://docs.sonoransoftware.com/promotions/fivem-hosting)!
 {% endhint %}
 
 ## Installation Guide
@@ -46,9 +46,9 @@ ensure inferno-station-alert
 
 ### 4. Configuration Options
 
-Information on adding stations, lights, speakers, and more can be found in the [quick start guide](https://docs.inferno-collection.com/station-alert/usage/).
+Information on adding stations, lights, speakers, and more can be found in the [quick start guide](https://docs.inferno-collection.com/resources/station-alert/usage/).
 
-The [configuration documentation](https://docs.inferno-collection.com/station-alert/config/) provides further customization options.&#x20;
+The [configuration documentation](https://docs.inferno-collection.com/resources/station-alert/config/) provides further customization options.&#x20;
 
 ## Usage
 
