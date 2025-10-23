@@ -102,6 +102,7 @@
       * [Live Map](integration-plugins/in-game-integration/fivem-installation/available-plugins/live-map.md)
       * [Lookups](integration-plugins/in-game-integration/fivem-installation/available-plugins/lookups.md)
       * [Postals](integration-plugins/in-game-integration/fivem-installation/available-plugins/postals.md)
+      * [Record Printer](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam-1.md)
       * [Smart Signs](integration-plugins/in-game-integration/fivem-installation/available-plugins/smart-signs.md)
       * [Sonoran Radio (sonrad)](integration-plugins/in-game-integration/fivem-installation/available-plugins/sonoran-radio-sonrad.md)
       * [Station Alert](integration-plugins/in-game-integration/fivem-installation/available-plugins/station-alert.md)
