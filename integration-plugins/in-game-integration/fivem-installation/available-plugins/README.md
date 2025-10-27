@@ -29,7 +29,7 @@ Each submodule can be [easily enabled and configured](../submodule-configuration
 | [Live Map](live-map.md)                                                                       | No       | Yes     | Yes     |
 | [Lookups](lookups.md)                                                                         | No       | Yes     | Yes     |
 | [Postals](postals.md)                                                                         | Yes      | Yes     | Yes     |
-| [Record Printer](bodycam-1.md)                                                                | No       | No      | Yes     |
+| [Record Printer](record-printer.md)                                                           | No       | No      | Yes     |
 | [Smart Signs](smart-signs.md)                                                                 | No       | No      | Yes     |
 | [Sonoran Radio (sonrad)](sonoran-radio-sonrad.md)                                             | No       | Partial | Yes     |
 | [Tablet and Mini CAD](tablet.md)                                                              | Partial  | Yes     | Yes     |
