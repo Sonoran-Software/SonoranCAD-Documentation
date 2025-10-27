@@ -1,30 +1,28 @@
 ---
-description: >-
-  The Sonoran CAD record printer enables you to turn SonoranCAD records into
-  in-game items
+description: Print CAD PDF records to viewable, sharable, in-game inventory items!
 ---
 
 # Record Printer
 
 {% hint style="warning" %}
-This submodule utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../../pricing/faq/)page.
+This submodule utilizes API endpoints that require the **Pro** version of Sonoran CAD or higher. For more information, view our [pricing](../../../../pricing/faq/) page.
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](https://docs.sonoransoftware.com/promotions/fivem-hosting)!
 {% endhint %}
 
 ## What is the Record Printer?
 
-Sonoran CAD’s Record Printer seamlessly bridges CAD records and the in-game world, allowing officers to generate and view official documents directly through an interactive, in-game printer object.\
-This system supports real-time data transmission from CAD records to in-game devices, with customizable formatting, automatic pagination, and secure access controls.\
-Learn more about the integration process, configuration options, and supported record types.
+Sonoran CAD’s Record Printer seamlessly connects CAD records with the in-game world, enabling officers to generate and view official documents directly through an interactive in-game printer.
+
+Records can be **printed at configurable printer objects or within vehicles**, shared as **inventory items**, and **viewed entirely in-game**.
 
 ## Activation Guide
 
 ### 1. Download and Install the Core
 
-If you haven't already, be sure to install and configure the [SonoranCAD Core](../) first.
+If you haven't already, be sure to install and configure the [Sonoran CAD Core](../) first.
 
 ### 2. Adjust the Core Configuration
 
@@ -45,20 +43,26 @@ The record printer settings are stored inside of the core configuration file.
 
 ## In-Game Usage
 
-### Sending Files From SonoranCAD
+### Sending Files From Sonoran CAD
 
 When in-game, units must also be actively signed into the dispatch, police, fire, or EMS panel.
 
-Using the records section in CAD, navigate to the record you would like to print, click the "down arrow" next to the blue "PDF" button and press "Print In-Game"
+Using the records section in CAD, navigate to the record you would like to print, click the **down arrow** next to the blue **PDF** button and press **Print In-Game**.
 
-<figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption><p>SonoranCAD - Print Record Option</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (101).png" alt="" width="375"><figcaption><p>Sonoran CAD - Print Record Option</p></figcaption></figure>
 
 ### Printing In-Game
 
-Once you send the file from SonoranCAD, you should see a message in-game stating "You have a new record to print. Use `/printqueue` to view queue.
+After selecting **Print In-Game**, a message will appear in-game stating "**You have a new record to print. Use `/printqueue` to view queue**".
 
-Upon running the command you will see the file in your queue as well as the number identifier next to the file name. You can print this file by using the command `/print <PRINT QUEUE INDEX>` near a printer or inside a configured vehicle. Upon printing the PDF viewer will then show on your in-game screen
+You can print this file by using the command `/print <PRINT QUEUE #>` near a configured printer (`printerObjects`) or inside a configured vehicle (`vehicleConfig`).
 
-<div><figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption><p>In-Game - PDF Viewer</p></figcaption></figure> <figure><img src="https://media.discordapp.net/attachments/624489051172503555/1430304995680714873/image.png?ex=68fb4514&#x26;is=68f9f394&#x26;hm=2ad7541a1e41ee61844b25fc133e110c058263a66a9f516212f6699953935f83&#x26;=&#x26;format=webp&#x26;quality=lossless&#x26;width=3456&#x26;height=1944" alt=""><figcaption><p>In-Game - PDF Viewer Fullscreen</p></figcaption></figure></div>
+Once printed, the PDF will be placed in your hand with a viewer shown on your in-game screen. Buttons on-screen will allow you to maximize, minimize, and exit the window.
 
-<div><figure><img src="../../../../.gitbook/assets/image (119).png" alt=""><figcaption><p>In-Game PDF Viewer Minimized</p></figcaption></figure> <figure><img src="https://media.discordapp.net/attachments/624489051172503555/1430304994489405500/image.png?ex=68fb4514&#x26;is=68f9f394&#x26;hm=fda100e0e2195ea2b42ec894deb8c9600efcb51f509707a3961f13f12b1ea7a5&#x26;=&#x26;format=webp&#x26;quality=lossless&#x26;width=3456&#x26;height=1944" alt=""><figcaption><p>In-Game PDF Object in Inventory</p></figcaption></figure></div>
+If configured, closing the record will [place it in your player inventory](bodycam-1.md#inventory-support). Otherwise, the record will be dropped on the ground and can be picked up to be viewed by other players.
+
+<div><figure><img src="../../../../.gitbook/assets/image (110).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="https://media.discordapp.net/attachments/624489051172503555/1430304995680714873/image.png?ex=68fb4514&#x26;is=68f9f394&#x26;hm=2ad7541a1e41ee61844b25fc133e110c058263a66a9f516212f6699953935f83&#x26;=&#x26;format=webp&#x26;quality=lossless&#x26;width=3456&#x26;height=1944" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (119).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+### Inventory Support
+
+Records can be stored and shared as an inventory item. The `frameworks` configuration item allows for inventories like ESX, QB Core, OX Inventory, and more.

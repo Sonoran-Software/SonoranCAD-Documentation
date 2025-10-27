@@ -10,6 +10,28 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.14 10/27/2025
+
+{% tabs %}
+{% tab title="New" %}
+PDF Print to In-Game
+
+* Added a new feature to print a PDF record from in-game to FiveM.
+
+API: LOOKUP\_CUSTOM
+
+* Added a new endpoint to search for records via custom lookup types.
+
+Roxwood Live Map: Right Tile
+
+* Added file whitelists for a blank live map tile to the right of the Roxwood expansion.
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.10 07/29/2025
 
 {% tabs %}
