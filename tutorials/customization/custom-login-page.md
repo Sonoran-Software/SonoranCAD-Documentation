@@ -22,57 +22,42 @@ The custom login page allows your community members to register, sign-in, and ac
 ## DNS Record Method (Recommended)
 
 {% hint style="warning" %}
-**If you are unsure how to add a DNS record, you will need to contact your domain registrar.**\
-Or, you may purchase a new domain name with [Sonoran Servers](https://sonoranservers.com/cart.php?a=add\&domain=register).
+**If you are unsure how to add a DNS record, you will need to contact your domain registrar.**
 {% endhint %}
 
-### 1. Add a CNAME and TXT Record for your Domain
+### 1. Enter your Desired Domain
 
-{% hint style="info" %}
-Due to [DNS requirements](https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root), if you wish to use the Apex / root domain instead of a subdomain (i.e. dojrp.com vs cad.dojrp.com), you must have a domain registered with Cloudflare, or otherwise[ transfer your existing domain to Cloudflare](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/).
-{% endhint %}
+Your Sonoran CAD login page can be configured to display on your root custom domain or on a subdomain, such as **example.com** or **cad.example.com**.
 
-#### CNAME Record
+<figure><img src="../../.gitbook/assets/image (124).png" alt="" width="375"><figcaption></figcaption></figure>
 
-In your domain's DNS records, add a `CNAME` type record with the `name` set to any desired subdomain and the `content` set to `login.sonorancad.com`.
-
-The example record below sets `cad.sonoranroleplay.com` as the custom login page URL.
-
-#### TXT Record
-
-In your domain's DNS records add a `TXT` type record with the `name` set to `sonorancad_verify_domain` and the text/content set to your [community ID](../getting-started/finding-your-community-id-and-authentication-code.md#finding-your-community-id).
-
-This verifies that your Sonoran CAD community owns this domain.
-
-#### DNS Example
-
-The example below shows the `TXT` record verifying the community ID, and `cad.sonoranroleplay.com` set to the custom login page.
-
-![Sonoran CAD - Cloudflare DNS Example](<../../.gitbook/assets/image (16) (2).png>)
-
-{% hint style="info" %}
-**Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
-{% endhint %}
-
-If you are using Sonoran Servers, our company's server hosting for your domain name, please note the differences in how to enter the settings pictured below. Each DNS system is a bit different and requires different input for the Host Name. Typically the hostname is left blank or in this case a `@` is used to point the record at the root domain name of "`sonoranrp.com`"
-
-![Sonoran CAD - Sonoran Servers DNS Example](<../../.gitbook/assets/image (114).png>)
-
-### 2. Set the Domain Name in Sonoran CAD
-
-Now that you have a `CNAME` and `TXT` record on your domain, in the Sonoran CAD customization menu, set the custom login page URL.\
-This should not contain any `https://` or other extensions.
-
-Don't forget to press save!\
-Users can now visit this custom domain to view the CAD with a custom login page, including receiving your [branded emails](custom-emails.md) for signups and password recovery messages.
-
-![Sonoran CAD - Custom Login URL](../../.gitbook/assets/CAD_CustomLoginUrl.png)
+### 2. Add DNS Records
 
 {% hint style="warning" %}
-When updating or changing an existing DNS record, it may take some time for the change to propagate (based on your TTL).\
+When updating or changing an existing DNS record the changes may not be visible until public cache expires. Depending on your DNS provider, this can be anywhere from a **few minutes to 24-48 hours**.\
 \
 You can try running `ipconfig /flushdns` in a Windows CMD window and restarting your browser. Otherwise, you can test with other browsers/devices/users while you wait.
 {% endhint %}
+
+In your domain registrar’s DNS management panel, add two CNAME records using the name and content provided in Sonoran CAD, and add one TXT record to verify domain ownership.
+
+<figure><img src="../../.gitbook/assets/image (125).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### DNS Example
+
+{% hint style="warning" %}
+**Cloudflare Users:** Be sure to have the **DNS record proxy DISABLED** - and set to `DNS Only`.
+{% endhint %}
+
+The example below shows the `TXT` record verifying the community ID, and two CNAME records verifying domain ownership.
+
+<figure><img src="../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
+
+### 3. View your Custom Login Page
+
+Users can now visit this custom domain to view the CAD with a custom login page, including receiving your [branded emails](custom-emails.md) for signups and password recovery messages.
+
+<figure><img src="../../.gitbook/assets/image (137).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## iFrame Method
 
