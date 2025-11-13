@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.16 11/13/2025
+
+{% tabs %}
+{% tab title="New" %}
+Cloudflare Custom Domains
+
+* Implemented a new system for custom domains, leveraging Cloudflare for SaaS.
+
+Call Note PDF: Timestamps
+
+* Added timestamps to call notes in the PDF generation.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Call PDF: ID
+
+* Fixed an issue causing the Call ID number in the PDF to not display the label properly.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.14 10/27/2025
 
 {% tabs %}
