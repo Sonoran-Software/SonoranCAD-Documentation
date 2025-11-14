@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.17 11/14/2025
+
+{% tabs %}
+{% tab title="New" %}
+Live Map: Roxwood Expansion Pt. 2
+
+* Added additional tile support for the latest version of the Roxwood expansion.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.16 11/13/2025
 
 {% tabs %}
