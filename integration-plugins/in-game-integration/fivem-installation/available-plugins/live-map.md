@@ -136,9 +136,7 @@ Sonoran CAD allows communities to upload custom map images to the integrated, ho
 ### 1. Extract Images
 
 Extract the images from the YTD files with a program like OpenIV.\
-**You will need six files named exactly as follows:**
-
-`minimap_sea_-1_0.png` (Optional: [See Roxwood Expansion Section](live-map.md#roxwood-expansion))\
+**You will need six files named exactly as follows:**\
 `minimap_sea_0_0.png`\
 `minimap_sea_0_1.png`\
 `minimap_sea_1_0.png`\
@@ -163,11 +161,19 @@ Custom map images are limited to 30MB each. **However, if you are uploading more
 
 ### Roxwood Expansion
 
-If your community is utilizing the Roxwood map expansion, there will be an extra tile to upload. Ensure this tile is named `minimap_sea_-1_0.png`.
+If your community is utilizing the Roxwood map expansion, there will be additional tiles to upload.
 
-You can also upload an additional blank or ocean tile to the right of the Roxwood map expansion, titled `minimap_sea_-1_1.png`.
+* `minimap_sea_-1_-1.png`
+* `minimap_sea_-1_0.png`
+* `minimap_sea_-1_1.png` (Optional, blank tile to the right)
 
-<div><figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Live Map: Roxwood Tile</p></figcaption></figure> <figure><img src="../../../../.gitbook/assets/392764c1b6d8d6c83eca8b7bf78b32fd.gif" alt="" width="375"><figcaption><p>Live Map: Roxwood Expansion Area</p></figcaption></figure></div>
+Additionally, two existing map tiles will need to be updated, as they contain parts of both the main island and the Roxwood expansion.
+
+* `minimap_sea_0_-1.png`
+* `minimap_sea_0_0.png`
+* `minimap_sea_0_1.png`
+
+<figure><img src="../../../../.gitbook/assets/Diagram.png" alt=""><figcaption></figcaption></figure>
 
 ### Cayo Perico Expansion
 
