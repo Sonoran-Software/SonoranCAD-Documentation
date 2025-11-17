@@ -40,16 +40,17 @@ Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://gi
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
 
-| Config Option       | Description                                                    |
-| ------------------- | -------------------------------------------------------------- |
-| useExpires          | use vehicle registration expirations, or not                   |
-| useMiddleInitial    | use middle initials?                                           |
-| alertNoRegistration | alert if no registration was found on scan?                    |
-| statusUid           | Custom record field UID containing the status                  |
-| expiresUid          | Custom record field UID containing the expiration date         |
-| flagOnStatuses      | List of statuses to flag/alert on                              |
-| vehTypeFilter       | List of Classes that will NOT get ran through CAD              |
-| notificationTimers  | Time in MS, for how long each alert type will last via pNotify |
+| Config Option       | Description                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| useExpires          | use vehicle registration expirations, or not                                                |
+| useMiddleInitial    | use middle initials?                                                                        |
+| alertNoRegistration | alert if no registration was found on scan?                                                 |
+| statusUid           | Custom record field UID containing the status                                               |
+| expiresUid          | Custom record field UID containing the expiration date                                      |
+| flagOnStatuses      | List of statuses to flag/alert on                                                           |
+| vehTypeFilter       | List of Classes that will NOT get ran through CAD                                           |
+| notificationTimers  | Time in MS, for how long each alert type will last via pNotify                              |
+| customFields        | Additional custom fields to show in your ALPR messages, such as insurance expiration, etc.  |
 
 ### 4. Custom Record Handling
 
@@ -115,6 +116,12 @@ Your radar will alter you when a scanned vehicle matches:
 ### 5. Set Your API ID
 
 In order to have locked plate lookup results sent back to your CAD, don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md).
+
+### 6. Custom Field Display
+
+You can now configure custom fields to display in the Wraith ALPR notification. The fields are configured in the `wraithv2_config.lua` under the `customFields` section. You can get your custom field ID's from the SonoranCAD Admin menu --> Customize --> [Custom Records](../../../../tutorials/customization/creating-custom-record-and-report-types.md) section.&#x20;
+
+<div><figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>SonoranCADFiveM - WraithV2 Configuration</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/630973482221436938/1440107400320516196/image.png?ex=691cf408&#x26;is=691ba288&#x26;hm=c7286089dfef9cb96efe48fc74d591f9a4b0ed24e8aa864115d71918282b2b49&#x26;" alt=""><figcaption><p>SonoranCAD - Custom Records </p></figcaption></figure></div>
 
 ## Usage
 
