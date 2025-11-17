@@ -119,9 +119,9 @@ In order to have locked plate lookup results sent back to your CAD, don't forget
 
 ### 6. Custom Field Display
 
-You can now configure custom fields to display in the Wraith ALPR notification. The fields are configured in the `wraithv2_config.lua` under the `customFields` section. You can get your custom field ID's from the SonoranCAD Admin menu --> Customize --> [Custom Records](../../../../tutorials/customization/creating-custom-record-and-report-types.md) section.&#x20;
+You can configure custom fields to display in the Wraith ALPR notification. The fields are configured in the `wraithv2_config.lua` under the `customFields` section. You can get your custom field ID's from the Sonoran CAD Admin menu > Customize > [Custom Records](../../../../tutorials/customization/creating-custom-record-and-report-types.md) section.&#x20;
 
-<div><figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>SonoranCADFiveM - WraithV2 Configuration</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/630973482221436938/1440107400320516196/image.png?ex=691cf408&#x26;is=691ba288&#x26;hm=c7286089dfef9cb96efe48fc74d591f9a4b0ed24e8aa864115d71918282b2b49&#x26;" alt=""><figcaption><p>SonoranCAD - Custom Records </p></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>SonoranCADFiveM - WraithV2 Configuration</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/630973482221436938/1440107400320516196/image.png?ex=691cf408&#x26;is=691ba288&#x26;hm=c7286089dfef9cb96efe48fc74d591f9a4b0ed24e8aa864115d71918282b2b49&#x26;" alt=""><figcaption><p>Sonoran CAD - Custom Records </p></figcaption></figure></div>
 
 ## Usage
 
