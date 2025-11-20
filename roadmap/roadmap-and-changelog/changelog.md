@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.37.18 11/19/2025
+
+{% tabs %}
+{% tab title="Fixed" %}
+Duplicate Section Dependencies
+
+* Fixed an issue where section dependencies on duplicated sections when filling out a custom record were always dependent on the first section.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.17 11/14/2025
 
 {% tabs %}
