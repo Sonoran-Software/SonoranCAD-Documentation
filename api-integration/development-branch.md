@@ -11,7 +11,7 @@ The development API and CAD branches are entirely separate from the current prod
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 ### Rate Limiting
@@ -23,7 +23,7 @@ Sonoran CAD's development branch maintains the same rate limiting as production.
 All API endpoints and requests should be made to the following address:
 
 ```
-https://cadapi.dev.sonoransoftware.com
+https://staging-api.dev.sonorancad.com
 ```
 
 ### Development CAD
@@ -31,7 +31,7 @@ https://cadapi.dev.sonoransoftware.com
 The latest CAD development version can be accessed at the following address:
 
 ```
-https://cad.dev.sonoransoftware.com
+https://staging.dev.sonorancad.com
 ```
 
 ### Development Subscription - Free
