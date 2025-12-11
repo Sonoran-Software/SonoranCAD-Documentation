@@ -10,6 +10,64 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.38.0 Coming Soon!
+
+{% tabs %}
+{% tab title="New" %}
+Theme Overhaul
+
+* An overhaul of the dark theme for the dispatch, police, fire, and EMS panels.
+
+Custom Themes
+
+* Added a theme editor in the customization menu.
+
+Taskbar Refresh
+
+* Improved drag-and-drop animations for reordering, clock improvements, and more.
+
+Draggable Window Bar
+
+* Added a double-click to maximize any movable window.
+
+Page Backgrounds
+
+* Added customizable page backgrounds in the emergency services panels.
+
+Multi-Desktop
+
+* Added the option to create multiple desktops in the emergency service panels for more window room.
+
+Multi-Desktop Hotkeys
+
+* Added customizable hotkeys to quickly change between desktops.
+
+Record Drafts
+
+* Added the ability to save a record as a draft to be resumed later before submission.
+
+Card and List View
+
+* Added toggles to change between a newer "card" style and the existing list views for units, unit groups, and emergency calls.
+
+Live Map Hyperlinks
+
+* Added a map pin hyperlink button on units, unit groups, and emergency calls to automatically open the live map and pan to the location.
+
+Call Created Note
+
+* Added a new automatic note when dispatch calls are created to help reflect the creation timestamp.
+
+Saved Types: Import and Export
+
+* Added import and export capabilities to the saved call types.
+
+i18n Translations
+
+* Updated dozens of word and phrase references to use proper translation keys.
+{% endtab %}
+{% endtabs %}
+
 ### 3.37.18 11/19/2025
 
 {% tabs %}
