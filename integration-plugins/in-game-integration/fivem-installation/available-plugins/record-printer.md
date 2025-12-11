@@ -41,6 +41,23 @@ The record printer settings are stored inside of the core configuration file.
 | `frameworks`             | Framework activation configuration                                              |
 | `translations`           | List of translations                                                            |
 
+#### 3. Ox\_Inventory Support
+
+If you are using `ox_inventory` on the ESX Framework you must add the following to your `ox_inventory/data/items.lua` file in order for records to work properly:&#x20;
+
+```lua
+["sonoran_evidence_pdf"] = {
+        label = "Police Record",
+        weight = 1,
+        stack = false,
+        close = true,
+        consume = 0,
+        server = {
+            export = 'sonorancad.sonoran_evidence_pdf'
+        },
+    },
+```
+
 ## In-Game Usage
 
 ### Sending Files From Sonoran CAD
