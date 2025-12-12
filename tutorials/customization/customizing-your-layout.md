@@ -87,7 +87,7 @@ The taskbar is a desktop style action bar that will contain the "Start Menu" (So
 
 The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
-### 7. Tab System
+### Tab System
 
 Sonoran CAD's advanced tab system allows for efficient window management and quickly accessing new programs.
 
