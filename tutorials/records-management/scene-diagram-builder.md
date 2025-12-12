@@ -16,7 +16,7 @@ The diagram builder can be added to any [custom record template](../customizatio
 
 Custom records with a diagram section will show an interactive canvas inside the record. Select the edit icon to open up the builder.
 
-<div><figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="371"><figcaption><p>Record: Diagram Viewer</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (83).png" alt="" width="375"><figcaption><p>Diagram Builder</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="371"><figcaption><p>Record: Diagram Viewer</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (83).png" alt="" width="375"><figcaption><p>Diagram Builder</p></figcaption></figure></div>
 
 ### Adding, Editing, and Removing Elements
 
@@ -34,7 +34,7 @@ Custom records with a diagram section will show an interactive canvas inside the
 
 * Select the item(s) and click the trash icon ([or the shortcut](scene-diagram-builder.md#shortcuts)) to remove
 
-<div><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="313"><figcaption><p>Diagram: Road Element Resize</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (4).png" alt="" width="321"><figcaption><p>Diagram: Road Element Options</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="313"><figcaption><p>Diagram: Road Element Resize</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (4) (1).png" alt="" width="321"><figcaption><p>Diagram: Road Element Options</p></figcaption></figure></div>
 
 ### Shortcuts
 
@@ -42,7 +42,7 @@ The diagram builder is packed with powerful shortcuts to help quickly build the 
 
 Hover over any of the top action items for a tooltip listing the shortcut.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Diagram Builder: Action Buttons</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Diagram Builder: Action Buttons</p></figcaption></figure>
 
 <details>
 

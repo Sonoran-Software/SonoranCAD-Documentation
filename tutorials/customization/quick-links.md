@@ -29,4 +29,4 @@ Quick links can be found in the taskbar under Documentation > Quick Links
 
 Or via the taskbar search and [pinning](customizing-your-layout.md#7.-tab-system) system.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Sonoran CAD - Quick Links Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption><p>Sonoran CAD - Quick Links Page</p></figcaption></figure>

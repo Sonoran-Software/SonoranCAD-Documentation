@@ -9,8 +9,7 @@ You may need to manually clear your Sonoran CAD desktop application's cache for 
 ### 1. Open Your AppData Folder
 
 In the window search bar type `run` and open the run application.\
-Enter `appdata` then hit `Ok`\
-
+Enter `appdata` then hit `Ok`<br>
 
 ![Windows - Run AppData](<../.gitbook/assets/image (105).png>)
 

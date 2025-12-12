@@ -11,7 +11,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 This submodule allows Sonoran Radio customers to connect the radio with the Sonoran CAD. View your unit status, dispatch call information, toggle a panic, and more!

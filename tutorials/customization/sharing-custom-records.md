@@ -8,8 +8,7 @@ description: >-
 
 ### Download the JSON File
 
-In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.\
-
+In the custom record editor (Admin > Customization > Custom Records) select the blue download button next to the custom record. This will download a .json file with the custom record formatting.<br>
 
 _Do not edit this JSON formatting unless you are highly familiar with the_ [_proper formatting_](../../api-integration/api-endpoints/general/custom-records/#record-formatting)_. It is highly recommended to edit everything in the UI editor only._
 

@@ -6,7 +6,7 @@ description: >-
 
 # 📖 API Integration
 
-<figure><img src="../../.gitbook/assets/api-integration.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/api-integration.png" alt=""><figcaption></figcaption></figure>
 
 ## How are API calls sent?
 
@@ -16,8 +16,7 @@ All API calls are sent via an HTTP POST with a JSON formatted body.
 
 Yes, our API calls can be integrated into nearly any gamemode with nearly any programming language.
 
-We provide a library of drag-and-drop plugins written in Lua.\
-
+We provide a library of drag-and-drop plugins written in Lua.<br>
 
 You can also write your own script using our API endpoints:
 
@@ -44,4 +43,3 @@ Yes, Sonoran CAD will automatically block any malicious or spammed traffic. Whil
 {% content-ref url="getting-started/" %}
 [getting-started](getting-started/)
 {% endcontent-ref %}
-

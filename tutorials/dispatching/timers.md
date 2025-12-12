@@ -30,13 +30,13 @@ Press `New` to create a new timer.
 
 If you have the timer [panel tab minimized or pinned](../customization/customizing-your-layout.md#7.-tab-system), you can drag a unit, group, or dispatch call right to the tab.
 
-![Sonoran CAD - Drag Unit to Timer Tab](../../.gitbook/assets/timer\_drag\_tab.gif)
+![Sonoran CAD - Drag Unit to Timer Tab](../../.gitbook/assets/timer_drag_tab.gif)
 
 ### From the Context Menu
 
 Left click on a unit ID, group name, or dispatch call ID: `Timers` > `New Timer`
 
-![Sonoran CAD - New Timer from Context Menu](../../.gitbook/assets/timer\_new\_menu.gif)
+![Sonoran CAD - New Timer from Context Menu](../../.gitbook/assets/timer_new_menu.gif)
 
 ## Editing a Timer
 
@@ -62,10 +62,14 @@ You can attach a unit, group, or call to a timer. This will display a timer icon
 
 In addition to dragging a unit, group, or dispatch call to a minimized tab you can also drag it to a timer in the panel.
 
-![Sonoran CAD - Drag Unit to Timer Panel](../../.gitbook/assets/timer\_drag\_panel.gif)
+![Sonoran CAD - Drag Unit to Timer Panel](../../.gitbook/assets/timer_drag_panel.gif)
 
 ### Via Context Menu
 
 Click on a unit, group, or dispatch call: `Timers` > `Select a Timer`
 
 ![Sonoran CAD - Attach to Timer from Context Menu](<../../.gitbook/assets/image (298) (1) (1) (1).png>)
+
+## Automations
+
+Timers can also be created via [dispatcher automations](automations.md).

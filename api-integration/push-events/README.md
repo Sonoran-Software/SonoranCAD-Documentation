@@ -11,7 +11,7 @@ All push events require the **Plus** version of Sonoran CAD or higher. For more 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 ## Configuring your Listener
@@ -34,7 +34,7 @@ Many of our [integration submodules](../../integration-plugins/in-game-integrati
 
 You can create your own web server to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may already be receiving these events in your FiveM resource. The resource can be configured to "[forward](broken-reference)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
+In addition, you may already be receiving these events in your FiveM resource. The resource can be configured to "[forward](/broken/pages/-M7AprAqKWbNHL1L7N0T#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
 
 <details>
 

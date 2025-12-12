@@ -18,6 +18,6 @@ Never give your Secret ID to anyone who is not Sonoran Staff or an application a
 
 Your ID is located on the same page as your API ID, as shown below.
 
-![](../../../.gitbook/assets/secretid.png)
+![](../../.gitbook/assets/secretid.png)
 
-You can copy this ID for use in our [bot's permission sync process](broken-reference), or for future purposes. At any time, you can click the refresh button to regenerate the secret ID. If you regenerate this key, you will need to change it on all services that use it!
+You can copy this ID for use in our [bot's permission sync process](/broken/pages/-Mak_4xi6bO7Xbjvllo5#user-setup), or for future purposes. At any time, you can click the refresh button to regenerate the secret ID. If you regenerate this key, you will need to change it on all services that use it!

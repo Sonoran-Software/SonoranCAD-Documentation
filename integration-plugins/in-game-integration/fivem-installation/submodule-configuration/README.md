@@ -9,7 +9,7 @@ All Sonoran CAD integration submodules require the **standard** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 ## Install the Resource
@@ -40,7 +40,7 @@ This example uses the `postals` submodule.
   * If you've downloaded the [pre-configured FiveM resource from the admin panel](../), this has already been done for you.
 * **Save** the configuration file.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
 ### 3. Restart Sonoran CAD
 
@@ -62,7 +62,7 @@ Or, run `sonoran pluginupdate` to instantly check and update all submodules.
 
 If you're having trouble installing a plugin, check out our common troubleshooting guide:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/-MAYbJz_xYtCdc3lQfDX" %}
+[Broken link](/broken/pages/-MAYbJz_xYtCdc3lQfDX)
 {% endcontent-ref %}
 

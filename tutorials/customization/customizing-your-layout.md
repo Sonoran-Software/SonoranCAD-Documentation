@@ -16,19 +16,20 @@ To customize your dispatch/unit panel layout, you will need to [disable this](cu
 
 <figure><img src="../../.gitbook/assets/multi-windows.png" alt=""><figcaption></figcaption></figure>
 
-### 1. Menu Options
+### Context Menu Options
 
 You can right click on any panel and to reveal multiple menu options.
 
 1. [Lock/Unlock Window](customizing-your-layout.md#4-locking-unlocking): This locks and saves the window's position into place.
 2. [Quick Resize](customizing-your-layout.md#2-quick-resize): This opens the quick resize tools for the window.
-3. Bring to Top:  This brings the window in front of any other open windows.
-4. Minimize: This minimizes the window to a tab at the top of your screen.
-5. Close: This closes the window.
+3. [Change Desktop](customizing-your-layout.md#multi-desktop): Move the window to a different desktop.
+4. Bring to Top:  This brings the window in front of any other open windows.
+5. Minimize: This minimizes the window to a tab at the top of your screen.
+6. Close: This closes the window.
 
-![Sonoran CAD - Window Menu Options](../../.gitbook/assets/CAD_MenuOptions.png)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### 2. Quick Resize
+### Quick Resize
 
 Windows can be resized and positioned in multiple ways:
 
@@ -38,23 +39,17 @@ Additionally, you can hover over the top edges of the window to click and drag t
 
 ![Sonoran CAD - Quick Resize](<../../.gitbook/assets/image (379).png>)
 
-### 3. Dragging to Position
+### Dragging to Position
 
 Popout windows like a lookup, 10-code sheet, etc. can all be easily dragged and resized using the top header in addition to the quick resize tools.
 
 Popout windows with in quick resize enabled or unlocked required windows (dispatch call editor, etc.) can be dragged simply by clicking and dragging anywhere on the window.
 
-### 4. Locking/Unlocking
+### Locking/Unlocking
 
 When a window is locked into place it can no longer be moved. Additionally, the size and positioning is saved locally to your device and will persist after a refresh or relog. You can lock or unlock the window by right clicking on the window.
 
-### 5. Reset Layouts
-
-If something goes wrong or you just want to start fresh, you can reset your saved layouts in the layout customization menu.
-
-Simply right click on the empty area in the taskbar, or navigate to Start > System > Customization
-
-### 6. Taskbar
+### Taskbar
 
 #### Search Box
 
@@ -64,21 +59,39 @@ Here, you can search to quickly filter options. When the results have been filte
 
 ![Sonoran CAD - Taskbar Filter](<../../.gitbook/assets/image (17).png>)
 
+## Multi-Desktop
+
+Add additional desktops for more window space. Access the desktop menu in the right of the taskbar.
+
+Quickly swap between desktops using [hotkeys](../other-features/configurable-hotkeys.md).
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## Customization Menu
+
+Access the customization menu from the taskbar, or from the start menu.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<div><figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+
+### Reset Layouts
+
+If something goes wrong or you just want to start fresh, you can reset your saved layouts in the layout customization menu.
+
+Simply right click on the empty area in the taskbar, or navigate to Start > System > Customization
+
 #### Positioning
 
 The taskbar is a desktop style action bar that will contain the "Start Menu" (Sonoran CAD logo) and your active/pinned tabs.
 
 The taskbar can be positioned on the top, bottom, left, or right of your screen.
 
-To change the taskbar's position, access the customization menu by right-clicking on empty space in the taskbar. Or, from the start menu navigate to `System > Customization`
-
-![Sonoran CAD - Taskbar Positioning](<../../.gitbook/assets/image (14).png>)
-
 ### 7. Tab System
 
 Sonoran CAD's advanced tab system allows for efficient window management and quickly accessing new programs.
 
-![Sonoran CAD - Tab System](../../.gitbook/assets/50682631f7d5d1cb885ec88710e9e80b.gif)
+<figure><img src="../../.gitbook/assets/12.12.2025_15.59.12_REC.gif" alt=""><figcaption></figcaption></figure>
 
 **Drag-and-Drop:** Tabs can be dragged and dropped into new positions for organization. Pinned tabs will save their ordering past a refresh.
 
@@ -89,18 +102,16 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.\
 &#xNAN;_&#x4E;ote: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
-![Sonoran CAD - Tabs with Icon and Text](<../../.gitbook/assets/image (356).png>)
-
-### 8. Classic Layout
+### Classic Layout
 
 For some users, modifying the positions of dispatching panels may be too complicated. You can easily toggle on the "Classic Layout" to have the call windows automatically placed and responsive. Don't worry, popout windows can still be moved around and locked into place as normal.
-
-#### Enable Classic Mode:
-
-Right Click on the `Task Bar` > `Customization` > `Classic Layout`
-
-![Sonoran CAD - Classic Layout](<../../.gitbook/assets/image (39).png>)
 
 #### Change Taskbar and Button Position(s)
 
 Don't forget, you can easily [move the taskbar to the top or sides of the screen](customizing-your-layout.md#6-taskbar), [change what buttons appear](customizing-your-layout.md#7-tab-system), and [change the order of the buttons](customizing-your-layout.md#7-tab-system)!
+
+### Theme Customization
+
+Customize your CAD theme colors, desktop background, and more! Use the import and export buttons to share themes with other users.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

@@ -16,7 +16,6 @@ The payment center is only accessible from the **web or desktop version of Sonor
 ![Sonoran CAD - Access Account Menu](<../../.gitbook/assets/image (152).png>)
 
 3\. Select "Subscriptions"\
-&#x20; \- This will open [sonorancad.com/billing](https://sonorancad.com/billing)\
-
+&#x20; \- This will open [sonorancad.com/billing](https://sonorancad.com/billing)<br>
 
 ![](<../../.gitbook/assets/image (171).png>)

@@ -13,7 +13,7 @@ This submodule is currently only used as a dependency for other submodules , and
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 This submodule Implements name and plate lookups via the CAD.

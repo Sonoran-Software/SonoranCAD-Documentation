@@ -128,7 +128,7 @@ You can drag the emergency call to your call editor to import and view the infor
 
 {% hint style="danger" %}
 This feature requires the **pro** version of Sonoran CAD.\
-For more information, view our [pricing ](broken-reference)page.
+For more information, view our [pricing ](/broken/pages/-M58UiyBWsbVztn6Dbn7)page.
 {% endhint %}
 
 Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.
@@ -207,7 +207,7 @@ To do the same for your game:
 2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
 3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
 
-![](<../../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
 
 For more help, reach out to our [support team](https://support.sonoransoftware.com).
 

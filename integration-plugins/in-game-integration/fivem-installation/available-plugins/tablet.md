@@ -8,7 +8,7 @@ description: >-
 # Tablet & Mini-CAD
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/mini_cad.png" alt=""><figcaption><p>Sonoran CAD - Mini-CAD</p></figcaption></figure>

@@ -44,6 +44,7 @@
   * [Self Dispatch](tutorials/dispatching/self-dispatch.md)
   * [Timers](tutorials/dispatching/timers.md)
   * [Command Line Interface (CLI)](tutorials/dispatching/command-line-interface-cli.md)
+  * [Automations](tutorials/dispatching/automations.md)
 * [Records Management](tutorials/records-management/README.md)
   * [Record Lookups](tutorials/records-management/searching-for-records.md)
   * [Adding a Record](tutorials/records-management/adding-a-criminal-record.md)

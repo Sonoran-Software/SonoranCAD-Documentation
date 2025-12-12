@@ -48,9 +48,9 @@ Our official [Discord bot](https://app.gitbook.com/@sonoran/s/sonoran-software/~
 
 ### 🌎 Full Translation and Locality Support
 
-Only Sonoran CAD supports full [i18n localization](broken-reference). Regardless of your community's native language, Sonoran CAD supports it!\
+Only Sonoran CAD supports full [i18n localization](/broken/pages/-MGbWE4KQP505l15Ewvm). Regardless of your community's native language, Sonoran CAD supports it!\
 \
-Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](broken-reference).
+Sonoran CAD is currently fully translated in Chinese, Russian, Spanish, Polish, Italian, German, Arabic, and more! Anyone is allowed to [contribute to our GitHub translation files](/broken/pages/-MGbWE4KQP505l15Ewvm).
 
 Sonoran CAD also offers vast [geographical location](tutorials/customization/geographical-settings.md) support for non-American communities.
 
@@ -132,7 +132,7 @@ Drag-and-drop allows you to easily view calls, attach units, and more!
 
 <figure><img src=".gitbook/assets/Multi-Task-Windows.png" alt=""><figcaption><p>Sonoran CAD - Custom Layouts</p></figcaption></figure>
 
-### 🎤 [TeamSpeak 3 Integration](broken-reference)
+### 🎤 [TeamSpeak 3 Integration](/broken/pages/-M_NY197EFM6IAIGs5JM)
 
 Enforce security in your TeamSpeak 3 channels by requiring them to be signed into the CAD. Additionally, kick users from secured TS channels when they log off.
 

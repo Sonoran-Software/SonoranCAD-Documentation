@@ -21,13 +21,13 @@ First, there is your **community** API Key which allows CAD's in-game integratio
 
 To find your community API Key, see [Retrieving Your Credentials](finding-your-community-id-and-authentication-code.md#retrieving-your-credentials) below.&#x20;
 
-This key will be placed in your config.json (for [FiveM integration](broken-reference)) or the Server Settings panel (for [ER:LC integration](../../integration-plugins/roblox-er-lc/)).
+This key will be placed in your config.json (for [FiveM integration](/broken/pages/-M7AprAqKWbNHL1L7N0T)) or the Server Settings panel (for [ER:LC integration](../../integration-plugins/roblox-er-lc/)).
 
 #### **User API ID**
 
 In addition to the community API Key, each user will also have **their own** API ID, which allows CAD to associate the user's in-game player with their Sonoran account. Generally, this will either be the user's Steam Hex, Discord ID, or Game License Key.
 
-This API ID can be found in game by doing `/apiid` in game, if you have the [apicheck](broken-reference) plugin installed.
+This API ID can be found in game by doing `/apiid` in game, if you have the [apicheck](/broken/pages/-M7QrbOeDd37INb3cCg2) plugin installed.
 
 Every user will need to find their own API ID and add it to CAD as shown [here](../../api-integration/getting-started/setting-your-api-id.md).
 

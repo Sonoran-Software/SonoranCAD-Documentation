@@ -9,7 +9,7 @@ This submodule utilizes API endpoints that require the **Plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 This submodule is for sending plate reads to other submodules.
@@ -168,7 +168,7 @@ The framework ships with the `wk_wars2x` plate reader included. This will have t
 
 Keep in mind that AI vehicles won't display or be ran unless there's a vehicle registration record added to the CAD with that plate.
 
-Ensure that you've correctly followed [step 5](broken-reference) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the submodule  config.
+Ensure that you've correctly followed [step 5](/broken/pages/-M7U3aBbrsfrj1Cmeqmm#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the submodule  config.
 
 Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.&#x20;
 

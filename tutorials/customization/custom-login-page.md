@@ -12,7 +12,7 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 The custom login page allows your community members to register, sign-in, and access your CAD all on your own domain! In addition, user signups and password recovery emails have your [custom branding](custom-emails.md). Logging in also takes you directly to the community, instead of having to select the community at the menu.
@@ -79,7 +79,7 @@ Now that you've saved the custom URL inside of the HTML file, you can host this 
 
 ## In-Game Tablet
 
-If you wish to use a custom login page when using the [in-game Tablet resource](broken-reference), you can set a convar in your server.cfg.\
+If you wish to use a custom login page when using the [in-game Tablet resource](/broken/pages/-MCu5Pqlq4KeXD2LHoVt), you can set a convar in your server.cfg.\
 \
 The easiest way to show your [custom login page](custom-login-page.md) is to use a query string.
 

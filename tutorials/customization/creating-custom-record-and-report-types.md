@@ -238,7 +238,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
@@ -272,8 +272,7 @@ In the police, dispatch, fire, or EMS page you can now [add ](../records-managem
 ### 1. Accessing the Reports Center
 
 In the police, dispatch, fire, or EMS page, select "REPORTS" in the top action menu bar\
-From here, you can create a new report, search existing reports, and view reports requiring supervisor actions.\
-
+From here, you can create a new report, search existing reports, and view reports requiring supervisor actions.<br>
 
 ![Sonoran CAD Reports Center](<../../.gitbook/assets/image (355).png>)
 
@@ -335,7 +334,7 @@ The default `Civilian` record has the following field UIDs:
 
 `first` `last` `mi` `dob` `age` `sex` `aka` `zip` `occupation` `height` `weight` `skin` `hair` `eyes` `emergencyContact` `emergencyRelationship` `emergencyContactNumber` `residence`
 
-![](<../../.gitbook/assets/image (6) (1).png>)
+![](<../../.gitbook/assets/image (6) (1) (2).png>)
 
 When creating your custom record section with civilian search imports, those field UIDs will also need to match. The image below shows a custom record with the civilian search section toggled with the matching field UIDs.
 

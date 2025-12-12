@@ -10,7 +10,7 @@ description: >-
 
 On the website or app, select one of the login options:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users can register a Sonoran Software account at [account.sonoransoftware.com](https://account.sonoransoftware.com/).
 
@@ -24,7 +24,6 @@ If you're having trouble finding the email, check your spam, junk, promotions, o
 
 If you've registered a new account, check your inbox for an email from Sonoran CAD.\
 \
-Select the "Verify Email" button, and your account will be automatically verified.\
-
+Select the "Verify Email" button, and your account will be automatically verified.<br>
 
 ![Account verification emails are sent as shown above](../../.gitbook/assets/email.PNG)

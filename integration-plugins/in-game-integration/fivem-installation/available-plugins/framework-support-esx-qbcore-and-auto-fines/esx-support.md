@@ -8,7 +8,7 @@ hidden: true
 # Depreciated: ESX Support
 
 {% hint style="warning" %}
-This submodule is being phased out in favor of the newer [frameworksupport](broken-reference) support submodule. Please begin using that instead.
+This submodule is being phased out in favor of the newer [frameworksupport](/broken/pages/VRhcq4DTKYKofHHkyPwD) support submodule. Please begin using that instead.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -22,7 +22,7 @@ ESX v2 is not supported by this submodule and will not function. Only ESX v1 is 
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 ## Activation Guide

@@ -9,7 +9,7 @@ This API endpoint requires the **plus** version of Sonoran CAD or higher. For mo
 {% endhint %}
 
 {% hint style="danger" %}
-New characters can NOT be added to communities using [Database Sync](broken-reference), as all characters are pulled from your server's in-game database.
+New characters can NOT be added to communities using [Database Sync](/broken/pages/-M4q1ttRJj-kIHpuRH3y), as all characters are pulled from your server's in-game database.
 {% endhint %}
 
 ## New Character

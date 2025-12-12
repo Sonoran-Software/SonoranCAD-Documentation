@@ -12,7 +12,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 This submodule:
@@ -88,7 +88,7 @@ Review the `dispatchnotify_config.lua` file to configure the submodule to behave
 | notifyMessage                | <p>NotifyMessage: Message template to use when sending to the player</p><p>You can use the following replacements:</p><p><strong>{callid}</strong> - The CAD Call ID</p><p><strong>{note}</strong> - The Note Added</p>                                                                                                                                                                               |
 | enableAddNote                | Enable "the adding of the notes" notifications                                                                                                                                                                                                                                                                                                                                                        |
 | addNoteCommand               | Command to add notes to a call with                                                                                                                                                                                                                                                                                                                                                                   |
-| enableAddPlate               | Enable "the adding of plates that are locked" notifications - REQUIRES [CONFIGURED WRAITHV2 ](broken-reference)SUBMODULE                                                                                                                                                                                                                                                                              |
+| enableAddPlate               | Enable "the adding of plates that are locked" notifications - REQUIRES [CONFIGURED WRAITHV2 ](/broken/pages/-M7U3aBbrsfrj1Cmeqmm)SUBMODULE                                                                                                                                                                                                                                                            |
 | addPlateCommand              | Command to add plates to a call with                                                                                                                                                                                                                                                                                                                                                                  |
 
 ## Dispatch Call Responding
@@ -123,7 +123,7 @@ Dispatchers can set the primary unit to any unit currently attached to the call.
 
 A unit can also designate themselves as primary, but only if Self Dispatch is enabled.
 
-![Sonoran CAD - Primary Unit](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Sonoran CAD - Primary Unit](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Troubleshooting
 

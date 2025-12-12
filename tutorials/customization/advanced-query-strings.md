@@ -22,6 +22,6 @@ description: Sonoran CAD provides additional query string options for embedded u
 
 ### Hide "Switch Community"
 
-| String        | Usage                                    | Description                                                                                                                                                                                              |
-| ------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| lockCommunity | app.sonorancad.com/#/?lockCommunity=true | For communities using the [tablet ](broken-reference)resource or [custom login page](custom-login-page.md), this query string locks the user to your community and hides the "Switch Community" buttons. |
+| String        | Usage                                    | Description                                                                                                                                                                                                                |
+| ------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| lockCommunity | app.sonorancad.com/#/?lockCommunity=true | For communities using the [tablet ](/broken/pages/-MCu5Pqlq4KeXD2LHoVt)resource or [custom login page](custom-login-page.md), this query string locks the user to your community and hides the "Switch Community" buttons. |

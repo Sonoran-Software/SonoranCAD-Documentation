@@ -22,8 +22,8 @@ You can easily adjust your volume, and set your text-to-speech voice in the sett
 
 Sonoran CAD also supports full language translation support for any country or locality. Click below for more information.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/-MGbWE4KQP505l15Ewvm" %}
+[Broken link](/broken/pages/-MGbWE4KQP505l15Ewvm)
 {% endcontent-ref %}
 
 

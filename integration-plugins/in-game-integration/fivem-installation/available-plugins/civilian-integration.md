@@ -9,7 +9,7 @@ This submodule utilizes API endpoints that require the **plus** version of Sonor
 {% endhint %}
 
 {% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](broken-reference)!
+Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
 This submodule allows players to fetch their character information from the CAD. Basic functionality is provided with the /showid command, but developers are encouraged to use the export for their own creations.

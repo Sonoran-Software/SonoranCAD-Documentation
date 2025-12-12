@@ -37,13 +37,13 @@ Download a pre-configured version of the in-game integration resource from the p
 
 Navigate to `Admin` -> `Advanced` -> `In-Game Integration` -> `FiveM`
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
 
 ### 2. Extract the ZIP File
 
 Extract the `.zip` file into your resources directory. Place the `[sonorancad]` folder directly in the resources root directory.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
 
 ### 3. Update Your Server Config
 
@@ -248,7 +248,7 @@ In the framework configuration file, simply set `enablePushEventForwarding` to `
 ### 3. Activating Submodules
 
 Check out our pre-bundled [submodule-configuration](submodule-configuration/ "mention")to make the integration useful.\
-For basic functionality, we recommend at least the [`locations`](broken-reference), [`callcommands`](broken-reference), and [`postals`](broken-reference) submodules.\
+For basic functionality, we recommend at least the [`locations`](/broken/pages/-M7Tv3jYEWss7U0_uKgq), [`callcommands`](/broken/pages/-M7TuFwzTeDHL95wIPni), and [`postals`](/broken/pages/-M7Txceft6jA5KysG8pP) submodules.\
 You can also view our [standard submodule activation guide](submodule-configuration/).
 
 ### 4. Using the wk\_wars2x Radar
