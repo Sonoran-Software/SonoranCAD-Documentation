@@ -10,7 +10,7 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.38.0 Coming Soon!
+### 3.38.0 12/12/2025
 
 {% tabs %}
 {% tab title="New" %}
@@ -58,9 +58,21 @@ Call Created Note
 
 * Added a new automatic note when dispatch calls are created to help reflect the creation timestamp.
 
+Timer Automations
+
+* Expanded the dispatch automations tab to allow for countdown/up timers when a unit status is changed.
+
 Saved Types: Import and Export
 
 * Added import and export capabilities to the saved call types.
+
+Database Sync: Import and Export
+
+* Added the ability to import and export DB sync configurations.
+
+Live Map Cache Busting
+
+* Added automatic cache busting to ensure map images update after new tiles are uploaded.
 
 i18n Translations
 
