@@ -115,3 +115,15 @@ Don't forget, you can easily [move the taskbar to the top or sides of the screen
 Customize your CAD theme colors, desktop background, and more! Use the import and export buttons to share themes with other users.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### Saving Themes
+
+Once you've customized your theme, press the save icon, enter a name, and your theme will be saved. Saved themes can be selected to switch between.
+
+<figure><img src="../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+
+### Import/Export Themes
+
+Press **Export** to export the currently selected theme to a JSON file. Or, right-click the **Export** button to export all of your saved themes to a JSON file.
+
+Press **Import** to select a JSON file with one or more saved themes.

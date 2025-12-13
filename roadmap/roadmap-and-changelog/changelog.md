@@ -25,6 +25,10 @@ Export All Themes
 Export All Saved Call Types
 
 * Users can now right-click the saved call types export button to export and share all of their themes at once.
+
+Themes: No Background
+
+* Added a button to remove all background images from the theme.
 {% endtab %}
 
 {% tab title="Fixed" %}

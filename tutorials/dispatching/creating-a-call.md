@@ -152,3 +152,17 @@ To remove a saved call type, simply select it from the dropdown and press the tr
 ![Saved Dispatch Calls - Remove](<../../.gitbook/assets/image (158).png>)
 
 </details>
+
+<details>
+
+<summary>Import/Export Saved Call Types</summary>
+
+With a saved call type selected, the export button will allow you to save the current call type to a JSON file. Or, right-click the export button to export all of your saved call tyles to a JSON file.
+
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
+To import saved call types, the import button will appear when no saved call is selected. Click the icon to import a JSON file with one or more saved call types.
+
+<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
+
+</details>
