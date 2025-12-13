@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.38.5 12/13/2025
+
+{% tabs %}
+{% tab title="New" %}
+Save Themes
+
+* Users can now save their custom themes to quickly swap between.
+
+Export All Themes
+
+* Users can now right-click the theme export to export and share all of their themes at once.
+
+Export All Saved Call Types
+
+* Users can now right-click the saved call types export button to export and share all of their themes at once.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Custom Layout Save
+
+* Fixed an issue causing custom layouts to not save properly after a refresh.
+
+Custom Layout Required Window Multi-Desktop
+
+* Fixed an issue preventing users from changing a required window (call editor, units, etc.) to one of the new multi-desktop layers.
+{% endtab %}
+{% endtabs %}
+
 ### 3.38.0 12/12/2025
 
 {% tabs %}
