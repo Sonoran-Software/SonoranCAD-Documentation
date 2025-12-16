@@ -10,6 +10,36 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.38.6 12/16/2025
+
+{% tabs %}
+{% tab title="New" %}
+Lookup History
+
+* Added a history button to the lookup window to re-run prior searches.
+
+Call Record Attachments
+
+* Added a button in the call notes to quickly view all attached records.
+{% endtab %}
+
+{% tab title="Changed" %}
+Dispatch Automation Timers
+
+* The timer window no longer opens as a popup if a timer is created via dispatch automation.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Unit Group Action Menu
+
+* Fixed an issue where the unit actions right-click menu was missing when viewing groups in card mode.
+
+Timer Expire Notification
+
+* Fixed an issue with automatic timers where changing a unit’s status to clear a countdown timer could still cause the timer-completion notification sound to play when the original timer expired.
+{% endtab %}
+{% endtabs %}
+
 ### 3.38.5 12/13/2025
 
 {% tabs %}
