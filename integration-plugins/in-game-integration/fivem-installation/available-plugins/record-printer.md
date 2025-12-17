@@ -31,9 +31,12 @@ The record printer settings are stored inside of the core configuration file.
 | Variable                 | Description                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------- |
 | `recordPurgeDays`        | The number of days that the downloaded PDF's will be stored on the local server |
+| `commandPrefix`          | Base command prefix, e.g. /printer queue, /printer print, /printer share        |
 | `printQueueCommand`      | Command the view the print queue                                                |
 | `printCommand`           | Command used to print PDF's in-game                                             |
 | `clearPrintQueueCommand` | Command to clear the print queue                                                |
+| `shareCommand`           | Command to share a queued or printed record with other players                  |
+| `acceptShareCommand`     | Command to accept a shared record into your queue or your hand                  |
 | `maxPrintsPerQueue`      | Max number of print requests a user can have in their queue at a time           |
 | `vehicleConfig`          | Configuration of LEO vehicles that have a printer                               |
 | `printerObjects`         | Array of in-game printer objects that can be walked up to and print records     |
@@ -83,3 +86,7 @@ If configured, closing the record will [place it in your player inventory](recor
 ### Inventory Support
 
 Records can be stored and shared as an inventory item. The `frameworks` configuration item allows for inventories like ESX, QB Core, OX Inventory, and more.
+
+### Sharing Records on Non-Framework Servers
+
+You can now share records on non-framework servers via the newly added commands `/printer recordshare` and the target user can use the command `/printer accept` to accept a PDF. If you are in front of someone you can directly hand them the PDF in your hand, or you can "email" the record to their print queue from anywhere on the map. The record must be in your print queue in order to email it.&#x20;
