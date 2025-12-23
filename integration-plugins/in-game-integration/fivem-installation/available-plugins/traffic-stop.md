@@ -2,6 +2,7 @@
 description: >-
   Allows law enforcement to start a traffic stop which will automatically add a
   new call and attach the unit in the CAD.
+hidden: true
 ---
 
 # Traffic Stop

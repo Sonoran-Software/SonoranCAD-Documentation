@@ -16,6 +16,7 @@ Each submodule can be [easily enabled and configured](../submodule-configuration
 | --------------------------------------------------------------------------------------------- | -------- | ------- | ------- |
 | [Body Camera](bodycam.md)                                                                     | No       | No      | Yes     |
 | [Call Commands](call-commands.md)                                                             | Yes      | Yes     | Yes     |
+| Call Templates                                                                                | No       | Yes     | Yes     |
 | [Check API ID](api-id-checker.md)                                                             | Yes      | Yes     | Yes     |
 | [Civilian Integration](civilian-integration.md)                                               | No       | Yes     | Yes     |
 | [Dispatch Notify](dispatch-notify.md)                                                         | No       | Yes     | Yes     |
@@ -34,7 +35,7 @@ Each submodule can be [easily enabled and configured](../submodule-configuration
 | [Sonoran Radio (sonrad)](sonoran-radio-sonrad.md)                                             | No       | Partial | Yes     |
 | [Tablet and Mini CAD](tablet.md)                                                              | Partial  | Yes     | Yes     |
 | [Teamspeak Integration](teamspeak-3.md)                                                       | Yes      | Yes     | Yes     |
-| [Traffic Stop](traffic-stop.md)                                                               | No       | Yes     | Yes     |
+| ~~Traffic Stop~~                                                                              | ~~No~~   | ~~Yes~~ | ~~Yes~~ |
 | [Unit Status](../../../../api-integration/api-endpoints/emergency/identifiers/unit-status.md) | Yes      | Yes     | Yes     |
 | [VehReg](vehreg.md)                                                                           | No       | Yes     | Yes     |
 | [Wraith Radar](wraithv2.md)                                                                   | No       | Yes     | Yes     |

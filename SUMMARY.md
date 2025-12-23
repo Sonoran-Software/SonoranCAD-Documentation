@@ -88,6 +88,7 @@
     * [FiveM Submodules](integration-plugins/in-game-integration/fivem-installation/available-plugins/README.md)
       * [Body Camera](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md)
       * [Call Commands](integration-plugins/in-game-integration/fivem-installation/available-plugins/call-commands.md)
+      * [Call Templates](integration-plugins/in-game-integration/fivem-installation/available-plugins/call-templates.md)
       * [Check API ID](integration-plugins/in-game-integration/fivem-installation/available-plugins/api-id-checker.md)
       * [Civilian Integration](integration-plugins/in-game-integration/fivem-installation/available-plugins/civilian-integration.md)
       * [Dispatch Notify](integration-plugins/in-game-integration/fivem-installation/available-plugins/dispatch-notify.md)
