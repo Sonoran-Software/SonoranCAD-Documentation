@@ -59,3 +59,15 @@ Each call type requires a JSON file to be added to the directory `submodules/cal
 ### 4. Set Your API ID
 
 Don't forget to set your account [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
+
+## Usage
+
+By default, this submodule comes with a `/ts` (traffic stop) and `/towrq` (tow request) commands.
+
+Example:
+
+`/ts Blue four door sedan, occupied x1`
+
+* Creates a dispatch call with the presets for a traffic stop.
+* Adds `Blue four door sedan, occupied x1` to the description.
+* Pre-fills the call's address and postal location with your in-game location.
