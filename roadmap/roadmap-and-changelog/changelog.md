@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.38.7 12/22/2025
+
+{% tabs %}
+{% tab title="Changed" %}
+Scroll Bar Style
+
+* Shrank the width of scrollbars and changed the color to a theme option.
+
+Lookup Clear Inputs
+
+* Added a clear button to all inputs in the lookup search options, allowing for a quick clear and re-focus.
+
+Draggable Window Handles
+
+* Increased the size of the draggable window hit boxes for resizing. Additionally, allowed the use of the window resize drag handles when the window is not in focus.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Live Map Upload: Cache Busting
+
+* Fixed an issue with cache busting when uploading a new, custom live map.
+
+Call Editor Attach/Detach Automations
+
+* Fixed an issue where attaching and detaching units via call editor would not fire the dispatch status automations.
+{% endtab %}
+{% endtabs %}
+
 ### 3.38.6 12/16/2025
 
 {% tabs %}
