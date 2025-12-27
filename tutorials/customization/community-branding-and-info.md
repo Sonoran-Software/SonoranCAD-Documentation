@@ -8,11 +8,11 @@ description: Customize your community's settings, branding, information, and mor
 
 The admin customization info section allows you to customize your community's image, name, timezone, and more!
 
-![Sonoran CAD's community customization menu](../../.gitbook/assets/com\_info.PNG)
+<figure><img src="../../.gitbook/assets/UnyYaJJVMq.png" alt=""><figcaption></figcaption></figure>
 
 | Field                 | Description                                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Image                 | <p>A link to your community's logo.</p><p>This will be displayed on your custom login page, loading icon, community card, and more!</p>                 |
+| Image                 | Click the image at the top and upload the image to the CAD.                                                                                             |
 | Name                  | <p>This is your community's name.</p><p>This will be displayed on your custom login page, community card, and top header.</p>                           |
 | Subtitle              | This is the text displayed below your community name on your custom login page and community card.                                                      |
 | Website               | This is a link to your community website, to be displayed in the community menu.                                                                        |
@@ -30,7 +30,7 @@ For more information, see our [pricing](https://sonorancad.com/app/#/pricing) or
 Looking to change your community ID?\
 Navigate to `Admin` > `Advanced` > `Change Community ID`
 
-![Sonoran CAD's Community ID Change](../../.gitbook/assets/CAD\_ChangeCommId.png)
+![Sonoran CAD's Community ID Change](../../.gitbook/assets/CAD_ChangeCommId.png)
 
 Here, you can enter in and request a new community ID.\
 Once submitted, you will be logged out. All active community members will also need to log out and back in to avoid any issues.
