@@ -10,6 +10,36 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.38.8 01/09/2025
+
+{% tabs %}
+{% tab title="New" %}
+Create Record from Civilian Lookup
+
+* Civilian lookup results now have a button to create a new record, automatically importing their character information.
+
+Automatic Record Drafts
+
+* Removed the manual save draft button when creating a new record as drafts now auto-save until submitted.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Reconnection Handling
+
+* Reworked re-connection handling to resolve issues where lookups and other windows wouldn't work after re-connecting and required a refresh.
+* Fixed an issue where pinned tabs in the taskbar would be wiped on re-connection until a refresh.
+* Fixed an issue where the self-dispatch button would appear on the dispatch call editor after a re-connection until after a refresh.
+
+Dispatch Automations Button
+
+* Fixed an issue where the dispatch automations button would be displayed on non-dispatch pages.
+
+Dispatch Saved Types Clear
+
+* Fixed an issue where the saved call type selection wasn't cleared when clearing the call editor.
+{% endtab %}
+{% endtabs %}
+
 ### 3.38.7 12/22/2025
 
 {% tabs %}
