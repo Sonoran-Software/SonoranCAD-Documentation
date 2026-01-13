@@ -87,6 +87,7 @@
       * [Submodule Configuration Updates](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/submodule-configuration-updates.md)
     * [FiveM Submodules](integration-plugins/in-game-integration/fivem-installation/available-plugins/README.md)
       * [Body Camera](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md)
+      * [CAD Display](integration-plugins/in-game-integration/fivem-installation/available-plugins/cad-display.md)
       * [Call Commands](integration-plugins/in-game-integration/fivem-installation/available-plugins/call-commands.md)
       * [Call Templates](integration-plugins/in-game-integration/fivem-installation/available-plugins/call-templates.md)
       * [Check API ID](integration-plugins/in-game-integration/fivem-installation/available-plugins/api-id-checker.md)
