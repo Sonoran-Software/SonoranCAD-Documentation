@@ -176,6 +176,7 @@
         * [Unit Status](api-integration/api-endpoints/emergency/identifiers/unit-status.md)
         * [Get Active Units](api-integration/api-endpoints/emergency/identifiers/get-active-units.md)
         * [Update Unit Location](api-integration/api-endpoints/emergency/identifiers/update-unit-location.md)
+        * [Set Ident Group](api-integration/api-endpoints/emergency/identifiers/set-ident-group.md)
       * [Dispatch and Emergency Calls](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/README.md)
         * [Get Calls](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/get-calls.md)
         * [New Dispatch](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/new-dispatch.md)

@@ -23,6 +23,7 @@ description: >-
 | emergency/[get\_active\_units](emergency/identifiers/get-active-units.md)                   | Plus                 |
 | emergency/[get\_calls](emergency/dispatch-and-emergency-calls/get-calls.md)                 | Plus                 |
 | emergency/[set\_call\_postal](emergency/dispatch-and-emergency-calls/update-call-postal.md) | Plus                 |
+| emergency/[set\_stations](emergency/station-alert/set-stations.md)                          | Plus                 |
 | emergency/[set\_streetsign\_config](emergency/street-signs/set-street-sign-config.md)       | Pro                  |
 | emergency/[update\_streetsign](emergency/street-signs/update-street-sign.md)                | Pro                  |
 | emergency/[get\_blips](emergency/custom-blips/get-map-blips.md)                             | Pro                  |
@@ -30,7 +31,8 @@ description: >-
 | emergency/[modify\_blip](emergency/custom-blips/modify-blip.md)                             | Pro                  |
 | emergency/[remove\_blip](emergency/custom-blips/remove-blip.md)                             | Pro                  |
 | emergency/[set\_available\_callouts](emergency/ers/set-street-sign-config.md)               | Pro                  |
-| emergency/[set\_stations](emergency/station-alert/set-stations.md)                          | Plus                 |
+| emergency/[modify\_identifier](emergency/identifiers/modify-identifier.md)                  | Pro                  |
+| emergency/[idents\_to\_group](emergency/identifiers/set-ident-group.md)                     | Pro                  |
 | civilian/[get\_characters](civilian/get-characters.md)                                      | Standard             |
 | civilian/[new\_character](civilian/new-character.md)                                        | Standard             |
 | civilian/[edit\_character](civilian/edit-character.md)                                      | Standard             |
