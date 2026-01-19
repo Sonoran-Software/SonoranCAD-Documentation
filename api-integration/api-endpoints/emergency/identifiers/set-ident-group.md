@@ -51,6 +51,7 @@ INVALID API KEY
         {
             "serverId": 1,          // Server ID
             "identIds": [123, 456, 789], // Array of identifier ID integers
+            "account": "000-000-000", // OPTIONAL: Specify the Sonoran account GUID's current identifier to be added to the list of identIds
             "groupName": "Group 1" // Name of group to set the identifiers to. Use an empty string to clear their group.
         },
     ]
