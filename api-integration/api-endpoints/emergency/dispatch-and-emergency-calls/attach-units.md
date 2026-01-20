@@ -51,7 +51,8 @@ INVALID API KEY
             "callId": 100, // Can be retrieved from the GET_CALLS API endpoint
             "units": ["STEAM:1234"], // OPTION 1: Array of API IDs
                                 // Typically, this is their STEAM Hex
-            "account": "000-000-0000" // OPTION 2: Attach unit via account UUID
+            "account": "000-000-0000", // OPTION 2: Attach unit via account UUID
+            "identIds": [1, 2, 3] // Option 3: Attach units via Identifier ID
         },
     ]
 }
