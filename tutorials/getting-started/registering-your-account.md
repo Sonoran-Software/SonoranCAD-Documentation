@@ -6,7 +6,7 @@ description: >-
 
 # Registering Your Account
 
-#### 1. Navigate to the Login Page
+### 1. Navigate to the Login Page
 
 On the website or app, select one of the login options:
 
@@ -14,7 +14,7 @@ On the website or app, select one of the login options:
 
 Users can register a Sonoran Software account at [account.sonoransoftware.com](https://account.sonoransoftware.com/).
 
-#### 2. Verify Your Email Address
+### 2. Verify Your Email Address
 
 {% hint style="warning" %}
 Account verification emails may not be shown in your primary inbox.
