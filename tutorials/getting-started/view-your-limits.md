@@ -10,7 +10,7 @@ description: >-
 
 In the admin page, select "Advanced" > "Limits" to view your community limitations.
 
-![Sonoran CAD's limits section](../../.gitbook/assets/CAD\_CommLimits.png)
+<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
 
 ### Interested in a Paid Subscription?
 
