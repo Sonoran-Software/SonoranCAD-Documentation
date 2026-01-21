@@ -37,13 +37,16 @@ Reports can be searched in the unit's report center via number or identifier.
 
 Add your desired custom and premade sections, edit fields, and more!
 
-![Select custom or premade sections from the dropdown buttons](../../.gitbook/assets/CAD_CustomPreMadeSection.png)
+<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 
 If your section is a custom character or vehicle field, you can toggle on the search button. This allows the section to be filled via when creating a new one. [Learn more about ensuring civilian and vehicle searches link to your custom record fields](creating-custom-record-and-report-types.md#linking-vehicle-and-character-searches).
 
 The enable duplicate button allows users to click and create a new copy of the section while filing the record.
 
-![Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (28).png>)
+![
+
+
+Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (28).png>)
 
 <details>
 
