@@ -13,7 +13,7 @@ Ex: 10-10: Fight in Progress
 
 Under Admin > Customization > 10-Codes you can add, edit, or remove 10-codes for your community.
 
-![Sonoran CAD - 10-Codes](<../../.gitbook/assets/image (186).png>)
+<figure><img src="../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
 ### My locality doesn't call them "10-Codes"
 
