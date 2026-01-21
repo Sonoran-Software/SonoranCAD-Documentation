@@ -27,9 +27,9 @@ For more information on hosting your own custom login page, see our guide below:
 Users can [create an account](registering-your-account.md), and enter in your community ID in the "Join Community" popup.\
 Users can search using your community ID and can press the "Join" button to add your community.\
 \
-From there, users can select your community card in the "My Communities" section to log into your CAD.
+From there, users can select your community card in the "My Communities" section to log into your CAD.<br>
 
-![Sonoran CAD - Joining a Community](../../.gitbook/assets/CAD\_JoinCommBig.png)
+<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Forgot your community ID?

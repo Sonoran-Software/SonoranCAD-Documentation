@@ -14,10 +14,10 @@ You will be prompted for three information fields:
 1. Community Name
 2. Website (Optional)
 
-![The community CAD registration modal is shown as above](<../../.gitbook/assets/image (290) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Register Your Community
-
+**2. Register Your Community**\
+\
 Once you've filled out the information, press "Register Community" to create your CAD.\
 \
 Your community icon will now be displayed under the "My Communities" section. You can click on this to log into your new CAD.
