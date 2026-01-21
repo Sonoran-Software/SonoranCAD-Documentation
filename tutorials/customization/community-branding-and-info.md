@@ -6,9 +6,9 @@ description: Customize your community's settings, branding, information, and mor
 
 ### Community Information
 
-The admin customization info section allows you to customize your community's image, name, timezone, and more!
+The admin customization info section allows you to customize your community's image, name, time zone, and more!
 
-<figure><img src="../../.gitbook/assets/UnyYaJJVMq.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 | Field                 | Description                                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
