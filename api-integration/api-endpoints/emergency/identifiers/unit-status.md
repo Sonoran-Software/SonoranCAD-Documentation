@@ -50,6 +50,7 @@ INVALID API KEY
             "apiId": "STEAM:1234", // (OPTION 1): API ID entered in the unit identifiers
                                    // Typically, this is their STEAM ID
             "account": "000-000-000", // (OPTION 2): Sonoran Account UUID
+            "identIds": [123,456], // (Option 3): Identifier IDs
             "status": 0,           // Status Int (ENUM)
             "serverId": 1          // Server ID
         },

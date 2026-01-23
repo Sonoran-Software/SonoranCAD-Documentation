@@ -1,10 +1,8 @@
 ---
-description: Work in progress, documents features developers can use in their own plugins.
+description: >-
+  FiveM developer documentation for server, client, and shared functions,
+  exports, and events.
 ---
 
 # FiveM Development Documentation
-
-{% content-ref url="/broken/pages/-MgZJR0K_U4aFb-rNAfp" %}
-[Broken link](/broken/pages/-MgZJR0K_U4aFb-rNAfp)
-{% endcontent-ref %}
 
