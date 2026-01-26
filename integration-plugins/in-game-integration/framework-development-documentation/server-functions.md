@@ -734,7 +734,7 @@ This function will not work if you do not have the "Lookups" submodule enabled. 
 {% endhint %}
 
 ```lua
-exports.sonorancad.cadPlateLookup(plate, callback, autoLookup)
+exports.sonorancad.cadPlateLookup(plate, basicFlag, callback, autoLookup)
 ```
 
 {% tabs %}
@@ -742,6 +742,7 @@ exports.sonorancad.cadPlateLookup(plate, callback, autoLookup)
 | Parameter    | Type       | Description                                                        |
 | ------------ | ---------- | ------------------------------------------------------------------ |
 | `plate`      | `string`   | Plate number to lookup                                             |
+| `basicFlag`  | `null`     | Depreciated parameter, can be set to `nil`                         |
 | `callback`   | `function` | Callback function to handle the API response.                      |
 | `autoLookup` | `string`   | API ID of the user to perform a lookup via API ID rather than name |
 {% endtab %}
