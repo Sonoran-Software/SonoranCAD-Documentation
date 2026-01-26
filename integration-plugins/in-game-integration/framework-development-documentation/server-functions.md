@@ -689,3 +689,72 @@ createDispatchCall(
 ```
 {% endtab %}
 {% endtabs %}
+
+### cadNameLookup
+
+Perform a name lookup in CAD (Requires "Lookups" submodule to be enabled)
+
+{% hint style="danger" %}
+This function will not work if you do not have the "Lookups" submodule enabled. The submodule is enabled by default.&#x20;
+{% endhint %}
+
+```lua
+exports.sonorancad.cadNameLookup(first, last, mi, callback, autoLookup)
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+| Parameter    | Type       | Description                                                        |
+| ------------ | ---------- | ------------------------------------------------------------------ |
+| `first`      | `string`   | First Name                                                         |
+| `last`       | `string`   | Last Name                                                          |
+| `mi`         | `string`   | Middle Initial                                                     |
+| `callback`   | `function` | Callback function to handle the API response.                      |
+| `autoLookup` | `string`   | API ID of the user to perform a lookup via API ID rather than name |
+{% endtab %}
+
+{% tab title="Return" %}
+This function will return the custom records related to the name as denoted in the [Custom Records](../../../api-integration/api-endpoints/general/custom-records/) section &#x20;
+{% endtab %}
+
+{% tab title="Example Usage" %}
+<pre class="language-lua"><code class="lang-lua">exports.sonorancad.cadNameLookup("Jordan", "Green", "J", function(record)
+<strong>    print(json.encode(record))
+</strong>end, "123456789123456789")
+</code></pre>
+{% endtab %}
+{% endtabs %}
+
+### cadPlateLookup
+
+Perform a plate lookup in CAD (Requires "Lookups" submodule to be enabled)
+
+{% hint style="danger" %}
+This function will not work if you do not have the "Lookups" submodule enabled. The submodule is enabled by default.
+{% endhint %}
+
+```lua
+exports.sonorancad.cadPlateLookup(plate, callback, autoLookup)
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+| Parameter    | Type       | Description                                                        |
+| ------------ | ---------- | ------------------------------------------------------------------ |
+| `plate`      | `string`   | Plate number to lookup                                             |
+| `callback`   | `function` | Callback function to handle the API response.                      |
+| `autoLookup` | `string`   | API ID of the user to perform a lookup via API ID rather than name |
+{% endtab %}
+
+{% tab title="Return" %}
+This function will return the custom records related to the plate as denoted in the [Custom Records](../../../api-integration/api-endpoints/general/custom-records/) section
+{% endtab %}
+
+{% tab title="Example Usage" %}
+```lua
+exports.sonorancad.cadPlateLookup("ABC123", function(record)
+    print(json.encode(record))
+end, "123456789123456789")
+```
+{% endtab %}
+{% endtabs %}
