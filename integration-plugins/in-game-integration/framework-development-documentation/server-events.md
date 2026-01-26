@@ -238,3 +238,32 @@ TriggerServerEvent('sonorancad::registerVeh', primary, plate, class, realName)
 {% endtab %}
 {% endtabs %}
 
+### SonoranCAD::pushevents:RecordAdded
+
+Event fired in the event of a record created in SonoranCAD
+
+```lua
+RegisterNetEvent("SonoranCAD::pushevents:RecordAdded", function(record)
+    print(json.encode(record)
+end)
+```
+
+### SonoranCAD::pushevents:RecordEdited
+
+Event fired in the event of a record edit in SonoranCAD
+
+```lua
+RegisterNetEvent("SonoranCAD::pushevents:RecordEdited", function(record)
+    print(json.encode(record)
+end)
+```
+
+### SonoranCAD::pushevents:RecordRemoved
+
+Event fired in the event of a record deletion in SonoranCAD
+
+```lua
+RegisterNetEvent("SonoranCAD::pushevents:RecordRemoved", function(record)
+    print(json.encode(record)
+end)
+```
