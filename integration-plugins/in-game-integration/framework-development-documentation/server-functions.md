@@ -758,3 +758,101 @@ end, "123456789123456789")
 ```
 {% endtab %}
 {% endtabs %}
+
+### getAllWarrantsAndBolos
+
+Retrieve all active and inactive warrants and bolos with pagination support
+
+```lua
+exports.sonorancad.getAllWarrantsAndBolos(options, cb)
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+| Parameter                                                  | Type                            | Description                                                                                                                                                                        |
+| ---------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `options`                                                  | `table`                         | Options for pagination and filtering. If omitted, defaults are used (Optional)                                                                                                     |
+| `options.pageSize` / `options.limit`                       | `number`                        | Page size per API request. Default `100`                                                                                                                                           |
+| `options.offset`                                           | `number`                        | Starting offset for pagination. Default `0`                                                                                                                                        |
+| `options.maxPages` / `options.pageLimit` / `options.pages` | `number`                        | Max number of pages to fetch before stopping (caps total results). Default: no cap                                                                                                 |
+| `options.statuses` / `options.status`                      | `table` \| `string` \| `number` | Status filter(s). Defaults to `{0, 1}` (open + closed). Accepts numeric values or strings: `"open"`, `"active"`, `"closed"`, `"inactive"`, `"pending"`, `"approved"`, `"rejected"` |
+| `options.types`                                            | `table<number>`                 | Record types to include. Default `{2, 3}` (Warrant + BOLO)                                                                                                                         |
+| `cb`                                                       | `function`                      | Callback invoked as `cb(records, meta)` where records is the aggregated list and `meta` includes paging info or an error.                                                          |
+
+
+{% endtab %}
+
+{% tab title="Example Usage" %}
+```lua
+exports['sonorancad']:getAllWarrantsAndBolos(function(records, meta)
+    print(json.encode(records))
+    print(json.encode(meta))
+end)
+
+```
+{% endtab %}
+
+{% tab title="Returns" %}
+```lua
+-- records (array)
+{
+    {
+        id = 12345,
+        type = 3, -- BOLO
+        name = "BOLO",
+        sections = {
+            {
+                category = 1,
+                label = "Flags",
+                fields = {
+                    { uid = "flags", data = { flags = { "Armed", "Violent" } } }
+                }
+            },
+            {
+                category = 0,
+                label = "Vehicle Information",
+                fields = {
+                    { uid = "plate", value = "ABC123" },
+                    { uid = "make", value = "Dodge" },
+                    { uid = "model", value = "Charger" },
+                    { uid = "color", value = "Black" }
+                }
+            }
+        }
+    },
+    {
+        id = 67890,
+        type = 2, -- Warrant
+        name = "Warrant",
+        sections = {
+            {
+                category = 1,
+                label = "Flags",
+                fields = {
+                    { uid = "flags", data = { flags = { "Felony", "No Bond" } } }
+                }
+            },
+            {
+                category = 0,
+                label = "Civilian Information",
+                fields = {
+                    { uid = "first", value = "Jane" },
+                    { uid = "last", value = "Doe" },
+                    { uid = "dob", value = "01/01/1990" }
+                }
+            }
+        }
+    }
+}
+
+-- meta
+{
+    ok = true,
+    pages = 2,
+    limit = 100,
+    offset = 0,
+    statuses = { 0, 1 }
+}
+```
+{% endtab %}
+{% endtabs %}
