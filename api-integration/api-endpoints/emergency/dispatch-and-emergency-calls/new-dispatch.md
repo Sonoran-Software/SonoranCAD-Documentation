@@ -7,45 +7,40 @@ description: >-
 # New Dispatch
 
 {% hint style="warning" %}
-This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../../pricing/faq/)page.
+This API endpoint requires the **plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../../../pricing/faq/)page.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sonorancad.com" path="/emergency/new_dispatch" method="post" summary="New Dispatch" %}
-{% swagger-description %}
+## New Dispatch
+
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/emergency/new_dispatch`
+
 The unit location API endpoint allows you to create and assign a new dispatch.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Your community's ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="key" type="string" %}
-Your community's API Key
-{% endswagger-parameter %}
+| Name | Type   | Description               |
+| ---- | ------ | ------------------------- |
+| id   | string | Your community's ID       |
+| key  | string | Your community's API Key  |
+| type | string | NEW\_DISPATCH             |
+| data | array  | Array of dispatch objects |
 
-{% swagger-parameter in="body" name="type" type="string" %}
-NEW_DISPATCH
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="data" type="array" %}
-Array of dispatch objects
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="A successful call will be met with the following response:" %}
+{% tabs %}
+{% tab title="200 A successful call will be met with the following response:" %}
 ```
 NEW DISPATCH CREATED - ID: {CallId}
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="The following 400 errors may be sent in response:" %}
+{% tab title="400 The following 400 errors may be sent in response:" %}
 ```http
 INVALID REQUEST TYPE
 INVALID COMMUNITY ID
 API IS NOT ENABLED FOR THIS COMMUNITY
 INVALID API KEY
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ```javascript
 {
@@ -70,8 +65,8 @@ INVALID API KEY
             "metaData": {
                 "someKey": "someValue" // OPTIONAL: metaData for API custom storage
             },
-            "units": ["STEAM:1234"] // Array of API IDs
-                                // Typically, this is their STEAM Hex
+            "units": ["STEAM:1234"], // Array of API IDs
+            "deleteAfterMinutes": 30 // OPTIONAL: Delete record after X minutes (temporary record)
         },
     ]
 }
