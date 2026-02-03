@@ -154,6 +154,20 @@ Note: Some vehicles may show a plate due to missing vehicle metadata or being ab
 
 Custom tones will now play when you scan a plate that is has either a BOLO, Warrant or is unregistered. These tones can be customized by replacing the existing files in the `/sonorancad/submodules/wraithv2/sfx` folder with your own. **Please note the files names need to be the same as the ones you are replacing**
 
+### Doppler Sounds
+
+The Doppler Effect allows the radar to automatically capture vehicle speeds while in motion. As patrol speed increases, the radar adjusts its frequency shift calculations to accurately track and lock moving targets in front of or behind the unit—enabling reliable speed detection without requiring the officer to remain stationary.
+
+The doppler effect can be adjusted per client via the settings menu from a volume of 0 (off) to 5 (max volume). Additionally servers can disable the entire system via the configuration option `CONFIG.enable_doppler`
+
+<div><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>SonoranCAD - Wraith WkWars2x - Doppler Off </p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468339426567655475/image.png?ex=6983a927&#x26;is=698257a7&#x26;hm=185cbe9959a1c6bf0c74d41335e06ac94819dc1c41553275b3648d2c954c3bc8&#x26;" alt=""><figcaption><p>SonoranCAD - Wraith WkWars2x - Doppler Max Volume</p></figcaption></figure></div>
+
+#### Doppler Direction
+
+You can customize the antenna that will trigger the doppler noise via the client settings menu between the options of "btH" (both), "rEr" (rear) or "FNt" (front). This will create the doppler audio effect based upon a vehicles speed in the respective antenna&#x20;
+
+<div><figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>SonoranCAD - Wraith WkWars2x - Front Only</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770007285873/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=5e561a7c6de7e7abfd76fb3617d9c188f1181e87f5649c5349ab5b915061f4a6&#x26;" alt=""><figcaption><p>SonoranCAD - Wraith WkWars2x - Both Antennas</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770363674827/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=540beada2276ca6ae389cd118061d15273004f60076545ddd45c112c8f2842e6&#x26;" alt=""><figcaption><p>SonoranCAD - Wraith WkWars2x - Rear Only </p></figcaption></figure></div>
+
 ## Troubleshooting
 
 ### AI Cars are Spamming the Reader
