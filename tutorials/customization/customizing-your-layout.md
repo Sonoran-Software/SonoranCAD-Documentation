@@ -27,7 +27,7 @@ You can right click on any panel and to reveal multiple menu options.
 5. Minimize: This minimizes the window to a tab at the top of your screen.
 6. Close: This closes the window.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Quick Resize
 
@@ -65,7 +65,7 @@ Add additional desktops for more window space. Access the desktop menu in the ri
 
 Quickly swap between desktops using [hotkeys](../other-features/configurable-hotkeys.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Customization Menu
 

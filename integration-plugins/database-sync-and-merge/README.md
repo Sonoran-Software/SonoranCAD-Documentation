@@ -359,7 +359,7 @@ Simply add a field if the desired field doesn't already exist and note the `Labe
 
 Be sure to save your custom record format after enabling this!
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Custom Records - DB Sync Mapping Toggle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Custom Records - DB Sync Mapping Toggle</p></figcaption></figure>
 
 ### 2. Configure the Newly Mapped Field
 
