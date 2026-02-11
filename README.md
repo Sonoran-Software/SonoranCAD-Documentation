@@ -18,6 +18,14 @@ With seamless integrations for FiveM, ER:LC on Roblox, and more, it delivers unm
 [getting-started](tutorials/getting-started/)
 {% endcontent-ref %}
 
+### ✨ [Dispatch AI](https://docs.sonoransoftware.com/radio/tutorials/integrations/dispatch-ai)
+
+Dispatch AI is our most advanced integration to date—bringing a real-time AI dispatcher directly into your community’s CAD.
+
+When paired with [Sonoran Radio](https://docs.sonoransoftware.com/radio), units can create calls, run license plates, update their status, and more—all automatically through their radio transmissions.
+
+<figure><img src=".gitbook/assets/dai_promo.png" alt=""><figcaption></figcaption></figure>
+
 ### 📱 Downloadable Apps
 
 In addition to our web version, you can download Sonoran CAD on the [iOS App Store](https://apps.apple.com/us/app/sonoran-cad/id1496539456), the [Google Play Store](https://play.google.com/store/apps/details?id=sonorancadmdt.app\&hl=en_US), or for [Windows Desktop](https://github.com/Sonoran-Software/SonoranCAD_Windows/releases/latest/download/Sonoran-CAD.exe).\

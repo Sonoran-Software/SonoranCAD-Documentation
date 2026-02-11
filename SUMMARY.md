@@ -61,6 +61,7 @@
 
 ## Integration Capabilities <a href="#integration-plugins" id="integration-plugins"></a>
 
+* [✨ Dispatch AI](integration-plugins/dispatch-ai.md)
 * [🗃️ Paid Integration Resources](integration-plugins/paid-integration-resources/README.md)
   * [Mobile Command Center](integration-plugins/paid-integration-resources/mobile-command-center.md)
   * [ATM Robbery](integration-plugins/paid-integration-resources/atm-robbery.md)
