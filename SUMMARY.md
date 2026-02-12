@@ -40,6 +40,7 @@
   * [Advanced Query Strings](tutorials/customization/advanced-query-strings.md)
 * [Dispatching](tutorials/dispatching/README.md)
   * [Creating a Call](tutorials/dispatching/creating-a-call.md)
+  * [Rapid IQ](tutorials/dispatching/rapid-iq.md)
   * [Unit Management](tutorials/dispatching/unit-management.md)
   * [Self Dispatch](tutorials/dispatching/self-dispatch.md)
   * [Timers](tutorials/dispatching/timers.md)
