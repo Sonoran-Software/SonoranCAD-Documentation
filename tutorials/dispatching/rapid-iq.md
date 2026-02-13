@@ -25,6 +25,8 @@ Rapid IQ combines these responses into the dispatch call description, giving the
 
 Select the **Rapid IQ** button at the top of the call editor to open the window.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.44.22 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
 </details>
 
 <details>
@@ -32,6 +34,8 @@ Select the **Rapid IQ** button at the top of the call editor to open the window.
 <summary>Via Taskbar</summary>
 
 In the taskbar, use the search box or navigate to **Dispatch** > **Rapid IQ** to open the window.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.45.04 PM.png" alt="" width="331"><figcaption></figcaption></figure>
 
 </details>
 
