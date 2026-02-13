@@ -27,7 +27,7 @@ You can right click on any panel and to reveal multiple menu options.
 5. Minimize: This minimizes the window to a tab at the top of your screen.
 6. Close: This closes the window.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Quick Resize
 
@@ -65,15 +65,15 @@ Add additional desktops for more window space. Access the desktop menu in the ri
 
 Quickly swap between desktops using [hotkeys](../other-features/configurable-hotkeys.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Customization Menu
 
 Access the customization menu from the taskbar, or from the start menu.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<div><figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Reset Layouts
 
@@ -114,7 +114,7 @@ Don't forget, you can easily [move the taskbar to the top or sides of the screen
 
 Customize your CAD theme colors, desktop background, and more! Use the import and export buttons to share themes with other users.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Saving Themes
 

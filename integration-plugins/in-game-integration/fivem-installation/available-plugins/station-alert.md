@@ -33,7 +33,7 @@ Once purchased you can [download the resource from the CFX.re portal](https://po
 
 We suggest installing the `inferno-station-alert` folder within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: CAD Installation</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: CAD Installation</p></figcaption></figure>
 
 ### 3. Start the Resource
 
@@ -64,7 +64,7 @@ The following example:
 * Plays `Example Message`  as text-to-speech at station `Davis`&#x20;
 * Plays `Tone1` from the station alert resource tones at station `Davis`&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
 
 ### 🚨 Station Alert Panel
 
@@ -72,7 +72,7 @@ Dispatchers can also access the dedicated `Station Alert` panel under `Unit Mana
 
 Here, you can type-to-filter and select multiple stations at once.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
 
 ### 📞 Dispatch Call Editor
 

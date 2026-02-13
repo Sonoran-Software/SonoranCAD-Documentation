@@ -40,4 +40,4 @@ Civilian and vehicle information sections also include a search feature. Here, y
 
 Working on a record but not ready to submit? Records can be saved as drafts and revisited later from the report center before final submission.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>

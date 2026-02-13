@@ -8,7 +8,7 @@ description: Customize your community's settings, branding, information, and mor
 
 The admin customization info section allows you to customize your community's image, name, time zone, and more!
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                 | Description                                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -207,7 +207,7 @@ To do the same for your game:
 2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
 3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
 
-![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 For more help, reach out to our [support team](https://support.sonoransoftware.com).
 
