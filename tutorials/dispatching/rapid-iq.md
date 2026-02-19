@@ -11,7 +11,7 @@ description: >-
 
 ## What is Rapid IQ?
 
-**Rapid IQ** (Rapid Intake Questionnaire) is an emergency call intake system that helps dispatchers ask the right questions during medical calls. It guides them step-by-step through a structured flow based on the caller’s answers, making sure important details aren’t missed.
+**Rapid IQ** (Rapid Intake Questionnaire) is an emergency call intake system that helps dispatchers ask the right questions during medical calls designed after [standardized MPDS systems](https://en.wikipedia.org/wiki/Medical_Priority_Dispatch_System). It guides dispatchers step-by-step through a structured flow based on the caller’s answers, making sure important details aren’t missed.
 
 Rapid IQ combines these responses into the dispatch call description, giving the best possible information to responding units.
 
@@ -94,11 +94,9 @@ This feature is automatically toggled on when opening Rapid IQ from the taskbar.
 
 </details>
 
-
-
 ## Customizing Flows
 
-The default Rapid IQ flow is complex and configured by real-world dispatchers and medical personnel. **With heavy knowledge**, the system can be customized for different localities and situations.
+The default Rapid IQ flow is complex and configured by real-world dispatchers and medical personnel. **With heavy knowledge**, the system can be customized for different localities and situations. [You can read more about standard MPDS systems here](https://en.wikipedia.org/wiki/Medical_Priority_Dispatch_System).
 
 #### Accessing the Editor
 
@@ -115,6 +113,22 @@ The **Default Path** section configures the initial questions asked in-order. Th
 Configure custom **Questions** to be asked in order to gain more information about the medical issue.
 
 Questions have specific input types like **Text**, **Number**, [**Address**](../customization/addresses-and-street-names.md), or **Choices**.
+
+**Text** and **Number** inputs can also have a **Mask** input. A **Mask** enforces a specific input format. Once a user has entered all numbers/letters into the input, it will automatically advance to the next question.
+
+Ex: `(###) ### - ####` forces a phone number format.
+
+<details>
+
+<summary><strong>Mask Options</strong></summary>
+
+| Token | Description  |
+| ----- | ------------ |
+| #     | Numeric      |
+| S     | Letter A-Z   |
+| X     | Alphanumeric |
+
+</details>
 
 <figure><img src="../../.gitbook/assets/image (294).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -217,7 +231,7 @@ Example: `31C3`
 
 Flows combine everything above. Flows string a list of questions together and determine which questions should be asked next, based on response. Once a flow is completed, a code will be generated.
 
-#### Flow rule format (for readers/admins)
+#### Flow rule format
 
 `{question} -> condition is “answered” {question=value} -> equals {question>=number} -> numeric compare {question<=number} -> numeric compare {question@value} -> auto-set answer {cond1}.{cond2}.{cond3}->CODE`
 
