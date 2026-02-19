@@ -114,6 +114,12 @@ Nearby civilian witnesses will place an emergency call during car jackings, weap
 
 <figure><img src=".gitbook/assets/cad_local_callers.png" alt=""><figcaption><p>Sonoran CAD - Local Callers</p></figcaption></figure>
 
+### 🏥 [Rapid IQ](tutorials/dispatching/rapid-iq.md)
+
+Rapid IQ guides emergency call-takers through dynamic, protocol-driven medical intake flows, enabling faster triage, consistent decision-making, and accurate dispatching.
+
+<figure><img src=".gitbook/assets/rapidiq_promo.png" alt=""><figcaption></figcaption></figure>
+
 ### 📺 Twitch Bodycam, Bot, and Smart Lighting
 
 <figure><img src=".gitbook/assets/stream.png" alt=""><figcaption><p>Sonoran CAD - Stream Overlay</p></figcaption></figure>
