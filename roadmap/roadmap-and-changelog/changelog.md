@@ -10,7 +10,21 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
-### 3.38.8 01/09/2025
+### 3.39.0 02/19/2026
+
+{% tabs %}
+{% tab title="New" %}
+Rapid IQ
+
+* Added an all-new, customizable medical priority dispatching system to walk dispatch call takers through medical questions in order to extract the best information for first responders.
+
+ERLC Live Map Zoom
+
+* Added support to the ER:LC live map to zoom to the location when the location pin icon is selected on a unit.
+{% endtab %}
+{% endtabs %}
+
+### 3.38.8 01/09/2026
 
 {% tabs %}
 {% tab title="New" %}
