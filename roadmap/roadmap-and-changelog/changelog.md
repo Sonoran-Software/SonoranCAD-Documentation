@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.39.1 02/23/2026
+
+{% tabs %}
+{% tab title="New" %}
+Custom Record Placeholder Fields
+
+* Added the ability to set placeholder text on custom record fields
+{% endtab %}
+
+{% tab title="Fixed" %}
+Rapid IQ Customization
+
+* Fixed general issues with Rapid IQ customizations not saving
+
+Locked Window Restore
+
+* Fixed an issue where the command line, timers, and signal window would not save after restart/refresh when locked to a desktop
+{% endtab %}
+{% endtabs %}
+
 ### 3.39.0 02/19/2026
 
 {% tabs %}
