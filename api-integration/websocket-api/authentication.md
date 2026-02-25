@@ -40,7 +40,7 @@ npm i @microsoft/signalr
 </strong>
 // Establist the connection object
 const connection = new signalR.HubConnectionBuilder()
-  .withUrl("wss://api.sonorancad.com/apiWsHub", {
+  .withUrl("https://api.sonorancad.com/apiWsHub", {
     transport: signalR.HttpTransportType.WebSockets,
     skipNegotiation: true,
   })
