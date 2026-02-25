@@ -274,6 +274,9 @@
           * [Remove Blip With Subtype](api-integration/api-examples/emergency/javascript-examples/custom-blips/get-map-blips-1.md)
         * [General](api-integration/api-examples/emergency/javascript-examples/general/README.md)
           * [Lookup Name or Plate](api-integration/api-examples/emergency/javascript-examples/general/lookup-name-or-plate.md)
+  * [Websocket API](api-integration/websocket-api/README.md)
+    * [Authentication](api-integration/websocket-api/authentication.md)
+    * [Unit Locations](api-integration/websocket-api/unit-locations.md)
   * [Development Branch](api-integration/development-branch.md)
 * [🌎 Translation Support](https://docs.sonoransoftware.com/other/translation-support)
 
