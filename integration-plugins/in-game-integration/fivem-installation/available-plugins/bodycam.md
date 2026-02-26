@@ -65,6 +65,10 @@ When in-game, units must also be actively signed into the dispatch, police, fire
 
 Use the `/bodycam` command to toggle your body camera on or off.
 
+On first usage, players will be prompted to grant permission for the bodycam:
+
+<figure><img src="../../../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
+
 #### Body Camera Overlay
 
 When your bodycam is on and being viewed in the CAD a periodic beep and blinking body camera logo will appear on your screen reflecting that your body camera is active.
