@@ -45,7 +45,7 @@ The live map will only show units that are in your server and also actively logg
 
 ### **Map Controls**
 
-#### **Postal Search**
+#### **Postal and Location Search**
 
 {% hint style="warning" %}
 The postal search functionality requires the **Pro** version of Sonoran CAD.
@@ -55,14 +55,9 @@ For more information, view our [pricing](../../../../pricing/faq/) page.
 
 With the [postals](postals.md) submodule configured, you can manually enter and search for a postal code on the live map.
 
-Or, quickly auto-open and search for the location by clicking the search icon:
+Units, emergency calls, and dispatch calls with locations will also display a red pin icon. Clicking the icon will open the map and zoom to the location.
 
-* In the active call's postal field
-* In the active unit's location field
-
-![Live Map - Postal Search](../../../../.gitbook/assets/map_search_postal.gif)
-
-![Live Map - Location Search](../../../../.gitbook/assets/map_search_btn.gif)
+<figure><img src="../../../../.gitbook/assets/Recording 2026-02-26 121354.gif" alt=""><figcaption></figcaption></figure>
 
 #### Blip Customization
 
