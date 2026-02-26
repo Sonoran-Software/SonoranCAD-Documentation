@@ -1,24 +1,22 @@
 ---
 description: >-
-  Sonoran CAD's live map allows you to update and view live unit locations,
-  emergency calls, in-game road signs, and more!
+  Sonoran CAD's 2D and 3D interactive live map allows you to update and view
+  live unit locations, emergency calls, in-game road signs, and more!
 ---
 
 # Live Map
 
-<figure><img src="../../../../.gitbook/assets/live map.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/map_promo.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
 
 {% hint style="info" %}
-## This submodule has been merged into the SonoranCAD Core and no longer requires external configuration or setup
+This submodule is built into the Sonoran CAD FiveM resource and requires no additional configuration.
 {% endhint %}
 
-### 1. Choose Your Map
+### 1. 2D Map Selection
 
-In the admin panel, navigate to `Advanced` > `In-Game Integration` > `Server Events and Integrated Live Map`
+In the admin panel, navigate to **Advanced** > **In-Game Integration** > **Live Map**
 
 Here, you can enable and select a default map option for GTA, Roblox, or others. Additionally, pro communities can [upload a custom map](live-map.md#using-a-custom-map-fivem).
-
-
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-11-08 at 3.11.55 PM.png" alt=""><figcaption><p>Sonoran CAD - Live Map Type Selection</p></figcaption></figure>
 
@@ -34,14 +32,14 @@ Users will need to be granted access to view the live map. This can be done via 
 
 In the Police, Fire, EMS, or Dispatch window you can now click the "Live Map" button to view your new live map! Selecting a blip will show it's updated position and unit information.
 
-This is found in the task bar's start menu under `Unit Management` > `Live Map`\
+This is found in the task bar's start menu under **Unit Management** > **Live Map**\
 You can also [pin the live map button to your taskbar](../../../../tutorials/customization/customizing-your-layout.md#7-tab-system) for easy access.
 
 {% hint style="info" %}
 The live map will only show units that are in your server and also actively logged into the police, fire, or EMS panel in the CAD. Be sure to have your [API ID](../../../../api-integration/getting-started/setting-your-api-id.md) set.
 {% endhint %}
 
-![Sonoran CAD: Live Map Button](<../../../../.gitbook/assets/Screen Shot 2021-06-18 at 11.12.10 PM.png>)
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="191"><figcaption></figcaption></figure>
 
 ## **Using the Live Map**
 
@@ -52,10 +50,10 @@ The live map will only show units that are in your server and also actively logg
 {% hint style="warning" %}
 The postal search functionality requires the **Pro** version of Sonoran CAD.
 
-For more information, view our [pricing ](../../../../pricing/faq/)page.
+For more information, view our [pricing](../../../../pricing/faq/) page.
 {% endhint %}
 
-With the [postals ](postals.md)submodule configured, you can manually enter and search for a postal code on the live map.
+With the [postals](postals.md) submodule configured, you can manually enter and search for a postal code on the live map.
 
 Or, quickly auto-open and search for the location by clicking the search icon:
 
@@ -88,11 +86,9 @@ Clicking on a unit blip allows you to add the unit to a call, add the unit to a 
 
 #### Drag-and-Drop
 
-{% hint style="warning" %}
-Drag-and-drop support for the live map is currently only available for the [Roblox (ER:LC)](../../../roblox-er-lc/) edition.
-{% endhint %}
-
-Drag-and-drop is also supported for unit blips. The following drag-and-drop options are supported:
+{% tabs %}
+{% tab title="Roblox 2D" %}
+Unit Blips Support:
 
 * Drag to the call editor
 * Drag to an active call
@@ -101,6 +97,19 @@ Drag-and-drop is also supported for unit blips. The following drag-and-drop opti
 * Drag to the lookup window or minimized tab
 * Drag to the timer window or minimized tab
 * Drag to the tone board window or minimized tab
+{% endtab %}
+
+{% tab title="FiveM 2D" %}
+* Drag-and-drop an ERS Callout
+* Drag-and-drop a dispatch call to a location
+* Drag-and-drop a dispatch call to the editor
+{% endtab %}
+
+{% tab title="FiveM 3D" %}
+* Drag-and-drop an ERS Callout
+* Drag-and-drop a dispatch call
+{% endtab %}
+{% endtabs %}
 
 ### Emergency Call Blips
 
@@ -112,28 +121,24 @@ Clicking on the emergency blip allows you to import the call to your editor or r
 
 ![Live Map - Emergency Call Blip](<../../../../.gitbook/assets/image (296) (1).png>)
 
-#### Drag-and-Drop
-
-Drag-and-drop is also supported for emergency call blips.
-
-You can drag the emergency call to your call editor to import and view the information.
-
 ### Smart Sign Blips
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
 ![Live Map - Smart Signs](<../../../../.gitbook/assets/image (144).png>)
 
-## Using a Custom Map (FiveM)
+## FiveM Custom Map
 
 {% hint style="danger" %}
 This feature requires the **pro** version of Sonoran CAD.\
-For more information, view our [pricing ](/broken/pages/-M58UiyBWsbVztn6Dbn7)page.
+For more information, view our [pricing](/broken/pages/-M58UiyBWsbVztn6Dbn7) page.
 {% endhint %}
 
 Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.
 
-### 1. Extract Images
+<details>
+
+<summary>Extract Images</summary>
 
 Extract the images from the YTD files with a program like OpenIV.\
 **You will need six files named exactly as follows:**\
@@ -148,18 +153,32 @@ Extract the images from the YTD files with a program like OpenIV.\
 
 ![OpenIV - Save Images](<../../../../.gitbook/assets/image (193).png>)
 
-### 2. Upload Images
+</details>
+
+<details>
+
+<summary>Upload Images</summary>
 
 Navigate to Admin > Advanced > In-Game Integration > Live Map and Push Events\
 Select "Upload Custom" and upload all six correctly named files.
 
 ![Live Map - Custom Map Uploader](<../../../../.gitbook/assets/image (179).png>)
 
-### 3. File Size
+</details>
+
+<details>
+
+<summary>File Size</summary>
 
 Custom map images are limited to 30MB each. **However, if you are uploading more than 100MB of images total, you will need to upload in separate batches.**
 
+</details>
+
 ### Roxwood Expansion
+
+<details>
+
+<summary>Roxwood Expansion</summary>
 
 If your community is utilizing the Roxwood map expansion, there will be additional tiles to upload.
 
@@ -175,7 +194,13 @@ Additionally, two existing map tiles will need to be updated, as they contain pa
 
 <figure><img src="../../../../.gitbook/assets/Diagram.png" alt=""><figcaption></figcaption></figure>
 
+</details>
+
 ### Cayo Perico Expansion
+
+<details>
+
+<summary>Cayo Perico Expansion</summary>
 
 If your community is utilizing the Cayo Perico map expansion, there will be extra tiles to upload. Ensure these are named as:
 
@@ -187,7 +212,13 @@ If your community is utilizing the Cayo Perico map expansion, there will be extr
 
 <figure><img src="../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Using a Custom Map (Roblox)
+</details>
+
+## Roblox Custom Maps
+
+<details>
+
+<summary>Roblox Custom Maps</summary>
 
 Sonoran CAD allows any Roblox game to also send and update live map positions.
 
@@ -195,6 +226,8 @@ Sonoran CAD allows any Roblox game to also send and update live map positions.
   * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
 * [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
   * Requires a custom map upload from the game
+
+</details>
 
 <details>
 
@@ -212,3 +245,17 @@ To do the same for your game:
 For more help, reach out to our [support team](https://support.sonoransoftware.com).
 
 </details>
+
+## Troubleshooting
+
+### 3D Live Map not Loading
+
+The 3D live map uses WebGL, an open source something.
+
+In Chrome, navigate to `chrome://gpu/` and check if `WebGL` is **Disabled**. If so, try the following steps:
+
+<figure><img src="../../../../.gitbook/assets/image (346).png" alt="" width="316"><figcaption></figcaption></figure>
+
+* **Chrome** > **Settings** > **System** > **Use Graphics Acceleration When Available**
+* Ensure Graphics Drivers are Up-to-Date
+* Fully restart your web browser

@@ -66,15 +66,15 @@ Sonoran CAD also offers vast [geographical location](tutorials/customization/geo
 
 ### 🎥FiveM Live Bodycam Footage In-CAD
 
-Sonoran CAD's [bodycam system](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md) offers live image feeds from in-game, right in the CAD!
+Sonoran CAD's [bodycam system](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md) offers live video feeds from in-game, right in the CAD!
 
-<figure><img src=".gitbook/assets/bodycam (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/bodycam_promo.png" alt=""><figcaption></figcaption></figure>
 
-### 📍 FiveM Live Map
+### 📍 3D Live Map
 
-Sonoran CAD's custom[ live map plugin](integration-plugins/in-game-integration/fivem-installation/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
+Sonoran CAD's custom [3D live map](integration-plugins/in-game-integration/fivem-installation/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
-<figure><img src=".gitbook/assets/livemap.png" alt=""><figcaption><p>Sonoran CAD - Live Map</p></figcaption></figure>
+<figure><img src=".gitbook/assets/map_promo.png" alt=""><figcaption></figcaption></figure>
 
 ### [🛑](https://emojipedia.org/stop-sign/) FiveM Smart Signs Integration
 
