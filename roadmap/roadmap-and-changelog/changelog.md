@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.40.0 02/26/2026
+
+{% tabs %}
+{% tab title="New" %}
+3D Live Map
+
+* Added an all-new 3D live map for FiveM
+
+Bodycam Video Feeds
+
+* Revamped the bodycam system to now show true live video instead of screenshots
+
+Unit Location Speed
+
+* Added a new websocket API to update unit locations every 250ms instead of 5 seconds
+{% endtab %}
+{% endtabs %}
+
 ### 3.39.1 02/23/2026
 
 {% tabs %}
