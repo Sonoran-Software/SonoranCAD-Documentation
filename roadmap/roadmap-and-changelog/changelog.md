@@ -10,6 +10,30 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.40.4 03/06/2026
+
+{% tabs %}
+{% tab title="New" %}
+DB Sync - Include API Records
+
+* Database sync lookups can now have an option toggled on to return API-created records. This is primarily useful for DB sync communities using integrations like ERS that automatically add ERS-generated character records into the CAD database.
+
+Rapid ID - Address Import
+
+* Rapid IQ completion now automatically adds the address into the call editor
+{% endtab %}
+
+{% tab title="Fixed" %}
+Unit Group Bodycam
+
+* Fixed an issue with units inside of a group not showing a bodycam preview icon when in card mode
+
+Record Drafts - Community Specific
+
+* Fixed an issue where saved record drafts were global instead of community specific
+{% endtab %}
+{% endtabs %}
+
 ### 3.40.0 02/26/2026
 
 {% tabs %}

@@ -168,7 +168,13 @@ To check if your MySQL port has been properly opened, [visit a port checking uti
 
 **If you are unsure how to open a port, you will need to contact your hosting provider.**
 
+## Combine API and DB Sync Records
 
+When a community uses database sync, all record lookups run against that community’s external database. Some communities may also want to include CAD records created through integrations such as ERS. Enabling this option allows lookups to return both in-game data, such as characters, licenses, and vehicles, and API-created characters and vehicles from ERS.
+
+To enable this, turn on **Include CAD API records in DB Sync lookups**.
+
+<figure><img src="../../.gitbook/assets/image (380).png" alt=""><figcaption></figcaption></figure>
 
 ## IP Whitelisting
 

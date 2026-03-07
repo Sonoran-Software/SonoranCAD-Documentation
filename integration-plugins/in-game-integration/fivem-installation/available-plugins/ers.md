@@ -309,6 +309,6 @@ This allows lookups in the CAD to be ran.
 
 ### Database Sync
 
-Database Sync uses the database on your FiveM server, whereas ERS uses the CAD database to create records in the CAD. Thus, when you run a lookup with with DB sync enabled, CAD will query your server's database instead of the CAD database.
+When a community uses database sync, all record lookups run against that community’s external database. The ERS integration automatically creates characters and vehicles in the CAD database through the API, so these records must be included alongside the external database results.
 
-For this reason, the ERS integration and DB sync are incompatible. Please only enable one system at a time.
+To enable this, turn on [**Include CAD API records in DB Sync lookups**](../../../database-sync-and-merge/database-sync-credentials.md#combine-api-and-db-sync-records).
