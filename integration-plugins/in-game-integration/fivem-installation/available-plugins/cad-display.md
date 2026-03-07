@@ -1,7 +1,7 @@
 ---
 description: >-
   This submodule enables your passengers to view your CAD screen in real time
-  via an in-vehicle laptop or your tablet
+  via an in-vehicle laptop, handheld, tablet, or laptops placed around the map.
 ---
 
 # CAD Display
