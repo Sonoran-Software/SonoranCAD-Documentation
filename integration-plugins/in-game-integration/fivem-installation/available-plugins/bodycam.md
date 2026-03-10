@@ -89,6 +89,10 @@ The body camera will automatically activate when an officer activates their ligh
 * &#x20;`autoEnableWithWeapons` enables automatic activation when one of the `weapons` items are used.
 * &#x20;`autoEnableWithLights` to enabled automatic activation when emergency lights are enabled.
 
+### Force Off&#x20;
+
+You can now force your body camera off using `/bodycam forceoff` until you manually turn it back on via the `/bodycam` command. While in the forced-off state, the body camera will no longer automatically turn on when someone is viewing, or based upon any automatic events.&#x20;
+
 ### Unit Duty Requirement
 
 You can enable or disable the requirement for a unit to have to be logged into the Police, EMS or Fire portions of CAD in order to activate their bodycam by setting `requireUnitDuty` to `true`.

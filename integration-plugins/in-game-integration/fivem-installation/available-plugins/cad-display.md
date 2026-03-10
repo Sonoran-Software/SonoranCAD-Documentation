@@ -149,6 +149,8 @@ Following the menu instructions, you can customize the laptop’s placement with
 
 If you have the `sonoran.caddisplay.admin` permission, you also have the option to save the placement for all vehicles using that spawn code. This ensures the placement is automatically applied to all future spawns of that vehicle.
 
+Additionally, you can spawn laptops in police stations as "Static CAD Displays" to create a CAD display wherever you would like around the map
+
 <div><figure><img src="../../../../.gitbook/assets/image (260).png" alt="SonoranCAD - CAD Display - Menu"><figcaption><p>Sonoran CAD - CAD Display - Main Menu</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1460758116957159596/image.png?ex=69681482&#x26;is=6966c302&#x26;hm=22ecc7a40054bad73135e509c693eb852d86c294acdc171cb9489f188a08d490&#x26;" alt=""><figcaption><p>Sonoran CAD CAD Display - Spawning Menu</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1460758117561405586/image.png?ex=69681482&#x26;is=6966c302&#x26;hm=9497dbea16a3047fdfc852f27f93490c78f388480a45cd53d4eebdbed9366244&#x26;" alt=""><figcaption><p>Sonoran CAD - CAD Display - Attaching Menu</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1460758117850681528/image.png?ex=69681482&#x26;is=6966c302&#x26;hm=3724628c038a9e4c2b0775624845cbe65eb4734b184f8e0723ca415553b5cf52&#x26;" alt=""><figcaption><p>Sonoran CAD - CAD Display - Delete Menu</p></figcaption></figure></div>
 
 #### 4b. Using Built-in Laptops
