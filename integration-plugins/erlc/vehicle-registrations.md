@@ -16,6 +16,10 @@ Running the temporary registration command will perform the same actions as abov
 
 Vehicles purchased in public ER:LC servers persist their license plate across public and private servers. If a vehicle is purchased in a private server, vehicles are not persisted and are removed when the user leaves the game. For private server vehicles, it is best to use the temporary registration command.
 
+## CAD Permission Requirements
+
+In order to use this command in-game, players must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) with the **DMV Record Add** and **DMV Record Edit** permissions to add or update vehicle registrations.
+
 ## Using the In-Game Commands
 
 {% hint style="info" %}

@@ -27,7 +27,15 @@ When the traffic stop call is created, the call description can contain customiz
 
 When the traffic stop call is created, it will use the selected [custom 10-code](../../tutorials/customization/10-codes.md).
 
+## CAD Permission Requirements
+
+In order to use this command in-game, players must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) with the **DMV Police** or **Dispatch** permissions to create a traffic stop call.
+
 ## Using the In-Game Commands
+
+{% hint style="info" %}
+_Note: Due to ER:LC's API rate limits, commands can take **up to 30 seconds** to be applied._
+{% endhint %}
 
 ### License Plate Options
 
@@ -43,7 +51,7 @@ The CAD will automatically find the closest vehicle to the unit. If the vehicle 
 
 Ex: `:log ts ABC-123`
 
-#### Result
+### Result
 
 Once the command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
 
