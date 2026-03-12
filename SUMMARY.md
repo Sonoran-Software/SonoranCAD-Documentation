@@ -126,6 +126,13 @@
   * [Error Codes](integration-plugins/in-game-integration/error-codes.md)
 * [🎮 Roblox ER:LC](integration-plugins/roblox-er-lc/README.md)
   * [Troubleshooting](integration-plugins/roblox-er-lc/troubleshooting.md)
+* [ERLC](integration-plugins/erlc/README.md)
+  * [Getting Started](integration-plugins/erlc/getting-started.md)
+  * [3D Live Map](integration-plugins/erlc/3d-live-map.md)
+  * [Bodycam](integration-plugins/erlc/bodycam.md)
+  * [Vehicle Registrations](integration-plugins/erlc/vehicle-registrations.md)
+  * [Emergency Calls](integration-plugins/erlc/emergency-calls.md)
+  * [Traffic Stops](integration-plugins/erlc/traffic-stops.md)
 
 ***
 
