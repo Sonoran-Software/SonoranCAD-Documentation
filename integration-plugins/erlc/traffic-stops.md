@@ -43,3 +43,8 @@ The CAD will automatically find the closest vehicle to the unit. If the vehicle 
 
 Ex: `:log ts ABC-123`
 
+#### Result
+
+Once the command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
+
+<div><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
