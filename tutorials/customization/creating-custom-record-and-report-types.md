@@ -159,7 +159,7 @@ This will show the field label and value in the lookup table preview.
 This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.
 
-<img src="../../.gitbook/assets/image (7) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
+<img src="../../.gitbook/assets/image (7) (1) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
 
 <img src="../../.gitbook/assets/image (8) (1).png" alt="Supervisor field highlighted red" data-size="original">
 
@@ -241,7 +241,7 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
