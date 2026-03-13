@@ -4,11 +4,15 @@ description: Livestream in-game unit bodycams in the 3D live map, units window, 
 
 # Bodycam
 
+{% hint style="success" %}
+Bodycam streams in the web and desktop applications are transmitted through secure relay-based peer-to-peer connections that prevent IP address exposure between participants.
+{% endhint %}
+
 ## Configuring the Bodycam
 
 ### 1. Optional: Download the App
 
-While the bodycam system works inside of a web browser, you can also download the Windows or OSX desktop application for the best experience.
+While the bodycam system works inside of a web browser, you can also download the [Windows or OSX desktop application](../../download/) for the best experience.
 
 ### 2. Select the Roblox Game
 

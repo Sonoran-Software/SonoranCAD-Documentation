@@ -31,6 +31,23 @@ When the traffic stop call is created, it will use the selected [custom 10-code]
 
 In order to use this command in-game, players must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) with the **DMV Police** or **Dispatch** permissions to create a traffic stop call.
 
+## Using the Desktop Hotkey
+
+### 1. Download the Desktop Application
+
+In order to use hotkeys, download the Windows or OSX desktop application.
+
+### 2. Configure your Hotkey
+
+In the taskbar search or open **System** > **Settings** > **Hotkeys** > **ER:LC** > and set the **Traffic Stop** hotkey.
+
+#### 3. Utilize the Hotkey
+
+Once in-game, press your desktop hotkey to generate a traffic stop.
+
+* The vehicle must be nearby with a player in it
+* The player must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) and a&#x20;
+
 ## Using the In-Game Commands
 
 {% hint style="info" %}
@@ -51,8 +68,8 @@ The CAD will automatically find the closest vehicle to the unit. If the vehicle 
 
 Ex: `:log ts ABC-123`
 
-### Result
+## Result
 
-Once the command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
+Once the hotkey or in-game command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
 
-<div><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>

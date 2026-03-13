@@ -133,6 +133,7 @@
   * [Vehicle Registrations](integration-plugins/erlc/vehicle-registrations.md)
   * [Emergency Calls](integration-plugins/erlc/emergency-calls.md)
   * [Traffic Stops](integration-plugins/erlc/traffic-stops.md)
+  * [Plate Reader](integration-plugins/erlc/plate-reader.md)
 
 ***
 
