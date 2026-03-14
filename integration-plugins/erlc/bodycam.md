@@ -5,7 +5,7 @@ description: Livestream in-game unit bodycams in the 3D live map, units window, 
 # Bodycam
 
 {% hint style="success" %}
-Bodycam streams in the web and desktop applications are transmitted through secure relay-based peer-to-peer connections that prevent IP address exposure between participants.
+Bodycam streams in the web and desktop applications are transmitted through **secure relay-based peer-to-peer connections** that prevent IP address exposure between participants.
 {% endhint %}
 
 ## Configuring the Bodycam
@@ -34,13 +34,13 @@ To resolve this, share the entire **screen** instead of just the Roblox applicat
 
 In the active units panel hover over the flashing camera icon to preview a unit's bodycam. Or, click on the icon to open the dedicated viewer.
 
-<div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/20260313-2241-07.5088568.gif" alt=""><figcaption></figcaption></figure></div>
 
 ### Via Live Map
 
-In the 2D or 3D live map, click on a unit to view the bodycam. Click on the bodycam inside the menu to open the dedicated viewer.
+In the [2D or 3D live map](3d-live-map.md), click on a unit to view the bodycam. Click on the bodycam inside the menu to open the dedicated viewer.
 
-TODO UPDATED IMAGE W/3D MAP
+<figure><img src="../../.gitbook/assets/20260313-2307-53.0015571.gif" alt=""><figcaption></figcaption></figure>
 
 ### Via Manual Bodycam Window
 
