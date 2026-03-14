@@ -10,6 +10,8 @@ description: >-
 
 Submit emergency calls from in-game and see them appear instantly on the 3D live map and dispatch panel.
 
+<figure><img src="../../.gitbook/assets/erlc_emergency_promo.png" alt=""><figcaption></figcaption></figure>
+
 ## Emergency Call Command Configuration
 
 When the emergency call command is ran a new emergency call will be created in the CAD.
