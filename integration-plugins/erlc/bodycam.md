@@ -1,5 +1,7 @@
 ---
-description: Livestream in-game unit bodycams in the 3D live map, units window, and more!
+description: >-
+  Stay connected to in-game units with live bodycam video feeds integrated
+  directly into the CAD.
 ---
 
 # Bodycam
@@ -7,6 +9,12 @@ description: Livestream in-game unit bodycams in the 3D live map, units window, 
 {% hint style="success" %}
 Bodycam streams in the web and desktop applications are transmitted through **secure relay-based peer-to-peer connections** that prevent IP address exposure between participants.
 {% endhint %}
+
+## ER:LC Bodycam
+
+Stay connected to in-game units with live bodycam video feeds integrated directly into the CAD.
+
+<figure><img src="../../.gitbook/assets/erlc_cam_promo.png" alt=""><figcaption></figcaption></figure>
 
 ## Configuring the Bodycam
 

@@ -7,5 +7,20 @@ hidden: true
 noIndex: true
 ---
 
-# 🎮 ERLC
+# 🎮 ER:LC
 
+## Sonoran CAD x ER:LC
+
+Sonoran CAD offers the most immersive, free ER:LC integrations available. Complete with a 3D live map, bodycam live streams, traffic stop automations, emergency calls, plate reader, and more!
+
+**All ER:LC integrations are fully available on the free version of Sonoran CAD, no payment required.**
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>3D Live Map</td><td><a href="../../.gitbook/assets/erlc_map_promo.png">erlc_map_promo.png</a></td><td><a href="3d-live-map.md">3d-live-map.md</a></td></tr><tr><td>Live Bodycam</td><td><a href="../../.gitbook/assets/erlc_cam_promo.png">erlc_cam_promo.png</a></td><td><a href="bodycam.md">bodycam.md</a></td></tr><tr><td>Vehicle Registration</td><td><a href="../../.gitbook/assets/erlc_reg_promo.png">erlc_reg_promo.png</a></td><td><a href="vehicle-registrations.md">vehicle-registrations.md</a></td></tr><tr><td>Traffic Stop</td><td><a href="../../.gitbook/assets/erlc_ts_promo.png">erlc_ts_promo.png</a></td><td><a href="traffic-stops.md">traffic-stops.md</a></td></tr><tr><td>Plate Reader</td><td><a href="../../.gitbook/assets/erlc_plate_promo.png">erlc_plate_promo.png</a></td><td><a href="plate-reader.md">plate-reader.md</a></td></tr></tbody></table>
+
+## Get Started
+
+Integrating your ER:LC server is simple! Click below to learn more.
+
+{% content-ref url="../../tutorials/getting-started/" %}
+[getting-started](../../tutorials/getting-started/)
+{% endcontent-ref %}

@@ -1,4 +1,14 @@
+---
+description: Automatically register vehicles using an in-game command!
+---
+
 # Vehicle Registrations
+
+## ER:LC Vehicle Registration
+
+Automatically register vehicles using an in-game command!
+
+<figure><img src="../../.gitbook/assets/erlc_reg_promo.png" alt=""><figcaption></figcaption></figure>
 
 ## Registration Command Configuration
 

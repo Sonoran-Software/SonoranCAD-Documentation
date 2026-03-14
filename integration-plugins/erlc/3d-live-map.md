@@ -1,14 +1,16 @@
 ---
 description: >-
-  Sonoran CAD offers an interactive 2D and 3D live map to view unit locations,
-  bodycams, emergency calls, dispatch calls, and more!
+  Sonoran CAD includes an interactive 2D and 3D live map that displays unit
+  locations, bodycams, emergency calls, dispatch calls, and more in real time.
 ---
 
 # 3D Live Map
 
 ## ER:LC Live Map
 
-Sonoran CAD offers an interactive 2D and 3D live map to view unit locations, bodycams, emergency calls, dispatch calls, and more!
+Sonoran CAD includes an interactive 2D and 3D live map that displays unit locations, bodycams, emergency calls, dispatch calls, and more in real time.
+
+<figure><img src="../../.gitbook/assets/erlc_map_promo.png" alt=""><figcaption></figcaption></figure>
 
 ## Configuring the Live Map
 

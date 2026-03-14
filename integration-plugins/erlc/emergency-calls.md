@@ -1,4 +1,14 @@
+---
+description: >-
+  Submit emergency calls from in-game and see them appear instantly on the 3D
+  live map and dispatch panel.
+---
+
 # Emergency Calls
+
+## ER:LC Emergency Calls
+
+Submit emergency calls from in-game and see them appear instantly on the 3D live map and dispatch panel.
 
 ## Emergency Call Command Configuration
 
