@@ -8,6 +8,12 @@ description: >-
 
 ## Call Editor Pin Drop
 
+{% hint style="danger" %}
+**This feature is still undergoing final testing before release.**
+
+**Coming soon!**
+{% endhint %}
+
 Select the pin icon in the dispatch call editor to open the live map. Select any location on the map to auto-fill the postal code, street address, and building number.
 
 <figure><img src="../../.gitbook/assets/erlc_pin_promo.png" alt=""><figcaption></figcaption></figure>
