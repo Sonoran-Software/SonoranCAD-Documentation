@@ -191,6 +191,7 @@
       * [Dispatch and Emergency Calls](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/README.md)
         * [Get Calls](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/get-calls.md)
         * [New Dispatch](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/new-dispatch.md)
+        * [Edit Dispatch](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/edit-dispatch.md)
         * [Attach Unit](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/attach-units.md)
         * [Detach Unit](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/detach-unit.md)
         * [Update Call Postal](api-integration/api-endpoints/emergency/dispatch-and-emergency-calls/update-call-postal.md)
