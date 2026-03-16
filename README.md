@@ -128,7 +128,7 @@ Rapid IQ guides emergency call-takers through dynamic, protocol-driven medical i
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
-### &#x20;ER:LC Roblox Integration
+### [ ER:LC Roblox Integration](integration-plugins/erlc/)
 
 ![Sonoran CAD x ER:LC](<.gitbook/assets/Artboard 1 (2).png>)
 

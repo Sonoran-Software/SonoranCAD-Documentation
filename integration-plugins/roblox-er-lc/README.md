@@ -1,5 +1,7 @@
 ---
 description: Learn more about our Roblox integration with ER:LC!
+hidden: true
+noIndex: true
 ---
 
 # 🎮 Roblox ER:LC

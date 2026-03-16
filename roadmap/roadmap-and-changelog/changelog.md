@@ -10,6 +10,31 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.41.0 03/16/2026
+
+{% tabs %}
+{% tab title="New" %}
+MacOS Desktop App
+
+* Added a free MacOS desktop application
+
+ER:LC v2
+
+* Completly overhauled ER:LC integration system, available free to all communities
+
+Free Version Unlocks (Phase 1)
+
+* Unlocked the following paid features for the free version:
+  * Full ER:LC Integration
+  * Desktop Hotkeys
+  * Unlimited Agencies / Departments / Subdivisions
+  * PRF Record Printing
+  * Unlimited Discord Webhooks
+  * Unlimited Tone Board Customization
+  * Unlimited Civilian Characters per Account
+{% endtab %}
+{% endtabs %}
+
 ### 3.40.4 03/06/2026
 
 {% tabs %}
