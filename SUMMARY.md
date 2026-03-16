@@ -134,6 +134,7 @@
   * [Emergency Calls](integration-plugins/erlc/emergency-calls.md)
   * [Traffic Stops](integration-plugins/erlc/traffic-stops.md)
   * [Plate Reader](integration-plugins/erlc/plate-reader.md)
+  * [Call Editor Pin Drop](integration-plugins/erlc/call-editor-pin-drop.md)
 
 ***
 

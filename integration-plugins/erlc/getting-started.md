@@ -57,4 +57,10 @@ If a user in an ER:LC linked community does not have their Roblox account linked
 
 <figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
 
+Pressing **Link** will open up a window to login and link with Roblox:
+
+<figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+
+Once linked, refresh and you're finished!
+
 </details>
