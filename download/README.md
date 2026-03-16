@@ -19,9 +19,9 @@ description: >-
 
 ![Sonoran CAD - CAD/MDT Software](<../.gitbook/assets/image (258).png>)
 
-### Windows Desktop
+### MacOS & Windows Desktop
 
-Our [Windows desktop application](https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup.exe) allows you to access [global hotkeys](../tutorials/other-features/configurable-hotkeys.md) regardless of whether or not the app is in-focus. You can even configure these on your stream deck or custom key binds to set your status, toggle your panic status, open lookup windows, and more!
+Our MacOS and  Windows desktop application allows you to access [global hotkeys](../tutorials/other-features/configurable-hotkeys.md) regardless of whether or not the app is in-focus. You can even configure these on your stream deck or custom key binds to set your status, toggle your panic status, open lookup windows, and more!
 
 ### iOS and Android
 
