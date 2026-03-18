@@ -287,6 +287,7 @@
   * [Websocket API](api-integration/websocket-api/README.md)
     * [Authentication](api-integration/websocket-api/authentication.md)
     * [Unit Locations](api-integration/websocket-api/unit-locations.md)
+    * [Push Events](api-integration/websocket-api/push-events.md)
   * [Development Branch](api-integration/development-branch.md)
 * [🌎 Translation Support](https://docs.sonoransoftware.com/other/translation-support)
 

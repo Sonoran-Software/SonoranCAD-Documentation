@@ -20,12 +20,21 @@ authenticate
 | ------------- | ------ |
 | `communityId` | String |
 | `apiKey`      | String |
+| `serverId`    | Number (Optional) |
 
 ### Response
 
 ```
 { success: boolean, error: string, count: number }
 ```
+
+### serverId
+
+`serverId` is optional for websocket authentication.
+
+Use it when you want this websocket connection to receive Sonoran CAD push events for a specific configured server. If provided, the `serverId` must match a valid server configured in your CAD.
+
+If `serverId` is omitted, the websocket session can still call websocket API methods such as `unitLocation`, but it will not be used as a push event destination for a specific server.
 
 ### Auth JS example (Node.js) Requires:
 
@@ -51,7 +60,7 @@ const connection = new signalR.HubConnectionBuilder()
 await connection.start();
 
 // Replace community ID and API key
-const auth = await connection.invoke("authenticate", "yourCommunityId", "yourApiKey");
+const auth = await connection.invoke("authenticate", "yourCommunityId", "yourApiKey", 1);
 if (!auth?.success) {
   throw new Error(`Authentication failed: ${auth?.error || "unknown error"}`);
 }
