@@ -11,15 +11,15 @@ description: All websocket API calls require authentication prior to invoking fu
 #### **Method:**
 
 ```
-authenticate
+authenticatev2
 ```
 
 #### **Parameters:**
 
-| Parameter     | Type   |
-| ------------- | ------ |
-| `communityId` | String |
-| `apiKey`      | String |
+| Parameter     | Type              |
+| ------------- | ----------------- |
+| `communityId` | String            |
+| `apiKey`      | String            |
 | `serverId`    | Number (Optional) |
 
 ### Response
