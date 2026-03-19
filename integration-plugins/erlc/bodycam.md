@@ -40,6 +40,8 @@ To resolve this, share the entire **screen** instead of just the Roblox applicat
 
 Users can also enable or disable sound effects. When enabled, a long tone will play when the bodycam is turned on or off. Additionally, a short tone will repeat periodically to remind the user that their camera is on.
 
+<figure><img src="../../.gitbook/assets/image (405).png" alt="" width="279"><figcaption></figcaption></figure>
+
 ## Using the Bodycam
 
 ### Via Active Units
