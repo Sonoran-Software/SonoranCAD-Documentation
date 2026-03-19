@@ -1,49 +1,164 @@
 ---
 description: >-
-  Sonoran CAD allows you to add custom searchable/indexed fields to your custom
-  records.
+  Create lookup types for your custom record fields. Search by any custom record
+  field in your community!
 ---
 
 # Custom Search Types
 
-{% hint style="danger" %}
-Custom search types are limited based upon your subscription version.\
-For more information, please view our [pricing page](../../pricing/faq/).
-{% endhint %}
+## Custom Lookup Types
 
-## Video Tutorial
+With Sonoran CAD’s custom records, communities can define custom lookup types that enable users to search records using tailored criteria.
 
-View our [video tutorial and showcase](https://youtu.be/KecmGjMmNiQ) on Sonoran CAD's custom search type feature.
+Example: Vehicle Search — locate a registration by attributes such as make, model, color, etc.
 
-## Written Tutorial
+<figure><img src="../../.gitbook/assets/lookup_type_promo.png" alt=""><figcaption></figcaption></figure>
 
-### 1. Configure Search Types
+## Configuring Lookup Types
 
-In the admin customization menu, expand the lookup types section.
+Lookup Types can be customized under **Admin** > **Customization** > **Customization** > **Lookup Types**
 
-![Sonoran CAD - Custom Lookup Types](<../../.gitbook/assets/image (111).png>)
+### Basic Lookup Types
 
-There are three sections for each lookup type:
+Basic lookup types allow you to search based on a single record field.
 
-1. Name
-   * Label/Name of the lookup type
-2. Field Mapping ID
-   * Unique ID used to specify searchable columns in the custom record editor
-3. Mask
-   * Mask for the search bar - This uses the same mask system as the [custom records](creating-custom-record-and-report-types.md).
+In this example, we will create a lookup type to look for a civilian character's SSN (Social Security Number).
 
-Once configured, press save.
+<details>
 
-### 2. Configure Your Custom Records
+<summary>1. Add Lookup Type</summary>
 
-In the custom records editor, specify the `Field Mapping ID` from step one on the searchable field.\
-If this searchable field is in your in-game database, you can also set up [database sync](../../integration-plugins/database-sync-and-merge/) mapping to pull that data from in-game when records are opened.
+Select **Add Lookup Type** at the bottom of the menu.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Custom Records Field Mapping ID</p></figcaption></figure>
+Enter the lookup name, **SSN**.
 
-Press save, then move onto the next step.
+<figure><img src="../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
 
-### 3. Configure Database Sync Column (Optional)
+</details>
+
+<details>
+
+<summary>2. Select the Record Field</summary>
+
+Select the **Record Field** button. This will open a dialog to select a specific record field. Once selected, this field will be searchable when opening a record lookup.
+
+<div><figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure></div>
+
+</details>
+
+<details>
+
+<summary>3. Optional: Re-Index Record Fields</summary>
+
+Whenever a record is created or updated, any fields tied to custom lookup types are re-indexed in the database. These indices are what power custom lookup queries.
+
+To ensure records created before a custom lookup type existed are included, [those records must be re-indexed](custom-search-types.md#re-index-records).
+
+</details>
+
+### Advanced Lookup Types
+
+Advanced lookup types allow you to search based on multiple record field criteria at once.
+
+In this example, we will create a lookup type to look for a character based off of optional address, height, weight, skin color, etc.
+
+<details>
+
+<summary>1. Add Lookup Type</summary>
+
+Select **Add Lookup Type** at the bottom of the menu.
+
+Enter the lookup name, **Character**.
+
+Toggle the mode to **Advanced**.
+
+<figure><img src="../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
+
+</details>
+
+<details>
+
+<summary>2. Select the Record Fields</summary>
+
+Advanced lookup types work the same as basic lookup types, but allow for more than one criteria.
+
+* Select the **Add Field** button.&#x20;
+* Enter a **Field Label** (Address).
+* Select the **Record Field**. This will open a dialog to select a specific record field.
+
+<div><figure><img src="../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure></div>
+
+Repeat the steps above to add as many search fields as desired.
+
+</details>
+
+<details>
+
+<summary>4. Additional Field Options</summary>
+
+**Requirement**
+
+Toggle **Requirement** from **Optional** to **Required** to force users in the lookup window to enter data into this field prior to running a lookup.
+
+**Width**
+
+The **Width** determines how wide the search field is in the lookup window. For custom search types with several search fields, this can be used to condense the UI.
+
+Width values range from 1-12, with 12 being full-width.
+
+Select the **Preview** button at the top of the section to see the layout of your custom lookup type. Fields can be reordered via drag-and-drop.
+
+<figure><img src="../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
+
+**Range Search**
+
+Text fields with a mask restricting input to numbers only (`#` symbol) will display the option to enable a range input. This allows users to search based on minimum and maximum number values.
+
+Ex: Search by minimum and/or maximum age.
+
+**Placeholder**
+
+Placeholder text will be displayed inside the lookup field when empty.
+
+**Mask**
+
+Custom text input search fields can have a mask applied to enforce a specific format of numbers, symbols, letters, etc.
+
+</details>
+
+<details>
+
+<summary>3. Optional: Re-Index Record Fields</summary>
+
+Whenever a record is created or updated, any fields tied to custom lookup types are re-indexed in the database. These indices are what power custom lookup queries.
+
+To ensure records created before a custom lookup type existed are included, [those records must be re-indexed](custom-search-types.md#re-index-records).
+
+</details>
+
+## Re-Index Records
+
+Whenever a record is created or updated, any fields tied to custom lookup types are re-indexed in the database. These indices are what power custom lookup queries.
+
+To re-index all existing records, select **Re-Index All Records** at the top to start this process.
+
+Depending on the number of custom records in your community, this may take some time. **Record re-indexing can only be performed once per 12-hours.**
+
+<figure><img src="../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
+
+## Lookups Across Multiple Record Types
+
+When a custom lookup type is configured with a linked field, the system uses the **Field Mapping ID** to determine which database fields to query.
+
+The **Field Mapping ID** defined in the lookup type is shown in the **Record Field** selector. Any [custom record type](creating-custom-record-and-report-types.md) containing a field with the same **Field Mapping ID** will be included in the search.
+
+<div><figure><img src="../../.gitbook/assets/image (402).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure></div>
+
+## Database Sync Configuration
+
+<details>
+
+<summary>Database Sync Configuration</summary>
 
 If the search field is provided by your in-game database with [database sync](../../integration-plugins/database-sync-and-merge/), this custom record column will be display in your database sync configuration for any character, license, or vehicle registration.
 
@@ -51,15 +166,4 @@ This will then allow you to search characters, licenses, or vehicle registration
 
 ![Sonoran CAD - Database Sync and Custom Searches](<../../.gitbook/assets/image (238).png>)
 
-### 4. Make a NEW Record
-
-With the exception of database sync records, any existing records with this field will **not** be searchable.
-
-You will need to create a new record with the custom searchable field in order to find it via custom lookup.
-
-### 5. Run a Lookup
-
-The lookup window will now display your new custom search types.\
-You can now search your records (including database sync/merge) using these custom search boxes.
-
-![Sonoran CAD - Custom Search Fields](<../../.gitbook/assets/image (236).png>)
+</details>

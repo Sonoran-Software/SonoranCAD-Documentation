@@ -36,6 +36,10 @@ To resolve this, share the entire **screen** instead of just the Roblox applicat
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
 
+### 3. Bodycam Options
+
+Users can also enable or disable sound effects. When enabled, a long tone will play when the bodycam is turned on or off. Additionally, a short tone will repeat periodically to remind the user that their camera is on.
+
 ## Using the Bodycam
 
 ### Via Active Units
@@ -55,3 +59,9 @@ In the [2D or 3D live map](3d-live-map.md), click on a unit to view the bodycam.
 Additionally, search or select the **Bodycam** window in the taskbar. Once opened, use the unit select dropdown to change the viewer to different bodycam streams.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt="" width="192"><figcaption></figcaption></figure>
+
+## Overlay Options
+
+When viewing a bodycam, you can optionally toggle the text overlay and video effects on or off.
+
+<figure><img src="../../.gitbook/assets/Recording 2026-03-17 131952.gif" alt=""><figcaption></figcaption></figure>

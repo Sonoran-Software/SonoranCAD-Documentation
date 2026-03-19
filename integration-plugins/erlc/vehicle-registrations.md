@@ -10,19 +10,58 @@ Automatically register vehicles using an in-game command!
 
 <figure><img src="../../.gitbook/assets/erlc_reg_promo.png" alt=""><figcaption></figcaption></figure>
 
-## Registration Command Configuration
+## Civilian Panel Access
+
+Automatically register your current vehicle via the civilian panel.
+
+<details>
+
+<summary>Civilian Panel Automatic Registration</summary>
+
+Users can automatically register their current vehicle via the civilian panel.
+
+1. Create and Select a Character
+
+Create and select the character you wish to register the vehicle to.
+
+2. Trigger ER:LC Automatic Registration
+
+* **Civilian** > **DMV** > **ER:LC Automatic Registration**
+* This will prompt you to enter the license plate. Once entered, the CAD will automatically create or update your vehicle registration record with the license plate, color, make, mode, and year.
+
+3. View the Registration
+
+* Select the **Records** button to search and view your new vehicle registration.
+
+</details>
+
+## In-Game Registration Command Configuration
+
+Register a vehicle via a custom in-game command.
 
 ### Persistent Registration
+
+<details>
+
+<summary>In-Game Persistent Registration Command</summary>
 
 When the registration command is ran a new vehicle registration will be created under the user's currently selected character in the CAD. The registration information will include the character information, license plate from the command, make, and color.
 
 If the user already has this license plate registered under any of their characters, the registration will be moved to the currently selected character and the vehicle information will be updated.
 
+</details>
+
 ### Temporary Registration
+
+<details>
+
+<summary>In-Game Temporary Registration Command</summary>
 
 Running the temporary registration command will perform the same actions as above. However, the registration record will be automatically **deleted after 24 hours**.
 
-#### Vehicle Registration Persistence
+</details>
+
+#### Note: Vehicle Registration Persistence
 
 Vehicles purchased in public ER:LC servers persist their license plate across public and private servers. If a vehicle is purchased in a private server, vehicles are not persisted and are removed when the user leaves the game. For private server vehicles, it is best to use the temporary registration command.
 

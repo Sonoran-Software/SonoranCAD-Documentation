@@ -176,6 +176,8 @@ You can even index specific record fields for [custom search types](tutorials/cu
 
 <figure><img src=".gitbook/assets/custom-records.png" alt=""><figcaption><p>Sonoran CAD - Custom Reports</p></figcaption></figure>
 
+<figure><img src=".gitbook/assets/lookup_type_promo.png" alt=""><figcaption></figcaption></figure>
+
 ### [🧑‍🎨️ Scene Diagram Builder](tutorials/records-management/scene-diagram-builder.md)
 
 Create detailed scene diagrams in custom reports!
