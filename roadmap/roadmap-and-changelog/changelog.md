@@ -18,6 +18,7 @@ Custom Lookup Types
 
 * Unlimited custom lookup types are now available on the **free** plan
 * Added advanced custom lookup types to specify multiple search criteria at once
+* Added record re-indexing to allow newly created custom record searches to locate old records
 
 Bodycam Viewer
 
