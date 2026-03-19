@@ -10,6 +10,37 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.41.1 03/19/2026
+
+{% tabs %}
+{% tab title="New" %}
+Custom Lookup Types
+
+* Unlimited custom lookup types are now available on the **free** plan
+* Added advanced custom lookup types to specify multiple search criteria at once
+
+Bodycam Viewer
+
+* Bodycams now have tones for on/off and repeat tones while activated
+* Bodycams now have a toggleable overlay with the unit information
+* Bodycams now have a toggleable effect overlay for more realism
+
+ER:LC Civilian Panel: Auto Vehicle Registration
+
+* ER:LC communities now have a button in the civilian panel to automatically register vehicles
+
+Text-To-Speech Overhaul
+
+* Overhauled the text-to-speech system to use local AI models, now allowing them to work on all app platforms instead of only Chrome
+{% endtab %}
+
+{% tab title="Fixed" %}
+**Roblox Custom Live Map**
+
+* Re-added custom live map support for Roblox communities
+{% endtab %}
+{% endtabs %}
+
 ### 3.41.0 03/16/2026
 
 {% tabs %}
