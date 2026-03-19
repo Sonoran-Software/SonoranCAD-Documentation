@@ -63,3 +63,39 @@ When an [emergency call is made from in-game](emergency-calls.md) a blip will ap
 #### Dispatch Calls
 
 Dispatch calls created from an [in-game emergency call](emergency-calls.md) or an [in-game traffic stop](traffic-stops.md) will automatically have location data showing a blip on the map. Select the call blip to open it in the editor or close it.
+
+## Roblox Custom Maps
+
+<details>
+
+<summary>Roblox Custom Maps</summary>
+
+Sonoran CAD allows any Roblox game to also send and update live map positions.
+
+* [ER:LC](../roblox-er-lc/)
+  * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
+* [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
+  * Requires a custom map upload from the game
+
+To upload a custom live map for Roblox
+
+* **Admin** > **Advanced** > **In-Game Integration** > **ER:LC** > **Live Map** > Toggle **Official ER:LC Live Map** to **Custom Roblox Map**
+
+</details>
+
+<details>
+
+<summary>For Roblox Developers</summary>
+
+Maple County has recently added Sonoran CAD live map access to their Roblox game mode.\
+To do the same for your game:
+
+1. Send Unit Location API updates with the `coordinate` `x` and `y` values
+2. Convert (if needed) your `coordinate` `x` and `y` values so that the top left of your map image is `{0,0}`
+3. Export your square map to a single image and upload to the Sonoran CAD community in the admin panel under `In-Game Integration` > `Live Map` > Game as `Roblox` > Type as `Custom` > `Upload` > `Save`
+
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
+
+For more help, reach out to our [support team](https://support.sonoransoftware.com).
+
+</details>
