@@ -56,23 +56,9 @@ Once in-game, press your desktop hotkey to generate a traffic stop.
 
 ## Using the In-Game Commands
 
-{% hint style="info" %}
-_Note: Due to ER:LC's API rate limits, commands can take **up to 30 seconds** to be applied._
-{% endhint %}
-
-### License Plate Options
-
-#### Automatic
-
 The CAD will automatically find the closest vehicle to the unit. If the [vehicle is registered in the CAD](vehicle-registrations.md), it will automatically fill the license plate and other vehicle information.
 
-Ex: `:log ts`
-
-#### Manual Plate Entry
-
-The CAD will automatically find the closest vehicle to the unit. If the vehicle is not registered in the CAD, it will use the manually entered license plate number.
-
-Ex: `:log ts ABC-123`
+Ex: `;ts`
 
 ## Result
 

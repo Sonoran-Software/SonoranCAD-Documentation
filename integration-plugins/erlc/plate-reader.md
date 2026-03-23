@@ -25,6 +25,5 @@ In the taskbar search or open **System** > **Settings** > **Hotkeys** > **ER:LC*
 Once in-game, press your desktop hotkey to run a plate search.
 
 * The vehicle must be nearby with a player in it
-* The player must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) and a [registered vehicle](vehicle-registrations.md)
 
 <div><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
