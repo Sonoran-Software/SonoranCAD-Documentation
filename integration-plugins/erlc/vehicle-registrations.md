@@ -27,7 +27,6 @@ Create and select the character you wish to register the vehicle to.
 2. Trigger ER:LC Automatic Registration
 
 * **Civilian** > **DMV** > **ER:LC Automatic Registration**
-* This will prompt you to enter the license plate. Once entered, the CAD will automatically create or update your vehicle registration record with the license plate, color, make, mode, and year.
 
 3. View the Registration
 
@@ -45,7 +44,7 @@ Register a vehicle via a custom in-game command.
 
 <summary>In-Game Persistent Registration Command</summary>
 
-When the registration command is ran a new vehicle registration will be created under the user's currently selected character in the CAD. The registration information will include the character information, license plate from the command, make, and color.
+When the registration command is ran a new vehicle registration will be created under the user's currently selected character in the CAD. The registration information will include the character information, license plate, make, and color.
 
 If the user already has this license plate registered under any of their characters, the registration will be moved to the currently selected character and the vehicle information will be updated.
 
@@ -71,17 +70,13 @@ In order to use this command in-game, players must have a [linked Roblox account
 
 ## Using the In-Game Commands
 
-{% hint style="info" %}
-_Note: Due to ER:LC's API rate limits, commands can take **up to 30 seconds** to be applied._
-{% endhint %}
-
 When in-game, users can run the customizable vehicle registration commands followed by the license plate on the vehicle.
 
-Ex: `:log register ABC-123`
+Ex: `;register`
 
 Once the registration has been created in the CAD, users will be notified by an optional in-game message.
 
-<div><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ## Troubleshooting
 
@@ -93,7 +88,7 @@ Once the registration has been created in the CAD, users will be notified by an 
 
 In order for Sonoran CAD to know where to place information (license plate, color, etc.) in your custom record fields, the field IDs must match.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field ID | Use                                              |
 | -------- | ------------------------------------------------ |

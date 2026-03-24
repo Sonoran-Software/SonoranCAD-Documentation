@@ -35,7 +35,7 @@ Do to graphics settings and drivers, some users may experience **white flashing 
 To resolve this, share the entire **screen** instead of just the Roblox application.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### 3. Bodycam Options
 
@@ -65,7 +65,7 @@ Users can also enable or disable sound effects. When enabled, a long tone will p
 
 In the active units panel hover over the flashing camera icon to preview a unit's bodycam. Or, click on the icon to open the dedicated viewer.
 
-<div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/20260313-2241-07.5088568.gif" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/20260313-2241-07.5088568.gif" alt=""><figcaption></figcaption></figure></div>
 
 </details>
 
@@ -89,7 +89,7 @@ In the [2D or 3D live map](3d-live-map.md), click on a unit to view the bodycam.
 
 Additionally, search or select the **Bodycam** window in the taskbar. Once opened, use the unit select dropdown to change the viewer to different bodycam streams.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="192"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="192"><figcaption></figcaption></figure>
 
 </details>
 

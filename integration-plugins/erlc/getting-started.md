@@ -43,6 +43,23 @@ Paste your **ER:LC API Key** into your configured server.
 
 </details>
 
+### 3. Link ER:LC Event Webhooks to Sonoran CAD
+
+<details>
+
+<summary>Link ER:LC Event Webhooks to Sonoran CAD</summary>
+
+ER:LC sends Sonoran CAD events for custom commands like traffic stops and vehicle registrations. Additionally, in-game events for robberies, fires, etc. are also sent.
+
+1. Open the **Server Info**
+2. Select **Edit Server Settings**
+3. Under **ER:LC API** > **Event Log Webhook** > **Edit**
+   1. Paste: `https://events.sonoransoftware.com/erlc`
+
+<div><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+
+</details>
+
 ## Linking your Roblox Account
 
 Players must link their Roblox account to their Sonoran account in order to use in-game integrations.

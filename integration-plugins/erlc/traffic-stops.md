@@ -23,7 +23,7 @@ This call will:
 
 ### Command
 
-Customize the command from `:log ts` to something custom.
+Customize the command from `;ts` to something custom.
 
 ### Dispatch Description
 
@@ -56,7 +56,7 @@ Once in-game, press your desktop hotkey to generate a traffic stop.
 
 ## Using the In-Game Commands
 
-The CAD will automatically find the closest vehicle to the unit. If the [vehicle is registered in the CAD](vehicle-registrations.md), it will automatically fill the license plate and other vehicle information.
+The CAD will automatically find the closest vehicle to the unit. The call will automatically include the vehicle description, plate, and location.
 
 Ex: `;ts`
 
@@ -64,4 +64,4 @@ Ex: `;ts`
 
 Once the hotkey or in-game command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
 
-<div><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
