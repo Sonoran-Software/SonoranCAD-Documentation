@@ -10,6 +10,38 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.41.3 03/23/2026
+
+{% tabs %}
+{% tab title="New" %}
+Bodycam Recordings
+
+* Added manual bodycam recordings for the web and desktop version, complete with hotkeys to toggle. All communities have access to limited cloud storage.
+
+ER:LC Automatic Emergency Calls
+
+* All in-game emergency calls placed via user phone or automated alarms (fires, robberies, etc.) now create an automatic call in the dispatch panel
+
+ERLC Traffic Stop - License Plate
+
+* Switched from custom :log command to a custom ;ts command
+* No longer requires a manual plate entry
+
+ER:LC Civilian Panel Auto-Registration
+
+* Removed the in-app prompt to enter the license plate
+
+ER:LC Register Vehicle Command
+
+* Switched from custom :log commands to custom ;register commands
+* No longer requires the license plate to be entered in the command
+
+ER:LC Plate Reader
+
+* No longer requires a registration record to run a lookup
+{% endtab %}
+{% endtabs %}
+
 ### 3.41.1 03/19/2026
 
 {% tabs %}
