@@ -119,6 +119,10 @@ Users viewing a bodycam can press the manual **Start Recording** and **Stop Reco
 
 ### Recording Limits
 
+{% hint style="info" %}
+Bodycam recordings are currently in early-access. These limits are subject to change at any time.
+{% endhint %}
+
 Recordings are retained for 24 hours before being automatically deleted. Daily recording limits (applied to the entire community) vary by subscription tier:
 
 * Free: 10 minutes/day community-wide
