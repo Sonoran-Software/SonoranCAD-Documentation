@@ -4,8 +4,8 @@ description: Upload a bodycam recording clip to Sonoran CAD.
 
 # Upload Bodycam Recording
 
-{% hint style="warning" %}
-This API endpoint requires the **Standard** version of Sonoran CAD or higher. For more information, see our [pricing](../../../pricing/faq/).
+{% hint style="info" %}
+This API endpoint is available on **Free** and higher Sonoran CAD plans. The rolling `24` hour upload allowance depends on your plan. For more information, see our [pricing](../../../pricing/faq/).
 {% endhint %}
 
 Use this endpoint to upload a single bodycam clip into Sonoran CAD's bodycam recordings system.
