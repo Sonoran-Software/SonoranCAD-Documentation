@@ -248,6 +248,7 @@
       * [Set Postal Config](api-integration/api-endpoints/general/set-postal-config.md)
       * [Set Clock Time](api-integration/api-endpoints/general/set-clock-time.md)
       * [Send Photo](api-integration/api-endpoints/general/send-photo.md)
+      * [Upload Bodycam Recording](api-integration/api-endpoints/general/upload-bodycam-recording.md)
       * [Leave Community](api-integration/api-endpoints/general/leave-community.md)
       * [Join Community](api-integration/api-endpoints/general/join-community.md)
     * [Local Endpoints](api-integration/api-endpoints/local-endpoints/README.md)
