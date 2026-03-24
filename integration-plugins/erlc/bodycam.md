@@ -1,7 +1,8 @@
 ---
 description: >-
   Stay connected to in-game units with live bodycam video feeds integrated
-  directly into the CAD.
+  directly into the CAD. Quickly toggle recordings with a hotkey and
+  shadow-recording.
 ---
 
 # Bodycam
@@ -38,6 +39,18 @@ To resolve this, share the entire **screen** instead of just the Roblox applicat
 
 ### 3. Bodycam Options
 
+#### Shadow Recording
+
+Shadow recording continuously buffers the last 0–60 seconds of footage. When you activate recording, that buffered footage is automatically included at the beginning of the clip.
+
+By default, this is set to **30 seconds**.
+
+Additionally, you can configure the total recording length with a maximum of 120 seconds (two minutes).
+
+<figure><img src="../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+
+#### Sound Effects
+
 Users can also enable or disable sound effects. When enabled, a long tone will play when the bodycam is turned on or off. Additionally, a short tone will repeat periodically to remind the user that their camera is on.
 
 <figure><img src="../../.gitbook/assets/image (405).png" alt="" width="279"><figcaption></figcaption></figure>
@@ -46,24 +59,74 @@ Users can also enable or disable sound effects. When enabled, a long tone will p
 
 ### Via Active Units
 
+<details>
+
+<summary>Via Active Units</summary>
+
 In the active units panel hover over the flashing camera icon to preview a unit's bodycam. Or, click on the icon to open the dedicated viewer.
 
 <div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/20260313-2241-07.5088568.gif" alt=""><figcaption></figcaption></figure></div>
 
+</details>
+
 ### Via Live Map
+
+<details>
+
+<summary>Via Live Map</summary>
 
 In the [2D or 3D live map](3d-live-map.md), click on a unit to view the bodycam. Click on the bodycam inside the menu to open the dedicated viewer.
 
 <figure><img src="../../.gitbook/assets/20260313-2307-53.0015571.gif" alt=""><figcaption></figcaption></figure>
 
+</details>
+
 ### Via Manual Bodycam Window
+
+<details>
+
+<summary>Via Manual Bodycam Window</summary>
 
 Additionally, search or select the **Bodycam** window in the taskbar. Once opened, use the unit select dropdown to change the viewer to different bodycam streams.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt="" width="192"><figcaption></figcaption></figure>
 
+</details>
+
 ## Overlay Options
+
+<details>
+
+<summary>Overlay Options</summary>
 
 When viewing a bodycam, you can optionally toggle the text overlay and video effects on or off.
 
 <figure><img src="../../.gitbook/assets/Recording 2026-03-17 131952.gif" alt=""><figcaption></figcaption></figure>
+
+</details>
+
+## Recording
+
+Sonoran body cameras support recording for later playback and download.
+
+#### Via Hotkey
+
+Desktop users can toggle recording using a customizable hotkey in the **Settings** menu.
+
+#### Manual Start/Stop
+
+Users viewing a bodycam can press the manual **Start Recording** and **Stop Recording** button at the bottom of the viewer.
+
+### Recording Limits
+
+Recordings are retained for 24 hours before being automatically deleted. Daily recording limits (applied to the entire community) vary by subscription tier:
+
+* Free: 10 minutes/day community-wide
+* Standard: 100 minutes/day community-wide
+* Pro: 1,000 minutes/day community-wide
+
+### Viewing Recordings
+
+Dispatchers can search and view recorded bodycams by opening the **Body Cam Recordings** window in the taskbar.
+
+<figure><img src="../../.gitbook/assets/20.03.2026_18.56.22_REC.gif" alt=""><figcaption></figcaption></figure>
