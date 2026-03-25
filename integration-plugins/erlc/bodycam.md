@@ -117,6 +117,12 @@ Desktop users can toggle recording using a customizable hotkey in the **Settings
 
 Users viewing a bodycam can press the manual **Start Recording** and **Stop Recording** button at the bottom of the viewer.
 
+### Via Automatic Event
+
+The bodycam will automatically start recording when:
+
+* Panic button is pressed
+
 ### Recording Limits
 
 {% hint style="info" %}

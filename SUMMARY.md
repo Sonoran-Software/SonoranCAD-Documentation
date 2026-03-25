@@ -130,6 +130,8 @@
   * [Getting Started](integration-plugins/erlc/getting-started.md)
   * [3D Live Map](integration-plugins/erlc/3d-live-map.md)
   * [Bodycam](integration-plugins/erlc/bodycam.md)
+  * [In-Game Overlay](integration-plugins/erlc/in-game-overlay.md)
+  * [Character Creation](integration-plugins/erlc/character-creation.md)
   * [Vehicle Registrations](integration-plugins/erlc/vehicle-registrations.md)
   * [Emergency Calls](integration-plugins/erlc/emergency-calls.md)
   * [Traffic Stops](integration-plugins/erlc/traffic-stops.md)
