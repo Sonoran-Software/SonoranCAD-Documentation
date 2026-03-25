@@ -25,7 +25,12 @@ While the bodycam system works inside of a web browser, you can also download th
 
 ### 2. Select the Roblox Game
 
-Once inside of the police, fire, EMS, or dispatch panel click on your unit header to open the unit editor > **Bodycam Source** > **Roblox** > **Start**
+Once inside of the police, fire, EMS, or dispatch panel users can open the bodycam configuration via
+
+* Clicking the **Bodycam** icon in the bottom right of the taskbar
+* Clicking the unit header to open the unit editor
+
+Once opened, select **Bodycam Source** > **Roblox** > **Start**
 
 Once configured and started, if using the desktop application, your bodycam will automatically select the same window and start the next time you use the application.
 
