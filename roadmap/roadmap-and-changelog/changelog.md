@@ -10,6 +10,28 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.41.4 03/24/2026
+
+{% tabs %}
+{% tab title="New" %}
+In-Game Desktop Overlay
+
+* Desktop app users can now toggle an in-game overlay via hotkey. The overlay allows users to change their status, view attached call information, send notes, attach/detach from calls, and automatically convert emergency calls to dispatch calls.
+
+Automatic Character Creation Command
+
+* Added new customizable in-game commands to automatically register civilian characters.
+
+Bodycam Panic Recording
+
+* When a user presses their panic button, the body camera will automatically start recording.
+
+Bodycam Taskbar
+
+* Added the ability to configure your bodycam from the bottom taskbar, no longer requiring access to the unit editor.
+{% endtab %}
+{% endtabs %}
+
 ### 3.41.3 03/23/2026
 
 {% tabs %}

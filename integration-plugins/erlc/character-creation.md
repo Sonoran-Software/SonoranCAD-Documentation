@@ -10,7 +10,9 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/erlc_civ_promo.png" alt=""><figcaption></figcaption></figure>
 
-Automatically register vehicles using an in-game command!
+Use customizable in-game commands allowing users to register their character in the CAD, no account or CAD access required!
+
+Once created, their civilian character will be searchable and can be used to [automatically register their vehicle](vehicle-registrations.md).
 
 ## In-Game Registration Command Configuration
 
