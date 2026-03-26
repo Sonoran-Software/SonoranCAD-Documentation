@@ -1,5 +1,5 @@
 ---
-description: This endpoint retrieves your community's Inferno Pager node configuration for a specific server.
+description: This endpoint retrieves your community's Inferno Pager configuration for a specific server.
 ---
 
 # Get Pager Config
@@ -32,29 +32,38 @@ Array of request objects
 
 {% swagger-response status="200" description="A successful call will be met with the following response:" %}
 ```json
-[
-    {
-        "id": "root-1",
-        "name": "Fire",
-        "description": "Fire services",
-        "permission": "fire",
-        "address": "FIRE-01",
-        "shortCode": "F1",
-        "kind": "group",
-        "children": [
-            {
-                "id": "station-1",
-                "name": "Station 1",
-                "description": "",
-                "permission": "fire.station1",
-                "address": "FIRE-ST01",
-                "shortCode": "ST1",
-                "kind": "node",
-                "children": []
-            }
-        ]
-    }
-]
+{
+    "natureWords": {
+        "Emergency": "Emergency",
+        "NonEmergency": "Non-Emergency",
+        "Administrative": "Administrative"
+    },
+    "maxAddresses": 5,
+    "maxBodyLength": 250,
+    "nodes": [
+        {
+            "id": "root-1",
+            "name": "Fire",
+            "description": "Fire services",
+            "permission": "fire",
+            "address": "FIRE-01",
+            "shortCode": "F1",
+            "kind": "group",
+            "children": [
+                {
+                    "id": "station-1",
+                    "name": "Station 1",
+                    "description": "",
+                    "permission": "fire.station1",
+                    "address": "FIRE-ST01",
+                    "shortCode": "ST1",
+                    "kind": "node",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
 ```
 {% endswagger-response %}
 
@@ -81,4 +90,4 @@ INVALID API KEY
 }
 ```
 
-The returned configuration is per-server, matching the Station Alert configuration pattern.
+The returned configuration is always for the requested `serverId`.

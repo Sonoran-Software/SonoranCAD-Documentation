@@ -24,6 +24,8 @@ description: >-
 | emergency/[get\_calls](emergency/dispatch-and-emergency-calls/get-calls.md)                 | Plus                 |
 | emergency/[set\_call\_postal](emergency/dispatch-and-emergency-calls/update-call-postal.md) | Plus                 |
 | emergency/[set\_stations](emergency/station-alert/set-stations.md)                          | Plus                 |
+| emergency/[get\_pager\_config](emergency/inferno-pagers/get-pager-config.md)                | Plus                 |
+| emergency/[set\_pager\_config](emergency/inferno-pagers/set-pager-config.md)                | Plus                 |
 | emergency/[set\_streetsign\_config](emergency/street-signs/set-street-sign-config.md)       | Pro                  |
 | emergency/[update\_streetsign](emergency/street-signs/update-street-sign.md)                | Pro                  |
 | emergency/[get\_blips](emergency/custom-blips/get-map-blips.md)                             | Pro                  |
