@@ -214,6 +214,7 @@
         * [Set Stations](api-integration/api-endpoints/emergency/station-alert/set-stations.md)
       * [Inferno Pagers](api-integration/api-endpoints/emergency/inferno-pagers/README.md)
         * [Get Pager Config](api-integration/api-endpoints/emergency/inferno-pagers/get-pager-config.md)
+        * [Set Pager Config](api-integration/api-endpoints/emergency/inferno-pagers/set-pager-config.md)
     * [Civilian](api-integration/api-endpoints/civilian/README.md)
       * [Set Character](api-integration/api-endpoints/civilian/set-character.md)
       * [Get Characters](api-integration/api-endpoints/civilian/get-characters.md)
