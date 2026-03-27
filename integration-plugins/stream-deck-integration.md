@@ -12,7 +12,9 @@ description: >-
 
 ## Introduction
 
-Sonoran CAD's MacOS and Windows desktop applications offer direct integration with Stream Deck hardware. By installing our official Stream Deck plugin, users can customize layouts and buttons to control their CAD faster than ever before.
+Sonoran CAD's MacOS and Windows desktop applications offer direct integration with [Stream Deck hardware](https://www.elgato.com/us/en/p/stream-deck). By installing our official Stream Deck plugin, users can customize layouts and buttons to control their CAD faster than ever before.
+
+Don't have a physical Stream Deck? Download the [free Stream Deck Mobile app](https://www.elgato.com/us/en/s/stream-deck-mobile)!
 
 ## Installation
 
