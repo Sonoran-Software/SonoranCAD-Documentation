@@ -35,7 +35,7 @@ When the traffic stop call is created, it will use the selected [custom 10-code]
 
 ## CAD Permission Requirements
 
-In order to use this command in-game, players must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) with the **DMV Police** or **Dispatch** permissions to create a traffic stop call.
+In order to use this command in-game, players must have a [linked Roblox account](getting-started.md#linking-your-roblox-account) with the **Dispatch** or **Self Dispatch** permission to create a traffic stop call.
 
 ## Using the Desktop Hotkey
 

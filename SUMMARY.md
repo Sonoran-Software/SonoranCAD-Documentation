@@ -81,7 +81,7 @@
 * [Discord Rich Presence](integration-plugins/discord-rich-presence.md)
 * [Discord Webhooks](integration-plugins/discord-webhooks.md)
 * [TeamSpeak 3 Integration](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/teamspeak-3)
-* [Stream Deck Integration](integration-plugins/stream-deck-integration.md)
+* [⌨️ Stream Deck Plugin](integration-plugins/stream-deck-integration.md)
 * [🎮 FiveM](integration-plugins/in-game-integration/README.md)
   * [FiveM Installation](integration-plugins/in-game-integration/fivem-installation/README.md)
     * [Submodule Configuration](integration-plugins/in-game-integration/fivem-installation/submodule-configuration/README.md)

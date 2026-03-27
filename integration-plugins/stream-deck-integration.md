@@ -1,95 +1,95 @@
 ---
 description: >-
-  Utilize our desktop application's global hotkey system with your Elgato Stream
-  Deck!
+  Sonoran CAD’s official Stream Deck plugin gives you faster, customizable
+  control over the tools and actions you use most.
 ---
 
-# Stream Deck Integration
+# ⌨️ Stream Deck Plugin
 
-<figure><img src="../.gitbook/assets/streamdeck.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cad_deck_thumbnail.png" alt=""><figcaption></figcaption></figure>
+
+<div><figure><img src="../.gitbook/assets/cad_deck_promo_status.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/cad_deck_promo_windows.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/cad_deck_promo_erlc.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Introduction
 
-Our [desktop application](../download/) allows for global hotkey access to change your status, panic, open a new lookup, record center, and more **even when the app is minimized.**
-
-For users with a [Stream Deck](https://www.elgato.com/en/stream-deck), you can utilize these functions for quick access while in-game.
+Sonoran CAD's MacOS and Windows desktop applications offer direct integration with Stream Deck hardware. By installing our official Stream Deck plugin, users can customize layouts and buttons to control their CAD faster than ever before.
 
 ## Installation
 
-### 1. Download the Profile
+### 1. Download and Install the Plugin
 
-Download the profile for your [Stream Deck](https://sonoransoftware.com/assets/files/sonorancad/SonoranCADFull.streamDeckProfile) or [Stream Deck Mini](https://sonoransoftware.com/assets/files/sonorancad/SonoranCADMini.streamDeckProfile).
+Download the official Sonoran CAD Stream Deck plugin.
 
-### 2. Import the File
+### Via Stream Deck Plugin Store
 
-Typically, you can double click the `.streamDeckProfile` file and automatically import it. Otherwise, you can manually import it through the menu.
+{% hint style="info" %}
+Coming soon!
+{% endhint %}
 
-#### Manual Import
+### Via Manual Download Link
 
-1. Select "Edit Profiles"
+[Click to download the Stream Deck plugin.](https://download.sonoransoftware.com/sonoransoftware/sonorancad/streamdeck-plugin/sonoran-cad.streamDeckPlugin)
 
-![Stream Deck - Edit Profile](<../.gitbook/assets/image (347).png>)
+### Install The Plugin
 
-2\. Select "Import"
+Once downloaded, click on the plugin to install it on your Stream Deck desktop application.
 
-![Stream Deck - Import Profile](<../.gitbook/assets/image (384).png>)
+<figure><img src="../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
 
-3\. Select the downloaded Stream Deck Profile
+### 2. Configure Actions
 
-![Stream Deck - Select Profile](<../.gitbook/assets/image (311).png>)
+Using the Stream Deck desktop application search for **Sonoran CAD** in the **Keys** section.
 
-### 3. Configure your Hotkeys
+Drag-and-drop actions like status changes, call editor buttons, or other window macros to your Stream Deck layout.
 
-In Sonoran CAD, you can [view and manage your hotkeys](../tutorials/other-features/configurable-hotkeys.md) in the settings menu.
+<figure><img src="../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
 
-If you change them from the default values, you will need to update them in your Stream Deck.\
-Simply click on the icon, click the `Hotkey` field, and change the key.
+## Action Capabilities
 
-![Stream Deck - Change Hotkey](<../.gitbook/assets/image (364).png>)
+### Status
 
-## Configuration
+Status buttons will automatically change labels based on your community's custom status buttons. Your current status option will show as a filled outline when selected.
 
-### Launch Application Hotkey
+* **Available**
+* **Busy**
+* **Unavailable**
+* **Enroute**
+* **On Scene**
 
-You can edit the Sonoran CAD launch key to automatically launch the [Sonoran CAD desktop app](../download/).
+### Panic
 
-#### 1. Edit the Icon Path
+The **Panic** button will toggle your unit's panic status.
 
-Select the Sonoran CAD launch logo and click the `...` file browser under the file path bar.
+The button will change from outlined to filled when a panic mode is active.
 
-![Stream Deck - Select Launch Path](<../.gitbook/assets/image (315).png>)
+### Open Window
 
-#### 2. Navigate to %appdata%
+When pressed, these actions will open the corresponding window in the CAD.
 
-Paste \`%appdata% into the file browser bar and press enter.
+* **3D Live Map -** [**FiveM**](in-game-integration/fivem-installation/available-plugins/live-map.md) **or** [**ER:LC**](erlc/3d-live-map.md)
+* [**Body Cam**](erlc/bodycam.md)
+* [**Body Cam Recordings**](erlc/bodycam.md#recording)
+* [**Tone Board**](../tutorials/customization/tone-board.md)
+* [**Rapid IQ**](../tutorials/dispatching/rapid-iq.md)
+* [**Command Line**](../tutorials/dispatching/command-line-interface-cli.md)
+* [**Street Signs**](in-game-integration/fivem-installation/available-plugins/smart-signs.md)
+* [**Lookup**](../tutorials/records-management/searching-for-records.md)
+* [**Records**](../tutorials/records-management/)
+* [**10-Codes**](../tutorials/customization/10-codes.md)
+* [**Penal Codes**](../tutorials/customization/penal-codes.md)
+* [**Quick Links**](../tutorials/customization/quick-links.md)
+* **BOLOs**
+* **Active Calls** (When in Self Dispatch Mode)
+* **Emergency Calls** (When in Self Dispatch Mode)
+* **Signal**
+* **Timers**
+* **Notepad**
+* **Clear Dispatch Editor**
+* **Self-Clear (Detach from Call)**
 
-![Navigate to AppData](<../.gitbook/assets/image (335).png>)
+### ER:LC Actions
 
-#### 3. Select the Application
+Pressing these action buttons will perform the ER:LC integration action
 
-Select the Sonoran CAD desktop application under AppData > Local > Programs > Sonoran CAD.exe
-
-![Select the Sonoran CAD.exe](<../.gitbook/assets/image (370).png>)
-
-#### 4. Launch Sonoran CAD
-
-You can now press the Sonoran CAD icon on your Stream Deck to launch the desktop application.
-
-![Launch Sonoran CAD via Stream Deck](<../.gitbook/assets/image (336).png>)
-
-### Auto-Launch Profile
-
-Your Stream Deck can automatically launch the Sonoran CAD profile when you open the [Sonoran CAD Desktop application](../download/).
-
-#### 1. Open the profile settings:
-
-Hit the gear icon, or the dropdown under your profile name:
-
-![Stream Deck - Edit Profile](<../.gitbook/assets/image (347).png>)
-
-#### Select the Application
-
-Select the Sonoran CAD profile and "Other" from the application dropdown.\
-Then, follow the [same steps to locate the Sonoran CAD.exe as before](stream-deck-integration.md#2-navigate-to-appdata).
-
-![Stream Deck - Auto Launech Profile](<../.gitbook/assets/image (317).png>)
+* [**Traffic Stop**](erlc/traffic-stops.md)
+* [**Plate Reader**](erlc/plate-reader.md)
