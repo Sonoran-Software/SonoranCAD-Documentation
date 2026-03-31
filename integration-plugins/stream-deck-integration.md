@@ -20,31 +20,23 @@ Don't have a physical Stream Deck? Download the [free Stream Deck Mobile app](ht
 
 ### 1. Download and Install the Plugin
 
-Download the official Sonoran CAD Stream Deck plugin.
+Download the official [Sonoran CAD Stream Deck plugin from the Elgato Marketplace](https://marketplace.elgato.com/product/sonoran-cad-fcdbaa52-45cc-4569-89f2-c395d2ae8834).
 
-### Via Stream Deck Plugin Store
+<figure><img src="../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Coming soon!
-{% endhint %}
+Stream Deck will automatically install your plugin for use.
 
-### Via Manual Download Link
-
-[Click to download the Stream Deck plugin.](https://download.sonoransoftware.com/sonoransoftware/sonorancad/streamdeck-plugin/sonoran-cad.streamDeckPlugin)
-
-### Install The Plugin
-
-Once downloaded, click on the plugin to install it on your Stream Deck desktop application.
-
-<figure><img src="../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Configure Actions
 
 Using the Stream Deck desktop application search for **Sonoran CAD** in the **Keys** section.
 
-Drag-and-drop actions like status changes, call editor buttons, or other window macros to your Stream Deck layout.
+Drag-and-drop an action category to the Stream Deck. Select the action to update the sub-type.
 
-<figure><img src="../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
+Ex: **Status** action type > **Status Option** > **Panic**
+
+<figure><img src="../.gitbook/assets/image (413).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Action Capabilities
 
@@ -69,8 +61,6 @@ The button will change from outlined to filled when a panic mode is active.
 When pressed, these actions will open the corresponding window in the CAD.
 
 * **3D Live Map -** [**FiveM**](in-game-integration/fivem-installation/available-plugins/live-map.md) **or** [**ER:LC**](erlc/3d-live-map.md)
-* [**Body Cam**](erlc/bodycam.md)
-* [**Body Cam Recordings**](erlc/bodycam.md#recording)
 * [**Tone Board**](../tutorials/customization/tone-board.md)
 * [**Rapid IQ**](../tutorials/dispatching/rapid-iq.md)
 * [**Command Line**](../tutorials/dispatching/command-line-interface-cli.md)
@@ -88,6 +78,12 @@ When pressed, these actions will open the corresponding window in the CAD.
 * **Notepad**
 * **Clear Dispatch Editor**
 * **Self-Clear (Detach from Call)**
+
+### Bodycam Options
+
+* Open Bodycam
+* Record Bodycam
+* View Recordings
 
 ### ER:LC Actions
 
