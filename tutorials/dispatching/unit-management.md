@@ -12,7 +12,11 @@ description: Learn more about managing unit information, statuses, and more!
 
 You can click on a unit's status for a dropdown menu to quickly modify it.
 
-![Sonoran CAD - Unit Status](<../../.gitbook/assets/image (156).png>)
+<figure><img src="../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
+
+Units can also select one of the status buttons in the header:
+
+<figure><img src="../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -22,7 +26,13 @@ You can click on a unit's status for a dropdown menu to quickly modify it.
 
 Click on any active unit and select "Edit Unit" to change their identifier information.
 
-![Sonoran CAD - Edit Unit](<../../.gitbook/assets/image (265).png>)
+<figure><img src="../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+
+Units with the edit identifier permission can also click on their unit number in the header to open the identifier editor:
+
+<figure><img src="../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -32,14 +42,31 @@ Click on any active unit and select "Edit Unit" to change their identifier infor
 
 Unit groups are a way to combine two units together, typically when they're in the save vehicle or apparatus.
 
-To add a unit to a group, simply select the unit and select "Add to Group" > New Group or an existing group
+To add a unit to a group, simply select the unit and select **Add to Group > New Group** or an existing group.
 
-![Sonoran CAD - Unit Group](<../../.gitbook/assets/image (150).png>)
+Or, drag-and-drop a unit to an existing group to attach.
 
-Or, you can drag-and-drop a unit to the Unit Groups section.\
-Drag it to the header to create a new group, or drag it to an existing group to add it.
+<figure><img src="../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 
-![Sonoran CAD - Unit Group](../../.gitbook/assets/3aa5a1745988325dd443220e1f3586b1.gif)
+</details>
+
+<details>
+
+<summary>Persistent Unit Groups</summary>
+
+Unit groups can be configured as **persistent**, meaning they remain visible even when no units are assigned.
+
+Persistent groups are set up in the Department Editor under **Admin → Customization → Departments**. These groups can optionally enforce a maximum number of units that may be attached.
+
+<figure><img src="../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
+
+Once configured, persistent groups can be dragged into the Call Editor or onto an existing dispatch call to attach them.
+
+<figure><img src="../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+
+Units can self-attach to these groups by clicking on their unit number to open the identifier editor **→ Persistent Group**
+
+<figure><img src="../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -47,8 +74,8 @@ Drag it to the header to create a new group, or drag it to an existing group to 
 
 <summary>Automatic Unit Status</summary>
 
-Dispatchers can also customize what to automatically set unit statuses to after specific actions. Select the `Auto-Status` button in the call editor to enable status changes on call attachment, detachment, and closure.
+Dispatchers can also customize what to automatically set unit statuses to after specific actions. Select the [**Automations**](automations.md) button in the call editor to enable status changes on call attachment, detachment, and closure.
 
-<figure><img src="../../.gitbook/assets/image (88).png" alt="" width="375"><figcaption><p>Sonoran CAD: Auto Status</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 </details>
