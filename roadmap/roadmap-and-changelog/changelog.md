@@ -10,6 +10,42 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.42.0 04/02/2026
+
+{% tabs %}
+{% tab title="New" %}
+FiveM: Bodycam Recording
+
+* The FiveM bodycam now offers automated recording on events, stored in Sonoran CAD.
+
+Unit Chat
+
+* Added a messaging system between units, complete with text-to-speech
+
+Tone Board TTS & Stacking
+
+* Added localized text-to-speech, speech-to-text, and stacking to the tone board
+
+Persistent Groups
+
+* Communities can now create persistent unit groups that are not removed when units disconnect. Groups can also be self-assigned by units and have limits set.
+
+Modify Identifier
+
+* Initial UI revamp of the unit editor
+
+Admin Panel UI Colors
+
+* Initial color revamp of the admin panels and navigation
+{% endtab %}
+
+{% tab title="Fixed" %}
+Desktop Overlay Dispatch
+
+* Fixed an issue with the desktop overlay not allowing dispatchers to toggle on the feature to include emergency calls
+{% endtab %}
+{% endtabs %}
+
 ### 3.41.4 03/24/2026
 
 {% tabs %}
