@@ -107,6 +107,12 @@ Navigate to Settings > Keybinds > FiveM and look for the keybind "Toggle BodyCam
 
 When toggling your body camera on or off, an animation will play if `enableAnimation` is `true`.
 
+### In-Game Recording
+
+You can now trigger recordings of your bodycam to be sent to CAD. By default, recordings operate on a system of a 30 second shadow recording + a 1 minute and 30 second video to create a total of 2 minutes. The shadow buffer can be configured with the configuration option `recording.shadowBufferSeconds`. The total length of a video can be no longer than 2 minutes. You can either manually toggle recording via a configurable keybind found in your Keybinds --> FiveM --> SonoranCAD settings. Additionally, you can configure automatic toggles for bodycam recording via `recording.autoRecordEvents`.&#x20;
+
+Developers can also trigger recordings by calling the event `SonoranCAD::bodycam::AutoRecordTrigger(triggerName)` and passing in a custom trigger name.&#x20;
+
 ## CAD Usage
 
 <figure><img src="../../../../.gitbook/assets/20260225-2332-49.6056763.gif" alt=""><figcaption></figcaption></figure>
