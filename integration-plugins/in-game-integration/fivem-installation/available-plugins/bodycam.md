@@ -111,9 +111,9 @@ When toggling your body camera on or off, an animation will play if `enableAnima
 
 By default, each recording includes a 30-second shadow buffer followed by 1 minute 30 seconds of video, for a maximum total length of 2 minutes. The shadow buffer length can be adjusted with `recording.shadowBufferSeconds`, but the total recording length cannot exceed 2 minutes.
 
-Recording can be started manually using a configurable keybind located under **Keybinds → FiveM → SonoranCAD**. You can also enable automatic bodycam recording through `recording.autoRecordEvents`.
+Recording can be started manually using a configurable keybind located under **Keybinds -> FiveM -> SonoranCAD**. You can also enable automatic bodycam recording through `recording.autoRecordEvents`.
 
-Developers can trigger recordings programmatically by calling `SonoranCAD::bodycam::AutoRecordTrigger(triggerName)` and passing a custom trigger name.
+Developers can also trigger bodycam recordings with a [client event](../../framework-development-documentation/client-events.md#bodycam-record-toggle).
 
 ## CAD Usage
 

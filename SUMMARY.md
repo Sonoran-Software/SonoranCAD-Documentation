@@ -119,6 +119,7 @@
       * [WraithV2](integration-plugins/in-game-integration/fivem-installation/available-plugins/wraithv2.md)
   * [FiveM Development Documentation](integration-plugins/in-game-integration/framework-development-documentation/README.md)
     * [Client Functions](integration-plugins/in-game-integration/framework-development-documentation/client-functions.md)
+    * [Client Events](integration-plugins/in-game-integration/framework-development-documentation/client-events.md)
     * [Shared Functions](integration-plugins/in-game-integration/framework-development-documentation/shared-functions.md)
     * [Server Functions](integration-plugins/in-game-integration/framework-development-documentation/server-functions.md)
     * [Server Events](integration-plugins/in-game-integration/framework-development-documentation/server-events.md)
