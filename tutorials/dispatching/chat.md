@@ -45,3 +45,7 @@ Users can optionally toggle on text-to-speech, which will read out incoming mess
 Text-to-speech voice can be customized in the **settings** panel.
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+### Data Retention
+
+Currently, chat messages are temporary and stored locally on the client and are wiped on refresh. Messages are not stored or persisted in any database.
