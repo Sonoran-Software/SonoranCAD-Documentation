@@ -107,5 +107,19 @@ Tones can be repeated at a specific interval.
 
 When sending a new tone, toggle `repeat` on and customize the `seconds` and `count` values. When the tone is sent, the repeat timer and counter will visualize any actively repeating tones.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Stacked Tones
+
+Toggle the **Stack** icon on and select multiple tones to be played in order. Drag-and-drop the tones to re-order. Press the **Play** button to play the stack.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Text-to-Speech
+
+The tone board can also play text-to-speech to users. Enter text into the **Text To Speech** box to send.&#x20;
+
+Additionally, you can select the **Microphone** button to record your own voice and translate that to text before sending out the speech-to-text tone.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -26,4 +26,4 @@ Once in-game, press your desktop hotkey to run a plate search.
 
 * The vehicle must be nearby with a player in it
 
-<div><figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>

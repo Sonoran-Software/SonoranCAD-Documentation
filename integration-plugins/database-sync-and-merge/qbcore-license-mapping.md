@@ -80,7 +80,7 @@ As of writing on 2/28/2022, the following pictured settings will work for QBCore
 We are aware of the misspelling "licence", this is intentional in QBCore to differentiate between another piece of data referred to as "license"
 {% endhint %}
 
-![Sonoran CAD DBSync Settings](<../../.gitbook/assets/image (8).png>)
+![Sonoran CAD DBSync Settings](<../../.gitbook/assets/image (8) (1).png>)
 
 ![Sonoran CAD DBSync Friendly Mapping Settings](<../../.gitbook/assets/image (300) (1).png>)
 

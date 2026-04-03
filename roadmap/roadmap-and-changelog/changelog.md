@@ -18,6 +18,10 @@ FiveM: Bodycam Recording
 
 * The FiveM bodycam now offers automated recording on events, stored in Sonoran CAD.
 
+FiveM: Bodycam Overlay
+
+* Added a new bodycam overlay in-game.
+
 Unit Chat
 
 * Added a messaging system between units, complete with text-to-speech
