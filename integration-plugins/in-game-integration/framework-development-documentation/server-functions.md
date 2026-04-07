@@ -121,12 +121,10 @@ exports.sonorancad.GetUnitCache(includeDispatchers)
 | Parameter            | Type      | Description                                    |
 | -------------------- | --------- | ---------------------------------------------- |
 | `includeDispatchers` | `boolean` | Include an array of active dispatchers as well |
-|                      |           |                                                |
-|                      |           |                                                |
 {% endtab %}
 
 {% tab title="Returns" %}
-<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li><li>If <code>includeDispatchers</code> is <code>true</code>, will return <code>arg1</code> - Standard <code>UnitCache</code> table, <code>arg2</code>- Array of dispatchers online. If <code>false</code> will only return standard <code>UnitCache</code> array. </li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li><li>If <code>includeDispatchers</code> is <code>true</code>, will return <code>arg1</code> - Standard <code>UnitCache</code> table, <code>arg2</code>- Array of dispatchers online. If <code>false</code> will only return standard <code>UnitCache</code> array. </li><li>Dispatchers will be shown regardless if they are in-game or not. To check if a dispatcher is also in-game use the <code>isInGame</code> flag (<code>boolean</code>) on the unit</li></ul></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Example Usage" %}
