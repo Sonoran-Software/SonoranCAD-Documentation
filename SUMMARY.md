@@ -177,6 +177,8 @@
       * [Character Selected](api-integration/push-events/civilian/character-selected.md)
     * [ERS](api-integration/push-events/ers/README.md)
       * [New Callout](api-integration/push-events/ers/new-callout.md)
+    * [Inferno Pager](api-integration/push-events/inferno-pager/README.md)
+      * [Event Pager Reborn](api-integration/push-events/inferno-pager/event-pager-reborn.md)
     * [Station Alert](api-integration/push-events/station-alert/README.md)
       * [New Station Alert](api-integration/push-events/station-alert/new-station-alert.md)
   * [API Endpoints](api-integration/api-endpoints/README.md)
