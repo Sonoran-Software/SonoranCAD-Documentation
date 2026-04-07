@@ -113,16 +113,20 @@ end
 Returns the global `UnitCache` table containing unit data.
 
 ```lua
-exports.sonorancad.GetUnitCache()
+exports.sonorancad.GetUnitCache(includeDispatchers)
 ```
 
 {% tabs %}
 {% tab title="Parameters" %}
-None
+| Parameter            | Type      | Description                                    |
+| -------------------- | --------- | ---------------------------------------------- |
+| `includeDispatchers` | `boolean` | Include an array of active dispatchers as well |
+|                      |           |                                                |
+|                      |           |                                                |
 {% endtab %}
 
 {% tab title="Returns" %}
-<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li><li>If <code>includeDispatchers</code> is <code>true</code>, will return <code>arg1</code> - Standard <code>UnitCache</code> table, <code>arg2</code>- Array of dispatchers online. If <code>false</code> will only return standard <code>UnitCache</code> array. </li></ul></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Example Usage" %}
@@ -136,6 +140,20 @@ else
     print("UnitCache is empty or uninitialized.")
 end
 
+-- Getting dispatchers as well
+local unitCache, dispatchers = exports.sonorancad.GetUnitCache(true)
+
+if next(unitCache) then
+    print("UnitCache contains data:", json.encode(unitCache))
+else
+    print("UnitCache is empty or uninitialized.")
+end
+
+if next(dispatchers) then
+    print("Dispatchers contains data: ", json.encode(dispatchers))
+else
+    print("There are no dispatchers online.")
+end 
 ```
 {% endtab %}
 {% endtabs %}
