@@ -4,18 +4,26 @@ description: View Sonoran CAD's current v2 emergency API endpoints.
 
 # Emergency
 
-The first v2 API rollout includes read-only emergency endpoints for active units, dispatch calls, and a unit's current call assignment.
+The v2 emergency API includes unit state updates, identifier management, dispatch and 911 call management, custom blips, and emergency configuration endpoints.
 
-## Available Endpoints
+## Categories
 
-{% content-ref url="get-active-units.md" %}
-[get-active-units](get-active-units.md)
+{% content-ref url="units/" %}
+[units](units/)
 {% endcontent-ref %}
 
-{% content-ref url="get-calls.md" %}
-[get-calls](get-calls.md)
+{% content-ref url="identifiers/" %}
+[identifiers](identifiers/)
 {% endcontent-ref %}
 
-{% content-ref url="get-current-call.md" %}
-[get-current-call](get-current-call.md)
+{% content-ref url="calls/" %}
+[calls](calls/)
+{% endcontent-ref %}
+
+{% content-ref url="map/" %}
+[map](map/)
+{% endcontent-ref %}
+
+{% content-ref url="configuration/" %}
+[configuration](configuration/)
 {% endcontent-ref %}
