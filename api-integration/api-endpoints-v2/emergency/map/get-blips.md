@@ -7,3 +7,80 @@ description: Retrieve custom blips for a server.
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/blips`
 
 Retrieve custom blips configured for a server.
+
+## Path Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `serverId` | integer | Configured Sonoran CAD server ID. |
+
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request GET \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/blips", {
+  method: "GET",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+  },
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Get `
+  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/blips" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
+
+## Response
+
+Successful requests return `application/json`.
+
+```json
+[
+  {
+    "id": 32,
+    "coordinates": {
+      "x": 425.5,
+      "y": -979.8,
+      "z": 0.0,
+      "w": 0.0
+    },
+    "subType": "radius",
+    "icon": "fa-location-dot",
+    "color": "#ff0000",
+    "tooltip": "Perimeter",
+    "data": [
+      {
+        "title": "Assigned Unit",
+        "text": "A-10"
+      }
+    ],
+    "radius": 100.0
+  }
+]
+```

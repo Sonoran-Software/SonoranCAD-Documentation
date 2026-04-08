@@ -10,20 +10,59 @@ Return public login-page details for a community. This endpoint does not require
 
 ## Query Parameters
 
-Provide exactly one of the following:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `url` | string | Community custom domain |
-| `communityId` | string | Sonoran CAD community ID |
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `communityId` | string | Optional | Use the community ID instead of `url`. Provide exactly one. |
+| `url` | string | Optional | Use the community website or login URL instead of `communityId`. |
 
 ## Example Request
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl --request GET \
-  --url "https://api.sonorancad.com/v2/general/login-page?communityId=examplecad"
+  --url "https://api.sonorancad.com/v2/general/login-page?communityId=examplecad" \
+  --header "Accept: application/json"
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/login-page?communityId=examplecad", {
+  method: "GET",
+  headers: {
+    Accept: "application/json",
+  },
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Get `
+  -Uri "https://api.sonorancad.com/v2/general/login-page?communityId=examplecad" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response
 
-Returns the community login-page metadata object.
+Successful requests return `application/json`.
+
+```json
+{
+  "comId": "examplecad",
+  "name": "Example CAD",
+  "timezone": "America/Phoenix",
+  "customLoginUrl": "https://portal.examplecad.com/login"
+}
+```

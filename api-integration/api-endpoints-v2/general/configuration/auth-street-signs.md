@@ -12,16 +12,57 @@ Validate that the requesting IP address matches the configured smart-sign server
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `serverId` | integer | Configured server ID for this API key |
+| `serverId` | integer | Configured Sonoran CAD server ID. |
 
 ## Example Request
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl --request POST \
   --url "https://api.sonorancad.com/v2/general/servers/1/street-sign-auth" \
-  --header "Authorization: Bearer YOUR_API_KEY"
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/servers/1/street-sign-auth", {
+  method: "POST",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+  },
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Post `
+  -Uri "https://api.sonorancad.com/v2/general/servers/1/street-sign-auth" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response
 
-Returns `authorized: true` when the server ID and requesting IP match the configured server entry.
+Successful requests return `application/json`.
+
+```json
+{
+  "authorized": true,
+  "serverId": 1
+}
+```

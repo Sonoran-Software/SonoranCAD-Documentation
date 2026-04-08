@@ -8,18 +8,94 @@ description: Attach identifiers or a group to a dispatch call.
 
 Attach identifiers or a group to a dispatch call.
 
-## Example Body
+## Path Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `serverId` | integer | Configured Sonoran CAD server ID. |
+| `callId` | integer | Dispatch or 911 call ID. |
+
+## Request Body
+
+Provide either `groupName` or one or more identifier targets.
 
 ```json
 {
-  "identIds": [15, 18]
+  "identIds": [12, 18]
 }
 ```
 
-Or:
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/attachments" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "identIds": [12, 18]
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/attachments", {
+  method: "POST",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  "identIds": [
+    12,
+    18
+  ]
+}),
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+  "Content-Type" = "application/json"
+}
+
+$body = @'
+{
+  "identIds": [12, 18]
+}
+'@
+
+Invoke-RestMethod `
+  -Method Post `
+  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/attachments" `
+  -Headers $headers `
+  -Body $body
+```
+{% endtab %}
+{% endtabs %}
+
+## Response
+
+Successful requests return `application/json`.
 
 ```json
 {
-  "groupName": "CAR 51"
+  "callId": 501,
+  "identIds": [
+    12,
+    18
+  ]
 }
 ```
