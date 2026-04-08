@@ -31,3 +31,11 @@ Civilian endpoints cover character retrieval, character selection, linked sync-c
 {% content-ref url="civilian/" %}
 [civilian](civilian/)
 {% endcontent-ref %}
+
+### General
+
+General endpoints cover account management, custom records, lookup workflows, and community-level configuration.
+
+{% content-ref url="general/" %}
+[general](general/)
+{% endcontent-ref %}
