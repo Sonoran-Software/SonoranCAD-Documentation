@@ -23,3 +23,11 @@ Emergency endpoints are grouped by feature area for units, identifiers, calls, m
 {% content-ref url="emergency/" %}
 [emergency](emergency/)
 {% endcontent-ref %}
+
+### Civilian
+
+Civilian endpoints cover character retrieval, character selection, linked sync-character IDs, and character removal.
+
+{% content-ref url="civilian/" %}
+[civilian](civilian/)
+{% endcontent-ref %}
