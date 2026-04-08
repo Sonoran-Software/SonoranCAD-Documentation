@@ -8,18 +8,18 @@ Use the v2 general endpoints for account management, custom records, lookup work
 
 ## Sections
 
-{% content-ref url="accounts.md" %}
-[accounts](accounts.md)
+{% content-ref url="accounts/" %}
+[accounts](accounts/)
 {% endcontent-ref %}
 
-{% content-ref url="records.md" %}
-[records](records.md)
+{% content-ref url="records/" %}
+[records](records/)
 {% endcontent-ref %}
 
-{% content-ref url="lookups.md" %}
-[lookups](lookups.md)
+{% content-ref url="lookups/" %}
+[lookups](lookups/)
 {% endcontent-ref %}
 
-{% content-ref url="configuration.md" %}
-[configuration](configuration.md)
+{% content-ref url="configuration/" %}
+[configuration](configuration/)
 {% endcontent-ref %}
