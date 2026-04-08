@@ -8,6 +8,12 @@ description: Force a unit offline by API ID.
 
 Force the currently selected identifier for an API ID offline.
 
+## Path Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `serverId` | integer | Configured Sonoran CAD server ID. |
+
 ## Request Body
 
 ```json
@@ -17,11 +23,74 @@ Force the currently selected identifier for an API ID offline.
 }
 ```
 
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request DELETE \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/units/kick" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "apiId": "steam:110000112345678",
+  "reason": "Connection reset by integration"
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/units/kick", {
+  method: "DELETE",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  "apiId": "steam:110000112345678",
+  "reason": "Connection reset by integration"
+}),
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+  "Content-Type" = "application/json"
+}
+
+$body = @'
+{
+  "apiId": "steam:110000112345678",
+  "reason": "Connection reset by integration"
+}
+'@
+
+Invoke-RestMethod `
+  -Method Delete `
+  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/units/kick" `
+  -Headers $headers `
+  -Body $body
+```
+{% endtab %}
+{% endtabs %}
+
 ## Response
+
+Successful requests return `application/json`.
 
 ```json
 {
-  "identId": 15,
-  "reason": "Connection reset by integration"
+  "identId": 12,
+  "reason": "Restarting server."
 }
 ```

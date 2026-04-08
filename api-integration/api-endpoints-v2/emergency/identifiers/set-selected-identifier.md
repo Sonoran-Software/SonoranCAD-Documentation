@@ -8,10 +8,113 @@ description: Set the selected identifier for an account.
 
 Set the selected identifier for an account.
 
+## Path Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `accountUuid` | string (uuid) | Sonoran CAD account UUID. |
+
 ## Request Body
 
 ```json
 {
   "identId": 15
+}
+```
+
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/selected-identifier" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "identId": 15
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/selected-identifier", {
+  method: "PUT",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  "identId": 15
+}),
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+  "Content-Type" = "application/json"
+}
+
+$body = @'
+{
+  "identId": 15
+}
+'@
+
+Invoke-RestMethod `
+  -Method Put `
+  -Uri "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/selected-identifier" `
+  -Headers $headers `
+  -Body $body
+```
+{% endtab %}
+{% endtabs %}
+
+## Response
+
+Successful requests return `application/json`.
+
+```json
+{
+  "serverId": 1,
+  "isDispatch": false,
+  "identifier": {
+    "id": 12,
+    "accId": "00000000-0000-0000-0000-000000000000",
+    "status": 3,
+    "isPanic": false,
+    "location": "Mission Row PD",
+    "coordinates": {
+      "x": 123.45,
+      "y": -456.78,
+      "z": 32.1,
+      "w": 180.0
+    },
+    "aop": "Los Santos",
+    "data": {
+      "unitNum": "A-10",
+      "name": "John Doe",
+      "district": "Los Santos",
+      "department": "LSPD",
+      "subdivision": "Patrol",
+      "rank": "Officer",
+      "group": "CAR-51",
+      "page": 0,
+      "apiIds": [
+        "steam:110000112345678"
+      ]
+    },
+    "isDispatch": false
+  }
 }
 ```

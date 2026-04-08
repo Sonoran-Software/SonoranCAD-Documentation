@@ -12,16 +12,72 @@ Return one record template by its record type ID.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `recordTypeId` | integer | Record type ID to retrieve |
+| `recordTypeId` | integer | Custom record template ID. |
 
 ## Example Request
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl --request GET \
   --url "https://api.sonorancad.com/v2/general/templates/12" \
-  --header "Authorization: Bearer YOUR_API_KEY"
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/templates/12", {
+  method: "GET",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+  },
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Get `
+  -Uri "https://api.sonorancad.com/v2/general/templates/12" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response
 
-Returns the matching record template object.
+Successful requests return `application/json`.
+
+```json
+{
+  "recordTypeId": 12,
+  "id": 0,
+  "name": "Incident Report",
+  "type": 9,
+  "sections": [
+    {
+      "category": 0,
+      "label": "Report Details",
+      "fields": [
+        {
+          "label": "Case Number",
+          "value": "",
+          "uid": "case_number"
+        }
+      ]
+    }
+  ]
+}
+```

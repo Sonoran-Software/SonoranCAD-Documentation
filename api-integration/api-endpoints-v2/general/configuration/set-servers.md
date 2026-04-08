@@ -4,19 +4,177 @@ description: Replace configured community servers.
 
 # Set Servers
 
-<mark style="color:green;">`PUT`</mark> `https://api.sonorancad.com/v2/general/servers`
+<mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/general/servers`
 
 Replace the configured server list for the authenticated community.
 
 ## Request Body
 
+Each `servers[]` item can include `id`, `name`, `description`, `signal`, `mapUrl`, `mapIp`, `listenerPort`, `differingOutbound`, `outboundIp`, `enableMap`, `mapType`, `isStatic`, and `liveMapFormat`.
+
 ```json
 {
   "deployMap": true,
-  "servers": []
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
 }
 ```
 
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/general/servers" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "deployMap": true,
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/servers", {
+  method: "PUT",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  "deployMap": true,
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}),
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+  "Content-Type" = "application/json"
+}
+
+$body = @'
+{
+  "deployMap": true,
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}
+'@
+
+Invoke-RestMethod `
+  -Method Put `
+  -Uri "https://api.sonorancad.com/v2/general/servers" `
+  -Headers $headers `
+  -Body $body
+```
+{% endtab %}
+{% endtabs %}
+
 ## Response
 
-Returns the saved server configuration object.
+Successful requests return `application/json`.
+
+```json
+{
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}
+```
+
+## Enumeration Values
+
+### LIVE_MAP_FORMAT
+
+| Value | Description |
+| --- | --- |
+| `0` | `GTA_V` |
+| `1` | `ROBLOX` |

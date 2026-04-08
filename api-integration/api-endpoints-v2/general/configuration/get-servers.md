@@ -10,12 +10,68 @@ Return the configured server list for the authenticated community.
 
 ## Example Request
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl --request GET \
   --url "https://api.sonorancad.com/v2/general/servers" \
-  --header "Authorization: Bearer YOUR_API_KEY"
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/servers", {
+  method: "GET",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+  },
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Get `
+  -Uri "https://api.sonorancad.com/v2/general/servers" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response
 
-Returns the community server configuration object.
+Successful requests return `application/json`.
+
+```json
+{
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}
+```

@@ -4,7 +4,7 @@ description: Replace or append API IDs for a community account.
 
 # Set API IDs
 
-<mark style="color:green;">`PUT`</mark> `https://api.sonorancad.com/v2/general/api-ids`
+<mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/general/api-ids`
 
 Set or append API IDs for a community account.
 
@@ -20,6 +20,83 @@ Provide exactly one of `username` or `accountUuid`.
 }
 ```
 
+## Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/general/api-ids" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "apiIds": ["steam:110000112345678", "license:abc123"],
+  "pushNew": true
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch("https://api.sonorancad.com/v2/general/api-ids", {
+  method: "PUT",
+  headers: {
+    Authorization: "Bearer YOUR_API_KEY",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "apiIds": [
+    "steam:110000112345678",
+    "license:abc123"
+  ],
+  "pushNew": true
+}),
+});
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+  "Content-Type" = "application/json"
+}
+
+$body = @'
+{
+  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "apiIds": ["steam:110000112345678", "license:abc123"],
+  "pushNew": true
+}
+'@
+
+Invoke-RestMethod `
+  -Method Put `
+  -Uri "https://api.sonorancad.com/v2/general/api-ids" `
+  -Headers $headers `
+  -Body $body
+```
+{% endtab %}
+{% endtabs %}
+
 ## Response
 
-Returns the target `accountUuid`, saved `apiIds`, and `pushNew` mode.
+Successful requests return `application/json`.
+
+```json
+{
+  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "apiIds": [
+    "steam:110000112345678"
+  ],
+  "pushNew": true
+}
+```
