@@ -20,7 +20,7 @@ For more information, see our [pricing ](../../../../pricing/faq/)page.
       "FIRE-1",
       "BATTALION-1"
     ],
-    "players": [
+    "identIds": [
       12,
       34
     ],
@@ -33,6 +33,6 @@ For more information, see our [pricing ](../../../../pricing/faq/)page.
 ### Data Fields
 
 * `addresses`: Array of routed Inferno pager address strings selected in CAD.
-* `players`: Array of numeric player IDs when paging specific players directly.
+* `identIds`: Array of integer unit identifier IDs when paging specific online units directly.
 * `nature`: String enum value. Possible values are `Emergency`, `NonEmergency`, and `Administrative`.
 * `body`: Message body sent with the page.
