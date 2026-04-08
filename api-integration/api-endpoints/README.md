@@ -12,6 +12,10 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 {% endhint %}
 
 {% hint style="success" %}
+Looking for the new header-based API? See [v2 API Endpoints](../api-endpoints-v2/).
+{% endhint %}
+
+{% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
 {% endhint %}
 
@@ -39,6 +43,14 @@ View all general endpoints for user account actions, administrative actions, and
 
 {% content-ref url="general/" %}
 [general](general/)
+{% endcontent-ref %}
+
+### v2 API Endpoints
+
+View the new versioned API with bearer authentication, resource-style routes, and structured error responses.
+
+{% content-ref url="../api-endpoints-v2/" %}
+[api-endpoints-v2](../api-endpoints-v2/)
 {% endcontent-ref %}
 
 ## API Code Examples
