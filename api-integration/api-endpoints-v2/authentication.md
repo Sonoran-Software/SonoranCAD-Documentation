@@ -12,25 +12,57 @@ All current v2 API endpoints require bearer authentication.
 https://api.sonorancad.com
 ```
 
-## Required Header
+## Required Headers
 
-```http
-Authorization: Bearer YOUR_API_KEY
-```
-
-## Authentication Model
-
-Unlike v1, the v2 API does not require the community ID or API key in the request body.
-
-Your API key is used to identify the target community automatically.
+| Header | Value | Description |
+| --- | --- | --- |
+| `Authorization` | `Bearer YOUR_API_KEY` | Authenticates the request |
+| `Accept` | `application/json` | Recommended for all requests |
 
 ## Example Request
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl --request GET \
   --url "https://api.sonorancad.com/v2/emergency/servers/1/units?onlyUnits=true&includeOffline=false" \
-  --header "Authorization: Bearer YOUR_API_KEY"
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch(
+  "https://api.sonorancad.com/v2/emergency/servers/1/units?onlyUnits=true&includeOffline=false",
+  {
+    method: "GET",
+    headers: {
+      Authorization: "Bearer YOUR_API_KEY",
+      Accept: "application/json",
+    },
+  }
+);
+
+const data = await response.json();
+console.log(data);
+```
+{% endtab %}
+
+{% tab title="PowerShell" %}
+```powershell
+$headers = @{
+  Authorization = "Bearer YOUR_API_KEY"
+  Accept = "application/json"
+}
+
+Invoke-RestMethod `
+  -Method Get `
+  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/units?onlyUnits=true&includeOffline=false" `
+  -Headers $headers
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response Formats
 
@@ -63,9 +95,3 @@ Example:
 | `401` | `Authorization` header is not using the `Bearer` scheme |
 | `401` | API key is invalid |
 | `404` | The requested `serverId` is not configured for the authenticated community |
-
-## Notes
-
-* v2 does not accept the v1 `id`, `key`, `type`, and `data` request body format.
-* Current v2 responses include `Cache-Control: no-store` on authenticated requests.
-* External rate limiting is expected to be handled in front of the API gateway.
