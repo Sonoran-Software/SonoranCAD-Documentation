@@ -1,12 +1,12 @@
 ---
-description: Link a sync-character ID to an account or API ID.
+description: Link a sync-character ID to a community user, account, or API ID.
 ---
 
 # Add Character Link
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/civilian/character-links/{syncId}`
 
-Link a sync-character ID to an account or API ID.
+Link a sync-character ID to a community user, account, or API ID.
 
 ## Path Parameters
 
@@ -16,11 +16,11 @@ Link a sync-character ID to an account or API ID.
 
 ## Request Body
 
-Provide exactly one of `accountUuid` or `apiId`.
+Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
 
 ```json
 {
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }
 ```
 
@@ -35,7 +35,7 @@ curl --request PUT \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }'
 ```
 {% endtab %}
@@ -50,7 +50,7 @@ const response = await fetch("https://api.sonorancad.com/v2/civilian/character-l
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }),
 });
 
@@ -69,7 +69,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }
 '@
 

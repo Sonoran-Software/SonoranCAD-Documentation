@@ -10,11 +10,11 @@ Update permissions for a community account and optionally set its active status.
 
 ## Request Body
 
-Provide exactly one account identifier using `accountUuid`, `apiId`, or `username`.
+Provide exactly one account identifier using `communityUserId`, `accountUuid`, `apiId`, or `username`.
 
 ```json
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "add": ["POLICE", "DISPATCH"],
   "active": true
 }
@@ -31,7 +31,7 @@ curl --request PATCH \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "add": ["POLICE", "DISPATCH"],
   "active": true
 }'
@@ -48,7 +48,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/accounts/per
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "add": [
     "POLICE",
     "DISPATCH"
@@ -72,7 +72,7 @@ $headers = @{
 
 $body = @'
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "add": ["POLICE", "DISPATCH"],
   "active": true
 }

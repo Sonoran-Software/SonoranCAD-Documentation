@@ -6,7 +6,7 @@ description: Set status for one or more identifiers.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/status`
 
-Set a new unit status for one or more identifiers resolved by `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
 
 ## Path Parameters
 
@@ -16,10 +16,12 @@ Set a new unit status for one or more identifiers resolved by `accountUuid`, `ap
 
 ## Request Body
 
-Provide at least one target using `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
+| `communityUserId` | string | No | Updates all active identifiers for one linked community user. |
+| `communityUserIds` | array of strings | No | Updates all active identifiers for multiple linked community users. |
 | `accountUuid` | string (uuid) | No | Updates all active identifiers for the target account. |
 | `apiId` | string | No | Resolves the current active identifier for one API ID. |
 | `apiIds` | array of strings | No | Resolves active identifiers for multiple API IDs. |
@@ -28,7 +30,7 @@ Provide at least one target using `accountUuid`, `apiId`, `apiIds`, or `identIds
 
 ```json
 {
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "status": 3
 }
 ```
@@ -44,7 +46,7 @@ curl --request PATCH \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "status": 3
 }'
 ```
@@ -60,8 +62,8 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiIds": [
-    "steam:110000112345678"
+  "communityUserIds": [
+    "player-1234"
   ],
   "status": 3
 }),
@@ -82,7 +84,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "status": 3
 }
 '@

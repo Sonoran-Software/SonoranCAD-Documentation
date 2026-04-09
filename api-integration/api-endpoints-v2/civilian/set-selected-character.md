@@ -1,5 +1,5 @@
 ---
-description: Set the selected character for an account or API ID.
+description: Set the selected character for a community user, account, or API ID.
 ---
 
 # Set Selected Character
@@ -10,11 +10,11 @@ Set the selected character or selected sync character for an account.
 
 ## Request Body
 
-Provide exactly one of `accountUuid` or `apiId`.
+Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
 
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "characterId": "1042"
 }
 ```
@@ -32,7 +32,7 @@ curl --request PUT \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "characterId": "1042"
 }'
 ```
@@ -48,7 +48,7 @@ const response = await fetch("https://api.sonorancad.com/v2/civilian/selected-ch
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "characterId": "1042"
 }),
 });
@@ -68,7 +68,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "characterId": "1042"
 }
 '@

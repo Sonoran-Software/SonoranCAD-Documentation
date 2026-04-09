@@ -10,10 +10,13 @@ Search records by a typed lookup value.
 
 ## Request Body
 
+Optional notification routing supports `notifyCommunityUserId`, `notifyAccountUuid`, or `notifyApiId`.
+
 ```json
 {
   "searchType": "NUMBER",
   "value": "451",
+  "notifyCommunityUserId": "player-1234",
   "types": [12]
 }
 ```
@@ -31,6 +34,7 @@ curl --request POST \
   --data '{
   "searchType": "NUMBER",
   "value": "451",
+  "notifyCommunityUserId": "player-1234",
   "types": [12]
 }'
 ```
@@ -48,6 +52,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/lookups/by-v
   body: JSON.stringify({
   "searchType": "NUMBER",
   "value": "451",
+  "notifyCommunityUserId": "player-1234",
   "types": [
     12
   ]
@@ -71,6 +76,7 @@ $body = @'
 {
   "searchType": "NUMBER",
   "value": "451",
+  "notifyCommunityUserId": "player-1234",
   "types": [12]
 }
 '@

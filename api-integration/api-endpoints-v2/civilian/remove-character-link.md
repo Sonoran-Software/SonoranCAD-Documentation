@@ -1,12 +1,12 @@
 ---
-description: Unlink a sync-character ID from an account or API ID.
+description: Unlink a sync-character ID from a community user, account, or API ID.
 ---
 
 # Remove Character Link
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/civilian/character-links/{syncId}`
 
-Unlink a sync-character ID from an account or API ID.
+Unlink a sync-character ID from a community user, account, or API ID.
 
 ## Path Parameters
 
@@ -16,11 +16,11 @@ Unlink a sync-character ID from an account or API ID.
 
 ## Request Body
 
-Provide exactly one of `accountUuid` or `apiId`.
+Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
 
 ```json
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000"
+  "communityUserId": "player-1234"
 }
 ```
 
@@ -35,7 +35,7 @@ curl --request DELETE \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "accountUuid": "00000000-0000-0000-0000-000000000000"
+  "communityUserId": "player-1234"
 }'
 ```
 {% endtab %}
@@ -50,7 +50,7 @@ const response = await fetch("https://api.sonorancad.com/v2/civilian/character-l
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "accountUuid": "00000000-0000-0000-0000-000000000000"
+  "communityUserId": "player-1234"
 }),
 });
 
@@ -69,7 +69,7 @@ $headers = @{
 
 $body = @'
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000"
+  "communityUserId": "player-1234"
 }
 '@
 

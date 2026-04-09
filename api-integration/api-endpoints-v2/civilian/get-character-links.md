@@ -1,19 +1,20 @@
 ---
-description: Retrieve linked sync-character IDs for an account or API ID.
+description: Retrieve linked sync-character IDs for a community user, account, or API ID.
 ---
 
 # Get Character Links
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/civilian/character-links`
 
-Retrieve linked sync-character IDs for an account or linked API ID.
+Retrieve linked sync-character IDs for a community user, account, or linked API ID.
 
 ## Query Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `accountUuid` or `apiId`. |
-| `apiId` | string | Optional | Target API ID. Provide exactly one of `accountUuid` or `apiId`. |
+| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
+| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
+| `apiId` | string | Optional | Target API ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
 
 ## Example Request
 
@@ -21,7 +22,7 @@ Retrieve linked sync-character IDs for an account or linked API ID.
 {% tab title="cURL" %}
 ```bash
 curl --request GET \
-  --url "https://api.sonorancad.com/v2/civilian/character-links?apiId=steam:110000112345678" \
+  --url "https://api.sonorancad.com/v2/civilian/character-links?communityUserId=player-1234" \
   --header "Authorization: Bearer YOUR_API_KEY" \
   --header "Accept: application/json"
 ```
@@ -29,7 +30,7 @@ curl --request GET \
 
 {% tab title="JavaScript" %}
 ```javascript
-const response = await fetch("https://api.sonorancad.com/v2/civilian/character-links?apiId=steam:110000112345678", {
+const response = await fetch("https://api.sonorancad.com/v2/civilian/character-links?communityUserId=player-1234", {
   method: "GET",
   headers: {
     Authorization: "Bearer YOUR_API_KEY",
@@ -51,7 +52,7 @@ $headers = @{
 
 Invoke-RestMethod `
   -Method Get `
-  -Uri "https://api.sonorancad.com/v2/civilian/character-links?apiId=steam:110000112345678" `
+  -Uri "https://api.sonorancad.com/v2/civilian/character-links?communityUserId=player-1234" `
   -Headers $headers
 ```
 {% endtab %}

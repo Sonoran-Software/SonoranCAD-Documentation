@@ -6,7 +6,7 @@ description: Assign one or more identifiers to a group on a server.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/identifier-groups/{groupName}`
 
-Assign one or more identifiers to a group by `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
 
 ## Path Parameters
 
@@ -17,9 +17,11 @@ Assign one or more identifiers to a group by `accountUuid`, `apiId`, `apiIds`, o
 
 ## Request Body
 
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+
 ```json
 {
-  "identIds": [15, 18]
+  "communityUserIds": ["player-1234"]
 }
 ```
 
@@ -34,7 +36,7 @@ curl --request PUT \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "identIds": [15, 18]
+  "communityUserIds": ["player-1234"]
 }'
 ```
 {% endtab %}
@@ -49,9 +51,8 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "identIds": [
-    15,
-    18
+  "communityUserIds": [
+    "player-1234"
   ]
 }),
 });
@@ -71,7 +72,7 @@ $headers = @{
 
 $body = @'
 {
-  "identIds": [15, 18]
+  "communityUserIds": ["player-1234"]
 }
 '@
 

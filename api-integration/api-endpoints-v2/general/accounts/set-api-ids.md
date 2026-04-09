@@ -10,11 +10,11 @@ Set or append API IDs for a community account.
 
 ## Request Body
 
-Provide exactly one of `username` or `accountUuid`.
+Provide exactly one of `communityUserId`, `username`, or `accountUuid`.
 
 ```json
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "apiIds": ["steam:110000112345678", "license:abc123"],
   "pushNew": true
 }
@@ -31,7 +31,7 @@ curl --request PUT \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "apiIds": ["steam:110000112345678", "license:abc123"],
   "pushNew": true
 }'
@@ -48,7 +48,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/api-ids", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "apiIds": [
     "steam:110000112345678",
     "license:abc123"
@@ -72,7 +72,7 @@ $headers = @{
 
 $body = @'
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "apiIds": ["steam:110000112345678", "license:abc123"],
   "pushNew": true
 }

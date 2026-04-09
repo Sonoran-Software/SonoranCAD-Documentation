@@ -10,12 +10,15 @@ Search records by name and plate values.
 
 ## Request Body
 
+Optional notification routing supports `notifyCommunityUserId`, `notifyAccountUuid`, or `notifyApiId`.
+
 ```json
 {
   "first": "John",
   "last": "Doe",
   "mi": "",
   "plate": "",
+  "notifyCommunityUserId": "player-1234",
   "types": [7, 12],
   "partial": true
 }
@@ -36,6 +39,7 @@ curl --request POST \
   "last": "Doe",
   "mi": "",
   "plate": "",
+  "notifyCommunityUserId": "player-1234",
   "types": [7, 12],
   "partial": true
 }'
@@ -56,6 +60,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/lookups", {
   "last": "Doe",
   "mi": "",
   "plate": "",
+  "notifyCommunityUserId": "player-1234",
   "types": [
     7,
     12
@@ -83,6 +88,7 @@ $body = @'
   "last": "Doe",
   "mi": "",
   "plate": "",
+  "notifyCommunityUserId": "player-1234",
   "types": [7, 12],
   "partial": true
 }

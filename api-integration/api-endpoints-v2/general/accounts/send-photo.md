@@ -1,18 +1,20 @@
 ---
-description: Send a photo URL to active connections for an API ID.
+description: Send a photo URL to active connections for a community user ID or API ID.
 ---
 
 # Send Photo
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/photos`
 
-Send a photo URL to every active connection linked to an API ID.
+Send a photo URL to every active connection linked to a community user ID or API ID.
 
 ## Request Body
 
+Provide one account identifier using `communityUserId` or `apiId`.
+
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "url": "https://cdn.example.com/mugshots/example.png"
 }
 ```
@@ -28,7 +30,7 @@ curl --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "url": "https://cdn.example.com/mugshots/example.png"
 }'
 ```
@@ -44,7 +46,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/photos", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "url": "https://cdn.example.com/mugshots/example.png"
 }),
 });
@@ -64,7 +66,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "url": "https://cdn.example.com/mugshots/example.png"
 }
 '@
@@ -84,7 +86,7 @@ Successful requests return `application/json`.
 
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "delivered": 1
 }
 ```

@@ -10,11 +10,11 @@ Kick an account from the community or apply a community ban.
 
 ## Request Body
 
-Provide exactly one account identifier.
+Provide exactly one account identifier using `communityUserId`, `accountUuid`, or `apiId`.
 
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "isBan": true
 }
 ```
@@ -30,7 +30,7 @@ curl --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "isBan": true
 }'
 ```
@@ -46,7 +46,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/account-bans
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "isBan": true
 }),
 });
@@ -66,7 +66,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "isBan": true
 }
 '@

@@ -6,7 +6,7 @@ description: Set panic state for one or more identifiers.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/panic`
 
-Set the panic state for one or more identifiers resolved by `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
 
 ## Path Parameters
 
@@ -16,9 +16,11 @@ Set the panic state for one or more identifiers resolved by `accountUuid`, `apiI
 
 ## Request Body
 
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+
 ```json
 {
-  "identIds": [15, 18],
+  "communityUserIds": ["player-1234"],
   "isPanic": true
 }
 ```
@@ -34,7 +36,7 @@ curl --request PATCH \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "identIds": [15, 18],
+  "communityUserIds": ["player-1234"],
   "isPanic": true
 }'
 ```
@@ -50,9 +52,8 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "identIds": [
-    15,
-    18
+  "communityUserIds": [
+    "player-1234"
   ],
   "isPanic": true
 }),
@@ -73,7 +74,7 @@ $headers = @{
 
 $body = @'
 {
-  "identIds": [15, 18],
+  "communityUserIds": ["player-1234"],
   "isPanic": true
 }
 '@

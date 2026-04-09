@@ -10,11 +10,11 @@ Create a custom record for a target account.
 
 ## Request Body
 
-Provide exactly one of `accountUuid` or `apiId` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
+Provide exactly one of `communityUserId`, `accountUuid`, or `apiId` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
 
 ```json
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {
@@ -34,7 +34,7 @@ curl --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {
@@ -54,7 +54,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/records", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {
@@ -78,7 +78,7 @@ $headers = @{
 
 $body = @'
 {
-  "accountUuid": "00000000-0000-0000-0000-000000000000",
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {

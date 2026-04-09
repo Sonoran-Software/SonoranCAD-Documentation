@@ -16,7 +16,7 @@ Create a new dispatch call and attach initial units resolved from account UUIDs 
 
 ## Request Body
 
-The backend requires at least one identifier target through `accounts` or `apiIds`.
+The backend requires at least one identifier target through `communityUserIds`, `accounts`, or `apiIds`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ The backend requires at least one identifier target through `accounts` or `apiId
 | `code` | string | Yes | Call code such as `211`. |
 | `description` | string | Yes | Full call description. |
 | `notes` | array | Yes | Initial note objects to store on the call. |
+| `communityUserIds` | array of strings | No | Linked community users whose active identifiers should be attached. |
 | `accounts` | array of strings (uuid) | No | Accounts whose selected identifiers should be attached. |
 | `apiIds` | array of strings | No | API IDs whose active identifiers should be attached. |
 | `metaData` | object | No | Arbitrary string key/value metadata. |
@@ -47,7 +48,7 @@ The backend requires at least one identifier target through `accounts` or `apiId
   "code": "211",
   "description": "Clerk reports a firearm.",
   "notes": [],
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "metaData": {
     "source": "integration"
   }
@@ -75,7 +76,7 @@ curl --request POST \
   "code": "211",
   "description": "Clerk reports a firearm.",
   "notes": [],
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "metaData": {
     "source": "integration"
   }
@@ -103,8 +104,8 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
   "code": "211",
   "description": "Clerk reports a firearm.",
   "notes": [],
-  "apiIds": [
-    "steam:110000112345678"
+  "communityUserIds": [
+    "player-1234"
   ],
   "metaData": {
     "source": "integration"
@@ -137,7 +138,7 @@ $body = @'
   "code": "211",
   "description": "Clerk reports a firearm.",
   "notes": [],
-  "apiIds": ["steam:110000112345678"],
+  "communityUserIds": ["player-1234"],
   "metaData": {
     "source": "integration"
   }

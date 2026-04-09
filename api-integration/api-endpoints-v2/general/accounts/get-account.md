@@ -1,5 +1,5 @@
 ---
-description: Retrieve a single community account by account UUID, API ID, or username.
+description: Retrieve a single community account by community user ID, account UUID, API ID, or username.
 ---
 
 # Get Account
@@ -12,6 +12,7 @@ Return a single community account record.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
+| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one identifier. |
 | `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one identifier. |
 | `apiId` | string | Optional | Target API ID. Provide exactly one identifier. |
 | `username` | string | Optional | Target username. Provide exactly one identifier. |
@@ -22,7 +23,7 @@ Return a single community account record.
 {% tab title="cURL" %}
 ```bash
 curl --request GET \
-  --url "https://api.sonorancad.com/v2/general/accounts/account?username=ExampleUser" \
+  --url "https://api.sonorancad.com/v2/general/accounts/account?communityUserId=player-1234" \
   --header "Authorization: Bearer YOUR_API_KEY" \
   --header "Accept: application/json"
 ```
@@ -30,7 +31,7 @@ curl --request GET \
 
 {% tab title="JavaScript" %}
 ```javascript
-const response = await fetch("https://api.sonorancad.com/v2/general/accounts/account?username=ExampleUser", {
+const response = await fetch("https://api.sonorancad.com/v2/general/accounts/account?communityUserId=player-1234", {
   method: "GET",
   headers: {
     Authorization: "Bearer YOUR_API_KEY",
@@ -52,7 +53,7 @@ $headers = @{
 
 Invoke-RestMethod `
   -Method Get `
-  -Uri "https://api.sonorancad.com/v2/general/accounts/account?username=ExampleUser" `
+  -Uri "https://api.sonorancad.com/v2/general/accounts/account?communityUserId=player-1234" `
   -Headers $headers
 ```
 {% endtab %}
@@ -66,6 +67,7 @@ Successful requests return `application/json`.
 {
   "uuid": "00000000-0000-0000-0000-000000000000",
   "username": "ExampleUser",
+  "communityUserId": "player-1234",
   "status": 1,
   "joined": "2026-01-14T18:22:00Z",
   "lastLogin": "2026-04-08T20:55:00Z",

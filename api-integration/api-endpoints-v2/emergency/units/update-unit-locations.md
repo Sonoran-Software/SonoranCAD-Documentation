@@ -16,11 +16,13 @@ Queue and broadcast one or more unit location updates.
 
 ## Request Body
 
+Each update can target a unit with `communityUserId` or `apiId`.
+
 ```json
 {
   "updates": [
     {
-      "apiId": "steam:110000112345678",
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -51,7 +53,7 @@ curl --request PATCH \
   --data '{
   "updates": [
     {
-      "apiId": "steam:110000112345678",
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -82,7 +84,7 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
   body: JSON.stringify({
   "updates": [
     {
-      "apiId": "steam:110000112345678",
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -117,7 +119,7 @@ $body = @'
 {
   "updates": [
     {
-      "apiId": "steam:110000112345678",
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,

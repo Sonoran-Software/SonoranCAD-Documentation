@@ -1,18 +1,20 @@
 ---
-description: Apply a permission key to an account resolved by API ID.
+description: Apply a permission key to an account resolved by community user ID or API ID.
 ---
 
 # Apply Permission Key
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/permission-keys/applications`
 
-Apply a Sonoran CAD permission key to the account linked to an API ID.
+Apply a Sonoran CAD permission key to the account linked to a community user ID or API ID.
 
 ## Request Body
 
+Provide one account identifier using `communityUserId` or `apiId`.
+
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "permissionKey": "YOUR_PERMISSION_KEY"
 }
 ```
@@ -28,7 +30,7 @@ curl --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "permissionKey": "YOUR_PERMISSION_KEY"
 }'
 ```
@@ -44,7 +46,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/permission-k
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "permissionKey": "YOUR_PERMISSION_KEY"
 }),
 });
@@ -64,7 +66,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "permissionKey": "YOUR_PERMISSION_KEY"
 }
 '@

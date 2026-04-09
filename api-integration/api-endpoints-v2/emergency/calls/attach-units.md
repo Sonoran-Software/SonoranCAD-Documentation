@@ -17,11 +17,11 @@ Attach identifiers or a group to a dispatch call.
 
 ## Request Body
 
-Provide either `groupName` or one or more identifier targets.
+Provide either `groupName` or one or more identifier targets. Identifier targets can include `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
 
 ```json
 {
-  "identIds": [12, 18]
+  "communityUserIds": ["player-1234"]
 }
 ```
 
@@ -36,7 +36,7 @@ curl --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "identIds": [12, 18]
+  "communityUserIds": ["player-1234"]
 }'
 ```
 {% endtab %}
@@ -51,9 +51,8 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "identIds": [
-    12,
-    18
+  "communityUserIds": [
+    "player-1234"
   ]
 }),
 });
@@ -73,7 +72,7 @@ $headers = @{
 
 $body = @'
 {
-  "identIds": [12, 18]
+  "communityUserIds": ["player-1234"]
 }
 '@
 

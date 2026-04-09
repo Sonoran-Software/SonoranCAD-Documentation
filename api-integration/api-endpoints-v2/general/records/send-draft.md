@@ -10,13 +10,15 @@ Build a draft record from a template and, when a target account is provided, sen
 
 ## Request Body
 
+You can optionally route the draft to a connected user with `communityUserId`, `accountUuid`, or `apiId`.
+
 ```json
 {
   "recordTypeId": 12,
   "replaceValues": {
     "{{plate}}": "ABC123"
   },
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }
 ```
 
@@ -35,7 +37,7 @@ curl --request POST \
   "replaceValues": {
     "{{plate}}": "ABC123"
   },
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }'
 ```
 {% endtab %}
@@ -54,7 +56,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/record-draft
   "replaceValues": {
     "{{plate}}": "ABC123"
   },
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }),
 });
 
@@ -77,7 +79,7 @@ $body = @'
   "replaceValues": {
     "{{plate}}": "ABC123"
   },
-  "apiId": "steam:110000112345678"
+  "communityUserId": "player-1234"
 }
 '@
 

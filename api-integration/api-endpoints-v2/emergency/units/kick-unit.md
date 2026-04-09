@@ -1,12 +1,12 @@
 ---
-description: Force a unit offline by API ID.
+description: Force a unit offline by community user ID or API ID.
 ---
 
 # Kick Unit
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/kick`
 
-Force the currently selected identifier for an API ID offline.
+Force the currently selected identifier for a community user ID or API ID offline.
 
 ## Path Parameters
 
@@ -16,9 +16,11 @@ Force the currently selected identifier for an API ID offline.
 
 ## Request Body
 
+Provide one identifier using `communityUserId` or `apiId`.
+
 ```json
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "reason": "Connection reset by integration"
 }
 ```
@@ -34,7 +36,7 @@ curl --request DELETE \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "reason": "Connection reset by integration"
 }'
 ```
@@ -50,7 +52,7 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "reason": "Connection reset by integration"
 }),
 });
@@ -70,7 +72,7 @@ $headers = @{
 
 $body = @'
 {
-  "apiId": "steam:110000112345678",
+  "communityUserId": "player-1234",
   "reason": "Connection reset by integration"
 }
 '@

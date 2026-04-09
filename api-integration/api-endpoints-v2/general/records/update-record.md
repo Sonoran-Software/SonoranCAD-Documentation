@@ -16,10 +16,11 @@ Update a custom record with either a full `record` payload or template replaceme
 
 ## Request Body
 
-Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`.
+Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId`, `accountUuid`, or `apiId`.
 
 ```json
 {
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
@@ -39,6 +40,7 @@ curl --request PATCH \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
@@ -58,6 +60,7 @@ const response = await fetch("https://api.sonorancad.com/v2/general/records/451"
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
@@ -81,6 +84,7 @@ $headers = @{
 
 $body = @'
 {
+  "communityUserId": "player-1234",
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
