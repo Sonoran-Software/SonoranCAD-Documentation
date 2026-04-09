@@ -24,6 +24,14 @@ The v2 general account endpoints handle API IDs, account lookup, permissions, se
 [set-api-ids](set-api-ids.md)
 {% endcontent-ref %}
 
+{% content-ref url="create-community-link.md" %}
+[create-community-link](create-community-link.md)
+{% endcontent-ref %}
+
+{% content-ref url="check-community-link.md" %}
+[check-community-link](check-community-link.md)
+{% endcontent-ref %}
+
 {% content-ref url="get-account.md" %}
 [get-account](get-account.md)
 {% endcontent-ref %}
