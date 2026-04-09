@@ -25,6 +25,24 @@ description: Delete one or more custom blips.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.deleteBlipsV2([32], 1);
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request DELETE \

@@ -36,6 +36,31 @@ Trigger the station alert system by sending a station alert event to the configu
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.triggerStationAlertV2({
+    locations: [
+      { name: 'Fire Station One', open: ['Door 1'], close: ['Door 2'] },
+    ],
+    message: 'Structure fire at 101 Alta Street',
+    colors: ['blue', 'red'],
+    tone: 'tone1',
+  }, 1);
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

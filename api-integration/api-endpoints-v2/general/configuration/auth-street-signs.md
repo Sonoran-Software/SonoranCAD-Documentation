@@ -17,6 +17,24 @@ Validate that the requesting IP address matches the configured smart-sign server
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.authorizeStreetSignsV2(1);
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

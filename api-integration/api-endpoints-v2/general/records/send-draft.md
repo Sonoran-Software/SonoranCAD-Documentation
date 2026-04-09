@@ -25,6 +25,28 @@ You can optionally route the draft to a connected user with `communityUserId` or
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.sendRecordDraftV2({
+    recordTypeId: 1,
+    replaceValues: { firstName: 'John', lastName: 'Doe' },
+    apiId: '1234567890',
+  });
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

@@ -57,6 +57,36 @@ The backend requires at least one identifier target through `communityUserIds` o
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.createDispatchCallV2({
+    serverId: 1,
+    origin: 1,
+    status: 1,
+    priority: 1,
+    block: '101',
+    address: 'Alta Street',
+    postal: '100',
+    title: 'Structure Fire',
+    code: 'FIRE',
+    description: 'Visible smoke from the roof.',
+    notes: [],
+  });
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

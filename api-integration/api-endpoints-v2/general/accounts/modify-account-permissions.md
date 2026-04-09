@@ -23,6 +23,28 @@ Provide exactly one account identifier using `communityUserId`, `accountUuid`, o
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.setAccountPermissionsV2({
+    accountUuid: '00000000-0000-0000-0000-000000000000',
+    add: ['DISPATCH'],
+    remove: ['CIVILIAN'],
+  });
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request PATCH \

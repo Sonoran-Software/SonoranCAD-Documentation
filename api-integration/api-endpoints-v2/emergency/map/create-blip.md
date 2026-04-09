@@ -41,6 +41,32 @@ description: Create a custom blip.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.createBlipV2({
+    serverId: 1,
+    coordinates: { x: 425.1, y: -979.2, z: 30.7, w: 0 },
+    subType: 'radius',
+    icon: 'fire',
+    color: '#ff0000',
+    tooltip: 'Structure Fire',
+    radius: 25,
+  });
+  console.log(response);
+})();
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
