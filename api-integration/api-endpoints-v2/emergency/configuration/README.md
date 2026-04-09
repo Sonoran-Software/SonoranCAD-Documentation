@@ -20,6 +20,14 @@ Use these endpoints to update emergency-specific configuration for a server.
 [set-callouts](set-callouts.md)
 {% endcontent-ref %}
 
+{% content-ref url="trigger-pager-system.md" %}
+[trigger-pager-system](trigger-pager-system.md)
+{% endcontent-ref %}
+
 {% content-ref url="set-stations.md" %}
 [set-stations](set-stations.md)
+{% endcontent-ref %}
+
+{% content-ref url="trigger-station-alert.md" %}
+[trigger-station-alert](trigger-station-alert.md)
 {% endcontent-ref %}
