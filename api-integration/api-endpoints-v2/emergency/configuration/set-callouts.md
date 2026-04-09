@@ -119,37 +119,33 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-  "callouts": [
-    {
-      "id": "armed_suspect",
-      "data": {
-        "PedActionOnNoActionFound": "Flee",
-        "PedActionMinimumTimeoutInMs": 2000,
-        "PedChanceToFleeFromPlayer": 50,
-        "PedChanceToObtainWeapons": 30,
-        "CalloutName": "Armed Suspect",
-        "CalloutDescriptions": [
-          "Reports of an armed suspect in the area."
-        ],
-        "PedChanceToAttackPlayer": 20,
-        "PedActionMaximumTimeoutInMs": 10000,
-        "Enabled": true,
-        "CalloutLocations": [],
-        "PedChanceToSurrender": 30,
-        "PedWeaponData": [
-          "WEAPON_PISTOL"
-        ],
-        "CalloutUnitsRequired": {
-          "towRequired": false,
-          "fireRequired": false,
-          "description": "Single suspect, use caution.",
-          "policeRequired": true,
-          "ambulanceRequired": false
-        }
-      }
-    }
-  ]
-}),
+    callouts: [
+      {
+        id: "armed_suspect",
+        data: {
+          PedActionOnNoActionFound: "Flee",
+          PedActionMinimumTimeoutInMs: 2000,
+          PedChanceToFleeFromPlayer: 50,
+          PedChanceToObtainWeapons: 30,
+          CalloutName: "Armed Suspect",
+          CalloutDescriptions: ["Reports of an armed suspect in the area."],
+          PedChanceToAttackPlayer: 20,
+          PedActionMaximumTimeoutInMs: 10000,
+          Enabled: true,
+          CalloutLocations: [],
+          PedChanceToSurrender: 30,
+          PedWeaponData: ["WEAPON_PISTOL"],
+          CalloutUnitsRequired: {
+            towRequired: false,
+            fireRequired: false,
+            description: "Single suspect, use caution.",
+            policeRequired: true,
+            ambulanceRequired: false,
+          },
+        },
+      },
+    ],
+  }),
 });
 
 const data = await response.json();
