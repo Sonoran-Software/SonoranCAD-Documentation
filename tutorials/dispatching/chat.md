@@ -16,7 +16,7 @@ The **Chat** window can be found under the **Taskbar** > **Unit Management** > *
 
 Additionally, it can be found by searching for **Chat** in the taskbar search.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="201"><figcaption></figcaption></figure>
 
 ### Creating a Chat
 

@@ -87,3 +87,13 @@ Successful requests return `application/json`.
   "expiresInSeconds": 600
 }
 ```
+
+## Linking Account
+
+Once a link code is created, direct the user to `sonorancad.com/id?code=ENTERCODEHERE`.
+
+If the user is not logged in, they will be automatically redirected. The 4-digit code will be automatically entered into the ID page, processed, and the user's `communityUserId` will be linked to the community account.
+
+Once linked, the `communityUserId` parameter can be used with any applicable v2 API endpoint.
+
+<div><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>

@@ -113,7 +113,7 @@ When sending a new tone, toggle `repeat` on and customize the `seconds` and `cou
 
 Toggle the **Stack** icon on and select multiple tones to be played in order. Drag-and-drop the tones to re-order. Press the **Play** button to play the stack.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Text-to-Speech
 
@@ -121,5 +121,5 @@ The tone board can also play text-to-speech to users. Enter text into the **Text
 
 Additionally, you can select the **Microphone** button to record your own voice and translate that to text before sending out the speech-to-text tone.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
