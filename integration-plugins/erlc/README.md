@@ -19,6 +19,6 @@ Sonoran CAD offers the most immersive, free ER:LC integrations available. Comple
 
 Integrating your ER:LC server is simple! Click below to learn more.
 
-{% content-ref url="../../tutorials/getting-started/" %}
-[getting-started](../../tutorials/getting-started/)
+{% content-ref url="getting-started.md" %}
+[getting-started.md](getting-started.md)
 {% endcontent-ref %}
