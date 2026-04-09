@@ -6,7 +6,7 @@ description: Create a new dispatch call.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/dispatch-calls`
 
-Create a new dispatch call and attach initial units resolved from account UUIDs or API IDs.
+Create a new dispatch call and attach initial units resolved from community user IDs or account UUIDs.
 
 ## Path Parameters
 
@@ -16,7 +16,7 @@ Create a new dispatch call and attach initial units resolved from account UUIDs 
 
 ## Request Body
 
-The backend requires at least one identifier target through `communityUserIds`, `accounts`, or `apiIds`.
+The backend requires at least one identifier target through `communityUserIds` or `accounts`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -32,7 +32,6 @@ The backend requires at least one identifier target through `communityUserIds`, 
 | `notes` | array | Yes | Initial note objects to store on the call. |
 | `communityUserIds` | array of strings | No | Linked community users whose active identifiers should be attached. |
 | `accounts` | array of strings (uuid) | No | Accounts whose selected identifiers should be attached. |
-| `apiIds` | array of strings | No | API IDs whose active identifiers should be attached. |
 | `metaData` | object | No | Arbitrary string key/value metadata. |
 | `deleteAfterMinutes` | integer | No | Schedule automatic deletion after creation. |
 

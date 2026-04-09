@@ -1,16 +1,16 @@
 ---
-description: Apply a permission key to an account resolved by community user ID or API ID.
+description: Apply a permission key to an account resolved by community user ID.
 ---
 
 # Apply Permission Key
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/permission-keys/applications`
 
-Apply a Sonoran CAD permission key to the account linked to a community user ID or API ID.
+Apply a Sonoran CAD permission key to the account linked to a community user ID.
 
 ## Request Body
 
-Provide one account identifier using `communityUserId` or `apiId`.
+Provide the target account with `communityUserId`.
 
 ```json
 {

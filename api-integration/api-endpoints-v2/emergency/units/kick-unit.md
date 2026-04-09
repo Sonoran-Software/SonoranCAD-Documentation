@@ -1,12 +1,12 @@
 ---
-description: Force a unit offline by community user ID or API ID.
+description: Force a unit offline by community user ID.
 ---
 
 # Kick Unit
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/kick`
 
-Force the currently selected identifier for a community user ID or API ID offline.
+Force the currently selected identifier for a community user ID offline.
 
 ## Path Parameters
 
@@ -16,7 +16,7 @@ Force the currently selected identifier for a community user ID or API ID offlin
 
 ## Request Body
 
-Provide one identifier using `communityUserId` or `apiId`.
+Provide the target unit with `communityUserId`.
 
 ```json
 {

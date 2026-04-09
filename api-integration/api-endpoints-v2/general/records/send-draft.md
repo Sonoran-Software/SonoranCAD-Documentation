@@ -10,7 +10,7 @@ Build a draft record from a template and, when a target account is provided, sen
 
 ## Request Body
 
-You can optionally route the draft to a connected user with `communityUserId`, `accountUuid`, or `apiId`.
+You can optionally route the draft to a connected user with `communityUserId` or `accountUuid`.
 
 ```json
 {

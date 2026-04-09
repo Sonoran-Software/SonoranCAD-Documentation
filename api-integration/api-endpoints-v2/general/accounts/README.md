@@ -4,13 +4,9 @@ description: v2 general account and identity endpoints.
 
 # Accounts
 
-The v2 general account endpoints handle API IDs, account lookup, permissions, secrets, and account-targeted actions.
+The v2 general account endpoints handle account lookup, permissions, secrets, account links, and account-targeted actions.
 
 ## Endpoints
-
-{% content-ref url="check-api-id.md" %}
-[check-api-id](check-api-id.md)
-{% endcontent-ref %}
 
 {% content-ref url="apply-permission-key.md" %}
 [apply-permission-key](apply-permission-key.md)

@@ -6,7 +6,7 @@ description: Set status for one or more identifiers.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/status`
 
-Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -16,15 +16,13 @@ Set a new unit status for one or more identifiers resolved by `communityUserId`,
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 | `communityUserId` | string | No | Updates all active identifiers for one linked community user. |
 | `communityUserIds` | array of strings | No | Updates all active identifiers for multiple linked community users. |
 | `accountUuid` | string (uuid) | No | Updates all active identifiers for the target account. |
-| `apiId` | string | No | Resolves the current active identifier for one API ID. |
-| `apiIds` | array of strings | No | Resolves active identifiers for multiple API IDs. |
 | `identIds` | array of integers | No | Directly target one or more identifier IDs. |
 | `status` | integer | Yes | Unit status enum. See `UNIT_STATUS` below. |
 

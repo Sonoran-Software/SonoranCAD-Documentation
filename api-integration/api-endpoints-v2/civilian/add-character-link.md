@@ -1,12 +1,12 @@
 ---
-description: Link a sync-character ID to a community user, account, or API ID.
+description: Link a sync-character ID to a community user or account.
 ---
 
 # Add Character Link
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/civilian/character-links/{syncId}`
 
-Link a sync-character ID to a community user, account, or API ID.
+Link a sync-character ID to a community user or account.
 
 ## Path Parameters
 
@@ -16,7 +16,7 @@ Link a sync-character ID to a community user, account, or API ID.
 
 ## Request Body
 
-Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
+Provide exactly one of `communityUserId` or `accountUuid`.
 
 ```json
 {

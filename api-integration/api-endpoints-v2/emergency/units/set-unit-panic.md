@@ -6,7 +6,7 @@ description: Set panic state for one or more identifiers.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/panic`
 
-Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -16,7 +16,7 @@ Set the panic state for one or more identifiers resolved by `communityUserId`, `
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ```json
 {

@@ -1,20 +1,19 @@
 ---
-description: Retrieve characters for a community user, account, or API ID.
+description: Retrieve characters for a community user or account.
 ---
 
 # Get Characters
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/civilian/characters`
 
-Retrieve characters for a Sonoran CAD account using a community user ID, account UUID, or linked API ID.
+Retrieve characters for a Sonoran CAD account using a community user ID or account UUID.
 
 ## Query Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
-| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
-| `apiId` | string | Optional | Target API ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
+| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`. |
+| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`. |
 
 ## Example Request
 

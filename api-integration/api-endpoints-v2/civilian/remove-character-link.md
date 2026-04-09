@@ -1,12 +1,12 @@
 ---
-description: Unlink a sync-character ID from a community user, account, or API ID.
+description: Unlink a sync-character ID from a community user or account.
 ---
 
 # Remove Character Link
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/civilian/character-links/{syncId}`
 
-Unlink a sync-character ID from a community user, account, or API ID.
+Unlink a sync-character ID from a community user or account.
 
 ## Path Parameters
 
@@ -16,7 +16,7 @@ Unlink a sync-character ID from a community user, account, or API ID.
 
 ## Request Body
 
-Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
+Provide exactly one of `communityUserId` or `accountUuid`.
 
 ```json
 {

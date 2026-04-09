@@ -6,7 +6,7 @@ description: Assign one or more identifiers to a group on a server.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/identifier-groups/{groupName}`
 
-Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -17,7 +17,7 @@ Assign one or more identifiers to a group by `communityUserId`, `communityUserId
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ```json
 {

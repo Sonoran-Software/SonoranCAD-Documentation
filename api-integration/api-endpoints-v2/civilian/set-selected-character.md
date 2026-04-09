@@ -1,5 +1,5 @@
 ---
-description: Set the selected character for a community user, account, or API ID.
+description: Set the selected character for a community user or account.
 ---
 
 # Set Selected Character
@@ -10,7 +10,7 @@ Set the selected character or selected sync character for an account.
 
 ## Request Body
 
-Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`.
+Provide exactly one of `communityUserId` or `accountUuid`.
 
 ```json
 {

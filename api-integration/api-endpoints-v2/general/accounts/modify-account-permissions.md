@@ -10,7 +10,7 @@ Update permissions for a community account and optionally set its active status.
 
 ## Request Body
 
-Provide exactly one account identifier using `communityUserId`, `accountUuid`, `apiId`, or `username`.
+Provide exactly one account identifier using `communityUserId`, `accountUuid`, or `username`.
 
 ```json
 {

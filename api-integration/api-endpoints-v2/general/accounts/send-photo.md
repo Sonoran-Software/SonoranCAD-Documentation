@@ -1,16 +1,16 @@
 ---
-description: Send a photo URL to active connections for a community user ID or API ID.
+description: Send a photo URL to active connections for a community user ID.
 ---
 
 # Send Photo
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/photos`
 
-Send a photo URL to every active connection linked to a community user ID or API ID.
+Send a photo URL to every active connection linked to a community user ID.
 
 ## Request Body
 
-Provide one account identifier using `communityUserId` or `apiId`.
+Provide the target account with `communityUserId`.
 
 ```json
 {

@@ -16,7 +16,7 @@ Queue and broadcast one or more unit location updates.
 
 ## Request Body
 
-Each update can target a unit with `communityUserId` or `apiId`.
+Each update can target a unit with `communityUserId`.
 
 ```json
 {

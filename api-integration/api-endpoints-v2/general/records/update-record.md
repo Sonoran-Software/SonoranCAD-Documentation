@@ -16,7 +16,7 @@ Update a custom record with either a full `record` payload or template replaceme
 
 ## Request Body
 
-Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId`, `accountUuid`, or `apiId`.
+Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId` or `accountUuid`.
 
 ```json
 {

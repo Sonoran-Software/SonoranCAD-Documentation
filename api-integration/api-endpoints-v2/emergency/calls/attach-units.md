@@ -17,7 +17,7 @@ Attach identifiers or a group to a dispatch call.
 
 ## Request Body
 
-Provide either `groupName` or one or more identifier targets. Identifier targets can include `communityUserId`, `communityUserIds`, `accountUuid`, `apiId`, `apiIds`, or `identIds`.
+Provide either `groupName` or one or more identifier targets. Identifier targets can include `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ```json
 {

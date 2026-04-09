@@ -1,5 +1,5 @@
 ---
-description: Retrieve a single community account by community user ID, account UUID, API ID, or username.
+description: Retrieve a single community account by community user ID, account UUID, or username.
 ---
 
 # Get Account
@@ -14,7 +14,6 @@ Return a single community account record.
 | --- | --- | --- | --- |
 | `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one identifier. |
 | `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one identifier. |
-| `apiId` | string | Optional | Target API ID. Provide exactly one identifier. |
 | `username` | string | Optional | Target username. Provide exactly one identifier. |
 
 ## Example Request

@@ -1,20 +1,19 @@
 ---
-description: Retrieve linked sync-character IDs for a community user, account, or API ID.
+description: Retrieve linked sync-character IDs for a community user or account.
 ---
 
 # Get Character Links
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/civilian/character-links`
 
-Retrieve linked sync-character IDs for a community user, account, or linked API ID.
+Retrieve linked sync-character IDs for a community user or account.
 
 ## Query Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
-| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
-| `apiId` | string | Optional | Target API ID. Provide exactly one of `communityUserId`, `accountUuid`, or `apiId`. |
+| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`. |
+| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`. |
 
 ## Example Request
 

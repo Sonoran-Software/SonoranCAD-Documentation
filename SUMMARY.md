@@ -311,7 +311,6 @@
       * [Remove Character Link](api-integration/api-endpoints-v2/civilian/remove-character-link.md)
     * [General](api-integration/api-endpoints-v2/general/README.md)
       * [Accounts](api-integration/api-endpoints-v2/general/accounts/README.md)
-        * [Check API ID](api-integration/api-endpoints-v2/general/accounts/check-api-id.md)
         * [Apply Permission Key](api-integration/api-endpoints-v2/general/accounts/apply-permission-key.md)
         * [Kick Or Ban User](api-integration/api-endpoints-v2/general/accounts/ban-user.md)
         * [Set API IDs](api-integration/api-endpoints-v2/general/accounts/set-api-ids.md)

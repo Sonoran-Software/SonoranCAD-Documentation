@@ -10,7 +10,7 @@ Kick an account from the community or apply a community ban.
 
 ## Request Body
 
-Provide exactly one account identifier using `communityUserId`, `accountUuid`, or `apiId`.
+Provide exactly one account identifier using `communityUserId` or `accountUuid`.
 
 ```json
 {

@@ -10,7 +10,7 @@ Create a custom record for a target account.
 
 ## Request Body
 
-Provide exactly one of `communityUserId`, `accountUuid`, or `apiId` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
+Provide exactly one of `communityUserId` or `accountUuid` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
 
 ```json
 {
