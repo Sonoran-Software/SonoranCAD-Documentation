@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.42.1 04/10/2026
+
+{% tabs %}
+{% tab title="Fixed" %}
+Stream Deck Port Binding
+
+* Fixed an issue with the desktop app sometimes resulting in a port error message displaying from the Stream Deck plugin
+{% endtab %}
+
+{% endtabs %}
 ### 3.42.0 04/02/2026
 
 {% tabs %}
