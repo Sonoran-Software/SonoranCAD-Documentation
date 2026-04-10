@@ -22,6 +22,49 @@ https://api.sonorancad.com
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:getUnitsV2({
+  onlyUnits = true,
+  includeOffline = false
+})
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
+
+{% tab title="Sonoran.js" %}
+```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+(async () => {
+  const instance = new Sonoran.Instance({
+    communityId: 'YOUR_COMMUNITY_ID',
+    apiKey: 'YOUR_API_KEY',
+    product: Sonoran.productEnums.CAD,
+    serverId: 1,
+  });
+
+  const response = await instance.cad.getUnitsV2({
+    onlyUnits: true,
+    includeOffline: false,
+  });
+  console.log(response);
+})();
+```
+{% endtab %}
+
 {% tab title="cURL" %}
 ```bash
 curl --request GET \
