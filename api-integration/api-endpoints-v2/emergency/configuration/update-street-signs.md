@@ -28,6 +28,29 @@ description: Update text on one or more configured street signs.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:updateStreetSignsV2({
+    serverId = 1,
+    ids = {1},
+    text1 = 'ALTA',
+    text2 = 'ST',
+    text3 = '',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

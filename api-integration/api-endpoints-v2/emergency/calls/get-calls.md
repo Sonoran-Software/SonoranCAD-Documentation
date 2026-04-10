@@ -25,6 +25,28 @@ Retrieve dispatch calls, emergency calls, and recent closed calls.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:getCallsV2({
+    serverId = 1,
+    closedLimit = 10,
+    closedOffset = 0,
+    type = 100,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

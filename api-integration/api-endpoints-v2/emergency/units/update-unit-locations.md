@@ -43,6 +43,32 @@ Each update can target a unit with `communityUserId`.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:updateUnitLocationsV2({
+    serverId = 1,
+    updates = {
+      {
+        apiId = '1234567890',
+        location = 'Mission Row',
+        coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
+      },
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

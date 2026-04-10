@@ -51,6 +51,30 @@ All identifier properties are optional in the backend. If omitted, the server us
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:createIdentifierV2('00000000-0000-0000-0000-000000000000', {
+    status = 0,
+    unitNum = '1A-01',
+    name = 'John Doe',
+    department = 'Police',
+    subdivision = 'Patrol',
+    rank = 'Officer',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

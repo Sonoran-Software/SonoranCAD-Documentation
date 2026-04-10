@@ -28,6 +28,28 @@ description: Add a note to a dispatch call.
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:addDispatchNoteV2(501, {
+    serverId = 1,
+    note = 'Caller updated with additional suspect info.',
+    noteType = 'text',
+    label = 'Dispatcher',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

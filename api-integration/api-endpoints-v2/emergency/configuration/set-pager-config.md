@@ -43,6 +43,44 @@ Replace the Inferno pager configuration for a server. If `nodes` is omitted, Son
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:setPagerConfigV2({
+    serverId = 1,
+    natureWords = {
+      Emergency = 'Emergency',
+      NonEmergency = 'Non-Emergency',
+      Administrative = 'Administrative',
+    },
+    maxAddresses = 5,
+    maxBodyLength = 250,
+    nodes = {
+      {
+        id = 'root-1',
+        name = 'Fire',
+        description = 'Fire services',
+        permission = 'fire',
+        address = 'FIRE-01',
+        shortCode = 'F1',
+        kind = 'group',
+        children = {},
+      },
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

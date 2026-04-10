@@ -57,6 +57,35 @@ The backend requires at least one identifier target through `communityUserIds` o
 ## Example Request
 
 {% tabs %}
+{% tab title="Sonoran.lua" %}
+```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
+local response = sonoran:createDispatchCallV2({
+    serverId = 1,
+    origin = 1,
+    status = 1,
+    priority = 1,
+    block = '101',
+    address = 'Alta Street',
+    postal = '100',
+    title = 'Structure Fire',
+    code = 'FIRE',
+    description = 'Visible smoke from the roof.',
+    notes = {},
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
