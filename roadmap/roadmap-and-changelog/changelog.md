@@ -10,6 +10,58 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.42.0 04/10/2026
+
+{% tabs %}
+{% tab title="New" %}
+RapidIQ
+
+* Added RapidIQ, a medical emergency flow system in the call editor with additional flow customization in the admin panel.
+
+Rapid IQ Address Import
+
+* Rapid IQ will now add the call address to the call editor automatically
+
+Bodycam Improvements
+
+* Added a toggleable bodycam overlay + video effects
+
+ER:LC Civilian Automatic Vehicle Registration
+
+* Added a new button in the civilian panel to automatically register your in-game vehicle.
+
+ER:LC Plate API
+
+* TODO, a lot of things
+
+Tone Board TTS and Stacks
+
+* Added stacked tones and TTS support
+
+Overlay Self Dispatch Permissions
+
+* Fixed an issue where users without the self-dispatch permission but on the dispatch page were unable to toggle the overlay's include emergency calls button
+
+Select Microphone Input
+
+* Added a new settings option to select the microphone device used in the tone board speech-to-text
+
+ERLC Landing Page
+
+* Added a landing page for ER:LC information
+{% endtab %}
+
+{% tab title="Fixed" %}
+Record Draft Community Specific
+
+* Fixed an issue where record drafts would show in all communities instead of being specific to the community the draft was started in
+
+Unit Goups - Bodycam
+
+* Fixed an issue where units in groups viewed in card mode would not show a bodycam preview icon
+{% endtab %}
+
+{% endtabs %}
 ### 3.42.0 04/02/2026
 
 {% tabs %}
