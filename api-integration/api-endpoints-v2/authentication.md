@@ -138,3 +138,27 @@ Example:
 | `401` | `Authorization` header is not using the `Bearer` scheme |
 | `401` | API key is invalid |
 | `404` | The requested `serverId` is not configured for the authenticated community |
+
+## Rate Limits
+
+All v2 endpoints are rate limited per API key. Limits vary by endpoint, so check the individual endpoint page for the current enforced limit.
+
+When a request is rate limited, the API returns `429 Too Many Requests`.
+
+Example:
+
+```json
+{
+  "message": "API rate limit exceeded",
+  "request_id": "9457fb389b3729164e453e4db4328909"
+}
+```
+
+If the gateway provides a `Retry-After` header, your client should wait that long before retrying.
+
+Our official libraries already help with this:
+
+- [`Sonoran.js`](https://github.com/Sonoran-Software/Sonoran.js) automatically retries v2 CAD requests on `429` responses up to 2 times.
+- [`Sonoran.lua`](https://github.com/Sonoran-Software/Sonoran.Lua) automatically retries v2 CAD requests on `429` responses up to 2 times.
+
+These retries are intentionally limited. High-frequency integrations should still avoid bursty request patterns and should respect the published per-endpoint limits.
