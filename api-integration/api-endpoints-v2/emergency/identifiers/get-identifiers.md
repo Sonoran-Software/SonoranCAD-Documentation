@@ -6,6 +6,9 @@ description: Retrieve identifiers for an account.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/identifiers`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve the selected identifier and all identifiers for an account.
 
 ## Path Parameters

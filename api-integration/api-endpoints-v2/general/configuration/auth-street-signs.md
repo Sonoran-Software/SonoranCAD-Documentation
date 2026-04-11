@@ -6,6 +6,9 @@ description: Validate a street-sign request against the configured server ID and
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/servers/{serverId}/street-sign-auth`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Validate that the requesting IP address matches the configured smart-sign server entry.
 
 ## Path Parameters

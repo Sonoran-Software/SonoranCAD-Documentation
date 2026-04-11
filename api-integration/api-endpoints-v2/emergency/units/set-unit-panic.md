@@ -6,6 +6,9 @@ description: Set panic state for one or more identifiers.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/panic`
 
+> **Rate limit:** `20 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ## Path Parameters

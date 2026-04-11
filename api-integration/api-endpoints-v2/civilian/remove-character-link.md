@@ -6,6 +6,9 @@ description: Unlink a sync-character ID from a community user or account.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/civilian/character-links/{syncId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Unlink a sync-character ID from a community user or account.
 
 ## Path Parameters

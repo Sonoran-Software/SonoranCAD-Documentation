@@ -6,6 +6,9 @@ description: Replace the community penal code configuration.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/general/penal-codes`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Replace the community penal code configuration.
 
 ## Request Body

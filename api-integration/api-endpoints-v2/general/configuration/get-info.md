@@ -6,6 +6,9 @@ description: Retrieve authenticated community metadata and shared codes.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/info`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return the authenticated community UUID, community metadata, and shared code lists.
 
 ## Example Request

@@ -6,6 +6,9 @@ description: Attach identifiers or a group to a dispatch call.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/dispatch-calls/{callId}/attachments`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Attach identifiers or a group to a dispatch call.
 
 ## Path Parameters

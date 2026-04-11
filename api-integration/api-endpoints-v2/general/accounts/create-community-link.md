@@ -6,6 +6,9 @@ description: Create a short-lived community user link code.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/links`
 
+> **Rate limit:** `30 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Create a 4-character code for a `communityUserId`. The code is scoped to the authenticated community and expires after 10 minutes.
 
 ## Request Body

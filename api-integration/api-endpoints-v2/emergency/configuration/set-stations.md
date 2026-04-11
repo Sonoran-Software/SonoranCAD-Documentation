@@ -6,6 +6,9 @@ description: Replace station alert configuration for a server.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/stations`
 
+> **Rate limit:** `2 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Replace the station alert configuration for a server.
 
 ## Path Parameters

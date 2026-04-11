@@ -6,6 +6,9 @@ description: Search records by a custom mapped field.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/lookups/custom`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Search records by a custom lookup mapping.
 
 ## Request Body

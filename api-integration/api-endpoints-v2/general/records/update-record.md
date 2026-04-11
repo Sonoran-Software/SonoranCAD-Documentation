@@ -6,6 +6,9 @@ description: Update an existing custom record by record ID.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/general/records/{recordId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Update a custom record with either a full `record` payload or template replacement values.
 
 ## Path Parameters

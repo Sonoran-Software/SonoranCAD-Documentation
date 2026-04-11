@@ -6,6 +6,9 @@ description: Assign one or more identifiers to a group on a server.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/identifier-groups/{groupName}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
 
 ## Path Parameters

@@ -6,6 +6,9 @@ description: Kick or ban an account in the authenticated community.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/account-bans`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Kick an account from the community or apply a community ban.
 
 ## Request Body

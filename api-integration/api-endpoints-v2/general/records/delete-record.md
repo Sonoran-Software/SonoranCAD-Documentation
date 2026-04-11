@@ -6,6 +6,9 @@ description: Remove a custom record by record ID.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/general/records/{recordId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Delete a custom record by its record ID.
 
 ## Path Parameters

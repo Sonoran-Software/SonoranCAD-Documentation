@@ -6,6 +6,9 @@ description: Send a photo URL to active connections for a community user ID.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/photos`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Send a photo URL to every active connection linked to a community user ID.
 
 ## Request Body

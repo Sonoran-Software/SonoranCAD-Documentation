@@ -6,6 +6,9 @@ description: Close one or more dispatch calls.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/dispatch-calls/close`
 
+> **Rate limit:** `20 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Close one or more dispatch calls.
 
 ## Path Parameters

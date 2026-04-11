@@ -6,6 +6,9 @@ description: Create a new dispatch call.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/dispatch-calls`
 
+> **Rate limit:** `20 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Create a new dispatch call and attach initial units resolved from community user IDs or account UUIDs.
 
 ## Path Parameters

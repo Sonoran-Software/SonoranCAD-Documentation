@@ -6,6 +6,9 @@ description: Retrieve a single community account by community user ID, account U
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/accounts/account`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return a single community account record.
 
 ## Query Parameters

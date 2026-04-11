@@ -6,6 +6,9 @@ description: Replace or append API IDs for a community account.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/general/api-ids`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Set or append API IDs for a community account.
 
 ## Request Body

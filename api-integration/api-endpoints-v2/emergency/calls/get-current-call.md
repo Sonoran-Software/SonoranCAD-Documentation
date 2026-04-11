@@ -6,6 +6,9 @@ description: Retrieve the current selected identifier and active call for an acc
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/current-call`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve the currently selected identifier and active call for an account.
 
 ## Path Parameters

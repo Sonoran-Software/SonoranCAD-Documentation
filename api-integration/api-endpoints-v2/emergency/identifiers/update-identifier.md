@@ -6,6 +6,9 @@ description: Update an existing identifier for an account.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/identifiers/{identId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Update one or more editable fields on an identifier.
 
 ## Path Parameters

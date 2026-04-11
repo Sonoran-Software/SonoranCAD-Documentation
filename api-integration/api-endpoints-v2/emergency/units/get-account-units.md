@@ -6,6 +6,9 @@ description: Retrieve units for a specific account on a configured server.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/accounts/{accountUuid}/units`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve units for a specific account on a configured server.
 
 ## Path Parameters

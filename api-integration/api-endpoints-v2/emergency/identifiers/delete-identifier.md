@@ -6,6 +6,9 @@ description: Delete an identifier from an account.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/identifiers/{identId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Delete an identifier from an account.
 
 ## Path Parameters

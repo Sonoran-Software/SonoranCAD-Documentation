@@ -6,6 +6,9 @@ description: Force a unit offline by community user ID.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/kick`
 
+> **Rate limit:** `20 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Force the currently selected identifier for a community user ID offline.
 
 ## Path Parameters

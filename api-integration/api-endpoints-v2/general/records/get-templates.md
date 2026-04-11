@@ -6,6 +6,9 @@ description: Retrieve all record templates for the authenticated community.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/templates`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return every record template configured for the authenticated community.
 
 ## Example Request

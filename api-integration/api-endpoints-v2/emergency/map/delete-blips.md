@@ -6,6 +6,9 @@ description: Delete one or more custom blips.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/blips`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 
 
 ## Path Parameters

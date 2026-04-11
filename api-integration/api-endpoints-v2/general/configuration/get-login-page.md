@@ -6,6 +6,9 @@ description: Retrieve public login-page community details by custom URL or commu
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/login-page`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return public login-page details for a community. This endpoint does not require bearer authentication.
 
 ## Query Parameters

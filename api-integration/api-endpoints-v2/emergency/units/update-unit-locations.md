@@ -6,6 +6,9 @@ description: Update live map location data for one or more units.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/unit-locations`
 
+> **Rate limit:** `15 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Queue and broadcast one or more unit location updates.
 
 ## Path Parameters

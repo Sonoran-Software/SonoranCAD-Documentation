@@ -6,6 +6,9 @@ description: Retrieve active, emergency, and closed calls for a server.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/calls`
 
+> **Rate limit:** `3 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve dispatch calls, emergency calls, and recent closed calls.
 
 ## Path Parameters

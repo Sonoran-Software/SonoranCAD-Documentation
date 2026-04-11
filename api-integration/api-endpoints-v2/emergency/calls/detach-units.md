@@ -6,6 +6,9 @@ description: Detach identifiers or a group from any active dispatch call.
 
 <mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/dispatch-calls/attachments`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Detach identifiers or a group from any currently attached dispatch call.
 
 ## Path Parameters

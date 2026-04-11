@@ -6,6 +6,9 @@ description: Replace Inferno pager configuration for a server.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/pager-config`
 
+> **Rate limit:** `2 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Replace the Inferno pager configuration for a server. If `nodes` is omitted, Sonoran CAD preserves the existing node tree for that server.
 
 ## Path Parameters

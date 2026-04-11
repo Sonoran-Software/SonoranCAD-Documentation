@@ -6,6 +6,9 @@ description: Set the selected character for a community user or account.
 
 <mark style="color:blue;">`PUT`</mark> `https://api.sonorancad.com/v2/civilian/selected-character`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Set the selected character or selected sync character for an account.
 
 ## Request Body

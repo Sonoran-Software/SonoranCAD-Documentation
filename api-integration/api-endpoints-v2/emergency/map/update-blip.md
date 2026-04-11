@@ -6,6 +6,9 @@ description: Update a custom blip.
 
 <mark style="color:yellow;">`PATCH`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/blips/{blipId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Update one or more editable fields on a custom blip.
 
 ## Path Parameters

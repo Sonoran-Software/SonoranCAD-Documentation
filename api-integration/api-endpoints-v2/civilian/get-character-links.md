@@ -6,6 +6,9 @@ description: Retrieve linked sync-character IDs for a community user or account.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/civilian/character-links`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve linked sync-character IDs for a community user or account.
 
 ## Query Parameters

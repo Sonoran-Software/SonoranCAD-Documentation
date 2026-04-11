@@ -6,6 +6,9 @@ description: Build a draft record from a template and optionally send it to an a
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/record-drafts`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Build a draft record from a template and, when a target account is provided, send it to the user over the active websocket session.
 
 ## Request Body

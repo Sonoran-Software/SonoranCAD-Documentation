@@ -6,6 +6,9 @@ description: Retrieve a single record template by record type ID.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/templates/{recordTypeId}`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return one record template by its record type ID.
 
 ## Path Parameters

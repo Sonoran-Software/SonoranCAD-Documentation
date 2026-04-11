@@ -6,6 +6,9 @@ description: Apply a permission key to an account resolved by community user ID.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/permission-keys/applications`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Apply a Sonoran CAD permission key to the account linked to a community user ID.
 
 ## Request Body

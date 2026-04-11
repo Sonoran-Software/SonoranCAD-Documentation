@@ -6,6 +6,9 @@ description: Publish a server heartbeat with current player count.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/servers/{serverId}/heartbeat`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Publish a heartbeat for a configured server.
 
 ## Path Parameters

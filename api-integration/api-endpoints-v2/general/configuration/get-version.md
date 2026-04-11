@@ -6,6 +6,9 @@ description: Retrieve the stored community plan version metadata associated with
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/version`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Return the stored plan version metadata resolved during API authentication.
 
 ## Example Request

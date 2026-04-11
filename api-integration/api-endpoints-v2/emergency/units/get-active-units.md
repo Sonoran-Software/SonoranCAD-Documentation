@@ -6,6 +6,9 @@ description: Retrieve active emergency units for a configured server.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units`
 
+> **Rate limit:** `3 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve active units for the specified CAD server.
 
 ## Path Parameters

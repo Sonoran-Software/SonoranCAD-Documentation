@@ -6,6 +6,9 @@ description: Retrieve Inferno pager configuration for a server.
 
 <mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/pager-config`
 
+> **Rate limit:** `2 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Retrieve the normalized Inferno pager configuration for a server.
 
 ## Path Parameters

@@ -6,6 +6,9 @@ description: Search records by name or plate values.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/lookups`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Search records by name and plate values.
 
 ## Request Body

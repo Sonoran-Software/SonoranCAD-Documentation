@@ -6,6 +6,9 @@ description: Check whether a community user ID is linked to an account.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/links/check`
 
+> **Rate limit:** `30 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Resolve a `communityUserId` to the linked Sonoran CAD account UUID inside the authenticated community.
 
 ## Request Body

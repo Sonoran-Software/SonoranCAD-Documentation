@@ -6,6 +6,9 @@ description: Create a new identifier for an account.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/identifiers`
 
+> **Rate limit:** `10 requests per minute`  
+> Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+
 Create a new identifier for an account.
 
 ## Path Parameters
