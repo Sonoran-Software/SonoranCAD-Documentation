@@ -62,10 +62,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -74,15 +73,19 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPostalsV2(JsonNode.Parse(@'
-[
-    { "code": "100", "x": 425.1, "y": -979.2 }
-  ]
-'@)!);
+var response = await sonoran.setPostalsV2(new[]
+{
+    new PostalV2
+    {
+        Postal = "9001",
+        X = 425.1,
+        Y = -979.2
+    }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

@@ -70,10 +70,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -82,17 +81,16 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setApiIdsV2(JsonNode.Parse(@'
+var response = await sonoran.setApiIdsV2(new SetApiIdsV2Request
 {
-    "accountUuid": "00000000-0000-0000-0000-000000000000",
-    "apiIds": ["1234567890", "0987654321"],
-    "pushNew": true
-  }
-'@)!);
+    AccountUuid = "00000000-0000-0000-0000-000000000000",
+    ApiIds = new[] { "1234567890", "0987654321" },
+    PushNew = true
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

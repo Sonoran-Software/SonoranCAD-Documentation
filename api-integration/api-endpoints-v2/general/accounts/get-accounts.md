@@ -67,10 +67,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -79,17 +78,16 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getAccountsV2(JsonNode.Parse(@'
+var response = await sonoran.getAccountsV2(new GetAccountsV2Query
 {
-    "limit": 25,
-    "offset": 0,
-    "username": "john"
-  }
-'@)!);
+    Limit = 25,
+    Offset = 0,
+    Status = "ACTIVE"
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

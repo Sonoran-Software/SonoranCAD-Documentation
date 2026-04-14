@@ -56,7 +56,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
 
@@ -71,7 +71,7 @@ var response = await sonoran.getIdentifiersV2("00000000-0000-0000-0000-000000000
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

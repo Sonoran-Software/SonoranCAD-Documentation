@@ -75,10 +75,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -87,17 +86,16 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.addIdentifiersToGroupV2(JsonNode.Parse(@'
+var response = await sonoran.addIdentifiersToGroupV2(new AddIdentifiersToGroupV2Request
 {
-    "serverId": 1,
-    "groupName": "CAR-51",
-    "identIds": [12]
-  }
-'@)!);
+    ServerId = 1,
+    GroupName = "CAR-51",
+    ApiIds = new[] { "1234567890", "0987654321" }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

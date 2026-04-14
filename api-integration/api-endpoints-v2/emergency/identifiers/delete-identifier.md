@@ -57,7 +57,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
 
@@ -68,14 +68,11 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.deleteIdentifierV2(
-    "00000000-0000-0000-0000-000000000000",
-    12
-);
+var response = await sonoran.deleteIdentifierV2("00000000-0000-0000-0000-000000000000", 12);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

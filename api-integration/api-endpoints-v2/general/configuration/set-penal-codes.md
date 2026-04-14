@@ -64,10 +64,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -76,16 +75,19 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPenalCodesV2(JsonNode.Parse(@'
-[
-    // See the request body above for the full penal code shape.
-    { "code": "22107", "title": "Unsafe Lane Change", "definition": "Unsafe lane change" }
-  ]
-'@)!);
+var response = await sonoran.setPenalCodesV2(new[]
+{
+    new PenalCodeV2
+    {
+        Code = "22107",
+        Type = "INFRACTION",
+        Title = "Unsafe Lane Change"
+    }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

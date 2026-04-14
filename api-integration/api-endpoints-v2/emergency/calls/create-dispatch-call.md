@@ -138,10 +138,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -150,25 +149,34 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createDispatchCallV2(JsonNode.Parse(@'
+var response = await sonoran.createDispatchCallV2(new CreateDispatchCallV2Request
 {
-    "serverId": 1,
-    "origin": 1,
-    "status": 1,
-    "priority": 1,
-    "block": "101",
-    "address": "Alta Street",
-    "postal": "100",
-    "title": "Structure Fire",
-    "code": "FIRE",
-    "description": "Visible smoke from the roof.",
-    "notes": []
-  }
-'@)!);
+    ServerId = 1,
+    Origin = 0,
+    Status = 1,
+    Priority = 1,
+    Block = "Alta St / Integrity Way",
+    Address = "101 Alta Street",
+    Postal = "9001",
+    Title = "Structure Fire",
+    Code = "10-70",
+    Description = "Visible smoke coming from the second floor.",
+    Notes = new[]
+    {
+        new DispatchCallNoteV2
+        {
+            Label = "Dispatch",
+            Type = "INFO",
+            Content = "Caller reports flames visible from the rear alley."
+        }
+    },
+    CommunityUserIds = new[] { "player-1234" },
+    DeleteAfterMinutes = 30
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

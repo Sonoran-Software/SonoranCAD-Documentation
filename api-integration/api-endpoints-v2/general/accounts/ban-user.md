@@ -69,10 +69,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -81,17 +80,16 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.banUserV2(JsonNode.Parse(@'
+var response = await sonoran.banUserV2(new BanUserV2Request
 {
-    "accountUuid": "00000000-0000-0000-0000-000000000000",
-    "isBan": true,
-    "isKick": true
-  }
-'@)!);
+    ApiId = "1234567890",
+    IsBan = true,
+    IsKick = false
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

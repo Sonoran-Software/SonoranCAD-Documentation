@@ -80,10 +80,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -92,20 +91,19 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupV2(JsonNode.Parse(@'
+var response = await sonoran.lookupV2(new LookupV2Request
 {
-    "first": "John",
-    "last": "Doe",
-    "mi": "A",
-    "plate": "ABC123",
-    "types": [1],
-    "partial": true
-  }
-'@)!);
+    First = "John",
+    Last = "Doe",
+    Mi = "A",
+    Plate = "ABC123",
+    Types = new[] { 1 },
+    Partial = true
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

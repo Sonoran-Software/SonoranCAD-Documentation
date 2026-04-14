@@ -77,10 +77,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -91,18 +90,18 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.updateBlipV2(
     32,
-    JsonNode.Parse(@'
-{
-    "serverId": 1,
-    "tooltip": "Updated marker",
-    "color": "#ffaa00"
-  }
-'@)!
+    new UpdateBlipV2Request
+    {
+        ServerId = 1,
+        Tooltip = "Perimeter Updated",
+        Color = "orange",
+        Radius = 75
+    }
 );
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

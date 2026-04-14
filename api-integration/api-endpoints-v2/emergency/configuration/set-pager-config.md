@@ -124,10 +124,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -136,34 +135,31 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPagerConfigV2(JsonNode.Parse(@'
+var response = await sonoran.setPagerConfigV2(new SetPagerConfigV2Request
 {
-    "serverId": 1,
-    "natureWords": {
-      "Emergency": "Emergency",
-      "NonEmergency": "Non-Emergency",
-      "Administrative": "Administrative"
+    ServerId = 1,
+    NatureWords = new[]
+    {
+        new PagerNatureWordV2 { Label = "Emergency", Weight = 100 },
+        new PagerNatureWordV2 { Label = "Non-Emergency", Weight = 50 }
     },
-    "maxAddresses": 5,
-    "maxBodyLength": 250,
-    "nodes": [
-      {
-        "id": "root-1",
-        "name": "Fire",
-        "description": "Fire services",
-        "permission": "fire",
-        "address": "FIRE-01",
-        "shortCode": "F1",
-        "kind": "group",
-        "children": []
-      }
-    ]
-  }
-'@)!);
+    MaxAddresses = 5,
+    MaxBodyLength = 250,
+    Nodes = new[]
+    {
+        new PagerNodeV2
+        {
+            Label = "Fire",
+            Department = "Fire",
+            Subdivision = "Suppression",
+            Tones = new[] { "FIRE-01" }
+        }
+    }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

@@ -100,10 +100,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -114,18 +113,19 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.updateDispatchCallV2(
     501,
-    JsonNode.Parse(@'
-{
-    "serverId": 1,
-    "description": "Caller confirmed the fire has spread to the garage.",
-    "postal": "100"
-  }
-'@)!
+    new UpdateDispatchCallV2Request
+    {
+        ServerId = 1,
+        Priority = 2,
+        Postal = "9002",
+        Description = "Fire has extended to the roof.",
+        TrackPrimary = true
+    }
 );
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

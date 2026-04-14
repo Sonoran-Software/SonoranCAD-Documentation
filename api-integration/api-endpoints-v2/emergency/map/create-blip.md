@@ -96,10 +96,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -108,21 +107,25 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createBlipV2(JsonNode.Parse(@'
+var response = await sonoran.createBlipV2(new CreateBlipV2Request
 {
-    "serverId": 1,
-    "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 },
-    "subType": "radius",
-    "icon": "fire",
-    "color": "#ff0000",
-    "tooltip": "Structure Fire",
-    "radius": 25
-  }
-'@)!);
+    ServerId = 1,
+    Coordinates = new BlipCoordinatesV2
+    {
+        X = 420.1,
+        Y = -980.4,
+        Z = 30.8
+    },
+    SubType = "call",
+    Icon = "fire",
+    Color = "red",
+    Tooltip = "Structure Fire",
+    Radius = 50
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

@@ -79,10 +79,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -92,19 +91,21 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 });
 
 var response = await sonoran.updateRecordV2(
-    501,
-    JsonNode.Parse(@'
-{
-    // See the request body above for the full record payload shape.
-    apiId: "1234567890",
-    "record": {}
-  }
-'@)!
+    451,
+    new UpdateRecordV2Request
+    {
+        AccountUuid = "00000000-0000-0000-0000-000000000000",
+        RecordTypeId = 12,
+        ReplaceValues = new Dictionary<string, string>
+        {
+            ["case_number"] = "SC-2026-002"
+        }
+    }
 );
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

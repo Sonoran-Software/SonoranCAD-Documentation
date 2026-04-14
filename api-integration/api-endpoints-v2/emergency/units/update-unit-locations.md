@@ -100,10 +100,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -112,22 +111,26 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateUnitLocationsV2(JsonNode.Parse(@'
+var response = await sonoran.updateUnitLocationsV2(new UpdateUnitLocationsV2Request
 {
-    "serverId": 1,
-    "updates": [
-      {
-        "apiId": "1234567890",
-        "location": "Mission Row",
-        "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 }
-      }
-    ]
-  }
-'@)!);
+    ServerId = 1,
+    Updates = new[]
+    {
+        new UnitLocationUpdateV2
+        {
+            ApiId = "1234567890",
+            Location = "Mission Row PD",
+            X = 425.1,
+            Y = -979.2,
+            Z = 30.7,
+            Heading = 180f
+        }
+    }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

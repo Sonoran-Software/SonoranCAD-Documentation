@@ -71,10 +71,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -83,18 +82,17 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupCustomV2(JsonNode.Parse(@'
+var response = await sonoran.lookupCustomV2(new LookupCustomV2Request
 {
-    "map": "vehicle",
-    "value": "ABC123",
-    "types": [1],
-    "partial": true
-  }
-'@)!);
+    Map = "license_number",
+    Value = "DL-12345",
+    Types = new[] { 7 },
+    Partial = true
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

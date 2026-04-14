@@ -114,10 +114,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -126,20 +125,27 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createEmergencyCallV2(JsonNode.Parse(@'
+var response = await sonoran.createEmergencyCallV2(new CreateEmergencyCallV2Request
 {
-    "serverId": 1,
-    "isEmergency": true,
-    "caller": "John Doe",
-    "location": "101 Alta Street",
-    "description": "Structure fire with visible smoke.",
-    "deleteAfterMinutes": 30
-  }
-'@)!);
+    ServerId = 1,
+    IsEmergency = true,
+    Caller = "John Doe",
+    Location = "101 Alta Street",
+    Description = "Structure fire with visible smoke.",
+    DeleteAfterMinutes = 30,
+    MetaData = new Dictionary<string, string>
+    {
+        ["source"] = "integration",
+        ["x"] = "425.1",
+        ["y"] = "-979.2",
+        ["z"] = "30.7",
+        ["postal"] = "9001"
+    }
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

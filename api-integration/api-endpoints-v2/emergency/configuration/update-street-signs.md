@@ -79,10 +79,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -91,19 +90,18 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateStreetSignsV2(JsonNode.Parse(@'
+var response = await sonoran.updateStreetSignsV2(new UpdateStreetSignsV2Request
 {
-    "serverId": 1,
-    "ids": [1],
-    "text1": "ALTA",
-    "text2": "ST",
-    "text3": ""
-  }
-'@)!);
+    ServerId = 1,
+    Ids = new[] { 7 },
+    Text1 = "Mission Row",
+    Text2 = "Integrity Way",
+    Text3 = string.Empty
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

@@ -83,10 +83,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -95,17 +94,16 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setUnitStatusV2(JsonNode.Parse(@'
+var response = await sonoran.setUnitStatusV2(new SetUnitStatusV2Request
 {
-    "serverId": 1,
-    "apiId": "1234567890",
-    "status": 2
-  }
-'@)!);
+    ServerId = 1,
+    ApiIds = new[] { "1234567890" },
+    Status = 3
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

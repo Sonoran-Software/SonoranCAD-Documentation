@@ -95,10 +95,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -108,18 +107,21 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 });
 
 var response = await sonoran.setAvailableCalloutsV2(
-    JsonNode.Parse(@'
-[
-    // See the request body above for the full callout shape.
-    { "id": "armed_suspect", "data": {} }
-  ]
-'@)!,
+    new[]
+    {
+        new AvailableCalloutV2
+        {
+            Code = "10-70",
+            Label = "Structure Fire",
+            Priority = 1
+        }
+    },
     1
 );
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

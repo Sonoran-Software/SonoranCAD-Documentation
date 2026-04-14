@@ -67,10 +67,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -79,16 +78,15 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.sendPhotoV2(JsonNode.Parse(@'
+var response = await sonoran.sendPhotoV2(new SendPhotoV2Request
 {
-    "apiId": "1234567890",
-    "url": "https://example.com/mugshot.png"
-  }
-'@)!);
+    ApiId = "1234567890",
+    Url = "https://example.com/mugshot.jpg"
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

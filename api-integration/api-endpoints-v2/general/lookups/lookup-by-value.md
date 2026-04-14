@@ -71,10 +71,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -83,17 +82,17 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupByValueV2(JsonNode.Parse(@'
+var response = await sonoran.lookupByValueV2(new LookupByValueV2Request
 {
-    "searchType": "plate",
-    "value": "ABC123",
-    "types": [1]
-  }
-'@)!);
+    SearchType = "plate",
+    Value = "ABC123",
+    Types = new[] { 1 },
+    Partial = true
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash

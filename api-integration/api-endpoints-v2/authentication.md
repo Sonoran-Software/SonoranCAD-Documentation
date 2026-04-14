@@ -65,10 +65,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -77,16 +76,15 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getUnitsV2(JsonNode.Parse(@'
+var response = await sonoran.getUnitsV2(new GetUnitsV2Query
 {
-    "onlyUnits": true,
-    "includeOffline": false
-  }
-'@)!);
+    OnlyUnits = true,
+    IncludeOffline = false
+});
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 
 {% tab title="cURL" %}
@@ -184,5 +182,6 @@ Our official libraries already help with this:
 
 - [`Sonoran.js`](https://github.com/Sonoran-Software/Sonoran.js) automatically retries v2 CAD requests on `429` responses up to 2 times.
 - [`Sonoran.lua`](https://github.com/Sonoran-Software/Sonoran.Lua) automatically retries v2 CAD requests on `429` responses up to 2 times.
+- [`Sonoran.Net`](https://github.com/Sonoran-Software/Sonoran.Net) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
 
 These retries are intentionally limited. High-frequency integrations should still avoid bursty request patterns and should respect the published per-endpoint limits.

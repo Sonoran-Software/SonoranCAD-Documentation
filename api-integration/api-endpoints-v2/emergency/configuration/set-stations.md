@@ -90,10 +90,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
-```csharp
+~~~csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
-using System.Text.Json.Nodes;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
@@ -103,20 +102,26 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 });
 
 var response = await sonoran.setStationsV2(
-    JsonNode.Parse(@'
-{
-    // See the request body above for the full station config shape.
-    locations: [],
-    "tones": [],
-    "unitColors": []
-  }
-'@)!,
+    new StationConfigV2
+    {
+        Enabled = true,
+        Stations = new[]
+        {
+            new StationV2
+            {
+                Label = "Mission Row",
+                Department = "Police",
+                Subdivision = "Patrol",
+                IdentIds = new[] { 12, 18 }
+            }
+        }
+    },
     1
 );
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-```
+~~~
 {% endtab %}
 {% tab title="cURL" %}
 ```bash
