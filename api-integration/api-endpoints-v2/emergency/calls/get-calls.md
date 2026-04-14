@@ -145,7 +145,11 @@ Successful requests return `application/json`.
         18
       ],
       "metaData": {
-        "source": "integration"
+        "source": "integration",
+        "x": "425.1",
+        "y": "-979.2",
+        "z": "30.7",
+        "radius": "75"
       },
       "updated": "2026-04-08T21:30:00Z"
     }
@@ -158,7 +162,11 @@ Successful requests return `application/json`.
       "location": "Innocence Blvd",
       "description": "Medical emergency reported.",
       "metaData": {
-        "phone": "555-0100"
+        "phone": "555-0100",
+        "x": "425.1",
+        "y": "-979.2",
+        "z": "30.7",
+        "postal": "9001"
       },
       "updated": "2026-04-08T21:31:00Z"
     }
@@ -190,7 +198,11 @@ Successful requests return `application/json`.
         18
       ],
       "metaData": {
-        "source": "integration"
+        "source": "integration",
+        "x": "425.1",
+        "y": "-979.2",
+        "z": "30.7",
+        "radius": "75"
       },
       "updated": "2026-04-08T21:30:00Z"
     }

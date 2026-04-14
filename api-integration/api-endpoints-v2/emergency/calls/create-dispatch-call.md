@@ -35,7 +35,7 @@ The backend requires at least one identifier target through `communityUserIds` o
 | `notes` | array | Yes | Initial note objects to store on the call. |
 | `communityUserIds` | array of strings | No | Linked community users whose active identifiers should be attached. |
 | `accounts` | array of strings (uuid) | No | Accounts whose selected identifiers should be attached. |
-| `metaData` | object | No | Arbitrary string key/value metadata. |
+| `metaData` | object | No | Additional string key/value metadata. Pass `x` and `y` coordinate values to enable live map placement and coordinate-based search actions. `z`, `radius`, `postal`, `block`, `code`, and `priority` may also be supplied when applicable. |
 | `deleteAfterMinutes` | integer | No | Schedule automatic deletion after creation. |
 
 ```json
@@ -52,7 +52,11 @@ The backend requires at least one identifier target through `communityUserIds` o
   "notes": [],
   "communityUserIds": ["player-1234"],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
   }
 }
 ```
@@ -83,6 +87,13 @@ local response = sonoran:createDispatchCallV2({
     code = 'FIRE',
     description = 'Visible smoke from the roof.',
     notes = {},
+    metaData = {
+      source = 'integration',
+      x = '425.1',
+      y = '-979.2',
+      z = '30.7',
+      radius = '75',
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -114,6 +125,13 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     code: 'FIRE',
     description: 'Visible smoke from the roof.',
     notes: [],
+    metaData: {
+      source: 'integration',
+      x: '425.1',
+      y: '-979.2',
+      z: '30.7',
+      radius: '75',
+    },
   });
   console.log(response);
 })();
@@ -139,7 +157,11 @@ curl --request POST \
   "notes": [],
   "communityUserIds": ["player-1234"],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
   }
 }'
 ```
@@ -169,7 +191,11 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
     "player-1234"
   ],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
   }
 }),
 });
@@ -201,7 +227,11 @@ $body = @'
   "notes": [],
   "communityUserIds": ["player-1234"],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
   }
 }
 '@
@@ -246,7 +276,11 @@ Successful requests return `application/json`.
     18
   ],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
   },
   "updated": "2026-04-08T21:30:00Z"
 }

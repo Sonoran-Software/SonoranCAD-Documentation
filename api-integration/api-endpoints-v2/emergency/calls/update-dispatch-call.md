@@ -22,11 +22,20 @@ Update one or more editable fields on an existing dispatch call.
 
 Send only the fields you want to update.
 
+If you provide `metaData`, it replaces the stored object for the call. Include existing keys you want to keep. Pass `x` and `y` to update the call's live map position; `z` and `radius` are also commonly used for map workflows.
+
 ```json
 {
   "status": 1,
   "postal": "9002",
-  "trackPrimary": true
+  "trackPrimary": true,
+  "metaData": {
+    "source": "integration",
+    "x": "430.5",
+    "y": "-982.1",
+    "z": "31.0",
+    "radius": "100"
+  }
 }
 ```
 
@@ -48,6 +57,13 @@ local response = sonoran:updateDispatchCallV2(501, {
     serverId = 1,
     description = 'Caller confirmed the fire has spread to the garage.',
     postal = '100',
+    metaData = {
+      source = 'integration',
+      x = '430.5',
+      y = '-982.1',
+      z = '31.0',
+      radius = '100',
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -71,6 +87,13 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     serverId: 1,
     description: 'Caller confirmed the fire has spread to the garage.',
     postal: '100',
+    metaData: {
+      source: 'integration',
+      x: '430.5',
+      y: '-982.1',
+      z: '31.0',
+      radius: '100',
+    },
   });
   console.log(response);
 })();
@@ -86,7 +109,14 @@ curl --request PATCH \
   --data '{
   "status": 1,
   "postal": "9002",
-  "trackPrimary": true
+  "trackPrimary": true,
+  "metaData": {
+    "source": "integration",
+    "x": "430.5",
+    "y": "-982.1",
+    "z": "31.0",
+    "radius": "100"
+  }
 }'
 ```
 {% endtab %}
@@ -103,7 +133,14 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
   body: JSON.stringify({
   "status": 1,
   "postal": "9002",
-  "trackPrimary": true
+  "trackPrimary": true,
+  "metaData": {
+    "source": "integration",
+    "x": "430.5",
+    "y": "-982.1",
+    "z": "31.0",
+    "radius": "100"
+  }
 }),
 });
 
@@ -124,7 +161,14 @@ $body = @'
 {
   "status": 1,
   "postal": "9002",
-  "trackPrimary": true
+  "trackPrimary": true,
+  "metaData": {
+    "source": "integration",
+    "x": "430.5",
+    "y": "-982.1",
+    "z": "31.0",
+    "radius": "100"
+  }
 }
 '@
 
@@ -168,7 +212,11 @@ Successful requests return `application/json`.
     18
   ],
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "430.5",
+    "y": "-982.1",
+    "z": "31.0",
+    "radius": "100"
   },
   "updated": "2026-04-08T21:30:00Z"
 }

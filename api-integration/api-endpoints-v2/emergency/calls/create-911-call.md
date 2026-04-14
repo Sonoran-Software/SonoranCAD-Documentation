@@ -19,6 +19,17 @@ Create a new 911 call for a server.
 
 ## Request Body
 
+Common `metaData` keys used by the CAD:
+
+| Property | Type | Required | Description |
+| --- | --- | --- | --- |
+| `isEmergency` | boolean | Yes | Whether the 911 should be marked as an emergency call. |
+| `caller` | string | Yes | Caller name or label shown in CAD. |
+| `location` | string | Yes | Human-readable location or address. |
+| `description` | string | Yes | Call details shown to dispatchers. |
+| `deleteAfterMinutes` | integer | No | Schedule automatic deletion after creation. |
+| `metaData` | object | No | Additional string key/value metadata. Pass `x` and `y` coordinate values to enable live map placement, 911 screenshot rendering, and coordinate-based dispatch tools. `z`, `postal`, `block`, `code`, and `priority` may also be supplied when applicable. |
+
 ```json
 {
   "isEmergency": true,
@@ -27,7 +38,11 @@ Create a new 911 call for a server.
   "description": "Shots fired",
   "deleteAfterMinutes": 15,
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
   }
 }
 ```
@@ -53,6 +68,13 @@ local response = sonoran:createEmergencyCallV2({
     location = '101 Alta Street',
     description = 'Structure fire with visible smoke.',
     deleteAfterMinutes = 30,
+    metaData = {
+      source = 'integration',
+      x = '425.1',
+      y = '-979.2',
+      z = '30.7',
+      postal = '9001',
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -79,6 +101,13 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     location: '101 Alta Street',
     description: 'Structure fire with visible smoke.',
     deleteAfterMinutes: 30,
+    metaData: {
+      source: 'integration',
+      x: '425.1',
+      y: '-979.2',
+      z: '30.7',
+      postal: '9001',
+    },
   });
   console.log(response);
 })();
@@ -98,7 +127,11 @@ curl --request POST \
   "description": "Shots fired",
   "deleteAfterMinutes": 15,
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
   }
 }'
 ```
@@ -120,7 +153,11 @@ const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/
   "description": "Shots fired",
   "deleteAfterMinutes": 15,
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
   }
 }),
 });
@@ -146,7 +183,11 @@ $body = @'
   "description": "Shots fired",
   "deleteAfterMinutes": 15,
   "metaData": {
-    "source": "integration"
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
   }
 }
 '@
@@ -172,7 +213,11 @@ Successful requests return `application/json`.
   "location": "Innocence Blvd",
   "description": "Medical emergency reported.",
   "metaData": {
-    "phone": "555-0100"
+    "phone": "555-0100",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
   },
   "updated": "2026-04-08T21:31:00Z"
 }
