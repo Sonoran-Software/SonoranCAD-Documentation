@@ -83,6 +83,33 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.setStreetSignConfigV2(
+    JsonNode.Parse(@'
+[
+    // See the request body above for the full street sign shape.
+    { "id": 1, "coordinates": { "x": 0, "y": 0, "z": 0, "w": 0 }, "label": "Alta St" }
+  ]
+'@)!,
+    1
+);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request PUT \

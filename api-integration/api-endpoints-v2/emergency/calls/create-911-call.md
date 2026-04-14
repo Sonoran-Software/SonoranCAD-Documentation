@@ -113,6 +113,34 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.createEmergencyCallV2(JsonNode.Parse(@'
+{
+    "serverId": 1,
+    "isEmergency": true,
+    "caller": "John Doe",
+    "location": "101 Alta Street",
+    "description": "Structure fire with visible smoke.",
+    "deleteAfterMinutes": 30
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

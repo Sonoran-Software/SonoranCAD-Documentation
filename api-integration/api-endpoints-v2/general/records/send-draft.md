@@ -71,6 +71,31 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.sendRecordDraftV2(JsonNode.Parse(@'
+{
+    "recordTypeId": 1,
+    "replaceValues": { "firstName": "John", "lastName": "Doe" },
+    "apiId": "1234567890"
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

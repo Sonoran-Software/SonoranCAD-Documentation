@@ -99,6 +99,36 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.updateUnitLocationsV2(JsonNode.Parse(@'
+{
+    "serverId": 1,
+    "updates": [
+      {
+        "apiId": "1234567890",
+        "location": "Mission Row",
+        "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 }
+      }
+    ]
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request PATCH \

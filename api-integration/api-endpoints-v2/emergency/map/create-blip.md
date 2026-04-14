@@ -95,6 +95,35 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.createBlipV2(JsonNode.Parse(@'
+{
+    "serverId": 1,
+    "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 },
+    "subType": "radius",
+    "icon": "fire",
+    "color": "#ff0000",
+    "tooltip": "Structure Fire",
+    "radius": 25
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \

@@ -123,6 +123,48 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.setPagerConfigV2(JsonNode.Parse(@'
+{
+    "serverId": 1,
+    "natureWords": {
+      "Emergency": "Emergency",
+      "NonEmergency": "Non-Emergency",
+      "Administrative": "Administrative"
+    },
+    "maxAddresses": 5,
+    "maxBodyLength": 250,
+    "nodes": [
+      {
+        "id": "root-1",
+        "name": "Fire",
+        "description": "Fire services",
+        "permission": "fire",
+        "address": "FIRE-01",
+        "shortCode": "F1",
+        "kind": "group",
+        "children": []
+      }
+    ]
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request PUT \

@@ -137,6 +137,39 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.Net" %}
+```csharp
+// dotnet add package Sonoran.Net
+using Sonoran;
+using System.Text.Json.Nodes;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
+var response = await sonoran.createDispatchCallV2(JsonNode.Parse(@'
+{
+    "serverId": 1,
+    "origin": 1,
+    "status": 1,
+    "priority": 1,
+    "block": "101",
+    "address": "Alta Street",
+    "postal": "100",
+    "title": "Structure Fire",
+    "code": "FIRE",
+    "description": "Visible smoke from the roof.",
+    "notes": []
+  }
+'@)!);
+
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
+```
+{% endtab %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
