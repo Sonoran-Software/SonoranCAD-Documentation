@@ -113,7 +113,7 @@ end
 Returns the global `UnitCache` table containing unit data.
 
 ```lua
-exports.sonorancad.GetUnitCache(includeDispatchers)
+exports['sonorancad']:GetUnitCache(includeDispatchers)
 ```
 
 {% tabs %}
@@ -130,7 +130,7 @@ exports.sonorancad.GetUnitCache(includeDispatchers)
 {% tab title="Example Usage" %}
 ```lua
 -- Example: Retrieving and inspecting the UnitCache
-local unitCache = exports.sonorancad.GetUnitCache()
+local unitCache = exports['sonorancad']:GetUnitCache()
 
 if next(unitCache) then
     print("UnitCache contains data:", json.encode(unitCache))
@@ -139,7 +139,7 @@ else
 end
 
 -- Getting dispatchers as well
-local unitCache, dispatchers = exports.sonorancad.GetUnitCache(true)
+local unitCache, dispatchers = exports['sonorancad']:GetUnitCache(true)
 
 if next(unitCache) then
     print("UnitCache contains data:", json.encode(unitCache))
