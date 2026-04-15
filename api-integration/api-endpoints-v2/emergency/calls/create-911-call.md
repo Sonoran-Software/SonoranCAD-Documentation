@@ -179,92 +179,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request POST \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/calls/911" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "isEmergency": true,
-  "caller": "911 Caller",
-  "location": "Alta St / Integrity Way",
-  "description": "Shots fired",
-  "deleteAfterMinutes": 15,
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "postal": "9001"
-  }
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/calls/911", {
-  method: "POST",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "isEmergency": true,
-  "caller": "911 Caller",
-  "location": "Alta St / Integrity Way",
-  "description": "Shots fired",
-  "deleteAfterMinutes": 15,
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "postal": "9001"
-  }
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "isEmergency": true,
-  "caller": "911 Caller",
-  "location": "Alta St / Integrity Way",
-  "description": "Shots fired",
-  "deleteAfterMinutes": 15,
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "postal": "9001"
-  }
-}
-'@
-
-Invoke-RestMethod `
-  -Method Post `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/calls/911" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -309,6 +223,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -338,6 +253,29 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/calls/911" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "isEmergency": true,
+  "caller": "911 Caller",
+  "location": "Alta St / Integrity Way",
+  "description": "Shots fired",
+  "deleteAfterMinutes": 15,
+  "metaData": {
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "postal": "9001"
+  }
+}'
+```
 {% endtab %}
 {% endtabs %}
 

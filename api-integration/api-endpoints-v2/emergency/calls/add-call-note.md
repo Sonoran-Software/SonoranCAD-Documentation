@@ -126,65 +126,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request POST \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/notes" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "note": "Suspect vehicle fleeing northbound",
-  "noteType": "text",
-  "label": "Integration"
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/notes", {
-  method: "POST",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "note": "Suspect vehicle fleeing northbound",
-  "noteType": "text",
-  "label": "Integration"
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "note": "Suspect vehicle fleeing northbound",
-  "noteType": "text",
-  "label": "Integration"
-}
-'@
-
-Invoke-RestMethod `
-  -Method Post `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/notes" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -219,6 +160,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
         -
           description: "Dispatch or 911 call ID."
@@ -247,6 +189,20 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/501/notes" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "note": "Suspect vehicle fleeing northbound",
+  "noteType": "text",
+  "label": "Integration"
+}'
+```
 {% endtab %}
 {% endtabs %}
 

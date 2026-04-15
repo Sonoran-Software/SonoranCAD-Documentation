@@ -91,43 +91,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request POST \
-  --url "https://api.sonorancad.com/v2/general/servers/1/street-sign-auth" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json"
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/general/servers/1/street-sign-auth", {
-  method: "POST",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-  },
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-}
-
-Invoke-RestMethod `
-  -Method Post `
-  -Uri "https://api.sonorancad.com/v2/general/servers/1/street-sign-auth" `
-  -Headers $headers
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -162,6 +125,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -173,6 +137,14 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/general/servers/1/street-sign-auth" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json"
+```
 {% endtab %}
 {% endtabs %}
 

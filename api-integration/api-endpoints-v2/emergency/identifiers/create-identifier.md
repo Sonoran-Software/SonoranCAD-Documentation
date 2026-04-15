@@ -158,89 +158,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request POST \
-  --url "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/identifiers" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "status": 0,
-  "aop": "Los Santos",
-  "unitNum": "A-10",
-  "name": "John Doe",
-  "district": "Los Santos",
-  "department": "LSPD",
-  "subdivision": "Patrol",
-  "rank": "Officer",
-  "group": "CAR-51",
-  "page": 0,
-  "isDispatch": false
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/identifiers", {
-  method: "POST",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "status": 0,
-  "aop": "Los Santos",
-  "unitNum": "A-10",
-  "name": "John Doe",
-  "district": "Los Santos",
-  "department": "LSPD",
-  "subdivision": "Patrol",
-  "rank": "Officer",
-  "group": "CAR-51",
-  "page": 0,
-  "isDispatch": false
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "status": 0,
-  "aop": "Los Santos",
-  "unitNum": "A-10",
-  "name": "John Doe",
-  "district": "Los Santos",
-  "department": "LSPD",
-  "subdivision": "Patrol",
-  "rank": "Officer",
-  "group": "CAR-51",
-  "page": 0,
-  "isDispatch": false
-}
-'@
-
-Invoke-RestMethod `
-  -Method Post `
-  -Uri "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/identifiers" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -303,6 +220,28 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/identifiers" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "status": 0,
+  "aop": "Los Santos",
+  "unitNum": "A-10",
+  "name": "John Doe",
+  "district": "Los Santos",
+  "department": "LSPD",
+  "subdivision": "Patrol",
+  "rank": "Officer",
+  "group": "CAR-51",
+  "page": 0,
+  "isDispatch": false
+}'
+```
 {% endtab %}
 {% endtabs %}
 

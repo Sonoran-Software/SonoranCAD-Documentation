@@ -135,110 +135,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PUT \
-  --url "https://api.sonorancad.com/v2/general/servers" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "deployMap": true,
-  "servers": [
-    {
-      "id": 1,
-      "name": "Main Server",
-      "description": "Primary patrol server",
-      "signal": "100",
-      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
-      "mapIp": "203.0.113.10",
-      "listenerPort": "30120",
-      "differingOutbound": false,
-      "outboundIp": "",
-      "enableMap": true,
-      "mapType": "NORMAL",
-      "isStatic": false,
-      "liveMapFormat": 0
-    }
-  ]
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/general/servers", {
-  method: "PUT",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "deployMap": true,
-  "servers": [
-    {
-      "id": 1,
-      "name": "Main Server",
-      "description": "Primary patrol server",
-      "signal": "100",
-      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
-      "mapIp": "203.0.113.10",
-      "listenerPort": "30120",
-      "differingOutbound": false,
-      "outboundIp": "",
-      "enableMap": true,
-      "mapType": "NORMAL",
-      "isStatic": false,
-      "liveMapFormat": 0
-    }
-  ]
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "deployMap": true,
-  "servers": [
-    {
-      "id": 1,
-      "name": "Main Server",
-      "description": "Primary patrol server",
-      "signal": "100",
-      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
-      "mapIp": "203.0.113.10",
-      "listenerPort": "30120",
-      "differingOutbound": false,
-      "outboundIp": "",
-      "enableMap": true,
-      "mapType": "NORMAL",
-      "isStatic": false,
-      "liveMapFormat": 0
-    }
-  ]
-}
-'@
-
-Invoke-RestMethod `
-  -Method Put `
-  -Uri "https://api.sonorancad.com/v2/general/servers" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -310,6 +206,35 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/general/servers" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "deployMap": true,
+  "servers": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "description": "Primary patrol server",
+      "signal": "100",
+      "mapUrl": "https://example.com/tiles/{z}/{x}/{y}.png",
+      "mapIp": "203.0.113.10",
+      "listenerPort": "30120",
+      "differingOutbound": false,
+      "outboundIp": "",
+      "enableMap": true,
+      "mapType": "NORMAL",
+      "isStatic": false,
+      "liveMapFormat": 0
+    }
+  ]
+}'
+```
 {% endtab %}
 {% endtabs %}
 

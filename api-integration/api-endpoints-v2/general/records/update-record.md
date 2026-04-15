@@ -129,74 +129,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PATCH \
-  --url "https://api.sonorancad.com/v2/general/records/451" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "communityUserId": "player-1234",
-  "useDictionary": true,
-  "templateId": 12,
-  "replaceValues": {
-    "{{plate}}": "XYZ987"
-  }
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/general/records/451", {
-  method: "PATCH",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "communityUserId": "player-1234",
-  "useDictionary": true,
-  "templateId": 12,
-  "replaceValues": {
-    "{{plate}}": "XYZ987"
-  }
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "communityUserId": "player-1234",
-  "useDictionary": true,
-  "templateId": 12,
-  "replaceValues": {
-    "{{plate}}": "XYZ987"
-  }
-}
-'@
-
-Invoke-RestMethod `
-  -Method Patch `
-  -Uri "https://api.sonorancad.com/v2/general/records/451" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -263,6 +195,23 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PATCH \
+  --url "https://api.sonorancad.com/v2/general/records/451" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "communityUserId": "player-1234",
+  "useDictionary": true,
+  "templateId": 12,
+  "replaceValues": {
+    "{{plate}}": "XYZ987"
+  }
+}'
+```
 {% endtab %}
 {% endtabs %}
 

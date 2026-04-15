@@ -114,61 +114,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request DELETE \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/attachments" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "communityUserIds": ["player-1234"]
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/attachments", {
-  method: "DELETE",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "communityUserIds": [
-    "player-1234"
-  ]
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "communityUserIds": ["player-1234"]
-}
-'@
-
-Invoke-RestMethod `
-  -Method Delete `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/attachments" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -204,6 +149,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -223,6 +169,18 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request DELETE \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls/attachments" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "communityUserIds": ["player-1234"]
+}'
+```
 {% endtab %}
 {% endtabs %}
 

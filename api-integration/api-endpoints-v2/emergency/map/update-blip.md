@@ -125,65 +125,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PATCH \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips/32" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "tooltip": "Updated perimeter",
-  "color": "#00a3ff",
-  "radius": 150
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/blips/32", {
-  method: "PATCH",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "tooltip": "Updated perimeter",
-  "color": "#00a3ff",
-  "radius": 150
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "tooltip": "Updated perimeter",
-  "color": "#00a3ff",
-  "radius": 150
-}
-'@
-
-Invoke-RestMethod `
-  -Method Patch `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/blips/32" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -217,6 +158,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
         -
           description: "Blip ID."
@@ -245,6 +187,20 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PATCH \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips/32" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "tooltip": "Updated perimeter",
+  "color": "#00a3ff",
+  "radius": 150
+}'
+```
 {% endtab %}
 {% endtabs %}
 

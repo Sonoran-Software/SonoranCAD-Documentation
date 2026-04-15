@@ -99,62 +99,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request DELETE \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "ids": [14, 15]
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/blips", {
-  method: "DELETE",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "ids": [
-    14,
-    15
-  ]
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "ids": [14, 15]
-}
-'@
-
-Invoke-RestMethod `
-  -Method Delete `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/blips" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -190,6 +134,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -211,6 +156,18 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request DELETE \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "ids": [14, 15]
+}'
+```
 {% endtab %}
 {% endtabs %}
 

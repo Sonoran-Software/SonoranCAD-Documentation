@@ -200,113 +200,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PUT \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/pager-config" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "natureWords": {
-    "Emergency": "Emergency",
-    "NonEmergency": "Non-Emergency",
-    "Administrative": "Administrative"
-  },
-  "maxAddresses": 5,
-  "maxBodyLength": 250,
-  "nodes": [
-    {
-      "id": "root-1",
-      "name": "Fire",
-      "description": "Fire services",
-      "permission": "fire",
-      "address": "FIRE-01",
-      "shortCode": "F1",
-      "kind": "group",
-      "children": []
-    }
-  ]
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/pager-config", {
-  method: "PUT",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    natureWords: {
-      Emergency: "Emergency",
-      NonEmergency: "Non-Emergency",
-      Administrative: "Administrative",
-    },
-    maxAddresses: 5,
-    maxBodyLength: 250,
-    nodes: [
-      {
-        id: "root-1",
-        name: "Fire",
-        description: "Fire services",
-        permission: "fire",
-        address: "FIRE-01",
-        shortCode: "F1",
-        kind: "group",
-        children: [],
-      },
-    ],
-  }),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "natureWords": {
-    "Emergency": "Emergency",
-    "NonEmergency": "Non-Emergency",
-    "Administrative": "Administrative"
-  },
-  "maxAddresses": 5,
-  "maxBodyLength": 250,
-  "nodes": [
-    {
-      "id": "root-1",
-      "name": "Fire",
-      "description": "Fire services",
-      "permission": "fire",
-      "address": "FIRE-01",
-      "shortCode": "F1",
-      "kind": "group",
-      "children": []
-    }
-  ]
-}
-'@
-
-Invoke-RestMethod `
-  -Method Put `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/pager-config" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -340,6 +233,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -373,6 +267,36 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/pager-config" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "natureWords": {
+    "Emergency": "Emergency",
+    "NonEmergency": "Non-Emergency",
+    "Administrative": "Administrative"
+  },
+  "maxAddresses": 5,
+  "maxBodyLength": 250,
+  "nodes": [
+    {
+      "id": "root-1",
+      "name": "Fire",
+      "description": "Fire services",
+      "permission": "fire",
+      "address": "FIRE-01",
+      "shortCode": "F1",
+      "kind": "group",
+      "children": []
+    }
+  ]
+}'
+```
 {% endtab %}
 {% endtabs %}
 

@@ -139,101 +139,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PUT \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/street-sign-config" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "signs": [
-    {
-      "id": 7,
-      "coordinates": {
-        "x": 420.1,
-        "y": -980.4,
-        "z": 30.8,
-        "w": 0.0
-      },
-      "label": "Mission Row",
-      "text1": "Mission Row",
-      "text2": "Integrity Way",
-      "text3": ""
-    }
-  ]
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/street-sign-config", {
-  method: "PUT",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "signs": [
-    {
-      "id": 7,
-      "coordinates": {
-        "x": 420.1,
-        "y": -980.4,
-        "z": 30.8,
-        "w": 0.0
-      },
-      "label": "Mission Row",
-      "text1": "Mission Row",
-      "text2": "Integrity Way",
-      "text3": ""
-    }
-  ]
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "signs": [
-    {
-      "id": 7,
-      "coordinates": {
-        "x": 420.1,
-        "y": -980.4,
-        "z": 30.8,
-        "w": 0.0
-      },
-      "label": "Mission Row",
-      "text1": "Mission Row",
-      "text2": "Integrity Way",
-      "text3": ""
-    }
-  ]
-}
-'@
-
-Invoke-RestMethod `
-  -Method Put `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/street-sign-config" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -268,6 +173,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -297,6 +203,32 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PUT \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/street-sign-config" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "signs": [
+    {
+      "id": 7,
+      "coordinates": {
+        "x": 420.1,
+        "y": -980.4,
+        "z": 30.8,
+        "w": 0.0
+      },
+      "label": "Mission Row",
+      "text1": "Mission Row",
+      "text2": "Integrity Way",
+      "text3": ""
+    }
+  ]
+}'
+```
 {% endtab %}
 {% endtabs %}
 

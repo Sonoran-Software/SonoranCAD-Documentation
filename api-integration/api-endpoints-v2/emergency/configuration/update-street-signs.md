@@ -127,71 +127,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request PATCH \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/street-signs" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "ids": [1, 2],
-  "text1": "Mission Row",
-  "text2": "Alta St",
-  "text3": "Integrity Way"
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/street-signs", {
-  method: "PATCH",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "ids": [
-    1,
-    2
-  ],
-  "text1": "Mission Row",
-  "text2": "Alta St",
-  "text3": "Integrity Way"
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "ids": [1, 2],
-  "text1": "Mission Row",
-  "text2": "Alta St",
-  "text3": "Integrity Way"
-}
-'@
-
-Invoke-RestMethod `
-  -Method Patch `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/street-signs" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -227,6 +162,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -251,6 +187,21 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request PATCH \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/street-signs" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "ids": [1, 2],
+  "text1": "Mission Row",
+  "text2": "Alta St",
+  "text3": "Integrity Way"
+}'
+```
 {% endtab %}
 {% endtabs %}
 

@@ -215,112 +215,6 @@ Console.WriteLine(response.success);
 Console.WriteLine(response.data);
 ~~~
 {% endtab %}
-{% tab title="cURL" %}
-```bash
-curl --request POST \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls" \
-  --header "Authorization: Bearer YOUR_API_KEY" \
-  --header "Accept: application/json" \
-  --header "Content-Type: application/json" \
-  --data '{
-  "origin": 0,
-  "status": 1,
-  "priority": 1,
-  "block": "100",
-  "address": "Mission Row",
-  "postal": "9001",
-  "title": "Armed Robbery",
-  "code": "211",
-  "description": "Clerk reports a firearm.",
-  "notes": [],
-  "communityUserIds": ["player-1234"],
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "radius": "75"
-  }
-}'
-```
-{% endtab %}
-
-{% tab title="JavaScript" %}
-```javascript
-const response = await fetch("https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls", {
-  method: "POST",
-  headers: {
-    Authorization: "Bearer YOUR_API_KEY",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-  "origin": 0,
-  "status": 1,
-  "priority": 1,
-  "block": "100",
-  "address": "Mission Row",
-  "postal": "9001",
-  "title": "Armed Robbery",
-  "code": "211",
-  "description": "Clerk reports a firearm.",
-  "notes": [],
-  "communityUserIds": [
-    "player-1234"
-  ],
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "radius": "75"
-  }
-}),
-});
-
-const data = await response.json();
-console.log(data);
-```
-{% endtab %}
-
-{% tab title="PowerShell" %}
-```powershell
-$headers = @{
-  Authorization = "Bearer YOUR_API_KEY"
-  Accept = "application/json"
-  "Content-Type" = "application/json"
-}
-
-$body = @'
-{
-  "origin": 0,
-  "status": 1,
-  "priority": 1,
-  "block": "100",
-  "address": "Mission Row",
-  "postal": "9001",
-  "title": "Armed Robbery",
-  "code": "211",
-  "description": "Clerk reports a firearm.",
-  "notes": [],
-  "communityUserIds": ["player-1234"],
-  "metaData": {
-    "source": "integration",
-    "x": "425.1",
-    "y": "-979.2",
-    "z": "30.7",
-    "radius": "75"
-  }
-}
-'@
-
-Invoke-RestMethod `
-  -Method Post `
-  -Uri "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls" `
-  -Headers $headers `
-  -Body $body
-```
-{% endtab %}
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
@@ -380,6 +274,7 @@ paths:
           in: "path"
           schema:
             type: "integer"
+          example: 1
           required: true
       security:
         -
@@ -415,6 +310,35 @@ components:
       scheme: "bearer"
       bearerFormat: "JWT"
 ~~~
+{% endtab %}
+{% tab title="cURL" %}
+```bash
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/dispatch-calls" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data '{
+  "origin": 0,
+  "status": 1,
+  "priority": 1,
+  "block": "100",
+  "address": "Mission Row",
+  "postal": "9001",
+  "title": "Armed Robbery",
+  "code": "211",
+  "description": "Clerk reports a firearm.",
+  "notes": [],
+  "communityUserIds": ["player-1234"],
+  "metaData": {
+    "source": "integration",
+    "x": "425.1",
+    "y": "-979.2",
+    "z": "30.7",
+    "radius": "75"
+  }
+}'
+```
 {% endtab %}
 {% endtabs %}
 
