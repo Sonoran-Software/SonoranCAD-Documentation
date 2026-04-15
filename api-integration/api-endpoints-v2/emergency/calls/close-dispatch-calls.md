@@ -155,6 +155,63 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Close Dispatch Calls"
+  version: "1.0.0"
+  description: "Close one or more dispatch calls."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/dispatch-calls/close:
+    post:
+      summary: "Close Dispatch Calls"
+      operationId: "closeDispatchCalls"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                callIds:
+                  - 501
+                  - 502
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              callIds:
+                - 1042
+                - 1043
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

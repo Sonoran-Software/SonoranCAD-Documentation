@@ -184,6 +184,64 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Send Draft"
+  version: "1.0.0"
+  description: "Build a draft record from a template and optionally send it to an active account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/record-drafts:
+    post:
+      summary: "Send Draft"
+      operationId: "sendDraft"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                recordTypeId: 12
+                id: 0
+                name: "Incident Report"
+                type: 9
+                sections:
+                  category: 0
+                  label: "Report Details"
+                  fields:
+                    label: "Case Number"
+                    value: ""
+                    uid: "case_number"
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              recordTypeId: 12
+              replaceValues:
+                {{plate}}: "ABC123"
+              communityUserId: "player-1234"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

@@ -176,6 +176,61 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Modify Account Permissions"
+  version: "1.0.0"
+  description: "Update account permissions and account status for a community user."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/accounts/permissions:
+    patch:
+      summary: "Modify Account Permissions"
+      operationId: "modifyAccountPermissions"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                accountUuid: "00000000-0000-0000-0000-000000000000"
+                permissions:
+                  police: true
+                  dispatch: true
+                  liveMap: true
+                  adminInGameIntegration: true
+                active: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              communityUserId: "player-1234"
+              add:
+                - "POLICE"
+                - "DISPATCH"
+              active: true
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

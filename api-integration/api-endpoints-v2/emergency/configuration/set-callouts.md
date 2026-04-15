@@ -272,6 +272,80 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set Callouts"
+  version: "1.0.0"
+  description: "Replace available ERS callouts for a server."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/callouts:
+    put:
+      summary: "Set Callouts"
+      operationId: "setCallouts"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                serverId: 1
+                callouts: 1
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              callouts:
+                id: "armed_suspect"
+                data:
+                  PedActionOnNoActionFound: "Flee"
+                  PedActionMinimumTimeoutInMs: 2000
+                  PedChanceToFleeFromPlayer: 50
+                  PedChanceToObtainWeapons: 30
+                  CalloutName: "Armed Suspect"
+                  CalloutDescriptions: "Reports of an armed suspect in the area."
+                  PedChanceToAttackPlayer: 20
+                  PedActionMaximumTimeoutInMs: 10000
+                  Enabled: true
+                  CalloutLocations: null
+                  PedChanceToSurrender: 30
+                  PedWeaponData: "WEAPON_PISTOL"
+                  CalloutUnitsRequired:
+                    towRequired: false
+                    fireRequired: false
+                    description: "Single suspect, use caution."
+                    policeRequired: true
+                    ambulanceRequired: false
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

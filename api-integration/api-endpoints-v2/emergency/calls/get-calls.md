@@ -156,6 +156,141 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Calls"
+  version: "1.0.0"
+  description: "Retrieve active, emergency, and closed calls for a server."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/calls:
+    get:
+      summary: "Get Calls"
+      operationId: "getCalls"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                activeCalls:
+                  callId: 501
+                  origin: 0
+                  status: 1
+                  priority: 1
+                  block: "100"
+                  address: "Mission Row"
+                  postal: "9001"
+                  title: "Armed Robbery"
+                  code: "211"
+                  primary: 12
+                  trackPrimary: false
+                  description: "Clerk reports a firearm."
+                  notes:
+                    time: "2026-04-08T21:30:00Z"
+                    label: "Sonoran CAD"
+                    type: "text"
+                    content: "Caller is hiding."
+                  idents:
+                    - 12
+                    - 18
+                  metaData:
+                    source: "integration"
+                    x: "425.1"
+                    y: "-979.2"
+                    z: "30.7"
+                    radius: "75"
+                  updated: "2026-04-08T21:30:00Z"
+                emergencyCalls:
+                  callId: 302
+                  isEmergency: true
+                  caller: "Jane Doe"
+                  location: "Innocence Blvd"
+                  description: "Medical emergency reported."
+                  metaData:
+                    phone: "555-0100"
+                    x: "425.1"
+                    y: "-979.2"
+                    z: "30.7"
+                    postal: "9001"
+                  updated: "2026-04-08T21:31:00Z"
+                closedCalls:
+                  callId: 480
+                  origin: 0
+                  status: 2
+                  priority: 1
+                  block: "100"
+                  address: "Mission Row"
+                  postal: "9001"
+                  title: "Armed Robbery"
+                  code: "211"
+                  primary: 12
+                  trackPrimary: false
+                  description: "Clerk reports a firearm."
+                  notes:
+                    time: "2026-04-08T21:30:00Z"
+                    label: "Sonoran CAD"
+                    type: "text"
+                    content: "Caller is hiding."
+                  idents:
+                    - 12
+                    - 18
+                  metaData:
+                    source: "integration"
+                    x: "425.1"
+                    y: "-979.2"
+                    z: "30.7"
+                    radius: "75"
+                  updated: "2026-04-08T21:30:00Z"
+                closedCallCount: 18
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Maximum number of closed dispatch calls returned."
+          name: "closedLimit"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Number of closed calls to skip."
+          name: "closedOffset"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Call table type filter. See `CALL_TABLE_TYPE` below."
+          name: "type"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

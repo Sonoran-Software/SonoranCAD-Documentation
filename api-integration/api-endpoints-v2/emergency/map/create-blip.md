@@ -254,6 +254,84 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Create Blip"
+  version: "1.0.0"
+  description: "Create a custom blip."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/blips:
+    post:
+      summary: "Create Blip"
+      operationId: "createBlip"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                id: 32
+                coordinates:
+                  x: 425.5
+                  y: -979.8
+                  z: 0.0
+                  w: 0.0
+                subType: "radius"
+                icon: "fa-location-dot"
+                color: "#ff0000"
+                tooltip: "Perimeter"
+                data:
+                  title: "Assigned Unit"
+                  text: "A-10"
+                radius: 100.0
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              coordinates:
+                x: 441.2
+                y: -981.9
+                z: 0.0
+                w: 0.0
+              subType: "scene"
+              icon: "fa-circle"
+              color: "red"
+              tooltip: "Scene perimeter"
+              radius: 50.0
+              data:
+                title: "Units"
+                text: "2"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

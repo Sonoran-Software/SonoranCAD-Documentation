@@ -180,6 +180,65 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Lookup By Value"
+  version: "1.0.0"
+  description: "Search records by numeric, account-backed, or secret-backed values."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/lookups/by-value:
+    post:
+      summary: "Lookup By Value"
+      operationId: "lookupByValue"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                recordTypeId: 7
+                id: 2451
+                syncId: "citizen:1234"
+                name: "John Doe"
+                type: 7
+                sections:
+                  category: 0
+                  label: "Civilian Info"
+                  fields:
+                    label: "First Name"
+                    value: "John"
+                    uid: "first_name"
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              searchType: "NUMBER"
+              value: "451"
+              notifyCommunityUserId: "player-1234"
+              types: 12
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

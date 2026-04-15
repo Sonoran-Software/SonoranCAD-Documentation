@@ -138,6 +138,69 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Characters"
+  version: "1.0.0"
+  description: "Retrieve characters for a community user or account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/civilian/characters:
+    get:
+      summary: "Get Characters"
+      operationId: "getCharacters"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                recordTypeId: 7
+                id: 2451
+                syncId: "citizen:1234"
+                name: "John Doe"
+                type: 7
+                sections:
+                  category: 0
+                  label: "Civilian Info"
+                  fields:
+                    label: "First Name"
+                    value: "John"
+                    uid: "first_name"
+      parameters:
+        -
+          description: "Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`."
+          name: "communityUserId"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+        -
+          description: "Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`."
+          name: "accountUuid"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

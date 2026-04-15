@@ -152,6 +152,83 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set Selected Identifier"
+  version: "1.0.0"
+  description: "Set the selected identifier for an account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/accounts/{accountUuid}/selected-identifier:
+    put:
+      summary: "Set Selected Identifier"
+      operationId: "setSelectedIdentifier"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                serverId: 1
+                isDispatch: false
+                identifier:
+                  id: 12
+                  accId: "00000000-0000-0000-0000-000000000000"
+                  status: 3
+                  isPanic: false
+                  location: "Mission Row PD"
+                  coordinates:
+                    x: 123.45
+                    y: -456.78
+                    z: 32.1
+                    w: 180.0
+                  aop: "Los Santos"
+                  data:
+                    unitNum: "A-10"
+                    name: "John Doe"
+                    district: "Los Santos"
+                    department: "LSPD"
+                    subdivision: "Patrol"
+                    rank: "Officer"
+                    group: "CAR-51"
+                    page: 0
+                    apiIds: "steam:110000112345678"
+                  isDispatch: false
+      parameters:
+        -
+          description: "Sonoran CAD account UUID."
+          name: "accountUuid"
+          in: "path"
+          schema:
+            type: "string"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              identId: 15
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

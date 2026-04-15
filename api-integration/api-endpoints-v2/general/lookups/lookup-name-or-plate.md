@@ -204,6 +204,85 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Lookup Name Or Plate"
+  version: "1.0.0"
+  description: "Search records by name or plate values."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/lookups:
+    post:
+      summary: "Lookup Name Or Plate"
+      operationId: "lookupNameOrPlate"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  type: "object"
+              example:
+                -
+                  recordTypeId: 7
+                  id: 2451
+                  syncId: "citizen:1234"
+                  name: "John Doe"
+                  type: 7
+                  sections:
+                    category: 0
+                    label: "Civilian Info"
+                    fields:
+                      label: "First Name"
+                      value: "John"
+                      uid: "first_name"
+                -
+                  recordTypeId: 12
+                  id: 451
+                  name: "Incident Report"
+                  type: 9
+                  sections:
+                    category: 0
+                    label: "Report Details"
+                    fields:
+                      label: "Case Number"
+                      value: "SC-2026-001"
+                      uid: "case_number"
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              first: "John"
+              last: "Doe"
+              mi: ""
+              plate: ""
+              notifyCommunityUserId: "player-1234"
+              types:
+                - 7
+                - 12
+              partial: true
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

@@ -152,6 +152,61 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Heartbeat"
+  version: "1.0.0"
+  description: "Publish a server heartbeat with current player count."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/servers/{serverId}/heartbeat:
+    post:
+      summary: "Heartbeat"
+      operationId: "heartbeat"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                serverId: 1
+                playerCount: 32
+                receivedAtUtc: "2026-04-08T21:35:00Z"
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              playerCount: 42
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

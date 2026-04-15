@@ -239,6 +239,78 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set Servers"
+  version: "1.0.0"
+  description: "Replace configured community servers."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/servers:
+    put:
+      summary: "Set Servers"
+      operationId: "setServers"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                servers:
+                  id: 1
+                  name: "Main Server"
+                  description: "Primary patrol server"
+                  signal: "100"
+                  mapUrl: "https://example.com/tiles/{z}/{x}/{y}.png"
+                  mapIp: "203.0.113.10"
+                  listenerPort: "30120"
+                  differingOutbound: false
+                  outboundIp: ""
+                  enableMap: true
+                  mapType: "NORMAL"
+                  isStatic: false
+                  liveMapFormat: 0
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              deployMap: true
+              servers:
+                id: 1
+                name: "Main Server"
+                description: "Primary patrol server"
+                signal: "100"
+                mapUrl: "https://example.com/tiles/{z}/{x}/{y}.png"
+                mapIp: "203.0.113.10"
+                listenerPort: "30120"
+                differingOutbound: false
+                outboundIp: ""
+                enableMap: true
+                mapType: "NORMAL"
+                isStatic: false
+                liveMapFormat: 0
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

@@ -241,6 +241,69 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Create Identifier"
+  version: "1.0.0"
+  description: "Create a new identifier for an account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/accounts/{accountUuid}/identifiers:
+    post:
+      summary: "Create Identifier"
+      operationId: "createIdentifier"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                identId: 42
+      parameters:
+        -
+          description: "Sonoran CAD account UUID."
+          name: "accountUuid"
+          in: "path"
+          schema:
+            type: "string"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              status: 0
+              aop: "Los Santos"
+              unitNum: "A-10"
+              name: "John Doe"
+              district: "Los Santos"
+              department: "LSPD"
+              subdivision: "Patrol"
+              rank: "Officer"
+              group: "CAR-51"
+              page: 0
+              isDispatch: false
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

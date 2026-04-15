@@ -260,6 +260,70 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Update Unit Locations"
+  version: "1.0.0"
+  description: "Update live map location data for one or more units."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/unit-locations:
+    patch:
+      summary: "Update Unit Locations"
+      operationId: "updateUnitLocations"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                updated: 1
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              updates:
+                communityUserId: "player-1234"
+                location: "Mission Row"
+                coordinates:
+                  x: 441.2
+                  y: -981.9
+                  z: 30.7
+                  w: 90.0
+                peerId: "peer-1"
+                vehicle:
+                  model: "police3"
+                  headingOffset: 0
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

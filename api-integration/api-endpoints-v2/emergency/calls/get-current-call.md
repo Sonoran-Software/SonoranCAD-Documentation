@@ -128,6 +128,52 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Current Call"
+  version: "1.0.0"
+  description: "Retrieve the current selected identifier and active call for an account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/accounts/{accountUuid}/current-call:
+    get:
+      summary: "Get Current Call"
+      operationId: "getCurrentCall"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                identId: 12
+                callId: 501
+      parameters:
+        -
+          description: "Sonoran CAD account UUID."
+          name: "accountUuid"
+          in: "path"
+          schema:
+            type: "string"
+          required: true
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

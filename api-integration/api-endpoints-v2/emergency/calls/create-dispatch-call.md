@@ -321,6 +321,101 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Create Dispatch Call"
+  version: "1.0.0"
+  description: "Create a new dispatch call."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/dispatch-calls:
+    post:
+      summary: "Create Dispatch Call"
+      operationId: "createDispatchCall"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                callId: 501
+                origin: 0
+                status: 1
+                priority: 1
+                block: "100"
+                address: "Mission Row"
+                postal: "9001"
+                title: "Armed Robbery"
+                code: "211"
+                primary: 12
+                trackPrimary: false
+                description: "Clerk reports a firearm."
+                notes:
+                  time: "2026-04-08T21:30:00Z"
+                  label: "Sonoran CAD"
+                  type: "text"
+                  content: "Caller is hiding."
+                idents:
+                  - 12
+                  - 18
+                metaData:
+                  source: "integration"
+                  x: "425.1"
+                  y: "-979.2"
+                  z: "30.7"
+                  radius: "75"
+                updated: "2026-04-08T21:30:00Z"
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              origin: 0
+              status: 1
+              priority: 1
+              block: "100"
+              address: "Mission Row"
+              postal: "9001"
+              title: "Armed Robbery"
+              code: "211"
+              description: "Clerk reports a firearm."
+              notes: null
+              communityUserIds: "player-1234"
+              metaData:
+                source: "integration"
+                x: "425.1"
+                y: "-979.2"
+                z: "30.7"
+                radius: "75"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

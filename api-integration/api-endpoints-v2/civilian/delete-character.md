@@ -128,6 +128,51 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Delete Character"
+  version: "1.0.0"
+  description: "Remove a character by character ID."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/civilian/characters/{characterId}:
+    delete:
+      summary: "Delete Character"
+      operationId: "deleteCharacter"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                characterId: 2451
+      parameters:
+        -
+          description: "Character record ID."
+          name: "characterId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

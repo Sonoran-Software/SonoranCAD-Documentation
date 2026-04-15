@@ -139,6 +139,76 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Account"
+  version: "1.0.0"
+  description: "Retrieve a single community account by community user ID, account UUID, or username."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/accounts/account:
+    get:
+      summary: "Get Account"
+      operationId: "getAccount"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                uuid: "00000000-0000-0000-0000-000000000000"
+                username: "ExampleUser"
+                communityUserId: "player-1234"
+                status: 1
+                joined: "2026-01-14T18:22:00Z"
+                lastLogin: "2026-04-08T20:55:00Z"
+                permissions:
+                  police: true
+                  dispatch: true
+                  liveMap: true
+                  adminInGameIntegration: true
+                apiIds: "steam:110000112345678"
+      parameters:
+        -
+          description: "Target in-game community user ID. Provide exactly one identifier."
+          name: "communityUserId"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+        -
+          description: "Target account UUID. Provide exactly one identifier."
+          name: "accountUuid"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+        -
+          description: "Target username. Provide exactly one identifier."
+          name: "username"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

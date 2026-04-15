@@ -138,6 +138,61 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Character Links"
+  version: "1.0.0"
+  description: "Retrieve linked sync-character IDs for a community user or account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/civilian/character-links:
+    get:
+      summary: "Get Character Links"
+      operationId: "getCharacterLinks"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  type: "object"
+              example:
+                - "citizen:1234"
+                - "citizen:5678"
+      parameters:
+        -
+          description: "Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`."
+          name: "communityUserId"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+        -
+          description: "Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`."
+          name: "accountUuid"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

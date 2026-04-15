@@ -176,6 +176,57 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set API IDs"
+  version: "1.0.0"
+  description: "Replace or append API IDs for a community account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/api-ids:
+    put:
+      summary: "Set API IDs"
+      operationId: "setAPIIDs"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                accountUuid: "00000000-0000-0000-0000-000000000000"
+                apiIds: "steam:110000112345678"
+                pushNew: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              communityUserId: "player-1234"
+              apiIds:
+                - "steam:110000112345678"
+                - "license:abc123"
+              pushNew: true
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

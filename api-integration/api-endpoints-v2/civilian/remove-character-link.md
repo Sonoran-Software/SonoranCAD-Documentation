@@ -166,6 +166,61 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Remove Character Link"
+  version: "1.0.0"
+  description: "Unlink a sync-character ID from a community user or account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/civilian/character-links/{syncId}:
+    delete:
+      summary: "Remove Character Link"
+      operationId: "removeCharacterLink"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                accountUuid: "00000000-0000-0000-0000-000000000000"
+                syncId: "citizen:1234"
+                action: "REMOVE"
+      parameters:
+        -
+          description: "Database Sync character identifier."
+          name: "syncId"
+          in: "path"
+          schema:
+            type: "string"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              communityUserId: "player-1234"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

@@ -307,6 +307,73 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set Pager Config"
+  version: "1.0.0"
+  description: "Replace Inferno pager configuration for a server."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/pager-config:
+    put:
+      summary: "Set Pager Config"
+      operationId: "setPagerConfig"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                serverId: 1
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              natureWords:
+                Emergency: "Emergency"
+                NonEmergency: "Non-Emergency"
+                Administrative: "Administrative"
+              maxAddresses: 5
+              maxBodyLength: 250
+              nodes:
+                id: "root-1"
+                name: "Fire"
+                description: "Fire services"
+                permission: "fire"
+                address: "FIRE-01"
+                shortCode: "F1"
+                kind: "group"
+                children: null
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

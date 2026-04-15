@@ -265,6 +265,80 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Create 911 Call"
+  version: "1.0.0"
+  description: "Create a new 911 call for a server."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/calls/911:
+    post:
+      summary: "Create 911 Call"
+      operationId: "create911Call"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                callId: 302
+                isEmergency: true
+                caller: "Jane Doe"
+                location: "Innocence Blvd"
+                description: "Medical emergency reported."
+                metaData:
+                  phone: "555-0100"
+                  x: "425.1"
+                  y: "-979.2"
+                  z: "30.7"
+                  postal: "9001"
+                updated: "2026-04-08T21:31:00Z"
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              isEmergency: true
+              caller: "911 Caller"
+              location: "Alta St / Integrity Way"
+              description: "Shots fired"
+              deleteAfterMinutes: 15
+              metaData:
+                source: "integration"
+                x: "425.1"
+                y: "-979.2"
+                z: "30.7"
+                postal: "9001"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

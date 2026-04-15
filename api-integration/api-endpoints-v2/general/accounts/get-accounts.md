@@ -148,6 +148,87 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Accounts"
+  version: "1.0.0"
+  description: "Retrieve paginated community accounts."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/accounts:
+    get:
+      summary: "Get Accounts"
+      operationId: "getAccounts"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                pagination:
+                  limit: 25
+                  offset: 0
+                  total: 1
+                accounts:
+                  uuid: "00000000-0000-0000-0000-000000000000"
+                  username: "ExampleUser"
+                  status: 1
+                  joined: "2026-01-14T18:22:00Z"
+                  lastLogin: "2026-04-08T20:55:00Z"
+                  permissions:
+                    police: true
+                    dispatch: true
+                    liveMap: true
+                    adminInGameIntegration: true
+                  apiIds: "steam:110000112345678"
+      parameters:
+        -
+          description: "Maximum number of accounts returned. The backend enforces 1-100."
+          name: "limit"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Number of accounts to skip."
+          name: "offset"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Filter by account status. See `ACCOUNT_STATUS` below."
+          name: "status"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Case-insensitive username filter."
+          name: "username"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

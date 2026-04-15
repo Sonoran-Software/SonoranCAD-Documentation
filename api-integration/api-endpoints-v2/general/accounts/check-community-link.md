@@ -155,6 +155,53 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Check Community Link"
+  version: "1.0.0"
+  description: "Check whether a community user ID is linked to an account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/links/check:
+    post:
+      summary: "Check Community Link"
+      operationId: "checkCommunityLink"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                communityUserId: "player_12345"
+                linked: true
+                accountUuid: "00000000-0000-0000-0000-000000000000"
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              communityUserId: "player_12345"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

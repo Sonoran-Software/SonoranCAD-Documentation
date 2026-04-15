@@ -135,6 +135,52 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Login Page"
+  version: "1.0.0"
+  description: "Retrieve public login-page community details by custom URL or community ID."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/login-page:
+    get:
+      summary: "Get Login Page"
+      operationId: "getLoginPage"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                comId: "examplecad"
+                name: "Example CAD"
+                timezone: "America/Phoenix"
+                customLoginUrl: "https://portal.examplecad.com/login"
+      parameters:
+        -
+          description: "Use the community ID instead of `url`. Provide exactly one."
+          name: "communityId"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+        -
+          description: "Use the community website or login URL instead of `communityId`."
+          name: "url"
+          in: "query"
+          schema:
+            type: "string"
+          required: false
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

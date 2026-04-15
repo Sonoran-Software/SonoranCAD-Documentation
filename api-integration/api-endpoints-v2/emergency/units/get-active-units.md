@@ -160,6 +160,100 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Active Units"
+  version: "1.0.0"
+  description: "Retrieve active emergency units for a configured server."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/emergency/servers/{serverId}/units:
+    get:
+      summary: "Get Active Units"
+      operationId: "getActiveUnits"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                id: 12
+                accId: "00000000-0000-0000-0000-000000000000"
+                status: 3
+                isPanic: false
+                location: "Mission Row PD"
+                coordinates:
+                  x: 123.45
+                  y: -456.78
+                  z: 32.1
+                  w: 180.0
+                aop: "Los Santos"
+                data:
+                  unitNum: "A-10"
+                  name: "John Doe"
+                  district: "Los Santos"
+                  department: "LSPD"
+                  subdivision: "Patrol"
+                  rank: "Officer"
+                  group: "CAR-51"
+                  page: 0
+                  apiIds: "steam:110000112345678"
+                isDispatch: false
+      parameters:
+        -
+          description: "Configured Sonoran CAD server ID."
+          name: "serverId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Include offline identifiers in the response."
+          name: "includeOffline"
+          in: "query"
+          schema:
+            type: "boolean"
+          required: true
+        -
+          description: "When `true`, hides active dispatchers."
+          name: "onlyUnits"
+          in: "query"
+          schema:
+            type: "boolean"
+          required: true
+        -
+          description: "Maximum number of rows returned."
+          name: "limit"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+        -
+          description: "Number of rows to skip."
+          name: "offset"
+          in: "query"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

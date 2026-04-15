@@ -167,6 +167,53 @@ Invoke-RestMethod `
   -Body $body
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Set Selected Character"
+  version: "1.0.0"
+  description: "Set the selected character for a community user or account."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/civilian/selected-character:
+    put:
+      summary: "Set Selected Character"
+      operationId: "setSelectedCharacter"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                accountUuid: "00000000-0000-0000-0000-000000000000"
+                characterId: "citizen:1234"
+      security:
+        -
+          bearerAuth:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+            example:
+              communityUserId: "player-1234"
+              characterId: "1042"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response

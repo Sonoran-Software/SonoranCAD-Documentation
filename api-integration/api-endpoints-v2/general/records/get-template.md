@@ -128,6 +128,61 @@ Invoke-RestMethod `
   -Headers $headers
 ```
 {% endtab %}
+{% tab title="OpenAPI" %}
+Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
+
+~~~yaml
+openapi: "3.0.3"
+info:
+  title: "Sonoran CAD v2 - Get Template"
+  version: "1.0.0"
+  description: "Retrieve a single record template by record type ID."
+servers:
+  -
+    url: "https://api.sonorancad.com"
+paths:
+  /v2/general/templates/{recordTypeId}:
+    get:
+      summary: "Get Template"
+      operationId: "getTemplate"
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+              example:
+                recordTypeId: 12
+                id: 0
+                name: "Incident Report"
+                type: 9
+                sections:
+                  category: 0
+                  label: "Report Details"
+                  fields:
+                    label: "Case Number"
+                    value: ""
+                    uid: "case_number"
+      parameters:
+        -
+          description: "Custom record template ID."
+          name: "recordTypeId"
+          in: "path"
+          schema:
+            type: "integer"
+          required: true
+      security:
+        -
+          bearerAuth:
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+~~~
+{% endtab %}
 {% endtabs %}
 
 ## Response
