@@ -52,6 +52,7 @@ Replace the Inferno pager configuration for a server. If `nodes` is omitted, Son
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
   communityId = "YOUR_COMMUNITY_ID",
   apiKey = "YOUR_API_KEY",
   defaultServerId = 1
@@ -169,6 +170,7 @@ using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
+    product = SonoranProduct.CAD,
     communityId = "YOUR_COMMUNITY_ID",
     apiKey = "YOUR_API_KEY",
     defaultServerId = 1
@@ -309,3 +311,4 @@ Successful requests return `application/json`.
   "serverId": 1
 }
 ```
+

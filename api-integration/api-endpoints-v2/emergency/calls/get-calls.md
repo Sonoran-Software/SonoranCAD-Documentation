@@ -34,6 +34,7 @@ Retrieve dispatch calls, emergency calls, and recent closed calls.
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
   communityId = "YOUR_COMMUNITY_ID",
   apiKey = "YOUR_API_KEY",
   defaultServerId = 1
@@ -103,6 +104,7 @@ using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
+    product = SonoranProduct.CAD,
     communityId = "YOUR_COMMUNITY_ID",
     apiKey = "YOUR_API_KEY",
     defaultServerId = 1
@@ -388,3 +390,4 @@ Successful requests return `application/json`.
 | --- | --- |
 | `0` | `RADIO_DISPATCH` |
 | `1` | `SELF_INITIATED` |
+

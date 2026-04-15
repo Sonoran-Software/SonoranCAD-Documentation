@@ -28,6 +28,7 @@ Create a 4-character code for a `communityUserId`. The code is scoped to the aut
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
   communityId = "YOUR_COMMUNITY_ID",
   apiKey = "YOUR_API_KEY",
   defaultServerId = 1
@@ -88,6 +89,7 @@ using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
+    product = SonoranProduct.CAD,
     communityId = "YOUR_COMMUNITY_ID",
     apiKey = "YOUR_API_KEY",
     defaultServerId = 1
@@ -188,3 +190,4 @@ If the user is not logged in, they will be automatically redirected. The 4-digit
 Once linked, the `communityUserId` parameter can be used with any applicable v2 API endpoint.
 
 <div><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+

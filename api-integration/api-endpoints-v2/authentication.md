@@ -28,6 +28,7 @@ https://api.sonorancad.com
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
   communityId = "YOUR_COMMUNITY_ID",
   apiKey = "YOUR_API_KEY",
   defaultServerId = 1
@@ -92,6 +93,7 @@ using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
 {
+    product = SonoranProduct.CAD,
     communityId = "YOUR_COMMUNITY_ID",
     apiKey = "YOUR_API_KEY",
     defaultServerId = 1
@@ -207,4 +209,5 @@ Our official libraries already help with this:
 - [`Sonoran.py`](https://pypi.org/project/Sonoran.py/) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
 
 These retries are intentionally limited. High-frequency integrations should still avoid bursty request patterns and should respect the published per-endpoint limits.
+
 
