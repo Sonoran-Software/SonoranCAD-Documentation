@@ -66,6 +66,28 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.py" %}
+~~~python
+# pip install Sonoran.py
+from sonoran import Instance, productEnums
+
+instance = Instance(
+    apiKey="YOUR_API_KEY",
+    communityId="YOUR_COMMUNITY_ID",
+    product=productEnums.CAD,
+    serverId=1,
+)
+
+response = instance.cad.getAccountsV2({
+    "limit": 25,
+    "offset": 0,
+    "username": 'john',
+  })
+
+print(response.success)
+print(response.data if response.success else response.reason)
+~~~
+{% endtab %}
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net

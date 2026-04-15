@@ -137,6 +137,43 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.py" %}
+~~~python
+# pip install Sonoran.py
+from sonoran import Instance, productEnums
+
+instance = Instance(
+    apiKey="YOUR_API_KEY",
+    communityId="YOUR_COMMUNITY_ID",
+    product=productEnums.CAD,
+    serverId=1,
+)
+
+response = instance.cad.createDispatchCallV2({
+    "serverId": 1,
+    "origin": 1,
+    "status": 1,
+    "priority": 1,
+    "block": '101',
+    "address": 'Alta Street',
+    "postal": '100',
+    "title": 'Structure Fire',
+    "code": 'FIRE',
+    "description": 'Visible smoke from the roof.',
+    "notes": [],
+    "metaData": {
+      "source": 'integration',
+      "x": '425.1',
+      "y": '-979.2',
+      "z": '30.7',
+      "radius": '75',
+    },
+  })
+
+print(response.success)
+print(response.data if response.success else response.reason)
+~~~
+{% endtab %}
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net

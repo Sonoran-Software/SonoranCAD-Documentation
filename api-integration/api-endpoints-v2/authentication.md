@@ -64,6 +64,27 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+{% tab title="Sonoran.py" %}
+~~~python
+# pip install Sonoran.py
+from sonoran import Instance, productEnums
+
+instance = Instance(
+    apiKey="YOUR_API_KEY",
+    communityId="YOUR_COMMUNITY_ID",
+    product=productEnums.CAD,
+    serverId=1,
+)
+
+response = instance.cad.getUnitsV2({
+    "onlyUnits": True,
+    "includeOffline": False,
+  })
+
+print(response.success)
+print(response.data if response.success else response.reason)
+~~~
+{% endtab %}
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net
@@ -183,5 +204,6 @@ Our official libraries already help with this:
 - [`Sonoran.js`](https://github.com/Sonoran-Software/Sonoran.js) automatically retries v2 CAD requests on `429` responses up to 2 times.
 - [`Sonoran.lua`](https://github.com/Sonoran-Software/Sonoran.Lua) automatically retries v2 CAD requests on `429` responses up to 2 times.
 - [`Sonoran.Net`](https://github.com/Sonoran-Software/Sonoran.Net) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
+- [`Sonoran.py`](https://pypi.org/project/Sonoran.py/) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
 
 These retries are intentionally limited. High-frequency integrations should still avoid bursty request patterns and should respect the published per-endpoint limits.
