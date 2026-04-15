@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:attachUnitsToDispatchCallV2(501, {
+local response = sonoran.cad:attachUnitsToDispatchCallV2(501, {
     serverId = 1,
     apiIds = {'1234567890'},
   })
@@ -105,7 +105,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.attachUnitsToDispatchCallV2(
+var response = await sonoran.Cad.attachUnitsToDispatchCallV2(
     501,
     new DispatchAttachmentV2Request
     {

@@ -61,7 +61,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:createEmergencyCallV2({
+local response = sonoran.cad:createEmergencyCallV2({
     serverId = 1,
     isEmergency = true,
     caller = 'John Doe',
@@ -157,7 +157,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createEmergencyCallV2(new CreateEmergencyCallV2Request
+var response = await sonoran.Cad.createEmergencyCallV2(new CreateEmergencyCallV2Request
 {
     ServerId = 1,
     IsEmergency = true,

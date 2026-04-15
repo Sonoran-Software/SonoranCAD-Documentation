@@ -32,7 +32,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:deleteEmergencyCallV2(501, 1)
+local response = sonoran.cad:deleteEmergencyCallV2(501, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -86,7 +86,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.deleteEmergencyCallV2(302, 1);
+var response = await sonoran.Cad.deleteEmergencyCallV2(302, 1);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

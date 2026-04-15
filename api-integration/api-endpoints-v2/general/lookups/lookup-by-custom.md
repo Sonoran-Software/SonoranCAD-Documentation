@@ -36,7 +36,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:lookupCustomV2({
+local response = sonoran.cad:lookupCustomV2({
     map = 'vehicle',
     value = 'ABC123',
     types = {1},
@@ -105,7 +105,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupCustomV2(new LookupCustomV2Request
+var response = await sonoran.Cad.lookupCustomV2(new LookupCustomV2Request
 {
     Map = "license_number",
     Value = "DL-12345",

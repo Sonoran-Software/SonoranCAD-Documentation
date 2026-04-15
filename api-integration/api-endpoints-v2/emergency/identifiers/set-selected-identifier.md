@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:selectIdentifierV2('00000000-0000-0000-0000-000000000000', 12)
+local response = sonoran.cad:selectIdentifierV2('00000000-0000-0000-0000-000000000000', 12)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.selectIdentifierV2("00000000-0000-0000-0000-000000000000", 12);
+var response = await sonoran.Cad.selectIdentifierV2("00000000-0000-0000-0000-000000000000", 12);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

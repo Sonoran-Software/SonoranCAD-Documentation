@@ -36,7 +36,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:sendPhotoV2({
+local response = sonoran.cad:sendPhotoV2({
     apiId = '1234567890',
     url = 'https =//example.com/mugshot.png',
   })
@@ -99,7 +99,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.sendPhotoV2(new SendPhotoV2Request
+var response = await sonoran.Cad.sendPhotoV2(new SendPhotoV2Request
 {
     ApiId = "1234567890",
     Url = "https://example.com/mugshot.jpg"

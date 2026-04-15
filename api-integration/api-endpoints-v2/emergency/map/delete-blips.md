@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:deleteBlipsV2({32}, 1)
+local response = sonoran.cad:deleteBlipsV2({32}, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.deleteBlipsV2(new[] { 32 }, 1);
+var response = await sonoran.Cad.deleteBlipsV2(new[] { 32 }, 1);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

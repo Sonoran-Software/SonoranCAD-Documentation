@@ -41,7 +41,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setDispatchPrimaryV2(501, 12, true, 1)
+local response = sonoran.cad:setDispatchPrimaryV2(501, 12, true, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -95,7 +95,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setDispatchPrimaryV2(501, 12, true, 1);
+var response = await sonoran.Cad.setDispatchPrimaryV2(501, 12, true, 1);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

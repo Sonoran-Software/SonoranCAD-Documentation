@@ -58,7 +58,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateIdentifierV2('00000000-0000-0000-0000-000000000000', 12, {
+local response = sonoran.cad:updateIdentifierV2('00000000-0000-0000-0000-000000000000', 12, {
     status = 2,
     unitNum = '1A-01',
     name = 'John Doe',
@@ -124,7 +124,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateIdentifierV2(
+var response = await sonoran.Cad.updateIdentifierV2(
     "00000000-0000-0000-0000-000000000000",
     12,
     new IdentifierV2Request

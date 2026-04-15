@@ -41,7 +41,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getAccountUnitsV2({
+local response = sonoran.cad:getAccountUnitsV2({
     serverId = 1,
     accountUuid = '00000000-0000-0000-0000-000000000000',
     onlyOnline = true,
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getAccountUnitsV2(new GetAccountUnitsV2Query
+var response = await sonoran.Cad.getAccountUnitsV2(new GetAccountUnitsV2Query
 {
     ServerId = 1,
     AccountUuid = "00000000-0000-0000-0000-000000000000",

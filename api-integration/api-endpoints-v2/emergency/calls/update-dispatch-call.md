@@ -53,7 +53,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateDispatchCallV2(501, {
+local response = sonoran.cad:updateDispatchCallV2(501, {
     serverId = 1,
     description = 'Caller confirmed the fire has spread to the garage.',
     postal = '100',
@@ -140,7 +140,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateDispatchCallV2(
+var response = await sonoran.Cad.updateDispatchCallV2(
     501,
     new UpdateDispatchCallV2Request
     {

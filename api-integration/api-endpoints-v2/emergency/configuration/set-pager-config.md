@@ -57,7 +57,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setPagerConfigV2({
+local response = sonoran.cad:setPagerConfigV2({
     serverId = 1,
     natureWords = {
       Emergency = 'Emergency',
@@ -174,7 +174,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPagerConfigV2(new SetPagerConfigV2Request
+var response = await sonoran.Cad.setPagerConfigV2(new SetPagerConfigV2Request
 {
     ServerId = 1,
     NatureWords = new[]

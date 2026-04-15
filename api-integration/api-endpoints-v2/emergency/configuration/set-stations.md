@@ -55,7 +55,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setStationsV2({
+local response = sonoran.cad:setStationsV2({
     // See the request body above for the full station config shape.
     locations = {},
     tones = {},
@@ -124,7 +124,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setStationsV2(
+var response = await sonoran.Cad.setStationsV2(
     new StationConfigV2
     {
         Enabled = true,

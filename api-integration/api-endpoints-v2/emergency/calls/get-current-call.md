@@ -31,7 +31,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getCurrentCallV2('00000000-0000-0000-0000-000000000000')
+local response = sonoran.cad:getCurrentCallV2('00000000-0000-0000-0000-000000000000')
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -85,7 +85,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getCurrentCallV2("00000000-0000-0000-0000-000000000000");
+var response = await sonoran.Cad.getCurrentCallV2("00000000-0000-0000-0000-000000000000");
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

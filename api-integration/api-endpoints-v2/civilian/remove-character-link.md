@@ -41,7 +41,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:removeCharacterLinkV2('CHAR_123', {
+local response = sonoran.cad:removeCharacterLinkV2('CHAR_123', {
     accountUuid = '00000000-0000-0000-0000-000000000000',
   })
 
@@ -101,7 +101,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.removeCharacterLinkV2(
+var response = await sonoran.Cad.removeCharacterLinkV2(
     "CHAR_123",
     new CharacterLinkTargetV2Request
     {

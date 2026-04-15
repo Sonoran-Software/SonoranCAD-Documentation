@@ -46,7 +46,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateRecordV2(501, {
+local response = sonoran.cad:updateRecordV2(501, {
     // See the request body above for the full record payload shape.
     apiId = '1234567890',
     record = {},
@@ -112,7 +112,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateRecordV2(
+var response = await sonoran.Cad.updateRecordV2(
     451,
     new UpdateRecordV2Request
     {

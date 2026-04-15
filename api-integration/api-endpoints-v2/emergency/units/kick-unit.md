@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:kickUnitV2({
+local response = sonoran.cad:kickUnitV2({
     serverId = 1,
     apiId = '1234567890',
     reason = 'Inactive or unresponsive.',
@@ -108,7 +108,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.kickUnitV2(new KickUnitV2Request
+var response = await sonoran.Cad.kickUnitV2(new KickUnitV2Request
 {
     ServerId = 1,
     ApiId = "1234567890",

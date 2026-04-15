@@ -53,7 +53,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setStreetSignConfigV2({
+local response = sonoran.cad:setStreetSignConfigV2({
     // See the request body above for the full street sign shape.
     { id = 1, coordinates = { x = 0, y = 0, z = 0, w = 0 }, label = 'Alta St' },
   }, 1)
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setStreetSignConfigV2(
+var response = await sonoran.Cad.setStreetSignConfigV2(
     new[]
     {
         new Dictionary<string, object?>

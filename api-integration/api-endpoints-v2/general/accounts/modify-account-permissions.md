@@ -37,7 +37,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setAccountPermissionsV2({
+local response = sonoran.cad:setAccountPermissionsV2({
     accountUuid = '00000000-0000-0000-0000-000000000000',
     add = {'DISPATCH'},
     remove = {'CIVILIAN'},
@@ -103,7 +103,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setAccountPermissionsV2(new SetAccountPermissionsV2Request
+var response = await sonoran.Cad.setAccountPermissionsV2(new SetAccountPermissionsV2Request
 {
     AccountUuid = "00000000-0000-0000-0000-000000000000",
     Add = new[] { "dispatch" },

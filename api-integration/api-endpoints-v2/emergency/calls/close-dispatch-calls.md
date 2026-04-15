@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:closeDispatchCallsV2({501}, 1)
+local response = sonoran.cad:closeDispatchCallsV2({501}, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.closeDispatchCallsV2(new[] { 501, 502 }, 1);
+var response = await sonoran.Cad.closeDispatchCallsV2(new[] { 501, 502 }, 1);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

@@ -57,7 +57,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateUnitLocationsV2({
+local response = sonoran.cad:updateUnitLocationsV2({
     serverId = 1,
     updates = {
       {
@@ -138,7 +138,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateUnitLocationsV2(new UpdateUnitLocationsV2Request
+var response = await sonoran.Cad.updateUnitLocationsV2(new UpdateUnitLocationsV2Request
 {
     ServerId = 1,
     Updates = new[]

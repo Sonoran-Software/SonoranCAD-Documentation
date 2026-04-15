@@ -38,7 +38,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setSelectedCharacterV2({
+local response = sonoran.cad:setSelectedCharacterV2({
     characterId = '42',
     accountUuid = '00000000-0000-0000-0000-000000000000',
   })
@@ -101,7 +101,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setSelectedCharacterV2(new SetSelectedCharacterV2Request
+var response = await sonoran.Cad.setSelectedCharacterV2(new SetSelectedCharacterV2Request
 {
     CharacterId = "CHAR_123",
     AccountUuid = "00000000-0000-0000-0000-000000000000"

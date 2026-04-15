@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:sendRecordDraftV2({
+local response = sonoran.cad:sendRecordDraftV2({
     recordTypeId = 1,
     replaceValues = { firstName = 'John', lastName = 'Doe' },
     apiId = '1234567890',
@@ -105,7 +105,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.sendRecordDraftV2(new SendRecordDraftV2Request
+var response = await sonoran.Cad.sendRecordDraftV2(new SendRecordDraftV2Request
 {
     RecordTypeId = 12,
     ReplaceValues = new Dictionary<string, string>

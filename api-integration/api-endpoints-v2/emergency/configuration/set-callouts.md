@@ -64,7 +64,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setAvailableCalloutsV2({
+local response = sonoran.cad:setAvailableCalloutsV2({
     // See the request body above for the full callout shape.
     { id = 'armed_suspect', data = {} },
   }, 1)
@@ -127,7 +127,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setAvailableCalloutsV2(
+var response = await sonoran.Cad.setAvailableCalloutsV2(
     new[]
     {
         new AvailableCalloutV2

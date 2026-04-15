@@ -33,7 +33,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:verifySecretV2('00000000-0000-0000-0000-000000000000')
+local response = sonoran.cad:verifySecretV2('00000000-0000-0000-0000-000000000000')
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -87,7 +87,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.verifySecretV2("YOUR_COMMUNITY_SECRET");
+var response = await sonoran.Cad.verifySecretV2("YOUR_COMMUNITY_SECRET");
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

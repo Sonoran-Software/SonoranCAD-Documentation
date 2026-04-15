@@ -41,7 +41,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:lookupV2({
+local response = sonoran.cad:lookupV2({
     first = 'John',
     last = 'Doe',
     mi = 'A',
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupV2(new LookupV2Request
+var response = await sonoran.Cad.lookupV2(new LookupV2Request
 {
     First = "John",
     Last = "Doe",

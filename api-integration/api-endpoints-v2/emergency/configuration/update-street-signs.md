@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateStreetSignsV2({
+local response = sonoran.cad:updateStreetSignsV2({
     serverId = 1,
     ids = {1},
     text1 = 'ALTA',
@@ -114,7 +114,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateStreetSignsV2(new UpdateStreetSignsV2Request
+var response = await sonoran.Cad.updateStreetSignsV2(new UpdateStreetSignsV2Request
 {
     ServerId = 1,
     Ids = new[] { 7 },

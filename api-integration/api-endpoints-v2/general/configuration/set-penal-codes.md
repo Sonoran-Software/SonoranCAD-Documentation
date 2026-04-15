@@ -33,7 +33,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setPenalCodesV2({
+local response = sonoran.cad:setPenalCodesV2({
     // See the request body above for the full penal code shape.
     { code = '22107', title = 'Unsafe Lane Change', definition = 'Unsafe lane change' },
   })
@@ -96,7 +96,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPenalCodesV2(new[]
+var response = await sonoran.Cad.setPenalCodesV2(new[]
 {
     new PenalCodeV2
     {

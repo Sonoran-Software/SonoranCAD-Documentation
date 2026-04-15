@@ -55,7 +55,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:createBlipV2({
+local response = sonoran.cad:createBlipV2({
     serverId = 1,
     coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
     subType = 'radius',
@@ -133,7 +133,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createBlipV2(new CreateBlipV2Request
+var response = await sonoran.Cad.createBlipV2(new CreateBlipV2Request
 {
     ServerId = 1,
     Coordinates = new BlipCoordinatesV2

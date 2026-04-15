@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:addDispatchNoteV2(501, {
+local response = sonoran.cad:addDispatchNoteV2(501, {
     serverId = 1,
     note = 'Caller updated with additional suspect info.',
     noteType = 'text',
@@ -111,7 +111,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.addDispatchNoteV2(
+var response = await sonoran.Cad.addDispatchNoteV2(
     501,
     new AddDispatchNoteV2Request
     {

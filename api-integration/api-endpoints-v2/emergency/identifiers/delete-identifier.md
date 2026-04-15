@@ -32,7 +32,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:deleteIdentifierV2('00000000-0000-0000-0000-000000000000', 12)
+local response = sonoran.cad:deleteIdentifierV2('00000000-0000-0000-0000-000000000000', 12)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -86,7 +86,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.deleteIdentifierV2("00000000-0000-0000-0000-000000000000", 12);
+var response = await sonoran.Cad.deleteIdentifierV2("00000000-0000-0000-0000-000000000000", 12);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

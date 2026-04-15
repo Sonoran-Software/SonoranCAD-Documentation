@@ -32,7 +32,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getCharactersV2({
+local response = sonoran.cad:getCharactersV2({
     accountUuid = '00000000-0000-0000-0000-000000000000',
   })
 
@@ -92,7 +92,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getCharactersV2(new GetCharactersV2Query
+var response = await sonoran.Cad.getCharactersV2(new GetCharactersV2Query
 {
     ApiId = "license:abc123"
 });

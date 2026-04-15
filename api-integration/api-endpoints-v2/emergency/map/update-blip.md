@@ -44,7 +44,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:updateBlipV2(32, {
+local response = sonoran.cad:updateBlipV2(32, {
     serverId = 1,
     tooltip = 'Updated marker',
     color = '#ffaa00',
@@ -110,7 +110,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.updateBlipV2(
+var response = await sonoran.Cad.updateBlipV2(
     32,
     new UpdateBlipV2Request
     {

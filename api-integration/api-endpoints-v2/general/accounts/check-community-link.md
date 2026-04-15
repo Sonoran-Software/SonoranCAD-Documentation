@@ -33,7 +33,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:checkCommunityLinkV2({
+local response = sonoran.cad:checkCommunityLinkV2({
     communityUserId = 'player_12345',
   })
 
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.checkCommunityLinkV2(new CommunityLinkV2Request
+var response = await sonoran.Cad.checkCommunityLinkV2(new CommunityLinkV2Request
 {
     CommunityUserId = "player-1234"
 });

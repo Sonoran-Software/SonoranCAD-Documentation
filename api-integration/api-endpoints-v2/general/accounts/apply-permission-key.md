@@ -36,7 +36,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:applyPermissionKeyV2({
+local response = sonoran.cad:applyPermissionKeyV2({
     apiId = '1234567890',
     permissionKey = 'DISPATCH',
   })
@@ -99,7 +99,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.applyPermissionKeyV2(new ApplyPermissionKeyV2Request
+var response = await sonoran.Cad.applyPermissionKeyV2(new ApplyPermissionKeyV2Request
 {
     ApiId = "1234567890",
     PermissionKey = "COMMAND_STAFF"

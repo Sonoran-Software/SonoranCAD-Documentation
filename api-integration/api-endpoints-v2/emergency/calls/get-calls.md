@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getCallsV2({
+local response = sonoran.cad:getCallsV2({
     serverId = 1,
     closedLimit = 10,
     closedOffset = 0,
@@ -108,7 +108,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getCallsV2(new GetCallsV2Query
+var response = await sonoran.Cad.getCallsV2(new GetCallsV2Query
 {
     ServerId = 1,
     ClosedLimit = 10,

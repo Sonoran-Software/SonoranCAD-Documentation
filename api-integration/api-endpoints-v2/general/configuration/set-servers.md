@@ -52,7 +52,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setServersV2({
+local response = sonoran.cad:setServersV2({
     // See the request body above for the full server config shape.
     { id = 1, name = 'Main Server' },
   }, true)
@@ -115,7 +115,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setServersV2(
+var response = await sonoran.Cad.setServersV2(
     new[]
     {
         new CadServerV2

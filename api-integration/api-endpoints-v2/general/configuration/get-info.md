@@ -25,7 +25,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getInfoV2()
+local response = sonoran.cad:getInfoV2()
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -79,7 +79,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getInfoV2();
+var response = await sonoran.Cad.getInfoV2();
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

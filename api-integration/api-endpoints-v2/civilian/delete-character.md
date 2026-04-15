@@ -31,7 +31,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:removeCharacterV2(42)
+local response = sonoran.cad:removeCharacterV2(42)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -85,7 +85,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.removeCharacterV2(42);
+var response = await sonoran.Cad.removeCharacterV2(42);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

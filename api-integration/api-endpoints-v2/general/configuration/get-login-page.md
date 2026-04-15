@@ -32,7 +32,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getLoginPageV2({
+local response = sonoran.cad:getLoginPageV2({
     communityId = 'YOUR_COMMUNITY_ID',
   })
 
@@ -92,7 +92,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getLoginPageV2(new GetLoginPageV2Query
+var response = await sonoran.Cad.getLoginPageV2(new GetLoginPageV2Query
 {
     CommunityId = "YOUR_COMMUNITY_ID"
 });

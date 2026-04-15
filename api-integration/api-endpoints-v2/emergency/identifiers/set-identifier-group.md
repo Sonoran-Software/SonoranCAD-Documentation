@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:addIdentifiersToGroupV2({
+local response = sonoran.cad:addIdentifiersToGroupV2({
     serverId = 1,
     groupName = 'CAR-51',
     identIds = {12},
@@ -108,7 +108,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.addIdentifiersToGroupV2(new AddIdentifiersToGroupV2Request
+var response = await sonoran.Cad.addIdentifiersToGroupV2(new AddIdentifiersToGroupV2Request
 {
     ServerId = 1,
     GroupName = "CAR-51",

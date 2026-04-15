@@ -40,7 +40,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getUnitsV2({
+local response = sonoran.cad:getUnitsV2({
     serverId = 1,
     includeOffline = false,
     onlyUnits = true,
@@ -112,7 +112,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getUnitsV2(new GetUnitsV2Query
+var response = await sonoran.Cad.getUnitsV2(new GetUnitsV2Query
 {
     ServerId = 1,
     OnlyUnits = true,

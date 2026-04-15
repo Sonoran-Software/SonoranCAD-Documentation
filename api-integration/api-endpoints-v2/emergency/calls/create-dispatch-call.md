@@ -75,7 +75,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:createDispatchCallV2({
+local response = sonoran.cad:createDispatchCallV2({
     serverId = 1,
     origin = 1,
     status = 1,
@@ -186,7 +186,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createDispatchCallV2(new CreateDispatchCallV2Request
+var response = await sonoran.Cad.createDispatchCallV2(new CreateDispatchCallV2Request
 {
     ServerId = 1,
     Origin = 0,

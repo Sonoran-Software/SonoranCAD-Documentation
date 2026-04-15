@@ -40,7 +40,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setDispatchPostalV2(501, '100', 1)
+local response = sonoran.cad:setDispatchPostalV2(501, '100', 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -94,7 +94,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setDispatchPostalV2(501, "100", 1);
+var response = await sonoran.Cad.setDispatchPostalV2(501, "100", 1);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

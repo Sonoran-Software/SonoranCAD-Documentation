@@ -40,7 +40,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:createRecordV2({
+local response = sonoran.cad:createRecordV2({
     // See the request body above for the full record payload shape.
     recordTypeId = 1,
     apiId = '1234567890',
@@ -109,7 +109,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.createRecordV2(new CreateRecordV2Request
+var response = await sonoran.Cad.createRecordV2(new CreateRecordV2Request
 {
     AccountUuid = "00000000-0000-0000-0000-000000000000",
     RecordTypeId = 12,

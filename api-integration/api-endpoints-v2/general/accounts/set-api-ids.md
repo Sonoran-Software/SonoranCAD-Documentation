@@ -37,7 +37,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setApiIdsV2({
+local response = sonoran.cad:setApiIdsV2({
     accountUuid = '00000000-0000-0000-0000-000000000000',
     apiIds = {'1234567890', '0987654321'},
     pushNew = true,
@@ -103,7 +103,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setApiIdsV2(new SetApiIdsV2Request
+var response = await sonoran.Cad.setApiIdsV2(new SetApiIdsV2Request
 {
     AccountUuid = "00000000-0000-0000-0000-000000000000",
     ApiIds = new[] { "1234567890", "0987654321" },

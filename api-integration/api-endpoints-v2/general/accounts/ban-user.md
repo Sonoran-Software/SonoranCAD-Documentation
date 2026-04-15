@@ -36,7 +36,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:banUserV2({
+local response = sonoran.cad:banUserV2({
     accountUuid = '00000000-0000-0000-0000-000000000000',
     isBan = true,
     isKick = true,
@@ -102,7 +102,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.banUserV2(new BanUserV2Request
+var response = await sonoran.Cad.banUserV2(new BanUserV2Request
 {
     ApiId = "1234567890",
     IsBan = true,

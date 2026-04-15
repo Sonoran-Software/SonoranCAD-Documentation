@@ -42,7 +42,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setUnitPanicV2({
+local response = sonoran.cad:setUnitPanicV2({
     serverId = 1,
     apiId = '1234567890',
     isPanic = true,
@@ -108,7 +108,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setUnitPanicV2(new SetUnitPanicV2Request
+var response = await sonoran.Cad.setUnitPanicV2(new SetUnitPanicV2Request
 {
     ServerId = 1,
     ApiIds = new[] { "1234567890" },

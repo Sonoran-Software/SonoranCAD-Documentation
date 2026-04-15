@@ -38,7 +38,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:lookupByValueV2({
+local response = sonoran.cad:lookupByValueV2({
     searchType = 'plate',
     value = 'ABC123',
     types = {1},
@@ -104,7 +104,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.lookupByValueV2(new LookupByValueV2Request
+var response = await sonoran.Cad.lookupByValueV2(new LookupByValueV2Request
 {
     SearchType = "plate",
     Value = "ABC123",

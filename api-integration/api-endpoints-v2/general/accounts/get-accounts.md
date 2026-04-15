@@ -34,7 +34,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:getAccountsV2({
+local response = sonoran.cad:getAccountsV2({
     limit = 25,
     offset = 0,
     username = 'john',
@@ -100,7 +100,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.getAccountsV2(new GetAccountsV2Query
+var response = await sonoran.Cad.getAccountsV2(new GetAccountsV2Query
 {
     Limit = 25,
     Offset = 0,

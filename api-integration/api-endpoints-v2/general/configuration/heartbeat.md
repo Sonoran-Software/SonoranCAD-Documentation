@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:heartbeatV2(1, 64)
+local response = sonoran.cad:heartbeatV2(1, 64)
 
 -- Inspect response.success, response.data, or response.reason as needed.
 print(response.success)
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.heartbeatV2(1, 64);
+var response = await sonoran.Cad.heartbeatV2(1, 64);
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);

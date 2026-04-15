@@ -50,7 +50,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setUnitStatusV2({
+local response = sonoran.cad:setUnitStatusV2({
     serverId = 1,
     apiId = '1234567890',
     status = 2,
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setUnitStatusV2(new SetUnitStatusV2Request
+var response = await sonoran.Cad.setUnitStatusV2(new SetUnitStatusV2Request
 {
     ServerId = 1,
     ApiIds = new[] { "1234567890" },

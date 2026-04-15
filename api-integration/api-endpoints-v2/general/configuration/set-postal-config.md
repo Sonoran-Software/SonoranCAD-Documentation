@@ -33,7 +33,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran:setPostalsV2({
+local response = sonoran.cad:setPostalsV2({
     { code = '100', x = 425.1, y = -979.2 },
   })
 
@@ -93,7 +93,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.setPostalsV2(new[]
+var response = await sonoran.Cad.setPostalsV2(new[]
 {
     new PostalV2
     {
