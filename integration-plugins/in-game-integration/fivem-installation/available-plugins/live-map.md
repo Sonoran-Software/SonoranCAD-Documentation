@@ -120,7 +120,7 @@ Clicking on the emergency blip allows you to import the call to your editor or r
 
 [Smart signs](smart-signs.md) will also appear as blips on the map. You can click on these to edit the signs in-game.
 
-![Live Map - Smart Signs](<../../../../.gitbook/assets/image (144).png>)
+![Live Map - Smart Signs](<../../../../.gitbook/assets/image (73).png>)
 
 ## FiveM Custom Map
 
@@ -199,11 +199,11 @@ Additionally, two existing map tiles will need to be updated, as they contain pa
 
 If your community is utilizing the Cayo Perico map expansion, there will be extra tiles to upload. Ensure these are named as:
 
-* `minimap_sea_2_1.png`&#x20;
+* `minimap_sea_2_1.png`
   * Bottom right of the main island + top right of Cayo Perico
-* `minimap_sea_2_2.png`&#x20;
-* `minimap_sea_3_1.png`&#x20;
-* `minimap_sea_3_2.png`&#x20;
+* `minimap_sea_2_2.png`
+* `minimap_sea_3_1.png`
+* `minimap_sea_3_2.png`
 
 <figure><img src="../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption></figcaption></figure>
 

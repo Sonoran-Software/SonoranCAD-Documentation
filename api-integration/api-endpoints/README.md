@@ -2,6 +2,7 @@
 description: >-
   View all of our API endpoints, learn about our data structuring, and integrate
   your framework with Sonoran CAD.
+hidden: true
 ---
 
 # API Endpoints

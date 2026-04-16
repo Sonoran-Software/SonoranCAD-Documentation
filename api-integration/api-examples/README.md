@@ -7,7 +7,7 @@ description: >-
 # API Examples
 
 {% hint style="warning" %}
-### Call examples will be using the [Sonoran CAD Framework](/broken/pages/-M7AprAqKWbNHL1L7N0T)
+#### Call examples will be using the [Sonoran CAD Framework](/broken/pages/-M7AprAqKWbNHL1L7N0T)
 {% endhint %}
 
 {% hint style="info" %}
@@ -21,7 +21,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 ## Framework Use
 
-The [Sonoran CAD plugin framework](/broken/pages/-M7AprAqKWbNHL1L7N0T) handles common errors, rate limiting, auto-updating, etc.&#x20;
+The [Sonoran CAD plugin framework](/broken/pages/-M7AprAqKWbNHL1L7N0T) handles common errors, rate limiting, auto-updating, etc.
 
 When integrating external scripts with Sonoran CAD, the best practice is utilizing the CAD framework exports. By using the framework exports users will not have to add or configure their community ID and API key a second time, the framework will ensure proper rate limits, etc.
 

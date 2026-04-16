@@ -40,17 +40,17 @@ Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://gi
 You also need [pNotify](https://github.com/Nick78111/pNotify), a third party resource that is not bundled by default.
 {% endhint %}
 
-| Config Option       | Description                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------- |
-| useExpires          | use vehicle registration expirations, or not                                                |
-| useMiddleInitial    | use middle initials?                                                                        |
-| alertNoRegistration | alert if no registration was found on scan?                                                 |
-| statusUid           | Custom record field UID containing the status                                               |
-| expiresUid          | Custom record field UID containing the expiration date                                      |
-| flagOnStatuses      | List of statuses to flag/alert on                                                           |
-| vehTypeFilter       | List of Classes that will NOT get ran through CAD                                           |
-| notificationTimers  | Time in MS, for how long each alert type will last via pNotify                              |
-| customFields        | Additional custom fields to show in your ALPR messages, such as insurance expiration, etc.  |
+| Config Option       | Description                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------ |
+| useExpires          | use vehicle registration expirations, or not                                               |
+| useMiddleInitial    | use middle initials?                                                                       |
+| alertNoRegistration | alert if no registration was found on scan?                                                |
+| statusUid           | Custom record field UID containing the status                                              |
+| expiresUid          | Custom record field UID containing the expiration date                                     |
+| flagOnStatuses      | List of statuses to flag/alert on                                                          |
+| vehTypeFilter       | List of Classes that will NOT get ran through CAD                                          |
+| notificationTimers  | Time in MS, for how long each alert type will last via pNotify                             |
+| customFields        | Additional custom fields to show in your ALPR messages, such as insurance expiration, etc. |
 
 ### 4. Custom Record Handling
 
@@ -62,21 +62,21 @@ The in-game radar can alert you about expired registrations, BOLOs, warrants, an
 
 When a vehicle is scanned by your radar, you can be notified if the vehicle registration status is inactive, expired, etc.
 
-### 1. Get the Status field ID
+#### 1. Get the Status field ID
 
 In the custom record configuration panel, copy the field ID for your vehicle registration's status field. Typically this would be a dropdown (or "select") type field with options like "Active", "Pending", "Expired", etc.
 
 ![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.36.39 PM.png>)
 
-### 2. Set the Field ID in your Config
+#### 2. Set the Field ID in your Config
 
 Ensure the `statusUid` configuration value matches your status field ID from the custom record.
 
 If your vehicle registration record has an expiration date value in it, be sure to set the `expiresUid` value to its field ID and set `useExpires` to `true`. This will display the registration expiration date in the notifications.
 
-![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.44.27 PM (1).png>)
+![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.44.27 PM.png>)
 
-### 3. Set Status Flag Options
+#### 3. Set Status Flag Options
 
 Customize the `flagOnStatuses` list to configure which vehicle registration statuses your radar will alter you on.
 
@@ -92,19 +92,19 @@ If the vehicle registration's status field (the record field ID that matches you
 
 When a vehicle is scanned by your radar, you can be notified of any active warrant or BOLO record with that license plate on it.
 
-### 1. Ensure your Warrant or BOLO Record has a Status Field
+#### 1. Ensure your Warrant or BOLO Record has a Status Field
 
 In order for the radar to determine if the warrant or BOLO record is active, ensure your custom record has a `status` type field on it.
 
 ![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.50.05 PM.png>)
 
-### 2. Ensure your Warrant or BOLO Record has a Plate Field
+#### 2. Ensure your Warrant or BOLO Record has a Plate Field
 
 In order to match the vehicle plate with a record, ensure your custom record has a field with the field ID set to `plate`.
 
 ![](<../../../../.gitbook/assets/Screenshot 2024-11-12 at 7.51.37 PM.png>)
 
-### 3. Receive In-Game Alerts
+#### 3. Receive In-Game Alerts
 
 Your radar will alter you when a scanned vehicle matches:
 
@@ -119,18 +119,18 @@ In order to have locked plate lookup results sent back to your CAD, don't forget
 
 ### 6. Custom Field Display
 
-You can configure custom fields to display in the Wraith ALPR notification. The fields are configured in the `wraithv2_config.lua` under the `customFields` section. You can get your custom field ID's from the Sonoran CAD Admin menu > Customize > [Custom Records](../../../../tutorials/customization/creating-custom-record-and-report-types.md) section.&#x20;
+You can configure custom fields to display in the Wraith ALPR notification. The fields are configured in the `wraithv2_config.lua` under the `customFields` section. You can get your custom field ID's from the Sonoran CAD Admin menu > Customize > [Custom Records](../../../../tutorials/customization/creating-custom-record-and-report-types.md) section.
 
-<div><figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>SonoranCADFiveM - WraithV2 Configuration</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/630973482221436938/1440107400320516196/image.png?ex=691cf408&#x26;is=691ba288&#x26;hm=c7286089dfef9cb96efe48fc74d591f9a4b0ed24e8aa864115d71918282b2b49&#x26;" alt=""><figcaption><p>Sonoran CAD - Custom Records </p></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>SonoranCADFiveM - WraithV2 Configuration</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/630973482221436938/1440107400320516196/image.png?ex=691cf408&#x26;is=691ba288&#x26;hm=c7286089dfef9cb96efe48fc74d591f9a4b0ed24e8aa864115d71918282b2b49&#x26;" alt=""><figcaption><p>Sonoran CAD - Custom Records</p></figcaption></figure></div>
 
 ## Usage
 
-For more information on using the in-game UI, please view the Sonoran version of the  [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)release information.\
+For more information on using the in-game UI, please view the Sonoran version of the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
 ![Wraith ARS 2X Controls](<../../../../.gitbook/assets/image (314).png>)
 
-## Sonoran wk\_wars2x&#x20;
+## Sonoran wk\_wars2x
 
 {% hint style="info" %}
 These features are not found in the original wk\_wars2x resource, and only come packaged with our version found [here](https://github.com/sonoran-Software/wk_wars2x).
@@ -164,13 +164,13 @@ The doppler effect can be adjusted by opening the **controller** (F5 by default)
 
 The doppler effect can be adjusted per client from a volume of 0 (off) to 5 (max volume). Additionally servers can disable the entire system via the configuration option `CONFIG.enable_doppler`
 
-<div><figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Off </p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468339426567655475/image.png?ex=6983a927&#x26;is=698257a7&#x26;hm=185cbe9959a1c6bf0c74d41335e06ac94819dc1c41553275b3648d2c954c3bc8&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Max Volume</p></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Off</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468339426567655475/image.png?ex=6983a927&#x26;is=698257a7&#x26;hm=185cbe9959a1c6bf0c74d41335e06ac94819dc1c41553275b3648d2c954c3bc8&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Max Volume</p></figcaption></figure></div>
 
 #### Doppler Direction
 
-You can customize the antenna that will trigger the doppler noise via the client settings menu between the options of "btH" (both), "rEr" (rear) or "FNt" (front). This will create the doppler audio effect based upon a vehicles speed in the respective antenna&#x20;
+You can customize the antenna that will trigger the doppler noise via the client settings menu between the options of "btH" (both), "rEr" (rear) or "FNt" (front). This will create the doppler audio effect based upon a vehicles speed in the respective antenna
 
-<div><figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Front Only</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770007285873/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=5e561a7c6de7e7abfd76fb3617d9c188f1181e87f5649c5349ab5b915061f4a6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Both Antennas</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770363674827/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=540beada2276ca6ae389cd118061d15273004f60076545ddd45c112c8f2842e6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Rear Only </p></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Front Only</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770007285873/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=5e561a7c6de7e7abfd76fb3617d9c188f1181e87f5649c5349ab5b915061f4a6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Both Antennas</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770363674827/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=540beada2276ca6ae389cd118061d15273004f60076545ddd45c112c8f2842e6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Rear Only</p></figcaption></figure></div>
 
 ## Troubleshooting
 
@@ -186,9 +186,9 @@ The framework ships with the `wk_wars2x` plate reader included. This will have t
 
 Keep in mind that AI vehicles won't display or be ran unless there's a vehicle registration record added to the CAD with that plate.
 
-Ensure that you've correctly followed [step 5](/broken/pages/-M7U3aBbrsfrj1Cmeqmm#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the submodule  config.
+Ensure that you've correctly followed [step 5](../../../../broken/pages/-M7U3aBbrsfrj1Cmeqmm/#5.-custom-record-handling) and the `statusUid` and `expirationUid` fields have been set correctly, both in the CAD record template and the submodule config.
 
-Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.&#x20;
+Ensure that the `flagOnStatuses` array has the exact string/text values that match the options in your custom record template.
 
 #### BOLO and Warrant
 
@@ -202,6 +202,6 @@ Some servers will see this error in their server console:
 sv_wraithv2.lua:112 - attempt to index a nil value (local 'vehicle')
 ```
 
-To fix this, navigate to your `[sonorancad]/wk_wars2x` folder, and rename `config.dist.lua` to just `config.lua`&#x20;
+To fix this, navigate to your `[sonorancad]/wk_wars2x` folder, and rename `config.dist.lua` to just `config.lua`
 
 The config not being renamed is the most common cause of this error, however, if for some reason that doesn't fix it, feel free to open a [support ticket](https://support.sonoransoftware.com) with us.

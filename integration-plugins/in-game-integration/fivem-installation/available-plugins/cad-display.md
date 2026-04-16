@@ -163,9 +163,9 @@ You can also use your vehicle’s built-in laptop as the CAD Display, without sp
 
 1. This option requires additional configuration and third-party software. To begin, navigate to the `caddisplay_config.lua` file located in the `/sonorancad/configuration` folder. The `builtinScreens` section of this configuration file is where you define vehicles equipped with built-in laptops.
 2. To obtain the `texture` name you will need to use a third-party software such as [OpenIV](https://openiv.com/).
-3. &#x20;Within OpenIV, click **File** in the top-right corner, then select **Open Folder** and navigate to the folder containing your vehicle files
+3. Within OpenIV, click **File** in the top-right corner, then select **Open Folder** and navigate to the folder containing your vehicle files
 
-<div><figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>OpenIV - Open Folder Button</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1460761637798809641/image.png?ex=696817ca&#x26;is=6966c64a&#x26;hm=f11953db0efd5c7b19642b8cdeb01bfacbcf736580d476d32b78aafc7970eda3&#x26;" alt=""><figcaption><p>OpenIV - File Explorer</p></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/image (270).png" alt=""><figcaption><p>OpenIV - Open Folder Button</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1460761637798809641/image.png?ex=696817ca&#x26;is=6966c64a&#x26;hm=f11953db0efd5c7b19642b8cdeb01bfacbcf736580d476d32b78aafc7970eda3&#x26;" alt=""><figcaption><p>OpenIV - File Explorer</p></figcaption></figure></div>
 
 4. Once OpenIV opens your selected folder, you will see your vehicle files. From here, open the `SPAWNCODE.ytd` file. A `.ytd` file is a texture dictionary that contains the textures used by the vehicle, such as screens, decals, and interior displays. For this tutorial, the spawn code used is `b3`.
 

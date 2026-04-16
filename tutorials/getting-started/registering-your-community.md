@@ -14,7 +14,7 @@ You will be prompted for three information fields:
 1. Community Name
 2. Website (Optional)
 
-<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 **2. Register Your Community**\
 \

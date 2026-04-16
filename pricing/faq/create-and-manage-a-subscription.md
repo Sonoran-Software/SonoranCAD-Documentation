@@ -33,7 +33,7 @@ Here, you can enter your billing information and start the subscription.
 Once you've completed your purchase, set the community ID on the subscription in your billing center.\
 [Where can I find my community ID?](../../tutorials/getting-started/finding-your-community-id-and-authentication-code.md)
 
-![Sonoran CAD Payment Center - Set Community ID](<../../.gitbook/assets/image (78) (2).png>)
+![Sonoran CAD Payment Center - Set Community ID](<../../.gitbook/assets/image (78) (1).png>)
 
 The modal will show options to set the subscription to any community you are currently a part of.
 

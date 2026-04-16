@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/streamoverlay.png" alt=""><figcaption></figcaption></figure>
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (2).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (1).png>)
 
 ## What is Sonoran CAD's Livestream Overlay?
 
@@ -83,7 +83,7 @@ We can not guarantee that these manufacturers won't change or remove backdoor su
 
 #### [Video Promo and Tutorial](https://www.youtube.com/watch?v=gs6RdZt3mUo)
 
-![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (1) (1).png>)
+![Sonoran CAD - Smart Lighting](<../.gitbook/assets/image (119) (1) (1).png>)
 
 Sonoran CAD allows you to configure in-game events to smart lighting in your own home!
 
@@ -97,8 +97,6 @@ The smart lighting integration is **not included with the free version** of the 
 The smart lighting integration creates local text files and hosts a local webserver.\
 **This requires the** [**desktop** ](../download/)**application to run.**
 {% endhint %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=gs6RdZt3mUo" %}
 Sonoran CAD - Smart Lighting Video
@@ -185,7 +183,7 @@ Govee WiFi bulbs are handled via Govee's official API. Note that this does inclu
 
 Using the Govee mobile app navigate to `Account` > `Settings` > `About Us` > `Apply for API Key`
 
-<img src="../.gitbook/assets/image (290) (1) (1) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (259).png" alt="" data-size="original">
 
 **2. Retrieve your API Key and Search**
 
@@ -211,8 +209,6 @@ Bluetooth bulbs will have their status listed on the left side. When you click t
 
 ![](<../.gitbook/assets/image (294) (1) (1).png>)
 
-
-
 ### 2. Creating Sequences
 
 You can add the desired bulb to your `Scene`. Each `scene` is made up of multiple `frames`.
@@ -231,7 +227,7 @@ You can press the `Test Scene` button to test the scene with your smart bulbs. P
 
 #### Local Webserver: In-Game Use
 
-For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a [local webserver](../api-integration/api-endpoints/local-endpoints/smart-lighting.md) running from your desktop app.
+For in-game use, your lights, turn signals, and hazards will automatically run as long as your community has the Sonoran CAD integration framework installed. This utilizes a [local webserver](../api-integration/api-endpoints-v2/local-endpoints/smart-lighting.md) running from your desktop app.
 
 1. If you have modified your Bodycam port from the default `9990`, you will need to update this port in-game as well. Use the `/setlightport <some port here>` command in-game to change your port from `9990` to something else.
 2. Additionally, ensure you have set your file directory in the credentials section of the stream overlay.

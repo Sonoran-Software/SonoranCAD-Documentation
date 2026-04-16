@@ -10,21 +10,21 @@ description: This guide covers creating a new dispatch call in Sonoran CAD.
 
 <summary>Add Available Units</summary>
 
-#### Manually Add Unit
+**Manually Add Unit**
 
 To add a unit to your call editor, click on an available unit or unit group, and select "Add to Call"
 
 ![Sonoran CAD - Add Unit to Call](<../../.gitbook/assets/image (134).png>)
 
-#### Attach Nearest Units
+**Attach Nearest Units**
 
 When emergency calls are sent from in-game, they contain a coordinate location. Importing the emergency call from the table or live map will display an option to select and attach the closest units.
 
 Entering a postal code will work as a secondary option to find the nearest units. You must have the [postals submodule](../../integration-plugins/in-game-integration/fivem-installation/available-plugins/postals.md) enabled.
 
-<div><figure><img src="../../.gitbook/assets/5feded729bf315a9005a757571cb8c6e.gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Units</p></figcaption></figure> <figure><img src="../../.gitbook/assets/Screen Recording 2025-04-23 131726 (1).gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Postal Units</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/5feded729bf315a9005a757571cb8c6e.gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Units</p></figcaption></figure> <figure><img src="../../.gitbook/assets/Screen Recording 2025-04-23 131726.gif" alt="" width="375"><figcaption><p>Dispatch Editor: Nearest Postal Units</p></figcaption></figure></div>
 
-#### Drag-and-Drop
+**Drag-and-Drop**
 
 Drag-and-drop is another fast way to add a unit to an existing call:
 
@@ -89,11 +89,11 @@ You can also drag-and-drop the call ID to the call editor to open the call.
 
 Notes can be sent by units attached to the call.
 
-#### Text Notes
+**Text Notes**
 
 Text based notes can be added in the note box and sent by pressing `enter` or `add note`.
 
-#### Note Links
+**Note Links**
 
 Record links for characters, arrest reports, etc. can also be sent in the dispatch call notes section. [Copy a record link](../records-management/searching-for-records.md#copy-record-links), then press the `Paste` button in the call notes section.
 
@@ -111,8 +111,6 @@ Or, you can select "Edit Call", change the status to "Closed", and press "Update
 
 ![Sonoran CAD - Close Call](<../../.gitbook/assets/image (261).png>)
 
-
-
 </details>
 
 ## Saved Call Types
@@ -128,8 +126,6 @@ To add a new saved call type, simply fill the information out in your editor, an
 Saving a call with an identical title as another one will override it.
 
 ![Saved Dispatch Calls - Create](<../../.gitbook/assets/image (153).png>)
-
-
 
 </details>
 

@@ -84,7 +84,7 @@ We've partnered up with London Studios to integrate their Smart Signs script dir
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
-<figure><img src=".gitbook/assets/smart signs (1).png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
+<figure><img src=".gitbook/assets/smart signs.png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
 ### 🚔 [FiveM ERS Integration](integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md)
 
@@ -128,7 +128,7 @@ Rapid IQ guides emergency call-takers through dynamic, protocol-driven medical i
 
 Sonoran CAD also offers a [customizable stream overlay and Twitch bot](integration-plugins/twitch-overlay-and-bot.md) to display your unit and attached call information in real time!
 
-### [ ER:LC Roblox Integration](integration-plugins/erlc/)
+### [ER:LC Roblox Integration](integration-plugins/erlc/)
 
 ![Sonoran CAD x ER:LC](<.gitbook/assets/Artboard 1 (2).png>)
 

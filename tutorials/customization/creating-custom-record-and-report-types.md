@@ -9,7 +9,7 @@ Custom record and reports are limited based upon your subscription version.\
 For more information, please view our [pricing page](../../pricing/faq/).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/custom records n reports (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom records n reports.png" alt=""><figcaption></figcaption></figure>
 
 Sonoran CAD allows your community to create custom records and incident reports for police, fire, and EMS services. This tutorial will cover the basics of creating a new custom report or record and general usage of the system.
 
@@ -43,10 +43,9 @@ If your section is a custom character or vehicle field, you can toggle on the se
 
 The enable duplicate button allows users to click and create a new copy of the section while filing the record.
 
-![
+!\[
 
-
-Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (28).png>)
+Sonoran CAD: Custom Record Section Options]\(<../../.gitbook/assets/image (28).png>)
 
 <details>
 
@@ -56,91 +55,91 @@ Sonoran CAD: Custom Record Section Options](<../../.gitbook/assets/image (28).pn
 
 These fields are generic text boxes.
 
-#### Select
+**Select**
 
 The select field allows you to customize a dropdown box.
 
-<p align="center"><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="The &#x27;SELECT&#x27; field option" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (305).png" alt="The &#x27;SELECT&#x27; field option"></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt="A &#x27;SELECT&#x27; field shown in the record editor"></div>
 
-#### Text Area
+**Text Area**
 
 The text area field allows you to create a large text area.
 
-<p align="center"><img src="../../.gitbook/assets/image (309).png" alt="The &#x27;TEXTAREA&#x27; field option" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (309).png" alt="The &#x27;TEXTAREA&#x27; field option"></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (307).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (307).png" alt="A &#x27;TEXTAREA&#x27; field shown in the record editor"></div>
 
-#### Checkboxes
+**Checkboxes**
 
 The checkboxes type allows you to create multiple checkboxes.
 
-<p align="center"><img src="../../.gitbook/assets/image (329).png" alt="The &#x27;CHECKBOXES&#x27; field option" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (329).png" alt="The &#x27;CHECKBOXES&#x27; field option"></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (331).png" alt="A &#x27;CHECKBOXES&#x27; field shown in the record editor." data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (331).png" alt="A &#x27;CHECKBOXES&#x27; field shown in the record editor."></div>
 
-#### Random
+**Random**
 
 The random field allows you to randomly generate text. When a new record is created, this field will automatically generate the text based on the `mask` format. If the field is not disabled (`readOnly`) users can click the randomize button to continually generate new text.
 
 <div><figure><img src="../../.gitbook/assets/2471aebe51c93db063f5dfeaa6bd0cb0.gif" alt="" width="300"><figcaption><p>Sonoran CAD: Random Field</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (74).png" alt="" width="375"><figcaption><p>Sonoran CAD: Random Field</p></figcaption></figure></div>
 
-#### Date
+**Date**
 
 The date field allows you to specify a date field. You can also specify the formatting in the mask column.
 
 When `readOnly` is selected, this field will auto-fill the current date for new records.
 
-<p align="center"><img src="../../.gitbook/assets/image (381).png" alt="The &#x27;DATE&#x27; field option" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (381).png" alt="The &#x27;DATE&#x27; field option"></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (319).png" alt="The &#x27;DATE&#x27; field shown in the record editorTime" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (319).png" alt="The &#x27;DATE&#x27; field shown in the record editorTime"></div>
 
-#### Time
+**Time**
 
 The time field allows you to specify a time field.
 
-<p align="center"><img src="../../.gitbook/assets/image (334).png" alt="The &#x27;TIME&#x27; field option" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (334).png" alt="The &#x27;TIME&#x27; field option"></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (337).png" alt="The &#x27;TIME&#x27; field shown in the record editor" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (337).png" alt="The &#x27;TIME&#x27; field shown in the record editor"></div>
 
-#### Image
+**Image**
 
 The image field allows you to specify an image to be displayed.
 
-<p align="center"><img src="../../.gitbook/assets/image (348).png" alt="The &#x27;IMAGE&#x27; field option." data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (348).png" alt="The &#x27;IMAGE&#x27; field option."></div>
 
-<p align="center"><img src="../../.gitbook/assets/image (363).png" alt="The &#x27;IMAGE&#x27; field shown in the record editor" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (363).png" alt="The &#x27;IMAGE&#x27; field shown in the record editor"></div>
 
-#### Linked Records
+**Linked Records**
 
 The linked records field allows you to link and cross-reference other records and reports to this record.
 
-<p align="center"><img src="../../.gitbook/assets/image (233).png" alt="Sonoran CAD - Linked Records" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (233).png" alt="Sonoran CAD - Linked Records"></div>
 
-#### Flags
+**Flags**
 
 Custom flag options can be added to every record template. When checked, these flags will show up as alerts on any lookup. Similar to a checkboxes section, you will need to expand the section and add options.
 
-<p align="center"><img src="../../.gitbook/assets/image (116).png" alt="Sonoran CAD - Custom Flags" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (116).png" alt="Sonoran CAD - Custom Flags"></div>
 
-#### Label
+**Label**
 
 Labels can display static text, along with color attributes.
 
-<p align="center"><img src="../../.gitbook/assets/image (21).png" alt="Sonoran CAD - Custom Record Label" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (21).png" alt="Sonoran CAD - Custom Record Label"></div>
 
-#### Address
+**Address**
 
 The address dropdown will auto-filter [street address names that have been imported via CSV](addresses-and-street-names.md).
 
-<p align="center"><img src="../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif" alt="Sonoran CAD - Custom Record Address Field" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/90433cf83d1d487c05d18ea392289815.gif" alt="Sonoran CAD - Custom Record Address Field"></div>
 
 **Unit Information**
 
 The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `UNIT_SUBDIVISION`, `UNIT_AGENCY_LOCATION`, `UNIT_AGENCY_ZIP`, and `UNIT_LOCATION` field types will all automatically insert the unit's information when they create a new record.
 
-<p align="center"><img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original"></p>
+<div align="center"><img src="../../.gitbook/assets/image (280) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""></div>
 
 </details>
 
@@ -148,30 +147,26 @@ The `UNIT_NUMBER`, `UNIT_NAME`, `UNIT_RANK`, `UNIT_AGENCY`, `UNIT_DEPARTMENT`, `
 
 <summary>Field Options</summary>
 
-#### Preview
+**Preview**
 
 This will show the field label and value in the lookup table preview.
 
-![](<../../.gitbook/assets/image (16).png>)![](<../../.gitbook/assets/image (225).png>)
+![](<../../.gitbook/assets/image (16).png>) ![](<../../.gitbook/assets/image (225).png>)
 
-#### Supervisor
+**Supervisor**
 
 This will disable the field for all non-supervisor unit identifiers.\
 Your unit's supervisor status can be set in the unit identifier editor.
 
-<img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original">
+<img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt="Input field with SUPERVISOR toggled" data-size="original"> <img src="../../.gitbook/assets/image (8) (1) (1).png" alt="Supervisor field highlighted red" data-size="original">
 
-<img src="../../.gitbook/assets/image (8) (1) (1).png" alt="Supervisor field highlighted red" data-size="original">
-
-#### Required
+**Required**
 
 Required fields will require the unit to enter something into the field before the record can be submitted.
 
-<img src="../../.gitbook/assets/image (9) (1) (1).png" alt="Input field with REQUIRED toggled" data-size="original">
+<img src="../../.gitbook/assets/image (9) (1) (1).png" alt="Input field with REQUIRED toggled" data-size="original"> <img src="../../.gitbook/assets/image (375).png" alt="Required field shown in the record editor" data-size="original">
 
-<img src="../../.gitbook/assets/image (375).png" alt="Required field shown in the record editor" data-size="original">
-
-#### Unique
+**Unique**
 
 Unique fields enforce that no duplicate values for this field are stored in the database. These values are enforced for the specific record template only.
 
@@ -183,9 +178,7 @@ Read only fields prevent the user from entering new or modified text. This is us
 
 Note: The `date` and `time` fields will auto-fill with the current date/time if `readOnly` is toggled, based on the [community's timezone](community-branding-and-info.md).
 
-<img src="../../.gitbook/assets/image (305) (1) (1).png" alt="Custom Records - Read Only Toggle" data-size="original">
-
-<img src="../../.gitbook/assets/image (302) (1) (1).png" alt="Custom Records - Read Only Fields" data-size="original">
+<img src="../../.gitbook/assets/image (305) (1) (1).png" alt="Custom Records - Read Only Toggle" data-size="original"> <img src="../../.gitbook/assets/image (302) (1) (1).png" alt="Custom Records - Read Only Fields" data-size="original">
 
 </details>
 
@@ -199,13 +192,13 @@ The field mask allows you to specify a required format for the field.
 * `S`: A-Z Letter
 * `X`: Alphanumeric
 
-#### Example: Numbers
+**Example: Numbers**
 
 Specifying `###` allows the user to only enter 3 numbers in the field.
 
 <img src="../../.gitbook/assets/image (354).png" alt="" data-size="original">
 
-#### Example: Phone Number
+**Example: Phone Number**
 
 Specifying `(###) ### - ####` formats the user's input into a phone number.
 
@@ -219,7 +212,7 @@ Specifying `(###) ### - ####` formats the user's input into a phone number.
 
 The field size slider allows you to select a field size value between 1 and 12.Every row of a record has a space divisible by 12.
 
-![](<../../.gitbook/assets/image (294) (1).png>)![](<../../.gitbook/assets/image (215).png>)
+![](<../../.gitbook/assets/image (294) (1).png>) ![](<../../.gitbook/assets/image (215).png>)
 
 </details>
 
@@ -241,13 +234,13 @@ On a section or field, click the dependency button to open the editor.
 
 Paste the unique `Field Mapping ID` from before. The box will light up green when a valid ID is entered.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)![](<../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (106).png>) ![](<../../.gitbook/assets/image (55).png>)
 
 Checkbox or Select fields as the dependency parent will allow you to select what values will display this section or field.
 
 Text fields as the dependency parent will allow you to enter what text values will display this section or field.
 
-#### Dependency Types
+**Dependency Types**
 
 There are multiple options for dependency types.
 
@@ -349,9 +342,9 @@ The default `Vehicle Registration` record has the following field UIDs
 
 `type` `plate` `make` `model` `color` `year`
 
-![](<../../.gitbook/assets/image (291).png>)&#x20;
+![](<../../.gitbook/assets/image (291).png>)
 
-&#x20;When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
+When creating your custom record section with vehicle search imports, those field UIDs will also need to match. The image below shows a custom record with the vehicle search section toggled with the matching field UIDs.
 
 ![](<../../.gitbook/assets/image (280).png>)
 
@@ -367,6 +360,6 @@ You may encounter this error whilst attempting to save a custom record template.
 
 We require at least one field to be enabled for preview, as running a lookup with no preview fields would return a blank list of records.
 
-To designate a field as a "preview field", simple toggle the magnifying glass icon in the custom record editor, as shown below.&#x20;
+To designate a field as a "preview field", simple toggle the magnifying glass icon in the custom record editor, as shown below.
 
 <figure><img src="../../.gitbook/assets/CAD_ToggleMagGlass.png" alt=""><figcaption><p>Sonoran CAD - Enable Field for Preview</p></figcaption></figure>

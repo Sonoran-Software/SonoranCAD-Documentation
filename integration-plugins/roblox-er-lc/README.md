@@ -96,7 +96,7 @@ Select `New` under API ID and paste in your Roblox API ID.
 
 ![Sonoran CAD Settings](<../../.gitbook/assets/image (290) (2).png>)
 
-![Sonoran CAD: New API ID](<../../.gitbook/assets/image (23) (1).png>)
+![Sonoran CAD: New API ID](<../../.gitbook/assets/image (160).png>)
 
 ## In-Game Commands and Features
 
@@ -172,7 +172,7 @@ Please [view our pricing page](../../pricing/faq/) for more information.
 
 Ex: `/sn Brian Sauce`
 
-Once you have [added your Roblox API ID](./#for-community-members) to the CAD,  running a name search in-game will automatically pop up the results on your CAD screen.
+Once you have [added your Roblox API ID](./#for-community-members) to the CAD, running a name search in-game will automatically pop up the results on your CAD screen.
 
 ![Sonoran CAD: Name Search](<../../.gitbook/assets/Screen Shot 2021-11-27 at 10.25.04 AM.png>)
 
@@ -184,10 +184,10 @@ This feature utilizes API endpoints that require the **plus** version of Sonoran
 Please [view our pricing page](../../pricing/faq/) for more information.
 {% endhint %}
 
-| Command               | Description                                          |
-| --------------------- | ---------------------------------------------------- |
-| `/ts <info>`          | Creates and attaches you to a traffic stop dispatch  |
-| `/trafficstop <info>` | Creates and attaches you to a traffic stop dispatch  |
+| Command               | Description                                         |
+| --------------------- | --------------------------------------------------- |
+| `/ts <info>`          | Creates and attaches you to a traffic stop dispatch |
+| `/trafficstop <info>` | Creates and attaches you to a traffic stop dispatch |
 
 Ex: `/ts Red Tahoe, ABC123`
 

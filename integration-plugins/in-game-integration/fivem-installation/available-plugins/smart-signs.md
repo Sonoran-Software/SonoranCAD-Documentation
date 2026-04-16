@@ -100,9 +100,9 @@ Here, you can easily search to filter sign labels. Sign text can also be easily 
 
 You can also modify smart signs right from the[ live map](smart-signs.md#undefined)!
 
-Users will need both the `Modify Street Signs` and the `Self Dispatch` permissions in order to view and edit signs from the live map.&#x20;
+Users will need both the `Modify Street Signs` and the `Self Dispatch` permissions in order to view and edit signs from the live map.
 
-![Sonoran CAD - Live Map Smart Signs](<../../../../.gitbook/assets/image (144).png>)
+![Sonoran CAD - Live Map Smart Signs](<../../../../.gitbook/assets/image (73).png>)
 
 ### Full Feature List
 
@@ -409,4 +409,3 @@ To update follow the steps below:
 1. Move your old smartsigns\_sonoran folder to a safe location to reference your old config for any settings you would like to migrate over.
 2. Download the new version from your keymaster account, you should have "10870 - SmartSigns" (v1.4.1) and the new "**339435 - Sonoran Store - Smart Signs (Sonoran CAD Edition)**" asset in keymaster. Please download the newer one only as the old one will not receive updates going further.
 3. Follow the [#id-2.-install-the-resource](smart-signs.md#id-2.-install-the-resource "mention") steps to install the updated resource. When configuring your settings refer back to your previous config file you have moved out of your server resources folder.
-
