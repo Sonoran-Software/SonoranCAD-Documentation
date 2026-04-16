@@ -8,6 +8,14 @@ The Sonoran CAD v2 API is a versioned API surface built around resource-style ro
 
 ## Available v2 Docs
 
+### Libraries
+
+Use the official Sonoran SDK libraries if you want package-managed helpers for the v2 API.
+
+{% content-ref url="libraries.md" %}
+[libraries](libraries.md)
+{% endcontent-ref %}
+
 ### Authentication
 
 Start here for bearer authentication, required headers, and common error formats.

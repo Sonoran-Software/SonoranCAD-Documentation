@@ -259,6 +259,7 @@
       * [Leave Community](api-integration/api-endpoints/general/leave-community.md)
       * [Join Community](api-integration/api-endpoints/general/join-community.md)
   * [v2 API Endpoints](api-integration/api-endpoints-v2/README.md)
+    * [Libraries](api-integration/api-endpoints-v2/libraries.md)
     * [Authentication](api-integration/api-endpoints-v2/authentication.md)
     * [Emergency](api-integration/api-endpoints-v2/emergency/README.md)
       * [Units](api-integration/api-endpoints-v2/emergency/units/README.md)
