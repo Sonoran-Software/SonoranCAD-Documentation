@@ -58,6 +58,14 @@ ER:LC sends Sonoran CAD events for custom commands like traffic stops and vehicl
 
 <div><figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
+**Webhook Errors**
+
+The ER:LC API may be experiencing a partial outage—this is common after weekend game updates. If you see a red error when setting the Event Log Webhook, it’s likely due to this issue.
+
+**This outage is on the ER:LC side, not Sonoran CAD.** When we’re notified, we’ll relay the issue to the PRC/ER:LC development team and keep you updated as more information becomes available.
+
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
 </details>
 
 ## Linking your Roblox Account
