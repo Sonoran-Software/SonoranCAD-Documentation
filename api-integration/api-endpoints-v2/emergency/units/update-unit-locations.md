@@ -8,6 +8,8 @@ description: Update live map location data for one or more units.
 
 > **Rate limit:** `12 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
+>
+> For frequent live-map streaming, prefer the [websocket `unitLocation` method](../../../websocket-api/unit-locations.md), which supports updates every `200ms` minimum after a single websocket authentication.
 
 Queue and broadcast one or more unit location updates.
 

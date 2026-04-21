@@ -6,8 +6,10 @@ description: Update unit locations for the live map.
 
 ## Rate Limits
 
-* Maximum of one request every 250ms
+* Maximum of one request every 200ms
 * Maximum of 25 unit update objects per request
+
+> Use this websocket method for high-frequency live map streaming when possible. The HTTP v2 alternative is [`PATCH /v2/emergency/servers/{serverId}/unit-locations`](../api-endpoints-v2/emergency/units/update-unit-locations.md), but that route is limited to 12 requests per minute.
 
 ## Websocket API
 
@@ -46,6 +48,7 @@ unitLocation
 ```
 
 Each update must include `location` plus one target identifier: `communityUserId`, `apiId`, or `identId`.
+Authenticate the SignalR connection first with [`authenticatev2`](authentication.md).
 
 ### Response
 
@@ -97,6 +100,7 @@ local updates = {
 }
 
 -- connection must expose :invoke(method, payload)
+-- Authenticate the connection first with sonoran.cad:authenticateWsV2(connection, { serverId = 1 })
 local response = sonoran.cad:updateUnitLocationsWsV2(connection, updates)
 print(response.success)
 ```
