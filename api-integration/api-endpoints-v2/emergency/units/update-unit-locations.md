@@ -22,7 +22,7 @@ Queue and broadcast one or more unit location updates.
 ## Request Body
 
 Each update can target a unit with `communityUserId`.
-For Sonoran.lua, use `updateUnitLocationsApiV2(...)` for the HTTP v2 endpoint. `updateUnitLocationsV2(...)` remains as a backwards-compatible alias.
+For Sonoran.lua, use `updateUnitLocationsV2(...)` for the HTTP v2 endpoint.
 
 ```json
 {
@@ -61,7 +61,7 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran.cad:updateUnitLocationsApiV2({
+local response = sonoran.cad:updateUnitLocationsV2({
     serverId = 1,
     updates = {
       {

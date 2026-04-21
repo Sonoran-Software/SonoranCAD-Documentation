@@ -87,20 +87,3 @@ setInterval(async () => {
   }
 }, 250);
 ```
-
-### Sonoran.lua helper example
-
-```lua
-local updates = {
-  {
-    communityUserId = "player-1234",
-    location = "Interstate 4 / Mile 228",
-    position = { x = 8.5, y = 2.1, z = 0.0, w = 90.0 },
-  },
-}
-
--- connection must expose :invoke(method, payload)
--- Authenticate the connection first with sonoran.cad:authenticateWsV2(connection, { serverId = 1 })
-local response = sonoran.cad:updateUnitLocationsWsV2(connection, updates)
-print(response.success)
-```

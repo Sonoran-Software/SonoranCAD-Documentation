@@ -65,16 +65,3 @@ if (!auth?.success) {
   throw new Error(`Authentication failed: ${auth?.error || "unknown error"}`);
 }
 </code></pre>
-
-### Sonoran.lua websocket helper note
-
-`Sonoran.lua` does not create the SignalR connection or manage websocket headers/transport negotiation.
-Use your platform's SignalR client to connect to `https://api.sonorancad.com/apiWsHub`, start the connection, then call the helper below to authenticate the already-open connection.
-
-```lua
-local auth = sonoran.cad:authenticateWsV2(connection, {
-  serverId = 1,
-})
-
-print(auth.success)
-```
