@@ -28,7 +28,9 @@ unitLocation
 
 ```js
   {
-    apiId: "SOME_API_ID",
+    communityUserId: "player-1234", // Optional alternative to apiId or identId
+    apiId: "SOME_API_ID", // Optional
+    identId: 42, // Optional
     location: "US-101 / Exit 15",
     coordinates: { x: 123.45, y: 678.9, z: 21.0, w: 180.0 },
     peerId: "bodycam-1-123", // Used only for P2P bodycam streams
@@ -42,6 +44,8 @@ unitLocation
     }
   }
 ```
+
+Each update must include `location` plus one target identifier: `communityUserId`, `apiId`, or `identId`.
 
 ### Response
 
@@ -58,6 +62,7 @@ unitLocation
 - Missing/empty array: "Missing unit location updates."
 - Batch too large: "Too many unit updates in one call. Max is 25."
 - Too fast: "UNIT_LOCATION updates are limited to every 200ms."
+- Invalid target: "Each unit update requires identId, apiId, or communityUserId, and location."
 ```
 
 ### Unit Location JS example (Node.js):
@@ -66,7 +71,7 @@ unitLocation
 setInterval(async () => {
   const updates = [
     {
-      apiId: "OFFICER_API_ID_1",
+      communityUserId: "player-1234",
       location: "Interstate 4 / Mile 228",
       position: { x: 8.5, y: 2.1, z: 0.0, w: 90.0 },
     },
@@ -78,4 +83,20 @@ setInterval(async () => {
     console.error("send failed:", err.message);
   }
 }, 250);
+```
+
+### Sonoran.lua helper example
+
+```lua
+local updates = {
+  {
+    communityUserId = "player-1234",
+    location = "Interstate 4 / Mile 228",
+    position = { x = 8.5, y = 2.1, z = 0.0, w = 90.0 },
+  },
+}
+
+-- connection must expose :invoke(method, payload)
+local response = sonoran.cad:updateUnitLocationsWsV2(connection, updates)
+print(response.success)
 ```
