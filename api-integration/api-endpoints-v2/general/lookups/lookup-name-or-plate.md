@@ -15,6 +15,8 @@ Search records by name and plate values.
 
 Optional notification routing supports `notifyCommunityUserId`, `notifyAccountUuid`, or `notifyApiId`.
 
+Send either a name search using `first`, `last`, and optional `mi`, or send a `plate` search. Unused fields may be omitted or left blank, but at least one name or plate value must be provided.
+
 ```json
 {
   "first": "John",
