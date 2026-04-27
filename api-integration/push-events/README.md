@@ -20,13 +20,13 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
 
-Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation/) on startup.
+Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation.md) on startup.
 
 You can also [manually configure the server information in the admin panel](../../tutorials/customization/configuring-multiple-servers.md).
 
 ## Developer Documentation
 
-Many of our [integration submodules](../../integration-plugins/in-game-integration/fivem-installation/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
+Many of our [integration submodules](../../integration-plugins/in-game-integration/available-plugins/) rely on these push events for full functionality. Interested in developing your own plugins? Expand the push event and API endpoint documentation in the left side drawer.
 
 ## Web Server Example
 
@@ -34,7 +34,7 @@ Many of our [integration submodules](../../integration-plugins/in-game-integrati
 
 You can create your own web server to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may already be receiving these events in your FiveM resource. The resource can be configured to "[forward](/broken/pages/-M7AprAqKWbNHL1L7N0T#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
+In addition, you may already be receiving these events in your FiveM resource. The resource can be configured to "[forward](../../broken/pages/-M7AprAqKWbNHL1L7N0T/#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
 
 <details>
 
@@ -119,4 +119,3 @@ async function handler (req, res) {
 ```
 
 </details>
-

@@ -8,7 +8,7 @@ description: >-
 
 ### Bodycam Record Toggle
 
-This client event triggers a bodycam recording using a custom trigger name. This event requires the [Body Camera submodule](../fivem-installation/available-plugins/bodycam.md) to be enabled.
+This client event triggers a bodycam recording using a custom trigger name. This event requires the [Body Camera submodule](../available-plugins/bodycam.md) to be enabled.
 
 ```lua
 TriggerEvent('SonoranCAD::bodycam::AutoRecordTrigger', triggerName)

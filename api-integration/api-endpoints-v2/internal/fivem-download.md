@@ -44,4 +44,4 @@ The `download` URL will be a temporary link to a pre-configured ZIP.
 
 The `configLines` will be a string array of lines to add to the `server.cfg` to start the CAD resource.
 
-For more information, view the [pre-configured installation guide](../../../../integration-plugins/in-game-integration/fivem-installation/#pre-configured-resource-installation-recommended).
+For more information, view the [pre-configured installation guide](../../../integration-plugins/in-game-integration/fivem-installation.md#pre-configured-resource-installation-recommended).

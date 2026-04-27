@@ -42,7 +42,7 @@ Tired of having to manually register civilians? With Sonoran CAD's [Database Syn
 
 ### 🎮 FiveM In-Game Integration Plugins
 
-Sonoran CAD's integration framework includes [**over a dozen drag-and-drop plugins**](integration-plugins/in-game-integration/fivem-installation/available-plugins/) for your game server!
+Sonoran CAD's integration framework includes [**over a dozen drag-and-drop plugins**](integration-plugins/in-game-integration/available-plugins/) for your game server!
 
 <figure><img src=".gitbook/assets/integrationplugins.png" alt=""><figcaption><p>Sonoran CAD - In Game Integration</p></figcaption></figure>
 
@@ -66,13 +66,13 @@ Sonoran CAD also offers vast [geographical location](tutorials/customization/geo
 
 ### 🎥FiveM Live Bodycam Footage In-CAD
 
-Sonoran CAD's [bodycam system](integration-plugins/in-game-integration/fivem-installation/available-plugins/bodycam.md) offers live video feeds from in-game, right in the CAD!
+Sonoran CAD's [bodycam system](integration-plugins/in-game-integration/available-plugins/bodycam.md) offers live video feeds from in-game, right in the CAD!
 
 <figure><img src=".gitbook/assets/bodycam_promo.png" alt=""><figcaption></figcaption></figure>
 
 ### 📍 3D Live Map
 
-Sonoran CAD's custom [3D live map](integration-plugins/in-game-integration/fivem-installation/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
+Sonoran CAD's custom [3D live map](integration-plugins/in-game-integration/available-plugins/live-map.md) allows you to edit and view live unit information, emergency call blips, smart road signs, and more!
 
 <figure><img src=".gitbook/assets/map_promo.png" alt=""><figcaption></figcaption></figure>
 
@@ -80,17 +80,17 @@ Sonoran CAD's custom [3D live map](integration-plugins/in-game-integration/fivem
 
 We've partnered up with London Studios to integrate their Smart Signs script directly with Sonoran CAD! You can customize in-game roadway signs right from Sonoran CAD!
 
-[Learn more about this free script included with Sonoran CAD Pro!](integration-plugins/in-game-integration/fivem-installation/available-plugins/smart-signs.md)
+[Learn more about this free script included with Sonoran CAD Pro!](integration-plugins/in-game-integration/available-plugins/smart-signs.md)
 
 [View our showcase video on Smart Signs!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
 
 <figure><img src=".gitbook/assets/smart signs.png" alt=""><figcaption><p>Sonoran CAD x London Studios</p></figcaption></figure>
 
-### 🚔 [FiveM ERS Integration](integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md)
+### 🚔 [FiveM ERS Integration](integration-plugins/in-game-integration/available-plugins/ers.md)
 
 Does your community play Emergency Response Simulator?
 
-[Sonoran CAD's ERS integration](integration-plugins/in-game-integration/fivem-installation/available-plugins/ers.md) allows dispatchers to create callouts from the live map, lookup character records, and more!
+[Sonoran CAD's ERS integration](integration-plugins/in-game-integration/available-plugins/ers.md) allows dispatchers to create callouts from the live map, lookup character records, and more!
 
 <figure><img src=".gitbook/assets/ERS (1).png" alt=""><figcaption><p>Sonoran CAD x ERS</p></figcaption></figure>
 
@@ -98,17 +98,17 @@ Does your community play Emergency Response Simulator?
 
 We've partnered up with Inferno Collection to integrate their Station Alert script directly with Sonoran CAD! Dispatchers can toggle station doors, lights, and text-to-speech messages right from Sonoran CAD!
 
-[Learn more about this free script included with Sonoran CAD Pro!](integration-plugins/in-game-integration/fivem-installation/available-plugins/station-alert.md)
+[Learn more about this free script included with Sonoran CAD Pro!](integration-plugins/in-game-integration/available-plugins/station-alert.md)
 
 <figure><img src=".gitbook/assets/inferno (1).png" alt=""><figcaption><p>Sonoran CAD x Inferno Collection</p></figcaption></figure>
 
 ### [💻](https://emojipedia.org/laptop/) FiveM Mini CAD
 
-Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](integration-plugins/in-game-integration/fivem-installation/available-plugins/tablet.md)!
+Easily view and attach to calls, talk to other officers, and more all from the [in-game mini CAD](integration-plugins/in-game-integration/available-plugins/tablet.md)!
 
 <figure><img src=".gitbook/assets/mini_cad.png" alt=""><figcaption><p>Sonoran CAD Mini-CAD</p></figcaption></figure>
 
-### 📞 [FiveM Local Callers](integration-plugins/in-game-integration/fivem-installation/available-plugins/local-callers.md)
+### 📞 [FiveM Local Callers](integration-plugins/in-game-integration/available-plugins/local-callers.md)
 
 Nearby civilian witnesses will place an emergency call during car jackings, weapon brandishing, death, and more. Stop or cut their information short by killing them in time!
 
@@ -158,7 +158,7 @@ Check out our official [Stream Deck profiles](integration-plugins/stream-deck-in
 
 ### 📖 API Integration
 
-In addition to over a dozen drag-and-drop integration [plugins](integration-plugins/in-game-integration/fivem-installation/available-plugins/), you can write your own integration plugins using our [API documentation](api-integration/).
+In addition to over a dozen drag-and-drop integration [plugins](integration-plugins/in-game-integration/available-plugins/), you can write your own integration plugins using our [API documentation](api-integration/).
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](api-integration/push-events/)!
 

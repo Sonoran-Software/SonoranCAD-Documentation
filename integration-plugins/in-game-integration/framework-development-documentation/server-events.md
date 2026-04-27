@@ -8,7 +8,7 @@ description: >-
 
 ### sonorancad::registerVeh
 
-This event will register the vehicle the player is in, to their most recent CAD civilian character. **This event requires the** [**VehReg submodule**](../fivem-installation/available-plugins/vehreg.md) **to be enabled**
+This event will register the vehicle the player is in, to their most recent CAD civilian character. **This event requires the** [**VehReg submodule**](../available-plugins/vehreg.md) **to be enabled**
 
 ```lua
 TriggerServerEvent('sonorancad::registerVeh', primary, plate, class, realName)

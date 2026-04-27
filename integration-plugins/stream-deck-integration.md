@@ -60,11 +60,11 @@ The button will change from outlined to filled when a panic mode is active.
 
 When pressed, these actions will open the corresponding window in the CAD.
 
-* **3D Live Map -** [**FiveM**](in-game-integration/fivem-installation/available-plugins/live-map.md) **or** [**ER:LC**](erlc/3d-live-map.md)
+* **3D Live Map -** [**FiveM**](in-game-integration/available-plugins/live-map.md) **or** [**ER:LC**](erlc/3d-live-map.md)
 * [**Tone Board**](../tutorials/customization/tone-board.md)
 * [**Rapid IQ**](../tutorials/dispatching/rapid-iq.md)
 * [**Command Line**](../tutorials/dispatching/command-line-interface-cli.md)
-* [**Street Signs**](in-game-integration/fivem-installation/available-plugins/smart-signs.md)
+* [**Street Signs**](in-game-integration/available-plugins/smart-signs.md)
 * [**Lookup**](../tutorials/records-management/searching-for-records.md)
 * [**Records**](../tutorials/records-management/)
 * [**10-Codes**](../tutorials/customization/10-codes.md)

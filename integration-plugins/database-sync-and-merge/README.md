@@ -14,11 +14,7 @@ Database Merge requires the **pro** version of Sonoran CAD.
 For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../../tutorials/getting-started/view-your-limits.md).
 {% endhint %}
 
-{% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/Database Sync.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/database_sync_promo.png" alt=""><figcaption></figcaption></figure>
 
 Database Sync is a highly advanced feature allowing you to automatically pull all character, license, and vehicle registration data from your own in-game database directly to Sonoran CAD.
 
