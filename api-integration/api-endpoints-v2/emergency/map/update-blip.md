@@ -119,6 +119,14 @@ var response = await sonoran.Cad.updateBlipV2(
         ServerId = 1,
         Tooltip = "Perimeter Updated",
         Color = "orange",
+        Data =
+        [
+            new BlipDisplayDataV2
+            {
+                Title = "Units",
+                Text = "3"
+            }
+        ],
         Radius = 75
     }
 );

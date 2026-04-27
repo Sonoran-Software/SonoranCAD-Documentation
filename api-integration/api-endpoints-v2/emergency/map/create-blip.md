@@ -142,12 +142,21 @@ var response = await sonoran.Cad.createBlipV2(new CreateBlipV2Request
     {
         X = 420.1,
         Y = -980.4,
-        Z = 30.8
+        Z = 30.8,
+        W = 0
     },
     SubType = "call",
     Icon = "fire",
     Color = "red",
     Tooltip = "Structure Fire",
+    Data =
+    [
+        new BlipDisplayDataV2
+        {
+            Title = "Units",
+            Text = "2"
+        }
+    ],
     Radius = 50
 });
 
@@ -191,8 +200,8 @@ paths:
                 color: "#ff0000"
                 tooltip: "Perimeter"
                 data:
-                  title: "Assigned Unit"
-                  text: "A-10"
+                  - title: "Assigned Unit"
+                    text: "A-10"
                 radius: 100.0
       parameters:
         -
@@ -224,8 +233,8 @@ paths:
               tooltip: "Scene perimeter"
               radius: 50.0
               data:
-                title: "Units"
-                text: "2"
+                - title: "Units"
+                  text: "2"
 components:
   securitySchemes:
     bearerAuth:

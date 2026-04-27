@@ -116,22 +116,24 @@ paths:
           content:
             application/json:
               schema:
-                type: "object"
+                type: "array"
+                items:
+                  type: "object"
               example:
-                id: 32
-                coordinates:
-                  x: 425.5
-                  y: -979.8
-                  z: 0.0
-                  w: 0.0
-                subType: "radius"
-                icon: "fa-location-dot"
-                color: "#ff0000"
-                tooltip: "Perimeter"
-                data:
-                  title: "Assigned Unit"
-                  text: "A-10"
-                radius: 100.0
+                - id: 32
+                  coordinates:
+                    x: 425.5
+                    y: -979.8
+                    z: 0.0
+                    w: 0.0
+                  subType: "radius"
+                  icon: "fa-location-dot"
+                  color: "#ff0000"
+                  tooltip: "Perimeter"
+                  data:
+                    - title: "Assigned Unit"
+                      text: "A-10"
+                  radius: 100.0
       parameters:
         -
           description: "Configured Sonoran CAD server ID."
