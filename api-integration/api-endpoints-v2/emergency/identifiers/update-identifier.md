@@ -69,6 +69,20 @@ local response = sonoran.cad:updateIdentifierV2('00000000-0000-0000-0000-0000000
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateIdentifierV2('00000000-0000-0000-0000-000000000000', 12, {
+    status = 2,
+    unitNum = '1A-01',
+    name = 'John Doe',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

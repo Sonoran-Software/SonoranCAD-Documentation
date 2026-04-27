@@ -52,6 +52,19 @@ local response = sonoran.cad:attachUnitsToDispatchCallV2(501, {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:attachUnitsToDispatchCallV2(501, {
+    serverId = 1,
+    apiIds = {'1234567890'},
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

@@ -47,6 +47,16 @@ local response = sonoran.cad:setDispatchPostalV2(501, '100', 1)
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setDispatchPostalV2(501, '100', 1)
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

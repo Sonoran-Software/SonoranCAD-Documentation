@@ -53,6 +53,20 @@ local response = sonoran.cad:setUnitPanicV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setUnitPanicV2({
+    serverId = 1,
+    apiId = '1234567890',
+    isPanic = true,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

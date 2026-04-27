@@ -57,6 +57,20 @@ local response = sonoran.cad:updateRecordV2(501, {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateRecordV2(501, {
+    // See the request body above for the full record payload shape.
+    apiId = '1234567890',
+    record = {},
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

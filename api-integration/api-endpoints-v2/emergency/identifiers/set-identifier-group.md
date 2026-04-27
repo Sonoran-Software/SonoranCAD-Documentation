@@ -53,6 +53,20 @@ local response = sonoran.cad:addIdentifiersToGroupV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:addIdentifiersToGroupV2({
+    serverId = 1,
+    groupName = 'CAR-51',
+    identIds = {12},
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

@@ -82,6 +82,30 @@ local response = sonoran.cad:createEmergencyCallV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:createEmergencyCallV2({
+    serverId = 1,
+    isEmergency = true,
+    caller = 'John Doe',
+    location = '101 Alta Street',
+    description = 'Structure fire with visible smoke.',
+    deleteAfterMinutes = 30,
+    metaData = {
+      source = 'integration',
+      x = '425.1',
+      y = '-979.2',
+      z = '30.7',
+      postal = '9001',
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

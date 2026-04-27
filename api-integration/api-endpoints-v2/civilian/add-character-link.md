@@ -50,6 +50,18 @@ local response = sonoran.cad:addCharacterLinkV2('CHAR_123', {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:addCharacterLinkV2('CHAR_123', {
+    accountUuid = '00000000-0000-0000-0000-000000000000',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

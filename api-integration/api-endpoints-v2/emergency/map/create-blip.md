@@ -70,6 +70,24 @@ local response = sonoran.cad:createBlipV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:createBlipV2({
+    serverId = 1,
+    coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
+    subType = 'radius',
+    icon = 'fire',
+    color = '#ff0000',
+    tooltip = 'Structure Fire',
+    radius = 25,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

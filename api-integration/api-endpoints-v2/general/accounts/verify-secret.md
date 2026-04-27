@@ -40,6 +40,16 @@ local response = sonoran.cad:verifySecretV2('00000000-0000-0000-0000-00000000000
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:verifySecretV2('00000000-0000-0000-0000-000000000000')
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

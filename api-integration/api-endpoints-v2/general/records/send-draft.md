@@ -50,6 +50,20 @@ local response = sonoran.cad:sendRecordDraftV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:sendRecordDraftV2({
+    recordTypeId = 1,
+    replaceValues = { firstName = 'John', lastName = 'Doe' },
+    apiId = '1234567890',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

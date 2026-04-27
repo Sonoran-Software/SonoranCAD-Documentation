@@ -55,6 +55,22 @@ local response = sonoran.cad:updateStreetSignsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateStreetSignsV2({
+    serverId = 1,
+    ids = {1},
+    text1 = 'ALTA',
+    text2 = 'ST',
+    text3 = '',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

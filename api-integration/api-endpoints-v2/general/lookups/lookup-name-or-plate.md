@@ -57,6 +57,23 @@ local response = sonoran.cad:lookupV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:lookupV2({
+    first = 'John',
+    last = 'Doe',
+    mi = 'A',
+    plate = 'ABC123',
+    types = {1},
+    partial = true,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

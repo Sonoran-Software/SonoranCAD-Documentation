@@ -48,6 +48,20 @@ local response = sonoran.cad:setApiIdsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setApiIdsV2({
+    accountUuid = '00000000-0000-0000-0000-000000000000',
+    apiIds = {'1234567890', '0987654321'},
+    pushNew = true,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
