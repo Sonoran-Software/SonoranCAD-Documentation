@@ -15,14 +15,14 @@ View our [WraithV2 showcase video](https://www.youtube.com/watch?v=5oL7Mg6LQgg)!
 ### 1. Download and Install the Resource
 
 {% hint style="info" %}
-This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation.md).
+This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation/).
 
 \
 The [locations submodule](locations.md) includes all logic required to send bodycam images to the CAD and is **already enabled by default**. Keep this submodule enabled to maintain functionality.
 {% endhint %}
 
 {% hint style="info" %}
-Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk_wars2x)[ ](https://github.com/Sonoran-Software/wk_wars2x)radar and plate reader to function. This resource is bundled with the [Sonoran CAD FiveM Resource](../fivem-installation.md) as `wk_wars2x`.
+Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk_wars2x)[ ](https://github.com/Sonoran-Software/wk_wars2x)radar and plate reader to function. This resource is bundled with the [Sonoran CAD FiveM Resource](../fivem-installation/) as `wk_wars2x`.
 
 This resource also uses pNotify by default, a resource that is already bundled with the Sonoran CAD FiveM Resource.
 {% endhint %}
@@ -130,7 +130,7 @@ For more information on using the in-game UI, please view the Sonoran version of
 ## Sonoran wk\_wars2x
 
 {% hint style="info" %}
-These features are not found in the original wk\_wars2x resource, and only come packaged with our [Sonoran CAD FiveM Resource](../fivem-installation.md).
+These features are not found in the original wk\_wars2x resource, and only come packaged with our [Sonoran CAD FiveM Resource](../fivem-installation/).
 {% endhint %}
 
 ### Additional Features

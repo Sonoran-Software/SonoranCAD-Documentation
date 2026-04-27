@@ -27,7 +27,7 @@ Click to view our [WraithV2 plate reader and lookup installation video](https://
 
 ### 1. Download and Install the Core
 
-If you haven't already, be sure to install and configure the [SonoranCAD Core](../fivem-installation.md) first.
+If you haven't already, be sure to install and configure the [SonoranCAD Core](../fivem-installation/) first.
 
 ### 2. Activate the Submodule and all Dependencies
 

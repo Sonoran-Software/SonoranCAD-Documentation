@@ -13,7 +13,7 @@ description: >-
 ### 1. Download and Install the Resource
 
 {% hint style="info" %}
-This resource is already **enabled by default** inside of the `sonorancad.cfg` when installing the [Sonoran CAD FiveM resource](../fivem-installation.md).
+This resource is already **enabled by default** inside of the `sonorancad.cfg` when installing the [Sonoran CAD FiveM resource](../fivem-installation/).
 {% endhint %}
 
 ### 2. Ensure Players are Linked

@@ -16,8 +16,8 @@ From one-click installation options to pre-configured resource downloads, we've 
 
 Learn more about installing the resource below.
 
-{% content-ref url="fivem-installation.md" %}
-[fivem-installation.md](fivem-installation.md)
+{% content-ref url="fivem-installation/" %}
+[fivem-installation](fivem-installation/)
 {% endcontent-ref %}
 
 ### FiveM Submodules

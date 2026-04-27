@@ -20,7 +20,7 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
 
-Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation.md) on startup.
+Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation/) on startup.
 
 You can also [manually configure the server information in the admin panel](../../tutorials/customization/configuring-multiple-servers.md).
 

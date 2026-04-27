@@ -17,7 +17,7 @@ Records can be **printed at configurable printer objects or within vehicles**, s
 ### 1. Download and Install the Resource
 
 {% hint style="info" %}
-This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation.md).
+This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation/).
 {% endhint %}
 
 ### 2. Adjust the Configuration

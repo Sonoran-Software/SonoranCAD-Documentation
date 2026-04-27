@@ -15,10 +15,10 @@ We've partnered with Rocket Node to bring you one-click Sonoran CAD installation
 
 {% embed url="https://www.youtube.com/watch?v=h8Ftx14j8l8" %}
 
-The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](submodule-configuration/) in the `/configuration` folder.
+The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](../submodule-configuration/) in the `/configuration` folder.
 
-{% content-ref url="submodule-configuration/" %}
-[submodule-configuration](submodule-configuration/)
+{% content-ref url="../submodule-configuration/" %}
+[submodule-configuration](../submodule-configuration/)
 {% endcontent-ref %}
 
 ***
@@ -33,13 +33,13 @@ Download a pre-configured version of the in-game integration resource from the p
 
 Navigate to `Admin` -> `Advanced` -> `In-Game Integration` -> `FiveM`
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD: FiveM Resource Download</p></figcaption></figure>
 
 ### 2. Extract the ZIP File
 
 Extract the `.zip` file into your resources directory. Place the `[sonorancad]` folder directly in the resources root directory.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
 
 ### 3. Update Your Server Config
 
@@ -74,10 +74,10 @@ Modify the `/configuration/config.json`file for any additional configuration val
 
 ### 5. Configure the Submodules
 
-The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](submodule-configuration/) in the `/configuration` folder.
+The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](../submodule-configuration/) in the `/configuration` folder.
 
-{% content-ref url="available-plugins/" %}
-[available-plugins](available-plugins/)
+{% content-ref url="../available-plugins/" %}
+[available-plugins](../available-plugins/)
 {% endcontent-ref %}
 
 ### 6. Configure the Auto-Updater
@@ -118,7 +118,7 @@ This feature does not work with arrays (like statusLabels). Any other configurat
 
 <summary>Manual IP:Port Push Events</summary>
 
-The FiveM resource uses a [websocket](../../api-integration/websocket-api/) to stream all events from the CAD to your local FiveM server. In the event that this websocket is not connected (games outside of FiveM) it will fall back to an optional `http://ip:port/sonorancad/event` POST method.
+The FiveM resource uses a [websocket](../../../api-integration/websocket-api/) to stream all events from the CAD to your local FiveM server. In the event that this websocket is not connected (games outside of FiveM) it will fall back to an optional `http://ip:port/sonorancad/event` POST method.
 
 In the CAD admin panel, navigate to: Advanced > In-Game Integration\
 Expand the "Server Events and Integrated Live Map" section.
@@ -139,7 +139,7 @@ In the framework configuration file, simply set `enablePushEventForwarding` to `
 
 <summary>Steam API Key</summary>
 
-If your framework has the `primaryIdentifier` set to `steam` in the [configuration ](fivem-installation.md#3.-configure-and-rename)(used for your API ID type), you'll need to ensure a Steam API key is set in your `server.cfg` file.
+If your framework has the `primaryIdentifier` set to `steam` in the [configuration ](./#3.-configure-and-rename)(used for your API ID type), you'll need to ensure a Steam API key is set in your `server.cfg` file.
 
 You can register a new Steam API Key at [http://steamcommunity.com/dev/apikey](http://steamcommunity.com/dev/apikey)
 
@@ -183,13 +183,13 @@ It is very important that the `sonoran_updatehelper` resource is not started man
 **DO NOT** start the whole \[sonorancad] folder as that will also start the sonoran\_updatehelper which might cause crashing if it is started manually. Example of not what to do `ensure [sonorancad]`
 {% endhint %}
 
-2\. Try updating your smartsigns submodule manually to the latest version. This is done by copying over the lua files from the latest release found [here](available-plugins/smart-signs.md) and overrideing the old files.
+2\. Try updating your smartsigns submodule manually to the latest version. This is done by copying over the lua files from the latest release found [here](../available-plugins/smart-signs.md) and overrideing the old files.
 
 {% hint style="info" %}
 We have gotten isolated reports of servers crashing with the following error, this is assumed to be related to having lower end VPS hardware specs and txadmin rebooting the server because the update process is taking too long.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (306) (1).png>)
+![](<../../../.gitbook/assets/image (306) (1).png>)
 
 ### Warning: Could not find file X
 

@@ -17,13 +17,13 @@ Looking for VPS, web, or dedicated hosting? Check out our official [server hosti
 
 Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
 
-**Be sure you have already installed our** [**core framework**](../fivem-installation.md)**!**
+**Be sure you have already installed our** [**core framework**](../fivem-installation/)**!**
 
 ## Installation Guide
 
 ### 1. Download and Install the Core
 
-If you haven't already, be sure to install and configure the [SonoranCAD Core](../fivem-installation.md) first.
+If you haven't already, be sure to install and configure the [SonoranCAD Core](../fivem-installation/) first.
 
 ### 2. Activate the Submodule and all Dependencies
 

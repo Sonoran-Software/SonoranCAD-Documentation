@@ -11,7 +11,7 @@ description: Allows you to change a unit's status in the CAD.
 ### 1. Download and Install the Resource
 
 {% hint style="info" %}
-This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation.md).
+This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation/).
 {% endhint %}
 
 ### 2. Adjust the Configuration

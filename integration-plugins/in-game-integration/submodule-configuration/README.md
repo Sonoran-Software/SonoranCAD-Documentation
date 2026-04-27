@@ -6,11 +6,11 @@ description: This guide covers the activation process for a general submodule.
 
 ## Install the Resource
 
-If you have not already, [install the base FiveM resource](../fivem-installation.md).
+If you have not already, [install the base FiveM resource](../fivem-installation/).
 
 ## Activating a Submodule
 
-The [FiveM resource](../fivem-installation.md) contains multiple "submodules" for each integration. These can be individually enabled/disabled and configured.
+The [FiveM resource](../fivem-installation/) contains multiple "submodules" for each integration. These can be individually enabled/disabled and configured.
 
 {% content-ref url="../available-plugins/" %}
 [available-plugins](../available-plugins/)

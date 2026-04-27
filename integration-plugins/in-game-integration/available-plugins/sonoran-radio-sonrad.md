@@ -14,7 +14,7 @@ This submodule connects Sonoran CAD to [Sonoran Radio](https://sonoranradio.com/
 
 ### 1. Download and Install the Resource
 
-If you have not already, install the [Sonoran CAD FiveM resource](../fivem-installation.md).
+If you have not already, install the [Sonoran CAD FiveM resource](../fivem-installation/).
 
 Then, [enable the `sonrad` plugin](../submodule-configuration/).
 

@@ -30,7 +30,7 @@ Each submodule guide lists the required subscription version at the top.
 
 ### 2. Ensure your submodule is enabled
 
-Be sure to follow the [core installation](../fivem-installation.md) and [submodule activation](./) guides thoroughly, depending on the specific submodule you are trying to activate.
+Be sure to follow the [core installation](../fivem-installation/) and [submodule activation](./) guides thoroughly, depending on the specific submodule you are trying to activate.
 
 \
 Make sure you have not forgotten to enable the submodule in the plugin config file!

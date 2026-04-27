@@ -11,7 +11,7 @@ description: Send emergency calls from in-game to the CAD.
 ### 1. Download and Install the Resource
 
 {% hint style="info" %}
-This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation.md).
+This submodule is already **enabled by default** when installing the [Sonoran CAD FiveM resource](../fivem-installation/).
 
 \
 The [locations submodule](locations.md) includes required logic to send location data and is **already enabled by default**. Keep this submodule enabled to maintain functionality.
