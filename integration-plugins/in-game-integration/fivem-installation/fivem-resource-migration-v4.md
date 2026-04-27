@@ -23,8 +23,8 @@ Communities must update from the v3 to v4 CAD resource by **June 15th, 2026** be
 
 ## Migrating to FiveM CAD v4
 
-1. Backup your existing CAD v3 resource and configuration files
-2. Download a new, pre-configured CAD resource and install it as normal
+1. Backup your existing CAD v3 resource and configuration files.
+2. [Download a new, pre-configured CAD resource and install it as normal.](./)
 3. Carefully, manually migrate configuration settings for each submodule from v3 to v4.
    1. Note: Some submodule configuration files have changed from v3 to v4. **Do not just copy the old v3 configs to v4** as some names have changed.
 
