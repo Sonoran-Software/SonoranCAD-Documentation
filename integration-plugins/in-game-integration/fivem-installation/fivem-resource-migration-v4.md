@@ -27,5 +27,8 @@ Communities must update from the v3 to v4 CAD resource by **June 15th, 2026** be
 2. [Download a new, pre-configured CAD resource and install it as normal.](./)
 3. Carefully, manually migrate configuration settings for each submodule from v3 to v4.
    1. Note: Some submodule configuration files have changed from v3 to v4. **Do not just copy the old v3 configs to v4** as some names have changed.
+4. Review updated in-game command names.
+   1. Use `/sonorancad help` in-game to view all
+   2. Review the [submodule documentation pages](../available-plugins/) for more information.
 
 Having trouble? Contact our [customer support team](https://support.sonoransoftware.com/).
