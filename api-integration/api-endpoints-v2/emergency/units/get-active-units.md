@@ -53,6 +53,22 @@ local response = sonoran.cad:getUnitsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:getUnitsV2({
+    serverId = 1,
+    includeOffline = false,
+    onlyUnits = true,
+    limit = 100,
+    offset = 0,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

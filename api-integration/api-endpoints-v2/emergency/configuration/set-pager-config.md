@@ -85,6 +85,37 @@ local response = sonoran.cad:setPagerConfigV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setPagerConfigV2({
+    serverId = 1,
+    natureWords = {
+      Emergency = 'Emergency',
+      NonEmergency = 'Non-Emergency',
+      Administrative = 'Administrative',
+    },
+    maxAddresses = 5,
+    maxBodyLength = 250,
+    nodes = {
+      {
+        id = 'root-1',
+        name = 'Fire',
+        description = 'Fire services',
+        permission = 'fire',
+        address = 'FIRE-01',
+        shortCode = 'F1',
+        kind = 'group',
+        children = {},
+      },
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

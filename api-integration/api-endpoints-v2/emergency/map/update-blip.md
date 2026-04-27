@@ -55,6 +55,20 @@ local response = sonoran.cad:updateBlipV2(32, {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateBlipV2(32, {
+    serverId = 1,
+    tooltip = 'Updated marker',
+    color = '#ffaa00',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

@@ -55,6 +55,23 @@ local response = sonoran.cad:getAccountUnitsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:getAccountUnitsV2({
+    serverId = 1,
+    accountUuid = '00000000-0000-0000-0000-000000000000',
+    onlyOnline = true,
+    onlyUnits = true,
+    limit = 100,
+    offset = 0,
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

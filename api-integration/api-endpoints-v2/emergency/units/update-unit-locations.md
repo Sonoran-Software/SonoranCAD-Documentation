@@ -76,6 +76,25 @@ local response = sonoran.cad:updateUnitLocationsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateUnitLocationsV2({
+    serverId = 1,
+    updates = {
+      {
+        communityUserId = 'player-1234',
+        location = 'Mission Row',
+        coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
+      },
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

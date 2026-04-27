@@ -54,6 +54,21 @@ local response = sonoran.cad:addDispatchNoteV2(501, {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:addDispatchNoteV2(501, {
+    serverId = 1,
+    note = 'Caller updated with additional suspect info.',
+    noteType = 'text',
+    label = 'Dispatcher',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

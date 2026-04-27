@@ -71,6 +71,27 @@ local response = sonoran.cad:updateDispatchCallV2(501, {
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:updateDispatchCallV2(501, {
+    serverId = 1,
+    description = 'Caller confirmed the fire has spread to the garage.',
+    postal = '100',
+    metaData = {
+      source = 'integration',
+      x = '430.5',
+      y = '-982.1',
+      z = '31.0',
+      radius = '100',
+    },
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

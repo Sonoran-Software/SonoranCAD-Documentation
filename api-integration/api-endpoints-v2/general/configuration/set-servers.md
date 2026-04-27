@@ -62,6 +62,19 @@ local response = sonoran.cad:setServersV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setServersV2({
+    // See the request body above for the full server config shape.
+    { id = 1, name = 'Main Server' },
+  }, true)
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js

@@ -74,6 +74,19 @@ local response = sonoran.cad:setAvailableCalloutsV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setAvailableCalloutsV2({
+    // See the request body above for the full callout shape.
+    { id = 'armed_suspect', data = {} },
+  }, 1)
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
