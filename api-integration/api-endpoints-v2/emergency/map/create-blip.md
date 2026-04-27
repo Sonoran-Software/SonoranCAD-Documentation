@@ -28,7 +28,7 @@ description: Create a custom blip.
     "w": 0.0
   },
   "subType": "scene",
-  "icon": "fa-circle",
+  "icon": "fa-solid fa-location-crosshairs",
   "color": "red",
   "tooltip": "Scene perimeter",
   "radius": 50.0,
@@ -228,7 +228,7 @@ paths:
                 z: 0.0
                 w: 0.0
               subType: "scene"
-              icon: "fa-circle"
+              icon: "fa-solid fa-location-crosshairs"
               color: "red"
               tooltip: "Scene perimeter"
               radius: 50.0
@@ -258,7 +258,7 @@ curl --request POST \
     "w": 0.0
   },
   "subType": "scene",
-  "icon": "fa-circle",
+  "icon": "fa-solid fa-location-crosshairs",
   "color": "red",
   "tooltip": "Scene perimeter",
   "radius": 50.0,
