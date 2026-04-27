@@ -118,8 +118,8 @@ paths:
               schema:
                 type: "object"
               example:
-                identId: 12
-                callId: 501
+                IdentId: 12
+                CallId: 501
       parameters:
         -
           description: "Sonoran CAD account UUID."
@@ -155,8 +155,8 @@ Successful requests return `application/json`.
 
 ```json
 {
-  "identId": 12,
-  "callId": 501
+  "IdentId": 12,
+  "CallId": 501
 }
 ```
 

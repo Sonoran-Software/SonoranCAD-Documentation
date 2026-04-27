@@ -118,8 +118,8 @@ paths:
               schema:
                 type: "object"
               example:
-                selectedIdent: 12
-                identifiers:
+                SelectedIdent: 12
+                Identifiers:
                   id: 12
                   accId: "00000000-0000-0000-0000-000000000000"
                   status: 3
@@ -177,8 +177,8 @@ Successful requests return `application/json`.
 
 ```json
 {
-  "selectedIdent": 12,
-  "identifiers": [
+  "SelectedIdent": 12,
+  "Identifiers": [
     {
       "id": 12,
       "accId": "00000000-0000-0000-0000-000000000000",

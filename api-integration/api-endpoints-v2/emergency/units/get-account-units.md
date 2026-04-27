@@ -154,7 +154,7 @@ paths:
               schema:
                 type: "object"
               example:
-                units:
+                Units:
                   id: 12
                   accId: "00000000-0000-0000-0000-000000000000"
                   status: 3
@@ -248,7 +248,7 @@ Successful requests return `application/json`.
 
 ```json
 {
-  "units": [
+  "Units": [
     {
       "id": 12,
       "accId": "00000000-0000-0000-0000-000000000000",

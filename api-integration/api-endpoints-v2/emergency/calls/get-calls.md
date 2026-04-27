@@ -146,7 +146,7 @@ paths:
               schema:
                 type: "object"
               example:
-                activeCalls:
+                ActiveCalls:
                   callId: 501
                   origin: 0
                   status: 1
@@ -174,7 +174,7 @@ paths:
                     z: "30.7"
                     radius: "75"
                   updated: "2026-04-08T21:30:00Z"
-                emergencyCalls:
+                EmergencyCalls:
                   callId: 302
                   isEmergency: true
                   caller: "Jane Doe"
@@ -187,7 +187,7 @@ paths:
                     z: "30.7"
                     postal: "9001"
                   updated: "2026-04-08T21:31:00Z"
-                closedCalls:
+                ClosedCalls:
                   callId: 480
                   origin: 0
                   status: 2
@@ -215,7 +215,7 @@ paths:
                     z: "30.7"
                     radius: "75"
                   updated: "2026-04-08T21:30:00Z"
-                closedCallCount: 18
+                ClosedCallCount: 18
       parameters:
         -
           description: "Configured Sonoran CAD server ID."
@@ -273,7 +273,7 @@ Successful requests return `application/json`.
 
 ```json
 {
-  "activeCalls": [
+  "ActiveCalls": [
     {
       "callId": 501,
       "origin": 0,
@@ -309,7 +309,7 @@ Successful requests return `application/json`.
       "updated": "2026-04-08T21:30:00Z"
     }
   ],
-  "emergencyCalls": [
+  "EmergencyCalls": [
     {
       "callId": 302,
       "isEmergency": true,
@@ -326,7 +326,7 @@ Successful requests return `application/json`.
       "updated": "2026-04-08T21:31:00Z"
     }
   ],
-  "closedCalls": [
+  "ClosedCalls": [
     {
       "callId": 480,
       "origin": 0,
@@ -362,7 +362,7 @@ Successful requests return `application/json`.
       "updated": "2026-04-08T21:30:00Z"
     }
   ],
-  "closedCallCount": 18
+  "ClosedCallCount": 18
 }
 ```
 
