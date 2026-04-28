@@ -24,7 +24,7 @@ This example uses the `postals` submodule.
   * For this example we will be using the `sonrad_config.lua` file (name depends on the submodule).
 * **Enable** the submodule by changing the `enabled` variable from `false` to `true` in the submodule config.
 
-<figure><img src="../../../.gitbook/assets/image (439).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Rename and Save
 

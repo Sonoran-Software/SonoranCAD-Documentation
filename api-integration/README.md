@@ -26,8 +26,8 @@ You can also write your own script using our API endpoints:
 
 Easily integrate external scripts with our LUA and JS export examples:
 
-{% content-ref url="api-examples/" %}
-[api-examples](api-examples/)
+{% content-ref url="/broken/pages/ONoZRRBy208JfLTCy8VK" %}
+[Broken link](/broken/pages/ONoZRRBy208JfLTCy8VK)
 {% endcontent-ref %}
 
 Or, learn more about receiving push events directly to your game server:

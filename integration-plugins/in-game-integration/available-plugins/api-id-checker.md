@@ -8,7 +8,7 @@ hidden: true
 # Check API ID
 
 {% hint style="info" %}
-### This submodule has been merged into the SonoranCAD Core and no longer requires external configuration or setup
+#### This submodule has been merged into the SonoranCAD Core and no longer requires external configuration or setup
 {% endhint %}
 
 ## Usage

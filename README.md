@@ -162,9 +162,9 @@ In addition to over a dozen drag-and-drop integration [plugins](integration-plug
 
 We've complied extensive documentation for over two-dozen API endpoints and server [push events](api-integration/push-events/)!
 
-Easily integrate external scripts with our [LUA and JS export examples](api-integration/api-examples/)!
+Easily integrate external scripts with our [LUA and JS export examples](/broken/pages/ONoZRRBy208JfLTCy8VK)!
 
-<figure><img src=".gitbook/assets/API-Integration.png" alt=""><figcaption><p>Sonoran CAD - API Integration</p></figcaption></figure>
+<figure><img src=".gitbook/assets/api-integration.png" alt=""><figcaption><p>Sonoran CAD - API Integration</p></figcaption></figure>
 
 ### 📝 Custom Records and Reports
 

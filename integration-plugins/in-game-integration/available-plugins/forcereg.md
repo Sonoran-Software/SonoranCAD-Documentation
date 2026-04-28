@@ -80,7 +80,7 @@ If the user is not yet logged into Sonoran CAD in their browser, they must do so
 
 After linking, the user will be automatically joined to the CAD community if not already.
 
-<figure><img src="../../../.gitbook/assets/image (435).png" alt="" width="302"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (430).png" alt="" width="302"><figcaption></figcaption></figure>
 
 ### Event
 

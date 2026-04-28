@@ -21,7 +21,7 @@ Database Merge allows you to save off additional, manually specified data in the
 
 {% tabs %}
 {% tab title="phpMyAdmin" %}
-### phpMyAdmin - Database Credentials
+#### phpMyAdmin - Database Credentials
 
 **1. Navigate to your phpMyAdmin Web Panel**
 
@@ -74,7 +74,7 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 {% endtab %}
 
 {% tab title="HeidiSQL" %}
-### HeidiSQL - Database Credentials
+#### HeidiSQL - Database Credentials
 
 **1. Login to your database using HeidiSQL.**
 
@@ -124,7 +124,7 @@ See [Database Sync and Merge Connection Credentials](./#written-configuration-gu
 {% endtab %}
 
 {% tab title="Zap Hosting" %}
-### Zap Hosting - Database Credentials
+#### Zap Hosting - Database Credentials
 
 **1. Login**
 
