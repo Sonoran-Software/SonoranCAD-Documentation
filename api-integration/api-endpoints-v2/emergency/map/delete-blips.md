@@ -4,7 +4,7 @@ description: Delete one or more custom blips.
 
 # Delete Blips
 
-<mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/blips`
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/blips/delete`
 
 > **Rate limit:** `30 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
@@ -124,8 +124,8 @@ servers:
   -
     url: "https://api.sonorancad.com"
 paths:
-  /v2/emergency/servers/{serverId}/blips:
-    delete:
+  /v2/emergency/servers/{serverId}/blips/delete:
+    post:
       summary: "Delete Blips"
       operationId: "deleteBlips"
       responses:
@@ -171,8 +171,8 @@ components:
 {% endtab %}
 {% tab title="cURL" %}
 ```bash
-curl --request DELETE \
-  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips" \
+curl --request POST \
+  --url "https://api.sonorancad.com/v2/emergency/servers/1/blips/delete" \
   --header "Authorization: Bearer YOUR_API_KEY" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
