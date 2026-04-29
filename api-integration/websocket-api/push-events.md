@@ -94,5 +94,21 @@ if (!auth?.success) {
 * Push event delivery over websocket is scoped to the authenticated `serverId`.
 * If you operate multiple servers, create one websocket session per target `serverId`.
 * Unit location updates continue to use the `unitLocation` websocket method separately from inbound `pushEvent` messages.
-* The built-in FiveM resource automatically consumes push events over websocket when its API WS connection is active.
-* If websocket delivery is unavailable, Sonoran CAD falls back to the configured HTTP listener destination.
+
+## Link Verification Event
+
+When a player completes a CAD link code flow, Sonoran CAD can now send a websocket push event immediately instead of waiting for the next periodic link-status check.
+
+Example:
+
+```json
+{
+  "type": "EVENT_COMMUNITY_LINK_VERIFIED",
+  "data": {
+    "communityUserId": "license:abc123",
+    "accountUuid": "00000000-0000-0000-0000-000000000000"
+  }
+}
+```
+
+Use `communityUserId` to match the active in-game linking session and mark that player as linked immediately.
