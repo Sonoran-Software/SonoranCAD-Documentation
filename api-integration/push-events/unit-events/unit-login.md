@@ -4,11 +4,6 @@ description: This push event is sent whenever a unit logs into the CAD.
 
 # Unit Login
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_UNIT\_LOGIN
 
 ```javascript
@@ -50,7 +45,7 @@ For more information, see our [pricing ](../../../../pricing/faq/)page.
 
 #### Unit Status
 
-Sonoran CAD uses integer enumeration values for the unit `STATUS` field. See the tables below for more information. These values reflect the default [unit status](../../../../tutorials/customization/unit-status-codes.md) options.
+Sonoran CAD uses integer enumeration values for the unit `STATUS` field. See the tables below for more information. These values reflect the default [unit status](../../../tutorials/customization/unit-status-codes.md) options.
 
 | Integer (Enumeration) Value | Status Description |
 | --------------------------- | ------------------ |

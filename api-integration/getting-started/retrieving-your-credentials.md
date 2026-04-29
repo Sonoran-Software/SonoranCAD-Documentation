@@ -4,18 +4,10 @@ description: All API calls must be authenticated with a community ID and API key
 
 # Retrieving Your Credentials
 
-{% hint style="info" %}
-API integration is not enabled with the free version of Sonoran CAD.\
-For more information, see our [pricing](../../../pricing/faq/) or view how to check your community [limits](../../../tutorials/getting-started/view-your-limits.md).
-{% endhint %}
-
 ### Retrieving Your Credentials
 
-In the admin menu, select Advanced > In-Game Integration
+API credentials are shown under **Admin** > **In-Game Integration** > **API**
 
-Under the Web API section, your community ID and API key will be listed as shown:
+Click to copy your community ID and API key.
 
-![](../../../.gitbook/assets/api.PNG)
-
-
-
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-28 at 11.59.15 PM.png" alt=""><figcaption></figcaption></figure>

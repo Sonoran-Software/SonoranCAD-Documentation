@@ -21,7 +21,7 @@ Queue and broadcast one or more unit location updates.
 
 ## Request Body
 
-Each update can target a unit with `communityUserId`.
+Each update can target a unit with `communityUserId` by default, or with `roblox` as an alternative.
 For Sonoran.lua, use `updateUnitLocationsV2(...)` for the HTTP v2 endpoint.
 
 ```json
@@ -287,4 +287,3 @@ Successful requests return `application/json`.
   "updated": 1
 }
 ```
-

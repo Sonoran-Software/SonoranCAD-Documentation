@@ -1,5 +1,5 @@
 ---
-description: Apply a permission key to an account resolved by community user ID.
+description: Apply a permission key to an account resolved by community user ID or linked Roblox ID.
 ---
 
 # Apply Permission Key
@@ -9,11 +9,11 @@ description: Apply a permission key to an account resolved by community user ID.
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Apply a Sonoran CAD permission key to the account linked to a community user ID.
+Apply a Sonoran CAD permission key to the account linked to a community user ID or linked Roblox ID.
 
 ## Request Body
 
-Provide the target account with `communityUserId`.
+Use `communityUserId` by default, or provide `roblox` to target the account linked to that Roblox user ID.
 
 ```json
 {
@@ -38,7 +38,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:applyPermissionKeyV2({
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     permissionKey = 'DISPATCH',
   })
 
@@ -73,7 +73,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.applyPermissionKeyV2({
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     permissionKey: 'DISPATCH',
   });
   console.log(response);
@@ -93,7 +93,7 @@ instance = Instance(
 )
 
 response = instance.cad.applyPermissionKeyV2({
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "permissionKey": 'DISPATCH',
   })
 
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.applyPermissionKeyV2(new ApplyPermissionKeyV2Request
 {
-    ApiId = "1234567890",
+    CommunityUserId = "player-1234",
     PermissionKey = "COMMAND_STAFF"
 });
 
@@ -132,7 +132,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Apply Permission Key"
   version: "1.0.0"
-  description: "Apply a permission key to an account resolved by community user ID."
+  description: "Apply a permission key to an account resolved by community user ID or linked Roblox ID."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -168,6 +168,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              roblox: 123456789
               permissionKey: "YOUR_PERMISSION_KEY"
 components:
   securitySchemes:
@@ -209,4 +210,3 @@ Successful requests return `application/json`.
   }
 }
 ```
-

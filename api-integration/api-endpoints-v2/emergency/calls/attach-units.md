@@ -20,7 +20,7 @@ Attach identifiers or a group to a dispatch call.
 
 ## Request Body
 
-Provide either `groupName` or one or more identifier targets. Identifier targets can include `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Provide either `groupName` or one or more identifier targets. Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
 
 ```json
 {
@@ -45,7 +45,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:attachUnitsToDispatchCallV2(501, {
     serverId = 1,
-    apiIds = {'1234567890'},
+    communityUserIds = {'player-1234'},
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -80,7 +80,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.attachUnitsToDispatchCallV2(501, {
     serverId: 1,
-    apiIds: ['1234567890'],
+    communityUserIds: ['player-1234'],
   });
   console.log(response);
 })();
@@ -100,7 +100,7 @@ instance = Instance(
 
 response = instance.cad.attachUnitsToDispatchCallV2(501, {
     "serverId": 1,
-    "apiIds": ['1234567890'],
+    "communityUserIds": ['player-1234'],
   })
 
 print(response.success)
@@ -125,7 +125,7 @@ var response = await sonoran.Cad.attachUnitsToDispatchCallV2(
     new DispatchAttachmentV2Request
     {
         ServerId = 1,
-        ApiIds = new[] { "1234567890" }
+        CommunityUserIds = new[] { "player-1234" }
     }
 );
 
@@ -224,4 +224,3 @@ Successful requests return `application/json`.
   ]
 }
 ```
-

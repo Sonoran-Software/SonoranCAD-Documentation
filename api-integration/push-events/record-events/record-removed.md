@@ -6,11 +6,6 @@ description: >-
 
 # Record Removed
 
-{% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_RECORD\_REMOVE
 
 Note: This event will NOT be fired when removing a record via API, as your server is already aware of the record being added.

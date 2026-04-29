@@ -19,7 +19,7 @@ Detach identifiers or a group from any currently attached dispatch call.
 
 ## Request Body
 
-Provide either `groupName` or one or more identifier targets. Identifier targets can include `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Provide either `groupName` or one or more identifier targets. Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
 
 ```json
 {
@@ -44,7 +44,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:detachUnitsFromDispatchCallV2({
     serverId = 1,
-    apiIds = {'1234567890'},
+    communityUserIds = {'player-1234'},
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -79,7 +79,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.detachUnitsFromDispatchCallV2({
     serverId: 1,
-    apiIds: ['1234567890'],
+    communityUserIds: ['player-1234'],
   });
   console.log(response);
 })();
@@ -99,7 +99,7 @@ instance = Instance(
 
 response = instance.cad.detachUnitsFromDispatchCallV2({
     "serverId": 1,
-    "apiIds": ['1234567890'],
+    "communityUserIds": ['player-1234'],
   })
 
 print(response.success)
@@ -122,7 +122,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.detachUnitsFromDispatchCallV2(new DispatchAttachmentV2Request
 {
     ServerId = 1,
-    ApiIds = new[] { "1234567890" }
+    CommunityUserIds = new[] { "player-1234" }
 });
 
 Console.WriteLine(response.success);
@@ -211,4 +211,3 @@ Successful requests return `application/json`.
   ]
 }
 ```
-

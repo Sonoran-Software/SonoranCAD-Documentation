@@ -6,11 +6,6 @@ description: >-
 
 # New Dispatch
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_DISPATCH\_NEW POST
 
 {% hint style="warning" %}

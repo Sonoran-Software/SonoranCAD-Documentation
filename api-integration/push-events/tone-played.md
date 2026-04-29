@@ -4,11 +4,6 @@ description: This push event is sent when a tone is played in the CAD.
 
 # Tone Played
 
-{% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_TONE
 
 ```javascript
@@ -35,7 +30,7 @@ For more information, see our [pricing ](../../../pricing/faq/)page.
 
 ### playTonesTo Object
 
-The[ tone board](../../../tutorials/customization/tone-board.md) allows you to play tones to specific identifiers, dispatch calls, departments, and more. The `playTonesTo` array specifies who or what the tone was sent to.
+The[ tone board](../../tutorials/customization/tone-board.md) allows you to play tones to specific identifiers, dispatch calls, departments, and more. The `playTonesTo` array specifies who or what the tone was sent to.
 
 #### type Enum
 

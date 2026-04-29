@@ -13,7 +13,7 @@ Search records by a typed lookup value.
 
 ## Request Body
 
-Optional notification routing supports `notifyCommunityUserId`, `notifyAccountUuid`, or `notifyApiId`.
+Optional notification routing supports `notifyCommunityUserId` by default or `notifyAccountUuid`.
 
 ```json
 {
@@ -236,4 +236,3 @@ Successful requests return `application/json`.
   }
 ]
 ```
-

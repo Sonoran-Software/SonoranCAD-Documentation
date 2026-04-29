@@ -6,11 +6,6 @@ description: >-
 
 # Event 911
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_911 POST
 
 ```javascript

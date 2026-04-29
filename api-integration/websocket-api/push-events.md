@@ -4,7 +4,7 @@ description: Receive Sonoran CAD push events over the websocket API.
 
 # Push Events
 
-The websocket API can receive Sonoran CAD push events without exposing a local HTTP listener.
+The websocket API can receive Sonoran CAD push events without exposing a local HTTP listener. When a valid websocket session is active for the target `serverId`, Sonoran CAD sends push events to that socket first.
 
 ## How It Works
 
@@ -18,6 +18,7 @@ If a matching websocket session exists:
 If no matching websocket session exists:
 
 * Sonoran CAD falls back to the existing HTTP push event delivery flow for that server IP/port.
+* This fallback is useful for custom listeners or for servers that are not keeping an API websocket connection open.
 
 ## Requirements
 

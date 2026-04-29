@@ -6,23 +6,19 @@ description: >-
 
 # Push Events
 
-{% hint style="warning" %}
-All push events require the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
-{% endhint %}
-
-{% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
-{% endhint %}
-
 ## Configuring your Listener
 
 ### 1. Admin Panel Configuration
 
-Sonoran CAD will send events to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
+Sonoran CAD now prefers websocket delivery first when an active API websocket session exists for the target `serverId`. For the built-in FiveM resource, this socket path is automatic.
 
-Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation/) on startup.
+If no matching websocket session exists, Sonoran CAD falls back to `http://ip:gameport/sonorancad/event` **utilizing your existing game port**.
+
+Server IP and port configuration is automatically added by the [FiveM resource](../../integration-plugins/in-game-integration/fivem-installation/) on startup for HTTP fallback compatibility.
 
 You can also [manually configure the server information in the admin panel](../../tutorials/customization/configuring-multiple-servers.md).
+
+For websocket-specific setup details, see the [Websocket API push events page](../websocket-api/push-events.md).
 
 ## Developer Documentation
 
@@ -34,7 +30,7 @@ Many of our [integration submodules](../../integration-plugins/in-game-integrati
 
 You can create your own web server to listen and receive Sonoran CAD events. This could be on a Discord bot, an in-game script, etc.
 
-In addition, you may already be receiving these events in your FiveM resource. The resource can be configured to "[forward](../../broken/pages/-M7AprAqKWbNHL1L7N0T/#5.-configure-push-events)" all push events received to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
+In addition, you may already be receiving these events in your FiveM resource. The resource uses the websocket connection first and can then "[forward](../../broken/pages/-M7AprAqKWbNHL1L7N0T/#5.-configure-push-events)" received push events to another custom webserver, like the example shown below. Simply set `enablePushEventForwarding` to `true` and `pushEventForwardUrl` to your webserver's `http://IP:Port`.
 
 <details>
 

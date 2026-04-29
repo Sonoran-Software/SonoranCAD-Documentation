@@ -19,7 +19,7 @@ Update a custom record with either a full `record` payload or template replaceme
 
 ## Request Body
 
-Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId` or `accountUuid`.
+Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId` by default, or provide `roblox` or `accountUuid`.
 
 ```json
 {
@@ -49,7 +49,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:updateRecordV2(501, {
     // See the request body above for the full record payload shape.
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     record = {},
   })
 
@@ -86,7 +86,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.updateRecordV2(501, {
     // See the request body above for the full record payload shape.
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     record: {},
   });
   console.log(response);
@@ -107,7 +107,7 @@ instance = Instance(
 
 response = instance.cad.updateRecordV2(501, {
     # See the request body above for the full record payload shape.
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     "record": {},
   })
 
@@ -256,4 +256,3 @@ Successful requests return `application/json`.
   ]
 }
 ```
-

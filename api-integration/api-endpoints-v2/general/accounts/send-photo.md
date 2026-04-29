@@ -13,7 +13,7 @@ Send a photo URL to every active connection linked to a community user ID.
 
 ## Request Body
 
-Provide the target account with `communityUserId`.
+Use `communityUserId` to target the account that should receive the photo.
 
 ```json
 {
@@ -38,7 +38,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:sendPhotoV2({
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     url = 'https =//example.com/mugshot.png',
   })
 
@@ -73,7 +73,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.sendPhotoV2({
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     url: 'https://example.com/mugshot.png',
   });
   console.log(response);
@@ -93,7 +93,7 @@ instance = Instance(
 )
 
 response = instance.cad.sendPhotoV2({
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "url": 'https://example.com/mugshot.png',
   })
 
@@ -116,7 +116,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.sendPhotoV2(new SendPhotoV2Request
 {
-    ApiId = "1234567890",
+    CommunityUserId = "player-1234",
     Url = "https://example.com/mugshot.jpg"
 });
 
@@ -196,4 +196,3 @@ Successful requests return `application/json`.
   "delivered": 1
 }
 ```
-

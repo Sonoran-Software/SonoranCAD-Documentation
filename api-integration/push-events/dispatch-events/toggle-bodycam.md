@@ -1,15 +1,8 @@
 ---
-description: >-
-  The EVENT_UNIT_DETACH push event is sent when an identifier/unit is attached
-  to a new call.
+description: The TOGGLE_BODYCAM push event is sent when an a bodycam state is toggled.
 ---
 
 # Toggle Bodycam
-
-{% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
 
 ## TOGGLE\_BODYCAM Post
 

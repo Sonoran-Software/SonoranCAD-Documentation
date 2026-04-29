@@ -8,7 +8,7 @@ description: >-
 
 ## Explanation: API Keys and IDs
 
-Within Sonoran CAD, there are two different types of API Keys that you will need to use, each serving a different purpose.&#x20;
+Within Sonoran CAD, there are two different types of API Keys that you will need to use, each serving a different purpose.
 
 {% hint style="info" %}
 API integration is not enabled with the free version of Sonoran CAD.\
@@ -17,11 +17,11 @@ For more information, see our [pricing](../../pricing/faq/) or view how to check
 
 #### **Community API Key**
 
-First, there is your **community** API Key which allows CAD's in-game integrations to send data to the correct community.&#x20;
+First, there is your **community** API Key which allows CAD's in-game integrations to send data to the correct community.
 
-To find your community API Key, see [Retrieving Your Credentials](finding-your-community-id-and-authentication-code.md#retrieving-your-credentials) below.&#x20;
+To find your community API Key, see [Retrieving Your Credentials](finding-your-community-id-and-authentication-code.md#retrieving-your-credentials) below.
 
-This key will be placed in your config.json (for [FiveM integration](/broken/pages/-M7AprAqKWbNHL1L7N0T)) or the Server Settings panel (for [ER:LC integration](../../integration-plugins/roblox-er-lc/)).
+This key will be placed in your config.json (for [FiveM integration](/broken/pages/-M7AprAqKWbNHL1L7N0T)) or the Server Settings panel (for [ER:LC integration](/broken/pages/2PuOqDmlez0HHKFRgnGt)).
 
 #### **User API ID**
 
@@ -33,7 +33,7 @@ Every user will need to find their own API ID and add it to CAD as shown [here](
 
 ## Retrieving Your Credentials
 
-Your community ID allows users to [manually join your community](inviting-users-to-your-cad.md).&#x20;
+Your community ID allows users to [manually join your community](inviting-users-to-your-cad.md).
 
 Your community ID and API Key can be found in the Admin panel, under `Advanced` > `In-Game Integration`. Under the Web API section, your Community ID and API key will be listed as shown:
 
