@@ -2,7 +2,7 @@
 description: Learn how to authenticate requests against the Sonoran CAD v2 API.
 ---
 
-# v2 Authentication
+# Authentication
 
 All current v2 API endpoints require bearer authentication.
 
@@ -14,10 +14,10 @@ https://api.sonorancad.com
 
 ## Required Headers
 
-| Header | Value | Description |
-| --- | --- | --- |
-| `Authorization` | `Bearer YOUR_API_KEY` | Authenticates the request |
-| `Accept` | `application/json` | Recommended for all requests |
+| Header          | Value                                                                        | Description                  |
+| --------------- | ---------------------------------------------------------------------------- | ---------------------------- |
+| `Authorization` | `Bearer` [`YOUR_API_KEY`](../getting-started/retrieving-your-credentials.md) | Authenticates the request    |
+| `Accept`        | `application/json`                                                           | Recommended for all requests |
 
 ## Example Request
 
@@ -43,6 +43,7 @@ local response = sonoran.cad:getUnitsV2({
 print(response.success)
 ```
 {% endtab %}
+
 {% tab title="SonoranCADFiveM" %}
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
@@ -78,8 +79,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+
 {% tab title="Sonoran.py" %}
-~~~python
+```python
 # pip install Sonoran.py
 from sonoran import Instance, productEnums
 
@@ -97,10 +99,11 @@ response = instance.cad.getUnitsV2({
 
 print(response.success)
 print(response.data if response.success else response.reason)
-~~~
+```
 {% endtab %}
+
 {% tab title="Sonoran.Net" %}
-~~~csharp
+```csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
 
@@ -120,7 +123,7 @@ var response = await sonoran.Cad.getUnitsV2(new GetUnitsV2Query
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-~~~
+```
 {% endtab %}
 
 {% tab title="cURL" %}
@@ -190,12 +193,12 @@ Example:
 
 ## Common Authentication Errors
 
-| Status | Cause |
-| --- | --- |
-| `401` | Missing `Authorization` header |
-| `401` | `Authorization` header is not using the `Bearer` scheme |
-| `401` | API key is invalid |
-| `404` | The requested `serverId` is not configured for the authenticated community |
+| Status | Cause                                                                      |
+| ------ | -------------------------------------------------------------------------- |
+| `401`  | Missing `Authorization` header                                             |
+| `401`  | `Authorization` header is not using the `Bearer` scheme                    |
+| `401`  | API key is invalid                                                         |
+| `404`  | The requested `serverId` is not configured for the authenticated community |
 
 ## Rate Limits
 
@@ -216,11 +219,9 @@ If the gateway provides a `Retry-After` header, your client should wait that lon
 
 Our official libraries already help with this:
 
-- [`Sonoran.js`](https://github.com/Sonoran-Software/Sonoran.js) automatically retries v2 CAD requests on `429` responses up to 2 times.
-- [`Sonoran.lua`](https://github.com/Sonoran-Software/Sonoran.Lua) automatically retries v2 CAD requests on `429` responses up to 2 times.
-- [`Sonoran.Net`](https://github.com/Sonoran-Software/Sonoran.Net) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
-- [`Sonoran.py`](https://pypi.org/project/Sonoran.py/) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
+* [`Sonoran.js`](https://github.com/Sonoran-Software/Sonoran.js) automatically retries v2 CAD requests on `429` responses up to 2 times.
+* [`Sonoran.lua`](https://github.com/Sonoran-Software/Sonoran.Lua) automatically retries v2 CAD requests on `429` responses up to 2 times.
+* [`Sonoran.Net`](https://github.com/Sonoran-Software/Sonoran.Net) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
+* [`Sonoran.py`](https://pypi.org/project/Sonoran.py/) automatically retries v2 CAD requests on `429` responses up to 2 times and respects `Retry-After` when it is provided.
 
 These retries are intentionally limited. High-frequency integrations should still avoid bursty request patterns and should respect the published per-endpoint limits.
-
-
