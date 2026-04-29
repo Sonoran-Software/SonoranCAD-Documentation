@@ -14,18 +14,22 @@ All API calls require some basic authentication. Here's how to find your communi
 [retrieving-your-credentials.md](retrieving-your-credentials.md)
 {% endcontent-ref %}
 
-### Modifying your Unit Identifier - API ID
+### Map In-Game Users to CAD Users
 
-To map your in-game API calls to a Sonoran CAD unit identifier, your unit's must place a unique ID inside their unit identifier.
+Before you can update units, send calls, or read player data, your integration needs a way to resolve an in-game player to a Sonoran CAD account.
 
 {% content-ref url="setting-your-api-id.md" %}
 [setting-your-api-id.md](setting-your-api-id.md)
 {% endcontent-ref %}
 
-### API Code Examples
+### Start Building
 
-Looking to make your own API integration scripts? Check out some of our code examples to get started!
+Use the official SDK libraries for package-managed helpers, or work directly with the v2 API documentation.
 
-{% content-ref url="../api-endpoints/" %}
-[api-endpoints](../api-endpoints/)
+{% content-ref url="../api-endpoints-v2/libraries.md" %}
+[libraries](../api-endpoints-v2/libraries.md)
+{% endcontent-ref %}
+
+{% content-ref url="../api-endpoints-v2/" %}
+[api-endpoints-v2](../api-endpoints-v2/)
 {% endcontent-ref %}

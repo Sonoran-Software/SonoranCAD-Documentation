@@ -1,47 +1,46 @@
 ---
 description: >-
-  Setting your account's API ID allows you to interact with the CAD in-game via
-  Sonoran CAD's integration plugin library.
+  Learn how to map in-game players to Sonoran CAD users with communityUserId
+  or Roblox account linking.
 ---
 
-# Integration API ID
+# Map In-Game Users to CAD Users
 
 {% hint style="info" %}
-API IDs are set individually per community. Your API IDs set in one community will not transfer over to another.
+API IDs are no longer the recommended account-mapping method for new integrations.
 {% endhint %}
 
-## GTA RP - Setting API ID with CAD Tablet
+Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. For current integrations, there are two primary ways to do that.
 
-1. Type `/showcad` in the game chat to open the Tablet.
-2. Login to Sonoran CAD using the tablet.
-3. Make sure you have already joined the GTA RP server's CAD community. Do so now if you have not.
-4. Click the red banner's "retry" button and the page will refresh.
-5. Your API ID should now be set for that CAD community.
+## Option 1: `communityUserId`
 
-## Editing Your Account's API ID
+Use `communityUserId` when your game server controls its own player identifier, such as FiveM.
 
-### 1. Open Settings
+This is the default approach used by our [FiveM integration resource](../../integration-plugins/in-game-integration/fivem-installation/). Players link their CAD account in-game with [`/link`](../../integration-plugins/in-game-integration/link-user-in-game.md), and Sonoran CAD stores the player's game identifier in the account's `communityUserId` field.
 
-From the start menu, navigate to System > Settings
+By default, the FiveM resource uses the `primaryIdentifier` config value, which is set to `license` unless you change it.
 
-![Sonoran CAD - Settings Navigation](<../../.gitbook/assets/image (316).png>)
+If you are building your own link flow, use these endpoints:
 
-### 2. Paste in your API ID and Press Save
+- [Create Community Link](../api-endpoints-v2/general/accounts/create-community-link.md)
+- [Check Community Link](../api-endpoints-v2/general/accounts/check-community-link.md)
 
-When inputting your API ID, it is important to note that it is **case-sensitive**. Make sure you are putting in the **proper upper and lower case letters**!
+Once linked, pass `communityUserId` to supported v2 endpoints to target that player's Sonoran CAD account.
 
-![Sonoran CAD's API ID Setting](<../../.gitbook/assets/image (366).png>)
+## Option 2: Roblox account linking
 
-#### 1. Determine what API ID is Used
+Use Roblox account linking when the player's Roblox identity is already the source of truth for your integration.
 
-Some communities may use an API ID from in-game. This could be your Steam hex, game license key, etc. Other communities may use your Discord identifier.
+Players can link their Roblox account directly to their Sonoran account. Our [ER:LC getting started guide](../../integration-plugins/erlc/getting-started.md#linking-your-roblox-account) walks through that flow.
 
-If you're not sure, ask an administrator from your community.
+After the account is linked, use the `roblox` parameter on supported v2 endpoints instead of `communityUserId`.
 
-#### 2. Retrieving an API ID from In-Game
+This is the preferred approach for Roblox-based integrations because it targets the linked Roblox account directly.
 
-Assuming your community has the [API ID plugin](/broken/pages/-M7QrbOeDd37INb3cCg2) installed, enter `/apiid` in-game. This will display a chat message with your API ID.
+## Next Steps
 
-#### 3. Retrieve your API ID from Discord
+1. Retrieve your [community ID and API key](retrieving-your-credentials.md).
+2. Choose whether your integration should use `communityUserId` or `roblox`.
+3. Build against the [v2 libraries](../api-endpoints-v2/libraries.md) or the full [v2 API docs](../api-endpoints-v2/).
 
-If your community uses Discord as the API ID identifier, we highly recommend using the `/myid` command with our [Discord bot](../../integration-plugins/discord-bot-integration.md).
+If an endpoint supports both account selectors, use the one that matches your integration source of truth.
