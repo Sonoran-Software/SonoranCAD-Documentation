@@ -1,14 +1,8 @@
 ---
-description: >-
-  Learn how to map in-game players to Sonoran CAD users with communityUserId,
-  Roblox account linking, or an account secret key.
+description: Learn how to map in-game players to Sonoran CAD users with unique identifiers.
 ---
 
-# Map In-Game Users to CAD Users
-
-{% hint style="info" %}
-API IDs are no longer the recommended account-mapping method for new integrations.
-{% endhint %}
+# Map Players to CAD Users
 
 Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. There are three main ways to do that.
 
@@ -20,10 +14,22 @@ This is the default approach used by our [FiveM integration resource](../../inte
 
 By default, the FiveM resource uses the `primaryIdentifier` config value, which is set to `license` unless you change it.
 
-If you are building your own link flow, use these endpoints:
+#### Create Community Link
 
-- [Create Community Link](../api-endpoints-v2/general/accounts/create-community-link.md)
-- [Check Community Link](../api-endpoints-v2/general/accounts/check-community-link.md)
+Use the following endpoint to create a 4-digit link code and associate it with your game's unique player identifier
+
+* [Create Community Link](../api-endpoints-v2/general/accounts/create-community-link.md)
+
+#### Complete User Link
+
+Users can complete the link verification by logging in and visiting `sonorancad.com/id?code=1234`. This completes the link and automatically joins the user to the community (if not already).
+
+#### Check User Link
+
+Use the following API endpoint and push event to programmatically confirm that a user has completed the link.
+
+* [Check Community Link](../api-endpoints-v2/general/accounts/check-community-link.md)
+* Event Community Link
 
 Once linked, pass `communityUserId` to supported v2 endpoints to target that player's Sonoran CAD account.
 
@@ -41,16 +47,18 @@ This is the preferred approach for Roblox-based integrations because it targets 
 
 Use an account secret key when you already have a trusted Sonoran account secret and need to resolve it to the user's Sonoran account UUID.
 
-Start by retrieving the user's [Account Secret ID](account-secret-id.md), then verify it with [Verify Secret](../api-endpoints-v2/general/accounts/verify-secret.md). That endpoint returns the matched `accountUuid`.
+#### User Secret ID
+
+User's can copy their account's secret ID from the settings panel.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-29 at 12.20.10 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Verify the Secret
+
+Use the following endpoint to verify the secret ID and get the user's Sonoran account UUID
+
+* [Verify Secret](../api-endpoints-v2/general/accounts/verify-secret.md)
 
 You can then use `accountUuid` on supported v2 endpoints.
 
-Support for `accountUuid` is more limited than `communityUserId` or `roblox`, so this should usually be treated as a fallback rather than your primary mapping strategy.
-
-## Next Steps
-
-1. Retrieve your [community ID and API key](retrieving-your-credentials.md).
-2. Choose whether your integration should use `communityUserId`, `roblox`, or `accountUuid`.
-3. Build against the [v2 libraries](../api-endpoints-v2/libraries.md) or the full [v2 API docs](../api-endpoints-v2/).
-
-If an endpoint supports both account selectors, use the one that matches your integration source of truth.
+Support for `accountUuid` is more limited than `communityUserId` or `roblox`, so this should usually be treated as a fallback rather than your primary mapping strategy. Reach out to our development team if more expansion is required for your application.
