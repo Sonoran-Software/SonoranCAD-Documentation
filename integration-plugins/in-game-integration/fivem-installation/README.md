@@ -173,6 +173,10 @@ The Sonoran CAD integration framework comes with several commands. These command
 
 ## Troubleshooting
 
+{% content-ref url="./troubleshooting/" %}
+[troubleshooting](./troubleshooting/)
+{% endcontent-ref %}
+
 ### Server Crashes
 
 1\. Check to make sure `sonoran_updatehelper` or `[sonorancad]` is not being started in your server.cfg.

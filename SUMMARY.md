@@ -86,6 +86,8 @@
 * [🎮 FiveM](integration-plugins/in-game-integration/README.md)
   * [FiveM Installation](integration-plugins/in-game-integration/fivem-installation/README.md)
     * [FiveM Resource Migration (v4)](integration-plugins/in-game-integration/fivem-installation/fivem-resource-migration-v4.md)
+    * [Troubleshooting](integration-plugins/in-game-integration/fivem-installation/troubleshooting/README.md)
+      * [Read and Write Permissions](integration-plugins/in-game-integration/fivem-installation/troubleshooting/read-and-write-permissions.md)
   * [Link User In-Game](integration-plugins/in-game-integration/link-user-in-game.md)
   * [Submodule Configuration](integration-plugins/in-game-integration/submodule-configuration/README.md)
     * [Submodule Troubleshooting](integration-plugins/in-game-integration/submodule-configuration/plugin-troubleshooting.md)
