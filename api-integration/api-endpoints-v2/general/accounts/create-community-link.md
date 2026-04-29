@@ -6,7 +6,7 @@ description: Create a short-lived community user link code.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/links`
 
-> **Rate limit:** `30 requests per minute`  
+> **Rate limit:** `30 requests per minute`\
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
 Create a 4-character code for a `communityUserId`. The code is scoped to the authenticated community and expires after 10 minutes.
@@ -42,6 +42,7 @@ local response = sonoran.cad:createCommunityLinkV2({
 print(response.success)
 ```
 {% endtab %}
+
 {% tab title="SonoranCADFiveM" %}
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
@@ -54,6 +55,7 @@ local response = cad:createCommunityLinkV2({
 print(response.success)
 ```
 {% endtab %}
+
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
@@ -74,8 +76,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+
 {% tab title="Sonoran.py" %}
-~~~python
+```python
 # pip install Sonoran.py
 from sonoran import Instance, productEnums
 
@@ -92,10 +95,11 @@ response = instance.cad.createCommunityLinkV2({
 
 print(response.success)
 print(response.data if response.success else response.reason)
-~~~
+```
 {% endtab %}
+
 {% tab title="Sonoran.Net" %}
-~~~csharp
+```csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
 
@@ -114,12 +118,13 @@ var response = await sonoran.Cad.createCommunityLinkV2(new CommunityLinkV2Reques
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-~~~
+```
 {% endtab %}
+
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
-~~~yaml
+```yaml
 openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Create Community Link"
@@ -163,8 +168,9 @@ components:
       type: "http"
       scheme: "bearer"
       bearerFormat: "JWT"
-~~~
+```
 {% endtab %}
+
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
@@ -201,6 +207,6 @@ If the user is not logged in, they will be automatically redirected. The 4-digit
 
 Once linked, the `communityUserId` parameter can be used with any applicable v2 API endpoint.
 
-To detect that link completion immediately, listen for the [Community Link Verified](../../../push-events/civilian/community-link-verified.md) push event or poll [Check Community Link](check-community-link.md) when needed.
+To detect that link completion immediately, listen for the [Community Link Verified](../../../push-events/community-link-verified.md) push event or poll [Check Community Link](check-community-link.md) when needed.
 
 <div><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>

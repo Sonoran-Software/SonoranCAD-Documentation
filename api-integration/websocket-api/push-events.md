@@ -31,7 +31,7 @@ If no matching websocket session exists:
 
 Your websocket client should listen for:
 
-```text
+```
 pushEvent
 ```
 
@@ -94,7 +94,3 @@ if (!auth?.success) {
 * Push event delivery over websocket is scoped to the authenticated `serverId`.
 * If you operate multiple servers, create one websocket session per target `serverId`.
 * Unit location updates continue to use the `unitLocation` websocket method separately from inbound `pushEvent` messages.
-
-## Link Verification Event
-
-When a player completes a CAD link code flow, Sonoran CAD can send the [Community Link Verified](../push-events/civilian/community-link-verified.md) push event immediately instead of waiting for the next periodic link-status check.

@@ -6,7 +6,7 @@ description: Check whether a community user ID is linked to an account.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/links/check`
 
-> **Rate limit:** `30 requests per minute`  
+> **Rate limit:** `30 requests per minute`\
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
 Resolve a `communityUserId` to the linked Sonoran CAD account UUID inside the authenticated community.
@@ -42,6 +42,7 @@ local response = sonoran.cad:checkCommunityLinkV2({
 print(response.success)
 ```
 {% endtab %}
+
 {% tab title="SonoranCADFiveM" %}
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
@@ -54,6 +55,7 @@ local response = cad:checkCommunityLinkV2({
 print(response.success)
 ```
 {% endtab %}
+
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
@@ -74,8 +76,9 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 })();
 ```
 {% endtab %}
+
 {% tab title="Sonoran.py" %}
-~~~python
+```python
 # pip install Sonoran.py
 from sonoran import Instance, productEnums
 
@@ -92,10 +95,11 @@ response = instance.cad.checkCommunityLinkV2({
 
 print(response.success)
 print(response.data if response.success else response.reason)
-~~~
+```
 {% endtab %}
+
 {% tab title="Sonoran.Net" %}
-~~~csharp
+```csharp
 // dotnet add package Sonoran.Net
 using Sonoran;
 
@@ -114,12 +118,13 @@ var response = await sonoran.Cad.checkCommunityLinkV2(new CommunityLinkV2Request
 
 Console.WriteLine(response.success);
 Console.WriteLine(response.data);
-~~~
+```
 {% endtab %}
+
 {% tab title="OpenAPI" %}
 Import this YAML into Postman with **Import -> Raw text** to create a single-endpoint request collection for this route.
 
-~~~yaml
+```yaml
 openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Check Community Link"
@@ -161,8 +166,9 @@ components:
       type: "http"
       scheme: "bearer"
       bearerFormat: "JWT"
-~~~
+```
 {% endtab %}
+
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
@@ -201,4 +207,4 @@ Not linked:
 }
 ```
 
-If you want to avoid polling after creating a link code, listen for the [Community Link Verified](../../../push-events/civilian/community-link-verified.md) push event instead.
+If you want to avoid polling after creating a link code, listen for the [Community Link Verified](../../../push-events/community-link-verified.md) push event instead.
