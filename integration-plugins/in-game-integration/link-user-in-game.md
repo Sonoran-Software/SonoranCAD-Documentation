@@ -20,6 +20,8 @@ Players can do this by running the `/link` command in-game and selecting the **L
 
 Once completed, the player’s FiveM license ID (or the configured `primaryIdentifier`) is associated with the `communityUserId` field via the API.
 
+Learn more about [mapping players to CAD users](../../api-integration/getting-started/setting-your-api-id.md).
+
 </details>
 
 ### Enforce Player Links
