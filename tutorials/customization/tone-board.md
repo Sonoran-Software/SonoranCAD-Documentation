@@ -74,7 +74,7 @@ You can click on any one of these items and select "Tone Board" to add this grou
 
 The tone board can be opened by users in dispatch or self-dispatch mode.
 
-From the start menu, this panel is located under `Dispatch` > `Tone Board`&#x20;
+From the start menu, this panel is located under `Dispatch` > `Tone Board`
 
 This window can also be opened via a [custom hotkey](../other-features/configurable-hotkeys.md), also supported with our [Streamdeck Integration](../../integration-plugins/stream-deck-integration.md).
 
@@ -117,9 +117,8 @@ Toggle the **Stack** icon on and select multiple tones to be played in order. Dr
 
 ### Text-to-Speech
 
-The tone board can also play text-to-speech to users. Enter text into the **Text To Speech** box to send.&#x20;
+The tone board can also play text-to-speech to users. Enter text into the **Text To Speech** box to send.
 
 Additionally, you can select the **Microphone** button to record your own voice and translate that to text before sending out the speech-to-text tone.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -63,13 +63,13 @@ The in-game radar can alert you about expired registrations, BOLOs, warrants, an
 
 When a vehicle is scanned by your radar, you can be notified if the vehicle registration status is inactive, expired, etc.
 
-#### 1. Get the Status field ID
+**1. Get the Status field ID**
 
 In the custom record configuration panel, copy the field ID for your vehicle registration's status field. Typically this would be a dropdown (or "select") type field with options like "Active", "Pending", "Expired", etc.
 
 ![](<../../../.gitbook/assets/Screenshot 2024-11-12 at 7.36.39 PM.png>)
 
-#### 2. Set the Field ID in your Config
+**2. Set the Field ID in your Config**
 
 Ensure the `statusUid` configuration value matches your status field ID from the custom record.
 
@@ -77,7 +77,7 @@ If your vehicle registration record has an expiration date value in it, be sure 
 
 ![](<../../../.gitbook/assets/Screenshot 2024-11-12 at 7.44.27 PM.png>)
 
-#### 3. Set Status Flag Options
+**3. Set Status Flag Options**
 
 Customize the `flagOnStatuses` list to configure which vehicle registration statuses your radar will alter you on.
 
@@ -93,19 +93,19 @@ If the vehicle registration's status field (the record field ID that matches you
 
 When a vehicle is scanned by your radar, you can be notified of any active warrant or BOLO record with that license plate on it.
 
-#### 1. Ensure your Warrant or BOLO Record has a Status Field
+**1. Ensure your Warrant or BOLO Record has a Status Field**
 
 In order for the radar to determine if the warrant or BOLO record is active, ensure your custom record has a `status` type field on it.
 
 ![](<../../../.gitbook/assets/Screenshot 2024-11-12 at 7.50.05 PM.png>)
 
-#### 2. Ensure your Warrant or BOLO Record has a Plate Field
+**2. Ensure your Warrant or BOLO Record has a Plate Field**
 
 In order to match the vehicle plate with a record, ensure your custom record has a field with the field ID set to `plate`.
 
 ![](<../../../.gitbook/assets/Screenshot 2024-11-12 at 7.51.37 PM.png>)
 
-#### 3. Receive In-Game Alerts
+**3. Receive In-Game Alerts**
 
 Your radar will alter you when a scanned vehicle matches:
 
@@ -161,13 +161,13 @@ The doppler effect can be adjusted by opening the **controller** (F5 by default)
 
 The doppler effect can be adjusted per client from a volume of 0 (off) to 5 (max volume). Additionally servers can disable the entire system via the configuration option `CONFIG.enable_doppler`
 
-<div><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Off</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468339426567655475/image.png?ex=6983a927&#x26;is=698257a7&#x26;hm=185cbe9959a1c6bf0c74d41335e06ac94819dc1c41553275b3648d2c954c3bc8&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Max Volume</p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Off</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468339426567655475/image.png?ex=6983a927&#x26;is=698257a7&#x26;hm=185cbe9959a1c6bf0c74d41335e06ac94819dc1c41553275b3648d2c954c3bc8&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Doppler Max Volume</p></figcaption></figure></div>
 
 #### Doppler Direction
 
 You can customize the antenna that will trigger the doppler noise via the client settings menu between the options of "btH" (both), "rEr" (rear) or "FNt" (front). This will create the doppler audio effect based upon a vehicles speed in the respective antenna
 
-<div><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Front Only</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770007285873/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=5e561a7c6de7e7abfd76fb3617d9c188f1181e87f5649c5349ab5b915061f4a6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Both Antennas</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770363674827/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=540beada2276ca6ae389cd118061d15273004f60076545ddd45c112c8f2842e6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Rear Only</p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Front Only</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770007285873/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=5e561a7c6de7e7abfd76fb3617d9c188f1181e87f5649c5349ab5b915061f4a6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Both Antennas</p></figcaption></figure> <figure><img src="https://cdn.discordapp.com/attachments/871554360285474847/1468340770363674827/image.png?ex=6983aa68&#x26;is=698258e8&#x26;hm=540beada2276ca6ae389cd118061d15273004f60076545ddd45c112c8f2842e6&#x26;" alt=""><figcaption><p>Sonoran CAD - Wraith WkWars2x - Rear Only</p></figcaption></figure></div>
 
 ## Troubleshooting
 

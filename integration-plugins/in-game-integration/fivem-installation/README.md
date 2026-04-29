@@ -39,7 +39,7 @@ Navigate to `Admin` -> `Advanced` -> `In-Game Integration` -> `FiveM`
 
 Extract the `.zip` file into your resources directory. Place the `[sonorancad]` folder directly in the resources root directory.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sonoran CAD - Folder Structure</p></figcaption></figure>
 
 ### 3. Update Your Server Config
 
@@ -125,7 +125,7 @@ Expand the "Server Events and Integrated Live Map" section.
 
 Enter your server's public IP address and your game server's port. By default, this is port `30120`.
 
-#### Forward Push Events to an External Server
+**Forward Push Events to an External Server**
 
 You may wish to also send push events to another external web server, like a Discord bot.
 
@@ -173,8 +173,8 @@ The Sonoran CAD integration framework comes with several commands. These command
 
 ## Troubleshooting
 
-{% content-ref url="./troubleshooting/" %}
-[troubleshooting](./troubleshooting/)
+{% content-ref url="troubleshooting/" %}
+[troubleshooting](troubleshooting/)
 {% endcontent-ref %}
 
 ### Server Crashes

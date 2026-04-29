@@ -6,6 +6,8 @@ description: >-
 
 # Read and Write Permissions
 
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Sonoran CAD FiveM - Fix file permission issues
 
 If the `sonorancad` resource cannot create, rename, or update files, you may see startup issues like:

@@ -23,11 +23,11 @@ You can right click on any panel and to reveal multiple menu options.
 1. [Lock/Unlock Window](customizing-your-layout.md#4-locking-unlocking): This locks and saves the window's position into place.
 2. [Quick Resize](customizing-your-layout.md#2-quick-resize): This opens the quick resize tools for the window.
 3. [Change Desktop](customizing-your-layout.md#multi-desktop): Move the window to a different desktop.
-4. Bring to Top:  This brings the window in front of any other open windows.
+4. Bring to Top: This brings the window in front of any other open windows.
 5. Minimize: This minimizes the window to a tab at the top of your screen.
 6. Close: This closes the window.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Quick Resize
 
@@ -65,7 +65,7 @@ Add additional desktops for more window space. Access the desktop menu in the ri
 
 Quickly swap between desktops using [hotkeys](../other-features/configurable-hotkeys.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Customization Menu
 
@@ -100,7 +100,7 @@ Sonoran CAD's advanced tab system allows for efficient window management and qui
 **Pinned Tabs:** Tabs can be pinned to the taskbar by right-clicking and selecting "Pin to taskbar" on the context menu. Pinned tabs will save their ordering past a page refresh. Pinned tabs with no actively minimized windows will be displayed as a lighter grey. Clicking on a pinned tab with no actively minimized windows will open a new window of that type.
 
 **Icon and Label:** Tabs can be set to display as an icon, text, or both. This is toggleable in the customization menu.\
-&#xNAN;_&#x4E;ote: Text will only be displayed if the taskbar is in the top or bottom screen position._
+\&#xNAN;_Note: Text will only be displayed if the taskbar is in the top or bottom screen position._
 
 ### Classic Layout
 

@@ -60,7 +60,7 @@ The following example:
 * Plays `Example Message` as text-to-speech at station `Davis`
 * Plays `Tone1` from the station alert resource tones at station `Davis`
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
 
 ### 🚨 Station Alert Panel
 
@@ -68,7 +68,7 @@ Dispatchers can also access the dedicated `Station Alert` panel under `Unit Mana
 
 Here, you can type-to-filter and select multiple stations at once.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
 
 ### 📞 Dispatch Call Editor
 

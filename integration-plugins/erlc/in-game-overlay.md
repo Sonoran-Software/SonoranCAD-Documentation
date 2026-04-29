@@ -17,7 +17,7 @@ description: >-
 
 The in-game overlay is toggled via custom hotkey. Hotkeys can be configured by searching for **Settings** in the taskbar. Once in the settings window select **Hotkeys** > **Desktop Overlay** to configure.
 
-<div><figure><img src="../../.gitbook/assets/image (9).png" alt="" width="164"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (9).png" alt="" width="164"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure></div>
 
 ### Overlay Buttons
 
