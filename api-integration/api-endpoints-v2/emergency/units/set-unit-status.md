@@ -9,7 +9,7 @@ description: Set status for one or more identifiers.
 > **Rate limit:** `30 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -19,12 +19,13 @@ Set a new unit status for one or more identifiers resolved by `communityUserId`,
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 | `communityUserId` | string | No | Updates all active identifiers for one linked community user. |
 | `communityUserIds` | array of strings | No | Updates all active identifiers for multiple linked community users. |
+| `roblox` | integer | No | Updates all active identifiers for the account linked to the Roblox user ID. |
 | `accountUuid` | string (uuid) | No | Updates all active identifiers for the target account. |
 | `identIds` | array of integers | No | Directly target one or more identifier IDs. |
 | `status` | integer | Yes | Unit status enum. See `UNIT_STATUS` below. |
@@ -53,7 +54,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:setUnitStatusV2({
     serverId = 1,
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     status = 2,
   })
 
@@ -76,7 +77,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.setUnitStatusV2({
     serverId: 1,
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     status: 2,
   });
   console.log(response);
@@ -97,7 +98,7 @@ instance = Instance(
 
 response = instance.cad.setUnitStatusV2({
     "serverId": 1,
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "status": 2,
   })
 
@@ -121,7 +122,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.setUnitStatusV2(new SetUnitStatusV2Request
 {
     ServerId = 1,
-    ApiIds = new[] { "1234567890" },
+    CommunityUserId = "player-1234",
     Status = 3
 });
 
@@ -223,4 +224,3 @@ Successful requests return `application/json`.
 | `3` | `ENROUTE` |
 | `4` | `ON_SCENE` |
 | `100` | `OFFLINE` |
-

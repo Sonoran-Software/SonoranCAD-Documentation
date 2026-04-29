@@ -170,7 +170,6 @@ paths:
                   rank: "Officer"
                   group: "CAR-51"
                   page: 0
-                  apiIds: "steam:110000112345678"
                 isDispatch: false
       parameters:
         -
@@ -257,10 +256,7 @@ Successful requests return `application/json`.
       "subdivision": "Patrol",
       "rank": "Officer",
       "group": "CAR-51",
-      "page": 0,
-      "apiIds": [
-        "steam:110000112345678"
-      ]
+      "page": 0
     },
     "isDispatch": false
   }
@@ -289,4 +285,3 @@ Successful requests return `application/json`.
 | `2` | `EMS` |
 | `3` | `DISPATCH` |
 | `-1` | `UNKNOWN` |
-

@@ -13,7 +13,7 @@ Create a custom record for a target account.
 
 ## Request Body
 
-Provide exactly one of `communityUserId` or `accountUuid` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
+Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
 
 ```json
 {
@@ -44,7 +44,7 @@ local sonoran = Sonoran.createClient({
 local response = sonoran.cad:createRecordV2({
     // See the request body above for the full record payload shape.
     recordTypeId = 1,
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     record = {},
   })
 
@@ -68,7 +68,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   const response = await instance.cad.createRecordV2({
     // See the request body above for the full record payload shape.
     recordTypeId: 1,
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     record: {},
   });
   console.log(response);
@@ -90,7 +90,7 @@ instance = Instance(
 response = instance.cad.createRecordV2({
     # See the request body above for the full record payload shape.
     recordTypeId: 1,
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "record": {},
   })
 
@@ -172,6 +172,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              roblox: 123456789
               useDictionary: true
               recordTypeId: 12
               replaceValues:
@@ -228,4 +229,3 @@ Successful requests return `application/json`.
   ]
 }
 ```
-

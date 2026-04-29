@@ -312,7 +312,6 @@
       * [Accounts](api-integration/api-endpoints-v2/general/accounts/README.md)
         * [Apply Permission Key](api-integration/api-endpoints-v2/general/accounts/apply-permission-key.md)
         * [Kick Or Ban User](api-integration/api-endpoints-v2/general/accounts/ban-user.md)
-        * [Set API IDs](api-integration/api-endpoints-v2/general/accounts/set-api-ids.md)
         * [Create Community Link](api-integration/api-endpoints-v2/general/accounts/create-community-link.md)
         * [Check Community Link](api-integration/api-endpoints-v2/general/accounts/check-community-link.md)
         * [Get Account](api-integration/api-endpoints-v2/general/accounts/get-account.md)

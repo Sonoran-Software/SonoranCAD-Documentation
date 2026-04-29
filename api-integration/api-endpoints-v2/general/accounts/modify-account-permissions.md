@@ -1,5 +1,5 @@
 ---
-description: Update account permissions and account status for a community user.
+description: Update account permissions and account status for a community account.
 ---
 
 # Modify Account Permissions
@@ -13,7 +13,7 @@ Update permissions for a community account and optionally set its active status.
 
 ## Request Body
 
-Provide exactly one account identifier using `communityUserId`, `accountUuid`, or `username`.
+Use `communityUserId` by default. You can also provide exactly one of `roblox`, `accountUuid`, or `username`.
 
 ```json
 {
@@ -39,7 +39,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:setAccountPermissionsV2({
-    accountUuid = '00000000-0000-0000-0000-000000000000',
+    communityUserId = 'player-1234',
     add = {'DISPATCH'},
     remove = {'CIVILIAN'},
   })
@@ -62,7 +62,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.setAccountPermissionsV2({
-    accountUuid: '00000000-0000-0000-0000-000000000000',
+    communityUserId: 'player-1234',
     add: ['DISPATCH'],
     remove: ['CIVILIAN'],
   });
@@ -83,7 +83,7 @@ instance = Instance(
 )
 
 response = instance.cad.setAccountPermissionsV2({
-    "accountUuid": '00000000-0000-0000-0000-000000000000',
+    "communityUserId": 'player-1234',
     "add": ['DISPATCH'],
     "remove": ['CIVILIAN'],
   })
@@ -107,7 +107,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.setAccountPermissionsV2(new SetAccountPermissionsV2Request
 {
-    AccountUuid = "00000000-0000-0000-0000-000000000000",
+    CommunityUserId = "player-1234",
     Add = new[] { "dispatch" },
     Remove = new[] { "leo" }
 });
@@ -159,6 +159,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              roblox: 123456789
               add:
                 - "POLICE"
                 - "DISPATCH"
@@ -203,4 +204,3 @@ Successful requests return `application/json`.
   "active": true
 }
 ```
-

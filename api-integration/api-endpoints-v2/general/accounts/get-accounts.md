@@ -153,7 +153,6 @@ paths:
                     dispatch: true
                     liveMap: true
                     adminInGameIntegration: true
-                  apiIds: "steam:110000112345678"
       parameters:
         -
           description: "Maximum number of accounts returned. The backend enforces 1-100."
@@ -227,10 +226,7 @@ Successful requests return `application/json`.
         "dispatch": true,
         "liveMap": true,
         "adminInGameIntegration": true
-      },
-      "apiIds": [
-        "steam:110000112345678"
-      ]
+      }
     }
   ]
 }
@@ -247,4 +243,3 @@ Successful requests return `application/json`.
 | `2` | `EXPIRED` |
 | `3` | `REMOVED` |
 | `4` | `BANNED` |
-

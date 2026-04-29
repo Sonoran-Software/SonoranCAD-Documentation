@@ -9,7 +9,7 @@ description: Assign one or more identifiers to a group on a server.
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -20,7 +20,7 @@ Assign one or more identifiers to a group by `communityUserId`, `communityUserId
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
 
 ```json
 {
@@ -114,7 +114,7 @@ var response = await sonoran.Cad.addIdentifiersToGroupV2(new AddIdentifiersToGro
 {
     ServerId = 1,
     GroupName = "CAR-51",
-    ApiIds = new[] { "1234567890", "0987654321" }
+    CommunityUserIds = new[] { "player-1234", "player-5678" }
 });
 
 Console.WriteLine(response.success);
@@ -205,4 +205,3 @@ Successful requests return `application/json`.
   "ok": true
 }
 ```
-

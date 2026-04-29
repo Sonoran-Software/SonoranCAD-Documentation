@@ -13,7 +13,7 @@ Kick an account from the community or apply a community ban.
 
 ## Request Body
 
-Provide exactly one account identifier using `communityUserId` or `accountUuid`.
+Use `communityUserId` by default. You can also provide exactly one of `accountUuid` or `roblox`.
 
 ```json
 {
@@ -38,7 +38,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:banUserV2({
-    accountUuid = '00000000-0000-0000-0000-000000000000',
+    communityUserId = 'player-1234',
     isBan = true,
     isKick = true,
   })
@@ -61,7 +61,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.banUserV2({
-    accountUuid: '00000000-0000-0000-0000-000000000000',
+    communityUserId: 'player-1234',
     isBan: true,
     isKick: true,
   });
@@ -82,7 +82,7 @@ instance = Instance(
 )
 
 response = instance.cad.banUserV2({
-    "accountUuid": '00000000-0000-0000-0000-000000000000',
+    "communityUserId": 'player-1234',
     "isBan": True,
     "isKick": True,
   })
@@ -106,7 +106,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.banUserV2(new BanUserV2Request
 {
-    ApiId = "1234567890",
+    CommunityUserId = "player-1234",
     IsBan = true,
     IsKick = false
 });
@@ -154,6 +154,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              roblox: 123456789
               isBan: true
 components:
   securitySchemes:
@@ -189,4 +190,3 @@ Successful requests return `application/json`.
   "message": "Account was banned."
 }
 ```
-

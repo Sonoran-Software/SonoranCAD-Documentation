@@ -1,5 +1,5 @@
 ---
-description: Force a unit offline by community user ID.
+description: Force a unit offline by community user ID or linked Roblox ID.
 ---
 
 # Kick Unit
@@ -9,7 +9,7 @@ description: Force a unit offline by community user ID.
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Force the currently selected identifier for a community user ID offline.
+Force the currently selected identifier for a community user ID or linked Roblox ID offline.
 
 ## Path Parameters
 
@@ -19,7 +19,7 @@ Force the currently selected identifier for a community user ID offline.
 
 ## Request Body
 
-Provide the target unit with `communityUserId`.
+Use `communityUserId` by default, or provide `roblox` to target the unit through the linked Roblox account.
 
 ```json
 {
@@ -45,7 +45,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:kickUnitV2({
     serverId = 1,
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     reason = 'Inactive or unresponsive.',
   })
 
@@ -68,7 +68,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.kickUnitV2({
     serverId: 1,
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     reason: 'Inactive or unresponsive.',
   });
   console.log(response);
@@ -89,7 +89,7 @@ instance = Instance(
 
 response = instance.cad.kickUnitV2({
     "serverId": 1,
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "reason": 'Inactive or unresponsive.',
   })
 
@@ -113,7 +113,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.kickUnitV2(new KickUnitV2Request
 {
     ServerId = 1,
-    ApiId = "1234567890",
+    CommunityUserId = "player-1234",
     Reason = "Disconnected by CAD administrator"
 });
 
@@ -129,7 +129,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Kick Unit"
   version: "1.0.0"
-  description: "Force a unit offline by community user ID."
+  description: "Force a unit offline by community user ID or linked Roblox ID."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -168,6 +168,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              roblox: 123456789
               reason: "Connection reset by integration"
 components:
   securitySchemes:
@@ -202,4 +203,3 @@ Successful requests return `application/json`.
   "reason": "Restarting server."
 }
 ```
-

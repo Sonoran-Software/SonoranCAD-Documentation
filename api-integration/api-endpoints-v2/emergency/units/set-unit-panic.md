@@ -9,7 +9,7 @@ description: Set panic state for one or more identifiers.
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -19,7 +19,7 @@ Set the panic state for one or more identifiers resolved by `communityUserId`, `
 
 ## Request Body
 
-Provide at least one target using `communityUserId`, `communityUserIds`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
 
 ```json
 {
@@ -45,7 +45,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:setUnitPanicV2({
     serverId = 1,
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
     isPanic = true,
   })
 
@@ -68,7 +68,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.setUnitPanicV2({
     serverId: 1,
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
     isPanic: true,
   });
   console.log(response);
@@ -89,7 +89,7 @@ instance = Instance(
 
 response = instance.cad.setUnitPanicV2({
     "serverId": 1,
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
     "isPanic": True,
   })
 
@@ -113,7 +113,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.setUnitPanicV2(new SetUnitPanicV2Request
 {
     ServerId = 1,
-    ApiIds = new[] { "1234567890" },
+    CommunityUserId = "player-1234",
     IsPanic = true
 });
 
@@ -202,4 +202,3 @@ Successful requests return `application/json`.
   "isPanic": true
 }
 ```
-

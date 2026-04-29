@@ -13,7 +13,7 @@ Build a draft record from a template and, when a target account is provided, sen
 
 ## Request Body
 
-You can optionally route the draft to a connected user with `communityUserId` or `accountUuid`.
+You can optionally route the draft to a connected user with `communityUserId` by default, or with `roblox` or `accountUuid`.
 
 ```json
 {
@@ -43,7 +43,7 @@ local sonoran = Sonoran.createClient({
 local response = sonoran.cad:sendRecordDraftV2({
     recordTypeId = 1,
     replaceValues = { firstName = 'John', lastName = 'Doe' },
-    apiId = '1234567890',
+    communityUserId = 'player-1234',
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -66,7 +66,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   const response = await instance.cad.sendRecordDraftV2({
     recordTypeId: 1,
     replaceValues: { firstName: 'John', lastName: 'Doe' },
-    apiId: '1234567890',
+    communityUserId: 'player-1234',
   });
   console.log(response);
 })();
@@ -87,7 +87,7 @@ instance = Instance(
 response = instance.cad.sendRecordDraftV2({
     "recordTypeId": 1,
     "replaceValues": { "firstName": 'John', "lastName": 'Doe' },
-    "apiId": '1234567890',
+    "communityUserId": 'player-1234',
   })
 
 print(response.success)
@@ -222,4 +222,3 @@ Successful requests return `application/json`.
   ]
 }
 ```
-
