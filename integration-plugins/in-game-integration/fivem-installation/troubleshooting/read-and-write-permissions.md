@@ -17,6 +17,16 @@ If the `sonorancad` resource cannot create, rename, or update files, you may see
 
 These usually mean your host has marked the resource files as read-only, or the server process does not have permission to write to them.
 
+## Host Restrictions
+
+Some game panel hosts (Ex: ZAP Hosting) do not allow FiveM resources to programmatically modify other files. This blocks the Sonoran CAD resource from updating itself. In this case, you must disable automatic updates and manually install updated versions of the resource as they release.
+
+To disable automatic updates navigate to your config file:
+
+`[sonorancad]/sonorancad/configuration/config.json` and change `allowAutoUpdate` from `true` to `false`.
+
+Looking for a server host? Learn more about our [one-click installation here](https://docs.sonoransoftware.com/promotions/fivem-hosting).
+
 ## Step 1: Open your game panel
 
 Log into the panel where your FiveM server is hosted, such as `txAdmin`, `Pterodactyl`, `ZAP-Hosting`, `Gamepanel`, or your VPS file manager.
@@ -25,14 +35,14 @@ Log into the panel where your FiveM server is hosted, such as `txAdmin`, `Pterod
 
 Check the main Sonoran CAD resource folder and configuration folder:
 
-```text
+```
 resources/[sonorancad]/sonorancad/
 resources/[sonorancad]/sonorancad/configuration/
 ```
 
 Pay special attention to:
 
-```text
+```
 resources/[sonorancad]/sonorancad/configuration/config.json
 resources/[sonorancad]/sonorancad/configuration/*_config.lua
 ```
@@ -43,7 +53,7 @@ resources/[sonorancad]/sonorancad/configuration/*_config.lua
 
 Start with the `configuration` folder. If needed, also check the full `sonorancad` folder.
 
-```text
+```
 resources\[sonorancad]\sonorancad\configuration\
 ```
 
@@ -67,7 +77,7 @@ If you only changed a single file and the issue comes back, repeat the process o
 
 Open your host panel or file manager and navigate to:
 
-```text
+```
 resources/[sonorancad]/sonorancad/configuration/
 ```
 
@@ -106,7 +116,7 @@ Common values:
 
 After updating permissions, restart the Sonoran CAD resource or your full server:
 
-```text
+```
 restart sonorancad
 ```
 
