@@ -34,6 +34,28 @@ The latest CAD development version can be accessed at the following address:
 https://staging.dev.sonorancad.com
 ```
 
+### FiveM Resource
+
+To switch the `SonoranCADFiveM` resource to the development environment, set the core config mode to:
+
+```json
+"mode": "development"
+```
+
+You can also override this with a server convar:
+
+```cfg
+setr sonoran_mode development
+```
+
+That mode switch automatically updates the resource to use:
+
+* `https://staging-api.dev.sonorancad.com/` for API requests
+* `https://staging-api.dev.sonorancad.com/apiWsHub` for API websocket traffic
+* `https://staging.dev.sonorancad.com` for CAD link/UI URLs
+
+No additional FiveM resource changes are required just to use the development CAD/API environment.
+
 ### Development Subscription - Free
 
 {% hint style="warning" %}
