@@ -19,7 +19,7 @@ Station Alert is an officially integrated third-party resource from Inferno Coll
 Users can get the Station Alert resource from Inferno Collection.
 
 * For Sonoran CAD **Pro** users, [download the FREE Station Alert (Sonoran Edition) package](https://sonoran.link/FtMqEnXF).
-* For Sonoran CAD **Plus** users, [purchase the paid Station Alert package](https://sonoran.link/AUd3Abat).
+* For all other Sonoran CAD users, [purchase the paid Station Alert package](https://sonoran.link/AUd3Abat).
 
 This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
 
