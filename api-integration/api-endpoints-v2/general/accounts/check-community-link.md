@@ -201,3 +201,4 @@ Not linked:
 }
 ```
 
+If you want to avoid polling after creating a link code, listen for the [Community Link Verified](../../../push-events/civilian/community-link-verified.md) push event instead.

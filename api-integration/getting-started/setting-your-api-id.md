@@ -29,7 +29,7 @@ Users can complete the link verification by logging in and visiting `sonorancad.
 Use the following API endpoint and push event to programmatically confirm that a user has completed the link.
 
 * [Check Community Link](../api-endpoints-v2/general/accounts/check-community-link.md)
-* Event Community Link
+* [Community Link Verified](../push-events/civilian/community-link-verified.md)
 
 Once linked, pass `communityUserId` to supported v2 endpoints to target that player's Sonoran CAD account.
 

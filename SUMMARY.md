@@ -260,6 +260,7 @@
     * [Sign Updated](api-integration/push-events/sign-updated.md)
     * [Tone Played](api-integration/push-events/tone-played.md)
     * [Civilian](api-integration/push-events/civilian/README.md)
+      * [Community Link Verified](api-integration/push-events/civilian/community-link-verified.md)
       * [Character Selected](api-integration/push-events/civilian/character-selected.md)
     * [ERS](api-integration/push-events/ers/README.md)
       * [New Callout](api-integration/push-events/ers/new-callout.md)

@@ -97,18 +97,4 @@ if (!auth?.success) {
 
 ## Link Verification Event
 
-When a player completes a CAD link code flow, Sonoran CAD can now send a websocket push event immediately instead of waiting for the next periodic link-status check.
-
-Example:
-
-```json
-{
-  "type": "EVENT_COMMUNITY_LINK_VERIFIED",
-  "data": {
-    "communityUserId": "license:abc123",
-    "accountUuid": "00000000-0000-0000-0000-000000000000"
-  }
-}
-```
-
-Use `communityUserId` to match the active in-game linking session and mark that player as linked immediately.
+When a player completes a CAD link code flow, Sonoran CAD can send the [Community Link Verified](../push-events/civilian/community-link-verified.md) push event immediately instead of waiting for the next periodic link-status check.
