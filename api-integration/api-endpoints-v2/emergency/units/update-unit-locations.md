@@ -28,7 +28,7 @@ For Sonoran.lua, use `updateUnitLocationsV2(...)` for the HTTP v2 endpoint.
 {
   "updates": [
     {
-      "roblox": 123456789,
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -65,7 +65,7 @@ local response = sonoran.cad:updateUnitLocationsV2({
     serverId = 1,
     updates = {
       {
-        roblox = 123456789,
+        communityUserId = 'player-1234',
         location = 'Mission Row',
         coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
       },
@@ -112,7 +112,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     serverId: 1,
     updates: [
       {
-        roblox: 123456789,
+        communityUserId: 'player-1234',
         location: 'Mission Row',
         coordinates: { x: 425.1, y: -979.2, z: 30.7, w: 0 },
       },
@@ -138,7 +138,7 @@ response = instance.cad.updateUnitLocationsV2({
     "serverId": 1,
     "updates": [
       {
-        "roblox": 123456789,
+        "communityUserId": 'player-1234',
         "location": 'Mission Row',
         "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 },
       },
@@ -169,7 +169,7 @@ var response = await sonoran.Cad.updateUnitLocationsV2(new UpdateUnitLocationsV2
     {
         new UnitLocationUpdateV2
         {
-            Roblox = 123456789,
+            CommunityUserId = "player-1234",
             Location = "Mission Row PD",
             X = 425.1,
             Y = -979.2,
@@ -229,7 +229,7 @@ paths:
               type: "object"
             example:
               updates:
-                - roblox: 123456789
+                - communityUserId: "player-1234"
                   location: "Mission Row"
                   coordinates:
                     x: 441.2
@@ -258,7 +258,7 @@ curl --request PATCH \
   --data '{
   "updates": [
     {
-      "roblox": 123456789,
+      "communityUserId": "player-1234",
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
