@@ -267,3 +267,15 @@ RegisterNetEvent("SonoranCAD::pushevents:RecordRemoved", function(record)
     print(json.encode(record)
 end)
 ```
+
+### SonoranCAD::pushevents:CommunityLinkVerified
+
+Event fired when a player completes the CAD link code flow and the active game server receives the websocket push event immediately.
+
+```lua
+RegisterNetEvent("SonoranCAD::pushevents:CommunityLinkVerified", function(data)
+    print(data.communityUserId, data.accountUuid)
+end)
+```
+
+This event can be used to close link UI immediately and treat periodic link polling as a backup instead of the primary signal.
