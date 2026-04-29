@@ -11,6 +11,8 @@ description: Replace station alert configuration for a server.
 
 Replace the station alert configuration for a server.
 
+For parity with the v1 `SET_STATIONS` endpoint, the canonical config shape uses arrays for `locations`, `tones`, and `unitColors`. The backend also accepts a single object/string for these fields for compatibility, but array values are the recommended format.
+
 ## Path Parameters
 
 | Name | Type | Description |
@@ -210,17 +212,18 @@ paths:
             example:
               config:
                 locations:
-                  name: "Mission Row"
-                  coordinates:
-                    x: 425.1
-                    y: -979.2
-                    z: 30.7
-                    w: 0.0
-                  doors:
-                    - "bay_1"
-                    - "bay_2"
-                  icon: "fas fa-building"
-                tones: "tone_station_open.mp3"
+                  - name: "Mission Row"
+                    coordinates:
+                      x: 425.1
+                      y: -979.2
+                      z: 30.7
+                      w: 0.0
+                    doors:
+                      - "bay_1"
+                      - "bay_2"
+                    icon: "fas fa-building"
+                tones:
+                  - "tone_station_open.mp3"
                 unitColors:
                   - "#2563eb"
                   - "#ef4444"

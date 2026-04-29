@@ -20,6 +20,10 @@ The v2 general configuration endpoints manage penal codes, servers, postal data,
 [get-version](get-version.md)
 {% endcontent-ref %}
 
+{% content-ref url="get-turn-credentials.md" %}
+[get-turn-credentials](get-turn-credentials.md)
+{% endcontent-ref %}
+
 {% content-ref url="get-servers.md" %}
 [get-servers](get-servers.md)
 {% endcontent-ref %}

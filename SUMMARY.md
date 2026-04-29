@@ -224,6 +224,7 @@
         * [Set Penal Codes](api-integration/api-endpoints-v2/general/configuration/set-penal-codes.md)
         * [Heartbeat](api-integration/api-endpoints-v2/general/configuration/heartbeat.md)
         * [Get Version](api-integration/api-endpoints-v2/general/configuration/get-version.md)
+        * [Get Turn Credentials](api-integration/api-endpoints-v2/general/configuration/get-turn-credentials.md)
         * [Get Servers](api-integration/api-endpoints-v2/general/configuration/get-servers.md)
         * [Set Servers](api-integration/api-endpoints-v2/general/configuration/set-servers.md)
         * [Auth Street Signs](api-integration/api-endpoints-v2/general/configuration/auth-street-signs.md)

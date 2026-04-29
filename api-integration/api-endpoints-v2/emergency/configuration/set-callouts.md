@@ -206,26 +206,28 @@ paths:
               type: "object"
             example:
               callouts:
-                id: "armed_suspect"
-                data:
-                  PedActionOnNoActionFound: "Flee"
-                  PedActionMinimumTimeoutInMs: 2000
-                  PedChanceToFleeFromPlayer: 50
-                  PedChanceToObtainWeapons: 30
-                  CalloutName: "Armed Suspect"
-                  CalloutDescriptions: "Reports of an armed suspect in the area."
-                  PedChanceToAttackPlayer: 20
-                  PedActionMaximumTimeoutInMs: 10000
-                  Enabled: true
-                  CalloutLocations: null
-                  PedChanceToSurrender: 30
-                  PedWeaponData: "WEAPON_PISTOL"
-                  CalloutUnitsRequired:
-                    towRequired: false
-                    fireRequired: false
-                    description: "Single suspect, use caution."
-                    policeRequired: true
-                    ambulanceRequired: false
+                - id: "armed_suspect"
+                  data:
+                    PedActionOnNoActionFound: "Flee"
+                    PedActionMinimumTimeoutInMs: 2000
+                    PedChanceToFleeFromPlayer: 50
+                    PedChanceToObtainWeapons: 30
+                    CalloutName: "Armed Suspect"
+                    CalloutDescriptions:
+                      - "Reports of an armed suspect in the area."
+                    PedChanceToAttackPlayer: 20
+                    PedActionMaximumTimeoutInMs: 10000
+                    Enabled: true
+                    CalloutLocations: []
+                    PedChanceToSurrender: 30
+                    PedWeaponData:
+                      - "WEAPON_PISTOL"
+                    CalloutUnitsRequired:
+                      towRequired: false
+                      fireRequired: false
+                      description: "Single suspect, use caution."
+                      policeRequired: true
+                      ambulanceRequired: false
 components:
   securitySchemes:
     bearerAuth:
