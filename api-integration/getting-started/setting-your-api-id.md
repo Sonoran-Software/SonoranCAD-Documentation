@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to map in-game players to Sonoran CAD users with communityUserId
-  or Roblox account linking.
+  Learn how to map in-game players to Sonoran CAD users with communityUserId,
+  Roblox account linking, or an account secret key.
 ---
 
 # Map In-Game Users to CAD Users
@@ -10,7 +10,7 @@ description: >-
 API IDs are no longer the recommended account-mapping method for new integrations.
 {% endhint %}
 
-Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. For current integrations, there are two primary ways to do that.
+Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. There are three main ways to do that.
 
 ## Option 1: `communityUserId`
 
@@ -37,10 +37,20 @@ After the account is linked, use the `roblox` parameter on supported v2 endpoint
 
 This is the preferred approach for Roblox-based integrations because it targets the linked Roblox account directly.
 
+## Option 3: account secret key to `accountUuid`
+
+Use an account secret key when you already have a trusted Sonoran account secret and need to resolve it to the user's Sonoran account UUID.
+
+Start by retrieving the user's [Account Secret ID](account-secret-id.md), then verify it with [Verify Secret](../api-endpoints-v2/general/accounts/verify-secret.md). That endpoint returns the matched `accountUuid`.
+
+You can then use `accountUuid` on supported v2 endpoints.
+
+Support for `accountUuid` is more limited than `communityUserId` or `roblox`, so this should usually be treated as a fallback rather than your primary mapping strategy.
+
 ## Next Steps
 
 1. Retrieve your [community ID and API key](retrieving-your-credentials.md).
-2. Choose whether your integration should use `communityUserId` or `roblox`.
+2. Choose whether your integration should use `communityUserId`, `roblox`, or `accountUuid`.
 3. Build against the [v2 libraries](../api-endpoints-v2/libraries.md) or the full [v2 API docs](../api-endpoints-v2/).
 
 If an endpoint supports both account selectors, use the one that matches your integration source of truth.
