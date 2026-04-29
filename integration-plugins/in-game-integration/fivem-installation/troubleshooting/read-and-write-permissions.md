@@ -6,7 +6,7 @@ description: >-
 
 # Read and Write Permissions
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Sonoran CAD FiveM - Fix file permission issues
 
@@ -49,7 +49,60 @@ resources/[sonorancad]/sonorancad/configuration/config.json
 resources/[sonorancad]/sonorancad/configuration/*_config.lua
 ```
 
-## Windows hosts
+## Linux Hosts (Game Panels)
+
+<details>
+
+<summary>Linux Hosts</summary>
+
+### 1. Locate the resource files
+
+Open your host panel or file manager and navigate to:
+
+```
+resources/[sonorancad]
+```
+
+### 2. Fix file permissions
+
+Navigate to the specific file mentioned in the error code and update the permissions.
+
+Recommended file permissions:
+
+* `766`
+* If that fails, try `666`
+
+If your panel supports permission changes:
+
+1. Right-click the `configuration` folder or affected file
+2. Select **Permissions**
+3. Apply the updated permissions
+
+<div><figure><img src="../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+[If your host does not allow permission changes](read-and-write-permissions.md#host-restrictions), contact the hosting provider and ask them to make the Sonoran CAD resource writable.
+
+## Quick permission reference
+
+Each permission digit is the sum of:
+
+* `4` = read
+* `2` = write
+* `1` = execute
+
+Common values:
+
+* `4` = read only
+* `6` = read + write
+* `7` = read + write + execute
+
+</details>
+
+## Windows Hosts
+
+<details>
+
+<summary>Windows</summary>
 
 ### 1. Open the file or folder properties
 
@@ -73,53 +126,14 @@ Under the **General** tab:
 
 If you only changed a single file and the issue comes back, repeat the process on the entire `sonorancad` folder.
 
-## Linux hosts
-
-### 1. Locate the resource files
-
-Open your host panel or file manager and navigate to:
-
-```
-resources/[sonorancad]/sonorancad/configuration/
-```
-
-### 2. Fix file permissions
-
-Make sure the server can write to the configuration files and backup directory.
-
-Recommended file permissions:
-
-* `766`
-* If that fails, try `666`
-
-If your panel supports permission changes:
-
-1. Right-click the `configuration` folder or affected file
-2. Select **Permissions**
-3. Apply the updated permissions
-
-If your host does not allow permission changes, contact the hosting provider and ask them to make the Sonoran CAD resource writable.
-
-## Quick permission reference
-
-Each permission digit is the sum of:
-
-* `4` = read
-* `2` = write
-* `1` = execute
-
-Common values:
-
-* `4` = read only
-* `6` = read + write
-* `7` = read + write + execute
+</details>
 
 ## Final step: restart the resource
 
 After updating permissions, restart the Sonoran CAD resource or your full server:
 
 ```
-restart sonorancad
+exec @sonorancad/sonorancad.cfg
 ```
 
 If the issue continues, verify the files are named correctly and were not saved with extra extensions such as `config.json.json`.
