@@ -31,6 +31,7 @@ unitLocation
 ```js
   {
     communityUserId: "player-1234", // Optional alternative to apiId or identId
+    roblox: 123456789, // Optional alternative to communityUserId, apiId, or identId
     apiId: "SOME_API_ID", // Optional
     identId: 42, // Optional
     location: "US-101 / Exit 15",
@@ -47,7 +48,7 @@ unitLocation
   }
 ```
 
-Each update must include `location` plus one target identifier: `communityUserId`, `apiId`, or `identId`.
+Each update must include `location` plus one target identifier: `communityUserId`, `roblox`, `apiId`, or `identId`.
 Authenticate the SignalR connection first with [`authenticatev2`](authentication.md).
 
 ### Response
@@ -65,7 +66,7 @@ Authenticate the SignalR connection first with [`authenticatev2`](authentication
 - Missing/empty array: "Missing unit location updates."
 - Batch too large: "Too many unit updates in one call. Max is 25."
 - Too fast: "UNIT_LOCATION updates are limited to every 200ms."
-- Invalid target: "Each unit update requires identId, apiId, or communityUserId, and location."
+- Invalid target: "Each unit update requires identId, apiId, communityUserId, or roblox, and location."
 ```
 
 ### Unit Location JS example (Node.js):

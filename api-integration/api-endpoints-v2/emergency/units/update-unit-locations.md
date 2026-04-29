@@ -21,14 +21,14 @@ Queue and broadcast one or more unit location updates.
 
 ## Request Body
 
-Each update can target a unit with `communityUserId`.
+Each update can target a unit with `communityUserId` by default, or with `roblox` as an alternative.
 For Sonoran.lua, use `updateUnitLocationsV2(...)` for the HTTP v2 endpoint.
 
 ```json
 {
   "updates": [
     {
-      "communityUserId": "player-1234",
+      "roblox": 123456789,
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -65,7 +65,7 @@ local response = sonoran.cad:updateUnitLocationsV2({
     serverId = 1,
     updates = {
       {
-        communityUserId = 'player-1234',
+        roblox = 123456789,
         location = 'Mission Row',
         coordinates = { x = 425.1, y = -979.2, z = 30.7, w = 0 },
       },
@@ -93,7 +93,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     serverId: 1,
     updates: [
       {
-        communityUserId: 'player-1234',
+        roblox: 123456789,
         location: 'Mission Row',
         coordinates: { x: 425.1, y: -979.2, z: 30.7, w: 0 },
       },
@@ -119,7 +119,7 @@ response = instance.cad.updateUnitLocationsV2({
     "serverId": 1,
     "updates": [
       {
-        "communityUserId": 'player-1234',
+        "roblox": 123456789,
         "location": 'Mission Row',
         "coordinates": { "x": 425.1, "y": -979.2, "z": 30.7, "w": 0 },
       },
@@ -150,7 +150,7 @@ var response = await sonoran.Cad.updateUnitLocationsV2(new UpdateUnitLocationsV2
     {
         new UnitLocationUpdateV2
         {
-            CommunityUserId = "player-1234",
+            Roblox = 123456789,
             Location = "Mission Row PD",
             X = 425.1,
             Y = -979.2,
@@ -210,7 +210,7 @@ paths:
               type: "object"
             example:
               updates:
-                - communityUserId: "player-1234"
+                - roblox: 123456789
                   location: "Mission Row"
                   coordinates:
                     x: 441.2
@@ -239,7 +239,7 @@ curl --request PATCH \
   --data '{
   "updates": [
     {
-      "communityUserId": "player-1234",
+      "roblox": 123456789,
       "location": "Mission Row",
       "coordinates": {
         "x": 441.2,
@@ -268,4 +268,3 @@ Successful requests return `application/json`.
   "updated": 1
 }
 ```
-
