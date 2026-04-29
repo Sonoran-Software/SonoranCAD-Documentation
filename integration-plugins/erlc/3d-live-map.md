@@ -72,7 +72,7 @@ Dispatch calls created from an [in-game emergency call](emergency-calls.md) or a
 
 Sonoran CAD allows any Roblox game to also send and update live map positions.
 
-* [ER:LC](../roblox-er-lc/)
+* [ER:LC](/broken/pages/2PuOqDmlez0HHKFRgnGt)
   * ER:LC map option available in the admin panel, or - upload a modified map with the same dimensions 3120x3120
 * [Maple County | Fall Update](https://www.roblox.com/games/8416011646/Maple-County-FALL-UPDATE)
   * Requires a custom map upload from the game
