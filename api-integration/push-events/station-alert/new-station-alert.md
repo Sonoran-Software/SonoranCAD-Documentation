@@ -4,11 +4,6 @@ description: This push event is sent when a new station alert is sent.
 
 # New Station Alert
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_STATION\_ALERT
 
 ```javascript

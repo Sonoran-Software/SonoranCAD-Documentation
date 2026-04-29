@@ -6,11 +6,6 @@ description: >-
 
 # Character Selected
 
-{% hint style="warning" %}
-This push event requires the **pro** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_CHAR\_SELECTED
 
 ```javascript

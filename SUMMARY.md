@@ -153,7 +153,6 @@
     * [Integration API ID](api-integration/getting-started/setting-your-api-id.md)
     * [Account Secret ID](api-integration/getting-started/account-secret-id.md)
   * [Push Events](api-integration/push-events/README.md)
-    * [Event Restrictions](api-integration/push-events/event-restrictions.md)
     * [Record Events](api-integration/push-events/record-events/README.md)
       * [Record Added](api-integration/push-events/record-events/record-added.md)
       * [Record Edited](api-integration/push-events/record-events/record-edited.md)

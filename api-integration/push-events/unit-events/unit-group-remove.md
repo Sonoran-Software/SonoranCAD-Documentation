@@ -4,11 +4,6 @@ description: This push event notifies your server when a unit is removed from a 
 
 # Unit Group Remove
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ## EVENT\_UNIT\_GROUP\_REMOVE POST
 
 ```javascript

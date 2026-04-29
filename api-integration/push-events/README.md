@@ -6,14 +6,6 @@ description: >-
 
 # Push Events
 
-{% hint style="warning" %}
-All push events require the **Plus** version of Sonoran CAD or higher. For more information, see our [pricing ](../../pricing/faq/)page.
-{% endhint %}
-
-{% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
-{% endhint %}
-
 ## Configuring your Listener
 
 ### 1. Admin Panel Configuration

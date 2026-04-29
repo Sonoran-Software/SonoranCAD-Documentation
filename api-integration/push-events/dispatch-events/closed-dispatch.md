@@ -6,15 +6,10 @@ description: >-
 
 # Closed Dispatch
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_DISPATCH\_CLOSED POST
 
 {% hint style="warning" %}
-This  push event is not sent triggered via the API.\
+This push event is not sent triggered via the API.\
 API triggers should be listened to locally on the game server.
 {% endhint %}
 

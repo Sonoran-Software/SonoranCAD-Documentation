@@ -4,11 +4,6 @@ description: This push event is sent when a new Inferno page is sent.
 
 # Event Pager Reborn
 
-{% hint style="warning" %}
-This push event requires the **plus** version of Sonoran CAD or higher.\
-For more information, see our [pricing ](../../../../pricing/faq/)page.
-{% endhint %}
-
 ### EVENT\_PAGER\_REBORN
 
 ```javascript
