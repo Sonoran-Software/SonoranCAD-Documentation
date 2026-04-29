@@ -16,10 +16,6 @@ The v2 general account endpoints handle account lookup, permissions, secrets, ac
 [ban-user](ban-user.md)
 {% endcontent-ref %}
 
-{% content-ref url="set-api-ids.md" %}
-[set-api-ids](set-api-ids.md)
-{% endcontent-ref %}
-
 {% content-ref url="create-community-link.md" %}
 [create-community-link](create-community-link.md)
 {% endcontent-ref %}

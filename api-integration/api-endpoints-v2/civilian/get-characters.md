@@ -1,5 +1,5 @@
 ---
-description: Retrieve characters for a community user or account.
+description: Retrieve characters for a community user, linked Roblox user, or account.
 ---
 
 # Get Characters
@@ -9,14 +9,15 @@ description: Retrieve characters for a community user or account.
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Retrieve characters for a Sonoran CAD account using a community user ID or account UUID.
+Retrieve characters for a Sonoran CAD account using `communityUserId` by default, or `roblox` or `accountUuid` as alternatives.
 
 ## Query Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`. |
-| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`. |
+| `communityUserId` | string | Optional | Default target option for the in-game community user ID. Provide exactly one identifier. |
+| `roblox` | integer | Optional | Target the account linked to a Roblox user ID. Provide exactly one identifier. |
+| `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one identifier. |
 
 ## Example Request
 
@@ -108,7 +109,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.getCharactersV2(new GetCharactersV2Query
 {
-    ApiId = "license:abc123"
+    CommunityUserId = "player-1234"
 });
 
 Console.WriteLine(response.success);
@@ -123,7 +124,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Get Characters"
   version: "1.0.0"
-  description: "Retrieve characters for a community user or account."
+  description: "Retrieve characters for a community user, linked Roblox user, or account."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -154,14 +155,21 @@ paths:
                     uid: "first_name"
       parameters:
         -
-          description: "Target in-game community user ID. Provide exactly one of `communityUserId` or `accountUuid`."
+          description: "Default target option for the in-game community user ID. Provide exactly one identifier."
           name: "communityUserId"
           in: "query"
           schema:
             type: "string"
           required: false
         -
-          description: "Target account UUID. Provide exactly one of `communityUserId` or `accountUuid`."
+          description: "Target the account linked to a Roblox user ID. Provide exactly one identifier."
+          name: "roblox"
+          in: "query"
+          schema:
+            type: "integer"
+          required: false
+        -
+          description: "Target account UUID. Provide exactly one identifier."
           name: "accountUuid"
           in: "query"
           schema:
@@ -216,4 +224,3 @@ Successful requests return `application/json`.
   }
 ]
 ```
-

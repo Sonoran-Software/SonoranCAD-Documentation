@@ -1,5 +1,5 @@
 ---
-description: Retrieve a single community account by community user ID, account UUID, or username.
+description: Retrieve a single community account by community user ID, linked Roblox ID, account UUID, or username.
 ---
 
 # Get Account
@@ -15,7 +15,8 @@ Return a single community account record.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `communityUserId` | string | Optional | Target in-game community user ID. Provide exactly one identifier. |
+| `communityUserId` | string | Optional | Default target option for the in-game community user ID. Provide exactly one identifier. |
+| `roblox` | integer | Optional | Target the account linked to a Roblox user ID. Provide exactly one identifier. |
 | `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one identifier. |
 | `username` | string | Optional | Target username. Provide exactly one identifier. |
 
@@ -35,7 +36,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:getAccountV2({
-    accountUuid = '00000000-0000-0000-0000-000000000000',
+    communityUserId = 'player-1234',
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -68,7 +69,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.getAccountV2({
-    accountUuid: '00000000-0000-0000-0000-000000000000',
+    communityUserId: 'player-1234',
   });
   console.log(response);
 })();
@@ -87,7 +88,7 @@ instance = Instance(
 )
 
 response = instance.cad.getAccountV2({
-    "accountUuid": '00000000-0000-0000-0000-000000000000',
+    "communityUserId": 'player-1234',
   })
 
 print(response.success)
@@ -109,7 +110,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 
 var response = await sonoran.Cad.getAccountV2(new GetAccountV2Query
 {
-    ApiId = "1234567890"
+    CommunityUserId = "player-1234"
 });
 
 Console.WriteLine(response.success);
@@ -124,7 +125,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Get Account"
   version: "1.0.0"
-  description: "Retrieve a single community account by community user ID, account UUID, or username."
+  description: "Retrieve a single community account by community user ID, linked Roblox ID, account UUID, or username."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -152,14 +153,20 @@ paths:
                   dispatch: true
                   liveMap: true
                   adminInGameIntegration: true
-                apiIds: "steam:110000112345678"
       parameters:
         -
-          description: "Target in-game community user ID. Provide exactly one identifier."
+          description: "Default target option for the in-game community user ID. Provide exactly one identifier."
           name: "communityUserId"
           in: "query"
           schema:
             type: "string"
+          required: false
+        -
+          description: "Target the account linked to a Roblox user ID. Provide exactly one identifier."
+          name: "roblox"
+          in: "query"
+          schema:
+            type: "integer"
           required: false
         -
           description: "Target account UUID. Provide exactly one identifier."
@@ -213,10 +220,6 @@ Successful requests return `application/json`.
     "dispatch": true,
     "liveMap": true,
     "adminInGameIntegration": true
-  },
-  "apiIds": [
-    "steam:110000112345678"
-  ]
+  }
 }
 ```
-

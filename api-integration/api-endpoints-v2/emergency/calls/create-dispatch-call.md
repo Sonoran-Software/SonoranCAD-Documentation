@@ -9,7 +9,7 @@ description: Create a new dispatch call.
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Create a new dispatch call and attach initial units resolved from community user IDs or account UUIDs.
+Create a new dispatch call and attach initial units resolved from community user IDs by default, or from linked Roblox IDs or account UUIDs.
 
 ## Path Parameters
 
@@ -19,7 +19,7 @@ Create a new dispatch call and attach initial units resolved from community user
 
 ## Request Body
 
-The backend requires at least one identifier target through `communityUserIds` or `accounts`.
+The backend requires at least one identifier target through `communityUserIds`, `roblox`, or `accounts`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ The backend requires at least one identifier target through `communityUserIds` o
 | `description` | string | Yes | Full call description. |
 | `notes` | array | Yes | Initial note objects to store on the call. |
 | `communityUserIds` | array of strings | No | Linked community users whose active identifiers should be attached. |
+| `roblox` | integer | No | Roblox user ID whose linked account's active identifiers should be attached. |
 | `accounts` | array of strings (uuid) | No | Accounts whose selected identifiers should be attached. |
 | `metaData` | object | No | Additional string key/value metadata. Pass `x` and `y` coordinate values to enable live map placement and coordinate-based search actions. `z`, `radius`, `postal`, `block`, `code`, and `priority` may also be supplied when applicable. |
 | `deleteAfterMinutes` | integer | No | Schedule automatic deletion after creation. |
@@ -430,4 +431,3 @@ Successful requests return `application/json`.
 | --- | --- |
 | `0` | `RADIO_DISPATCH` |
 | `1` | `SELF_INITIATED` |
-

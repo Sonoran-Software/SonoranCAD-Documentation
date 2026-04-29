@@ -19,7 +19,7 @@ Link a sync-character ID to a community user or account.
 
 ## Request Body
 
-Provide exactly one of `communityUserId` or `accountUuid`.
+Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid`.
 
 ```json
 {
@@ -43,7 +43,7 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:addCharacterLinkV2('CHAR_123', {
-    accountUuid = '00000000-0000-0000-0000-000000000000',
+    communityUserId = 'player-1234',
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -76,7 +76,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.addCharacterLinkV2('CHAR_123', {
-    accountUuid: '00000000-0000-0000-0000-000000000000',
+    communityUserId: 'player-1234',
   });
   console.log(response);
 })();
@@ -95,7 +95,7 @@ instance = Instance(
 )
 
 response = instance.cad.addCharacterLinkV2('CHAR_123', {
-    "accountUuid": '00000000-0000-0000-0000-000000000000',
+    "communityUserId": 'player-1234',
   })
 
 print(response.success)
@@ -119,7 +119,7 @@ var response = await sonoran.Cad.addCharacterLinkV2(
     "CHAR_123",
     new CharacterLinkTargetV2Request
     {
-        AccountUuid = "00000000-0000-0000-0000-000000000000"
+        CommunityUserId = "player-1234"
     }
 );
 
@@ -207,4 +207,3 @@ Successful requests return `application/json`.
   "action": "ADD"
 }
 ```
-
