@@ -17,11 +17,10 @@ Current websocket API features include:
 
 * Authenticating once and reusing the session for repeated calls
 * Sending frequent `unitLocation` updates for the live map
-* Receiving Sonoran CAD `pushEvent` messages for a specific `serverId`
+* Receiving Sonoran CAD `pushEvent` messages for a specific `serverId`, including normal push-event traffic before HTTP listener fallback is used
 
 ## Pages
 
 * [Authentication](authentication.md)
 * [Unit Locations](unit-locations.md)
 * [Push Events](push-events.md)
-
