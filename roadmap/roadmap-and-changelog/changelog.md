@@ -14,16 +14,30 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
-Inferno Pagers
-
-* Inferno Pager Integration
-
 Record Edit History
 
 * Audit and view historical changes to record fields
+
+Homepage Refresh
+
+* Initial UI refresh of the homepage
+
+Authentication Optimizations
+
+* Overhauled backend authentication logic to heavily improve performance
 {% endtab %}
 
+{% tab title="Fixed" %}
+Initial Socket Connections
+
+* Fixed an issue with initial connections getting a 404 on socket initialization
+
+3D FiveM Map Unit Locations
+
+* Fixed an issue with unit locations appearing south east of where they should be
+{% endtab %}
 {% endtabs %}
+
 ### 3.42.1 04/10/2026
 
 {% tabs %}
@@ -32,8 +46,8 @@ Stream Deck Port Binding
 
 * Fixed an issue with the desktop app sometimes resulting in a port error message displaying from the Stream Deck plugin
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.42.0 04/02/2026
 
 {% tabs %}
