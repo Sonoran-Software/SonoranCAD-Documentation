@@ -71,10 +71,12 @@ Our [Wraith radar plugin](/broken/pages/-M7U3aBbrsfrj1Cmeqmm) allows you to lock
 
 Lookups can also be ran via a search [voice command](../other-features/voice-commands.md).
 
+## Record Audit History
+
+<figure><img src="../../.gitbook/assets/record_audit_history_promo.png" alt=""><figcaption></figcaption></figure>
+
+Select the **History** button when viewing a record to see an audit log of all changes.
+
 ### PDF Printing
 
 Any record results returned can be opened and printed to [PDF](pdf-records.md).
-
-
-
-##
