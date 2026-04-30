@@ -76,144 +76,113 @@ The built-in frontend bodycam capture requests `960x540` at `10 FPS`, and the re
 
 ## Example Request
 
-{% hint style="warning" %}
-Official SDK-specific helper methods are not currently documented for this multipart upload route. Use a raw multipart HTTP request from your runtime.
-{% endhint %}
-
 {% tabs %}
 {% tab title="Sonoran.lua" %}
 ```lua
-local http = require("socket.http")
-local ltn12 = require("ltn12")
+local Sonoran = require("sonoran")
 
-local boundary = "----SonoranBodycamBoundary"
-local body = table.concat({
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="accountUuid"',
-  "",
-  "USER_ACCOUNT_UUID",
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="durationMs"',
-  "",
-  "90000",
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="identId"',
-  "",
-  "123",
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="unitNumber"',
-  "",
-  "1A-12",
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="unitLocation"',
-  "",
-  "Senora Fwy / Route 68",
-  "--" .. boundary,
-  'Content-Disposition: form-data; name="file"; filename="bodycam-clip.webm"',
-  "Content-Type: video/webm",
-  "",
-  "<binary webm data here>",
-  "--" .. boundary .. "--",
-  "",
-}, "\r\n")
-
-local response = {}
-local _, status = http.request({
-  url = "https://api.sonorancad.com/v2/general/bodycam-recordings",
-  method = "POST",
-  headers = {
-    ["Authorization"] = "Bearer YOUR_API_KEY",
-    ["Content-Type"] = "multipart/form-data; boundary=" .. boundary,
-    ["Content-Length"] = tostring(#body),
-  },
-  source = ltn12.source.string(body),
-  sink = ltn12.sink.table(response),
+local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
+  apiKey = "YOUR_API_KEY",
+  communityId = "YOUR_COMMUNITY_ID"
 })
 
-print(status)
-print(table.concat(response))
+local file = assert(io.open("bodycam-clip.webm", "rb"))
+local file_content = file:read("*a")
+file:close()
+
+local response = sonoran.cad:uploadBodycamRecordingV2({
+  accountUuid = "USER_ACCOUNT_UUID",
+  durationMs = 90000,
+  identId = 123,
+  unitNumber = "1A-12",
+  unitLocation = "Senora Fwy / Route 68",
+  fileName = "bodycam-clip.webm",
+  fileContent = file_content,
+  contentType = "video/webm"
+})
+
+print(response.success)
+print(response.reason or "")
 ```
 {% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 const fs = require('fs');
-const FormData = require('form-data');
-const fetch = global.fetch || require('node-fetch');
+const Sonoran = require('sonoran.js');
 
-const formData = new FormData();
-formData.append('file', fs.createReadStream('./bodycam-clip.webm'));
-formData.append('accountUuid', 'USER_ACCOUNT_UUID');
-formData.append('durationMs', '90000');
-formData.append('identId', '123');
-formData.append('unitNumber', '1A-12');
-formData.append('unitLocation', 'Senora Fwy / Route 68');
-
-const response = await fetch('https://api.sonorancad.com/v2/general/bodycam-recordings', {
-  method: 'POST',
-  body: formData,
-  headers: {
-    Authorization: 'Bearer YOUR_API_KEY',
-    ...(formData.getHeaders ? formData.getHeaders() : {}),
-  },
+const sonoran = Sonoran.instance({
+  product: Sonoran.productEnums.CAD,
+  apiKey: 'YOUR_API_KEY',
+  communityId: 'YOUR_COMMUNITY_ID'
 });
 
-console.log(await response.text());
+const response = await sonoran.cad.uploadBodycamRecordingV2({
+  accountUuid: 'USER_ACCOUNT_UUID',
+  durationMs: 90000,
+  identId: 123,
+  unitNumber: '1A-12',
+  unitLocation: 'Senora Fwy / Route 68',
+  fileName: 'bodycam-clip.webm',
+  fileContent: fs.readFileSync('./bodycam-clip.webm'),
+  contentType: 'video/webm'
+});
+
+console.log(response);
 ```
 {% endtab %}
 {% tab title="Sonoran.py" %}
 ```python
-import requests
+from sonoran import Instance, productEnums
+
+instance = Instance(
+    apiKey="YOUR_API_KEY",
+    communityId="YOUR_COMMUNITY_ID",
+    product=productEnums.CAD,
+)
 
 with open("bodycam-clip.webm", "rb") as clip:
-    response = requests.post(
-        "https://api.sonorancad.com/v2/general/bodycam-recordings",
-        data={
+    response = instance.cad.uploadBodycamRecordingV2(
+        {
             "accountUuid": "USER_ACCOUNT_UUID",
-            "durationMs": "90000",
-            "identId": "123",
+            "durationMs": 90000,
+            "identId": 123,
             "unitNumber": "1A-12",
             "unitLocation": "Senora Fwy / Route 68",
-        },
-        files={
-            "file": ("bodycam-clip.webm", clip, "video/webm"),
-        },
-        headers={
-            "Authorization": "Bearer YOUR_API_KEY",
-        },
-        timeout=120,
+            "fileName": "bodycam-clip.webm",
+            "fileContent": clip.read(),
+            "contentType": "video/webm",
+        }
     )
 
-print(response.status_code)
-print(response.text)
+print(response)
 ```
 {% endtab %}
 {% tab title="Sonoran.Net" %}
 ```csharp
-using System.Net.Http;
-using System.Net.Http.Headers;
+using Sonoran;
 
-using HttpClient client = new HttpClient();
-using MultipartFormDataContent form = new MultipartFormDataContent();
-using FileStream fileStream = File.OpenRead("bodycam-clip.webm");
-using StreamContent fileContent = new StreamContent(fileStream);
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    product = SonoranProduct.CAD,
+    apiKey = "YOUR_API_KEY",
+    communityId = "YOUR_COMMUNITY_ID"
+});
 
-client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "YOUR_API_KEY");
+SonoranResponse response = await sonoran.Cad.uploadBodycamRecordingV2(new UploadBodycamRecordingV2Request
+{
+    AccountUuid = "USER_ACCOUNT_UUID",
+    DurationMs = 90000,
+    IdentId = 123,
+    UnitNumber = "1A-12",
+    UnitLocation = "Senora Fwy / Route 68",
+    FileName = "bodycam-clip.webm",
+    FileContent = await File.ReadAllBytesAsync("bodycam-clip.webm"),
+    ContentType = "video/webm"
+});
 
-fileContent.Headers.ContentType = new MediaTypeHeaderValue("video/webm");
-form.Add(fileContent, "file", "bodycam-clip.webm");
-form.Add(new StringContent("USER_ACCOUNT_UUID"), "accountUuid");
-form.Add(new StringContent("90000"), "durationMs");
-form.Add(new StringContent("123"), "identId");
-form.Add(new StringContent("1A-12"), "unitNumber");
-form.Add(new StringContent("Senora Fwy / Route 68"), "unitLocation");
-
-HttpResponseMessage response = await client.PostAsync(
-    "https://api.sonorancad.com/v2/general/bodycam-recordings",
-    form
-);
-
-Console.WriteLine((int)response.StatusCode);
-Console.WriteLine(await response.Content.ReadAsStringAsync());
+Console.WriteLine(response.success);
+Console.WriteLine(response.data);
 ```
 {% endtab %}
 {% tab title="OpenAPI" %}
