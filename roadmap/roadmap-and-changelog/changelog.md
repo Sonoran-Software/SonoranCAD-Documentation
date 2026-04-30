@@ -35,6 +35,10 @@ Initial Socket Connections
 3D FiveM Map Unit Locations
 
 * Fixed an issue with unit locations appearing south east of where they should be
+
+Station Alert API
+
+* Fixed an API issue causing the latest Station Alert resource to not show locations in the UI
 {% endtab %}
 {% endtabs %}
 
