@@ -4,7 +4,9 @@ description: Force a unit offline by community user ID or linked Roblox ID.
 
 # Kick Unit
 
-<mark style="color:red;">`DELETE`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/kick`
+<mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/emergency/servers/{serverId}/units/kick`
+
+Legacy compatibility is also available with <mark style="color:red;">`DELETE`</mark> on the same route, but `POST` is preferred for integrations that need to send a JSON body reliably.
 
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
@@ -21,11 +23,26 @@ Force the currently selected identifier for a community user ID or linked Roblox
 
 Use `communityUserId` by default, or provide `roblox` to target the unit through the linked Roblox account.
 
+This route accepts either a single kick request object or an array of kick request objects. SDK helpers currently send a single object over `POST`. Raw HTTP integrations may batch multiple kick requests in one call.
+
 ```json
 {
   "communityUserId": "player-1234",
   "reason": "Connection reset by integration"
 }
+```
+
+```json
+[
+  {
+    "communityUserId": "player-1234",
+    "reason": "Connection reset by integration"
+  },
+  {
+    "communityUserId": "player-5678",
+    "reason": "Server restart"
+  }
+]
 ```
 
 ## Example Request
@@ -46,20 +63,6 @@ local sonoran = Sonoran.createClient({
 local response = sonoran.cad:kickUnitV2({
     serverId = 1,
     communityUserId = 'player-1234',
-    reason = 'Inactive or unresponsive.',
-  })
-
--- Inspect response.success, response.data, or response.reason as needed.
-print(response.success)
-```
-{% endtab %}
-{% tab title="SonoranCADFiveM" %}
-```lua
-local cad = exports["sonorancad"]:getCadClient()
-
-local response = cad:kickUnitV2({
-    serverId = 1,
-    apiId = '1234567890',
     reason = 'Inactive or unresponsive.',
   })
 
@@ -149,7 +152,7 @@ servers:
     url: "https://api.sonorancad.com"
 paths:
   /v2/emergency/servers/{serverId}/units/kick:
-    delete:
+    post:
       summary: "Kick Unit"
       operationId: "kickUnit"
       responses:
@@ -179,11 +182,38 @@ paths:
         content:
           application/json:
             schema:
-              type: "object"
+              oneOf:
+                -
+                  type: "object"
+                  required:
+                    - "communityUserId"
+                    - "reason"
+                  properties:
+                    communityUserId:
+                      type: "string"
+                    roblox:
+                      type: "integer"
+                    reason:
+                      type: "string"
+                -
+                  type: "array"
+                  items:
+                    type: "object"
+                    required:
+                      - "communityUserId"
+                      - "reason"
+                    properties:
+                      communityUserId:
+                        type: "string"
+                      roblox:
+                        type: "integer"
+                      reason:
+                        type: "string"
             example:
-              communityUserId: "player-1234"
-              roblox: 123456789
-              reason: "Connection reset by integration"
+              - communityUserId: "player-1234"
+                reason: "Connection reset by integration"
+              - communityUserId: "player-5678"
+                reason: "Server restart"
 components:
   securitySchemes:
     bearerAuth:
@@ -194,15 +224,21 @@ components:
 {% endtab %}
 {% tab title="cURL" %}
 ```bash
-curl --request DELETE \
+curl --request POST \
   --url "https://api.sonorancad.com/v2/emergency/servers/1/units/kick" \
   --header "Authorization: Bearer YOUR_API_KEY" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
-  --data '{
-  "communityUserId": "player-1234",
-  "reason": "Connection reset by integration"
-}'
+  --data '[
+  {
+    "communityUserId": "player-1234",
+    "reason": "Connection reset by integration"
+  },
+  {
+    "communityUserId": "player-5678",
+    "reason": "Server restart"
+  }
+]'
 ```
 {% endtab %}
 {% endtabs %}
@@ -211,9 +247,31 @@ curl --request DELETE \
 
 Successful requests return `application/json`.
 
+Single-object requests keep the original response shape:
+
 ```json
 {
   "identId": 12,
   "reason": "Restarting server."
+}
+```
+
+Array requests return the count plus each kicked target:
+
+```json
+{
+  "count": 2,
+  "kicked": [
+    {
+      "identId": 12,
+      "communityUserId": "player-1234",
+      "reason": "Connection reset by integration"
+    },
+    {
+      "identId": 34,
+      "communityUserId": "player-5678",
+      "reason": "Server restart"
+    }
+  ]
 }
 ```
