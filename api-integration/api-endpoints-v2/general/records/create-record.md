@@ -6,7 +6,7 @@ description: Create a new custom record using a raw record payload or template r
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/records`
 
-> **Rate limit:** `10 requests per minute`  
+> **Rate limit:** `30 requests per minute`\
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
 Create a custom record for a target account.
