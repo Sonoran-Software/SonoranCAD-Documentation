@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.42.2 04/30/2026
+
+{% tabs %}
+{% tab title="New" %}
+Inferno Pagers
+
+* Inferno Pager Integration
+
+Record Edit History
+
+* Audit and view historical changes to record fields
+{% endtab %}
+
+{% endtabs %}
 ### 3.42.1 04/10/2026
 
 {% tabs %}
