@@ -11,7 +11,7 @@ description: Replace station alert configuration for a server.
 
 Replace the station alert configuration for a server.
 
-For parity with the v1 `SET_STATIONS` endpoint, the canonical config shape uses arrays for `locations`, `tones`, and `unitColors`. The backend also accepts a single object/string for these fields for compatibility, but array values are the recommended format.
+Send the station alert payload as a top-level JSON object. Provide `locations`, `tones`, and `unitColors` directly in the request body.
 
 ## Path Parameters
 
@@ -23,23 +23,21 @@ For parity with the v1 `SET_STATIONS` endpoint, the canonical config shape uses 
 
 ```json
 {
-  "config": {
-    "locations": [
-      {
-        "name": "Mission Row",
-        "coordinates": {
-          "x": 425.1,
-          "y": -979.2,
-          "z": 30.7,
-          "w": 0.0
-        },
-        "doors": ["bay_1", "bay_2"],
-        "icon": "fas fa-building"
-      }
-    ],
-    "tones": ["tone_station_open.mp3"],
-    "unitColors": ["#2563eb", "#ef4444"]
-  }
+  "locations": [
+    {
+      "name": "Mission Row",
+      "coordinates": {
+        "x": 425.1,
+        "y": -979.2,
+        "z": 30.7,
+        "w": 0.0
+      },
+      "doors": ["bay_1", "bay_2"],
+      "icon": "fas fa-building"
+    }
+  ],
+  "tones": ["tone_station_open.mp3"],
+  "unitColors": ["#2563eb", "#ef4444"]
 }
 ```
 
@@ -59,21 +57,6 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:setStationsV2({
-    // See the request body above for the full station config shape.
-    locations = {},
-    tones = {},
-    unitColors = {},
-  }, 1)
-
--- Inspect response.success, response.data, or response.reason as needed.
-print(response.success)
-```
-{% endtab %}
-{% tab title="SonoranCADFiveM" %}
-```lua
-local cad = exports["sonorancad"]:getCadClient()
-
-local response = cad:setStationsV2({
     // See the request body above for the full station config shape.
     locations = {},
     tones = {},
@@ -146,17 +129,24 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.setStationsV2(
     new StationConfigV2
     {
-        Enabled = true,
-        Stations = new[]
+        Locations = new[]
         {
-            new StationV2
+            new StationLocationV2
             {
-                Label = "Mission Row",
-                Department = "Police",
-                Subdivision = "Patrol",
-                IdentIds = new[] { 12, 18 }
+                Name = "Mission Row",
+                Coordinates = new BlipCoordinatesV2
+                {
+                    X = 425.1,
+                    Y = -979.2,
+                    Z = 30.7,
+                    W = 0.0
+                },
+                Doors = new[] { "bay_1", "bay_2" },
+                Icon = "fas fa-building"
             }
-        }
+        },
+        Tones = new[] { "tone_station_open.mp3" },
+        UnitColors = new[] { "#2563eb", "#ef4444" }
     },
     1
 );
@@ -210,23 +200,22 @@ paths:
             schema:
               type: "object"
             example:
-              config:
-                locations:
-                  - name: "Mission Row"
-                    coordinates:
-                      x: 425.1
-                      y: -979.2
-                      z: 30.7
-                      w: 0.0
-                    doors:
-                      - "bay_1"
-                      - "bay_2"
-                    icon: "fas fa-building"
-                tones:
-                  - "tone_station_open.mp3"
-                unitColors:
-                  - "#2563eb"
-                  - "#ef4444"
+              locations:
+                - name: "Mission Row"
+                  coordinates:
+                    x: 425.1
+                    y: -979.2
+                    z: 30.7
+                    w: 0.0
+                  doors:
+                    - "bay_1"
+                    - "bay_2"
+                  icon: "fas fa-building"
+              tones:
+                - "tone_station_open.mp3"
+              unitColors:
+                - "#2563eb"
+                - "#ef4444"
 components:
   securitySchemes:
     bearerAuth:
@@ -243,23 +232,21 @@ curl --request PUT \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '{
-  "config": {
-    "locations": [
-      {
-        "name": "Mission Row",
-        "coordinates": {
-          "x": 425.1,
-          "y": -979.2,
-          "z": 30.7,
-          "w": 0.0
-        },
-        "doors": ["bay_1", "bay_2"],
-        "icon": "fas fa-building"
-      }
-    ],
-    "tones": ["tone_station_open.mp3"],
-    "unitColors": ["#2563eb", "#ef4444"]
-  }
+  "locations": [
+    {
+      "name": "Mission Row",
+      "coordinates": {
+        "x": 425.1,
+        "y": -979.2,
+        "z": 30.7,
+        "w": 0.0
+      },
+      "doors": ["bay_1", "bay_2"],
+      "icon": "fas fa-building"
+    }
+  ],
+  "tones": ["tone_station_open.mp3"],
+  "unitColors": ["#2563eb", "#ef4444"]
 }'
 ```
 {% endtab %}
