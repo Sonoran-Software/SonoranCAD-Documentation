@@ -44,9 +44,21 @@ print(response.success)
 ```
 {% endtab %}
 {% tab title="SonoranCADFiveM" %}
+Use the server-side `sonorancad` export to get the CAD client in your runtime.
+
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
+```
 
+```csharp
+dynamic cad = Exports["sonorancad"].getCadClient();
+```
+
+```javascript
+const cad = exports["sonorancad"].getCadClient();
+```
+
+```lua
 local response = cad:setPenalCodesV2({
     // See the request body above for the full penal code shape.
     { code = '22107', title = 'Unsafe Lane Change', definition = 'Unsafe lane change' },

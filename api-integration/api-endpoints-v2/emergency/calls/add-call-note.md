@@ -55,9 +55,21 @@ print(response.success)
 ```
 {% endtab %}
 {% tab title="SonoranCADFiveM" %}
+Use the server-side `sonorancad` export to get the CAD client in your runtime.
+
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
+```
 
+```csharp
+dynamic cad = Exports["sonorancad"].getCadClient();
+```
+
+```javascript
+const cad = exports["sonorancad"].getCadClient();
+```
+
+```lua
 local response = cad:addDispatchNoteV2(501, {
     serverId = 1,
     note = 'Caller updated with additional suspect info.',

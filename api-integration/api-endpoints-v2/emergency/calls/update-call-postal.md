@@ -48,9 +48,21 @@ print(response.success)
 ```
 {% endtab %}
 {% tab title="SonoranCADFiveM" %}
+Use the server-side `sonorancad` export to get the CAD client in your runtime.
+
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
+```
 
+```csharp
+dynamic cad = Exports["sonorancad"].getCadClient();
+```
+
+```javascript
+const cad = exports["sonorancad"].getCadClient();
+```
+
+```lua
 local response = cad:setDispatchPostalV2(501, '100', 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.

@@ -15,6 +15,52 @@ Create a custom record for a target account.
 
 Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
 
+This endpoint is also used to create civilian characters. The key difference is which template `recordTypeId` you submit.
+
+## Choosing a `recordTypeId`
+
+Use `GET /v2/general/templates` first if you need to inspect the templates available in your community.
+
+Some built-in template families use fixed IDs from the backend, while custom templates keep the community-specific `recordTypeId` shown by the templates endpoint.
+
+| Record kind | `type` | `recordTypeId` to use | Notes |
+| --- | --- | --- | --- |
+| Character | `7` | `7` | Creates a civilian character for the target account. |
+| Warrant | `2` | `2` | Built-in required type. |
+| BOLO | `3` | `3` | Built-in required type. |
+| License | `4` | `4` | Built-in required type. |
+| Vehicle Registration | `5` | `5` | Built-in required type. |
+| Custom Police Record | `8` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Police Report | `9` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Medical Record | `10` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Medical Report | `11` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Fire Record | `12` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Fire Report | `13` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom DMV Record | `14` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Lawyer Record | `15` | Community template ID | Check `GET /v2/general/templates`. |
+| Custom Lawyer Report | `16` | Community template ID | Check `GET /v2/general/templates`. |
+
+If you are creating a character, send the character template ID (`7`) or the raw character record payload with `type: 7`. For anything else, use the template ID returned by the templates endpoint for that record.
+
+## Character Example
+
+This example creates a civilian character for the target user by selecting the built-in character template:
+
+```json
+{
+  "communityUserId": "player-1234",
+  "useDictionary": true,
+  "recordTypeId": 7,
+  "replaceValues": {
+    "{{first}}": "John",
+    "{{last}}": "Doe",
+    "{{dob}}": "01/01/1995"
+  }
+}
+```
+
+For a non-character custom record, the same endpoint looks like this:
+
 ```json
 {
   "communityUserId": "player-1234",
@@ -43,7 +89,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:createRecordV2({
     // See the request body above for the full record payload shape.
-    recordTypeId = 1,
+    recordTypeId = 12,
     communityUserId = 'player-1234',
     record = {},
   })
@@ -53,12 +99,24 @@ print(response.success)
 ```
 {% endtab %}
 {% tab title="SonoranCADFiveM" %}
+Use the server-side `sonorancad` export to get the CAD client in your runtime.
+
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
+```
 
+```csharp
+dynamic cad = Exports["sonorancad"].getCadClient();
+```
+
+```javascript
+const cad = exports["sonorancad"].getCadClient();
+```
+
+```lua
 local response = cad:createRecordV2({
     // See the request body above for the full record payload shape.
-    recordTypeId = 1,
+    recordTypeId = 12,
     apiId = '1234567890',
     record = {},
   })
@@ -82,7 +140,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.createRecordV2({
     // See the request body above for the full record payload shape.
-    recordTypeId: 1,
+    recordTypeId: 12,
     communityUserId: 'player-1234',
     record: {},
   });
@@ -104,7 +162,7 @@ instance = Instance(
 
 response = instance.cad.createRecordV2({
     # See the request body above for the full record payload shape.
-    recordTypeId: 1,
+    recordTypeId: 12,
     "communityUserId": 'player-1234',
     "record": {},
   })
