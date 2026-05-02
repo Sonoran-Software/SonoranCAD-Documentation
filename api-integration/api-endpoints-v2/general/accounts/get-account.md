@@ -217,21 +217,4 @@ curl --request GET \
 
 ## Response
 
-Successful requests return `application/json`.
-
-```json
-{
-  "uuid": "00000000-0000-0000-0000-000000000000",
-  "username": "ExampleUser",
-  "communityUserId": "player-1234",
-  "status": 1,
-  "joined": "2026-01-14T18:22:00Z",
-  "lastLogin": "2026-04-08T20:55:00Z",
-  "permissions": {
-    "police": true,
-    "dispatch": true,
-    "liveMap": true,
-    "adminInGameIntegration": true
-  }
-}
-```
+Successful requests return `application/json` containing a single [Account Object](./account-object.md).
