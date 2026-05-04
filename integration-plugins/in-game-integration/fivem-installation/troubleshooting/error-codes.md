@@ -297,6 +297,14 @@ Each error below includes:
 
 **How to fix it:** Grant the necessary ACE permission or disable the permission gate for that feature if appropriate.
 
+<a id="ERR-CORE-906"></a>
+### ERR-CORE-906
+**Key:** `CLIENT_RUNTIME_ERROR`
+
+**What it means:** A client-side runtime or NUI or browser-side error was caught and sanitized before raw error details could be dumped to the player console.
+
+**How to fix it:** Check the matching support reference in the server and client logs, then verify the affected UI or runtime dependency is loaded and the triggering state is valid.
+
 ## CAD Errors
 
 <a id="ERR-CAD-101"></a>
@@ -438,6 +446,70 @@ Each error below includes:
 **What it means:** Bodycam services cannot be exposed because the base or proxy URL is missing.
 
 **How to fix it:** Set `web_baseUrl` correctly and ensure it resolves to the externally reachable server endpoint.
+
+<a id="ERR-BC-112"></a>
+### ERR-BC-112
+**Key:** `BODYCAM_RECORDING_ACTIVE`
+
+**What it means:** A start-recording request was ignored because a recording was already in progress.
+
+**How to fix it:** Stop the active recording before starting another one, or debounce duplicate start requests in the caller or UI.
+
+<a id="ERR-BC-113"></a>
+### ERR-BC-113
+**Key:** `BODYCAM_RECORDING_BLOCKED`
+
+**What it means:** Bodycam recording was blocked by a privacy override or an invalid runtime state.
+
+**How to fix it:** Remove the privacy override or restore the bodycam or stream state required for recording.
+
+<a id="ERR-BC-114"></a>
+### ERR-BC-114
+**Key:** `BODYCAM_RECORDING_INACTIVE`
+
+**What it means:** A stop or cancel request was made when there was no active recording to stop.
+
+**How to fix it:** Start a recording first, or suppress duplicate stop or cancel requests in the caller or UI.
+
+<a id="ERR-BC-115"></a>
+### ERR-BC-115
+**Key:** `BODYCAM_RECORDING_FAILED`
+
+**What it means:** The bodycam recording pipeline failed before the clip could be finalized successfully.
+
+**How to fix it:** Review the support reference, then verify the bodycam stream, recorder pipeline, duration or size limits, and upload handoff path.
+
+<a id="ERR-BC-116"></a>
+### ERR-BC-116
+**Key:** `BODYCAM_NOT_WORN`
+
+**What it means:** The player attempted to enable bodycam without matching the configured clothing or bodycam requirements.
+
+**How to fix it:** Equip the required bodycam clothing or components, or relax the configured clothing validation.
+
+<a id="ERR-BC-117"></a>
+### ERR-BC-117
+**Key:** `BODYCAM_WATCH_ACTIVE`
+
+**What it means:** Bodycam disable was blocked because the bodycam is currently being watched.
+
+**How to fix it:** Stop the remote watch session first, or use an authorized force-off flow if policy allows it.
+
+<a id="ERR-BC-118"></a>
+### ERR-BC-118
+**Key:** `BODYCAM_SOUND_LEVEL_INVALID`
+
+**What it means:** The requested bodycam sound level was not a valid number within the accepted range.
+
+**How to fix it:** Pass a numeric value greater than `0` and less than or equal to `1`.
+
+<a id="ERR-BC-119"></a>
+### ERR-BC-119
+**Key:** `BODYCAM_UPLOAD_FAILED`
+
+**What it means:** The finalized bodycam clip failed to upload to CAD.
+
+**How to fix it:** Check API connectivity, authentication, upload endpoint availability, and the support reference for the upload failure context.
 
 ## CAD Display Errors
 
@@ -683,6 +755,14 @@ Each error below includes:
 
 **How to fix it:** Check write permissions for the SonoranCAD configuration directory and available disk space.
 
+<a id="ERR-PLUG-109"></a>
+### ERR-PLUG-109
+**Key:** `PLUGIN_CONFIG_PARSE_FAILED`
+
+**What it means:** A plugin or submodule configuration file could not be parsed, compiled, or executed safely.
+
+**How to fix it:** Repair the matching `*_config.lua` file so it defines a valid `local config = {}` table and contains no Lua syntax or runtime errors.
+
 ## Civilian Integration Errors
 
 <a id="ERR-CIV-101"></a>
@@ -795,6 +875,14 @@ Each error below includes:
 
 **How to fix it:** Check that the player is fully loaded into the framework and that the expected identity export or event is available.
 
+<a id="ERR-FW-103"></a>
+### ERR-FW-103
+**Key:** `FRAMEWORK_QUERY_INVALID`
+
+**What it means:** A framework SQL query or parameter set was invalid and was rejected before execution.
+
+**How to fix it:** Ensure the query is a non-empty string and the parameters are passed as a key or value table rather than an array.
+
 ## Locations and Livemap Errors
 
 <a id="ERR-LOC-101"></a>
@@ -820,6 +908,22 @@ Each error below includes:
 **What it means:** A client reported an error while sending location data.
 
 **How to fix it:** Check client logs for the specific failure and verify required dependencies such as postals and location hooks are configured.
+
+<a id="ERR-LOC-104"></a>
+### ERR-LOC-104
+**Key:** `POSTALS_RESOURCE_UNAVAILABLE`
+
+**What it means:** A client-side feature requested postal data, but the configured postal source was unavailable.
+
+**How to fix it:** Start the configured postal resource or switch to a valid postal mode or source in configuration.
+
+<a id="ERR-LOC-105"></a>
+### ERR-LOC-105
+**Key:** `POSTALS_FILE_INVALID`
+
+**What it means:** The configured client-side postal file was missing or invalid.
+
+**How to fix it:** Restore the referenced postal file, validate its JSON, and confirm the configured filename is correct.
 
 ## Record Printer Errors
 
