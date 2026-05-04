@@ -1,34 +1,884 @@
 ---
-description: >-
-  Starting in version 2.8.10 error codes are given with framework error messages
-  to help point you to a corresponding help article. Match your error code to
-  the links on this page.
+description: Shared SonoranCAD FiveM error code reference with detailed meanings, fixes, and direct anchors for each error.
 ---
 
 # Error Codes
 
-| Code/Link                                                                                                                                                                                                       | Meaning and Fixes                                                                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| API\_ERROR                                                                                                                                                                                                      | API may be down.                                                                                                                                                                                                                                             |
-| [API\_PAID\_ONLY](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins)                                                                                                        | Framework requires a paid version of the API to function.                                                                                                                                                                                                    |
-| [CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/framework-installation#3.-configure-and-rename)                                                                             | Config file was not found or is corrupted. Ensure it was renamed!                                                                                                                                                                                            |
-| PLUGIN\_DEPENDENCY\_ERROR                                                                                                                                                                                       | A plugin requires another plugin, but it was not present.                                                                                                                                                                                                    |
-| [PLUGIN\_CONFIG\_OUTDATED](https://info.sonorancad.com/integration-plugins/integration-plugins/plugin-installation/plugin-troubleshooting#3.-ensure-your-plugin-is-up-to-date-and-download-the-latest-release.) | Look in the shipped config file for the plugin and make changes as needed.                                                                                                                                                                                   |
-| PLUGIN\_CORE\_OUTDATED                                                                                                                                                                                          | Framework is outdated for the plugin. Update the framework.                                                                                                                                                                                                  |
-| [MAP\_CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                               | Map configuration is incorrect.                                                                                                                                                                                                                              |
-| [PORT\_CONFIG\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                              | Game server port is incorrect.                                                                                                                                                                                                                               |
-| [PORT\_MISSING\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/live-map#c.-admin-panel-configuration)                                                             | Game server port is missing.                                                                                                                                                                                                                                 |
-| [PORT\_OUTBOUND\_ERROR](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/smart-signs#differing-inbound-outbound-ip-addresses)                                              | Outbound IP doesn't match reported IP from your server.                                                                                                                                                                                                      |
-| [PORT\_OUTBOUND\_MISMATCH](https://info.sonorancad.com/integration-plugins/integration-plugins/available-plugins/smart-signs#differing-inbound-outbound-ip-addresses)                                           | Server IP doesn't match reported IP from your server.                                                                                                                                                                                                        |
-| ERROR\_ABORT                                                                                                                                                                                                    | An unexpected error occurred and SonoranCAD aborted startup. Review logs further up for any errors.                                                                                                                                                          |
-| [STEAM\_ERROR](https://forum.cfx.re/t/using-the-steam-api-key-manually-on-the-server/805987)                                                                                                                    | Steam Web API key wasn't found. This must be set.                                                                                                                                                                                                            |
-| CUSTOM\_POSTALS\_FILE\_NOT\_FOUND                                                                                                                                                                               | The custom postals file must be located in the directory" `sonorancad\submodules\postals` This error may also indicate a file with a syntax error or that is corrupted                                                                                       |
-| POSTAL\_RESOURCE\_MISSING                                                                                                                                                                                       | The configured third party postal resource could not be found                                                                                                                                                                                                |
-| POSTAL\_RESOURCE\_STOPPED                                                                                                                                                                                       | The configured third party postal resource is not running                                                                                                                                                                                                    |
-| POSTAL\_RESOURCE\_BAD\_STATE                                                                                                                                                                                    | The configured third party postal resource is in  a state other than missing, running or stopped. This is an issue and would typically require a reinstall of the resource                                                                                   |
-| POSTAL\_FILE\_READ\_ERROR                                                                                                                                                                                       | The system failed to open the custom postals file for reading. Please ensure correct file permissions are set.                                                                                                                                               |
-| POSTAL\_CUSTOM\_RESOURCE\_FILE\_ERROR                                                                                                                                                                           | The resource failed to located the configured postal file from the configured third party resource. This is typically caused when the `postals.json` file is not defined in the third party resource's `fxmanifest.lua`. It must be defined as `postal_file` |
-| IDCARD\_RESOURCE\_NOT\_STARTED                                                                                                                                                                                  | The `sonoran_idcard` resource seems to be stopped, this resource is required for the ID card UI to work. The CAD Core will then attempt to start said resource but it is recommended you add it to your `server.cfg`                                         |
-| IDCARD\_RESOURCE\_MISSING                                                                                                                                                                                       | The `sonoran_idcard` resource seems to be missing, this resource is required for the the ID card UI to work. You can download the resource from our [GitHub](https://github.com/Sonoran-Software/id\_card\_ui)                                               |
-| IDCARD\_RESOURCE\_BAD\_STATE                                                                                                                                                                                    | The `sonoran_idcard` resource is in a state other than missing, running or stopped. This is an issue and would typically require a reinstall of the resource                                                                                                 |
-| INCORRECT\_WKWARS2X\_VERSION                                                                                                                                                                                    | You are running a version of the [wk\_wars2x ](https://github.com/Sonoran-Software/wk\_wars2x)resource other than our ["Sonoran"](https://github.com/Sonoran-Software/wk\_wars2x) version. Any other version will not work with SonoranCAD                   |
+All client-facing SonoranCAD FiveM errors use a structured `ERR-XX-###` code and point back to this document.
+
+You can link directly to any error by appending its code as a fragment identifier. Example: `/cad/integration-plugins/in-game-integration/error-codes#ERR-CORE-001`
+
+Each error below includes:
+
+* the support-facing error code
+* the internal error key used by the plugin
+* a more detailed explanation of what failed
+* the first thing to check or change to resolve it
+
+## Core Errors
+
+<a id="ERR-CORE-001"></a>
+### ERR-CORE-001
+**Key:** `STEAM_ERROR`
+
+**What it means:** SonoranCAD is configured to use Steam identifiers, but the FXServer Steam Web API key is missing.
+
+**How to fix it:** Set `steam_webapiKey` in your server configuration or switch `primaryIdentifier` away from `steam`.
+
+<a id="ERR-CORE-002"></a>
+### ERR-CORE-002
+**Key:** `PORT_MISSING_ERROR`
+
+**What it means:** The configured CAD server entry could not be found for the active `serverId`.
+
+**How to fix it:** Verify the `serverId` in `config.json` or your convars and confirm that the same server exists in the CAD server list.
+
+<a id="ERR-CORE-003"></a>
+### ERR-CORE-003
+**Key:** `PORT_CONFIG_ERROR`
+
+**What it means:** The game server port does not match the port configured in CAD.
+
+**How to fix it:** Align the FXServer `netPort` with the CAD server entry, or allow the integration to auto-correct the CAD entry.
+
+<a id="ERR-CORE-004"></a>
+### ERR-CORE-004
+**Key:** `MAP_CONFIG_ERROR`
+
+**What it means:** The live map port configured in CAD does not match the server configuration.
+
+**How to fix it:** Update the CAD map or listener port for the affected `serverId` so it matches the actual server port.
+
+<a id="ERR-CORE-005"></a>
+### ERR-CORE-005
+**Key:** `PORT_OUTBOUND_ERROR`
+
+**What it means:** The detected outbound IP does not match the configured CAD IP.
+
+**How to fix it:** Update the CAD server IP or outbound IP settings so they match the actual public IP used by the server.
+
+<a id="ERR-CORE-006"></a>
+### ERR-CORE-006
+**Key:** `PORT_OUTBOUND_MISMATCH`
+
+**What it means:** SonoranCAD detected an IP mismatch between runtime networking and CAD configuration.
+
+**How to fix it:** Review `mapIp`, `outboundIp`, and `differingOutbound` in the CAD server entry and correct them.
+
+<a id="ERR-CORE-007"></a>
+### ERR-CORE-007
+**Key:** `CONFIG_ERROR`
+
+**What it means:** The core configuration could not be loaded or parsed.
+
+**How to fix it:** Ensure `sonorancad/configuration/config.json` exists, contains valid JSON, and was not accidentally renamed to something like `config.json.json`.
+
+<a id="ERR-CORE-008"></a>
+### ERR-CORE-008
+**Key:** `API_ERROR`
+
+**What it means:** The integration could not retrieve version information from the CAD API.
+
+**How to fix it:** Check the API key, community ID, outbound connectivity, and SonoranCAD API status, then restart the resource.
+
+<a id="ERR-CORE-009"></a>
+### ERR-CORE-009
+**Key:** `API_PAID_ONLY`
+
+**What it means:** The current CAD subscription does not permit the API feature being used.
+
+**How to fix it:** Upgrade the CAD plan to one that supports the requested API feature, or disable the dependent submodule.
+
+<a id="ERR-CORE-010"></a>
+### ERR-CORE-010
+**Key:** `ERROR_ABORT`
+
+**What it means:** Startup was aborted because one or more critical errors were encountered.
+
+**How to fix it:** Review the earlier `ERR-*` entries in the console or log output, correct the first critical failure, and restart the resource.
+
+<a id="ERR-CORE-011"></a>
+### ERR-CORE-011
+**Key:** `PLUGIN_DEPENDENCY_ERROR`
+
+**What it means:** A submodule was enabled but one of its required dependencies was not loaded.
+
+**How to fix it:** Install or start the missing dependency resource, or disable the submodule that requires it.
+
+<a id="ERR-CORE-012"></a>
+### ERR-CORE-012
+**Key:** `PLUGIN_VERSION_MISMATCH`
+
+**What it means:** A submodule requires a newer version of another plugin or resource than is currently installed.
+
+**How to fix it:** Update the named plugin or resource to the required version, or disable the dependent submodule until versions match.
+
+<a id="ERR-CORE-013"></a>
+### ERR-CORE-013
+**Key:** `PLUGIN_CONFIG_OUTDATED`
+
+**What it means:** A submodule configuration file is older than the current template version.
+
+**How to fix it:** Compare your `*_config.lua` with the matching `*_config.dist.lua` and carry forward any missing options.
+
+<a id="ERR-CORE-014"></a>
+### ERR-CORE-014
+**Key:** `PLUGIN_CORE_OUTDATED`
+
+**What it means:** A plugin requires a newer SonoranCAD core version than the one currently installed.
+
+**How to fix it:** Update the SonoranCAD core resource to the required version.
+
+<a id="ERR-CORE-015"></a>
+### ERR-CORE-015
+**Key:** `CUSTOM_POSTALS_FILE_NOT_FOUND`
+
+**What it means:** The configured custom postals file could not be found.
+
+**How to fix it:** Place the referenced file in the expected postals directory or update the configuration to point to the correct filename.
+
+<a id="ERR-CORE-016"></a>
+### ERR-CORE-016
+**Key:** `POSTAL_RESOURCE_MISSING`
+
+**What it means:** The configured postal resource name does not exist on the server.
+
+**How to fix it:** Correct the resource name in configuration or install the missing postal resource.
+
+<a id="ERR-CORE-017"></a>
+### ERR-CORE-017
+**Key:** `POSTAL_RESOURCE_STOPPED`
+
+**What it means:** The postal resource exists but is not started.
+
+**How to fix it:** Add the postal resource to your startup config and ensure it starts before players connect.
+
+<a id="ERR-CORE-018"></a>
+### ERR-CORE-018
+**Key:** `POSTAL_RESOURCE_BAD_STATE`
+
+**What it means:** The postal resource is present but in an invalid runtime state.
+
+**How to fix it:** Inspect that resource for startup errors, fix them, and restart it before starting SonoranCAD features that rely on it.
+
+<a id="ERR-CORE-019"></a>
+### ERR-CORE-019
+**Key:** `POSTAL_FILE_READ_ERROR`
+
+**What it means:** SonoranCAD could not read the configured postal data file.
+
+**How to fix it:** Verify the file exists, is readable by the server process, and is valid for the selected postal mode.
+
+<a id="ERR-CORE-020"></a>
+### ERR-CORE-020
+**Key:** `POSTAL_CUSTOM_RESOURCE_FILE_ERROR`
+
+**What it means:** A custom postal resource did not expose the expected postal file metadata.
+
+**How to fix it:** Add the expected `postal_file` metadata to that resource's `fxmanifest.lua` or use a supported postal resource.
+
+<a id="ERR-CORE-021"></a>
+### ERR-CORE-021
+**Key:** `IDCARD_RESOURCE_NOT_STARTED`
+
+**What it means:** The `sonoran_idcard` resource is installed but not running.
+
+**How to fix it:** Start `sonoran_idcard` in your server config before using civilian ID display features.
+
+<a id="ERR-CORE-022"></a>
+### ERR-CORE-022
+**Key:** `IDCARD_RESOURCE_MISSING`
+
+**What it means:** The `sonoran_idcard` resource could not be found.
+
+**How to fix it:** Install the correct `sonoran_idcard` resource and keep the resource name exact.
+
+<a id="ERR-CORE-023"></a>
+### ERR-CORE-023
+**Key:** `IDCARD_RESOURCE_BAD_STATE`
+
+**What it means:** The ID card resource exists but is not in a usable runtime state.
+
+**How to fix it:** Check that resource for load errors and fix them before enabling ID card UI integration.
+
+<a id="ERR-CORE-024"></a>
+### ERR-CORE-024
+**Key:** `INCORRECT_WKWARS2X_VERSION`
+
+**What it means:** The installed `wk_wars2x` resource version is incompatible with this integration.
+
+**How to fix it:** Replace it with the supported version from Sonoran Software's repository.
+
+<a id="ERR-CORE-025"></a>
+### ERR-CORE-025
+**Key:** `CAD_API_DISABLED`
+
+**What it means:** API sending is disabled by configuration or a runtime toggle.
+
+**How to fix it:** Re-enable API sending in config or convars, or stop using features that require outbound CAD API requests.
+
+<a id="ERR-CORE-026"></a>
+### ERR-CORE-026
+**Key:** `UPDATE_CHILD_PERMISSION`
+
+**What it means:** Auto-update failed because FiveM child-process permission was not granted.
+
+**How to fix it:** Run `exec sonorancad.cfg` or add the required child-process ACE permission for SonoranCAD's updater.
+
+<a id="ERR-CORE-027"></a>
+### ERR-CORE-027
+**Key:** `INVALID_API_MODE`
+
+**What it means:** The configured SonoranCAD API mode was invalid and the resource fell back to production.
+
+**How to fix it:** Set `mode` to a supported value such as `production` or `development`.
+
+<a id="ERR-CORE-028"></a>
+### ERR-CORE-028
+**Key:** `FILE_WRITE_FAILED`
+
+**What it means:** The resource failed to write a required file to disk.
+
+**How to fix it:** Check folder permissions, available disk space, and whether the target path is writable by the server process.
+
+<a id="ERR-CORE-029"></a>
+### ERR-CORE-029
+**Key:** `CAD_API_REQUEST_FAILED`
+
+**What it means:** A request to the SonoranCAD API failed.
+
+**How to fix it:** Check the related support reference, then verify API key, community ID, payload validity, network connectivity, and CAD API availability.
+
+<a id="ERR-CORE-900"></a>
+### ERR-CORE-900
+**Key:** `UNHANDLED_SERVER_ERROR`
+
+**What it means:** An unexpected server-side error occurred and was normalized into a generic coded failure.
+
+**How to fix it:** Use the support reference in the logs to find the exact exception details and fix the underlying code path or bad input.
+
+<a id="ERR-CORE-901"></a>
+### ERR-CORE-901
+**Key:** `UNHANDLED_WARNING`
+
+**What it means:** A warning occurred that did not map to a more specific registered error code.
+
+**How to fix it:** Review the warning text and support reference in the logs. This usually indicates degraded behavior rather than a full failure.
+
+<a id="ERR-CORE-902"></a>
+### ERR-CORE-902
+**Key:** `INVALID_COMMAND_ARGUMENT`
+
+**What it means:** A command was called with missing or invalid arguments.
+
+**How to fix it:** Re-run the command with the documented arguments, or update the calling script or UI if it is sending malformed parameters.
+
+<a id="ERR-CORE-903"></a>
+### ERR-CORE-903
+**Key:** `FEATURE_UNAVAILABLE`
+
+**What it means:** The requested feature cannot be completed in the current state.
+
+**How to fix it:** Confirm required caches, resources, and dependent subsystems are available, then retry.
+
+<a id="ERR-CORE-904"></a>
+### ERR-CORE-904
+**Key:** `MALFORMED_PAYLOAD`
+
+**What it means:** SonoranCAD received incomplete or invalid structured data.
+
+**How to fix it:** Validate the event payload, HTTP body, or NUI or client request that triggered the error.
+
+<a id="ERR-CORE-905"></a>
+### ERR-CORE-905
+**Key:** `PERMISSION_DENIED`
+
+**What it means:** The user or command source does not have permission for the requested action.
+
+**How to fix it:** Grant the necessary ACE permission or disable the permission gate for that feature if appropriate.
+
+## CAD Errors
+
+<a id="ERR-CAD-101"></a>
+### ERR-CAD-101
+**Key:** `PLAYER_NOT_LINKED`
+
+**What it means:** The player does not have a linked CAD account.
+
+**How to fix it:** Run the configured link command, complete the link flow, and verify the link exists in CAD.
+
+<a id="ERR-CAD-102"></a>
+### ERR-CAD-102
+**Key:** `PLAYER_NOT_ONLINE`
+
+**What it means:** The player is linked but not currently logged into a CAD unit or profile.
+
+**How to fix it:** Log into an eligible CAD profile before using the feature.
+
+<a id="ERR-CAD-103"></a>
+### ERR-CAD-103
+**Key:** `PLAYER_NOT_IN_CAD`
+
+**What it means:** The player must be both linked and active in CAD before the feature can be used.
+
+**How to fix it:** Link the account first, then log into a valid CAD character or unit.
+
+## Support Errors
+
+<a id="ERR-SUP-101"></a>
+### ERR-SUP-101
+**Key:** `SUPPORT_INVALID_ID`
+
+**What it means:** The provided support upload or request ID was invalid.
+
+**How to fix it:** Use the correct numeric support request ID from Sonoran support.
+
+<a id="ERR-SUP-102"></a>
+### ERR-SUP-102
+**Key:** `SUPPORT_UPLOAD_FAILED`
+
+**What it means:** Support logs could not be uploaded.
+
+**How to fix it:** Retry the upload, then verify outbound API access and the validity of the support request ID.
+
+<a id="ERR-SUP-103"></a>
+### ERR-SUP-103
+**Key:** `SUPPORT_UPLOAD_SUCCESS`
+
+**What it means:** Support logs were uploaded successfully.
+
+**How to fix it:** No action is required. Provide the generated support reference and upload context to support if requested.
+
+## Bodycam Errors
+
+<a id="ERR-BC-101"></a>
+### ERR-BC-101
+**Key:** `BODYCAM_FORCEOFF_PERMISSION`
+
+**What it means:** The user attempted to use the bodycam force-off command without permission.
+
+**How to fix it:** Grant the configured bodycam force-off ACE permission to the appropriate staff group.
+
+<a id="ERR-BC-102"></a>
+### ERR-BC-102
+**Key:** `BODYCAM_CHILD_PERMISSION`
+
+**What it means:** Bodycam recording could not start because child-process permission was missing.
+
+**How to fix it:** Add the required child-process permission or use the bundled `sonorancad.cfg` permissions.
+
+<a id="ERR-BC-103"></a>
+### ERR-BC-103
+**Key:** `BODYCAM_PROXY_NOT_READY`
+
+**What it means:** Bodycam cannot start because the proxy or base URL has not been initialized yet.
+
+**How to fix it:** Ensure `web_baseUrl` is configured and available before bodycam clients initialize.
+
+<a id="ERR-BC-104"></a>
+### ERR-BC-104
+**Key:** `BODYCAM_F8_PERMISSION`
+
+**What it means:** The bodycam keybind commands are blocked by ACE permissions.
+
+**How to fix it:** Allow `command.SonoranCAD::bodycam::Keybind` and `command.SonoranCAD::bodycam::RecordingKeybind` for the intended player group.
+
+<a id="ERR-BC-105"></a>
+### ERR-BC-105
+**Key:** `BODYCAM_NOT_ON_DUTY`
+
+**What it means:** The player must be online in CAD before toggling bodycam.
+
+**How to fix it:** Log into CAD duty first, then toggle bodycam again.
+
+<a id="ERR-BC-106"></a>
+### ERR-BC-106
+**Key:** `BODYCAM_UPLOAD_TOKEN_INVALID`
+
+**What it means:** The bodycam upload token was invalid, expired, or belonged to a different player or session.
+
+**How to fix it:** Reinitialize bodycam upload configuration and retry with a fresh token.
+
+<a id="ERR-BC-107"></a>
+### ERR-BC-107
+**Key:** `BODYCAM_UPLOAD_INIT_FAILED`
+
+**What it means:** Bodycam upload setup failed before file chunks could be accepted.
+
+**How to fix it:** Check temporary file creation, upload parameters, and server write permissions.
+
+<a id="ERR-BC-108"></a>
+### ERR-BC-108
+**Key:** `BODYCAM_UPLOAD_CHUNK_FAILED`
+
+**What it means:** A bodycam upload chunk could not be appended to the target file.
+
+**How to fix it:** Check disk permissions, available disk space, and whether the temporary recording path is writable.
+
+<a id="ERR-BC-109"></a>
+### ERR-BC-109
+**Key:** `BODYCAM_UPLOAD_INCOMPLETE`
+
+**What it means:** The upload completion request arrived before all expected chunks were received.
+
+**How to fix it:** Retry the upload and inspect client or network interruptions that may have dropped chunks.
+
+<a id="ERR-BC-110"></a>
+### ERR-BC-110
+**Key:** `BODYCAM_TURN_FAILED`
+
+**What it means:** TURN credentials for bodycam streaming could not be retrieved.
+
+**How to fix it:** Verify the CAD API is reachable, the API key is valid, and any TURN-related configuration overrides are correct.
+
+<a id="ERR-BC-111"></a>
+### ERR-BC-111
+**Key:** `BODYCAM_BASEURL_MISSING`
+
+**What it means:** Bodycam services cannot be exposed because the base or proxy URL is missing.
+
+**How to fix it:** Set `web_baseUrl` correctly and ensure it resolves to the externally reachable server endpoint.
+
+## CAD Display Errors
+
+<a id="ERR-CD-101"></a>
+### ERR-CD-101
+**Key:** `CADDISPLAY_F8_PERMISSION`
+
+**What it means:** CAD display keybind commands are blocked by ACE permissions.
+
+**How to fix it:** Grant the listed CAD display command permissions to players who should be able to use them.
+
+<a id="ERR-CD-102"></a>
+### ERR-CD-102
+**Key:** `CADDISPLAY_FRAMEWORK_UNAVAILABLE`
+
+**What it means:** CAD display could not access the configured framework export.
+
+**How to fix it:** Confirm the selected framework resource is started and that its export name matches the integration configuration.
+
+<a id="ERR-CD-103"></a>
+### ERR-CD-103
+**Key:** `CADDISPLAY_PLACEMENT_INVALID`
+
+**What it means:** CAD display placement data could not be loaded or parsed.
+
+**How to fix it:** Repair the placement file JSON or Lua data, or delete the bad saved placement data so defaults can be rebuilt.
+
+<a id="ERR-CD-104"></a>
+### ERR-CD-104
+**Key:** `CADDISPLAY_VEHICLE_UNIDENTIFIED`
+
+**What it means:** CAD display could not determine which vehicle the player was targeting.
+
+**How to fix it:** Retry while targeting a valid supported vehicle and verify the display interaction logic has the correct entity context.
+
+## Call Errors
+
+<a id="ERR-CALL-101"></a>
+### ERR-CALL-101
+**Key:** `CALL_MISSING_DETAILS`
+
+**What it means:** A call-related command was used without the required details.
+
+**How to fix it:** Re-run the command with the required message, description, or argument payload.
+
+<a id="ERR-CALL-102"></a>
+### ERR-CALL-102
+**Key:** `CALL_SEND_FAILED`
+
+**What it means:** A call could not be sent to CAD.
+
+**How to fix it:** Check the support reference, then verify CAD API availability, call payload validity, and that API sending is enabled.
+
+<a id="ERR-CALL-103"></a>
+### ERR-CALL-103
+**Key:** `CALL_TEMPLATE_INVALID`
+
+**What it means:** The configured call template file is missing or invalid.
+
+**How to fix it:** Verify the template file exists, contains valid JSON, and matches the configured filename or path.
+
+<a id="ERR-CALL-104"></a>
+### ERR-CALL-104
+**Key:** `PANIC_F8_PERMISSION`
+
+**What it means:** The panic keybind command is blocked by ACE permissions.
+
+**How to fix it:** Allow `command.panic` for the intended players in ACE permissions.
+
+<a id="ERR-CALL-105"></a>
+### ERR-CALL-105
+**Key:** `CALL_CREATE_FAILED`
+
+**What it means:** A dispatch call creation operation failed before returning a valid call ID.
+
+**How to fix it:** Inspect the payload fields sent to CAD and verify API availability and permissions.
+
+<a id="ERR-CALL-106"></a>
+### ERR-CALL-106
+**Key:** `CALL_UNEXPECTED_RESPONSE`
+
+**What it means:** CAD returned a success path without the expected data, such as a missing call ID.
+
+**How to fix it:** Review the API response body and confirm the integration and API versions are compatible.
+
+## Vehicle Registration Errors
+
+<a id="ERR-VR-101"></a>
+### ERR-VR-101
+**Key:** `VEHREG_NO_CHARACTER`
+
+**What it means:** No active CAD character was found for the vehicle registration action.
+
+**How to fix it:** Log into a CAD character first, then retry the registration action.
+
+<a id="ERR-VR-102"></a>
+### ERR-VR-102
+**Key:** `VEHREG_CREATE_FAILED`
+
+**What it means:** The vehicle registration record could not be created in CAD.
+
+**How to fix it:** Check record template or configuration values, payload data, and CAD API availability.
+
+<a id="ERR-VR-103"></a>
+### ERR-VR-103
+**Key:** `VEHREG_PLATE_TAKEN`
+
+**What it means:** The requested plate is already registered in CAD.
+
+**How to fix it:** Choose a different plate or locate and update the existing CAD registration record.
+
+## Unit Status Errors
+
+<a id="ERR-US-101"></a>
+### ERR-US-101
+**Key:** `UNITSTATUS_INVALID_STATUS`
+
+**What it means:** The requested unit status does not exist in configuration or is outside the supported range.
+
+**How to fix it:** Use a configured status name or number and verify `unitstatus` status mappings in its config file.
+
+## API WebSocket Errors
+
+<a id="ERR-WS-101"></a>
+### ERR-WS-101
+**Key:** `APIWS_DEPENDENCY_MISSING`
+
+**What it means:** The SignalR dependency required for API WebSocket connectivity is missing.
+
+**How to fix it:** Install the missing package in the `sonorancad` resource, typically `@microsoft/signalr`, and restart the resource.
+
+<a id="ERR-WS-102"></a>
+### ERR-WS-102
+**Key:** `APIWS_AUTH_FAILED`
+
+**What it means:** The API WebSocket hub rejected authentication.
+
+**How to fix it:** Verify `communityID`, `apiKey`, and `serverId`, then confirm the key is valid for the target community.
+
+<a id="ERR-WS-103"></a>
+### ERR-WS-103
+**Key:** `APIWS_CONFIG_MISSING`
+
+**What it means:** The API WebSocket connection could not start because required configuration values were missing.
+
+**How to fix it:** Ensure `communityID`, `apiKey`, and `serverId` are all present and loaded before WebSocket startup.
+
+<a id="ERR-WS-104"></a>
+### ERR-WS-104
+**Key:** `APIWS_CONNECTION_FAILED`
+
+**What it means:** The API WebSocket transport could not establish a connection.
+
+**How to fix it:** Check outbound HTTPS and WebSocket connectivity, API URL correctness, and any firewall or proxy rules.
+
+<a id="ERR-WS-105"></a>
+### ERR-WS-105
+**Key:** `APIWS_RECONNECT_FAILED`
+
+**What it means:** Reconnect attempts to the API WebSocket hub are repeatedly failing.
+
+**How to fix it:** Treat this as a persistent connectivity or authentication problem, then review the first connection failure and fix that root cause.
+
+<a id="ERR-WS-106"></a>
+### ERR-WS-106
+**Key:** `APIWS_PUSH_EVENT_FAILED`
+
+**What it means:** A push event delivered over the WebSocket connection could not be decoded or processed.
+
+**How to fix it:** Validate the incoming event payload shape and inspect the support reference for the handler that failed.
+
+<a id="ERR-WS-107"></a>
+### ERR-WS-107
+**Key:** `APIWS_SEND_FAILED`
+
+**What it means:** A message could not be sent over the API WebSocket connection.
+
+**How to fix it:** Confirm the WebSocket connection is active and authenticated before sending unit or call updates.
+
+## Plugin Loader Errors
+
+<a id="ERR-PLUG-101"></a>
+### ERR-PLUG-101
+**Key:** `PLUGIN_VERSION_FILE_LOAD_FAILED`
+
+**What it means:** The local plugin version file could not be loaded from disk.
+
+**How to fix it:** Confirm `sonorancad/version.json` exists and is readable.
+
+<a id="ERR-PLUG-102"></a>
+### ERR-PLUG-102
+**Key:** `PLUGIN_VERSION_FILE_PARSE_FAILED`
+
+**What it means:** The local plugin version file exists but could not be parsed.
+
+**How to fix it:** Repair malformed JSON in `version.json` or replace it with a clean release copy.
+
+<a id="ERR-PLUG-103"></a>
+### ERR-PLUG-103
+**Key:** `PLUGIN_UPDATER_RESPONSE_INVALID`
+
+**What it means:** The remote updater responded with invalid or unusable data.
+
+**How to fix it:** Retry later and verify outbound network access to GitHub or raw content endpoints.
+
+<a id="ERR-PLUG-104"></a>
+### ERR-PLUG-104
+**Key:** `PLUGIN_NOT_FOUND`
+
+**What it means:** A requested plugin or submodule could not be found locally.
+
+**How to fix it:** Verify the plugin name, installation path, and that its configuration or resource files exist.
+
+<a id="ERR-PLUG-105"></a>
+### ERR-PLUG-105
+**Key:** `PLUGIN_MANIFEST_ENTRY_MISSING`
+
+**What it means:** A local submodule was not present in the remote updater manifest.
+
+**How to fix it:** If it is a custom submodule this may be expected, otherwise update to an official supported submodule build.
+
+<a id="ERR-PLUG-106"></a>
+### ERR-PLUG-106
+**Key:** `PLUGIN_MANIFEST_VERSION_MISSING`
+
+**What it means:** A remote updater manifest entry was missing a version field.
+
+**How to fix it:** Replace the manifest source with a valid upstream release or retry after the remote manifest is corrected.
+
+<a id="ERR-PLUG-107"></a>
+### ERR-PLUG-107
+**Key:** `PLUGIN_CONFIG_VERSION_MISSING`
+
+**What it means:** A plugin config did not declare its current config version.
+
+**How to fix it:** Update the plugin config from the latest `*_config.dist.lua` and ensure the version field is present.
+
+<a id="ERR-PLUG-108"></a>
+### ERR-PLUG-108
+**Key:** `PLUGIN_CONFIG_BACKUP_FAILED`
+
+**What it means:** The plugin updater could not create a config backup before modifying files.
+
+**How to fix it:** Check write permissions for the SonoranCAD configuration directory and available disk space.
+
+## Civilian Integration Errors
+
+<a id="ERR-CIV-101"></a>
+### ERR-CIV-101
+**Key:** `CIV_NO_CHARACTERS_FOUND`
+
+**What it means:** No CAD character records were found for the player.
+
+**How to fix it:** Ensure the player is linked and has at least one valid CAD character, or enable custom IDs if you want a fallback workflow.
+
+<a id="ERR-CIV-102"></a>
+### ERR-CIV-102
+**Key:** `CIV_CUSTOM_IDS_DISABLED`
+
+**What it means:** The server has disabled custom civilian IDs.
+
+**How to fix it:** Enable `allowCustomIds` in the civilian integration configuration if that workflow should be allowed.
+
+<a id="ERR-CIV-103"></a>
+### ERR-CIV-103
+**Key:** `CIV_REFRESH_DISABLED`
+
+**What it means:** Manual character cache refresh is disabled.
+
+**How to fix it:** Enable the purge or refresh option in configuration if players should be allowed to force-refresh ID data.
+
+<a id="ERR-CIV-104"></a>
+### ERR-CIV-104
+**Key:** `CIV_UNKNOWN_SUBCOMMAND`
+
+**What it means:** An invalid civilian ID command subcommand was used.
+
+**How to fix it:** Use `/id help` and re-run the command with a supported subcommand.
+
+<a id="ERR-CIV-105"></a>
+### ERR-CIV-105
+**Key:** `CIV_NO_NEARBY_PLAYERS`
+
+**What it means:** The player attempted to show an ID but no nearby viewers were found.
+
+**How to fix it:** Move closer to another player and retry the `show` action.
+
+## Dispatch Errors
+
+<a id="ERR-DISP-101"></a>
+### ERR-DISP-101
+**Key:** `DISPATCH_CALL_NOT_FOUND`
+
+**What it means:** A dispatch action referenced a call that was not present in cache.
+
+**How to fix it:** Verify the call ID is current and that call cache synchronization is working before retrying the action.
+
+## ERS Integration Errors
+
+<a id="ERR-ERS-101"></a>
+### ERR-ERS-101
+**Key:** `ERS_MAPPING_FAILED`
+
+**What it means:** ERS field mapping logic failed while converting ERS data into CAD payload fields.
+
+**How to fix it:** Review custom mapping functions and field names in the ERS integration configuration for `nil` values or bad return types.
+
+<a id="ERR-ERS-102"></a>
+### ERR-ERS-102
+**Key:** `ERS_PAYLOAD_MALFORMED`
+
+**What it means:** An ERS event payload was missing required top-level fields or had an invalid structure.
+
+**How to fix it:** Validate the ERS event payload contract and adjust any custom hooks that modify it.
+
+<a id="ERR-ERS-103"></a>
+### ERR-ERS-103
+**Key:** `ERS_COORDS_MISSING`
+
+**What it means:** An ERS event did not provide usable coordinates for the CAD action.
+
+**How to fix it:** Ensure the originating ERS event includes proper coordinates and that any transform step preserves them.
+
+<a id="ERR-ERS-104"></a>
+### ERR-ERS-104
+**Key:** `ERS_CALL_ID_INVALID`
+
+**What it means:** ERS attempted to update or attach to a call using an invalid stored call ID.
+
+**How to fix it:** Check the local saved-call cache and ensure the create-call step succeeded before later actions reference it.
+
+<a id="ERR-ERS-105"></a>
+### ERR-ERS-105
+**Key:** `ERS_RESOURCE_NOT_STARTED`
+
+**What it means:** The Night ERS resource required by the integration is not started.
+
+**How to fix it:** Start the ERS resource before enabling the ERS integration submodule.
+
+## Framework Errors
+
+<a id="ERR-FW-101"></a>
+### ERR-FW-101
+**Key:** `FRAMEWORK_RESOURCE_MISSING`
+
+**What it means:** A required framework resource such as `qb-core` or `es_extended` is not running.
+
+**How to fix it:** Start the configured framework resource and verify the integration is targeting the correct framework.
+
+<a id="ERR-FW-102"></a>
+### ERR-FW-102
+**Key:** `FRAMEWORK_IDENTITY_MISSING`
+
+**What it means:** Framework identity or player data could not be retrieved.
+
+**How to fix it:** Check that the player is fully loaded into the framework and that the expected identity export or event is available.
+
+## Locations and Livemap Errors
+
+<a id="ERR-LOC-101"></a>
+### ERR-LOC-101
+**Key:** `LOCATIONS_CONFIG_MISSING`
+
+**What it means:** The locations or livemap vehicle model configuration file could not be found.
+
+**How to fix it:** Restore the missing configuration file or update the configured path to a valid file.
+
+<a id="ERR-LOC-102"></a>
+### ERR-LOC-102
+**Key:** `LOCATIONS_CONFIG_INVALID`
+
+**What it means:** The locations or livemap configuration file exists but could not be decoded.
+
+**How to fix it:** Repair malformed JSON in the vehicle model configuration file.
+
+<a id="ERR-LOC-103"></a>
+### ERR-LOC-103
+**Key:** `LOCATIONS_CLIENT_ERROR`
+
+**What it means:** A client reported an error while sending location data.
+
+**How to fix it:** Check client logs for the specific failure and verify required dependencies such as postals and location hooks are configured.
+
+## Record Printer Errors
+
+<a id="ERR-RP-101"></a>
+### ERR-RP-101
+**Key:** `RECORDPRINTER_UNIT_MISSING`
+
+**What it means:** Record printer could not resolve the player to an active CAD unit.
+
+**How to fix it:** Ensure the player is logged into CAD and present in the unit cache before printing.
+
+<a id="ERR-RP-102"></a>
+### ERR-RP-102
+**Key:** `RECORDPRINTER_DIRECTORY_FAILED`
+
+**What it means:** Record printer could not create or resolve its output directory.
+
+**How to fix it:** Check write permissions and folder creation behavior for the record printer output path.
+
+<a id="ERR-RP-103"></a>
+### ERR-RP-103
+**Key:** `RECORDPRINTER_SAVE_FAILED`
+
+**What it means:** Record printer failed to save the generated PDF.
+
+**How to fix it:** Verify write permissions, available disk space, and that the generated PDF data is valid.
+
+<a id="ERR-RP-104"></a>
+### ERR-RP-104
+**Key:** `RECORDPRINTER_SHARE_INVALID`
+
+**What it means:** Record printer rejected a share request because the URL or target list was invalid.
+
+**How to fix it:** Validate the shared URL and ensure at least one valid target player or identifier is supplied.
+
+## Sonrad Errors
+
+<a id="ERR-SR-101"></a>
+### ERR-SR-101
+**Key:** `SONRAD_CALLCOMMANDS_MISSING`
+
+**What it means:** Sonrad attempted an action that depends on the `callcommands` submodule.
+
+**How to fix it:** Enable or start the `callcommands` submodule before using Sonrad panic or call features.
+
+<a id="ERR-SR-102"></a>
+### ERR-SR-102
+**Key:** `SONRAD_CONFIG_MISSING`
+
+**What it means:** Critical Sonrad configuration values are missing.
+
+**How to fix it:** Update `sonrad_config.lua` from the latest template and fill in the missing required values.
+
+## Kick Module Errors
+
+<a id="ERR-KICK-101"></a>
+### ERR-KICK-101
+**Key:** `KICK_QUEUE_UNAVAILABLE`
+
+**What it means:** The kick module could not queue a CAD logout or kick for the player.
+
+**How to fix it:** Ensure the player is linked and currently represented by an active unit before the kick action runs.
