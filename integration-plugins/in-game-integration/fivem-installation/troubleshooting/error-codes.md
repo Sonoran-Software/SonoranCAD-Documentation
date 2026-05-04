@@ -1,12 +1,11 @@
+description: Shared SonoranCAD FiveM error and warning code reference with detailed meanings, fixes, and direct anchors for each code.
 ---
-description: Shared SonoranCAD FiveM error code reference with detailed meanings, fixes, and direct anchors for each error.
----
 
-# Error Codes
+# Error and Warning Codes
 
-All client-facing SonoranCAD FiveM errors use a structured `ERR-XX-###` code and point back to this document.
+SonoranCAD FiveM uses structured `ERR-XX-###` and `WRN-XX-###` codes that point back to this document.
 
-You can link directly to any error by appending its code as a fragment identifier. Example: `/cad/integration-plugins/in-game-integration/error-codes#ERR-CORE-001`
+You can link directly to any code by appending it as a fragment identifier. Example: `/cad/integration-plugins/in-game-integration/fivem-installation/troubleshooting/error-codes#ERR-CORE-001` or `/cad/integration-plugins/in-game-integration/fivem-installation/troubleshooting/error-codes#WRN-CORE-001`
 
 Each error below includes:
 
@@ -14,6 +13,8 @@ Each error below includes:
 * the internal error key used by the plugin
 * a more detailed explanation of what failed
 * the first thing to check or change to resolve it
+
+Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level log paths still intentionally reference `ERR-*` codes when the condition represents a real support issue even if the integration can keep running.
 
 ## Core Errors
 
@@ -80,14 +81,6 @@ Each error below includes:
 **What it means:** The integration could not retrieve version information from the CAD API.
 
 **How to fix it:** Check the API key, community ID, outbound connectivity, and SonoranCAD API status, then restart the resource.
-
-<a id="ERR-CORE-009"></a>
-### ERR-CORE-009
-**Key:** `API_PAID_ONLY`
-
-**What it means:** The current CAD subscription does not permit the API feature being used.
-
-**How to fix it:** Upgrade the CAD plan to one that supports the requested API feature, or disable the dependent submodule.
 
 <a id="ERR-CORE-010"></a>
 ### ERR-CORE-010
@@ -249,6 +242,30 @@ Each error below includes:
 
 **How to fix it:** Check the related support reference, then verify API key, community ID, payload validity, network connectivity, and CAD API availability.
 
+<a id="ERR-CORE-030"></a>
+### ERR-CORE-030
+**Key:** `TABLET_RESOURCE_NOT_STARTED`
+
+**What it means:** The `tablet` resource is installed but not running.
+
+**How to fix it:** Use `exec sonorancad.cfg` and make sure `sonorancad.cfg` contains `ensure tablet` before `ensure sonorancad`.
+
+<a id="ERR-CORE-031"></a>
+### ERR-CORE-031
+**Key:** `TABLET_RESOURCE_MISSING`
+
+**What it means:** The `tablet` resource could not be found.
+
+**How to fix it:** Use the bundled `sonorancad.cfg`, confirm it contains `ensure tablet`, and install the resource with the exact name `tablet`.
+
+<a id="ERR-CORE-032"></a>
+### ERR-CORE-032
+**Key:** `TABLET_RESOURCE_BAD_STATE`
+
+**What it means:** The `tablet` resource exists but is not in a usable runtime state.
+
+**How to fix it:** Use `exec sonorancad.cfg`, confirm it contains `ensure tablet`, and fix the startup errors reported by `tablet`.
+
 <a id="ERR-CORE-900"></a>
 ### ERR-CORE-900
 **Key:** `UNHANDLED_SERVER_ERROR`
@@ -374,14 +391,6 @@ Each error below includes:
 **What it means:** Bodycam recording could not start because child-process permission was missing.
 
 **How to fix it:** Add the required child-process permission or use the bundled `sonorancad.cfg` permissions.
-
-<a id="ERR-BC-103"></a>
-### ERR-BC-103
-**Key:** `BODYCAM_PROXY_NOT_READY`
-
-**What it means:** Bodycam cannot start because the proxy or base URL has not been initialized yet.
-
-**How to fix it:** Ensure `web_baseUrl` is configured and available before bodycam clients initialize.
 
 <a id="ERR-BC-104"></a>
 ### ERR-BC-104
@@ -986,3 +995,77 @@ Each error below includes:
 **What it means:** The kick module could not queue a CAD logout or kick for the player.
 
 **How to fix it:** Ensure the player is linked and currently represented by an active unit before the kick action runs.
+
+## Warning Codes
+
+<a id="WRN-CORE-001"></a>
+### WRN-CORE-001
+**Key:** `INVALID_API_MODE`
+
+**What it means:** The configured SonoranCAD API mode was invalid, so the resource fell back to production mode.
+
+**How to fix it:** Set `mode` to a supported value such as `production` or `development`.
+
+<a id="WRN-CORE-002"></a>
+### WRN-CORE-002
+**Key:** `DEPRECATED_DEBUGPRINT`
+
+**What it means:** Deprecated logging helper `debugPrint` was used somewhere in the runtime path.
+
+**How to fix it:** Replace `debugPrint(...)` calls with `debugLog(...)` in custom integrations or older submodule code.
+
+<a id="WRN-CORE-003"></a>
+### WRN-CORE-003
+**Key:** `JSON_DECODE_FAILED`
+
+**What it means:** SonoranCAD failed to decode a JSON string and continued with a default or empty value.
+
+**How to fix it:** Validate the JSON source that triggered the warning and correct malformed payload or file contents.
+
+<a id="WRN-CORE-004"></a>
+### WRN-CORE-004
+**Key:** `JSON_ENCODE_FAILED`
+
+**What it means:** SonoranCAD failed to encode a Lua value into JSON and continued with a fallback value.
+
+**How to fix it:** Check the table being encoded for unsupported values such as functions, userdata, or recursive structures.
+
+<a id="WRN-CORE-005"></a>
+### WRN-CORE-005
+**Key:** `APIKEY_CONVAR_UNINITIALIZED`
+
+**What it means:** SonoranCAD started before the bundled convar setup from `sonorancad.cfg` initialized the API key path.
+
+**How to fix it:** Use `exec sonorancad.cfg` and make sure it runs before `ensure sonorancad`.
+
+<a id="WRN-CORE-006"></a>
+### WRN-CORE-006
+**Key:** `OLD_FXSERVER_VERSION`
+
+**What it means:** The running FXServer build is older than the version this SonoranCAD release was tested against.
+
+**How to fix it:** Update FXServer to the tested version or newer before troubleshooting feature regressions.
+
+<a id="WRN-CAD-101"></a>
+### WRN-CAD-101
+**Key:** `PLAYER_IDENTIFIER_MISSING`
+
+**What it means:** A player connected without the configured primary identifier, so some CAD features may not work for that player.
+
+**How to fix it:** Ensure the configured identifier type is actually available on your server and that the player is connecting through the expected identity provider.
+
+<a id="WRN-WS-101"></a>
+### WRN-WS-101
+**Key:** `LEGACY_HTTP_PUSH_EVENT`
+
+**What it means:** SonoranCAD received a legacy HTTP push event on `/event` while WebSocket push delivery is preferred.
+
+**How to fix it:** Review your CAD or server push-event configuration and move the server onto the API WebSocket push path where available.
+
+<a id="WRN-CORE-900"></a>
+### WRN-CORE-900
+**Key:** `UNHANDLED_WARNING`
+
+**What it means:** A warning was logged without a more specific registered warning code, so it was normalized into the generic warning bucket.
+
+**How to fix it:** Use the support reference and warning text in the logs to identify the exact caller, then register a dedicated warning code if the condition needs clearer support guidance.
