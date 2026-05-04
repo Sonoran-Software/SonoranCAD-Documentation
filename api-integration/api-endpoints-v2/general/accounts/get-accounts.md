@@ -241,31 +241,7 @@ Successful requests return `application/json`.
     "total": 1
   },
   "accounts": [
-    {
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "username": "ExampleUser",
-      "status": 1,
-      "joined": "2026-01-14T18:22:00Z",
-      "lastLogin": "2026-04-08T20:55:00Z",
-      "permissions": {
-        "police": true,
-        "dispatch": true,
-        "liveMap": true,
-        "adminInGameIntegration": true
-      }
-    }
+    // Array of Account Objects — see Account Object page for field descriptions.
   ]
 }
 ```
-
-## Enumeration Values
-
-### ACCOUNT_STATUS
-
-| Value | Description |
-| --- | --- |
-| `0` | `PENDING` |
-| `1` | `VALIDATED` |
-| `2` | `EXPIRED` |
-| `3` | `REMOVED` |
-| `4` | `BANNED` |
