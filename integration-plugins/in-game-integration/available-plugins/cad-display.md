@@ -20,6 +20,25 @@ This submodule is already **enabled by default** when installing the [Sonoran CA
 
 The CAD display settings are stored inside of the `/configuration/caddisplay_config.lua` file.
 
+{% hint style="info" %}
+User-facing notifications for **all** FiveM submodules are now configured centrally in `/configuration/config.json` using `notificationSystem`.
+
+Supported values:
+
+* `auto`
+* `ox_lib`
+* `lation_ui`
+* `pnotify`
+* `chat`
+
+When set to `auto`, Sonoran CAD will choose the first available system in this order:
+
+1. `ox_lib`
+2. `lation_ui`
+3. `pnotify`
+4. `chat`
+{% endhint %}
+
 <details>
 
 <summary>Default <code>caddisplay_config.lua</code></summary>
@@ -35,7 +54,7 @@ local config = {
     enabled = true,
     pluginName = "caddisplay",
     pluginAuthor = "Sonoran Software Systems",
-    configVersion = "1.0",
+    configVersion = "1.1",
 
     lang = {
         addNewDisplayHelp = "Open the menu to begin placing a CAD display",
@@ -99,7 +118,6 @@ local config = {
     },
 
     general = {
-        notificationType = "native", -- Options: native, pNotify, okokNotify
         useAllowlistAsBlacklist = false -- If true, allowlistedCars is treated as a blacklist
     },
 

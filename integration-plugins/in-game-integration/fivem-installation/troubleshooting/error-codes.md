@@ -448,16 +448,8 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Verify the CAD API is reachable, the API key is valid, and any TURN-related configuration overrides are correct.
 
-#### ERR-BC-111
-
-**Key:** `BODYCAM_BASEURL_MISSING`
-
-**What it means:** Bodycam services cannot be exposed because the base or proxy URL is missing.
-
-**How to fix it:** Set `web_baseUrl` correctly and ensure it resolves to the externally reachable server endpoint.
-
-#### ERR-BC-112
-
+<a id="ERR-BC-112"></a>
+### ERR-BC-112
 **Key:** `BODYCAM_RECORDING_ACTIVE`
 
 **What it means:** A start-recording request was ignored because a recording was already in progress.

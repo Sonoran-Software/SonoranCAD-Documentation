@@ -72,6 +72,21 @@ Do not update the contents of `sonorancad.cfg` as it will be overwritten on reso
 
 Modify the `/configuration/config.json`file for any additional configuration values.
 
+This is also where the global FiveM notification backend is configured. Set `notificationSystem` to one of:
+
+* `auto`
+* `ox_lib`
+* `lation_ui`
+* `pnotify`
+* `chat`
+
+When `notificationSystem` is `auto`, Sonoran CAD selects the first available system in this order:
+
+1. `ox_lib`
+2. `lation_ui`
+3. `pnotify`
+4. `chat`
+
 ### 5. Configure the Submodules
 
 The Sonoran CAD FiveM resources has multiple "submodules" for every integration feature. [These are easily enabled and configured](../submodule-configuration/) in the `/configuration` folder.

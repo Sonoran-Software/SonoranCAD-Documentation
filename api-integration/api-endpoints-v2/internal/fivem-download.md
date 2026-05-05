@@ -44,4 +44,6 @@ The `download` URL will be a temporary link to a pre-configured ZIP.
 
 The `configLines` will be a string array of lines to add to the `server.cfg` to start the CAD resource.
 
+`pNotify` may still appear in the generated `configLines` because it is bundled with the default FiveM package, but user-facing notification routing is now configured centrally in `sonorancad/configuration/config.json` via `notificationSystem`, not per submodule.
+
 For more information, view the [pre-configured installation guide](../../../integration-plugins/in-game-integration/fivem-installation/#pre-configured-resource-installation-recommended).

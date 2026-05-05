@@ -24,6 +24,10 @@ This submodule is already **enabled by default** when installing the [Sonoran CA
 
 The CAD display settings are stored inside of the `/configuration/recordPrinter_config.lua` file.
 
+{% hint style="info" %}
+Record Printer user-facing notifications also use the shared FiveM notification system configured in `/configuration/config.json` with `notificationSystem`.
+{% endhint %}
+
 ### 3. Ensure Players are Linked
 
 Ensure the players have already [linked their CAD](../link-user-in-game.md) for this integration to work.
@@ -78,7 +82,7 @@ Using the records section in CAD, navigate to the record you would like to print
 
 ### Printing In-Game
 
-After selecting **Print In-Game**, a message will appear in-game stating "**You have a new record to print. Use `/printer queue` to view queue**".
+After selecting **Print In-Game**, an in-game notification will appear stating "**You have a new record to print. Use `/printer queue` to view queue**".
 
 You can print this file by using the command `/printer print <PRINT QUEUE #>` near a configured printer (`printerObjects`) or inside a configured vehicle (`vehicleConfig`).
 
