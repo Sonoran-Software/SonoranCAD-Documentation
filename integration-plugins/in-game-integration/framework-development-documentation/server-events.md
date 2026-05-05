@@ -210,12 +210,10 @@ TriggerServerEvent('sonorancad::registerVeh', primary, plate, class, realName)
                 local ped = GetPlayerPed(-1);
                 local veh = GetVehiclePedIsIn(ped, false);
                 if veh == 0 then
-                    TriggerEvent('chat:addMessage', {
-                        color = {255, 0, 0},
-                        multiline = true,
-                        args = {
-                            '[CAD - ERROR] ', 'You are not in a vehicle!'
-                        }
+                    NotifyClient({
+                        title = 'CAD - Error',
+                        message = 'You are not in a vehicle!',
+                        type = 'error'
                     })
                     return;
                 else

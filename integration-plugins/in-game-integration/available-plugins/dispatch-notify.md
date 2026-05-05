@@ -47,6 +47,27 @@ Ensure the players have already [linked their CAD](../link-user-in-game.md) for 
 
 Review the `dispatchnotify_config.lua` file to configure the submodule to behave how you like. The file is well documented. Please review **all** the settings!
 
+{% hint style="info" %}
+Dispatch Notify no longer has its own per-submodule notification selector.
+
+All user-facing FiveM notifications are now configured in `/configuration/config.json` with `notificationSystem`.
+
+Supported values:
+
+* `auto`
+* `ox_lib`
+* `lation_ui`
+* `pnotify`
+* `chat`
+
+`auto` resolves in this order:
+
+1. `ox_lib`
+2. `lation_ui`
+3. `pnotify`
+4. `chat`
+{% endhint %}
+
 <details>
 
 <summary><code>dispatchnotify_config.lua</code></summary>
@@ -65,8 +86,6 @@ Review the `dispatchnotify_config.lua` file to configure the submodule to behave
 | unitNotifyToggleCommand       | In-game command to override unit 911 notifications                                                                                                                                                                                                                                                                                                                                                                                        |
 | unitNotifyToggleAce           | Ace permission allowed to use the command. Leave blank ("") to allow anyone to use the command                                                                                                                                                                                                                                                                                                                                            |
 | enableCallerNotify            | Enable "units are on the way" notifications                                                                                                                                                                                                                                                                                                                                                                                               |
-| notifyMethod                  | <p><strong>chat</strong>: Sends a message in chat</p><p><strong>pnotify</strong>: Uses pNotify to show a notification</p><p><strong>custom</strong>: Use the custom event <code>SonoranCAD::dispatchnotify:IncomingCallNotify</code>instead (Provides single parameter) - The message.</p>                                                                                                                                                |
-| unitNotifyMethod              | <p><strong>chat</strong>: Sends a message in chat</p><p><strong>pnotify</strong>: Uses pNotify to show a notification</p><p><strong>ox_lib:</strong> Uses ox_lib to show a notification</p><p><strong>lation_ui:</strong> Uses lation UI to show a notification</p><p><strong>custom</strong>: Use the custom event</p><p><code>SonoranCAD::dispatchnotify:IncomingCallNotify</code>instead (Provides single parameter) - The message</p> |
 | notifyMessage                 | <p>NotifyMessage: Message template to use when sending to the player</p><p>You can use the following replacements:</p><p><strong>{officer}</strong> - officer name</p>                                                                                                                                                                                                                                                                    |
 | incomingCallMessage           | <p>How should officers be notified of a new 911 call? Parameters:<br><strong>{location}</strong> - location of call (street + postal)<br><strong>{description}</strong> - description as given by civilian<br><strong>{caller}</strong> - caller's name<br><strong>{callId}</strong> - ID of the call so LEO can respond with /r911<br><strong>{command}</strong> - The command to use</p>                                                |
 | unitDutyMethod                | <p>How to detect if units are online?<br><strong>incad</strong>: units must be logged into the CAD<br><strong>permissions</strong>: units must have the "sonorancad.dispatchnotify" ACE permission (see docs)<br><strong>esxjob</strong>: requires esxsupport submodule, use jobs instead for on duty detection<br><strong>custom</strong>: Use custom function (defined below as unitDutyCustom)</p>                                     |
@@ -121,7 +140,8 @@ Dispatchers (or self-dispatch) can set the primary unit to any unit currently at
 
 * No notifications for 911 calls
   * Units must be logged into the CAD (by default) or meeting the requirements depending on how the submodule is configured.
-  * If using pNotify notifications, ensure that resource is running.
+  * Verify `/configuration/config.json` has the correct `notificationSystem` value.
+  * If `notificationSystem` is `auto`, Sonoran CAD will use `ox_lib`, then `lation_ui`, then `pnotify`, then `chat`.
 * Units do not automatically attach to calls
   * Ensure the players have already [linked their CAD](../link-user-in-game.md) for this integration to work.
 * Caller is not notified when units attach to the call

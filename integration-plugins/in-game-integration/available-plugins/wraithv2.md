@@ -24,12 +24,30 @@ The [locations submodule](locations.md) includes all logic required to send body
 {% hint style="info" %}
 Use of this submodule requires the Sonoran version of [Wraith ARS 2X](https://github.com/sonoran-Software/wk_wars2x)[ ](https://github.com/Sonoran-Software/wk_wars2x)radar and plate reader to function. This resource is bundled with the [Sonoran CAD FiveM Resource](../fivem-installation/) as `wk_wars2x`.
 
-This resource also uses pNotify by default, a resource that is already bundled with the Sonoran CAD FiveM Resource.
 {% endhint %}
 
 ### 2. Adjust the Configuration
 
 The bodycam settings are stored inside of the `/configuration/wraithv2_config.lua` file.
+
+{% hint style="info" %}
+WraithV2 now uses the shared FiveM notification system configured in `/configuration/config.json` with `notificationSystem`.
+
+Supported values:
+
+* `auto`
+* `ox_lib`
+* `lation_ui`
+* `pnotify`
+* `chat`
+
+`auto` resolves in this order:
+
+1. `ox_lib`
+2. `lation_ui`
+3. `pnotify`
+4. `chat`
+{% endhint %}
 
 <details>
 
@@ -44,7 +62,7 @@ The bodycam settings are stored inside of the `/configuration/wraithv2_config.lu
 | expiresUid          | Custom record field UID containing the expiration date                                     |
 | flagOnStatuses      | List of statuses to flag/alert on                                                          |
 | vehTypeFilter       | List of Classes that will NOT get ran through CAD                                          |
-| notificationTimers  | Time in MS, for how long each alert type will last via pNotify                             |
+| notificationTimers  | Time in MS, for how long each alert type will last                                         |
 | customFields        | Additional custom fields to show in your ALPR messages, such as insurance expiration, etc. |
 
 </details>
