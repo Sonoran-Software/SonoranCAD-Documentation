@@ -230,9 +230,9 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **Key:** `CAD_API_REQUEST_FAILED`
 
-**What it means:** A request to the SonoranCAD API failed.
+**What it means:** A request to the Sonoran CAD API failed.
 
-**How to fix it:** Check the related support reference, then verify API key, community ID, payload validity, network connectivity, and CAD API availability.
+**How to fix it:** The API call failed for some reason. This could be a bad API payload format from the resource or an issue with the backend. Double-check for other errors related to a bad API key. Otherwise, enable debug mode to capture the full API payload being sent at the same time as the error occurs and provide that to the support team/developers.
 
 #### ERR-CORE-030
 
