@@ -262,9 +262,9 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **Key:** `LOCAL_NETWORK_TIMEOUT`
 
-**What it means:** The local server network timed out while connecting to SonoranCAD.
+**What it means:** The local FiveM server network timed out while connecting to Sonoran CAD.
 
-**How to fix it:** Check the server host, firewall, proxy, DNS, or upstream network connection. This usually indicates the local server or hosting provider could not maintain the outbound HTTPS connection to SonoranCAD.
+**How to fix it:** If you are seeing this routinely, contact your server host. The network may be overwhelmed or experiencing degraded performance. This suggests your FiveM server is getting timeouts and connection drops.
 
 #### ERR-CORE-900
 
