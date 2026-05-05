@@ -9,14 +9,14 @@ description: View some basic troubleshooting steps when activating Sonoran CAD s
 Sonoran CAD's core includes powerful built-in commands. **These commands are entered into your server console.**
 
 **Ex:** A [support member](https://support.sonoransoftware.com) may ask you to send detailed logging information to them. They will give you the specific ID number to enter. (ex: 123)\
-Entering `sonoran support 123` in your server console will send your plugin configuration directly to our support application.
+Entering `sonorancad support 123` in your server console will send your plugin configuration directly to our support application.
 
 | Command                    | Description                                                                                                                                                                                                                                                                                     |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sonoran debugmode          | Enables detailed debug logging                                                                                                                                                                                                                                                                  |
-| sonoran info               | Displays version and config information                                                                                                                                                                                                                                                         |
-| sonoran support <_NUMBER_> | <p>Sends important information for <a href="https://support.sonoransoftware.com">customer support</a> purposes.</p><p>The <em>NUMBER</em> parameter will be provided to you by a support team member.</p><p>Ex: <code>sonoran support 123</code> sends us your plugin information for help.</p> |
-| sonoran plugin <_NAME_>    | <p>Displays plugin information</p><p>Ex: <code>sonoran plugin callcommands</code></p>                                                                                                                                                                                                           |
+| sonorancad debugmode          | Enables detailed debug logging                                                                                                                                                                                                                                                                  |
+| sonorancad info               | Displays version and config information                                                                                                                                                                                                                                                         |
+| sonorancad support <_NUMBER_> | <p>Sends important information for <a href="https://support.sonoransoftware.com">customer support</a> purposes.</p><p>The <em>NUMBER</em> parameter will be provided to you by a support team member.</p><p>Ex: <code>sonorancad support 123</code> sends us your plugin information for help.</p> |
+| sonorancad plugin <_NAME_>    | <p>Displays plugin information</p><p>Ex: <code>sonorancad plugin callcommands</code></p>                                                                                                                                                                                                           |
 
 ## Quick Checks
 
@@ -35,7 +35,7 @@ Be sure to follow the [core installation](../fivem-installation/) and [submodule
 \
 Make sure you have not forgotten to enable the submodule in the plugin config file!
 
-Enter `sonoran info` into your server console.
+Enter `sonorancad info` into your server console.
 
 ![Sonoran Info - Disabled Plugins](<../../../.gitbook/assets/image (382).png>)
 
@@ -49,7 +49,7 @@ Ensure you have set your [API ID in the CAD](../../../api-integration/getting-st
 
 ## Debug Mode
 
-The SonoranCAD core includes a powerful debug mode. Enable this by entering `sonoran debugmode` into your server console.
+The SonoranCAD core includes a powerful debug mode. Enable this by entering `sonorancad debugmode` into your server console.
 
 Debug mode will print out additional error information and JSON data for all API calls or push events.
 
@@ -92,6 +92,6 @@ The CAD backend will temporarily "blacklist" (deny) all API calls if multiple re
 
 #### Diagnosis
 
-1. Enable debug mode on your FiveM server by entering the server command `sonoran debugmode`. All API calls made will have the full JSON payload printed in your server console.
+1. Enable debug mode on your FiveM server by entering the server command `sonorancad debugmode`. All API calls made will have the full JSON payload printed in your server console.
 2. Wait for your next API blacklist notice. In your server console, you should see multiple failed/errored API calls at the same time as your blacklist. The JSON will show the full, bad data being sent to Sonoran CAD. Based on the `type` of these API calls, you can narrow down the source to a third-party/custom script or one of our FiveM submodules.
    1. If the bad API calls leading to the blacklist appear to be from an official Sonoran CAD submodule, [reach out to our support team](https://support.sonoransoftware.com/).

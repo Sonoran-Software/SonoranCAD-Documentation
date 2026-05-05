@@ -10,8 +10,8 @@ description: >-
 
 In the admin page, select "Advanced" > "Limits" to view your community limitations.
 
-<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 
 ### Interested in a Paid Subscription?
 
-View our [pricing ](https://app.sonorancad.com/#/pricing)page for more information!
+View our [pricing](https://app.sonorancad.com/#/pricing) page for more information!

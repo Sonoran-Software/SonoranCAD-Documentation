@@ -172,7 +172,7 @@ set steam_webApiKey "YOUR_KEY_HERE"
 
 Sonoran CAD's integration framework and submodules will automatically update with the latest features, fixes, and changes!
 
-Or, run `sonoran update` to instantly check and apply any updates for the framework core.
+Or, run `sonorancad update` to instantly check and apply any updates for the framework core.
 
 ## Commands
 
@@ -180,11 +180,11 @@ The Sonoran CAD integration framework comes with several commands. These command
 
 | Command             | Description                              |
 | ------------------- | ---------------------------------------- |
-| `sonoran help`      | Display list of commands                 |
-| `sonoran update`    | Run core/framework updater               |
-| `sonoran debugmode` | Toggle debug mode on/off                 |
-| `sonoran info`      | Dump version info and configuration data |
-| `sonoran support`   | Dump information for support staff       |
+| `sonorancad help`      | Display list of commands                 |
+| `sonorancad update`    | Run core/framework updater               |
+| `sonorancad debugmode` | Toggle debug mode on/off                 |
+| `sonorancad info`      | Dump version info and configuration data |
+| `sonorancad support`   | Dump information for support staff       |
 
 ## Troubleshooting
 
