@@ -258,6 +258,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Use `exec sonorancad.cfg`, confirm it contains `ensure tablet`, and fix the startup errors reported by `tablet`.
 
+#### ERR-CORE-033
+
+**Key:** `LOCAL_NETWORK_TIMEOUT`
+
+**What it means:** The local server network timed out while connecting to SonoranCAD.
+
+**How to fix it:** Check the server host, firewall, proxy, DNS, or upstream network connection. This usually indicates the local server or hosting provider could not maintain the outbound HTTPS connection to SonoranCAD.
+
 #### ERR-CORE-900
 
 **Key:** `UNHANDLED_SERVER_ERROR`
