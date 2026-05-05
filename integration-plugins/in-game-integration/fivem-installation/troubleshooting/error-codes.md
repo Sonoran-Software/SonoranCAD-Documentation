@@ -104,7 +104,7 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **What it means:** A submodule configuration file is older than the current template version.
 
-**How to fix it:** Compare your `*_config.lua` with the matching `*_config.dist.lua` and carry forward any missing options.
+**How to fix it:** Compare your `*_config.lua` with the matching `*_config.dist.lua` and carry forward any missing options. [Learn more about this process here](../../submodule-configuration/submodule-configuration-updates.md).
 
 #### ERR-CORE-014
 
@@ -448,8 +448,8 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Verify the CAD API is reachable, the API key is valid, and any TURN-related configuration overrides are correct.
 
-<a id="ERR-BC-112"></a>
 ### ERR-BC-112
+
 **Key:** `BODYCAM_RECORDING_ACTIVE`
 
 **What it means:** A start-recording request was ignored because a recording was already in progress.
