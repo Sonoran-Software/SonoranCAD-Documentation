@@ -88,9 +88,15 @@ You can print this file by using the command `/printer print <PRINT QUEUE #>` ne
 
 Once printed, the PDF will be placed in your hand with a viewer shown on your in-game screen. Buttons on-screen will allow you to maximize, minimize, and exit the window.
 
-If configured, closing the record will [place it in your player inventory](record-printer.md#inventory-support). Otherwise, the record will be dropped on the ground and can be picked up to be viewed by other players.
+If configured, closing the record will [place it in your player inventory](record-printer.md#inventory-support). Otherwise, the record will be deleted.
 
 <div><figure><img src="../../../.gitbook/assets/image (110).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="https://media.discordapp.net/attachments/624489051172503555/1430304995680714873/image.png?ex=68fb4514&#x26;is=68f9f394&#x26;hm=2ad7541a1e41ee61844b25fc133e110c058263a66a9f516212f6699953935f83&#x26;=&#x26;format=webp&#x26;quality=lossless&#x26;width=3456&#x26;height=1944" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (119).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+### Drop Record on Ground
+
+In standalone mode, selecting the **Drop on Ground** icon will drop the item on the ground. Other users can interact with the drop to pick it up and view the record.
+
+<div><figure><img src="../../../.gitbook/assets/image (448).png" alt="" width="232"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (449).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ### Inventory Support
 
