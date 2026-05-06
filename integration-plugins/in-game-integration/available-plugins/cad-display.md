@@ -183,8 +183,6 @@ Following the menu instructions, you can customize the laptop’s placement with
 
 If you have the `sonoran.caddisplay.admin` ACE permission, you also have the option to save the placement for all vehicles using that spawn code. This ensures the placement is automatically applied to all future spawns of that vehicle.
 
-Additionally, you can spawn laptops in police stations as "Static CAD Displays" to create a CAD display wherever you would like around the map
-
 <div><figure><img src="../../../.gitbook/assets/image (260).png" alt="SonoranCAD - CAD Display - Menu"><figcaption><p>Sonoran CAD - CAD Display - Main Menu</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Sonoran CAD CAD Display - Spawning Menu</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (281).png" alt=""><figcaption><p>Sonoran CAD - CAD Display - Attaching Menu</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Sonoran CAD - CAD Display - Delete Menu</p></figcaption></figure></div>
 
 #### b. Using Built-in Laptops
@@ -241,3 +239,9 @@ To transfer control of an in-vehicle laptop, have your passenger look at the lap
 Only one player may control the laptop at a time.
 
 You can then press **Y** to accept the request or **L** to deny it. If accepted, the laptop will begin mirroring the passenger’s [CAD Tablet](tablet.md).
+
+### Station CAD Display Props
+
+Additionally, you can spawn laptops in police stations or other areas around the map as **Station CAD Displays**. These CAD displays will stay at the location permanent.
+
+<div><figure><img src="../../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure></div>
