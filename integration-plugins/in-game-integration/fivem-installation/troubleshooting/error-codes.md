@@ -266,6 +266,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** If you are seeing this routinely, contact your server host. The network may be overwhelmed or experiencing degraded performance. This suggests your FiveM server is getting timeouts and connection drops.
 
+#### ERR-CORE-034
+
+**Key:** `LOCAL_NETWORK_CONNECT_TIMEOUT`
+
+**What it means:** The local FiveM server connection to Sonoran CAD timed out.
+
+**How to fix it:** If you are seeing this routinely, contact your server host. Check the server host, firewall, proxy, or upstream network connection for connection setup delays or blocked outbound traffic.
+
 #### ERR-CORE-900
 
 **Key:** `UNHANDLED_SERVER_ERROR`
