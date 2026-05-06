@@ -1054,6 +1054,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Ensure the configured identifier type is actually available on your server and that the player is connecting through the expected identity provider.
 
+#### WRN-CAD-102
+
+**Key:** `PLAYER_LINK_REQUIRED`
+
+**What it means:** A player attempted a CAD-linked workflow without having a linked CAD account.
+
+**How to fix it:** Have the player run the configured link command, complete the link flow, and retry after the CAD link exists.
+
 #### WRN-WS-101
 
 **Key:** `LEGACY_HTTP_PUSH_EVENT`
