@@ -462,7 +462,7 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **What it means:** The bodycam recordings directory could not be written by the server process, so upload setup or clip finalization could not save the recording file.
 
-**How to fix it:** Fix ownership or write permissions for `sonorancad/submodules/bodycam/recordings`, confirm the FXServer or Pterodactyl service user matches the directory owner, and retry the upload.
+**How to fix it:** Set `sonorancad/submodules/bodycam` and its `recordings` directory to permission mode `777`, then retry the upload.
 
 ### ERR-BC-112
 
