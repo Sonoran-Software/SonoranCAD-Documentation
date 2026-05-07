@@ -18,6 +18,8 @@ Opening the phone in-game and pressing the **911** app will allow users to creat
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="156"><figcaption></figcaption></figure>
 
+[In-game calls not working? Make sure you have connected the webhook.](getting-started.md#id-3.-link-er-lc-event-webhooks-to-sonoran-cad)
+
 ## Automatic Emergency Calls
 
 In-game events like fires, robberies, and more will create an automatic emergency call in the dispatch panel.

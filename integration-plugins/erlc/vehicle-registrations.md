@@ -78,6 +78,8 @@ Once the registration has been created in the CAD, users will be notified by an 
 
 <div><figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
+[In-game commands not working? Make sure you have connected the webhook.](getting-started.md#id-3.-link-er-lc-event-webhooks-to-sonoran-cad)
+
 ## Troubleshooting
 
 ### Registration Fields Blank

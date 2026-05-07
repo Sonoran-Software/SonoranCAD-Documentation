@@ -49,3 +49,5 @@ Ex: `;civ John Doe`
 Once the character has been created in the CAD, users will be notified by an optional in-game message.
 
 Once a character has been created, users can [register their vehicle with a single command](vehicle-registrations.md).
+
+[In-game commands not working? Make sure you have connected the webhook.](getting-started.md#id-3.-link-er-lc-event-webhooks-to-sonoran-cad)

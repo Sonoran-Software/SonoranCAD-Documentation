@@ -60,6 +60,8 @@ The CAD will automatically find the closest vehicle to the unit. The call will a
 
 Ex: `;ts`
 
+[In-game commands not working? Make sure you have connected the webhook.](getting-started.md#id-3.-link-er-lc-event-webhooks-to-sonoran-cad)
+
 ## Result
 
 Once the hotkey or in-game command has been ran, a traffic stop call will be generated with the details, a plate lookup will open, and the call will be visible on the [live map](3d-live-map.md).
