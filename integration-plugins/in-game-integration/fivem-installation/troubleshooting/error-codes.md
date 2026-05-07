@@ -456,6 +456,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Verify the CAD API is reachable, the API key is valid, and any TURN-related configuration overrides are correct.
 
+#### ERR-BC-111
+
+**Key:** `BODYCAM_RECORDINGS_UNWRITABLE`
+
+**What it means:** The bodycam recordings directory could not be written by the server process, so upload setup or clip finalization could not save the recording file.
+
+**How to fix it:** Fix ownership or write permissions for `sonorancad/submodules/bodycam/recordings`, confirm the FXServer or Pterodactyl service user matches the directory owner, and retry the upload.
+
 ### ERR-BC-112
 
 **Key:** `BODYCAM_RECORDING_ACTIVE`
