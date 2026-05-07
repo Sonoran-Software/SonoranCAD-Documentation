@@ -31,7 +31,25 @@ This endpoint allows you to retrieve all unit identifiers for a specified accoun
 {
     "selectedIdent": 1,
     "identifiers": [
-        // Array of unit objects
+        {
+            "id": 12,
+            "accId": "00000000-0000-0000-0000-000000000000",
+            "status": 0,
+            "isPanic": false,
+            "location": "",
+            "aop": "Los Santos",
+            "data": {
+                "unitNum": "A-10",
+                "name": "John Doe",
+                "district": "Los Santos",
+                "department": "LSPD",
+                "subdivision": "Patrol",
+                "rank": "Officer",
+                "group": "CAR-51",
+                "communityUserId": "license:abc123"
+            },
+            "isDispatch": false
+        }
     ]
 }
 ```

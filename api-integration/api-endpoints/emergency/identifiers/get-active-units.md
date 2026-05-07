@@ -44,6 +44,7 @@ Array of request objects
      "data": {
              "apiId1": "STEAM:1234", // API ID - Typically Steam Hex
              "apiId2": "STEAM:1234", // API ID - Typically Steam Hex
+             "communityUserId": "license:abc123", // Linked in-game user identifier
              "unitNum": "A-10",
              "name": "Brian Sosnowski",
              "district": "Maricopa County",
