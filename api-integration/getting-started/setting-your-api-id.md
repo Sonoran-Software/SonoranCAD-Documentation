@@ -12,6 +12,10 @@ Use `communityUserId` when your game server controls its own player identifier, 
 
 This is the default approach used by our [FiveM integration resource](../../integration-plugins/in-game-integration/fivem-installation/). Players link their CAD account in-game with [`/link`](../../integration-plugins/in-game-integration/link-user-in-game.md), and Sonoran CAD stores the player's game identifier in the account's `communityUserId` field.
 
+If you need to go from a CAD push event or API response back to an in-game FiveM player, use that same `communityUserId` as your join key. Our FiveM resource documents this flow in [LINKING_V2.md](https://github.com/Sonoran-Software/SonoranCADFiveM/blob/master/sonorancad/LINKING_V2.md) and exposes `exports.sonorancad:getPlayerCommunityUserId(source)` for third-party resources.
+
+For example, a push event may include `communityUserId = "license:abc123"`. Your server can compare that to the value returned by `getPlayerCommunityUserId(source)` for connected players, or use it alongside the cached unit payload described in [GetUnitCache](../../integration-plugins/in-game-integration/framework-development-documentation/server-functions.md#getunitcache).
+
 By default, the FiveM resource uses the `primaryIdentifier` config value, which is set to `license` unless you change it.
 
 #### Create Community Link

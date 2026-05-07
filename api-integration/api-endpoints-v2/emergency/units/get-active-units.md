@@ -230,6 +230,7 @@ paths:
                   rank: "Officer"
                   group: "CAR-51"
                   page: 0
+                  communityUserId: "license:abc123"
                 isDispatch: false
       parameters:
         -
@@ -316,7 +317,8 @@ Successful requests return `application/json`.
       "subdivision": "Patrol",
       "rank": "Officer",
       "group": "CAR-51",
-      "page": 0
+      "page": 0,
+      "communityUserId": "license:abc123"
     },
     "isDispatch": false
   }

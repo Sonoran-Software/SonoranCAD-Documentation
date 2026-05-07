@@ -156,6 +156,22 @@ end
 {% endtab %}
 {% endtabs %}
 
+Each cached unit payload now includes `unit.data.communityUserId` when the CAD account was linked through the v2 community link flow. That gives third-party resources a stable way to map a CAD unit or push event back to an in-game player without relying on legacy API IDs.
+
+To understand where that value comes from, see [Map Players to CAD Users](../../../api-integration/getting-started/setting-your-api-id.md) and the FiveM resource's [LINKING_V2.md](https://github.com/Sonoran-Software/SonoranCADFiveM/blob/master/sonorancad/LINKING_V2.md).
+
+Typical pattern:
+
+```lua
+local unitCache = exports['sonorancad']:GetUnitCache()
+
+for _, unit in pairs(unitCache) do
+    if unit.data and unit.data.communityUserId == "license:abc123" then
+        print(("Matched CAD unit %s to linked player"):format(unit.data.unitNum))
+    end
+end
+```
+
 ### registerEndpoints
 
 Registers API endpoints for use with the `sonorancad` resource.

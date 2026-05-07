@@ -30,7 +30,23 @@ This endpoint allows you to retrieve all unit identifiers for a specified accoun
 ```javascript
 // ADD or EDIT
 {
-    // Unit Identifier Object
+    "id": 12,
+    "accId": "00000000-0000-0000-0000-000000000000",
+    "status": 0,
+    "isPanic": false,
+    "location": "",
+    "aop": "Los Santos",
+    "data": {
+        "unitNum": "A-10",
+        "name": "John Doe",
+        "district": "Los Santos",
+        "department": "LSPD",
+        "subdivision": "Patrol",
+        "rank": "Officer",
+        "group": "CAR-51",
+        "communityUserId": "license:abc123"
+    },
+    "isDispatch": false
 }
 
 // REMOVE
@@ -60,7 +76,19 @@ INVALID API KEY
             "action": 0, // ADD
             "identifier": {
                 // OPTIONAL: Only for ADD & EDIT actions
-                // Identifier/unit object
+                "status": 0,
+                "location": "",
+                "aop": "Los Santos",
+                "data": {
+                    "unitNum": "A-10",
+                    "name": "John Doe",
+                    "district": "Los Santos",
+                    "department": "LSPD",
+                    "subdivision": "Patrol",
+                    "rank": "Officer",
+                    "group": "CAR-51",
+                    "communityUserId": "license:abc123"
+                }
             },
             "identId": 123 // OPTIONAL: Only for REMOVE action
         }
