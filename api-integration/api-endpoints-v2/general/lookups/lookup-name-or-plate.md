@@ -6,7 +6,7 @@ description: Search records by name or plate values.
 
 <mark style="color:green;">`POST`</mark> `https://api.sonorancad.com/v2/general/lookups`
 
-> **Rate limit:** `10 requests per minute`  
+> **Rate limit:** `30 requests per minute`
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
 Search records by name and plate values.
@@ -35,7 +35,6 @@ Send either a name search using `first`, `last`, and optional `mi`, or send a `p
 {% tab title="Sonoran.lua" %}
 ```lua
 -- luarocks install sonoran.lua
--- For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab for the export-based client.
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
@@ -58,67 +57,9 @@ local response = sonoran.cad:lookupV2({
 print(response.success)
 ```
 {% endtab %}
-{% tab title="SonoranCADFiveM" %}
-Use this tab only when calling the v2 API from the server side of an in-game FiveM resource.
-
-* **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to get the ready CAD client.
-* **Sonoran.Net:** FiveM exports do not return a .NET client. Read the Sonoran CAD convars and create a fresh client.
-* **Sonoran.py:** FiveM does not run Python resources; use the Python tab for external integrations.
-
-The API key is stored in `sonoran_apiKey` as a protected FiveM convar. FiveM restricts a convar after `add_convar_permission` is configured, so only explicitly permitted resources can read it. Grant another resource access with `add_convar_permission your-resource-name read sonoran_apiKey`. If you change the API key in `config.json`, fully restart the `sonorancad` resource before reading the updated convar value.
-
-**Sonoran.lua**
-
-```lua
-local cad = exports["sonorancad"]:getCadClient()
-```
-
-**Sonoran.js**
-
-```javascript
-const cad = exports["sonorancad"].getCadClient();
-```
-
-**Sonoran.Net**
-
-```csharp
-// dotnet add package Sonoran.Net
-using CitizenFX.Core.Native;
-using Sonoran;
-
-var communityId = API.GetConvar("sonoran_communityID", "");
-var apiKey = API.GetConvar("sonoran_apiKey", "");
-var serverIdRaw = API.GetConvar("sonoran_serverId", "1");
-var serverId = int.TryParse(serverIdRaw, out var parsedServerId) ? parsedServerId : 1;
-
-using var sonoran = new SonoranClient(new SonoranClientOptions
-{
-    product = SonoranProduct.CAD,
-    communityId = communityId,
-    apiKey = apiKey,
-    defaultServerId = serverId
-});
-```
-
-After getting the Lua export client:
-```lua
-local response = cad:lookupV2({
-    first = 'John',
-    last = 'Doe',
-    mi = 'A',
-    plate = 'ABC123',
-    types = {1},
-    partial = true,
-  })
-
--- Inspect response.success, response.data, or response.reason as needed.
-print(response.success)
-```
-{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
-// For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab for the export-based client.
 const Sonoran = require('@sonoransoftware/sonoran.js');
 
 (async () => {
@@ -170,7 +111,6 @@ print(response.data if response.success else response.reason)
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net
-// For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab; .NET creates a fresh client from convars.
 using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
