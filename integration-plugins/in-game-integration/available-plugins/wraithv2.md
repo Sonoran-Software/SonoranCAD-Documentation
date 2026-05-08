@@ -143,6 +143,33 @@ You can configure custom fields to display in the Wraith ALPR notification. The 
 For more information on using the in-game UI, please view the Sonoran version of the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-2-4/1058277)[ ](https://github.com/Sonoran-Software/wk_wars2x)release information.\
 **Results are sent directly to your CAD when a license plate is locked.**
 
+WraithV2 now reuses a shared plate lookup cache. When a plate is scanned or locked, SonoranCAD caches the parsed plate result for 60 seconds and reuses it for repeat scans of the same normalized plate instead of running the full CAD lookup each time.
+
+### Developer Usage
+
+If you are building your own server-side resource and want the same parsed data that Wraith uses, call the shared export documented in [Server Functions](../framework-development-documentation/server-functions.md#cadgetplateinformation):
+
+```lua
+exports.sonorancad.cadGetPlateInformation("ABC123", function(regData, vehData, charData, boloData, warrantData)
+    local registration = regData[1]
+    local vehicle = vehData[1]
+    local owner = charData[1]
+
+    print(json.encode({
+        registration = registration,
+        vehicle = vehicle,
+        owner = owner,
+        boloData = boloData,
+        warrantData = warrantData
+    }))
+end, {
+    autoLookup = "123456789123456789",
+    cacheTtlMs = 60000
+})
+```
+
+Use `forceRefresh = true` in the options table if you need to bypass the existing cached result and pull fresh data immediately.
+
 ![Wraith ARS 2X Controls](<../../../.gitbook/assets/image (314).png>)
 
 ## Sonoran wk\_wars2x

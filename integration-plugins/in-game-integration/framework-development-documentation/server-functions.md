@@ -792,6 +792,57 @@ end, "123456789123456789")
 {% endtab %}
 {% endtabs %}
 
+### cadGetPlateInformation
+
+Retrieve parsed registration, vehicle, owner, BOLO, and warrant data for a single plate while reusing the shared plate-information cache. This is the same lookup path used by the WraithV2 integration.
+
+{% hint style="info" %}
+This function requires the `lookups` submodule to be enabled. Results are cached by normalized plate number for 60 seconds by default unless you override or bypass the cache in the options table.
+{% endhint %}
+
+```lua
+exports.sonorancad.cadGetPlateInformation(plate, callback, options)
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `plate` | `string` | Plate number to look up. Leading and trailing whitespace is trimmed before caching and lookup. |
+| `callback` | `function` | Callback invoked as `callback(regData, vehData, charData, boloData, warrantData)`. |
+| `options` | `table` | Optional settings for CAD popup behavior and cache control. |
+| `options.autoLookup` | `string` | Community user ID to trigger the CAD-side auto-open lookup behavior. |
+| `options.cacheTtlMs` | `number` | Override the cache lifetime in milliseconds. Defaults to `60000`. |
+| `options.bypassCache` | `boolean` | When `true`, skips cache reads and writes for this request. |
+| `options.forceRefresh` | `boolean` | When `true`, ignores any existing cached entry and refreshes it from CAD. |
+{% endtab %}
+
+{% tab title="Returns" %}
+This function does not return values directly. The callback receives five parsed arrays:
+
+- `regData`: matching registration records
+- `vehData`: matching vehicle record data
+- `charData`: matching owner/civilian record data
+- `boloData`: active BOLO flags for the plate
+- `warrantData`: active warrant flags for the plate
+{% endtab %}
+
+{% tab title="Example Usage" %}
+```lua
+exports.sonorancad.cadGetPlateInformation("ABC123", function(regData, vehData, charData, boloData, warrantData)
+    print(("Registrations: %s"):format(json.encode(regData)))
+    print(("Vehicles: %s"):format(json.encode(vehData)))
+    print(("Owners: %s"):format(json.encode(charData)))
+    print(("BOLO flags: %s"):format(json.encode(boloData)))
+    print(("Warrant flags: %s"):format(json.encode(warrantData)))
+end, {
+    autoLookup = "123456789123456789",
+    cacheTtlMs = 60000
+})
+```
+{% endtab %}
+{% endtabs %}
+
 ### getAllWarrantsAndBolos
 
 Retrieve all active and inactive warrants and bolos with pagination support
