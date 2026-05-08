@@ -46,7 +46,7 @@ print(response.success)
 {% tab title="SonoranCADFiveM" %}
 Use this tab only when calling the v2 API from the server side of an in-game FiveM resource.
 
-* **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to get the ready CAD client.
+* **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to call `getCharactersV2` directly.
 * **Sonoran.Net:** FiveM exports do not return a .NET client. Read the Sonoran CAD convars and create a fresh client.
 * **Sonoran.py:** FiveM does not run Python resources; use the Python tab for external integrations.
 
@@ -55,13 +55,22 @@ The API key is stored in `sonoran_apiKey` as a protected FiveM convar. FiveM res
 **Sonoran.lua**
 
 ```lua
-local cad = exports["sonorancad"]:getCadClient()
+local response = exports["sonorancad"]:getCharactersV2({
+    accountUuid = '00000000-0000-0000-0000-000000000000',
+  })
+
+-- Inspect response.success, response.data, or response.reason as needed.
+print(response.success)
 ```
 
 **Sonoran.js**
 
 ```javascript
-const cad = exports["sonorancad"].getCadClient();
+const response = exports["sonorancad"].getCharactersV2({
+  accountUuid: "00000000-0000-0000-0000-000000000000",
+});
+
+console.log(response.success);
 ```
 
 **Sonoran.Net**
@@ -85,14 +94,19 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 });
 ```
 
-After getting the Lua export client:
-```lua
-local response = cad:getCharactersV2({
-    accountUuid = '00000000-0000-0000-0000-000000000000',
-  })
+After getting the C# client:
+```csharp
+var response = await sonoran.Cad.getCharactersV2(new GetCharactersV2Query
+{
+    CommunityUserId = "player-1234"
+});
 
--- Inspect response.success, response.data, or response.reason as needed.
-print(response.success)
+Console.WriteLine(response.success);
+```
+
+For other Sonoran.lua CAD v2 helpers that do not have a direct resource export, get the ready CAD client first:
+```lua
+local cad = exports["sonorancad"]:getCadClient()
 ```
 {% endtab %}
 {% tab title="Sonoran.js" %}
