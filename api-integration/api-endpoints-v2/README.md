@@ -1049,6 +1049,18 @@ paths:
           application/json:
             schema:
               type: object
+              properties:
+                unitColors:
+                  type: array
+                  items:
+                    type: string
+                    enum:
+                    - None
+                    - Red
+                    - Green
+                    - Blue
+                    - Magenta
+                    - Yellow
             example:
               locations:
               - name: Mission Row
@@ -1064,8 +1076,8 @@ paths:
               tones:
               - tone_station_open.mp3
               unitColors:
-              - '#2563eb'
-              - '#ef4444'
+              - Blue
+              - Red
       tags:
       - Emergency / Configuration
   /v2/emergency/servers/{serverId}/street-sign-config:

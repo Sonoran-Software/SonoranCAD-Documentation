@@ -11,7 +11,7 @@ description: Replace station alert configuration for a server.
 
 Replace the station alert configuration for a server.
 
-Send the station alert payload as a top-level JSON object. Provide `locations`, `tones`, and `unitColors` directly in the request body.
+Send the station alert payload as a top-level JSON object. Provide `locations`, `tones`, and `unitColors` directly in the request body. `unitColors` values must be strings using one of these names: `None`, `Red`, `Green`, `Blue`, `Magenta`, or `Yellow`.
 
 ## Path Parameters
 
@@ -37,7 +37,7 @@ Send the station alert payload as a top-level JSON object. Provide `locations`, 
     }
   ],
   "tones": ["tone_station_open.mp3"],
-  "unitColors": ["#2563eb", "#ef4444"]
+  "unitColors": ["Blue", "Red"]
 }
 ```
 
@@ -192,7 +192,7 @@ var response = await sonoran.Cad.setStationsV2(
             }
         },
         Tones = new[] { "tone_station_open.mp3" },
-        UnitColors = new[] { "#2563eb", "#ef4444" }
+        UnitColors = new[] { "Blue", "Red" }
     },
     1
 );
@@ -245,6 +245,18 @@ paths:
           application/json:
             schema:
               type: "object"
+              properties:
+                unitColors:
+                  type: "array"
+                  items:
+                    type: "string"
+                    enum:
+                      - "None"
+                      - "Red"
+                      - "Green"
+                      - "Blue"
+                      - "Magenta"
+                      - "Yellow"
             example:
               locations:
                 - name: "Mission Row"
@@ -260,8 +272,8 @@ paths:
               tones:
                 - "tone_station_open.mp3"
               unitColors:
-                - "#2563eb"
-                - "#ef4444"
+                - "Blue"
+                - "Red"
 components:
   securitySchemes:
     bearerAuth:
@@ -292,7 +304,7 @@ curl --request PUT \
     }
   ],
   "tones": ["tone_station_open.mp3"],
-  "unitColors": ["#2563eb", "#ef4444"]
+  "unitColors": ["Blue", "Red"]
 }'
 ```
 {% endtab %}
