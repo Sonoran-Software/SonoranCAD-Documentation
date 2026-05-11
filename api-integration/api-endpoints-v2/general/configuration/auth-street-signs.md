@@ -174,6 +174,17 @@ paths:
               example:
                 authorized: true
                 serverId: 1
+        402:
+          description: "Smart Signs requires a Pro subscription plan."
+          content:
+            application/problem+json:
+              schema:
+                type: "object"
+              example:
+                type: "https://sonorancad.com/error/err-ss-101"
+                title: "Smart Signs plan required"
+                status: 402
+                detail: "Smart Signs authentication requires a Pro subscription plan."
       parameters:
         -
           description: "Configured Sonoran CAD server ID."
@@ -214,4 +225,6 @@ Successful requests return `application/json`.
   "serverId": 1
 }
 ```
+
+If the community does not have access to Smart Signs, the endpoint returns `402 Payment Required` with `application/problem+json` and `type` set to `https://sonorancad.com/error/err-ss-101`.
 
