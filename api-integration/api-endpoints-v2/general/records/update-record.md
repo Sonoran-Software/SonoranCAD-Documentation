@@ -1,5 +1,5 @@
 ---
-description: Update an existing custom record by record ID.
+description: Update an existing custom record by record ID using template replacement values.
 ---
 
 # Update Record
@@ -9,7 +9,7 @@ description: Update an existing custom record by record ID.
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Update a custom record with either a full `record` payload or template replacement values.
+Update a custom record using template replacement values.
 
 ## Path Parameters
 
@@ -19,7 +19,9 @@ Update a custom record with either a full `record` payload or template replaceme
 
 ## Request Body
 
-Provide either a full `record` object or set `useDictionary` with `templateId` and `replaceValues`. When an account target is needed for the update flow, use `communityUserId` by default, or provide `roblox` or `accountUuid`.
+The recommended path is to set `useDictionary` to `true`, provide the target `templateId`, and pass `replaceValues` keyed by the template field placeholders. This avoids rebuilding the full record section and field structure.
+
+Advanced integrations may provide a full `record` object instead of `useDictionary`, `templateId`, and `replaceValues`, but this is not recommended unless you need full control over the raw record payload. When an account target is needed for the update flow, use `communityUserId` by default, or provide `roblox` or `accountUuid`.
 
 ```json
 {
@@ -28,6 +30,19 @@ Provide either a full `record` object or set `useDictionary` with `templateId` a
   "templateId": 12,
   "replaceValues": {
     "{{plate}}": "XYZ987"
+  }
+}
+```
+
+If you need to submit a fully assembled record, you can provide `record` instead. This is an advanced option and is not recommended for most integrations:
+
+```json
+{
+  "communityUserId": "player-1234",
+  "record": {
+    "type": 9,
+    "name": "Incident Report",
+    "sections": []
   }
 }
 ```
@@ -49,9 +64,12 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:updateRecordV2(501, {
-    // See the request body above for the full record payload shape.
     communityUserId = 'player-1234',
-    record = {},
+    useDictionary = true,
+    templateId = 12,
+    replaceValues = {
+        ["{{plate}}"] = "XYZ987"
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -103,9 +121,12 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 After getting the Lua export client:
 ```lua
 local response = cad:updateRecordV2(501, {
-    // See the request body above for the full record payload shape.
-    apiId = '1234567890',
-    record = {},
+    communityUserId = 'player-1234',
+    useDictionary = true,
+    templateId = 12,
+    replaceValues = {
+        ["{{plate}}"] = "XYZ987"
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -127,9 +148,12 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.updateRecordV2(501, {
-    // See the request body above for the full record payload shape.
     communityUserId: 'player-1234',
-    record: {},
+    useDictionary: true,
+    templateId: 12,
+    replaceValues: {
+      '{{plate}}': 'XYZ987',
+    },
   });
   console.log(response);
 })();
@@ -149,9 +173,12 @@ instance = Instance(
 )
 
 response = instance.cad.updateRecordV2(501, {
-    # See the request body above for the full record payload shape.
-    communityUserId: 'player-1234',
-    "record": {},
+    "communityUserId": 'player-1234',
+    "useDictionary": True,
+    "templateId": 12,
+    "replaceValues": {
+        "{{plate}}": "XYZ987"
+    },
   })
 
 print(response.success)
@@ -177,6 +204,7 @@ var response = await sonoran.Cad.updateRecordV2(
     new UpdateRecordV2Request
     {
         AccountUuid = "00000000-0000-0000-0000-000000000000",
+        UseDictionary = true,
         RecordTypeId = 12,
         ReplaceValues = new Dictionary<string, string>
         {
@@ -197,7 +225,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Update Record"
   version: "1.0.0"
-  description: "Update an existing custom record by record ID."
+  description: "Update an existing custom record by record ID using template replacement values."
 servers:
   -
     url: "https://api.sonorancad.com"
