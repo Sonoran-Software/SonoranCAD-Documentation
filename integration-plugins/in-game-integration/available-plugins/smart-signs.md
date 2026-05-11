@@ -8,6 +8,12 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/smart_signs_promo.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+This third-party resource from London Studios is only available with the **Pro** version of Sonoran CAD.
+
+If your community is not on the **Pro** version, this free resource will not work.
+{% endhint %}
+
 ## Video Showcase
 
 [View our video showcase of the Smart Signs resource here!](https://www.youtube.com/watch?v=ihfVSiB8oB8)
@@ -34,9 +40,11 @@ We suggest installing the `smartsigns_sonoran` and `smartsigns_sononran_helper` 
 
 ### 3. Add Requirements to Server.cfg file
 
-In your `server.cfg` add the following new line **after/below** your `ensure sonorancad` line:
+In your `server.cfg` add the following new line **after/below** your exec `@sonorancad/sonorancad.cfg` line:
 
 ```lua
+# Start the Smart Signs Sonoran Edition ONLY
+# Do NOT ensure or start the helper resource
 ensure smartsigns_sonoran
 
 # Permissions for Sonoran Smartsigns Auto-updater (REQUIRED)
@@ -116,6 +124,10 @@ The config examples below are not the full configuration file and further explan
 ### **Main Configuration**
 
 The first section is called **main**, allowing you to set the following:
+
+<details>
+
+<summary>Configuration</summary>
 
 ```lua
 config = {
@@ -263,6 +275,8 @@ config = {
     },
 ```
 
+</details>
+
 To change the activation key (adjustButton), replace it with your desired key code from [here](https://docs.fivem.net/docs/game-references/controls/).
 
 You can see from the above config just how configurable the resource is, allowing you to set many features such as the load in the distance and access points to edit the text of the signs, the different denied words and the animations played while the player is typing.
@@ -389,13 +403,3 @@ This command will then spawn a sign prop that can be repositioned with the follo
 **R** -- rotates the sign **Right Mouse Button** -- Exits Spooner Menu **Left Mouse Button** -- Allows you to move the sign as needed **ENTER** -- finish placement
 
 Once you press ENTER the new sign location will automatically be added to the locations.json file. You will need to restart your server to see the sign after setting it up.
-
-## Updating from v1.4.1 to v1.5.1 or newer
-
-With the release of v.1.5.1 we have made the decision to not push an auto-update to users using v.1.4.1 or older. This is due to the change in configuration of sign locations and major refactoring of systems that would make automatically updating your config challenging.\
-\
-To update follow the steps below:
-
-1. Move your old smartsigns\_sonoran folder to a safe location to reference your old config for any settings you would like to migrate over.
-2. Download the new version from your keymaster account, you should have "10870 - SmartSigns" (v1.4.1) and the new "**339435 - Sonoran Store - Smart Signs (Sonoran CAD Edition)**" asset in keymaster. Please download the newer one only as the old one will not receive updates going further.
-3. Follow the [#id-2.-install-the-resource](smart-signs.md#id-2.-install-the-resource "mention") steps to install the updated resource. When configuring your settings refer back to your previous config file you have moved out of your server resources folder.
