@@ -29,7 +29,7 @@ Advanced integrations may provide a full `record` object instead of `useDictiona
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
-    "{{plate}}": "XYZ987"
+    "plate": "XYZ987"
   }
 }
 ```
@@ -68,7 +68,7 @@ local response = sonoran.cad:updateRecordV2(501, {
     useDictionary = true,
     templateId = 12,
     replaceValues = {
-        ["{{plate}}"] = "XYZ987"
+        ["plate"] = "XYZ987"
     },
   })
 
@@ -125,7 +125,7 @@ local response = cad:updateRecordV2(501, {
     useDictionary = true,
     templateId = 12,
     replaceValues = {
-        ["{{plate}}"] = "XYZ987"
+        ["plate"] = "XYZ987"
     },
   })
 
@@ -152,7 +152,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     useDictionary: true,
     templateId: 12,
     replaceValues: {
-      '{{plate}}': 'XYZ987',
+      'plate': 'XYZ987',
     },
   });
   console.log(response);
@@ -177,7 +177,7 @@ response = instance.cad.updateRecordV2(501, {
     "useDictionary": True,
     "templateId": 12,
     "replaceValues": {
-        "{{plate}}": "XYZ987"
+        "plate": "XYZ987"
     },
   })
 
@@ -275,7 +275,7 @@ paths:
               useDictionary: true
               templateId: 12
               replaceValues:
-                {{plate}}: "XYZ987"
+                plate: "XYZ987"
 components:
   securitySchemes:
     bearerAuth:
@@ -296,7 +296,7 @@ curl --request PATCH \
   "useDictionary": true,
   "templateId": 12,
   "replaceValues": {
-    "{{plate}}": "XYZ987"
+    "plate": "XYZ987"
   }
 }'
 ```
