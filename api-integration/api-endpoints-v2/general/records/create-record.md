@@ -56,9 +56,9 @@ This example creates a civilian character for the target user by selecting the b
   "useDictionary": true,
   "recordTypeId": 7,
   "replaceValues": {
-    "{{first}}": "John",
-    "{{last}}": "Doe",
-    "{{dob}}": "01/01/1995"
+    "first": "John",
+    "last": "Doe",
+    "dob": "01/01/1995"
   }
 }
 ```
@@ -71,7 +71,7 @@ For a non-character custom record, the same endpoint looks like this:
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {
-    "{{plate}}": "ABC123"
+    "plate": "ABC123"
   }
 }
 ```
@@ -110,7 +110,7 @@ local response = sonoran.cad:createRecordV2({
     useDictionary = true,
     recordTypeId = 12,
     replaceValues = {
-        ["{{case_number}}"] = "SC-2026-001"
+        ["case_number"] = "SC-2026-001"
     },
   })
 
@@ -167,7 +167,7 @@ local response = cad:createRecordV2({
     useDictionary = true,
     recordTypeId = 5,
     replaceValues = {
-        ["{{plate}}"] = "ABC123"
+        ["plate"] = "ABC123"
     },
   })
 
@@ -194,7 +194,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     useDictionary: true,
     recordTypeId: 12,
     replaceValues: {
-      '{{case_number}}': 'SC-2026-001',
+      'case_number': 'SC-2026-001',
     },
   });
   console.log(response);
@@ -219,7 +219,7 @@ response = instance.cad.createRecordV2({
     "useDictionary": True,
     "recordTypeId": 12,
     "replaceValues": {
-        "{{case_number}}": "SC-2026-001"
+        "case_number": "SC-2026-001"
     },
   })
 
@@ -307,7 +307,7 @@ paths:
               useDictionary: true
               recordTypeId: 12
               replaceValues:
-                {{plate}}: "ABC123"
+                plate: "ABC123"
 components:
   securitySchemes:
     bearerAuth:
@@ -328,7 +328,7 @@ curl --request POST \
   "useDictionary": true,
   "recordTypeId": 12,
   "replaceValues": {
-    "{{plate}}": "ABC123"
+    "plate": "ABC123"
   }
 }'
 ```
