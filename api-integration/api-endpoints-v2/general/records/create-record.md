@@ -1,5 +1,5 @@
 ---
-description: Create a new custom record using a raw record payload or template replacement values.
+description: Create a new custom record using template replacement values.
 ---
 
 # Create Record
@@ -13,7 +13,11 @@ Create a custom record for a target account.
 
 ## Request Body
 
-Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid` as the target user. Then provide either a full `record` object or set `useDictionary` with `recordTypeId` and `replaceValues`.
+Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid` as the target user.
+
+The recommended path is to set `useDictionary` to `true`, provide the target `recordTypeId`, and pass `replaceValues` keyed by the template field placeholders. This avoids building the full record section and field structure yourself.
+
+Advanced integrations may provide a full `record` object instead of `useDictionary`, `recordTypeId`, and `replaceValues`, but this is not recommended unless you need full control over the raw record payload.
 
 This endpoint is also used to create civilian characters. The key difference is which template `recordTypeId` you submit.
 
@@ -72,6 +76,19 @@ For a non-character custom record, the same endpoint looks like this:
 }
 ```
 
+If you need to submit a fully assembled record, you can provide `record` instead. This is an advanced option and is not recommended for most integrations:
+
+```json
+{
+  "communityUserId": "player-1234",
+  "record": {
+    "type": 9,
+    "name": "Incident Report",
+    "sections": []
+  }
+}
+```
+
 ## Example Request
 
 {% tabs %}
@@ -89,10 +106,12 @@ local sonoran = Sonoran.createClient({
 })
 
 local response = sonoran.cad:createRecordV2({
-    // See the request body above for the full record payload shape.
-    recordTypeId = 12,
     communityUserId = 'player-1234',
-    record = {},
+    useDictionary = true,
+    recordTypeId = 12,
+    replaceValues = {
+        ["{{case_number}}"] = "SC-2026-001"
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -144,10 +163,12 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 After getting the Lua export client:
 ```lua
 local response = cad:createRecordV2({
-    // See the request body above for the full record payload shape.
-    recordTypeId = 12,
-    apiId = '1234567890',
-    record = {},
+    communityUserId = 'player-1234',
+    useDictionary = true,
+    recordTypeId = 5,
+    replaceValues = {
+        ["{{plate}}"] = "ABC123"
+    },
   })
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -169,10 +190,12 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
   });
 
   const response = await instance.cad.createRecordV2({
-    // See the request body above for the full record payload shape.
-    recordTypeId: 12,
     communityUserId: 'player-1234',
-    record: {},
+    useDictionary: true,
+    recordTypeId: 12,
+    replaceValues: {
+      '{{case_number}}': 'SC-2026-001',
+    },
   });
   console.log(response);
 })();
@@ -192,10 +215,12 @@ instance = Instance(
 )
 
 response = instance.cad.createRecordV2({
-    # See the request body above for the full record payload shape.
-    recordTypeId: 12,
     "communityUserId": 'player-1234',
-    "record": {},
+    "useDictionary": True,
+    "recordTypeId": 12,
+    "replaceValues": {
+        "{{case_number}}": "SC-2026-001"
+    },
   })
 
 print(response.success)
@@ -219,6 +244,7 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.createRecordV2(new CreateRecordV2Request
 {
     AccountUuid = "00000000-0000-0000-0000-000000000000",
+    UseDictionary = true,
     RecordTypeId = 12,
     ReplaceValues = new Dictionary<string, string>
     {
@@ -238,7 +264,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Create Record"
   version: "1.0.0"
-  description: "Create a new custom record using a raw record payload or template replacement values."
+  description: "Create a new custom record using template replacement values."
 servers:
   -
     url: "https://api.sonorancad.com"
