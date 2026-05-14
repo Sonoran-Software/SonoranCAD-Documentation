@@ -19,7 +19,7 @@ Users can get the Pager Reborn resource from Inferno Collection.
 
 This resource is managed through Tebex and will require you to login with FiveM. Be sure to login **using the account that has the keymaster license** for your server.
 
-Once purchased you can [download the resource from the CFX.re portal](https://portal.cfx.re/assets/granted-assets?search=Station+Alert).
+Once purchased you can [download the resource from the CFX.re portal](https://portal.cfx.re/assets/granted-assets?search=Pager+Reborn).
 
 ### 2. Install the Resource <a href="#id-2.-install-the-resource" id="id-2.-install-the-resource"></a>
 
