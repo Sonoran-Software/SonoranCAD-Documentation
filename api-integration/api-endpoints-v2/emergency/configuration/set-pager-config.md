@@ -241,6 +241,7 @@ print(response.data if response.success else response.reason)
 ~~~csharp
 // dotnet add package Sonoran.Net
 // For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab; .NET creates a fresh client from convars.
+using System.Collections.Generic;
 using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
@@ -254,10 +255,11 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
 var response = await sonoran.Cad.setPagerConfigV2(new SetPagerConfigV2Request
 {
     ServerId = 1,
-    NatureWords = new[]
+    NatureWords = new Dictionary<string, string>
     {
-        new PagerNatureWordV2 { Label = "Emergency", Weight = 100 },
-        new PagerNatureWordV2 { Label = "Non-Emergency", Weight = 50 }
+        ["Emergency"] = "Emergency",
+        ["NonEmergency"] = "Non-Emergency",
+        ["Administrative"] = "Administrative"
     },
     MaxAddresses = 5,
     MaxBodyLength = 250,
@@ -265,10 +267,14 @@ var response = await sonoran.Cad.setPagerConfigV2(new SetPagerConfigV2Request
     {
         new PagerNodeV2
         {
-            Label = "Fire",
-            Department = "Fire",
-            Subdivision = "Suppression",
-            Tones = new[] { "FIRE-01" }
+            Id = "root-1",
+            Name = "Fire",
+            Description = "Fire services",
+            Permission = "fire",
+            Address = "FIRE-01",
+            ShortCode = "F1",
+            Kind = "group",
+            Children = []
         }
     }
 });
@@ -329,14 +335,15 @@ paths:
               maxAddresses: 5
               maxBodyLength: 250
               nodes:
-                id: "root-1"
-                name: "Fire"
-                description: "Fire services"
-                permission: "fire"
-                address: "FIRE-01"
-                shortCode: "F1"
-                kind: "group"
-                children: null
+                -
+                  id: "root-1"
+                  name: "Fire"
+                  description: "Fire services"
+                  permission: "fire"
+                  address: "FIRE-01"
+                  shortCode: "F1"
+                  kind: "group"
+                  children: []
 components:
   securitySchemes:
     bearerAuth:
@@ -386,4 +393,3 @@ Successful requests return `application/json`.
   "serverId": 1
 }
 ```
-
