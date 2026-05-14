@@ -14,6 +14,16 @@ This third-party resource from Inferno Collection is provided **free** only with
 If your community is not on the **Pro** version, you may still purchase the paid resource from Inferno Collection to use with any version of Sonoran CAD.
 {% endhint %}
 
+## Promotional Video
+
+<details>
+
+<summary>Promotional Video</summary>
+
+{% embed url="https://www.youtube.com/watch?v=V0MBgqLFetA" %}
+
+</details>
+
 ## Installation Guide
 
 ### 1. Download the Resource
