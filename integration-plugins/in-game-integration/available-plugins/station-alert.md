@@ -8,8 +8,10 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/station_alert_promo.png" alt=""><figcaption><p>Sonoran CAD x Inferno Collection</p></figcaption></figure>
 
-{% hint style="info" %}
-Station Alert is an officially integrated third-party resource from Inferno Collection and is not included in the Sonoran CAD FiveM resource.
+{% hint style="warning" %}
+This third-party resource from Inferno Collection is provided **free** only with the **Pro** version of Sonoran CAD and is a **separate download**.
+
+If your community is not on the **Pro** version, you may still purchase the paid resource from Inferno Collection to use with any version of Sonoran CAD.
 {% endhint %}
 
 ## Installation Guide

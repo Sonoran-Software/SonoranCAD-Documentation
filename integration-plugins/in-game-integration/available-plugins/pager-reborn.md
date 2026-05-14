@@ -8,6 +8,12 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/pager_reborn_promo_x.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+This third-party resource from Inferno Collection is provided **free** only with the **Pro** version of Sonoran CAD and is a **separate download**.
+
+If your community is not on the **Pro** version, you may still purchase the paid resource from Inferno Collection to use with any version of Sonoran CAD.
+{% endhint %}
+
 ## Installation Guide <a href="#installation-guide" id="installation-guide"></a>
 
 ### 1. Download the Resource <a href="#id-1.-download-the-resource" id="id-1.-download-the-resource"></a>
