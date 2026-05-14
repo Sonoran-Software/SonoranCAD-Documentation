@@ -113,7 +113,7 @@ end
 Returns the global `UnitCache` table containing unit data.
 
 ```lua
-exports['sonorancad']:GetUnitCache(includeDispatchers)
+exports['sonorancad']:GetUnitCache(includeDispatchers, callback)
 ```
 
 {% tabs %}
@@ -121,10 +121,11 @@ exports['sonorancad']:GetUnitCache(includeDispatchers)
 | Parameter            | Type      | Description                                    |
 | -------------------- | --------- | ---------------------------------------------- |
 | `includeDispatchers` | `boolean` | Include an array of active dispatchers as well |
+| `callback`           | `function` | Optional callback that receives `unitCache, dispatchers`. Use this when calling the export from another CFX runtime or when callback-style handling is preferred. |
 {% endtab %}
 
 {% tab title="Returns" %}
-<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li><li>If <code>includeDispatchers</code> is <code>true</code>, will return <code>arg1</code> - Standard <code>UnitCache</code> table, <code>arg2</code>- Array of dispatchers online. If <code>false</code> will only return standard <code>UnitCache</code> array. </li><li>Dispatchers will be shown regardless if they are in-game or not. To check if a dispatcher is also in-game use the <code>isInGame</code> flag (<code>boolean</code>) on the unit</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="122">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>table</code> </td><td><ul><li>The entire <code>UnitCache</code> table, which stores unit-related data.</li><li>If <code>UnitCache</code> is empty or uninitialized, an empty table is returned.</li><li>If <code>includeDispatchers</code> is <code>true</code>, will return <code>arg1</code> - Standard <code>UnitCache</code> table, <code>arg2</code>- Array of dispatchers online. If <code>false</code> will only return standard <code>UnitCache</code> array. </li><li>When <code>callback</code> is provided, the same values are passed to the callback as <code>unitCache, dispatchers</code>. If <code>includeDispatchers</code> is <code>false</code>, the callback receives an empty dispatcher table for the second argument.</li><li>Dispatchers will be shown regardless if they are in-game or not. To check if a dispatcher is also in-game use the <code>isInGame</code> flag (<code>boolean</code>) on the unit</li></ul></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Example Usage" %}
@@ -152,9 +153,17 @@ if next(dispatchers) then
 else
     print("There are no dispatchers online.")
 end 
+
+-- Callback usage is recommended for resources that need callback-style CFX exports
+exports['sonorancad']:GetUnitCache(true, function(unitCache, dispatchers)
+    print("Received cached units:", json.encode(unitCache))
+    print("Received cached dispatchers:", json.encode(dispatchers))
+end)
 ```
 {% endtab %}
 {% endtabs %}
+
+For in-game integrations, `GetUnitCache` is the preferred way to read active CAD unit data from another server resource. It reads SonoranCADFiveM's local real-time cache, so it is not limited by the public v2 API request limit and can be called repeatedly by your resource. If you are building an external service outside of FiveM, use the v2 [Get Active Units](../../../api-integration/api-endpoints-v2/emergency/units/get-active-units.md) API endpoint instead.
 
 Each cached unit payload now includes `unit.data.communityUserId` when the CAD account was linked through the v2 community link flow. That gives third-party resources a stable way to map a CAD unit or push event back to an in-game player without relying on legacy API IDs.
 
