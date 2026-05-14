@@ -18,7 +18,7 @@ If your community is not on the **Pro** version, you may still purchase the paid
 
 <details>
 
-<summary>Promotional Video</summary>
+<summary>Watch the Promotional Video</summary>
 
 {% embed url="https://www.youtube.com/watch?v=V0MBgqLFetA" %}
 
