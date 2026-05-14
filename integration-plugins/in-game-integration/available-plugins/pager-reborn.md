@@ -8,13 +8,9 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/pager_reborn_promo_x.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-This resource is coming soon!
-{% endhint %}
+## Installation Guide <a href="#installation-guide" id="installation-guide"></a>
 
-### Installation Guide <a href="#installation-guide" id="installation-guide"></a>
-
-#### 1. Download the Resource <a href="#id-1.-download-the-resource" id="id-1.-download-the-resource"></a>
+### 1. Download the Resource <a href="#id-1.-download-the-resource" id="id-1.-download-the-resource"></a>
 
 Users can get the Pager Reborn resource from Inferno Collection.
 
@@ -25,13 +21,13 @@ This resource is managed through Tebex and will require you to login with FiveM.
 
 Once purchased you can [download the resource from the CFX.re portal](https://portal.cfx.re/assets/granted-assets?search=Station+Alert).
 
-#### 2. Install the Resource <a href="#id-2.-install-the-resource" id="id-2.-install-the-resource"></a>
+### 2. Install the Resource <a href="#id-2.-install-the-resource" id="id-2.-install-the-resource"></a>
 
 We suggest installing the `inferno-pager-reborn` folder within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below:
 
-**TODO**
+<figure><img src="../../../.gitbook/assets/image (452).png" alt="" width="363"><figcaption></figcaption></figure>
 
-#### 3. Start the Resource <a href="#id-3.-start-the-resource" id="id-3.-start-the-resource"></a>
+### 3. Start the Resource <a href="#id-3.-start-the-resource" id="id-3.-start-the-resource"></a>
 
 In your `server.cfg` add the following new lines:
 
@@ -40,12 +36,53 @@ exec @inferno-pager-reborn/config.cfg
 ensure inferno-pager-reborn
 ```
 
-#### 4. Configuration Options <a href="#id-4.-configuration-options" id="id-4.-configuration-options"></a>
+### 4. Configuration Options <a href="#id-4.-configuration-options" id="id-4.-configuration-options"></a>
 
-Information on adding stations, lights, speakers, and more can be found in the [quick start guide](https://docs.inferno-collection.com/resources/pager-reborn/).
+#### Create a Pager Network
 
-The [configuration documentation](https://docs.inferno-collection.com/resources/pager-reborn/config) provides further customization options.
+Before using the resource you will need to create a pager network under **Admin** > **Customization** > **Inferno Pagers**
+
+Your configuration will automatically save after closing the popup modal.
+
+<div><figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.31.12 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.31.45 PM.png" alt=""><figcaption></figcaption></figure></div>
+
+[Learn more about creating a pager network here.](https://docs.inferno-collection.com/resources/pager-reborn/developers/start-here/)
+
+#### In-Game Usage
+
+[View the Usage Quick Start Guide](https://docs.inferno-collection.com/resources/pager-reborn/usage/quick-start) to learn how to use the pager in-game.
+
+#### Resource Configuration
+
+[The configuration documentation](https://docs.inferno-collection.com/resources/pager-reborn/config) provides further customization options.
 
 ## Usage
 
-**TODO**
+### In-CAD
+
+Access the **Inferno Pager** panel under **Unit Management** > **Inferno Pager**
+
+**Addresses**
+
+* Select specific pager nodes from the network to send the page to.
+
+**Units**
+
+* Optionally select specific units to page directly in-game.
+* Active units can also be dragged-and-dropped into the pager panel.
+
+**Type**
+
+* Select the pager type of **Emergency**, **Non-Emergency**, or **Administrative**.
+
+**Body**
+
+* Enter the text to send to units in-game.
+
+<div><figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.33.52 PM.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.35.26 PM.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+### In-Game
+
+Units in-game will receive the page with audio alerts.
+
+<figure><img src="../../../.gitbook/assets/image (453).png" alt="" width="375"><figcaption></figcaption></figure>
