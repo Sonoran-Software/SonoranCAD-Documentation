@@ -19,7 +19,7 @@ Link a sync-character ID to a community user or account.
 
 ## Request Body
 
-Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid`.
+Use `communityUserId` by default, or provide exactly one of `roblox`, `discord`, or `accountUuid`.
 
 ```json
 {
@@ -218,6 +218,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              discord: "123456789012345678"
 components:
   securitySchemes:
     bearerAuth:

@@ -13,7 +13,7 @@ Set the selected character or selected sync character for an account.
 
 ## Request Body
 
-Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid`.
+Use `communityUserId` by default, or provide exactly one of `roblox`, `discord`, or `accountUuid`.
 
 ```json
 {
@@ -208,6 +208,7 @@ paths:
               type: "object"
             example:
               communityUserId: "player-1234"
+              discord: "123456789012345678"
               characterId: "1042"
 components:
   securitySchemes:

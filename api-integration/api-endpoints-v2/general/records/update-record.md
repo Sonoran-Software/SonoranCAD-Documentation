@@ -21,7 +21,7 @@ Update a custom record using template replacement values.
 
 The recommended path is to set `useDictionary` to `true`, provide the target `templateId`, and pass `replaceValues` keyed by the template field placeholders. This avoids rebuilding the full record section and field structure.
 
-Advanced integrations may provide a full `record` object instead of `useDictionary`, `templateId`, and `replaceValues`, but this is not recommended unless you need full control over the raw record payload. When an account target is needed for the update flow, use `communityUserId` by default, or provide `roblox` or `accountUuid`.
+Advanced integrations may provide a full `record` object instead of `useDictionary`, `templateId`, and `replaceValues`, but this is not recommended unless you need full control over the raw record payload. When an account target is needed for the update flow, use `communityUserId` by default, or provide `roblox`, `discord`, or `accountUuid`.
 
 ```json
 {

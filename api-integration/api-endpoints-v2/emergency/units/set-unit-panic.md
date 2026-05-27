@@ -9,7 +9,7 @@ description: Set panic state for one or more identifiers.
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
+Set the panic state for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -19,7 +19,7 @@ Set the panic state for one or more identifiers resolved by `communityUserId`, `
 
 ## Request Body
 
-Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ```json
 {

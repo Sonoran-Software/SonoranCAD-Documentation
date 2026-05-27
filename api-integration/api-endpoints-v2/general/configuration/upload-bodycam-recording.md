@@ -34,8 +34,10 @@ Use standard v2 bearer authentication:
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | `file` | file | Yes | A single `.webm` clip to upload. |
-| `accountUuid` | string | Conditionally | Account UUID that owns the recording. Provide exactly one of `accountUuid` or `communityUserId`. |
-| `communityUserId` | string | Conditionally | Community user ID that owns the recording. Provide exactly one of `accountUuid` or `communityUserId`. |
+| `accountUuid` | string | Conditionally | Account UUID that owns the recording. Provide exactly one of `accountUuid`, `communityUserId`, `roblox`, or `discord`. |
+| `communityUserId` | string | Conditionally | Community user ID that owns the recording. Provide exactly one of `accountUuid`, `communityUserId`, `roblox`, or `discord`. |
+| `roblox` | integer | Conditionally | Roblox user ID linked to the account that owns the recording. Provide exactly one target identifier. |
+| `discord` | string | Conditionally | Discord user ID linked to the account that owns the recording. Provide exactly one target identifier. |
 | `durationMs` | number | Yes | Clip duration in milliseconds. Must be between `1` and `120000`. |
 | `identId` | number | No | Identifier ID associated with the clip. |
 | `unitNumber` | string | No | Unit number to store with the recording metadata. |
@@ -332,7 +334,7 @@ Successful requests return the uploaded file URL list.
 ## Common Errors
 
 ```http
-Provide exactly one of accountUuid or communityUserId.
+Provide exactly one of `accountUuid`, `communityUserId`, `roblox`, or `discord`.
 Account USER_ACCOUNT_UUID was not found in this community.
 File exceeds 6000000 bytes.
 Bodycam uploads must be webm files.

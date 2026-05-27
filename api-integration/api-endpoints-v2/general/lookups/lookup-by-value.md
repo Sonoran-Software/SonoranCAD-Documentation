@@ -13,7 +13,7 @@ Search records by a typed lookup value.
 
 ## Request Body
 
-Optional notification routing supports `notifyCommunityUserId` by default or `notifyAccountUuid`.
+Optional notification routing supports `notifyCommunityUserId` by default, or `notifyRoblox`, `notifyDiscord`, or `notifyAccountUuid`.
 
 ```json
 {

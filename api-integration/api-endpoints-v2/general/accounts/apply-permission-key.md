@@ -1,5 +1,5 @@
 ---
-description: Apply a permission key to an account resolved by community user ID or linked Roblox ID.
+description: Apply a permission key to an account resolved by community user ID, linked Roblox ID, or linked Discord ID.
 ---
 
 # Apply Permission Key
@@ -9,11 +9,11 @@ description: Apply a permission key to an account resolved by community user ID 
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Apply a Sonoran CAD permission key to the account linked to a community user ID or linked Roblox ID.
+Apply a Sonoran CAD permission key to the account linked to a community user ID, linked Roblox ID, or linked Discord ID.
 
 ## Request Body
 
-Use `communityUserId` by default, or provide `roblox` to target the account linked to that Roblox user ID.
+Use `communityUserId` by default, or provide `roblox` or `discord` to target the account linked to that external account ID.
 
 ```json
 {
@@ -176,7 +176,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Apply Permission Key"
   version: "1.0.0"
-  description: "Apply a permission key to an account resolved by community user ID or linked Roblox ID."
+  description: "Apply a permission key to an account resolved by community user ID, linked Roblox ID, or linked Discord ID."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -213,6 +213,7 @@ paths:
             example:
               communityUserId: "player-1234"
               roblox: 123456789
+              discord: "123456789012345678"
               permissionKey: "YOUR_PERMISSION_KEY"
 components:
   securitySchemes:

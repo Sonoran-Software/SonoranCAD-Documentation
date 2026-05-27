@@ -1,5 +1,5 @@
 ---
-description: Force a unit offline by community user ID or linked Roblox ID.
+description: Force a unit offline by community user ID, linked Roblox ID, or linked Discord ID.
 ---
 
 # Kick Unit
@@ -11,7 +11,7 @@ Legacy compatibility is also available with <mark style="color:red;">`DELETE`</m
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Force the currently selected identifier for a community user ID or linked Roblox ID offline.
+Force the currently selected identifier for a community user ID, linked Roblox ID, or linked Discord ID offline.
 
 ## Path Parameters
 
@@ -21,7 +21,7 @@ Force the currently selected identifier for a community user ID or linked Roblox
 
 ## Request Body
 
-Use `communityUserId` by default, or provide `roblox` to target the unit through the linked Roblox account.
+Use `communityUserId` by default, or provide `roblox` or `discord` to target the unit through a linked external account.
 
 This route accepts either a single kick request object or an array of kick request objects. SDK helpers currently send a single object over `POST`. Raw HTTP integrations may batch multiple kick requests in one call.
 
@@ -192,7 +192,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Kick Unit"
   version: "1.0.0"
-  description: "Force a unit offline by community user ID or linked Roblox ID."
+  description: "Force a unit offline by community user ID, linked Roblox ID, or linked Discord ID."
 servers:
   -
     url: "https://api.sonorancad.com"

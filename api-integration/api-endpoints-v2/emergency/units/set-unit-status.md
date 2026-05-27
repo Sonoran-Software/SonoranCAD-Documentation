@@ -9,7 +9,7 @@ description: Set status for one or more identifiers.
 > **Rate limit:** `30 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
+Set a new unit status for one or more identifiers resolved by `communityUserId`, `communityUserIds`, `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -19,13 +19,14 @@ Set a new unit status for one or more identifiers resolved by `communityUserId`,
 
 ## Request Body
 
-Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 | `communityUserId` | string | No | Updates all active identifiers for one linked community user. |
 | `communityUserIds` | array of strings | No | Updates all active identifiers for multiple linked community users. |
 | `roblox` | integer | No | Updates all active identifiers for the account linked to the Roblox user ID. |
+| `discord` | string | No | Updates all active identifiers for the account linked to the Discord user ID. |
 | `accountUuid` | string (uuid) | No | Updates all active identifiers for the target account. |
 | `identIds` | array of integers | No | Directly target one or more identifier IDs. |
 | `status` | integer | Yes | Unit status enum. See `UNIT_STATUS` below. |

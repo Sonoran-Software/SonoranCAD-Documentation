@@ -13,7 +13,7 @@ Kick an account from the community or apply a community ban.
 
 ## Request Body
 
-Use `communityUserId` by default. You can also provide exactly one of `accountUuid` or `roblox`.
+Use `communityUserId` by default. You can also provide exactly one of `accountUuid`, `roblox`, or `discord`.
 
 ```json
 {

@@ -9,7 +9,7 @@ description: Assign one or more identifiers to a group on a server.
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `roblox`, `accountUuid`, or `identIds`.
+Assign one or more identifiers to a group by `communityUserId`, `communityUserIds`, `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ## Path Parameters
 
@@ -20,7 +20,7 @@ Assign one or more identifiers to a group by `communityUserId`, `communityUserId
 
 ## Request Body
 
-Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
+Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ```json
 {
