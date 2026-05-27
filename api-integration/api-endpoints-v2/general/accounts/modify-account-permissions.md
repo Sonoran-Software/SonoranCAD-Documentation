@@ -13,7 +13,7 @@ Update permissions for a community account and optionally set its active status.
 
 ## Request Body
 
-Use `communityUserId` by default. You can also provide exactly one of `roblox`, `accountUuid`, or `username`.
+Use `communityUserId` by default. You can also provide exactly one of `roblox`, `discord`, `accountUuid`, or `username`.
 
 ```json
 {

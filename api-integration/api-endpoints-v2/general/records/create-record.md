@@ -13,7 +13,7 @@ Create a custom record for a target account.
 
 ## Request Body
 
-Use `communityUserId` by default, or provide exactly one of `roblox` or `accountUuid` as the target user.
+Use `communityUserId` by default, or provide exactly one of `roblox`, `discord`, or `accountUuid` as the target user.
 
 The recommended path is to set `useDictionary` to `true`, provide the target `recordTypeId`, and pass `replaceValues` keyed by the template field placeholders. This avoids building the full record section and field structure yourself.
 

@@ -19,7 +19,7 @@ Detach identifiers or a group from any currently attached dispatch call.
 
 ## Request Body
 
-Provide either `groupName` or one or more identifier targets. Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `accountUuid`, or `identIds`.
+Provide either `groupName` or one or more identifier targets. Use `communityUserId` or `communityUserIds` by default, or provide `roblox`, `discord`, `accountUuid`, or `identIds`.
 
 ```json
 {

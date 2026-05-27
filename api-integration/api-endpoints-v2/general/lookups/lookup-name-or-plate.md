@@ -13,7 +13,7 @@ Search records by name and plate values.
 
 ## Request Body
 
-Optional notification routing supports `notifyCommunityUserId` by default or `notifyAccountUuid`.
+Optional notification routing supports `notifyCommunityUserId` by default, or `notifyRoblox`, `notifyDiscord`, or `notifyAccountUuid`.
 
 Send either a name search using `first`, `last`, and optional `mi`, or send a `plate` search. Unused fields may be omitted or left blank, but at least one name or plate value must be provided.
 

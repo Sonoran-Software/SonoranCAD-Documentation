@@ -13,7 +13,7 @@ Build a draft record from a template and, when a target account is provided, sen
 
 ## Request Body
 
-You can optionally route the draft to a connected user with `communityUserId` by default, or with `roblox` or `accountUuid`.
+You can optionally route the draft to a connected user with `communityUserId` by default, or with `roblox`, `discord`, or `accountUuid`.
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-description: Retrieve linked sync-character IDs for a community user, linked Roblox user, or account.
+description: Retrieve linked sync-character IDs for a community user, linked Roblox user, linked Discord user, or account.
 ---
 
 # Get Character Links
@@ -9,7 +9,7 @@ description: Retrieve linked sync-character IDs for a community user, linked Rob
 > **Rate limit:** `10 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Retrieve linked sync-character IDs for a community user, linked Roblox user, or account.
+Retrieve linked sync-character IDs for a community user, linked Roblox user, linked Discord user, or account.
 
 ## Query Parameters
 
@@ -17,6 +17,7 @@ Retrieve linked sync-character IDs for a community user, linked Roblox user, or 
 | --- | --- | --- | --- |
 | `communityUserId` | string | Optional | Default target option for the in-game community user ID. Provide exactly one identifier. |
 | `roblox` | integer | Optional | Target the account linked to a Roblox user ID. Provide exactly one identifier. |
+| `discord` | string | Optional | Target the account linked to a Discord user ID. Provide exactly one identifier. |
 | `accountUuid` | string (uuid) | Optional | Target account UUID. Provide exactly one identifier. |
 
 ## Example Request
@@ -168,7 +169,7 @@ openapi: "3.0.3"
 info:
   title: "Sonoran CAD v2 - Get Character Links"
   version: "1.0.0"
-  description: "Retrieve linked sync-character IDs for a community user, linked Roblox user, or account."
+  description: "Retrieve linked sync-character IDs for a community user, linked Roblox user, linked Discord user, or account."
 servers:
   -
     url: "https://api.sonorancad.com"
@@ -203,6 +204,13 @@ paths:
           in: "query"
           schema:
             type: "integer"
+          required: false
+        -
+          description: "Target the account linked to a Discord user ID. Provide exactly one identifier."
+          name: "discord"
+          in: "query"
+          schema:
+            type: "string"
           required: false
         -
           description: "Target account UUID. Provide exactly one identifier."

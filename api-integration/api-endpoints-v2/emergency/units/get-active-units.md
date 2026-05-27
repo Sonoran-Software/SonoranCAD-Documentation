@@ -57,6 +57,8 @@ print(response.success)
 {% tab title="SonoranCADFiveM" %}
 Use this tab only when calling the v2 API from the server side of an in-game FiveM resource.
 
+For in-game resources that only need current active CAD units, use SonoranCADFiveM's [`GetUnitCache`](../../../../integration-plugins/in-game-integration/framework-development-documentation/server-functions.md#getunitcache) export instead of polling this endpoint. The export reads the local real-time unit cache, supports callback-style usage from other CFX runtimes, and is not limited by this endpoint's API rate limit.
+
 * **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to get the ready CAD client.
 * **Sonoran.Net:** FiveM exports do not return a .NET client. Read the Sonoran CAD convars and create a fresh client.
 * **Sonoran.py:** FiveM does not run Python resources; use the Python tab for external integrations.

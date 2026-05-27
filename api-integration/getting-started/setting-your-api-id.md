@@ -4,7 +4,7 @@ description: Learn how to map in-game players to Sonoran CAD users with unique i
 
 # Map Players to CAD Users
 
-Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. There are three main ways to do that.
+Your integration must be able to tell Sonoran CAD which account an in-game player belongs to. There are four main ways to do that.
 
 ## Option 1: `communityUserId`
 
@@ -47,7 +47,13 @@ After the account is linked, use the `roblox` parameter on supported v2 endpoint
 
 This is the preferred approach for Roblox-based integrations because it targets the linked Roblox account directly.
 
-## Option 3: account secret key to `accountUuid`
+## Option 3: Discord account linking
+
+Use Discord account linking when the player's Discord identity is already the source of truth for your integration.
+
+Players can link their Discord account directly to their Sonoran account through OAuth. After the account is linked, use the `discord` parameter on supported v2 endpoints instead of `communityUserId`.
+
+## Option 4: account secret key to `accountUuid`
 
 Use an account secret key when you already have a trusted Sonoran account secret and need to resolve it to the user's Sonoran account UUID.
 
@@ -65,4 +71,4 @@ Use the following endpoint to verify the secret ID and get the user's Sonoran ac
 
 You can then use `accountUuid` on supported v2 endpoints.
 
-Support for `accountUuid` is more limited than `communityUserId` or `roblox`, so this should usually be treated as a fallback rather than your primary mapping strategy. Reach out to our development team if more expansion is required for your application.
+Support for `accountUuid` is more limited than `communityUserId`, `roblox`, or `discord`, so this should usually be treated as a fallback rather than your primary mapping strategy. Reach out to our development team if more expansion is required for your application.

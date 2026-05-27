@@ -13,7 +13,7 @@ Send a photo URL to every active connection linked to a community user ID.
 
 ## Request Body
 
-Use `communityUserId` to target the account that should receive the photo.
+Use `communityUserId` by default, or provide `roblox` or `discord` to target the linked account that should receive the photo.
 
 ```json
 {
