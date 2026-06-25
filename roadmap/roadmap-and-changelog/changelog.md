@@ -17,6 +17,10 @@ description: View the latest changes to Sonoran CAD!
 UI Customization Overhaul
 
 * Revamped the entire emergency services panel UI with new customization options, theme editor, custom layout system, and more.
+
+Record Lookup Optimizations
+
+* Major overhauls for the record lookup systems, vastly improving performance for communities with hundreds of thousands of records. Supervisor panels no longer limit the number of records visible, in-game tablet performance has been improved, and more.
 {% endtab %}
 {% endtabs %}
 
