@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.0 06/25/2026
+
+{% tabs %}
+{% tab title="New" %}
+UI Customization Overhaul
+
+* Revamped the entire emergency services panel UI with new customization options, theme editor, custom layout system, and more.
+{% endtab %}
+{% endtabs %}
+
 ### 3.42.2 04/30/2026
 
 {% tabs %}
