@@ -942,6 +942,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Restore the referenced postal file, validate its JSON, and confirm the configured filename is correct.
 
+#### ERR-LOC-106
+
+**Key:** `POSTALS_LOOKUP_FAILED`
+
+**What it means:** Client-side postal lookup failed at runtime, but SonoranCAD continued sending location updates without a postal prefix.
+
+**How to fix it:** Check the configured postal resource or custom postal file for runtime errors, malformed data, or missing exports.
+
 ### Record Printer Errors
 
 #### ERR-RP-101
