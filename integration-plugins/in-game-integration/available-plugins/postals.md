@@ -45,6 +45,10 @@ nearestPostalResourceName should **ONLY** be filled out if you're using [our spe
 
 ## Usage
 
+{% hint style="info" %}
+If the configured postal resource or custom postal data is unavailable at runtime, SonoranCAD will now continue sending regular street names and coordinate-based location updates without a postal prefix. Check the troubleshooting error codes `ERR-LOC-104`, `ERR-LOC-105`, and `ERR-LOC-106` if postal data is missing or failing.
+{% endhint %}
+
 ### Using [Nearest-Postal](https://forum.cfx.re/t/release-nearest-postal-script/293511)
 
 {% hint style="warning" %}
@@ -80,6 +84,14 @@ Additionally, you will need to edit the config to set `mode` to `event`, then sp
 Need help? You can always [hire a developer](https://support.sonoransoftware.com/#/).
 
 ## Troubleshooting
+
+If postal lookup fails, location updates for units will still continue using normal street/location data. Postal-specific failures now surface through the troubleshooting codes below instead of stopping all location updates:
+
+- `ERR-LOC-104`: postal resource unavailable
+- `ERR-LOC-105`: configured postal file missing or invalid
+- `ERR-LOC-106`: postal lookup failed at runtime
+
+See the [FiveM error codes reference](../fivem-installation/troubleshooting/error-codes.md) for the full descriptions and recommended fixes.
 
 ### The configured postals file (postals\_file.json) was not found
 
