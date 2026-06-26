@@ -10,6 +10,44 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.2 06/25/2026
+
+{% tabs %}
+{% tab title="New" %}
+Lookup Panels - Tablet Size
+
+* Updated the civilian and record panel inside the lookup section to have a maximum height and the option to collapse the panels
+
+Customization - Font Size
+
+* Added significantly larger font size options
+{% endtab %}
+
+{% tab title="Changed" %}
+Lookup Tab - Search Types
+
+* Search types expansion area in the lookup panel is now collapsed by default
+{% endtab %}
+
+{% tab title="Fixed" %}
+Preview Fields - Record IDs
+
+* Fixed an issue with record IDs showing as NEW in the preview fields
+
+Live Map - Postal Search
+
+* Fixed an issue with live map postal search not working (FiveM resource restart required)
+
+Custom Layout - Outdated Cache
+
+* Fixed an issue causing some users to load their old custom layouts, mixing with the new system in strange ways
+
+Active Calls - Refresh
+
+* Fixed an issue with active calls list spam reloading in some cases
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.0 06/25/2026
 
 {% tabs %}
