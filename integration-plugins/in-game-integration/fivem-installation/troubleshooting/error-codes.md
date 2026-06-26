@@ -274,6 +274,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** If you are seeing this routinely, contact your server host. Check the server host, firewall, proxy, or upstream network connection for connection setup delays or blocked outbound traffic.
 
+#### ERR-CORE-035
+
+**Key:** `CAD_RECORD_UNIQUE_CONFLICT`
+
+**What it means:** A CAD record create or edit request failed because one of the fields marked unique already has the same value on another record.
+
+**How to fix it:** Find the unique field value in the record payload, choose a value that is not already used, or update the existing CAD record instead of creating a duplicate.
+
 #### ERR-CORE-900
 
 **Key:** `UNHANDLED_SERVER_ERROR`
