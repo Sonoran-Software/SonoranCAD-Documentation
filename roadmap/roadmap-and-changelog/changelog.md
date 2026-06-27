@@ -10,6 +10,42 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.3 06/26/2026
+
+{% tabs %}
+{% tab title="New" %}
+Desktop Layout: Live Map
+
+* Added live map support to the layout panels instead of only a dedicated tab
+
+Desktop Layout: Call Viewer
+
+* Added support for the call editor in the desktop layout system
+
+Themes: Save Layout
+
+* Themes now save desktop panel sizes and locations
+
+Call Viewer: Hotkey
+
+* Added a new desktop hotkey to open the dedicated call viewer tab
+
+Customization: Map Behavior
+
+* Added a customization behavior for opening the dedicated live map window vs desktop panel
+
+Customization: Call Behavior
+
+* Added a customization behavior for opening the dedicated call viewer window vs desktop panel
+{% endtab %}
+
+{% tab title="Changed" %}
+Customization: Settings
+
+* Removed the settings menu from the taskbar dropdown and moved them to the customization menu
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.2 06/25/2026
 
 {% tabs %}
