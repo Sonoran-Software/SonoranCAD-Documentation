@@ -10,6 +10,58 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.4 06/27/2026
+
+{% tabs %}
+{% tab title="New" %}
+Multiple Monitor Support
+
+* Added experimental support for multiple desktop screens for multi-monitor use when using the Windows or OSX application
+
+Call Viewer ID Hyperlink
+
+* Added a hyperlink to the call ID number in the call viewer, allowing users to quickly switch calls
+
+Panel Expand and Collapse
+
+* Added a double-click action to the custom layout panel header, allowing users to quickly expand and collapse a panel
+
+Layout Panels - Signal
+
+* Added support for the signal panel to be placed in custom layouts
+
+Layout Panels - Tone Board
+
+* Added support for the tone baord panel to be placed in custom layouts
+{% endtab %}
+
+{% tab title="Fixed" %}
+Call Viewer Layout - Units
+
+* Fixed an issue with the unit attachments not being available in the layout version of the call viewer
+
+Call Viewer Layout - Attachments
+
+* Fixed an issue with call note attachments not opening the record when in the layout version
+
+Record Viewer - ID
+
+* Fixed an issue with record IDs showing as -1 when opening the record
+
+Call Viewer - Description
+
+* Fixed resizing issues with the call editor description and overal layout for shorter screens
+
+Call Viewer Layout - Drag Unit Attachment
+
+* Fixed an issue where dragging a unit to the call viewer would open the full call viewer page
+
+Tasbkar - Subtask Overflow
+
+* Removed the visible scrollbar on the subtaskbar when items overflowed
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.3 06/26/2026
 
 {% tabs %}
