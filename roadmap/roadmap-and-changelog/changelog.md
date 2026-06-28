@@ -32,7 +32,7 @@ Layout Panels - Signal
 
 Layout Panels - Tone Board
 
-* Added support for the tone baord panel to be placed in custom layouts
+* Added support for the tone board panel to be placed in custom layouts
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -50,7 +50,7 @@ Record Viewer - ID
 
 Call Viewer - Description
 
-* Fixed resizing issues with the call editor description and overal layout for shorter screens
+* Fixed resizing issues with the call editor description and overall layout for shorter screens
 
 Call Viewer Layout - Drag Unit Attachment
 
