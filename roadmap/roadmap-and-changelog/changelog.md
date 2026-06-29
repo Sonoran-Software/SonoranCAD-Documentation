@@ -10,6 +10,42 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.5 06/29/2026
+
+{% tabs %}
+{% tab title="New" %}
+Live Map Optimizations
+
+* Optimized the FiveM 3D live map and added additional optimizations for both 3D live maps to keep it persistently loaded Saved Types
+
+Saved Types
+
+* Added a new option to keep the saved call types dropdown visible in the call editor Send Lookup to Unit
+
+Send Lookup to Unit
+
+* Re-added support to send lookups to units Theme - Undo Changes
+
+Theme - Undo Changes
+
+* Added a menu option to undo the unsaved changes to your current theme selection
+{% endtab %}
+
+{% tab title="Fixed" %}
+Multi-Monitor Close Error
+
+* Fixed an error popup happening whenever a multi-monitor window was closed Unit Event Subscription
+
+Unit Event Subscription
+
+* Fixed an issue where units would still be subscribed to updates, hearing things like panic toggles if they switched to the civilian page Tablet Size Drag-and-Drop
+
+Tablet Size Drag-and-Drop
+
+* Fixed an issue with users on the in-game tablet unable to drag-and-drop taskbar tabs to reorder if their tablet was too small
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.4 06/27/2026
 
 {% tabs %}
