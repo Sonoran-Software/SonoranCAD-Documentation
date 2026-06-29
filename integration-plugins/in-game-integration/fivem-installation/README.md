@@ -45,6 +45,8 @@ Extract the `.zip` file into your resources directory. Place the `[sonorancad]` 
 
 In your `server.cfg` file, simply add the following line:
 
+**This is the** 🌟**only**🌟 **line that you need to add to your `server.cfg` file. Do not ensure any other part of the resource.**
+
 ```
 exec @sonorancad/sonorancad.cfg
 ```
@@ -178,8 +180,8 @@ Or, run `sonorancad update` to instantly check and apply any updates for the fra
 
 The Sonoran CAD integration framework comes with several commands. These commands can be run in your server console to provide information, update submodules , and more.
 
-| Command             | Description                              |
-| ------------------- | ---------------------------------------- |
+| Command                | Description                              |
+| ---------------------- | ---------------------------------------- |
 | `sonorancad help`      | Display list of commands                 |
 | `sonorancad update`    | Run core/framework updater               |
 | `sonorancad debugmode` | Toggle debug mode on/off                 |
