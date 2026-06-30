@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.6 06/29/2026
+
+{% tabs %}
+{% tab title="New" %}
+Custom Layouts: Chat
+
+* Added support for the chat window in custom layouts.
+
+Custom Layouts: Recordings
+
+* Added support for the bodycam recordings window in custom layouts.
+
+Game Overlay Tab
+
+* Added a new taskbar tab to open the in-game overlay for desktop applications, making it more visible and easier to find.
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.5 06/29/2026
 
 {% tabs %}
