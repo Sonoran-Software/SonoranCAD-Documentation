@@ -1100,16 +1100,33 @@ paths:
               type: object
             example:
               signs:
-                id: 7
-                coordinates:
-                  x: 420.1
-                  y: -980.4
-                  z: 30.8
-                  w: 0.0
-                label: Mission Row
-                text1: Mission Row
-                text2: Integrity Way
-                text3: ''
+              - id: fantastic_pl_02
+                coords:
+                  x: 1608.6856689453126
+                  y: 1053.99560546875
+                  z: 88.4564208984375
+                rotation:
+                  x: 0.0
+                  y: 0.0
+                  z: 342.99212646484377
+                pack: base
+                label: Fantastic Place 2
+                model: sonoransign
+                controller: base.highway_text
+                theme: amber
+                enabled: true
+                layout:
+                  columns: 4
+                  rows: 3
+                  items:
+                  - id: line-1
+                    kind: line
+                    lineIndex: 0
+                    x: 1
+                    y: 0
+                    w: 2
+                    h: 1
+                    text: DRIVE SAFE
       tags:
       - Emergency / Configuration
   /v2/emergency/servers/{serverId}/street-signs:

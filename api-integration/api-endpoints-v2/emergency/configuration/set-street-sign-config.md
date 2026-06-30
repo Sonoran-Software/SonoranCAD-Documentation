@@ -11,6 +11,8 @@ description: Replace street sign configuration for a server.
 
 Replace the full street sign configuration for a server.
 
+Street sign configs are stored as the `signs` array for the server. Each sign object is stored in the format sent to this endpoint, including layout items, icon data, schedules, metadata, model, pack, controller, theme, coordinates, and rotation.
+
 ## Path Parameters
 
 | Name | Type | Description |
@@ -23,17 +25,112 @@ Replace the full street sign configuration for a server.
 {
   "signs": [
     {
-      "id": 7,
-      "coordinates": {
-        "x": 420.1,
-        "y": -980.4,
-        "z": 30.8,
-        "w": 0.0
+      "rotation": {
+        "x": 0.0,
+        "z": 342.99212646484377,
+        "y": 0.0
       },
-      "label": "Mission Row",
-      "text1": "Mission Row",
-      "text2": "Integrity Way",
-      "text3": ""
+      "pack": "base",
+      "label": "Fantastic Place 2",
+      "lastUpdated": 1782257236,
+      "schedules": [],
+      "iconSet": "",
+      "iconIds": [],
+      "metadata": [],
+      "enabled": true,
+      "controller": "base.highway_text",
+      "theme": "amber",
+      "lastUpdatedBy": "license:40dbccdf7f5e1e9b59f71518a3f58e23eb5a751c",
+      "variant": "",
+      "layout": {
+        "items": [
+          {
+            "id": "line-1",
+            "kind": "line",
+            "lineIndex": 0,
+            "x": 1,
+            "y": 0,
+            "w": 2,
+            "h": 1,
+            "text": "DRIVE SAFE"
+          },
+          {
+            "id": "icon-top-left",
+            "kind": "icon",
+            "lineIndex": 0,
+            "text": "",
+            "iconId": "warning",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "id": "icon-top-right",
+            "kind": "icon",
+            "lineIndex": 0,
+            "text": "",
+            "iconId": "warning",
+            "x": 3,
+            "y": 0,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "id": "line-2",
+            "kind": "line",
+            "lineIndex": 1,
+            "x": 1,
+            "y": 1,
+            "w": 2,
+            "h": 1,
+            "text": "LANE AHEAD"
+          },
+          {
+            "id": "line-3",
+            "kind": "line",
+            "lineIndex": 2,
+            "x": 1,
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "text": "BLOCKED"
+          },
+          {
+            "id": "icon-bottom-left",
+            "kind": "icon",
+            "lineIndex": 0,
+            "text": "",
+            "iconId": "warning",
+            "x": 0,
+            "y": 2,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "id": "icon-bottom-right",
+            "kind": "icon",
+            "lineIndex": 0,
+            "text": "",
+            "iconId": "warning",
+            "x": 3,
+            "y": 2,
+            "w": 1,
+            "h": 1
+          }
+        ],
+        "columns": 4,
+        "rows": 3
+      },
+      "id": "fantastic_pl_02",
+      "coords": {
+        "x": 1608.6856689453126,
+        "z": 88.4564208984375,
+        "y": 1053.99560546875
+      },
+      "createdBy": "license:40dbccdf7f5e1e9b59f71518a3f58e23eb5a751c",
+      "assetUrls": [],
+      "model": "sonoransign"
     }
   ]
 }
@@ -57,7 +154,7 @@ local sonoran = Sonoran.createClient({
 
 local response = sonoran.cad:setStreetSignConfigV2({
     // See the request body above for the full street sign shape.
-    { id = 1, coordinates = { x = 0, y = 0, z = 0, w = 0 }, label = 'Alta St' },
+    { id = "fantastic_pl_02", coords = { x = 1608.6856689453126, y = 1053.99560546875, z = 88.4564208984375 }, label = "Fantastic Place 2", model = "sonoransign" },
   }, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -110,7 +207,7 @@ After getting the Lua export client:
 ```lua
 local response = cad:setStreetSignConfigV2({
     // See the request body above for the full street sign shape.
-    { id = 1, coordinates = { x = 0, y = 0, z = 0, w = 0 }, label = 'Alta St' },
+    { id = "fantastic_pl_02", coords = { x = 1608.6856689453126, y = 1053.99560546875, z = 88.4564208984375 }, label = "Fantastic Place 2", model = "sonoransign" },
   }, 1)
 
 -- Inspect response.success, response.data, or response.reason as needed.
@@ -133,7 +230,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 
   const response = await instance.cad.setStreetSignConfigV2([
     // See the request body above for the full street sign shape.
-    { id: 1, coordinates: { x: 0, y: 0, z: 0, w: 0 }, label: 'Alta St' },
+    { id: 'fantastic_pl_02', coords: { x: 1608.6856689453126, y: 1053.99560546875, z: 88.4564208984375 }, label: 'Fantastic Place 2', model: 'sonoransign' },
   ], 1);
   console.log(response);
 })();
@@ -154,7 +251,7 @@ instance = Instance(
 
 response = instance.cad.setStreetSignConfigV2([
     # See the request body above for the full street sign shape.
-    { "id": 1, "coordinates": { "x": 0, "y": 0, "z": 0, "w": 0 }, "label": 'Alta St' },
+    { "id": "fantastic_pl_02", "coords": { "x": 1608.6856689453126, "y": 1053.99560546875, "z": 88.4564208984375 }, "label": "Fantastic Place 2", "model": "sonoransign" },
   ], 1)
 
 print(response.success)
@@ -180,15 +277,15 @@ var response = await sonoran.Cad.setStreetSignConfigV2(
     {
         new Dictionary<string, object?>
         {
-            ["id"] = 1,
-            ["coordinates"] = new Dictionary<string, object?>
+            ["id"] = "fantastic_pl_02",
+            ["coords"] = new Dictionary<string, object?>
             {
-                ["x"] = 0,
-                ["y"] = 0,
-                ["z"] = 0,
-                ["w"] = 0
+                ["x"] = 1608.6856689453126,
+                ["y"] = 1053.99560546875,
+                ["z"] = 88.4564208984375
             },
-            ["label"] = "Alta St"
+            ["label"] = "Fantastic Place 2",
+            ["model"] = "sonoransign"
         }
     },
     1
@@ -245,16 +342,33 @@ paths:
               type: "object"
             example:
               signs:
-                id: 7
-                coordinates:
-                  x: 420.1
-                  y: -980.4
-                  z: 30.8
-                  w: 0.0
-                label: "Mission Row"
-                text1: "Mission Row"
-                text2: "Integrity Way"
-                text3: ""
+                - id: "fantastic_pl_02"
+                  coords:
+                    x: 1608.6856689453126
+                    y: 1053.99560546875
+                    z: 88.4564208984375
+                  rotation:
+                    x: 0.0
+                    y: 0.0
+                    z: 342.99212646484377
+                  pack: "base"
+                  label: "Fantastic Place 2"
+                  model: "sonoransign"
+                  controller: "base.highway_text"
+                  theme: "amber"
+                  enabled: true
+                  layout:
+                    columns: 4
+                    rows: 3
+                    items:
+                      - id: "line-1"
+                        kind: "line"
+                        lineIndex: 0
+                        x: 1
+                        y: 0
+                        w: 2
+                        h: 1
+                        text: "DRIVE SAFE"
 components:
   securitySchemes:
     bearerAuth:
@@ -273,17 +387,45 @@ curl --request PUT \
   --data '{
   "signs": [
     {
-      "id": 7,
-      "coordinates": {
-        "x": 420.1,
-        "y": -980.4,
-        "z": 30.8,
-        "w": 0.0
+      "id": "fantastic_pl_02",
+      "coords": {
+        "x": 1608.6856689453126,
+        "y": 1053.99560546875,
+        "z": 88.4564208984375
       },
-      "label": "Mission Row",
-      "text1": "Mission Row",
-      "text2": "Integrity Way",
-      "text3": ""
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 342.99212646484377
+      },
+      "pack": "base",
+      "label": "Fantastic Place 2",
+      "model": "sonoransign",
+      "controller": "base.highway_text",
+      "theme": "amber",
+      "enabled": true,
+      "layout": {
+        "columns": 4,
+        "rows": 3,
+        "items": [
+          {
+            "id": "line-1",
+            "kind": "line",
+            "lineIndex": 0,
+            "x": 1,
+            "y": 0,
+            "w": 2,
+            "h": 1,
+            "text": "DRIVE SAFE"
+          }
+        ]
+      },
+      "lastUpdated": 1782257236,
+      "schedules": [],
+      "iconSet": "",
+      "iconIds": [],
+      "metadata": [],
+      "assetUrls": []
     }
   ]
 }'
