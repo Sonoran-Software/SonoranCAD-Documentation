@@ -954,9 +954,19 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **Key:** `POSTALS_LOOKUP_FAILED`
 
-**What it means:** Client-side postal lookup failed at runtime, but SonoranCAD continued sending location updates without a postal prefix.
+**What it means:** Client-side postal lookup failed at runtime, but Sonoran CAD continued sending location updates without a postal prefix.
 
-**How to fix it:** Check the configured postal resource or custom postal file for runtime errors, malformed data, or missing exports.
+**How to fix it:** Sonoran CAD comes bundled with the `nearest-postals` resource. Ensure your community is only using the bundled nearest-postals resource and NOT a duplicate or copied version that may be out of date. You can check where your `nearest-postals` resource is running inside of TxAdmin > Resources. It should be running inside of the `[sonorancad]` folder.
+
+Additionally, startup order matters. The Sonoran CAD resource is started by adding the following line to your `server.cfg`:
+
+```
+exec @sonorancad/sonorancad.cfg
+```
+
+The `exec` command above runs a script to ensure the Sonoran CAD resource, the bundled nearest-postals resource, and more in a specific order.
+
+If your `server.cfg` contains anything like `ensure sonorancad` or `ensure nearest-postals` remove those and **only** use the `exec` command listed above.
 
 ### Record Printer Errors
 
