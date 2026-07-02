@@ -48,11 +48,11 @@ Sonoran CAD Logo Redirect
 {% tab title="Fixed" %}
 Multi-Monitor Call Viewer Hyperlink
 
-* Fixed an issue where  selecting a dispatch call would switch to the call viewer window instead of using the existing call viewer window on another minitor
+* Fixed an issue where selecting a dispatch call would switch to the call viewer window instead of using the existing call viewer window on another monitor
 
 Multi-Monitor Live Map Hyperlink
 
-* Fixed an issue with live map hyperlinks (unit locations, emergency call pins, etc.) would switch to the full live map window instead of using the existing live map window on another minitor
+* Fixed an issue with live map hyperlinks (unit locations, emergency call pins, etc.) would switch to the full live map window instead of using the existing live map window on another monitor
 
 Multi-Monitor Header Shortcuts
 
@@ -74,8 +74,8 @@ Active Calls Unit Display
 
 * Fixed an issue with the units on an active call only displaying a maximum of two when the column was wide enough for more
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.6 06/29/2026
 
 {% tabs %}
