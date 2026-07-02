@@ -10,6 +10,72 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.9 07/02/2026
+
+{% tabs %}
+{% tab title="New" %}
+Multiple Call Editors
+
+* Added the ability to open and edit multiple dispatch calls at once
+
+Multi-Monitor Drag-and-Drop
+
+* Added drag-and-drop support for multi-monitor layouts to drag units, dispatch calls, and emergency calls from one monitor into another monitor's call editor.
+
+Drag-and-Drop Row
+
+* Updated the drag-and-drop system for units, dispatch calls, and emergency calls to make the entire row draggable, not just the ID chips.
+
+Active Groups Display Persistent
+
+* Added a toggle to the active groups panel to hide persistent groups that have no active units in them
+
+Penal Code Preview
+
+* Added a preview tooltip to penal codes in the records panel search results
+
+Billing Page Overhaul
+
+* UI overhaul to the customer billing portal, making it easier to view important information, select the community to upgrade, and see offers.
+{% endtab %}
+
+{% tab title="Changed" %}
+Sonoran CAD Logo Redirect
+
+* Improved behavior when in a community and clicking the Sonoran CAD logo in the header so that it goes back to the community menu, not the homepage.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Multi-Monitor Call Viewer Hyperlink
+
+* Fixed an issue where  selecting a dispatch call would switch to the call viewer window instead of using the existing call viewer window on another minitor
+
+Multi-Monitor Live Map Hyperlink
+
+* Fixed an issue with live map hyperlinks (unit locations, emergency call pins, etc.) would switch to the full live map window instead of using the existing live map window on another minitor
+
+Multi-Monitor Header Shortcuts
+
+* Fixed issues and improved handling with the desktop header allowing for double-click and drag to the top of the monitor for full-screen shortcuts.
+
+Record Agency Field IDs
+
+* Fixed an issue with custom record agency sections having the record ID still show as NEW
+
+Tablet Layout Drag-and-Drop
+
+* Fixed an issue on the tablet sized screens preventing drag-and-drop custom layouts from saving and reverting instantly
+
+Panel Expand and Collapse
+
+* Fixed an issue with the tablet sized screen not allowing double-click to expand and collapse layout panels
+
+Active Calls Unit Display
+
+* Fixed an issue with the units on an active call only displaying a maximum of two when the column was wide enough for more
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.6 06/29/2026
 
 {% tabs %}
