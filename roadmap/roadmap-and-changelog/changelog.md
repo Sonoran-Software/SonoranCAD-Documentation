@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.10 07/04/2026
+
+{% tabs %}
+{% tab title="New" %}
+ER:LC Setup Helper
+
+* Added an improved walkthrough layout for the ER:LC integration
+
+FiveM Setup Helper
+
+* Added an improved walkthrough layout for the FiveM integration
+{% endtab %}
+
+{% tab title="Fixed" %}
+Dispatch Call Update SFX
+
+* Fixed an issue where dispatchers would hear SFX for all call updates not just the ones they had open
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.9 07/02/2026
 
 {% tabs %}
