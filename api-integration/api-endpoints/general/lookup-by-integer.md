@@ -66,13 +66,13 @@ INVALID EMPTY SEARCH
 
 {% tabs %}
 {% tab title="API ID" %}
-#### API ID
+**API ID**
 
 Adding the [API ID](../../getting-started/setting-your-api-id.md) field is _optional_, and will send the lookup results to the user's CAD as well.
 {% endtab %}
 
 {% tab title="Search Type" %}
-#### SearchType Enumerator
+**SearchType Enumerator**
 
 The `searchType` enumerator determines how your `value` integer is interpreted.
 
@@ -87,7 +87,7 @@ The `searchType` enumerator determines how your `value` integer is interpreted.
 {% endtab %}
 
 {% tab title="Value" %}
-#### Value Integer
+**Value Integer**
 
 The `value` integer is the primary search key for the `searchType` specified.
 
@@ -131,7 +131,7 @@ When specifying a user account ID, the `value` represents the unique user accoun
 {% endtab %}
 
 {% tab title="Record Types" %}
-#### Record Type
+**Record Type**
 
 The record "type" is an enumerator used to distinguish the category of the custom record/report. These integer values are entered as an array in the `types` field of the lookup call.
 
@@ -156,7 +156,7 @@ The `characters` object array will always be included with the search. The `type
 {% endtab %}
 
 {% tab title="Response Object Types" %}
-#### Response Object Types
+**Response Object Types**
 
 **Records Formatting**
 

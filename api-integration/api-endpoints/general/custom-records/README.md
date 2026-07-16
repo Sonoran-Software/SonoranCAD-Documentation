@@ -12,7 +12,7 @@ All custom records and reports utilize the same common formatting. You can manag
 
 #### Retrieve Record Templates
 
-Access your existing custom record types built from the CAD's [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
+Access your existing custom record types built from the CAD's [custom record editor](../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
 {% content-ref url="get-record-template.md" %}
 [get-record-template.md](get-record-template.md)
@@ -59,11 +59,11 @@ Custom records require a strict format with several dozen different data fields.
 }
 ```
 
-#### Record Type ID
+**Record Type ID**
 
 This is a unique ID for this record type. It is highly recommended to get all of this data from an [existing custom record template ](get-record-template.md)that you have created in the CAD.
 
-#### Record Type
+**Record Type**
 
 The record "type" is an enumerator used to distinguish the category of the custom record/report.
 
@@ -109,9 +109,9 @@ The "Section" object contains all of the data for a custom record section. These
 }
 ```
 
-#### Category
+**Category**
 
-The `category` field contains an enumerator representing the section type. These correspond to the custom or premade category types in the [custom record editor](../../../../../tutorials/customization/creating-custom-record-and-report-types.md).
+The `category` field contains an enumerator representing the section type. These correspond to the custom or premade category types in the [custom record editor](../../../../tutorials/customization/creating-custom-record-and-report-types.md).
 
 | Enum | Description    |
 | ---- | -------------- |
@@ -154,30 +154,30 @@ The `field` object contains all of the data for an individual custom record fiel
 }
 ```
 
-#### Type
+**Type**
 
-| `INPUT`                | Standard Textbox                                                                                                 |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `TEXTAREA`             | Multi-line Textbox                                                                                               |
-| `ADDRESS`              | [Auto-filter Dropdown of Street Addresses](../../../../../tutorials/customization/addresses-and-street-names.md) |
-| `SELECT`               | Dropdown (Uses `options` array)                                                                                  |
-| `STATUS`               | DB Status Enums (See below)                                                                                      |
-| `DATE`                 | Date Picker                                                                                                      |
-| `TIME`                 | Time Picker                                                                                                      |
-| `IMAGE`                | Image URL Viewer/Uploader                                                                                        |
-| `CHECKBOXES`           | List of Checkboxes (Uses `options` array)                                                                        |
-| `LABEL`                | Text Label                                                                                                       |
-| `UNIT_NUMBER`          | Auto filled unit number                                                                                          |
-| `UNIT_NAME`            | Auto filled unit name                                                                                            |
-| `UNIT_RANK`            | Auto filled unit rank                                                                                            |
-| `UNIT_AGENCY`          | Auto filled unit agency                                                                                          |
-| `UNIT_DEPARTMENT`      | Auto filled unit department                                                                                      |
-| `UNIT_SUBDIVISION`     | Auto filled unit subdivision                                                                                     |
-| `UNIT_AGENCY_LOCATION` | Auto filled unit agency location                                                                                 |
-| `UNIT_AGENCY_ZIP`      | Auto filled unit agency zip                                                                                      |
-| `UNIT_LOCATION`        | Auto filled unit location                                                                                        |
+| `INPUT`                | Standard Textbox                                                                                              |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `TEXTAREA`             | Multi-line Textbox                                                                                            |
+| `ADDRESS`              | [Auto-filter Dropdown of Street Addresses](../../../../tutorials/customization/addresses-and-street-names.md) |
+| `SELECT`               | Dropdown (Uses `options` array)                                                                               |
+| `STATUS`               | DB Status Enums (See below)                                                                                   |
+| `DATE`                 | Date Picker                                                                                                   |
+| `TIME`                 | Time Picker                                                                                                   |
+| `IMAGE`                | Image URL Viewer/Uploader                                                                                     |
+| `CHECKBOXES`           | List of Checkboxes (Uses `options` array)                                                                     |
+| `LABEL`                | Text Label                                                                                                    |
+| `UNIT_NUMBER`          | Auto filled unit number                                                                                       |
+| `UNIT_NAME`            | Auto filled unit name                                                                                         |
+| `UNIT_RANK`            | Auto filled unit rank                                                                                         |
+| `UNIT_AGENCY`          | Auto filled unit agency                                                                                       |
+| `UNIT_DEPARTMENT`      | Auto filled unit department                                                                                   |
+| `UNIT_SUBDIVISION`     | Auto filled unit subdivision                                                                                  |
+| `UNIT_AGENCY_LOCATION` | Auto filled unit agency location                                                                              |
+| `UNIT_AGENCY_ZIP`      | Auto filled unit agency zip                                                                                   |
+| `UNIT_LOCATION`        | Auto filled unit location                                                                                     |
 
-#### Status
+**Status**
 
 The `STATUS` field type is required for `Vehicle Registration` type records and provides additional optional functionality for `BOLO` and `Warrant` records. This status allows the database to search for BOLO/Warrant records that are open or closed, and vehicle registrations that are approved or pending in the DMV panel.
 
@@ -189,7 +189,7 @@ The `STATUS` field value contains an enumeration (integer) value as follows:
 | `1`              | `APPROVED`  | `CLOSED`             |
 | `2`              | `REJECTED`  | N/A                  |
 
-#### Mask
+**Mask**
 
 Masks can be used in a field to force a specific entry format\
 Ex: `(###) ### - ####` forces a phone number format.
@@ -200,7 +200,7 @@ Ex: `(###) ### - ####` forces a phone number format.
 | S     | Letter A-Z   |
 | X     | Alphanumeric |
 
-#### UID
+**UID**
 
 The `UID` or "Unique ID" field helps internally map Database Merge fields.\
 \
@@ -208,7 +208,7 @@ In addition, a `UID` field with the value of `"first"` and `"last"` are required
 
 When you create a custom record and add in a `civilian` or `vehicle` section, the imported section will keep the same `UID` fields. This is how data is mapped from a character or vehicle search and placed into a custom record.
 
-#### Data
+**Data**
 
 The data object stores detailed objects for pre-made section types. The data object type (charge, agency info, flags, etc.) stored can be determined by the parent section's `category` enumeration value. If the parent section's `category` is not `0` (Custom) then the section will contain a single field, with the `data` property containing the detailed object.
 

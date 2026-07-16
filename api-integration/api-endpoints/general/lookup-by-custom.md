@@ -65,7 +65,7 @@ The search `map` is the unique `Custom Record Field ID` used in your [custom sea
 {% endtab %}
 
 {% tab title="Record Types" %}
-#### Record Type
+**Record Type**
 
 The record "type" is an enumerator used to distinguish the category of the custom record/report. These integer values are entered as an array in the `types` field of the lookup call.
 
@@ -90,7 +90,7 @@ The `characters` object array will always be included with the search. The `type
 {% endtab %}
 
 {% tab title="Response Object Types" %}
-#### Response Object Types
+**Response Object Types**
 
 **Records Formatting**
 

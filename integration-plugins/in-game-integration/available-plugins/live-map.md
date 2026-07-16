@@ -126,7 +126,7 @@ Clicking on the emergency blip allows you to import the call to your editor or r
 
 {% hint style="danger" %}
 This feature requires the **pro** version of Sonoran CAD.\
-For more information, view our [pricing](/broken/pages/-M58UiyBWsbVztn6Dbn7) page.
+For more information, view our [pricing](https://app.gitbook.com/s/-M4pGN81fb4R6zFhodcu/pricing) page.
 {% endhint %}
 
 Sonoran CAD allows communities to upload custom map images to the integrated, hosted live map. If your community does not use one of the map types provided, you can upload the images manually.

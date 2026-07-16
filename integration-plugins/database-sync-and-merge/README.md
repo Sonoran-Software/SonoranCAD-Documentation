@@ -150,7 +150,7 @@ Many databases store data in a JSON formatted column. Sonoran CAD can also parse
 
 The following is for JSON columns that contain one or more object(s). Objects are formatted using `{}` and are NOT enclosed by `[]`.
 
-#### 1. View the JSON Data
+**1. View the JSON Data**
 
 In our database, the `accounts` column stores JSON formatted data. For this example, we want to display the `bank` money in the custom character record.
 
@@ -162,7 +162,7 @@ To more easily view the JSON data, we can copy it from the cell and paste it int
 
 We can see that the JSON "key" for the bank account amount is `bank`.
 
-#### 2. Nested JSON Values
+**2. Nested JSON Values**
 
 Nested JSON values are also supported.\
 Here, the `eye_color` is a JSON object, with the `item` property of `0`.
@@ -183,7 +183,7 @@ Then, we can use [friendly mapping](./#friendly-mapping) to convert the eye colo
 
 The following is for JSON columns that contain an array of objects. Arrays are enclosed by `[]` and contain one or more objects formatted by `{}`.
 
-#### 1. View the JSON Data
+**1. View the JSON Data**
 
 In our database, the `licenses` column stores JSON formatted data. This data is an array (list) `[]` of license objects `{}`.
 
@@ -193,7 +193,7 @@ To more easily view the JSON data, we can copy it from the cell and paste it int
 
 For this example, we want to display the status (valid/invalid) of the license type `drivers`.
 
-#### 2. Configure the JSON Key
+**2. Configure the JSON Key**
 
 We want our `Driver's License Status` field in our custom record to reflect whether or not their license is valid. The `expireDate` JSON property displays `true` (expired) or `false` (valid).
 
