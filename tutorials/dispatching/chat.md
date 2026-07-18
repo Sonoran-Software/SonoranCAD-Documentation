@@ -16,7 +16,7 @@ The **Chat** window can be found under the **Taskbar** > **Unit Management** > *
 
 Additionally, it can be found by searching for **Chat** in the taskbar search.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="201"><figcaption></figcaption></figure>
 
 ### Creating a Chat
 
@@ -26,7 +26,7 @@ In the **Recipients** drop-down, type to filter for user options. Individual uni
 
 Once you enter a message and press **send** the chat room is created.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Attachments
 
@@ -36,7 +36,7 @@ On a record window, select the **copy** button at the top left. Then, in the cha
 
 Once sent, units can click on the attachment to open the record.
 
-<div><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Text-to-Speech
 

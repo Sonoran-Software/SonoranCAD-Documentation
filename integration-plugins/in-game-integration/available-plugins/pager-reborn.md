@@ -60,7 +60,7 @@ Before using the resource you will need to create a pager network under **Admin*
 
 Your configuration will automatically save after closing the popup modal.
 
-<div><figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.31.12 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.31.45 PM.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.31.12 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure></div>
 
 [Learn more about creating a pager network here.](https://docs.inferno-collection.com/resources/pager-reborn/developers/start-here/)
 
@@ -76,7 +76,7 @@ Your configuration will automatically save after closing the popup modal.
 
 ### In-CAD
 
-Access the **Inferno Pager** panel under **Unit Management** > **Inferno Pager**
+Add the **Inferno Pager** panel in your custom layout.
 
 **Addresses**
 
@@ -95,7 +95,7 @@ Access the **Inferno Pager** panel under **Unit Management** > **Inferno Pager**
 
 * Enter the text to send to units in-game.
 
-<div><figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.33.52 PM.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2026-05-13 at 8.35.26 PM.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### In-Game
 

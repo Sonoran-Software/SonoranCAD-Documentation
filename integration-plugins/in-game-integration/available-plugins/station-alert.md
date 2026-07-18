@@ -66,26 +66,25 @@ On the live map, ensure you toggle station blips on. Clicking on a station will 
 
 The following example:
 
-* Opens the `Engine 19` door at station `Davis`
-* Closes the `Ambo 61` door at station `Davis`
-* Sets the station indicator light to `Blue`
-* Plays `Example Message` as text-to-speech at station `Davis`
-* Plays `Tone1` from the station alert resource tones at station `Davis`
+* Opens doors `1` and `2`, closes door `3` at the `Roxwood` station
+* Sets the station indicator lights to red and magenta at the `Roxwood` station
+* Plays `Example Message` as text-to-speech at station `Roxwood`
+* Plays `EMS Priority 1` from the station alert resource tones at station `Roxwood`
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Live Map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🚨 Station Alert Panel
 
-Dispatchers can also access the dedicated `Station Alert` panel under `Unit Management`.
+Dispatchers can also add the dedicated `Station Alert` panel in their custom layouts.
 
 Here, you can type-to-filter and select multiple stations at once.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: Panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 📞 Dispatch Call Editor
 
 The dispatch call editor has a shortcut to quickly access nearby stations from an emergency call.
 
-When an emergency call from in-game is imported into the dispatch editor, the `Nearby Stations` icon will be available. Selecting one of these nearby stations opens the station alert builder with the `Message` box prefilled with call information.
+When an emergency call from in-game is imported into the dispatch editor, the `Nearby Stations` icon will be available. Selecting one of these nearby stations will prefill call information into the station alert builder panel in your layout.
 
-<figure><img src="../../../.gitbook/assets/Screen_Recording_2025-04-14_154514.gif" alt="" width="375"><figcaption><p>Station Alert: Call Editor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
