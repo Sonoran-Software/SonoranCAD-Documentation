@@ -49,6 +49,21 @@ local response = sonoran.cad:lookupByValueV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+Call from a server-side FiveM resource using the exported CAD client:
+
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+local response = cad:lookupByValueV2({
+  searchType = "plate",
+  value = "ABC123",
+  types = { 1 }
+})
+print(response.success)
+```
+
+JavaScript resources can use `exports.sonorancad.getCadClient()`. For .NET, construct a client from the protected CAD convars. Python is for external integrations, not FiveM resources.
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
