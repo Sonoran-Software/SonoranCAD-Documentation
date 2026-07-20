@@ -53,7 +53,7 @@ General endpoints cover account management, custom records, lookup workflows, an
 
 Use this combined OpenAPI document if you want to import the full Sonoran CAD v2 API into Postman in one pass.
 
-This generated collection currently includes `69` documented v2 operations.
+This generated collection currently includes `70` documented v2 operations.
 
 <details>
 <summary>Copy the full OpenAPI YAML</summary>
@@ -99,6 +99,7 @@ paths:
               type: object
             example:
               communityUserId: player-1234
+              discord: '123456789012345678'
       tags:
       - Civilian
     delete:
@@ -132,6 +133,7 @@ paths:
               type: object
             example:
               communityUserId: player-1234
+              discord: '123456789012345678'
       tags:
       - Civilian
   /v2/civilian/characters/{characterId}:
@@ -189,6 +191,13 @@ paths:
         schema:
           type: integer
         required: false
+      - description: Target the account linked to a Discord user ID. Provide exactly
+          one identifier.
+        name: discord
+        in: query
+        schema:
+          type: string
+        required: false
       - description: Target account UUID. Provide exactly one identifier.
         name: accountUuid
         in: query
@@ -238,6 +247,13 @@ paths:
         schema:
           type: integer
         required: false
+      - description: Target the account linked to a Discord user ID. Provide exactly
+          one identifier.
+        name: discord
+        in: query
+        schema:
+          type: string
+        required: false
       - description: Target account UUID. Provide exactly one identifier.
         name: accountUuid
         in: query
@@ -272,6 +288,7 @@ paths:
               type: object
             example:
               communityUserId: player-1234
+              discord: '123456789012345678'
               characterId: '1042'
       tags:
       - Civilian
@@ -954,14 +971,14 @@ paths:
               maxAddresses: 5
               maxBodyLength: 250
               nodes:
-                id: root-1
+              - id: root-1
                 name: Fire
                 description: Fire services
                 permission: fire
                 address: FIRE-01
                 shortCode: F1
                 kind: group
-                children: null
+                children: []
       tags:
       - Emergency / Configuration
   /v2/emergency/servers/{serverId}/callouts:
@@ -1709,6 +1726,7 @@ paths:
                   rank: Officer
                   group: CAR-51
                   page: 0
+                  communityUserId: license:abc123
                 isDispatch: false
       parameters:
       - description: Configured Sonoran CAD server ID.
@@ -1952,6 +1970,7 @@ paths:
             example:
               communityUserId: player-1234
               roblox: 123456789
+              discord: '123456789012345678'
               permissionKey: YOUR_PERMISSION_KEY
       tags:
       - General / Accounts
@@ -2211,6 +2230,54 @@ paths:
             example:
               communityUserId: player-1234
               url: https://cdn.example.com/mugshots/example.png
+      tags:
+      - General / Accounts
+  /v2/general/links/set:
+    post:
+      summary: Set Community Link
+      operationId: setCommunityLink
+      security:
+      - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - accountUuid
+              - secretUuid
+              - communityUserId
+              properties:
+                accountUuid:
+                  type: string
+                  format: uuid
+                secretUuid:
+                  type: string
+                  format: uuid
+                communityUserId:
+                  type: string
+                  maxLength: 255
+            example:
+              accountUuid: 11111111-1111-1111-1111-111111111111
+              secretUuid: 22222222-2222-2222-2222-222222222222
+              communityUserId: fivem:12345
+      responses:
+        '200':
+          description: The account link was set successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                linked: true
+                accountUuid: 11111111-1111-1111-1111-111111111111
+                communityUserId: fivem:12345
+        '400':
+          description: The request body is invalid.
+        '403':
+          description: The account UUID and secret UUID do not match an account in
+            the authenticated community.
       tags:
       - General / Accounts
   /v2/general/secrets/verify:
@@ -2764,7 +2831,7 @@ paths:
               useDictionary: true
               recordTypeId: 12
               replaceValues:
-                '{{plate}}': ABC123
+                plate: ABC123
       tags:
       - General / Records
   /v2/general/records/{recordId}:
@@ -2833,7 +2900,7 @@ paths:
               useDictionary: true
               templateId: 12
               replaceValues:
-                '{{plate}}': XYZ987
+                plate: XYZ987
       tags:
       - General / Records
   /v2/general/templates/{recordTypeId}:
