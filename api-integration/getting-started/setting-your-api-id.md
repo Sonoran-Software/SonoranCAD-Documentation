@@ -20,13 +20,29 @@ By default, the FiveM resource uses the `primaryIdentifier` config value, which 
 
 #### Create Community Link
 
-Use the following endpoint to create a 4-digit link code and associate it with your game's unique player identifier
+Use the following endpoint to create a 4-character link code and associate it with your game's unique player identifier.
 
 * [Create Community Link](../api-endpoints-v2/general/accounts/create-community-link.md)
 
 #### Complete User Link
 
 Users can complete the link verification by logging in and visiting `sonorancad.com/id?code=1234`. This completes the link and automatically joins the user to the community (if not already).
+
+#### Automatic Link from an Embedded CAD
+
+As an alternative to the manual 4-character code, the Sonoran CAD frontend emits a message after every successful community login, re-login, or reconnect when it is displayed inside an iframe:
+
+```javascript
+{
+  type: 'scad:account-link',
+  accountUuid: '11111111-1111-1111-1111-111111111111',
+  secretUuid: '22222222-2222-2222-2222-222222222222'
+}
+```
+
+The iframe parent should validate the message source and origin, forward the two UUIDs to its trusted server process, derive the current player's `communityUserId`, and call [Set Community Link](../api-endpoints-v2/general/accounts/set-community-link.md). The frontend event intentionally does not contain the in-game identifier.
+
+Keep the secret UUID server-bound: do not log it or store it in the browser, and never expose the community API key to the iframe or game client. See the endpoint documentation for the complete event listener and server-side flow.
 
 #### Check User Link
 

@@ -13,6 +13,38 @@ Directly assign a `communityUserId` to an account in the authenticated community
 
 This endpoint is intended for trusted server-side integrations such as the SonoranCADFiveM resource. Do not expose the community API key or forward account credentials from an untrusted client directly to this endpoint.
 
+## CAD Frontend Iframe Event
+
+When the Sonoran CAD frontend is running inside an iframe, it sends the following message to its parent after every successful community login, re-login, or reconnect:
+
+```javascript
+window.parent.postMessage({
+  type: 'scad:account-link',
+  accountUuid: '11111111-1111-1111-1111-111111111111',
+  secretUuid: '22222222-2222-2222-2222-222222222222',
+}, '*');
+```
+
+The event is not emitted in a top-level browser window or when either UUID is unavailable. It does not contain `communityUserId`; the parent integration must derive that value from the current in-game player and send all three values from its trusted server process to this endpoint.
+
+The parent page should verify both `event.source` and `event.origin` before accepting the credentials:
+
+```javascript
+const cadFrame = document.getElementById('cadFrame');
+const cadOrigin = new URL(cadFrame.src).origin;
+
+window.addEventListener('message', (event) => {
+  if (event.source !== cadFrame.contentWindow || event.origin !== cadOrigin) return;
+  if (event.data?.type !== 'scad:account-link') return;
+
+  const { accountUuid, secretUuid } = event.data;
+  // Forward these values to the trusted game server. The server derives the
+  // player's communityUserId and calls POST /v2/general/links/set.
+});
+```
+
+Treat `secretUuid` as sensitive. Do not log it, persist it in browser storage, or expose the community API key to the iframe or game client.
+
 ## Request Body
 
 ```json
