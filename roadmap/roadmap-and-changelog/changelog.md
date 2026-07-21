@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.12 07/20/2026
+
+{% tabs %}
+{% tab title="New" %}
+Themes: Mark19
+
+* Added a new Mark19 theme option by default
+
+Themes: Trevor
+
+* Added a new Trevor theme option by default
+{% endtab %}
+{% endtabs %}
+
 ### 3.43.10 07/04/2026
 
 {% tabs %}
@@ -28,8 +42,8 @@ Dispatch Call Update SFX
 
 * Fixed an issue where dispatchers would hear SFX for all call updates not just the ones they had open
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.9 07/02/2026
 
 {% tabs %}
