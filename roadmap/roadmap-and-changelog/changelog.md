@@ -10,6 +10,64 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.13 07/22/2026
+
+{% tabs %}
+{% tab title="New" %}
+DB Sync: Save and Disabled Indicators
+
+* Improved the individual DB sync sections to show disabled markers and added an unsaved changes notice
+
+Bodycam: Recording Toggle
+
+* Improved the unit identifier bodycam tab to show a start/stop recording button with a notice about the hotkeys for web and desktop users
+
+Custom Layouts: Bodycam Viewer
+
+* Added support for the live bodycam viewer as a custom layout panel
+{% endtab %}
+
+{% tab title="Changed" %}
+Customization: Settings vs hotkeys
+
+* Updated the customization menu to have separate tabs for general settings vs hotkeys
+{% endtab %}
+
+{% tab title="Fixed" %}
+Bodycam: Recording Timeline Scrubber
+
+* Fixed an issue with the bodycam recording playback timeline scrubber skipping to the end visually
+
+Bodycam: Shadow Recording
+
+* Fixed an issue with the web and desktop version not properly including the shadow recording in some cases
+
+Trevor Theme: Dual Taskbar
+
+* Fixed an issue with the secondary taskbar when in dual mode on the Trevor theme not having proper width for tabs
+
+Dual Taskbar: Customization
+
+* Fixed an issue where the customization tab button would not work if in the secondary taskbar
+
+Lookup: Create Record on Character
+
+* Fixed an issue where creating a new record from a civilian record in the lookup tab wouldn't automatically import them to the record
+
+Call Editor: Create Call Selection
+
+* Fixed an issue where opening the call editor tab after a refresh would prevent the dropdown selections from working, until the editor was cleared
+
+Call Editor: New Line for Notes
+
+* Fixed an issue where pressing ENTER in the call notes would send the note with a new line above it. SHIFT + ENTER is now used for newlines.
+
+Call Editor: Call Description
+
+* Fixed an issue where the call description box of the call viewer could sometimes overflow the parent container.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.12 07/20/2026
 
 {% tabs %}
