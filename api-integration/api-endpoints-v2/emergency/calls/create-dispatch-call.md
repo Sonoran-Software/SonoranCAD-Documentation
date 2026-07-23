@@ -9,7 +9,7 @@ description: Create a new dispatch call.
 > **Rate limit:** `20 requests per minute`  
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Create a new dispatch call and attach initial units resolved from community user IDs by default, or from linked Roblox IDs, linked Discord IDs, or account UUIDs.
+Create a new dispatch call and optionally attach initial units resolved from community user IDs, linked Roblox IDs, linked Discord IDs, or account UUIDs.
 
 ## Path Parameters
 
@@ -19,24 +19,24 @@ Create a new dispatch call and attach initial units resolved from community user
 
 ## Request Body
 
-The backend requires at least one identifier target through `communityUserIds`, `roblox`, `discord`, or `accounts`.
+The request must include at least one target property: `communityUserIds`, `accounts`, `roblox`, or `discord`. To create an unassigned call, send `communityUserIds: []` or `accounts: []`.
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 | `origin` | integer | Yes | Call origin enum. See `CALL_ORIGIN` below. |
 | `status` | integer | Yes | Call status enum. See `CALL_STATUS` below. |
 | `priority` | integer | Yes | Call priority. |
-| `block` | string | Yes | Block or intersection label. |
-| `address` | string | Yes | Dispatch address text. |
-| `postal` | string | Yes | Postal code. |
+| `block` | string | No | Block or intersection label. |
+| `address` | string | No | Dispatch address text. |
+| `postal` | string | No | Postal code. |
 | `title` | string | Yes | Short dispatch title. |
-| `code` | string | Yes | Call code such as `211`. |
-| `description` | string | Yes | Full call description. |
-| `notes` | array | Yes | Initial note objects to store on the call. |
-| `communityUserIds` | array of strings | No | Linked community users whose active identifiers should be attached. |
-| `roblox` | integer | No | Roblox user ID whose linked account's active identifiers should be attached. |
-| `discord` | string | No | Discord user ID whose linked account's active identifiers should be attached. |
-| `accounts` | array of strings (uuid) | No | Accounts whose selected identifiers should be attached. |
+| `code` | string | No | Call code such as `211`. |
+| `description` | string | No | Full call description. |
+| `notes` | array | No | Initial note objects to store on the call. |
+| `communityUserIds` | array of strings | Conditional | Linked community users whose active identifiers should be attached. An empty array creates an unassigned call. |
+| `roblox` | string | Conditional | Roblox user ID whose linked account's active identifiers should be attached. |
+| `discord` | string | Conditional | Discord user ID whose linked account's active identifiers should be attached. |
+| `accounts` | array of strings (uuid) | Conditional | Accounts whose selected identifiers should be attached. An empty array creates an unassigned call. |
 | `metaData` | object | No | Additional string key/value metadata. Pass `x` and `y` coordinate values to enable live map placement and coordinate-based search actions. `z`, `radius`, `postal`, `block`, `code`, and `priority` may also be supplied when applicable. |
 | `deleteAfterMinutes` | integer | No | Schedule automatic deletion after creation. |
 
@@ -91,6 +91,7 @@ local response = sonoran.cad:createDispatchCallV2({
     code = 'FIRE',
     description = 'Visible smoke from the roof.',
     notes = {},
+    communityUserIds = {'player-1234'},
     metaData = {
       source = 'integration',
       x = '425.1',
@@ -160,6 +161,7 @@ local response = cad:createDispatchCallV2({
     code = 'FIRE',
     description = 'Visible smoke from the roof.',
     notes = {},
+    communityUserIds = {'player-1234'},
     metaData = {
       source = 'integration',
       x = '425.1',
@@ -199,6 +201,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     code: 'FIRE',
     description: 'Visible smoke from the roof.',
     notes: [],
+    communityUserIds: ['player-1234'],
     metaData: {
       source: 'integration',
       x: '425.1',
@@ -236,6 +239,7 @@ response = instance.cad.createDispatchCallV2({
     "code": 'FIRE',
     "description": 'Visible smoke from the roof.',
     "notes": [],
+    "communityUserIds": ['player-1234'],
     "metaData": {
       "source": 'integration',
       "x": '425.1',
@@ -310,8 +314,8 @@ paths:
       summary: "Create Dispatch Call"
       operationId: "createDispatchCall"
       responses:
-        200:
-          description: "Successful response"
+        201:
+          description: "Dispatch call created"
           content:
             application/json:
               schema:
@@ -330,10 +334,10 @@ paths:
                 trackPrimary: false
                 description: "Clerk reports a firearm."
                 notes:
-                  time: "2026-04-08T21:30:00Z"
-                  label: "Sonoran CAD"
-                  type: "text"
-                  content: "Caller is hiding."
+                  - time: "2026-04-08T21:30:00Z"
+                    label: "Sonoran CAD"
+                    type: "text"
+                    content: "Caller is hiding."
                 idents:
                   - 12
                   - 18
@@ -372,8 +376,9 @@ paths:
               title: "Armed Robbery"
               code: "211"
               description: "Clerk reports a firearm."
-              notes: null
-              communityUserIds: "player-1234"
+              notes: []
+              communityUserIds:
+                - "player-1234"
               metaData:
                 source: "integration"
                 x: "425.1"
@@ -474,5 +479,7 @@ Successful requests return `application/json`.
 
 | Value | Description |
 | --- | --- |
-| `0` | `RADIO_DISPATCH` |
-| `1` | `SELF_INITIATED` |
+| `0` | `CALLER` |
+| `1` | `RADIO_DISPATCH` |
+| `2` | `OBSERVED` |
+| `3` | `WALK_UP` |

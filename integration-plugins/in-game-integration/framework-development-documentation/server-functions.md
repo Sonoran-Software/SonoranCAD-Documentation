@@ -668,65 +668,57 @@ end)
 
 ### createDispatchCall
 
-Creates a dispatch call in SonoranCAD
+Creates a dispatch call in SonoranCAD using the v2 dispatch request format.
 
 ```lua
-exports.sonorancad.createDispatchCall(origin, status, priority, block, address, postal, title, code, primary, trackPrimary, description, notes, metaData, units, cb)
+exports.sonorancad:createDispatchCall(data, cb)
 ```
 
 {% tabs %}
 {% tab title="Parameter" %}
 
 
-| Parameter      | Type       | Description                                                                              |
-| -------------- | ---------- | ---------------------------------------------------------------------------------------- |
-| `origin`       | `number`   | Source of the dispatch call (see ORIGIN enum in SonoranCAD documentation). Typically `0` |
-| `status`       | `number`   | Initial call status (see STATUS enum). Typically `0`                                     |
-| `priority`     | `number`   | Call priority: `1` (high), `2` (medium), `3` (low).                                      |
-| `block`        | `string`   | Block or unit number of the incident location.                                           |
-| `address`      | `string`   | Full address or street description of the incident.                                      |
-| `postal`       | `string`   | Postal code corresponding to the call’s location.                                        |
-| `title`        | `string`   | Short title of the dispatch call (e.g., "Traffic Stop").                                 |
-| `code`         | `string`   | CAD signal or code (e.g., "10-39 - Traffic Stop").                                       |
-| `primary`      | `number`   | Identifier of the primary unit assigned to the call.                                     |
-| `trackPrimary` | `boolean`  | Whether to track the primary unit on the live map.                                       |
-| `description`  | `string`   | Detailed description of the situation.                                                   |
-| `notes`        | `array`    | Array of note objects related to the call. Optional.                                     |
-| `metaData`     | `array`    | Custom key-value metadata for internal tracking or display. Optional.                    |
-| `units`        | `array`    | Array of unit API IDs (e.g., Steam hex IDs) to assign to the call.                       |
-| `cb`           | `function` | Callback function to handle the API response.                                            |
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `data` | `table` | A v2 create-dispatch request. |
+| `cb` | `function` | Optional callback receiving `(result, success)`. |
+
+The `data` table supports the same fields as the [Create Dispatch Call v2 endpoint](../../../api-integration/api-endpoints-v2/emergency/calls/create-dispatch-call.md). `origin`, `status`, `priority`, and `title` are required. Include at least one of `communityUserIds`, `accounts`, `roblox`, or `discord`. To create an unassigned call, pass an empty `communityUserIds` or `accounts` array.
+
+`metaData` must contain flat string key/value pairs. Coordinates belong directly under `metaData` as `x`, `y`, and `z`; do not pass a nested `coords` table.
 {% endtab %}
 
 {% tab title="Return" %}
-This function does not return a value directly. The data modification happens asynchronously using API requests.
+This function does not return a value directly. If provided, `cb` receives a result string and a boolean indicating whether the request succeeded.
 {% endtab %}
 
 {% tab title="Example Usage" %}
 ```lua
--- Example: Creating a dispatch call
-createDispatchCall(
-    0,                              -- origin
-    0,                              -- status
-    1,                              -- priority (1 = High)
-    "123",                          -- block number
-    "1234 Elm Street",             -- address
-    "56789",                        -- postal
-    "Structure Fire",              -- title
-    "10-70 - Structure Fire",      -- code
-    456,                            -- primary unit ID
-    true,                           -- trackPrimary
-    "Caller reports flames visible from second floor window.", -- description
-    {},                             -- notes (optional)
-    { severity = "high", buildingType = "residential" },       -- custom metaData
-    { "STEAM:110000112345678" },    -- units (API IDs)
-    function(response)
-        if response.success then
-            print("Dispatch call successfully created.")
+exports.sonorancad:createDispatchCall({
+    origin = 0,
+    status = 0,
+    priority = 1,
+    block = "123",
+    address = "1234 Elm Street",
+    postal = "56789",
+    title = "Structure Fire",
+    code = "10-70",
+    description = "Caller reports flames visible from the second floor.",
+    notes = {},
+    communityUserIds = {}, -- Empty creates the call without an attached unit.
+    metaData = {
+        source = "integration",
+        x = "425.1",
+        y = "-979.2",
+        z = "30.7"
+    }
+}, function(result, success)
+        if success then
+            print(result)
         else
-            print("Failed to create dispatch call:", response.error)
+            print("Failed to create dispatch call:", result)
         end
-    end
-)
+end)
 ```
 {% endtab %}
 {% endtabs %}

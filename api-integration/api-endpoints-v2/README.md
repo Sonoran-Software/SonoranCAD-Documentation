@@ -72,8 +72,8 @@ paths:
       summary: Add Character Link
       operationId: addCharacterLink
       responses:
-        200:
-          description: Successful response
+        201:
+          description: Dispatch call created
           content:
             application/json:
               schema:
@@ -492,7 +492,7 @@ paths:
                 trackPrimary: false
                 description: Clerk reports a firearm.
                 notes:
-                  time: '2026-04-08T21:30:00Z'
+                - time: '2026-04-08T21:30:00Z'
                   label: Sonoran CAD
                   type: text
                   content: Caller is hiding.
@@ -532,8 +532,9 @@ paths:
               title: Armed Robbery
               code: '211'
               description: Clerk reports a firearm.
-              notes: null
-              communityUserIds: player-1234
+              notes: []
+              communityUserIds:
+              - player-1234
               metaData:
                 source: integration
                 x: '425.1'
