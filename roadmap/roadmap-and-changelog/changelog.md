@@ -10,6 +10,34 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.15 07/23/2026
+
+{% tabs %}
+{% tab title="New" %}
+Records: NCIC Results View
+
+* Added an NCIC-style results view for Lookup and Records with theme-based defaults and a persistent user preference.
+
+Dispatch: Command Line Overhaul
+
+* Added a customizable dispatcher CLI with saved-call creation, unit and call actions, autocomplete, keyboard navigation, configurable hotkeys, and taskbar access.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Records: Mobile PDF Printing
+
+* Fixed an issue preventing record PDFs from opening or printing on mobile devices.
+
+Lookup: Retro Search Type Icons
+
+* Fixed Plate, Identifier, and Record ID searches displaying the same icon in retro mode.
+
+Taskbar: Dual Compact Toolbar Width
+
+* Fixed the secondary taskbar failing to span the full width when Dual Taskbar and Compact Toolbar are enabled.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.13 07/22/2026
 
 {% tabs %}
