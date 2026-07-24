@@ -8,6 +8,10 @@ The v2 general configuration endpoints manage penal codes, servers, postal data,
 
 ## Endpoints
 
+{% content-ref url="get-penal-codes.md" %}
+[get-penal-codes](get-penal-codes.md)
+{% endcontent-ref %}
+
 {% content-ref url="set-penal-codes.md" %}
 [set-penal-codes](set-penal-codes.md)
 {% endcontent-ref %}

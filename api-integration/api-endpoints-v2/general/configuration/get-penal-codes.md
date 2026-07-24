@@ -1,21 +1,15 @@
 ---
-description: Retrieve the current selected identifier and active call for an account.
+description: Retrieve the community penal code configuration.
 ---
 
-# Get Current Call
+# Get Penal Codes
 
-<mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/emergency/accounts/{accountUuid}/current-call`
+<mark style="color:green;">`GET`</mark> `https://api.sonorancad.com/v2/general/penal-codes`
 
-> **Rate limit:** `10 requests per minute`  
+> **Rate limit:** `4 requests per minute`
 > Authenticated v2 endpoints are rate limited per API key rather than per IP address.
 
-Retrieve the currently selected identifier and active call for an account.
-
-## Path Parameters
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `accountUuid` | string (uuid) | Sonoran CAD account UUID. |
+Return the configured penal codes for the authenticated community.
 
 ## Example Request
 
@@ -32,10 +26,13 @@ local sonoran = Sonoran.createClient({
   defaultServerId = 1
 })
 
-local response = sonoran.cad:getCurrentCallV2('00000000-0000-0000-0000-000000000000')
+local response = sonoran.cad:getPenalCodesV2()
 
--- Inspect response.success, response.data, or response.reason as needed.
-print(response.success)
+if response.success then
+  print(("Found %d penal codes"):format(#response.data))
+else
+  print(response.reason)
+end
 ```
 {% endtab %}
 {% tab title="Sonoran.js" %}
@@ -51,8 +48,12 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
     serverId: 1,
   });
 
-  const response = await instance.cad.getCurrentCallV2('00000000-0000-0000-0000-000000000000');
-  console.log(response);
+  const response = await instance.cad.getPenalCodesV2();
+  if (response.success) {
+    console.log(response.data);
+  } else {
+    console.error(response.reason);
+  }
 })();
 ```
 {% endtab %}
@@ -68,15 +69,18 @@ instance = Instance(
     serverId=1,
 )
 
-response = instance.cad.getCurrentCallV2('00000000-0000-0000-0000-000000000000')
+response = instance.cad.getPenalCodesV2()
 
-print(response.success)
-print(response.data if response.success else response.reason)
+if response.success:
+    print(response.data)
+else:
+    print(response.reason)
 ~~~
 {% endtab %}
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net
+using System.Collections.Generic;
 using Sonoran;
 
 using var sonoran = new SonoranClient(new SonoranClientOptions
@@ -87,10 +91,13 @@ using var sonoran = new SonoranClient(new SonoranClientOptions
     defaultServerId = 1
 });
 
-var response = await sonoran.Cad.getCurrentCallV2("00000000-0000-0000-0000-000000000000");
+var response = await sonoran.Cad.getPenalCodesV2();
+var penalCodes = response.data?.ToObject<List<PenalCodeV2>>() ?? new();
 
-Console.WriteLine(response.success);
-Console.WriteLine(response.data);
+foreach (var penalCode in penalCodes)
+{
+    Console.WriteLine($"{penalCode.Code}: {penalCode.Title}");
+}
 ~~~
 {% endtab %}
 {% tab title="OpenAPI" %}
@@ -99,39 +106,54 @@ Import this YAML into Postman with **Import -> Raw text** to create a single-end
 ~~~yaml
 openapi: "3.0.3"
 info:
-  title: "Sonoran CAD v2 - Get Current Call"
+  title: "Sonoran CAD v2 - Get Penal Codes"
   version: "1.0.0"
-  description: "Retrieve the current selected identifier and active call for an account."
+  description: "Retrieve the community penal code configuration."
 servers:
   -
     url: "https://api.sonorancad.com"
 paths:
-  /v2/emergency/accounts/{accountUuid}/current-call:
+  /v2/general/penal-codes:
     get:
-      summary: "Get Current Call"
-      operationId: "getCurrentCall"
+      summary: "Get Penal Codes"
+      operationId: "getPenalCodes"
       responses:
         200:
           description: "Successful response"
           content:
             application/json:
               schema:
-                type: "object"
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/PenalCode"
               example:
-                IdentId: 12
-                CallId: 501
-      parameters:
-        -
-          description: "Sonoran CAD account UUID."
-          name: "accountUuid"
-          in: "path"
-          schema:
-            type: "string"
-          required: true
+                -
+                  title: "Unsafe Lane Change"
+                  code: "22107"
+                  type: "INFRACTION"
+                  bondType: "NONE"
+                  bondAmount: 0
+                  jailTime: "0"
       security:
         -
           bearerAuth:
 components:
+  schemas:
+    PenalCode:
+      type: "object"
+      properties:
+        title:
+          type: "string"
+        code:
+          type: "string"
+        type:
+          type: "string"
+        bondType:
+          type: "string"
+        bondAmount:
+          type: "integer"
+        jailTime:
+          type: "string"
   securitySchemes:
     bearerAuth:
       type: "http"
@@ -142,7 +164,7 @@ components:
 {% tab title="cURL" %}
 ```bash
 curl --request GET \
-  --url "https://api.sonorancad.com/v2/emergency/accounts/00000000-0000-0000-0000-000000000000/current-call" \
+  --url "https://api.sonorancad.com/v2/general/penal-codes" \
   --header "Authorization: Bearer YOUR_API_KEY" \
   --header "Accept: application/json"
 ```
@@ -154,9 +176,14 @@ curl --request GET \
 Successful requests return `application/json`.
 
 ```json
-{
-  "IdentId": 12,
-  "CallId": 501
-}
+[
+  {
+    "title": "Unsafe Lane Change",
+    "code": "22107",
+    "type": "INFRACTION",
+    "bondType": "NONE",
+    "bondAmount": 0,
+    "jailTime": "0"
+  }
+]
 ```
-

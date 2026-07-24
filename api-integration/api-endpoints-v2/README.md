@@ -53,7 +53,7 @@ General endpoints cover account management, custom records, lookup workflows, an
 
 Use this combined OpenAPI document if you want to import the full Sonoran CAD v2 API into Postman in one pass.
 
-This generated collection currently includes `70` documented v2 operations.
+This generated collection currently includes `71` documented v2 operations.
 
 <details>
 <summary>Copy the full OpenAPI YAML</summary>
@@ -72,8 +72,8 @@ paths:
       summary: Add Character Link
       operationId: addCharacterLink
       responses:
-        201:
-          description: Dispatch call created
+        200:
+          description: Successful response
           content:
             application/json:
               schema:
@@ -472,8 +472,8 @@ paths:
       summary: Create Dispatch Call
       operationId: createDispatchCall
       responses:
-        200:
-          description: Successful response
+        201:
+          description: Dispatch call created
           content:
             application/json:
               schema:
@@ -2388,6 +2388,72 @@ paths:
         required: false
       tags:
       - General / Configuration
+  /v2/general/penal-codes:
+    get:
+      summary: Get Penal Codes
+      operationId: getPenalCodes
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PenalCode'
+              example:
+              - title: Unsafe Lane Change
+                code: '22107'
+                type: INFRACTION
+                bondType: NONE
+                bondAmount: 0
+                jailTime: '0'
+      security:
+      - bearerAuth: null
+      tags:
+      - General / Configuration
+    put:
+      summary: Set Penal Codes
+      operationId: setPenalCodes
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - updated
+                properties:
+                  updated:
+                    type: integer
+              example:
+                updated: 1
+      security:
+      - bearerAuth: null
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - codes
+              properties:
+                codes:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/PenalCode'
+            example:
+              codes:
+              - title: Unsafe Lane Change
+                code: '22107'
+                type: INFRACTION
+                bondType: NONE
+                bondAmount: 0
+                jailTime: '0'
+      tags:
+      - General / Configuration
   /v2/general/servers:
     get:
       summary: Get Servers
@@ -2551,31 +2617,6 @@ paths:
               type: object
             example:
               playerCount: 42
-      tags:
-      - General / Configuration
-  /v2/general/penal-codes:
-    put:
-      summary: Set Penal Codes
-      operationId: setPenalCodes
-      responses:
-        200:
-          description: Successful response
-          content:
-            application/json:
-              schema:
-                type: object
-              example:
-                updated: 1
-      security:
-      - bearerAuth: null
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-            example:
-              codes: null
       tags:
       - General / Configuration
   /v2/general/postals:
@@ -3009,6 +3050,22 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
+  schemas:
+    PenalCode:
+      type: object
+      properties:
+        title:
+          type: string
+        code:
+          type: string
+        type:
+          type: string
+        bondType:
+          type: string
+        bondAmount:
+          type: integer
+        jailTime:
+          type: string
 ```
 </details>
 <!-- END GENERATED V2 OPENAPI -->
