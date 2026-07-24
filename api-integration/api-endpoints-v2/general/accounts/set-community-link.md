@@ -81,6 +81,33 @@ local response = sonoran.cad:setCommunityLinkV2({
 print(response.success)
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+Call this endpoint from the server side of a FiveM resource. Lua and JavaScript resources can use the CAD client exported by `sonorancad`:
+
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+
+local response = cad:setCommunityLinkV2({
+  accountUuid = "11111111-1111-1111-1111-111111111111",
+  secretUuid = "22222222-2222-2222-2222-222222222222",
+  communityUserId = "fivem:12345"
+})
+
+print(response.success)
+```
+
+```javascript
+const cad = exports.sonorancad.getCadClient();
+
+const response = await cad.setCommunityLinkV2({
+  accountUuid: '11111111-1111-1111-1111-111111111111',
+  secretUuid: '22222222-2222-2222-2222-222222222222',
+  communityUserId: 'fivem:12345',
+});
+```
+
+FiveM exports do not return a .NET client. A server-side .NET resource should read the protected `sonoran_communityID`, `sonoran_apiKey`, and `sonoran_serverId` convars and construct a `SonoranClient`. FiveM does not run Python resources; use `Sonoran.py` only for external integrations.
+{% endtab %}
 
 
 {% tab title="Sonoran.js" %}

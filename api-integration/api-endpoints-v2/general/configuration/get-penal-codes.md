@@ -17,6 +17,7 @@ Return the configured penal codes for the authenticated community.
 {% tab title="Sonoran.lua" %}
 ```lua
 -- luarocks install sonoran.lua
+-- For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab for the export-based client.
 local Sonoran = require("sonoran")
 
 local sonoran = Sonoran.createClient({
@@ -35,9 +36,78 @@ else
 end
 ```
 {% endtab %}
+{% tab title="SonoranCADFiveM" %}
+Use this tab when calling the v2 API from the server side of an in-game FiveM resource.
+
+* **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to get the configured CAD client.
+* **Sonoran.Net:** FiveM exports do not return a .NET client, so read the Sonoran CAD convars and create a client.
+* **Sonoran.py:** FiveM does not run Python resources; use the Sonoran.py tab for external integrations.
+
+The API key is stored in `sonoran_apiKey` as a protected FiveM convar. After `add_convar_permission` is configured, only explicitly permitted resources can read it. Grant access with `add_convar_permission your-resource-name read sonoran_apiKey`. If the API key changes in `config.json`, fully restart the `sonorancad` resource before reading the updated value.
+
+**Sonoran.lua**
+
+```lua
+local cad = exports["sonorancad"]:getCadClient()
+local response = cad:getPenalCodesV2()
+
+if response.success then
+  print(("Found %d penal codes"):format(#response.data))
+else
+  print(response.reason)
+end
+```
+
+**Sonoran.js**
+
+```javascript
+(async () => {
+  const cad = exports["sonorancad"].getCadClient();
+  const response = await cad.getPenalCodesV2();
+
+  if (response.success) {
+    console.log(response.data);
+  } else {
+    console.error(response.reason);
+  }
+})();
+```
+
+**Sonoran.Net**
+
+```csharp
+// dotnet add package Sonoran.Net
+using System.Collections.Generic;
+using CitizenFX.Core;
+using CitizenFX.Core.Native;
+using Sonoran;
+
+var communityId = API.GetConvar("sonoran_communityID", "");
+var apiKey = API.GetConvar("sonoran_apiKey", "");
+var serverIdRaw = API.GetConvar("sonoran_serverId", "1");
+var serverId = int.TryParse(serverIdRaw, out var parsedServerId) ? parsedServerId : 1;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    product = SonoranProduct.CAD,
+    communityId = communityId,
+    apiKey = apiKey,
+    defaultServerId = serverId
+});
+
+var response = await sonoran.Cad.getPenalCodesV2();
+var penalCodes = response.data?.ToObject<List<PenalCodeV2>>() ?? new();
+
+foreach (var penalCode in penalCodes)
+{
+    Debug.WriteLine($"{penalCode.Code}: {penalCode.Title}");
+}
+```
+{% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
 // npm install @sonoransoftware/sonoran.js
+// For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab for the export-based client.
 const Sonoran = require('@sonoransoftware/sonoran.js');
 
 (async () => {
@@ -60,6 +130,7 @@ const Sonoran = require('@sonoransoftware/sonoran.js');
 {% tab title="Sonoran.py" %}
 ~~~python
 # pip install Sonoran.py
+# Sonoran.py is for external Python integrations; FiveM resources should use the SonoranCADFiveM tab.
 from sonoran import Instance, productEnums
 
 instance = Instance(
@@ -80,6 +151,7 @@ else:
 {% tab title="Sonoran.Net" %}
 ~~~csharp
 // dotnet add package Sonoran.Net
+// For SonoranCADFiveM in-game usage, see the SonoranCADFiveM tab; .NET creates a fresh client from convars.
 using System.Collections.Generic;
 using Sonoran;
 
