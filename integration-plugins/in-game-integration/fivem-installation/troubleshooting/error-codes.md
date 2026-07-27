@@ -390,6 +390,32 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** No action is required. Provide the generated support reference and upload context to support if requested.
 
+### Smart Signs Errors
+
+#### ERR-SS-101
+
+**Key:** `SMARTSIGNS_PLAN_REQUIRED`
+
+**What it means:** Smart Signs authentication failed because the CAD community does not have access to the required Smart Signs feature or plan.
+
+**How to fix it:** Verify the CAD community has the required Smart Signs access or subscription, then retry Smart Signs authentication.
+
+#### ERR-SS-102
+
+**Key:** `SMARTSIGNS_AUTH_FAILED`
+
+**What it means:** Smart Signs authentication failed because Sonoran CAD could not authorize the configured community or server.
+
+**How to fix it:** Check the Sonoran CAD API key, community ID, and server ID configured for the Smart Signs resource.
+
+#### ERR-SS-103
+
+**Key:** `SMARTSIGNS_HELPER_STARTED`
+
+**What it means:** The `smartsigns_sonoran_helper` resource was started directly, but it is only intended for Smart Signs internal update handling.
+
+**How to fix it:** Remove `ensure smartsigns_sonoran_helper` or `start smartsigns_sonoran_helper` from the server startup configuration and start only the main Smart Signs resource.
+
 ### Bodycam Errors
 
 #### ERR-BC-101
@@ -472,7 +498,7 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Set `sonorancad/submodules/bodycam` and its `recordings` directory to permission mode `777`, then retry the upload.
 
-### ERR-BC-112
+#### ERR-BC-112
 
 **Key:** `BODYCAM_RECORDING_ACTIVE`
 
@@ -535,6 +561,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 **What it means:** The finalized bodycam clip failed to upload to CAD.
 
 **How to fix it:** Check API connectivity, authentication, upload endpoint availability, and the support reference for the upload failure context.
+
+#### ERR-BC-120
+
+**Key:** `BODYCAM_RECORDING_START_TIMEOUT`
+
+**What it means:** A recording start request timed out while waiting for bodycam initialization, display activation, or the client media stream to become ready.
+
+**How to fix it:** Review the state details printed with the error and the matching `[bodycam-recording]` server warning. Verify bodycam initialization, CAD duty state, TURN connectivity, and the reported NUI stream reason.
 
 ### CAD Display Errors
 
@@ -1001,6 +1035,14 @@ If your `server.cfg` contains anything like `ensure sonorancad` or `ensure neare
 **What it means:** Record printer rejected a share request because the URL or target list was invalid.
 
 **How to fix it:** Validate the shared URL and ensure at least one valid target player or identifier is supplied.
+
+#### ERR-RP-105
+
+**Key:** `RECORDPRINTER_FILESYSTEM_PERMISSION`
+
+**What it means:** The FXServer process does not have permission to create or write record printer PDF files.
+
+**How to fix it:** Grant the FXServer process write access to `sonorancad/submodules/recordPrinter/pdfs`, then restart the Sonoran CAD resource.
 
 ### Sonrad Errors
 
