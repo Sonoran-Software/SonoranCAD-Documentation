@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.17 07/28/2026
+
+{% tabs %}
+{% tab title="Fixed" %}
+Lookup: Flag Voice Announcements
+
+* Fixed lookup results failing to announce enabled custom flag names with text-to-speech.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.15 07/23/2026
 
 {% tabs %}
