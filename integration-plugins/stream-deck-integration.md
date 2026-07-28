@@ -40,6 +40,8 @@ Ex: **Status** action type > **Status Option** > **Panic**
 
 ## Action Capabilities
 
+The Sonoran CAD desktop application must be running and signed in to a Police, Fire, EMS, or Dispatch page for actions to run.
+
 ### Status
 
 Status buttons will automatically change labels based on your community's custom status buttons. Your current status option will show as a filled outline when selected.
@@ -52,42 +54,44 @@ Status buttons will automatically change labels based on your community's custom
 
 ### Panic
 
-The **Panic** button will toggle your unit's panic status.
+The **Panic** button will toggle your active unit's panic status.
 
 The button will change from outlined to filled when a panic mode is active.
 
-### Open Window
+### Window
 
 When pressed, these actions will open the corresponding window in the CAD.
 
 * **3D Live Map -** [**FiveM**](in-game-integration/available-plugins/live-map.md) **or** [**ER:LC**](erlc/3d-live-map.md)
-* [**Tone Board**](../tutorials/customization/tone-board.md)
-* [**Rapid IQ**](../tutorials/dispatching/rapid-iq.md)
+* [**Tone Board**](../tutorials/customization/tone-board.md) (Available to dispatchers or when Self Dispatch Mode is enabled)
+* [**Rapid IQ**](../tutorials/dispatching/rapid-iq.md) (Opens in the active visible Call Viewer)
 * [**Command Line**](../tutorials/dispatching/command-line-interface-cli.md)
 * [**Street Signs**](in-game-integration/available-plugins/smart-signs.md)
+* **Call Viewer**
 * [**Lookup**](../tutorials/records-management/searching-for-records.md)
 * [**Records**](../tutorials/records-management/)
 * [**10-Codes**](../tutorials/customization/10-codes.md)
 * [**Penal Codes**](../tutorials/customization/penal-codes.md)
 * [**Quick Links**](../tutorials/customization/quick-links.md)
 * **BOLOs**
-* **Active Calls** (When in Self Dispatch Mode)
-* **Emergency Calls** (When in Self Dispatch Mode)
-* **Signal**
+* **Active Calls**
+* **Emergency Calls** (Available to dispatchers or when Self Dispatch Mode is enabled)
+* **Signal** (Available to dispatchers or when Self Dispatch Mode is enabled)
 * **Timers**
 * **Notepad**
-* **Clear Dispatch Editor**
-* **Self-Clear (Detach from Call)**
 
-### Bodycam Options
+### Bodycam
 
-* Open Bodycam
-* Record Bodycam
-* View Recordings
+* **Open Bodycam** (Requires an active unit)
+* **Record Bodycam** (Requires an active unit)
+* **View Recordings**
 
-### ER:LC Actions
+### Other Actions
 
-Pressing these action buttons will perform the ER:LC integration action
+* **Clear Dispatch Editor** (Requires a visible Call Viewer)
+* **Self-Clear** (Detaches your active unit from its current call)
+
+The following actions run the corresponding ER:LC integration from a Police or Dispatch page:
 
 * [**Traffic Stop**](erlc/traffic-stops.md)
 * [**Plate Reader**](erlc/plate-reader.md)
