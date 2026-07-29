@@ -10,6 +10,22 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.18 07/29/2026
+
+{% tabs %}
+{% tab title="New" %}
+Custom Records: AI Narrative Improvement
+
+* Added Pro AI assistance for polishing custom record narratives, with usage visibility for administrators.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Lookup: Custom Section Labels
+
+* Fixed lookup result columns displaying internal placeholder field names instead of custom section labels.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.17 07/28/2026
 
 {% tabs %}
