@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.19 08/03/2026
+
+{% tabs %}
+{% tab title="New" %}
+Call Viewer: State Returns
+
+* Added a State Returns tab for attaching full lookup results to calls and reviewing them in table, card, or NCIC views.
+
+Database Sync: Automatic AI Setup
+
+* Added an AI-guided setup that automatically builds and reviews database sync field mappings.
+{% endtab %}
+
+{% tab title="Changed" %}
+Dispatch Taskbar: New Call Shortcut
+
+* Added the New Call taskbar action for dispatchers so they can open call creation directly from the taskbar.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.18 07/29/2026
 
 {% tabs %}
