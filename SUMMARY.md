@@ -75,7 +75,7 @@
 * [🛠️ Integrated Vendors](integration-plugins/integrated-vendors.md)
 * [📺 Twitch Bodycam, Bot, & Lighting Integration](integration-plugins/twitch-overlay-and-bot.md)
 * [Database Sync and Merge](integration-plugins/database-sync-and-merge/README.md)
-  * [Database Sync Credentials](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
+  * [Old: Manual Sync Setup](integration-plugins/database-sync-and-merge/database-sync-credentials.md)
   * [QB Core Mapping Tutorial](integration-plugins/database-sync-and-merge/qbcore-license-mapping.md)
   * [Troubleshooting](integration-plugins/database-sync-and-merge/troubleshooting.md)
 * [Discord Bot Integration](integration-plugins/discord-bot-integration.md)

@@ -41,7 +41,7 @@ Once purchased you can [download the resource from the CFX.re portal](https://po
 
 We suggest installing the `inferno-station-alert` folder within the `[sonorancad]` folder your integration framework is installed in. The final result would look like the image below:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: CAD Installation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Station Alert: CAD Installation</p></figcaption></figure>
 
 ### 3. Start the Resource
 
@@ -71,7 +71,7 @@ The following example:
 * Plays `Example Message` as text-to-speech at station `Roxwood`
 * Plays `EMS Priority 1` from the station alert resource tones at station `Roxwood`
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🚨 Station Alert Panel
 
@@ -79,7 +79,7 @@ Dispatchers can also add the dedicated `Station Alert` panel in their custom lay
 
 Here, you can type-to-filter and select multiple stations at once.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📞 Dispatch Call Editor
 

@@ -8,7 +8,7 @@ description: Customize your community's settings, branding, information, and mor
 
 The admin customization info section allows you to customize your community's image, name, time zone, and more!
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                 | Description                                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,4 +40,3 @@ If your community has an active subscription, you will automatically be downgrad
 
 To transfer the subscription to the new community ID, update your community ID by pressing "Modify" on the active subscription in the [payment center](../../pricing/faq/accessing-the-payment-center.md).
 {% endhint %}
-

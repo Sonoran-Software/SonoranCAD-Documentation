@@ -1,5 +1,6 @@
 ---
 description: Find out how to map a QB Core database with Sonoran CAD!
+hidden: true
 ---
 
 # QB Core Mapping Tutorial
