@@ -55,6 +55,16 @@ Navigate to **Settings** > **Keybinds** > **FiveM** and look for the **Panic But
 
 <figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
 
+### ACE Permissions
+
+The distributed `sonorancad.cfg` grants the panic command node used by the panic keybind:
+
+```cfg
+add_ace builtin.everyone command.panic allow
+```
+
+`/panic` is currently registered with ACE restriction disabled, so this bundled entry provides compatibility/default access rather than acting as an authorization boundary. The `/911`, `/311`, and `/511` commands are also registered without ACE restriction. Do not replace this line with a group grant expecting `/panic` to become role-restricted; the current source does not enforce `command.panic`.
+
 ### Call Location
 
 By default, calls responded to via the `/rcall` command located in [Dispatch Notify](dispatch-notify.md) will attempt to be routed to the callers current location, rather than the location of the call. If you would like calls to route to the location of the original call, please set `useCallLocation` to `true`

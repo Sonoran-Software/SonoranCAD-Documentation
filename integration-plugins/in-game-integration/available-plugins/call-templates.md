@@ -65,9 +65,20 @@ In the `calltemplates_config.lua` file you will find a section named `commands` 
 | `suggestionText`     | String  | The command suggestion text                                                                                      |
 | `includeWraithPlate` | Boolean | Attach locked plate from wraithv2 if available                                                                   |
 | `includePlayerUnit`  | Boolean | Attach the player's unit to the call                                                                             |
-| `useAcePermissions`  | Boolean | Require an ace permission to utilize the command. The ace permission is `command.commandName` \| Ex. `comand.ts` |
+| `useAcePermissions`  | Boolean | Require a FiveM command ACE to use the command. The node is `command.<command>`; the shipped `ts` and `towreq` entries default to `true`, requiring `command.ts` and `command.towreq`. |
 
 </details>
+
+### ACE Permissions
+
+The shipped `commands` entries enable `useAcePermissions`, so grant the exact command nodes to a role that should be able to create those calls:
+
+```cfg
+add_ace group.sonoran_cad_dispatch command.ts allow
+add_ace group.sonoran_cad_dispatch command.towreq allow
+```
+
+The node follows the configured `command` value. If `useAcePermissions` is omitted, the current resource defaults the registration to restricted; setting it to `false` removes the command ACE requirement for that entry.
 
 #### c. Add Call Type JSON Files
 
@@ -75,7 +86,7 @@ Each call type requires a JSON file to be added to the directory `submodules/cal
 
 ## Usage
 
-By default, this submodule comes with a `/ts` (traffic stop) and `/towrq` (tow request) commands.
+By default, this submodule comes with a `/ts` (traffic stop) and `/towreq` (tow request) commands.
 
 Example:
 

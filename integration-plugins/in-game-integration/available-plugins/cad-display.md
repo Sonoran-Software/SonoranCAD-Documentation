@@ -96,7 +96,8 @@ local config = {
     -- Ace Permissions Section --
     acePerms = {
         aceObjectUseMenu = "sonoran.caddisplay", -- Ace to open/attach CAD displays
-        aceObjectAdminUseMenu = "sonoran.caddisplay.admin" -- Ace to save/delete placements for vehicle models
+        aceObjectAdminUseMenu = "sonoran.caddisplay.admin", -- Ace to save/delete placements for vehicle models
+        aceWorldDisplayAdmin = "sonoran.caddisplay.world" -- Ace to save/delete station display placements
     },
 
     -- Framework Related Settings --
@@ -156,6 +157,24 @@ if config.enabled then Config.RegisterPluginConfig(config.pluginName, config) en
 ```
 
 </details>
+
+### ACE Permissions
+
+When `commands.restricted` is `true` (the default) and `permissionMode` is `"ace"` (the default), the server checks these configurable nodes:
+
+* `sonoran.caddisplay` allows a player to open the menu and use or attach a CAD display.
+* `sonoran.caddisplay.admin` allows saving and deleting vehicle-model placements.
+* `sonoran.caddisplay.world` allows saving and deleting station-display placements. If this value is blank, the current resource falls back to `aceObjectAdminUseMenu`.
+
+For example, grant access to the appropriate role instead of `builtin.everyone`:
+
+```cfg
+add_ace group.sonoran_cad_display sonoran.caddisplay allow
+add_ace group.sonoran_cad_display_admin sonoran.caddisplay.admin allow
+add_ace group.sonoran_cad_display_admin sonoran.caddisplay.world allow
+```
+
+The distributed `sonorancad.cfg` also grants `command.SonoranCAD::caddisplay::Interact`, `command.SonoranCAD::caddisplay::AcceptRequest`, and `command.SonoranCAD::caddisplay::DenyRequest` to `builtin.everyone`. These fixed client keybind commands are registered unrestricted and do not replace the server-side display checks above.
 
 ### Commands
 

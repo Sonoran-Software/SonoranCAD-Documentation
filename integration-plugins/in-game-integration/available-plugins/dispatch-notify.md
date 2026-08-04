@@ -102,6 +102,22 @@ Supported values:
 
 </details>
 
+### ACE Permissions
+
+This submodule uses two separate, configurable ACE checks:
+
+* `sonorancad.dispatchnotify` is the fixed node used when `unitDutyMethod = "permissions"`; it marks players with this ACE as on duty for notification logic. The shipped `unitDutyMethod` default is `"incad"`, so this ACE mode is opt-in.
+* `sonorancad.dispatchnotify.toggle` is the shipped default for `unitNotifyToggleAce`. When `enableUnitNotifyToggleCommand` is enabled (the default) and this value is not blank, it controls who may use the default `/dn notify` override. Set `unitNotifyToggleAce` to `""` to allow anyone to use that override, or replace it with another ACE name.
+
+For example, grant the nodes to the roles that need them:
+
+```cfg
+add_ace group.sonoran_cad_units sonorancad.dispatchnotify allow
+add_ace group.sonoran_cad_dispatch_admin sonorancad.dispatchnotify.toggle allow
+```
+
+The main `/dn` command is not itself registered as an ACE-restricted command; these nodes gate the duty-detection mode and the notification-toggle branch described above.
+
 ## Commands
 
 In-game commands can be used to

@@ -121,6 +121,23 @@ This command can be restricted via ACE permissions:
 forceOffAce = "sonorancad.bodycam.forceoff",
 ```
 
+Grant the configured node to a role containing users who may force bodycams off. For example:
+
+```cfg
+add_ace group.sonoran_cad_bodycam sonorancad.bodycam.forceoff allow
+```
+
+The `forceOffAce` value is configurable. Set it to `""` to disable this check. The other `/bodycam` subcommands are not ACE-restricted by this submodule.
+
+The distributed `sonorancad.cfg` also grants these fixed keybind command nodes:
+
+```cfg
+add_ace builtin.everyone command.SonoranCAD::bodycam::Keybind allow
+add_ace builtin.everyone command.SonoranCAD::bodycam::RecordingKeybind allow
+```
+
+These are bundled compatibility grants for the client keybind registrations, which are currently unrestricted; they are not a recommended production role assignment or a replacement for the server-side `forceOffAce` check.
+
 ### Unit Duty Requirement
 
 By default, the `requireUnitDuty` configuration value is set to `true`. This requires the unit to be logged into the Police, EMS or Fire portions of CAD in order to activate their bodycam.

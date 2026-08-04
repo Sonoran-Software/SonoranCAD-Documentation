@@ -84,3 +84,14 @@ function cadPlateLookup(plate, basicFlag, callback, autoLookup)
 ## For Developers
 
 This plugin also adds the commands `namefind` and `platefind` which takes the above arguments and prints the returned JSON object to the console.
+
+### ACE Permissions
+
+These developer commands are registered with FiveM command restriction enabled. Grant the exact nodes to a restricted developer or support role:
+
+```cfg
+add_ace group.sonoran_cad_debug command.namefind allow
+add_ace group.sonoran_cad_debug command.platefind allow
+```
+
+The command names are fixed in the current resource and are not configurable. They are intended for developer use, not general player access.

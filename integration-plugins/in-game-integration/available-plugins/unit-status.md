@@ -26,6 +26,7 @@ The bodycam settings are stored inside of the `/configuration/unitstatus_config.
 | ---------------- | ------------------------------------------------------------ | ------------------------ |
 | setStatusCommand | Command that will allow units to set their own status.       | setstatus                |
 | statusCodes      | Array of status codes, configurable to be community-specific | Default SonoranCAD setup |
+| enableAceCheck   | Require the server-side ACE check before a status update.   | `true`                   |
 
 </details>
 
@@ -35,13 +36,13 @@ Ensure the player has already [linked their CAD](../link-user-in-game.md) for th
 
 ### 4. Setup User Permissions
 
-This script provides a status set command by default. Players will need the `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) (or whatever you configure the command to be).
+When `enableAceCheck` is `true` (the default), players using the status command need the literal `command.setstatus` [ACE permission](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917). The current server-side check is not derived from `setStatusCommand`, so changing the client command name does not change this permission node.
 
 **Example**
 
-`add_ace builtin.everyone command.setstatus allow`
+`add_ace group.sonoran_cad_units command.setstatus allow`
 
-This line in your `config.cfg` file will allow everyone to access the command. We highly reccomend creating [proper ace permission groups](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) to prevent users from spamming.
+Add this line to your `config.cfg` for a group containing units who should be able to update their status. Avoid granting `builtin.everyone` unless public access is intentional.
 
 ## Commands
 

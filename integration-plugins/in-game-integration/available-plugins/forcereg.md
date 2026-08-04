@@ -42,6 +42,18 @@ The [tablet resource](tablet.md) can be configured to automatically link the use
 
 </details>
 
+### ACE Permissions
+
+The ACE whitelist is inactive with the shipped defaults (`whitelist.enabled = false` and `whitelist.mode = "qb-core"`). To use ACE access, enable the whitelist and set `whitelist.mode = "ace"`. The default `whitelist.aces` entry is `forcereg.whitelist`, and the list is configurable; any listed node can pass the whitelist.
+
+For example:
+
+```cfg
+add_ace group.sonoran_cad_linked forcereg.whitelist allow
+```
+
+Grant this node only to the role that should receive ForceReg registration notifications when the ACE whitelist is enabled.
+
 ## Commands
 
 In-game commands can be used to
