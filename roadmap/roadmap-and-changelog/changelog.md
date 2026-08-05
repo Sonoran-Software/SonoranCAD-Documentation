@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.19 08/05/2026
+
+{% tabs %}
+{% tab title="Fixed" %}
+Call Viewer: Mobile Call Notes
+
+* Fixed call notes so they display and remain scrollable on mobile and tablet screen sizes.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.19 08/03/2026
 
 {% tabs %}
