@@ -3207,6 +3207,10 @@ components:
                 type: string
               icon:
                 type: string
+              size:
+                type: integer
+                minimum: 4
+                maximum: 12
               fields:
                 type: array
                 items:

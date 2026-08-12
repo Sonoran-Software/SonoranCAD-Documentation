@@ -113,6 +113,7 @@ components:
               uid: { type: string }
               label: { type: string }
               icon: { type: string }
+              size: { type: integer, minimum: 4, maximum: 12 }
               fields:
                 type: array
                 items:
@@ -153,7 +154,15 @@ curl --request GET \
       { "id": "deployed", "label": "Deployed", "status": 1 },
       { "id": "resolved", "label": "Resolved", "status": 2 }
     ],
-    "sections": []
+    "sections": [
+      {
+        "uid": "call_source",
+        "label": "Call Source",
+        "icon": "fas fa-broadcast-tower",
+        "size": 6,
+        "fields": []
+      }
+    ]
   }
 ]
 ```
