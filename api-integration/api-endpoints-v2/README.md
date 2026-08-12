@@ -532,6 +532,7 @@ paths:
               templateId: 1
               values:
                 status: deployed
+                priority: Immediate
                 description: Reports of a disturbance outside the station.
                 code: GRADE_1
                 caller_name: Alex Smith

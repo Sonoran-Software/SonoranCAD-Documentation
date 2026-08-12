@@ -8,7 +8,7 @@ description: Create a dispatch call from a community-defined layout.
 
 Create a dispatch call using a configured template. Call `GET /v2/emergency/dispatch-templates` first and key `values` by each field's `uid`.
 
-The status field value must be a status option `id`, not the canonical numeric status. Sonoran CAD maps that option to pending, active, or closed behavior. Unit targets are supplied through the target properties and are snapshotted into the required units field. The normalized template and complete value dictionary are stored on the call, so later template edits do not change historical calls.
+The status field value must be a status option `id`, not the canonical numeric status. Sonoran CAD maps that option to pending, active, or closed behavior. Priority is a normal customizable select field: submit the selected text exactly as it appears in that field's `options` array. Unit targets are supplied through the target properties and are snapshotted into the required units field. The normalized template and complete value dictionary are stored on the call, so later template edits do not change historical calls.
 
 ## Path Parameters
 
@@ -43,6 +43,7 @@ local response = sonoran.cad:createCustomDispatchCallV2({
   templateId = 1,
   values = {
     status = "deployed",
+    priority = "Immediate",
     description = "Reports of a disturbance outside the station.",
     code = "GRADE_1",
     caller_name = "Alex Smith"
@@ -56,7 +57,7 @@ local response = sonoran.cad:createCustomDispatchCallV2({
 local cad = exports["sonorancad"]:getCadClient()
 local response = cad:createCustomDispatchCallV2({
   templateId = 1,
-  values = { status = "deployed", description = "Disturbance reported." },
+  values = { status = "deployed", priority = "Immediate", description = "Disturbance reported." },
   communityUserIds = {"player-1234"}
 })
 ```
@@ -68,6 +69,7 @@ const response = await instance.cad.createCustomDispatchCallV2({
   templateId: 1,
   values: {
     status: 'deployed',
+    priority: 'Immediate',
     description: 'Reports of a disturbance outside the station.',
     code: 'GRADE_1',
     caller_name: 'Alex Smith',
@@ -83,6 +85,7 @@ response = instance.cad.createCustomDispatchCallV2({
     "templateId": 1,
     "values": {
         "status": "deployed",
+        "priority": "Immediate",
         "description": "Reports of a disturbance outside the station.",
         "code": "GRADE_1",
         "caller_name": "Alex Smith",
@@ -100,6 +103,7 @@ var response = await sonoran.Cad.createCustomDispatchCallV2(new CreateCustomDisp
     Values = new Dictionary<string, object?>
     {
         ["status"] = "deployed",
+        ["priority"] = "Immediate",
         ["description"] = "Reports of a disturbance outside the station.",
         ["code"] = "GRADE_1",
         ["caller_name"] = "Alex Smith"
@@ -151,6 +155,7 @@ paths:
               templateId: 1
               values:
                 status: deployed
+                priority: Immediate
                 description: Reports of a disturbance outside the station.
                 code: GRADE_1
                 caller_name: Alex Smith
@@ -174,6 +179,7 @@ curl --request POST \
     "templateId": 1,
     "values": {
       "status": "deployed",
+      "priority": "Immediate",
       "description": "Reports of a disturbance outside the station.",
       "code": "GRADE_1",
       "caller_name": "Alex Smith"

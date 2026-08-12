@@ -10,7 +10,7 @@ Retrieve every dispatch layout for the community. Add `/{templateId}` to retriev
 
 A template contains grouped `sections`, responsive field widths, and custom `statusOptions`. Each status option maps its community-facing label and API `id` to the canonical call behavior: `0` pending, `1` active, or `2` closed.
 
-Fields with the `status`, `units`, or `description` binding are locked and required. The code field's visible label is controlled by the community's geographical 10-code setting.
+Fields with the `status`, `units`, or `description` binding are locked and required. Priority is represented as a standard `select` field whose text options are fully controlled by the community. The code field's visible label is controlled by the community's geographical 10-code setting.
 
 ## Example Request
 
