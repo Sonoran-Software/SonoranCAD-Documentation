@@ -479,6 +479,7 @@ paths:
         schema:
           type: integer
           minimum: 1
+          example: 1
       requestBody:
         required: true
         content:

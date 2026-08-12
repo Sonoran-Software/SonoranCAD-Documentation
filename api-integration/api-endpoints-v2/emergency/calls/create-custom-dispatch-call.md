@@ -38,6 +38,16 @@ The status field value must be a status option `id`, not the canonical numeric s
 {% tabs %}
 {% tab title="Sonoran.lua" %}
 ```lua
+-- luarocks install sonoran.lua
+local Sonoran = require("sonoran")
+
+local sonoran = Sonoran.createClient({
+  product = Sonoran.productEnums.CAD,
+  communityId = "YOUR_COMMUNITY_ID",
+  apiKey = "YOUR_API_KEY",
+  defaultServerId = 1
+})
+
 local response = sonoran.cad:createCustomDispatchCallV2({
   serverId = 1,
   templateId = 1,
@@ -53,6 +63,14 @@ local response = sonoran.cad:createCustomDispatchCallV2({
 ```
 {% endtab %}
 {% tab title="SonoranCADFiveM" %}
+Use this tab when calling the v2 API from the server side of an in-game FiveM resource.
+
+* **Sonoran.lua** and **Sonoran.js:** use the `sonorancad` export to get the configured CAD client.
+* **Sonoran.Net:** read the protected Sonoran CAD convars and create a client.
+* **Sonoran.py:** FiveM does not run Python resources; use the Sonoran.py tab for external integrations.
+
+**Sonoran.lua**
+
 ```lua
 local cad = exports["sonorancad"]:getCadClient()
 local response = cad:createCustomDispatchCallV2({
@@ -61,9 +79,60 @@ local response = cad:createCustomDispatchCallV2({
   communityUserIds = {"player-1234"}
 })
 ```
+
+**Sonoran.js**
+
+```javascript
+(async () => {
+  const cad = exports["sonorancad"].getCadClient();
+  const response = await cad.createCustomDispatchCallV2({
+    templateId: 1,
+    values: { status: 'deployed', priority: 'Immediate', description: 'Disturbance reported.' },
+    communityUserIds: ['player-1234'],
+  });
+})();
+```
+
+**Sonoran.Net**
+
+```csharp
+using System.Collections.Generic;
+using CitizenFX.Core.Native;
+using Sonoran;
+
+var serverId = int.TryParse(API.GetConvar("sonoran_serverId", "1"), out var parsed) ? parsed : 1;
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    product = SonoranProduct.CAD,
+    communityId = API.GetConvar("sonoran_communityID", ""),
+    apiKey = API.GetConvar("sonoran_apiKey", ""),
+    defaultServerId = serverId
+});
+
+var response = await sonoran.Cad.createCustomDispatchCallV2(new CreateCustomDispatchCallV2Request
+{
+    TemplateId = 1,
+    Values = new Dictionary<string, object?>
+    {
+        ["status"] = "deployed",
+        ["description"] = "Disturbance reported."
+    },
+    CommunityUserIds = new[] { "player-1234" }
+});
+```
 {% endtab %}
 {% tab title="Sonoran.js" %}
 ```javascript
+// npm install @sonoransoftware/sonoran.js
+const Sonoran = require('@sonoransoftware/sonoran.js');
+
+const instance = new Sonoran.Instance({
+  communityId: 'YOUR_COMMUNITY_ID',
+  apiKey: 'YOUR_API_KEY',
+  product: Sonoran.productEnums.CAD,
+  serverId: 1,
+});
+
 const response = await instance.cad.createCustomDispatchCallV2({
   serverId: 1,
   templateId: 1,
@@ -80,6 +149,17 @@ const response = await instance.cad.createCustomDispatchCallV2({
 {% endtab %}
 {% tab title="Sonoran.py" %}
 ```python
+# pip install Sonoran.py
+# Sonoran.py is for external Python integrations.
+from sonoran import Instance, productEnums
+
+instance = Instance(
+    apiKey="YOUR_API_KEY",
+    communityId="YOUR_COMMUNITY_ID",
+    product=productEnums.CAD,
+    serverId=1,
+)
+
 response = instance.cad.createCustomDispatchCallV2({
     "serverId": 1,
     "templateId": 1,
@@ -96,6 +176,18 @@ response = instance.cad.createCustomDispatchCallV2({
 {% endtab %}
 {% tab title="Sonoran.Net" %}
 ```csharp
+// dotnet add package Sonoran.Net
+using System.Collections.Generic;
+using Sonoran;
+
+using var sonoran = new SonoranClient(new SonoranClientOptions
+{
+    product = SonoranProduct.CAD,
+    communityId = "YOUR_COMMUNITY_ID",
+    apiKey = "YOUR_API_KEY",
+    defaultServerId = 1
+});
+
 var response = await sonoran.Cad.createCustomDispatchCallV2(new CreateCustomDispatchCallV2Request
 {
     ServerId = 1,
@@ -130,7 +222,7 @@ paths:
         - name: serverId
           in: path
           required: true
-          schema: { type: integer, minimum: 1 }
+          schema: { type: integer, minimum: 1, example: 1 }
       requestBody:
         required: true
         content:
