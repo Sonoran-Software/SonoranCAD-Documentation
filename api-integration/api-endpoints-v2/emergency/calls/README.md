@@ -28,6 +28,14 @@ Use these endpoints to read active calls, create and manage 911 calls, and manag
 [create-dispatch-call](create-dispatch-call.md)
 {% endcontent-ref %}
 
+{% content-ref url="get-dispatch-templates.md" %}
+[get-dispatch-templates](get-dispatch-templates.md)
+{% endcontent-ref %}
+
+{% content-ref url="create-custom-dispatch-call.md" %}
+[create-custom-dispatch-call](create-custom-dispatch-call.md)
+{% endcontent-ref %}
+
 {% content-ref url="update-dispatch-call.md" %}
 [update-dispatch-call](update-dispatch-call.md)
 {% endcontent-ref %}

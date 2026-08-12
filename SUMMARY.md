@@ -172,6 +172,8 @@
         * [Create 911 Call](api-integration/api-endpoints-v2/emergency/calls/create-911-call.md)
         * [Remove 911 Call](api-integration/api-endpoints-v2/emergency/calls/remove-911-call.md)
         * [Create Dispatch Call](api-integration/api-endpoints-v2/emergency/calls/create-dispatch-call.md)
+        * [Get Dispatch Templates](api-integration/api-endpoints-v2/emergency/calls/get-dispatch-templates.md)
+        * [Create Custom Dispatch Call](api-integration/api-endpoints-v2/emergency/calls/create-custom-dispatch-call.md)
         * [Update Dispatch Call](api-integration/api-endpoints-v2/emergency/calls/update-dispatch-call.md)
         * [Attach Units](api-integration/api-endpoints-v2/emergency/calls/attach-units.md)
         * [Detach Units](api-integration/api-endpoints-v2/emergency/calls/detach-units.md)

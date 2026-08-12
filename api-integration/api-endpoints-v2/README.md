@@ -53,7 +53,7 @@ General endpoints cover account management, custom records, lookup workflows, an
 
 Use this combined OpenAPI document if you want to import the full Sonoran CAD v2 API into Postman in one pass.
 
-This generated collection currently includes `71` documented v2 operations.
+This generated collection currently includes `74` documented v2 operations.
 
 <details>
 <summary>Copy the full OpenAPI YAML</summary>
@@ -467,6 +467,85 @@ paths:
                 postal: '9001'
       tags:
       - Emergency / Calls
+  /v2/emergency/servers/{serverId}/custom-dispatch-calls:
+    post:
+      operationId: createCustomDispatchCall
+      security:
+      - bearerAuth: []
+      parameters:
+      - name: serverId
+        in: path
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - templateId
+              - values
+              properties:
+                templateId:
+                  type: integer
+                  minimum: 1
+                values:
+                  type: object
+                  additionalProperties: true
+                identIds:
+                  type: array
+                  items:
+                    type: integer
+                accountUuid:
+                  type: string
+                  format: uuid
+                accounts:
+                  type: array
+                  items:
+                    type: string
+                    format: uuid
+                communityUserId:
+                  type: string
+                communityUserIds:
+                  type: array
+                  items:
+                    type: string
+                roblox:
+                  type: string
+                discord:
+                  type: string
+                notes:
+                  type: array
+                  items:
+                    type: object
+                metaData:
+                  type: object
+                  additionalProperties:
+                    type: string
+                deleteAfterMinutes:
+                  type: integer
+                  minimum: 0
+            example:
+              templateId: 1
+              values:
+                status: deployed
+                description: Reports of a disturbance outside the station.
+                code: GRADE_1
+                caller_name: Alex Smith
+              communityUserIds:
+              - player-1234
+      responses:
+        '201':
+          description: Custom dispatch call created
+        '400':
+          description: Template values or required fields are invalid
+        '404':
+          description: Template or unit target not found
+      tags:
+      - Emergency / Calls
   /v2/emergency/servers/{serverId}/dispatch-calls:
     post:
       summary: Create Dispatch Call
@@ -713,6 +792,45 @@ paths:
         required: true
       security:
       - bearerAuth: null
+      tags:
+      - Emergency / Calls
+  /v2/emergency/dispatch-templates:
+    get:
+      operationId: getDispatchTemplates
+      security:
+      - bearerAuth: []
+      responses:
+        '200':
+          description: Community dispatch templates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DispatchTemplate'
+      tags:
+      - Emergency / Calls
+  /v2/emergency/dispatch-templates/{templateId}:
+    get:
+      operationId: getDispatchTemplate
+      security:
+      - bearerAuth: []
+      parameters:
+      - name: templateId
+        in: path
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+      responses:
+        '200':
+          description: Dispatch template
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DispatchTemplate'
+        '404':
+          description: Template not found
       tags:
       - Emergency / Calls
   /v2/emergency/servers/{serverId}/calls/911/{callId}:
@@ -3051,6 +3169,70 @@ components:
       scheme: bearer
       bearerFormat: JWT
   schemas:
+    DispatchTemplate:
+      type: object
+      properties:
+        templateId:
+          type: integer
+        name:
+          type: string
+        version:
+          type: integer
+        isDefault:
+          type: boolean
+        statusOptions:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              label:
+                type: string
+              status:
+                type: integer
+                enum:
+                - 0
+                - 1
+                - 2
+        sections:
+          type: array
+          items:
+            type: object
+            properties:
+              uid:
+                type: string
+              label:
+                type: string
+              icon:
+                type: string
+              fields:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    uid:
+                      type: string
+                    type:
+                      type: string
+                    label:
+                      type: string
+                    binding:
+                      type: string
+                    size:
+                      type: integer
+                      minimum: 1
+                      maximum: 12
+                    required:
+                      type: boolean
+                    locked:
+                      type: boolean
+                    placeholder:
+                      type: string
+                    options:
+                      type: array
+                      items:
+                        type: string
     PenalCode:
       type: object
       properties:
