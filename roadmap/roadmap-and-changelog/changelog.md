@@ -10,6 +10,24 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.22 08/13/2026
+
+{% tabs %}
+{% tab title="New" %}
+Dispatch Calls: Layout Customization
+
+* Added a visual dispatch call layout editor for arranging sections and configuring system fields, custom fields, statuses, and required fields.
+
+Dispatch Calls: Call ID Format Customization
+
+* Added customizable dispatch call ID formats with year, month, day, and numeric ID variables for region-specific numbering.
+
+Community Settings: Geographical Customization
+
+* Added geographical settings for regional terminology, address and measurement formats, date and time preferences, and community menu labels.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.19 08/05/2026
 
 {% tabs %}
