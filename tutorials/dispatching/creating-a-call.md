@@ -4,6 +4,18 @@ description: This guide covers creating a new dispatch call in Sonoran CAD.
 
 # Creating a Call
 
+## Select a Call Layout
+
+<details>
+
+<summary>Selecting a Dispatch Call Layout</summary>
+
+If your community has configured [custom dispatch layouts](../customization/custom-dispatch-call-formats.md), you can change between them in the top right icon.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+</details>
+
 ## Creating a Call
 
 <details>

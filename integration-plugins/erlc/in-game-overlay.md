@@ -40,7 +40,7 @@ Users must have the **Self Dispatch** permission in order to toggle this on.
 
 When enabled (requires **Self Dispatch**) emergency calls will also be displayed in the overlay. Pressing the **Attach** button (enter) will automatically convert the emergency call to a dispatch call, attaching your unit.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="359"><figcaption></figcaption></figure>
 
 #### Previous/Next Call
 

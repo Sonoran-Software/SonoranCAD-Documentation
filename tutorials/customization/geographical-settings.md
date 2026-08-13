@@ -6,31 +6,10 @@ description: >-
 
 # Geographical Settings
 
-{% hint style="info" %}
-Community customization is not included with the free version.\
-For more information, see our [pricing](../../pricing/faq/) or view how to check your community [limits](../getting-started/view-your-limits.md).
-{% endhint %}
+## Geographical Settings
 
-### Geographical Settings
+Sonoran CAD offers additional phrasing customization for any country or locality.
 
-The admin customization menu allows you to change your geographical settings.
+Under **Admin** > **Customization** > **Geographical Settings** > communities can customize additional phrasing, currency symbols, and more.
 
-![](<../../.gitbook/assets/image (138).png>)
-
-| Customization       | Description                             |
-| ------------------- | --------------------------------------- |
-| Emergency Code      | Replaces all instances of "911"         |
-| Penal Code Name     | Replaces all instances of "Penal Codes" |
-| Ten Code Name       | Replaces all instances of "10-Codes"    |
-| Currency Delimiter  | Replaces all instances of "$"           |
-
-### For penal codes, my country does not use felony charges, bonds, etc.
-
-Sonoran CAD allows you to customize the charge type names, bond type names, and more.
-
-View our guide on penal code customization:
-
-{% content-ref url="penal-codes.md" %}
-[penal-codes.md](penal-codes.md)
-{% endcontent-ref %}
-
+<figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
