@@ -20,9 +20,13 @@ Here, you can enable and select a default map option for GTA, Roblox, or others.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-08 at 3.11.55 PM.png" alt=""><figcaption><p>Sonoran CAD - Live Map Type Selection</p></figcaption></figure>
 
-### 2. Set Your API ID
+### 2. Link In-Game
 
-Don't forget to have each community member set their account [API ID](../../../api-integration/getting-started/setting-your-api-id.md) to properly link their in-game user to the CAD.
+Don't forget to have each community member link their in-game user to the CAD.
+
+[For FiveM users, run `/link` in-game.](../link-user-in-game.md)
+
+For Roblox users, ensure your [Roblox account is linked to your Sonoran account](../../erlc/getting-started.md#linking-your-roblox-account).
 
 ### 3. User Access Permission
 
