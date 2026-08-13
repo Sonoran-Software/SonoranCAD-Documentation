@@ -109,7 +109,7 @@
     * [Kick](integration-plugins/in-game-integration/available-plugins/kick.md)
     * [LB Phone App](integration-plugins/in-game-integration/available-plugins/lb-phone-app.md)
     * [Local Callers](integration-plugins/in-game-integration/available-plugins/local-callers.md)
-    * [Locations](integration-plugins/in-game-integration/available-plugins/locations.md)
+    * [Unit Locations](integration-plugins/in-game-integration/available-plugins/locations.md)
     * [Live Map](integration-plugins/in-game-integration/available-plugins/live-map.md)
     * [Lookups](integration-plugins/in-game-integration/available-plugins/lookups.md)
     * [Pager Reborn](integration-plugins/in-game-integration/available-plugins/pager-reborn.md)

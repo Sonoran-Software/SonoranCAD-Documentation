@@ -1,55 +1,48 @@
 ---
-description: Sends locations of all online players to the CAD.
-hidden: true
+description: Automatically sends linked units' in-game locations to Sonoran CAD.
 ---
 
-# Locations
+# Unit Locations
 
-{% hint style="warning" %}
-This submodule utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
-{% endhint %}
+The Unit Locations submodule automatically sends a unit's current street, coordinates, vehicle type, and emergency-light state to Sonoran CAD. Dispatchers and other supported CAD panels can then see the unit's current location.
 
-{% hint style="success" %}
-Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
-{% endhint %}
+This submodule is included with the core Sonoran CAD FiveM resource and is enabled by default. Players only need to [link their in-game user to Sonoran CAD](../link-user-in-game.md). No separate installation is required.
 
-## Activation Video
+## Automatic Street Names
 
-Click to view our [locations and postal install video](https://youtu.be/Rc6MT0D6rcI).
+By default, the integration uses FiveM's native street-name lookup. Standard GTA street names work automatically.
 
-**Be sure you have already installed our** [**core framework**](../fivem-installation/)**!**
+Some custom HUD resources replace FiveM's game-wide text entries with their custom street names. These custom names also work automatically because the native lookup returns the updated name.
 
-## Installation Guide
+Other HUD resources keep custom names inside their own configuration. Those names are only visible to that HUD and cannot be detected automatically by other resources. For these HUDs, copy the HUD's street hash and name pairs into the Unit Locations configuration.
 
-### 1. Download and Install the Core
+## Custom Street Names
 
-If you haven't already, be sure to install and configure the [SonoranCAD Core](../fivem-installation/) first.
-
-### 2. Activate the Submodule and all Dependencies
-
-Follow the [submodule activation guide](../submodule-configuration/#activating-a-submodule) for the required submodules.
-
-### 3. Set Your API ID
-
-Don't forget to set your account [API ID](../../../api-integration/getting-started/setting-your-api-id.md) to properly link your in-game user to the CAD.
-
-## Further Configuration
-
-| Option       | Description                                                                    | Default Value       |
-| ------------ | ------------------------------------------------------------------------------ | ------------------- |
-| checkTime    | How frequently to send location updates to the server.                         | 5000 ms (5 seconds) |
-| prefixPostal | Prefixes postal to locations (like \[111] Some Road). Requires Postals plugin. | True                |
-
-## Usage
-
-### Automated Functionality
-
-This plugin requires no configuration by default and will send locations of all active players. This can be seen by dispatch or other panels.
-
-### Function
-
-This function can **only** be used by other plugins and is not exported.
+Open `/sonorancad/configuration/locations_config.lua` and enable `customStreetNames`. Add the same hash and display-name pairs used by your HUD:
 
 ```lua
-function findPlayerLocation(source) -- returns location as a string
+customStreetNames = {
+    enabled = true,
+    names = {
+        [0xAC9F694E] = "Custom Freeway Name",
+        ["0x10A6E7C9"] = "Custom Street Name"
+    }
+}
 ```
+
+Both the primary street and the nearest crossing can be replaced. Numeric hashes, signed decimal hashes, and quoted hexadecimal hashes are supported.
+
+If a street hash is not listed, the integration falls back to the normal FiveM street name. If `customStreetNames` is disabled or is not present in an older configuration file, unit locations continue working normally with native street names.
+
+{% hint style="info" %}
+If your HUD has an option to update custom names game-wide or update game text entries, enable that option instead. The Unit Locations submodule will then receive those names automatically, without duplicating the list in both configurations.
+{% endhint %}
+
+## Configuration
+
+| Option | Description | Default |
+| --- | --- | --- |
+| `clientCheckTime` | How often the client checks whether location data changed. | `250` ms |
+| `prefixPostal` | Prefixes the location with the nearest postal when the Postals submodule is available. | `true` |
+| `customStreetNames.enabled` | Enables the custom street hash override list. | `false` |
+| `customStreetNames.names` | Maps FiveM street hashes to custom display names. | Empty |
