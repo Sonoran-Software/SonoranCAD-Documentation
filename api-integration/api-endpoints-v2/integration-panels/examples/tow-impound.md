@@ -4,15 +4,53 @@ description: Display pending and assigned tow requests with vehicle details, the
 
 # Tow and Impound
 
-Display pending and assigned tow requests with vehicle details, then accept or complete each request from the CAD.
+This example connects an existing tow or impound resource to CAD. Requests created by an officer or another in-game system appear with the vehicle, plate, location, requester, and status. A dispatcher can accept or complete a request in CAD, and the resource applies that workflow change for in-game tow operators.
 
 ![Tow and Impound custom integration panel](<../../../../.gitbook/assets/integration-panels/tow-impound.png>)
 
-## Flow
+## How It Connects
 
-1. Create the panel with the definition below.
-2. Replace the instance state whenever the in-game system changes.
-3. Poll actions, apply them in the third-party system, then acknowledge each result.
+1. Install or update the panel definition when the resource is configured.
+2. On resource start, publish every pending and assigned request plus the current summary.
+3. Publish again when an in-game request is created, assigned, cancelled, or completed.
+4. Poll for `tow.accept` and `tow.complete` actions. Apply them through the tow resource, acknowledge them, then publish the updated request list.
+
+## Game-Side Outline
+
+The following is server-side pseudocode. Adapt the events and function names to your tow resource and preferred [API library](../README.md#sdk-helpers).
+
+```lua
+onResourceStart(function()
+  setIntegrationPanel("example.tow-requests", definition)
+  publishPanelState(readCurrentTowRequests())
+end)
+
+-- Includes requests created or updated by officers and tow operators.
+onTowRequestChanged(function()
+  publishPanelState(readCurrentTowRequests())
+end)
+
+everySecond(function()
+  local response = pollPanelActions({ after = cursor })
+
+  for _, event in ipairs(response.events) do
+    local success
+
+    if event.actionId == "tow.accept" then
+      success = towResource.acceptRequest(event.values.requestId)
+    elseif event.actionId == "tow.complete" then
+      success = towResource.completeRequest(event.values.requestId)
+    end
+
+    acknowledgePanelAction(event.id, success)
+    publishPanelState(readCurrentTowRequests())
+  end
+
+  cursor = response.nextCursor -- Persist after every returned action is acknowledged.
+end)
+```
+
+See [Set State](../set-state.md), [Poll Actions](../poll-actions.md), and [Acknowledge Action](../acknowledge-action.md) for copyable calls in every supported library.
 
 ## Actions
 
@@ -152,4 +190,3 @@ Display pending and assigned tow requests with vehicle details, then accept or c
 }
 ```
 </details>
-

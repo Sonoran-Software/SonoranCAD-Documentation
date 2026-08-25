@@ -4,18 +4,40 @@ description: Build live, interactive CAD panels for third-party systems and in-g
 
 # Integration Panels
 
-Integration Panels let a third-party developer describe a CAD panel with JSON, publish live state from a game server or external service, and receive user actions back through the v2 API.
+Integration Panels put live data and controls from an existing game script or external service directly inside Sonoran CAD. Instead of building and maintaining a custom CAD frontend for every integration, define the panel once with JSON and connect it to your system through the v2 API.
+
+Your integration remains the source of truth. It publishes the latest state to CAD, where authorized users can monitor and interact with it. Their button, toggle, select, and input actions are sent back to your integration to process. State changes made in-game or in CAD stay synchronized for every connected CAD user.
+
+Use an Integration Panel when dispatchers or responders need to see or control part of another system without leaving CAD—for example, active fire alarms, facility door locks, tow requests, or fleet condition.
 
 {% hint style="info" %}
 Start with the [visual panel builder](https://sonorancad.com/integration-panel-builder). For the fastest implementation, use the Claude and Codex plugins or MCP tools at [sonoransoftware.com/developers](https://sonoransoftware.com/developers) to generate and refine your manifest and integration code.
 {% endhint %}
 
+## Examples
+
+Start with a complete example, then replace its definition, state, and actions with data from your resource.
+
+| [Fire Alarm](examples/fire-alarm.md) | [Door Locks](examples/door-locks.md) |
+| --- | --- |
+| [![Fire Alarm integration panel](<../../../.gitbook/assets/integration-panels/fire-alarm.png>)](examples/fire-alarm.md) | [![Door Locks integration panel](<../../../.gitbook/assets/integration-panels/door-locks.png>)](examples/door-locks.md) |
+| Sync active alarms, play an alert sound, and control alarm state. | Monitor police and jail doors, then lock or unlock them from CAD. |
+
+| [Tow and Impound](examples/tow-impound.md) | [Fleet Management](examples/fleet-management.md) |
+| --- | --- |
+| [![Tow and Impound integration panel](<../../../.gitbook/assets/integration-panels/tow-impound.png>)](examples/tow-impound.md) | [![Fleet Management integration panel](<../../../.gitbook/assets/integration-panels/fleet-management.png>)](examples/fleet-management.md) |
+| Show incoming tow requests and move each request through its workflow. | Group fleet vehicles, monitor their condition, and request repairs. |
+
+[View all examples](examples/)
+
 ## How It Works
 
-1. **Define:** Create or replace a reusable panel definition for the community.
-2. **Publish:** Replace an instance's state when the third-party system changes. Connected CAD clients update live.
-3. **Act:** A CAD user changes a control or presses a button. The action enters the panel action queue.
-4. **Process:** The game script or external service polls, performs the action, and acknowledges the result.
+1. **Define:** Create or replace a reusable panel definition for the community. The definition controls layout, components, bindings, search, sorting, styling, sounds, and available actions.
+2. **Publish:** Send the complete current state whenever the game script or external system changes. Connected CAD clients update live.
+3. **Act:** A CAD user changes a control or presses a button. CAD adds that action and its values to the panel's action queue.
+4. **Process:** Your server-side integration polls the queue, applies the change to its system, acknowledges the result, and publishes the resulting state.
+
+Keep API calls and credentials on the server. A FiveM client script should send changes to its server-side resource, which then communicates with the CAD API.
 
 Use a stable `panelKey` for the integration and an `instanceKey` for each independent dataset, location, or controller. For example, a door integration could use `doors` as the panel key and `mission-row` as the instance key.
 

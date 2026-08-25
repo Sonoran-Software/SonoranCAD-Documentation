@@ -4,15 +4,53 @@ description: Monitor police, jail, and prison doors; search by facility; change 
 
 # Door Locks
 
-Monitor police, jail, and prison doors; search by facility; change one lock; or request a lock-all action.
+This example connects an existing door lock resource to CAD. Dispatchers can search doors across police stations, jails, and prisons, see whether each controller is online, and view the current lock state. A door used in-game updates CAD, while a CAD user can lock or unlock an online door without entering the game.
 
 ![Door Locks custom integration panel](<../../../../.gitbook/assets/integration-panels/door-locks.png>)
 
-## Flow
+## How It Connects
 
-1. Create the panel with the definition below.
-2. Replace the instance state whenever the in-game system changes.
-3. Poll actions, apply them in the third-party system, then acknowledge each result.
+1. Install or update the panel definition when the resource is configured.
+2. On resource start, read every configured door and publish the complete panel state.
+3. When a player or another script changes a door in-game, publish the new state to CAD.
+4. Poll for `door.set-locked` and `doors.lock-all` actions. Apply them through the door resource, acknowledge them, then republish the authoritative lock state.
+
+## Game-Side Outline
+
+The following is server-side pseudocode. Adapt the events and function names to your door lock resource and preferred [API library](../README.md#sdk-helpers).
+
+```lua
+onResourceStart(function()
+  setIntegrationPanel("example.door-locks", definition)
+  publishPanelState(readAllDoors())
+end)
+
+-- Covers a player using a door and changes made by another script.
+onDoorStateChanged(function()
+  publishPanelState(readAllDoors())
+end)
+
+everySecond(function()
+  local response = pollPanelActions({ after = cursor })
+
+  for _, event in ipairs(response.events) do
+    local success
+
+    if event.actionId == "door.set-locked" then
+      success = doorResource.setLocked(event.values.doorId, event.values.locked)
+    elseif event.actionId == "doors.lock-all" then
+      success = doorResource.lockAllOnlineDoors()
+    end
+
+    acknowledgePanelAction(event.id, success)
+    publishPanelState(readAllDoors())
+  end
+
+  cursor = response.nextCursor -- Persist after every returned action is acknowledged.
+end)
+```
+
+See [Set State](../set-state.md), [Poll Actions](../poll-actions.md), and [Acknowledge Action](../acknowledge-action.md) for copyable calls in every supported library.
 
 ## Actions
 
@@ -161,4 +199,3 @@ Monitor police, jail, and prison doors; search by facility; change one lock; or 
 }
 ```
 </details>
-

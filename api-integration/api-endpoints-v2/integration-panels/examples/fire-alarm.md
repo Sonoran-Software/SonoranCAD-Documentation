@@ -4,15 +4,52 @@ description: Monitor alarm controllers, surface active and fault states, toggle 
 
 # Fire Alarm
 
-Monitor alarm controllers, surface active and fault states, toggle alarms, and play a sound when the active count increases.
+This example connects an existing in-game fire alarm resource to CAD. Dispatchers can see normal, active, and faulted controllers without entering the game. When an alarm activates in-game, the resource publishes the new state so the CAD card pulses red and plays an alert sound. A dispatcher can also use the panel toggle to change the alarm state in-game.
 
 ![Fire Alarm custom integration panel](<../../../../.gitbook/assets/integration-panels/fire-alarm.png>)
 
-## Flow
+## How It Connects
 
-1. Create the panel with the definition below.
-2. Replace the instance state whenever the in-game system changes.
-3. Poll actions, apply them in the third-party system, then acknowledge each result.
+1. Install or update the panel definition when the resource is configured.
+2. On resource start, read every alarm controller and publish the complete panel state.
+3. When an alarm changes in-game, publish the new state. Connected CAD clients update immediately.
+4. Poll for `alarm.set-active` actions. Apply each action through the alarm resource, acknowledge it, then publish the authoritative state again.
+
+## Game-Side Outline
+
+The following is server-side pseudocode. Adapt the events and function names to your alarm resource and preferred [API library](../README.md#sdk-helpers).
+
+```lua
+-- Install the definition once, then publish the current in-game state.
+onResourceStart(function()
+  setIntegrationPanel("example.fire-alarms", definition)
+  publishPanelState(readAllAlarmControllers())
+end)
+
+-- In-game changes are pushed to every connected CAD user.
+onAlarmStateChanged(function()
+  publishPanelState(readAllAlarmControllers())
+end)
+
+-- Poll on the server. Never expose the CAD API key to a client script.
+everySecond(function()
+  local response = pollPanelActions({ after = cursor })
+
+  for _, event in ipairs(response.events) do
+    local success = fireAlarmResource.setActive(
+      event.values.alarmId,
+      event.values.active
+    )
+
+    acknowledgePanelAction(event.id, success)
+    publishPanelState(readAllAlarmControllers())
+  end
+
+  cursor = response.nextCursor -- Persist after every returned action is acknowledged.
+end)
+```
+
+See [Set State](../set-state.md), [Poll Actions](../poll-actions.md), and [Acknowledge Action](../acknowledge-action.md) for copyable calls in every supported library.
 
 ## Actions
 
@@ -180,4 +217,3 @@ Monitor alarm controllers, surface active and fault states, toggle alarms, and p
 }
 ```
 </details>
-
