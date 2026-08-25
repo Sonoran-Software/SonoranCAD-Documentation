@@ -41,3 +41,11 @@ Arguments are type-to-filter for items like units or [saved call types](creating
 Select the **Customize Commands** icon to configure custom commands and arguments.
 
 <figure><img src="../../.gitbook/assets/image (458).png" alt="" width="375"><figcaption></figcaption></figure>
+
+### Custom Shortcuts
+
+Users can also configure custom shortcuts. Shortcuts can be configured to enter custom CLI variables.
+
+{% content-ref url="shortcuts.md" %}
+[shortcuts.md](shortcuts.md)
+{% endcontent-ref %}

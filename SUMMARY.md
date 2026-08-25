@@ -48,6 +48,7 @@
   * [Command Line Interface (CLI)](tutorials/dispatching/command-line-interface-cli.md)
   * [Automations](tutorials/dispatching/automations.md)
   * [Chat](tutorials/dispatching/chat.md)
+  * [Shortcuts](tutorials/dispatching/shortcuts.md)
 * [Records Management](tutorials/records-management/README.md)
   * [Record Lookups](tutorials/records-management/searching-for-records.md)
   * [Adding a Record](tutorials/records-management/adding-a-criminal-record.md)
