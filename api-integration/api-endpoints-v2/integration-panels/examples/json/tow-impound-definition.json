@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "key": "example.tow-requests",
+  "name": "Tow & Impound",
+  "icon": "fas fa-truck-pickup",
+  "surfaces": ["dispatch", "police"],
+  "body": [
+    {
+      "type": "row",
+      "gap": "sm",
+      "children": [
+        { "type": "badge", "label": "Pending: {{state.summary.pending}}", "appearance": "primary" },
+        { "type": "badge", "label": "Assigned: {{state.summary.assigned}}", "appearance": "info" },
+        { "type": "badge", "label": "Completed today: {{state.summary.completed}}", "appearance": "positive" }
+      ]
+    },
+    {
+      "type": "repeat",
+      "source": "$state.requests",
+      "emptyText": "No tow requests",
+      "layout": "grid",
+      "minItemWidth": 300,
+      "gap": "sm",
+      "search": {
+        "placeholder": "Search plate, vehicle, or location",
+        "fields": ["plate", "vehicle", "location", "requester", "status"]
+      },
+      "sort": {
+        "label": "Order",
+        "default": "priority",
+        "options": [
+          {
+            "label": "Pending first",
+            "value": "priority",
+            "rules": [
+              { "path": "status", "order": ["PENDING", "ASSIGNED", "COMPLETED"] },
+              { "path": "createdAt", "direction": "asc" }
+            ]
+          },
+          {
+            "label": "Newest first",
+            "value": "newest",
+            "rules": [{ "path": "createdAt", "direction": "desc" }]
+          },
+          {
+            "label": "Plate A-Z",
+            "value": "plate",
+            "rules": [{ "path": "plate", "direction": "asc" }]
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "section",
+          "style": {
+            "borderColor": "$item.color",
+            "borderStyle": "solid",
+            "borderWidth": "1px",
+            "borderRadius": "6px",
+            "minHeight": "166px"
+          },
+          "children": [
+            {
+              "type": "row",
+              "align": "center",
+              "children": [
+                { "type": "icon", "icon": "fas fa-truck-pickup", "color": "$item.color" },
+                { "type": "text", "text": "$item.plate", "variant": "title", "grow": true },
+                { "type": "badge", "label": "$item.status", "appearance": "$item.appearance" }
+              ]
+            },
+            { "type": "text", "text": "$item.vehicle" },
+            { "type": "text", "text": "$item.location", "appearance": "muted" },
+            { "type": "text", "text": "Requested by {{item.requester}}", "variant": "caption", "appearance": "muted" },
+            {
+              "type": "button",
+              "label": "Accept request",
+              "icon": "fas fa-check",
+              "appearance": "primary",
+              "visibleWhen": { "path": "$item.pending", "equals": true },
+              "action": {
+                "id": "tow.accept",
+                "values": { "requestId": "$item.id" }
+              }
+            },
+            {
+              "type": "button",
+              "label": "Mark complete",
+              "icon": "fas fa-flag-checkered",
+              "appearance": "positive",
+              "visibleWhen": { "path": "$item.assigned", "equals": true },
+              "action": {
+                "id": "tow.complete",
+                "values": { "requestId": "$item.id" }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

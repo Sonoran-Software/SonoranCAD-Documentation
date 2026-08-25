@@ -1,0 +1,118 @@
+---
+description: Build live, interactive CAD panels for third-party systems and in-game scripts.
+---
+
+# Integration Panels
+
+Integration Panels let a third-party developer describe a CAD panel with JSON, publish live state from a game server or external service, and receive user actions back through the v2 API.
+
+{% hint style="info" %}
+Start with the [visual panel builder](https://sonorancad.com/integration-panel-builder). For the fastest implementation, use the Claude and Codex plugins or MCP tools at [sonoransoftware.com/developers](https://sonoransoftware.com/developers) to generate and refine your manifest and integration code.
+{% endhint %}
+
+## How It Works
+
+1. **Define:** Create or replace a reusable panel definition for the community.
+2. **Publish:** Replace an instance's state when the third-party system changes. Connected CAD clients update live.
+3. **Act:** A CAD user changes a control or presses a button. The action enters the panel action queue.
+4. **Process:** The game script or external service polls, performs the action, and acknowledges the result.
+
+Use a stable `panelKey` for the integration and an `instanceKey` for each independent dataset, location, or controller. For example, a door integration could use `doors` as the panel key and `mission-row` as the instance key.
+
+## SDK Helpers
+
+Sonoran.lua, Sonoran.js, Sonoran.py, and Sonoran.Net expose the same helper names. Lua calls them with `:`; the other libraries use `.`.
+
+| Task | Helper |
+| --- | --- |
+| List panels | `getIntegrationPanelsV2` |
+| Get one panel | `getIntegrationPanelV2` |
+| Create or replace a definition | `setIntegrationPanelV2` |
+| Delete a panel | `deleteIntegrationPanelV2` |
+| Replace live state | `setIntegrationPanelStateV2` |
+| Poll CAD actions | `getIntegrationPanelActionsV2` |
+| Acknowledge an action | `acknowledgeIntegrationPanelActionV2` |
+
+## Capabilities
+
+- Responsive rows, columns, grids, sections, and repeated state collections
+- Text, icons, badges, alerts, inputs, selects, toggles, checkboxes, and buttons
+- State, repeated-item, input, and current-control bindings
+- Search, named sort choices, conditions, confirmation prompts, and theme-safe styling
+- Built-in pulse animations and state- or action-triggered sound effects
+- Live API-to-CAD state updates and CAD-to-integration action events
+
+## Limits
+
+| Resource | Limit |
+| --- | --- |
+| Active panels per community | 50 |
+| Instances per panel and server | 100 |
+| Definition | 128 KiB; 200 root body nodes |
+| State per instance | 512 KiB |
+| Action result | 32 KiB |
+| Sounds per definition | 20 |
+| Panel name | 80 characters |
+| Panel and instance keys | 2-80 lowercase letters, numbers, dots, underscores, or hyphens |
+| Pending action lifetime | 60 seconds |
+
+Rate limits are fixed one-minute windows per API key. A `429` response includes `Retry-After`.
+
+| Operation group | Requests per minute |
+| --- | ---: |
+| List or get definitions | 120 |
+| Create, replace, or delete definitions | 30 |
+| Replace state | 300 |
+| Poll actions | 240 |
+| Acknowledge actions | 240 |
+
+## Common Errors
+
+| Status | Cause |
+| ---: | --- |
+| `400` | Invalid key, definition, query, or action result |
+| `401` | Missing or invalid bearer API key |
+| `404` | Server, panel, or action was not found |
+| `409` | Panel or instance limit reached, or state sent before its panel exists |
+| `413` | Definition, state, or action result exceeds its size cap |
+| `429` | Per-API-key rate limit exceeded |
+
+## Reference
+
+{% content-ref url="manifest-reference.md" %}
+[manifest-reference](manifest-reference.md)
+{% endcontent-ref %}
+
+{% content-ref url="examples/" %}
+[examples](examples/)
+{% endcontent-ref %}
+
+## Endpoints
+
+{% content-ref url="list-panels.md" %}
+[list-panels](list-panels.md)
+{% endcontent-ref %}
+
+{% content-ref url="get-panel.md" %}
+[get-panel](get-panel.md)
+{% endcontent-ref %}
+
+{% content-ref url="set-panel.md" %}
+[set-panel](set-panel.md)
+{% endcontent-ref %}
+
+{% content-ref url="delete-panel.md" %}
+[delete-panel](delete-panel.md)
+{% endcontent-ref %}
+
+{% content-ref url="set-state.md" %}
+[set-state](set-state.md)
+{% endcontent-ref %}
+
+{% content-ref url="poll-actions.md" %}
+[poll-actions](poll-actions.md)
+{% endcontent-ref %}
+
+{% content-ref url="acknowledge-action.md" %}
+[acknowledge-action](acknowledge-action.md)
+{% endcontent-ref %}

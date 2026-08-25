@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "key": "example.fleet-management",
+  "name": "Fleet Management",
+  "icon": "fas fa-car-side",
+  "surfaces": ["dispatch", "police", "fire", "ems"],
+  "body": [
+    {
+      "type": "row",
+      "gap": "sm",
+      "children": [
+        { "type": "badge", "label": "In service: {{state.summary.inService}}", "appearance": "positive" },
+        { "type": "badge", "label": "Low fuel: {{state.summary.lowFuel}}", "appearance": "warning" },
+        { "type": "badge", "label": "Needs repair: {{state.summary.needsRepair}}", "appearance": "primary" }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Law Enforcement Fleet",
+      "children": [
+        {
+          "type": "repeat",
+          "source": "$state.policeVehicles",
+          "emptyText": "No law enforcement vehicles",
+          "layout": "grid",
+          "minItemWidth": 255,
+          "gap": "sm",
+          "search": { "placeholder": "Search police fleet", "fields": ["unit", "model", "station", "status"] },
+          "sort": {
+            "label": "Order",
+            "default": "condition",
+            "options": [
+              { "label": "Needs attention", "value": "condition", "rules": [{ "path": "conditionRank", "direction": "asc" }, { "path": "unit", "direction": "asc" }] },
+              { "label": "Unit A-Z", "value": "unit", "rules": [{ "path": "unit", "direction": "asc" }] },
+              { "label": "Fuel low-high", "value": "fuel", "rules": [{ "path": "fuel", "direction": "asc" }] }
+            ]
+          },
+          "children": [
+            {
+              "type": "section",
+              "style": { "borderColor": "$item.color", "borderStyle": "solid", "borderWidth": "1px", "borderRadius": "6px", "minHeight": "146px" },
+              "children": [
+                { "type": "row", "align": "center", "children": [
+                  { "type": "icon", "icon": "fas fa-car-side", "color": "blue" },
+                  { "type": "text", "text": "$item.unit", "variant": "title", "grow": true },
+                  { "type": "badge", "label": "$item.status", "appearance": "$item.appearance" }
+                ] },
+                { "type": "text", "text": "$item.model" },
+                { "type": "text", "text": "Fuel: {{item.fuel}}% · Health: {{item.health}}%", "appearance": "muted" },
+                { "type": "text", "text": "$item.station", "variant": "caption", "appearance": "muted" },
+                { "type": "button", "label": "Repair", "icon": "fas fa-wrench", "appearance": "primary", "visibleWhen": { "path": "$item.needsRepair", "equals": true }, "action": { "id": "fleet.repair", "values": { "vehicleId": "$item.id" } } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Fire & EMS Fleet",
+      "children": [
+        {
+          "type": "repeat",
+          "source": "$state.fireVehicles",
+          "emptyText": "No fire or EMS vehicles",
+          "layout": "grid",
+          "minItemWidth": 255,
+          "gap": "sm",
+          "search": { "placeholder": "Search fire and EMS fleet", "fields": ["unit", "model", "station", "status"] },
+          "sort": {
+            "label": "Order",
+            "default": "condition",
+            "options": [
+              { "label": "Needs attention", "value": "condition", "rules": [{ "path": "conditionRank", "direction": "asc" }, { "path": "unit", "direction": "asc" }] },
+              { "label": "Unit A-Z", "value": "unit", "rules": [{ "path": "unit", "direction": "asc" }] },
+              { "label": "Fuel low-high", "value": "fuel", "rules": [{ "path": "fuel", "direction": "asc" }] }
+            ]
+          },
+          "children": [
+            {
+              "type": "section",
+              "style": { "borderColor": "$item.color", "borderStyle": "solid", "borderWidth": "1px", "borderRadius": "6px", "minHeight": "146px" },
+              "children": [
+                { "type": "row", "align": "center", "children": [
+                  { "type": "icon", "icon": "fas fa-truck-medical", "color": "primary" },
+                  { "type": "text", "text": "$item.unit", "variant": "title", "grow": true },
+                  { "type": "badge", "label": "$item.status", "appearance": "$item.appearance" }
+                ] },
+                { "type": "text", "text": "$item.model" },
+                { "type": "text", "text": "Fuel: {{item.fuel}}% · Health: {{item.health}}%", "appearance": "muted" },
+                { "type": "text", "text": "$item.station", "variant": "caption", "appearance": "muted" },
+                { "type": "button", "label": "Repair", "icon": "fas fa-wrench", "appearance": "primary", "visibleWhen": { "path": "$item.needsRepair", "equals": true }, "action": { "id": "fleet.repair", "values": { "vehicleId": "$item.id" } } }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

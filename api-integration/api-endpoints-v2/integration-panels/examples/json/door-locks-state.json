@@ -1,0 +1,9 @@
+{
+  "summary": { "locked": 2, "unlocked": 1, "offline": 1 },
+  "doors": [
+    { "id": "mrpd-lobby", "name": "Lobby Entrance", "facility": "Mission Row PD", "status": "LOCKED", "locked": true, "offline": false, "icon": "fas fa-lock", "color": "primary", "appearance": "primary" },
+    { "id": "mrpd-cell-1", "name": "Holding Cell 1", "facility": "Mission Row PD", "status": "UNLOCKED", "locked": false, "offline": false, "icon": "fas fa-lock-open", "color": "positive", "appearance": "positive" },
+    { "id": "prison-gate", "name": "Vehicle Gate", "facility": "Bolingbroke Prison", "status": "LOCKED", "locked": true, "offline": false, "icon": "fas fa-lock", "color": "primary", "appearance": "primary" },
+    { "id": "sandy-armory", "name": "Armory", "facility": "Sandy Shores SO", "status": "OFFLINE", "locked": true, "offline": true, "icon": "fas fa-triangle-exclamation", "color": "amber", "appearance": "warning" }
+  ]
+}

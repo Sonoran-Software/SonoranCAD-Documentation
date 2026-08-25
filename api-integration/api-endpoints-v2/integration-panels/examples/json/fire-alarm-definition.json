@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "key": "example.fire-alarms",
+  "name": "Fire Alarm",
+  "icon": "fas fa-bell",
+  "surfaces": ["dispatch", "fire", "ems", "police"],
+  "sounds": [
+    {
+      "id": "alarm-active",
+      "url": "https://s3.sonorancad.com/default/examples/demos/fire-alarm-demo.mp3",
+      "volume": 0.7,
+      "maxDurationMs": 8000,
+      "trigger": {
+        "event": "state",
+        "path": "summary.active",
+        "operator": "increased"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "row",
+      "gap": "sm",
+      "children": [
+        { "type": "badge", "label": "Active: {{state.summary.active}}", "appearance": "primary" },
+        { "type": "badge", "label": "Normal: {{state.summary.normal}}", "appearance": "positive" },
+        { "type": "badge", "label": "Fault: {{state.summary.fault}}", "appearance": "warning" }
+      ]
+    },
+    {
+      "type": "repeat",
+      "source": "$state.alarms",
+      "emptyText": "No alarms reported",
+      "layout": "grid",
+      "minItemWidth": 260,
+      "gap": "sm",
+      "search": {
+        "placeholder": "Search alarms",
+        "fields": ["name", "location", "status"]
+      },
+      "sort": {
+        "label": "Order",
+        "default": "active",
+        "options": [
+          {
+            "label": "Active first",
+            "value": "active",
+            "rules": [
+              { "path": "active", "direction": "desc" },
+              { "path": "name", "direction": "asc" }
+            ]
+          },
+          {
+            "label": "Name A-Z",
+            "value": "name",
+            "rules": [{ "path": "name", "direction": "asc" }]
+          },
+          {
+            "label": "Status",
+            "value": "status",
+            "rules": [
+              { "path": "status", "order": ["ACTIVE", "FAULT", "NORMAL"] },
+              { "path": "name", "direction": "asc" }
+            ]
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "section",
+          "animation": "$item.animation",
+          "style": {
+            "borderColor": "$item.color",
+            "borderStyle": "solid",
+            "borderWidth": "1px",
+            "borderRadius": "6px",
+            "minHeight": "132px"
+          },
+          "children": [
+            {
+              "type": "row",
+              "align": "center",
+              "children": [
+                { "type": "icon", "icon": "fas fa-fire", "color": "$item.color" },
+                { "type": "text", "text": "$item.name", "variant": "title", "grow": true },
+                { "type": "badge", "label": "$item.status", "appearance": "$item.appearance" }
+              ]
+            },
+            { "type": "text", "text": "$item.location", "appearance": "muted" },
+            {
+              "type": "toggle",
+              "id": "alarm-active",
+              "label": "Alarm active",
+              "value": "$item.active",
+              "color": "$item.color",
+              "action": {
+                "id": "alarm.set-active",
+                "values": { "alarmId": "$item.id", "active": "$value" }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

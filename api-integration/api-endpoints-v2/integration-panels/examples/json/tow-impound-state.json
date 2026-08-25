@@ -1,0 +1,8 @@
+{
+  "summary": { "pending": 2, "assigned": 1, "completed": 8 },
+  "requests": [
+    { "id": "tow-1042", "plate": "46EJX219", "vehicle": "Vapid Stanier · Black", "location": "Alta St / Vespucci Blvd", "requester": "1A-12", "status": "PENDING", "createdAt": "2026-08-25T18:12:00Z", "pending": true, "assigned": false, "color": "primary", "appearance": "primary" },
+    { "id": "tow-1043", "plate": "83KLM550", "vehicle": "Bravado Bison · White", "location": "Route 68 / Joshua Rd", "requester": "2L-04", "status": "PENDING", "createdAt": "2026-08-25T18:16:00Z", "pending": true, "assigned": false, "color": "primary", "appearance": "primary" },
+    { "id": "tow-1039", "plate": "29QRS118", "vehicle": "Karin Sultan · Blue", "location": "Mission Row Impound", "requester": "1B-31 · Tow 7", "status": "ASSIGNED", "createdAt": "2026-08-25T17:54:00Z", "pending": false, "assigned": true, "color": "blue", "appearance": "info" }
+  ]
+}

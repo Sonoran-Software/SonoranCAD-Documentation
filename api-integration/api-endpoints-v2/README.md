@@ -40,6 +40,14 @@ Civilian endpoints cover character retrieval, character selection, linked sync-c
 [civilian](civilian/)
 {% endcontent-ref %}
 
+### Integration Panels
+
+Integration Panels let third-party systems define interactive CAD UI, publish live state, and process CAD user actions.
+
+{% content-ref url="integration-panels/" %}
+[integration-panels](integration-panels/)
+{% endcontent-ref %}
+
 ### General
 
 General endpoints cover account management, custom records, lookup workflows, and community-level configuration.
@@ -53,7 +61,7 @@ General endpoints cover account management, custom records, lookup workflows, an
 
 Use this combined OpenAPI document if you want to import the full Sonoran CAD v2 API into Postman in one pass.
 
-This generated collection currently includes `74` documented v2 operations.
+This generated collection currently includes `81` documented v2 operations.
 
 <details>
 <summary>Copy the full OpenAPI YAML</summary>
@@ -3164,6 +3172,301 @@ paths:
               communityUserId: player-1234
       tags:
       - General / Records
+  /v2/integration-panels/servers/{serverId}/panels/{panelKey}/actions/{eventId}/ack:
+    post:
+      summary: Acknowledge Integration Panel Action
+      operationId: acknowledgeIntegrationPanelAction
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: serverId
+        in: path
+        required: true
+        schema:
+          type: integer
+        example: 1
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      - name: eventId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+        example: 11111111-1111-1111-1111-111111111111
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - success
+              properties:
+                success:
+                  type: boolean
+                message:
+                  type: string
+                  maxLength: 500
+                result:
+                  type: object
+                  additionalProperties: true
+            example:
+              success: true
+              message: Alarm disabled
+              result:
+                alarmId: mrpd-lobby
+                active: false
+      responses:
+        200:
+          description: Acknowledged action
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                panelKey: example.fire-alarms
+                serverId: 1
+                eventId: 11111111-1111-1111-1111-111111111111
+                success: true
+                message: Alarm disabled
+      tags:
+      - Integration Panels
+  /v2/integration-panels/{panelKey}:
+    delete:
+      summary: Delete Integration Panel
+      operationId: deleteIntegrationPanel
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      responses:
+        200:
+          description: Panel disabled
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                key: example.fire-alarms
+                enabled: false
+      tags:
+      - Integration Panels
+    get:
+      summary: Get Integration Panel
+      operationId: getIntegrationPanel
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      responses:
+        200:
+          description: Panel definition and instances
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Integration Panels
+    put:
+      summary: Set Integration Panel
+      operationId: putIntegrationPanel
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - definition
+              properties:
+                definition:
+                  type: object
+            example:
+              definition:
+                schemaVersion: 1
+                key: example.fire-alarms
+                name: Fire Alarm
+                icon: fas fa-bell
+                surfaces:
+                - dispatch
+                - fire
+                body:
+                - type: text
+                  text: Connected to the alarm controller.
+      responses:
+        200:
+          description: Created or replaced panel
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Integration Panels
+  /v2/integration-panels:
+    get:
+      summary: List Integration Panels
+      operationId: listIntegrationPanels
+      security:
+      - bearerAuth: null
+      responses:
+        200:
+          description: Active panels and stored instances
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+              example:
+              - key: example.fire-alarms
+                name: Fire Alarm
+                definition:
+                  schemaVersion: 1
+                  name: Fire Alarm
+                  body: []
+                instances:
+                - instanceKey: default
+                  state: {}
+                  revision: 4
+      tags:
+      - Integration Panels
+  /v2/integration-panels/servers/{serverId}/panels/{panelKey}/actions:
+    get:
+      summary: Poll Integration Panel Actions
+      operationId: pollIntegrationPanelActions
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: serverId
+        in: path
+        required: true
+        schema:
+          type: integer
+        example: 1
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      - name: after
+        in: query
+        schema:
+          type: integer
+          format: int64
+          minimum: 0
+          default: 0
+      - name: limit
+        in: query
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 100
+          default: 100
+      responses:
+        200:
+          description: Pending actions and next cursor
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                events:
+                - cursor: 42
+                  id: 11111111-1111-1111-1111-111111111111
+                  panelKey: example.fire-alarms
+                  serverId: 1
+                  instanceKey: default
+                  actionId: alarm.set-active
+                  actorUuid: 22222222-2222-2222-2222-222222222222
+                  actorName: John Doe
+                  values:
+                    alarmId: mrpd-lobby
+                    active: false
+                  createdAt: '2026-08-25T18:02:00Z'
+                  expiresAt: '2026-08-25T18:03:00Z'
+                nextCursor: 42
+      tags:
+      - Integration Panels
+  /v2/integration-panels/servers/{serverId}/panels/{panelKey}/instances/{instanceKey}/state:
+    put:
+      summary: Set Integration Panel State
+      operationId: replaceIntegrationPanelState
+      security:
+      - bearerAuth: null
+      parameters:
+      - name: serverId
+        in: path
+        required: true
+        schema:
+          type: integer
+        example: 1
+      - name: panelKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: example.fire-alarms
+      - name: instanceKey
+        in: path
+        required: true
+        schema:
+          type: string
+        example: default
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - state
+              properties:
+                state:
+                  type: object
+                  additionalProperties: true
+            example:
+              state:
+                summary:
+                  active: 1
+                  normal: 2
+                alarms:
+                - id: mrpd-lobby
+                  name: MRPD Lobby
+                  active: true
+      responses:
+        200:
+          description: Stored state and revision
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Integration Panels
 components:
   securitySchemes:
     bearerAuth:

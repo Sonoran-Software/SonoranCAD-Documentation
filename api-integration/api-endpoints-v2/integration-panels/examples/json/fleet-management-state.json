@@ -1,0 +1,12 @@
+{
+  "summary": { "inService": 3, "lowFuel": 1, "needsRepair": 2 },
+  "policeVehicles": [
+    { "id": "pd-401", "unit": "PD-401", "model": "Vapid Police Cruiser", "station": "Mission Row PD", "status": "NEEDS REPAIR", "fuel": 62, "health": 38, "needsRepair": true, "conditionRank": 0, "color": "primary", "appearance": "primary" },
+    { "id": "pd-418", "unit": "PD-418", "model": "Vapid Interceptor", "station": "Vespucci PD", "status": "IN SERVICE", "fuel": 84, "health": 96, "needsRepair": false, "conditionRank": 2, "color": "positive", "appearance": "positive" },
+    { "id": "so-212", "unit": "SO-212", "model": "Declasse Granger", "station": "Sandy Shores SO", "status": "LOW FUEL", "fuel": 14, "health": 91, "needsRepair": false, "conditionRank": 1, "color": "amber", "appearance": "warning" }
+  ],
+  "fireVehicles": [
+    { "id": "e24", "unit": "Engine 24", "model": "MTL Fire Engine", "station": "Sandy Shores Station 24", "status": "IN SERVICE", "fuel": 76, "health": 100, "needsRepair": false, "conditionRank": 2, "color": "positive", "appearance": "positive" },
+    { "id": "m1", "unit": "Medic 1", "model": "Brute Ambulance", "station": "Pillbox Medical", "status": "NEEDS REPAIR", "fuel": 53, "health": 44, "needsRepair": true, "conditionRank": 0, "color": "primary", "appearance": "primary" }
+  ]
+}

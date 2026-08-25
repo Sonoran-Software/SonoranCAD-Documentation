@@ -1,0 +1,33 @@
+{
+  "summary": { "active": 1, "normal": 1, "fault": 1 },
+  "alarms": [
+    {
+      "id": "mrpd-lobby",
+      "name": "MRPD Lobby",
+      "location": "Mission Row",
+      "status": "ACTIVE",
+      "appearance": "primary",
+      "color": "primary",
+      "animation": "pulse-negative",
+      "active": true
+    },
+    {
+      "id": "sandy-24",
+      "name": "Station 24",
+      "location": "Sandy Shores",
+      "status": "NORMAL",
+      "appearance": "positive",
+      "color": "positive",
+      "active": false
+    },
+    {
+      "id": "pillbox",
+      "name": "Pillbox Medical",
+      "location": "Los Santos",
+      "status": "FAULT",
+      "appearance": "warning",
+      "color": "amber",
+      "active": false
+    }
+  ]
+}
