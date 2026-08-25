@@ -10,6 +10,22 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.23 08/25/2026
+
+{% tabs %}
+{% tab title="New" %}
+Shortcuts: Workflow Automation
+
+* Added recordable taskbar shortcuts with reusable steps, hotkeys, CLI commands and arguments, import and export, and Stream Deck playback.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Self Dispatch: New Call Taskbar Action
+
+* Fixed creating a call from the New Call taskbar item in self dispatch.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.22 08/13/2026
 
 {% tabs %}
