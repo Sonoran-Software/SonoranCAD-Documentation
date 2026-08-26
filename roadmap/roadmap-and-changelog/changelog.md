@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.24 08/26/2026
+
+{% tabs %}
+{% tab title="New" %}
+Mobile App: Usage Analytics Controls
+
+* Added optional usage analytics with regional consent and an account-level privacy setting.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Records: Charge Preview Tooltips
+
+* Fixed ambiguous charge previews from displaying details for the wrong penal code.
+
+Dispatch: Custom Call Statuses
+
+* Fixed active and historical calls displaying legacy statuses instead of their customized dispatch status.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.23 08/25/2026
 
 {% tabs %}
