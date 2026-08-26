@@ -14,9 +14,9 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
-Mobile App: Usage Analytics Controls
+Integration Panels
 
-* Added optional usage analytics with regional consent and an account-level privacy setting.
+* Added an all-new API to create custom UI panels in the CAD, complete with events and storage for third-party integrations.
 {% endtab %}
 
 {% tab title="Fixed" %}
@@ -28,8 +28,8 @@ Dispatch: Custom Call Statuses
 
 * Fixed active and historical calls displaying legacy statuses instead of their customized dispatch status.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.23 08/25/2026
 
 {% tabs %}
@@ -44,8 +44,8 @@ Self Dispatch: New Call Taskbar Action
 
 * Fixed creating a call from the New Call taskbar item in self dispatch.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.22 08/13/2026
 
 {% tabs %}
@@ -62,8 +62,8 @@ Community Settings: Geographical Customization
 
 * Added geographical settings for regional terminology, address and measurement formats, date and time preferences, and community menu labels.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.19 08/05/2026
 
 {% tabs %}
@@ -72,8 +72,8 @@ Call Viewer: Mobile Call Notes
 
 * Fixed call notes so they display and remain scrollable on mobile and tablet screen sizes.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.19 08/03/2026
 
 {% tabs %}
@@ -92,8 +92,8 @@ Dispatch Taskbar: New Call Shortcut
 
 * Added the New Call taskbar action for dispatchers so they can open call creation directly from the taskbar.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.18 07/29/2026
 
 {% tabs %}
@@ -108,8 +108,8 @@ Lookup: Custom Section Labels
 
 * Fixed lookup result columns displaying internal placeholder field names instead of custom section labels.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.17 07/28/2026
 
 {% tabs %}
@@ -118,8 +118,8 @@ Lookup: Flag Voice Announcements
 
 * Fixed lookup results failing to announce enabled custom flag names with text-to-speech.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.15 07/23/2026
 
 {% tabs %}
@@ -146,8 +146,8 @@ Taskbar: Dual Compact Toolbar Width
 
 * Fixed the secondary taskbar failing to span the full width when Dual Taskbar and Compact Toolbar are enabled.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.13 07/22/2026
 
 {% tabs %}
@@ -204,8 +204,8 @@ Call Editor: Call Description
 
 * Fixed an issue where the call description box of the call viewer could sometimes overflow the parent container.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.12 07/20/2026
 
 {% tabs %}
