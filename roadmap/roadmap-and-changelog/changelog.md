@@ -10,6 +10,20 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.25 08/27/2026
+
+{% tabs %}
+{% tab title="New" %}
+ER:LC Integration: Emergency Call Auto-Delete
+
+* Added configurable automatic removal of ER:LC emergency calls after a selected number of minutes.
+
+ER:LC Integration: Emergency Call Type Controls
+
+* Added individual controls to enable or disable Police, Fire, and DOT emergency calls.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.24 08/26/2026
 
 {% tabs %}
