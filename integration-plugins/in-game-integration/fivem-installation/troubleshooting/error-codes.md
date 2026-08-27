@@ -282,6 +282,14 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Find the unique field value in the record payload, choose a value that is not already used, or update the existing CAD record instead of creating a duplicate.
 
+#### ERR-CORE-036
+
+**Key:** `APIKEY_CONVAR_UNINITIALIZED`
+
+**What it means:** SonoranCAD was started without the required convar and permission setup from the bundled `sonorancad.cfg`. This can break SonoranCAD updates and third-party integrations.
+
+**How to fix it:** In `server.cfg`, remove every `ensure sonorancad` line, use `exec @sonorancad/sonorancad.cfg` instead, and then fully restart FXServer.
+
 #### ERR-CORE-900
 
 **Key:** `UNHANDLED_SERVER_ERROR`
@@ -1110,9 +1118,9 @@ If your `server.cfg` contains anything like `ensure sonorancad` or `ensure neare
 
 **Key:** `APIKEY_CONVAR_UNINITIALIZED`
 
-**What it means:** SonoranCAD started before the bundled convar setup from `sonorancad.cfg` initialized the API key path.
+**What it means:** Older SonoranCAD versions reported missing `sonorancad.cfg` startup setup with this warning. Current versions report the same condition as `ERR-CORE-036` because it can break SonoranCAD updates and third-party integrations.
 
-**How to fix it:** Use `exec sonorancad.cfg` and make sure it runs before `ensure sonorancad`.
+**How to fix it:** In `server.cfg`, remove every `ensure sonorancad` line, use `exec @sonorancad/sonorancad.cfg` instead, and then fully restart FXServer.
 
 #### WRN-CORE-006
 
