@@ -61,7 +61,7 @@ General endpoints cover account management, custom records, lookup workflows, an
 
 Use this combined OpenAPI document if you want to import the full Sonoran CAD v2 API into Postman in one pass.
 
-This generated collection currently includes `81` documented v2 operations.
+This generated collection currently includes `82` documented v2 operations.
 
 <details>
 <summary>Copy the full OpenAPI YAML</summary>
@@ -2460,6 +2460,26 @@ paths:
       - bearerAuth: null
       tags:
       - General / Configuration
+  /v2/general/database-sync:
+    get:
+      summary: Get Database Sync Configuration
+      operationId: getDatabaseSyncConfiguration
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatabaseSyncConfiguration'
+              example:
+                enabled: true
+                character: true
+                licenses: false
+                vehicleRegistrations: true
+      security:
+      - bearerAuth: null
+      tags:
+      - General / Configuration
   /v2/general/info:
     get:
       summary: Get Info
@@ -3542,6 +3562,22 @@ components:
                       type: array
                       items:
                         type: string
+    DatabaseSyncConfiguration:
+      type: object
+      required:
+      - enabled
+      - character
+      - licenses
+      - vehicleRegistrations
+      properties:
+        enabled:
+          type: boolean
+        character:
+          type: boolean
+        licenses:
+          type: boolean
+        vehicleRegistrations:
+          type: boolean
     PenalCode:
       type: object
       properties:

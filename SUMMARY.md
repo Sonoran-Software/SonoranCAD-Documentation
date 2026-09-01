@@ -242,6 +242,7 @@
         * [Lookup By Value](api-integration/api-endpoints-v2/general/lookups/lookup-by-value.md)
         * [Lookup By Custom Search](api-integration/api-endpoints-v2/general/lookups/lookup-by-custom.md)
       * [Configuration](api-integration/api-endpoints-v2/general/configuration/README.md)
+        * [Get Database Sync Configuration](api-integration/api-endpoints-v2/general/configuration/get-database-sync-configuration.md)
         * [Get Penal Codes](api-integration/api-endpoints-v2/general/configuration/get-penal-codes.md)
         * [Set Penal Codes](api-integration/api-endpoints-v2/general/configuration/set-penal-codes.md)
         * [Heartbeat](api-integration/api-endpoints-v2/general/configuration/heartbeat.md)

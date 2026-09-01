@@ -8,6 +8,10 @@ The v2 general configuration endpoints manage penal codes, servers, postal data,
 
 ## Endpoints
 
+{% content-ref url="get-database-sync-configuration.md" %}
+[get-database-sync-configuration](get-database-sync-configuration.md)
+{% endcontent-ref %}
+
 {% content-ref url="get-penal-codes.md" %}
 [get-penal-codes](get-penal-codes.md)
 {% endcontent-ref %}
