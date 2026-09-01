@@ -46,9 +46,9 @@ The form uses the template from CAD, so you do not need to maintain a separate l
 
 Templates are cached for **60 seconds** by default. After saving a template change, allow the cache to expire, then close and reopen `/civreg` to load the updated form. An already-open form does not refresh automatically.
 
-### 5. Configure Optional Autofill and Portrait Hosting
+### 5. Configure Optional Autofill and Portrait Uploads
 
-For identity autofill, follow [Framework Autofill](#framework-autofill). For templates with image fields, check [Portrait Hosting](#portrait-hosting) so saved portraits can load in CAD.
+For identity autofill, follow [Framework Autofill](#framework-autofill). For templates with image fields, review [Portrait Uploads](#portrait-uploads) and the image size limit.
 
 ## Player Guide
 
@@ -135,33 +135,15 @@ For example, if your first-name field has the custom Field Mapping ID `givenName
 
 Only values supplied by the framework and mapped to an existing template field are prefilled. Missing values leave the template's default or an empty field for the player to complete. Prefilled fields remain editable unless marked read-only in CAD. Framework support is used to read identity details; registration does not update the framework character.
 
-## Portrait Hosting
+## Portrait Uploads
 
-Captured portraits are saved under `sonorancad/filestore/civreg`. CAD stores the public URL of each submitted image, so that URL must remain reachable for the portrait to display.
+Captured portraits are uploaded directly with the character registration as **base64 image data**, including the PNG or JPEG data prefix. New submissions do not require a public image URL, reverse proxy, or a saved image file on the game server.
 
-### Automatic URL
+The server validates each portrait before sending the registration to CAD. `maxSelfieBytes` limits the decoded image size to **1 MiB** by default. If an image is invalid or too large, the form displays an error so the player can retake it and try again.
 
-With `selfieBaseUrl = ""`, the submodule builds the image base URL from the configured CAD server's public IP and listener port:
+### Updating from URL-Based Portraits
 
-```text
-http://<public-server-ip>:<listener-port>/sonorancad/civreg
-```
-
-The resource-name portion follows the running resource's name. Verify the CAD server selected by `serverId` has the correct public address and listener port, and that the resource's HTTP image route is reachable from outside the game server.
-
-### HTTPS, Reverse Proxies, and Custom Hostnames
-
-Set `selfieBaseUrl` to the public image directory when using HTTPS, a proxy, or a custom hostname. For example, edit this entry inside `civreg_config.lua`:
-
-```lua
-selfieBaseUrl = "https://play.example.com/civreg",
-```
-
-Replace the example hostname with your own. The submodule appends the saved filename, producing a URL such as `https://play.example.com/civreg/<filename>.png`.
-
-This setting only changes the URL stored in CAD. Configure your proxy or hosting route separately so requests to that public directory reach the resource's `/sonorancad/civreg/<filename>` endpoint. For CAD clients that block HTTP images on an HTTPS page, use a working HTTPS image URL.
-
-After a registration with a portrait succeeds, open the image URL saved on the CAD record from outside your server's network and confirm the image loads. Keep `filestore/civreg` in your backups: deleting saved files breaks portraits on existing records. Changing `selfieBaseUrl` affects new submissions; existing records retain their saved URLs.
+The old `selfieBaseUrl` setting is ignored and can be removed from `civreg_config.lua`. Previously created records keep their original image URLs. Preserve `sonorancad/filestore/civreg` and its existing public route while those records use it; updating the submodule does not convert existing portraits. The resource continues to serve those older files.
 
 ## Configuration Reference
 
@@ -173,8 +155,7 @@ Edit `sonorancad/configuration/civreg_config.lua` and restart the resource after
 | `commandName` | `"civreg"` | Chat command without the leading `/`. Changing it changes the command players use. |
 | `templateId` | `7` | CAD character template ID. Keep `7` for civilian registration; selecting a different record type changes what is submitted to CAD. |
 | `templateCacheSeconds` | `60` | Shared template cache duration in seconds. `0` disables caching; frequent requests can hit the CAD template endpoint's rate limit. |
-| `selfieBaseUrl` | `""` | Public image-directory URL. Empty uses the configured CAD server address and listener port. See [Portrait Hosting](#portrait-hosting). |
-| `maxSelfieBytes` | `1024 * 1024` | Maximum decoded size of each saved portrait: 1 MiB by default. |
+| `maxSelfieBytes` | `1024 * 1024` | Maximum decoded size of each base64 portrait upload: 1 MiB by default. |
 | `autofillFieldIds` | Mapping shown above | Maps supported framework identity values to CAD Field Mapping IDs. |
 | `notificationOverride` | `"none"` | Uses the global notification choice when `none`. Supported overrides listed in the configuration are `ox_lib`, `lation_ui`, `pnotify`, and `chat`. |
 | `language` | English strings below | Customizes command help, form labels, and the success notification. |
@@ -209,17 +190,18 @@ Leave `pluginName = "civreg"`, `pluginAuthor = "SonoranCAD"`, and `configVersion
 | A field or section is missing | Review its dependency rules and whether the field is supervisor-only. |
 | A field cannot be edited | Check read-only settings and whether the field is an automatically managed field such as a random value or ID. |
 | Selfie capture fails | Retry with the intended character fully loaded. If it persists, check client errors and that the Sonoran CAD UI files are up to date. |
-| A portrait is missing from an otherwise successful CAD record | Open its saved URL externally. Check the public hostname, port, HTTPS/proxy routing, and that the saved file still exists in `filestore/civreg`. |
+| A portrait is rejected as invalid or too large | Retake it and review the displayed error. Check `maxSelfieBytes` for the decoded size limit. |
+| A portrait is missing from an older URL-based CAD record | Open its saved URL externally. Check the original public route and that the file still exists in `filestore/civreg`. See [Updating from URL-Based Portraits](#updating-from-url-based-portraits). |
 
 ### Registration Error Codes
 
 | Code | Meaning | Resolution |
 | --- | --- | --- |
 | [ERR-CR-101](../fivem-installation/troubleshooting/error-codes.md#err-cr-101) | The live CAD character template could not be loaded. | Check the CAD connection and template ID, then retry. If requests are rate limited, keep template caching enabled and wait before retrying. |
-| [ERR-CR-102](../fivem-installation/troubleshooting/error-codes.md#err-cr-102) | The form expired or contains invalid data. | Correct the displayed validation error. If the form expired, close and reopen the registration command; sessions last 10 minutes. |
-| [ERR-CR-103](../fivem-installation/troubleshooting/error-codes.md#err-cr-103) | A public portrait URL could not be determined. | Correct the CAD server's public address and listener port, or configure `selfieBaseUrl` with a working public image route. |
-| [ERR-CR-104](../fivem-installation/troubleshooting/error-codes.md#err-cr-104) | The portrait could not be saved. | Check [file permissions](../fivem-installation/troubleshooting/read-and-write-permissions.md), available storage, and `maxSelfieBytes`. The server log provides the save failure reason. |
+| [ERR-CR-102](../fivem-installation/troubleshooting/error-codes.md#err-cr-102) | The form expired or contains invalid fields or portrait data. | Correct the displayed validation error. Retake an invalid portrait and check `maxSelfieBytes`. If the form expired, close and reopen the registration command; sessions last 10 minutes. |
 | [ERR-CR-105](../fivem-installation/troubleshooting/error-codes.md#err-cr-105) | CAD could not create the character. | Review the accompanying API failure in the server console, confirm the linked account and template, and correct the reported issue before retrying. |
+
+`ERR-CR-103` and `ERR-CR-104` apply to older versions that hosted portrait files. Current base64 uploads do not use those paths; see the [error-code reference](../fivem-installation/troubleshooting/error-codes.md#civilian-registration-errors) when troubleshooting an older installation.
 
 ## Related Submodules
 
