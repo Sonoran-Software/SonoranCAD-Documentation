@@ -4,6 +4,8 @@ description: Allows players to fetch ID information from the CAD on demand.
 
 # Civilian Integration
 
+To create a new civilian character from an in-game form, see [Civilian Registration (CivReg)](civilian-registration.md).
+
 ![Sonoran CAD - Civilian Integration Lookup](../../../.gitbook/assets/civilian_id_promo_corrected.png)
 
 ## Activation Guide

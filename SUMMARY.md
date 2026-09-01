@@ -101,6 +101,7 @@
     * [Call Templates](integration-plugins/in-game-integration/available-plugins/call-templates.md)
     * [Check API ID](integration-plugins/in-game-integration/available-plugins/api-id-checker.md)
     * [Civilian Integration](integration-plugins/in-game-integration/available-plugins/civilian-integration.md)
+    * [Civilian Registration (CivReg)](integration-plugins/in-game-integration/available-plugins/civilian-registration.md)
     * [Dispatch Notify](integration-plugins/in-game-integration/available-plugins/dispatch-notify.md)
     * [Emergency Response Simulator (ERS)](integration-plugins/in-game-integration/available-plugins/ers.md)
     * [Framework Support (ESX/QBCore) and Auto Fines](integration-plugins/in-game-integration/available-plugins/framework-support-esx-qbcore-and-auto-fines/README.md)

@@ -872,6 +872,50 @@ Warnings use a `WRN-*` prefix. Errors use an `ERR-*` prefix. Some warning-level 
 
 **How to fix it:** Move closer to another player and retry the `show` action.
 
+### Civilian Registration Errors
+
+See [Civilian Registration (CivReg)](../../available-plugins/civilian-registration.md) for setup, usage, and portrait hosting.
+
+#### ERR-CR-101
+
+**Key:** `CIVREG_TEMPLATE_FAILED`
+
+**What it means:** The live CAD character template could not be loaded or did not contain the expected sections.
+
+**How to fix it:** Check the CAD connection and `templateId` in `civreg_config.lua` (`7` for the civilian character template). Review the accompanying API error, keep template caching enabled, and retry after any rate limit has cleared.
+
+#### ERR-CR-102
+
+**Key:** `CIVREG_SUBMISSION_INVALID`
+
+**What it means:** The registration form expired or contains invalid data, such as a missing required value or an invalid field format.
+
+**How to fix it:** Correct the validation message shown in the form. If the session expired, close it and reopen `/civreg`, or the configured registration command. Registration sessions last 10 minutes.
+
+#### ERR-CR-103
+
+**Key:** `CIVREG_SELFIE_URL_MISSING`
+
+**What it means:** A public image URL could not be determined for a submitted character portrait.
+
+**How to fix it:** Correct the CAD server's public address and listener port, or set `selfieBaseUrl` to a working public image directory. See [Portrait Hosting](../../available-plugins/civilian-registration.md#portrait-hosting).
+
+#### ERR-CR-104
+
+**Key:** `CIVREG_SELFIE_SAVE_FAILED`
+
+**What it means:** The game server could not save the submitted portrait to `sonorancad/filestore/civreg`.
+
+**How to fix it:** Review the save failure reason in the server console. Check [read and write permissions](read-and-write-permissions.md), available storage, and the configured `maxSelfieBytes` limit (1 MiB per image by default).
+
+#### ERR-CR-105
+
+**Key:** `CIVREG_CREATE_FAILED`
+
+**What it means:** CAD could not create the civilian character from the submitted form.
+
+**How to fix it:** Review the accompanying API failure in the server console. Confirm the linked CAD account and character template, correct the reported issue, and retry the registration.
+
 ### Dispatch Errors
 
 #### ERR-DISP-101
