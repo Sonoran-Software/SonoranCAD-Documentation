@@ -13,11 +13,23 @@ Each note has the following shape:
   "id": "734c8df5-af36-4607-bb01-65e4d8ee64b0",
   "title": "Traffic Stop",
   "notes": "Blue Sultan, plate 4QXR128",
-  "metadata": {}
+  "metadata": {
+    "lookups": [
+      {
+        "start": 19,
+        "end": 26,
+        "text": "4QXR128",
+        "type": "PLATE",
+        "search": { "first": "", "last": "", "mi": "", "plate": "4QXR128" }
+      }
+    ]
+  }
 }
 ```
 
 `id` is a stable identifier. `metadata` is an optional JSON object reserved for integration-specific data such as future text annotations or links. CAD automatically adds an ID and empty metadata object to older notes that do not have them.
+
+When a CAD user highlights text and runs a name or plate lookup, CAD stores the linked text range and search object in `metadata.lookups`. Preserve `metadata` when syncing notes from the iframe so users can click the linked text to repeat the lookup.
 
 ## Get Notes
 
@@ -83,4 +95,3 @@ CAD emits the full note list whenever notes are changed in CAD and after applyin
 Changes made directly in CAD do not include `requestId`. Replace the in-game note list with the received `notes` array to keep both sides synchronized.
 
 If `scad:notepad:set` does not contain a `notes` array, CAD responds with `scad:notepad:error` and `error: "invalid_notes"`.
-
