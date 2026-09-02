@@ -20,7 +20,13 @@ Each note has the following shape:
         "end": 26,
         "text": "4QXR128",
         "type": "PLATE",
-        "search": { "first": "", "last": "", "mi": "", "plate": "4QXR128" }
+        "search": { "first": "", "last": "", "mi": "", "plate": "4QXR128" },
+        "result": {
+          "version": 2,
+          "title": "State Return",
+          "header": null,
+          "sections": []
+        }
       }
     ]
   }
@@ -29,7 +35,7 @@ Each note has the following shape:
 
 `id` is a stable identifier. `metadata` is an optional JSON object reserved for integration-specific data such as future text annotations or links. CAD automatically adds an ID and empty metadata object to older notes that do not have them.
 
-When a CAD user highlights text and runs a name or plate lookup, CAD stores the linked text range and search object in `metadata.lookups`. Preserve `metadata` when syncing notes from the iframe so users can click the linked text to repeat the lookup.
+When a CAD user highlights text and runs a name or plate lookup, CAD stores the linked text range, search object, and latest NCIC state-return snapshot in `metadata.lookups`. Preserve `metadata` when syncing notes from the iframe so users can preview the results or click the linked text to repeat the lookup. `result` is added after the lookup completes and uses the same state-return structure displayed in CAD call notes.
 
 ## Get Notes
 
