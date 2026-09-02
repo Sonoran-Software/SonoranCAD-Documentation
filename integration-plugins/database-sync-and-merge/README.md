@@ -265,7 +265,17 @@ Next, run a lookup in the police or dispatch panel to test searching for exisitn
 
 <div><figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure></div>
 
+</details>
 
+### 4. Automatic Selfie/Portraits
+
+<details>
+
+<summary>Automatic Character Photos</summary>
+
+FiveM communities can also use the [Civilian Registration](../in-game-integration/available-plugins/civilian-registration.md) submodule to create automatic character photos on their db sync records.
+
+Ensure the submodule has been enabled and started, then run the AI configurator to ensure the `sonoran_mugshot` DB column has been mapped to your character record's image field.
 
 </details>
 
@@ -296,12 +306,10 @@ Database Merge is available exclusively to Pro communities and can be enabled fr
 Friendly mapping allows you to convert any raw database value to a more user friendly value.
 
 \
-Ex:&#x20;
+Ex:
 
 * `drive_license` in your database is converted to `Driver's License`.
 * `color1` in your database is converted to `Brown`.
-
-
 
 To manually configure friendly mapping on a field, select the **Modify** button under the **Friendly Mapping** column. Enter in a raw database value and the friendly value that should be replaced.
 
