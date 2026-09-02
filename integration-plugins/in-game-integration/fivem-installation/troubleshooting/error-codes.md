@@ -916,6 +916,14 @@ See [Civilian Registration (CivReg)](../../available-plugins/civilian-registrati
 
 **How to fix it:** Review the accompanying API failure in the server console. Confirm the linked CAD account and character template, correct the reported issue, and retry the registration.
 
+#### ERR-CR-106
+
+**Key:** `CIVREG_DB_SYNC_FAILED`
+
+**What it means:** CivReg detected CAD character database sync but could not initialize or update the configured framework character table.
+
+**How to fix it:** Start QBCore or ESX and `oxmysql` or `mysql-async` before `sonorancad`. Confirm the CivReg database sync table and character ID column match the CAD DB Sync character mapping, and allow the database user to alter and update the character table.
+
 ### Dispatch Errors
 
 #### ERR-DISP-101
