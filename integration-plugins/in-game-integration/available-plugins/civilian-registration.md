@@ -104,14 +104,7 @@ In API mode, the selfie control captures your current FiveM character's headshot
 
 <summary>Update a Character Portrait in Database Sync Mode</summary>
 
-1. Load the intended QBCore or ESX character in FiveM.
-2. Complete the CAD account link.
-3. Run `/civreg`.
-4. Wait for the success notification confirming that the portrait was updated.
-
-The command captures the active in-game character and updates only the matching framework row. It does not open the registration form or create a CAD API record.
-
-CivReg also listens for CAD's `EVENT_CHAR_SELECTED` push event. When the linked player is online and selects a database sync character in CAD, CivReg captures the current in-game portrait and writes it to the exact sync ID supplied by CAD.
+To update a character's portrait photo in DB sync mode, simply load the character in QBCore/ESX/etc. CivReg also listens for CAD's `EVENT_CHAR_SELECTED` push event. When the linked player is online and selects a database sync character in CAD, CivReg captures the current in-game portrait and updates it. Re-run your lookup to view the latest image.
 
 </details>
 
