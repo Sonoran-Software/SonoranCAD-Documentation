@@ -2,14 +2,9 @@
 description: >-
   Allows sending nearest postal to the CAD via the location field. Also enables
   postal auto-fill for new dispatches and calls.
-hidden: true
 ---
 
 # Postals
-
-{% hint style="warning" %}
-This plugin utilizes API endpoints that require the **standard** version of Sonoran CAD or higher. For more information, view our [pricing ](../../../pricing/faq/)page.
-{% endhint %}
 
 {% hint style="success" %}
 Looking for VPS, web, or dedicated hosting? Check out our official [server hosting](/broken/pages/-MRResNcPrj2q6MmmS6j)!
@@ -87,9 +82,9 @@ Need help? You can always [hire a developer](https://support.sonoransoftware.com
 
 If postal lookup fails, location updates for units will still continue using normal street/location data. Postal-specific failures now surface through the troubleshooting codes below instead of stopping all location updates:
 
-- `ERR-LOC-104`: postal resource unavailable
-- `ERR-LOC-105`: configured postal file missing or invalid
-- `ERR-LOC-106`: postal lookup failed at runtime
+* `ERR-LOC-104`: postal resource unavailable
+* `ERR-LOC-105`: configured postal file missing or invalid
+* `ERR-LOC-106`: postal lookup failed at runtime
 
 See the [FiveM error codes reference](../fivem-installation/troubleshooting/error-codes.md) for the full descriptions and recommended fixes.
 
