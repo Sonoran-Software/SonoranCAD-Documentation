@@ -8,7 +8,7 @@ The iframe API uses the browser [`window.postMessage`](https://developer.mozilla
 
 The following iframe integrations are available:
 
-* [Notepad Sync](notepad-sync.md) provides bidirectional synchronization of the user's locally stored CAD notes.
+* [Notepad Sync](notepad-sync.md) provides bidirectional synchronization of the user's locally stored CAD notes and runs name or plate searches from external text selections.
 * [Screenshot Capture](screenshot-capture.md) requests a PNG capture of the current CAD viewport.
 * [Set Community Link](../api-endpoints-v2/general/accounts/set-community-link.md#cad-frontend-iframe-event) documents the account-link event emitted after a successful CAD login.
 
