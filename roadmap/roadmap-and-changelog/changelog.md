@@ -10,6 +10,30 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.28 09/09/2026
+
+{% tabs %}
+{% tab title="New" %}
+Database Sync: Setup Walkthrough
+
+* Added a guided walkthrough for setting up Database Sync.
+
+Support: Contact and Feedback
+
+* Added a menu option to contact support and submit feedback.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Desktop: Active Calls Loading
+
+* Fixed active calls loading indefinitely on desktop.
+
+Closed Calls: Performance
+
+* Fixed freezing and performance issues when loading large closed calls.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.26 09/09/2026
 
 {% tabs %}
