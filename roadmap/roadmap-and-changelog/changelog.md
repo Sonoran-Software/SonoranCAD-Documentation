@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.29 09/09/2026
+
+{% tabs %}
+{% tab title="New" %}
+Database Sync: Guided Setup
+
+* Added a step-by-step setup with provider screenshots and automatic AI configuration.
+
+Support: Live Chat and Feedback
+
+* Added access to live chat, documentation, and feedback from the account menu.
+{% endtab %}
+
+{% tab title="Fixed" %}
+Android: Google Play Updates
+
+* Updated Android build compatibility and package identification for Google Play releases.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.28 09/09/2026
 
 {% tabs %}
