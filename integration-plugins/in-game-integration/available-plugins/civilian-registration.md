@@ -8,9 +8,9 @@ description: >-
 
 Civilian Registration makes character creation from in-game simple.
 
-For **menu based servers**, a registration window with your custom character record form is shown with a single button to generate a character selfie.
+For **standalone (menu) based servers**, a registration window with your custom character record form is shown with a single button to generate a character selfie.
 
-For **framework servers** with DB sync, this submodule syncs in-game selfies/mugshots to the character records.
+For **framework servers** with DB sync, this submodule syncs in-game selfies/mugshots to the existing automatic character records.
 
 <figure><img src="../../../.gitbook/assets/civreg-character-form.jpg" alt="Character Registration showing sample identity details, required fields, a date format, and residency options"><figcaption><p>Character Registration interface with a sample template and fictional character details.</p></figcaption></figure>
 
@@ -53,38 +53,29 @@ If your framework uses a customized table or character ID column, update `databa
 
 </details>
 
-### 4. Link Players to CAD
+### 4. (Optional) Customize Your Character Template
 
-When not using database sync, each player must [link their CAD account in-game](../link-user-in-game.md) before using `/civreg`. If in database sync mode, your characters will be automatically searchable, now complete with mugshot images.
+In CAD, open **Admin > Customization > Custom Records** and review the civilian character template. See [Creating Custom Record and Report Types](../../../tutorials/customization/creating-custom-record-and-report-types.md) for editing fields and sections. Add an editable **Image** field if players should attach a selfie, and make that field required if a portrait is mandatory.
 
-### 5. Review Your Character Template
+In your database sync mapping configuration, the image field must be mapped to the `sonoran_mugshot` column that the CivReg plugin will automatically add to your players table. The [database sync AI configuration tool](../../database-sync-and-merge/#automatic-ai-setup) will set this up for you automatically.
 
-In CAD, open **Admin > Customization > Custom Records** and review the civilian character template. The built-in character template ID is `7`. See [Creating Custom Record and Report Types](../../../tutorials/customization/creating-custom-record-and-report-types.md) for editing fields and sections. Add an editable **Image** field if players should attach a portrait, and make that field required if a portrait is mandatory.
+In standalone mode, templates are cached for **60 seconds** by default. After saving a template change, allow the cache to expire, then close and reopen `/civreg` to load the updated form. An already-open form does not refresh automatically.
 
-In database mode, add an **Image** field and map it to `sonoran_mugshot` in the CAD DB Sync character mapping. Other character fields continue to come from the database mappings you already configured.
-
-In API mode, templates are cached for **60 seconds** by default. After saving a template change, allow the cache to expire, then close and reopen `/civreg` to load the updated form. An already-open form does not refresh automatically.
-
-### 6. Configure Optional Autofill and Portrait Uploads
+### 5. (Optional) Configure Optional Autofill and Portrait Uploads
 
 For identity autofill, follow [Framework Autofill](civilian-registration.md#framework-autofill). For templates with image fields, review [Portrait Uploads](civilian-registration.md#portrait-uploads) and the image size limit.
 
 ## Player Guide
 
-### API Mode
+### Standalone Mode
 
 <details>
 
-<summary>Register a Character in API Mode</summary>
+<summary>Register a Character in Standalone Mode</summary>
 
-1. Join the server and complete the [CAD account link](../link-user-in-game.md).
-2. Run `/civreg`, or your server's configured registration command.
-3. Review any prefilled details and complete the remaining fields. A red `*` marks required player input. Follow the displayed format for dates and other masked fields.
-4. Scroll through the form. Additional fields or sections may appear when you change an answer.
-5. If the form includes a portrait field, select **Click to take a selfie**. Wait for the preview; click it again to retake the portrait if needed.
-6. Select **Register Character** and wait for the result. On success, the form closes and a confirmation notification appears. The new civilian is saved to your linked CAD account.
-
-Each successful API-mode submission creates a **new character**. Use CAD to manage existing characters and select the civilian you want to use with other integrations.
+1. Run `/civreg`, or your server's configured registration command.
+2. Fill out the character record form. Click on any **image** fields to take an automatic selfie.
+3. Select **Register Character** to create the record. Users can optionally [use `/link` in-game](../link-user-in-game.md) to assign the character to their CAD account in the civilian panel.
 
 </details>
 
@@ -92,23 +83,11 @@ Each successful API-mode submission creates a **new character**. Use CAD to mana
 
 <summary>Take a Character Selfie</summary>
 
-In API mode, the selfie control captures your current FiveM character's headshot. It uses the character you are playing when you click the control. Each editable image field has its own capture button, and the preview lets you review or retake that field's image before submitting.
+In standalone mode, click any **image** field to take a selfie.&#x20;
 
 <figure><img src="../../../.gitbook/assets/civreg-selfie-control.jpg" alt="Character Photo section with the Click to take a selfie control above Cancel and Register Character"><figcaption><p>Scroll to an image field and select Click to take a selfie to capture your current in-game character.</p></figcaption></figure>
 
 </details>
-
-### Database Sync Mode
-
-<details>
-
-<summary>Update a Character Portrait in Database Sync Mode</summary>
-
-To update a character's portrait photo in DB sync mode, simply load the character in QBCore/ESX/etc. CivReg also listens for CAD's `EVENT_CHAR_SELECTED` push event. When the linked player is online and selects a database sync character in CAD, CivReg captures the current in-game portrait and updates it. Re-run your lookup to view the latest image.
-
-</details>
-
-## Framework Autofill
 
 <details>
 
@@ -148,6 +127,20 @@ For example, if your first-name field has the custom Field Mapping ID `givenName
 | Nationality    | `nationality`       | Filled when available from the framework.                                                                               |
 
 Only values supplied by the framework and mapped to an existing template field are prefilled. Missing values leave the template's default or an empty field for the player to complete. Prefilled fields remain editable unless marked read-only in CAD. These autofill settings apply to the API-mode form. Database mode updates only the `sonoran_mugshot` column; your existing CAD DB Sync mappings supply the remaining character fields.
+
+</details>
+
+### Database Sync Mode
+
+<details>
+
+<summary>Update a Character Portrait in Database Sync Mode</summary>
+
+If your community has database sync enabled for civilian records, the CivReg submodule will automatically switch into database sync mode on startup.
+
+To update a character's portrait photo in DB sync mode, simply load the character in QBCore/ESX/etc.
+
+CivReg also automatically updates character mugshots when a character is selected in the civilian page. (`EVENT_CHAR_SELECTED`)
 
 </details>
 
