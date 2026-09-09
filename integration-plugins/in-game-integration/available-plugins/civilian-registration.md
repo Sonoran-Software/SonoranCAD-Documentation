@@ -6,13 +6,13 @@ description: >-
 
 # Civilian Registration (CivReg)
 
+<figure><img src="../../../.gitbook/assets/exec-ed3820d3-0e5e-413d-99d5-0c1a4c955507.png" alt=""><figcaption></figcaption></figure>
+
 Civilian Registration makes character creation from in-game simple.
 
 For **standalone (menu) based servers**, a registration window with your custom character record form is shown with a single button to generate a character selfie.
 
-For **framework servers** with DB sync, this submodule syncs in-game selfies/mugshots to the existing automatic character records.
-
-<figure><img src="../../../.gitbook/assets/civreg-character-form.jpg" alt="Character Registration showing sample identity details, required fields, a date format, and residency options"><figcaption><p>Character Registration interface with a sample template and fictional character details.</p></figcaption></figure>
+For **framework servers** with [DB sync](../../database-sync-and-merge/), this submodule syncs in-game selfies/mugshots to the existing _automatic_ character records.
 
 ## Activation Guide
 

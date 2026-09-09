@@ -261,9 +261,9 @@ Once completed, the AI will inform you of any missing columns (record fields tha
 
 Next, run a lookup in the police or dispatch panel to test searching for exisitng in-game characters, licenses, and vehicle registrations.
 
-<figure><img src="../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure></div>
 
 </details>
 
