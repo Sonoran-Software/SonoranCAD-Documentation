@@ -13,6 +13,16 @@ description: View the latest changes to Sonoran CAD!
 ### 3.43.26 09/09/2026
 
 {% tabs %}
+{% tab title="Fixed" %}
+Desktop App: Reliable Close and Reopen
+
+* Fixed the Windows app remaining in the background after closing its main window and preventing it from reopening.
+{% endtab %}
+
+{% endtabs %}
+### 3.43.26 09/09/2026
+
+{% tabs %}
 {% tab title="New" %}
 Notepad: Linked Lookup Notes
 
