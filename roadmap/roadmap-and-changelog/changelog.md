@@ -14,26 +14,6 @@ description: View the latest changes to Sonoran CAD!
 
 {% tabs %}
 {% tab title="New" %}
-Database Sync: Guided Setup
-
-* Added a step-by-step setup with provider screenshots and automatic AI configuration.
-
-Support: Live Chat and Feedback
-
-* Added access to live chat, documentation, and feedback from the account menu.
-{% endtab %}
-
-{% tab title="Fixed" %}
-Android: Google Play Updates
-
-* Updated Android build compatibility and package identification for Google Play releases.
-{% endtab %}
-
-{% endtabs %}
-### 3.43.28 09/09/2026
-
-{% tabs %}
-{% tab title="New" %}
 Database Sync: Setup Walkthrough
 
 * Added a guided walkthrough for setting up Database Sync.
@@ -52,8 +32,8 @@ Closed Calls: Performance
 
 * Fixed freezing and performance issues when loading large closed calls.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.26 09/09/2026
 
 {% tabs %}
@@ -62,8 +42,8 @@ Desktop App: Reliable Close and Reopen
 
 * Fixed the Windows app remaining in the background after closing its main window and preventing it from reopening.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.26 09/09/2026
 
 {% tabs %}
@@ -82,8 +62,8 @@ Website: Homepage and Pricing Improvements
 
 * Improved homepage loading and search visibility, added a dedicated pricing page, and streamlined sign-in and logout.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.25 08/27/2026
 
 {% tabs %}
@@ -96,8 +76,8 @@ ER:LC Integration: Emergency Call Type Controls
 
 * Added individual controls to enable or disable Police, Fire, and DOT emergency calls.
 {% endtab %}
-
 {% endtabs %}
+
 ### 3.43.24 08/26/2026
 
 {% tabs %}
