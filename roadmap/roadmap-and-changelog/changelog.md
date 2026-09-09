@@ -10,6 +10,26 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.26 09/09/2026
+
+{% tabs %}
+{% tab title="New" %}
+Notepad: Linked Lookup Notes
+
+* Added bi-directional iframe note syncing and inline name and plate lookups with NCIC previews.
+
+Notepad: External Name and Plate Searches
+
+* Added iframe requests to search highlighted text in external notepads and sync linked results back to CAD notes.
+{% endtab %}
+
+{% tab title="Changed" %}
+Website: Homepage and Pricing Improvements
+
+* Improved homepage loading and search visibility, added a dedicated pricing page, and streamlined sign-in and logout.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.25 08/27/2026
 
 {% tabs %}
