@@ -10,6 +10,16 @@ description: View the latest changes to Sonoran CAD!
 
 ## Changelog
 
+### 3.43.30 09/10/2026
+
+{% tabs %}
+{% tab title="Fixed" %}
+Mobile Builds: Publishing Fixes
+
+* Fixed Android SDK installation and enabled replacement of pending TestFlight reviews for production iOS builds.
+{% endtab %}
+
+{% endtabs %}
 ### 3.43.29 09/09/2026
 
 {% tabs %}
